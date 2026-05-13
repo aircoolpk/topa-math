@@ -1,0 +1,100 @@
+{
+  "weekly_quests": [
+    {
+      "quest_id": "g1_weekly_01",
+      "grade_level": 1,
+      "title_th": "นักบวกตัวยง",
+      "description_th": "ทำโจทย์บวกเลขหลักเดียวให้ครบ 50 ข้อ ตลอดสัปดาห์",
+      "quest_type": "practice",
+      "related_skill_codes": ["g1_add_one_digit"],
+      "target_count": 50,
+      "xp_reward": 200,
+      "coin_reward": 40,
+      "estimated_minutes": 45
+    },
+    {
+      "quest_id": "g1_weekly_02",
+      "grade_level": 1,
+      "title_th": "นักลบตัวเทพ",
+      "description_th": "ทำโจทย์ลบเลขหลักเดียวให้ครบ 50 ข้อ ตลอดสัปดาห์",
+      "quest_type": "practice",
+      "related_skill_codes": ["g1_subtract_one_digit"],
+      "target_count": 50,
+      "xp_reward": 200,
+      "coin_reward": 40,
+      "estimated_minutes": 45
+    },
+    {
+      "quest_id": "g1_weekly_03",
+      "grade_level": 1,
+      "title_th": "เชี่ยวชาญการเปรียบเทียบ",
+      "description_th": "ทำโจทย์เปรียบเทียบจำนวนให้ครบ 40 ข้อ",
+      "quest_type": "review",
+      "related_skill_codes": ["g1_compare_numbers"],
+      "target_count": 40,
+      "xp_reward": 150,
+      "coin_reward": 30,
+      "estimated_minutes": 35
+    },
+    {
+      "quest_id": "g1_weekly_04",
+      "grade_level": 1,
+      "title_th": "เรียงลำดับเป็นเลิศ",
+      "description_th": "ฝึกเรียงลำดับจำนวนให้คล่องและทำโจทย์ให้ครบ 40 ข้อ",
+      "quest_type": "review",
+      "related_skill_codes": ["g1_number_order"],
+      "target_count": 40,
+      "xp_reward": 150,
+      "coin_reward": 30,
+      "estimated_minutes": 35
+    },
+    {
+      "quest_id": "g1_weekly_05",
+      "grade_level": 1,
+      "title_th": "สำรวจรูปร่าง",
+      "description_th": "จำแนกรูปร่างพื้นฐาน 30 ข้อ รู้จักสามเหลี่ยม สี่เหลี่ยม วงกลม วงรี",
+      "quest_type": "mixed",
+      "related_skill_codes": ["g1_shapes_2d_basic"],
+      "target_count": 30,
+      "xp_reward": 120,
+      "coin_reward": 24,
+      "estimated_minutes": 25
+    },
+    {
+      "quest_id": "g1_weekly_06",
+      "grade_level": 1,
+      "title_th": "นักเดินทางทิศทาง",
+      "description_th": "ฝึกบอกทิศทางซ้าย-ขวา บน-ล่าง หน้า-หลัง ให้ครบ 30 ข้อ",
+      "quest_type": "mixed",
+      "related_skill_codes": ["g1_position_direction"],
+      "target_count": 30,
+      "xp_reward": 120,
+      "coin_reward": 24,
+      "estimated_minutes": 25
+    },
+    {
+      "quest_id": "g1_weekly_07",
+      "grade_level": 1,
+      "title_th": "ทักษะครบเซ็ต",
+      "description_th": "ทำแบบฝึกหัดทุกทักษะ (นับ บวก ลบ เปรียบเทียบ เรียงลำดับ รูปร่าง ทิศทาง) อย่างน้อยทักษะละ 10 ข้อ",
+      "quest_type": "mixed",
+      "related_skill_codes": ["g1_counting_20", "g1_add_one_digit", "g1_subtract_one_digit", "g1_compare_numbers", "g1_number_order", "g1_shapes_2d_basic", "g1_position_direction"],
+      "target_count": 70,
+      "xp_reward": 300,
+      "coin_reward": 60,
+      "estimated_minutes": 60
+    },
+    {
+      "quest_id": "g1_weekly_08",
+      "grade_level": 1,
+      "title_th": "สัปดาห์แห่งการเรียนรู้",
+      "description_th": "เข้าเรียนทุกวันในสัปดาห์นี้ ทำแบบฝึกหัดวันละอย่างน้อย 5 ข้อ",
+      "quest_type": "streak",
+      "related_skill_codes": ["g1_counting_20"],
+      "target_count": 7,
+      "xp_reward": 250,
+      "coin_reward": 50,
+      "estimated_minutes": 35
+    }
+  ]
+}

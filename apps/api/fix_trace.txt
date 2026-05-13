@@ -1,0 +1,27 @@
+idx = 6644
+last_bracket = 6573
+closingbrace = 6742
+old_start = 6574
+old_end = 6743
+
+Before old_start (20 chars): '     }\n            ]'
+OLD section: '\n          \n                                                          "explanation_th": "See correct answer above"                                                      }'
+
+NEW section: ',\n        },\n        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง",\n      '
+
+After old_end (30 chars): '\n        }\n      ]\n    },\n    '
+
+Transition (chars around old_start-5 to old_start+len(new_section)+5):
+'    ],\n        },\n        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง",\n      \n    '
+
+Written new content, length: 66837 -> 66758
+
+INVALID: Illegal trailing comma before end of object at line 249, col 14
+Error position (char): 6574
+
+Lines 247-251:
+    248: '              }\n'
+>>> 249: '            ],\n'
+    250: '        },\n'
+    251: '        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง",\n'
+    252: '      \n'

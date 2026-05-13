@@ -1,0 +1,18 @@
+Error char position: 6582
+Raw byte position (with BOM): 6585
+
+Bytes around error (pos 6565 to 6635):
+Hex: 20202020202020202020202020207d2c0d0a2020202020202020202020202020202020207b0d0a2020202020202020202020202020202020202020227374617465223a202266
+
+Decoded: '              },\r\n                  {\r\n                    "state": "f'
+
+File content around position 6582:
+'t_th": "53 + 46 = ?"\n              }\n            ],\n        },\n        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง",\n        \n       '
+
+Lines around error:
+    246: '              {'
+    247: '                "text_th": "53 + 46 = ?"'
+    248: '              }'
+>>> 249: '            ],'
+    250: '        },'
+    251: '        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง",'

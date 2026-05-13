@@ -1,0 +1,64 @@
+{
+  "monthly_quests": [
+    {
+      "quest_id": "g5_monthly_01",
+      "title_th": "ดาวรุ่ง Grade 5",
+      "description_th": "เก็บดาวได้ทั้งหมด 50 ดาวจากควิซ Grade 5",
+      "requirement_type": "stars",
+      "skill_code": "any",
+      "requirement_count": 50,
+      "xp_reward": 200,
+      "coin_reward": 50
+    },
+    {
+      "quest_id": "g5_monthly_02",
+      "title_th": "จอมเศษส่วนสมบูรณ์แบบ",
+      "description_th": "ทำควิซคูณเศษส่วนได้ 100% 5 ครั้ง",
+      "requirement_type": "quiz_perfect",
+      "skill_code": "g5_fraction_multiplication",
+      "requirement_count": 5,
+      "xp_reward": 150,
+      "coin_reward": 40
+    },
+    {
+      "quest_id": "g5_monthly_03",
+      "title_th": "จอมทศนิยมสมบูรณ์แบบ",
+      "description_th": "ทำควิซคูณหารทศนิยมได้ 100% 5 ครั้ง",
+      "requirement_type": "quiz_perfect",
+      "skill_code": "g5_decimal_operations",
+      "requirement_count": 5,
+      "xp_reward": 150,
+      "coin_reward": 40
+    },
+    {
+      "quest_id": "g5_monthly_04",
+      "title_th": "เติมเต็ม Grade 5",
+      "description_th": "ทำควิซให้ครบทุกสกิลของ Grade 5 อย่างน้อย 80%",
+      "requirement_type": "skill_mastery",
+      "skill_code": "any",
+      "requirement_count": 7,
+      "xp_reward": 200,
+      "coin_reward": 50
+    },
+    {
+      "quest_id": "g5_monthly_05",
+      "title_th": "มาสเตอร์ Grade 5",
+      "description_th": "เชี่ยวชาญทุกสกิลของ Grade 5 ในระดับ 80% ขึ้นไป",
+      "requirement_type": "skill_mastery",
+      "skill_code": "any",
+      "requirement_count": 7,
+      "xp_reward": 300,
+      "coin_reward": 80
+    },
+    {
+      "quest_id": "g5_monthly_06",
+      "title_th": "ขุนพล Grade 5",
+      "description_th": "เก็บ XP รวมได้ 1000 XP จาก Grade 5",
+      "requirement_type": "xp",
+      "skill_code": "any",
+      "requirement_count": 1000,
+      "xp_reward": 100,
+      "coin_reward": 30
+    }
+  ]
+}

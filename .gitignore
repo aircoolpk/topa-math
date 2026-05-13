@@ -1,0 +1,54 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js build output
+.next/
+**/.next/
+out/
+
+# Python virtualenvs and caches
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+**/.pytest_cache/
+*.py[cod]
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Local storage and generated runtime files
+storage/
+storage/local/
+apps/api/storage/
+apps/api/local/
+
+# Local/scratch tooling containing machine-specific credentials
+apps/api/app/content/math/question_banks/moltbook_check.py
+
+# Logs and process output
+*.log
+*.err.log
+*.out.log
+stdout.log
+stderr.log
+
+# Build/type cache
+*.tsbuildinfo
+
+# Local tool/cache folders
+.tools/
+.hermes/
+
+# OS/editor files
+.DS_Store
+Thumbs.db

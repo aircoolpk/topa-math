@@ -1,0 +1,3412 @@
+{
+  "lesson_id": "g2_subtract_two_digit",
+  "id": "g2_subtract_two_digit",
+  "grade_level": 2,
+  "title_th": "ลบเลขสองหลักแบบไม่ทด",
+  "objective_th": "นักเรียนสามารถลบจำนวนสองหลักสองจำนวนโดยไม่มีตัวกู้ได้ถูกต้อง",
+  "story_intro_th": "อลิสมีกิ๊บเก็บผม 65 อัน ให้เพื่อนไป 23 อัน อลิสเหลือกิ๊บเก็บผมกี่อัน? 💇‍♀️",
+  "explanation_steps": [
+    "เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
+    "ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้",
+    "ลบหลักหน่วยก่อน แล้วลบหลักสิบ",
+    "ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม",
+    "ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 78 แท่ง ให้น้องไป 34 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "78 - 34 = 44 แท่ง ✅"
+    },
+    {
+      "title_th": "ลบสติกเกอร์",
+      "question_th": "มีสติกเกอร์ 95 ดวง แปะไป 42 ดวง เหลือสติกเกอร์กี่ดวง?",
+      "solution_th": "95 - 42 = 53 ดวง ✅"
+    },
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "ตะกร้ามีลูกบอล 86 ลูก เอาออกไป 53 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "86 - 53 = 33 ลูก ✅"
+    }
+  ],
+  "common_mistakes": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน",
+    "ลบหลักสิบก่อนหลักหน่วย ทำให้สับสน",
+    "ลืมว่าตัวตั้งต้องมากกว่าตัวลบ ไม่งั้นจะลบไม่ได้"
+  ],
+  "hints": [
+    "เขียนเลขให้ตรงหลักกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
+    "ลบหลักหน่วยก่อน ถ้าได้ผลลัพธ์เท่าไหร่จดไว้ แล้วค่อยลบหลักสิบ",
+    "ตรวจคำตอบโดยเอาผลลัพธ์บวกกลับด้วยตัวลบ ต้องได้ตัวตั้งเดิม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_subtract_two_digit",
+  "skill_code": "g2_subtract_two_digit",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "📖 🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 โรงเรียนมีนักเรียน 76 คน ให้ออกไปแข่งขันนอกสถานที่ 34 คน เหลือนักเรียนกี่คน?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 76
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 34
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 76,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 34,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 42,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": -8,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "76 - 34 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🍎 มีแอปเปิ้ล 89 ผล แบ่งให้เพื่อน 45 ผล เหลือแอปเปิ้ลกี่ผล?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 89
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 45
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 89,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 88,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 87,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 86,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 85,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 84,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 83,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 82,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 81,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 80,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 79,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 78,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 77,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 76,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 45,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 44,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": 1,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "89 - 45 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "📖 🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🧸 มีตุ๊กตา 95 ตัว ขายไป 52 ตัว เหลือตุ๊กตากี่ตัว?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 95
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 52
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 95,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 94,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 93,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 92,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 91,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 90,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 89,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 88,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 87,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 86,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 85,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 84,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 83,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 82,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 81,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 80,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 79,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 78,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 77,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 76,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 52,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 43,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": 9,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "95 - 52 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "📖 🏪 ตลาด",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏪 ร้านค้ามีขนม 68 ชิ้น ขายหมดไป 36 ชิ้น เหลือขนมกี่ชิ้น?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 68
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 36
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 68,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 41,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 40,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 39,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 38,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 37,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 36,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 35,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 34,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 33,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 32,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 36,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 32,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": 4,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "68 - 36 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🐕 มีสุนัข 84 ตัว ส่งไปอยู่บ้านใหม่ 43 ตัว เหลือสุนัขกี่ตัว?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 84
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 43
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 84,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 83,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 82,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 81,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 80,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 79,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 78,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 77,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 76,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 41,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 43,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 41,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": 2,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "84 - 43 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "📖 🌻 สวน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🌻 มีดอกไม้ 77 ดอก ดอกไม้โรยไป 35 ดอก เหลือดอกไม้กี่ดอก?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 77
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 35
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 77,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 76,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 35,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 42,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": -7,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "77 - 35 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "📖 🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎨 มีสีชอล์ค 63 ก้าน แจกเพื่อนไป 31 ก้าน เหลือสีชอล์คกี่ก้าน?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 63
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 31
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 63,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 41,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 40,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 39,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 38,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 37,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 36,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 35,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 34,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 33,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 32,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 31,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 32,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": -1,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "63 - 31 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📖 📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "📚 มีหนังสือ 92 เล่ม ยืมไป 41 เล่ม เหลือหนังสือกี่เล่ม?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 92
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 41
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 92,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 91,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 90,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 89,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 88,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 87,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 86,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 85,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 84,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 83,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 82,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 81,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 80,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 79,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 78,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 77,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 76,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 41,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 51,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": -10,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "92 - 41 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎮 มีเพชรในเกม 58 เม็ด ใช้ไป 25 เม็ด เหลือเพชรกี่เม็ด?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 58
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 25
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 58,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 41,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 40,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 39,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 38,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 37,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 36,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 35,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 34,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 33,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 25,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 33,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": -8,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "58 - 25 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "📖 🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎉 มีลูกโป่ง 86 ลูก แตกไป 44 ลูก เหลือลูกโป่งกี่ลูก?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 86
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 44
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 86,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 85,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 84,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 83,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 82,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 81,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 80,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 79,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 78,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 77,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 76,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 44,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 42,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": 2,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "86 - 44 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": ""
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "76 - 34 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 Try It",
+          "question": "87 - 43 = ?",
+          "choices": [
+            "43",
+            "42",
+            "44",
+            "41"
+          ],
+          "answer": "44",
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ลบเลขสองหลัก",
+  "preview_subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "cover_theme": "subtract_two_digit",
+  "cover_emoji": "➖",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "learning_objective_th": "นักเรียนสามารถลบจำนวนสองหลักสองจำนวนโดยไม่มีตัวกู้ได้ถูกต้อง",
+  "lesson_intro_th": "อลิสมีกิ๊บเก็บผม 65 อัน ให้เพื่อนไป 23 อัน อลิสเหลือกิ๊บเก็บผมกี่อัน? 💇‍♀️",
+  "concept_explanation_th": "เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้ ลบหลักหน่วยก่อน แล้วลบหลักสิบ ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 20,
+    "parts": [
+      8,
+      12
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ลบเลขสองหลักแบบไม่ทด ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 78 แท่ง ให้น้องไป 34 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "78 - 34 = 44 แท่ง ✅"
+    },
+    {
+      "title_th": "ลบสติกเกอร์",
+      "question_th": "มีสติกเกอร์ 95 ดวง แปะไป 42 ดวง เหลือสติกเกอร์กี่ดวง?",
+      "solution_th": "95 - 42 = 53 ดวง ✅"
+    },
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "ตะกร้ามีลูกบอล 86 ลูก เอาออกไป 53 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "86 - 53 = 33 ลูก ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน",
+    "ลบหลักสิบก่อนหลักหน่วย ทำให้สับสน",
+    "ลืมว่าตัวตั้งต้องมากกว่าตัวลบ ไม่งั้นจะลบไม่ได้"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_subtract_two_digit_q01",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "9",
+        "12",
+        "6",
+        "14"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
+      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q02",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "20"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q03",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q04",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "42",
+        "30",
+        "12"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q05",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q06",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q07",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "40",
+        "32",
+        "13"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q08",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "45",
+        "46",
+        "44",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
+      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q09",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "choices": [
+        "17",
+        "18",
+        "16",
+        "27"
+      ],
+      "correct_answer": "17",
+      "answer": "17",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
+      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q10",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "24",
+        "26",
+        "22",
+        "14"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
+      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_subtract_two_digit_q01",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "9",
+        "12",
+        "6",
+        "14"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
+      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q02",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "20"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q03",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q04",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "42",
+        "30",
+        "12"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q05",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q06",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q07",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "40",
+        "32",
+        "13"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q08",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "45",
+        "46",
+        "44",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
+      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q09",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "choices": [
+        "17",
+        "18",
+        "16",
+        "27"
+      ],
+      "correct_answer": "17",
+      "answer": "17",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
+      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q10",
+      "question_th": "ลบเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "ลบเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "24",
+        "26",
+        "22",
+        "14"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
+      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    }
+  ]
+}

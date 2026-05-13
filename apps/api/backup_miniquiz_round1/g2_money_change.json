@@ -1,0 +1,1098 @@
+{
+  "lesson_id": "g2_money_change",
+  "id": "g2_money_change",
+  "grade_level": 2,
+  "title_th": "เงินทอนคิดง่ายนิดเดียว",
+  "objective_th": "นักเรียนสามารถคำนวณเงินทอนเมื่อซื้อของได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสซื้อขนมราคา 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท? 🛒💰",
+  "explanation_steps": [
+    "เงินทอนคือส่วนต่างระหว่างเงินที่จ่ายกับราคาสินค้า",
+    "วิธีคิดเงินทอน: เอาราคาสินค้าลบออกจากเงินที่จ่าย หรือนับขึ้นจากราคาสินค้าไปถึงเงินที่จ่าย",
+    "วิธีนับขึ้น: เริ่มที่ราคา 23 บาท นับขึ้นไปจนครบ 50 บาท",
+    "23 → 24 → 25 → ... → 30 → 35 → 40 → 45 → 50 รวม 27 บาท คือเงินทอน",
+    "แยกเงินทอนเป็นธนบัตรและเหรียญให้ถูกต้อง เช่น 27 บาท = 20 + 5 + 2"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ทอนเงินซื้อขนม",
+      "question_th": "ขนมราคา 15 บาท จ่าย 20 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "20 - 15 = 5 บาท ✅"
+    },
+    {
+      "title_th": "ทอนเงินซื้อดินสอ",
+      "question_th": "ดินสอราคา 37 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "50 - 37 = 13 บาท ✅"
+    },
+    {
+      "title_th": "ทอนเงินซื้อหนังสือ",
+      "question_th": "หนังสือราคา 68 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "100 - 68 = 32 บาท ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ลบสลับด้าน เช่น 50 - 37 = 23 แทนที่จะเป็น 13",
+    "ไม่แยกเงินทอนเป็นธนบัตรเหรียญถูกต้อง",
+    "นับขึ้นผิดจำนวนขั้น ทำให้ได้เงินทอนไม่ถูกต้อง"
+  ],
+  "hints": [
+    "วิธีง่ายที่สุด: เงินทอน = เงินที่จ่าย - ราคาสินค้า",
+    "ถ้างง ให้นับขึ้นจากราคาสินค้าไปถึงเงินที่จ่าย จะช่วยให้เห็นภาพ",
+    "ตรวจคำตอบโดยเอาเงินทอนบวกราคาสินค้า ต้องได้เงินที่จ่าย"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_money_change",
+  "skill_code": "g2_money_change",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "📖 🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 โรงเรียนซื้ออาหารกล่องราคา 35 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 50
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "50 - 35 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🍎 ซื้อผลไม้ราคา 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 50
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "50 - 23 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "📖 🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🧸 ซื้อของเล่นราคา 48 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 100
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "100 - 48 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "📖 🏪 ตลาด",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏪 ซื้อขนมราคา 18 บาท จ่ายเงิน 20 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 20
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "20 - 18 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🐕 ซื้ออาหารสุนัขราคา 55 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 100
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "100 - 55 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "📖 🌻 สวน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🌻 ซื้อเมล็ดพันธุ์ราคา 42 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 50
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "50 - 42 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "📖 🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎨 ซื้อสีราคา 67 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 100
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "100 - 67 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📖 📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "📚 ซื้อหนังสือราคา 29 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 50
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "50 - 29 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎮 ซื้อไอเทมเกมราคา 36 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 50
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "50 - 36 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "📖 🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎉 ซื้อของที่ระลึกราคา 78 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 100
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "100 - 78 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": ""
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "50 - 35 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 Try It",
+          "question": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+          "choices": [
+            "24",
+            "23",
+            "25",
+            "22"
+          ],
+          "answer": "25",
+          "explanation": "",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เงินทอน",
+  "preview_subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "cover_theme": "money_change",
+  "cover_emoji": "💰",
+  "cover_color": "yellow",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "learning_objective_th": "นักเรียนสามารถคำนวณเงินทอนเมื่อซื้อของได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสซื้อขนมราคา 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท? 🛒💰",
+  "concept_explanation_th": "เงินทอนคือส่วนต่างระหว่างเงินที่จ่ายกับราคาสินค้า วิธีคิดเงินทอน: เอาราคาสินค้าลบออกจากเงินที่จ่าย หรือนับขึ้นจากราคาสินค้าไปถึงเงินที่จ่าย วิธีนับขึ้น: เริ่มที่ราคา 23 บาท นับขึ้นไปจนครบ 50 บาท 23 → 24 → 25 → ... → 30 → 35 → 40 → 45 → 50 รวม 27 บาท คือเงินทอน แยกเงินทอนเป็นธนบัตรและเหรียญให้ถูกต้อง เช่น 27 บาท = 20 + 5 + 2",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 6
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 4
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เงินทอนคิดง่ายนิดเดียว ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ทอนเงินซื้อขนม",
+      "question_th": "ขนมราคา 15 บาท จ่าย 20 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "20 - 15 = 5 บาท ✅"
+    },
+    {
+      "title_th": "ทอนเงินซื้อดินสอ",
+      "question_th": "ดินสอราคา 37 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "50 - 37 = 13 บาท ✅"
+    },
+    {
+      "title_th": "ทอนเงินซื้อหนังสือ",
+      "question_th": "หนังสือราคา 68 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "100 - 68 = 32 บาท ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ลบสลับด้าน เช่น 50 - 37 = 23 แทนที่จะเป็น 13",
+    "ไม่แยกเงินทอนเป็นธนบัตรเหรียญถูกต้อง",
+    "นับขึ้นผิดจำนวนขั้น ทำให้ได้เงินทอนไม่ถูกต้อง"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_money_change_q01",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "9",
+        "12",
+        "6",
+        "14"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
+      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q02",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "20"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q03",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: 5 + 5 = ?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: 5 + 5 = ?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q04",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "42",
+        "30",
+        "12"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q05",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q06",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: 8 + 3 = ?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: 8 + 3 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q07",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "40",
+        "32",
+        "13"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q08",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "45",
+        "46",
+        "44",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
+      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q09",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: 11 + 6 = ?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: 11 + 6 = ?",
+      "choices": [
+        "17",
+        "18",
+        "16",
+        "27"
+      ],
+      "correct_answer": "17",
+      "answer": "17",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
+      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_money_change",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_money_change_q10",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "24",
+        "26",
+        "22",
+        "14"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
+      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_money_change",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_money_change_q01",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "9",
+        "12",
+        "6",
+        "14"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
+      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q02",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "20"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q03",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: 5 + 5 = ?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: 5 + 5 = ?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q04",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "42",
+        "30",
+        "12"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q05",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q06",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: 8 + 3 = ?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: 8 + 3 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q07",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "40",
+        "32",
+        "13"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q08",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "45",
+        "46",
+        "44",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
+      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q09",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: 11 + 6 = ?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: 11 + 6 = ?",
+      "choices": [
+        "17",
+        "18",
+        "16",
+        "27"
+      ],
+      "correct_answer": "17",
+      "answer": "17",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
+      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_money_change",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_money_change_q10",
+      "question_th": "เงินทอนคิดง่ายนิดเดียว: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เงินทอนคิดง่ายนิดเดียว: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "24",
+        "26",
+        "22",
+        "14"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
+      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_money_change",
+      "question_type": "challenge"
+    }
+  ]
+}

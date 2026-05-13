@@ -1,0 +1,55 @@
+{
+  "lesson_id": "g2_review_counting_add_subtract",
+  "grade_level": 2,
+  "subject": "math",
+  "topic_code": "g2_review_g1_to_g2",
+  "skill_code": "g2_review_counting_add_subtract",
+  "title_th": "ทบทวนการนับ บวก ลบ",
+  "objective_th": "นักเรียนทบทวนพื้นฐานการนับและบวกลบเลขจาก ป.1",
+  "story_intro_th": "ตัวเลขเพื่อนเก่าจาก ป.1 กลับมาเยี่ยม! มาทบทวนกันก่อนจะเริ่มเรียน ป.2",
+  "real_life_use_th": "ใช้ในการนับของ นับเงิน คำนวณราคาสินค้าในชีวิตจริง",
+  "explanation_steps": [
+    "ทบทวนการนับเลข 1-20",
+    "ทบทวนการบวกเลขหลักเดียว",
+    "ทบทวนการลบเลขหลักเดียว",
+    "ฝึกใช้บวกลบในโจทย์ปัญหาง่ายๆ"
+  ],
+  "worked_examples": [
+    {
+      "problem": "5 + 3 = ?",
+      "solution": "5 + 3 = 8",
+      "explanation": "นับเพิ่ม 3 จาก 5 ได้ 8"
+    },
+    {
+      "problem": "9 - 4 = ?",
+      "solution": "9 - 4 = 5",
+      "explanation": "ลบออก 4 จาก 9 เหลือ 5"
+    },
+    {
+      "problem": "8 + 7 = ?",
+      "solution": "8 + 7 = 15",
+      "explanation": "นับเพิ่ม 7 จาก 8 ได้ 15"
+    },
+    {
+      "problem": "12 - 5 = ?",
+      "solution": "12 - 5 = 7",
+      "explanation": "ลบออก 5 จาก 12 เหลือ 7"
+    }
+  ],
+  "mini_activity_th": "ลองนับของในห้อง 20 ชิ้นแล้วบวกเพิ่ม 3",
+  "common_mistakes": [
+    "นับผิดหลัก",
+    "สับสนระหว่างบวกและลบ"
+  ],
+  "hints": [
+    "นับช้าๆ ทีละขั้น",
+    "ใช้นิ้วช่วยนับ"
+  ],
+  "encouragement_messages": [
+    "ทบทวนเก่งมาก! พร้อมแล้วสำหรับ ป.2!",
+    "เตรียมพร้อมมากๆ เลย!"
+  ],
+  "mastery_goal": "ทำโจทย์บวกลบได้ 8 จาก 10 ข้อ",
+  "estimated_minutes": 15,
+  "prerequisite_source": "g1"
+}

@@ -1,0 +1,75 @@
+﻿"mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+              {
+                "text_th": "ซื้อของ 44 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🍎 ซื้อผลไม้ราคา 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🛒",
+                "count": 1
+              },
+              {
+                "emoji": "💰",
+                "count": 50
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "50 - 23 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "ซื้อของ 25 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+                "choices": [
+                  "24",
+                  "23",
+                  "25",
+                  "22"
+                ],
+                "answer": "25",
+                "correct_answer": "25"
+              },
+             

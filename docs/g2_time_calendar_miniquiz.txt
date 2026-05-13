@@ -1,0 +1,76 @@
+﻿"mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
+                "choices": [
+                  "30วัน",
+                  "29วัน",
+                  "31วัน",
+                  "28วัน"
+                ],
+                "answer": "31วัน",
+                "correct_answer": "31วัน"
+              },
+              {
+                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
+              },
+              {
+                "text_th": "ปีอธิกมาตุคือปีไหน?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🍎 วันเก็บเกี่ยวผลไม้กำหนดวันที่ 10 พฤษภาคม เป็นวันอะไร และเดือนพฤษภาคมมีกี่วัน?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "📅",
+                "count": 10
+              },
+              {
+                "emoji": "📆",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "shape_visual",
+          "title_th": "🔷 รูปทรง",
+          "data": {
+            "shapes": [
+              {
+                "shape": "rectangle",
+                "color": "#FFB347",
+                "label_th": "วันที่ 10"
+              },
+              {
+                "shape": "circle",
+                "color": "#87CEEB",
+                "label_th": "พฤษภาคม"
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+        

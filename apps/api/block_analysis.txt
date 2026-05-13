@@ -1,0 +1,27 @@
+Mini_quiz block from char 6136 to 6743 (len=607)
+
+Lines in mini_quiz block:
+1 (indent=0): '{'
+2 (indent=12): '            "questions": ['
+3 (indent=14): '              {'
+4 (indent=16): '                "text_th": "45 + 32 = ?",'
+5 (indent=16): '                "choices": ['
+6 (indent=18): '                  "44",'
+7 (indent=18): '                  "43",'
+8 (indent=18): '                  "45",'
+9 (indent=18): '                  "42"'
+10 (indent=16): '                ],'
+11 (indent=16): '                "answer": "45"'
+12 (indent=14): '              },'
+13 (indent=14): '              {'
+14 (indent=16): '                "text_th": "67 + 21 = ?"'
+15 (indent=14): '              },'
+16 (indent=14): '              {'
+17 (indent=16): '                "text_th": "53 + 46 = ?"'
+18 (indent=14): '              }'
+19 (indent=12): '            ]'
+20 (indent=10): '          '
+21 (indent=58): '                                                          "explanation_th": "See correct answer abov'
+
+Last 500 chars:
+'ices": [\n                  "44",\n                  "43",\n                  "45",\n                  "42"\n                ],\n                "answer": "45"\n              },\n              {\n                "text_th": "67 + 21 = ?"\n              },\n              {\n                "text_th": "53 + 46 = ?"\n              }\n            ]\n          \n                                                          "explanation_th": "See correct answer above"                                                      }'

@@ -1,0 +1,937 @@
+﻿{
+  "lesson_id": "g6_equations_intro",
+  "id": "g6_equations_intro",
+  "grade_level": 6,
+  "title_th": "สมการ แก้หาค่าตัวแปร",
+  "objective_th": "นักเรียนสามารถเข้าใจความหมายของสมการ และแก้สมการเพื่อหาค่าตัวแปรได้",
+  "story_intro_th": "พี่อลิสมีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่? 🔵",
+  "explanation_steps": [
+    "สมการคือประโยคที่มีเครื่องหมาย = ทั้งสองข้าง",
+    "ตัวแปรคือตัวอักษรที่แทนจำนวนที่ยังไม่ทราบ เช่น x, y",
+    "การแก้สมการคือการหาค่าตัวแปรที่ทำให้สมการถูกต้อง",
+    "หลักการ: ทำสิ่งเดียวกันทั้งสองข้างของสมการ เพื่อให้ตัวแปรอยู่ข้างเดียว",
+    "ถ้าบวกไปข้างหนึ่ง ให้ลบออก ถ้าคูณไปข้างหนึ่ง ให้หารออก"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "แก้สมการบวก",
+      "question_th": "x + 7 = 15 หาค่า x",
+      "solution_th": "x = 15 - 7 → x = 8 ✅"
+    },
+    {
+      "title_th": "แก้สมการลบ",
+      "question_th": "x - 5 = 12 หาค่า x",
+      "solution_th": "x = 12 + 5 → x = 17 ✅"
+    },
+    {
+      "title_th": "แก้สมการคูณ",
+      "question_th": "3x = 24 หาค่า x",
+      "solution_th": "x = 24 ÷ 3 → x = 8 ✅"
+    },
+    {
+      "title_th": "แก้สมการหาร",
+      "question_th": "x ÷ 4 = 6 หาค่า x",
+      "solution_th": "x = 6 × 4 → x = 24 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ทำตรงข้าม เช่น บวกแทนลบ ทำให้สมการผิด",
+    "ลืมว่าต้องทำสิ่งเดียวกันทั้งสองข้างของสมการ",
+    "ไม่ตรวจคำตอบโดยแทนค่ากลับในสมการ"
+  ],
+  "hints": [
+    "สิ่งที่ทำข้างซ้ายของ = ต้องทำข้างขวาด้วย",
+    "ถ้าตัวแปรอยู่ข้างไหน ให้ทำสิ่งตรงข้ามเพื่อให้ตัวแปรอยู่ข้างเดียว",
+    "ตรวจคำตอบโดยแทนค่า x กลับในสมการเดิม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_equations_intro",
+  "skill_code": "g6_equations_intro",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏫 โรงเรียน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🍎 ผลไม้ มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🧸 ของเล่น มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏪 ตลาด มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🐕 สัตว์เลี้ยง มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🌻 สวน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎨 วาดรูป มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่📚 ห้องเรียน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎮 สนุกกับเพื่อน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎉 งานเทศกาล มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "ที่[School]  โรงเรียน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "สมการ",
+  "preview_subtitle_th": "หาค่าที่ยังไม่รู้ในสมการ",
+  "cover_theme": "equations_intro",
+  "cover_emoji": "🔢",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "หาค่าที่ยังไม่รู้ในสมการ",
+  "learning_objective_th": "นักเรียนสามารถเข้าใจความหมายของสมการ และแก้สมการเพื่อหาค่าตัวแปรได้",
+  "lesson_intro_th": "พี่อลิสมีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่? 🔵",
+  "concept_explanation_th": "สมการคือประโยคที่มีเครื่องหมาย = ทั้งสองข้าง ตัวแปรคือตัวอักษรที่แทนจำนวนที่ยังไม่ทราบ เช่น x, y การแก้สมการคือการหาค่าตัวแปรที่ทำให้สมการถูกต้อง หลักการ: ทำสิ่งเดียวกันทั้งสองข้างของสมการ เพื่อให้ตัวแปรอยู่ข้างเดียว ถ้าบวกไปข้างหนึ่ง ให้ลบออก ถ้าคูณไปข้างหนึ่ง ให้หารออก",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 18
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 12
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท สมการ แก้หาค่าตัวแปร ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "แก้สมการบวก",
+      "question_th": "x + 7 = 15 หาค่า x",
+      "solution_th": "x = 15 - 7 → x = 8 ✅"
+    },
+    {
+      "title_th": "แก้สมการลบ",
+      "question_th": "x - 5 = 12 หาค่า x",
+      "solution_th": "x = 12 + 5 → x = 17 ✅"
+    },
+    {
+      "title_th": "แก้สมการคูณ",
+      "question_th": "3x = 24 หาค่า x",
+      "solution_th": "x = 24 ÷ 3 → x = 8 ✅"
+    },
+    {
+      "title_th": "แก้สมการหาร",
+      "question_th": "x ÷ 4 = 6 หาค่า x",
+      "solution_th": "x = 6 × 4 → x = 24 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ทำตรงข้าม เช่น บวกแทนลบ ทำให้สมการผิด",
+    "ลืมว่าต้องทำสิ่งเดียวกันทั้งสองข้างของสมการ",
+    "ไม่ตรวจคำตอบโดยแทนค่ากลับในสมการ"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_equations_intro_q01",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "21",
+        "24",
+        "18",
+        "10"
+      ],
+      "correct_answer": "21",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
+      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q02",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "28",
+        "29",
+        "27",
+        "36"
+      ],
+      "correct_answer": "28",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
+      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q03",
+      "question_th": "สมการ แก้หาค่าตัวแปร: 9 + 5 = ?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: 9 + 5 = ?",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "24"
+      ],
+      "correct_answer": "14",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
+      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q04",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "60",
+        "66",
+        "54",
+        "16"
+      ],
+      "correct_answer": "60",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 60",
+      "explanation_th": "คำตอบคือ 60 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q05",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "20",
+        "21",
+        "19",
+        "24"
+      ],
+      "correct_answer": "20",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
+      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q06",
+      "question_th": "สมการ แก้หาค่าตัวแปร: 12 + 3 = ?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: 12 + 3 = ?",
+      "choices": [
+        "15",
+        "16",
+        "14",
+        "25"
+      ],
+      "correct_answer": "15",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
+      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q07",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "52",
+        "56",
+        "48",
+        "17"
+      ],
+      "correct_answer": "52",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 52",
+      "explanation_th": "คำตอบคือ 52 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q08",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "65",
+        "66",
+        "64",
+        "75"
+      ],
+      "correct_answer": "65",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 65",
+      "explanation_th": "คำตอบคือ 65 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q09",
+      "question_th": "สมการ แก้หาค่าตัวแปร: 15 + 6 = ?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: 15 + 6 = ?",
+      "choices": [
+        "21",
+        "22",
+        "20",
+        "31"
+      ],
+      "correct_answer": "21",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
+      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_equations_intro_q10",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "32",
+        "34",
+        "30",
+        "18"
+      ],
+      "correct_answer": "32",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
+      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_equations_intro_q01",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "21",
+        "24",
+        "18",
+        "10"
+      ],
+      "correct_answer": "21",
+      "answer": "21",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
+      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q02",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "28",
+        "29",
+        "27",
+        "36"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
+      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q03",
+      "question_th": "สมการ แก้หาค่าตัวแปร: 9 + 5 = ?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: 9 + 5 = ?",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "24"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
+      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q04",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "60",
+        "66",
+        "54",
+        "16"
+      ],
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 60",
+      "explanation_th": "คำตอบคือ 60 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q05",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "20",
+        "21",
+        "19",
+        "24"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
+      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q06",
+      "question_th": "สมการ แก้หาค่าตัวแปร: 12 + 3 = ?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: 12 + 3 = ?",
+      "choices": [
+        "15",
+        "16",
+        "14",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
+      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q07",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "52",
+        "56",
+        "48",
+        "17"
+      ],
+      "correct_answer": "52",
+      "answer": "52",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 52",
+      "explanation_th": "คำตอบคือ 52 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q08",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "65",
+        "66",
+        "64",
+        "75"
+      ],
+      "correct_answer": "65",
+      "answer": "65",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 65",
+      "explanation_th": "คำตอบคือ 65 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q09",
+      "question_th": "สมการ แก้หาค่าตัวแปร: 15 + 6 = ?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: 15 + 6 = ?",
+      "choices": [
+        "21",
+        "22",
+        "20",
+        "31"
+      ],
+      "correct_answer": "21",
+      "answer": "21",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
+      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_equations_intro_q10",
+      "question_th": "สมการ แก้หาค่าตัวแปร: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "สมการ แก้หาค่าตัวแปร: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "32",
+        "34",
+        "30",
+        "18"
+      ],
+      "correct_answer": "32",
+      "answer": "32",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
+      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    }
+  ]
+}

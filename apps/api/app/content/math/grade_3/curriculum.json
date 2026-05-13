@@ -1,0 +1,84 @@
+{
+  "curriculum_version": "1.0",
+  "grade_level": 3,
+  "subject": "math",
+  "skills": [
+    {
+      "skill_code": "g3_multiplication_multi_digit",
+      "skill_name_th": "การคูณหลายหลัก",
+      "description_th": "เรียนรู้การคูณเลขหลายหลักด้วยวิธีตั้งคูณ ฝึกคูณเลขสองหลักกับเลขสองหลัก",
+      "prerequisite_skill_codes": ["g2_times_table_2_5_10"],
+      "difficulty_order": 1,
+      "estimated_minutes": 35,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g3_division_intro",
+      "skill_name_th": "การหารเบื้องต้น",
+      "description_th": "เข้าใจความหมายของการหารในฐานะการแบ่งสิ่งของเท่าๆ กัน ฝึกหารเลขน้อยและการหารลงตัว",
+      "prerequisite_skill_codes": ["g3_multiplication_multi_digit"],
+      "difficulty_order": 2,
+      "estimated_minutes": 35,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g3_fractions_intro",
+      "skill_name_th": "เศษส่วนเบื้องต้น",
+      "description_th": "รู้จักเศษส่วน เช่น 1/2, 1/3, 1/4 ฝึกเปรียบเทียบเศษส่วนและการบวกลบเศษส่วนที่มีตัวส่วนเท่ากัน",
+      "prerequisite_skill_codes": ["g2_add_two_digit"],
+      "difficulty_order": 3,
+      "estimated_minutes": 35,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g3_multi_step_word_problems",
+      "skill_name_th": "โจทย์ปัญหาหลายขั้นตอน",
+      "description_th": "ฝึกแก้โจทย์ปัญหาที่ต้องใช้การบวก ลบ คูณ หาร มากกว่าหนึ่งขั้นตอน",
+      "prerequisite_skill_codes": ["g3_multiplication_multi_digit", "g3_division_intro"],
+      "difficulty_order": 4,
+      "estimated_minutes": 35,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g3_measurement",
+      "skill_name_th": "การวัดความยาว น้ำหนัก ปริมาตร",
+      "description_th": "รู้จักหน่วยวัดความยาว (ซม. ม. กม.) น้ำหนัก (กรัม กิโลกรัม) และปริมาตร (มิลลิลิตร ลิตร)",
+      "prerequisite_skill_codes": ["g2_add_two_digit"],
+      "difficulty_order": 5,
+      "estimated_minutes": 35,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g3_area_intro",
+      "skill_name_th": "พื้นที่เบื้องต้น",
+      "description_th": "เข้าใจความหมายของพื้นที่ ฝึกหาพื้นที่สี่เหลี่ยมผืนผ้าและสี่เหลี่ยมจัตุรัสโดยใช้สูตร",
+      "prerequisite_skill_codes": ["g3_multiplication_multi_digit", "g2_shapes_2d"],
+      "difficulty_order": 6,
+      "estimated_minutes": 35,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g3_mixed_review",
+      "skill_name_th": "ทบทวนรวม ป.3",
+      "description_th": "ทบทวนทักษะทั้งหมดที่เรียนในระดับชั้นประถมศึกษาปีที่ 3 อย่างครอบคลุม",
+      "prerequisite_skill_codes": ["g3_multiplication_multi_digit", "g3_division_intro", "g3_fractions_intro"],
+      "difficulty_order": 7,
+      "estimated_minutes": 40,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    }
+  ]
+}

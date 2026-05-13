@@ -1,0 +1,23 @@
+654: 'TOPICS = {'
+655: '    1: ['
+656: "        ('g1_counting_20','การนับเลขถึง 20','g1_counting_20'),"
+657: "        ('g1_add_one_digit','การบวกเลขหลักเดียว','g1_add_one_digit'),"
+658: "        ('g1_subtract_one_digit','การลบเลขหลักเดียว','g1_subtract_one_digit'),"
+659: "        ('g1_compare_numbers','การเปรียบเทียบจำนวน','g1_compare_numbers'),"
+660: "        ('g1_number_order','ลำดับจำนวน','g1_number_order'),"
+661: "        ('g1_shapes_2d_basic','รูปร่างพื้นฐาน','g1_shapes_2d_basic'),"
+662: "        ('g1_position_direction','ตำแหน่งและทิศทาง','g1_position_direction'),"
+663: '    ],'
+664: '    2: ['
+665: "        ('g2_add_two_digit','การบวกเลขสองหลัก','g2_add_two_digit'),"
+666: "        ('g2_subtract_two_digit','การลบเลขสองหลัก','g2_subtract_two_digit'),"
+667: "        ('g2_multiplication_intro','การคูณเบื้องต้น','g2_multiplication_intro'),"
+668: "        ('g2_times_table_2_5_10','ตารางคูณ 2, 5, 10','g2_times_table_2_5_10'),"
+669: "        ('g2_money_change','เงินและการทอนเงิน','g2_money_change'),"
+670: "        ('g2_time_calendar','เวลาและปฏิทิน','g2_time_calendar'),"
+671: "        ('g2_shapes_2d','รูปทรงสองมิติ','g2_shapes_2d'),"
+672: '    ],'
+673: '}'
+Line 673 (closing brace): '}'
+Line 674 (start of gen_g2_time_calendar): 'def gen_g2_time_calendar(tc, skill):'
+Line 744 has GEN_MAP: '            gen_fn = GEN_MAP.get(tc)'

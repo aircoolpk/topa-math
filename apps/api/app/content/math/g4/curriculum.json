@@ -1,0 +1,86 @@
+{
+  "grade_level": 4,
+  "subject": "math",
+  "skills": [
+    {
+      "skill_code": "g4_multiplication_3digit",
+      "skill_name_th": "การคูณเลข 3 หลัก",
+      "description_th": "ฝึกคูณเลข 2-3 หลักกับเลข 1-2 หลัก ทั้งแนวตั้งและแนวนอน เข้าใจการทดข้างหลัก",
+      "prerequisite_skill_codes": [],
+      "difficulty_order": 2,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 3,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g4_long_division",
+      "skill_name_th": "การหารยาว",
+      "description_th": "ฝึกหารยาวแบบมีเศษ ใช้วิธีหารแบบตั้งหาร หาผลหารและเศษ",
+      "prerequisite_skill_codes": ["g4_multiplication_3digit"],
+      "difficulty_order": 3,
+      "estimated_minutes": 35,
+      "mastery_goal": 80,
+      "lesson_count": 3,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g4_fractions_add_subtract",
+      "skill_name_th": "เศษส่วน บวก ลบ",
+      "description_th": "ฝึกบวกและลบเศษส่วนที่มีตัวส่วนเท่ากันและไม่เท่ากัน หาค.ร.น. และทำให้เศษส่วนเท่ากัน",
+      "prerequisite_skill_codes": [],
+      "difficulty_order": 3,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 3,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g4_decimal_intro",
+      "skill_name_th": "ทศนิยมเบื้องต้น",
+      "description_th": "เข้าใจทศนิยม เปรียบเทียบทศนิยม บวกลบทศนิยม คูณหารทศนิยมด้วย 10, 100",
+      "prerequisite_skill_codes": [],
+      "difficulty_order": 2,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 3,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g4_geometry_angles",
+      "skill_name_th": "มุมและรูปทรง",
+      "description_th": "รู้จักมุมแหลม มุมแบน มุมป้าน วัดมุมด้วยไม้โปรแทรกเตอร์ คำนวณมุมภายในรูปสามเหลี่ยม",
+      "prerequisite_skill_codes": [],
+      "difficulty_order": 3,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 3,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g4_data_graphs",
+      "skill_name_th": "การอ่านข้อมูลและกราฟ",
+      "description_th": "อ่านแผนภูมิแท่ง แผนภูมิวงกลม กราฟเส้น หาค่าเฉลี่ย ฐานนิยม และค่ากลาง",
+      "prerequisite_skill_codes": [],
+      "difficulty_order": 2,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 3,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g4_multi_step_problems",
+      "skill_name_th": "โจทย์ปัญหาหลายขั้นตอน",
+      "description_th": "แก้โจทย์ปัญหาที่ต้องใช้โอเปอร์เรชันหลายขั้นตอน อ่านโจทย์ วิเคราะห์ หาคำตอบ",
+      "prerequisite_skill_codes": ["g4_multiplication_3digit", "g4_fractions_add_subtract", "g4_decimal_intro"],
+      "difficulty_order": 4,
+      "estimated_minutes": 35,
+      "mastery_goal": 80,
+      "lesson_count": 3,
+      "quest_count": 4
+    }
+  ],
+  "total_skills": 7,
+  "total_lessons": 21,
+  "total_quests": 28
+}

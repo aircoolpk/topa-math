@@ -1,0 +1,1080 @@
+{
+  "curriculum_id": "math_p1_p6_th_singapore_style",
+  "language": "th",
+  "country_context": "Thailand",
+  "alignment_target": "IPST / สสวท-style Thai primary mathematics",
+  "teaching_method": "Singapore Math CPA",
+  "needs_official_review": true,
+  "version": "1.0.0",
+  "created_date": "2026-05-04",
+  "scope_note": "Created as best-effort Singapore Math-aligned curriculum for Thai primary schools. Not an official IPST/สสวท publication. Requires review by qualified Thai math educators before use in production.",
+  "design_principles": [
+    "CPA Approach: Concrete → Pictorial → Abstract progression in every topic",
+    "Bar Modeling for all word problems",
+    "Number Bonds as foundational tool for all operations",
+    "Place Value understanding before procedural algorithms",
+    "Mental Math and flexible strategies prioritized",
+    "Fewer topics, deeper mastery per grade",
+    "Spiral review embedded across units",
+    "Misconception-aware lesson design",
+    "Real-life Thai context for all word problems"
+  ],
+  "strands": [
+    {
+      "strand_id": "numbers_and_algebra",
+      "strand_name_th": "จำนวนและพีชคณิต",
+      "strand_name_en": "Numbers and Algebra",
+      "description_th": "ความเข้าใจจำนวน การดำเนินการ และพีชคณิตเบื้องต้น"
+    },
+    {
+      "strand_id": "measurement",
+      "strand_name_th": "การวัด",
+      "strand_name_en": "Measurement",
+      "description_th": "ความยาว มวล ปริมาตร ความจุ เวลา เงิน และพื้นที่"
+    },
+    {
+      "strand_id": "geometry",
+      "strand_name_th": "เรขาคณิต",
+      "strand_name_en": "Geometry",
+      "description_th": "รูปร่าง รูปเรขาคณิต มุม สมมาตร และพื้นที่"
+    },
+    {
+      "strand_id": "statistics",
+      "strand_name_th": "สถิติ",
+      "strand_name_en": "Statistics and Data",
+      "description_th": "การเก็บรวบรวมข้อมูล การนำเสนอ และการวิเคราะห์"
+    },
+    {
+      "strand_id": "ratio_and_proportion",
+      "strand_name_th": "อัตราส่วนและร้อยละ",
+      "strand_name_en": "Ratio and Proportion",
+      "description_th": "อัตราส่วน ร้อยละ และสัดส่วน"
+    }
+  ],
+  "grades": [
+    {
+      "grade_level": 1,
+      "grade_label": "ป.1",
+      "grade_label_en": "Primary 1",
+      "year_goal_th": "วางรากฐานความเข้าใจจำนวนและการบวกลบ ผ่าน CPA เน้น Number Bonds และการนับ",
+      "core_strands": ["numbers_and_algebra", "measurement", "geometry", "statistics"],
+      "prerequisites": [],
+      "units": [
+        {
+          "unit_id": "g1_unit1",
+          "unit_number": 1,
+          "unit_name_th": "จำนวนนับ 1-10",
+          "unit_name_en": "Numbers 1-10",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g1_topic_counting_1_10",
+              "topic_name_th": "การนับจำนวน 1-10",
+              "topic_name_en": "Counting 1-10",
+              "learning_objectives_th": ["นับจำนวนสิ่งของ 1-10 ด้วยวัสดุจริง", "อ่านและเขียนตัวเลข 1-10"],
+              "cpa_stages": {
+                "concrete_th": "ใช้วัสดุนับจริง เช่น ดินสอ กระดุม เม็ดมะขาม",
+                "pictorial_th": "รูปภาพจำนวน การจับคู่ การนับทีละข้าม",
+                "abstract_th": "เขียนตัวเลขและใช้จำนวนในการคำนวณง่าย"
+              },
+              "key_models": ["ten_frames", "fingers", "number_line_0_10"],
+              "common_misconceptions": ["การนับข้าม การสลับลำดับ การไม่เข้าใจศูนย์"]
+            },
+            {
+              "topic_id": "g1_topic_number_bonds_10",
+              "topic_name_th": "สมาชิกภายใน 10",
+              "topic_name_en": "Number Bonds to 10",
+              "learning_objectives_th": ["สร้าง Number Bond ของจำนวน 1-10", "เข้าใจส่วนย่อยและส่วนรวม"],
+              "cpa_stages": {
+                "concrete_th": "แบ่งกลุ่มวัสดุด้วยมือ เช่น แบ่งเม็ดมะขาม 5 เม็ดเป็น 2 กลุ่ม",
+                "pictorial_th": "วาดรูปวงกลมแทนส่วนย่อย ส่วนรวมใน Number Bond Chart",
+                "abstract_th": "เขียนประโยคสัญลักษณ์ เช่น 3 + 7 = 10"
+              },
+              "key_models": ["number_bond", "part_part_whole"],
+              "common_misconceptions": ["สับสนระหว่างส่วนย่อยกับส่วนรวม"]
+            },
+            {
+              "topic_id": "g1_topic_comparison_10",
+              "topic_name_th": "การเปรียบเทียบจำนวนภายใน 10",
+              "topic_name_en": "Comparing Numbers within 10",
+              "learning_objectives_th": ["ใช้เครื่องหมาย > < = เปรียบเทียบ", "เรียงลำดับจำนวนจากน้อยไปมาก"],
+              "key_models": ["number_line_0_10", "ten_frames_comparison"],
+              "common_misconceptions": ["สลับทิศเครื่องหมาย"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g1_unit2",
+          "unit_number": 2,
+          "unit_name_th": "การบวกและการลบจำนวนภายใน 10",
+          "unit_name_en": "Addition and Subtraction within 10",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g1_topic_addition_10",
+              "topic_name_th": "การบวกจำนวนภายใน 10",
+              "topic_name_en": "Addition within 10",
+              "learning_objectives_th": ["บวกจำนวนสองจำนวนภายใน 10 อย่างมีความหมาย", "ใช้ Number Bond ช่วยบวก"],
+              "cpa_stages": {
+                "concrete_th": "วางวัสดุรวมกัน เช่น ใส่กระดุม 3 เม็ดแล้วเพิ่ม 2 เม็ด",
+                "pictorial_th": "วาดรูปการรวมกลุ่ม Bar Model แบบง่าย",
+                "abstract_th": "เขียนประโยคสัญลักษณ์ 3 + 2 = 5"
+              },
+              "key_models": ["number_bond_addition", "counting_on", "make_ten"],
+              "common_misconceptions": ["นับรวมทั้งหมดโดยไม่เข้าใจการเพิ่ม"]
+            },
+            {
+              "topic_id": "g1_topic_subtraction_10",
+              "topic_name_th": "การลบจำนวนภายใน 10",
+              "topic_name_en": "Subtraction within 10",
+              "learning_objectives_th": ["ลบจำนวนสองจำนวนภายใน 10 อย่างมีความหมาย", "ใช้ Number Bond ช่วยลบ"],
+              "cpa_stages": {
+                "concrete_th": "เอาวัสดุออก เช่น มีดินสอ 7 แท่ง เอาออก 3 แท่ง",
+                "pictorial_th": "วาดรูปการแบ่งออก Bar Model แบบง่าย",
+                "abstract_th": "เขียนประโยคสัญลักษณ์ 7 - 3 = 4"
+              },
+              "key_models": ["number_bond_subtraction", "counting_back", "take_away"],
+              "common_misconceptions": ["สับสนระหว่างลบกับบวก ไม่เข้าใจว่าลบคือการเอาออก"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g1_unit3",
+          "unit_number": 3,
+          "unit_name_th": "จำนวนนับ 11-20 และการบวกลบภายใน 20",
+          "unit_name_en": "Numbers 11-20 and Addition/Subtraction within 20",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 4,
+          "topics": [
+            {
+              "topic_id": "g1_topic_counting_11_20",
+              "topic_name_th": "จำนวน 11-20",
+              "topic_name_en": "Numbers 11-20",
+              "learning_objectives_th": ["นับและเขียนตัวเลข 11-20", "เข้าใจค่าประจำตำแหน่งเบื้องต้น สิบกับหน่วย"],
+              "cpa_stages": {
+                "concrete_th": "ใช้ลูกปัดบนแผ่นไม้ 10 ลูก = 1 สิบ",
+                "pictorial_th": "Place Value Chart สิบ-หน่วย ลูกปัดบนเส้น",
+                "abstract_th": "12 = 10 + 2, อ่านว่า สิบสอง"
+              },
+              "key_models": ["place_value_chart_10_20", "ten_and_ones", "bead_rack"],
+              "common_misconceptions": ["ไม่เข้าใจว่า 11 คือ 10+1"]
+            },
+            {
+              "topic_id": "g1_topic_addsub_20",
+              "topic_name_th": "การบวกลบภายใน 20",
+              "topic_name_en": "Addition and Subtraction within 20",
+              "learning_objectives_th": ["บวกลบจำนวนภายใน 20 อย่างมีความหมาย", "ใช้ Make Ten Strategy และ Number Bond"],
+              "cpa_stages": {
+                "concrete_th": "ใช้ลูกปัดหรือวัสดุจริงบวกลบภายใน 20",
+                "pictorial_th": "Bar Model ภายใน 20 Number Line 0-20",
+                "abstract_th": "8 + 7 = ? ใช้ Make Ten: 8+2=10, 10+5=15"
+              },
+              "key_models": ["bar_model_g1", "number_line_0_20", "make_ten_strategy"],
+              "common_misconceptions": ["ท่องจำโดยไม่เข้าใจ สับสนเมื่อตัวเลขไม่อยู่ในกรอบ Make Ten"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g1_unit4",
+          "unit_number": 4,
+          "unit_name_th": "รูปร่างและรูปเรขาคณิต",
+          "unit_name_en": "2D Shapes",
+          "strand": "geometry",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g1_topic_shapes_2d",
+              "topic_name_th": "รูปร่างสองมิติพื้นฐาน",
+              "topic_name_en": "Basic 2D Shapes",
+              "learning_objectives_th": ["จำแนกรูปร่าง วงกลม สามเหลี่ยม สี่เหลี่ยม ห้าเหลี่ยม หกเหลี่ยม", "นับจำนวนด้านและมุม"],
+              "cpa_stages": {
+                "concrete_th": "จับต้องรูปร่างจริง จัดเรียงรูป",
+                "pictorial_th": "วาดรูปร่าง ระบายสีตามรูปแบบ",
+                "abstract_th": "เรียกชื่อรูปร่าง บอกจำนวนด้าน"
+              },
+              "key_models": ["shape_sorting", "_attribute_blocks"],
+              "common_misconceptions": ["สับสนรูปร่างที่คล้ายกัน เช่น สี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้า"]
+            },
+            {
+              "topic_id": "g1_topic_patterns",
+              "topic_name_th": "แบบรูปและการจัดลำดับ",
+              "topic_name_en": "Patterns and Sequencing",
+              "learning_objectives_th": ["สร้างและต่อแบบรูปซ้ำ", "ทำนายรูปถัดไปในแบบรูป"],
+              "common_misconceptions": ["ไม่สังเกตรูปแบบที่ซ่อนอยู่"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g1_unit5",
+          "unit_number": 5,
+          "unit_name_th": "การวัดความยาว มวล และความจุ",
+          "unit_name_en": "Length, Mass and Capacity",
+          "strand": "measurement",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g1_topic_nonstandard_measurement",
+              "topic_name_th": "การวัดโดยไม่ใช้เครื่องมือมาตรฐาน",
+              "topic_name_en": "Non-standard Measurement",
+              "learning_objectives_th": ["วัดความยาวโดยใช้สิ่งของเป็นหน่วย เช่น กระดาษ ดินสอ", "เปรียบเทียบความยาว มวล ความจุ"],
+              "cpa_stages": {
+                "concrete_th": "วัดโต๊ะด้วยสมุด วัดชั้นวางด้วยดินสอ",
+                "pictorial_th": "วาดภาพการวัดและบันทึกผล",
+                "abstract_th": "เปรียบเทียบโดยใช้คำว่า ยาวกว่า สั้นกว่า หนักกว่า เบากว่า"
+              },
+              "common_misconceptions": ["ไม่เข้าใจว่าหน่วยที่ใช้ต้องเท่ากันจึงเปรียบเทียบได้"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g1_unit6",
+          "unit_number": 6,
+          "unit_name_th": "เวลาและเงิน",
+          "unit_name_en": "Time and Money",
+          "strand": "measurement",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g1_topic_time_basic",
+              "topic_name_th": "เวลาเบื้องต้น",
+              "topic_name_en": "Basic Time",
+              "learning_objectives_th": ["อ่านเข็มนาฬิกาบอกเวลาตรง ครึ่งชั่วโมง", "บอกวันในสัปดาห์ เดือนพื้นฐาน"],
+              "cpa_stages": {
+                "concrete_th": "หมุนเข็มนาฬิกาแบบจริง",
+                "pictorial_th": "วาดเข็มนาฬิกา เขียนเวลา",
+                "abstract_th": "3:00 อ่านว่า 3 โมง 4:30 อ่านว่า ครึ่งทุ่ม"
+              },
+              "common_misconceptions": ["สับสนเข็มยาวกับเข็มสั้น"]
+            },
+            {
+              "topic_id": "g1_topic_money",
+              "topic_name_th": "เงินเบี้องต้น",
+              "topic_name_en": "Basic Money",
+              "learning_objectives_th": ["รู้จักเหรียญ 1 2 5 10 บาท", "บวกลบเงินภายใน 20 บาท"],
+              "common_misconceptions": ["ไม่เข้าใจมูลค่าของเหรียญแต่ละชนิด"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade_level": 2,
+      "grade_label": "ป.2",
+      "grade_label_en": "Primary 2",
+      "year_goal_th": "ขยายความเข้าใจจำนวนถึง 1000 เรียนสูตรคูณแม่ 2,5,10 และการบวกลบแบบมีทด",
+      "core_strands": ["numbers_and_algebra", "measurement", "geometry", "statistics"],
+      "prerequisites": ["g1_unit1", "g1_unit2", "g1_unit3"],
+      "units": [
+        {
+          "unit_id": "g2_unit1",
+          "unit_number": 1,
+          "unit_name_th": "จำนวนนับถึง 1000",
+          "unit_name_en": "Numbers to 1000",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g2_topic_place_value_1000",
+              "topic_name_th": "ค่าประจำตำแหน่งถึง 1000",
+              "topic_name_en": "Place Value to 1000",
+              "learning_objectives_th": ["อ่านเขียนจำนวนถึง 1000", "เข้าใจหลักร้อย สิบ หน่วย", "เปรียบเทียบจำนวนถึง 1000"],
+              "cpa_stages": {
+                "concrete_th": "ใช้ลูกปัดหลายแผ่น ตัวต่อพลาสติก 100 ชิ้น",
+                "pictorial_th": "Place Value Chart ร้อย-สิบ-หน่วย บล็อกพื้นที่",
+                "abstract_th": "345 = 300 + 40 + 5, 5 > 3 ในหลักหน่วย"
+              },
+              "key_models": ["place_value_chart_1000", "base_10_blocks", "number_line_100_1000"],
+              "common_misconceptions": ["สับสนตำแหน่งหลัก เช่น 324 อ่านว่า สามร้อยยี่สิบสี่"]
+            },
+            {
+              "topic_id": "g2_topic_odd_even",
+              "topic_name_th": "จำนวนคู่และจำนวนคี่",
+              "topic_name_en": "Odd and Even Numbers",
+              "learning_objectives_th": ["บอกได้ว่าจำนวนเป็นคู่หรือคี่", "ใช้การจับคู่ประกอบ"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g2_unit2",
+          "unit_number": 2,
+          "unit_name_th": "การบวกและการลบจำนวนสองหลัก",
+          "unit_name_en": "Addition and Subtraction of 2-digit Numbers",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 4,
+          "topics": [
+            {
+              "topic_id": "g2_topic_add_two_digit",
+              "topic_name_th": "การบวกสองหลักมีทดและไม่ทด",
+              "topic_name_en": "2-digit Addition with and without carrying",
+              "learning_objectives_th": ["บวกจำนวนสองหลักแบบไม่มีทด", "บวกจำนวนสองหลักแบบมีทดไม่เกินหลักร้อย"],
+              "cpa_stages": {
+                "concrete_th": "ใช้ลูกปัดรวมกลุ่ม บวกสิบก่อนแล้วบวกหน่วย",
+                "pictorial_th": "Bar Model การบวก Place Value Chart การทด",
+                "abstract_th": "45 + 38 = 83, ทด 1 สิบไปหลักร้อย"
+              },
+              "key_models": ["bar_model_addition", "place_value_carrying", "number_line_jump"],
+              "common_misconceptions": ["ลืมทด ทดผิดหลัก บวกสิบเข้าหน่วย"]
+            },
+            {
+              "topic_id": "g2_topic_subtract_two_digit",
+              "topic_name_th": "การลบสองหลักมีการกระจายและไม่กระจาย",
+              "topic_name_en": "2-digit Subtraction with and without borrowing",
+              "learning_objectives_th": ["ลบจำนวนสองหลักแบบไม่มีการกระจาย", "ลบจำนวนสองหลักแบบมีการกระจายจากหลักสิบ"],
+              "cpa_stages": {
+                "concrete_th": "ใช้ลูกปัดแยกกลุ่ม ลบหน่วยก่อนแล้วลบสิบ",
+                "pictorial_th": "Bar Model การลบ Place Value Chart การกระจาย",
+                "abstract_th": "72 - 38 = 34, กระจาย 7 สิบเป็น 6 สิบ 12 หน่วย"
+              },
+              "key_models": ["bar_model_subtraction", "place_value_borrowing", "number_line_bridge"],
+              "common_misconceptions": ["การกระจายผิดหลัก ลบเลขโดยไม่เข้าใจการกระจาย"]
+            },
+            {
+              "topic_id": "g2_topic_word_problems_g2",
+              "topic_name_th": "โจทย์ปัญหาการบวกลบสองหลัก",
+              "topic_name_en": "Word Problems Addition and Subtraction 2-digit",
+              "learning_objectives_th": ["อ่านโจทย์เข้าใจ วางแผนแก้ หาคำตอบ", "ใช้ Bar Model ช่วยแก้โจทย์"],
+              "key_models": ["bar_model_compare", "bar_model_difference", "bar_model_part_part_whole"],
+              "common_misconceptions": ["ไม่แยกบวกกับลบ ไม่เข้าใจโจทย์"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g2_unit3",
+          "unit_number": 3,
+          "unit_name_th": "สูตรคูณแม่ 2, 5, 10",
+          "unit_name_en": "Multiplication Tables 2, 5, 10",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g2_topic_multiplication_intro",
+              "topic_name_th": "การคูณเบื้องต้น",
+              "topic_name_en": "Introduction to Multiplication",
+              "learning_objectives_th": ["เข้าใจความหมายของการคูณในเชิงการรวมกลุ่มเท่ากัน", "ใช้ Number Line และ Array ช่วยเข้าใจ"],
+              "cpa_stages": {
+                "concrete_th": "จัดวัสดุเป็นกลุ่มเท่าๆ กัน เช่น 4 กลุ่ม กลุ่มละ 3",
+                "pictorial_th": "Array รูปภาพ การวาดแถวและหลัก",
+                "abstract_th": "4 × 3 = 12, 4 คูณสาม"
+              },
+              "key_models": ["array_model", "number_line_skip_counting", "equal_groups"],
+              "common_misconceptions": ["สับสนระหว่าง 3×4 กับ 4×3 ความหมายต่างกัน"]
+            },
+            {
+              "topic_id": "g2_topic_times_table_2_5_10",
+              "topic_name_th": "สูตรคูณแม่ 2, 5, 10",
+              "topic_name_en": "Multiplication Tables 2, 5, 10",
+              "learning_objectives_th": ["ท่องสูตรคูณแม่ 2, 5, 10 ได้", "ใช้สูตรคูณแม่แก้โจทย์"],
+              "common_misconceptions": ["ท่องจำโดยไม่เข้าใจ ใช้ผิดแม่"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g2_unit4",
+          "unit_number": 4,
+          "unit_name_th": "การวัดและเรขาคณิต",
+          "unit_name_en": "Measurement and Geometry",
+          "strand": "measurement",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g2_topic_measurement_standard",
+              "topic_name_th": "การวัดความยาว มวล ความจุ ด้วยหน่วยมาตรฐาน",
+              "topic_name_en": "Standard Measurement",
+              "learning_objectives_th": ["วัดความยาวเป็นเซนติเมตร เมตร", "วัดมวลเป็นกิโลกรัม ความจุเป็นลิตร"],
+              "common_misconceptions": ["สับสนหน่วย เช่น ใช้ ซม. แทน ม."]
+            },
+            {
+              "topic_id": "g2_topic_shapes_2d_g2",
+              "topic_name_th": "รูปเรขาคณิตสองมิติ",
+              "topic_name_en": "2D Shapes",
+              "learning_objectives_th": ["จำแนกรูปสี่เหลี่ยม สามเหลี่ยม วงกลม", "บอกแกนสมมาตรเบื้องต้น"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g2_unit5",
+          "unit_number": 5,
+          "unit_name_th": "เวลา เงิน และข้อมูล",
+          "unit_name_en": "Time, Money and Data",
+          "strand": "measurement",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g2_topic_time_calendar",
+              "topic_name_th": "เวลาและปฏิทิน",
+              "topic_name_en": "Time and Calendar",
+              "learning_objectives_th": ["อ่านเวลาถึง 5 นาที บนเข็มนาฬิกา", "บอกวัน เดือน ชั่วโมงในวัน"],
+              "common_misconceptions": ["อ่านเวลาผิดเมื่อเข็มยาวพ้น 12"]
+            },
+            {
+              "topic_id": "g2_topic_money_change",
+              "topic_name_th": "เงินและการทำเงินทอน",
+              "unit_name_en": "Money and Change",
+              "learning_objectives_th": ["รู้จักเหรียญและธนบัตรถึง 100 บาท", "คำนวณเงินทอนภายใน 100 บาท"],
+              "common_misconceptions": ["ไม่เข้าใจเงินทอนคือการลบ"]
+            },
+            {
+              "topic_id": "g2_topic_data_interpretation",
+              "topic_name_th": "การอ่านแผนภูมิรูปภาพ",
+              "topic_name_en": "Picture Graphs",
+              "strand": "statistics",
+              "learning_objectives_th": ["อ่านและตีความแผนภูมิรูปภาพ", "นับจำนวนจากแผนภูมิ"],
+              "common_misconceptions": ["อ่านผิด เช่น นับครึ่งรูปเป็นหนึ่ง"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade_level": 3,
+      "grade_label": "ป.3",
+      "grade_label_en": "Primary 3",
+      "year_goal_th": "เรียนรู้การคูณหารหลายหลัก เริ่มเศษส่วน วัดพื้นที่ และแก้โจทย์หลายขั้นตอน",
+      "core_strands": ["numbers_and_algebra", "measurement", "geometry", "statistics"],
+      "prerequisites": ["g2_unit1", "g2_unit2", "g2_unit3"],
+      "units": [
+        {
+          "unit_id": "g3_unit1",
+          "unit_number": 1,
+          "unit_name_th": "การคูณและการหาร",
+          "unit_name_en": "Multiplication and Division",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 5,
+          "topics": [
+            {
+              "topic_id": "g3_topic_multiplication_2digit",
+              "topic_name_th": "การคูณจำนวนสองหลัก",
+              "topic_name_en": "2-digit Multiplication",
+              "learning_objectives_th": ["คูณจำนวนสองหลักด้วยจำนวนหนึ่งหลัก", "ใช้ Place Value ในการคูณ"],
+              "cpa_stages": {
+                "concrete_th": "ใช้แผ่นตาราง ลูกปัดคูณเป็นพื้นที่",
+                "pictorial_th": "Array สองหลักคูณหนึ่งหลัก Bar Model",
+                "abstract_th": "23 × 4 = 92, 20×4=80, 3×4=12, 80+12=92"
+              },
+              "key_models": ["area_model_multiplication", "bar_model_multiplication", "partial_products"],
+              "common_misconceptions": ["คูณเลขไม่คูณหลัก ลืมทด"]
+            },
+            {
+              "topic_id": "g3_topic_division_intro",
+              "topic_name_th": "การหารเบื้องต้น",
+              "topic_name_en": "Introduction to Division",
+              "learning_objectives_th": ["เข้าใจการหารในเชิงการแบ่งกลุ่มเท่ากัน", "หารลงตัวและหารไม่ลงตัว"],
+              "cpa_stages": {
+                "concrete_th": "แจกวัสดุให้เท่ากันทีละกลุ่ม",
+                "pictorial_th": "Array การแบ่ง กลุ่มบนภาพ",
+                "abstract_th": "15 ÷ 3 = 5, มี 15 ถูกแบ่งเป็น 3 กลุ่ม กลุ่มละ 5"
+              },
+              "key_models": ["equal_sharing", "equal_grouping", "array_division"],
+              "common_misconceptions": ["สับสนหารกับคูณ ลืมเศษ"]
+            },
+            {
+              "topic_id": "g3_topic_times_table_all",
+              "topic_name_th": "สูตรคูณแม่อื่นๆ และการหาร",
+              "topic_name_en": "Other Multiplication Tables and Division",
+              "learning_objectives_th": ["ท่องสูตรคูณแม่ 3, 4, 6, 7, 8, 9", "ใช้สูตรคูณแม่หารได้"],
+              "common_misconceptions": ["จำสูตรคูณผิดแม่ สับสนการคูณและการหารในโจทย์"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g3_unit2",
+          "unit_number": 2,
+          "unit_name_th": "เศษส่วนเบื้องต้น",
+          "unit_name_en": "Introduction to Fractions",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g3_topic_fractions_intro",
+              "topic_name_th": "เศษส่วนพื้นฐาน",
+              "topic_name_en": "Basic Fractions",
+              "learning_objectives_th": ["เข้าใจความหมายของเศษส่วน ตัวเศษ ตัวส่วน", "เปรียบเทียบเศษส่วนที่มีตัวส่วนเท่ากัน"],
+              "cpa_stages": {
+                "concrete_th": "พับกระดาษ แบ่งปิงค์ ช็อกโกแลต",
+                "pictorial_th": "วาดเศษส่วนบนรูปวงกลม สี่เหลี่ยม Number Line",
+                "abstract_th": "1/4 + 2/4 = 3/4, 3/5 > 1/5"
+              },
+              "key_models": ["fractionCircles", "fractionBars", "number_line_fractions"],
+              "common_misconceptions": ["คิดว่า 1/3 มากกว่า 1/2 เพราะ 3>2"]
+            },
+            {
+              "topic_id": "g3_topic_fractions_add_subtract",
+              "topic_name_th": "การบวกลบเศษส่วน",
+              "topic_name_en": "Adding and Subtracting Fractions",
+              "learning_objectives_th": ["บวกลบเศษส่วนที่มีตัวส่วนเท่ากัน"],
+              "prerequisites_topic": "g3_topic_fractions_intro",
+              "common_misconceptions": ["บวกตัวเศษกับตัวเศษ ตัวส่วนกับตัวส่วนโดยตรง"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g3_unit3",
+          "unit_number": 3,
+          "unit_name_th": "โจทย์ปัญหาหลายขั้นตอน",
+          "unit_name_en": "Multi-step Word Problems",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g3_topic_multi_step_problems",
+              "topic_name_th": "โจทย์ปัญหาสองขั้นตอน",
+              "topic_name_en": "Two-step Word Problems",
+              "learning_objectives_th": ["แก้โจทย์สองขั้นตอน บวก-ลบ-คูณ-หาร", "ใช้ Bar Model วาดแผนภาพก่อนแก้"],
+              "key_models": ["bar_model_two_step", "number_bond_two_step"],
+              "common_misconceptions": ["ไม่รู้ว่าต้องทำขั้นไหนก่อน ไม่เขียนประโยคสัญลักษณ์"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g3_unit4",
+          "unit_number": 4,
+          "unit_name_th": "การวัดพื้นที่",
+          "unit_name_en": "Area",
+          "strand": "geometry",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g3_topic_area",
+              "topic_name_th": "พื้นที่ของรูปสี่เหลี่ยมผืนผ้าและจัตุรัส",
+              "topic_name_en": "Area of Rectangle and Square",
+              "learning_objectives_th": ["วัดพื้นที่เป็นตารางเซนติเมตร ตารางเมตร", "ใช้สูตรพื้นที่ กว้าง×ยาว"],
+              "cpa_stages": {
+                "concrete_th": "นับช่องตารางบนกระดาน วางกระเบื้องจริง",
+                "pictorial_th": "วาดตาราง ระบายสีช่อง",
+                "abstract_th": "พื้นที่ = กว้าง × ยาว = 5 ซม. × 3 ซม. = 15 ตร.ซม."
+              },
+              "common_misconceptions": ["สับสนความยาวรอบรูปกับพื้นที่"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g3_unit5",
+          "unit_number": 5,
+          "unit_name_th": "น้ำหนัก ปริมาตร เวลา",
+          "unit_name_en": "Mass, Volume and Time",
+          "strand": "measurement",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g3_topic_measurement_g3",
+              "topic_name_th": "การวัดน้ำหนักและปริมาตร",
+              "topic_name_en": "Measuring Mass and Volume",
+              "learning_objectives_th": ["วัดน้ำหนักเป็นกิโลกรัม กรัม", "วัดปริมาตรเป็นมิลลิลิตร ลิตร"],
+              "common_misconceptions": ["สับสนหน่วย มก. vs กก."]
+            },
+            {
+              "topic_id": "g3_topic_time_duration",
+              "topic_name_th": "ระยะเวลาและการบวกลบเวลา",
+              "topic_name_en": "Duration and Time Operations",
+              "learning_objectives_th": ["คำนวณระยะเวลาเป็นชั่วโมง นาที", "บวกลบเวลาในโจทย์"],
+              "common_misconceptions": ["ไม่แยกเวลาเริ่มต้น สิ้นสุด ระยะเวลา"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g3_unit6",
+          "unit_number": 6,
+          "unit_name_th": "กราฟและข้อมูล",
+          "unit_name_en": "Graphs and Data",
+          "strand": "statistics",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g3_topic_data_g3",
+              "topic_name_th": "การนำเสนอข้อมูลด้วยแผนภูมิแท่ง",
+              "topic_name_en": "Bar Graphs",
+              "learning_objectives_th": ["อ่านและสร้างแผนภูมิแท่งจากข้อมูล", "ตอบคำถามจากกราฟ"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade_level": 4,
+      "grade_label": "ป.4",
+      "grade_label_en": "Primary 4",
+      "year_goal_th": "เรียนจำนวนถึง 100,000 การคูณหารยาว ทศนิยมเบื้องต้น และมุม",
+      "core_strands": ["numbers_and_algebra", "measurement", "geometry", "statistics"],
+      "prerequisites": ["g3_unit1", "g3_unit2", "g3_unit3"],
+      "units": [
+        {
+          "unit_id": "g4_unit1",
+          "unit_number": 1,
+          "unit_name_th": "จำนวนนับถึง 100,000",
+          "unit_name_en": "Numbers to 100,000",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g4_topic_large_numbers",
+              "topic_name_th": "จำนวนนับและค่าประจำตำแหน่ง",
+              "topic_name_en": "Numbers and Place Value to 100,000",
+              "learning_objectives_th": ["อ่านเขียนเรียงลำดับเปรียบเทียบจำนวนถึง 100,000", "ปัดเศษจำนวนเต็ม"],
+              "key_models": ["place_value_chart_100000", "number_line_10000"],
+              "common_misconceptions": ["ปัดเศษผิดหลัก"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g4_unit2",
+          "unit_number": 2,
+          "unit_name_th": "การคูณและการหารยาว",
+          "unit_name_en": "Multiplication and Long Division",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 5,
+          "topics": [
+            {
+              "topic_id": "g4_topic_multiplication_3digit",
+              "topic_name_th": "การคูณจำนวนสามหลัก",
+              "topic_name_en": "3-digit Multiplication",
+              "learning_objectives_th": ["คูณจำนวนสามหลักด้วยสองหลัก", "ใช้ Area Model และ Standard Algorithm"],
+              "key_models": ["area_model_3digit", "partial_products_3digit", "standard_algorithm_multiplication"],
+              "common_misconceptions": ["ลืมทดข้ามหลัก คูณเลขไม่คูณหลัก"]
+            },
+            {
+              "topic_id": "g4_topic_long_division",
+              "topic_name_th": "การหารยาว",
+              "topic_name_en": "Long Division",
+              "learning_objectives_th": ["หารยาวไม่มีเศษและมีเศษ", "ใช้แผนภาพช่วยเข้าใจการหารยาว"],
+              "cpa_stages": {
+                "concrete_th": "แจกวัสดุเป็นกลุ่มทีละหลัก แผ่นพื้นที่",
+                "pictorial_th": "Bar Model การหารยาว Array หารยาว",
+                "abstract_th": "125 ÷ 8 = 15 เหลือ 5, ตรวจสอบ: 15×8=120+5=125"
+              },
+              "key_models": ["long_division_steps", "bar_model_division", "array_division_3digit"],
+              "common_misconceptions": ["เศษมากกว่าตัวหาร ลืมทดในขั้นตอน"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g4_unit3",
+          "unit_number": 3,
+          "unit_name_th": "ทศนิยมเบื้องต้น",
+          "unit_name_en": "Introduction to Decimals",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g4_topic_decimal_intro",
+              "topic_name_th": "ทศนิยมหนึ่งตำแหน่ง",
+              "topic_name_en": "Decimals to 2 Decimal Places",
+              "learning_objectives_th": ["เข้าใจความหมายทศนิยมผ่านเศษส่วน 1/10 1/100", "บวกลบทศนิยมหนึ่งตำแหน่ง"],
+              "cpa_stages": {
+                "concrete_th": "ใช้เงินบาท กิโลกรัม ในชีวิตจริง",
+                "pictorial_th": "ตารางสิบ กระดาษทศนิยม Number Line ทศนิยม",
+                "abstract_th": "3.5 + 2.3 = 5.8, 7.6 - 2.1 = 5.5"
+              },
+              "key_models": ["decimal_grid", "place_value_decimal", "number_line_decimals"],
+              "common_misconceptions": ["คิดว่า 0.5 = 0.05 เพราะตาเห็น 5 ทั้งคู่"]
+            },
+            {
+              "topic_id": "g4_topic_decimal_four_operations",
+              "topic_name_th": "การบวกลบทศนิยม",
+              "topic_name_en": "Adding and Subtracting Decimals",
+              "learning_objectives_th": ["บวกลบทศนิยมหนึ่งตำแหน่งอย่างมีความหมาย"],
+              "common_misconceptions": ["จัดตำแหน่งทศนิยมผิดเมื่อบวกลบ"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g4_unit4",
+          "unit_number": 4,
+          "unit_name_th": "เศษส่วน",
+          "unit_name_en": "Fractions",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g4_topic_fractions_add_subtract",
+              "topic_name_th": "การบวกลบเศษส่วน",
+              "topic_name_en": "Adding and Subtracting Fractions",
+              "learning_objectives_th": ["บวกลบเศษส่วนโดยใช้ตัวคูณร่วมน้อย", "ใช้ Bar Model ช่วยหาคำตอบ"],
+              "prerequisites_topic": "g3_topic_fractions_intro",
+              "common_misconceptions": ["บวกเศษส่วนโดยบวกตัวส่วนตรงๆ"]
+            },
+            {
+              "topic_id": "g4_topic_fractions_multiplication",
+              "topic_name_th": "การคูณเศษส่วน",
+              "topic_name_en": "Multiplying Fractions",
+              "learning_objectives_th": ["คูณเศษส่วนกับจำนวนนับ", "คูณเศษส่วนกับเศษส่วนเบื้องต้น"],
+              "key_models": ["area_model_fractions", "fraction_bar_multiplication"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g4_unit5",
+          "unit_number": 5,
+          "unit_name_th": "มุมและเส้นขนาน",
+          "unit_name_en": "Angles and Parallel Lines",
+          "strand": "geometry",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g4_topic_geometry_angles",
+              "topic_name_th": "มุมและการวัดมุม",
+              "topic_name_en": "Angles and Angle Measurement",
+              "learning_objectives_th": ["รู้จักมุมแหลม มุมฉาก มุมป้าน", "ใช้โพรแทรกเตอร์วัดมุม"],
+              "cpa_stages": {
+                "concrete_th": "พับกระดาษ หมุนดินสอวัดมุม",
+                "pictorial_th": "วาดมุมบนกระดาน ระบายสีมุม",
+                "abstract_th": "มุมฉาก = 90°, มุมแหลม < 90°, มุมป้าน > 90°"
+              },
+              "common_misconceptions": ["สับสนมุมฉากกับมุมแหลม"]
+            },
+            {
+              "topic_id": "g4_topic_parallel_perpendicular",
+              "topic_name_th": "เส้นขนานและเส้นตั้งฉาก",
+              "topic_name_en": "Parallel and Perpendicular Lines",
+              "learning_objectives_th": ["บอกได้ว่าเส้นสองเส้นขนานหรือตั้งฉากกัน"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g4_unit6",
+          "unit_number": 6,
+          "unit_name_th": "สมมาตร กราฟ และการเก็บข้อมูล",
+          "unit_name_en": "Symmetry, Graphs and Data Collection",
+          "strand": "geometry",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g4_topic_symmetry",
+              "topic_name_th": "รูปทรงที่มีแกนสมมาตร",
+              "topic_name_en": "Lines of Symmetry",
+              "learning_objectives_th": ["หาแกนสมมาตรของรูปเรขาคณิต", "เข้าใจสมมาตรในธรรมชาติ"]
+            },
+            {
+              "topic_id": "g4_topic_data_graphs",
+              "topic_name_th": "กราฟแท่งและการอ่านข้อมูล",
+              "topic_name_en": "Bar Graphs and Data Interpretation",
+              "strand": "statistics",
+              "learning_objectives_th": ["สร้างกราฟแท่งจากข้อมูลที่เก็บรวบรวม", "หาค่ามากที่สุด ค่าน้อยที่สุด ค่ากลาง"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g4_unit7",
+          "unit_number": 7,
+          "unit_name_th": "โจทย์ปัญหาแบบยากขึ้น",
+          "unit_name_en": "Advanced Word Problems",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g4_topic_multi_step_word_problems",
+              "topic_name_th": "โจทย์ปัญหาหลายขั้นตอนซับซ้อน",
+              "topic_name_en": "Complex Multi-step Problems",
+              "learning_objectives_th": ["แก้โจทย์ 3+ ขั้นตอนด้วย Bar Model", "วางแผนการแก้โจทย์ขั้นตอนเดียว"],
+              "key_models": ["bar_model_multi_step", "comparison_bar_model", "before_after_bar_model"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade_level": 5,
+      "grade_label": "ป.5",
+      "grade_label_en": "Primary 5",
+      "year_goal_th": "เรียนร้อยละ ปริมาตร พื้นที่ผิว เศษส่วนขั้นสูง และการแก้สมการ",
+      "core_strands": ["numbers_and_algebra", "measurement", "geometry", "statistics", "ratio_and_proportion"],
+      "prerequisites": ["g4_unit1", "g4_unit2", "g4_unit3"],
+      "units": [
+        {
+          "unit_id": "g5_unit1",
+          "unit_number": 1,
+          "unit_name_th": "จำนวนถึง 1,000,000 และทศนิยม",
+          "unit_name_en": "Numbers to 1,000,000 and Decimals",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g5_topic_large_numbers",
+              "topic_name_th": "จำนวนนับถึงล้านและทศนิยมสองตำแหน่ง",
+              "topic_name_en": "Numbers to Millions and Decimals to 2dp",
+              "learning_objectives_th": ["อ่านเขียนจำนวนถึง 1,000,000", "เปรียบเทียบทศนิยมถึงสองตำแหน่ง"],
+              "common_misconceptions": ["0.25 > 0.3 เพราะ 25>3 หรือ 0.4+0.07 มากกว่า 0.5"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g5_unit2",
+          "unit_number": 2,
+          "unit_name_th": "การคูณ การหาร และเศษส่วน",
+          "unit_name_en": "Operations on Whole Numbers and Fractions",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 4,
+          "topics": [
+            {
+              "topic_id": "g5_topic_multiplication_4digit",
+              "topic_name_th": "การคูณจำนวนหลายหลัก",
+              "topic_name_en": "Multi-digit Multiplication",
+              "learning_objectives_th": ["คูณจำนวนสี่หลักด้วยสองหลักอย่างถูกต้อง"],
+              "key_models": ["area_model_4digit", "standard_algorithm_4digit"],
+              "common_misconceptions": ["ทดหลายหลักพร้อมกันแต่ทดผิด"]
+            },
+            {
+              "topic_id": "g5_topic_fraction_multiplication",
+              "topic_name_th": "การคูณและการหารเศษส่วน",
+              "topic_name_en": "Multiplying and Dividing Fractions",
+              "learning_objectives_th": ["คูณเศษส่วนกับเศษส่วน", "หารเศษส่วนด้วยการคูณผกผัน"],
+              "key_models": ["fraction_bar_multiplication", "multiplicative_inverse"],
+              "common_misconceptions": ["คูณเศษส่วนด้วยการคูณเศษกับเศษ ส่วนกับส่วนโดยไม่เข้าใจ"]
+            },
+            {
+              "topic_id": "g5_topic_decimal_operations",
+              "topic_name_th": "การคูณและการหารทศนิยม",
+              "topic_name_en": "Decimal Operations",
+              "learning_objectives_th": ["คูณหารทศนิยมอย่างถูกต้อง", "ใช้การประมาณค่าตรวจสอบความสมเหตุสมผล"],
+              "common_misconceptions": ["คูณทศนิยมแล้วจำนวนตำแหน่งทศนิยมผิด"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g5_unit3",
+          "unit_number": 3,
+          "unit_name_th": "ร้อยละ",
+          "unit_name_en": "Percentages",
+          "strand": "ratio_and_proportion",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g5_topic_percentage",
+              "topic_name_th": "ร้อยละในชีวิตจริง",
+              "topic_name_en": "Percentages in Real Life",
+              "learning_objectives_th": ["เข้าใจความหมายร้อยละ ผ่าน 100 ชิ้น", "แก้โจทย์ร้อยละ เช่น ลดราคา ดอกเบี้ย"],
+              "cpa_stages": {
+                "concrete_th": "ใช้เงิน ส่วนลดในร้านค้าจริง",
+                "pictorial_th": "Bar Model ร้อยละ ตาราง 100 ช่อง",
+                "abstract_th": "25% ของ 200 = 50, 50/200×100 = 25%"
+              },
+              "key_models": ["percent_grid", "bar_model_percent", "percent_of_number"],
+              "common_misconceptions": ["คิดร้อยละโดยคูณเลขโดยไม่เข้าใจว่าเป็นเศษส่วนของ 100"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g5_unit4",
+          "unit_number": 4,
+          "unit_name_th": "อัตราส่วน",
+          "unit_name_en": "Ratio",
+          "strand": "ratio_and_proportion",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g5_topic_ratio",
+              "topic_name_th": "อัตราส่วนและสัดส่วน",
+              "topic_name_en": "Ratio and Proportion",
+              "learning_objectives_th": ["เขียนและเปรียบเทียบอัตราส่วน", "ใช้สัดส่วนในโจทย์ เช่น มาตราส่วนแผนที่"],
+              "key_models": ["ratio_table", "double_number_line", "equivalent_ratio"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g5_unit5",
+          "unit_number": 5,
+          "unit_name_th": "พื้นที่ผิวและปริมาตร",
+          "unit_name_en": "Surface Area and Volume",
+          "strand": "geometry",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g5_topic_volume",
+              "topic_name_th": "ปริมาตรของทรงสี่เหลี่ยม",
+              "topic_name_en": "Volume of Rectangular Prisms",
+              "learning_objectives_th": ["เข้าใจปริมาตรคือการบรรจุ 3 มิติ", "ใช้สูตร กว้าง×ยาว×สูง"],
+              "cpa_stages": {
+                "concrete_th": "ใช้ลูกบาศก์เล็กบรรจุกล่อง วัดจำนวนลูกบาศก์",
+                "pictorial_th": "วาดทรงสี่เหลี่ยมพร้อมมิติ ตารางลูกบาศก์",
+                "abstract_th": "ปริมาตร = 5 ซม. × 4 ซม. × 3 ซม. = 60 ลูกบาศก์เซนติเมตร"
+              },
+              "key_models": ["volume_blocks", "unit_cube_model", "volume_formula"],
+              "common_misconceptions": ["สับสนพื้นที่ผิวกับปริมาตร ลืมยกกำลัง 3"]
+            },
+            {
+              "topic_id": "g5_topic_geometry_3d",
+              "topic_name_th": "ทรงสามเหลี่ยมและพื้นที่ผิว",
+              "topic_name_en": "Triangular Prisms and Surface Area",
+              "learning_objectives_th": ["รู้จักทรงสามเหลี่ยมพื้นฐาน", "คำนวณพื้นที่ผิวของทรงสี่เหลี่ยม"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g6_unit5_prev",
+          "unit_number": 6,
+          "unit_name_th": "สถิติและความน่าจะเป็นเบื้องต้น",
+          "unit_name_en": "Statistics and Probability",
+          "strand": "statistics",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g5_topic_data_analysis",
+              "topic_name_th": "การวิเคราะห์ข้อมูลและค่าเฉลี่ย",
+              "topic_name_en": "Data Analysis and Average",
+              "learning_objectives_th": ["หาค่าเฉลี่ย ค่ามัธยฐาน ฐานนิยม", "อ่านและตีความข้อมูลจากตารางและกราฟ"],
+              "key_models": ["mean_calculation", "median_mode_range", "data_table_to_graph"],
+              "common_misconceptions": ["ค่าเฉลี่ยไม่จำเป็นต้องเป็นจำนวนในข้อมูล"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade_level": 6,
+      "grade_label": "ป.6",
+      "grade_label_en": "Primary 6",
+      "year_goal_th": "เตรียมสอบเข้า ม.1: สมการ อัตราส่วนละเอียด วงกลม สถิติขั้นสูง และโจทย์ปัญหาซับซ้อน",
+      "core_strands": ["numbers_and_algebra", "measurement", "geometry", "statistics", "ratio_and_proportion"],
+      "prerequisites": ["g5_unit1", "g5_unit2", "g5_unit3", "g5_unit4"],
+      "units": [
+        {
+          "unit_id": "g6_unit1",
+          "unit_number": 1,
+          "unit_name_th": "สมการเบื้องต้น",
+          "unit_name_en": "Introduction to Algebra",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g6_topic_algebra_expressions",
+              "topic_name_th": "นิพจน์และสมการ",
+              "topic_name_en": "Algebraic Expressions and Equations",
+              "learning_objectives_th": ["เขียนและแก้สมการเชิงเส้นตัวแปรเดียว", "ใช้ Bar Model สมการแทนตัวแปร"],
+              "cpa_stages": {
+                "concrete_th": "ใช้ตัวถังบรรจุแทนตัวแปร เช่น กล่อง + ก้อน = 12",
+                "pictorial_th": "Bar Model สมการ ภาพตัวแปร",
+                "abstract_th": "x + 5 = 12, x = 12 - 5, x = 7"
+              },
+              "key_models": ["algebra_balance_scale", "bar_model_equation", "inverse_operations"],
+              "common_misconceptions": ["ไม่เข้าใจว่าตัวแปรแทนจำนวนที่ไม่ทราบค่า ไม่ใช้ inverse operation"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g6_unit2",
+          "unit_number": 2,
+          "unit_name_th": "อัตราส่วน ร้อยละ และสัดส่วน",
+          "unit_name_en": "Ratio, Percentage and Proportion",
+          "strand": "ratio_and_proportion",
+          "weeks_estimate": 4,
+          "topics": [
+            {
+              "topic_id": "g6_topic_ratio_proportion",
+              "topic_name_th": "อัตราส่วนและสัดส่วนซับซ้อน",
+              "topic_name_en": "Advanced Ratio and Proportion",
+              "learning_objectives_th": ["แก้โจทย์อัตราส่วนซับซ้อน มาตราส่วน", "ใช้ Unitary Method"],
+              "key_models": ["ratio_table", "unitary_method", "double_number_line_pro"],
+              "common_misconceptions": ["สับสนอัตราส่วน a:b กับ a/b"]
+            },
+            {
+              "topic_id": "g6_topic_percentage_applications",
+              "topic_name_th": "โจทย์ร้อยละในสถานการณ์จริง",
+              "topic_name_en": "Percentage Applications",
+              "learning_objectives_th": ["แก้โจทย์ดอกเบี้ย กำไรขาดทุน ส่วนลด", "หาร้อยละจากสถานการณ์"],
+              "common_misconceptions": ["ลืมว่าร้อยละของฐานที่ต่างกันให้ค่าต่างกัน"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g6_unit3",
+          "unit_number": 3,
+          "unit_name_th": "วงกลม",
+          "unit_name_en": "Circles",
+          "strand": "geometry",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g6_topic_circle_geometry",
+              "topic_name_th": "รัศมี เส้นผ่านศูนย์กลาง พื้นที่วงกลม",
+              "topic_name_en": "Radius, Diameter and Area of Circle",
+              "learning_objectives_th": ["รู้จักส่วนประกอบวงกลม คำนวณพื้นที่และเส้นรอบวง", "ใช้สูตร πr² และ 2πr"],
+              "cpa_stages": {
+                "concrete_th": "วัดรัศมีเส้นผ่านศูนย์กลางของวัตถุกลมจริง",
+                "pictorial_th": "วาดวงกลม ระบุส่วนประกอบ พื้นที่วงกลมภายในสี่เหลี่ยม",
+                "abstract_th": "รัศมี = 7 ซม., เส้นผ่านศูนย์กลาง = 14 ซม., พื้นที่ = π×7² = 22/7×49 ≈ 154 ตร.ซม."
+              },
+              "key_models": ["circle_parts", "area_by_decomposition", "pi_as_ratio"],
+              "common_misconceptions": ["ใช้เส้นผ่านศูนย์กลางแทนรัศมีในสูตร ลืมยกกำลังสอง"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g6_unit4",
+          "unit_number": 4,
+          "unit_name_th": "พื้นที่ผิวและปริมาตรตัวแบบ",
+          "unit_name_en": "Surface Area and Volume of Model Shapes",
+          "strand": "geometry",
+          "weeks_estimate": 2,
+          "topics": [
+            {
+              "topic_id": "g6_topic_surface_area_volume",
+              "topic_name_th": "พื้นที่ผิวและปริมาตรรูปทรงต่างๆ",
+              "topic_name_en": "Surface Area and Volume of Various Prisms",
+              "learning_objectives_th": ["คำนวณพื้นที่ผิวและปริมาตรทรงสามเหลี่ยมพื้นผ้า ทรงกลม", "แก้โจทย์รูปทรงผสม"],
+              "common_misconceptions": ["ใช้สูตรผิดรูปทรง ลืมหน่วยกำลังสาม"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g6_unit5",
+          "unit_number": 5,
+          "unit_name_th": "สถิติและความน่าจะเป็น",
+          "unit_name_en": "Statistics and Probability",
+          "strand": "statistics",
+          "weeks_estimate": 3,
+          "topics": [
+            {
+              "topic_id": "g6_topic_statistic_probability",
+              "topic_name_th": "การวิเคราะห์ข้อมูลและความน่าจะเป็น",
+              "topic_name_en": "Data Analysis and Probability",
+              "learning_objectives_th": ["วิเคราะห์ข้อมูลด้วยค่าเฉลี่ย ค่ามัธยฐาน ค่าฐานนิยม พิสัย", "เข้าใจความน่าจะเป็นเป็นเศษส่วน"],
+              "key_models": ["statistical_summary_box", "probability_tree", "data_distribution"],
+              "common_misconceptions": ["ค่าเฉลี่ยไม่ใช่ผลรวมหารด้วยจำนวน"]
+            },
+            {
+              "topic_id": "g6_topic_coordinate_plane",
+              "topic_name_th": "ระบบพิกัดฉาก",
+              "topic_name_en": "Coordinate Plane",
+              "strand": "geometry",
+              "learning_objectives_th": ["อ่านพิกัด (x, y) บนระนาบ", "เขียนจุดและเส้นตรงบนระบบพิกัด"]
+            }
+          ]
+        },
+        {
+          "unit_id": "g6_unit6",
+          "unit_number": 6,
+          "unit_name_th": "โจทย์ปัญหาสารพัดขั้นตอนและการเตรียมสอบ",
+          "unit_name_en": "Complex Multi-step Problems and Test Preparation",
+          "strand": "numbers_and_algebra",
+          "weeks_estimate": 4,
+          "topics": [
+            {
+              "topic_id": "g6_topic_pre_algebra",
+              "topic_name_th": "ทบทวนสมการ สัดส่วน ร้อยละ สำหรับสอบเข้า",
+              "topic_name_en": "Algebra, Ratio, Percentage Review for Entrance Exam",
+              "learning_objectives_th": ["ทบทวนทุกสาระสำคัญของป.4-6 ผ่านโจทย์ข้อสอบ", "ฝึกแก้โจทย์หลายขั้นตอนอย่างเป็นระบบ"],
+              "key_models": ["mixed_problem_bars", "exam_strategy", "time_allocation"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "spiral_review_schedule": {
+    "description_th": "การทบทวนวนซ้ำทุก 6-8 สัปดาห์ ของทุกแนวคิดที่ผ่านมา",
+    "g1_review_topics": ["number_bonds_10", "addition_subtraction_10", "counting_1_20"],
+    "g2_review_topics": ["place_value_1000", "addition_subtraction_2digit", "multiplication_2_5_10", "time_basic", "money"],
+    "g3_review_topics": ["multiplication_2digit", "division_intro", "fractions_intro", "measurement", "area"],
+    "g4_review_topics": ["place_value_100000", "long_multiplication", "long_division", "decimals_intro", "angles"],
+    "g5_review_topics": ["fraction_multiplication", "percentage", "ratio", "volume", "data_analysis"],
+    "g6_review_topics": ["algebra_equations", "ratio_proportion", "percentage_applications", "circle_geometry", "statistics_probability"]
+  },
+  "assessment_structure": {
+    "diagnostic_test": "ทำก่อนเริ่มหน่วยเพื่อวัดความพร้อม",
+    "formative_assessment": "สังเกตพฤติกรรม คำถามกระตุ้น กิจกรรมระหว่างเรียน",
+    "summative_assessment": "แบบทดสอบท้ายหน่วย 50-100 ข้อ",
+    "adaptive_practice": "โจทย์ปรับระดับตามผลตอบ ง่าย→ยาก",
+    "mock_exam": "ข้อสอบเต็มรูปแบบทุกสิ้นเทอม"
+  }
+}

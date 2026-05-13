@@ -1,0 +1,936 @@
+{
+  "lesson_id": "g6_ratio_proportion",
+  "id": "g6_ratio_proportion",
+  "grade_level": 6,
+  "title_th": "อัตราส่วนและสัดส่วน",
+  "objective_th": "นักเรียนสามารถเข้าใจความสัมพันธ์ระหว่างอัตราส่วนและสัดส่วน และใช้แก้โจทย์ได้",
+  "story_intro_th": "สูตรทำน้ำปลา ใช้น้ำ 3 ส่วน ซีอิ๊ว 1 ส่วน ถ้าอยากทำน้ำปลา 2 ลิตร โดยใช้อัตราส่วนเดิม ต้องใช้น้ำและซีอิ๊วอย่างละเท่าไหร่? 🧂",
+  "explanation_steps": [
+    "อัตราส่วน a:b หมายถึง a/b",
+    "สัดส่วนคือประโยคที่บอกว่าอัตราส่วนสองอัตราส่วนเท่ากัน เช่น a/b = c/d",
+    "วิธีแก้สัดส่วน: คูณข้าม = a × d = b × c",
+    "เช่น ถ้า 3/4 = x/12 จะได้ 3×12 = 4×x ดังนั้น x = 9",
+    "สัดส่วนใช้แก้โจทย์ที่ต้องขยายหรือย่ออัตราส่วน"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "แก้สัดส่วน",
+      "question_th": "2/5 = x/20 หาค่า x",
+      "solution_th": "2×20 = 5×x → 40 = 5x → x = 8 ✅"
+    },
+    {
+      "title_th": "ใช้สัดส่วนในการทำอาหาร",
+      "question_th": "สูตรขนมใช้แป้ง 2 ส่วน น้ำตาล 3 ส่วน ถ้าใช้แป้ง 200 กรัม ต้องใช้น้ำตาลกี่กรัม?",
+      "solution_th": "2/3 = 200/x → 2x = 600 → x = 300 กรัม ✅"
+    },
+    {
+      "title_th": "ใช้สัดส่วนหาความเร็ว",
+      "question_th": "รถวิ่ง 120 กม. ใน 2 ชม. ถ้าวิ่ง 5 ชม. จะวิ่งได้กี่กม.?",
+      "solution_th": "120/2 = x/5 → 600 = 2x → x = 300 กม. ✅"
+    },
+    {
+      "title_th": "หาอัตราส่วนที่เท่ากัน",
+      "question_th": "5:8 = ?:24 หาค่าที่หายไป",
+      "solution_th": "5×24 = 8×x → 120 = 8x → x = 15 ดังนั้น 5:8 = 15:24 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "คูณข้ามผิด เช่น a/b = c/d กลายเป็น a×c = b×d แทนที่จะเป็น a×d = b×c",
+    "สับสนระหว่างตัวเลขในสัดส่วนว่าตัวไหนอยู่ตรงไหน",
+    "ไม่ตรวจสอบว่าคำตอบสมเหตุสมผลหรือไม่"
+  ],
+  "hints": [
+    "จำสูตรสัดส่วน: a/b = c/d จะได้ a×d = b×c",
+    "ถ้างงให้เขียนเป็นเศษส่วนก่อน แล้วค่อยหาค่าที่หายไป",
+    "ตรวจคำตอบโดยแทนค่ากลับในสัดส่วน"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_ratio_proportion",
+  "skill_code": "g6_ratio_proportion",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏫 โรงเรียน มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🍎 ผลไม้ มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🧸 ของเล่น มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏪 ตลาด มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🐕 สัตว์เลี้ยง มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🌻 สวน มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎨 วาดรูป มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่📚 ห้องเรียน มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎮 สนุกกับเพื่อน มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล",
+      "story_theme_th": "เรียนรู้เรื่องratio proportionผ่านธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎉 งานเทศกาล มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "items_before": "🧃🧃",
+          "items_added": "💧💧💧 × 3",
+          "question": "อัตราส่วน 1:3 กับน้ำเชื่อม 2 ถ้วย ต้องใช้น้ำกี่ถ้วย?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "graph_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดแผนภูมิแสดงอัตราส่วน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "ที่[School]  โรงเรียน มีน้ำเชื่อม 2 ถ้วย ต้องการผสมน้ำ 6 ถ้วย อัตราส่วนน้ำเชื่อม:น้ำ = 1:3 ต้องใช้น้ำเชื่อมกี่ถ้วย? 🥤"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "1:3 = 2:x → x = 2 × 3 = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "อัตราส่วน 2:5 ถ้าใช้ส่วนแรก 4 ต้องใช้ส่วนที่สองเท่าไหร่?",
+          "choices": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "answer": "10",
+          "explanation": "2:5 = 4:x → x = 4 × 5/2 = 10",
+          "explanation_th": "2:5 = 4:x → x = 4 × 5/2 = 10"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "อัตราส่วนและสัดส่วน",
+  "preview_subtitle_th": "เปรียบเทียบสิ่งต่างๆ",
+  "cover_theme": "ratio_proportion",
+  "cover_emoji": "⚖️",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "เปรียบเทียบสิ่งต่างๆ",
+  "learning_objective_th": "นักเรียนสามารถเข้าใจความสัมพันธ์ระหว่างอัตราส่วนและสัดส่วน และใช้แก้โจทย์ได้",
+  "lesson_intro_th": "สูตรทำน้ำปลา ใช้น้ำ 3 ส่วน ซีอิ๊ว 1 ส่วน ถ้าอยากทำน้ำปลา 2 ลิตร โดยใช้อัตราส่วนเดิม ต้องใช้น้ำและซีอิ๊วอย่างละเท่าไหร่? 🧂",
+  "concept_explanation_th": "อัตราส่วน a:b หมายถึง a/b สัดส่วนคือประโยคที่บอกว่าอัตราส่วนสองอัตราส่วนเท่ากัน เช่น a/b = c/d วิธีแก้สัดส่วน: คูณข้าม = a × d = b × c เช่น ถ้า 3/4 = x/12 จะได้ 3×12 = 4×x ดังนั้น x = 9 สัดส่วนใช้แก้โจทย์ที่ต้องขยายหรือย่ออัตราส่วน",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท อัตราส่วนและสัดส่วน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "แก้สัดส่วน",
+      "question_th": "2/5 = x/20 หาค่า x",
+      "solution_th": "2×20 = 5×x → 40 = 5x → x = 8 ✅"
+    },
+    {
+      "title_th": "ใช้สัดส่วนในการทำอาหาร",
+      "question_th": "สูตรขนมใช้แป้ง 2 ส่วน น้ำตาล 3 ส่วน ถ้าใช้แป้ง 200 กรัม ต้องใช้น้ำตาลกี่กรัม?",
+      "solution_th": "2/3 = 200/x → 2x = 600 → x = 300 กรัม ✅"
+    },
+    {
+      "title_th": "ใช้สัดส่วนหาความเร็ว",
+      "question_th": "รถวิ่ง 120 กม. ใน 2 ชม. ถ้าวิ่ง 5 ชม. จะวิ่งได้กี่กม.?",
+      "solution_th": "120/2 = x/5 → 600 = 2x → x = 300 กม. ✅"
+    },
+    {
+      "title_th": "หาอัตราส่วนที่เท่ากัน",
+      "question_th": "5:8 = ?:24 หาค่าที่หายไป",
+      "solution_th": "5×24 = 8×x → 120 = 8x → x = 15 ดังนั้น 5:8 = 15:24 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "คูณข้ามผิด เช่น a/b = c/d กลายเป็น a×c = b×d แทนที่จะเป็น a×d = b×c",
+    "สับสนระหว่างตัวเลขในสัดส่วนว่าตัวไหนอยู่ตรงไหน",
+    "ไม่ตรวจสอบว่าคำตอบสมเหตุสมผลหรือไม่"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_ratio_proportion_q01",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "21",
+        "24",
+        "18",
+        "10"
+      ],
+      "correct_answer": "21",
+      "answer": "21",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
+      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q02",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "28",
+        "29",
+        "27",
+        "36"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
+      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q03",
+      "question_th": "อัตราส่วนและสัดส่วน: 9 + 5 = ?",
+      "question_text": "อัตราส่วนและสัดส่วน: 9 + 5 = ?",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "24"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
+      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q04",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "60",
+        "66",
+        "54",
+        "16"
+      ],
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 60",
+      "explanation_th": "คำตอบคือ 60 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q05",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "20",
+        "21",
+        "19",
+        "24"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
+      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q06",
+      "question_th": "อัตราส่วนและสัดส่วน: 12 + 3 = ?",
+      "question_text": "อัตราส่วนและสัดส่วน: 12 + 3 = ?",
+      "choices": [
+        "15",
+        "16",
+        "14",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
+      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q07",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "52",
+        "56",
+        "48",
+        "17"
+      ],
+      "correct_answer": "52",
+      "answer": "52",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 52",
+      "explanation_th": "คำตอบคือ 52 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q08",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "65",
+        "66",
+        "64",
+        "75"
+      ],
+      "correct_answer": "65",
+      "answer": "65",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 65",
+      "explanation_th": "คำตอบคือ 65 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q09",
+      "question_th": "อัตราส่วนและสัดส่วน: 15 + 6 = ?",
+      "question_text": "อัตราส่วนและสัดส่วน: 15 + 6 = ?",
+      "choices": [
+        "21",
+        "22",
+        "20",
+        "31"
+      ],
+      "correct_answer": "21",
+      "answer": "21",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
+      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q10",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "32",
+        "34",
+        "30",
+        "18"
+      ],
+      "correct_answer": "32",
+      "answer": "32",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
+      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_ratio_proportion_q01",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "21",
+        "24",
+        "18",
+        "10"
+      ],
+      "correct_answer": "21",
+      "answer": "21",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
+      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q02",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "28",
+        "29",
+        "27",
+        "36"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
+      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q03",
+      "question_th": "อัตราส่วนและสัดส่วน: 9 + 5 = ?",
+      "question_text": "อัตราส่วนและสัดส่วน: 9 + 5 = ?",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "24"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
+      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q04",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "60",
+        "66",
+        "54",
+        "16"
+      ],
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 60",
+      "explanation_th": "คำตอบคือ 60 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q05",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "20",
+        "21",
+        "19",
+        "24"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
+      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q06",
+      "question_th": "อัตราส่วนและสัดส่วน: 12 + 3 = ?",
+      "question_text": "อัตราส่วนและสัดส่วน: 12 + 3 = ?",
+      "choices": [
+        "15",
+        "16",
+        "14",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
+      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q07",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "52",
+        "56",
+        "48",
+        "17"
+      ],
+      "correct_answer": "52",
+      "answer": "52",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 52",
+      "explanation_th": "คำตอบคือ 52 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q08",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "65",
+        "66",
+        "64",
+        "75"
+      ],
+      "correct_answer": "65",
+      "answer": "65",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 65",
+      "explanation_th": "คำตอบคือ 65 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q09",
+      "question_th": "อัตราส่วนและสัดส่วน: 15 + 6 = ?",
+      "question_text": "อัตราส่วนและสัดส่วน: 15 + 6 = ?",
+      "choices": [
+        "21",
+        "22",
+        "20",
+        "31"
+      ],
+      "correct_answer": "21",
+      "answer": "21",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
+      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q10",
+      "question_th": "อัตราส่วนและสัดส่วน: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "อัตราส่วนและสัดส่วน: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "32",
+        "34",
+        "30",
+        "18"
+      ],
+      "correct_answer": "32",
+      "answer": "32",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
+      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    }
+  ]
+}

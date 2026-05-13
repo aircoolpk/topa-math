@@ -1,0 +1,24 @@
+Current state of fixed file:
+Line 246 (indent=14, len=16): '              {\n'
+Line 247 (indent=16, len=41): '                "text_th": "53 + 46 = ?"\n'
+Line 248 (indent=14, len=16): '              }\n'
+Line 249 (indent=12, len=14): '            ]\n'
+Line 250 (indent=8, len=11): '        },\n'
+Line 251 (indent=8, len=71): '        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง",\n'
+Line 252 (indent=7, len=7): '      \n'
+Line 253 (indent=8, len=10): '        }\n'
+Line 254 (indent=6, len=8): '      ]\n'
+Line 255 (indent=4, len=7): '    },\n'
+Line 256 (indent=4, len=6): '    {\n'
+Line 257 (indent=6, len=27): '      "variant_id": "v02",\n'
+Line 258 (indent=6, len=39): '      "variant_title_th": "📖 🍎 ผลไม้",\n'
+Line 259 (indent=6, len=57): '      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",\n'
+Line 260 (indent=6, len=25): '      "visual_blocks": [\n'
+
+Char position 6663 corresponds to:
+Sum of lines 1-250 = 6594 chars
+Char 6663 is at offset 69 in line 251
+
+Raw bytes around pos 6666:
+Hex: 2020202020202020202020202020207d2c0d0a2020202020202020202020202020202020207b0d0a2020202020202020202020202020202020202020
+String: '               },\r\n                  {\r\n                    '

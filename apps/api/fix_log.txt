@@ -1,0 +1,21 @@
+Original length: 66837
+Fixed answer->correct_answer
+Old section from 6582 to 6751
+Old section: '\n          \n                                                          "explanation_th": "See correct answer above"                                                      }'
+New section: ',\n        },\n        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง",\n        '
+New length: 66768
+Written file length: 66768
+New section found in file!
+
+Lines 247-255 in new file:
+  247: '                "text_th": "53 + 46 = ?"'
+  248: '              }'
+  249: '            ],'
+  250: '        },'
+  251: '        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง",'
+  252: '        '
+  253: '        }'
+  254: '      ]'
+  255: '    },'
+  256: '    {'
+INVALID: Illegal trailing comma before end of object at line 249, col 14

@@ -1,0 +1,84 @@
+{
+  "curriculum_version": "1.0",
+  "grade_level": 2,
+  "subject": "math",
+  "skills": [
+    {
+      "skill_code": "g2_add_two_digit",
+      "skill_name_th": "การบวกเลขสองหลัก",
+      "description_th": "เรียนรู้การบวกเลขสองหลักโดยใช้การจัดกลุ่มและไม่จัดกลุ่ม ฝึกการทดเลขเมื่อผลรวมเกิน 9",
+      "prerequisite_skill_codes": [],
+      "difficulty_order": 1,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g2_subtract_two_digit",
+      "skill_name_th": "การลบเลขสองหลัก",
+      "description_th": "เรียนรู้การลบเลขสองหลักโดยใช้การกระจายและไม่กระจาย ฝึกการยืมเลขเมื่อตัวลบมากกว่าตัวตั้ง",
+      "prerequisite_skill_codes": ["g2_add_two_digit"],
+      "difficulty_order": 2,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g2_multiplication_intro",
+      "skill_name_th": "การคูณเบื้องต้น",
+      "description_th": "เข้าใจความหมายของการคูณในฐานะการบวกซ้ำ ฝึกการคูณเลขน้อยด้วยการสร้างกลุ่มเท่าๆ กัน",
+      "prerequisite_skill_codes": ["g2_add_two_digit"],
+      "difficulty_order": 3,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g2_times_table_2_5_10",
+      "skill_name_th": "ตารางคูณ 2, 5, 10",
+      "description_th": "จำตารางคูณแม่ 2, 5 และ 10 ให้ได้ขึ้นใจ ฝึกการใช้ตารางคูณในโจทย์ปัญหา",
+      "prerequisite_skill_codes": ["g2_multiplication_intro"],
+      "difficulty_order": 4,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g2_money_change",
+      "skill_name_th": "เงินและการทอนเงิน",
+      "description_th": "รู้จักและนับเงินบาทไทย ฝึกการคำนวณเงินทอนจากการซื้อขาย",
+      "prerequisite_skill_codes": ["g2_add_two_digit", "g2_subtract_two_digit"],
+      "difficulty_order": 5,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g2_time_calendar",
+      "skill_name_th": "เวลาและปฏิทิน",
+      "description_th": "อ่านเวลาบนนาฬิกาทั้งแบบตรงและแบบบอกครึ่งชั่วโมง รู้จักวัน เดือน และการดูปฏิทิน",
+      "prerequisite_skill_codes": ["g2_add_two_digit"],
+      "difficulty_order": 6,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    },
+    {
+      "skill_code": "g2_shapes_2d",
+      "skill_name_th": "รูปทรงสองมิติ",
+      "description_th": "รู้จักรูปร่างพื้นฐาน ได้แก่ วงกลม สามเหลี่ยม สี่เหลี่ยม ห้าเหลี่ยม หกเหลี่ยม ฝึกนับด้านและมุม",
+      "prerequisite_skill_codes": [],
+      "difficulty_order": 7,
+      "estimated_minutes": 30,
+      "mastery_goal": 80,
+      "lesson_count": 2,
+      "quest_count": 4
+    }
+  ]
+}

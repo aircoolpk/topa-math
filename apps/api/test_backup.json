@@ -1,0 +1,2593 @@
+﻿{
+  "lesson_id": "g2_add_two_digit",
+  "id": "g2_add_two_digit",
+  "grade_level": 2,
+  "title_th": "บวกเลขสองหลักแบบไม่ทด",
+  "objective_th": "นักเรียนสามารถบวกจำนวนสองหลักสองจำนวนโดยไม่มีตัวทดได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสเก็บดาวกระดาษได้ 23 ดวง แล้วเก็บเพิ่มได้อีก 45 ดวง รวมพี่อลิสมีดาวกระดาษกี่ดวง? ⭐",
+  "explanation_steps": [
+    "เวลาบวกเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน หลักหน่วยอยู่ขวาสุด หลักสิบอยู่ซ้าย",
+    "บวกหลักหน่วยก่อน แล้วบวกหลักสิบ",
+    "ถ้าผลบวกหลักหน่วยไม่เกิน 9 แปลว่าไม่ต้องทด",
+    "ผลลัพธ์อยู่ในหลักเดียวกันกับตัวตั้ง บรรทัดเดียวกัน",
+    "ตรวจคำตอบโดยสลับที่ เช่น 45 + 23 = 23 + 45"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "บวกดินสอ",
+      "question_th": "กล่องแรกมีดินสอ 32 แท่ง กล่องที่สองมีดินสอ 45 แท่ง รวมกี่แท่ง?",
+      "solution_th": "32 + 45 = 77 แท่ง ✅"
+    },
+    {
+      "title_th": "บวกลูกปัด",
+      "question_th": "เพื่อนให้ลูกปัด 23 ลูก แม่ให้อีก 54 ลูก รวมได้กี่ลูก?",
+      "solution_th": "23 + 54 = 77 ลูก ✅"
+    },
+    {
+      "title_th": "บวกขนม",
+      "question_th": "มีขนม 41 ชิ้น ได้เพิ่มอีก 38 ชิ้น รวมขนมกี่ชิ้น?",
+      "solution_th": "41 + 38 = 79 ชิ้น ✅"
+    }
+  ],
+  "common_mistakes": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน เช่น เขียนหลักสิบอยู่ใต้หลักหน่วย",
+    "บวกผิดหลัก เช่น บวกหลักสิบก่อนหลักหน่วย",
+    "ลืมบวกหลักใดหลักหนึ่ง ทำให้ผลลัพธ์ผิด"
+  ],
+  "hints": [
+    "เขียนเลขให้ตรงหลักกัน หลักหน่วยตรงหลักหน่วย หลักสิบตรงหลักสิบ",
+    "บวกหลักหน่วยก่อนเสมอ แล้วค่อยบวกหลักสิบ",
+    "ตรวจคำตอบโดยลบกลับ: เอาผลลัพธ์ลบตัวบวกตัวหนึ่ง ต้องได้อีกตัว"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_add_two_digit",
+  "skill_code": "g2_add_two_digit",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "📖 🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 วันนี้โรงเรียนจัดงานวิชากร มีนักเรียนชาย 34 คน และนักเรียนหญิง 25 คน เข้าร่วมงาน รวมมีนักเรียนกี่คน?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 34
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 25
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "34 + 25 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "correct_answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🍎 แม่ซื้อแอปเปิ้ลแดง 23 ผล และแอปเปิ้ลเขียว 45 ผล รวมแม่ซื้อแอปเปิ้ลกี่ผล?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 23
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 45
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "23 + 45 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "📖 🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🧸 มีตุ๊กตาหมีในกล่อง 32 ตัว และตุ๊กตากระต่าย 44 ตัว รวมตุ๊กตากี่ตัว?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 32
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 44
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "32 + 44 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "📖 🏪 ตลาด",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏪 ร้านค้ามีน้ำผลไม้ 41 ขวด ขายเพิ่มอีก 37 ขวด รวมน้ำผลไม้กี่ขวด?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 41
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 37
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "41 + 37 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🐕 ฟาร์มมีสุนัขพันธุ์พิเศษ 52 ตัว และสุนัขพันธุ์ทั่วไปอีก 36 ตัว รวมมีสุนัขกี่ตัว?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 52
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 36
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "52 + 36 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "📖 🌻 สวน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🌻 สวนดอกไม้มีดอกทานตะวัน 33 ดอก และดอกกุหลาบ 55 ดอก รวมดอกไม้กี่ดอก?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 33
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 55
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "33 + 55 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "📖 🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎨 ในห้องศิลปะมีสีชอล์คสีแดง 21 ก้าน และสีชอล์คสีน้ำเงิน 47 ก้าน รวมสีชอล์คกี่ก้าน?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 21
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 47
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "21 + 47 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📖 📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "📚 ห้องสมุดมีหนังสือภาษาไทย 43 เล่ม และหนังสือภาษาอังกฤษ 35 เล่ม รวมหนังสือกี่เล่ม?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 43
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 35
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "43 + 35 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎮 เกมมีเพชร 26 เม็ด เก็บเพชรเพิ่มได้อีก 52 เม็ด รวมเพชรกี่เม็ด?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 26
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 52
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "26 + 52 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "📖 🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎉 งานเทศกาลมีลูกโป่งสีแดง 38 ลูก และลูกโป่งสีเหลือง 41 ลูก รวมลูกโป่งกี่ลูก?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 38
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 41
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "38 + 41 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "45 + 32 = ?",
+                "choices": [
+                  "44",
+                  "43",
+                  "45",
+                  "42"
+                ],
+                "answer": "45"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ]
+        },
+        "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+      
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": ""
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "34 + 25 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 Try It",
+          "question": "45 + 32 = ?",
+          "choices": [
+            "76",
+            "75",
+            "77",
+            "74"
+          ],
+          "answer": "77",
+    "correct_answer": "77",
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "บวกเลขสองหลัก",
+  "preview_subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "cover_theme": "add_two_digit",
+  "cover_emoji": "🔢",
+  "cover_color": "green",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "learning_objective_th": "นักเรียนสามารถบวกจำนวนสองหลักสองจำนวนโดยไม่มีตัวทดได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสเก็บดาวกระดาษได้ 23 ดวง แล้วเก็บเพิ่มได้อีก 45 ดวง รวมพี่อลิสมีดาวกระดาษกี่ดวง? ⭐",
+  "concept_explanation_th": "เวลาบวกเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน หลักหน่วยอยู่ขวาสุด หลักสิบอยู่ซ้าย บวกหลักหน่วยก่อน แล้วบวกหลักสิบ ถ้าผลบวกหลักหน่วยไม่เกิน 9 แปลว่าไม่ต้องทด ผลลัพธ์อยู่ในหลักเดียวกันกับตัวตั้ง บรรทัดเดียวกัน ตรวจคำตอบโดยสลับที่ เช่น 45 + 23 = 23 + 45",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 20,
+    "parts": [
+      8,
+      12
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท บวกเลขสองหลักแบบไม่ทด ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "บวกดินสอ",
+      "question_th": "กล่องแรกมีดินสอ 32 แท่ง กล่องที่สองมีดินสอ 45 แท่ง รวมกี่แท่ง?",
+      "solution_th": "32 + 45 = 77 แท่ง ✅"
+    },
+    {
+      "title_th": "บวกลูกปัด",
+      "question_th": "เพื่อนให้ลูกปัด 23 ลูก แม่ให้อีก 54 ลูก รวมได้กี่ลูก?",
+      "solution_th": "23 + 54 = 77 ลูก ✅"
+    },
+    {
+      "title_th": "บวกขนม",
+      "question_th": "มีขนม 41 ชิ้น ได้เพิ่มอีก 38 ชิ้น รวมขนมกี่ชิ้น?",
+      "solution_th": "41 + 38 = 79 ชิ้น ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน เช่น เขียนหลักสิบอยู่ใต้หลักหน่วย",
+    "บวกผิดหลัก เช่น บวกหลักสิบก่อนหลักหน่วย",
+    "ลืมบวกหลักใดหลักหนึ่ง ทำให้ผลลัพธ์ผิด"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_add_two_digit_q01",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "9",
+        "12",
+        "6",
+        "14"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
+      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q02",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "20"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q03",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q04",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "42",
+        "30",
+        "12"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q05",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q06",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q07",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "40",
+        "32",
+        "13"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q08",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "45",
+        "46",
+        "44",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
+      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q09",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "choices": [
+        "17",
+        "18",
+        "16",
+        "27"
+      ],
+      "correct_answer": "17",
+      "answer": "17",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
+      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_add_two_digit_q10",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "24",
+        "26",
+        "22",
+        "14"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
+      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_add_two_digit_q01",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "9",
+        "12",
+        "6",
+        "14"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
+      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q02",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "20"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q03",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q04",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "42",
+        "30",
+        "12"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q05",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q06",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q07",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "36",
+        "40",
+        "32",
+        "13"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
+      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q08",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "45",
+        "46",
+        "44",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
+      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q09",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "choices": [
+        "17",
+        "18",
+        "16",
+        "27"
+      ],
+      "correct_answer": "17",
+      "answer": "17",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
+      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_add_two_digit_q10",
+      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "24",
+        "26",
+        "22",
+        "14"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
+      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    }
+  ]
+}

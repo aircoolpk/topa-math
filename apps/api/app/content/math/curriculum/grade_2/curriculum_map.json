@@ -1,0 +1,751 @@
+{
+  "grade_level": 2,
+  "grade_label": "ป.2",
+  "year_goal_th": "ขยายความเข้าใจจำนวนถึง 1000 เรียนสูตรคูณแม่ 2,5,10 และการบวกลบแบบมีทด ผ่าน Bar Model และ Place Value",
+  "student_profile_th": "เด็กอายุ 7-8 ปี มีพื้นฐานบวกลบภายใน 20 เริ่มเข้าใจ Number Bond แต่ยังต้องฝึกให้แน่น เริ่มเรียนรู้การคูณเป็นการรวมกลุ่มเท่ากัน",
+  "singapore_math_focus_th": "เน้น Place Value ให้แน่นก่อนสอนบวกลบ สอนสูตรคูณผ่าน Array และ Number Line ไม่ให้ท่องจำโดยไม่เข้าใจ ฝึก Bar Model สำหรับโจทย์ปัญหา",
+  "prerequisite_skills": [
+    "g1_add_within_20",
+    "g1_subtract_within_20",
+    "g1_number_bond_6_10"
+  ],
+  "core_strands": [
+    {
+      "strand_id": "numbers_and_operations",
+      "strand_title_th": "จำนวนและการดำเนินการ",
+      "description_th": "จำนวนถึง 1000 การบวกลบสองหลัก สูตรคูณ การหารเบื้องต้น"
+    },
+    {
+      "strand_id": "measurement",
+      "strand_title_th": "การวัด",
+      "description_th": "การวัดความยาว มวล ความจุ เวลา เงิน"
+    },
+    {
+      "strand_id": "geometry",
+      "strand_title_th": "เรขาคณิต",
+      "description_th": "รูปทรงสองมิติ สมมาตรเบื้องต้น"
+    },
+    {
+      "strand_id": "statistics",
+      "strand_title_th": "สถิติเบื้องต้น",
+      "description_th": "การอ่านแผนภูมิรูปภาพ"
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "g2_u01_place_value_1000",
+      "unit_title_th": "ค่าประจำตำแหน่งถึง 1000",
+      "order": 1,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 6,
+      "importance": "core",
+      "learning_objectives": [
+        "อ่านเขียนจำนวนถึง 1000",
+        "เข้าใจค่าประจำตำแหน่ง หลักร้อย หลักสิบ หลักหน่วย",
+        "เปรียบเทียบจำนวนถึง 1000"
+      ],
+      "key_vocabulary": ["หลักร้อย", "หลักสิบ", "หลักหน่วย", "ค่าประจำตำแหน่ง", "เปรียบเทียบ"],
+      "singapore_method": {
+        "concrete_activities": ["ใช้ลูกปัดหลายแผ่น 100 ลูก = 1 ร้อย", "ใช้ตัวต่อพลาสติก 100 ชิ้น", "จัดกลุ่มร้อย-สิบ-หน่วย"],
+        "pictorial_models": ["place-value chart ร้อย-สิบ-หน่วย", "บล็อกพื้นที่", "number line 100-1000"],
+        "abstract_methods": ["345 = 300 + 40 + 5", "เปรียบเทียบโดยดูหลักร้อยก่อน"],
+        "bar_model_usage": "ไม่ใช้ Bar Model ในหน่วยนี้",
+        "number_bond_usage": "ใช้ Number Bond ขยายถึง 1000 เช่น 300+40+5=345",
+        "mental_math_strategy": "ใช้ place value ในการเปรียบเทียบ เช่น 456 กับ 465 ดูหลักร้อยเท่ากัน ดูหลักสิบ 5<6 ดังนั้น 456<465"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g2_counting_100_1000",
+          "lesson_title_th": "การนับและเขียนจำนวนถึง 1000",
+          "objective_th": "นับและเขียนจำนวน 100-1000 โดยใช้หลักร้อยเป็นตัวช่วย",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 10 แผ่นต่อกัน = 100 ลูก ต่อ 5 แผ่น = 500",
+            "pictorial": "วาด place-value chart แสดงร้อย สิบ หน่วย",
+            "abstract": "532 = 500 + 30 + 2, อ่านว่า ห้าร้อยสามสิบสอง"
+          },
+          "common_misconceptions": ["อ่านเลข 324 ว่า สามร้อยยี่สิบสี่ (ผิด) ควรเป็น สามร้อยยี่สิบสี่", "ลืมว่าศูนย์มีค่าเป็นตัวคูณ 100 ยังเป็นศูนย์"],
+          "diagnostic_checks": ["ให้เขียนเลข 246 ใน place-value chart", "ให้อ่านเลข 307"],
+          "practice_types": ["เกมนับร้อย", "เขียนเลขตามคำพูด", "จับคู่ตัวเลขกับค่าประจำตำแหน่ง"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจว่า 0 ในหลักร้อยหมายความว่าอย่างไร",
+              "remediation_activity": "ใช้ place-value chart ที่มีช่องว่างให้เห็นชัดว่าต้องเติม 0",
+              "recommended_practice_type": "เขียนตัวเลขจากคำพูด 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["นับเม็ดข้าวเป็นร้อยๆ", "นับเงินถุงละร้อยบาท"],
+          "quest_ideas": ["daily: หาจำนวนร้อยในชีวิตจริง เช่น ลูกชิ้น 500 ลูก", "hunt: หาตัวเลข 3 หลักบนป้ายราคา"]
+        },
+        {
+          "lesson_id": "g2_compare_1000",
+          "lesson_title_th": "การเปรียบเทียบจำนวนถึง 1000",
+          "objective_th": "เปรียบเทียบจำนวนสองจำนวนถึง 1000 โดยใช้ place value",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัดเปรียบเทียบ 2 กอง ดูว่ากองไหนมากกว่า",
+            "pictorial": "วาด number line 0-1000 ทดบนกระดาษ",
+            "abstract": "567 กับ 576 หลักร้อยเท่ากัน หลักสิบ 6<7 ดังนั้น 567<576"
+          },
+          "common_misconceptions": ["เปรียบเทียบโดยดูตัวเลขสุดท้ายก่อน เช่น 589>580 เพราะ 9>0"],
+          "diagnostic_checks": ["ให้เปรียบเทียบ 456 กับ 465", "ให้เรียงลำดับ 234, 243, 223"],
+          "practice_types": ["เกมเปรียบเทียบ", "เขียนเครื่องหมาย > < ="],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ดูตัวเลขท้ายสุดก่อนไม่ใช่หลักใหญ่ที่สุด",
+              "remediation_activity": "ฝึกดูหลักร้อยก่อนเสมอ ถ้าเท่ากันค่อยดูหลักสิบ",
+              "recommended_practice_type": "เกมเปรียบเทียบ 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["เปรียบเทียบราคาสินค้า เช่น ขนมถุงละ 345 บาท กับ 354 บาท"],
+          "quest_ideas": ["daily: เปรียบเทียบราคาสินค้า 2 อย่างที่เห็น"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "เขียนและอ่านจำนวน 100-1000 จำนวน 20 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: 305 อ่านว่า สามร้อยห้า (ถูกคือ สามร้อยห้า)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_counting_11_20", "g1_compare_within_10"],
+        "next_grade_preparation": ["การบวกลบสองหลัก"]
+      }
+    },
+    {
+      "unit_id": "g2_u02_add_two_digit",
+      "unit_title_th": "การบวกจำนวนสองหลัก",
+      "order": 2,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 7,
+      "importance": "core",
+      "learning_objectives": [
+        "บวกจำนวนสองหลักแบบไม่มีทด",
+        "บวกจำนวนสองหลักแบบมีทด ไม่เกินหลักร้อย",
+        "ใช้ Bar Model ช่วยแก้โจทย์บวก"
+      ],
+      "key_vocabulary": ["บวก", "ทด", "หลักร้อย", "หลักสิบ", "หลักหน่วย", "รวม"],
+      "singapore_method": {
+        "concrete_activities": ["ใช้ลูกปัดบวกสิบก่อนแล้วบวกหน่วย", "ใช้ place-value blocks"],
+        "pictorial_models": ["place-value chart การทด", "bar model บวก", "number line jump"],
+        "abstract_methods": ["45+38=83 ทด 1 สิบไปหลักร้อย", "ใช้วิธีบวกทีละหลัก"],
+        "bar_model_usage": "Part-Part-Whole Bar แสดงส่วนย่อย 45 และ 38 ได้ส่วนรวม 83",
+        "number_bond_usage": "ใช้ Number Bond รู้ว่า 40+30=70, 5+8=13, รวม 70+13=83",
+        "mental_math_strategy": "บวกสิบก่อนแล้วบวกหน่วย เช่น 45+38 คิด 45+30=75, 75+8=83"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g2_add_no_carry",
+          "lesson_title_th": "การบวกสองหลักแบบไม่มีทด",
+          "objective_th": "บวกจำนวนสองหลักที่ผลบวกไม่เกิน 99 ไม่มีทด",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 23 กับ 45 บวกกันบน place-value chart",
+            "pictorial": "วาด place-value chart บวกทีละหลัก สิบก่อน",
+            "abstract": "23+45=68 บวกสิบกับสิบ 2+4=6 บวกหน่วยกับหน่วย 3+5=8"
+          },
+          "common_misconceptions": ["บวกหน่วยก่อนสิบโดยไม่เข้าใจ", "ลืมว่าต้องเขียนตัวทดไว้ที่หลักสิบ"],
+          "diagnostic_checks": ["ให้บวก 34+52, 21+67, 43+55 ได้ถูกต้อง"],
+          "practice_types": ["ฝึกบวกบน place-value", "เกมบวกสองหลัก"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ยังบวกหน่วยก่อนสิบ",
+              "remediation_activity": "ฝึกบวกสิบก่อนเสมอโดยใช้ place-value chart",
+              "recommended_practice_type": "ฝึกบวกไม่ทด 10 ข้อ",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีสมุด 23 ใบ ซื้อเพิ่ม 45 ใบ รวมเท่าไร"],
+          "quest_ideas": ["daily: หาผลบวกสองจำนวนในชีวิตจริง เช่น ราคาของ 2 อย่าง"]
+        },
+        {
+          "lesson_id": "g2_add_with_carry",
+          "lesson_title_th": "การบวกสองหลักแบบมีทด",
+          "objective_th": "บวกจำนวนสองหลักที่ผลบวกหน่วยเกิน 9 ต้องทด",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 45 กับ 38 บวกกัน 8+5=13 ทด 1 สิบไปหลักสิบ",
+            "pictorial": "วาด place-value chart แสดงการทด 1 จากหน่วยไปสิบ",
+            "abstract": "45+38=83 ทด 1 สิบ 4+3+1=8 สิบ 5+8=13 หน่วย 3 ทด 1"
+          },
+          "common_misconceptions": ["ลืมทด ทดผิดหลัก บวกสิบเข้าหน่วย"],
+          "diagnostic_checks": ["ให้บวก 45+38, 56+27, 67+18 ได้ถูกต้อง"],
+          "practice_types": ["ฝึกบวกมีทด", "เกมบวกเร็ว", "ตรวจคำตอบด้วยการลบกลับ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ลืมทดไปหลักสิบ",
+              "remediation_activity": "ฝึกเขียนตัวทดไว้บนหัวหนังสือแต่ละหลัก ไม่ท่องในใจ",
+              "recommended_practice_type": "ฝึกบวกมีทด 10 ข้อ พร้อมเขียนตัวทด",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีเงิน 45 บาท หยิบเงินอีก 38 บาท รวมเท่าไร"],
+          "quest_ideas": ["speed: บวกมีทด 20 ข้อใน 5 นาที", "accuracy: บวกถูกต้อง 10 ข้อติดกัน"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "บวกสองหลัก 20 ข้อ มีทดและไม่มีทด"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: 57+28=75 (ถูกคือ 85), 69+27=86 (ถูกคือ 96)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_add_within_20"],
+        "next_grade_preparation": ["การลบสองหลัก", "การบวกลบสามหลัก"]
+      }
+    },
+    {
+      "unit_id": "g2_u03_subtract_two_digit",
+      "unit_title_th": "การลบจำนวนสองหลัก",
+      "order": 3,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 7,
+      "importance": "core",
+      "learning_objectives": [
+        "ลบจำนวนสองหลักแบบไม่มีการกระจาย",
+        "ลบจำนวนสองหลักแบบมีการกระจาย (กู้ยืม)",
+        "ใช้ Bar Model ช่วยแก้โจทย์ลบ"
+      ],
+      "key_vocabulary": ["ลบ", "กระจาย", "กู้ยืม", "เหลือ", "ตัวตั้ง", "ตัวลบ"],
+      "singapore_method": {
+        "concrete_activities": ["ใช้ลูกปัดแยกกลุ่ม ลบหน่วยก่อนแล้วลบสิบ", "ใช้ place-value blocks"],
+        "pictorial_models": ["place-value chart การกระจาย", "bar model ลบ", "number line bridge"],
+        "abstract_methods": ["72-38=34 กระจาย 7 สิบเป็น 6 สิบ 12 หน่วย 12-8=4 หน่วย 6-3=3 สิบ"],
+        "bar_model_usage": "Part-Part-Whole Bar: รู้ส่วนรวม 72 ส่วนย่อยหนึ่ง 38 หาส่วนย่อยที่เหลือ 34",
+        "number_bond_usage": "ใช้ Number Bond ว่า 38+34=72 ดังนั้น 72-38=34",
+        "mental_math_strategy": "ลบสิบก่อนแล้วลบหน่วย เช่น 72-38 คิด 72-30=42, 42-8=34"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g2_subtract_no_borrow",
+          "lesson_title_th": "การลบสองหลักแบบไม่มีการกระจาย",
+          "objective_th": "ลบจำนวนสองหลักที่หน่วยของตัวตั้งมากกว่าหน่วยของตัวลบ",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 68 ลบ 35 ลบหน่วย 8-5=3 ลบสิบ 6-3=3",
+            "pictorial": "วาด place-value chart ลบทีละหลัก",
+            "abstract": "68-35=33 ลบหน่วยก่อน 8-5=3 ลบสิบ 6-3=3"
+          },
+          "common_misconceptions": ["ลบสิบก่อนหน่วย ทำให้สับสน"],
+          "diagnostic_checks": ["ให้ลบ 78-45, 89-37, 67-24 ได้ถูกต้อง"],
+          "practice_types": ["ฝึกลบไม่กระจาย", "เกมลบสองหลัก"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ลบสิบก่อนหน่วย",
+              "remediation_activity": "ฝึกลบหน่วยก่อนเสมอ ขีดเส้นแบ่งหลัก",
+              "recommended_practice_type": "ฝึกลบไม่กระจาย 10 ข้อ",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีเงิน 68 บาท ซื้อของ 35 บาท เหลือเท่าไร"],
+          "quest_ideas": ["daily: หาผลลบในชีวิตจริง เช่น ราคาสินค้าลด"]
+        },
+        {
+          "lesson_id": "g2_subtract_with_borrow",
+          "lesson_title_th": "การลบสองหลักแบบมีการกระจาย",
+          "objective_th": "ลบจำนวนสองหลักที่หน่วยของตัวตั้งน้อยกว่าหน่วยของตัวลบ",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 72 ลบ 38 กระจาย 1 สิบเป็น 10 หน่วย 12-8=4",
+            "pictorial": "วาด place-value chart แสดงการกระจาย 1 จากสิบไปหน่วย",
+            "abstract": "72-38=34 กระจาย 7 สิบเป็น 6 สิบ 12 หน่วย 12-8=4 หน่วย 6-3=3 สิบ"
+          },
+          "common_misconceptions": ["กระจายผิดหลัก ลืมว่าหลักสิบลดลง 1", "กระจายจากหลักที่เป็น 0"],
+          "diagnostic_checks": ["ให้ลบ 72-38, 81-27, 63-18 ได้ถูกต้อง"],
+          "practice_types": ["ฝึกลบมีการกระจาย", "เกมลบเร็ว", "ตรวจคำตอบด้วยการบวกกลับ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "กระจายผิดหลักหรือลืมว่าสิบลดลง 1",
+              "remediation_activity": "ฝึกเขียนตัวกระจายไว้บนหัวหนังสือแต่ละหลัก ขีดเส้นจากสิบไปหน่วย",
+              "recommended_practice_type": "ฝึกลบมีการกระจาย 10 ข้อ พร้อมเขียนขั้นตอน",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีเงิน 72 บาท ซื้อของ 38 บาท เหลือเท่าไร"],
+          "quest_ideas": ["speed: ลบมีการกระจาย 20 ข้อใน 5 นาที", "accuracy: ลบถูกต้อง 10 ข้อติดกัน"]
+        },
+        {
+          "lesson_id": "g2_word_problems_add_subtract",
+          "lesson_title_th": "โจทย์ปัญหาการบวกลบสองหลัก",
+          "objective_th": "แก้โจทย์บวกลบสองหลักโดยใช้ Bar Model",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้วัสดุแสดงตามโจทย์ วาดรูปก่อนแก้",
+            "pictorial": "วาด Bar Model แสดงส่วนย่อยและส่วนรวม",
+            "abstract": "เขียนประโยคสัญลักษณ์ หาคำตอบ พร้อมเขียนหน่วย"
+          },
+          "common_misconceptions": ["ไม่แยกบวกกับลบในโจทย์", "ไม่เขียนหน่วยในคำตอบ"],
+          "diagnostic_checks": ["ให้อ่านโจทย์ วาด Bar Model และหาคำตอบ"],
+          "practice_types": ["ทำโจทย์บวกลบ", "วาด Bar Model", "แต่งโจทย์เอง"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่แยกว่าโจทย์เป็นบวกหรือลบ",
+              "remediation_activity": "ฝึกเน้นคำบอก ได้เพิ่ม=บวก เหลือ/เอาออก=ลบ",
+              "recommended_practice_type": "แยกบวก-ลบจากโจทย์ 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["โจทย์เรื่องเงิน สินค้า จำนวนของ"],
+          "quest_ideas": ["daily: แต่งโจทย์บวกลบจากชีวิตจริง 1 ข้อ", "creative: เขียนโจทย์ให้เพื่อนทำ"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "ลบสองหลัด 20 ข้อ มีการกระจายและไม่มีการกระจาย พร้อมโจทย์ปัญหา 5 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: 50-23=17 (ถูกคือ 27), 81-45=34 (ถูกคือ 36)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g2_add_two_digit"],
+        "next_grade_preparation": ["การคูณเบื้องต้น"]
+      }
+    },
+    {
+      "unit_id": "g2_u04_multiplication_intro",
+      "unit_title_th": "การคูณเบื้องต้นและสูตรคูณแม่ 2, 5, 10",
+      "order": 4,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 8,
+      "importance": "core",
+      "learning_objectives": [
+        "เข้าใจความหมายของการคูณในเชิงการรวมกลุ่มเท่ากัน",
+        "ท่องสูตรคูณแม่ 2, 5, 10 ได้",
+        "ใช้สูตรคูณแม่แก้โจทย์ง่ายๆ"
+      ],
+      "key_vocabulary": ["คูณ", "สูตรคูณ", "แม่", "กลุ่มเท่าๆ กัน", "ผลคูณ", "×"],
+      "singapore_method": {
+        "concrete_activities": ["จัดวัสดุเป็นกลุ่มเท่าๆ กัน เช่น 4 กลุ่ม กลุ่มละ 3", "ใช้ลูกปัดเรียงเป็นแถว"],
+        "pictorial_models": ["array", "number line skip counting", "equal groups"],
+        "abstract_methods": ["4 × 3 = 12 อ่านว่า 4 คูณสามเท่ากับ 12", "ใช้สูตรคูณแม่ที่รู้แล้วหาค่าที่ไม่รู้"],
+        "bar_model_usage": "Bar Model แสดงกลุ่มเท่าๆ กัน 4 กลุ่ม กลุ่มละ 3 รวม 12",
+        "number_bond_usage": "ใช้ Number Bond ช่วยในการคูณ เช่น 4×3 = 3+3+3+3",
+        "mental_math_strategy": "Skip counting: นับข้ามบน number line เช่น 4 คูณ 3 นับ 4, 8, 12"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g2_multiplication_concept",
+          "lesson_title_th": "ความหมายของการคูณ",
+          "objective_th": "เข้าใจว่าการคูณคือการรวมกลุ่มเท่ากันหลายกลุ่ม",
+          "teaching_sequence_cpa": {
+            "concrete": "จัดดินสอเป็น 4 กลุ่ม กลุ่มละ 3 แท่ง รวมกี่แท่ง",
+            "pictorial": "วาด array รูปภาพ 4 แถว แถวละ 3 ชิ้น",
+            "abstract": "เขียน 4 × 3 = 12 อ่านว่า 4 คูณ 3"
+          },
+          "common_misconceptions": ["สับสนว่า 3×4 กับ 4×3 คำตอบเท่ากันหรือไม่", "ไม่เข้าใจว่าคูณคือการรวมกลุ่ม"],
+          "diagnostic_checks": ["ให้อธิบายว่า 3×4 หมายความว่าอะไร", "ให้เขียนประโยคคูณจากรูป"],
+          "practice_types": ["เกมจัดกลุ่ม", "เขียนประโยคคูณจากรูป", "อธิบายความหมาย"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจว่าคูณคือการรวมกลุ่มเท่ากัน",
+              "remediation_activity": "ให้จัดวัสดุจริงเป็นกลุ่มตามโจทย์ แล้วนับรวม",
+              "recommended_practice_type": "เกมจัดกลุ่ม 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีลูกบอล 5 กล่อง กล่องละ 3 ลูก รวมกี่ลูก", "มีดอกไม้ 4 ช่อ ช่อละ 2 ดอก รวมกี่ดอก"],
+          "quest_ideas": ["daily: หาสถานการณ์คูณในชีวิตจริง เช่น ของในกล่อง"]
+        },
+        {
+          "lesson_id": "g2_times_table_2",
+          "lesson_title_th": "สูตรคูณแม่ 2",
+          "objective_th": "ท่องสูตรคูณแม่ 2 ได้และใช้แก้โจทย์",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัดเรียงเป็นแถว 2 แถว นับ skip counting 2, 4, 6...",
+            "pictorial": "วาด number line กระโดดข้าม 2",
+            "abstract": "2 × 1 = 2, 2 × 2 = 4, 2 × 3 = 6 ... 2 × 10 = 20"
+          },
+          "common_misconceptions": ["ท่องจำโดยไม่เข้าใจว่า 2×7 คือ 7+7", "สับสนว่า 2×5 = 12 (ถูกคือ 10)"],
+          "diagnostic_checks": ["ให้ท่องสูตรคูณแม่ 2 จาก 2×1 ถึง 2×10", "ให้หา 2×7, 2×9 ได้ถูกต้อง"],
+          "practice_types": ["ท่องสูตรคูณ", "เกม skip counting", "ทำโจทย์คูณแม่ 2"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ท่องได้แต่หาค่าเฉพาะหน้าไม่ได้ เช่น 2×7",
+              "remediation_activity": "ฝึกนับข้ามบน number line โดยเริ่มจาก 0 กระโดดทีละ 2",
+              "recommended_practice_type": "Skip counting แม่ 2 ทุกวัน 5 นาที",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีถุงมือ 2 คู่ มีกี่ชิ้น", "มีจาน 2 ใบ มีกี่ใบ"],
+          "quest_ideas": ["daily: ท่องสูตรคูณแม่ 2 ทุกเช้า", "speed: ตอบสูตรคูณแม่ 2 ได้ภายใน 2 นาที"]
+        },
+        {
+          "lesson_id": "g2_times_table_5_10",
+          "lesson_title_th": "สูตรคูณแม่ 5 และ 10",
+          "objective_th": "ท่องสูตรคูณแม่ 5 และ 10 ได้และใช้แก้โจทย์",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้นิ้วมือ 5 นิ้ว นับทีละ 5",
+            "concrete_2": "ใช้ไม้บรรทัด 10 เซนติเมตร นับทีละ 10",
+            "pictorial": "วาด number line กระโดดข้าม 5 และ 10",
+            "abstract": "5×1=5, 5×2=10 ... 5×10=50 | 10×1=10, 10×2=20 ... 10×10=100"
+          },
+          "common_misconceptions": ["5×2=12 (ถูกคือ 10), 10×5=15 (ถูกคือ 50)"],
+          "diagnostic_checks": ["ให้ท่องสูตรคูณแม่ 5 และ 10 จาก 1-10"],
+          "practice_types": ["ท่องสูตรคูณ", "เกมผสมแม่ 2, 5, 10"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ยังท่องช้าหรือท่องผิด",
+              "remediation_activity": "ฝึกนับข้ามทีละ 5 และทีละ 10 บน number line",
+              "recommended_practice_type": "Skip counting ทุกเช้า 5 นาที",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ซื้อขนม 5 ชิ้น ชิ้นละ 10 บาท รวมเท่าไร", "มีนิ้วมือ 5 มือ มีกี่นิ้ว"],
+          "quest_ideas": ["daily: ท่องสูตรคูณแม่ 5 และ 10 ทุกเช้า", "boss: ตอบแม่ 2, 5, 10 ผสมกันได้ภายใน 3 นาที"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "ท่องสูตรคูณแม่ 2, 5, 10 ได้ 50 ข้อใน 5 นาที"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: 5×6=36 (ถูกคือ 30), 10×8=8 (ถูกคือ 80)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": [],
+        "next_grade_preparation": ["สูตรคูณแม่อื่นๆ", "การหารเบื้องต้น"]
+      }
+    },
+    {
+      "unit_id": "g2_u05_measurement_time_money",
+      "unit_title_th": "การวัด เวลา และเงิน",
+      "order": 5,
+      "strand_id": "measurement",
+      "estimated_lessons": 7,
+      "importance": "core",
+      "learning_objectives": [
+        "วัดความยาวเป็นเซนติเมตร เมตร",
+        "อ่านเวลาถึง 5 นาทีบนนาฬิกาเข็ม",
+        "คำนวณเงินทอนภายใน 100 บาท"
+      ],
+      "key_vocabulary": ["เซนติเมตร", "เมตร", "กิโลกรัม", "ลิตร", "นาที", "เงินทอน"],
+      "singapore_method": {
+        "concrete_activities": ["วัดโต๊ะด้วยไม้บรรทัดจริง", "หมุนเข็มนาฬิกา", "ใช้เหรียญจริงซื้อขาย"],
+        "pictorial_models": ["ไม้บรรทัดบนกระดาษ", "เข็มนาฬิกาบนกระดาษ", "เกมซื้อขาย"],
+        "abstract_methods": ["อ่านเวลาเป็นตัวเลข เช่น 3:25 อ่าน 3 โมง 25 นาที", "คำนวณเงินทอน 100-67=33"],
+        "bar_model_usage": "ใช้ Bar Model ง่ายๆ สำหรับโจทย์เงิน เช่น มี 100 บาท ซื้อ 67 บาท ทอนเท่าไร",
+        "number_bond_usage": "ใช้ Number Bond ช่วยหาเงินทอน เช่น 100-67 หาว่า 67+33=100",
+        "mental_math_strategy": "ใช้ Number Bond หาเงินทอน: 100-67 คิด 67+33=100 ดังนั้นได้ทอน 33"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g2_standard_measurement",
+          "lesson_title_th": "การวัดความยาว มวล ความจุ",
+          "objective_th": "วัดความยาวเป็นซม. ม. มวลเป็นกก. ความจุเป็นลิตร",
+          "teaching_sequence_cpa": {
+            "concrete": "วัดโต๊ะด้วยไม้บรรทัดจริง ชั่งของด้วยตาชั่ง รดน้ำลงถ้วยยิบ",
+            "pictorial": "วาดไม้บรรทัดบนกระดาษ ระบุหน่วย",
+            "abstract": "โต๊ะกว้าง 100 ซม. = 1 ม. สมุดหนัก 200 ก."
+          },
+          "common_misconceptions": ["สับสนหน่วย เช่น ใช้ ซม. แทน ม.", "ไม่เข้าใจว่า 1 ม. = 100 ซม."],
+          "diagnostic_checks": ["ให้วัดสิ่งของจริงเป็นซม.", "ให้บอกว่า 1 ม. เท่ากับกี่ซม."],
+          "practice_types": ["ฝึกวัดจริง", "เปรียบเทียบหน่วย", "แปลงหน่วยง่ายๆ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "สับสนหน่วย ซม. กับ ม.",
+              "remediation_activity": "ให้วัดสิ่งเดียวกันทั้ง ซม. และ ม. เปรียบเทียบกัน",
+              "recommended_practice_type": "วัดและเปรียบเทียบ 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["วัดความสูงของตัวเอง", "ชั่งน้ำหนัก", "รดน้ำต้นไม้"],
+          "quest_ideas": ["daily: วัดสิ่งของ 3 อย่างในบ้านเป็นซม. และ ม."]
+        },
+        {
+          "lesson_id": "g2_time_5_minutes",
+          "lesson_title_th": "การอ่านเวลาถึง 5 นาที",
+          "objective_th": "อ่านเวลาถึง 5 นาทีบนนาฬิกาเข็ม",
+          "teaching_sequence_cpa": {
+            "concrete": "หมุนเข็มนาฬิกาทุก 5 นาที",
+            "pictorial": "วาดเข็มนาฬิกาแบ่งช่อง 5 นาที",
+            "abstract": "3:25 อ่าน 3 โมง 25 นาที หรือ บ่าย 3 โมง 25 นาที"
+          },
+          "common_misconceptions": ["อ่านเวลาผิดเมื่อเข็มยาวพ้น 12", "ไม่เข้าใจว่าแต่ละช่องคือ 5 นาที"],
+          "diagnostic_checks": ["ให้อ่านเวลา 2:35, 7:20, 11:45"],
+          "practice_types": ["เกมอ่านเวลา", "วาดเข็มตามเวลาที่กำหนด"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจว่าแต่ละช่องบนนาฬิกาคือ 5 นาที",
+              "remediation_activity": "นับนาทีรอบนาฬิกา 5-10-15-20... โดยเข็มนาทีชี้ที่ 1=5 นาที 2=10 นาที",
+              "recommended_practice_type": "อ่านเวลาจริง 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ดูเวลาเริ่มเรียน", "ดูเวลาเลิกเรียน", "ดูเวลาดูการ์ตูน"],
+          "quest_ideas": ["daily: ดูเวลาที่นาฬิกาทุกชั่วโมงบอกเวลา"]
+        },
+        {
+          "lesson_id": "g2_money_change",
+          "lesson_title_th": "เงินและการทำเงินทอน",
+          "objective_th": "คำนวณเงินทอนเมื่อซื้อของภายใน 100 บาท",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้เหรียญจริงซื้อของ เช่น ของ 67 บาท จ่าย 100 บาท",
+            "pictorial": "วาดเหรียญบนกระดาษ ฝึกทอนเงิน",
+            "abstract": "100-67=33 บาท ทอน ใช้ Number Bond หา 67+33=100"
+          },
+          "common_misconceptions": ["ไม่เข้าใจว่าเงินทอนคือการลบ", "คิดเงินทอนผิด"],
+          "diagnostic_checks": ["ให้คำนวณเงินทอน 100-45, 100-78, 50-23"],
+          "practice_types": ["เกมซื้อขาย", "ฝึกทอนเงิน", "แต่งโจทย์เงิน"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจว่าต้องใช้การลบหาเงินทอน",
+              "remediation_activity": "ใช้เหรียญจริงจำลองซื้อขาย ให้นับเงินทอนจริง",
+              "recommended_practice_type": "เกมซื้อขาย 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ซื้อขนม 65 บาท จ่าย 100 บาท รับเงินทอนเท่าไร"],
+          "quest_ideas": ["real-life: ช่วยแม่คำนวณเงินทอนเมื่อซื้อของจริง"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "วัดความยาว 5 ข้อ อ่านเวลา 5 ข้อ คำนวณเงินทอน 5 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: ซื้อ 73 บาท จ่าย 100 บาท ทอน 27 บาท (เด็กมักคิด 23)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_read_clock", "g1_coins"],
+        "next_grade_preparation": ["การวัดมาตรฐานที่ละเอียดขึ้น", "การอ่านเวลาแบบ 24 ชม."]
+      }
+    },
+    {
+      "unit_id": "g2_u06_shapes_2d",
+      "unit_title_th": "รูปเรขาคณิตสองมิติ",
+      "order": 6,
+      "strand_id": "geometry",
+      "estimated_lessons": 5,
+      "importance": "core",
+      "learning_objectives": [
+        "จำแนกรูปสี่เหลี่ยม สามเหลี่ยม วงกลม รูปหลายเหลี่ยม",
+        "บอกแกนสมมาตรเบื้องต้น",
+        "วัดและเปรียบเทียบมุมเบื้องต้น"
+      ],
+      "key_vocabulary": ["สี่เหลี่ยม", "สามเหลี่ยม", "วงกลม", "แกนสมมาตร", "ด้าน", "มุม"],
+      "singapore_method": {
+        "concrete_activities": ["พับกระดาษหาสมมาตร", "จับต้องรูปร่างจริง", "วัดมุมด้วยโพรแทรกเตอร์จริง"],
+        "pictorial_models": ["รูปร่างบนกระดาน", "การพับกระดาษ", "วาดแกนสมมาตร"],
+        "abstract_methods": ["เรียกชื่อรูปร่าง", "นับจำนวนด้าน", "บอกว่ารูปไหนมีแกนสมมาตร"],
+        "bar_model_usage": "ไม่ใช้",
+        "number_bond_usage": "ไม่ใช้",
+        "mental_math_strategy": "จำลักษณะรูปร่าง เช่น สามเหลี่ยมมี 3 ด้าน 3 มุม"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g2_classify_shapes",
+          "lesson_title_th": "การจำแนกรูปเรขาคณิตสองมิติ",
+          "objective_th": "จำแนกและเรียกชื่อรูปร่างต่างๆ บอกจำนวนด้านและมุม",
+          "teaching_sequence_cpa": {
+            "concrete": "ให้เด็กจับต้องรูปร่างจริง จัดเรียงตามลักษณะ",
+            "pictorial": "วาดรูปร่าง ระบายสีตามลักษณะ ขีดเส้นแบ่งด้าน",
+            "abstract": "สี่เหลี่ยมมี 4 ด้าน 4 มุม สามเหลี่ยมมี 3 ด้าน 3 มุม"
+          },
+          "common_misconceptions": ["สับสนรูปที่คล้ายกัน เช่น สี่เหลี่ยมควงกับสี่เหลี่ยมจัตุรัส"],
+          "diagnostic_checks": ["ให้จำแนกรูปร่าง 10 รูป", "ให้บอกจำนวนด้านและมุม"],
+          "practice_types": ["เกมจับคู่รูปร่าง", "วาดรูปตามชื่อ", "จัดรูปตามลักษณะ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่แยกแยะสี่เหลี่ยมชนิดต่างๆ",
+              "remediation_activity": "วัดด้านด้วยไม้บรรทัด บอกว่าด้านเท่ากันหมดหรือไม่",
+              "recommended_practice_type": "วัดด้านรูปร่าง 5 รูป",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["หารูปร่างรอบตัว เช่น ป้ายจราจร หน้าต่าง"],
+          "quest_ideas": ["hunt: หารูปร่างต่างๆ 10 รูปรอบบ้าน"]
+        },
+        {
+          "lesson_id": "g2_symmetry",
+          "lesson_title_th": "แกนสมมาตร",
+          "objective_th": "หาแกนสมมาตรของรูปร่าง",
+          "teaching_sequence_cpa": {
+            "concrete": "พับกระดาษรูปร่างให้ทับกันสนิท รอยพับคือแกนสมมาตร",
+            "pictorial": "วาดรูปร่างพร้อมเส้นแกนสมมาตร",
+            "abstract": "วงกลมมีแกนสมมาตรได้หลายเส้น สี่เหลี่ยมจัตุรัสมี 4 แกน"
+          },
+          "common_misconceptions": ["คิดว่าทุกรูปมีแกนสมมาตร", "ไม่เข้าใจว่าแกนสมมาตรคืออะไร"],
+          "diagnostic_checks": ["ให้พับกระดาษหาแกนสมมาตร", "ให้วาดแกนสมมาตรของรูปที่กำหนด"],
+          "practice_types": ["เกมพับกระดาษ", "วาดแกนสมมาตร"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เห็นว่าพับแล้วทับกันสนิท",
+              "remediation_activity": "ใช้กระจกส่องดูว่าภาพสะท้อนทับกันพอดี",
+              "recommended_practice_type": "พับกระดาษหาแกน 5 รูป",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["หน้าต่าง ประตู ผีเสื้อ ตัวอักษรบางตัว"],
+          "quest_ideas": ["daily: หารูปที่มีแกนสมมาตร 3 รูปในบ้าน"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "จำแนกรูปร่าง 10 ข้อ หาแกนสมมาตร 5 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: สี่เหลี่ยมผืนผ้ามีกี่แกนสมมาตร (คำตอบคือ 2)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_basic_shapes"],
+        "next_grade_preparation": ["พื้นที่", "ปริมาตร"]
+      }
+    },
+    {
+      "unit_id": "g2_u07_data_picture_graph",
+      "unit_title_th": "การอ่านแผนภูมิรูปภาพ",
+      "order": 7,
+      "strand_id": "statistics",
+      "estimated_lessons": 4,
+      "importance": "supporting",
+      "learning_objectives": [
+        "อ่านและตีความแผนภูมิรูปภาพ",
+        "นับจำนวนจากแผนภูมิรูปภาพ",
+        "เปรียบเทียบข้อมูลจากแผนภูมิ"
+      ],
+      "key_vocabulary": ["แผนภูมิรูปภาพ", "ข้อมูล", "นับ", "เปรียบเทียบ"],
+      "singapore_method": {
+        "concrete_activities": ["ใช้รูปภาพจริงวางบนกระดาน", "นับของจริงจากแผนภูมิ"],
+        "pictorial_models": ["แผนภูมิรูปภาพบนกระดาษ", "ตารางนับ"],
+        "abstract_methods": ["อ่านตัวเลขจากแผนภูมิ", "เปรียบเทียบจำนวน", "หาค่ามากที่สุด/น้อยที่สุด"],
+        "bar_model_usage": "ไม่ใช้",
+        "number_bond_usage": "ไม่ใช้",
+        "mental_math_strategy": "นับทีละแถว จดลงแล้วเปรียบเทียบ"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g2_read_picture_graph",
+          "lesson_title_th": "การอ่านแผนภูมิรูปภาพ",
+          "objective_th": "อ่านแผนภูมิรูปภาพและนับจำนวนจากรูปภาพ",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้รูปภาพจริงวางบนกระดาน นับแต่ละแถว",
+            "pictorial": "วาดแผนภูมิรูปภาพจากข้อมูลที่เก็บรวบรวม",
+            "abstract": "อ่านตัวเลขจากแผนภูมิ เช่น มะม่วง 8 ลูก มากกว่ามังคุด 5 ลูก"
+          },
+          "common_misconceptions": ["อ่านครึ่งรูปเป็น 1", "สลับแถว"],
+          "diagnostic_checks": ["ให้อ่านแผนภูมิและตอบคำถาม 5 ข้อ"],
+          "practice_types": ["อ่านแผนภูมิ", "สร้างแผนภูมิจากข้อมูล"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "อ่านครึ่งรูปเป็นหนึ่ง",
+              "remediation_activity": "ฝึกนับรูปทีละรูป ต้องแยกให้ออกว่าครึ่งรูปคือครึ่งหนึ่ง",
+              "recommended_practice_type": "อ่านแผนภูมิ 10 ข้อ",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ดูตารางคะแนน ดูสถิติกีฬา"],
+          "quest_ideas": ["daily: อ่านแผนภูมิจากหนังสือพิมพ์ 1 ชิ้น"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "อ่านแผนภูมิรูปภาพ 10 ข้อ"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": [],
+        "next_grade_preparation": ["กราฟแท่ง"]
+      }
+    },
+    {
+      "unit_id": "g2_u08_introduction_to_division",
+      "unit_title_th": "การหารเบื้องต้น",
+      "order": 8,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 6,
+      "importance": "core",
+      "learning_objectives": [
+        "เข้าใจความหมายของการหารในเชิงการแบ่งกลุ่มเท่ากัน",
+        "หารลงตัวและหารไม่ลงตัวเบื้องต้น",
+        "ใช้สูตรคูณช่วยในการหาร"
+      ],
+      "key_vocabulary": ["หาร", "แบ่ง", "กลุ่ม", "เศษ", "ผลหาร", "÷"],
+      "singapore_method": {
+        "concrete_activities": ["แจกวัสดุให้เท่ากันทีละกลุ่ม", "จัดลูกปัดเป็นกลุ่มเท่าๆ กัน"],
+        "pictorial_models": ["array การแบ่ง", "กลุ่มบนภาพ", "number line"],
+        "abstract_methods": ["15 ÷ 3 = 5 อ่านว่า 15 หาร 3 ได้ 5", "ใช้สูตรคูณช่วย เช่น รู้ว่า 3×5=15 ดังนั้น 15÷3=5"],
+        "bar_model_usage": "Bar Model แสดง 15 แบ่งเป็น 3 กลุ่ม กลุ่มละ 5",
+        "number_bond_usage": "ใช้ Number Bond ว่า 15 แบ่งเป็น 3 กลุ่มเท่าๆ กัน กลุ่มละ 5",
+        "mental_math_strategy": "ใช้สูตรคูณที่รู้แล้วช่วยหาค่า เช่น ถ้ารู้ 4×5=20 ก็รู้ว่า 20÷4=5"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g2_division_concept",
+          "lesson_title_th": "ความหมายของการหาร",
+          "objective_th": "เข้าใจว่าการหารคือการแบ่งกลุ่มเท่ากัน",
+          "teaching_sequence_cpa": {
+            "concrete": "มีลูกปัด 12 เม็ด แบ่งให้เพื่อน 3 คน คนละกี่เม็ด",
+            "pictorial": "วาดรูปลูกปัด 12 เม็ด แบ่งเป็น 3 กลุ่ม",
+            "abstract": "12 ÷ 3 = 4 อ่านว่า 12 หาร 3 ได้ 4"
+          },
+          "common_misconceptions": ["สับสนหารกับคูณ", "ไม่เข้าใจว่าหารคือการแบ่ง"],
+          "diagnostic_checks": ["ให้อธิบายว่า 15÷3 หมายความว่าอะไร"],
+          "practice_types": ["เกมแบ่งของ", "เขียนประโยคหารจากรูป"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "สับสนหารกับคูณ",
+              "remediation_activity": "ใช้วัสดุจริงแบ่งให้เห็นภาพว่าหารคือแบ่งออก",
+              "recommended_practice_type": "เกมแบ่งของ 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["แบ่งขนมให้เพื่อน", "แบ่งดินสอให้เพื่อนร่วมกลุ่ม"],
+          "quest_ideas": ["daily: แบ่งสิ่งของให้เพื่อน 2-3 คนให้เท่ากัน"]
+        },
+        {
+          "lesson_id": "g2_division_with_multiplication",
+          "lesson_title_th": "การหารโดยใช้สูตรคูณ",
+          "objective_th": "ใช้สูตรคูณที่รู้แล้วช่วยหาร",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้สูตรคูณแม่ 2, 5, 10 ช่วยหา เช่น 20÷5=4 เพราะ 5×4=20",
+            "pictorial": "วาด array 4 แถว ดูว่า 20÷5=4",
+            "abstract": "20÷5=4 เพราะ 5×4=20, 30÷10=3 เพราะ 10×3=30"
+          },
+          "common_misconceptions": ["ไม่เชื่อมโยงสูตรคูณกับการหาร", "ลืมว่า 20÷5 ต้องหาว่า 5×?=20"],
+          "diagnostic_checks": ["ให้หา 20÷5, 30÷10, 25÷5 ได้ถูกต้อง"],
+          "practice_types": ["ฝึกหารโดยใช้สูตรคูณ", "เกมหารเร็ว"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เชื่อมโยงสูตรคูณกับการหาร",
+              "remediation_activity": "ฝึกเขียนสูตรคูณคู่กับการหาร เช่น 5×4=20 ดังนั้น 20÷5=4",
+              "recommended_practice_type": "ฝึกเชื่อมคู่ คูณ-หาร 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีลูกชิ้น 20 ลูก แบ่งให้เพื่อน 5 คน คนละกี่ลูก"],
+          "quest_ideas": ["speed: หาค่า 20÷5 ได้ภายใน 5 วินาที"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "หารโดยใช้สูตรคูณแม่ 2, 5, 10 จำนวน 20 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: 15÷3=4 (ถูกคือ 5), 20÷5=3 (ถูกคือ 4)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g2_times_table_2_5_10"],
+        "next_grade_preparation": ["สูตรคูณแม่อื่นๆ", "การหารยาว"]
+      }
+    }
+  ]
+}

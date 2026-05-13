@@ -1,0 +1,312 @@
+{
+  "quests": [
+    {
+      "quest_id": "g5_q01_01",
+      "quest_type": "lesson",
+      "title_th": "พื้นฐานการคูณเศษส่วน",
+      "description_th": "เรียนรู้วิธีคูณเศษส่วนกับจำนวนเต็มและเศษส่วน",
+      "skill_code": "g5_fraction_multiplication",
+      "xp_reward": 10,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q01_02",
+      "quest_type": "practice",
+      "title_th": "ฝึกคูณเศษส่วน",
+      "description_th": "ฝึกคูณเศษส่วนให้คล่องและถูกต้อง",
+      "skill_code": "g5_fraction_multiplication",
+      "xp_reward": 15,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q01_03",
+      "quest_type": "review",
+      "title_th": "ทบทวนการคูณเศษส่วน",
+      "description_th": "ทำแบบทดสอบทบทวนการคูณเศษส่วน",
+      "skill_code": "g5_fraction_multiplication",
+      "xp_reward": 20,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q01_04",
+      "quest_type": "boss",
+      "title_th": "จอมคูณเศษส่วน",
+      "description_th": "ต่อสู้กับบอสการคูณเศษส่วน",
+      "skill_code": "g5_fraction_multiplication",
+      "xp_reward": 50,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q02_01",
+      "quest_type": "lesson",
+      "title_th": "ทศนิยมขั้นสูง",
+      "description_th": "เรียนรู้การคูณหารทศนิยมกับ 10, 100, 1000 และการคูณทศนิยม",
+      "skill_code": "g5_decimal_operations",
+      "xp_reward": 10,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q02_02",
+      "quest_type": "practice",
+      "title_th": "ฝึกคูณหารทศนิยม",
+      "description_th": "ฝึกคูณหารทศนิยมให้คล่อง",
+      "skill_code": "g5_decimal_operations",
+      "xp_reward": 15,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q02_03",
+      "quest_type": "review",
+      "title_th": "ทบทวนการคูณหารทศนิยม",
+      "description_th": "ทำแบบทดสอบทบทวนการคูณหารทศนิยม",
+      "skill_code": "g5_decimal_operations",
+      "xp_reward": 20,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q02_04",
+      "quest_type": "boss",
+      "title_th": "ราชันทศนิยม",
+      "description_th": "ต่อสู้กับบอสการคูณหารทศนิยม",
+      "skill_code": "g5_decimal_operations",
+      "xp_reward": 50,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q03_01",
+      "quest_type": "lesson",
+      "title_th": "ร้อยละพื้นฐาน",
+      "description_th": "เรียนรู้ร้อยละ การแปลงร้อยละเป็นเศษส่วนและทศนิยม",
+      "skill_code": "g5_percentage",
+      "xp_reward": 10,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q03_02",
+      "quest_type": "practice",
+      "title_th": "ฝึกร้อยละ",
+      "description_th": "ฝึกแก้โจทย์ร้อยละให้คล่อง",
+      "skill_code": "g5_percentage",
+      "xp_reward": 15,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q03_03",
+      "quest_type": "review",
+      "title_th": "ทบทวนร้อยละ",
+      "description_th": "ทำแบบทดสอบทบทวนร้อยละ",
+      "skill_code": "g5_percentage",
+      "xp_reward": 20,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q03_04",
+      "quest_type": "boss",
+      "title_th": "จอมร้อยละ",
+      "description_th": "ต่อสู้กับบอสร้อยละ",
+      "skill_code": "g5_percentage",
+      "xp_reward": 50,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q04_01",
+      "quest_type": "lesson",
+      "title_th": "อัตราส่วนเบื้องต้น",
+      "description_th": "เรียนรู้อัตราส่วนและสัดส่วน",
+      "skill_code": "g5_ratio",
+      "xp_reward": 10,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q04_02",
+      "quest_type": "practice",
+      "title_th": "ฝึกอัตราส่วน",
+      "description_th": "ฝึกแก้โจทย์อัตราส่วนและสัดส่วน",
+      "skill_code": "g5_ratio",
+      "xp_reward": 15,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q04_03",
+      "quest_type": "review",
+      "title_th": "ทบทวนอัตราส่วน",
+      "description_th": "ทำแบบทดสอบทบทวนอัตราส่วน",
+      "skill_code": "g5_ratio",
+      "xp_reward": 20,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q04_04",
+      "quest_type": "boss",
+      "title_th": "จอมอัตราส่วน",
+      "description_th": "ต่อสู้กับบอสอัตราส่วน",
+      "skill_code": "g5_ratio",
+      "xp_reward": 50,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q05_01",
+      "quest_type": "lesson",
+      "title_th": "รูปทรงสามมิติ",
+      "description_th": "เรียนรู้ลูกบาศก์ ทรงสี่เหลี่ยมมุมฉาก ทรงกลม กรวย ทรงกระบอก",
+      "skill_code": "g5_geometry_3d",
+      "xp_reward": 10,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q05_02",
+      "quest_type": "practice",
+      "title_th": "ฝึกรูปทรง 3 มิติ",
+      "description_th": "ฝึกจำแนกและบอกลักษณะรูปทรง 3 มิติ",
+      "skill_code": "g5_geometry_3d",
+      "xp_reward": 15,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q05_03",
+      "quest_type": "review",
+      "title_th": "ทบทวนรูปทรง 3 มิติ",
+      "description_th": "ทำแบบทดสอบทบทวนรูปทรง 3 มิติ",
+      "skill_code": "g5_geometry_3d",
+      "xp_reward": 20,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q05_04",
+      "quest_type": "boss",
+      "title_th": "นักล่ารูปทรง",
+      "description_th": "ต่อสู้กับบอสรูปทรง 3 มิติ",
+      "skill_code": "g5_geometry_3d",
+      "xp_reward": 50,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q06_01",
+      "quest_type": "lesson",
+      "title_th": "ปริมาตรลูกบาศก์และทรงสี่เหลี่ยม",
+      "description_th": "เรียนรู้การคำนวณปริมาตรลูกบาศก์และทรงสี่เหลี่ยมมุมฉาก",
+      "skill_code": "g5_volume",
+      "xp_reward": 10,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q06_02",
+      "quest_type": "practice",
+      "title_th": "ฝึกคำนวณปริมาตร",
+      "description_th": "ฝึกคำนวณปริมาตรให้คล่อง",
+      "skill_code": "g5_volume",
+      "xp_reward": 15,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q06_03",
+      "quest_type": "review",
+      "title_th": "ทบทวนปริมาตร",
+      "description_th": "ทำแบบทดสอบทบทวนปริมาตร",
+      "skill_code": "g5_volume",
+      "xp_reward": 20,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q06_04",
+      "quest_type": "boss",
+      "title_th": "จอมปริมาตร",
+      "description_th": "ต่อสู้กับบอสปริมาตร",
+      "skill_code": "g5_volume",
+      "xp_reward": 50,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q07_01",
+      "quest_type": "lesson",
+      "title_th": "การวิเคราะห์ข้อมูล",
+      "description_th": "เรียนรู้ค่าเฉลี่ย มัธยฐาน ฐานนิยม",
+      "skill_code": "g5_data_analysis",
+      "xp_reward": 10,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q07_02",
+      "quest_type": "practice",
+      "title_th": "ฝึกวิเคราะห์ข้อมูล",
+      "description_th": "ฝึกหาค่าเฉลี่ย มัธยฐาน ฐานนิยม",
+      "skill_code": "g5_data_analysis",
+      "xp_reward": 15,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q07_03",
+      "quest_type": "review",
+      "title_th": "ทบทวนการวิเคราะห์ข้อมูล",
+      "description_th": "ทำแบบทดสอบทบทวนการวิเคราะห์ข้อมูล",
+      "skill_code": "g5_data_analysis",
+      "xp_reward": 20,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    },
+    {
+      "quest_id": "g5_q07_04",
+      "quest_type": "boss",
+      "title_th": "นักวิเคราะห์ข้อมูลเซียน",
+      "description_th": "ต่อสู้กับบอสการวิเคราะห์ข้อมูล",
+      "skill_code": "g5_data_analysis",
+      "xp_reward": 50,
+      "stars_3_threshold": 100,
+      "stars_2_threshold": 80,
+      "stars_1_threshold": 60
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "daily_quests": [
+    {
+      "quest_id": "g4_daily_01",
+      "title_th": "นักคูณเลข 3 หลัก",
+      "description_th": "ทำโจทย์คูณเลข 3 หลัก 5 ข้อให้ถูก",
+      "requirement_type": "quiz",
+      "skill_code": "g4_multiplication_3digit",
+      "requirement_count": 5,
+      "xp_reward": 20,
+      "coin_reward": 5
+    },
+    {
+      "quest_id": "g4_daily_02",
+      "title_th": "นักหารยาว",
+      "description_th": "ทำโจทย์หารยาว 5 ข้อให้ถูก",
+      "requirement_type": "quiz",
+      "skill_code": "g4_long_division",
+      "requirement_count": 5,
+      "xp_reward": 20,
+      "coin_reward": 5
+    },
+    {
+      "quest_id": "g4_daily_03",
+      "title_th": "นักบวกลบเศษส่วน",
+      "description_th": "ทำโจทย์บวกลบเศษส่วน 5 ข้อให้ถูก",
+      "requirement_type": "quiz",
+      "skill_code": "g4_fractions_add_subtract",
+      "requirement_count": 5,
+      "xp_reward": 20,
+      "coin_reward": 5
+    },
+    {
+      "quest_id": "g4_daily_04",
+      "title_th": "นักทศนิยม",
+      "description_th": "ทำโจทย์ทศนิยม 5 ข้อให้ถูก",
+      "requirement_type": "quiz",
+      "skill_code": "g4_decimal_intro",
+      "requirement_count": 5,
+      "xp_reward": 20,
+      "coin_reward": 5
+    },
+    {
+      "quest_id": "g4_daily_05",
+      "title_th": "นักวัดมุม",
+      "description_th": "ทำโจทย์มุมและรูปทรง 5 ข้อให้ถูก",
+      "requirement_type": "quiz",
+      "skill_code": "g4_geometry_angles",
+      "requirement_count": 5,
+      "xp_reward": 20,
+      "coin_reward": 5
+    },
+    {
+      "quest_id": "g4_daily_06",
+      "title_th": "นักอ่านกราฟ",
+      "description_th": "ทำโจทย์ข้อมูลและกราฟ 5 ข้อให้ถูก",
+      "requirement_type": "quiz",
+      "skill_code": "g4_data_graphs",
+      "requirement_count": 5,
+      "xp_reward": 20,
+      "coin_reward": 5
+    },
+    {
+      "quest_id": "g4_daily_07",
+      "title_th": "นักโจทย์หลายขั้นตอน",
+      "description_th": "ทำโจทย์หลายขั้นตอน 5 ข้อให้ถูก",
+      "requirement_type": "quiz",
+      "skill_code": "g4_multi_step_problems",
+      "requirement_count": 5,
+      "xp_reward": 20,
+      "coin_reward": 5
+    },
+    {
+      "quest_id": "g4_daily_08",
+      "title_th": "นักเก็บ XP ขั้นสูง",
+      "description_th": "ทำควิซให้ได้ 80% ขึ้นไป 3 ครั้ง",
+      "requirement_type": "quiz_mastery",
+      "skill_code": "any",
+      "requirement_count": 3,
+      "xp_reward": 30,
+      "coin_reward": 8
+    },
+    {
+      "quest_id": "g4_daily_09",
+      "title_th": "ผู้อ่านบทเรียน Grade 4",
+      "description_th": "อ่านบทเรียนให้จบ 2 บท",
+      "requirement_type": "lesson_complete",
+      "skill_code": "any",
+      "requirement_count": 2,
+      "xp_reward": 25,
+      "coin_reward": 5
+    },
+    {
+      "quest_id": "g4_daily_10",
+      "title_th": "นักสะสมดาว Grade 4",
+      "description_th": "เก็บดาวจากควิซได้ 6 ดาว",
+      "requirement_type": "stars",
+      "skill_code": "any",
+      "requirement_count": 6,
+      "xp_reward": 25,
+      "coin_reward": 8
+    },
+    {
+      "quest_id": "g4_daily_11",
+      "title_th": "ผู้พิชิตบอส Grade 4",
+      "description_th": "ชนะบอส 1 ตัว",
+      "requirement_type": "boss",
+      "skill_code": "any",
+      "requirement_count": 1,
+      "xp_reward": 40,
+      "coin_reward": 10
+    },
+    {
+      "quest_id": "g4_daily_12",
+      "title_th": "นักคูณหาร",
+      "description_th": "ทำโจทย์คูณและหารรวมกัน 10 ข้อให้ถูก",
+      "requirement_type": "quiz",
+      "skill_code": "g4_multiplication_3digit",
+      "requirement_count": 10,
+      "xp_reward": 30,
+      "coin_reward": 8
+    }
+  ]
+}

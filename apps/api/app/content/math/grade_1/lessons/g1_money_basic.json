@@ -1,0 +1,985 @@
+﻿{
+  "lesson_id": "g1_money_basic",
+  "id": "g1_money_basic",
+  "grade_level": 1,
+  "title_th": "รู้จักเงินบาทไทย",
+  "objective_th": "นักเรียนสามารถจำแนกธนบัตรและเหรียญไทย และบอกค่าได้ถูกต้อง",
+  "story_intro_th": "วันนี้พี่อลิสไปตลาดซื้อของ มีธนบัตรและเหรียญหลายแบบ ช่วยจำแนกดูหน่อยไหม? 🛒💰",
+  "explanation_steps": [
+    "ธนบัตรไทยมี 20 บาท 50 บาท 100 บาท 500 บาท และ 1000 บาท ยิ่งสีเข้ม ยิ่งมีค่ามาก",
+    "เหรียญไทยมี 25 สตางค์ 50 สตางค์ 1 บาท 2 บาท 5 บาท และ 10 บาท เหรียญโลหะที่ใหญ่ที่สุดคือ 10 บาท",
+    "1 บาท = 100 สตางค์ ดังนั้น 1 บาทมากกว่า 50 สตางค์ เสมอ",
+    "เวลาดูว่าธนบัตรหรือเหรียญมีค่าเท่าไหร่ ให้ดูตัวเลขที่พิมพ์บนหน้าบัตรหรือเหรียญ",
+    "เมื่อซื้อของ ให้ดูว่าต้องจ่ายเท่าไหร่ แล้วเลือกธนบัตรหรือเหรียญที่มีค่ารวมกันเท่ากับราคาสินค้า"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "จำแนกธนบัตร",
+      "question_th": "ธนบัตรใบสีเขียวมีค่าเท่าไหร่?",
+      "solution_th": "ธนบัตรใบสีเขียวมีค่า 20 บาท ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบค่าเงิน",
+      "question_th": "ธนบัตร 100 บาท กับ เหรียญ 5 บาท อันไหนมีค่ามากกว่า?",
+      "solution_th": "ธนบัตร 100 บาทมีค่ามากกว่าเหรียญ 5 บาท เพราะ 100 > 5 ✅"
+    },
+    {
+      "title_th": "รวมค่าเงิน",
+      "question_th": "มีเหรียญ 2 บาท 3 เหรียญ และเหรียญ 1 บาท 2 เหรียญ รวมเป็นเงินเท่าไหร่?",
+      "solution_th": "2x3=6 บาท + 1x2=2 บาท = 8 บาท ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนระหว่างเหรียญ 25 สตางค์กับ 50 สตางค์",
+    "คิดว่าเหรียญ 10 บาทใหญ่กว่าธนบัตร 20 บาทเสมอ แต่จริงๆ แล้วธนบัตรมีค่ามากกว่า",
+    "ไม่เข้าใจว่า 1 บาท = 100 สตางค์ ทำให้เปรียบเทียบผิด"
+  ],
+  "hints": [
+    "ธนบัตรมีกระดาษ เหรียญเป็นโลหะ เหรียญที่ใหญ่ที่สุดคือเหรียญ 10 บาท",
+    "ตัวเลขบนธนบัตรหรือเหรียญบอกค่าของมัน ยิ่งตัวเลขมาก ยิ่งมีค่ามาก",
+    "ถ้าต้องเปรียบเทียบ ให้ดูตัวเลขก่อน ตัวเลขที่มากกว่าคือค่าที่มากกว่า"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g1_money_basic",
+  "skill_code": "g1_money_basic",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "แบบฝึก 1 — 🏫 โรงเรียน",
+      "story_theme_th": "🏫 โรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🏫 โรงเรียน 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐",
+          "items_added": "🌟🌟",
+          "question": "มี ⭐⭐⭐ อยู่ 3 อัน เพิ่มอีก 2 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ลองใช้ Ten Frame",
+          "rows": 2,
+          "cols": 5,
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 1 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "7",
+            "5",
+            "6",
+            "3"
+          ],
+          "answer": "6",
+          "explanation": "5 บาท",
+          "correct_answer": "6",
+          "explanation_th": "5 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "แบบฝึก 2 — 🍎 ผลไม้",
+      "story_theme_th": "🍎 ผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🍎 ผลไม้ 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐",
+          "items_added": "🌟🌟🌟",
+          "question": "มี ⭐⭐⭐⭐ อยู่ 4 อัน เพิ่มอีก 3 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "bar_model",
+          "title": "📊 ลองใช้ Bar Model",
+          "total": 15,
+          "parts": [
+            8,
+            7
+          ],
+          "label": "รวม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 2 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "6",
+            "4",
+            "7",
+            "8"
+          ],
+          "answer": "7",
+          "explanation": "10 บาท",
+          "correct_answer": "7",
+          "explanation_th": "10 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "แบบฝึก 3 — 🧸 ของเล่น",
+      "story_theme_th": "🧸 ของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🧸 ของเล่น 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐⭐",
+          "items_added": "🌟",
+          "question": "มี ⭐⭐⭐⭐⭐ อยู่ 5 อัน เพิ่มอีก 1 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 ลองใช้ Shape Visual",
+          "shapes": [
+            "▲",
+            "●",
+            "■",
+            "◆",
+            "★"
+          ],
+          "count": 5
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 3 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "7",
+            "5",
+            "8",
+            "9"
+          ],
+          "answer": "8",
+          "explanation": "15 บาท",
+          "correct_answer": "8",
+          "explanation_th": "15 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "แบบฝึก 4 — 🏪 ตลาด",
+      "story_theme_th": "🏪 ตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🏪 ตลาด 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐⭐⭐",
+          "items_added": "🌟🌟",
+          "question": "มี ⭐⭐⭐⭐⭐⭐ อยู่ 6 อัน เพิ่มอีก 2 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ลองใช้ Ten Frame",
+          "rows": 2,
+          "cols": 5,
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 4 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "6",
+            "10",
+            "9",
+            "8"
+          ],
+          "answer": "9",
+          "explanation": "20 บาท",
+          "correct_answer": "9",
+          "explanation_th": "20 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "แบบฝึก 5 — 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "🐕 สัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🐕 สัตว์เลี้ยง 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐⭐⭐⭐",
+          "items_added": "🌟🌟🌟",
+          "question": "มี ⭐⭐⭐⭐⭐⭐⭐ อยู่ 7 อัน เพิ่มอีก 3 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "bar_model",
+          "title": "📊 ลองใช้ Bar Model",
+          "total": 15,
+          "parts": [
+            8,
+            7
+          ],
+          "label": "รวม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 5 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "7",
+            "11",
+            "10",
+            "9"
+          ],
+          "answer": "10",
+          "explanation": "25 บาท",
+          "correct_answer": "10",
+          "explanation_th": "25 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "แบบฝึก 6 — 🌻 สวน",
+      "story_theme_th": "🌻 สวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🌻 สวน 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐",
+          "items_added": "🌟",
+          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 8 อัน เพิ่มอีก 1 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 ลองใช้ Shape Visual",
+          "shapes": [
+            "▲",
+            "●",
+            "■",
+            "◆",
+            "★"
+          ],
+          "count": 5
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 6 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "12",
+            "10",
+            "11",
+            "8"
+          ],
+          "answer": "11",
+          "explanation": "30 บาท",
+          "correct_answer": "11",
+          "explanation_th": "30 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "แบบฝึก 7 — 🎨 วาดรูป",
+      "story_theme_th": "🎨 วาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎨 วาดรูป 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐⭐",
+          "items_added": "🌟🌟",
+          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 9 อัน เพิ่มอีก 2 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ลองใช้ Ten Frame",
+          "rows": 2,
+          "cols": 5,
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 7 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "13",
+            "11",
+            "12",
+            "9"
+          ],
+          "answer": "12",
+          "explanation": "35 บาท",
+          "correct_answer": "12",
+          "explanation_th": "35 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "แบบฝึก 8 — 📚 ห้องเรียน",
+      "story_theme_th": "📚 ห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "📚 ห้องเรียน 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐",
+          "items_added": "🌟🌟🌟",
+          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 10 อัน เพิ่มอีก 3 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "bar_model",
+          "title": "📊 ลองใช้ Bar Model",
+          "total": 15,
+          "parts": [
+            8,
+            7
+          ],
+          "label": "รวม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 8 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "14",
+            "12",
+            "13",
+            "10"
+          ],
+          "answer": "13",
+          "explanation": "40 บาท",
+          "correct_answer": "13",
+          "explanation_th": "40 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "แบบฝึก 9 — 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "🎮 สนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎮 สนุกกับเพื่อน 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐",
+          "items_added": "🌟",
+          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 11 อัน เพิ่มอีก 1 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 ลองใช้ Shape Visual",
+          "shapes": [
+            "▲",
+            "●",
+            "■",
+            "◆",
+            "★"
+          ],
+          "count": 5
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 9 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "15",
+            "13",
+            "14",
+            "11"
+          ],
+          "answer": "14",
+          "explanation": "45 บาท",
+          "correct_answer": "14",
+          "explanation_th": "45 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "แบบฝึก 10 — 🎉 งานเทศกาล",
+      "story_theme_th": "🎉 งานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎉 งานเทศกาล 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐",
+          "items_added": "🌟🌟",
+          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 12 อัน เพิ่มอีก 2 อัน รวมกี่อัน?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ลองใช้ Ten Frame",
+          "rows": 2,
+          "cols": 5,
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 10 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "14",
+            "12",
+            "15",
+            "16"
+          ],
+          "answer": "15",
+          "explanation": "50 บาท",
+          "correct_answer": "15",
+          "explanation_th": "50 บาท"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "[School]  โรงเรียน 🌟 มาเรียนรู้เรื่องเงินกันดีกว่า! เงินมีหลายเหรียญต้องบวกกันนะ"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 2 + 1 = 8 (บาท)"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "เหรียญ 5 บาท 1 เหรียญ รวมเท่าไร?",
+          "choices": [
+            "7",
+            "5",
+            "6",
+            "3"
+          ],
+          "answer": "6",
+          "explanation": "5 บาท",
+          "correct_answer": "6",
+          "explanation_th": "5 บาท"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "รู้จักเงินบาท",
+  "preview_subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "cover_theme": "thai_money",
+  "cover_emoji": "💰",
+  "cover_color": "yellow",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "learning_objective_th": "นักเรียนสามารถจำแนกธนบัตรและเหรียญไทย และบอกค่าได้ถูกต้อง",
+  "lesson_intro_th": "วันนี้พี่อลิสไปตลาดซื้อของ มีธนบัตรและเหรียญหลายแบบ ช่วยจำแนกดูหน่อยไหม? 🛒💰",
+  "concept_explanation_th": "ธนบัตรไทยมี 20 บาท 50 บาท 100 บาท 500 บาท และ 1000 บาท ยิ่งสีเข้ม ยิ่งมีค่ามาก เหรียญไทยมี 25 สตางค์ 50 สตางค์ 1 บาท 2 บาท 5 บาท และ 10 บาท เหรียญโลหะที่ใหญ่ที่สุดคือ 10 บาท 1 บาท = 100 สตางค์ ดังนั้น 1 บาทมากกว่า 50 สตางค์ เสมอ เวลาดูว่าธนบัตรหรือเหรียญมีค่าเท่าไหร่ ให้ดูตัวเลขที่พิมพ์บนหน้าบัตรหรือเหรียญ เมื่อซื้อของ ให้ดูว่าต้องจ่ายเท่าไหร่ แล้วเลือกธนบัตรหรือเหรียญที่มีค่ารวมกันเท่ากับราคาสินค้า",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 3
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 2
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท รู้จักเงินบาทไทย ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "จำแนกธนบัตร",
+      "question_th": "ธนบัตรใบสีเขียวมีค่าเท่าไหร่?",
+      "solution_th": "ธนบัตรใบสีเขียวมีค่า 20 บาท ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบค่าเงิน",
+      "question_th": "ธนบัตร 100 บาท กับ เหรียญ 5 บาท อันไหนมีค่ามากกว่า?",
+      "solution_th": "ธนบัตร 100 บาทมีค่ามากกว่าเหรียญ 5 บาท เพราะ 100 > 5 ✅"
+    },
+    {
+      "title_th": "รวมค่าเงิน",
+      "question_th": "มีเหรียญ 2 บาท 3 เหรียญ และเหรียญ 1 บาท 2 เหรียญ รวมเป็นเงินเท่าไหร่?",
+      "solution_th": "2x3=6 บาท + 1x2=2 บาท = 8 บาท ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนระหว่างเหรียญ 25 สตางค์กับ 50 สตางค์",
+    "คิดว่าเหรียญ 10 บาทใหญ่กว่าธนบัตร 20 บาทเสมอ แต่จริงๆ แล้วธนบัตรมีค่ามากกว่า",
+    "ไม่เข้าใจว่า 1 บาท = 100 สตางค์ ทำให้เปรียบเทียบผิด"
+  ],
+  "questions": [
+    {
+      "question_id": "g1_money_basic_q01",
+      "question_th": "รู้จักเงินบาทไทย: มี 2 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 2 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "6",
+        "9",
+        "3",
+        "5"
+      ],
+      "correct_answer": "6",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 6",
+      "explanation_th": "คำตอบคือ 6 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q02",
+      "question_th": "รู้จักเงินบาทไทย: มี 12 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 12 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "8",
+        "9",
+        "7",
+        "16"
+      ],
+      "correct_answer": "8",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 8",
+      "explanation_th": "คำตอบคือ 8 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q03",
+      "question_th": "รู้จักเงินบาทไทย: 4 + 5 = ?",
+      "question_text": "รู้จักเงินบาทไทย: 4 + 5 = ?",
+      "choices": [
+        "9",
+        "10",
+        "8",
+        "19"
+      ],
+      "correct_answer": "9",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
+      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q04",
+      "question_th": "รู้จักเงินบาทไทย: มี 5 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 5 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "30",
+        "36",
+        "24",
+        "11"
+      ],
+      "correct_answer": "30",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 30",
+      "explanation_th": "คำตอบคือ 30 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q05",
+      "question_th": "รู้จักเงินบาทไทย: มี 12 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 12 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "14"
+      ],
+      "correct_answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q06",
+      "question_th": "รู้จักเงินบาทไทย: 7 + 3 = ?",
+      "question_text": "รู้จักเงินบาทไทย: 7 + 3 = ?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q07",
+      "question_th": "รู้จักเงินบาทไทย: มี 8 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 8 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "32",
+        "36",
+        "28",
+        "12"
+      ],
+      "correct_answer": "32",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
+      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q08",
+      "question_th": "รู้จักเงินบาทไทย: มี 45 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 45 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "40",
+        "41",
+        "39",
+        "50"
+      ],
+      "correct_answer": "40",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
+      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q09",
+      "question_th": "รู้จักเงินบาทไทย: 10 + 6 = ?",
+      "question_text": "รู้จักเงินบาทไทย: 10 + 6 = ?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "26"
+      ],
+      "correct_answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g1_money_basic",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_money_basic_q10",
+      "question_th": "รู้จักเงินบาทไทย: มี 11 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 11 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "22",
+        "24",
+        "20",
+        "13"
+      ],
+      "correct_answer": "22",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 22",
+      "explanation_th": "คำตอบคือ 22 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g1_money_basic",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g1_money_basic_q01",
+      "question_th": "รู้จักเงินบาทไทย: มี 2 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 2 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "6",
+        "9",
+        "3",
+        "5"
+      ],
+      "correct_answer": "6",
+      "answer": "6",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 6",
+      "explanation_th": "คำตอบคือ 6 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q02",
+      "question_th": "รู้จักเงินบาทไทย: มี 12 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 12 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "8",
+        "9",
+        "7",
+        "16"
+      ],
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 8",
+      "explanation_th": "คำตอบคือ 8 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q03",
+      "question_th": "รู้จักเงินบาทไทย: 4 + 5 = ?",
+      "question_text": "รู้จักเงินบาทไทย: 4 + 5 = ?",
+      "choices": [
+        "9",
+        "10",
+        "8",
+        "19"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
+      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q04",
+      "question_th": "รู้จักเงินบาทไทย: มี 5 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 5 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "30",
+        "36",
+        "24",
+        "11"
+      ],
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 30",
+      "explanation_th": "คำตอบคือ 30 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q05",
+      "question_th": "รู้จักเงินบาทไทย: มี 12 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 12 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "14"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q06",
+      "question_th": "รู้จักเงินบาทไทย: 7 + 3 = ?",
+      "question_text": "รู้จักเงินบาทไทย: 7 + 3 = ?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
+      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q07",
+      "question_th": "รู้จักเงินบาทไทย: มี 8 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 8 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "32",
+        "36",
+        "28",
+        "12"
+      ],
+      "correct_answer": "32",
+      "answer": "32",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
+      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q08",
+      "question_th": "รู้จักเงินบาทไทย: มี 45 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 45 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "40",
+        "41",
+        "39",
+        "50"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
+      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g1_money_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_money_basic_q09",
+      "question_th": "รู้จักเงินบาทไทย: 10 + 6 = ?",
+      "question_text": "รู้จักเงินบาทไทย: 10 + 6 = ?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "26"
+      ],
+      "correct_answer": "16",
+      "answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g1_money_basic",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_money_basic_q10",
+      "question_th": "รู้จักเงินบาทไทย: มี 11 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "รู้จักเงินบาทไทย: มี 11 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "22",
+        "24",
+        "20",
+        "13"
+      ],
+      "correct_answer": "22",
+      "answer": "22",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 22",
+      "explanation_th": "คำตอบคือ 22 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g1_money_basic",
+      "question_type": "challenge"
+    }
+  ]
+}

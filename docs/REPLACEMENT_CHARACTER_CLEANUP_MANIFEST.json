@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-11T13:50:00.000Z",
+  "content_path": "D:\\web app\\4-craft.com\\apps\\api\\app\\content\\math",
+  "baseline": {
+    "files_scanned": 176,
+    "files_with_replacement_char": 0,
+    "replacement_char_total": 0,
+    "scan_method": "byte-level UTF-8 scan for U+FFFD (Unicode) and EF BF BD (UTF-8 encoding), plus null bytes and control chars"
+  },
+  "after": {
+    "files_with_replacement_char": 0,
+    "replacement_char_total": 0
+  },
+  "edited_files": [],
+  "manual_rewrite_files": [],
+  "json_validation": {
+    "files_checked": 176,
+    "valid": 176,
+    "invalid": 0
+  },
+  "note": "My scan found 0 replacement characters. The previous review report claimed 4450 across 135 files. I could not reproduce that result. Legitimate ASCII question marks (U+003F) in math contexts like '7 + ? = 10' were verified to be valid 0x3F bytes, not replacement characters. No cleanup modifications were made because no corruption was found."
+}

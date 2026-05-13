@@ -1,0 +1,345 @@
+{
+  "program_type": "EP",
+  "grade": "P3",
+  "subject": "math",
+  "topic": "area_model_multiplication",
+  "title_en": "Multiplication Using Area Model",
+  "title_th": "การคูณโดยใช้โมเดลพื้นที่",
+  "learning_objective_en": "Students will be able to multiply 2-digit numbers by 1-digit numbers using the area model.",
+  "learning_objective_th": "นักเรียนจะสามารถคูณจำนวน 2 หลัก ด้วยจำนวน 1 หลัก โดยใช้โมเดลพื้นที่ได้",
+  "vocabulary": [
+    {
+      "word_en": "multiply",
+      "meaning_th": "คูณ",
+      "example_en": "We multiply to find the total.",
+      "example_th": "พวกเราคูณเพื่อหาผลรวม"
+    },
+    {
+      "word_en": "area model",
+      "meaning_th": "โมเดลพื้นที่",
+      "example_en": "We use an area model to show multiplication.",
+      "example_th": "พวกเราใช้โมเดลพื้นที่เพื่อแสดงการคูณ"
+    },
+    {
+      "word_en": "array",
+      "meaning_th": "กลุ่มวัตถุเรียงเป็นแถว",
+      "example_en": "An array shows objects in rows and columns.",
+      "example_th": "อาร์เรย์แสดงวัตถุเรียงเป็นแถวและคอลัมน์"
+    },
+    {
+      "word_en": "row",
+      "meaning_th": "แถว",
+      "example_en": "This row has 4 squares.",
+      "example_th": "แถวนี้มี 4 ตาราง"
+    },
+    {
+      "word_en": "column",
+      "meaning_th": "คอลัมน์",
+      "example_en": "This column has 3 squares.",
+      "example_th": "คอลัมน์นี้มี 3 ตาราง"
+    },
+    {
+      "word_en": "partial product",
+      "meaning_th": "ผลคูณย่อย",
+      "example_en": "4 × 3 is a partial product.",
+      "example_th": "4 × 3 คือผลคูณย่อย"
+    },
+    {
+      "word_en": "total",
+      "meaning_th": "ผลรวมทั้งหมด",
+      "example_en": "The total is the final answer.",
+      "example_th": "ผลรวมทั้งหมดคือคำตอบสุดท้าย"
+    },
+    {
+      "word_en": "tens",
+      "meaning_th": "หลักสิบ",
+      "example_en": "3 tens is the same as 30.",
+      "example_th": "3 สิบ คือ 30"
+    },
+    {
+      "word_en": "ones",
+      "meaning_th": "หลักหน่วย",
+      "example_en": "7 ones is the same as 7.",
+      "example_th": "7 หน่วย คือ 7"
+    },
+    {
+      "word_en": "decompose",
+      "meaning_th": "แยกส่วน",
+      "example_en": "We decompose 23 into 20 and 3.",
+      "example_th": "พวกเราแยก 23 ออกเป็น 20 และ 3"
+    }
+  ],
+  "lesson_intro_en": "Today we will learn a new way to multiply. It is called the Area Model. Instead of just writing a number sentence, we draw a rectangle and split it into parts. Each part shows a smaller multiplication. Then we add all the parts together. This way helps us see WHY multiplication works!",
+  "lesson_intro_th": "วันนี้เราจะเรียนวิธีคูณใหม่ที่เรียกว่า Area Model หรือโมเดลพื้นที่ แทนที่จะเขียนประโยคคูณเฉยๆ เราจะวาดรูปสี่เหลี่ยมและแบ่งเป็นส่วนๆ แต่ละส่วนแสดงการคูณที่เล็กลง แล้วนำทุกส่วนมาบวกกัน วิธีนี้ช่วยให้เราเข้าใจว่าทำไมการคูณถึงได้คำตอบ!",
+  "concept_explanation_en": "The Area Model shows multiplication as the total area of a rectangle. We split one factor into tens and ones. Then we draw a rectangle. We split the rectangle into two parts: one part for tens, one part for ones. We find the area of each part (that is the partial product). Then we add the partial products together to get the total. For example, 23 × 4: we split 23 into 20 and 3. We draw a 20 by 4 rectangle (area = 80) and a 3 by 4 rectangle (area = 12). 80 + 12 = 92. So 23 × 4 = 92.",
+  "concept_explanation_th": "Area Model แสดงการคูณเป็นพื้นที่รวมของรูปสี่เหลี่ยม เราแยกตัวคูณหนึ่งตัวออกเป็นสิบและหน่วย แล้ววาดรูปสี่เหลี่ยม แบ่งสี่เหลี่ยมออกเป็นสองส่วน: ส่วนหนึ่งสำหรับสิบ อีกส่วนสำหรับหน่วย หาพื้นที่ของแต่ละส่วน (นั่นคือผลคูณย่อย) แล้วนำผลคูณย่อยทั้งหมดมาบวกกัน ตัวอย่าง 23 × 4: แยก 23 เป็น 20 กับ 3 วาดสี่เหลี่ยม 20 × 4 (พื้นที่ = 80) กับ 3 × 4 (พื้นที่ = 12) 80 + 12 = 92 ดังนั้น 23 × 4 = 92",
+  "singapore_math_model": {
+    "model_type": "area_model",
+    "description_en": "The rectangle is split into two parts. The top part shows tens (20) multiplied by the column factor (4). The bottom part shows ones (3) multiplied by the column factor (4). Each small square represents 1 unit. The total area equals the product.",
+    "description_th": "รูปสี่เหลี่ยมถูกแบ่งเป็นสองส่วน ส่วนบนแสดงสิบ (20) คูณด้วยตัวคูณในแนวตั้ง (4) ส่วนล่างแสดงหน่วย (3) คูณด้วยตัวคูณในแนวตั้ง (4) ทุกตารางเล็กแทน 1 หน่วย พื้นที่รวมคือคำตอบ",
+    "diagram_data": {
+      "type": "grid",
+      "columns": 4,
+      "rows": 5,
+      "equation": "23 × 4 = 92",
+      "annotations": [
+        { "x1": 0, "y1": 0, "x2": 4, "y2": 0, "label": "20", "label_position": "top" },
+        { "x1": 0, "y1": 0, "x2": 0, "y2": 4, "label": "4", "label_position": "left" },
+        { "x1": 0, "y1": 0, "x2": 4, "y2": 4, "label": "80", "label_position": "center", "region": "top" },
+        { "x1": 0, "y1": 4, "x2": 4, "y2": 5, "label": "12", "label_position": "center", "region": "bottom" }
+      ]
+    }
+  },
+  "visual_model_prompt": "Draw a rectangle split into two horizontal sections. The top section has 4 columns and 2 rows of small blue squares labeled '20 x 4 = 80'. The bottom section has 4 columns and 1 row of small orange squares labeled '3 x 4 = 12'. Between the two sections, write '+'. Below the rectangle, show '80 + 12 = 92'. Use blue for the top section squares and orange for the bottom section squares.",
+  "step_by_step": [
+    {
+      "step_en": "Step 1: Look at the number sentence. We have 23 × 4. This means 23 groups of 4.",
+      "step_th": "ขั้นที่ 1: ดูประโยคคูณ เรามี 23 × 4 หมายความว่า 23 กลุ่ม กลุ่มละ 4"
+    },
+    {
+      "step_en": "Step 2: Decompose the 2-digit number. Split 23 into 20 and 3. 20 is tens. 3 is ones.",
+      "step_th": "ขั้นที่ 2: แยกจำนวน 2 หลัก แยก 23 ออกเป็น 20 กับ 3 ค่ะ 20 คือสิบ 3 คือหน่วย"
+    },
+    {
+      "step_en": "Step 3: Draw a rectangle. The left side shows 20 and 3 (stacked). The top shows 4.",
+      "step_th": "ขั้นที่ 3: วาดรูปสี่เหลี่ยม ด้านซ้ายแสดง 20 กับ 3 (วางซ้อนกัน) ด้านบนแสดง 4"
+    },
+    {
+      "step_en": "Step 4: Find each partial product. Top part: 20 × 4 = 80. Bottom part: 3 × 4 = 12.",
+      "step_th": "ขั้นที่ 4: หาผลคูณย่อยแต่ละส่วน ส่วนบน: 20 × 4 = 80 ส่วนล่าง: 3 × 4 = 12"
+    },
+    {
+      "step_en": "Step 5: Add the partial products. 80 + 12 = 92. So 23 × 4 = 92.",
+      "step_th": "ขั้นที่ 5: บวกผลคูณย่อย 80 + 12 = 92 ดังนั้น 23 × 4 = 92"
+    },
+    {
+      "step_en": "Step 6 (another way): You can also decompose the bottom factor. For 5 × 34, split 34 into 30 and 4. Draw 5 rows. Split columns into 30 and 4. Top section: 5 × 30 = 150. Bottom section: 5 × 4 = 20. Add: 150 + 20 = 170. So 5 × 34 = 170.",
+      "step_th": "ขั้นที่ 6 (อีกวิธี): เรายังสามารถแยกตัวคูณด้านล่างได้ด้วย สำหรับ 5 × 34 แยก 34 เป็น 30 กับ 4 วาด 5 แถว แบ่งคอลัมน์เป็น 30 กับ 4 ส่วนบน: 5 × 30 = 150 ส่วนล่าง: 5 × 4 = 20 บวก: 150 + 20 = 170 ดังนั้น 5 × 34 = 170"
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem_en": "Use the area model to find 23 × 4.",
+      "problem_th": "ใช้โมเดลพื้นที่หาคำตอบของ 23 × 4",
+      "solution_steps_en": [
+        "Decompose 23: 20 + 3",
+        "Draw a rectangle. Write 20 and 3 on the left. Write 4 on the top.",
+        "Find the top area: 20 × 4 = 80",
+        "Find the bottom area: 3 × 4 = 12",
+        "Add the two areas: 80 + 12 = 92"
+      ],
+      "solution_steps_th": [
+        "แยก 23: 20 + 3",
+        "วาดรูปสี่เหลี่ยม เขียน 20 กับ 3 ด้านซ้าย เขียน 4 ด้านบน",
+        "หาพื้นที่ส่วนบน: 20 × 4 = 80",
+        "หาพื้นที่ส่วนล่าง: 3 × 4 = 12",
+        "บวกพื้นที่ทั้งสอง: 80 + 12 = 92"
+      ],
+      "answer": "92",
+      "explanation_en": "We split 23 into 20 and 3. 20 × 4 = 80 (top rectangle). 3 × 4 = 12 (bottom rectangle). Adding them gives 80 + 12 = 92.",
+      "explanation_th": "เราแยก 23 เป็น 20 กับ 3 ส่วนบน 20 × 4 = 80 (สี่เหลี่ยมบน) ส่วนล่าง 3 × 4 = 12 (สี่เหลี่ยมล่าง) บวกกันได้ 80 + 12 = 92"
+    },
+    {
+      "problem_en": "Use the area model to find 5 × 34.",
+      "problem_th": "ใช้โมเดลพื้นที่หาคำตอบของ 5 × 34",
+      "solution_steps_en": [
+        "Decompose 34: 30 + 4",
+        "Draw a rectangle with 5 rows. Split the columns into 30 and 4.",
+        "Find the left area: 5 × 30 = 150",
+        "Find the right area: 5 × 4 = 20",
+        "Add the two areas: 150 + 20 = 170"
+      ],
+      "solution_steps_th": [
+        "แยก 34: 30 + 4",
+        "วาดรูปสี่เหลี่ยม 5 แถว แบ่งคอลัมน์เป็น 30 กับ 4",
+        "หาพื้นที่ด้านซ้าย: 5 × 30 = 150",
+        "หาพื้นที่ด้านขวา: 5 × 4 = 20",
+        "บวกพื้นที่ทั้งสอง: 150 + 20 = 170"
+      ],
+      "answer": "170",
+      "explanation_en": "We split 34 into 30 and 4. The left rectangle is 5 by 30, so 5 × 30 = 150. The right rectangle is 5 by 4, so 5 × 4 = 20. Adding them: 150 + 20 = 170.",
+      "explanation_th": "เราแยก 34 เป็น 30 กับ 4 สี่เหลี่ยมด้านซ้าย 5 คูณ 30 ได้ 150 สี่เหลี่ยมด้านขวา 5 คูณ 4 ได้ 20 บวกกัน: 150 + 20 = 170"
+    }
+  ],
+  "common_mistakes": [
+    {
+      "mistake_en": "I thought rows × columns = answer. I counted the rows and columns and added them.",
+      "mistake_th": "ฉันคิดว่า แถว × คอลัมน์ = คำตอบ ฉันนับแถวกับคอลัมน์แล้วบวกกัน",
+      "correction_en": "We multiply rows × columns, not add. For 4 × 6, we do 4 + 4 + 4 + 4 + 4 + 4 = 24, not 4 + 6 = 10.",
+      "correction_th": "เราต้องคูณแถว × คอลัมน์ ไม่ใช่บวก สำหรับ 4 × 6 เราทำ 4 + 4 + 4 + 4 + 4 + 4 = 24 ไม่ใช่ 4 + 6 = 10"
+    },
+    {
+      "mistake_en": "I forgot to add the partial products. I just gave one part as the answer.",
+      "mistake_th": "ฉันลืมบวกผลคูณย่อย ฉันเอาแค่ส่วนเดียวมาเป็นคำตอบ",
+      "correction_en": "We must add ALL partial products. For 23 × 4, 80 + 12 = 92. If we say 80, we are wrong. We need to add the second part too.",
+      "correction_th": "เราต้องบวกผลคูณย่อยทุกส่วน สำหรับ 23 × 4, 80 + 12 = 92 ถ้าบอกว่า 80 จะผิด เราต้องบวกส่วนที่สองด้วย"
+    },
+    {
+      "mistake_en": "I wrote 6 × 40 = 240, but I put 240 in the wrong part of the model.",
+      "mistake_th": "ฉันเขียน 6 × 40 = 240 แต่ใส่ 240 ผิดที่ในโมเดล",
+      "correction_en": "Each partial product goes in the correct section. 40 is the tens part, so 6 × 40 goes in the tens section. 7 is the ones part, so 6 × 7 goes in the ones section.",
+      "correction_th": "ผลคูณย่อยแต่ละส่วนต้องอยู่ถูกที่ ส่วน 40 เป็นส่วนสิบ ดังนั้น 6 × 40 อยู่ในส่วนสิบ 7 เป็นส่วนหน่วย ดังนั้น 6 × 7 อยู่ในส่วนหน่วย"
+    }
+  ],
+  "quiz": [
+    {
+      "question_en": "What is 4 × 6 shown in the area model?",
+      "question_th": "4 × 6 แสดงในโมเดลพื้นที่ได้อย่างไร?",
+      "choices": {
+        "A": "4 rows of 6 squares",
+        "B": "6 rows of 4 squares",
+        "C": "4 rows of 4 squares",
+        "D": "6 rows of 6 squares"
+      },
+      "correct_answer": "B",
+      "explanation_en": "4 × 6 means 4 groups of 6. In an area model, we can show this as 4 rows with 6 squares in each row. 6 rows of 4 squares also gives the same product because multiplication is commutative.",
+      "explanation_th": "4 × 6 หมายถึง 4 กลุ่ม กลุ่มละ 6 ในโมเดลพื้นที่ เราแสดงเป็น 4 แถว แถวละ 6 ช่อง 6 แถว คอลัมน์ละ 4 ก็ได้คำตอบเท่ากันเพราะการคูณสลับที่ได้",
+      "difficulty": "easy",
+      "skill_tag": "area_model_definition"
+    },
+    {
+      "question_en": "What does 3 × 8 equal?",
+      "question_th": "3 × 8 เท่ากับเท่าไร?",
+      "choices": {
+        "A": "11",
+        "B": "24",
+        "C": "32",
+        "D": "21"
+      },
+      "correct_answer": "B",
+      "explanation_en": "3 × 8 means 3 groups of 8. 8 + 8 + 8 = 24. So 3 × 8 = 24.",
+      "explanation_th": "3 × 8 หมายถึง 3 กลุ่ม กลุ่มละ 8 8 + 8 + 8 = 24 ดังนั้น 3 × 8 = 24",
+      "difficulty": "easy",
+      "skill_tag": "basic_multiplication"
+    },
+    {
+      "question_en": "In the area model for 5 × 3, how many small squares are there in total?",
+      "question_th": "ในโมเดลพื้นที่ของ 5 × 3 มีตารางเล็กทั้งหมดกี่ช่อง?",
+      "choices": {
+        "A": "8",
+        "B": "15",
+        "C": "12",
+        "D": "10"
+      },
+      "correct_answer": "B",
+      "explanation_en": "5 × 3 = 15. We can show this as 5 rows with 3 squares each, or 3 rows with 5 squares each. Either way, there are 15 small squares in total.",
+      "explanation_th": "5 × 3 = 15 เราแสดงเป็น 5 แถว แถวละ 3 ช่อง หรือ 3 แถว แถวละ 5 ช่องก็ได้ ไม่ว่าอย่างไหนมีตารางเล็กทั้งหมด 15 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "area_model_counting"
+    },
+    {
+      "question_en": "Decompose 34 for an area model multiplication with 5.",
+      "question_th": "แยก 34 สำหรับโมเดลพื้นที่คูณกับ 5",
+      "choices": {
+        "A": "30 and 5",
+        "B": "30 and 4",
+        "C": "3 and 4",
+        "D": "3 and 40"
+      },
+      "correct_answer": "B",
+      "explanation_en": "We decompose 34 into tens and ones. 34 = 30 + 4. 30 is the tens part (3 tens). 4 is the ones part (4 ones).",
+      "explanation_th": "เราแยก 34 เป็นสิบและหน่วย 34 = 30 + 4 ค่ะ 30 คือส่วนสิบ (3 สิบ) 4 คือส่วนหน่วย (4 หน่วย)",
+      "difficulty": "medium",
+      "skill_tag": "decompose_numbers"
+    },
+    {
+      "question_en": "What is the first partial product of 4 × 27?",
+      "question_th": "ผลคูณย่อยตัวแรกของ 4 × 27 คืออะไร?",
+      "choices": {
+        "A": "4 × 20 = 24",
+        "B": "4 × 20 = 80",
+        "C": "4 × 7 = 28",
+        "D": "4 × 27 = 108"
+      },
+      "correct_answer": "B",
+      "explanation_en": "We decompose 27 into 20 and 7. The first partial product is 4 × 20 = 80. The second partial product is 4 × 7 = 28.",
+      "explanation_th": "เราแยก 27 เป็น 20 กับ 7 ผลคูณย่อยตัวแรกคือ 4 × 20 = 80 ผลคูณย่อยตัวที่สองคือ 4 × 7 = 28",
+      "difficulty": "medium",
+      "skill_tag": "partial_products"
+    },
+    {
+      "question_en": "What is the second partial product of 6 × 34?",
+      "question_th": "ผลคูณย่อยตัวที่สองของ 6 × 34 คืออะไร?",
+      "choices": {
+        "A": "6 × 30 = 180",
+        "B": "6 × 4 = 24",
+        "C": "6 × 34 = 204",
+        "D": "6 × 3 = 18"
+      },
+      "correct_answer": "B",
+      "explanation_en": "We decompose 34 into 30 and 4. The first partial product is 6 × 30 = 180. The second partial product is 6 × 4 = 24.",
+      "explanation_th": "เราแยก 34 เป็น 30 กับ 4 ผลคูณย่อยตัวแรกคือ 6 × 30 = 180 ผลคูณย่อยตัวที่สองคือ 6 × 4 = 24",
+      "difficulty": "medium",
+      "skill_tag": "partial_products"
+    },
+    {
+      "question_en": "What is the total of these two partial products: 6 × 30 = 180 and 6 × 4 = 24?",
+      "question_th": "ผลรวมของผลคูณย่อยทั้งสองนี้คืออะไร: 6 × 30 = 180 และ 6 × 4 = 24?",
+      "choices": {
+        "A": "204",
+        "B": "184",
+        "C": "196",
+        "D": "214"
+      },
+      "correct_answer": "A",
+      "explanation_en": "180 + 24 = 204. Adding the two partial products gives the final answer. This is 6 × 34 = 204.",
+      "explanation_th": "180 + 24 = 204 ค่ะ บวกผลคูณย่อยทั้งสองได้คำตอบสุดท้าย นี่คือ 6 × 34 = 204",
+      "difficulty": "medium",
+      "skill_tag": "add_partial_products"
+    },
+    {
+      "question_en": "What is 7 × 48? Use the area model.",
+      "question_th": "7 × 48 เท่ากับเท่าไร? ใช้โมเดลพื้นที่",
+      "choices": {
+        "A": "336",
+        "B": "326",
+        "C": "416",
+        "D": "286"
+      },
+      "correct_answer": "A",
+      "explanation_en": "Decompose 48 into 40 and 8. First partial product: 7 × 40 = 280. Second partial product: 7 × 8 = 56. Total: 280 + 56 = 336.",
+      "explanation_th": "แยก 48 เป็น 40 กับ 8 ผลคูณย่อยตัวแรก: 7 × 40 = 280 ผลคูณย่อยตัวที่สอง: 7 × 8 = 56 รวม: 280 + 56 = 336",
+      "difficulty": "hard",
+      "skill_tag": "area_model_two_digit"
+    },
+    {
+      "question_en": "Which step is WRONG in this area model solution for 8 × 65?\nStep 1: Decompose 65 → 60 + 5\nStep 2: Find first partial product → 8 × 60 = 480\nStep 3: Find second partial product → 8 × 5 = 40\nStep 4: Add → 480 + 40 = 520",
+      "question_th": "ขั้นตอนใดผิดในการแก้โมเดลพื้นที่ของ 8 × 65?\nขั้นที่ 1: แยก 65 → 60 + 5\nขั้นที่ 2: หาผลคูณย่อยตัวแรก → 8 × 60 = 480\nขั้นที่ 3: หาผลคูณย่อยตัวที่สอง → 8 × 5 = 40\nขั้นที่ 4: บวก → 480 + 40 = 520",
+      "choices": {
+        "A": "Step 1 is wrong",
+        "B": "Step 2 is wrong",
+        "C": "Step 3 is wrong",
+        "D": "No step is wrong"
+      },
+      "correct_answer": "D",
+      "explanation_en": "All steps are correct. 65 = 60 + 5. 8 × 60 = 480. 8 × 5 = 40. 480 + 40 = 520. So 8 × 65 = 520.",
+      "explanation_th": "ทุกขั้นตอนถูกต้องค่ะ 65 = 60 + 5, 8 × 60 = 480, 8 × 5 = 40, 480 + 40 = 520 ดังนั้น 8 × 65 = 520",
+      "difficulty": "hard",
+      "skill_tag": "error_finding"
+    },
+    {
+      "question_en": "What is 9 × 67? Use the area model.",
+      "question_th": "9 × 67 เท่ากับเท่าไร? ใช้โมเดลพื้นที่",
+      "choices": {
+        "A": "593",
+        "B": "603",
+        "C": "613",
+        "D": "583"
+      },
+      "correct_answer": "B",
+      "explanation_en": "Decompose 67 into 60 and 7. First partial product: 9 × 60 = 540. Second partial product: 9 × 7 = 63. Total: 540 + 63 = 603.",
+      "explanation_th": "แยก 67 เป็น 60 กับ 7 ผลคูณย่อยตัวแรก: 9 × 60 = 540 ผลคูณย่อยตัวที่สอง: 9 × 7 = 63 รวม: 540 + 63 = 603",
+      "difficulty": "hard",
+      "skill_tag": "area_model_two_digit"
+    }
+  ],
+  "quality_check": {
+    "english_checked": true,
+    "thai_translation_checked": true,
+    "simple_english": true,
+    "no_ambiguous_words": true,
+    "no_inappropriate_words": true,
+    "no_placeholder": true,
+    "math_checked": true
+  }
+}

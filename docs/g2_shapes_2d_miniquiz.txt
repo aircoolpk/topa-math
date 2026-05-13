@@ -1,0 +1,74 @@
+﻿"mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "สามเหลี่ยมมีกี่ด้าน?",
+                "choices": [
+                  "4ด้าน",
+                  "2ด้าน",
+                  "3ด้าน",
+                  "1ด้าน"
+                ],
+                "answer": "3ด้าน",
+                "correct_answer": "3ด้าน"
+              },
+              {
+                "text_th": "วงกลมกับวงรีต่างกันอย่างไร?"
+              },
+              {
+                "text_th": "สี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าต่างกันอย่างไร?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🍎 มีผลไม้รูปทรงต่างกัน ลูกแพร์เป็นวงรี ส้มเป็นวงกลม กล้วยเป็นรูปโค้ง มาช่วยจำแนกดีกว่า!"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🔷",
+                "count": 4
+              }
+            ]
+          }
+        },
+        {
+          "type": "shape_visual",
+          "title_th": "🔷 รูปทรง",
+          "data": {
+            "shapes": [
+              {
+                "shape": "ellipse",
+                "color": "#96CEB4",
+                "label_th": "วงรี 1 รูป"
+              },
+              {
+                "shape": "circle",
+                "color": "#45B7D1",
+                "label_th": "วงกลม 2 รูป"
+              },
+              {
+                "shape": "triangle",
+                "color": "#FF6B6B",
+                "label_th": "สามเหลี่ยม 1 รูป"
+              }
+            ]
+          }
+        },
+   

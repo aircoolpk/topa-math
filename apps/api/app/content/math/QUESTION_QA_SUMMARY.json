@@ -1,0 +1,134 @@
+{
+  "files_scanned": 140,
+  "question_bank_jsonl_files": 42,
+  "quiz_files": 42,
+  "lesson_files_with_quiz_content": 56,
+  "questions_scanned": 1680,
+  "issues_total": 712,
+  "critical": 152,
+  "high": 308,
+  "medium": 196,
+  "low": 56,
+  "needs_scoring_normalization": true,
+  "top_problem_files": [
+    {
+      "file": "question_banks/grade_1/g1_add_one_digit.jsonl",
+      "severity": "CRITICAL",
+      "primary_issue": "~25/40 wrong correct_answer values — answer randomly generated, not computed from question"
+    },
+    {
+      "file": "question_banks/grade_3/g3_mixed_review.jsonl",
+      "severity": "CRITICAL",
+      "primary_issue": "Division remainder questions have wrong correct_answer; Thai text garbled"
+    },
+    {
+      "file": "question_banks/grade_3/g3_multi_step_word_problems.jsonl",
+      "severity": "CRITICAL",
+      "primary_issue": "All Thai question text garbled/binary; math answers don't match story"
+    },
+    {
+      "file": "question_banks/grade_4/*.jsonl (7 files)",
+      "severity": "CRITICAL",
+      "primary_issue": "All Thai text completely garbled across entire grade_4 question bank"
+    },
+    {
+      "file": "question_banks/grade_5/g5_percentage.jsonl",
+      "severity": "CRITICAL",
+      "primary_issue": "All 'X% of 100' questions have wrong correct_answer (e.g. 45%→48 instead of 45)"
+    },
+    {
+      "file": "question_banks/grade_5/g5_ratio.jsonl",
+      "severity": "CRITICAL",
+      "primary_issue": "Garbled Thai text + wrong ratio scaling answers"
+    },
+    {
+      "file": "question_banks/grade_6/g6_ratio_proportion.jsonl",
+      "severity": "CRITICAL",
+      "primary_issue": "Garbled Thai + ratio questions with wrong proportional answers"
+    },
+    {
+      "file": "question_banks/grade_6/g6_percentage_applications.jsonl",
+      "severity": "CRITICAL",
+      "primary_issue": "Garbled Thai + wrong percentage calculation answers"
+    },
+    {
+      "file": "grade_2/review/*.json (all 5 review files)",
+      "severity": "CRITICAL",
+      "primary_issue": "All Thai text in review files completely garbled/binary"
+    },
+    {
+      "file": "grade_2/quizzes/g2_money_change.json",
+      "severity": "HIGH",
+      "primary_issue": "6 wrong correct_answer values: 20+20+10+5+2=57→but actual sum is 40"
+    }
+  ],
+  "encoding_issues": {
+    "affected_jsonl_files": 32,
+    "affected_review_json_files": 5,
+    "description": "Thai text stored as garbled binary — UTF-16 LE saved as UTF-8, or codepoint corruption"
+  },
+  "wrong_answer_patterns": {
+    "g1_add_one_digit": "~25/40 questions have incorrect correct_answer (random values, not computed sums)",
+    "g3_mixed_review": "Division questions return wrong quotient values",
+    "g5_percentage": "All 'X% of 100' questions answer is X+3 instead of X",
+    "g2_money_change_quiz": "6 questions have correct_answer off by wrong sum (choices have correct answer but stored wrong)"
+  },
+  "duplicate_choices": {
+    "count": 18,
+    "examples": [
+      "g1_add_one_digit_q006: B=15, C=15",
+      "g1_add_one_digit_q008: A=22, D=22",
+      "g2_add_two_digit_q017: A=84, C=84, D=84",
+      "g3_multi_step_word_problems_q003: A=7, B=7, D=7"
+    ]
+  },
+  "scoring_normalization_risks": [
+    {
+      "risk": "correct_answer is string '11' but choices may be 'A: 11' with letter prefix",
+      "severity": "HIGH",
+      "affected_files": "ALL question bank files (.jsonl)"
+    },
+    {
+      "risk": "correct_answer='55' but choices include '55 บาท' with unit — strict compare fails",
+      "severity": "HIGH",
+      "affected_files": "g2_money_change.json, g2_money_change.jsonl, all money word problems"
+    },
+    {
+      "risk": "Thai digits vs Arabic digits — '๔' vs '4'",
+      "severity": "MEDIUM",
+      "affected_files": "Grade 1-3 lesson mini_quiz blocks"
+    },
+    {
+      "risk": "answer stored as letter index 'A' vs numeric answer '11' in same quiz",
+      "severity": "MEDIUM",
+      "affected_files": "grade_1/lessons/*.json mini_quiz blocks"
+    }
+  ],
+  "fix_plan": {
+    "safe_automatic": [
+      "Fix g1_add_one_digit.jsonl correct_answer values (compute actual sum for each question)",
+      "Fix g5_percentage.jsonl correct_answer values (X% of 100 = X)",
+      "Fix g2_money_change.json quiz correct_answer values (6 questions)",
+      "Fix g3_mixed_review.jsonl division answers",
+      "Remove duplicate choices from 18 questions"
+    ],
+    "needs_human_review": [
+      "Rewrite all Thai text in 32+ .jsonl files with proper UTF-8 encoding",
+      "Rewrite 5 grade_2 review .json files",
+      "Clarify g5_volume_area question intent (volume vs surface area)",
+      "Redesign g2_subtract_two_digit quiz (15/22 questions all answer '33')"
+    ],
+    "backend_scoring_normalization": [
+      "Standardize answer format: choose 'plain number string' OR 'number+unit' globally",
+      "Strip 'A: ', 'B: ', 'C: ', 'D: ' prefixes from choice parsing",
+      "Normalize Thai digits↔Arabic digits before comparison",
+      "Strip trailing whitespace",
+      "Handle unit stripping consistently (จัดกลุ่ม vs ก้อน vs ชิ้น)"
+    ]
+  },
+  "report_files": {
+    "qa_report_md": "apps/api/app/content/math/QUESTION_QA_REPORT.md",
+    "fixes_suggested_json": "apps/api/app/content/math/QUESTION_FIXES_SUGGESTED.json",
+    "qa_summary_json": "apps/api/app/content/math/QUESTION_QA_SUMMARY.json"
+  }
+}

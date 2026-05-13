@@ -1,0 +1,1269 @@
+﻿{
+  "lesson_id": "g4_multi_digit_operations",
+  "id": "g4_multi_digit_operations",
+  "grade_level": 4,
+  "title_th": "บวกลบคูณหารเลขหลายหลัก",
+  "objective_th": "นักเรียนสามารถบวก ลบ คูณ และหารเลขหลายหลักได้ถูกต้อง",
+  "story_intro_th": "ร้านขายของเล่นสั่งของเพิ่ม ต้องจ่ายเงิน 3,250 บาท ขายได้กำไร 1,875 บาท รวมมีเงินเท่าไหร่แล้ว? 🧸",
+  "explanation_steps": [
+    "บวกลบเลขหลายหลักให้เขียนตัวเลขตรงหลักกัน ถ้าเกิน 9 ให้ทดไปหลักถัดไป",
+    "การคูณเลขสองหลักกับเลขสองหลัก ให้คูณทีละหลักของตัวคูณ แล้วนำผลคูณมาบวกกัน",
+    "การหารที่ลงตัวคือการหารที่ไม่มีเศษ ถ้ามีเศษจะเหลือเศษ",
+    "ขั้นตอนการหาร: หาร คูณ ลบ ทอน ทำซ้ำจนหารไม่ได้อีก",
+    "ตรวจคำตอบโดยเอาผลลัพธ์คูณหรือบวกกลับ"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "บวกเลขหลายหลัก",
+      "question_th": "4,567 + 2,438 = ?",
+      "solution_th": "7,005 ✅"
+    },
+    {
+      "title_th": "ลบเลขหลายหลัก",
+      "question_th": "8,654 - 3,297 = ?",
+      "solution_th": "5,357 ✅"
+    },
+    {
+      "title_th": "คูณเลขหลายหลัก",
+      "question_th": "123 × 45 = ?",
+      "solution_th": "5,535 ✅"
+    },
+    {
+      "title_th": "หารเลขหลายหลัก",
+      "question_th": "936 ÷ 12 = ?",
+      "solution_th": "78 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ทดตัวเลขผิดหลัก โดยเฉพาะตอนคูณ",
+    "ลืมคูณหลักถัดไปหรือลืมบวกผลคูณเข้าด้วยกัน",
+    "หารไม่ลงตัวแต่ไม่เขียนเศษ"
+  ],
+  "hints": [
+    "ทำทีละหลัก อย่ารีบ ตรวจสอบหลักก่อนไปหลักถัดไป",
+    "ถ้าคูณ 23 × 45 ให้แยกเป็น 23 × 40 + 23 × 5 แล้วบวกกัน",
+    "ตรวจคำตอบโดยกลับ: ถ้า 123 × 45 = 5,535 งั้น 5,535 ÷ 45 ต้องได้ 123"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_multi_digit_operations",
+  "skill_code": "g4_multi_digit_operations",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_th": "🏫 ธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🏫 โรงเรียน",
+          "content": {
+            "story_th": "โรงเรียนซื้อหนังสือ 3,250 เล่ม จ่ายเงินไป 45,800 บาท ขายได้กำไร 12,500 บาท รวมมีเงินเท่าไหร่แล้ว? 🏫",
+            "theme_th": "🏫 โรงเรียน"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🏫 โรงเรียนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🏫 บาร์โมเดลในโรงเรียน",
+          "description": "บวกลบคะแนนสอบของนักเรียน",
+          "content": {
+            "title_th": "🏫 บาร์โมเดลในโรงเรียน",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_th": "🍎 ธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🍎 ผลไม้",
+          "content": {
+            "story_th": "ร้านผลไม้ซื้อส้ม 125 ลัง ขายไป 98 ลัง เหลือส้มกี่ลัง? 🍎",
+            "theme_th": "🍎 ผลไม้"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🍎 ผลไม้แล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🍎 บาร์โมเดลของผลไม้",
+          "description": "บวกลบจำนวนผลไม้ในตะกร้า",
+          "content": {
+            "title_th": "🍎 บาร์โมเดลของผลไม้",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_th": "🧸 ธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🧸 ของเล่น",
+          "content": {
+            "story_th": "ร้านของเล่นสั่งหุ่นยนต์ 56 ครั้ง ครั้งละ 125 ตัว รวมได้หุ่นยนต์กี่ตัว? 🧸",
+            "theme_th": "🧸 ของเล่น"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🧸 ของเล่นแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🧸 บาร์โมเดลของของเล่น",
+          "description": "บวกลบจำนวนของเล่นในกล่อง",
+          "content": {
+            "title_th": "🧸 บาร์โมเดลของของเล่น",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_th": "🏪 ธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🏪 ตลาด",
+          "content": {
+            "story_th": "ตลาดขายข้าวได้ 2,450 ถุง แบ่งให้ร้านค้า 18 ร้าน คนละกี่ถุง? 🏪",
+            "theme_th": "🏪 ตลาด"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🏪 ตลาดแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🏪 บาร์โมเดลในร้านค้า",
+          "description": "บวกลบรายได้และสินค้าในร้าน",
+          "content": {
+            "title_th": "🏪 บาร์โมเดลในร้านค้า",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_th": "🐕 ธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🐕 สัตว์เลี้ยง",
+          "content": {
+            "story_th": "ฟาร์มมีไก่ 5,600 ตัว ขายไป 2,350 ตัว และซื้อเพิ่ม 1,200 ตัว รวมมีไก่กี่ตัว? 🐕",
+            "theme_th": "🐕 สัตว์เลี้ยง"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🐕 สัตว์เลี้ยงแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🐕 บาร์โมเดลของสัตว์เลี้ยง",
+          "description": "บวกลบจำนวนอาหารที่ให้สัตว์เลี้ยง",
+          "content": {
+            "title_th": "🐕 บาร์โมเดลของสัตว์เลี้ยง",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_th": "🌻 ธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🌻 สวน",
+          "content": {
+            "story_th": "สวนเก็บดอกไม้ได้ 3,500 ดอก ขายไป 2,875 ดอก เหลือกี่ดอก? 🌻",
+            "theme_th": "🌻 สวน"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🌻 สวนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🌻 บาร์โมเดลในสวน",
+          "description": "บวกลบจำนวนดอกไม้ที่บานและเหี่ยว",
+          "content": {
+            "title_th": "🌻 บาร์โมเดลในสวน",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_th": "🎨 ธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎨 วาดรูป",
+          "content": {
+            "story_th": "ศิลปินวาดรูป 45 ภาพ ภาพละ 120 สี รวมใช้สีไปกี่สี? 🎨",
+            "theme_th": "🎨 วาดรูป"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎨 วาดรูปแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🎨 บาร์โมเดลในงานศิลปะ",
+          "description": "บวกลบจำนวนสีและพื้นที่วาดรูป",
+          "content": {
+            "title_th": "🎨 บาร์โมเดลในงานศิลปะ",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_th": "📚 ธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม📚 ห้องเรียน",
+          "content": {
+            "story_th": "ห้องสมุดซื้อหนังสือ 28 ชุด ชุดละ 350 เล่ม รวมได้หนังสือกี่เล่ม? 📚",
+            "theme_th": "📚 ห้องเรียน"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ📚 ห้องเรียนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 📚 บาร์โมเดลในห้องเรียน",
+          "description": "บวกลบจำนวนหนังสือและดินสอ",
+          "content": {
+            "title_th": "📚 บาร์โมเดลในห้องเรียน",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_th": "🎮 ธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎮 สนุกกับเพื่อน",
+          "content": {
+            "story_th": "เกมแจกเหรียญ 1,250 เหรียญ ให้ผู้เล่น 75 คน คนละได้กี่เหรียญ? 🎮",
+            "theme_th": "🎮 สนุกกับเพื่อน"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎮 สนุกกับเพื่อนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🎮 บาร์โมเดลในเกม",
+          "description": "บวกลบพลังและเหรียญในเกม",
+          "content": {
+            "title_th": "🎮 บาร์โมเดลในเกม",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_th": "🎉 ธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎉 งานเทศกาล",
+          "content": {
+            "story_th": "งานเทศกาลแจกของรางวัล 3,600 ชิ้น ให้ผู้เข้าร่วม 45 คน คนละกี่ชิ้น? 🎉",
+            "theme_th": "🎉 งานเทศกาล"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎉 งานเทศกาลแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🎉 บาร์โมเดลในงานเทศกาล",
+          "description": "บวกลบจำนวนของรางวัลและผู้เข้าร่วม",
+          "content": {
+            "title_th": "🎉 บาร์โมเดลในงานเทศกาล",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story Time",
+          "content": "โรงเรียนซื้อหนังสือ 3,250 เล่ม จ่ายเงินไป 45,800 บาท ขายได้กำไร 12,500 บาท รวมมีเงินเท่าไหร่แล้ว? [School] "
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "",
+          "choices": [],
+          "answer": "",
+          "explanation": "",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "บวกลบคูณหารเลขใหญ่",
+  "preview_subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "cover_theme": "multi_digit_operations",
+  "cover_emoji": "🧮",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "learning_objective_th": "นักเรียนสามารถบวก ลบ คูณ และหารเลขหลายหลักได้ถูกต้อง",
+  "lesson_intro_th": "ร้านขายของเล่นสั่งของเพิ่ม ต้องจ่ายเงิน 3,250 บาท ขายได้กำไร 1,875 บาท รวมมีเงินเท่าไหร่แล้ว? 🧸",
+  "concept_explanation_th": "บวกลบเลขหลายหลักให้เขียนตัวเลขตรงหลักกัน ถ้าเกิน 9 ให้ทดไปหลักถัดไป การคูณเลขสองหลักกับเลขสองหลัก ให้คูณทีละหลักของตัวคูณ แล้วนำผลคูณมาบวกกัน การหารที่ลงตัวคือการหารที่ไม่มีเศษ ถ้ามีเศษจะเหลือเศษ ขั้นตอนการหาร: หาร คูณ ลบ ทอน ทำซ้ำจนหารไม่ได้อีก ตรวจคำตอบโดยเอาผลลัพธ์คูณหรือบวกกลับ",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท บวกลบคูณหารเลขหลายหลัก ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "บวกเลขหลายหลัก",
+      "question_th": "4,567 + 2,438 = ?",
+      "solution_th": "7,005 ✅"
+    },
+    {
+      "title_th": "ลบเลขหลายหลัก",
+      "question_th": "8,654 - 3,297 = ?",
+      "solution_th": "5,357 ✅"
+    },
+    {
+      "title_th": "คูณเลขหลายหลัก",
+      "question_th": "123 × 45 = ?",
+      "solution_th": "5,535 ✅"
+    },
+    {
+      "title_th": "หารเลขหลายหลัก",
+      "question_th": "936 ÷ 12 = ?",
+      "solution_th": "78 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ทดตัวเลขผิดหลัก โดยเฉพาะตอนคูณ",
+    "ลืมคูณหลักถัดไปหรือลืมบวกผลคูณเข้าด้วยกัน",
+    "หารไม่ลงตัวแต่ไม่เขียนเศษ"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_multi_digit_operations_q01",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 5 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 5 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "15",
+        "18",
+        "12",
+        "8"
+      ],
+      "correct_answer": "15",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
+      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q02",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 24 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 24 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "20",
+        "21",
+        "19",
+        "28"
+      ],
+      "correct_answer": "20",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
+      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q03",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: 7 + 5 = ?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: 7 + 5 = ?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q04",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 8 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 8 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "48",
+        "54",
+        "42",
+        "14"
+      ],
+      "correct_answer": "48",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 48",
+      "explanation_th": "คำตอบคือ 48 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q05",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 18 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 18 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "20"
+      ],
+      "correct_answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q06",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: 10 + 3 = ?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: 10 + 3 = ?",
+      "choices": [
+        "13",
+        "14",
+        "12",
+        "23"
+      ],
+      "correct_answer": "13",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 13",
+      "explanation_th": "คำตอบคือ 13 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q07",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 11 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 11 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "44",
+        "48",
+        "40",
+        "15"
+      ],
+      "correct_answer": "44",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 44",
+      "explanation_th": "คำตอบคือ 44 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q08",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 60 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 60 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "55",
+        "56",
+        "54",
+        "65"
+      ],
+      "correct_answer": "55",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 55",
+      "explanation_th": "คำตอบคือ 55 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q09",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: 13 + 6 = ?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: 13 + 6 = ?",
+      "choices": [
+        "19",
+        "20",
+        "18",
+        "29"
+      ],
+      "correct_answer": "19",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 19",
+      "explanation_th": "คำตอบคือ 19 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q10",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 14 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 14 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "28",
+        "30",
+        "26",
+        "16"
+      ],
+      "correct_answer": "28",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
+      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_multi_digit_operations_q01",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 5 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 5 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "15",
+        "18",
+        "12",
+        "8"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
+      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q02",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 24 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 24 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "20",
+        "21",
+        "19",
+        "28"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
+      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q03",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: 7 + 5 = ?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: 7 + 5 = ?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q04",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 8 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 8 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "48",
+        "54",
+        "42",
+        "14"
+      ],
+      "correct_answer": "48",
+      "answer": "48",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 48",
+      "explanation_th": "คำตอบคือ 48 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q05",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 18 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 18 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "20"
+      ],
+      "correct_answer": "16",
+      "answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q06",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: 10 + 3 = ?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: 10 + 3 = ?",
+      "choices": [
+        "13",
+        "14",
+        "12",
+        "23"
+      ],
+      "correct_answer": "13",
+      "answer": "13",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 13",
+      "explanation_th": "คำตอบคือ 13 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q07",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 11 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 11 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "44",
+        "48",
+        "40",
+        "15"
+      ],
+      "correct_answer": "44",
+      "answer": "44",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 44",
+      "explanation_th": "คำตอบคือ 44 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q08",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 60 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 60 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "55",
+        "56",
+        "54",
+        "65"
+      ],
+      "correct_answer": "55",
+      "answer": "55",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 55",
+      "explanation_th": "คำตอบคือ 55 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q09",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: 13 + 6 = ?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: 13 + 6 = ?",
+      "choices": [
+        "19",
+        "20",
+        "18",
+        "29"
+      ],
+      "correct_answer": "19",
+      "answer": "19",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 19",
+      "explanation_th": "คำตอบคือ 19 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q10",
+      "question_th": "บวกลบคูณหารเลขหลายหลัก: มี 14 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "บวกลบคูณหารเลขหลายหลัก: มี 14 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "28",
+        "30",
+        "26",
+        "16"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
+      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    }
+  ]
+}

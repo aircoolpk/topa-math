@@ -1,0 +1,892 @@
+{
+  "grade_level": 1,
+  "grade_label": "ป.1",
+  "year_goal_th": "วางรากฐานความเข้าใจจำนวนและการบวกลบภายใน 20 ผ่าน CPA สร้าง Number Bond ความเข้าใจเรื่องรูปร่าง เวลา และเงิน",
+  "student_profile_th": "เด็กอายุ 6-7 ปี เพิ่งเข้าสู่ระบบการศึกษาขั้นพื้นฐาน ยังไม่ค่อยคุ้นกับสัญลักษณ์ตัวเลข ต้องเรียนรู้ผ่านการจับต้องและวาดรูป",
+  "singapore_math_focus_th": "เน้น Number Bond เป็นเครื่องมือหลัก สอนบวกลบผ่านการนับของจริงและภาพก่อนใช้สัญลักษณ์ ไม่เน้นท่องจำ วางรากฐานการคิดอย่างมีความหมาย",
+  "prerequisite_skills": [],
+  "core_strands": [
+    {
+      "strand_id": "numbers_and_operations",
+      "strand_title_th": "จำนวนและการดำเนินการ",
+      "description_th": "เรียนรู้จำนวน 1-20 การบวก การลบ การเปรียบเทียบ"
+    },
+    {
+      "strand_id": "measurement",
+      "strand_title_th": "การวัด",
+      "description_th": "วัดความยาว น้ำหนัก ความจุ เวลา เงิน โดยใช้หน่วยที่ไม่เป็นทางการ"
+    },
+    {
+      "strand_id": "geometry",
+      "strand_title_th": "เรขาคณิต",
+      "description_th": "รู้จักรูปร่างพื้นฐาน แบบรูป และทิศทาง"
+    },
+    {
+      "strand_id": "statistics",
+      "strand_title_th": "สถิติเบื้องต้น",
+      "description_th": "อ่านข้อมูลจากรูปภาพง่ายๆ"
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "g1_u01_counting_numbers",
+      "unit_title_th": "จำนวนและการนับ 1-10",
+      "order": 1,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 5,
+      "importance": "core",
+      "learning_objectives": [
+        "นับจำนวนสิ่งของ 1-10 โดยใช้วัสดุจริง",
+        "อ่านและเขียนตัวเลข 1-10",
+        "เข้าใจลำดับที่ของจำนวน"
+      ],
+      "key_vocabulary": ["จำนวน", "นับ", "หนึ่ง", "สอง", "สาม", "ลำดับ"],
+      "singapore_method": {
+        "concrete_activities": ["ใช้ดินสอ กระดุม เม็ดมะขามนับ", "จัดวัสดุเป็นกลุ่ม", "เล่นเกมนับของในห้อง"],
+        "pictorial_models": ["ten-frame", "number line 0-10", "รูปภาพจำนวน", "การจับคู่หนึ่งต่อหนึ่ง"],
+        "abstract_methods": ["เขียนตัวเลข", "เรียงลำดับจากน้อยไปมาก", "เปรียบเทียบมากกว่า/น้อยกว่า"],
+        "bar_model_usage": "ยังไม่ใช้ Bar Model ในหน่วยนี้",
+        "number_bond_usage": "เริ่มสร้าง Number Bond พื้นฐาน",
+        "mental_math_strategy": "ฝึกนับทีละ 1 และนับข้าม"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_counting_1_5",
+          "lesson_title_th": "การนับจำนวน 1-5",
+          "objective_th": "นับจำนวน 1-5 และเขียนตัวเลขได้",
+          "teaching_sequence_cpa": {
+            "concrete": "ครูถือดินสอ 1-5 แท่งให้เด็กนับ จากนั้นให้เด็กหยิบวัสดุมานับเอง",
+            "pictorial": "วาดรูปดินสอบนกระดาษ ให้เด็กนับและระบายสี",
+            "abstract": "เขียนเลข 1 2 3 4 5 บนกระดาษ"
+          },
+          "common_misconceptions": [
+            "นับข้ามตัวเลข เช่น 1 2 4 5",
+            "ไม่เข้าใจว่าจำนวนสุดท้ายคือจำนวนรวม",
+            "สลับลำดับการนับ"
+          ],
+          "diagnostic_checks": ["ชี้สิ่งของทีละชิ้นให้เด็กนับ", "ให้เด็กเขียนเลขตามลำดับ"],
+          "practice_types": ["เกมนับของจริง", "ระบายสีตามจำนวน", "เขียนเลขตามลำดับ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "นับไม่ได้เรียงลำดับ ข้ามตัวเลข",
+              "remediation_activity": "ใช้นิ้วมือชี้วัสดุทีละชิ้น ฝึกนับเป็นจังหวะ",
+              "recommended_practice_type": "เกมนับของจริง 5 นาที",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["นับดินสอในกล่อง", "นับเพื่อนในห้อง", "นับผลไม้"],
+          "quest_ideas": ["daily: ค้นหาสิ่งของ 3 ชิ้นในบ้าน", "speed: นับถึง 5 เร็วที่สุด", "accuracy: วาดรูปตามจำนวนที่บอก"]
+        },
+        {
+          "lesson_id": "g1_counting_6_10",
+          "lesson_title_th": "การนับจำนวน 6-10",
+          "objective_th": "นับจำนวน 6-10 และเขียนตัวเลขได้",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้กระดุมหรือลูกปัดนับ 6-10 ต่อจากกลุ่มเดิม",
+            "pictorial": "วาดรูปบน ten-frame ระบายสี",
+            "abstract": "เขียนเลข 6-10"
+          },
+          "common_misconceptions": ["ไม่เข้าใจว่า 5+1=6", "นับเริ่มใหม่ทุกครั้ง"],
+          "diagnostic_checks": ["ให้นับวัสดุ 6-10 ชิ้น", "ถามต่อจากเลขที่กำหนด"],
+          "practice_types": ["เกมต่อจำนวน", "เขียนเลขเรียงลำดับ", "จับคู่ตัวเลขกับภาพ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ยังนับจาก 1 ใหม่ทุกครั้ง",
+              "remediation_activity": "ฝึกต่อจากเลขที่กำหนด ไม่ต้องเริ่มจาก 1",
+              "recommended_practice_type": "ฝึกต่อเลข 3 ครั้งต่อวัน",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["นับนิ้วมือทั้งหมด", "นับของในตู้"],
+          "quest_ideas": ["daily: ค้นหาสิ่งของ 7 ชิ้น", "boss: นับถึง 10 ให้ได้ทุกวัน"]
+        },
+        {
+          "lesson_id": "g1_number_bond_5",
+          "lesson_title_th": "สมาชิกภายใน 5",
+          "objective_th": "สร้าง Number Bond ของ 5 และเข้าใจส่วนย่อย-ส่วนรวม",
+          "teaching_sequence_cpa": {
+            "concrete": "มีลูกปัด 5 เม็ด แบ่งเป็น 2 กลุ่ม เช่น 2 กับ 3",
+            "pictorial": "วาดวงกลมแทนส่วนย่อย 2 วง และวงใหญ่แทนส่วนรวม 5",
+            "abstract": "เขียน 2 + 3 = 5, 1 + 4 = 5"
+          },
+          "common_misconceptions": ["สับสนว่าส่วนไหนเป็นส่วนย่อย ส่วนไหนเป็นส่วนรวม"],
+          "diagnostic_checks": ["ให้แบ่งลูกปัด 5 เม็ดเป็น 2 กลุ่ม", "ถามว่า 3 กับอะไรรวมเป็น 5"],
+          "practice_types": ["เกมแบ่งของ", "วาด Number Bond", "ท่อง Number Bond ของ 5"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจว่าส่วนย่อยบวกกันได้ส่วนรวม",
+              "remediation_activity": "ใช้ฝาขวดเป็นภาชนะใส่ลูกปัด แบ่งแล้วเทรวมกัน",
+              "recommended_practice_type": "เกมแบ่ง-รวม 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["แบ่งขนมให้เพื่อน", "แบ่งของเล่น"],
+          "quest_ideas": ["daily: สร้าง Number Bond ของ 5 ทุกรูปแบบ", "mastery: ท่องได้ภายใน 30 วินาที"]
+        },
+        {
+          "lesson_id": "g1_compare_within_10",
+          "lesson_title_th": "การเปรียบเทียบจำนวนภายใน 10",
+          "objective_th": "ใช้เครื่องหมาย > < = เปรียบเทียบจำนวนภายใน 10",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 2 กอง ให้เด็กจับคู่ดูว่ากองไหนมากกว่า",
+            "pictorial": "วาดกองลูกปัดบนกระดาษ ต่อจับคู่",
+            "abstract": "เขียน 5 > 3, 4 = 4, 2 < 6"
+          },
+          "common_misconceptions": ["สลับเครื่องหมาย > กับ <", "คิดว่าตัวเลขมากกว่าเสมอด้านซ้าย"],
+          "diagnostic_checks": ["ให้เลือกเครื่องหมายระหว่าง 5 กับ 3", "ให้เขียนประโยคได้ถูกต้อง"],
+          "practice_types": ["เกมเปรียบเทียบ", "เขียนเครื่องหมายให้ถูก", "จับคู่จำนวนกับเครื่องหมาย"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "สลับ > กับ < ตลอด",
+              "remediation_activity": "ใช้ปากกาวางหงายแทนเครื่องหมาย ปากกาเปิดหัวมากกว่า หัวแคบน้อยกว่า",
+              "recommended_practice_type": "ฝึกเขียนเครื่องหมาย 10 ข้อ",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ใครมีขนมมากกว่า", "เปรียบเทียบอายุ", "ใครสูงกว่า"],
+          "quest_ideas": ["daily: เปรียบเทียบสิ่งของ 2 อย่างในบ้าน", "speed: ทำ 10 ข้อใน 2 นาที"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "placement",
+          "description": "ให้เด็กนับวัสดุ 1-10 และเขียนเลข"
+        },
+        {
+          "type": "lesson_quiz",
+          "description": "ชุดคำถาม 5 ข้อ: นับ อ่าน เขียนเลข 1-10"
+        },
+        {
+          "type": "mastery_quiz",
+          "description": "ชุดคำถาม 10 ข้อ ครอบคลุมทุกพื้นฐาน Number Bond ของ 5"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อที่พบบ่อย: ตัวเลขกลับกัน เช่น 3 เขียนเป็น ย ไม่เข้าใจว่าเครื่องหมาย > หมายถึงมากกว่า"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": [],
+        "next_grade_preparation": ["สมาชิกภายใน 10", "การบวกลบภายใน 10"]
+      }
+    },
+    {
+      "unit_id": "g1_u02_number_bond_10",
+      "unit_title_th": "สมาชิกภายใน 10",
+      "order": 2,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 6,
+      "importance": "core",
+      "learning_objectives": [
+        "สร้าง Number Bond ของจำนวน 1-10 ได้ทุกจำนวน",
+        "เข้าใจความสัมพันธ์ของส่วนย่อยและส่วนรวม",
+        "ใช้ Number Bond ช่วยคิดบวกลบ"
+      ],
+      "key_vocabulary": ["ส่วนย่อย", "ส่วนรวม", "Number Bond", "คู่", "แฝด"],
+      "singapore_method": {
+        "concrete_activities": ["แบ่งลูกปัดเป็น 2 กลุ่ม", "ใช้ถ้วยครอบลูกปัด", "เล่นเกมซ่อนของ"],
+        "pictorial_models": ["Number Bond Chart", "วงกลมซ้อนกัน", "ส่วนย่อย-ส่วนรวม"],
+        "abstract_methods": ["เขียนประโยคบวก", "ท่องจำคู่ตัวเลขที่รวมเป็น 10"],
+        "bar_model_usage": "ใช้ Part-Part-Whole Bar แบบง่าย",
+        "number_bond_usage": "เป็นเครื่องมือหลักในการสอนบวกลบ",
+        "mental_math_strategy": "ใช้ Number Bond หาค่าที่หายไป เช่น 7 + ? = 10"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_number_bond_6_10",
+          "lesson_title_th": "สมาชิกภายใน 6-10",
+          "objective_th": "สร้าง Number Bond ของ 6-10 ได้",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 6-10 เม็ด แบ่งเป็น 2 กลุ่มทุกรูปแบบ",
+            "pictorial": "วาด Number Bond ของแต่ละจำนวนบนกระดาษ",
+            "abstract": "เขียนประโยคบวกทุกรูปแบบ เช่น 6=1+5=2+4=3+3"
+          },
+          "common_misconceptions": ["จำรูปแบบได้แต่ไม่เข้าใจ", "ลืมว่ามี 0+10=10 ด้วย"],
+          "diagnostic_checks": ["ให้สร้าง Number Bond ของ 7 ได้ทุกรูปแบบ", "ถามว่า 8 กับอะไรรวมเป็น 10"],
+          "practice_types": ["วาด Number Bond", "เกมซ่อน-หา", "ท่องคู่จำนวน"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ท่องได้แต่ไม่เข้าใจว่าทำไม",
+              "remediation_activity": "ใช้ฝาขวดครอบลูกปัด ให้เด็กเห็นว่าซ่อนไปกี่เม็ด",
+              "recommended_practice_type": "เกมซ่อนของ 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีลูกชิ้น 8 ลูก แบ่งให้เพื่อน 3 ลูก เหลือกี่ลูก"],
+          "quest_ideas": ["daily: ท่อง Number Bond ของ 6-10", "weekly: สร้าง Number Bond ทุกรูปแบบให้ครบ", "boss: ตอบได้เร็วภายใน 5 วินาที"]
+        },
+        {
+          "lesson_id": "g1_make_10",
+          "lesson_title_th": "การทำให้ครบ 10",
+          "objective_th": "เมื่อมีจำนวนน้อยกว่า 10 หาจำนวนที่ต้องเพิ่มให้ครบ 10",
+          "teaching_sequence_cpa": {
+            "concrete": "มีก้อนกรวด 7 ก้อน ต้องเพิ่มกี่ก้อนจึงครบ 10",
+            "pictorial": "วาด ten-frame เติมให้ครบ 10 ช่อง",
+            "abstract": "7 + ? = 10, ? + 3 = 10"
+          },
+          "common_misconceptions": ["นับเพิ่มจากจำนวนที่มีโดยไม่ใช้ 10 เป็นเป้า"],
+          "diagnostic_checks": ["ให้หาจำนวนที่ทำให้ครบ 10", "เช่น 8 + ? = 10"],
+          "practice_types": ["เกมเติมให้ครบ 10", "ฝึกบวกจนถึง 10"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "นับเริ่มจาก 1 ทุกครั้ง",
+              "remediation_activity": "ใช้ ten-frame ให้เห็นชัดว่าต้องเติมกี่ช่อง",
+              "recommended_practice_type": "ฝึกบน ten-frame 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีดินสอ 6 แท่ง อยากมี 10 แท่ง ต้องซื้อกี่แท่ง"],
+          "quest_ideas": ["daily: ทำให้ครบ 10 จากจำนวนต่างๆ", "speed: ตอบได้ภายใน 3 วินาที"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "ให้เขียน Number Bond ของ 6-10 ให้ครบทุกรูปแบบ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: 0 + 10 = 10 มักถูกลืม หรือ 5 + 5 = 10 มักถูกลืมว่ามีด้วย"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_number_bond_5"],
+        "next_grade_preparation": ["การบวกภายใน 10"]
+      }
+    },
+    {
+      "unit_id": "g1_u03_addition_within_10",
+      "unit_title_th": "การบวกจำนวนภายใน 10",
+      "order": 3,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 7,
+      "importance": "core",
+      "learning_objectives": [
+        "บวกจำนวนสองจำนวนภายใน 10 อย่างมีความหมาย",
+        "ใช้ Number Bond ช่วยในการบวก",
+        "เขียนประโยคสัญลักษณ์การบวกได้"
+      ],
+      "key_vocabulary": ["บวก", "รวม", "เพิ่ม", "+", "= รวม"],
+      "singapore_method": {
+        "concrete_activities": ["ใช้ลูกปัดหยิบใส่ถ้วย 2 ครั้ง", "วางดินสอ 2 แท่งแล้วเพิ่มอีก 3 แท่ง"],
+        "pictorial_models": ["ten-frame", "Number Bond บวก", "bar model รวม"],
+        "abstract_methods": ["เขียนประโยค 3 + 4 = 7", "ใช้นิ้วบวก", "นับต่อจากจำนวนแรก"],
+        "bar_model_usage": "Part-Part-Whole Bar: แบ่งส่วนย่อย 2 ส่วน ได้ส่วนรวม",
+        "number_bond_usage": "ใช้ Number Bond ที่รู้แล้วช่วยบวก เช่น ถ้ารู้ 4+3=7 ก็รู้ 3+4=7",
+        "mental_math_strategy": "Counting on: เริ่มนับจากจำนวนมากกว่า เช่น 4+3 เริ่มนับที่ 4 ต่อ 3"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_add_concept",
+          "lesson_title_th": "ความหมายของการบวก",
+          "objective_th": "เข้าใจว่าการบวกคือการรวมกลุ่มเข้าด้วยกัน",
+          "teaching_sequence_cpa": {
+            "concrete": "ใส่กระดุม 3 เม็ดในถุง แล้วใส่เพิ่มอีก 2 เม็ด รวมกี่เม็ด",
+            "pictorial": "วาดรูปการรวมกลุ่ม 2 กลุ่ม",
+            "abstract": "เขียน 3 + 2 = 5"
+          },
+          "common_misconceptions": ["ไม่เข้าใจว่าบวกคือเพิ่มเข้าไป", "นับรวมทั้งหมดโดยไม่เข้าใจว่าเป็นการรวม 2 กลุ่ม"],
+          "diagnostic_checks": ["ให้อธิบายว่ากำลังทำอะไร", "ให้เลือกรูปที่แสดงการบวก"],
+          "practice_types": ["เกมรวมของ", "วาดรูปบวก", "เขียนประโยค"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "นับทุกอย่างรวมกันทั้งหมดตั้งแต่ต้น",
+              "remediation_activity": "ให้แยกกลุ่มก่อน แล้วค่อยรวม ใช้ถ้วย 2 ใบ",
+              "recommended_practice_type": "เกมรวมกลุ่ม 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีลูกชิ้น 2 ลูก ได้เพิ่มอีก 3 ลูก รวมกี่ลูก"],
+          "quest_ideas": ["daily: รวมสิ่งของ 2 กลุ่มในบ้าน", "real-life: ช่วยแม่รวมผลไม้"]
+        },
+        {
+          "lesson_id": "g1_add_within_10_basic",
+          "lesson_title_th": "การบวกภายใน 10 ที่ไม่มีทด",
+          "objective_th": "บวกจำนวนสองจำนวนภายใน 10 ได้",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัดหรือนิ้วมือช่วยบวก",
+            "pictorial": "ใช้ ten-frame วางลูกปัดแล้วนับรวม",
+            "abstract": "ใช้ Number Bond ช่วย เช่น 6+2 ใช้ว่า 6+4=10 ดังนั้น 6+2 ต้องเป็น 8"
+          },
+          "common_misconceptions": ["นับนิ้วเรียงกันไม่ถูก", "ลืมว่านับจากจำนวนแรกไม้เลย"],
+          "diagnostic_checks": ["ให้บวก 4+3, 5+2, 6+1 ได้ถูกต้อง"],
+          "practice_types": ["ฝึกบวกบน ten-frame", "เกมบวกเร็ว", "ใบงาน"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ยังนับนิ้วทีละข้าม",
+              "remediation_activity": "ฝึกนับจากจำนวนที่มากกว่า เช่น 5+3 นับต่อจาก 5 อีก 3",
+              "recommended_practice_type": "ฝึก Counting on 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ซื้อขนม 4 บาท และ 3 บาท รวมเท่าไร"],
+          "quest_ideas": ["speed: บวกเลขภายใน 10 ให้ได้ 20 ข้อใน 3 นาที", "boss: บวกถูกต้อง 10 ข้อติดกัน"]
+        },
+        {
+          "lesson_id": "g1_add_make_10",
+          "lesson_title_th": "การบวกโดยทำให้ครบ 10",
+          "objective_th": "ใช้ Make Ten Strategy บวกเลขได้เร็วขึ้น",
+          "teaching_sequence_cpa": {
+            "concrete": "มีลูกปัด 7 เม็ด ต้องเติมกี่เม็ดจึงครบ 10",
+            "pictorial": "วาด ten-frame เติมให้ครบ 10",
+            "abstract": "8 + 5 = 8 + 2 = 10, 10 + 3 = 13"
+          },
+          "common_misconceptions": ["พยายามท่องจำทุกคู่แทนที่จะใช้ Make Ten"],
+          "diagnostic_checks": ["ให้บวก 8+5, 7+6 โดยใช้วิธี Make Ten"],
+          "practice_types": ["ฝึก Make Ten ก่อนแล้วค่อยบวกส่วนที่เหลือ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ยังนับทีละตัวไม่ใช้ Make Ten",
+              "remediation_activity": "ฝึกบน ten-frame จนเห็นภาพว่าต้องเติมกี่ถึงครบ 10",
+              "recommended_practice_type": "เกม Make Ten 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีเงิน 8 บาท อยากซื้อของ 10 บาท ขาดอีกกี่บาท"],
+          "quest_ideas": ["mastery: ทำ Make Ten ได้ทุกคู่ภายใน 2 นาที"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "ชุดบวก 20 ข้อ ภายใน 10 ไม่ใช้เครื่องมือ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อที่ผิดบ่อย: 4+4=9 (ควรเป็น 8), 3+5=7 (ควรเป็น 8)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_number_bond_6_10"],
+        "next_grade_preparation": ["การลบภายใน 10"]
+      }
+    },
+    {
+      "unit_id": "g1_u04_subtraction_within_10",
+      "unit_title_th": "การลบจำนวนภายใน 10",
+      "order": 4,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 7,
+      "importance": "core",
+      "learning_objectives": [
+        "ลบจำนวนสองจำนวนภายใน 10 อย่างมีความหมาย",
+        "ใช้ Number Bond ช่วยในการลบ",
+        "เขียนประโยคสัญลักษณ์การลบได้"
+      ],
+      "key_vocabulary": ["ลบ", "เอาออก", "เหลือ", "-", "= เหลือ"],
+      "singapore_method": {
+        "concrete_activities": ["มีดินสอ 7 แท่ง เอาออก 3 แท่ง เหลือกี่แท่ง", "แบ่งของออกเป็น 2 กลุ่ม"],
+        "pictorial_models": ["Number Bond ลบ", "ten-frame ตัดออก", "bar model"],
+        "abstract_methods": ["นับถอยหลัง", "ใช้ Number Bond ว่า 10 - 3 = 7 ก็รู้ว่า 10 ลบ 7 = 3"],
+        "bar_model_usage": "Part-Part-Whole Bar: รู้ส่วนรวมและส่วนย่อยหนึ่ง หาส่วนย่อยที่เหลือ",
+        "number_bond_usage": "ใช้ Number Bond ที่รู้แล้ว เช่น ถ้ารู้ 3+7=10 ก็รู้ว่า 10-3=7",
+        "mental_math_strategy": "Count back: ลบเล็กน้อยนับถอยหลัง ลบเยอะใช้บวกย้อนกลับ"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_subtract_concept",
+          "lesson_title_th": "ความหมายของการลบ",
+          "objective_th": "เข้าใจว่าการลบคือการเอาออกหรือแบ่งออก",
+          "teaching_sequence_cpa": {
+            "concrete": "มีลูกบอล 6 ลูก ให้เพื่อนไป 2 ลูก เหลือกี่ลูก",
+            "pictorial": "วาดรูปลูกบอล 6 ลูก ขีดออก 2 ลูก",
+            "abstract": "เขียน 6 - 2 = 4"
+          },
+          "common_misconceptions": ["สับสนบวกกับลบ", "ไม่เข้าใจว่าลบคือเอาออก"],
+          "diagnostic_checks": ["ให้อธิบายว่ากำลังทำอะไร", "ให้เลือกรูปที่แสดงการลบ"],
+          "practice_types": ["เกมเอาออก", "วาดรูปลบ", "เขียนประโยค"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "เอาสิ่งของทิ้งจริงๆ หรือไม่เข้าใจว่าเป็นการลบ",
+              "remediation_activity": "ใช้ถ้วยครอบวัสดุ ให้เด็กเห็นว่าเอาออกไปจริงแต่ยังอยู่ในถ้วยอีกใบ",
+              "recommended_practice_type": "เกมเอาออก 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีขนม 5 ชิ้น กินไป 2 ชิ้น เหลือกี่ชิ้น"],
+          "quest_ideas": ["daily: หาสิ่งของในบ้านที่เอาออกได้ เช่น ลดลง"]
+        },
+        {
+          "lesson_id": "g1_subtract_within_10",
+          "lesson_title_th": "การลบภายใน 10",
+          "objective_th": "ลบจำนวนสองจำนวนภายใน 10 ได้",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัดหรือนิ้วมือช่วยลบ",
+            "pictorial": "ใช้ ten-frame ขีดออก",
+            "abstract": "9 - 4 = 5, 7 - 3 = 4"
+          },
+          "common_misconceptions": ["นับถอยหลังผิด", "ลบเลขหลักมากกว่าตัวตั้ง"],
+          "diagnostic_checks": ["ให้ลบ 7-3, 8-5, 9-2 ได้ถูกต้อง"],
+          "practice_types": ["ฝึกลบบน ten-frame", "เกมลบเร็ว", "ใบงาน"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "นับถอยหลังผิดทิศทาง",
+              "remediation_activity": "ฝึกนับถอยหลังจากเลขเล็กถึงเลขใหญ่ก่อน เช่น 5 4 3 2 1",
+              "recommended_practice_type": "ฝึกนับถอยหลัง 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีเงิน 9 บาท ซื้อของ 4 บาท เหลือเงินเท่าไร"],
+          "quest_ideas": ["speed: ลบเลขภายใน 10 ให้ได้ 20 ข้อใน 3 นาที"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "ชุดลบ 20 ข้อ ภายใน 10 ไม่ใช้เครื่องมือ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อที่ผิดบ่อย: 10-0=0 (ควรเป็น 10), 5-5=0 ถูกแต่เด็กมักลืม"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_add_within_10_basic"],
+        "next_grade_preparation": ["การบวกลบภายใน 20"]
+      }
+    },
+    {
+      "unit_id": "g1_u05_numbers_11_20",
+      "unit_title_th": "จำนวน 11-20 และการบวกลบภายใน 20",
+      "order": 5,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 8,
+      "importance": "core",
+      "learning_objectives": [
+        "นับและเขียนจำนวน 11-20",
+        "เข้าใจค่าประจำตำแหน่ง สิบกับหน่วย",
+        "บวกลบภายใน 20 โดยใช้สิบเป็นตัวช่วย"
+      ],
+      "key_vocabulary": ["สิบ", "หน่วย", "สิบเอ็ด", "สิบสอง", "10+5=15"],
+      "singapore_method": {
+        "concrete_activities": ["ใช้ลูกปัดบนแผ่นไม้ 10 ลูก = 1 สิบ", "ใช้ไม้บล็อกพื้นฐาน"],
+        "pictorial_models": ["place-value chart สิบ-หน่วย", "ten-frame ต่อกัน 2 แผ่น", "ลูกปัดบนเส้น"],
+        "abstract_methods": ["12 = 10 + 2", "นับต่อจากสิบ", "ใช้ Make Ten ข้ามสิบ"],
+        "bar_model_usage": "Bar Model แบบง่ายแสดงสิบกับหน่วย",
+        "number_bond_usage": "ใช้ Make Ten ข้ามสิบ เช่น 8+5 = 8+2+3 = 13",
+        "mental_math_strategy": "Make Ten ข้ามสิบ: 8+5 = 8+2=10, 10+3=13"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_counting_11_20",
+          "lesson_title_th": "จำนวน 11-20",
+          "objective_th": "นับเขียนจำนวน 11-20 และเข้าใจว่า 11 = 10+1",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 10 เม็ดบนไม้แผ่น แล้วเพิ่มอีก 1-9 เม็ด",
+            "pictorial": "วาด place-value chart สิบ-หน่วย",
+            "abstract": "12 = 10 + 2, 15 = 10 + 5"
+          },
+          "common_misconceptions": ["อ่าน 13 ว่า สามสิบหนึ่ง แทนที่จะเป็น สิบสาม"],
+          "diagnostic_checks": ["ให้เขียนเลข 13-19 บน place-value chart"],
+          "practice_types": ["เกมนับสิบกับหน่วย", "เขียนเลข 11-20"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจว่า 10 คือหนึ่งกลุ่มสิบ",
+              "remediation_activity": "ใช้ไม้ไอศกรีมจัดเป็นกลุ่มสิบๆ",
+              "recommended_practice_type": "จัดกลุ่มสิบ 5 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีลูกชิ้น 13 ลูก มีกล่องใส่ได้ 10 ลูก ต้องใช้กล่องกี่ใบ"],
+          "quest_ideas": ["daily: สังเกตสิ่งของรอบตัวที่มีสิบ"]
+        },
+        {
+          "lesson_id": "g1_add_teen_numbers",
+          "lesson_title_th": "การบวกจำนวนที่มีสิบ",
+          "objective_th": "บวกจำนวนที่มีสิบได้ เช่น 10+5, 13+2",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 1 สิบกับหน่วย เพิ่มหน่วยอีก 2",
+            "pictorial": "วาด place-value chart บวกหน่วยเพิ่ม",
+            "abstract": "10 + 5 = 15, 13 + 2 = 15"
+          },
+          "common_misconceptions": ["นับรวมทั้งหมดจาก 1 ไม่ใช้สิบเป็นตัวช่วย"],
+          "diagnostic_checks": ["ให้บวก 10+7, 12+3, 15+2"],
+          "practice_types": ["ฝึกบวกบน place-value", "เกมบวกสิบ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ยังนับจาก 1 ทุกครั้ง",
+              "remediation_activity": "ฝึกมอง 10 เป็นหนึ่งกลุ่ม บวกเฉพาะหน่วย",
+              "recommended_practice_type": "เกมบวกสิบ 10 ข้อ",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีขนม 10 ชิ้น ได้เพิ่มอีก 5 ชิ้น รวมเท่าไร"],
+          "quest_ideas": ["daily: บวกจำนวนที่มีสิบในชีวิตจริง"]
+        },
+        {
+          "lesson_id": "g1_addsub_within_20",
+          "lesson_title_th": "การบวกลบภายใน 20",
+          "objective_th": "บวกลบภายใน 20 โดยใช้ Make Ten",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้ลูกปัด 17 เม็ด เอาออก 9 เม็ด",
+            "pictorial": "วาด ten-frame 2 แผ่น ฝึกข้ามสิบ",
+            "abstract": "8 + 7 = 8 + 2 + 5 = 15, 15 - 8 = 7"
+          },
+          "common_misconceptions": ["พยายามนับทีละตัวไม่ใช้ Make Ten", "ลืมข้ามสิบ"],
+          "diagnostic_checks": ["ให้บวก 8+7, 9+5, 13-7 ได้ถูกต้อง"],
+          "practice_types": ["ฝึก Make Ten ข้ามสิบ", "เกมบวกลบเร็ว"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่สามารถทำให้ครบ 10 ก่อนบวกส่วนที่เหลือ",
+              "remediation_activity": "ฝึกทำ Make Ten ก่อนแยกตัว เช่น 8+5 ต้องเติม 2 ก่อนได้ 10",
+              "recommended_practice_type": "ฝึก Make Ten ทุกวัน 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["มีลูกชิ้น 14 ลูก แบ่งให้เพื่อน 8 ลูก เหลือกี่ลูก"],
+          "quest_ideas": ["speed: บวกลบภายใน 20 ให้ได้ 30 ข้อใน 5 นาที"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "ชุดบวกลบภายใน 20 จำนวน 25 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: 13-7=5 (ถูกคือ 6), 8+8=15 (ถูกคือ 16)"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_add_within_10", "g1_subtract_within_10", "g1_number_bond_6_10"],
+        "next_grade_preparation": ["การบวกลบสองหลัก"]
+      }
+    },
+    {
+      "unit_id": "g1_u06_shapes",
+      "unit_title_th": "รูปเรขาคณิตพื้นฐาน",
+      "order": 6,
+      "strand_id": "geometry",
+      "estimated_lessons": 5,
+      "importance": "core",
+      "learning_objectives": [
+        "จำแนกรูปร่างพื้นฐาน วงกลม สามเหลี่ยม สี่เหลี่ยม",
+        "บอกจำนวนด้านและมุมของรูปร่าง",
+        "สร้างและต่อแบบรูปง่ายๆ"
+      ],
+      "key_vocabulary": ["วงกลม", "สามเหลี่ยม", "สี่เหลี่ยม", "ด้าน", "มุม", "แบบรูป"],
+      "singapore_method": {
+        "concrete_activities": ["จับต้องรูปร่างจริง", "จัดเรียงรูป", "สร้างแบบรูปด้วยรูปร่าง"],
+        "pictorial_models": ["รูปร่างบนกระดาน", "การจัดเรียงแบบรูป", "shape sorter"],
+        "abstract_methods": ["เรียกชื่อรูปร่าง", "นับจำนวนด้าน", "บอกชื่อรูปจากคำอธิบาย"],
+        "bar_model_usage": "ไม่ใช้ Bar Model ในหน่วยนี้",
+        "number_bond_usage": "ไม่ใช้ Number Bond ในหน่วยนี้",
+        "mental_math_strategy": "จำลักษณะรูปร่าง เช่น สามเหลี่ยมมี 3 ด้าน 3 มุม"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_basic_shapes",
+          "lesson_title_th": "รูปร่างพื้นฐาน 4 ชนิด",
+          "objective_th": "จำแนกและเรียกชื่อ วงกลม สามเหลี่ยม สี่เหลี่ยม ห้าเหลี่ยม",
+          "teaching_sequence_cpa": {
+            "concrete": "ให้เด็กจับต้องรูปร่างจริง ลูกบอล สมุด กล่อง",
+            "pictorial": "วาดรูปร่าง ระบายสีตามลักษณะ",
+            "abstract": "เรียกชื่อ บอกจำนวนด้าน 3-4-5"
+          },
+          "common_misconceptions": ["สับสนรูปร่างที่คล้ายกัน เช่น สี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้า"],
+          "diagnostic_checks": ["ให้จับรูปร่างที่กำหนด", "ให้เรียกชื่อรูปจากรูปที่เห็น"],
+          "practice_types": ["เกมจับคู่รูปร่าง", "จัดรูปร่างตามลักษณะ", "วาดรูปตามชื่อ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่แยกแยะสี่เหลี่ยมจัตุรัสกับผืนผ้า",
+              "remediation_activity": "ให้วัดด้านด้วยไม้บรรทัด ด้านเท่ากันหมด = จัตุรัส",
+              "recommended_practice_type": "วัดด้านรูปร่าง 5 รูป",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["หานาฬิกาที่เป็นวงกลม", "หาสิ่งของที่เป็นสามเหลี่ยม"],
+          "quest_ideas": ["daily: หารูปร่าง 3 ชนิดรอบตัว", "hunt: หาสิ่งของที่เป็นรูปร่างต่างๆ ในบ้าน"]
+        },
+        {
+          "lesson_id": "g1_patterns",
+          "lesson_title_th": "แบบรูปและการจัดลำดับ",
+          "objective_th": "สร้างและต่อแบบรูปซ้ำ",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้รูปร่างจริงเรียงเป็นแบบ เช่น วงกลม-สามเหลี่ยม-วงกลม-สามเหลี่ยม",
+            "pictorial": "วาดแบบรูปบนกระดาษตาราง",
+            "abstract": "อธิบายแบบรูปด้วยคำ และทำนายรูปถัดไป"
+          },
+          "common_misconceptions": ["ไม่สังเกตรูปแบบที่ซ่อนอยู่", "ต่อแบบรูปผิดลำดับ"],
+          "diagnostic_checks": ["ให้ต่อแบบรูป ABAB ต่อไปได้", "ให้ทำนายรูปที่ 5 ในแบบรูป"],
+          "practice_types": ["เกมต่อแบบรูป", "วาดแบบรูป", "สร้างแบบรูปของตัวเอง"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เห็นรูปแบบซ้ำ",
+              "remediation_activity": "ฝึกแยกสีหรือรูปทีละตัวในแบบรูป เช่น สีแดง-สีน้ำเงิน-แดง-น้ำเงิน",
+              "recommended_practice_type": "เกมจับคู่สี 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ลายกระเบื้อง ลายผ้า ลายปูน",
+          "quest_ideas": ["daily: สร้างแบบรูปด้วยสิ่งของในบ้าน"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "จำแนกรูปร่าง 10 ข้อ และต่อแบบรูป 5 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: วงรีกับวงกลมดูคล้ายกัน สี่เหลี่ยมควงกับสี่เหลี่ยมจัตุรัส"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": [],
+        "next_grade_preparation": ["รูปทรงสามมิติ", "พื้นที่"]
+      }
+    },
+    {
+      "unit_id": "g1_u07_time_money",
+      "unit_title_th": "เวลาและเงินเบื้องต้น",
+      "order": 7,
+      "strand_id": "measurement",
+      "estimated_lessons": 6,
+      "importance": "core",
+      "learning_objectives": [
+        "อ่านเข็มนาฬิกาบอกเวลาตรงและครึ่งชั่วโมง",
+        "รู้จักเหรียญ 1 2 5 10 บาท",
+        "บวกลบเงินภายใน 20 บาท"
+      ],
+      "key_vocabulary": ["นาฬิกา", "เข็มยาว", "เข็มสั้น", "โมง", "ครึ่งชั่วโมง", "เหรียญ", "บาท"],
+      "singapore_method": {
+        "concrete_activities": ["หมุนเข็มนาฬิกาจริง", "ใช้เหรียญจริงซื้อขาย", "จับเวลาเป็นนาที"],
+        "pictorial_models": ["เข็มนาฬิกาบนกระดาษ", "เหรียญบนกระดาษ", "เกมซื้อขาย"],
+        "abstract_methods": ["อ่านเวลาเป็นตัวเลข 3:00 4:30", "บวกลบเงินเป็นตัวเลข"],
+        "bar_model_usage": "ใช้ Bar Model ง่ายๆ สำหรับโจทย์เงิน",
+        "number_bond_usage": "ใช้ Number Bond ช่วยบวกลบเงิน",
+        "mental_math_strategy": "ใช้วิธีบวกเงินทีละขั้น เช่น 5+5+2=12"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_read_clock",
+          "lesson_title_th": "การอ่านเวลาบนนาฬิกา",
+          "objective_th": "อ่านเวลาตรงและครึ่งชั่วโมงบนนาฬิกาเข็ม",
+          "teaching_sequence_cpa": {
+            "concrete": "ให้เด็กหมุนเข็มนาฬิกาจริงชี้ที่ 3 โมง 6 โมง",
+            "pictorial": "วาดเข็มนาฬิกาบนกระดาษ ฝึกวาดเข็ม",
+            "abstract": "อ่านว่า 3 โมง 6 โมง 30 นาที = ครึ่งป่วย"
+          },
+          "common_misconceptions": ["สับสนเข็มยาวกับเข็มสั้น", "ไม่เข้าใจว่าเข็มยาวชี้ 12 = บอกนาที"],
+          "diagnostic_checks": ["ให้อ่านเวลา 3 โมง 9 โมง 12 โมง ครึ่ง"],
+          "practice_types": ["เกมอ่านเวลา", "วาดเข็มนาฬิกา", "จับเวลา"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "สับสนเข็มยาวกับเข็มสั้น",
+              "remediation_activity": "ทาสีเข็มยาวสีแดง เข็มสั้นสีน้ำเงิน ให้จำ",
+              "recommended_practice_type": "อ่านเวลาจริง 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ตื่น 6 โมง ไปโรงเรียน 8 โมง ดูกี่โมง"],
+          "quest_ideas": ["daily: อ่านเวลาที่นาฬิกาในห้องทุกชั่วโมง", "real-life: อ่านเวลาตอนตื่น ตอนกินข้าว ตอนนอน"]
+        },
+        {
+          "lesson_id": "g1_coins",
+          "lesson_title_th": "เหรียญไทยและการบวกลบเงิน",
+          "objective_th": "รู้จักเหรียญ 1 2 5 10 บาท และบวกลบเงินภายใน 20 บาท",
+          "teaching_sequence_cpa": {
+            "concrete": "ใช้เหรียญจริงจัดชุดเงินต่างๆ",
+            "pictorial": "วาดเหรียญบนกระดาษ ระบายสี",
+            "abstract": "5 + 2 + 1 = 8 บาท, 15 - 5 = 10 บาท"
+          },
+          "common_misconceptions": ["ไม่เข้าใจว่าเหรียญ 10 บาทมีมูลค่าเท่ากับเหรียญ 5+5"],
+          "diagnostic_checks": ["ให้จัดเหรียญให้ได้ 10 บาท 3 วิธี", "ซื้อของ 8 บาท จ่าย 10 บาท ทอนเท่าไร"],
+          "practice_types": ["เกมซื้อขาย", "จัดเหรียญให้ได้จำนวน", "คำนวณเงินทอน"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจมูลค่าของเหรียญแต่ละชนิด",
+              "remediation_activity": "ให้เปรียบเทียบเหรียญ 10 บาทกับเหรียญ 1 บาท 10 เหรียญ",
+              "recommended_practice_type": "เกมเปรียบเทียบเหรียญ 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["ซื้อขนม 7 บาท มีเหรียญ 10 บาท รับเงินทอนเท่าไร"],
+          "quest_ideas": ["real-life: ช่วยแม่คำนวณเงินทอนเมื่อซื้อของ", "daily: ใช้เงินจริงซื้อของเล็กๆ"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "อ่านเวลา 5 ข้อ และคำนวณเงิน 5 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: ทอนเงิน 10-8=1 บาท แต่เด็กมักลืมว่าได้เหรียญ 1 บาท"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_add_within_10", "g1_subtract_within_10"],
+        "next_grade_preparation": ["เงินและการทอนเงินในจำนวนที่มากขึ้น"]
+      }
+    },
+    {
+      "unit_id": "g1_u08_simple_word_problems",
+      "unit_title_th": "โจทย์ปัญหาง่ายๆ",
+      "order": 8,
+      "strand_id": "numbers_and_operations",
+      "estimated_lessons": 5,
+      "importance": "core",
+      "learning_objectives": [
+        "อ่านโจทย์ปัญหาสั้นๆ เข้าใจ",
+        "วาดรูปช่วยแก้โจทย์",
+        "เขียนประโยคสัญลักษณ์และหาคำตอบ"
+      ],
+      "key_vocabulary": ["โจทย์", "ปัญหา", "คำตอบ", "วาดรูป", "เหลือ", "รวม"],
+      "singapore_method": {
+        "concrete_activities": ["ใช้วัสดุจริงแสดงตามโจทย์", "เล่นเป็นเรื่องราว"],
+        "pictorial_models": ["วาดรูปตามโจทย์", "ใช้รูปแทนตัวเลข", "bar model ง่าย"],
+        "abstract_methods": ["เขียนประโยคสัญลักษณ์", "หาคำตอบ"],
+        "bar_model_usage": "ใช้ Bar Model ง่ายๆ แสดงส่วนย่อยและส่วนรวมในโจทย์",
+        "number_bond_usage": "ใช้ Number Bond วาดรูปช่วยเห็นความสัมพันธ์",
+        "mental_math_strategy": "อ่านโจทย์ หาว่าเป็นบวกหรือลบ วาดรูป ค่อยหาคำตอบ"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_add_word_problems",
+          "lesson_title_th": "โจทย์บวกง่ายๆ",
+          "objective_th": "แก้โจทย์บวกที่มีผลรวมไม่เกิน 20",
+          "teaching_sequence_cpa": {
+            "concrete": "เล่าเรื่อง เช่น มีลูกแมว 3 ตัว ได้อีก 2 ตัว รวมกี่ตัว",
+            "pictorial": "วาดรูปลูกแมว 3 ตัว แล้วเพิ่มอีก 2 ตัว",
+            "abstract": "เขียน 3 + 2 = 5 ตอบ ลูกแมว 5 ตัว"
+          },
+          "common_misconceptions": ["ไม่อ่านโจทย์ให้จบ ไม่รู้ว่าต้องบวก", "ลืมเขียนหน่วยในคำตอบ"],
+          "diagnostic_checks": ["ให้อ่านโจทย์แล้วบอกว่าเป็นบวกหรือลบ"],
+          "practice_types": ["ทำโจทย์บวก 10 ข้อ", "วาดรูปประกอบ", "แต่งโจทย์เอง"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจโจทย์ ไม่รู้จะบวกหรือลบ",
+              "remediation_activity": "ฝึกเน้นคำว่า ได้เพิ่ม = บวก เหลือ = ลบ",
+              "recommended_practice_type": "แยกคำบอกบวก-ลบ 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["โจทย์เรื่องของในบ้าน เพื่อน สัตว์"],
+          "quest_ideas": ["daily: แต่งโจทย์บวกจากชีวิตจริง 1 ข้อ", "creative: เขียนโจทย์ให้เพื่อนทำ"]
+        },
+        {
+          "lesson_id": "g1_subtract_word_problems",
+          "lesson_title_th": "โจทย์ลบง่ายๆ",
+          "objective_th": "แก้โจทย์ลบที่มีตัวตั้งไม่เกิน 20",
+          "teaching_sequence_cpa": {
+            "concrete": "เล่าเรื่อง เช่น มีลูกแก้ว 9 ลูก ให้เพื่อนไป 4 ลูก เหลือกี่ลูก",
+            "pictorial": "วาดรูปลูกแก้ว 9 ลูก ขีดออก 4 ลูก",
+            "abstract": "เขียน 9 - 4 = 5 ตอบ ลูกแก้ว 5 ลูก"
+          },
+          "common_misconceptions": ["สับสนบวกกับลบในโจทย์", "ลืมว่าต้องเอาออก"],
+          "diagnostic_checks": ["ให้อ่านโจทย์ลบแล้ววาดรูปได้"],
+          "practice_types": ["ทำโจทย์ลบ 10 ข้อ", "วาดรูปประกอบ"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "สับสนบวกกับลบในโจทย์",
+              "remediation_activity": "ฝึกเน้นคำว่า ให้ไป เอาออก เหลือ = ลบ",
+              "recommended_practice_type": "แยกคำบอกบวก-ลบ 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["โจทย์เรื่องของใช้ เพื่อน สัตว์"],
+          "quest_ideas": ["daily: แต่งโจทย์ลบจากชีวิตจริง 1 ข้อ"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "ทำโจทย์บวกลบ 10 ข้อ พร้อมวาดรูป"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: โจทย์ที่มีคำว่า รวม แต่จริงๆ ต้องลบ เช่น มี 10 ใช้ไป 3 เหลือเท่าไร"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": ["g1_add_within_20", "g1_subtract_within_20"],
+        "next_grade_preparation": ["โจทย์ปัญหาสองขั้นตอน"]
+      }
+    },
+    {
+      "unit_id": "g1_u09_simple_measurement",
+      "unit_title_th": "การวัดแบบง่าย",
+      "order": 9,
+      "strand_id": "measurement",
+      "estimated_lessons": 4,
+      "importance": "supporting",
+      "learning_objectives": [
+        "เปรียบเทียบความยาว เช่น ยาวกว่า สั้นกว่า เท่ากัน",
+        "เปรียบเทียบน้ำหนัก เช่น หนักกว่า เบากว่า",
+        "ใช้หน่วยที่ไม่เป็นทางการวัด เช่น กระดาษ ดินสอ"
+      ],
+      "key_vocabulary": ["ยาวกว่า", "สั้นกว่า", "หนักกว่า", "เบากว่า", "วัด", "หน่วย"],
+      "singapore_method": {
+        "concrete_activities": ["วัดโต๊ะด้วยสมุด", "ชั่งของด้วยมือ", "เปรียบเทียบของ 2 สิ่ง"],
+        "pictorial_models": ["วาดรูปการวัด", "เปรียบเทียบบนกระดาษ"],
+        "abstract_methods": ["ใช้คำเปรียบเทียบ เช่น ยาวกว่า สั้นกว่า"],
+        "bar_model_usage": "ไม่ใช้ Bar Model ในหน่วยนี้",
+        "number_bond_usage": "ไม่ใช้ Number Bond ในหน่วยนี้",
+        "mental_math_strategy": "ใช้การประมาณและเปรียบเทียบโดยตรง"
+      },
+      "lesson_topics": [
+        {
+          "lesson_id": "g1_compare_length",
+          "lesson_title_th": "การเปรียบเทียบความยาว",
+          "objective_th": "เปรียบเทียบความยาวโดยใช้คำ ยาวกว่า สั้นกว่า เท่ากัน",
+          "teaching_sequence_cpa": {
+            "concrete": "วางดินสอ 2 แท่งข้างกัน ถามว่าอันไหนยาวกว่า",
+            "pictorial": "วาดรูปของ 2 สิ่งให้เปรียบเทียบกัน",
+            "abstract": "ใช้คำว่า ยาวกว่า สั้นกว่า เท่ากัน"
+          },
+          "common_misconceptions": ["ไม่เข้าใจว่าต้องวัดจากจุดเดียวกัน"],
+          "diagnostic_checks": ["ให้เปรียบเทียบของ 2 สิ่งได้ถูกต้อง"],
+          "practice_types": ["เกมเปรียบเทียบ", "วัดจริงในห้อง"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ไม่เข้าใจว่าต้องเริ่มวัดจากจุดเดียวกัน",
+              "remediation_activity": "ให้วางของเริ่มจากเส้นเริ่มต้นเดียวกัน",
+              "recommended_practice_type": "วัดของเริ่มจากเส้น 5 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["เปรียบเทียบดินสอของตัวเองกับเพื่อน", "ดูว่าสมุดเล่มไหนยาวกว่า"],
+          "quest_ideas": ["daily: เปรียบเทียบสิ่งของ 3 คู่ในบ้าน"]
+        },
+        {
+          "lesson_id": "g1_compare_weight",
+          "lesson_title_th": "การเปรียบเทียบน้ำหนัก",
+          "objective_th": "เปรียบเทียบน้ำหนักโดยใช้คำ หนักกว่า เบากว่า เท่ากัน",
+          "teaching_sequence_cpa": {
+            "concrete": "ยกของ 2 สิ่งด้วยมือ เปรียบเทียบว่าอันไหนหนักกว่า",
+            "pictorial": "วาดรูปสิ่งของ 2 สิ่งพร้อมตาชั่ง",
+            "abstract": "ใช้คำว่า หนักกว่า เบากว่า เท่ากัน"
+          },
+          "common_misconceptions": ["สับสนระหว่างขนาดกับน้ำหนัก เช่น กล่องใหญ่ต้องหนักกว่า"],
+          "diagnostic_checks": ["ให้เปรียบเทียบน้ำหนักของ 2 สิ่งได้ถูกต้อง"],
+          "practice_types": ["เกมยกของ", "เกมตาชั่ง"],
+          "adaptive_remediation_ideas": [
+            {
+              "weak_skill_signal": "ตัดสินจากขนาดไม่ใช่น้ำหนักจริง",
+              "remediation_activity": "ให้ยกของจริงๆ เปรียบเทียบ เช่น ลูกบอลเบากว่ากระเป๋า",
+              "recommended_practice_type": "ยกของจริง 10 ครั้ง",
+              "mastery_threshold": 80
+            }
+          ],
+          "real_life_contexts": ["เปรียบเทียบน้ำหนักของเป็ปไซ้้กับลูกบอล", "ชั่งผลไม้ในตลาด"],
+          "quest_ideas": ["daily: หาของ 2 อย่างที่หนัก-เบาต่างกันในบ้าน"]
+        }
+      ],
+      "assessment_ideas": [
+        {
+          "type": "mastery_quiz",
+          "description": "เปรียบเทียบความยาวและน้ำหนัก 10 ข้อ"
+        },
+        {
+          "type": "common_traps",
+          "description": "ข้อยาก: ของใหญ่กว่าไม่ได้แปลว่าหนักกว่าเสมอ"
+        }
+      ],
+      "review_links": {
+        "previous_grade_skills": [],
+        "next_grade_preparation": ["การวัดด้วยหน่วยมาตรฐาน"]
+      }
+    }
+  ]
+}

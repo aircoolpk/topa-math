@@ -1,0 +1,76 @@
+{
+  "monthly_quests": [
+    {
+      "quest_id": "g6mq_all_mastered_01",
+      "grade_level": 6,
+      "title_th": "เชี่ยวชาญทั้งหมด",
+      "description_th": "ทำความเข้าใจหัวข้อทั้ง 7 หัวข้อจนถึง 80%",
+      "quest_type": "mastery",
+      "related_skill_codes": ["g6_ratio_proportion", "g6_percentage_applications", "g6_equation_intro", "g6_coordinate_plane", "g6_circle_geometry", "g6_statistic_probability", "g6_pre_algebra"],
+      "target_count": 7,
+      "xp_reward": 500,
+      "coin_reward": 150,
+      "estimated_minutes": 180
+    },
+    {
+      "quest_id": "g6mq_boss_month_01",
+      "grade_level": 6,
+      "title_th": "พิชิตบอส 7 ตัว",
+      "description_th": "เอาชนะบอสได้ทุกตัวในเดือนนี้",
+      "quest_type": "boss",
+      "related_skill_codes": ["g6_ratio_proportion", "g6_percentage_applications", "g6_equation_intro", "g6_coordinate_plane", "g6_circle_geometry", "g6_statistic_probability", "g6_pre_algebra"],
+      "target_count": 7,
+      "xp_reward": 400,
+      "coin_reward": 120,
+      "estimated_minutes": 105
+    },
+    {
+      "quest_id": "g6mq_accuracy_month_01",
+      "grade_level": 6,
+      "title_th": "แม่นยำระดับเซียน",
+      "description_th": "ทำควิซได้คะแนน 90% ขึ้นไป 15 ครั้งในเดือนนี้",
+      "quest_type": "accuracy",
+      "related_skill_codes": ["g6_ratio_proportion", "g6_percentage_applications", "g6_equation_intro", "g6_coordinate_plane", "g6_circle_geometry", "g6_statistic_probability", "g6_pre_algebra"],
+      "target_count": 15,
+      "xp_reward": 450,
+      "coin_reward": 140,
+      "estimated_minutes": 165
+    },
+    {
+      "quest_id": "g6mq_speed_month_01",
+      "grade_level": 6,
+      "title_th": "ฉับไวแห่งเดือน",
+      "description_th": "ทำควิซเร็วให้เสร็จภายในเวลา 12 ครั้งในเดือนนี้",
+      "quest_type": "speed",
+      "related_skill_codes": ["g6_ratio_proportion", "g6_percentage_applications", "g6_equation_intro", "g6_coordinate_plane", "g6_circle_geometry", "g6_statistic_probability", "g6_pre_algebra"],
+      "target_count": 12,
+      "xp_reward": 380,
+      "coin_reward": 110,
+      "estimated_minutes": 95
+    },
+    {
+      "quest_id": "g6mq_review_month_01",
+      "grade_level": 6,
+      "title_th": "สรุปเดือน",
+      "description_th": "ทำควิซทบทวนครบทุกหัวข้อที่เรียนในเดือนนี้",
+      "quest_type": "review",
+      "related_skill_codes": ["g6_ratio_proportion", "g6_percentage_applications", "g6_equation_intro", "g6_coordinate_plane", "g6_circle_geometry", "g6_statistic_probability", "g6_pre_algebra"],
+      "target_count": 7,
+      "xp_reward": 350,
+      "coin_reward": 100,
+      "estimated_minutes": 150
+    },
+    {
+      "quest_id": "g6mq_streak_month_01",
+      "grade_level": 6,
+      "title_th": "ต่อเนื่อง 30 วัน",
+      "description_th": "เข้าเรียนทุกวันติดต่อกัน 30 วัน",
+      "quest_type": "streak",
+      "related_skill_codes": ["g6_ratio_proportion", "g6_percentage_applications", "g6_equation_intro", "g6_coordinate_plane", "g6_circle_geometry", "g6_statistic_probability", "g6_pre_algebra"],
+      "target_count": 30,
+      "xp_reward": 600,
+      "coin_reward": 200,
+      "estimated_minutes": 0
+    }
+  ]
+}

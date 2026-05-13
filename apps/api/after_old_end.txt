@@ -1,0 +1,12 @@
+Content from old_end onwards:
+old_end = 6743
+Content[old_end:old_end+30] = '\n        }\n      ]\n    },\n    '
+Content[old_end:old_end+30] hex = 0a20202020202020207d0a2020202020205d0a202020207d2c0a20202020
+
+Number of lines before last_bracket: 249
+Line with last_bracket would be line 250
+
+Character at position 6582:
+content[6582] = ' '
+content[6581] = ' '
+content[6580] = ' '

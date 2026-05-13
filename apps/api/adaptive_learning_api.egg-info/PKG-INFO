@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: adaptive-learning-api
+Version: 0.1.0
+Summary: FastAPI backend for Thai elementary adaptive math learning SaaS
+Requires-Python: >=3.11
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: uvicorn[standard]>=0.30.0
+Requires-Dist: sqlalchemy>=2.0.30
+Requires-Dist: alembic>=1.13.0
+Requires-Dist: pydantic-settings>=2.4.0
+Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: psycopg[binary]>=3.2.0
+Requires-Dist: stripe>=10.0.0
+Provides-Extra: test
+Requires-Dist: pytest>=8.2.0; extra == "test"
+Requires-Dist: httpx>=0.27.0; extra == "test"

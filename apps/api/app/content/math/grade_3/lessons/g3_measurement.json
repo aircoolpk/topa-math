@@ -1,0 +1,957 @@
+﻿{
+  "lesson_id": "g3_measurement",
+  "id": "g3_measurement",
+  "grade_level": 3,
+  "title_th": "วัดความยาว น้ำหนัก ปริมาตร",
+  "objective_th": "นักเรียนสามารถวัดความยาว น้ำหนัก และปริมาตรโดยใช้หน่วยวัดที่เหมาะสมได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสอยากทำน้ำปลา ใช้เมนูวัดน้ำ 250 มิลลิลิตร วัดข้าวสาร 500 กรัม และวัดโต๊ะ 120 เซนติเมตร หน่วยเหล่านี้คืออะไรนะ? 📏",
+  "explanation_steps": [
+    "ความยาวใช้หน่วย เซนติเมตร (ซม.) เมตร (ม.) กิโลเมตร (กม.)",
+    "1 เมตร = 100 เซนติเมตร / 1 กิโลเมตร = 1000 เมตร",
+    "น้ำหนักใช้หน่วย กรัม (ก.) กิโลกรัม (กก.) / 1 กิโลกรัม = 1000 กรัม",
+    "ปริมาตรใช้หน่วย มิลลิลิตร (มล.) ลิตร (ล.) / 1 ลิตร = 1000 มิลลิลิตร",
+    "เลือกหน่วยที่เหมาะสมกับขนาดของสิ่งที่วัด"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "แปลงหน่วยความยาว",
+      "question_th": "2 เมตร เท่ากับกี่เซนติเมตร?",
+      "solution_th": "2 × 100 = 200 เซนติเมตร ✅"
+    },
+    {
+      "title_th": "แปลงหน่วยน้ำหนัก",
+      "question_th": "3 กิโลกรัม เท่ากับกี่กรัม?",
+      "solution_th": "3 × 1000 = 3000 กรัม ✅"
+    },
+    {
+      "title_th": "เลือกหน่วยที่เหมาะสม",
+      "question_th": "น้ำหนักตัวของคนจะใช้หน่วยอะไร?",
+      "solution_th": "ใช้กิโลกรัม (เช่น 35 กก.) เพราะกรัมใช้กับของเล็กๆ ✅"
+    }
+  ],
+  "common_mistakes": [
+    "แปลงหน่วยผิด เช่น คิดว่า 1 เมตร = 10 เซนติเมตร แทนที่จะเป็น 100",
+    "เลือกหน่วยไม่เหมาะสม เช่น บอกความสูงคนเป็นเซนติเมตรแทนเมตร",
+    "ไม่เข้าใจว่าหน่วยใหญ่กว่าแปลงเป็นหน่วยเล็กกว่าต้องคูณ หน่วยเล็กกว่าแปลงเป็นหน่วยใหญ่ต้องหาร"
+  ],
+  "hints": [
+    "จำว่า ม. → ซม. คูณ 100 / กก. → ก. คูณ 1000 / ล. → มล. คูณ 1000",
+    "ถ้าจำไม่ได้ ให้นึกถึงตารางแปลงหน่วยที่คุ้นเคย เช่น 1 เมตร = 100 ซม. บนไม้บรรทัด",
+    "เลือกหน่วยโดยดูว่าสิ่งที่วัดใหญ่แค่ไหน ของใหญ่ใช้หน่วยใหญ่ ของเล็กใช้หน่วยเล็ก"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_measurement",
+  "skill_code": "g3_measurement",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - รูปแบบที่ 1",
+      "story_theme_th": "ธีม: โรงเรียน 🏫",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🏫 โรงเรียน: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🏫",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - รูปแบบที่ 2",
+      "story_theme_th": "ธีม: ผลไม้ 🍎",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🍎 ผลไม้: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🍎",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - รูปแบบที่ 3",
+      "story_theme_th": "ธีม: ของเล่น 🧸",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🧸 ของเล่น: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🧸",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - รูปแบบที่ 4",
+      "story_theme_th": "ธีม: ตลาด 🏪",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🏪 ตลาด: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🏪",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - รูปแบบที่ 5",
+      "story_theme_th": "ธีม: สัตว์เลี้ยง 🐕",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🐕 สัตว์เลี้ยง: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🐕",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - รูปแบบที่ 6",
+      "story_theme_th": "ธีม: สวน 🌻",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🌻 สวน: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🌻",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - รูปแบบที่ 7",
+      "story_theme_th": "ธีม: วาดรูป 🎨",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎨 วาดรูป: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🎨",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - รูปแบบที่ 8",
+      "story_theme_th": "ธีม: ห้องเรียน 📚",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "📚 ห้องเรียน: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 📚",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - รูปแบบที่ 9",
+      "story_theme_th": "ธีม: สนุกกับเพื่อน 🎮",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎮 สนุกกับเพื่อน: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🎮",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - รูปแบบที่ 10",
+      "story_theme_th": "ธีม: งานเทศกาล 🎉",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎉 งานเทศกาล: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "📏📏📏📏📏📏📏",
+          "items_added": "📏📏📏",
+          "question": "ไม้บรรทัดยาว 7 ซม. วางเรียงกัน 3 อัน รวมกี่ ซม.?"
+        },
+        {
+          "type": "ten_frame",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ตารางสิบช่องนับจำนวน 🎉",
+          "filled": 7,
+          "total": 10
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "[School]  โรงเรียน: วัดความยาว ความสูง และน้ำหนักกันเถอะ!"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 × 3 = ? ซม."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "📏 ไม้บรรทัดยาว 9 ซม. วางเรียง 2 อัน รวมกี่ ซม.?",
+          "choices": [
+            "11 ซม.",
+            "18 ซม.",
+            "7 ซม.",
+            "20 ซม."
+          ],
+          "answer": "18 ซม.",
+          "explanation": "9 × 2 = 18 ซม.",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "18 ซม."
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "การวัด",
+  "preview_subtitle_th": "วัดความยาวและน้ำหนัก",
+  "cover_theme": "measurement",
+  "cover_emoji": "📏",
+  "cover_color": "purple",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "วัดความยาวและน้ำหนัก",
+  "learning_objective_th": "นักเรียนสามารถวัดความยาว น้ำหนัก และปริมาตรโดยใช้หน่วยวัดที่เหมาะสมได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสอยากทำน้ำปลา ใช้เมนูวัดน้ำ 250 มิลลิลิตร วัดข้าวสาร 500 กรัม และวัดโต๊ะ 120 เซนติเมตร หน่วยเหล่านี้คืออะไรนะ? 📏",
+  "concept_explanation_th": "ความยาวใช้หน่วย เซนติเมตร (ซม.) เมตร (ม.) กิโลเมตร (กม.) 1 เมตร = 100 เซนติเมตร / 1 กิโลเมตร = 1000 เมตร น้ำหนักใช้หน่วย กรัม (ก.) กิโลกรัม (กก.) / 1 กิโลกรัม = 1000 กรัม ปริมาตรใช้หน่วย มิลลิลิตร (มล.) ลิตร (ล.) / 1 ลิตร = 1000 มิลลิลิตร เลือกหน่วยที่เหมาะสมกับขนาดของสิ่งที่วัด",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 9
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 6
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท วัดความยาว น้ำหนัก ปริมาตร ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "แปลงหน่วยความยาว",
+      "question_th": "2 เมตร เท่ากับกี่เซนติเมตร?",
+      "solution_th": "2 × 100 = 200 เซนติเมตร ✅"
+    },
+    {
+      "title_th": "แปลงหน่วยน้ำหนัก",
+      "question_th": "3 กิโลกรัม เท่ากับกี่กรัม?",
+      "solution_th": "3 × 1000 = 3000 กรัม ✅"
+    },
+    {
+      "title_th": "เลือกหน่วยที่เหมาะสม",
+      "question_th": "น้ำหนักตัวของคนจะใช้หน่วยอะไร?",
+      "solution_th": "ใช้กิโลกรัม (เช่น 35 กก.) เพราะกรัมใช้กับของเล็กๆ ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "แปลงหน่วยผิด เช่น คิดว่า 1 เมตร = 10 เซนติเมตร แทนที่จะเป็น 100",
+    "เลือกหน่วยไม่เหมาะสม เช่น บอกความสูงคนเป็นเซนติเมตรแทนเมตร",
+    "ไม่เข้าใจว่าหน่วยใหญ่กว่าแปลงเป็นหน่วยเล็กกว่าต้องคูณ หน่วยเล็กกว่าแปลงเป็นหน่วยใหญ่ต้องหาร"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_measurement_q01",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "12",
+        "15",
+        "9",
+        "7"
+      ],
+      "correct_answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q02",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "24"
+      ],
+      "correct_answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q03",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: 6 + 5 = ?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: 6 + 5 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q04",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "42",
+        "48",
+        "36",
+        "13"
+      ],
+      "correct_answer": "42",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
+      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q05",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "18"
+      ],
+      "correct_answer": "14",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
+      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q06",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: 9 + 3 = ?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: 9 + 3 = ?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q07",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "40",
+        "44",
+        "36",
+        "14"
+      ],
+      "correct_answer": "40",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
+      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q08",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "50",
+        "51",
+        "49",
+        "60"
+      ],
+      "correct_answer": "50",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
+      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q09",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: 12 + 6 = ?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: 12 + 6 = ?",
+      "choices": [
+        "18",
+        "19",
+        "17",
+        "28"
+      ],
+      "correct_answer": "18",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
+      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_measurement_q10",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "26",
+        "28",
+        "24",
+        "15"
+      ],
+      "correct_answer": "26",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
+      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_measurement_q01",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "12",
+        "15",
+        "9",
+        "7"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q02",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "24"
+      ],
+      "correct_answer": "16",
+      "answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q03",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: 6 + 5 = ?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: 6 + 5 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q04",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "42",
+        "48",
+        "36",
+        "13"
+      ],
+      "correct_answer": "42",
+      "answer": "42",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
+      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q05",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "18"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
+      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q06",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: 9 + 3 = ?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: 9 + 3 = ?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q07",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "40",
+        "44",
+        "36",
+        "14"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
+      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q08",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "50",
+        "51",
+        "49",
+        "60"
+      ],
+      "correct_answer": "50",
+      "answer": "50",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
+      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q09",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: 12 + 6 = ?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: 12 + 6 = ?",
+      "choices": [
+        "18",
+        "19",
+        "17",
+        "28"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
+      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_measurement_q10",
+      "question_th": "วัดความยาว น้ำหนัก ปริมาตร: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "วัดความยาว น้ำหนัก ปริมาตร: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "26",
+        "28",
+        "24",
+        "15"
+      ],
+      "correct_answer": "26",
+      "answer": "26",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
+      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    }
+  ]
+}

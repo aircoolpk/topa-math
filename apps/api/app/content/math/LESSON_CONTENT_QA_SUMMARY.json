@@ -1,0 +1,118 @@
+{
+    "lessons_scanned":  72,
+    "top_problem_lessons":  [
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_3\\lessons\\g3_multiplication_multi_digit.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_3\\lessons\\g3_measurement.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_6\\lessons\\g6_middle_school_prep.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_6\\lessons\\g6_equations_intro.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_3\\lessons\\g3_division_intro.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_5\\lessons\\g5_percent_intro.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_6\\lessons\\g6_volume.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_2\\lessons\\g2_shapes_2d.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_4\\lessons\\g4_fractions.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_6\\lessons\\g6_fraction_decimal_percent.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_4\\lessons\\g4_decimals_intro.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_2\\lessons\\g2_money_change.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_3\\lessons\\g3_fractions_intro.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_6\\lessons\\g6_gcf_lcm.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_1\\lessons\\g1_time_basic.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_1\\lessons\\g1_shapes_basic.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_5\\lessons\\g5_volume_area.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_2\\lessons\\g2_times_table_2_5_10.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_2\\lessons\\g2_multiplication_intro.json",
+                                    "severity":  "high"
+                                },
+                                {
+                                    "issue_count":  10,
+                                    "file":  "grade_1\\lessons\\g1_add_within_20.json",
+                                    "severity":  "high"
+                                }
+                            ],
+    "low":  20,
+    "ep_coverage_count":  0,
+    "files_scanned":  72,
+    "critical":  238,
+    "wrong_answer_count":  70,
+    "placeholder_quiz_count":  140,
+    "high":  1050,
+    "missing_ep_count":  0,
+    "medium":  0,
+    "deprecated_block_count":  1050,
+    "lessons_with_issues":  1308,
+    "story_mismatch_count":  20,
+    "th_coverage_count":  423
+}

@@ -1,0 +1,1260 @@
+﻿{
+  "lesson_id": "g4_fractions",
+  "id": "g4_fractions",
+  "grade_level": 4,
+  "title_th": "เศษส่วน บวกลบคูณหาร",
+  "objective_th": "นักเรียนสามารถบวก ลบ เศษส่วนที่มีส่วนเท่ากันได้ และเข้าใจการคูณและหารเศษส่วนเบื้องต้น",
+  "story_intro_th": "พี่อลิสมีพิซซ่า 3/4 ก้อน แบ่งให้เพื่อน 1/4 ก้อน เหลือพิซซ่ากี่ส่วน? 🍕",
+  "explanation_steps": [
+    "เศษส่วนที่มีส่วนเท่ากัน บวกลบโดยเอาเศษบวกลบกัน ไม่ต้องเปลี่ยนส่วน",
+    "เช่น 3/5 + 1/5 = 4/5 หรือ 3/5 - 1/5 = 2/5",
+    "เศษส่วนที่ไม่เท่ากันต้องทำให้ส่วนเท่ากันก่อน โดยหา ค.ร.น. ของส่วน",
+    "การคูณเศษส่วน: เศษ × เศษ ส่วน × ส่วน เช่น 2/3 × 3/4 = 6/12",
+    "การหารเศษส่วน: พลิกเศษส่วนตัวหารกลับด้านแล้วคูณ เช่น 1/2 ÷ 3 = 1/2 × 1/3 = 1/6",
+    "ถ้าเศษส่วนมากกว่า 1 สามารถเขียนเป็นจำนวนคละได้ เช่น 5/3 = 1 2/3"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "บวกเศษส่วน",
+      "question_th": "2/7 + 3/7 = ?",
+      "solution_th": "5/7 ✅"
+    },
+    {
+      "title_th": "ลบเศษส่วน",
+      "question_th": "5/8 - 2/8 = ?",
+      "solution_th": "3/8 ✅"
+    },
+    {
+      "title_th": "คูณเศษส่วน",
+      "question_th": "1/2 × 2/3 = ?",
+      "solution_th": "2/6 = 1/3 ✅"
+    },
+    {
+      "title_th": "หา ค.ร.น. และบวกเศษส่วนต่างส่วน",
+      "question_th": "1/3 + 1/4 = ?",
+      "solution_th": "4/12 + 3/12 = 7/12 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "บวกเศษส่วนต่างส่วนโดยไม่ทำให้ส่วนเท่ากันก่อน",
+    "คูณเศษส่วนโดยเอาเศษคูณส่วนโดยตรงแทนที่จะเป็น เศษ×เศษ ส่วน×ส่วน",
+    "ไม่ตัดเศษส่วนให้เป็นเศษส่วนอย่างต่ำ"
+  ],
+  "hints": [
+    "เศษส่วนต่างส่วนต้องทำให้ส่วนเท่ากันก่อน หา ค.ร.น. ของส่วนมาคูณ",
+    "จำว่าเศษส่วนคูณกัน: เศษ×เศษ ส่วน×ส่วน",
+    "ถ้าเศษกับส่วนมีตัวร่วม ให้ตัดทอนก่อนคูณจะง่ายขึ้น"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_fractions",
+  "skill_code": "g4_fractions",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_th": "🏫 ธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🏫 โรงเรียน",
+          "content": {
+            "story_th": "พี่อลิสมีพิซซ่า 3/4 ก้อน แบ่งให้เพื่อน 1/4 ก้อน เหลือพิซซ่ากี่ส่วน? 🍕",
+            "theme_th": "🏫 โรงเรียน"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🏫 โรงเรียนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🏫 เศษส่วนในโรงเรียน",
+          "description": "แบ่งพิซซ่าหรือขนมเค้กในงานเลี้ยงโรงเรียน",
+          "content": {
+            "title_th": "🏫 เศษส่วนในโรงเรียน",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_th": "🍎 ธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🍎 ผลไม้",
+          "content": {
+            "story_th": "แม่มีส้ม 5/6 ลูก แบ่งให้ลูก 2/6 ลูก แม่เหลือส้มกี่ส่วน? 🍎",
+            "theme_th": "🍎 ผลไม้"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🍎 ผลไม้แล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🍎 เศษส่วนของผลไม้",
+          "description": "แบ่งส้มหรือแตงโมให้เพื่อน",
+          "content": {
+            "title_th": "🍎 เศษส่วนของผลไม้",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_th": "🧸 ธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🧸 ของเล่น",
+          "content": {
+            "story_th": "มีลูกบอล 7/8 ลูก ให้เพื่อนไป 3/8 ลูก เหลือลูกบอลกี่ลูก? 🧸",
+            "theme_th": "🧸 ของเล่น"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🧸 ของเล่นแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🧸 เศษส่วนของของเล่น",
+          "description": "แบ่งการ์ดหรือลูกบอลให้เพื่อน",
+          "content": {
+            "title_th": "🧸 เศษส่วนของของเล่น",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_th": "🏪 ธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🏪 ตลาด",
+          "content": {
+            "story_th": "พี่มีขนมเค้ก 4/5 ก้อน แบ่งให้น้อง 2/5 ก้อน เหลือขนมกี่ส่วน? 🏪",
+            "theme_th": "🏪 ตลาด"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🏪 ตลาดแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🏪 เศษส่วนในตลาด",
+          "description": "แบ่งผลไม้หรือขนมในตลาด",
+          "content": {
+            "title_th": "🏪 เศษส่วนในตลาด",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_th": "🐕 ธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🐕 สัตว์เลี้ยง",
+          "content": {
+            "story_th": "สุนัขกินอาหาร 3/5 ของถ้วย แมวกินอีก 1/5 ของถ้วย สัตว์เลี้ยงกินรวมกี่ส่วน? 🐕",
+            "theme_th": "🐕 สัตว์เลี้ยง"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🐕 สัตว์เลี้ยงแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🐕 เศษส่วนของอาหารสัตว์",
+          "description": "แบ่งอาหารให้สุนัขและแมว",
+          "content": {
+            "title_th": "🐕 เศษส่วนของอาหารสัตว์",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_th": "🌻 ธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🌻 สวน",
+          "content": {
+            "story_th": "ดอกทานตะวันบาน 5/6 ของสวน ดอกกุหลาบบาน 2/6 ของสวน รวมบานกี่ส่วน? 🌻",
+            "theme_th": "🌻 สวน"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🌻 สวนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🌻 เศษส่วนในสวน",
+          "description": "แบ่งพื้นที่ปลูกดอกไม้และผัก",
+          "content": {
+            "title_th": "🌻 เศษส่วนในสวน",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_th": "🎨 ธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎨 วาดรูป",
+          "content": {
+            "story_th": "ภาพวาดใช้สีแดง 2/3 ส่วน และสีน้ำเงิน 1/3 ส่วน รวมใช้สีไปกี่ส่วน? 🎨",
+            "theme_th": "🎨 วาดรูป"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎨 วาดรูปแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🎨 เศษส่วนในงานศิลปะ",
+          "description": "ผสมสีและแบ่งพื้นที่ในภาพวาด",
+          "content": {
+            "title_th": "🎨 เศษส่วนในงานศิลปะ",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_th": "📚 ธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม📚 ห้องเรียน",
+          "content": {
+            "story_th": "เวลาเรียน 3/4 ชั่วโมง เวลาเล่นกีฬา 1/4 ชั่วโมง รวมเวลาทำกิจกรรมเท่าไหร่? 📚",
+            "theme_th": "📚 ห้องเรียน"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ📚 ห้องเรียนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 📚 เศษส่วนในห้องเรียน",
+          "description": "แบ่งเวลาเรียนและเล่นกีฬา",
+          "content": {
+            "title_th": "📚 เศษส่วนในห้องเรียน",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_th": "🎮 ธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎮 สนุกกับเพื่อน",
+          "content": {
+            "story_th": "ไอเทมในเกมแบ่งให้เพื่อน 3/7 ส่วน เหลือให้ตัวเองกี่ส่วน? 🎮",
+            "theme_th": "🎮 สนุกกับเพื่อน"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎮 สนุกกับเพื่อนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🎮 เศษส่วนในเกม",
+          "description": "แบ่งพลังและไอเทมในเกม",
+          "content": {
+            "title_th": "🎮 เศษส่วนในเกม",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_th": "🎉 ธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎉 งานเทศกาล",
+          "content": {
+            "story_th": "ขนมเทศกาล 5/8 กิโลกรัม แบ่งให้แขก 3/8 กิโลกรัม เหลือขนมกี่กิโลกรัม? 🎉",
+            "theme_th": "🎉 งานเทศกาล"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎉 งานเทศกาลแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "fraction_visual",
+          "block_title": "📐 🎉 เศษส่วนในงานเทศกาล",
+          "description": "แบ่งขนมและเครื่องดื่มในงานเลี้ยง",
+          "content": {
+            "title_th": "🎉 เศษส่วนในงานเทศกาล",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "3/8 + 2/8 = ?",
+                "options_th": [
+                  "5/8",
+                  "5/16",
+                  "1/8",
+                  "6/8"
+                ],
+                "answer_th": "5/8",
+                "correct_answer": "5/8"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story Time",
+          "content": "พี่อลิสมีพิซซ่า 3/4 ก้อน แบ่งให้เพื่อน 1/4 ก้อน เหลือพิซซ่ากี่ส่วน? [Food] "
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบเศษส่วน",
+          "content": {
+            "examples_th": [
+              "3/5 + 1/5 = 4/5",
+              "2/3 - 1/3 = 1/3",
+              "1/2 × 2/3 = 2/6"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "",
+          "choices": [],
+          "answer": "",
+          "explanation": "",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เศษส่วน",
+  "preview_subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "cover_theme": "fractions_g4",
+  "cover_emoji": "🍕",
+  "cover_color": "pink",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "learning_objective_th": "นักเรียนสามารถบวก ลบ เศษส่วนที่มีส่วนเท่ากันได้ และเข้าใจการคูณและหารเศษส่วนเบื้องต้น",
+  "lesson_intro_th": "พี่อลิสมีพิซซ่า 3/4 ก้อน แบ่งให้เพื่อน 1/4 ก้อน เหลือพิซซ่ากี่ส่วน? 🍕",
+  "concept_explanation_th": "เศษส่วนที่มีส่วนเท่ากัน บวกลบโดยเอาเศษบวกลบกัน ไม่ต้องเปลี่ยนส่วน เช่น 3/5 + 1/5 = 4/5 หรือ 3/5 - 1/5 = 2/5 เศษส่วนที่ไม่เท่ากันต้องทำให้ส่วนเท่ากันก่อน โดยหา ค.ร.น. ของส่วน การคูณเศษส่วน: เศษ × เศษ ส่วน × ส่วน เช่น 2/3 × 3/4 = 6/12 การหารเศษส่วน: พลิกเศษส่วนตัวหารกลับด้านแล้วคูณ เช่น 1/2 ÷ 3 = 1/2 × 1/3 = 1/6 ถ้าเศษส่วนมากกว่า 1 สามารถเขียนเป็นจำนวนคละได้ เช่น 5/3 = 1 2/3",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เศษส่วน บวกลบคูณหาร ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "บวกเศษส่วน",
+      "question_th": "2/7 + 3/7 = ?",
+      "solution_th": "5/7 ✅"
+    },
+    {
+      "title_th": "ลบเศษส่วน",
+      "question_th": "5/8 - 2/8 = ?",
+      "solution_th": "3/8 ✅"
+    },
+    {
+      "title_th": "คูณเศษส่วน",
+      "question_th": "1/2 × 2/3 = ?",
+      "solution_th": "2/6 = 1/3 ✅"
+    },
+    {
+      "title_th": "หา ค.ร.น. และบวกเศษส่วนต่างส่วน",
+      "question_th": "1/3 + 1/4 = ?",
+      "solution_th": "4/12 + 3/12 = 7/12 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "บวกเศษส่วนต่างส่วนโดยไม่ทำให้ส่วนเท่ากันก่อน",
+    "คูณเศษส่วนโดยเอาเศษคูณส่วนโดยตรงแทนที่จะเป็น เศษ×เศษ ส่วน×ส่วน",
+    "ไม่ตัดเศษส่วนให้เป็นเศษส่วนอย่างต่ำ"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_fractions_q01",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 5 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 5 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "15",
+        "18",
+        "12",
+        "8"
+      ],
+      "correct_answer": "15",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
+      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q02",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 24 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 24 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "20",
+        "21",
+        "19",
+        "28"
+      ],
+      "correct_answer": "20",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
+      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q03",
+      "question_th": "เศษส่วน บวกลบคูณหาร: 7 + 5 = ?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: 7 + 5 = ?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q04",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 8 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 8 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "48",
+        "54",
+        "42",
+        "14"
+      ],
+      "correct_answer": "48",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 48",
+      "explanation_th": "คำตอบคือ 48 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q05",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 18 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 18 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "20"
+      ],
+      "correct_answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q06",
+      "question_th": "เศษส่วน บวกลบคูณหาร: 10 + 3 = ?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: 10 + 3 = ?",
+      "choices": [
+        "13",
+        "14",
+        "12",
+        "23"
+      ],
+      "correct_answer": "13",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 13",
+      "explanation_th": "คำตอบคือ 13 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q07",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 11 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 11 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "44",
+        "48",
+        "40",
+        "15"
+      ],
+      "correct_answer": "44",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 44",
+      "explanation_th": "คำตอบคือ 44 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q08",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 60 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 60 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "55",
+        "56",
+        "54",
+        "65"
+      ],
+      "correct_answer": "55",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 55",
+      "explanation_th": "คำตอบคือ 55 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q09",
+      "question_th": "เศษส่วน บวกลบคูณหาร: 13 + 6 = ?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: 13 + 6 = ?",
+      "choices": [
+        "19",
+        "20",
+        "18",
+        "29"
+      ],
+      "correct_answer": "19",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 19",
+      "explanation_th": "คำตอบคือ 19 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_fractions_q10",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 14 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 14 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "28",
+        "30",
+        "26",
+        "16"
+      ],
+      "correct_answer": "28",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
+      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_fractions_q01",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 5 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 5 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "15",
+        "18",
+        "12",
+        "8"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
+      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q02",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 24 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 24 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "20",
+        "21",
+        "19",
+        "28"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
+      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q03",
+      "question_th": "เศษส่วน บวกลบคูณหาร: 7 + 5 = ?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: 7 + 5 = ?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q04",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 8 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 8 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "48",
+        "54",
+        "42",
+        "14"
+      ],
+      "correct_answer": "48",
+      "answer": "48",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 48",
+      "explanation_th": "คำตอบคือ 48 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q05",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 18 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 18 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "20"
+      ],
+      "correct_answer": "16",
+      "answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q06",
+      "question_th": "เศษส่วน บวกลบคูณหาร: 10 + 3 = ?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: 10 + 3 = ?",
+      "choices": [
+        "13",
+        "14",
+        "12",
+        "23"
+      ],
+      "correct_answer": "13",
+      "answer": "13",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 13",
+      "explanation_th": "คำตอบคือ 13 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q07",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 11 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 11 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "44",
+        "48",
+        "40",
+        "15"
+      ],
+      "correct_answer": "44",
+      "answer": "44",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 44",
+      "explanation_th": "คำตอบคือ 44 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q08",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 60 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 60 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "55",
+        "56",
+        "54",
+        "65"
+      ],
+      "correct_answer": "55",
+      "answer": "55",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 55",
+      "explanation_th": "คำตอบคือ 55 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q09",
+      "question_th": "เศษส่วน บวกลบคูณหาร: 13 + 6 = ?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: 13 + 6 = ?",
+      "choices": [
+        "19",
+        "20",
+        "18",
+        "29"
+      ],
+      "correct_answer": "19",
+      "answer": "19",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 19",
+      "explanation_th": "คำตอบคือ 19 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_fractions_q10",
+      "question_th": "เศษส่วน บวกลบคูณหาร: มี 14 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "เศษส่วน บวกลบคูณหาร: มี 14 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "28",
+        "30",
+        "26",
+        "16"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
+      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    }
+  ]
+}
