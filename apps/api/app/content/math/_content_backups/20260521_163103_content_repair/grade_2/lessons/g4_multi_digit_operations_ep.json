@@ -1,0 +1,1749 @@
+{
+  "lesson_id": "g4_multi_digit_operations_ep",
+  "id": "g4_multi_digit_operations_ep",
+  "grade_level": 4,
+  "title_th": "บวกลบคูณหารเลขหลายหลัก",
+  "objective_th": "นักเรียนสามารถบวก ลบ คูณ และหารเลขหลายหลักได้ถูกต้อง",
+  "story_intro_th": "ร้านขายของเล่นสั่งของเพิ่ม ต้องจ่ายเงิน 3,250 บาท ขายได้กำไร 1,875 บาท รวมมีเงินเท่าไหร่แล้ว? 🧸",
+  "explanation_steps": [
+    "บวกลบเลขหลายหลักให้เขียนตัวเลขตรงหลักกัน ถ้าเกิน 9 ให้ทดไปหลักถัดไป",
+    "การคูณเลขสองหลักกับเลขสองหลัก ให้คูณทีละหลักของตัวคูณ แล้วนำผลคูณมาบวกกัน",
+    "การหารที่ลงตัวคือการหารที่ไม่มีเศษ ถ้ามีเศษจะเหลือเศษ",
+    "ขั้นตอนการหาร: หาร คูณ ลบ ทอน ทำซ้ำจนหารไม่ได้อีก",
+    "ตรวจคำตอบโดยเอาผลลัพธ์คูณหรือบวกกลับ"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "บวกเลขหลายหลัก",
+      "question_th": "4,567 + 2,438 = ?",
+      "solution_th": "7,005 ✅"
+    },
+    {
+      "title_th": "ลบเลขหลายหลัก",
+      "question_th": "8,654 - 3,297 = ?",
+      "solution_th": "5,357 ✅"
+    },
+    {
+      "title_th": "คูณเลขหลายหลัก",
+      "question_th": "123 × 45 = ?",
+      "solution_th": "5,535 ✅"
+    },
+    {
+      "title_th": "หารเลขหลายหลัก",
+      "question_th": "936 ÷ 12 = ?",
+      "solution_th": "78 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ทดตัวเลขผิดหลัก โดยเฉพาะตอนคูณ",
+    "ลืมคูณหลักถัดไปหรือลืมบวกผลคูณเข้าด้วยกัน",
+    "หารไม่ลงตัวแต่ไม่เขียนเศษ"
+  ],
+  "hints": [
+    "ทำทีละหลัก อย่ารีบ ตรวจสอบหลักก่อนไปหลักถัดไป",
+    "ถ้าคูณ 23 × 45 ให้แยกเป็น 23 × 40 + 23 × 5 แล้วบวกกัน",
+    "ตรวจคำตอบโดยกลับ: ถ้า 123 × 45 = 5,535 งั้น 5,535 ÷ 45 ต้องได้ 123"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_multi_digit_operations",
+  "skill_code": "g4_multi_digit_operations_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_th": "🏫 ธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🏫 โรงเรียน",
+          "content": {
+            "story_th": "โรงเรียนซื้อหนังสือ 3,250 เล่ม จ่ายเงินไป 45,800 บาท ขายได้กำไร 12,500 บาท รวมมีเงินเท่าไหร่แล้ว? 🏫",
+            "theme_th": "🏫 โรงเรียน"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🏫 โรงเรียนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🏫 บาร์โมเดลในโรงเรียน",
+          "description": "บวกลบคะแนนสอบของนักเรียน",
+          "content": {
+            "title_th": "🏫 บาร์โมเดลในโรงเรียน",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_en": "🏫 ธีมโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_th": "🍎 ธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🍎 ผลไม้",
+          "content": {
+            "story_th": "ร้านผลไม้ซื้อส้ม 125 ลัง ขายไป 98 ลัง เหลือส้มกี่ลัง? 🍎",
+            "theme_th": "🍎 ผลไม้"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🍎 ผลไม้แล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🍎 บาร์โมเดลของผลไม้",
+          "description": "บวกลบจำนวนผลไม้ในตะกร้า",
+          "content": {
+            "title_th": "🍎 บาร์โมเดลของผลไม้",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_en": "🍎 ธีมผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_th": "🧸 ธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🧸 ของเล่น",
+          "content": {
+            "story_th": "ร้านของเล่นสั่งหุ่นยนต์ 56 ครั้ง ครั้งละ 125 ตัว รวมได้หุ่นยนต์กี่ตัว? 🧸",
+            "theme_th": "🧸 ของเล่น"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🧸 ของเล่นแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🧸 บาร์โมเดลของของเล่น",
+          "description": "บวกลบจำนวนของเล่นในกล่อง",
+          "content": {
+            "title_th": "🧸 บาร์โมเดลของของเล่น",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_en": "🧸 ธีมของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_th": "🏪 ธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🏪 ตลาด",
+          "content": {
+            "story_th": "ตลาดขายข้าวได้ 2,450 ถุง แบ่งให้ร้านค้า 18 ร้าน คนละกี่ถุง? 🏪",
+            "theme_th": "🏪 ตลาด"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🏪 ตลาดแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🏪 บาร์โมเดลในร้านค้า",
+          "description": "บวกลบรายได้และสินค้าในร้าน",
+          "content": {
+            "title_th": "🏪 บาร์โมเดลในร้านค้า",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_en": "🏪 ธีมตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_th": "🐕 ธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🐕 สัตว์เลี้ยง",
+          "content": {
+            "story_th": "ฟาร์มมีไก่ 5,600 ตัว ขายไป 2,350 ตัว และซื้อเพิ่ม 1,200 ตัว รวมมีไก่กี่ตัว? 🐕",
+            "theme_th": "🐕 สัตว์เลี้ยง"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🐕 สัตว์เลี้ยงแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🐕 บาร์โมเดลของสัตว์เลี้ยง",
+          "description": "บวกลบจำนวนอาหารที่ให้สัตว์เลี้ยง",
+          "content": {
+            "title_th": "🐕 บาร์โมเดลของสัตว์เลี้ยง",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_en": "🐕 ธีมสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_th": "🌻 ธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🌻 สวน",
+          "content": {
+            "story_th": "สวนเก็บดอกไม้ได้ 3,500 ดอก ขายไป 2,875 ดอก เหลือกี่ดอก? 🌻",
+            "theme_th": "🌻 สวน"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🌻 สวนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🌻 บาร์โมเดลในสวน",
+          "description": "บวกลบจำนวนดอกไม้ที่บานและเหี่ยว",
+          "content": {
+            "title_th": "🌻 บาร์โมเดลในสวน",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_en": "🌻 ธีมสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_th": "🎨 ธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎨 วาดรูป",
+          "content": {
+            "story_th": "ศิลปินวาดรูป 45 ภาพ ภาพละ 120 สี รวมใช้สีไปกี่สี? 🎨",
+            "theme_th": "🎨 วาดรูป"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎨 วาดรูปแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🎨 บาร์โมเดลในงานศิลปะ",
+          "description": "บวกลบจำนวนสีและพื้นที่วาดรูป",
+          "content": {
+            "title_th": "🎨 บาร์โมเดลในงานศิลปะ",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_en": "🎨 ธีมวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_th": "📚 ธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม📚 ห้องเรียน",
+          "content": {
+            "story_th": "ห้องสมุดซื้อหนังสือ 28 ชุด ชุดละ 350 เล่ม รวมได้หนังสือกี่เล่ม? 📚",
+            "theme_th": "📚 ห้องเรียน"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ📚 ห้องเรียนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 📚 บาร์โมเดลในห้องเรียน",
+          "description": "บวกลบจำนวนหนังสือและดินสอ",
+          "content": {
+            "title_th": "📚 บาร์โมเดลในห้องเรียน",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_en": "📚 ธีมห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_th": "🎮 ธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎮 สนุกกับเพื่อน",
+          "content": {
+            "story_th": "เกมแจกเหรียญ 1,250 เหรียญ ให้ผู้เล่น 75 คน คนละได้กี่เหรียญ? 🎮",
+            "theme_th": "🎮 สนุกกับเพื่อน"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎮 สนุกกับเพื่อนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🎮 บาร์โมเดลในเกม",
+          "description": "บวกลบพลังและเหรียญในเกม",
+          "content": {
+            "title_th": "🎮 บาร์โมเดลในเกม",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_en": "🎮 ธีมสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_th": "🎉 ธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎉 งานเทศกาล",
+          "content": {
+            "story_th": "งานเทศกาลแจกของรางวัล 3,600 ชิ้น ให้ผู้เข้าร่วม 45 คน คนละกี่ชิ้น? 🎉",
+            "theme_th": "🎉 งานเทศกาล"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎉 งานเทศกาลแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "bar_model",
+          "block_title": "📐 🎉 บาร์โมเดลในงานเทศกาล",
+          "description": "บวกลบจำนวนของรางวัลและผู้เข้าร่วม",
+          "content": {
+            "title_th": "🎉 บาร์โมเดลในงานเทศกาล",
+            "visual_data": {},
+            "labels_th": []
+          },
+          "title_th": "ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "5,000 - 2,375 = ?",
+                "options_th": [
+                  "2,625",
+                  "3,625",
+                  "2,525",
+                  "3,525"
+                ],
+                "answer_th": "2,625",
+                "correct_answer": "2,625"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_en": "🎉 ธีมงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story Time",
+          "content": "โรงเรียนซื้อหนังสือ 3,250 เล่ม จ่ายเงินไป 45,800 บาท ขายได้กำไร 12,500 บาท รวมมีเงินเท่าไหร่แล้ว? [School] ",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคบวกลบคูณหารเลขหลายหลัก",
+          "content": {
+            "examples_th": [
+              "4,567 + 2,438 = 7,005",
+              "8,654 - 3,297 = 5,357",
+              "123 × 45 = 5,535"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "",
+          "choices": [],
+          "answer": "",
+          "explanation": "",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "บวกลบคูณหารเลขใหญ่",
+  "preview_subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "cover_theme": "multi_digit_operations",
+  "cover_emoji": "🧮",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "learning_objective_th": "นักเรียนสามารถบวก ลบ คูณ และหารเลขหลายหลักได้ถูกต้อง",
+  "lesson_intro_th": "ร้านขายของเล่นสั่งของเพิ่ม ต้องจ่ายเงิน 3,250 บาท ขายได้กำไร 1,875 บาท รวมมีเงินเท่าไหร่แล้ว? 🧸",
+  "concept_explanation_th": "บวกลบเลขหลายหลักให้เขียนตัวเลขตรงหลักกัน ถ้าเกิน 9 ให้ทดไปหลักถัดไป การคูณเลขสองหลักกับเลขสองหลัก ให้คูณทีละหลักของตัวคูณ แล้วนำผลคูณมาบวกกัน การหารที่ลงตัวคือการหารที่ไม่มีเศษ ถ้ามีเศษจะเหลือเศษ ขั้นตอนการหาร: หาร คูณ ลบ ทอน ทำซ้ำจนหารไม่ได้อีก ตรวจคำตอบโดยเอาผลลัพธ์คูณหรือบวกกลับ",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท บวกลบคูณหารเลขหลายหลัก ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "บวกเลขหลายหลัก",
+      "question_th": "4,567 + 2,438 = ?",
+      "solution_th": "7,005 ✅"
+    },
+    {
+      "title_th": "ลบเลขหลายหลัก",
+      "question_th": "8,654 - 3,297 = ?",
+      "solution_th": "5,357 ✅"
+    },
+    {
+      "title_th": "คูณเลขหลายหลัก",
+      "question_th": "123 × 45 = ?",
+      "solution_th": "5,535 ✅"
+    },
+    {
+      "title_th": "หารเลขหลายหลัก",
+      "question_th": "936 ÷ 12 = ?",
+      "solution_th": "78 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ทดตัวเลขผิดหลัก โดยเฉพาะตอนคูณ",
+    "ลืมคูณหลักถัดไปหรือลืมบวกผลคูณเข้าด้วยกัน",
+    "หารไม่ลงตัวแต่ไม่เขียนเศษ"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_multi_digit_operations_q01",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q02",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q03",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q04",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q05",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q06",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q07",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q08",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q09",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q10",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_multi_digit_operations_q01",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q02",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q03",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q04",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q05",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q06",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q07",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q08",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q09",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q10",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Operations with Large Numbers",
+  "objective_en": "Students will be able to add numbers within 20",
+  "story_intro_en": "Look! 3 + 250 + 1 + 875 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: บวกเลขหลายหลัก",
+      "question_en": "4,567 + 2,438 = ?",
+      "solution_en": "7,005 ✅"
+    },
+    {
+      "title_en": "Example: ลบเลขหลายหลัก",
+      "question_en": "8,654 - 3,297 = ?",
+      "solution_en": "5,357 ✅"
+    },
+    {
+      "title_en": "Example: คูณเลขหลายหลัก",
+      "question_en": "123 × 45 = ?",
+      "solution_en": "5,535 ✅"
+    },
+    {
+      "title_en": "Example: หารเลขหลายหลัก",
+      "question_en": "936 ÷ 12 = ?",
+      "solution_en": "78 ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ทดตัวเลขผิดหลัก โดยเฉพาะตอนคูณ",
+    "Mistake: ลืมคูณหลักถัดไปหรือลืมบวกผลคูณเข้าด้วยกัน",
+    "Mistake: หารไม่ลงตัวแต่ไม่เขียนเศษ"
+  ],
+  "hints_en": [
+    "Hint: ทำทีละหลัก อย่ารีบ ตรวจสอบหลักก่อนไปหลักถัดไป",
+    "Hint: ถ้าคูณ 23 × 45 ให้แยกเป็น 23 × 40 + 23 × 5 แล้วบวกกัน",
+    "Hint: ตรวจคำตอบโดยกลับ: ถ้า 123 × 45 = 5,535 งั้น 5,535 ÷ 45 ต้องได้ 123"
+  ],
+  "explanation_steps_en": [
+    "Step: บวกลบเลขหลายหลักให้เขียนตัวเลขตรงหลักกัน ถ้าเกิน 9 ให้ทดไปหลักถัดไป",
+    "Step: การคูณเลขสองหลักกับเลขสองหลัก ให้คูณทีละหลักของตัวคูณ แล้วนำผลคูณมาบวกกัน",
+    "Step: การหารที่ลงตัวคือการหารที่ไม่มีเศษ ถ้ามีเศษจะเหลือเศษ",
+    "Step: ขั้นตอนการหาร: หาร คูณ ลบ ทอน ทำซ้ำจนหารไม่ได้อีก",
+    "Step: ตรวจคำตอบโดยเอาผลลัพธ์คูณหรือบวกกลับ"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g4_multi_digit_operations_q01",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 ?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core",
+      "question_en": "234 + 158 ?",
+      "explanation_en": "234 + 158 = 392",
+      "choices_en": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "answer_en": "392"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q02",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 ?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core",
+      "question_en": "600 - 275 ?",
+      "explanation_en": "600 - 275 = 325",
+      "choices_en": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "answer_en": "325"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q03",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 ?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "easy",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core",
+      "question_en": "42 × 6 ?",
+      "explanation_en": "42 × 6 = 252",
+      "choices_en": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "answer_en": "252"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q04",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 ?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core",
+      "question_en": "234 + 158 ?",
+      "explanation_en": "234 + 158 = 392",
+      "choices_en": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "answer_en": "392"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q05",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 ?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core",
+      "question_en": "600 - 275 ?",
+      "explanation_en": "600 - 275 = 325",
+      "choices_en": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "answer_en": "325"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q06",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 ?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core",
+      "question_en": "42 × 6 ?",
+      "explanation_en": "42 × 6 = 252",
+      "choices_en": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "answer_en": "252"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q07",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 ?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "core",
+      "question_en": "234 + 158 ?",
+      "explanation_en": "234 + 158 = 392",
+      "choices_en": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "answer_en": "392"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q08",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 ?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge",
+      "question_en": "600 - 275 ?",
+      "explanation_en": "600 - 275 = 325",
+      "choices_en": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "answer_en": "325"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q09",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 ?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge",
+      "question_en": "42 × 6 ?",
+      "explanation_en": "42 × 6 = 252",
+      "choices_en": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "answer_en": "252"
+    },
+    {
+      "question_id": "g4_multi_digit_operations_q10",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 ?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "hard",
+      "skill_tag": "g4_multi_digit_operations",
+      "question_type": "challenge",
+      "question_en": "234 + 158 ?",
+      "explanation_en": "234 + 158 = 392",
+      "choices_en": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "answer_en": "392"
+    }
+  ],
+  "quiz_id": "g4_multi_digit_operations_ep",
+  "generated_at": "2026-05-16T04:16:41.118663+00:00",
+  "source_lesson_id": "g4_multi_digit_operations",
+  "needs_review": true
+}

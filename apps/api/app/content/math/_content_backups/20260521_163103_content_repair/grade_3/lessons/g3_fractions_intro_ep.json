@@ -1,0 +1,1393 @@
+{
+  "lesson_id": "g3_fractions_intro_ep",
+  "id": "g3_fractions_intro_ep",
+  "grade_level": 3,
+  "title_th": "เศษส่วนในชีวิตประจำวัน",
+  "objective_th": "นักเรียนสามารถเข้าใจความหมายของเศษส่วน และอ่านเขียนเศษส่วนได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสได้พิซซ่า 1 ก้อน อยากแบ่งให้เพื่อน 4 คน อย่างละเท่าๆ กัน จะแบ่งอย่างไร? 🍕",
+  "explanation_steps": [
+    "เศษส่วนมี 2 ตัวเลข ตัวเลขบนเรียกว่า เศษ ตัวเลขล่างเรียกว่า ส่วน",
+    "ส่วนบอกว่าแบ่งเป็นกี่ส่วนเท่าๆ กัน เศษบอกว่าเอากี่ส่วน",
+    "เช่น 1/4 หมายถึง แบ่งเป็น 4 ส่วนเท่าๆ กัน แล้วเอา 1 ส่วน",
+    "เศษส่วนที่เท่ากันคือเศษส่วนที่แทนจำนวนเดียวกัน เช่น 1/2 = 2/4",
+    "เศษส่วนที่มากกว่า 1 คือเศษส่วนที่เศษมากกว่าส่วน เช่น 5/4"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "อ่านเศษส่วน",
+      "question_th": "ขนมปัง 1 ก้อนแบ่งให้เพื่อน 2 คน คนละได้กี่ส่วน?",
+      "solution_th": "1/2 ของขนมปัง คือแบ่งขนมปังเป็น 2 ส่วนเท่าๆ กัน คนละได้ 1/2 ✅"
+    },
+    {
+      "title_th": "เขียนเศษส่วน",
+      "question_th": "น้ำ 1 ลิตร แบ่งให้น้องคนละ 1/4 ลิตร น้องได้น้ำกี่ส่วน?",
+      "solution_th": "น้องได้ 1/4 ลิตร ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบเศษส่วน",
+      "question_th": "1/3 กับ 1/4 อันไหนมากกว่า?",
+      "solution_th": "1/3 > 1/4 เพราะส่วนเล็กกว่าแปลว่าแต่ละส่วนใหญ่กว่า ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนระหว่างเศษกับส่วน หรือเขียนสลับกัน",
+    "คิดว่าเศษส่วนที่ส่วนมากกว่าจะมากกว่า แต่จริงๆ คือส่วนมากกว่าแปลว่าแต่ละส่วนเล็กกว่า",
+    "ไม่เข้าใจว่าเศษส่วนที่เท่ากันอาจเขียนต่างกันได้ เช่น 1/2 = 2/4"
+  ],
+  "hints": [
+    "ส่วนคือตัวเลขที่บอกว่าแบ่งเป็นกี่ส่วน เศษคือตัวเลขที่บอกว่าเอากี่ส่วน",
+    "จำได้ง่าย: ส่วนใต้ เศษบน เหมือนเค้กแบ่งชิ้น",
+    "ถ้าเปรียบเทียบเศษส่วนที่เศษเท่ากัน ให้ดูส่วน ส่วนน้อยกว่าคือจำนวนมากกว่า"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_fractions_intro",
+  "skill_code": "g3_fractions_intro_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - รูปแบบที่ 1",
+      "story_theme_th": "ธีม: โรงเรียน 🏫",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พิซซ่า 1 ก้อนแบ่งให้ 4 เพื่อน คนละได้กี่ส่วน?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "shaded": 3,
+          "description": "แบ่งเป็น 4 ส่วนเท่าๆ กัน ลงสี 3 ส่วน คือ 3/4",
+          "whole": 8,
+          "type": "fraction_visual",
+          "denominator": 4,
+          "title": "🟦 ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "1 ÷ 4 = 1/4",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "ขนมปัง 1 ก้อนแบ่งให้ 2 คน คนละได้ 1/2 เพราะแบ่งเป็น 2 ส่วนเท่าๆ กัน",
+          "title": "🎯 ลองทำดู",
+          "answer": "1/2",
+          "type": "mini_quiz",
+          "choices": [
+            "1/4",
+            "1/2",
+            "2/4",
+            "1"
+          ],
+          "question": "ขนมปัง 1 ก้อนแบ่งให้ 2 คน คนละได้กี่ส่วน?",
+          "explanation": "ขนมปัง 1 ก้อนแบ่งให้ 2 คน คนละได้ 1/2 เพราะแบ่งเป็น 2 ส่วนเท่าๆ กัน",
+          "correct_answer": "1/2",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน - รูปแบบที่ 1",
+      "story_theme_en": "ธีม: โรงเรียน 🏫"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - รูปแบบที่ 2",
+      "story_theme_th": "ธีม: ผลไม้ 🍎",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "มีลูกบอล 6 ลูก แบ่งให้เพื่อน 3 คน คนละได้กี่ลูก?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "shaded": 2,
+          "description": "แบ่งเป็น 3 ส่วนเท่าๆ กัน ลงสี 2 ส่วน คือ 2/3",
+          "whole": 6,
+          "type": "fraction_visual",
+          "denominator": 3,
+          "title": "🟦 ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "6 ÷ 3 = 2 ลูก หรือเขียนเป็น 2/6 = 1/3",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "8 ÷ 4 = 2 ผล ต่อคน หรือเขียนเป็น 2/8 = 1/4",
+          "title": "🎯 ลองทำดู",
+          "answer": "2 ผล",
+          "type": "mini_quiz",
+          "choices": [
+            "1 ผล",
+            "2 ผล",
+            "3 ผล",
+            "4 ผล"
+          ],
+          "question": "ผลไม้ 8 ผล แบ่งให้ 4 คน คนละได้กี่ผล?",
+          "explanation": "8 ÷ 4 = 2 ผล ต่อคน หรือเขียนเป็น 2/8 = 1/4",
+          "correct_answer": "2 ผล",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้ - รูปแบบที่ 2",
+      "story_theme_en": "ธีม: ผลไม้ 🍎"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - รูปแบบที่ 3",
+      "story_theme_th": "ธีม: ของเล่น 🧸",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "มีน้ำ 4 ลิตร แบ่งให้เพื่อน 4 คน คนละได้กี่ลิตร?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "shaded": 1,
+          "description": "แบ่งเป็น 4 ส่วนเท่าๆ กัน ลงสี 1 ส่วน คือ 1/4",
+          "whole": 4,
+          "type": "fraction_visual",
+          "denominator": 4,
+          "title": "🟦 ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "4 ÷ 4 = 1 ลิตร = 1/4",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "ช็อกโกแลต 1 แท่งแบ่งให้ 4 คน คนละได้ 1/4 เพราะแบ่งเป็น 4 ส่วนเท่าๆ กัน",
+          "title": "🎯 ลองทำดู",
+          "answer": "1/4",
+          "type": "mini_quiz",
+          "choices": [
+            "1/4",
+            "1/2",
+            "2/4",
+            "4/4"
+          ],
+          "question": "ช็อกโกแลต 1 แท่งแบ่งให้ 4 คน คนละได้กี่ส่วน?",
+          "explanation": "ช็อกโกแลต 1 แท่งแบ่งให้ 4 คน คนละได้ 1/4 เพราะแบ่งเป็น 4 ส่วนเท่าๆ กัน",
+          "correct_answer": "1/4",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น - รูปแบบที่ 3",
+      "story_theme_en": "ธีม: ของเล่น 🧸"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - รูปแบบที่ 4",
+      "story_theme_th": "ธีม: ตลาด 🏪",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "มีดอกไม้ 10 ดอก แบ่งให้เพื่อน 5 คน คนละได้กี่ดอก?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "shaded": 5,
+          "description": "แบ่งเป็น 5 ส่วนเท่าๆ กัน ลงสี 5 ส่วน คือ 5/10 = 1/2",
+          "whole": 10,
+          "type": "fraction_visual",
+          "denominator": 5,
+          "title": "🟦 ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "10 ÷ 5 = 2 ดอก หรือเขียนเป็น 2/10 = 1/5",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "1/2 > 1/4 เพราะส่วนเล็กกว่าแปลว่าแต่ละส่วนใหญ่กว่า",
+          "title": "🎯 ลองทำดู",
+          "answer": "1/2 มากกว่า",
+          "type": "mini_quiz",
+          "choices": [
+            "1/2 มากกว่า",
+            "1/4 มากกว่า",
+            "เท่ากัน",
+            "ไม่ทราบ"
+          ],
+          "question": "1/2 กับ 1/4 อันไหนมากกว่า?",
+          "explanation": "1/2 > 1/4 เพราะส่วนเล็กกว่าแปลว่าแต่ละส่วนใหญ่กว่า",
+          "correct_answer": "1/2 มากกว่า",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด - รูปแบบที่ 4",
+      "story_theme_en": "ธีม: ตลาด 🏪"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - รูปแบบที่ 5",
+      "story_theme_th": "ธีม: สัตว์เลี้ยง 🐕",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "มีลูกบอล 12 ลูก แบ่งให้ทีม 3 ทีม ทีมละกี่ลูก?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "shaded": 4,
+          "description": "แบ่งเป็น 3 ส่วนเท่าๆ กัน ลงสี 4 ส่วน คือ 4/12 = 1/3",
+          "whole": 12,
+          "type": "fraction_visual",
+          "denominator": 3,
+          "title": "🟦 ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "12 ÷ 3 = 4 ลูก/ทีม หรือเขียนเป็น 4/12 = 1/3",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "1/3 > 1/5 เพราะส่วนเล็กกว่าแปลว่าแต่ละส่วนใหญ่กว่า",
+          "title": "🎯 ลองทำดู",
+          "answer": "1/3 มากกว่า",
+          "type": "mini_quiz",
+          "choices": [
+            "1/3 มากกว่า",
+            "1/5 มากกว่า",
+            "เท่ากัน",
+            "ไม่ทราบ"
+          ],
+          "question": "1/3 กับ 1/5 อันไหนมากกว่า?",
+          "explanation": "1/3 > 1/5 เพราะส่วนเล็กกว่าแปลว่าแต่ละส่วนใหญ่กว่า",
+          "correct_answer": "1/3 มากกว่า",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง - รูปแบบที่ 5",
+      "story_theme_en": "ธีม: สัตว์เลี้ยง 🐕"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - รูปแบบที่ 6",
+      "story_theme_th": "ธีม: สวน 🌻",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "มีขนม 6 ชิ้น แบ่งให้ 2 คน คนละได้กี่ชิ้น?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "shaded": 3,
+          "description": "แบ่งเป็น 2 ส่วนเท่าๆ กัน ลงสี 3 ส่วน คือ 3/6 = 1/2",
+          "whole": 6,
+          "type": "fraction_visual",
+          "denominator": 2,
+          "title": "🟦 ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "6 ÷ 2 = 3 ชิ้น หรือเขียนเป็น 3/6 = 1/2",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "ขนมเค้ก 1 ก้อนแบ่งให้ 8 คน คนละได้ 1/8 เพราะแบ่งเป็น 8 ส่วนเท่าๆ กัน",
+          "title": "🎯 ลองทำดู",
+          "answer": "1/8",
+          "type": "mini_quiz",
+          "choices": [
+            "1/4",
+            "1/6",
+            "1/8",
+            "1/2"
+          ],
+          "question": "ขนมเค้ก 1 ก้อนแบ่งให้ 8 คน คนละได้กี่ส่วน?",
+          "explanation": "ขนมเค้ก 1 ก้อนแบ่งให้ 8 คน คนละได้ 1/8 เพราะแบ่งเป็น 8 ส่วนเท่าๆ กัน",
+          "correct_answer": "1/8",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🌻 สวน - รูปแบบที่ 6",
+      "story_theme_en": "ธีม: สวน 🌻"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - รูปแบบที่ 7",
+      "story_theme_th": "ธีม: วาดรูป 🎨",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "มีน้ำผลไม้ 8 แก้ว แบ่งให้ 4 เพื่อน คนละได้กี่แก้ว?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "shaded": 2,
+          "description": "แบ่งเป็น 4 ส่วนเท่าๆ กัน ลงสี 2 ส่วน คือ 2/8 = 1/4",
+          "whole": 8,
+          "type": "fraction_visual",
+          "denominator": 4,
+          "title": "🟦 ใช้แผนภาพช่วยคิด"
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "8 ÷ 4 = 2 แก้ว หรือเขียนเป็น 2/8 = 1/4",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "2/4 = 1/2 เพราะเศษส่วนที่เท่ากันแทนจำนวนเดียวกัน",
+          "title": "🎯 ลองทำดู",
+          "answer": "เท่ากัน",
+          "type": "mini_quiz",
+          "choices": [
+            "2/4 มากกว่า",
+            "1/2 มากกว่า",
+            "เท่ากัน",
+            "ไม่ทราบ"
+          ],
+          "question": "2/4 กับ 1/2 อันไหนมากกว่า?",
+          "explanation": "2/4 = 1/2 เพราะเศษส่วนที่เท่ากันแทนจำนวนเดียวกัน",
+          "correct_answer": "เท่ากัน",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป - รูปแบบที่ 7",
+      "story_theme_en": "ธีม: วาดรูป 🎨"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - รูปแบบที่ 8",
+      "story_theme_th": "ธีม: ห้องเรียน 📚",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "📚 ห้องเรียน: พิซซ่าหรือขนมเค้กถูกแบ่งเป็นส่วนเท่าๆ กัน มาดูกันว่าเศษส่วนเป็นอย่างไร!",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🍕🍕🍕🍕",
+          "items_added": "🍕🍕",
+          "question": "มี 🍕 4 ชิ้น แบ่งให้เพื่อน 2 คน คนละเท่าไหร่?"
+        },
+        {
+          "type": "fraction_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "แบ่งพื้นที่เป็นส่วนเท่าๆ กัน 📚",
+          "whole": 8,
+          "shaded": 3,
+          "denominator": 4
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 ÷ 2 = 2 หรือ 4/2 = 2",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🍕 6 ชิ้น แบ่งให้ 3 คน คนละเท่าไหร่?",
+          "choices": [
+            "1/6",
+            "1/3",
+            "2 ชิ้น",
+            "3 ชิ้น"
+          ],
+          "answer": "2 ชิ้น",
+          "explanation": "6 ÷ 3 = 2 ชิ้น หรือเขียนเป็น 2/6 = 1/3",
+          "correct_answer": "2 ชิ้น",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน - รูปแบบที่ 8",
+      "story_theme_en": "ธีม: ห้องเรียน 📚"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - รูปแบบที่ 9",
+      "story_theme_th": "ธีม: สนุกกับเพื่อน 🎮",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎮 สนุกกับเพื่อน: พิซซ่าหรือขนมเค้กถูกแบ่งเป็นส่วนเท่าๆ กัน มาดูกันว่าเศษส่วนเป็นอย่างไร!",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🍕🍕🍕🍕",
+          "items_added": "🍕🍕",
+          "question": "มี 🍕 4 ชิ้น แบ่งให้เพื่อน 2 คน คนละเท่าไหร่?"
+        },
+        {
+          "type": "fraction_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "แบ่งพื้นที่เป็นส่วนเท่าๆ กัน 🎮",
+          "whole": 8,
+          "shaded": 3,
+          "denominator": 4
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 ÷ 2 = 2 หรือ 4/2 = 2",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🍕 6 ชิ้น แบ่งให้ 3 คน คนละเท่าไหร่?",
+          "choices": [
+            "1/6",
+            "1/3",
+            "2 ชิ้น",
+            "3 ชิ้น"
+          ],
+          "answer": "2 ชิ้น",
+          "explanation": "6 ÷ 3 = 2 ชิ้น หรือเขียนเป็น 2/6 = 1/3",
+          "correct_answer": "2 ชิ้น",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน - รูปแบบที่ 9",
+      "story_theme_en": "ธีม: สนุกกับเพื่อน 🎮"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - รูปแบบที่ 10",
+      "story_theme_th": "ธีม: งานเทศกาล 🎉",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎉 งานเทศกาล: พิซซ่าหรือขนมเค้กถูกแบ่งเป็นส่วนเท่าๆ กัน มาดูกันว่าเศษส่วนเป็นอย่างไร!",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🍕🍕🍕🍕",
+          "items_added": "🍕🍕",
+          "question": "มี 🍕 4 ชิ้น แบ่งให้เพื่อน 2 คน คนละเท่าไหร่?"
+        },
+        {
+          "type": "fraction_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "แบ่งพื้นที่เป็นส่วนเท่าๆ กัน 🎉",
+          "whole": 8,
+          "shaded": 3,
+          "denominator": 4
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 ÷ 2 = 2 หรือ 4/2 = 2",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🍕 6 ชิ้น แบ่งให้ 3 คน คนละเท่าไหร่?",
+          "choices": [
+            "1/6",
+            "1/3",
+            "2 ชิ้น",
+            "3 ชิ้น"
+          ],
+          "answer": "2 ชิ้น",
+          "explanation": "6 ÷ 3 = 2 ชิ้น หรือเขียนเป็น 2/6 = 1/3",
+          "correct_answer": "2 ชิ้น",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล - รูปแบบที่ 10",
+      "story_theme_en": "ธีม: งานเทศกาล 🎉"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "[School]  โรงเรียน: พิซซ่าหรือขนมเค้กถูกแบ่งเป็นส่วนเท่าๆ กัน มาดูกันว่าเศษส่วนเป็นอย่างไร!",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 ÷ 2 = 2 หรือ 4/2 = 2",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🍕 6 ชิ้น แบ่งให้ 3 คน คนละเท่าไหร่?",
+          "choices": [
+            "1/6",
+            "1/3",
+            "2 ชิ้น",
+            "3 ชิ้น"
+          ],
+          "answer": "2 ชิ้น",
+          "explanation": "6 ÷ 3 = 2 ชิ้น หรือเขียนเป็น 2/6 = 1/3",
+          "correct_answer": "2 ชิ้น",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เศษส่วนเริ่มต้น",
+  "preview_subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "cover_theme": "fractions_intro",
+  "cover_emoji": "🍕",
+  "cover_color": "pink",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "learning_objective_th": "นักเรียนสามารถเข้าใจความหมายของเศษส่วน และอ่านเขียนเศษส่วนได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสได้พิซซ่า 1 ก้อน อยากแบ่งให้เพื่อน 4 คน อย่างละเท่าๆ กัน จะแบ่งอย่างไร? 🍕",
+  "concept_explanation_th": "เศษส่วนมี 2 ตัวเลข ตัวเลขบนเรียกว่า เศษ ตัวเลขล่างเรียกว่า ส่วน ส่วนบอกว่าแบ่งเป็นกี่ส่วนเท่าๆ กัน เศษบอกว่าเอากี่ส่วน เช่น 1/4 หมายถึง แบ่งเป็น 4 ส่วนเท่าๆ กัน แล้วเอา 1 ส่วน เศษส่วนที่เท่ากันคือเศษส่วนที่แทนจำนวนเดียวกัน เช่น 1/2 = 2/4 เศษส่วนที่มากกว่า 1 คือเศษส่วนที่เศษมากกว่าส่วน เช่น 5/4",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เศษส่วนในชีวิตประจำวัน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "อ่านเศษส่วน",
+      "question_th": "ขนมปัง 1 ก้อนแบ่งให้เพื่อน 2 คน คนละได้กี่ส่วน?",
+      "solution_th": "1/2 ของขนมปัง คือแบ่งขนมปังเป็น 2 ส่วนเท่าๆ กัน คนละได้ 1/2 ✅"
+    },
+    {
+      "title_th": "เขียนเศษส่วน",
+      "question_th": "น้ำ 1 ลิตร แบ่งให้น้องคนละ 1/4 ลิตร น้องได้น้ำกี่ส่วน?",
+      "solution_th": "น้องได้ 1/4 ลิตร ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบเศษส่วน",
+      "question_th": "1/3 กับ 1/4 อันไหนมากกว่า?",
+      "solution_th": "1/3 > 1/4 เพราะส่วนเล็กกว่าแปลว่าแต่ละส่วนใหญ่กว่า ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนระหว่างเศษกับส่วน หรือเขียนสลับกัน",
+    "คิดว่าเศษส่วนที่ส่วนมากกว่าจะมากกว่า แต่จริงๆ คือส่วนมากกว่าแปลว่าแต่ละส่วนเล็กกว่า",
+    "ไม่เข้าใจว่าเศษส่วนที่เท่ากันอาจเขียนต่างกันได้ เช่น 1/2 = 2/4"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_fractions_intro_q01",
+      "question_th": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "question_text": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "1/4",
+      "answer": "1/4",
+      "explanation": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "explanation_th": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q02",
+      "question_th": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "question_text": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "choices": [
+        "3/8",
+        "5/8",
+        "8/3",
+        "1/8"
+      ],
+      "correct_answer": "3/8",
+      "answer": "3/8",
+      "explanation": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "explanation_th": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q03",
+      "question_th": "1/2 หมายถึงอะไร?",
+      "question_text": "1/2 หมายถึงอะไร?",
+      "choices": [
+        "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+        "2 ส่วนจาก 1 ส่วน",
+        "ทั้งหมด 2 ชิ้นเสมอ",
+        "ไม่มีคำตอบ"
+      ],
+      "correct_answer": "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "answer": "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "explanation": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "explanation_th": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q04",
+      "question_th": "เศษใน 2/5 คือเลขใด?",
+      "question_text": "เศษใน 2/5 คือเลขใด?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "2",
+      "answer": "2",
+      "explanation": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "explanation_th": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q05",
+      "question_th": "ส่วนใน 2/5 คือเลขใด?",
+      "question_text": "ส่วนใน 2/5 คือเลขใด?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "explanation_th": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q06",
+      "question_th": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "question_text": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "choices": [
+        "4/6",
+        "6/4",
+        "2/6",
+        "1/6"
+      ],
+      "correct_answer": "4/6",
+      "answer": "4/6",
+      "explanation": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "explanation_th": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q07",
+      "question_th": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "question_text": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "choices": [
+        "4/4",
+        "1/4",
+        "2/4",
+        "3/4"
+      ],
+      "correct_answer": "4/4",
+      "answer": "4/4",
+      "explanation": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "explanation_th": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q08",
+      "question_th": "ข้อใดมากกว่า 1/4?",
+      "question_text": "ข้อใดมากกว่า 1/4?",
+      "choices": [
+        "3/4",
+        "1/4",
+        "0/4",
+        "1/8"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "explanation_th": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_fractions_intro_q09",
+      "question_th": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "question_text": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "choices": [
+        "2/3",
+        "1/3",
+        "3/2",
+        "3/3"
+      ],
+      "correct_answer": "2/3",
+      "answer": "2/3",
+      "explanation": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "explanation_th": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_fractions_intro_q10",
+      "question_th": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "question_text": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "choices": [
+        "3/10",
+        "10/3",
+        "3/5",
+        "1/2"
+      ],
+      "correct_answer": "3/10",
+      "answer": "3/10",
+      "explanation": "3/10 มีตัวส่วนเป็น 10",
+      "explanation_th": "3/10 มีตัวส่วนเป็น 10",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_fractions_intro_q01",
+      "question_th": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "question_text": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "1/4",
+      "answer": "1/4",
+      "explanation": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "explanation_th": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q02",
+      "question_th": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "question_text": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "choices": [
+        "3/8",
+        "5/8",
+        "8/3",
+        "1/8"
+      ],
+      "correct_answer": "3/8",
+      "answer": "3/8",
+      "explanation": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "explanation_th": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q03",
+      "question_th": "1/2 หมายถึงอะไร?",
+      "question_text": "1/2 หมายถึงอะไร?",
+      "choices": [
+        "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+        "2 ส่วนจาก 1 ส่วน",
+        "ทั้งหมด 2 ชิ้นเสมอ",
+        "ไม่มีคำตอบ"
+      ],
+      "correct_answer": "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "answer": "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "explanation": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "explanation_th": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q04",
+      "question_th": "เศษใน 2/5 คือเลขใด?",
+      "question_text": "เศษใน 2/5 คือเลขใด?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "2",
+      "answer": "2",
+      "explanation": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "explanation_th": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q05",
+      "question_th": "ส่วนใน 2/5 คือเลขใด?",
+      "question_text": "ส่วนใน 2/5 คือเลขใด?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "explanation_th": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q06",
+      "question_th": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "question_text": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "choices": [
+        "4/6",
+        "6/4",
+        "2/6",
+        "1/6"
+      ],
+      "correct_answer": "4/6",
+      "answer": "4/6",
+      "explanation": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "explanation_th": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q07",
+      "question_th": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "question_text": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "choices": [
+        "4/4",
+        "1/4",
+        "2/4",
+        "3/4"
+      ],
+      "correct_answer": "4/4",
+      "answer": "4/4",
+      "explanation": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "explanation_th": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q08",
+      "question_th": "ข้อใดมากกว่า 1/4?",
+      "question_text": "ข้อใดมากกว่า 1/4?",
+      "choices": [
+        "3/4",
+        "1/4",
+        "0/4",
+        "1/8"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "explanation_th": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_fractions_intro_q09",
+      "question_th": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "question_text": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "choices": [
+        "2/3",
+        "1/3",
+        "3/2",
+        "3/3"
+      ],
+      "correct_answer": "2/3",
+      "answer": "2/3",
+      "explanation": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "explanation_th": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_fractions_intro_q10",
+      "question_th": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "question_text": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "choices": [
+        "3/10",
+        "10/3",
+        "3/5",
+        "1/2"
+      ],
+      "correct_answer": "3/10",
+      "answer": "3/10",
+      "explanation": "3/10 มีตัวส่วนเป็น 10",
+      "explanation_th": "3/10 มีตัวส่วนเป็น 10",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Fractions in Everyday Life",
+  "objective_en": "Students will be able to understand and use fractions",
+  "story_intro_en": "Look! 1 + 4 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: อ่านเศษส่วน",
+      "question_en": "1 2 people people ?",
+      "solution_en": "1/2 2 people 1/2 ✅?"
+    },
+    {
+      "title_en": "Example: เขียนเศษส่วน",
+      "question_en": "1 people 1/4 ?",
+      "solution_en": "1/4 ✅?"
+    },
+    {
+      "title_en": "Example: เปรียบเทียบเศษส่วน",
+      "question_en": "1/3 1/4 ?",
+      "solution_en": "1/3 > 1/4 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: สับสนระหว่างเศษกับส่วน หรือเขียนสลับกัน",
+    "Mistake: คิดว่าเศษส่วนที่ส่วนมากกว่าจะมากกว่า แต่จริงๆ คือส่วนมากกว่าแปลว่าแต่ละส่วนเล็กกว่า",
+    "Mistake: ไม่เข้าใจว่าเศษส่วนที่เท่ากันอาจเขียนต่างกันได้ เช่น 1/2 = 2/4"
+  ],
+  "hints_en": [
+    "Hint: ส่วนคือตัวเลขที่บอกว่าแบ่งเป็นกี่ส่วน เศษคือตัวเลขที่บอกว่าเอากี่ส่วน",
+    "Hint: จำได้ง่าย: ส่วนใต้ เศษบน เหมือนเค้กแบ่งชิ้น",
+    "Hint: ถ้าเปรียบเทียบเศษส่วนที่เศษเท่ากัน ให้ดูส่วน ส่วนน้อยกว่าคือจำนวนมากกว่า"
+  ],
+  "explanation_steps_en": [
+    "Step: เศษส่วนมี 2 ตัวเลข ตัวเลขบนเรียกว่า เศษ ตัวเลขล่างเรียกว่า ส่วน",
+    "Step: ส่วนบอกว่าแบ่งเป็นกี่ส่วนเท่าๆ กัน เศษบอกว่าเอากี่ส่วน",
+    "Step: เช่น 1/4 หมายถึง แบ่งเป็น 4 ส่วนเท่าๆ กัน แล้วเอา 1 ส่วน",
+    "Step: เศษส่วนที่เท่ากันคือเศษส่วนที่แทนจำนวนเดียวกัน เช่น 1/2 = 2/4",
+    "Step: เศษส่วนที่มากกว่า 1 คือเศษส่วนที่เศษมากกว่าส่วน เช่น 5/4"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g3_fractions_intro_q01",
+      "question_th": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "question_text": "4 pieces 1 pieces ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "1/4",
+      "answer": "1/4",
+      "explanation": "1 4 pieces 1/4?",
+      "explanation_th": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core",
+      "question_en": "4 pieces 1 pieces ?",
+      "explanation_en": "1 4 pieces 1/4?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "1/4"
+    },
+    {
+      "question_id": "g3_fractions_intro_q02",
+      "question_th": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "question_text": "3 8 ?",
+      "choices": [
+        "3/8",
+        "5/8",
+        "8/3",
+        "1/8"
+      ],
+      "correct_answer": "3/8",
+      "answer": "3/8",
+      "explanation": "3 8 3/8?",
+      "explanation_th": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core",
+      "question_en": "3 8 ?",
+      "explanation_en": "3 8 3/8?",
+      "choices_en": [
+        "3/8",
+        "5/8",
+        "8/3",
+        "1/8"
+      ],
+      "answer_en": "3/8"
+    },
+    {
+      "question_id": "g3_fractions_intro_q03",
+      "question_th": "1/2 หมายถึงอะไร?",
+      "question_text": "1/2 ?",
+      "choices": [
+        "1 2?",
+        "2 1?",
+        "2 pieces?",
+        ""
+      ],
+      "correct_answer": "1 2?",
+      "answer": "1 2?",
+      "explanation": "1/2 1 2?",
+      "explanation_th": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core",
+      "question_en": "1/2 ?",
+      "explanation_en": "1/2 1 2?",
+      "choices_en": [
+        "1 2?",
+        "2 1?",
+        "2 pieces?",
+        ""
+      ],
+      "answer_en": "1 2?"
+    },
+    {
+      "question_id": "g3_fractions_intro_q04",
+      "question_th": "เศษใน 2/5 คือเลขใด?",
+      "question_text": "2/5 ?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "2",
+      "answer": "2",
+      "explanation": "animals 2?",
+      "explanation_th": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core",
+      "question_en": "2/5 ?",
+      "explanation_en": "animals 2?",
+      "choices_en": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "answer_en": "2"
+    },
+    {
+      "question_id": "g3_fractions_intro_q05",
+      "question_th": "ส่วนใน 2/5 คือเลขใด?",
+      "question_text": "2/5 ?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "animals 5?",
+      "explanation_th": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core",
+      "question_en": "2/5 ?",
+      "explanation_en": "animals 5?",
+      "choices_en": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "answer_en": "5"
+    },
+    {
+      "question_id": "g3_fractions_intro_q06",
+      "question_th": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "question_text": "6 4 ?",
+      "choices": [
+        "4/6",
+        "6/4",
+        "2/6",
+        "1/6"
+      ],
+      "correct_answer": "4/6",
+      "answer": "4/6",
+      "explanation": "4 6 4/6?",
+      "explanation_th": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core",
+      "question_en": "6 4 ?",
+      "explanation_en": "4 6 4/6?",
+      "choices_en": [
+        "4/6",
+        "6/4",
+        "2/6",
+        "1/6"
+      ],
+      "answer_en": "4/6"
+    },
+    {
+      "question_id": "g3_fractions_intro_q07",
+      "question_th": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "question_text": "?",
+      "choices": [
+        "4/4",
+        "1/4",
+        "2/4",
+        "3/4"
+      ],
+      "correct_answer": "4/4",
+      "answer": "4/4",
+      "explanation": "4 4?",
+      "explanation_th": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "4 4?",
+      "choices_en": [
+        "4/4",
+        "1/4",
+        "2/4",
+        "3/4"
+      ],
+      "answer_en": "4/4"
+    },
+    {
+      "question_id": "g3_fractions_intro_q08",
+      "question_th": "ข้อใดมากกว่า 1/4?",
+      "question_text": "1/4?",
+      "choices": [
+        "3/4",
+        "1/4",
+        "0/4",
+        "1/8"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "3 4 1 4?",
+      "explanation_th": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge",
+      "question_en": "1/4?",
+      "explanation_en": "3 4 1 4?",
+      "choices_en": [
+        "3/4",
+        "1/4",
+        "0/4",
+        "1/8"
+      ],
+      "answer_en": "3/4"
+    },
+    {
+      "question_id": "g3_fractions_intro_q09",
+      "question_th": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "question_text": "3 pieces 2 pieces ?",
+      "choices": [
+        "2/3",
+        "1/3",
+        "3/2",
+        "3/3"
+      ],
+      "correct_answer": "2/3",
+      "answer": "2/3",
+      "explanation": "2 3 pieces 2/3?",
+      "explanation_th": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge",
+      "question_en": "3 pieces 2 pieces ?",
+      "explanation_en": "2 3 pieces 2/3?",
+      "choices_en": [
+        "2/3",
+        "1/3",
+        "3/2",
+        "3/3"
+      ],
+      "answer_en": "2/3"
+    },
+    {
+      "question_id": "g3_fractions_intro_q10",
+      "question_th": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "question_text": "animals 10?",
+      "choices": [
+        "3/10",
+        "10/3",
+        "3/5",
+        "1/2"
+      ],
+      "correct_answer": "3/10",
+      "answer": "3/10",
+      "explanation": "3/10 animals 10?",
+      "explanation_th": "3/10 มีตัวส่วนเป็น 10",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge",
+      "question_en": "animals 10?",
+      "explanation_en": "3/10 animals 10?",
+      "choices_en": [
+        "3/10",
+        "10/3",
+        "3/5",
+        "1/2"
+      ],
+      "answer_en": "3/10"
+    }
+  ],
+  "quiz_id": "g3_fractions_intro_ep",
+  "generated_at": "2026-05-16T04:16:41.352264+00:00",
+  "source_lesson_id": "g3_fractions_intro",
+  "needs_review": true
+}

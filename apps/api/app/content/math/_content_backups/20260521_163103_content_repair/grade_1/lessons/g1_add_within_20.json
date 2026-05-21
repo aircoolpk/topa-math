@@ -1,0 +1,806 @@
+﻿{
+  "lesson_id": "g1_add_within_20",
+  "id": "g1_add_within_20",
+  "grade_level": 1,
+  "title_th": "บวกเลขไม่เกิน 20 กับพี่อลิส",
+  "objective_th": "นักเรียนสามารถบวกจำนวนสองจำนวนที่มีผลลัพธ์ไม่เกิน 20 ได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสชวนรวมจำนวนของสองกลุ่ม โดยผลรวมไม่เกิน 20",
+  "explanation_steps": [
+    "การบวกคือการเอาจำนวนมารวมกัน ผลลัพธ์เรียกว่า ผลบวก",
+    "นับจำนวนแรกไปทีละขั้น เช่น มี 7 อยู่แล้ว ก็นับต่อ 5 จำนวน: 8, 9, 10, 11, 12 → ได้ 12",
+    "ใช้นิ้วช่วยนับ กำมือแรกมีกี่นิ้ว แล้วนับต่อด้วยมือที่เหลือ",
+    "ถ้าผลบวกเกิน 10 ให้จำว่า 10 กับอีกเท่าไหร่ เช่น 8 + 5 = 10 + 3 = 13",
+    "ตรวจคำตอบโดยลบกลับ ถ้า 7 + 5 = 12 งั้น 12 - 5 ต้องได้ 7"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "บวกลูกบอล",
+      "question_th": "ตะกร้าใบแรกมีลูกบอล 8 ลูก ใบที่สองมีลูกบอล 6 ลูก รวมกันกี่ลูก?",
+      "solution_th": "8 + 6 = 14 ลูกบอล ✅"
+    },
+    {
+      "title_th": "บวกดินสอ",
+      "question_th": "พี่มีดินสอ 5 แท่ง ซื้อเพิ่มอีก 9 แท่ง ตอนนี้มีดินสอกี่แท่ง?",
+      "solution_th": "5 + 9 = 14 แท่ง ✅"
+    },
+    {
+      "title_th": "บวกน้ำตาล",
+      "question_th": "แม่ให้น้ำตาล 7 ก้อน พี่ให้อีก 4 ก้อน รวมได้กี่ก้อน?",
+      "solution_th": "7 + 4 = 11 ก้อน ✅"
+    }
+  ],
+  "common_mistakes": [
+    "นับต่อผิดทิศทาง เช่น นับถอยหลังแทนที่จะนับไปข้างหน้า",
+    "บวกเลขผิดโดยลืมไม่บวกตัวเลขตัวหนึ่งเข้าไป",
+    "ไม่จำค่าของตัวเลขที่เกิน 10 เช่น คิดว่า 10 + 3 = 13 เป็น 14"
+  ],
+  "hints": [
+    "ใช้นิ้วนับช่วย มือหนึ่งมี 10 นิ้ว พอครบ 10 แล้วให้เก็บมือไว้แล้วนับต่อ",
+    "ถ้าเลขใกล้ 10 อยู่แล้ว ให้บวกให้ครบ 10 ก่อนแล้วค่อยบวกเศษที่เหลือ",
+    "ตรวจคำตอบโดยการลบกลับ ถ้าสลับที่ก็ได้คำตอบเดียวกัน เช่น 6 + 9 = 9 + 6"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g1_add_within_20",
+  "skill_code": "g1_add_within_20",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "บวก 8 กับ 7",
+      "story_theme_th": "รวมจำนวนไม่เกิน 20",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีลูกบอล 8 ลูก ในกล่องของเล่น แล้วได้เพิ่มอีก 7 ลูก รวมมีลูกบอลกี่ลูก?"
+        },
+        {
+          "type": "addition_grouping",
+          "title": "🟦 ดูแผนภาพการบวก",
+          "description": "กลุ่มแรกมี 8 กลุ่มที่สองมี 7 เมื่อนำมารวมกันได้ 15",
+          "addends": [
+            8,
+            7
+          ],
+          "sum": 15
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "8 + 7 = 15 ลูก"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีลูกบอล 8 ลูก เพิ่มอีก 7 ลูก รวมกี่ลูก?",
+          "choices": [
+            "14 ลูก",
+            "15 ลูก",
+            "16 ลูก",
+            "13 ลูก"
+          ],
+          "answer": "15 ลูก",
+          "correct_answer": "15 ลูก",
+          "explanation": "8 + 7 = 15 จึงมีทั้งหมด 15 ลูก",
+          "explanation_th": "8 + 7 = 15 จึงมีทั้งหมด 15 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "บวก 4 กับ 3",
+      "story_theme_th": "รวมจำนวนไม่เกิน 20",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีส้ม 4 ผล ในตะกร้า แล้วได้เพิ่มอีก 3 ผล รวมมีส้มกี่ผล?"
+        },
+        {
+          "type": "addition_grouping",
+          "title": "🟦 ดูแผนภาพการบวก",
+          "description": "กลุ่มแรกมี 4 กลุ่มที่สองมี 3 เมื่อนำมารวมกันได้ 7",
+          "addends": [
+            4,
+            3
+          ],
+          "sum": 7
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 + 3 = 7 ผล"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีส้ม 4 ผล เพิ่มอีก 3 ผล รวมกี่ผล?",
+          "choices": [
+            "6 ผล",
+            "7 ผล",
+            "8 ผล",
+            "5 ผล"
+          ],
+          "answer": "7 ผล",
+          "correct_answer": "7 ผล",
+          "explanation": "4 + 3 = 7 จึงมีทั้งหมด 7 ผล",
+          "explanation_th": "4 + 3 = 7 จึงมีทั้งหมด 7 ผล"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "บวก 9 กับ 5",
+      "story_theme_th": "รวมจำนวนไม่เกิน 20",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีดินสอ 9 แท่ง ในโต๊ะเรียน แล้วได้เพิ่มอีก 5 แท่ง รวมมีดินสอกี่แท่ง?"
+        },
+        {
+          "type": "addition_grouping",
+          "title": "🟦 ดูแผนภาพการบวก",
+          "description": "กลุ่มแรกมี 9 กลุ่มที่สองมี 5 เมื่อนำมารวมกันได้ 14",
+          "addends": [
+            9,
+            5
+          ],
+          "sum": 14
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "9 + 5 = 14 แท่ง"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีดินสอ 9 แท่ง เพิ่มอีก 5 แท่ง รวมกี่แท่ง?",
+          "choices": [
+            "13 แท่ง",
+            "14 แท่ง",
+            "15 แท่ง",
+            "12 แท่ง"
+          ],
+          "answer": "14 แท่ง",
+          "correct_answer": "14 แท่ง",
+          "explanation": "9 + 5 = 14 จึงมีทั้งหมด 14 แท่ง",
+          "explanation_th": "9 + 5 = 14 จึงมีทั้งหมด 14 แท่ง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "บวก 6 กับ 6",
+      "story_theme_th": "รวมจำนวนไม่เกิน 20",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีสติกเกอร์ 6 ดวง ในสมุด แล้วได้เพิ่มอีก 6 ดวง รวมมีสติกเกอร์กี่ดวง?"
+        },
+        {
+          "type": "addition_grouping",
+          "title": "🟦 ดูแผนภาพการบวก",
+          "description": "กลุ่มแรกมี 6 กลุ่มที่สองมี 6 เมื่อนำมารวมกันได้ 12",
+          "addends": [
+            6,
+            6
+          ],
+          "sum": 12
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "6 + 6 = 12 ดวง"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีสติกเกอร์ 6 ดวง เพิ่มอีก 6 ดวง รวมกี่ดวง?",
+          "choices": [
+            "11 ดวง",
+            "12 ดวง",
+            "13 ดวง",
+            "10 ดวง"
+          ],
+          "answer": "12 ดวง",
+          "correct_answer": "12 ดวง",
+          "explanation": "6 + 6 = 12 จึงมีทั้งหมด 12 ดวง",
+          "explanation_th": "6 + 6 = 12 จึงมีทั้งหมด 12 ดวง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "บวก 10 กับ 4",
+      "story_theme_th": "รวมจำนวนไม่เกิน 20",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีดาว 10 ดวง ในกระดาษ แล้วได้เพิ่มอีก 4 ดวง รวมมีดาวกี่ดวง?"
+        },
+        {
+          "type": "addition_grouping",
+          "title": "🟦 ดูแผนภาพการบวก",
+          "description": "กลุ่มแรกมี 10 กลุ่มที่สองมี 4 เมื่อนำมารวมกันได้ 14",
+          "addends": [
+            10,
+            4
+          ],
+          "sum": 14
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "10 + 4 = 14 ดวง"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีดาว 10 ดวง เพิ่มอีก 4 ดวง รวมกี่ดวง?",
+          "choices": [
+            "13 ดวง",
+            "14 ดวง",
+            "15 ดวง",
+            "12 ดวง"
+          ],
+          "answer": "14 ดวง",
+          "correct_answer": "14 ดวง",
+          "explanation": "10 + 4 = 14 จึงมีทั้งหมด 14 ดวง",
+          "explanation_th": "10 + 4 = 14 จึงมีทั้งหมด 14 ดวง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "บวก 3 กับ 9",
+      "story_theme_th": "รวมจำนวนไม่เกิน 20",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีลูกปัด 3 เม็ด ในถ้วย แล้วได้เพิ่มอีก 9 เม็ด รวมมีลูกปัดกี่เม็ด?"
+        },
+        {
+          "type": "addition_grouping",
+          "title": "🟦 ดูแผนภาพการบวก",
+          "description": "กลุ่มแรกมี 3 กลุ่มที่สองมี 9 เมื่อนำมารวมกันได้ 12",
+          "addends": [
+            3,
+            9
+          ],
+          "sum": 12
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "3 + 9 = 12 เม็ด"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีลูกปัด 3 เม็ด เพิ่มอีก 9 เม็ด รวมกี่เม็ด?",
+          "choices": [
+            "11 เม็ด",
+            "12 เม็ด",
+            "13 เม็ด",
+            "10 เม็ด"
+          ],
+          "answer": "12 เม็ด",
+          "correct_answer": "12 เม็ด",
+          "explanation": "3 + 9 = 12 จึงมีทั้งหมด 12 เม็ด",
+          "explanation_th": "3 + 9 = 12 จึงมีทั้งหมด 12 เม็ด"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "บวก 7 กับ 2",
+      "story_theme_th": "รวมจำนวนไม่เกิน 20",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีหนังสือ 7 เล่ม ในชั้นวาง แล้วได้เพิ่มอีก 2 เล่ม รวมมีหนังสือกี่เล่ม?"
+        },
+        {
+          "type": "addition_grouping",
+          "title": "🟦 ดูแผนภาพการบวก",
+          "description": "กลุ่มแรกมี 7 กลุ่มที่สองมี 2 เมื่อนำมารวมกันได้ 9",
+          "addends": [
+            7,
+            2
+          ],
+          "sum": 9
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "7 + 2 = 9 เล่ม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีหนังสือ 7 เล่ม เพิ่มอีก 2 เล่ม รวมกี่เล่ม?",
+          "choices": [
+            "8 เล่ม",
+            "9 เล่ม",
+            "10 เล่ม",
+            "7 เล่ม"
+          ],
+          "answer": "9 เล่ม",
+          "correct_answer": "9 เล่ม",
+          "explanation": "7 + 2 = 9 จึงมีทั้งหมด 9 เล่ม",
+          "explanation_th": "7 + 2 = 9 จึงมีทั้งหมด 9 เล่ม"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "บวก 5 กับ 8",
+      "story_theme_th": "รวมจำนวนไม่เกิน 20",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีขนม 5 ชิ้น ในจาน แล้วได้เพิ่มอีก 8 ชิ้น รวมมีขนมกี่ชิ้น?"
+        },
+        {
+          "type": "addition_grouping",
+          "title": "🟦 ดูแผนภาพการบวก",
+          "description": "กลุ่มแรกมี 5 กลุ่มที่สองมี 8 เมื่อนำมารวมกันได้ 13",
+          "addends": [
+            5,
+            8
+          ],
+          "sum": 13
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "5 + 8 = 13 ชิ้น"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีขนม 5 ชิ้น เพิ่มอีก 8 ชิ้น รวมกี่ชิ้น?",
+          "choices": [
+            "12 ชิ้น",
+            "13 ชิ้น",
+            "14 ชิ้น",
+            "11 ชิ้น"
+          ],
+          "answer": "13 ชิ้น",
+          "correct_answer": "13 ชิ้น",
+          "explanation": "5 + 8 = 13 จึงมีทั้งหมด 13 ชิ้น",
+          "explanation_th": "5 + 8 = 13 จึงมีทั้งหมด 13 ชิ้น"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "บวกเลขไม่เกิน 20",
+  "preview_subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "cover_theme": "add_within_20",
+  "cover_emoji": "➔",
+  "cover_color": "green",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "learning_objective_th": "นักเรียนสามารถบวกจำนวนสองจำนวนที่มีผลลัพธ์ไม่เกิน 20 ได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสมีลูกชิ้น 7 ลูก แม่ให้อีก 5 ลูก ตอนนี้พี่อลิสมีลูกชิ้นทั้งหมดกี่ลูก? 🍡",
+  "concept_explanation_th": "การบวกคือการนำจำนวนมารวมกัน แล้วนับผลรวมทั้งหมด",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 10,
+    "parts": [
+      4,
+      6
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท บวกเลขไม่เกิน 20 กับพี่อลิส ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "บวกลูกบอล",
+      "question_th": "ตะกร้าใบแรกมีลูกบอล 8 ลูก ใบที่สองมีลูกบอล 6 ลูก รวมกันกี่ลูก?",
+      "solution_th": "8 + 6 = 14 ลูกบอล ✅"
+    },
+    {
+      "title_th": "บวกดินสอ",
+      "question_th": "พี่มีดินสอ 5 แท่ง ซื้อเพิ่มอีก 9 แท่ง ตอนนี้มีดินสอกี่แท่ง?",
+      "solution_th": "5 + 9 = 14 แท่ง ✅"
+    },
+    {
+      "title_th": "บวกน้ำตาล",
+      "question_th": "แม่ให้น้ำตาล 7 ก้อน พี่ให้อีก 4 ก้อน รวมได้กี่ก้อน?",
+      "solution_th": "7 + 4 = 11 ก้อน ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "นับต่อผิดทิศทาง เช่น นับถอยหลังแทนที่จะนับไปข้างหน้า",
+    "บวกเลขผิดโดยลืมไม่บวกตัวเลขตัวหนึ่งเข้าไป",
+    "ไม่จำค่าของตัวเลขที่เกิน 10 เช่น คิดว่า 10 + 3 = 13 เป็น 14"
+  ],
+  "questions": [
+    {
+      "question_id": "g1_add_within_20_q01",
+      "question_th": "มีลูกบอล 8 ลูก เพิ่มอีก 7 ลูก รวมมีลูกบอลกี่ลูก?",
+      "question_text": "มีลูกบอล 8 ลูก เพิ่มอีก 7 ลูก รวมมีลูกบอลกี่ลูก?",
+      "choices": [
+        "14 ลูก",
+        "15 ลูก",
+        "16 ลูก",
+        "13 ลูก"
+      ],
+      "correct_answer": "15 ลูก",
+      "answer": "15 ลูก",
+      "explanation": "8 + 7 = 15 จึงมีลูกบอลทั้งหมด 15 ลูก",
+      "explanation_th": "8 + 7 = 15 จึงมีลูกบอลทั้งหมด 15 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q02",
+      "question_th": "มีส้ม 4 ผล เพิ่มอีก 3 ผล รวมมีส้มกี่ผล?",
+      "question_text": "มีส้ม 4 ผล เพิ่มอีก 3 ผล รวมมีส้มกี่ผล?",
+      "choices": [
+        "6 ผล",
+        "7 ผล",
+        "8 ผล",
+        "5 ผล"
+      ],
+      "correct_answer": "7 ผล",
+      "answer": "7 ผล",
+      "explanation": "4 + 3 = 7 จึงมีส้มทั้งหมด 7 ผล",
+      "explanation_th": "4 + 3 = 7 จึงมีส้มทั้งหมด 7 ผล",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q03",
+      "question_th": "มีดินสอ 9 แท่ง เพิ่มอีก 5 แท่ง รวมมีดินสอกี่แท่ง?",
+      "question_text": "มีดินสอ 9 แท่ง เพิ่มอีก 5 แท่ง รวมมีดินสอกี่แท่ง?",
+      "choices": [
+        "13 แท่ง",
+        "14 แท่ง",
+        "15 แท่ง",
+        "12 แท่ง"
+      ],
+      "correct_answer": "14 แท่ง",
+      "answer": "14 แท่ง",
+      "explanation": "9 + 5 = 14 จึงมีดินสอทั้งหมด 14 แท่ง",
+      "explanation_th": "9 + 5 = 14 จึงมีดินสอทั้งหมด 14 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q04",
+      "question_th": "มีสติกเกอร์ 6 ดวง เพิ่มอีก 6 ดวง รวมมีสติกเกอร์กี่ดวง?",
+      "question_text": "มีสติกเกอร์ 6 ดวง เพิ่มอีก 6 ดวง รวมมีสติกเกอร์กี่ดวง?",
+      "choices": [
+        "11 ดวง",
+        "12 ดวง",
+        "13 ดวง",
+        "10 ดวง"
+      ],
+      "correct_answer": "12 ดวง",
+      "answer": "12 ดวง",
+      "explanation": "6 + 6 = 12 จึงมีสติกเกอร์ทั้งหมด 12 ดวง",
+      "explanation_th": "6 + 6 = 12 จึงมีสติกเกอร์ทั้งหมด 12 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q05",
+      "question_th": "มีดาว 10 ดวง เพิ่มอีก 4 ดวง รวมมีดาวกี่ดวง?",
+      "question_text": "มีดาว 10 ดวง เพิ่มอีก 4 ดวง รวมมีดาวกี่ดวง?",
+      "choices": [
+        "13 ดวง",
+        "14 ดวง",
+        "15 ดวง",
+        "12 ดวง"
+      ],
+      "correct_answer": "14 ดวง",
+      "answer": "14 ดวง",
+      "explanation": "10 + 4 = 14 จึงมีดาวทั้งหมด 14 ดวง",
+      "explanation_th": "10 + 4 = 14 จึงมีดาวทั้งหมด 14 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q06",
+      "question_th": "มีลูกปัด 3 เม็ด เพิ่มอีก 9 เม็ด รวมมีลูกปัดกี่เม็ด?",
+      "question_text": "มีลูกปัด 3 เม็ด เพิ่มอีก 9 เม็ด รวมมีลูกปัดกี่เม็ด?",
+      "choices": [
+        "11 เม็ด",
+        "12 เม็ด",
+        "13 เม็ด",
+        "10 เม็ด"
+      ],
+      "correct_answer": "12 เม็ด",
+      "answer": "12 เม็ด",
+      "explanation": "3 + 9 = 12 จึงมีลูกปัดทั้งหมด 12 เม็ด",
+      "explanation_th": "3 + 9 = 12 จึงมีลูกปัดทั้งหมด 12 เม็ด",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q07",
+      "question_th": "มีหนังสือ 7 เล่ม เพิ่มอีก 2 เล่ม รวมมีหนังสือกี่เล่ม?",
+      "question_text": "มีหนังสือ 7 เล่ม เพิ่มอีก 2 เล่ม รวมมีหนังสือกี่เล่ม?",
+      "choices": [
+        "8 เล่ม",
+        "9 เล่ม",
+        "10 เล่ม",
+        "7 เล่ม"
+      ],
+      "correct_answer": "9 เล่ม",
+      "answer": "9 เล่ม",
+      "explanation": "7 + 2 = 9 จึงมีหนังสือทั้งหมด 9 เล่ม",
+      "explanation_th": "7 + 2 = 9 จึงมีหนังสือทั้งหมด 9 เล่ม",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q08",
+      "question_th": "มีขนม 5 ชิ้น เพิ่มอีก 8 ชิ้น รวมมีขนมกี่ชิ้น?",
+      "question_text": "มีขนม 5 ชิ้น เพิ่มอีก 8 ชิ้น รวมมีขนมกี่ชิ้น?",
+      "choices": [
+        "12 ชิ้น",
+        "13 ชิ้น",
+        "14 ชิ้น",
+        "11 ชิ้น"
+      ],
+      "correct_answer": "13 ชิ้น",
+      "answer": "13 ชิ้น",
+      "explanation": "5 + 8 = 13 จึงมีขนมทั้งหมด 13 ชิ้น",
+      "explanation_th": "5 + 8 = 13 จึงมีขนมทั้งหมด 13 ชิ้น",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q09",
+      "question_th": "มีลูกแก้ว 2 ลูก เพิ่มอีก 11 ลูก รวมมีลูกแก้วกี่ลูก?",
+      "question_text": "มีลูกแก้ว 2 ลูก เพิ่มอีก 11 ลูก รวมมีลูกแก้วกี่ลูก?",
+      "choices": [
+        "12 ลูก",
+        "13 ลูก",
+        "14 ลูก",
+        "11 ลูก"
+      ],
+      "correct_answer": "13 ลูก",
+      "answer": "13 ลูก",
+      "explanation": "2 + 11 = 13 จึงมีลูกแก้วทั้งหมด 13 ลูก",
+      "explanation_th": "2 + 11 = 13 จึงมีลูกแก้วทั้งหมด 13 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q10",
+      "question_th": "มีดอกไม้ 12 ลูก เพิ่มอีก 3 ลูก รวมมีดอกไม้กี่ลูก?",
+      "question_text": "มีดอกไม้ 12 ลูก เพิ่มอีก 3 ลูก รวมมีดอกไม้กี่ลูก?",
+      "choices": [
+        "14 ลูก",
+        "15 ลูก",
+        "16 ลูก",
+        "13 ลูก"
+      ],
+      "correct_answer": "15 ลูก",
+      "answer": "15 ลูก",
+      "explanation": "12 + 3 = 15 จึงมีดอกไม้ทั้งหมด 15 ลูก",
+      "explanation_th": "12 + 3 = 15 จึงมีดอกไม้ทั้งหมด 15 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g1_add_within_20_q01",
+      "question_th": "มีลูกบอล 8 ลูก เพิ่มอีก 7 ลูก รวมมีลูกบอลกี่ลูก?",
+      "question_text": "มีลูกบอล 8 ลูก เพิ่มอีก 7 ลูก รวมมีลูกบอลกี่ลูก?",
+      "choices": [
+        "14 ลูก",
+        "15 ลูก",
+        "16 ลูก",
+        "13 ลูก"
+      ],
+      "correct_answer": "15 ลูก",
+      "answer": "15 ลูก",
+      "explanation": "8 + 7 = 15 จึงมีลูกบอลทั้งหมด 15 ลูก",
+      "explanation_th": "8 + 7 = 15 จึงมีลูกบอลทั้งหมด 15 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q02",
+      "question_th": "มีส้ม 4 ผล เพิ่มอีก 3 ผล รวมมีส้มกี่ผล?",
+      "question_text": "มีส้ม 4 ผล เพิ่มอีก 3 ผล รวมมีส้มกี่ผล?",
+      "choices": [
+        "6 ผล",
+        "7 ผล",
+        "8 ผล",
+        "5 ผล"
+      ],
+      "correct_answer": "7 ผล",
+      "answer": "7 ผล",
+      "explanation": "4 + 3 = 7 จึงมีส้มทั้งหมด 7 ผล",
+      "explanation_th": "4 + 3 = 7 จึงมีส้มทั้งหมด 7 ผล",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q03",
+      "question_th": "มีดินสอ 9 แท่ง เพิ่มอีก 5 แท่ง รวมมีดินสอกี่แท่ง?",
+      "question_text": "มีดินสอ 9 แท่ง เพิ่มอีก 5 แท่ง รวมมีดินสอกี่แท่ง?",
+      "choices": [
+        "13 แท่ง",
+        "14 แท่ง",
+        "15 แท่ง",
+        "12 แท่ง"
+      ],
+      "correct_answer": "14 แท่ง",
+      "answer": "14 แท่ง",
+      "explanation": "9 + 5 = 14 จึงมีดินสอทั้งหมด 14 แท่ง",
+      "explanation_th": "9 + 5 = 14 จึงมีดินสอทั้งหมด 14 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q04",
+      "question_th": "มีสติกเกอร์ 6 ดวง เพิ่มอีก 6 ดวง รวมมีสติกเกอร์กี่ดวง?",
+      "question_text": "มีสติกเกอร์ 6 ดวง เพิ่มอีก 6 ดวง รวมมีสติกเกอร์กี่ดวง?",
+      "choices": [
+        "11 ดวง",
+        "12 ดวง",
+        "13 ดวง",
+        "10 ดวง"
+      ],
+      "correct_answer": "12 ดวง",
+      "answer": "12 ดวง",
+      "explanation": "6 + 6 = 12 จึงมีสติกเกอร์ทั้งหมด 12 ดวง",
+      "explanation_th": "6 + 6 = 12 จึงมีสติกเกอร์ทั้งหมด 12 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q05",
+      "question_th": "มีดาว 10 ดวง เพิ่มอีก 4 ดวง รวมมีดาวกี่ดวง?",
+      "question_text": "มีดาว 10 ดวง เพิ่มอีก 4 ดวง รวมมีดาวกี่ดวง?",
+      "choices": [
+        "13 ดวง",
+        "14 ดวง",
+        "15 ดวง",
+        "12 ดวง"
+      ],
+      "correct_answer": "14 ดวง",
+      "answer": "14 ดวง",
+      "explanation": "10 + 4 = 14 จึงมีดาวทั้งหมด 14 ดวง",
+      "explanation_th": "10 + 4 = 14 จึงมีดาวทั้งหมด 14 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q06",
+      "question_th": "มีลูกปัด 3 เม็ด เพิ่มอีก 9 เม็ด รวมมีลูกปัดกี่เม็ด?",
+      "question_text": "มีลูกปัด 3 เม็ด เพิ่มอีก 9 เม็ด รวมมีลูกปัดกี่เม็ด?",
+      "choices": [
+        "11 เม็ด",
+        "12 เม็ด",
+        "13 เม็ด",
+        "10 เม็ด"
+      ],
+      "correct_answer": "12 เม็ด",
+      "answer": "12 เม็ด",
+      "explanation": "3 + 9 = 12 จึงมีลูกปัดทั้งหมด 12 เม็ด",
+      "explanation_th": "3 + 9 = 12 จึงมีลูกปัดทั้งหมด 12 เม็ด",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q07",
+      "question_th": "มีหนังสือ 7 เล่ม เพิ่มอีก 2 เล่ม รวมมีหนังสือกี่เล่ม?",
+      "question_text": "มีหนังสือ 7 เล่ม เพิ่มอีก 2 เล่ม รวมมีหนังสือกี่เล่ม?",
+      "choices": [
+        "8 เล่ม",
+        "9 เล่ม",
+        "10 เล่ม",
+        "7 เล่ม"
+      ],
+      "correct_answer": "9 เล่ม",
+      "answer": "9 เล่ม",
+      "explanation": "7 + 2 = 9 จึงมีหนังสือทั้งหมด 9 เล่ม",
+      "explanation_th": "7 + 2 = 9 จึงมีหนังสือทั้งหมด 9 เล่ม",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q08",
+      "question_th": "มีขนม 5 ชิ้น เพิ่มอีก 8 ชิ้น รวมมีขนมกี่ชิ้น?",
+      "question_text": "มีขนม 5 ชิ้น เพิ่มอีก 8 ชิ้น รวมมีขนมกี่ชิ้น?",
+      "choices": [
+        "12 ชิ้น",
+        "13 ชิ้น",
+        "14 ชิ้น",
+        "11 ชิ้น"
+      ],
+      "correct_answer": "13 ชิ้น",
+      "answer": "13 ชิ้น",
+      "explanation": "5 + 8 = 13 จึงมีขนมทั้งหมด 13 ชิ้น",
+      "explanation_th": "5 + 8 = 13 จึงมีขนมทั้งหมด 13 ชิ้น",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q09",
+      "question_th": "มีลูกแก้ว 2 ลูก เพิ่มอีก 11 ลูก รวมมีลูกแก้วกี่ลูก?",
+      "question_text": "มีลูกแก้ว 2 ลูก เพิ่มอีก 11 ลูก รวมมีลูกแก้วกี่ลูก?",
+      "choices": [
+        "12 ลูก",
+        "13 ลูก",
+        "14 ลูก",
+        "11 ลูก"
+      ],
+      "correct_answer": "13 ลูก",
+      "answer": "13 ลูก",
+      "explanation": "2 + 11 = 13 จึงมีลูกแก้วทั้งหมด 13 ลูก",
+      "explanation_th": "2 + 11 = 13 จึงมีลูกแก้วทั้งหมด 13 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_add_within_20_q10",
+      "question_th": "มีดอกไม้ 12 ลูก เพิ่มอีก 3 ลูก รวมมีดอกไม้กี่ลูก?",
+      "question_text": "มีดอกไม้ 12 ลูก เพิ่มอีก 3 ลูก รวมมีดอกไม้กี่ลูก?",
+      "choices": [
+        "14 ลูก",
+        "15 ลูก",
+        "16 ลูก",
+        "13 ลูก"
+      ],
+      "correct_answer": "15 ลูก",
+      "answer": "15 ลูก",
+      "explanation": "12 + 3 = 15 จึงมีดอกไม้ทั้งหมด 15 ลูก",
+      "explanation_th": "12 + 3 = 15 จึงมีดอกไม้ทั้งหมด 15 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_add_within_20",
+      "question_type": "core"
+    }
+  ]
+}

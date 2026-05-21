@@ -1,4 +1,4 @@
-﻿{
+{
   "lesson_id": "g2_add_two_digit",
   "id": "g2_add_two_digit",
   "grade_level": 2,
@@ -51,204 +51,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🏫 วันนี้โรงเรียนจัดงานวิชากร มีนักเรียนชาย 34 คน และนักเรียนหญิง 25 คน เข้าร่วมงาน รวมมีนักเรียนกี่คน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 34
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 25
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "34 + 25 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "correct_answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -259,204 +98,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🍎 แม่ซื้อแอปเปิ้ลแดง 23 ผล และแอปเปิ้ลเขียว 45 ผล รวมแม่ซื้อแอปเปิ้ลกี่ผล?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 23
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 45
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "23 + 45 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -467,204 +145,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🧸 มีตุ๊กตาหมีในกล่อง 32 ตัว และตุ๊กตากระต่าย 44 ตัว รวมตุ๊กตากี่ตัว?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 32
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 44
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "32 + 44 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -675,204 +192,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🏪 ร้านค้ามีน้ำผลไม้ 41 ขวด ขายเพิ่มอีก 37 ขวด รวมน้ำผลไม้กี่ขวด?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 41
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 37
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "41 + 37 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -883,204 +239,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🐕 ฟาร์มมีสุนัขพันธุ์พิเศษ 52 ตัว และสุนัขพันธุ์ทั่วไปอีก 36 ตัว รวมมีสุนัขกี่ตัว?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 52
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 36
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "52 + 36 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -1091,204 +286,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🌻 สวนดอกไม้มีดอกทานตะวัน 33 ดอก และดอกกุหลาบ 55 ดอก รวมดอกไม้กี่ดอก?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 33
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 55
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "33 + 55 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -1299,204 +333,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎨 ในห้องศิลปะมีสีชอล์คสีแดง 21 ก้าน และสีชอล์คสีน้ำเงิน 47 ก้าน รวมสีชอล์คกี่ก้าน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 21
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 47
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "21 + 47 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -1507,204 +380,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "📚 ห้องสมุดมีหนังสือภาษาไทย 43 เล่ม และหนังสือภาษาอังกฤษ 35 เล่ม รวมหนังสือกี่เล่ม?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 43
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 35
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "43 + 35 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -1715,204 +427,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎮 เกมมีเพชร 26 เม็ด เก็บเพชรเพิ่มได้อีก 52 เม็ด รวมเพชรกี่เม็ด?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 26
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 52
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "26 + 52 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -1923,204 +474,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎉 งานเทศกาลมีลูกโป่งสีแดง 38 ลูก และลูกโป่งสีเหลือง 41 ลูก รวมลูกโป่งกี่ลูก?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "🎒",
-                "count": 38
-              },
-              {
-                "emoji": "➕",
-                "count": 1
-              },
-              {
-                "emoji": "🎒",
-                "count": 41
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title_th": "📊 ตารางสิบช่อง",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              },
-              {
-                "state": "filled"
-              }
-            ]
-          }
-        },
-        {
-          "type": "place_value_chart",
-          "title_th": "🎯 ตารางหลัก",
-          "data": {
-            "tens": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ],
-            "ones": [
-              {
-                "icons": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "empty"
-                  }
-                ]
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "38 + 41 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "45 + 32 = ?",
-                "choices": [
-                  "44",
-                  "43",
-                  "45",
-                  "42"
-                ],
-                "answer": "45"
-              },
-              {
-                "text_th": "67 + 21 = ?"
-              },
-              {
-                "text_th": "53 + 46 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -2131,29 +521,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "📖 Story Time",
-          "content": ""
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "34 + 25 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 Try It",
-          "question": "45 + 32 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "76",
-            "75",
-            "77",
-            "74"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "77",
-          "correct_answer": "77",
-          "explanation": ""
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     }
@@ -2219,171 +623,181 @@
   "questions": [
     {
       "question_id": "g2_add_two_digit_q01",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "34 + 25 เท่ากับเท่าไร?",
+      "question_text": "34 + 25 เท่ากับเท่าไร?",
       "choices": [
-        "9",
-        "12",
-        "6",
-        "14"
+        "57",
+        "58",
+        "59",
+        "60"
       ],
-      "correct_answer": "9",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
-      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "59",
+      "answer": "59",
+      "explanation": "34 + 25 = 59",
+      "explanation_th": "34 + 25 = 59",
       "difficulty": "easy",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q02",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "47 + 18 เท่ากับเท่าไร?",
+      "question_text": "47 + 18 เท่ากับเท่าไร?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "20"
+        "63",
+        "64",
+        "65",
+        "66"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "65",
+      "answer": "65",
+      "explanation": "47 + 18 = 65",
+      "explanation_th": "47 + 18 = 65",
       "difficulty": "easy",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q03",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "question_th": "56 + 27 เท่ากับเท่าไร?",
+      "question_text": "56 + 27 เท่ากับเท่าไร?",
       "choices": [
-        "10",
-        "11",
-        "9",
-        "20"
+        "81",
+        "82",
+        "83",
+        "84"
       ],
-      "correct_answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "56 + 27 = 83",
+      "explanation_th": "56 + 27 = 83",
       "difficulty": "easy",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q04",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
+      "question_text": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
       "choices": [
-        "36",
-        "42",
-        "30",
-        "12"
+        "61 ดวง",
+        "62 ดวง",
+        "63 ดวง",
+        "64 ดวง"
       ],
-      "correct_answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "63 ดวง",
+      "answer": "63 ดวง",
+      "explanation": "28 + 35 = 63 ดวง",
+      "explanation_th": "28 + 35 = 63 ดวง",
+      "difficulty": "medium",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q05",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
+      "question_text": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "16"
+        "74 เล่ม",
+        "75 เล่ม",
+        "76 เล่ม",
+        "77 เล่ม"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "75 เล่ม",
+      "answer": "75 เล่ม",
+      "explanation": "46 + 29 = 75 เล่ม",
+      "explanation_th": "46 + 29 = 75 เล่ม",
+      "difficulty": "medium",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q06",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "question_th": "68 + 14 เท่ากับเท่าไร?",
+      "question_text": "68 + 14 เท่ากับเท่าไร?",
       "choices": [
-        "11",
-        "12",
-        "10",
-        "21"
+        "80",
+        "81",
+        "82",
+        "83"
       ],
-      "correct_answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "82",
+      "answer": "82",
+      "explanation": "68 + 14 = 82",
+      "explanation_th": "68 + 14 = 82",
+      "difficulty": "medium",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q07",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "39 + 44 เท่ากับเท่าไร?",
+      "question_text": "39 + 44 เท่ากับเท่าไร?",
       "choices": [
-        "36",
-        "40",
-        "32",
-        "13"
+        "82",
+        "83",
+        "84",
+        "85"
       ],
-      "correct_answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "39 + 44 = 83",
+      "explanation_th": "39 + 44 = 83",
+      "difficulty": "medium",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q08",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "25 + 37 เท่ากับเท่าไร?",
+      "question_text": "25 + 37 เท่ากับเท่าไร?",
       "choices": [
-        "45",
-        "46",
-        "44",
-        "55"
+        "60",
+        "61",
+        "62",
+        "63"
       ],
-      "correct_answer": "45",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
-      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "62",
+      "answer": "62",
+      "explanation": "25 + 37 = 62",
+      "explanation_th": "25 + 37 = 62",
+      "difficulty": "hard",
       "skill_tag": "g2_add_two_digit",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g2_add_two_digit_q09",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "question_th": "49 + 36 เท่ากับเท่าไร?",
+      "question_text": "49 + 36 เท่ากับเท่าไร?",
       "choices": [
-        "17",
-        "18",
-        "16",
-        "27"
+        "84",
+        "85",
+        "86",
+        "87"
       ],
-      "correct_answer": "17",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
-      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "49 + 36 = 85",
+      "explanation_th": "49 + 36 = 85",
+      "difficulty": "hard",
       "skill_tag": "g2_add_two_digit",
       "question_type": "challenge"
     },
     {
       "question_id": "g2_add_two_digit_q10",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "57 + 28 เท่ากับเท่าไร?",
+      "question_text": "57 + 28 เท่ากับเท่าไร?",
       "choices": [
-        "24",
-        "26",
-        "22",
-        "14"
+        "83",
+        "84",
+        "85",
+        "86"
       ],
-      "correct_answer": "24",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
-      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "57 + 28 = 85",
+      "explanation_th": "57 + 28 = 85",
+      "difficulty": "hard",
       "skill_tag": "g2_add_two_digit",
       "question_type": "challenge"
     }
@@ -2391,183 +805,225 @@
   "quiz_th": [
     {
       "question_id": "g2_add_two_digit_q01",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "34 + 25 เท่ากับเท่าไร?",
+      "question_text": "34 + 25 เท่ากับเท่าไร?",
       "choices": [
-        "9",
-        "12",
-        "6",
-        "14"
+        "57",
+        "58",
+        "59",
+        "60"
       ],
-      "correct_answer": "9",
-      "answer": "9",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
-      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "59",
+      "answer": "59",
+      "explanation": "34 + 25 = 59",
+      "explanation_th": "34 + 25 = 59",
       "difficulty": "easy",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q02",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "47 + 18 เท่ากับเท่าไร?",
+      "question_text": "47 + 18 เท่ากับเท่าไร?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "20"
+        "63",
+        "64",
+        "65",
+        "66"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "65",
+      "answer": "65",
+      "explanation": "47 + 18 = 65",
+      "explanation_th": "47 + 18 = 65",
       "difficulty": "easy",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q03",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: 5 + 5 = ?",
+      "question_th": "56 + 27 เท่ากับเท่าไร?",
+      "question_text": "56 + 27 เท่ากับเท่าไร?",
       "choices": [
-        "10",
-        "11",
-        "9",
-        "20"
+        "81",
+        "82",
+        "83",
+        "84"
       ],
-      "correct_answer": "10",
-      "answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "56 + 27 = 83",
+      "explanation_th": "56 + 27 = 83",
       "difficulty": "easy",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q04",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
+      "question_text": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
       "choices": [
-        "36",
-        "42",
-        "30",
-        "12"
+        "61 ดวง",
+        "62 ดวง",
+        "63 ดวง",
+        "64 ดวง"
       ],
-      "correct_answer": "36",
-      "answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "63 ดวง",
+      "answer": "63 ดวง",
+      "explanation": "28 + 35 = 63 ดวง",
+      "explanation_th": "28 + 35 = 63 ดวง",
+      "difficulty": "medium",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q05",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
+      "question_text": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "16"
+        "74 เล่ม",
+        "75 เล่ม",
+        "76 เล่ม",
+        "77 เล่ม"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "75 เล่ม",
+      "answer": "75 เล่ม",
+      "explanation": "46 + 29 = 75 เล่ม",
+      "explanation_th": "46 + 29 = 75 เล่ม",
+      "difficulty": "medium",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q06",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: 8 + 3 = ?",
+      "question_th": "68 + 14 เท่ากับเท่าไร?",
+      "question_text": "68 + 14 เท่ากับเท่าไร?",
       "choices": [
-        "11",
-        "12",
-        "10",
-        "21"
+        "80",
+        "81",
+        "82",
+        "83"
       ],
-      "correct_answer": "11",
-      "answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "82",
+      "answer": "82",
+      "explanation": "68 + 14 = 82",
+      "explanation_th": "68 + 14 = 82",
+      "difficulty": "medium",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q07",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "39 + 44 เท่ากับเท่าไร?",
+      "question_text": "39 + 44 เท่ากับเท่าไร?",
       "choices": [
-        "36",
-        "40",
-        "32",
-        "13"
+        "82",
+        "83",
+        "84",
+        "85"
       ],
-      "correct_answer": "36",
-      "answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "39 + 44 = 83",
+      "explanation_th": "39 + 44 = 83",
+      "difficulty": "medium",
       "skill_tag": "g2_add_two_digit",
       "question_type": "core"
     },
     {
       "question_id": "g2_add_two_digit_q08",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "25 + 37 เท่ากับเท่าไร?",
+      "question_text": "25 + 37 เท่ากับเท่าไร?",
       "choices": [
-        "45",
-        "46",
-        "44",
-        "55"
+        "60",
+        "61",
+        "62",
+        "63"
       ],
-      "correct_answer": "45",
-      "answer": "45",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
-      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "62",
+      "answer": "62",
+      "explanation": "25 + 37 = 62",
+      "explanation_th": "25 + 37 = 62",
+      "difficulty": "hard",
       "skill_tag": "g2_add_two_digit",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g2_add_two_digit_q09",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: 11 + 6 = ?",
+      "question_th": "49 + 36 เท่ากับเท่าไร?",
+      "question_text": "49 + 36 เท่ากับเท่าไร?",
       "choices": [
-        "17",
-        "18",
-        "16",
-        "27"
+        "84",
+        "85",
+        "86",
+        "87"
       ],
-      "correct_answer": "17",
-      "answer": "17",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
-      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "49 + 36 = 85",
+      "explanation_th": "49 + 36 = 85",
+      "difficulty": "hard",
       "skill_tag": "g2_add_two_digit",
       "question_type": "challenge"
     },
     {
       "question_id": "g2_add_two_digit_q10",
-      "question_th": "บวกเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "บวกเลขสองหลักแบบไม่ทด: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "57 + 28 เท่ากับเท่าไร?",
+      "question_text": "57 + 28 เท่ากับเท่าไร?",
       "choices": [
-        "24",
-        "26",
-        "22",
-        "14"
+        "83",
+        "84",
+        "85",
+        "86"
       ],
-      "correct_answer": "24",
-      "answer": "24",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
-      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "57 + 28 = 85",
+      "explanation_th": "57 + 28 = 85",
+      "difficulty": "hard",
       "skill_tag": "g2_add_two_digit",
       "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง บวกเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "18 + 7 = 25",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "18 + 7 = ?",
+      "choices": [
+        "23",
+        "24",
+        "25",
+        "27"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "คำตอบคือ 25"
     }
   ]
 }

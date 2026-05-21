@@ -66,6 +66,19 @@ DIFFICULT_ENGLISH_WORDS = {
     "therefore",
 }
 
+# Mojibake / garbled text markers
+GARBLED_MARKERS = {
+    "\ufffd",
+    "ð",
+    "YY¦",
+    "Ã©",
+    "Ã¨",
+    "â",
+    "â€™",
+    "â€œ",
+    "â€",
+}
+
 CONTENT_ROOT = Path(__file__).resolve().parents[1] / "content" / "math"
 
 
@@ -211,6 +224,9 @@ def _validate_text_quality(payload: dict[str, Any], program_type: str) -> list[d
     for word in AMBIGUOUS_WORDS:
         if _contains_standalone_word(text_blob, word):
             issues.append(_issue("ambiguous_wording", f"Found ambiguous wording: {word}", "warning"))
+    for marker in GARBLED_MARKERS:
+        if marker in text_blob:
+            issues.append(_issue("garbled_text", f"Found garbled/mojibake text marker: {repr(marker)}"))
     if program_type == "EP":
         lower_text = text_blob.lower()
         for word in DIFFICULT_ENGLISH_WORDS:
@@ -229,9 +245,27 @@ def validate_lesson_payload(payload: dict[str, Any], quiz_payload: dict[str, Any
     program_type = lesson_program_type(payload)
     issues: list[dict[str, str]] = []
 
-    for field in ("lesson_id", "grade_level", "title_th", "objective_th"):
+    # Basic field requirements
+    for field in ("lesson_id", "grade_level"):
         if not _has_text(payload.get(field)):
             issues.append(_issue("empty_required_field", f"Missing required field: {field}"))
+
+    # title_th or title_en must exist
+    if not _has_text(payload.get("title_th")) and not _has_text(payload.get("title_en")):
+        issues.append(_issue("empty_required_field", "Either title_th or title_en must be present"))
+
+    # grade_level must be 1-6
+    try:
+        grade = int(payload.get("grade_level") or 0)
+        if grade < 1 or grade > 6:
+            issues.append(_issue("invalid_grade_level", "grade_level must be between 1 and 6"))
+    except (TypeError, ValueError):
+        issues.append(_issue("invalid_grade_level", "grade_level must be a number between 1 and 6"))
+
+    # program_type must be THP or EP
+    if program_type not in {"THP", "EP"}:
+        issues.append(_issue("invalid_program_type", "program_type must be THP or EP"))
+
     if not _has_text(payload.get("topic_code") or payload.get("skill_code")):
         issues.append(_issue("empty_required_field", "Missing required field: topic_code or skill_code"))
 
@@ -249,6 +283,11 @@ def validate_lesson_payload(payload: dict[str, Any], quiz_payload: dict[str, Any
     if not _has_visual_model(payload):
         issues.append(_issue("missing_diagram", "Lesson must include diagram data or a visual model prompt."))
 
+    # visual_blocks must have at least one block
+    raw_blocks = payload.get("visual_blocks")
+    if not isinstance(raw_blocks, list) or len(raw_blocks) == 0:
+        issues.append(_issue("missing_visual_blocks", "visual_blocks must contain at least one block"))
+
     issues.extend(_validate_text_quality(payload, program_type))
 
     questions = _quiz_questions(quiz_payload, payload)
@@ -256,31 +295,22 @@ def validate_lesson_payload(payload: dict[str, Any], quiz_payload: dict[str, Any
         issues.append(_issue("fewer_than_10_questions", "Quiz must include at least 10 questions."))
 
     for index, question in enumerate(questions, start=1):
-        if program_type == "EP":
-            required = (
-                "question_en",
-                "question_th",
-                "choices",
-                "correct_answer",
-                "explanation_en",
-                "explanation_th",
-                "difficulty",
-                "skill_tag",
-            )
-        else:
-            required = ("choices",)
-            if not _has_text(question.get("question_th") or question.get("question_text") or question.get("question_text_th")):
-                issues.append(_issue("empty_required_field", f"Question {index} is missing question text."))
-            if not _has_text(question.get("correct_answer") or question.get("answer")):
-                issues.append(_issue("missing_answer_key", f"Question {index} is missing a correct answer."))
-            if not _has_text(question.get("explanation") or question.get("explanation_th")):
-                issues.append(_issue("missing_explanation", f"Question {index} is missing an explanation."))
-        for field in required:
-            if not _has_text(question.get(field)):
-                issues.append(_issue("empty_required_field", f"Question {index} is missing: {field}"))
-        checked = _check_simple_multiplication(question)
-        if checked is False:
-            issues.append(_issue("invalid_answer_key", f"Question {index} answer key does not match the multiplication fact."))
+        q_errors = _validate_question_item(question, index, program_type)
+        issues.extend(q_errors)
+
+    # Additional block-level validation
+    for block in _visual_blocks(payload):
+        block_type = block.get("type", "") if isinstance(block, dict) else ""
+        data = block.get("data", {}) if isinstance(block, dict) else {}
+        if block_type == "area_model":
+            rows = int(data.get("rows") or 0)
+            cols = int(data.get("cols") or 0)
+            total = int(data.get("total") or 0)
+            if rows > 0 and cols > 0 and total > 0 and rows * cols != total:
+                issues.append(_issue("area_model_invalid", f"area_model rows*cols ({rows}*{cols}={rows*cols}) != total ({total})"))
+        if block_type == "number_sentence":
+            if not _has_text(data.get("content_th")) and not _has_text(data.get("expression")):
+                issues.append(_issue("number_sentence_missing_content", "number_sentence block must have content_th or expression"))
 
     return {
         "lesson_id": payload.get("lesson_id") or payload.get("id"),
@@ -291,6 +321,54 @@ def validate_lesson_payload(payload: dict[str, Any], quiz_payload: dict[str, Any
         "publishable": not any(issue["severity"] == "error" for issue in issues),
         "issues": issues,
     }
+
+
+def _validate_question_item(question: dict[str, Any], index: int, program_type: str) -> list[dict[str, str]]:
+    """Validate a single question dict, returning a list of issues."""
+    issues: list[dict[str, str]] = []
+    q_id = f"Question {index}"
+
+    choices = question.get("choices")
+    correct_answer = question.get("correct_answer") or question.get("answer")
+    explanation = question.get("explanation") or question.get("explanation_th") or question.get("explanation_en")
+    question_text = question.get("question_th") or question.get("question_text") or question.get("question_text_th")
+
+    # Choices must be a list with at least 2 items
+    if not isinstance(choices, list):
+        issues.append(_issue("invalid_choices", f"{q_id} choices must be a list"))
+        choices = []
+    elif len(choices) < 2:
+        issues.append(_issue("too_few_choices", f"{q_id} must have at least 2 choices"))
+
+    # Check for duplicate/empty choices
+    if isinstance(choices, list):
+        normalized = [str(c).strip() for c in choices]
+        if len(normalized) != len(set(normalized)):
+            issues.append(_issue("duplicate_choices", f"{q_id} has duplicate choices"))
+        if any(c == "" for c in normalized):
+            issues.append(_issue("empty_choice", f"{q_id} has an empty choice"))
+
+    # correct_answer must exist and match one of the choices
+    if not _has_text(correct_answer):
+        issues.append(_issue("missing_answer_key", f"{q_id} is missing a correct answer."))
+    elif isinstance(choices, list) and str(correct_answer).strip() not in [str(c).strip() for c in choices]:
+        issues.append(_issue("answer_not_in_choices", f"{q_id} correct_answer is not among the choices"))
+
+    # explanation must not be empty
+    if not _has_text(explanation):
+        issues.append(_issue("missing_explanation", f"{q_id} is missing an explanation."))
+
+    # question text must exist
+    if not _has_text(question_text):
+        issues.append(_issue("empty_required_field", f"{q_id} is missing question text."))
+
+    # Garbled text check in question
+    q_text_blob = "\n".join(_walk_text(question))
+    for marker in GARBLED_MARKERS:
+        if marker in q_text_blob:
+            issues.append(_issue("garbled_text", f"{q_id} contains garbled text marker: {repr(marker)}"))
+
+    return issues
 
 
 def _load_json(path: Path) -> dict[str, Any] | None:

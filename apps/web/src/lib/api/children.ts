@@ -14,8 +14,9 @@ export interface ChildOut {
   school_province: string | null
   school_district: string | null
   // ── Avatar ──────────────────────────────────────────────────────────────────
-  avatar_gender: 'girl' | 'boy' | null
+  avatar_gender: 'girl' | 'boy' | 'unspecified' | null
   avatar_config: Record<string, unknown>
+  student_photo_url: string | null
   // ── Progress ────────────────────────────────────────────────────────────────
   total_xp: number
   current_level: number

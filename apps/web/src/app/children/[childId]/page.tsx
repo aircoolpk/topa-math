@@ -9,6 +9,8 @@ import { learningApi, type CourseMapResponse, type CourseMapItem } from '@/lib/a
 import ProfileHero from '@/components/profile/ProfileHero'
 import QuestSection from '@/components/quest/QuestSection'
 import { gradeLabel } from '@/lib/utils'
+import { TopaBrandMark } from '@/components/brand/TopaBrand'
+import { AvatarUpload } from '@/components/avatar/AvatarUpload'
 
 // ─── Recommendation Cards ─────────────────────────────────────────────────────
 
@@ -526,15 +528,16 @@ export default function ChildDashboardPage() {
       <header className="bg-white border-b border-primary-100 shadow-sm sticky top-0 z-30">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-4">
           <Link href="/dashboard" className="text-2xl hover:opacity-70 transition">←</Link>
-          <div className="flex items-center gap-2 flex-1">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white text-sm font-black">4</span>
-            </div>
-            <span className="font-bold text-gray-900">4-Craft</span>
+          <div className="flex-1">
+            <TopaBrandMark />
           </div>
-          <Link href={`/children/${childId}/avatar`} className="btn-ghost text-sm flex items-center gap-1">
-            🎨 เปลี่ยนอวาตาร์
-          </Link>
+          <AvatarUpload
+            childId={childId}
+            currentAvatarUrl={child.student_photo_url}
+            onUploadSuccess={(avatarUrl) =>
+              setChild((prev) => prev ? { ...prev, student_photo_url: avatarUrl || null } : prev)
+            }
+          />
         </div>
       </header>
 
@@ -547,6 +550,9 @@ export default function ChildDashboardPage() {
           child={child}
           rankSummary={rankSummary}
           badges={badges}
+          onAvatarUpdate={(avatarUrl) =>
+            setChild((prev) => prev ? { ...prev, student_photo_url: avatarUrl || null } : prev)
+          }
         />
 
         {/* ═══════════════════════════════════════════════════════════

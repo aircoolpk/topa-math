@@ -1,0 +1,762 @@
+﻿{
+  "lesson_id": "g1_shapes_basic",
+  "id": "g1_shapes_basic",
+  "grade_level": 1,
+  "title_th": "รู้จักรูปร่างพื้นฐาน",
+  "objective_th": "นักเรียนสามารถจำแนกรูปร่างพื้นฐาน เช่น วงกลม สามเหลี่ยม สี่เหลี่ยม และรู้จักคุณสมบัติเบื้องต้นของแต่ละรูป",
+  "story_intro_th": "พี่อลิสชวนสังเกตรูปร่างรอบตัว ว่ารูปแต่ละชนิดมีด้านและมุมต่างกันอย่างไร",
+  "explanation_steps": [
+    "วงกลม ไม่มีมุม มีขอบโค้งมน ขนาดเท่ากันทุกทิศทาง เช่น เหรียญบาท",
+    "สามเหลี่ยม มี 3 ด้าน 3 มุม ด้านอาจยาวสั้นต่างกัน หรือเท่ากันก็ได้ เช่น เครื่องหมายห้าม",
+    "สี่เหลี่ยม มี 4 ด้าน 4 มุม ด้านตรงข้ามยาวเท่ากัน เช่น กระดาน",
+    "สี่เหลี่ยมจัตุรัส มี 4 ด้านยาวเท่ากัน 4 มุมฉาก เช่น กล่องของขวัญ",
+    "รูปร่างมีสองมิติคือ กว้าง กับ สูง ไม่มีความหนา"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "จำแนกรูปร่างในห้อง",
+      "question_th": "ขอบกระดานเป็นรูปอะไร?",
+      "solution_th": "ขอบกระดานเป็นสี่เหลี่ยมเพราะมี 4 ด้าน 4 มุม ✅"
+    },
+    {
+      "title_th": "จำแนกรูปร่างในธรรมชาติ",
+      "question_th": "ดวงอาทิตย์เป็นรูปอะไร?",
+      "solution_th": "ดวงอาทิตย์เป็นวงกลมเพราะไม่มีมุม ขอบโค้งมนทุกทิศทาง ✅"
+    },
+    {
+      "title_th": "จำแนกรูปร่างจากสิ่งของ",
+      "question_th": "แผ่นป้ายจราจรรูปห้ามจอดรถเป็นรูปอะไร?",
+      "solution_th": "แผ่นป้ายห้ามจอดรถเป็นรูปสามเหลี่ยมเพราะมี 3 ด้าน 3 มุม ✅"
+    }
+  ],
+  "common_mistakes": [
+    "เรียกสี่เหลี่ยมผืนผ้าว่าสี่เหลี่ยมจัตุรัส เพราะไม่ได้สังเกตว่าด้านยาวไม่เท่ากัน",
+    "สับสนระหว่างวงกลมกับวงรี",
+    "ไม่นับจำนวนด้านให้ถูกต้อง เช่น นับสามเหลี่ยมเป็น 4 ด้าน"
+  ],
+  "hints": [
+    "ให้นับจำนวนมุมหรือด้านของรูปนั้น เช่น สามเหลี่ยมมี 3 ด้าน 3 มุม",
+    "ถ้าไม่แน่ใจว่าเป็นวงกลมหรือวงรี ให้ลองกลิ้งดู ถ้ากลิ้งเท่ากันทุกทิศทางคือวงกลม",
+    "สี่เหลี่ยมจัตุรัสด้านยาวเท่ากันหมด สี่เหลี่ยมผืนผ้าด้านตรงข้ามยาวเท่ากัน"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g1_shapes_basic",
+  "skill_code": "g1_shapes_basic",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "รู้จักสามเหลี่ยม",
+      "story_theme_th": "รูปร่างรอบตัว",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสเห็นสามเหลี่ยมบนการ์ดรูปภาพ จึงชวนเด็กๆ สังเกตว่าสามเหลี่ยมมี 3 ด้าน และ 3 มุม"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 มองรูปร่าง",
+          "count": 1,
+          "shapes": [
+            "▲"
+          ],
+          "description_th": "สามเหลี่ยม: มี 3 ด้าน และ 3 มุม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "สามเหลี่ยม = 3 ด้าน, 3 มุม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "สามเหลี่ยมมีกี่ด้าน?",
+          "choices": [
+            "3 ด้าน",
+            "4 ด้าน",
+            "2 ด้าน",
+            "3 มุม"
+          ],
+          "answer": "3 ด้าน",
+          "correct_answer": "3 ด้าน",
+          "explanation": "สามเหลี่ยมมี 3 ด้าน และ 3 มุม ดังนั้นมี 3 ด้าน",
+          "explanation_th": "สามเหลี่ยมมี 3 ด้าน และ 3 มุม ดังนั้นมี 3 ด้าน"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "รู้จักสี่เหลี่ยมจัตุรัส",
+      "story_theme_th": "รูปร่างรอบตัว",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสเห็นสี่เหลี่ยมจัตุรัสบนการ์ดรูปภาพ จึงชวนเด็กๆ สังเกตว่าสี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน และ 4 มุม"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 มองรูปร่าง",
+          "count": 1,
+          "shapes": [
+            "■"
+          ],
+          "description_th": "สี่เหลี่ยมจัตุรัส: มี 4 ด้านเท่ากัน และ 4 มุม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "สี่เหลี่ยมจัตุรัส = 4 ด้าน, 4 มุม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "สี่เหลี่ยมจัตุรัสมีกี่ด้าน?",
+          "choices": [
+            "4 ด้าน",
+            "5 ด้าน",
+            "3 ด้าน",
+            "4 มุม"
+          ],
+          "answer": "4 ด้าน",
+          "correct_answer": "4 ด้าน",
+          "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน และ 4 มุม ดังนั้นมี 4 ด้าน",
+          "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน และ 4 มุม ดังนั้นมี 4 ด้าน"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "รู้จักสี่เหลี่ยมผืนผ้า",
+      "story_theme_th": "รูปร่างรอบตัว",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสเห็นสี่เหลี่ยมผืนผ้าบนการ์ดรูปภาพ จึงชวนเด็กๆ สังเกตว่าสี่เหลี่ยมผืนผ้ามี 4 ด้าน และ 4 มุม ด้านตรงข้ามยาวเท่ากัน"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 มองรูปร่าง",
+          "count": 1,
+          "shapes": [
+            "▭"
+          ],
+          "description_th": "สี่เหลี่ยมผืนผ้า: มี 4 ด้าน และ 4 มุม ด้านตรงข้ามยาวเท่ากัน"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "สี่เหลี่ยมผืนผ้า = 4 ด้าน, 4 มุม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "สี่เหลี่ยมผืนผ้ามีกี่ด้าน?",
+          "choices": [
+            "4 ด้าน",
+            "5 ด้าน",
+            "3 ด้าน",
+            "4 มุม"
+          ],
+          "answer": "4 ด้าน",
+          "correct_answer": "4 ด้าน",
+          "explanation": "สี่เหลี่ยมผืนผ้ามี 4 ด้าน และ 4 มุม ด้านตรงข้ามยาวเท่ากัน ดังนั้นมี 4 ด้าน",
+          "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 ด้าน และ 4 มุม ด้านตรงข้ามยาวเท่ากัน ดังนั้นมี 4 ด้าน"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "รู้จักวงกลม",
+      "story_theme_th": "รูปร่างรอบตัว",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสเห็นวงกลมบนการ์ดรูปภาพ จึงชวนเด็กๆ สังเกตว่าวงกลมไม่มีด้าน ไม่มีมุม ขอบเป็นเส้นโค้งรอบตัว"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 มองรูปร่าง",
+          "count": 1,
+          "shapes": [
+            "●"
+          ],
+          "description_th": "วงกลม: ไม่มีด้าน ไม่มีมุม ขอบเป็นเส้นโค้งรอบตัว"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "วงกลม = 0 ด้าน, 0 มุม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "วงกลมมีกี่ด้าน?",
+          "choices": [
+            "0 ด้าน",
+            "1 ด้าน",
+            "0 ด้าน",
+            "0 มุม"
+          ],
+          "answer": "0 ด้าน",
+          "correct_answer": "0 ด้าน",
+          "explanation": "วงกลมไม่มีด้าน ไม่มีมุม ขอบเป็นเส้นโค้งรอบตัว ดังนั้นมี 0 ด้าน",
+          "explanation_th": "วงกลมไม่มีด้าน ไม่มีมุม ขอบเป็นเส้นโค้งรอบตัว ดังนั้นมี 0 ด้าน"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "รู้จักวงรี",
+      "story_theme_th": "รูปร่างรอบตัว",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสเห็นวงรีบนการ์ดรูปภาพ จึงชวนเด็กๆ สังเกตว่าวงรีไม่มีด้าน ไม่มีมุม ขอบเป็นเส้นโค้งรี"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 มองรูปร่าง",
+          "count": 1,
+          "shapes": [
+            "⬭"
+          ],
+          "description_th": "วงรี: ไม่มีด้าน ไม่มีมุม ขอบเป็นเส้นโค้งรี"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "วงรี = 0 ด้าน, 0 มุม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "วงรีมีกี่ด้าน?",
+          "choices": [
+            "0 ด้าน",
+            "1 ด้าน",
+            "0 ด้าน",
+            "0 มุม"
+          ],
+          "answer": "0 ด้าน",
+          "correct_answer": "0 ด้าน",
+          "explanation": "วงรีไม่มีด้าน ไม่มีมุม ขอบเป็นเส้นโค้งรี ดังนั้นมี 0 ด้าน",
+          "explanation_th": "วงรีไม่มีด้าน ไม่มีมุม ขอบเป็นเส้นโค้งรี ดังนั้นมี 0 ด้าน"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "รู้จักห้าเหลี่ยม",
+      "story_theme_th": "รูปร่างรอบตัว",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสเห็นห้าเหลี่ยมบนการ์ดรูปภาพ จึงชวนเด็กๆ สังเกตว่าห้าเหลี่ยมมี 5 ด้าน และ 5 มุม"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 มองรูปร่าง",
+          "count": 1,
+          "shapes": [
+            "⬟"
+          ],
+          "description_th": "ห้าเหลี่ยม: มี 5 ด้าน และ 5 มุม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "ห้าเหลี่ยม = 5 ด้าน, 5 มุม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ห้าเหลี่ยมมีกี่ด้าน?",
+          "choices": [
+            "5 ด้าน",
+            "6 ด้าน",
+            "4 ด้าน",
+            "5 มุม"
+          ],
+          "answer": "5 ด้าน",
+          "correct_answer": "5 ด้าน",
+          "explanation": "ห้าเหลี่ยมมี 5 ด้าน และ 5 มุม ดังนั้นมี 5 ด้าน",
+          "explanation_th": "ห้าเหลี่ยมมี 5 ด้าน และ 5 มุม ดังนั้นมี 5 ด้าน"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "รู้จักหกเหลี่ยม",
+      "story_theme_th": "รูปร่างรอบตัว",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสเห็นหกเหลี่ยมบนการ์ดรูปภาพ จึงชวนเด็กๆ สังเกตว่าหกเหลี่ยมมี 6 ด้าน และ 6 มุม"
+        },
+        {
+          "type": "shape_visual",
+          "title": "🔷 มองรูปร่าง",
+          "count": 1,
+          "shapes": [
+            "⬢"
+          ],
+          "description_th": "หกเหลี่ยม: มี 6 ด้าน และ 6 มุม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หกเหลี่ยม = 6 ด้าน, 6 มุม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หกเหลี่ยมมีกี่ด้าน?",
+          "choices": [
+            "6 ด้าน",
+            "7 ด้าน",
+            "5 ด้าน",
+            "6 มุม"
+          ],
+          "answer": "6 ด้าน",
+          "correct_answer": "6 ด้าน",
+          "explanation": "หกเหลี่ยมมี 6 ด้าน และ 6 มุม ดังนั้นมี 6 ด้าน",
+          "explanation_th": "หกเหลี่ยมมี 6 ด้าน และ 6 มุม ดังนั้นมี 6 ด้าน"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "รูปร่างสารพัด",
+  "preview_subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "cover_theme": "basic_shapes",
+  "cover_emoji": "🔲",
+  "cover_color": "pink",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "learning_objective_th": "นักเรียนสามารถจำแนกรูปร่างพื้นฐาน เช่น วงกลม สามเหลี่ยม สี่เหลี่ยม และรู้จักคุณสมบัติเบื้องต้นของแต่ละรูป",
+  "lesson_intro_th": "วันนี้เราไปเที่ยวสวนสัตว์กัน เห็นรูปร่างแปลกๆ หลายอย่าง มาช่วยจำแนกดูสิ! 🦁🐘",
+  "concept_explanation_th": "รูปร่างพื้นฐานดูได้จากจำนวนด้าน จำนวนมุม และเส้นขอบ เช่น สามเหลี่ยมมี 3 ด้าน สี่เหลี่ยมมี 4 ด้าน วงกลมไม่มีมุม",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 3
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 2
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท รู้จักรูปร่างรูปทรงพื้นฐาน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "จำแนกรูปร่างในห้อง",
+      "question_th": "ขอบกระดานเป็นรูปอะไร?",
+      "solution_th": "ขอบกระดานเป็นสี่เหลี่ยมเพราะมี 4 ด้าน 4 มุม ✅"
+    },
+    {
+      "title_th": "จำแนกรูปร่างในธรรมชาติ",
+      "question_th": "ดวงอาทิตย์เป็นรูปอะไร?",
+      "solution_th": "ดวงอาทิตย์เป็นวงกลมเพราะไม่มีมุม ขอบโค้งมนทุกทิศทาง ✅"
+    },
+    {
+      "title_th": "จำแนกรูปร่างจากสิ่งของ",
+      "question_th": "แผ่นป้ายจราจรรูปห้ามจอดรถเป็นรูปอะไร?",
+      "solution_th": "แผ่นป้ายห้ามจอดรถเป็นรูปสามเหลี่ยมเพราะมี 3 ด้าน 3 มุม ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "เรียกสี่เหลี่ยมผืนผ้าว่าสี่เหลี่ยมจัตุรัส เพราะไม่ได้สังเกตว่าด้านยาวไม่เท่ากัน",
+    "สับสนระหว่างวงกลมกับวงรี",
+    "ไม่นับจำนวนด้านให้ถูกต้อง เช่น นับสามเหลี่ยมเป็น 4 ด้าน"
+  ],
+  "questions": [
+    {
+      "question_id": "g1_shapes_basic_q01",
+      "question_th": "รูปที่มี 3 ด้านและ 3 มุม เรียกว่าอะไร?",
+      "question_text": "รูปที่มี 3 ด้านและ 3 มุม เรียกว่าอะไร?",
+      "choices": [
+        "สามเหลี่ยม",
+        "สี่เหลี่ยม",
+        "วงกลม",
+        "วงรี"
+      ],
+      "correct_answer": "สามเหลี่ยม",
+      "answer": "สามเหลี่ยม",
+      "explanation": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q02",
+      "question_th": "รูปวงกลมมีมุมกี่มุม?",
+      "question_text": "รูปวงกลมมีมุมกี่มุม?",
+      "choices": [
+        "0 มุม",
+        "1 มุม",
+        "3 มุม",
+        "4 มุม"
+      ],
+      "correct_answer": "0 มุม",
+      "answer": "0 มุม",
+      "explanation": "วงกลมไม่มีมุม เพราะขอบเป็นเส้นโค้ง",
+      "explanation_th": "วงกลมไม่มีมุม เพราะขอบเป็นเส้นโค้ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q03",
+      "question_th": "สี่เหลี่ยมจัตุรัสมีกี่ด้าน?",
+      "question_text": "สี่เหลี่ยมจัตุรัสมีกี่ด้าน?",
+      "choices": [
+        "3 ด้าน",
+        "4 ด้าน",
+        "5 ด้าน",
+        "0 ด้าน"
+      ],
+      "correct_answer": "4 ด้าน",
+      "answer": "4 ด้าน",
+      "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q04",
+      "question_th": "รูปใดไม่มีด้านและไม่มีมุม?",
+      "question_text": "รูปใดไม่มีด้านและไม่มีมุม?",
+      "choices": [
+        "วงกลม",
+        "สามเหลี่ยม",
+        "สี่เหลี่ยม",
+        "ห้าเหลี่ยม"
+      ],
+      "correct_answer": "วงกลม",
+      "answer": "วงกลม",
+      "explanation": "วงกลมมีขอบโค้ง ไม่มีด้านตรงและไม่มีมุม",
+      "explanation_th": "วงกลมมีขอบโค้ง ไม่มีด้านตรงและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q05",
+      "question_th": "ห้าเหลี่ยมมีกี่มุม?",
+      "question_text": "ห้าเหลี่ยมมีกี่มุม?",
+      "choices": [
+        "4 มุม",
+        "5 มุม",
+        "6 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "5 มุม",
+      "answer": "5 มุม",
+      "explanation": "ห้าเหลี่ยมมี 5 ด้านและ 5 มุม",
+      "explanation_th": "ห้าเหลี่ยมมี 5 ด้านและ 5 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q06",
+      "question_th": "หกเหลี่ยมมีกี่ด้าน?",
+      "question_text": "หกเหลี่ยมมีกี่ด้าน?",
+      "choices": [
+        "5 ด้าน",
+        "6 ด้าน",
+        "4 ด้าน",
+        "0 ด้าน"
+      ],
+      "correct_answer": "6 ด้าน",
+      "answer": "6 ด้าน",
+      "explanation": "หกเหลี่ยมมี 6 ด้าน",
+      "explanation_th": "หกเหลี่ยมมี 6 ด้าน",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q07",
+      "question_th": "รูปใดมี 4 มุม?",
+      "question_text": "รูปใดมี 4 มุม?",
+      "choices": [
+        "สี่เหลี่ยมผืนผ้า",
+        "วงกลม",
+        "วงรี",
+        "สามเหลี่ยม"
+      ],
+      "correct_answer": "สี่เหลี่ยมผืนผ้า",
+      "answer": "สี่เหลี่ยมผืนผ้า",
+      "explanation": "สี่เหลี่ยมผืนผ้ามี 4 มุม",
+      "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q08",
+      "question_th": "สามเหลี่ยมมีกี่มุม?",
+      "question_text": "สามเหลี่ยมมีกี่มุม?",
+      "choices": [
+        "2 มุม",
+        "3 มุม",
+        "4 มุม",
+        "5 มุม"
+      ],
+      "correct_answer": "3 มุม",
+      "answer": "3 มุม",
+      "explanation": "สามเหลี่ยมมี 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q09",
+      "question_th": "วงรีมีลักษณะสำคัญอย่างไร?",
+      "question_text": "วงรีมีลักษณะสำคัญอย่างไร?",
+      "choices": [
+        "ขอบโค้งรี ไม่มีมุม",
+        "มี 3 ด้าน",
+        "มี 4 ด้านเท่ากัน",
+        "มี 5 มุม"
+      ],
+      "correct_answer": "ขอบโค้งรี ไม่มีมุม",
+      "answer": "ขอบโค้งรี ไม่มีมุม",
+      "explanation": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "explanation_th": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q10",
+      "question_th": "รูปใดมี 4 ด้านเท่ากัน?",
+      "question_text": "รูปใดมี 4 ด้านเท่ากัน?",
+      "choices": [
+        "สี่เหลี่ยมจัตุรัส",
+        "วงกลม",
+        "สามเหลี่ยม",
+        "วงรี"
+      ],
+      "correct_answer": "สี่เหลี่ยมจัตุรัส",
+      "answer": "สี่เหลี่ยมจัตุรัส",
+      "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g1_shapes_basic_q01",
+      "question_th": "รูปที่มี 3 ด้านและ 3 มุม เรียกว่าอะไร?",
+      "question_text": "รูปที่มี 3 ด้านและ 3 มุม เรียกว่าอะไร?",
+      "choices": [
+        "สามเหลี่ยม",
+        "สี่เหลี่ยม",
+        "วงกลม",
+        "วงรี"
+      ],
+      "correct_answer": "สามเหลี่ยม",
+      "answer": "สามเหลี่ยม",
+      "explanation": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q02",
+      "question_th": "รูปวงกลมมีมุมกี่มุม?",
+      "question_text": "รูปวงกลมมีมุมกี่มุม?",
+      "choices": [
+        "0 มุม",
+        "1 มุม",
+        "3 มุม",
+        "4 มุม"
+      ],
+      "correct_answer": "0 มุม",
+      "answer": "0 มุม",
+      "explanation": "วงกลมไม่มีมุม เพราะขอบเป็นเส้นโค้ง",
+      "explanation_th": "วงกลมไม่มีมุม เพราะขอบเป็นเส้นโค้ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q03",
+      "question_th": "สี่เหลี่ยมจัตุรัสมีกี่ด้าน?",
+      "question_text": "สี่เหลี่ยมจัตุรัสมีกี่ด้าน?",
+      "choices": [
+        "3 ด้าน",
+        "4 ด้าน",
+        "5 ด้าน",
+        "0 ด้าน"
+      ],
+      "correct_answer": "4 ด้าน",
+      "answer": "4 ด้าน",
+      "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q04",
+      "question_th": "รูปใดไม่มีด้านและไม่มีมุม?",
+      "question_text": "รูปใดไม่มีด้านและไม่มีมุม?",
+      "choices": [
+        "วงกลม",
+        "สามเหลี่ยม",
+        "สี่เหลี่ยม",
+        "ห้าเหลี่ยม"
+      ],
+      "correct_answer": "วงกลม",
+      "answer": "วงกลม",
+      "explanation": "วงกลมมีขอบโค้ง ไม่มีด้านตรงและไม่มีมุม",
+      "explanation_th": "วงกลมมีขอบโค้ง ไม่มีด้านตรงและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q05",
+      "question_th": "ห้าเหลี่ยมมีกี่มุม?",
+      "question_text": "ห้าเหลี่ยมมีกี่มุม?",
+      "choices": [
+        "4 มุม",
+        "5 มุม",
+        "6 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "5 มุม",
+      "answer": "5 มุม",
+      "explanation": "ห้าเหลี่ยมมี 5 ด้านและ 5 มุม",
+      "explanation_th": "ห้าเหลี่ยมมี 5 ด้านและ 5 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q06",
+      "question_th": "หกเหลี่ยมมีกี่ด้าน?",
+      "question_text": "หกเหลี่ยมมีกี่ด้าน?",
+      "choices": [
+        "5 ด้าน",
+        "6 ด้าน",
+        "4 ด้าน",
+        "0 ด้าน"
+      ],
+      "correct_answer": "6 ด้าน",
+      "answer": "6 ด้าน",
+      "explanation": "หกเหลี่ยมมี 6 ด้าน",
+      "explanation_th": "หกเหลี่ยมมี 6 ด้าน",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q07",
+      "question_th": "รูปใดมี 4 มุม?",
+      "question_text": "รูปใดมี 4 มุม?",
+      "choices": [
+        "สี่เหลี่ยมผืนผ้า",
+        "วงกลม",
+        "วงรี",
+        "สามเหลี่ยม"
+      ],
+      "correct_answer": "สี่เหลี่ยมผืนผ้า",
+      "answer": "สี่เหลี่ยมผืนผ้า",
+      "explanation": "สี่เหลี่ยมผืนผ้ามี 4 มุม",
+      "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q08",
+      "question_th": "สามเหลี่ยมมีกี่มุม?",
+      "question_text": "สามเหลี่ยมมีกี่มุม?",
+      "choices": [
+        "2 มุม",
+        "3 มุม",
+        "4 มุม",
+        "5 มุม"
+      ],
+      "correct_answer": "3 มุม",
+      "answer": "3 มุม",
+      "explanation": "สามเหลี่ยมมี 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q09",
+      "question_th": "วงรีมีลักษณะสำคัญอย่างไร?",
+      "question_text": "วงรีมีลักษณะสำคัญอย่างไร?",
+      "choices": [
+        "ขอบโค้งรี ไม่มีมุม",
+        "มี 3 ด้าน",
+        "มี 4 ด้านเท่ากัน",
+        "มี 5 มุม"
+      ],
+      "correct_answer": "ขอบโค้งรี ไม่มีมุม",
+      "answer": "ขอบโค้งรี ไม่มีมุม",
+      "explanation": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "explanation_th": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_shapes_basic_q10",
+      "question_th": "รูปใดมี 4 ด้านเท่ากัน?",
+      "question_text": "รูปใดมี 4 ด้านเท่ากัน?",
+      "choices": [
+        "สี่เหลี่ยมจัตุรัส",
+        "วงกลม",
+        "สามเหลี่ยม",
+        "วงรี"
+      ],
+      "correct_answer": "สี่เหลี่ยมจัตุรัส",
+      "answer": "สี่เหลี่ยมจัตุรัส",
+      "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
+      "difficulty": "easy",
+      "skill_tag": "g1_shapes_basic",
+      "question_type": "core"
+    }
+  ]
+}

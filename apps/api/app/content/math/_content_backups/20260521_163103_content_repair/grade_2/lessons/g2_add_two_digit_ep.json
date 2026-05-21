@@ -1,0 +1,2346 @@
+{
+  "lesson_id": "g2_add_two_digit_ep",
+  "id": "g2_add_two_digit_ep",
+  "grade_level": 2,
+  "title_th": "บวกเลขสองหลักแบบไม่ทด",
+  "objective_th": "นักเรียนสามารถบวกจำนวนสองหลักสองจำนวนโดยไม่มีตัวทดได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสเก็บดาวกระดาษได้ 23 ดวง แล้วเก็บเพิ่มได้อีก 45 ดวง รวมพี่อลิสมีดาวกระดาษกี่ดวง? ⭐",
+  "explanation_steps": [
+    "เวลาบวกเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน หลักหน่วยอยู่ขวาสุด หลักสิบอยู่ซ้าย",
+    "บวกหลักหน่วยก่อน แล้วบวกหลักสิบ",
+    "ถ้าผลบวกหลักหน่วยไม่เกิน 9 แปลว่าไม่ต้องทด",
+    "ผลลัพธ์อยู่ในหลักเดียวกันกับตัวตั้ง บรรทัดเดียวกัน",
+    "ตรวจคำตอบโดยสลับที่ เช่น 45 + 23 = 23 + 45"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "บวกดินสอ",
+      "question_th": "กล่องแรกมีดินสอ 32 แท่ง กล่องที่สองมีดินสอ 45 แท่ง รวมกี่แท่ง?",
+      "solution_th": "32 + 45 = 77 แท่ง ✅"
+    },
+    {
+      "title_th": "บวกลูกปัด",
+      "question_th": "เพื่อนให้ลูกปัด 23 ลูก แม่ให้อีก 54 ลูก รวมได้กี่ลูก?",
+      "solution_th": "23 + 54 = 77 ลูก ✅"
+    },
+    {
+      "title_th": "บวกขนม",
+      "question_th": "มีขนม 41 ชิ้น ได้เพิ่มอีก 38 ชิ้น รวมขนมกี่ชิ้น?",
+      "solution_th": "41 + 38 = 79 ชิ้น ✅"
+    }
+  ],
+  "common_mistakes": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน เช่น เขียนหลักสิบอยู่ใต้หลักหน่วย",
+    "บวกผิดหลัก เช่น บวกหลักสิบก่อนหลักหน่วย",
+    "ลืมบวกหลักใดหลักหนึ่ง ทำให้ผลลัพธ์ผิด"
+  ],
+  "hints": [
+    "เขียนเลขให้ตรงหลักกัน หลักหน่วยตรงหลักหน่วย หลักสิบตรงหลักสิบ",
+    "บวกหลักหน่วยก่อนเสมอ แล้วค่อยบวกหลักสิบ",
+    "ตรวจคำตอบโดยลบกลับ: เอาผลลัพธ์ลบตัวบวกตัวหนึ่ง ต้องได้อีกตัว"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_add_two_digit",
+  "skill_code": "g2_add_two_digit_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "📖 🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสมีนักเรียนชาย 34 คน และนักเรียนหญิง 25 คน เข้าร่วมงาน รวมมีนักเรียนกี่คน? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🏫",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 34 + 25 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "🔢 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "place_value_chart"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "34 + 25 = 59"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "มีนักเรียนชาย 34 คน และนักเรียนหญิง 25 คน รวมเป็น 59 คน เพราะ 34 + 25 = 59 หลักหน่วย 4+5=9 และหลักสิบ 3+2=5",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "57 คน",
+                  "58 คน",
+                  "59 คน",
+                  "60 คน"
+                ],
+                "correct_answer": "59 คน",
+                "text_th": "พี่อลิสมีนักเรียนชาย 34 คน และนักเรียนหญิง 25 คน รวมมีนักเรียนกี่คน?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🏫 โรงเรียน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🍎 พี่อลิสซื้อแอปเปิ้ลแดง 23 ผล และแอปเปิ้ลเขียว 45 ผล รวมพี่อลิสซื้อแอปเปิ้ลกี่ผล? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🍎",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 23 + 45 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "🔢 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "place_value_chart"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "23 + 45 = 68"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "ซื้อแอปเปิ้ลแดง 23 ผล และเขียว 45 ผล รวมเป็น 68 ผล เพราะ 23 + 45 = 68 หลักหน่วย 3+5=8 และหลักสิบ 2+4=6",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "66 ผล",
+                  "67 ผล",
+                  "68 ผล",
+                  "69 ผล"
+                ],
+                "correct_answer": "68 ผล",
+                "text_th": "พี่อลิสซื้อแอปเปิ้ลแดง 23 ผล และแอปเปิ้ลเขียว 45 ผล รวมกี่ผล?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🍎 ผลไม้",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "📖 🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🐕 พี่อลิสมีลูกสุนัข 41 ตัว และลูกแมว 38 ตัว รวมพี่อลิสมีสัตว์กี่ตัว? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🐕",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 41 + 38 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "🔢 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "place_value_chart"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "32 + 44 = 76"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "มีลูกสุนัข 41 ตัว และลูกแมว 38 ตัว รวมเป็น 79 ตัว เพราะ 41 + 38 = 79 หลักหน่วย 1+8=9 และหลักสิบ 4+3=7",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "77 ตัว",
+                  "78 ตัว",
+                  "79 ตัว",
+                  "80 ตัว"
+                ],
+                "correct_answer": "79 ตัว",
+                "text_th": "พี่อลิสมีลูกสุนัข 41 ตัว และลูกแมว 38 ตัว รวมกี่ตัว?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🧸 ของเล่น",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "📖 🏪 ตลาด",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏪 พี่อลิสซื้อปากกา 52 ด้าม และดินสอ 36 แท่ง รวมพี่อลิสซื้อเครื่องเขียนกี่ชิ้น? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🏪",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 52 + 36 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "🔢 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "place_value_chart"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "41 + 37 = 78"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "ซื้อปากกา 52 ด้าม และดินสอ 36 แท่ง รวมเป็น 88 ชิ้น เพราะ 52 + 36 = 88 หลักหน่วย 2+6=8 และหลักสิบ 5+3=8",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "86 ชิ้น",
+                  "87 ชิ้น",
+                  "88 ชิ้น",
+                  "89 ชิ้น"
+                ],
+                "correct_answer": "88 ชิ้น",
+                "text_th": "พี่อลิสซื้อปากกา 52 ด้าม และดินสอ 36 แท่ง รวมกี่ชิ้น?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🏪 ตลาด",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🌻 พี่อลิสปลูกดอกทานตะวัน 23 ต้น และดอกดาวเรือง 45 ต้น รวมพี่อลิสปลูกดอกไม้กี่ต้น? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🌻",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 23 + 45 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "🔢 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "place_value_chart"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "53 + 26 = 79"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "ปลูกดอกทานตะวัน 23 ต้น และดอกดาวเรือง 45 ต้น รวมเป็น 68 ต้น เพราะ 23 + 45 = 68 หลักหน่วย 3+5=8 และหลักสิบ 2+4=6",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "66 ต้น",
+                  "67 ต้น",
+                  "68 ต้น",
+                  "69 ต้น"
+                ],
+                "correct_answer": "68 ต้น",
+                "text_th": "พี่อลิสปลูกดอกทานตะวัน 23 ต้น และดอกดาวเรือง 45 ต้น รวมกี่ต้น?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "📖 🌻 สวน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎨 พี่อลิสวาดรูปสีน้ำมัน 32 รูป และวาดรูปสีซอน 56 รูป รวมพี่อลิสวาดรูปกี่รูป? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🎨",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 32 + 56 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "🔢 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "place_value_chart"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "46 + 32 = 78"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "วาดรูปสีน้ำมัน 32 รูป และสีซอน 56 รูป รวมเป็น 88 รูป เพราะ 32 + 56 = 88 หลักหน่วย 2+6=8 และหลักสิบ 3+5=8",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "86 รูป",
+                  "87 รูป",
+                  "88 รูป",
+                  "89 รูป"
+                ],
+                "correct_answer": "88 รูป",
+                "text_th": "พี่อลิสวาดรูปสีน้ำมัน 32 รูป และวาดรูปสีซอน 56 รูป รวมกี่รูป?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🌻 สวน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "📖 🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎮 พี่อลิสเล่นเกมได้แต้ม 44 แต้ม และเล่นเพิ่มได้อีก 33 แต้ม รวมพี่อลิสมีแต้มกี่แต้ม? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🎮",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 44 + 33 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "🔢 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "place_value_chart"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "28 + 41 = 69"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "เล่นเกมได้ 44 แต้ม และเพิ่มอีก 33 แต้ม รวมเป็น 77 แต้ม เพราะ 44 + 33 = 77 หลักหน่วย 4+3=7 และหลักสิบ 4+3=7",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "75 แต้ม",
+                  "76 แต้ม",
+                  "77 แต้ม",
+                  "78 แต้ม"
+                ],
+                "correct_answer": "77 แต้ม",
+                "text_th": "พี่อลิสเล่นเกมได้แต้ม 44 แต้ม และเล่นเพิ่มได้อีก 33 แต้ม รวมกี่แต้ม?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🎨 วาดรูป",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📖 📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสมีหนังสือเล่มแรก 61 เล่ม และหนังสือเล่มที่สอง 28 เล่ม รวมพี่อลิสมีหนังสือกี่เล่ม? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🏫",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 61 + 28 — can you find the answer?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 43
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 35
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "61 + 28 = 89"
+          },
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "พี่อลิสมีหนังสือ 61 เล่ม และ 28 เล่ม รวมกี่เล่ม?",
+                "choices": [
+                  "87 คน",
+                  "88 คน",
+                  "89 คน",
+                  "90 คน"
+                ],
+                "answer": "89 คน"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "explanation_th": "มีหนังสือ 61 เล่ม และ 28 เล่ม รวมเป็น 89 เล่ม เพราะ 61 + 28 = 89 หลักหน่วย 1+8=9 และหลักสิบ 6+2=8"
+        }
+      ],
+      "variant_title_en": "📖 📚 ห้องเรียน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🎉 พี่อลิสได้ของขวัญวันเกิด 73 ชิ้น และได้เพิ่มอีก 16 ชิ้น รวมพี่อลิสได้ของขวัญกี่ชิ้น? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🎉",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 73 + 16 — can you find the answer?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 26
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 52
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "73 + 16 = 89"
+          },
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "พี่อลิสได้ของขวัญ 73 ชิ้น และเพิ่มอีก 16 ชิ้น รวมกี่ชิ้น?",
+                "choices": [
+                  "87 ชิ้น",
+                  "88 ชิ้น",
+                  "89 ชิ้น",
+                  "90 ชิ้น"
+                ],
+                "answer": "89 ชิ้น"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "explanation_th": "ได้ของขวัญ 73 ชิ้น และเพิ่มอีก 16 ชิ้น รวมเป็น 89 ชิ้น เพราะ 73 + 16 = 89 หลักหน่วย 3+6=9 และหลักสิบ 7+1=8"
+        }
+      ],
+      "variant_title_en": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "📖 🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏪 พี่อลิสขายส้มได้ 55 ผล และขายมะม่วงได้ 34 ผล รวมพี่อลิสขายผลไม้ได้กี่ผล? การบวกคือการเอาจำนวนมารวมกันนะ มาดูวิธีคิดกัน! 🏪",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 55 + 34 — can you find the answer?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 38
+              },
+              {
+                "emoji": "➕",
+                "count": 1
+              },
+              {
+                "emoji": "🎒",
+                "count": 41
+              }
+            ]
+          }
+        },
+        {
+          "type": "ten_frame",
+          "title_th": "📊 ตารางสิบช่อง",
+          "data": {
+            "rows": 5,
+            "cols": 4,
+            "cells": [
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              },
+              {
+                "state": "filled"
+              }
+            ]
+          }
+        },
+        {
+          "type": "place_value_chart",
+          "title_th": "🎯 ตารางหลัก",
+          "data": {
+            "tens": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ],
+            "ones": [
+              {
+                "icons": [
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "filled"
+                  },
+                  {
+                    "state": "empty"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "55 + 34 = 89"
+          },
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "พี่อลิสขายส้ม 55 ผล และมะม่วง 34 ผล รวมกี่ผล?",
+                "choices": [
+                  "87 ผล",
+                  "88 ผล",
+                  "89 ผล",
+                  "90 ผล"
+                ],
+                "answer": "89 ผล"
+              },
+              {
+                "text_th": "67 + 21 = ?"
+              },
+              {
+                "text_th": "53 + 46 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "explanation_th": "ขายส้ม 55 ผล และมะม่วง 34 ผล รวมเป็น 89 ผล เพราะ 55 + 34 = 89 หลักหน่วย 5+4=9 และหลักสิบ 5+3=8"
+        }
+      ],
+      "variant_title_en": "📖 🎉 งานเทศกาล",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "34 + 25 = 59"
+          },
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 Try It",
+          "question": "45 + 32 = ?",
+          "choices": [
+            "76",
+            "75",
+            "77",
+            "74"
+          ],
+          "answer": "77",
+          "correct_answer": "77",
+          "explanation": "",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "บวกเลขสองหลัก",
+  "preview_subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "cover_theme": "add_two_digit",
+  "cover_emoji": "🔢",
+  "cover_color": "green",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "ฝึกบวกเลขง่ายๆ กับพี่อลิส",
+  "learning_objective_th": "นักเรียนสามารถบวกจำนวนสองหลักสองจำนวนโดยไม่มีตัวทดได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสเก็บดาวกระดาษได้ 23 ดวง แล้วเก็บเพิ่มได้อีก 45 ดวง รวมพี่อลิสมีดาวกระดาษกี่ดวง? ⭐",
+  "concept_explanation_th": "เวลาบวกเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน หลักหน่วยอยู่ขวาสุด หลักสิบอยู่ซ้าย บวกหลักหน่วยก่อน แล้วบวกหลักสิบ ถ้าผลบวกหลักหน่วยไม่เกิน 9 แปลว่าไม่ต้องทด ผลลัพธ์อยู่ในหลักเดียวกันกับตัวตั้ง บรรทัดเดียวกัน ตรวจคำตอบโดยสลับที่ เช่น 45 + 23 = 23 + 45",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 20,
+    "parts": [
+      8,
+      12
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท บวกเลขสองหลักแบบไม่ทด ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "บวกดินสอ",
+      "question_th": "กล่องแรกมีดินสอ 32 แท่ง กล่องที่สองมีดินสอ 45 แท่ง รวมกี่แท่ง?",
+      "solution_th": "32 + 45 = 77 แท่ง ✅"
+    },
+    {
+      "title_th": "บวกลูกปัด",
+      "question_th": "เพื่อนให้ลูกปัด 23 ลูก แม่ให้อีก 54 ลูก รวมได้กี่ลูก?",
+      "solution_th": "23 + 54 = 77 ลูก ✅"
+    },
+    {
+      "title_th": "บวกขนม",
+      "question_th": "มีขนม 41 ชิ้น ได้เพิ่มอีก 38 ชิ้น รวมขนมกี่ชิ้น?",
+      "solution_th": "41 + 38 = 79 ชิ้น ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน เช่น เขียนหลักสิบอยู่ใต้หลักหน่วย",
+    "บวกผิดหลัก เช่น บวกหลักสิบก่อนหลักหน่วย",
+    "ลืมบวกหลักใดหลักหนึ่ง ทำให้ผลลัพธ์ผิด"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_add_two_digit_q01",
+      "question_th": "34 + 25 เท่ากับเท่าไร?",
+      "question_text": "34 + 25 เท่ากับเท่าไร?",
+      "choices": [
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "correct_answer": "59",
+      "answer": "59",
+      "explanation": "34 + 25 = 59",
+      "explanation_th": "34 + 25 = 59",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q02",
+      "question_th": "47 + 18 เท่ากับเท่าไร?",
+      "question_text": "47 + 18 เท่ากับเท่าไร?",
+      "choices": [
+        "63",
+        "64",
+        "65",
+        "66"
+      ],
+      "correct_answer": "65",
+      "answer": "65",
+      "explanation": "47 + 18 = 65",
+      "explanation_th": "47 + 18 = 65",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q03",
+      "question_th": "56 + 27 เท่ากับเท่าไร?",
+      "question_text": "56 + 27 เท่ากับเท่าไร?",
+      "choices": [
+        "81",
+        "82",
+        "83",
+        "84"
+      ],
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "56 + 27 = 83",
+      "explanation_th": "56 + 27 = 83",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q04",
+      "question_th": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
+      "question_text": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
+      "choices": [
+        "61 ดวง",
+        "62 ดวง",
+        "63 ดวง",
+        "64 ดวง"
+      ],
+      "correct_answer": "63 ดวง",
+      "answer": "63 ดวง",
+      "explanation": "28 + 35 = 63 ดวง",
+      "explanation_th": "28 + 35 = 63 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q05",
+      "question_th": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
+      "question_text": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
+      "choices": [
+        "74 เล่ม",
+        "75 เล่ม",
+        "76 เล่ม",
+        "77 เล่ม"
+      ],
+      "correct_answer": "75 เล่ม",
+      "answer": "75 เล่ม",
+      "explanation": "46 + 29 = 75 เล่ม",
+      "explanation_th": "46 + 29 = 75 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q06",
+      "question_th": "68 + 14 เท่ากับเท่าไร?",
+      "question_text": "68 + 14 เท่ากับเท่าไร?",
+      "choices": [
+        "80",
+        "81",
+        "82",
+        "83"
+      ],
+      "correct_answer": "82",
+      "answer": "82",
+      "explanation": "68 + 14 = 82",
+      "explanation_th": "68 + 14 = 82",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q07",
+      "question_th": "39 + 44 เท่ากับเท่าไร?",
+      "question_text": "39 + 44 เท่ากับเท่าไร?",
+      "choices": [
+        "82",
+        "83",
+        "84",
+        "85"
+      ],
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "39 + 44 = 83",
+      "explanation_th": "39 + 44 = 83",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q08",
+      "question_th": "25 + 37 เท่ากับเท่าไร?",
+      "question_text": "25 + 37 เท่ากับเท่าไร?",
+      "choices": [
+        "60",
+        "61",
+        "62",
+        "63"
+      ],
+      "correct_answer": "62",
+      "answer": "62",
+      "explanation": "25 + 37 = 62",
+      "explanation_th": "25 + 37 = 62",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_add_two_digit_q09",
+      "question_th": "49 + 36 เท่ากับเท่าไร?",
+      "question_text": "49 + 36 เท่ากับเท่าไร?",
+      "choices": [
+        "84",
+        "85",
+        "86",
+        "87"
+      ],
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "49 + 36 = 85",
+      "explanation_th": "49 + 36 = 85",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_add_two_digit_q10",
+      "question_th": "57 + 28 เท่ากับเท่าไร?",
+      "question_text": "57 + 28 เท่ากับเท่าไร?",
+      "choices": [
+        "83",
+        "84",
+        "85",
+        "86"
+      ],
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "57 + 28 = 85",
+      "explanation_th": "57 + 28 = 85",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_add_two_digit_q01",
+      "question_th": "34 + 25 เท่ากับเท่าไร?",
+      "question_text": "34 + 25 เท่ากับเท่าไร?",
+      "choices": [
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "correct_answer": "59",
+      "answer": "59",
+      "explanation": "34 + 25 = 59",
+      "explanation_th": "34 + 25 = 59",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q02",
+      "question_th": "47 + 18 เท่ากับเท่าไร?",
+      "question_text": "47 + 18 เท่ากับเท่าไร?",
+      "choices": [
+        "63",
+        "64",
+        "65",
+        "66"
+      ],
+      "correct_answer": "65",
+      "answer": "65",
+      "explanation": "47 + 18 = 65",
+      "explanation_th": "47 + 18 = 65",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q03",
+      "question_th": "56 + 27 เท่ากับเท่าไร?",
+      "question_text": "56 + 27 เท่ากับเท่าไร?",
+      "choices": [
+        "81",
+        "82",
+        "83",
+        "84"
+      ],
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "56 + 27 = 83",
+      "explanation_th": "56 + 27 = 83",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q04",
+      "question_th": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
+      "question_text": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
+      "choices": [
+        "61 ดวง",
+        "62 ดวง",
+        "63 ดวง",
+        "64 ดวง"
+      ],
+      "correct_answer": "63 ดวง",
+      "answer": "63 ดวง",
+      "explanation": "28 + 35 = 63 ดวง",
+      "explanation_th": "28 + 35 = 63 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q05",
+      "question_th": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
+      "question_text": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
+      "choices": [
+        "74 เล่ม",
+        "75 เล่ม",
+        "76 เล่ม",
+        "77 เล่ม"
+      ],
+      "correct_answer": "75 เล่ม",
+      "answer": "75 เล่ม",
+      "explanation": "46 + 29 = 75 เล่ม",
+      "explanation_th": "46 + 29 = 75 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q06",
+      "question_th": "68 + 14 เท่ากับเท่าไร?",
+      "question_text": "68 + 14 เท่ากับเท่าไร?",
+      "choices": [
+        "80",
+        "81",
+        "82",
+        "83"
+      ],
+      "correct_answer": "82",
+      "answer": "82",
+      "explanation": "68 + 14 = 82",
+      "explanation_th": "68 + 14 = 82",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q07",
+      "question_th": "39 + 44 เท่ากับเท่าไร?",
+      "question_text": "39 + 44 เท่ากับเท่าไร?",
+      "choices": [
+        "82",
+        "83",
+        "84",
+        "85"
+      ],
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "39 + 44 = 83",
+      "explanation_th": "39 + 44 = 83",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_add_two_digit_q08",
+      "question_th": "25 + 37 เท่ากับเท่าไร?",
+      "question_text": "25 + 37 เท่ากับเท่าไร?",
+      "choices": [
+        "60",
+        "61",
+        "62",
+        "63"
+      ],
+      "correct_answer": "62",
+      "answer": "62",
+      "explanation": "25 + 37 = 62",
+      "explanation_th": "25 + 37 = 62",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_add_two_digit_q09",
+      "question_th": "49 + 36 เท่ากับเท่าไร?",
+      "question_text": "49 + 36 เท่ากับเท่าไร?",
+      "choices": [
+        "84",
+        "85",
+        "86",
+        "87"
+      ],
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "49 + 36 = 85",
+      "explanation_th": "49 + 36 = 85",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_add_two_digit_q10",
+      "question_th": "57 + 28 เท่ากับเท่าไร?",
+      "question_text": "57 + 28 เท่ากับเท่าไร?",
+      "choices": [
+        "83",
+        "84",
+        "85",
+        "86"
+      ],
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "57 + 28 = 85",
+      "explanation_th": "57 + 28 = 85",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Adding two-digit numbers",
+  "objective_en": "Students will be able to add numbers within 20",
+  "story_intro_en": "Look! 23 + 45 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: บวกดินสอ",
+      "question_en": "pencils 32 pencils pencils 45 pencils pencils?",
+      "solution_en": "32 + 45 = 77 pencils ✅?"
+    },
+    {
+      "title_en": "Example: บวกลูกปัด",
+      "question_en": "marbles 23 balls 54 balls balls?",
+      "solution_en": "23 + 54 = 77 balls ✅?"
+    },
+    {
+      "title_en": "Example: บวกขนม",
+      "question_en": "41 pieces 38 pieces pieces?",
+      "solution_en": "41 + 38 = 79 pieces ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน เช่น เขียนหลักสิบอยู่ใต้หลักหน่วย",
+    "Mistake: บวกผิดหลัก เช่น บวกหลักสิบก่อนหลักหน่วย",
+    "Mistake: ลืมบวกหลักใดหลักหนึ่ง ทำให้ผลลัพธ์ผิด"
+  ],
+  "hints_en": [
+    "Hint: เขียนเลขให้ตรงหลักกัน หลักหน่วยตรงหลักหน่วย หลักสิบตรงหลักสิบ",
+    "Hint: บวกหลักหน่วยก่อนเสมอ แล้วค่อยบวกหลักสิบ",
+    "Hint: ตรวจคำตอบโดยลบกลับ: เอาผลลัพธ์ลบตัวบวกตัวหนึ่ง ต้องได้อีกตัว"
+  ],
+  "explanation_steps_en": [
+    "Step: เวลาบวกเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน หลักหน่วยอยู่ขวาสุด หลักสิบอยู่ซ้าย",
+    "Step: บวกหลักหน่วยก่อน แล้วบวกหลักสิบ",
+    "Step: ถ้าผลบวกหลักหน่วยไม่เกิน 9 แปลว่าไม่ต้องทด",
+    "Step: ผลลัพธ์อยู่ในหลักเดียวกันกับตัวตั้ง บรรทัดเดียวกัน",
+    "Step: ตรวจคำตอบโดยสลับที่ เช่น 45 + 23 = 23 + 45"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g2_add_two_digit_q01",
+      "question_th": "34 + 25 เท่ากับเท่าไร?",
+      "question_text": "34 + 25 ?",
+      "choices": [
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "correct_answer": "59",
+      "answer": "59",
+      "explanation": "34 + 25 = 59",
+      "explanation_th": "34 + 25 = 59",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core",
+      "question_en": "34 + 25 ?",
+      "explanation_en": "34 + 25 = 59",
+      "choices_en": [
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "answer_en": "59"
+    },
+    {
+      "question_id": "g2_add_two_digit_q02",
+      "question_th": "47 + 18 เท่ากับเท่าไร?",
+      "question_text": "47 + 18 ?",
+      "choices": [
+        "63",
+        "64",
+        "65",
+        "66"
+      ],
+      "correct_answer": "65",
+      "answer": "65",
+      "explanation": "47 + 18 = 65",
+      "explanation_th": "47 + 18 = 65",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core",
+      "question_en": "47 + 18 ?",
+      "explanation_en": "47 + 18 = 65",
+      "choices_en": [
+        "63",
+        "64",
+        "65",
+        "66"
+      ],
+      "answer_en": "65"
+    },
+    {
+      "question_id": "g2_add_two_digit_q03",
+      "question_th": "56 + 27 เท่ากับเท่าไร?",
+      "question_text": "56 + 27 ?",
+      "choices": [
+        "81",
+        "82",
+        "83",
+        "84"
+      ],
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "56 + 27 = 83",
+      "explanation_th": "56 + 27 = 83",
+      "difficulty": "easy",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core",
+      "question_en": "56 + 27 ?",
+      "explanation_en": "56 + 27 = 83",
+      "choices_en": [
+        "81",
+        "82",
+        "83",
+        "84"
+      ],
+      "answer_en": "83"
+    },
+    {
+      "question_id": "g2_add_two_digit_q04",
+      "question_th": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
+      "question_text": "stickers 28 stickers 35 stickers stickers?",
+      "choices": [
+        "61 stickers?",
+        "62 stickers?",
+        "63 stickers?",
+        "64 stickers?"
+      ],
+      "correct_answer": "63 stickers?",
+      "answer": "63 stickers?",
+      "explanation": "28 + 35 = 63 stickers?",
+      "explanation_th": "28 + 35 = 63 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core",
+      "question_en": "stickers 28 stickers 35 stickers stickers?",
+      "explanation_en": "28 + 35 = 63 stickers?",
+      "choices_en": [
+        "61 stickers?",
+        "62 stickers?",
+        "63 stickers?",
+        "64 stickers?"
+      ],
+      "answer_en": "63 stickers?"
+    },
+    {
+      "question_id": "g2_add_two_digit_q05",
+      "question_th": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
+      "question_text": "46 books 29 books books?",
+      "choices": [
+        "74 books?",
+        "75 books?",
+        "76 books?",
+        "77 books?"
+      ],
+      "correct_answer": "75 books?",
+      "answer": "75 books?",
+      "explanation": "46 + 29 = 75 books?",
+      "explanation_th": "46 + 29 = 75 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core",
+      "question_en": "46 books 29 books books?",
+      "explanation_en": "46 + 29 = 75 books?",
+      "choices_en": [
+        "74 books?",
+        "75 books?",
+        "76 books?",
+        "77 books?"
+      ],
+      "answer_en": "75 books?"
+    },
+    {
+      "question_id": "g2_add_two_digit_q06",
+      "question_th": "68 + 14 เท่ากับเท่าไร?",
+      "question_text": "68 + 14 ?",
+      "choices": [
+        "80",
+        "81",
+        "82",
+        "83"
+      ],
+      "correct_answer": "82",
+      "answer": "82",
+      "explanation": "68 + 14 = 82",
+      "explanation_th": "68 + 14 = 82",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core",
+      "question_en": "68 + 14 ?",
+      "explanation_en": "68 + 14 = 82",
+      "choices_en": [
+        "80",
+        "81",
+        "82",
+        "83"
+      ],
+      "answer_en": "82"
+    },
+    {
+      "question_id": "g2_add_two_digit_q07",
+      "question_th": "39 + 44 เท่ากับเท่าไร?",
+      "question_text": "39 + 44 ?",
+      "choices": [
+        "82",
+        "83",
+        "84",
+        "85"
+      ],
+      "correct_answer": "83",
+      "answer": "83",
+      "explanation": "39 + 44 = 83",
+      "explanation_th": "39 + 44 = 83",
+      "difficulty": "medium",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "core",
+      "question_en": "39 + 44 ?",
+      "explanation_en": "39 + 44 = 83",
+      "choices_en": [
+        "82",
+        "83",
+        "84",
+        "85"
+      ],
+      "answer_en": "83"
+    },
+    {
+      "question_id": "g2_add_two_digit_q08",
+      "question_th": "25 + 37 เท่ากับเท่าไร?",
+      "question_text": "25 + 37 ?",
+      "choices": [
+        "60",
+        "61",
+        "62",
+        "63"
+      ],
+      "correct_answer": "62",
+      "answer": "62",
+      "explanation": "25 + 37 = 62",
+      "explanation_th": "25 + 37 = 62",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge",
+      "question_en": "25 + 37 ?",
+      "explanation_en": "25 + 37 = 62",
+      "choices_en": [
+        "60",
+        "61",
+        "62",
+        "63"
+      ],
+      "answer_en": "62"
+    },
+    {
+      "question_id": "g2_add_two_digit_q09",
+      "question_th": "49 + 36 เท่ากับเท่าไร?",
+      "question_text": "49 + 36 ?",
+      "choices": [
+        "84",
+        "85",
+        "86",
+        "87"
+      ],
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "49 + 36 = 85",
+      "explanation_th": "49 + 36 = 85",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge",
+      "question_en": "49 + 36 ?",
+      "explanation_en": "49 + 36 = 85",
+      "choices_en": [
+        "84",
+        "85",
+        "86",
+        "87"
+      ],
+      "answer_en": "85"
+    },
+    {
+      "question_id": "g2_add_two_digit_q10",
+      "question_th": "57 + 28 เท่ากับเท่าไร?",
+      "question_text": "57 + 28 ?",
+      "choices": [
+        "83",
+        "84",
+        "85",
+        "86"
+      ],
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "57 + 28 = 85",
+      "explanation_th": "57 + 28 = 85",
+      "difficulty": "hard",
+      "skill_tag": "g2_add_two_digit",
+      "question_type": "challenge",
+      "question_en": "57 + 28 ?",
+      "explanation_en": "57 + 28 = 85",
+      "choices_en": [
+        "83",
+        "84",
+        "85",
+        "86"
+      ],
+      "answer_en": "85"
+    }
+  ],
+  "quiz_id": "g2_add_two_digit_ep",
+  "generated_at": "2026-05-16T04:16:40.880721+00:00",
+  "source_lesson_id": "g2_add_two_digit",
+  "needs_review": true
+}

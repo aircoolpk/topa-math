@@ -3,11 +3,16 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import type { ChildOut, RankSummary, Badge } from '@/lib/api/children'
+import { AvatarUpload } from '@/components/avatar/AvatarUpload'
+import { PhotoAvatar } from '@/components/avatar/PhotoAvatar'
+import { ShareModal } from '@/components/share/ShareModal'
+import { meApi, type ShareResponse } from '@/lib/api/me'
 
 interface Props {
   child: ChildOut
   rankSummary?: RankSummary | null
   badges?: Badge[]
+  onAvatarUpdate?: (avatarUrl: string) => void
 }
 
 // ─── Avatar character SVG ──────────────────────────────────────────────────────
@@ -145,18 +150,15 @@ function XPBar({ child, rankSummary }: { child: ChildOut; rankSummary?: RankSumm
 
 // ─── Share card preview ───────────────────────────────────────────────────────
 
-function ShareCardPreview({ child }: { child: ChildOut }) {
-  const [copied, setCopied] = useState(false)
-
-  function handleShare() {
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
-
+function ShareCardPreview({ child, onShare }: { child: ChildOut; onShare: () => void }) {
   return (
     <div className="bg-gradient-to-br from-primary-500 to-accent-500 rounded-2xl p-4 text-white shadow-lg">
       <div className="flex items-center gap-3 mb-3">
-        <AvatarCharacter gender={child.avatar_gender ?? 'girl'} size="sm" />
+        <PhotoAvatar
+          studentPhotoUrl={child.student_photo_url}
+          avatarGender={child.avatar_gender}
+          size="sm"
+        />
         <div className="flex-1 min-w-0">
           <p className="font-extrabold text-sm leading-tight truncate">{child.nickname}</p>
           <p className="text-xs text-white/70 truncate">{child.school_name ?? 'โรงเรียนของเรา'}</p>
@@ -173,10 +175,10 @@ function ShareCardPreview({ child }: { child: ChildOut }) {
       </div>
 
       <button
-        onClick={handleShare}
+        onClick={onShare}
         className="w-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white text-sm font-bold py-2 rounded-xl transition-all flex items-center justify-center gap-2"
       >
-        {copied ? '✅ คัดลอกแล้ว!' : '📤 แชร์การ์ดอวดเพื่อน'}
+        📤 แชร์การ์ดอวดเพื่อน
       </button>
     </div>
   )
@@ -200,11 +202,43 @@ function FloatingStat({ emoji, value, label, className = '' }: {
 
 // ─── Main ProfileHero ─────────────────────────────────────────────────────────
 
-export default function ProfileHero({ child, rankSummary, badges = [] }: Props) {
-  const avatarGender: 'girl' | 'boy' = child.avatar_gender ?? 'girl'
+export default function ProfileHero({ child, rankSummary, badges = [], onAvatarUpdate }: Props) {
+  const avatarGender: 'girl' | 'boy' = child.avatar_gender === 'boy' ? 'boy' : 'girl'
+  const [shareOpen, setShareOpen] = useState(false)
+  const [shareData, setShareData] = useState<ShareResponse | null>(null)
+  const [shareLoading, setShareLoading] = useState(false)
+  const [shareError, setShareError] = useState<string | null>(null)
+
+  function handleAvatarSuccess(avatarUrl: string) {
+    onAvatarUpdate?.(avatarUrl)
+  }
+
+  async function openShareSheet() {
+    setShareOpen(true)
+    setShareLoading(true)
+    setShareError(null)
+    try {
+      const response = await meApi.createDashboardShare()
+      setShareData(response)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'ไม่สามารถสร้างลิงก์แชร์ได้'
+      setShareError(message)
+    } finally {
+      setShareLoading(false)
+    }
+  }
 
   return (
     <div className="w-full">
+      <ShareModal
+        open={shareOpen}
+        onClose={() => setShareOpen(false)}
+        share={shareData}
+        loading={shareLoading}
+        error={shareError}
+        title="TOPA Math"
+        text="มาเรียนเลขสนุก ๆ กับ TOPA Math กันนะ"
+      />
 
       {/* ── TWO COLUMN GAME LAYOUT ── */}
       <div className="flex flex-col lg:flex-row gap-6">
@@ -214,7 +248,11 @@ export default function ProfileHero({ child, rankSummary, badges = [] }: Props) 
 
           {/* Header: Avatar + Name */}
           <div className="flex items-start gap-4 mb-5">
-            <AvatarCharacter gender={avatarGender} size="lg" />
+            <PhotoAvatar
+              studentPhotoUrl={child.student_photo_url}
+              avatarGender={avatarGender}
+              size="lg"
+            />
             <div className="flex-1 min-w-0">
               <h1 className="text-xl font-extrabold text-gray-800 leading-tight">
                 {child.first_name} {child.last_name}
@@ -240,12 +278,13 @@ export default function ProfileHero({ child, rankSummary, badges = [] }: Props) 
 
           {/* THP / EP Buttons */}
           <div className="flex gap-3 mb-5">
-            <Link
-              href={`/children/${child.id}/avatar`}
-              className="flex-1 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md"
-            >
-              🎨 แต่งตัวละคร (THP)
-            </Link>
+            <div className="flex-1 flex justify-center">
+              <AvatarUpload
+                childId={child.id}
+                currentAvatarUrl={child.student_photo_url ?? ''}
+                onUploadSuccess={handleAvatarSuccess}
+              />
+            </div>
             <Link
               href={`/children/${child.id}/rankings`}
               className="flex-1 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md"
@@ -306,7 +345,20 @@ export default function ProfileHero({ child, rankSummary, badges = [] }: Props) 
 
             {/* Large Avatar Centered */}
             <div className="flex justify-center mb-4 relative z-10">
-              <AvatarCharacter gender={avatarGender} size="xl" />
+              <div className="relative">
+                <PhotoAvatar
+                  studentPhotoUrl={child.student_photo_url}
+                  avatarGender={avatarGender}
+                  size="xl"
+                />
+                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 z-20">
+                  <AvatarUpload
+                    childId={child.id}
+                    currentAvatarUrl={child.student_photo_url ?? ''}
+                    onUploadSuccess={handleAvatarSuccess}
+                  />
+                </div>
+              </div>
             </div>
 
             {/* Floating Status Badges */}
@@ -352,19 +404,18 @@ export default function ProfileHero({ child, rankSummary, badges = [] }: Props) 
 
             {/* Action Buttons */}
             <div className="flex gap-3 mb-5 relative z-10">
-              <Link
-                href={`/children/${child.id}/avatar`}
-                className="flex-1 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md"
-              >
-                🎨 แต่งตัวละคร
-              </Link>
+              <div className="flex-1 flex justify-center">
+                <AvatarUpload
+                  childId={child.id}
+                  currentAvatarUrl={child.student_photo_url ?? ''}
+                  onUploadSuccess={handleAvatarSuccess}
+                />
+              </div>
               <button
-                onClick={() => {
-                  navigator.clipboard.writeText(`ดูตัวละครของ ${child.nickname ?? child.first_name} ที่ 4-craft.com/children/${child.id}/avatar`)
-                }}
+                onClick={openShareSheet}
                 className="flex-1 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md"
               >
-                📤 แชร์ตัวละคร
+                📤 แชร์โปรไฟล์
               </button>
             </div>
 
@@ -390,7 +441,7 @@ export default function ProfileHero({ child, rankSummary, badges = [] }: Props) 
 
             {/* Share Card Preview */}
             <div className="relative z-10">
-              <ShareCardPreview child={child} />
+              <ShareCardPreview child={child} onShare={openShareSheet} />
             </div>
 
           </div>

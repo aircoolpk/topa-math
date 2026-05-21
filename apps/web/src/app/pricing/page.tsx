@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { billingApi, type BillingPrices, type BillingPlanRecord } from '@/lib/api/billing'
+import { TopaBrandMark } from '@/components/brand/TopaBrand'
 
 // ─── Fallback feature lists ──────────────────────────────────────────────────
 
@@ -472,6 +473,7 @@ export default function PricingPage() {
   const [currentPlanCode, setCurrentPlanCode] = useState<string | null>(null)
   const [loadingPlan, setLoadingPlan] = useState<string | null>(null)
   const [planError, setPlanError] = useState<string | null>(null)
+  const [planSuccess, setPlanSuccess] = useState<string | null>(null)
   const [pageError, setPageError] = useState<string | null>(null)
 
   useEffect(() => {
@@ -499,20 +501,33 @@ export default function PricingPage() {
 
   const handleSubscribe = async (planCode: string) => {
     const selectedPlan = (prices?.plans ?? []).find((plan) => plan.plan_code === planCode || plan.id === planCode) as PricePlan | undefined
-    if (prices?.using_dev_fallback || selectedPlan?.stripe_price_id === null || !selectedPlan?.stripe_price_id) {
-      setLoadingPlan(planCode)
-      setPlanError('ระบบชำระเงินยังไม่เปิดในโหมด dev')
-      setTimeout(() => setLoadingPlan(null), 1200)
-      return
-    }
     setLoadingPlan(planCode)
     setPlanError(null)
+    setPlanSuccess(null)
     try {
       const checkoutPlanCode = selectedPlan?.checkout_plan_code ?? planCode
       const res = await billingApi.createCheckoutSession(checkoutPlanCode)
 
-      // Defensive: ensure checkout_url exists
-      const checkoutUrl: string = (res as unknown as Record<string, unknown>).checkout_url as string
+      const checkoutUrl = res.checkout_url
+      if (checkoutUrl) {
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[billing] create-checkout-session success', {
+            endpoint: 'POST /billing/create-checkout-session',
+            plan_code: planCode,
+            status: 200,
+            responseBody: res,
+          })
+        }
+        window.location.href = checkoutUrl
+        return
+      }
+
+      if (res.mode === 'manual_pending') {
+        setPlanSuccess(res.message || 'ส่งคำขอสมัครแพ็กเกจแล้ว กรุณารอผู้ดูแลยืนยัน')
+        setLoadingPlan(null)
+        return
+      }
+
       if (!checkoutUrl) {
         throw Object.assign(new Error('Missing checkout_url in response'), {
           code: 'MISSING_CHECKOUT_URL',
@@ -520,17 +535,6 @@ export default function PricingPage() {
           responseBody: res,
         })
       }
-
-      if (process.env.NODE_ENV === 'development') {
-        console.log('[billing] create-checkout-session success', {
-          endpoint: 'POST /billing/create-checkout-session',
-          plan_code: planCode,
-          status: 200,
-          responseBody: res,
-        })
-      }
-
-      window.location.href = checkoutUrl
     } catch (err: unknown) {
       const errObj = err as Record<string, unknown>
       const status = errObj.status as number | undefined
@@ -609,10 +613,7 @@ export default function PricingPage() {
       <header className="bg-white border-b border-primary-100 shadow-sm sticky top-0 z-30">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/dashboard" className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center shadow">
-              <span className="text-white text-lg font-black">4</span>
-            </div>
-            <span className="font-bold text-gray-900 text-lg">4-Craft</span>
+            <TopaBrandMark />
           </Link>
           <Link
             href="/dashboard"
@@ -656,6 +657,12 @@ export default function PricingPage() {
         <div className="mb-6">
           <FreePlanCard currentPlanCode={currentPlanCode} />
         </div>
+
+        {planSuccess && (
+          <div className="mb-6 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-semibold text-green-800">
+            {planSuccess}
+          </div>
+        )}
 
         {/* Pricing — Plus TH + Plus EP */}
         {prices && (

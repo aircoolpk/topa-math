@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { billingApi, type BillingStatus } from '@/lib/api/billing'
+import { TopaMascot } from '@/components/brand/TopaBrand'
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -65,9 +66,7 @@ export default function BillingSuccessPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2">
-            <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl flex items-center justify-center shadow-xl">
-              <span className="text-white text-2xl font-black">4</span>
-            </div>
+            <TopaMascot size="md" />
           </Link>
         </div>
 
@@ -155,7 +154,7 @@ export default function BillingSuccessPage() {
                 ระบบจะอัปเดตสถานะสมาชิกภายใน 1–2 นาที
               </p>
               <p className="text-xs text-gray-400 mb-6">
-                หากรอนานเกินไป กรุณาติดต่อ support@4-craft.com
+                หากรอนานเกินไป กรุณาติดต่อ support@topamath.com
               </p>
               <div className="flex gap-3">
                 <button onClick={handleRetry} className="flex-1 btn-primary">

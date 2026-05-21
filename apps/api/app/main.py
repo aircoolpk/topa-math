@@ -1,19 +1,32 @@
+from pathlib import Path
+import mimetypes
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.core.database import Base, engine
 from app.core.config import get_settings
 from app.core.schema_maintenance import ensure_local_schema
-from app.routers import admin, auth, avatar, billing, children, learning, me, quests, rankings
+from app.routers import admin, auth, avatar, billing, children, learning, me, quests, rankings, share, site
 from app.seeds.seed import ensure_dev_owner
+from app.services.content_status import initialize_all_lesson_status
 from sqlalchemy.orm import Session
 
 
 def create_app() -> FastAPI:
+    settings = get_settings()
     app = FastAPI(title="4-craft Adaptive Learning API", version="0.1.0")
+
+    # Serve uploaded avatars at /storage/avatars/
+    mimetypes.add_type("image/webp", ".webp")
+    _avatar_dir = Path(__file__).resolve().parents[1] / "storage" / "uploads" / "avatars"
+    _avatar_dir.mkdir(parents=True, exist_ok=True)
+    app.mount("/storage/avatars", StaticFiles(directory=str(_avatar_dir)), name="avatars")
+
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://127.0.0.1:3000", "http://localhost:3000"],
+        allow_origins=settings.cors_origin_list,
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
@@ -26,16 +39,20 @@ def create_app() -> FastAPI:
     app.include_router(quests.router)
     app.include_router(rankings.router)
     app.include_router(avatar.router)
+    app.include_router(share.router)
+    app.include_router(site.router)
     app.include_router(admin.router)
 
     @app.on_event("startup")
     def create_tables() -> None:
         Base.metadata.create_all(bind=engine)
         ensure_local_schema(engine)
-        if get_settings().environment.lower() in {"local", "dev", "development", "test"}:
+        if settings.environment.lower() in {"local", "dev", "development", "test"}:
             with Session(engine) as session:
                 ensure_dev_owner(session)
                 session.commit()
+        # Initialize content status sidecar for all existing JSON lessons
+        initialize_all_lesson_status()
 
     @app.get("/health")
     def health() -> dict:

@@ -1,4 +1,4 @@
-﻿{
+{
   "lesson_id": "g3_multiplication_multi_digit",
   "id": "g3_multiplication_multi_digit",
   "grade_level": 3,
@@ -51,44 +51,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🏫 โรงเรียน: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🏫",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -99,44 +98,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🍎 ผลไม้: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🍎",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -147,44 +145,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🧸 ของเล่น: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🧸",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -195,44 +192,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🏪 ตลาด: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🏪",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -243,44 +239,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🐕 สัตว์เลี้ยง: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🐕",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -291,44 +286,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🌻 สวน: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🌻",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -339,44 +333,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎨 วาดรูป: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🎨",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -387,44 +380,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "📚 ห้องเรียน: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 📚",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -435,44 +427,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎮 สนุกกับเพื่อน: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🎮",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -483,44 +474,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎉 งานเทศกาล: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🍎🍎🍎🍎🍎",
-          "items_added": "🍎🍎🍎",
-          "question": "มี 🍎 5 ผล ในหนึ่งถุง ถ้ามี 3 ถุง รวม 🍎 กี่ผล?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผ่นตารางจัดกลุ่ม 🎉",
-          "grid_rows": 3,
-          "grid_cols": 4,
-          "shaded": 12,
-          "total": 12
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -531,28 +521,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "📖 Story Time",
-          "content": "[School]  โรงเรียน: นักเรียนในห้องเรียนแต่ละคนได้รับของใช้จำนวนเท่ากัน ลองมาคูณกันเถอะ!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "5 × 3 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🍎 4 ผล × 2 ถุง = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "6 ผล",
-            "8 ผล",
-            "2 ผล",
-            "12 ผล"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "8 ผล",
-          "explanation": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล",
-          "correct_answer": "8 ผล",
-          "explanation_th": "4 × 2 = 8 ดังนั้นมี 🍎 ทั้งหมด 8 ผล"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     }
@@ -616,171 +621,181 @@
   "questions": [
     {
       "question_id": "g3_multiplication_multi_digit_q01",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "23 × 4 เท่ากับเท่าไร?",
+      "question_text": "23 × 4 เท่ากับเท่าไร?",
       "choices": [
-        "12",
-        "15",
-        "9",
-        "7"
+        "82",
+        "92",
+        "102",
+        "112"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "92",
+      "answer": "92",
+      "explanation": "23 × 4 = 92",
+      "explanation_th": "23 × 4 = 92",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q02",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "36 × 3 เท่ากับเท่าไร?",
+      "question_text": "36 × 3 เท่ากับเท่าไร?",
       "choices": [
-        "16",
-        "17",
-        "15",
-        "24"
+        "98",
+        "108",
+        "118",
+        "128"
       ],
-      "correct_answer": "16",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
-      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "108",
+      "answer": "108",
+      "explanation": "36 × 3 = 108",
+      "explanation_th": "36 × 3 = 108",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q03",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: 6 + 5 = ?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: 6 + 5 = ?",
+      "question_th": "45 × 6 เท่ากับเท่าไร?",
+      "question_text": "45 × 6 เท่ากับเท่าไร?",
       "choices": [
-        "11",
-        "12",
-        "10",
-        "21"
+        "260",
+        "270",
+        "280",
+        "290"
       ],
-      "correct_answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "270",
+      "answer": "270",
+      "explanation": "45 × 6 = 270",
+      "explanation_th": "45 × 6 = 270",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q04",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
+      "question_text": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
       "choices": [
-        "42",
-        "48",
-        "36",
-        "13"
+        "100 เล่ม",
+        "110 เล่ม",
+        "120 เล่ม",
+        "130 เล่ม"
       ],
-      "correct_answer": "42",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
-      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "120 เล่ม",
+      "answer": "120 เล่ม",
+      "explanation": "24 × 5 = 120 เล่ม",
+      "explanation_th": "24 × 5 = 120 เล่ม",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q05",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "32 × 7 เท่ากับเท่าไร?",
+      "question_text": "32 × 7 เท่ากับเท่าไร?",
       "choices": [
-        "14",
-        "15",
-        "13",
-        "18"
+        "214",
+        "224",
+        "234",
+        "244"
       ],
-      "correct_answer": "14",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
-      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "224",
+      "answer": "224",
+      "explanation": "32 × 7 = 224",
+      "explanation_th": "32 × 7 = 224",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q06",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: 9 + 3 = ?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: 9 + 3 = ?",
+      "question_th": "58 × 2 เท่ากับเท่าไร?",
+      "question_text": "58 × 2 เท่ากับเท่าไร?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "22"
+        "106",
+        "116",
+        "126",
+        "136"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "116",
+      "answer": "116",
+      "explanation": "58 × 2 = 116",
+      "explanation_th": "58 × 2 = 116",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q07",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "67 × 4 เท่ากับเท่าไร?",
+      "question_text": "67 × 4 เท่ากับเท่าไร?",
       "choices": [
-        "40",
-        "44",
-        "36",
-        "14"
+        "258",
+        "268",
+        "278",
+        "288"
       ],
-      "correct_answer": "40",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
-      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "268",
+      "answer": "268",
+      "explanation": "67 × 4 = 268",
+      "explanation_th": "67 × 4 = 268",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q08",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "125 × 3 เท่ากับเท่าไร?",
+      "question_text": "125 × 3 เท่ากับเท่าไร?",
       "choices": [
-        "50",
-        "51",
-        "49",
-        "60"
+        "365",
+        "375",
+        "385",
+        "395"
       ],
-      "correct_answer": "50",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
-      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "375",
+      "answer": "375",
+      "explanation": "125 × 3 = 375",
+      "explanation_th": "125 × 3 = 375",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_multi_digit",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q09",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: 12 + 6 = ?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: 12 + 6 = ?",
+      "question_th": "214 × 2 เท่ากับเท่าไร?",
+      "question_text": "214 × 2 เท่ากับเท่าไร?",
       "choices": [
-        "18",
-        "19",
-        "17",
-        "28"
+        "418",
+        "428",
+        "438",
+        "448"
       ],
-      "correct_answer": "18",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
-      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "428",
+      "answer": "428",
+      "explanation": "214 × 2 = 428",
+      "explanation_th": "214 × 2 = 428",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "challenge"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q10",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "150 × 6 เท่ากับเท่าไร?",
+      "question_text": "150 × 6 เท่ากับเท่าไร?",
       "choices": [
-        "26",
-        "28",
-        "24",
-        "15"
+        "800",
+        "850",
+        "900",
+        "950"
       ],
-      "correct_answer": "26",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
-      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "900",
+      "answer": "900",
+      "explanation": "150 × 6 = 900",
+      "explanation_th": "150 × 6 = 900",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "challenge"
     }
@@ -788,183 +803,225 @@
   "quiz_th": [
     {
       "question_id": "g3_multiplication_multi_digit_q01",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "23 × 4 เท่ากับเท่าไร?",
+      "question_text": "23 × 4 เท่ากับเท่าไร?",
       "choices": [
-        "12",
-        "15",
-        "9",
-        "7"
+        "82",
+        "92",
+        "102",
+        "112"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "92",
+      "answer": "92",
+      "explanation": "23 × 4 = 92",
+      "explanation_th": "23 × 4 = 92",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q02",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "36 × 3 เท่ากับเท่าไร?",
+      "question_text": "36 × 3 เท่ากับเท่าไร?",
       "choices": [
-        "16",
-        "17",
-        "15",
-        "24"
+        "98",
+        "108",
+        "118",
+        "128"
       ],
-      "correct_answer": "16",
-      "answer": "16",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
-      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "108",
+      "answer": "108",
+      "explanation": "36 × 3 = 108",
+      "explanation_th": "36 × 3 = 108",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q03",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: 6 + 5 = ?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: 6 + 5 = ?",
+      "question_th": "45 × 6 เท่ากับเท่าไร?",
+      "question_text": "45 × 6 เท่ากับเท่าไร?",
       "choices": [
-        "11",
-        "12",
-        "10",
-        "21"
+        "260",
+        "270",
+        "280",
+        "290"
       ],
-      "correct_answer": "11",
-      "answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "270",
+      "answer": "270",
+      "explanation": "45 × 6 = 270",
+      "explanation_th": "45 × 6 = 270",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q04",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
+      "question_text": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
       "choices": [
-        "42",
-        "48",
-        "36",
-        "13"
+        "100 เล่ม",
+        "110 เล่ม",
+        "120 เล่ม",
+        "130 เล่ม"
       ],
-      "correct_answer": "42",
-      "answer": "42",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
-      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "120 เล่ม",
+      "answer": "120 เล่ม",
+      "explanation": "24 × 5 = 120 เล่ม",
+      "explanation_th": "24 × 5 = 120 เล่ม",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q05",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "32 × 7 เท่ากับเท่าไร?",
+      "question_text": "32 × 7 เท่ากับเท่าไร?",
       "choices": [
-        "14",
-        "15",
-        "13",
-        "18"
+        "214",
+        "224",
+        "234",
+        "244"
       ],
-      "correct_answer": "14",
-      "answer": "14",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
-      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "224",
+      "answer": "224",
+      "explanation": "32 × 7 = 224",
+      "explanation_th": "32 × 7 = 224",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q06",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: 9 + 3 = ?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: 9 + 3 = ?",
+      "question_th": "58 × 2 เท่ากับเท่าไร?",
+      "question_text": "58 × 2 เท่ากับเท่าไร?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "22"
+        "106",
+        "116",
+        "126",
+        "136"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "116",
+      "answer": "116",
+      "explanation": "58 × 2 = 116",
+      "explanation_th": "58 × 2 = 116",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q07",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "67 × 4 เท่ากับเท่าไร?",
+      "question_text": "67 × 4 เท่ากับเท่าไร?",
       "choices": [
-        "40",
-        "44",
-        "36",
-        "14"
+        "258",
+        "268",
+        "278",
+        "288"
       ],
-      "correct_answer": "40",
-      "answer": "40",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
-      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "268",
+      "answer": "268",
+      "explanation": "67 × 4 = 268",
+      "explanation_th": "67 × 4 = 268",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q08",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "125 × 3 เท่ากับเท่าไร?",
+      "question_text": "125 × 3 เท่ากับเท่าไร?",
       "choices": [
-        "50",
-        "51",
-        "49",
-        "60"
+        "365",
+        "375",
+        "385",
+        "395"
       ],
-      "correct_answer": "50",
-      "answer": "50",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
-      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "375",
+      "answer": "375",
+      "explanation": "125 × 3 = 375",
+      "explanation_th": "125 × 3 = 375",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_multi_digit",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q09",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: 12 + 6 = ?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: 12 + 6 = ?",
+      "question_th": "214 × 2 เท่ากับเท่าไร?",
+      "question_text": "214 × 2 เท่ากับเท่าไร?",
       "choices": [
-        "18",
-        "19",
-        "17",
-        "28"
+        "418",
+        "428",
+        "438",
+        "448"
       ],
-      "correct_answer": "18",
-      "answer": "18",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
-      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "428",
+      "answer": "428",
+      "explanation": "214 × 2 = 428",
+      "explanation_th": "214 × 2 = 428",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "challenge"
     },
     {
       "question_id": "g3_multiplication_multi_digit_q10",
-      "question_th": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "คูณเลขหลายหลักแบบเข้าใจง่าย: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "150 × 6 เท่ากับเท่าไร?",
+      "question_text": "150 × 6 เท่ากับเท่าไร?",
       "choices": [
-        "26",
-        "28",
-        "24",
-        "15"
+        "800",
+        "850",
+        "900",
+        "950"
       ],
-      "correct_answer": "26",
-      "answer": "26",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
-      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "900",
+      "answer": "900",
+      "explanation": "150 × 6 = 900",
+      "explanation_th": "150 × 6 = 900",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_multi_digit",
       "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง คูณเลขหลายหลักแบบเข้าใจง่าย ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "6 × 4 = 24",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+      "choices": [
+        "22",
+        "23",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "คำตอบคือ 24"
     }
   ]
 }

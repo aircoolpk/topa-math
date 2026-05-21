@@ -1,0 +1,129 @@
+{
+  "quiz_id": "g3_multiplication_area_model_ep",
+  "grade_level": 3,
+  "subject": "math",
+  "topic_code": "g3_multiplication_area_model",
+  "skill_code": "g3_multiplication_area_model_ep",
+  "questions": [
+    {
+      "question_id": "q001",
+      "question_type": "multiple_choice",
+      "question_en": "There are 3 rows. Each row has 4 boxes. How many boxes are there?",
+      "question_th": "มี 3 แถว แถวละ 4 ช่อง มีทั้งหมดกี่ช่อง",
+      "choices": ["7", "12", "14", "16"],
+      "correct_answer": "12",
+      "explanation_en": "3 × 4 = 12. There are 12 boxes.",
+      "explanation_th": "3 × 4 = 12 จึงมี 12 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q002",
+      "question_type": "multiple_choice",
+      "question_en": "There are 4 rows. Each row has 5 plants. How many plants are there?",
+      "question_th": "มี 4 แถว แถวละ 5 ต้น มีทั้งหมดกี่ต้น",
+      "choices": ["9", "15", "20", "25"],
+      "correct_answer": "20",
+      "explanation_en": "4 × 5 = 20. There are 20 plants.",
+      "explanation_th": "4 × 5 = 20 จึงมี 20 ต้น",
+      "difficulty": "easy",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q003",
+      "question_type": "multiple_choice",
+      "question_en": "There are 2 rows. Each row has 7 boxes. How many boxes are there?",
+      "question_th": "มี 2 แถว แถวละ 7 ช่อง มีทั้งหมดกี่ช่อง",
+      "choices": ["9", "12", "14", "16"],
+      "correct_answer": "14",
+      "explanation_en": "2 × 7 = 14. There are 14 boxes.",
+      "explanation_th": "2 × 7 = 14 จึงมี 14 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q004",
+      "question_type": "multiple_choice",
+      "question_en": "There are 5 rows. Each row has 6 squares. How many squares are there?",
+      "question_th": "มี 5 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง",
+      "choices": ["11", "25", "30", "36"],
+      "correct_answer": "30",
+      "explanation_en": "5 × 6 = 30. There are 30 squares.",
+      "explanation_th": "5 × 6 = 30 จึงมี 30 ช่อง",
+      "difficulty": "medium",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q005",
+      "question_type": "multiple_choice",
+      "question_en": "There are 6 rows. Each row has 6 stars. How many stars are there?",
+      "question_th": "มี 6 แถว แถวละ 6 ดวง มีทั้งหมดกี่ดวง",
+      "choices": ["12", "30", "36", "42"],
+      "correct_answer": "36",
+      "explanation_en": "6 × 6 = 36. There are 36 stars.",
+      "explanation_th": "6 × 6 = 36 จึงมี 36 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q006",
+      "question_type": "multiple_choice",
+      "question_en": "There are 3 rows. Each row has 8 cakes. How many cakes are there?",
+      "question_th": "มี 3 แถว แถวละ 8 ชิ้น มีขนมกี่ชิ้น",
+      "choices": ["11", "18", "24", "32"],
+      "correct_answer": "24",
+      "explanation_en": "3 × 8 = 24. There are 24 cakes.",
+      "explanation_th": "3 × 8 = 24 จึงมีขนม 24 ชิ้น",
+      "difficulty": "medium",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q007",
+      "question_type": "multiple_choice",
+      "question_en": "There are 4 rows. Each row has 7 desks. How many desks are there?",
+      "question_th": "มี 4 แถว แถวละ 7 ตัว มีโต๊ะกี่ตัว",
+      "choices": ["11", "24", "28", "32"],
+      "correct_answer": "28",
+      "explanation_en": "4 × 7 = 28. There are 28 desks.",
+      "explanation_th": "4 × 7 = 28 จึงมีโต๊ะ 28 ตัว",
+      "difficulty": "medium",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q008",
+      "question_type": "multiple_choice",
+      "question_en": "There are 5 rows. Each row has 9 boxes. How many boxes are there?",
+      "question_th": "มี 5 แถว แถวละ 9 ช่อง มีทั้งหมดกี่ช่อง",
+      "choices": ["14", "40", "45", "54"],
+      "correct_answer": "45",
+      "explanation_en": "5 × 9 = 45. There are 45 boxes.",
+      "explanation_th": "5 × 9 = 45 จึงมี 45 ช่อง",
+      "difficulty": "medium",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q009",
+      "question_type": "multiple_choice",
+      "question_en": "There are 7 rows. Each row has 3 holes. How many holes are there?",
+      "question_th": "มี 7 แถว แถวละ 3 หลุม มีหลุมกี่หลุม",
+      "choices": ["10", "18", "21", "24"],
+      "correct_answer": "21",
+      "explanation_en": "7 × 3 = 21. There are 21 holes.",
+      "explanation_th": "7 × 3 = 21 จึงมี 21 หลุม",
+      "difficulty": "medium",
+      "skill_tag": "area_model"
+    },
+    {
+      "question_id": "q010",
+      "question_type": "multiple_choice",
+      "question_en": "There are 8 rows. Each row has 4 boxes. How many boxes are there?",
+      "question_th": "มี 8 แถว แถวละ 4 ช่อง มีทั้งหมดกี่ช่อง",
+      "choices": ["12", "28", "32", "36"],
+      "correct_answer": "32",
+      "explanation_en": "8 × 4 = 32. There are 32 boxes.",
+      "explanation_th": "8 × 4 = 32 จึงมี 32 ช่อง",
+      "difficulty": "medium",
+      "skill_tag": "area_model"
+    }
+  ]
+}

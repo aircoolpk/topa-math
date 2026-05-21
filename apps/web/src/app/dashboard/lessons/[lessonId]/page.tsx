@@ -5,31 +5,15 @@ import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
 import { meApi, type Lesson, type VisualBlock } from '@/lib/api/me'
+import { MascotAvatar } from '@/components/topa/TopaUI'
+import { defaultMascots } from '@/lib/topa-content'
+import { stableMascotIndex } from '@/lib/mascot-registry'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 type Phase = 'loading' | 'content' | 'error'
 
-const ALLOWED_BLOCK_TYPES = new Set([
-  'story_intro',
-  'visual_thinking',
-  'emoji_counter',
-  'model_diagram',
-  'grouping_model',
-  'bar_model',
-  'shape_visual',
-  'ten_frame',
-  'area_model',
-  'fraction_visual',
-  'place_value_chart',
-  'array_model',
-  'graph_visual',
-  'volume_visual',
-  'table_visual',
-  'count_back_strip',
-  'number_sentence',
-  'mini_quiz',
-])
+const BETA_READY_LESSON_GRADES = new Set([1, 2, 3, 4, 5, 6])
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -50,8 +34,14 @@ function getText(val: unknown): string {
     const o = val as Record<string, unknown>
     return (
       getText(o.title_th) ||
+      getText(o.block_title_th) ||
+      getText(o.block_title) ||
       getText(o.text_th) ||
+      getText(o.content_th) ||
       getText(o.description_th) ||
+      getText(o.story_th) ||
+      getText(o.question_th) ||
+      getText(o.template_th) ||
       getText(o.content) ||
       getText(o.text) ||
       ''
@@ -64,6 +54,29 @@ function getArray<T>(val: unknown): T[] {
   if (!val) return []
   if (Array.isArray(val)) return val as T[]
   return []
+}
+
+function getRecord(val: unknown): Record<string, unknown> {
+  return val && typeof val === 'object' && !Array.isArray(val)
+    ? val as Record<string, unknown>
+    : {}
+}
+
+function getNumber(val: unknown): number | undefined {
+  if (typeof val === 'number' && Number.isFinite(val)) return val
+  if (typeof val === 'string') {
+    const match = val.replace(/,/g, '').match(/\d+(?:\.\d+)?/)
+    if (match) return Number(match[0])
+  }
+  return undefined
+}
+
+function firstNumber(...values: unknown[]): number | undefined {
+  for (const value of values) {
+    const number = getNumber(value)
+    if (number !== undefined && number > 0) return number
+  }
+  return undefined
 }
 
 // ─── Topic Illustration Map ────────────────────────────────────────────────────
@@ -154,10 +167,12 @@ const CORRECT_ANSWER_KEYS = [
 function getMiniQuizCorrectAnswer(block: VisualBlock): string {
   const b = block as Record<string, unknown>
   const d = (b.data ?? {}) as Record<string, unknown>
+  const nestedContent = getRecord(d.content)
+  const nestedQuestion = getArray<Record<string, unknown>>(d.questions ?? nestedContent.questions)[0] ?? {}
 
   // Check data first (normalized block), then root level
   for (const key of CORRECT_ANSWER_KEYS) {
-    const val = d[key] ?? b[key]
+    const val = d[key] ?? nestedQuestion[key] ?? b[key]
     if (val !== undefined && val !== null && val !== '') {
       // If it's a numeric index (0-3), convert to letter A-D
       if (typeof val === 'number' && Number.isInteger(val) && val >= 0 && val <= 3) {
@@ -179,8 +194,19 @@ function getMiniQuizCorrectAnswer(block: VisualBlock): string {
 function getMiniQuizChoices(block: VisualBlock): string[] {
   const b = block as Record<string, unknown>
   const d = (b.data ?? {}) as Record<string, unknown>
+  const nestedContent = getRecord(d.content)
+  const nestedQuestion = getArray<Record<string, unknown>>(d.questions ?? nestedContent.questions)[0] ?? {}
 
-  const raw = getArray<unknown>(d.choices ?? d.options ?? b.choices ?? [])
+  const raw = getArray<unknown>(
+    d.choices ??
+    d.options ??
+    d.options_th ??
+    nestedQuestion.choices ??
+    nestedQuestion.options ??
+    nestedQuestion.options_th ??
+    b.choices ??
+    []
+  )
   const choices = raw.map(c => {
     const s = getText(c)
     // Strip leading letter if present (e.g. "A. 3 ดวง" → "3 ดวง")
@@ -236,14 +262,20 @@ function normalizeVisualBlock(raw: RawVisualBlock): VisualBlock | null {
       // Extract groups / items from the inner record
       const dataRecord = innerRecord.data as Record<string, unknown> | undefined
       const innerData = dataRecord ?? innerRecord
+      const nestedContent = getRecord(innerData.content)
+      const visualData = getRecord(innerData.visual_data ?? nestedContent.visual_data)
       const groups = getArray<Record<string, unknown>>(
         innerData.groups ?? innerData.items ?? innerData.bars ?? innerData.rows ?? []
       )
       const title_th = getText(innerData.title_th || innerData.title)
         || getText(innerRecord.title_th)
-      const description_th = getText(innerData.description_th)
+      const description_th = getText(innerData.description_th || innerData.description || nestedContent.description_th)
       const symbol = getText(innerData.symbol || innerData.emoji || innerData.unit || '🔢')
-      const total = innerData.total ?? innerData.value ?? innerData.numerator
+      // For Shape A blocks (no data wrapper): rows/cols may be at root level as width/height
+      const rows = firstNumber(innerData.rows, innerData.row_count, innerData.height, innerData.length, visualData.rows, visualData.height, rawObj.height)
+      const cols = firstNumber(innerData.cols, innerData.columns, innerData.column_count, innerData.width, visualData.cols, visualData.columns, visualData.width, rawObj.width)
+      const total = innerData.total ?? innerData.area ?? innerData.value ?? innerData.numerator ?? visualData.total ?? (rows && cols ? rows * cols : undefined)
+      const unit = getText(innerData.unit || nestedContent.unit || visualData.unit)
       return {
         block_type: 'model_diagram',
         type: 'model_diagram',
@@ -251,8 +283,12 @@ function normalizeVisualBlock(raw: RawVisualBlock): VisualBlock | null {
         description_th,
         data: inner,
         groups,
+        rows,
+        cols,
         symbol,
+        unit,
         total,
+        model_type: r.type,
       } as unknown as VisualBlock
     }
 
@@ -266,6 +302,8 @@ function normalizeVisualBlock(raw: RawVisualBlock): VisualBlock | null {
         type: 'visual_thinking',
         title_th: getText(innerData.title_th || innerData.title) || '👀 มองภาพก่อน',
         content: getText(innerData.content),
+        description_th: getText(innerData.description_th || innerData.description),
+        data: innerData,
         items: rawItems,
         items_before: innerData.items_before,
         items_added: innerData.items_added,
@@ -310,6 +348,48 @@ function BlockStoryIntro({ block }: { block: VisualBlock }) {
 function BlockVisualThinking({ block }: { block: VisualBlock }) {
   const rawItems = getArray<Record<string, unknown>>(block.items)
   const hasNewFormat = rawItems.length > 0
+  const data = getRecord((block as Record<string, unknown>).data)
+  const paid = getNumber(data.paid ?? (block as Record<string, unknown>).paid)
+  const price = getNumber(data.price ?? (block as Record<string, unknown>).price)
+  const change = getNumber(data.change ?? (block as Record<string, unknown>).change)
+
+  if (paid !== undefined && price !== undefined && change !== undefined) {
+    return (
+      <div className="card shadow-md bg-amber-50 border-l-4 border-amber-400">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="text-2xl">💰</span>
+          <h3 className="font-bold text-amber-800 text-base">
+            {block.title_th || 'เงินทอน'}
+          </h3>
+        </div>
+        <div className="grid grid-cols-3 gap-2 text-center">
+          <div className="rounded-xl bg-white px-3 py-3 shadow-sm">
+            <p className="text-xs font-bold text-amber-600">จ่าย</p>
+            <p className="text-2xl font-extrabold text-amber-900">{paid}</p>
+            <p className="text-xs text-amber-700">บาท</p>
+          </div>
+          <div className="rounded-xl bg-white px-3 py-3 shadow-sm">
+            <p className="text-xs font-bold text-red-500">ราคา</p>
+            <p className="text-2xl font-extrabold text-red-700">-{price}</p>
+            <p className="text-xs text-red-600">บาท</p>
+          </div>
+          <div className="rounded-xl bg-white px-3 py-3 shadow-sm">
+            <p className="text-xs font-bold text-green-600">เงินทอน</p>
+            <p className="text-2xl font-extrabold text-green-700">{change}</p>
+            <p className="text-xs text-green-600">บาท</p>
+          </div>
+        </div>
+        <p className="mt-3 text-center text-sm font-bold text-amber-800">
+          {paid} - {price} = {change}
+        </p>
+        {Boolean(block.description_th || data.description_th) && (
+          <p className="mt-2 text-center text-xs text-amber-700">
+            {getText(block.description_th || data.description_th)}
+          </p>
+        )}
+      </div>
+    )
+  }
 
   if (hasNewFormat) {
     const emoji = getText(rawItems[0]?.emoji) || '🍎'
@@ -347,6 +427,22 @@ function BlockVisualThinking({ block }: { block: VisualBlock }) {
             <span className="text-2xl font-extrabold text-blue-700">= {total}</span>
           </div>
         )}
+      </div>
+    )
+  }
+
+  if (block.description_th || block.content || data.description_th) {
+    return (
+      <div className="card shadow-md bg-blue-50 border-l-4 border-blue-400">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-2xl">👀</span>
+          <h3 className="font-bold text-blue-800 text-base">
+            {block.title_th || 'มองภาพก่อน'}
+          </h3>
+        </div>
+        <p className="text-sm leading-relaxed text-blue-800">
+          {getText(block.description_th || block.content || data.description_th)}
+        </p>
       </div>
     )
   }
@@ -473,8 +569,29 @@ function BlockModelDiagram({ block }: { block: VisualBlock }) {
   }
 
   // Fallback: rows × cols grid
-  const rows = Number(block.rows) || 3
-  const cols = Number(block.cols) || 4
+  const data = getRecord((block as Record<string, unknown>).data)
+  // block-level width/height from Shape A blocks (area_model with no data wrapper)
+  const rows = firstNumber(block.rows, data.rows, data.height, (block as Record<string, unknown>).height)
+  const cols = firstNumber(block.cols, data.cols, data.columns, data.width, (block as Record<string, unknown>).width)
+  const total = getNumber(block.total ?? data.total) ?? (rows && cols ? rows * cols : undefined)
+  const unit = getText(block.unit ?? data.unit)
+
+  if (!rows || !cols) {
+    const explanation = getText(block.description_th) || getText(data.description_th) || getText(data.description) || getText(data.content)
+    return (
+      <div className="card shadow-md bg-teal-50 border-l-4 border-teal-400">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-2xl">ðŸŸ¦</span>
+          <h3 className="font-bold text-teal-800 text-base">
+            {block.title_th || 'à¹ƒà¸Šà¹‰à¹à¸œà¸™à¸ à¸²à¸žà¸Šà¹ˆà¸§à¸¢à¸„à¸´à¸”'}
+          </h3>
+        </div>
+        <p className="text-sm leading-relaxed text-teal-800">
+          {explanation || 'แผนภาพนี้ยังไม่มีข้อมูลจำนวนแถวและคอลัมน์ที่ชัดเจน'}
+        </p>
+      </div>
+    )
+  }
   return (
     <div className="card shadow-md bg-teal-50 border-l-4 border-teal-400">
       <div className="flex items-center gap-2 mb-4">
@@ -496,7 +613,7 @@ function BlockModelDiagram({ block }: { block: VisualBlock }) {
       </div>
       <div className="text-center mt-3">
         <p className="text-sm font-bold text-teal-700">
-          {rows} แถว × {cols} คอลัมน์ = {rows * cols}
+          {rows} แถว × {cols} คอลัมน์ = {total ?? rows * cols}{unit ? ` ${unit}` : ''}
         </p>
       </div>
     </div>
@@ -518,7 +635,7 @@ function BlockNumberSentence({ block }: { block: VisualBlock }) {
       <div className="flex items-center gap-2 mb-3 justify-center">
         <span className="text-2xl">✍️</span>
         <h3 className="font-bold text-slate-700 text-base">
-          {block.title_th || 'เขียนเป็นประโยคคณิต'}
+          {block.title_th || 'เขียนเป็นประโยควิธีทำ'}
         </h3>
       </div>
       {expression && (
@@ -534,7 +651,9 @@ function BlockMiniQuiz({ block }: { block: VisualBlock }) {
   const [selected, setSelected] = useState<string | null>(null)
   const [answered, setAnswered] = useState(false)
 
-  const rawQuestions = getArray<Record<string, unknown>>(block.questions ?? [])
+  const blockData = getRecord((block as Record<string, unknown>).data)
+  const blockContent = getRecord(blockData.content)
+  const rawQuestions = getArray<Record<string, unknown>>(block.questions ?? blockData.questions ?? blockContent.questions)
   const choices = getMiniQuizChoices(block)
 
   // Format A: placeholder quiz
@@ -556,7 +675,8 @@ function BlockMiniQuiz({ block }: { block: VisualBlock }) {
     )
   }
 
-  const questionText = getText(block.question_th) || getText(block.question) || ''
+  const firstQuestion = rawQuestions[0] ?? {}
+  const questionText = getText(block.question_th) || getText(block.question) || getText(blockData.question_th) || getText(blockData.question) || getText(firstQuestion.question_th) || getText(firstQuestion.text_th) || getText(firstQuestion.question) || ''
   const correctAnswerRaw = getMiniQuizCorrectAnswer(block)
 
   // Resolve the actual correct choice index/text
@@ -689,11 +809,27 @@ function VisualBlockRenderer({ block }: { block: VisualBlock }) {
     case 'count_back_strip':  return <BlockModelDiagram block={block} />
     case 'number_sentence':   return <BlockNumberSentence block={block} />
     case 'mini_quiz':        return <BlockMiniQuiz block={block} />
-    default: return null // Hide deprecated/unknown block types
+    default:
+      return (
+        <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
+          ยังไม่รองรับบล็อกชนิดนี้: {rawType}
+        </div>
+      )
   }
 }
 
 // ─── Block sequence labels (allowed types only) ────────────────────────────────
+
+function isRenderableVisualBlock(block: VisualBlock): boolean {
+  const rawType = block.block_type || ((block as Record<string, unknown>).type as string) || 'unknown'
+  if (rawType !== 'mini_quiz') return true
+  const blockData = getRecord((block as Record<string, unknown>).data)
+  const blockContent = getRecord(blockData.content)
+  const rawQuestions = getArray<Record<string, unknown>>(block.questions ?? blockData.questions ?? blockContent.questions)
+  const firstQuestion = rawQuestions[0] ?? {}
+  const questionText = getText(block.question_th) || getText(block.question) || getText(blockData.question_th) || getText(blockData.question) || getText(firstQuestion.question_th) || getText(firstQuestion.text_th) || getText(firstQuestion.question)
+  return Boolean(questionText && getMiniQuizChoices(block).length >= 2 && getMiniQuizCorrectAnswer(block))
+}
 
 const BLOCK_LABELS: Record<string, string> = {
   story_intro:      '🐣 เรื่องราวชวนคิด',
@@ -712,7 +848,7 @@ const BLOCK_LABELS: Record<string, string> = {
   volume_visual:    '🟦 ใช้แผนภาพช่วยคิด',
   table_visual:     '🟦 ใช้แผนภาพช่วยคิด',
   count_back_strip: '🟦 ใช้แผนภาพช่วยคิด',
-  number_sentence:  '✍️ เขียนเป็นประโยคคณิต',
+  number_sentence:  '✍️ เขียนเป็นประโยควิธีทำ',
   mini_quiz:        '🎯 ลองทำดู',
 }
 
@@ -743,7 +879,7 @@ export default function LessonPage() {
     setPhase('loading')
     setErrorMsg('')
     try {
-      const fetched = await meApi.getLesson(lessonId)
+      const fetched = await meApi.getLesson(lessonId, pt)
       setLesson(fetched)
       if (pt) setProgramType(pt)
       setPhase('content')
@@ -751,7 +887,7 @@ export default function LessonPage() {
       const e = err as { response?: { status?: number; data?: { ep_fallback?: boolean } }; message?: string }
       if (e?.response?.data?.ep_fallback) {
         // EP not available — show TH with fallback banner
-        const fallbackLesson = await meApi.getLesson(lessonId)
+        const fallbackLesson = await meApi.getLesson(lessonId, 'TH')
         setLesson(fallbackLesson)
         setProgramType('TH')
         setPhase('content')
@@ -816,15 +952,34 @@ export default function LessonPage() {
   // ── Content ─────────────────────────────────────────────────────────────────
 
   const isLocked = lesson.status === 'locked' || lesson.is_locked === true
+  const testAvailable = lesson.test_available ?? lesson.has_approved_test ?? lesson.has_test !== false
   const gradeLbl = gradeLabel(lesson.grade_level)
   const cover = getTopicIllustration(lesson.topic_code, lesson.skill_code)
+  const helperIndex = stableMascotIndex(`${lesson.lesson_id}:${lesson.topic_code || lesson.skill_code || lesson.grade_level}`)
+  const helperMascot = defaultMascots[helperIndex]
+  const helperLine = lesson.topic_code?.includes('word') || lesson.skill_code?.includes('word')
+    ? 'ลองแบ่งโจทย์เป็นขั้นตอนเล็ก ๆ แล้ววงตัวเลขสำคัญก่อนนะ'
+    : lesson.topic_code?.includes('geometry') || lesson.skill_code?.includes('shape')
+      ? 'ข้อนี้ใช้การนึกภาพหรือวาดรูปช่วยให้เห็นความสัมพันธ์ได้ง่ายขึ้น'
+      : 'อ่านตัวอย่างให้จบก่อน แล้วลองอธิบายวิธีคิดด้วยคำของตัวเอง'
 
-  // Filter visual_blocks to only allowed types
-  const allowedBlocks = (lesson.visual_blocks ?? [])
+  const displayBlocks = (lesson.visual_blocks ?? [])
     .map(raw => normalizeVisualBlock(raw))
-    .filter((block): block is VisualBlock =>
-      block !== null && ALLOWED_BLOCK_TYPES.has(block.block_type)
+    .filter((block): block is VisualBlock => block !== null)
+    .filter(isRenderableVisualBlock)
+
+  if (!isLocked && (!BETA_READY_LESSON_GRADES.has(Number(lesson.grade_level)) || displayBlocks.length === 0)) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center px-4">
+        <div className="card max-w-md text-center py-12">
+          <div className="text-4xl mb-4">...</div>
+          <h2 className="text-xl font-extrabold text-gray-900 mb-2">Coming Soon</h2>
+          <p className="text-gray-500 mb-6">This lesson is disabled during the closed beta.</p>
+          <Link href="/dashboard" className="btn-primary px-8 py-3">Back to dashboard</Link>
+        </div>
+      </div>
     )
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -895,6 +1050,16 @@ export default function LessonPage() {
           </div>
         </div>
 
+        <div className="mb-5 rounded-2xl border border-sky-100 bg-white px-4 py-3 shadow-sm">
+          <div className="flex items-center gap-3">
+            <MascotAvatar mascot={helperMascot} index={helperIndex} size="sm" />
+            <div>
+              <p className="text-xs font-black uppercase tracking-wide text-sky-500">{helperMascot.name} helper tip</p>
+              <p className="text-sm font-bold text-slate-700">{helperLine}</p>
+            </div>
+          </div>
+        </div>
+
         {/* EP Fallback Banner */}
         {programType === 'EP' && lesson.program_type !== 'EP' && (
           <div className="mb-5 bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 text-sm text-blue-700 flex items-center gap-2">
@@ -929,9 +1094,9 @@ export default function LessonPage() {
         ) : (
           <>
             {/* ── Visual Blocks (simplified) ── */}
-            {allowedBlocks.length > 0 ? (
+            {displayBlocks.length > 0 ? (
               <div className="space-y-4">
-                {allowedBlocks.map((block, i) => {
+                {displayBlocks.map((block, i) => {
                   const type = block.block_type
                   return (
                     <div key={i}>
@@ -948,13 +1113,21 @@ export default function LessonPage() {
             ) : (
               /* ── No visual blocks — show brief fallback text ── */
               <div className="card shadow-md text-center py-10">
-                <p className="text-gray-500">บทเรียนนี้ยังไม่มีเนื้อหาแสดง</p>
+                <div className="inline-flex text-xs font-bold bg-amber-100 text-amber-700 px-3 py-1 rounded-full mb-3">
+                  กำลังตรวจบทเรียน
+                </div>
+                <p className="text-gray-500">บทเรียนนี้จะเปิดเมื่อผ่าน QA สำหรับ Beta</p>
               </div>
             )}
 
             {/* ── Actions ── */}
             <div className="mt-8 flex gap-3">
-              {lesson.has_test !== false && (
+              {!testAvailable ? (
+                <div className="flex-1 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-center">
+                  <p className="text-sm font-bold text-amber-800">แบบทดสอบกำลังตรวจ QA</p>
+                  <p className="text-xs text-amber-700 mt-1">{lesson.test_unavailable_reason || 'อ่านบทเรียนได้ตามปกติ แต่ยังไม่เปิดแบบทดสอบสำหรับบทนี้'}</p>
+                </div>
+              ) : (
                 <button
                   onClick={handleTakeTest}
                   disabled={testLoading}

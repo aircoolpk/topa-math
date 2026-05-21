@@ -1,0 +1,947 @@
+﻿{
+  "lesson_id": "g6_gcf_lcm",
+  "id": "g6_gcf_lcm",
+  "grade_level": 6,
+  "title_th": "หา ห.ร.ม. และ ค.ร.น. ช่วยในการคูณหารเศษส่วน",
+  "objective_th": "นักเรียนสามารถหาตัวหารร่วมมาก (ห.ร.ม.) และตัวคูณร่วมน้อย (ค.ร.น.) ได้ถูกต้อง และนำไปประยุกต์ใช้",
+  "story_intro_th": "พี่อลิสมีลูกชิ้น 12 ลูก และขนม 18 ชิ้น อยากแบ่งเป็นถุงเท่าๆ กันโดยไม่เหลือเศษ จะแบ่งได้กี่ถุงและแต่ละถุงมีอะไรบ้าง? 🍡",
+  "explanation_steps": [
+    "ห.ร.ม. (ตัวหารร่วมมาก) คือจำนวนที่มากที่สุดที่หารจำนวนตั้งแต่สองจำนวนขึ้นไปลงตัว",
+    "วิธีหา ห.ร.ม.: เขียนตัวประกอบของแต่ละจำนวน หาตัวประกอบร่วมที่มากที่สุด",
+    "ค.ร.น. (ตัวคูณร่วมน้อย) คือจำนวนที่น้อยที่สุดที่จำนวนตั้งแต่สองจำนวนขึ้นไปหารลงตัว",
+    "วิธีหา ค.ร.น.: เขียนตัวคูณของแต่ละจำนวน หาตัวคูณร่วมที่น้อยที่สุด",
+    "ห.ร.ม. ใช้ตัดเศษส่วนให้เป็นเศษอย่างต่ำ ค.ร.น. ใช้หาส่วนร่วมเมื่อบวกลบเศษส่วน"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "หา ห.ร.ม. ของ 12 และ 18",
+      "question_th": "ห.ร.ม. ของ 12 และ 18 คือเท่าไหร่?",
+      "solution_th": "ตัวประกอบของ 12: 1,2,3,4,6,12 / ตัวประกอบของ 18: 1,2,3,6,9,18 / ตัวประกอบร่วม: 1,2,3,6 / ห.ร.ม. = 6 ✅"
+    },
+    {
+      "title_th": "หา ค.ร.น. ของ 4 และ 6",
+      "question_th": "ค.ร.น. ของ 4 และ 6 คือเท่าไหร่?",
+      "solution_th": "ตัวคูณของ 4: 4,8,12,16,20... / ตัวคูณของ 6: 6,12,18... / ค.ร.น. = 12 ✅"
+    },
+    {
+      "title_th": "ใช้ ห.ร.ม. ตัดเศษส่วน",
+      "question_th": "8/12 ตัดเศษส่วนให้เป็นเศษอย่างต่ำ",
+      "solution_th": "ห.ร.ม. ของ 8 และ 12 = 4 / 8÷4 / 12÷4 = 2/3 ✅"
+    },
+    {
+      "title_th": "ใช้ ค.ร.น. บวกเศษส่วน",
+      "question_th": "1/4 + 1/6 = ?",
+      "solution_th": "ค.ร.น. ของ 4 และ 6 = 12 / 3/12 + 2/12 = 5/12 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "หา ห.ร.ม. ผิดโดยเลือกตัวประกอบที่ไม่ใช่ตัวหารร่วมมาก",
+    "หา ค.ร.น. ผิดโดยหาตัวคูณร่วมที่ไม่ใช่ตัวคูณร่วมน้อยที่สุด",
+    "ไม่แยกให้ออกว่าต้องใช้ ห.ร.ม. หรือ ค.ร.น. ขึ้นอยู่กับโจทย์"
+  ],
+  "hints": [
+    "ห.ร.ม. ใช้เมื่อต้องการหาจำนวนที่มากที่สุดที่จะแบ่งลงตัว",
+    "ค.ร.น. ใช้เมื่อต้องการหาจำนวนที่น้อยที่สุดที่จะมาหารลงตัวทั้งหมด",
+    "จำง่าย: ห.ร.ม. คือตัวหารร่วมที่ใหญ่ที่สุด / ค.ร.น. คือตัวคูณร่วมที่เล็กที่สุด"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_gcf_lcm",
+  "skill_code": "g6_gcf_lcm",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏫 โรงเรียน มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🍎 ผลไม้ มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🧸 ของเล่น มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏪 ตลาด มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🐕 สัตว์เลี้ยง มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🌻 สวน มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎨 วาดรูป มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่📚 ห้องเรียน มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎮 สนุกกับเพื่อน มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล",
+      "story_theme_th": "เรียนรู้เรื่องgcf lcmผ่านธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎉 งานเทศกาล มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "items_before": "🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵",
+          "items_added": "÷",
+          "question": "หาการหารร่วมมากที่สุด (หรม.) ของ 12 กับ 18",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งตัวเลขหาตัวหารร่วม"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "ที่[School]  โรงเรียน มีลูกปัดสีแดง 12 ลูก และสีน้ำเงิน 18 ลูก ต้องการแบ่งเป็นกองๆ โดยแต่ละกองมีลูกปัดสีเดียวกัน จะแบ่งได้กี่กอง?"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "หรม.(12,18) = 6"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "หรม. ของ 8 กับ 12 คือเท่าไหร่?",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4",
+          "correct_answer": "4",
+          "explanation_th": "ตัวประกอบ 8: 1,2,4,8 | ตัวประกอบ 12: 1,2,3,4,6,12 | หรม. = 4"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "หรม. ครน.",
+  "preview_subtitle_th": "หาตัวหารร่วมและตัวคูณร่วม",
+  "cover_theme": "gcf_lcm",
+  "cover_emoji": "🔢",
+  "cover_color": "green",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "หาตัวหารร่วมและตัวคูณร่วม",
+  "learning_objective_th": "นักเรียนสามารถหาตัวหารร่วมมาก (ห.ร.ม.) และตัวคูณร่วมน้อย (ค.ร.น.) ได้ถูกต้อง และนำไปประยุกต์ใช้",
+  "lesson_intro_th": "พี่อลิสมีลูกชิ้น 12 ลูก และขนม 18 ชิ้น อยากแบ่งเป็นถุงเท่าๆ กันโดยไม่เหลือเศษ จะแบ่งได้กี่ถุงและแต่ละถุงมีอะไรบ้าง? 🍡",
+  "concept_explanation_th": "ห.ร.ม. (ตัวหารร่วมมาก) คือจำนวนที่มากที่สุดที่หารจำนวนตั้งแต่สองจำนวนขึ้นไปลงตัว วิธีหา ห.ร.ม.: เขียนตัวประกอบของแต่ละจำนวน หาตัวประกอบร่วมที่มากที่สุด ค.ร.น. (ตัวคูณร่วมน้อย) คือจำนวนที่น้อยที่สุดที่จำนวนตั้งแต่สองจำนวนขึ้นไปหารลงตัว วิธีหา ค.ร.น.: เขียนตัวคูณของแต่ละจำนวน หาตัวคูณร่วมที่น้อยที่สุด ห.ร.ม. ใช้ตัดเศษส่วนให้เป็นเศษอย่างต่ำ ค.ร.น. ใช้หาส่วนร่วมเมื่อบวกลบเศษส่วน",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 18
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 12
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท หา ห.ร.ม. และ ค.ร.น. ช่วยในการคูณหารเศษส่วน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "หา ห.ร.ม. ของ 12 และ 18",
+      "question_th": "ห.ร.ม. ของ 12 และ 18 คือเท่าไหร่?",
+      "solution_th": "ตัวประกอบของ 12: 1,2,3,4,6,12 / ตัวประกอบของ 18: 1,2,3,6,9,18 / ตัวประกอบร่วม: 1,2,3,6 / ห.ร.ม. = 6 ✅"
+    },
+    {
+      "title_th": "หา ค.ร.น. ของ 4 และ 6",
+      "question_th": "ค.ร.น. ของ 4 และ 6 คือเท่าไหร่?",
+      "solution_th": "ตัวคูณของ 4: 4,8,12,16,20... / ตัวคูณของ 6: 6,12,18... / ค.ร.น. = 12 ✅"
+    },
+    {
+      "title_th": "ใช้ ห.ร.ม. ตัดเศษส่วน",
+      "question_th": "8/12 ตัดเศษส่วนให้เป็นเศษอย่างต่ำ",
+      "solution_th": "ห.ร.ม. ของ 8 และ 12 = 4 / 8÷4 / 12÷4 = 2/3 ✅"
+    },
+    {
+      "title_th": "ใช้ ค.ร.น. บวกเศษส่วน",
+      "question_th": "1/4 + 1/6 = ?",
+      "solution_th": "ค.ร.น. ของ 4 และ 6 = 12 / 3/12 + 2/12 = 5/12 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "หา ห.ร.ม. ผิดโดยเลือกตัวประกอบที่ไม่ใช่ตัวหารร่วมมาก",
+    "หา ค.ร.น. ผิดโดยหาตัวคูณร่วมที่ไม่ใช่ตัวคูณร่วมน้อยที่สุด",
+    "ไม่แยกให้ออกว่าต้องใช้ ห.ร.ม. หรือ ค.ร.น. ขึ้นอยู่กับโจทย์"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_gcf_lcm_q01",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "easy",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q02",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "easy",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q03",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "easy",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q04",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q05",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "medium",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q06",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "medium",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q07",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q08",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "hard",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q09",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "hard",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q10",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "hard",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_gcf_lcm_q01",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "easy",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q02",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "easy",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q03",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "easy",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q04",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q05",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "medium",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q06",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "medium",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q07",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q08",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "hard",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q09",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "hard",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_gcf_lcm_q10",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "hard",
+      "skill_tag": "g6_gcf_lcm",
+      "question_type": "challenge"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-﻿{
+{
   "lesson_id": "g6_middle_school_prep",
   "id": "g6_middle_school_prep",
   "grade_level": 6,
@@ -57,39 +57,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🏫 โรงเรียน อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -100,39 +104,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🍎 ผลไม้ อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -143,39 +151,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🧸 ของเล่น อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -186,39 +198,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🏪 ตลาด อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -229,39 +245,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🐕 สัตว์เลี้ยง อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -272,39 +292,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🌻 สวน อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -315,39 +339,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🎨 วาดรูป อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -358,39 +386,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่📚 ห้องเรียน อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -401,39 +433,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🎮 สนุกกับเพื่อน อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -444,39 +480,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "ที่🎉 งานเทศกาล อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "items_before": "✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️✏️",
-          "items_added": "÷ 4 คน",
-          "question": "แบ่งดินสอ 12 แท่ง ให้ 4 คน คนละกี่แท่ง?",
-          "type": "emoji_counter"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "content": "แบ่งดินสอเป็น 4 กลุ่มเท่าๆ กัน"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -487,28 +527,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "📖 Story Time",
-          "content": "ที่[School]  โรงเรียน อลินเตรียมของใช้ซื้อดินสอ 12 แท่ง ไปแบ่งให้เพื่อน 4 คน คนละเท่าๆ กัน แต่ละคนได้กี่แท่ง? ✏️"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "12 ÷ 4 = 3"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "24 ÷ 6 = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "4",
-          "explanation": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24",
-          "correct_answer": "4",
-          "explanation_th": "24 ÷ 6 = 4 เพราะ 6 × 4 = 24"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     }
@@ -584,171 +639,181 @@
   "questions": [
     {
       "question_id": "g6_middle_school_prep_q01",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
       "choices": [
-        "21",
-        "24",
-        "18",
-        "10"
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
       ],
-      "correct_answer": "21",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
-      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
       "difficulty": "easy",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q02",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
       "choices": [
-        "28",
-        "29",
-        "27",
-        "36"
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
       ],
-      "correct_answer": "28",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
-      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
       "difficulty": "easy",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q03",
-      "question_th": "เตรียมพร้อมสู่ ม.1: 9 + 5 = ?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: 9 + 5 = ?",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
       "choices": [
-        "14",
-        "15",
-        "13",
-        "24"
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
       ],
-      "correct_answer": "14",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
-      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
       "difficulty": "easy",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q04",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
       "choices": [
-        "60",
-        "66",
-        "54",
-        "16"
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
       ],
-      "correct_answer": "60",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 60",
-      "explanation_th": "คำตอบคือ 60 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q05",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
       "choices": [
-        "20",
-        "21",
-        "19",
-        "24"
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
       ],
-      "correct_answer": "20",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
-      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q06",
-      "question_th": "เตรียมพร้อมสู่ ม.1: 12 + 3 = ?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: 12 + 3 = ?",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
       "choices": [
-        "15",
-        "16",
-        "14",
-        "25"
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
       ],
-      "correct_answer": "15",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
-      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q07",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
       "choices": [
-        "52",
-        "56",
-        "48",
-        "17"
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
       ],
-      "correct_answer": "52",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 52",
-      "explanation_th": "คำตอบคือ 52 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q08",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
       "choices": [
-        "65",
-        "66",
-        "64",
-        "75"
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
       ],
-      "correct_answer": "65",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 65",
-      "explanation_th": "คำตอบคือ 65 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
       "skill_tag": "g6_middle_school_prep",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g6_middle_school_prep_q09",
-      "question_th": "เตรียมพร้อมสู่ ม.1: 15 + 6 = ?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: 15 + 6 = ?",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
       "choices": [
-        "21",
-        "22",
-        "20",
-        "31"
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
       ],
-      "correct_answer": "21",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
-      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "challenge"
     },
     {
       "question_id": "g6_middle_school_prep_q10",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
       "choices": [
-        "32",
-        "34",
-        "30",
-        "18"
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
       ],
-      "correct_answer": "32",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
-      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "challenge"
     }
@@ -756,183 +821,225 @@
   "quiz_th": [
     {
       "question_id": "g6_middle_school_prep_q01",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 7 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
       "choices": [
-        "21",
-        "24",
-        "18",
-        "10"
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
       ],
-      "correct_answer": "21",
-      "answer": "21",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
-      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
       "difficulty": "easy",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q02",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 32 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
       "choices": [
-        "28",
-        "29",
-        "27",
-        "36"
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 28",
-      "explanation_th": "คำตอบคือ 28 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
       "difficulty": "easy",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q03",
-      "question_th": "เตรียมพร้อมสู่ ม.1: 9 + 5 = ?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: 9 + 5 = ?",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
       "choices": [
-        "14",
-        "15",
-        "13",
-        "24"
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
       ],
-      "correct_answer": "14",
-      "answer": "14",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
-      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
       "difficulty": "easy",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q04",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 10 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
       "choices": [
-        "60",
-        "66",
-        "54",
-        "16"
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
       ],
-      "correct_answer": "60",
-      "answer": "60",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 60",
-      "explanation_th": "คำตอบคือ 60 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q05",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 22 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
       "choices": [
-        "20",
-        "21",
-        "19",
-        "24"
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
       ],
-      "correct_answer": "20",
-      "answer": "20",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 20",
-      "explanation_th": "คำตอบคือ 20 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q06",
-      "question_th": "เตรียมพร้อมสู่ ม.1: 12 + 3 = ?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: 12 + 3 = ?",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
       "choices": [
-        "15",
-        "16",
-        "14",
-        "25"
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
       ],
-      "correct_answer": "15",
-      "answer": "15",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 15",
-      "explanation_th": "คำตอบคือ 15 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q07",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 13 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
       "choices": [
-        "52",
-        "56",
-        "48",
-        "17"
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
       ],
-      "correct_answer": "52",
-      "answer": "52",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 52",
-      "explanation_th": "คำตอบคือ 52 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "core"
     },
     {
       "question_id": "g6_middle_school_prep_q08",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 70 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
       "choices": [
-        "65",
-        "66",
-        "64",
-        "75"
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
       ],
-      "correct_answer": "65",
-      "answer": "65",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 65",
-      "explanation_th": "คำตอบคือ 65 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
       "skill_tag": "g6_middle_school_prep",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g6_middle_school_prep_q09",
-      "question_th": "เตรียมพร้อมสู่ ม.1: 15 + 6 = ?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: 15 + 6 = ?",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
       "choices": [
-        "21",
-        "22",
-        "20",
-        "31"
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
       ],
-      "correct_answer": "21",
-      "answer": "21",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 21",
-      "explanation_th": "คำตอบคือ 21 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "challenge"
     },
     {
       "question_id": "g6_middle_school_prep_q10",
-      "question_th": "เตรียมพร้อมสู่ ม.1: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เตรียมพร้อมสู่ ม.1: มี 16 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
       "choices": [
-        "32",
-        "34",
-        "30",
-        "18"
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
       ],
-      "correct_answer": "32",
-      "answer": "32",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
-      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
       "skill_tag": "g6_middle_school_prep",
       "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง เตรียมพร้อมสู่ ม.1 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "18 + 7 = 25",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "18 + 7 = ?",
+      "choices": [
+        "23",
+        "24",
+        "25",
+        "27"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "คำตอบคือ 25"
     }
   ]
 }

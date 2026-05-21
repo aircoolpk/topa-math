@@ -1,0 +1,312 @@
+{
+  "audit_date": "2026-05-13",
+  "audit_scope": "Beta readiness for math lesson content",
+  "content_path": "C:\\web-app\\4-craft.com\\apps\\api\\app\\content\\math",
+  "summary": {
+    "total_lessons": 44,
+    "total_unique_lessons": 43,
+    "ready_for_beta": 42,
+    "has_content_but_needs_qa": 2,
+    "empty_or_missing": 0,
+    "coming_soon_recommended": 0,
+    "misfiled_files": 1
+  },
+  "grades": {
+    "grade_1": {
+      "total_lessons": 7,
+      "ready": 5,
+      "needs_qa": 2,
+      "empty": 0,
+      "coming_soon": 0,
+      "lessons": [
+        {
+          "id": "g1_add_within_20",
+          "file": "grade_1/lessons/g1_add_within_20.json",
+          "title_th": "บวกเลขไม่เกิน 20 กับพี่อลิส",
+          "status": "READY_FOR_BETA",
+          "variants": 10,
+          "has_story": true,
+          "has_visual_blocks": true,
+          "has_mini_quiz": true,
+          "has_questions_quiz": true,
+          "notes": "Full content, all visual block types present, mini_quiz answer verified"
+        },
+        {
+          "id": "g1_compare_numbers",
+          "file": "grade_1/lessons/g1_compare_numbers.json",
+          "title_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ",
+          "status": "READY_FOR_BETA",
+          "variants": 10,
+          "has_story": true,
+          "has_visual_blocks": true,
+          "has_mini_quiz": true,
+          "has_questions_quiz": true,
+          "notes": "Full content, all visual block types present"
+        },
+        {
+          "id": "g1_counting_numbers",
+          "file": "grade_1/lessons/g1_counting_numbers.json",
+          "title_th": "นับเลขสนุกสนุก",
+          "status": "READY_FOR_BETA",
+          "variants": 10,
+          "has_story": true,
+          "has_visual_blocks": true,
+          "has_mini_quiz": true,
+          "has_questions_quiz": true,
+          "notes": "Full content"
+        },
+        {
+          "id": "g1_money_basic",
+          "file": "grade_1/lessons/g1_money_basic.json",
+          "title_th": "รู้จักเงินบาทไทย",
+          "status": "HAS_CONTENT_BUT_NEEDS_QA",
+          "variants": 10,
+          "has_story": true,
+          "has_visual_blocks": true,
+          "has_mini_quiz": true,
+          "has_questions_quiz": true,
+          "notes": "mini_quiz answer mismatches — answer field shows wrong values in several variants (e.g., v01 shows 6 but should be 5 for 1 coin of 5 baht)"
+        },
+        {
+          "id": "g1_shapes_basic",
+          "file": "grade_1/lessons/g1_shapes_basic.json",
+          "title_th": "รู้จักรูปร่างรูปทรงพื้นฐาน",
+          "status": "READY_FOR_BETA",
+          "variants": 10,
+          "has_story": true,
+          "has_visual_blocks": true,
+          "has_mini_quiz": true,
+          "has_questions_quiz": true,
+          "notes": "Full content"
+        },
+        {
+          "id": "g1_subtract_within_20",
+          "file": "grade_1/lessons/g1_subtract_within_20.json",
+          "title_th": "ลบเลขไม่เกิน 20 ง่ายๆ",
+          "status": "HAS_CONTENT_BUT_NEEDS_QA",
+          "variants": 10,
+          "has_story": true,
+          "has_visual_blocks": true,
+          "has_mini_quiz": true,
+          "has_questions_quiz": true,
+          "notes": "mini_quiz answer mismatches — explanation text does not match calculated answers in several variants"
+        },
+        {
+          "id": "g1_time_basic",
+          "file": "grade_1/lessons/g1_time_basic.json",
+          "title_th": "ดูเวลาเป็นนาฬิกาและนาที",
+          "status": "READY_FOR_BETA",
+          "variants": 10,
+          "has_story": true,
+          "has_visual_blocks": true,
+          "has_mini_quiz": true,
+          "has_questions_quiz": true,
+          "notes": "Full content"
+        }
+      ]
+    },
+    "grade_2": {
+      "total_lessons": 7,
+      "ready": 7,
+      "needs_qa": 0,
+      "empty": 0,
+      "coming_soon": 0,
+      "misfiled": ["g4_angles_geometry"],
+      "lessons": [
+        {"id": "g2_add_two_digit", "status": "READY_FOR_BETA"},
+        {"id": "g2_money_change", "status": "READY_FOR_BETA"},
+        {"id": "g2_multiplication_intro", "status": "READY_FOR_BETA"},
+        {"id": "g2_shapes_2d", "status": "READY_FOR_BETA"},
+        {"id": "g2_subtract_two_digit", "status": "READY_FOR_BETA"},
+        {"id": "g2_times_table_2_5_10", "status": "READY_FOR_BETA"},
+        {"id": "g2_time_calendar", "status": "READY_FOR_BETA"}
+      ]
+    },
+    "grade_3": {
+      "total_lessons": 9,
+      "ready": 9,
+      "needs_qa": 0,
+      "empty": 0,
+      "coming_soon": 0,
+      "lessons": [
+        {"id": "g3_area_intro", "status": "READY_FOR_BETA"},
+        {"id": "g3_division_intro", "status": "READY_FOR_BETA"},
+        {"id": "g3_fractions_intro", "status": "READY_FOR_BETA"},
+        {"id": "g3_measurement", "status": "READY_FOR_BETA"},
+        {"id": "g3_mixed_review", "status": "READY_FOR_BETA"},
+        {"id": "g3_multiplication_area_model_ep", "status": "READY_FOR_BETA"},
+        {"id": "g3_multiplication_area_model_thp", "status": "READY_FOR_BETA"},
+        {"id": "g3_multiplication_multi_digit", "status": "READY_FOR_BETA"},
+        {"id": "g3_multi_step_word_problems", "status": "READY_FOR_BETA"}
+      ]
+    },
+    "grade_4": {
+      "total_lessons": 7,
+      "ready": 7,
+      "needs_qa": 0,
+      "empty": 0,
+      "coming_soon": 0,
+      "lessons": [
+        {"id": "g4_angles_geometry", "status": "READY_FOR_BETA", "notes": "Also found misfiled in grade_2/lessons — move to grade_4/lessons"},
+        {"id": "g4_area_perimeter", "status": "READY_FOR_BETA"},
+        {"id": "g4_decimals_intro", "status": "READY_FOR_BETA"},
+        {"id": "g4_fractions", "status": "READY_FOR_BETA"},
+        {"id": "g4_large_numbers", "status": "READY_FOR_BETA"},
+        {"id": "g4_multi_digit_operations", "status": "READY_FOR_BETA"},
+        {"id": "g4_word_problems", "status": "READY_FOR_BETA"}
+      ]
+    },
+    "grade_5": {
+      "total_lessons": 7,
+      "ready": 7,
+      "needs_qa": 0,
+      "empty": 0,
+      "coming_soon": 0,
+      "lessons": [
+        {"id": "g5_data_graphs", "status": "READY_FOR_BETA"},
+        {"id": "g5_decimals", "status": "READY_FOR_BETA"},
+        {"id": "g5_fraction_operations", "status": "READY_FOR_BETA"},
+        {"id": "g5_multi_step_word_problems", "status": "READY_FOR_BETA"},
+        {"id": "g5_percent_intro", "status": "READY_FOR_BETA"},
+        {"id": "g5_ratio_intro", "status": "READY_FOR_BETA"},
+        {"id": "g5_volume_area", "status": "READY_FOR_BETA"}
+      ]
+    },
+    "grade_6": {
+      "total_lessons": 7,
+      "ready": 7,
+      "needs_qa": 0,
+      "empty": 0,
+      "coming_soon": 0,
+      "lessons": [
+        {"id": "g6_equations_intro", "status": "READY_FOR_BETA"},
+        {"id": "g6_fraction_decimal_percent", "status": "READY_FOR_BETA"},
+        {"id": "g6_gcf_lcm", "status": "READY_FOR_BETA"},
+        {"id": "g6_geometry", "status": "READY_FOR_BETA"},
+        {"id": "g6_middle_school_prep", "status": "READY_FOR_BETA"},
+        {"id": "g6_ratio_proportion", "status": "READY_FOR_BETA"},
+        {"id": "g6_volume", "status": "READY_FOR_BETA"}
+      ]
+    }
+  },
+  "beta_visibility": {
+    "recommended_visible": [
+      "g1_add_within_20", "g1_compare_numbers", "g1_counting_numbers", "g1_shapes_basic", "g1_time_basic",
+      "g2_add_two_digit", "g2_money_change", "g2_multiplication_intro", "g2_shapes_2d", "g2_subtract_two_digit", "g2_times_table_2_5_10", "g2_time_calendar",
+      "g3_area_intro", "g3_division_intro", "g3_fractions_intro", "g3_measurement", "g3_mixed_review", "g3_multiplication_area_model_ep", "g3_multiplication_area_model_thp", "g3_multiplication_multi_digit", "g3_multi_step_word_problems",
+      "g4_angles_geometry", "g4_area_perimeter", "g4_decimals_intro", "g4_fractions", "g4_large_numbers", "g4_multi_digit_operations", "g4_word_problems",
+      "g5_data_graphs", "g5_decimals", "g5_fraction_operations", "g5_multi_step_word_problems", "g5_percent_intro", "g5_ratio_intro", "g5_volume_area",
+      "g6_equations_intro", "g6_fraction_decimal_percent", "g6_gcf_lcm", "g6_geometry", "g6_middle_school_prep", "g6_ratio_proportion", "g6_volume"
+    ],
+    "recommended_hidden_pending_qa": [
+      "g1_money_basic",
+      "g1_subtract_within_20"
+    ],
+    "recommended_coming_soon": []
+  },
+  "top_10_content_fixes": [
+    {
+      "priority": 1,
+      "severity": "HIGH",
+      "lesson": "g1_money_basic",
+      "issue": "mini_quiz answer field shows incorrect numeric values in variants v01-v10",
+      "example": "v01: 1 coin of 5 baht shows answer '6' instead of '5'",
+      "action": "Align answer, correct_answer, and explanation fields with actual question content"
+    },
+    {
+      "priority": 2,
+      "severity": "HIGH",
+      "lesson": "g1_subtract_within_20",
+      "issue": "mini_quiz explanation text does not match calculated answers in several variants",
+      "example": "v01: subtract question shows explanation text inconsistent with math result",
+      "action": "Verify all mini_quiz answers against actual math and fix explanation text"
+    },
+    {
+      "priority": 3,
+      "severity": "LOW",
+      "lesson": "g4_angles_geometry",
+      "issue": "File is in grade_2/lessons but is a Grade 4 lesson",
+      "action": "Move file to grade_4/lessons directory"
+    },
+    {
+      "priority": 4,
+      "severity": "MEDIUM",
+      "lesson": "g1_money_basic",
+      "issue": "mini_quiz explanation fields contain only answer text instead of instructive explanation",
+      "action": "Expand explanations to show calculation steps"
+    },
+    {
+      "priority": 5,
+      "severity": "MEDIUM",
+      "lesson": "g1_subtract_within_20",
+      "issue": "mini_quiz explanation fields should show working for subtraction",
+      "action": "Expand explanations to show countdown or subtraction working"
+    },
+    {
+      "priority": 6,
+      "severity": "MEDIUM",
+      "lesson": "all G1 lessons",
+      "issue": "Mini_quiz explanation format inconsistent with G2-G6 standards",
+      "action": "Standardize mini_quiz explanation to show step-by-step calculation"
+    },
+    {
+      "priority": 7,
+      "severity": "LOW",
+      "lesson": "all grades",
+      "issue": "JSON schema consistency for lesson_variants block types",
+      "action": "Audit visual_blocks type consistency across all grades"
+    },
+    {
+      "priority": 8,
+      "severity": "LOW",
+      "lesson": "g1_money_basic",
+      "issue": "worked_examples may contain incorrect calculations",
+      "example": "2 baht x 3 = 6 + 1 baht x 2 = 2 = 8 baht — but some question contexts may not reflect this",
+      "action": "Verify all worked_examples calculations"
+    },
+    {
+      "priority": 9,
+      "severity": "LOW",
+      "lesson": "g2 lessons",
+      "issue": "Some g2 mini_quiz choices arrays may have fewer than 4 items",
+      "action": "Audit all g2 lesson quiz choices arrays"
+    },
+    {
+      "priority": 10,
+      "severity": "LOW",
+      "lesson": "all grades",
+      "issue": "quiz_th question_ids may duplicate across grade levels",
+      "action": "Audit question_id uniqueness across all grades"
+    }
+  ],
+  "issues": [
+    {
+      "id": "Issue #1",
+      "severity": "HIGH",
+      "file": "grade_1/lessons/g1_money_basic.json",
+      "description": "mini_quiz answer mismatches in variants v01-v10",
+      "fix_action": "Align answer, correct_answer, explanation fields"
+    },
+    {
+      "id": "Issue #2",
+      "severity": "HIGH",
+      "file": "grade_1/lessons/g1_subtract_within_20.json",
+      "description": "mini_quiz explanation/answer mismatches in variants v01-v10",
+      "fix_action": "Verify math and correct explanation text"
+    },
+    {
+      "id": "Issue #3",
+      "severity": "LOW",
+      "file": "grade_2/lessons/g4_angles_geometry.json",
+      "description": "Grade 4 lesson misfiled in grade_2 directory",
+      "fix_action": "Move to grade_4/lessons"
+    },
+    {
+      "id": "Issue #4",
+      "severity": "MEDIUM",
+      "file": "grade_1/lessons/*.json",
+      "description": "Mini_quiz explanation fields lack instructive detail",
+      "fix_action": "Expand explanations to show calculation steps"
+    }
+  ]
+}

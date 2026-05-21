@@ -44,8 +44,8 @@ export async function getTokenPayload(token: string): Promise<TokenPayload | nul
 // ─── Auth API ─────────────────────────────────────────────────────────────────
 
 export const authApi = {
-  async register(email: string, password: string) {
-    const res = await apiClient.post('/auth/register', { email, password })
+  async register(email: string, password: string, referralToken?: string | null) {
+    const res = await apiClient.post('/auth/register', { email, password, referral_token: referralToken || undefined })
     return res.data as { access_token: string; token_type: string }
   },
 

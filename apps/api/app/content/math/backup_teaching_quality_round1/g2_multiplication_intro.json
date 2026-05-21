@@ -1,0 +1,2145 @@
+﻿{
+    "lesson_id":  "g2_multiplication_intro",
+    "id":  "g2_multiplication_intro",
+    "grade_level":  2,
+    "title_th":  "การคูณคือการบวกซ้ำๆ",
+    "objective_th":  "นักเรียนสามารถเข้าใจความหมายของการคูณในฐานะการบวกจำนวนเท่าๆ กันซ้ำๆ และใช้เครื่องหมาย × ได้",
+    "story_intro_th":  "พี่อลิสมีกล่องลูกชิ้น 4 กล่อง กล่องละ 3 ลูก รวมพี่อลิสมีลูกชิ้นกี่ลูก? 🍡",
+    "explanation_steps":  [
+                              "การคูณคือการบวกจำนวนเท่าๆ กันหลายครั้ง เช่น 4 × 3 หมายถึง 3 + 3 + 3 + 3",
+                              "เครื่องหมาย × อ่านว่า คูณ 4 × 3 อ่านว่า สี่คูณสาม หรือ สี่เท่าของสาม",
+                              "ตัวเลขตัวหน้าคือจำนวนกลุ่ม ตัวเลขตัวหลังคือจำนวนสิ่งของในแต่ละกลุ่ม",
+                              "เช่น 4 × 3 หมายถึง มี 4 กลุ่ม กลุ่มละ 3 ได้แก่ 3 + 3 + 3 + 3 = 12",
+                              "สลับที่การคูณได้ เช่น 4 × 3 = 3 × 4 = 12"
+                          ],
+    "worked_examples":  [
+                            {
+                                "title_th":  "คูณลูกปัด",
+                                "question_th":  "มีถุงลูกปัด 5 ใบ ใบละ 4 ลูก รวมมีลูกปัดกี่ลูก?",
+                                "solution_th":  "5 × 4 = 20 ลูกปัด ✅"
+                            },
+                            {
+                                "title_th":  "คูณดินสอ",
+                                "question_th":  "แม่ซื้อดินสอ 6 กล่อง กล่องละ 2 แท่ง รวมได้ดินสอกี่แท่ง?",
+                                "solution_th":  "6 × 2 = 12 แท่ง ✅"
+                            },
+                            {
+                                "title_th":  "คูณขนม",
+                                "question_th":  "มีเพื่อน 4 คน แต่ละคนได้ขนม 5 ชิ้น รวมขนมกี่ชิ้น?",
+                                "solution_th":  "4 × 5 = 20 ชิ้น ✅"
+                            }
+                        ],
+    "common_mistakes":  [
+                            "สับสนระหว่าง 4 × 3 กับ 4 + 3 ว่าอันไหนมากกว่า",
+                            "ไม่เข้าใจว่าตัวเลขตัวหน้าเป็นจำนวนกลุ่ม ตัวหลังเป็นจำนวนในกลุ่ม",
+                            "คูณผิดโดยลืมว่าต้องบวกซ้ำหลายครั้ง เช่น คิดว่า 4 × 3 = 7"
+                        ],
+    "hints":  [
+                  "จำได้ง่ายๆ การคูณคือการบวกซ้ำ ถามว่า มีกี่กลุ่ม? กลุ่มละเท่าไหร่? รวมกันเท่าไหร่?",
+                  "วาดภาพช่วยได้ เช่น วาดกล่อง 4 ใบ ใส่ลูกบอลใบละ 3 ลูก",
+                  "สลับที่ได้เสมอ ถ้างงว่า 4 × 3 ให้ลองคิดว่า 3 × 4 ก็ได้คำตอบเดียวกัน"
+              ],
+    "estimated_minutes":  10,
+    "has_test":  true,
+    "topic_code":  "g2_multiplication_intro",
+    "skill_code":  "g2_multiplication_intro",
+    "lesson_variants":  [
+                            {
+                                "variant_id":  "v01",
+                                "variant_title_th":  "📖 🏫 โรงเรียน",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+                                "visual_blocks":  [
+                                                      {
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "โรงเรียนมีกล่องดินสอ 4 กล่อง กล่องละ 3 แท่ง รวมดินสอกี่แท่ง?"
+                                                                   },
+                                                          "type":  "story_intro"
+                                                      },
+                                                      {
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "label_th":  "4 แถว แถวละ 3",
+                                                                       "cols":  3,
+                                                                       "rows":  4,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ]
+                                                                   },
+                                                          "type":  "array_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "4 กลุ่ม กลุ่มละ 3"
+                                                                   },
+                                                          "type":  "grouping_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "4 × 3 = 12"
+                                                                   },
+                                                          "type":  "number_sentence"
+                                                      },
+                                                      {
+                                                          "explanation_th":  "3 × 4 = 12 เพราะ 4+4+4 = 12 หรือ 3+3+3+3 = 12 สลับที่ได้คำตอบเดียวกัน",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "choices":  [
+                                                                                                             "10",
+                                                                                                             "12",
+                                                                                                             "14",
+                                                                                                             "8"
+                                                                                                         ],
+                                                                                             "correct_answer":  "12",
+                                                                                             "text_th":  "3 × 4 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "type":  "mini_quiz"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v02",
+                                "variant_title_th":  "📖 🍎 ผลไม้",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+                                "visual_blocks":  [
+                                                      {
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "มีถุงมังคุด 5 ถุง ถุงละ 4 ผล รวมมังคุดกี่ผล?"
+                                                                   },
+                                                          "type":  "story_intro"
+                                                      },
+                                                      {
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "label_th":  "5 แถว แถวละ 4",
+                                                                       "cols":  4,
+                                                                       "rows":  5,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ]
+                                                                   },
+                                                          "type":  "array_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "5 กลุ่ม กลุ่มละ 4"
+                                                                   },
+                                                          "type":  "grouping_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "5 × 4 = 20"
+                                                                   },
+                                                          "type":  "number_sentence"
+                                                      },
+                                                      {
+                                                          "explanation_th":  "4 × 5 = 20 เพราะ 5+5+5+5 = 20 หรือ 4+4+4+4+4 = 20",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "choices":  [
+                                                                                                             "18",
+                                                                                                             "20",
+                                                                                                             "22",
+                                                                                                             "16"
+                                                                                                         ],
+                                                                                             "correct_answer":  "20",
+                                                                                             "text_th":  "4 × 5 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "type":  "mini_quiz"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v03",
+                                "variant_title_th":  "📖 🧸 ของเล่น",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+                                "visual_blocks":  [
+                                                      {
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "มีกล่องของเล่น 3 กล่อง กล่องละ 6 ชิ้น รวมของเล่นกี่ชิ้น?"
+                                                                   },
+                                                          "type":  "story_intro"
+                                                      },
+                                                      {
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "label_th":  "3 แถว แถวละ 6",
+                                                                       "cols":  6,
+                                                                       "rows":  3,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ]
+                                                                   },
+                                                          "type":  "array_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "3 กลุ่ม กลุ่มละ 6"
+                                                                   },
+                                                          "type":  "grouping_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "3 × 6 = 18"
+                                                                   },
+                                                          "type":  "number_sentence"
+                                                      },
+                                                      {
+                                                          "explanation_th":  "6 × 3 = 18 เพราะ 3+3+3+3+3+3 = 18 หรือ 6+6+6 = 18",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "choices":  [
+                                                                                                             "16",
+                                                                                                             "18",
+                                                                                                             "20",
+                                                                                                             "14"
+                                                                                                         ],
+                                                                                             "correct_answer":  "18",
+                                                                                             "text_th":  "6 × 3 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "type":  "mini_quiz"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v04",
+                                "variant_title_th":  "📖 🏪 ตลาด",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+                                "visual_blocks":  [
+                                                      {
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "มีแถวเก้าอี้ 4 แถว แถวละ 5 ตัว รวมเก้าอี้กี่ตัว?"
+                                                                   },
+                                                          "type":  "story_intro"
+                                                      },
+                                                      {
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "label_th":  "4 แถว แถวละ 5",
+                                                                       "cols":  5,
+                                                                       "rows":  4,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ]
+                                                                   },
+                                                          "type":  "array_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "4 กลุ่ม กลุ่มละ 5"
+                                                                   },
+                                                          "type":  "grouping_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "4 × 5 = 20"
+                                                                   },
+                                                          "type":  "number_sentence"
+                                                      },
+                                                      {
+                                                          "explanation_th":  "5 × 4 = 20 เพราะ 4+4+4+4+4 = 20",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "choices":  [
+                                                                                                             "18",
+                                                                                                             "20",
+                                                                                                             "22",
+                                                                                                             "16"
+                                                                                                         ],
+                                                                                             "correct_answer":  "20",
+                                                                                             "text_th":  "5 × 4 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "type":  "mini_quiz"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v05",
+                                "variant_title_th":  "📖 🐕 สัตว์เลี้ยง",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+                                "visual_blocks":  [
+                                                      {
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "มีถุงลูกชิ้น 6 ถุง ถุงละ 2 ลูก รวมลูกชิ้นกี่ลูก?"
+                                                                   },
+                                                          "type":  "story_intro"
+                                                      },
+                                                      {
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "label_th":  "6 แถว แถวละ 2",
+                                                                       "cols":  2,
+                                                                       "rows":  6,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ]
+                                                                   },
+                                                          "type":  "array_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "6 กลุ่ม กลุ่มละ 2"
+                                                                   },
+                                                          "type":  "grouping_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "6 × 2 = 12"
+                                                                   },
+                                                          "type":  "number_sentence"
+                                                      },
+                                                      {
+                                                          "explanation_th":  "2 × 6 = 12 เพราะ 6+6 = 12",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "choices":  [
+                                                                                                             "10",
+                                                                                                             "12",
+                                                                                                             "14",
+                                                                                                             "8"
+                                                                                                         ],
+                                                                                             "correct_answer":  "12",
+                                                                                             "text_th":  "2 × 6 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "type":  "mini_quiz"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v06",
+                                "variant_title_th":  "📖 🌻 สวน",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับสวน",
+                                "visual_blocks":  [
+                                                      {
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "มีแถวโต๊ะ 5 แถว แถวละ 3 ตัว รวมโต๊ะกี่ตัว?"
+                                                                   },
+                                                          "type":  "story_intro"
+                                                      },
+                                                      {
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "label_th":  "5 แถว แถวละ 3",
+                                                                       "cols":  3,
+                                                                       "rows":  5,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ]
+                                                                   },
+                                                          "type":  "array_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "5 กลุ่ม กลุ่มละ 3"
+                                                                   },
+                                                          "type":  "grouping_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "5 × 3 = 15"
+                                                                   },
+                                                          "type":  "number_sentence"
+                                                      },
+                                                      {
+                                                          "explanation_th":  "3 × 5 = 15 เพราะ 5+5+5 = 15",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "choices":  [
+                                                                                                             "12",
+                                                                                                             "15",
+                                                                                                             "18",
+                                                                                                             "10"
+                                                                                                         ],
+                                                                                             "correct_answer":  "15",
+                                                                                             "text_th":  "3 × 5 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "type":  "mini_quiz"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v07",
+                                "variant_title_th":  "📖 🎨 วาดรูป",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+                                "visual_blocks":  [
+                                                      {
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "มีแถวต้นไม้ 7 แถว แถวละ 2 ต้น รวมต้นไม้กี่ต้น?"
+                                                                   },
+                                                          "type":  "story_intro"
+                                                      },
+                                                      {
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "label_th":  "7 แถว แถวละ 2",
+                                                                       "cols":  2,
+                                                                       "rows":  7,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ]
+                                                                   },
+                                                          "type":  "array_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "7 กลุ่ม กลุ่มละ 2"
+                                                                   },
+                                                          "type":  "grouping_model"
+                                                      },
+                                                      {
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "7 × 2 = 14"
+                                                                   },
+                                                          "type":  "number_sentence"
+                                                      },
+                                                      {
+                                                          "explanation_th":  "2 × 7 = 14 เพราะ 7+7 = 14",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "choices":  [
+                                                                                                             "12",
+                                                                                                             "14",
+                                                                                                             "16",
+                                                                                                             "10"
+                                                                                                         ],
+                                                                                             "correct_answer":  "14",
+                                                                                             "text_th":  "2 × 7 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "type":  "mini_quiz"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v08",
+                                "variant_title_th":  "📖 📚 ห้องเรียน",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+                                "visual_blocks":  [
+                                                      {
+                                                          "type":  "story_intro",
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "📚 มีชั้นหนังสือ 3 ชั้น ชั้นละ 8 เล่ม รวมหนังสือกี่เล่ม?"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "emoji_counter",
+                                                          "title_th":  "👀 มองภาพก่อน",
+                                                          "data":  {
+                                                                       "items":  [
+                                                                                     {
+                                                                                         "emoji":  "📦",
+                                                                                         "count":  3
+                                                                                     },
+                                                                                     {
+                                                                                         "emoji":  "×",
+                                                                                         "count":  1
+                                                                                     },
+                                                                                     {
+                                                                                         "emoji":  "🎁",
+                                                                                         "count":  8
+                                                                                     }
+                                                                                 ]
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "array_model",
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "rows":  3,
+                                                                       "cols":  8,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ],
+                                                                       "label_th":  "3 แถว แถวละ 8"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "grouping_model",
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "3 กลุ่ม กลุ่มละ 8"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "number_sentence",
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "3 × 8 = ?"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "mini_quiz",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "text_th":  "3 × 4 = ?",
+                                                                                             "choices":  [
+                                                                                                             "4",
+                                                                                                             "2",
+                                                                                                             "3",
+                                                                                                             "1"
+                                                                                                         ],
+                                                                                             "answer":  "3",
+                                                                                             "correct_answer":  "3"
+                                                                                         },
+                                                                                         {
+                                                                                             "text_th":  "5 × 6 = ?"
+                                                                                         },
+                                                                                         {
+                                                                                             "text_th":  "2 × 7 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "explanation_th":  "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v09",
+                                "variant_title_th":  "📖 🎮 สนุกกับเพื่อน",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+                                "visual_blocks":  [
+                                                      {
+                                                          "type":  "story_intro",
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "🎮 เกมมีด่าน 5 ด่าน ด่านละ 4 ศัตรู รวมศัตรูกี่ตัว?"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "emoji_counter",
+                                                          "title_th":  "👀 มองภาพก่อน",
+                                                          "data":  {
+                                                                       "items":  [
+                                                                                     {
+                                                                                         "emoji":  "📦",
+                                                                                         "count":  5
+                                                                                     },
+                                                                                     {
+                                                                                         "emoji":  "×",
+                                                                                         "count":  1
+                                                                                     },
+                                                                                     {
+                                                                                         "emoji":  "🎁",
+                                                                                         "count":  4
+                                                                                     }
+                                                                                 ]
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "array_model",
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "rows":  5,
+                                                                       "cols":  4,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ],
+                                                                       "label_th":  "5 แถว แถวละ 4"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "grouping_model",
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "5 กลุ่ม กลุ่มละ 4"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "number_sentence",
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "5 × 4 = ?"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "mini_quiz",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "text_th":  "3 × 4 = ?",
+                                                                                             "choices":  [
+                                                                                                             "4",
+                                                                                                             "2",
+                                                                                                             "3",
+                                                                                                             "1"
+                                                                                                         ],
+                                                                                             "answer":  "3",
+                                                                                             "correct_answer":  "3"
+                                                                                         },
+                                                                                         {
+                                                                                             "text_th":  "5 × 6 = ?"
+                                                                                         },
+                                                                                         {
+                                                                                             "text_th":  "2 × 7 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "explanation_th":  "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "v10",
+                                "variant_title_th":  "📖 🎉 งานเทศกาล",
+                                "story_theme_th":  "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+                                "visual_blocks":  [
+                                                      {
+                                                          "type":  "story_intro",
+                                                          "title_th":  "🐣 เรื่องราวชวนคิด",
+                                                          "data":  {
+                                                                       "text_th":  "🎉 งานเทศกาลมีโต๊ะ 4 โต๊ะ โต๊ะละ 6 จาน รวมจานกี่ใบ?"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "emoji_counter",
+                                                          "title_th":  "👀 มองภาพก่อน",
+                                                          "data":  {
+                                                                       "items":  [
+                                                                                     {
+                                                                                         "emoji":  "📦",
+                                                                                         "count":  4
+                                                                                     },
+                                                                                     {
+                                                                                         "emoji":  "×",
+                                                                                         "count":  1
+                                                                                     },
+                                                                                     {
+                                                                                         "emoji":  "🎁",
+                                                                                         "count":  6
+                                                                                     }
+                                                                                 ]
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "array_model",
+                                                          "title_th":  "📊 แผนภาพแถว",
+                                                          "data":  {
+                                                                       "rows":  4,
+                                                                       "cols":  6,
+                                                                       "cells":  [
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ],
+                                                                                     [
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         },
+                                                                                         {
+                                                                                             "state":  "filled"
+                                                                                         }
+                                                                                     ]
+                                                                                 ],
+                                                                       "label_th":  "4 แถว แถวละ 6"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "grouping_model",
+                                                          "title_th":  "🔄 จัดกลุ่ม",
+                                                          "data":  {
+                                                                       "groups":  [
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      },
+                                                                                      {
+                                                                                          "items":  [
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state":  "filled"
+                                                                                                        }
+                                                                                                    ]
+                                                                                      }
+                                                                                  ],
+                                                                       "total_th":  "4 กลุ่ม กลุ่มละ 6"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "number_sentence",
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "4 × 6 = ?"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "mini_quiz",
+                                                          "title_th":  "🎯 ลองทำดู",
+                                                          "data":  {
+                                                                       "questions":  [
+                                                                                         {
+                                                                                             "text_th":  "3 × 4 = ?",
+                                                                                             "choices":  [
+                                                                                                             "4",
+                                                                                                             "2",
+                                                                                                             "3",
+                                                                                                             "1"
+                                                                                                         ],
+                                                                                             "answer":  "3",
+                                                                                             "correct_answer":  "3"
+                                                                                         },
+                                                                                         {
+                                                                                             "text_th":  "5 × 6 = ?"
+                                                                                         },
+                                                                                         {
+                                                                                             "text_th":  "2 × 7 = ?"
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                                          "explanation_th":  "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+                                                      }
+                                                  ]
+                            },
+                            {
+                                "variant_id":  "ep_v01",
+                                "variant_title_en":  "School Theme",
+                                "story_theme_en":  "School",
+                                "visual_blocks":  [
+                                                      {
+                                                          "type":  "story_intro",
+                                                          "title":  "📖 Story Time",
+                                                          "content":  ""
+                                                      },
+                                                      {
+                                                          "type":  "number_sentence",
+                                                          "title_th":  "✍️ เขียนเป็นประโยคคณิต",
+                                                          "data":  {
+                                                                       "equation":  "4 × 3 = ?"
+                                                                   }
+                                                      },
+                                                      {
+                                                          "type":  "mini_quiz",
+                                                          "title":  "🎯 Try It",
+                                                          "question":  "3 × 4 = ?",
+                                                          "choices":  [
+                                                                          "4",
+                                                                          "2",
+                                                                          "3",
+                                                                          "1"
+                                                                      ],
+                                                          "answer":  "3",
+                                                          "correct_answer":  "3",
+                                                          "explanation":  "",
+                                                          "explanation_th":  "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+                                                      }
+                                                  ]
+                            }
+                        ],
+    "preview_title_th":  "การคูณเริ่มต้น",
+    "preview_subtitle_th":  "เรียนรู้การคูณและการหาร",
+    "cover_theme":  "multiplication_intro",
+    "cover_emoji":  "✖️",
+    "cover_color":  "blue",
+    "access_type_hint":  "free",
+    "status":  "published",
+    "quality_required":  true,
+    "content_schema_version":  "2.0",
+    "program_type":  "THP",
+    "subtitle_th":  "เรียนรู้การคูณและการหาร",
+    "learning_objective_th":  "นักเรียนสามารถเข้าใจความหมายของการคูณในฐานะการบวกจำนวนเท่าๆ กันซ้ำๆ และใช้เครื่องหมาย × ได้",
+    "lesson_intro_th":  "พี่อลิสมีกล่องลูกชิ้น 4 กล่อง กล่องละ 3 ลูก รวมพี่อลิสมีลูกชิ้นกี่ลูก? 🍡",
+    "concept_explanation_th":  "การคูณคือการบวกจำนวนเท่าๆ กันหลายครั้ง เช่น 4 × 3 หมายถึง 3 + 3 + 3 + 3 เครื่องหมาย × อ่านว่า คูณ 4 × 3 อ่านว่า สี่คูณสาม หรือ สี่เท่าของสาม ตัวเลขตัวหน้าคือจำนวนกลุ่ม ตัวเลขตัวหลังคือจำนวนสิ่งของในแต่ละกลุ่ม เช่น 4 × 3 หมายถึง มี 4 กลุ่ม กลุ่มละ 3 ได้แก่ 3 + 3 + 3 + 3 = 12 สลับที่การคูณได้ เช่น 4 × 3 = 3 × 4 = 12",
+    "singapore_math_model":  {
+                                 "type":  "area_model",
+                                 "model_type":  "area_model",
+                                 "description_th":  "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+                             },
+    "visual_model_prompt_th":  "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+    "diagram_data":  {
+                         "type":  "area_model",
+                         "rows":  2,
+                         "columns":  5,
+                         "total":  10,
+                         "label_th":  "แผนภาพพื้นที่แบบช่อง"
+                     },
+    "step_by_step_th":  [
+                            "อ่านโจทย์ของบท การคูณคือการบวกซ้ำๆ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+                            "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+                            "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+                            "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+                            "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+                        ],
+    "worked_examples_th":  [
+                               {
+                                   "title_th":  "คูณลูกปัด",
+                                   "question_th":  "มีถุงลูกปัด 5 ใบ ใบละ 4 ลูก รวมมีลูกปัดกี่ลูก?",
+                                   "solution_th":  "5 × 4 = 20 ลูกปัด ✅"
+                               },
+                               {
+                                   "title_th":  "คูณดินสอ",
+                                   "question_th":  "แม่ซื้อดินสอ 6 กล่อง กล่องละ 2 แท่ง รวมได้ดินสอกี่แท่ง?",
+                                   "solution_th":  "6 × 2 = 12 แท่ง ✅"
+                               },
+                               {
+                                   "title_th":  "คูณขนม",
+                                   "question_th":  "มีเพื่อน 4 คน แต่ละคนได้ขนม 5 ชิ้น รวมขนมกี่ชิ้น?",
+                                   "solution_th":  "4 × 5 = 20 ชิ้น ✅"
+                               }
+                           ],
+    "common_mistakes_th":  [
+                               "สับสนระหว่าง 4 × 3 กับ 4 + 3 ว่าอันไหนมากกว่า",
+                               "ไม่เข้าใจว่าตัวเลขตัวหน้าเป็นจำนวนกลุ่ม ตัวหลังเป็นจำนวนในกลุ่ม",
+                               "คูณผิดโดยลืมว่าต้องบวกซ้ำหลายครั้ง เช่น คิดว่า 4 × 3 = 7"
+                           ],
+    "questions":  [
+                      {
+                          "question_id":  "g2_multiplication_intro_q01",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+                          "choices":  [
+                                          "9",
+                                          "12",
+                                          "6",
+                                          "14"
+                                      ],
+                          "correct_answer":  "9",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 9",
+                          "explanation_th":  "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "easy",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "core"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q02",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+                          "choices":  [
+                                          "12",
+                                          "13",
+                                          "11",
+                                          "20"
+                                      ],
+                          "correct_answer":  "12",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 12",
+                          "explanation_th":  "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "easy",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "core"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q03",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: 5 + 5 = ?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: 5 + 5 = ?",
+                          "choices":  [
+                                          "10",
+                                          "11",
+                                          "9",
+                                          "20"
+                                      ],
+                          "correct_answer":  "10",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 10",
+                          "explanation_th":  "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "easy",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "core"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q04",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+                          "choices":  [
+                                          "36",
+                                          "42",
+                                          "30",
+                                          "12"
+                                      ],
+                          "correct_answer":  "36",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 36",
+                          "explanation_th":  "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "easy",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "core"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q05",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+                          "choices":  [
+                                          "12",
+                                          "13",
+                                          "11",
+                                          "16"
+                                      ],
+                          "correct_answer":  "12",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 12",
+                          "explanation_th":  "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "easy",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "core"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q06",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: 8 + 3 = ?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: 8 + 3 = ?",
+                          "choices":  [
+                                          "11",
+                                          "12",
+                                          "10",
+                                          "21"
+                                      ],
+                          "correct_answer":  "11",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 11",
+                          "explanation_th":  "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "easy",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "core"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q07",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+                          "choices":  [
+                                          "36",
+                                          "40",
+                                          "32",
+                                          "13"
+                                      ],
+                          "correct_answer":  "36",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 36",
+                          "explanation_th":  "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "easy",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "core"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q08",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+                          "choices":  [
+                                          "45",
+                                          "46",
+                                          "44",
+                                          "55"
+                                      ],
+                          "correct_answer":  "45",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 45",
+                          "explanation_th":  "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "medium",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "core"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q09",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: 11 + 6 = ?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: 11 + 6 = ?",
+                          "choices":  [
+                                          "17",
+                                          "18",
+                                          "16",
+                                          "27"
+                                      ],
+                          "correct_answer":  "17",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 17",
+                          "explanation_th":  "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "medium",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "challenge"
+                      },
+                      {
+                          "question_id":  "g2_multiplication_intro_q10",
+                          "question_th":  "การคูณคือการบวกซ้ำๆ: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+                          "question_text":  "การคูณคือการบวกซ้ำๆ: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+                          "choices":  [
+                                          "24",
+                                          "26",
+                                          "22",
+                                          "14"
+                                      ],
+                          "correct_answer":  "24",
+                          "explanation":  "คิดทีละขั้นจะได้คำตอบ 24",
+                          "explanation_th":  "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                          "difficulty":  "medium",
+                          "skill_tag":  "g2_multiplication_intro",
+                          "question_type":  "challenge"
+                      }
+                  ],
+    "quiz_th":  [
+                    {
+                        "question_id":  "g2_multiplication_intro_q01",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+                        "choices":  [
+                                        "9",
+                                        "12",
+                                        "6",
+                                        "14"
+                                    ],
+                        "correct_answer":  "9",
+                        "answer":  "9",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 9",
+                        "explanation_th":  "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "easy",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "core"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q02",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+                        "choices":  [
+                                        "12",
+                                        "13",
+                                        "11",
+                                        "20"
+                                    ],
+                        "correct_answer":  "12",
+                        "answer":  "12",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 12",
+                        "explanation_th":  "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "easy",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "core"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q03",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: 5 + 5 = ?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: 5 + 5 = ?",
+                        "choices":  [
+                                        "10",
+                                        "11",
+                                        "9",
+                                        "20"
+                                    ],
+                        "correct_answer":  "10",
+                        "answer":  "10",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 10",
+                        "explanation_th":  "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "easy",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "core"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q04",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+                        "choices":  [
+                                        "36",
+                                        "42",
+                                        "30",
+                                        "12"
+                                    ],
+                        "correct_answer":  "36",
+                        "answer":  "36",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 36",
+                        "explanation_th":  "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "easy",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "core"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q05",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+                        "choices":  [
+                                        "12",
+                                        "13",
+                                        "11",
+                                        "16"
+                                    ],
+                        "correct_answer":  "12",
+                        "answer":  "12",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 12",
+                        "explanation_th":  "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "easy",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "core"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q06",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: 8 + 3 = ?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: 8 + 3 = ?",
+                        "choices":  [
+                                        "11",
+                                        "12",
+                                        "10",
+                                        "21"
+                                    ],
+                        "correct_answer":  "11",
+                        "answer":  "11",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 11",
+                        "explanation_th":  "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "easy",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "core"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q07",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+                        "choices":  [
+                                        "36",
+                                        "40",
+                                        "32",
+                                        "13"
+                                    ],
+                        "correct_answer":  "36",
+                        "answer":  "36",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 36",
+                        "explanation_th":  "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "easy",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "core"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q08",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+                        "choices":  [
+                                        "45",
+                                        "46",
+                                        "44",
+                                        "55"
+                                    ],
+                        "correct_answer":  "45",
+                        "answer":  "45",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 45",
+                        "explanation_th":  "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "medium",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "core"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q09",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: 11 + 6 = ?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: 11 + 6 = ?",
+                        "choices":  [
+                                        "17",
+                                        "18",
+                                        "16",
+                                        "27"
+                                    ],
+                        "correct_answer":  "17",
+                        "answer":  "17",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 17",
+                        "explanation_th":  "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "medium",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "challenge"
+                    },
+                    {
+                        "question_id":  "g2_multiplication_intro_q10",
+                        "question_th":  "การคูณคือการบวกซ้ำๆ: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+                        "question_text":  "การคูณคือการบวกซ้ำๆ: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+                        "choices":  [
+                                        "24",
+                                        "26",
+                                        "22",
+                                        "14"
+                                    ],
+                        "correct_answer":  "24",
+                        "answer":  "24",
+                        "explanation":  "คิดทีละขั้นจะได้คำตอบ 24",
+                        "explanation_th":  "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+                        "difficulty":  "medium",
+                        "skill_tag":  "g2_multiplication_intro",
+                        "question_type":  "challenge"
+                    }
+                ]
+}

@@ -1,0 +1,1499 @@
+{
+  "lesson_id": "g4_word_problems_ep",
+  "id": "g4_word_problems_ep",
+  "grade_level": 4,
+  "title_th": "โจทย์ปัญหาระดับ ป.4",
+  "objective_th": "นักเรียนสามารถวิเคราะห์โจทย์ปัญหาที่ซับซ้อนขึ้นและแก้ได้ถูกต้อง",
+  "story_intro_th": "ร้านขายของมีสินค้า 1,250 ชิ้น ขายไปวันละ 85 ชิ้น หลังจาก 7 วัน ร้านเหลือสินค้ากี่ชิ้น? 📦",
+  "explanation_steps": [
+    "อ่านโจทย์ให้เข้าใจ ขีดเส้นใต้ข้อมูลสำคัญและสิ่งที่ถาม",
+    "วางแผนว่าจะใช้การบวก ลบ คูณ หาร หรือผสมผสาน",
+    "ขั้นที่ 1: หาจำนวนสินค้าที่ขายไป 85 × 7 = 595 ชิ้น",
+    "ขั้นที่ 2: หาสินค้าที่เหลือ 1,250 - 595 = 655 ชิ้น",
+    "เขียนสมการและตรวจคำตอบว่าสมเหตุสมผล"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "โจทย์บวกลบ",
+      "question_th": "นักเรียนมีเงิน 3,500 บาท ซื้อจักรยาน 2,750 บาท แล้วแม่ให้อีก 1,000 บาท ตอนนี้มีเงินเท่าไหร่?",
+      "solution_th": "3,500 - 2,750 = 750 / 750 + 1,000 = 1,750 บาท ✅"
+    },
+    {
+      "title_th": "โจทย์คูณหาร",
+      "question_th": "โรงเรียนแจกหนังสือ 840 เล่ม ให้นักเรียน 28 คน คนละกี่เล่ม?",
+      "solution_th": "840 ÷ 28 = 30 เล่ม ✅"
+    },
+    {
+      "title_th": "โจทย์หลายขั้นตอน",
+      "question_th": "รถบรรทุกบรรทุกข้าว 120 ถุง แต่ละถุงหนัก 25 กิโลกรัม รถบรรทุกได้กี่กิโลกรัม?",
+      "solution_th": "120 × 25 = 3,000 กิโลกรัม ✅"
+    }
+  ],
+  "common_mistakes": [
+    "อ่านโจทย์ไม่เข้าใจ ทำขั้นตอนสลับ",
+    "ลืมขั้นตอนสุดท้าย เช่น หายอดขายแล้วลืมลบต้นทุน",
+    "เลือกเครื่องหมายผิด เช่น บวกแทนลบ คูณแทนหาร"
+  ],
+  "hints": [
+    "อ่านโจทย์ช้าๆ ขีดเส้นใต้สิ่งสำคัญ วางแผนก่อนทำ",
+    "ถ้าโจทย์ยาวให้แยกเป็นส่วนๆ แต่ละส่วนหาคำตอบก่อน",
+    "ตรวจคำตอบว่าสมเหตุสมผลหรือไม่ เช่น ขายของได้กำไรต้องมากกว่าต้นทุน"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_word_problems",
+  "skill_code": "g4_word_problems_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_th": "🏫 ธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_en": "🏫 ธีมโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_th": "🍎 ธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_en": "🍎 ธีมผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_th": "🧸 ธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_en": "🧸 ธีมของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_th": "🏪 ธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_en": "🏪 ธีมตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_th": "🐕 ธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_en": "🐕 ธีมสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_th": "🌻 ธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_en": "🌻 ธีมสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_th": "🎨 ธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_en": "🎨 ธีมวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_th": "📚 ธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_en": "📚 ธีมห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_th": "🎮 ธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_en": "🎮 ธีมสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_th": "🎉 ธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_en": "🎉 ธีมงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Find sales first, then cost, then profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Step by step: sales, cost, profit.",
+          "model_type": "multi_step_model",
+          "step1": {
+            "label": "sales",
+            "expression": "15 × 8",
+            "result": "120 baht"
+          },
+          "step2": {
+            "label": "cost",
+            "expression": "6 × 8",
+            "result": "48 baht"
+          },
+          "step3": {
+            "label": "profit",
+            "expression": "120 - 48",
+            "result": "72 baht"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve one small step at a time."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "โจทย์ปัญหา",
+  "preview_subtitle_th": "แก้โจทย์ปัญหาทีละขั้น",
+  "cover_theme": "word_problems_g4",
+  "cover_emoji": "🧩",
+  "cover_color": "yellow",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "แก้โจทย์ปัญหาทีละขั้น",
+  "learning_objective_th": "นักเรียนสามารถวิเคราะห์โจทย์ปัญหาที่ซับซ้อนขึ้นและแก้ได้ถูกต้อง",
+  "lesson_intro_th": "ร้านขายของมีสินค้า 1,250 ชิ้น ขายไปวันละ 85 ชิ้น หลังจาก 7 วัน ร้านเหลือสินค้ากี่ชิ้น? 📦",
+  "concept_explanation_th": "อ่านโจทย์ให้เข้าใจ ขีดเส้นใต้ข้อมูลสำคัญและสิ่งที่ถาม วางแผนว่าจะใช้การบวก ลบ คูณ หาร หรือผสมผสาน ขั้นที่ 1: หาจำนวนสินค้าที่ขายไป 85 × 7 = 595 ชิ้น ขั้นที่ 2: หาสินค้าที่เหลือ 1,250 - 595 = 655 ชิ้น เขียนสมการและตรวจคำตอบว่าสมเหตุสมผล",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 12
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 8
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท โจทย์ปัญหาระดับ ป.4 ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "โจทย์บวกลบ",
+      "question_th": "นักเรียนมีเงิน 3,500 บาท ซื้อจักรยาน 2,750 บาท แล้วแม่ให้อีก 1,000 บาท ตอนนี้มีเงินเท่าไหร่?",
+      "solution_th": "3,500 - 2,750 = 750 / 750 + 1,000 = 1,750 บาท ✅"
+    },
+    {
+      "title_th": "โจทย์คูณหาร",
+      "question_th": "โรงเรียนแจกหนังสือ 840 เล่ม ให้นักเรียน 28 คน คนละกี่เล่ม?",
+      "solution_th": "840 ÷ 28 = 30 เล่ม ✅"
+    },
+    {
+      "title_th": "โจทย์หลายขั้นตอน",
+      "question_th": "รถบรรทุกบรรทุกข้าว 120 ถุง แต่ละถุงหนัก 25 กิโลกรัม รถบรรทุกได้กี่กิโลกรัม?",
+      "solution_th": "120 × 25 = 3,000 กิโลกรัม ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "อ่านโจทย์ไม่เข้าใจ ทำขั้นตอนสลับ",
+    "ลืมขั้นตอนสุดท้าย เช่น หายอดขายแล้วลืมลบต้นทุน",
+    "เลือกเครื่องหมายผิด เช่น บวกแทนลบ คูณแทนหาร"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_word_problems_q01",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q02",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q03",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q04",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q05",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q06",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q07",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q08",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_word_problems_q09",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_word_problems_q10",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_word_problems_q01",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q02",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q03",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q04",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q05",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q06",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q07",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_word_problems_q08",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_word_problems_q09",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_word_problems_q10",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Grade 4 Word Problems",
+  "objective_en": "Students will be able to divide by sharing equally",
+  "story_intro_en": "Look! 1 + 250 + 85 + 7 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: โจทย์บวกลบ",
+      "question_en": "3,500 2,750 1,000 ?",
+      "solution_en": "3,500 - 2,750 = 750 / 750 + 1,000 = 1,750 ✅?"
+    },
+    {
+      "title_en": "Example: โจทย์คูณหาร",
+      "question_en": "840 books 28 people people books?",
+      "solution_en": "840 ÷ 28 = 30 books ✅?"
+    },
+    {
+      "title_en": "Example: โจทย์หลายขั้นตอน",
+      "question_en": "120 25 ?",
+      "solution_en": "120 × 25 = 3,000 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: อ่านโจทย์ไม่เข้าใจ ทำขั้นตอนสลับ",
+    "Mistake: ลืมขั้นตอนสุดท้าย เช่น หายอดขายแล้วลืมลบต้นทุน",
+    "Mistake: เลือกเครื่องหมายผิด เช่น บวกแทนลบ คูณแทนหาร"
+  ],
+  "hints_en": [
+    "Hint: อ่านโจทย์ช้าๆ ขีดเส้นใต้สิ่งสำคัญ วางแผนก่อนทำ",
+    "Hint: ถ้าโจทย์ยาวให้แยกเป็นส่วนๆ แต่ละส่วนหาคำตอบก่อน",
+    "Hint: ตรวจคำตอบว่าสมเหตุสมผลหรือไม่ เช่น ขายของได้กำไรต้องมากกว่าต้นทุน"
+  ],
+  "explanation_steps_en": [
+    "Step: อ่านโจทย์ให้เข้าใจ ขีดเส้นใต้ข้อมูลสำคัญและสิ่งที่ถาม",
+    "Step: วางแผนว่าจะใช้การบวก ลบ คูณ หาร หรือผสมผสาน",
+    "Step: ขั้นที่ 1: หาจำนวนสินค้าที่ขายไป 85 × 7 = 595 ชิ้น",
+    "Step: ขั้นที่ 2: หาสินค้าที่เหลือ 1,250 - 595 = 655 ชิ้น",
+    "Step: เขียนสมการและตรวจคำตอบว่าสมเหตุสมผล"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g4_word_problems_q01",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "500 175 85 ?",
+      "choices": [
+        "230?",
+        "240?",
+        "250?",
+        "260?"
+      ],
+      "correct_answer": "240?",
+      "answer": "240?",
+      "explanation": "500 - 175 - 85 = 240?",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core",
+      "question_en": "500 175 85 ?",
+      "explanation_en": "500 - 175 - 85 = 240?",
+      "choices_en": [
+        "230?",
+        "240?",
+        "250?",
+        "260?"
+      ],
+      "answer_en": "240?"
+    },
+    {
+      "question_id": "g4_word_problems_q02",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "8 12 pieces 30 pieces pieces?",
+      "choices": [
+        "64 pieces?",
+        "66 pieces?",
+        "68 pieces?",
+        "70 pieces?"
+      ],
+      "correct_answer": "66 pieces?",
+      "answer": "66 pieces?",
+      "explanation": "8 × 12 = 96 96 - 30 = 66?",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core",
+      "question_en": "8 12 pieces 30 pieces pieces?",
+      "explanation_en": "8 × 12 = 96 96 - 30 = 66?",
+      "choices_en": [
+        "64 pieces?",
+        "66 pieces?",
+        "68 pieces?",
+        "70 pieces?"
+      ],
+      "answer_en": "66 pieces?"
+    },
+    {
+      "question_id": "g4_word_problems_q03",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "36 people 6 people?",
+      "choices": [
+        "5 people?",
+        "6 people?",
+        "7 people?",
+        "8 people?"
+      ],
+      "correct_answer": "6 people?",
+      "answer": "6 people?",
+      "explanation": "36 ÷ 6 = 6 people?",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "easy",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core",
+      "question_en": "36 people 6 people?",
+      "explanation_en": "36 ÷ 6 = 6 people?",
+      "choices_en": [
+        "5 people?",
+        "6 people?",
+        "7 people?",
+        "8 people?"
+      ],
+      "answer_en": "6 people?"
+    },
+    {
+      "question_id": "g4_word_problems_q04",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "500 175 85 ?",
+      "choices": [
+        "230?",
+        "240?",
+        "250?",
+        "260?"
+      ],
+      "correct_answer": "240?",
+      "answer": "240?",
+      "explanation": "500 - 175 - 85 = 240?",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core",
+      "question_en": "500 175 85 ?",
+      "explanation_en": "500 - 175 - 85 = 240?",
+      "choices_en": [
+        "230?",
+        "240?",
+        "250?",
+        "260?"
+      ],
+      "answer_en": "240?"
+    },
+    {
+      "question_id": "g4_word_problems_q05",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "8 12 pieces 30 pieces pieces?",
+      "choices": [
+        "64 pieces?",
+        "66 pieces?",
+        "68 pieces?",
+        "70 pieces?"
+      ],
+      "correct_answer": "66 pieces?",
+      "answer": "66 pieces?",
+      "explanation": "8 × 12 = 96 96 - 30 = 66?",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core",
+      "question_en": "8 12 pieces 30 pieces pieces?",
+      "explanation_en": "8 × 12 = 96 96 - 30 = 66?",
+      "choices_en": [
+        "64 pieces?",
+        "66 pieces?",
+        "68 pieces?",
+        "70 pieces?"
+      ],
+      "answer_en": "66 pieces?"
+    },
+    {
+      "question_id": "g4_word_problems_q06",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "36 people 6 people?",
+      "choices": [
+        "5 people?",
+        "6 people?",
+        "7 people?",
+        "8 people?"
+      ],
+      "correct_answer": "6 people?",
+      "answer": "6 people?",
+      "explanation": "36 ÷ 6 = 6 people?",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core",
+      "question_en": "36 people 6 people?",
+      "explanation_en": "36 ÷ 6 = 6 people?",
+      "choices_en": [
+        "5 people?",
+        "6 people?",
+        "7 people?",
+        "8 people?"
+      ],
+      "answer_en": "6 people?"
+    },
+    {
+      "question_id": "g4_word_problems_q07",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "500 175 85 ?",
+      "choices": [
+        "230?",
+        "240?",
+        "250?",
+        "260?"
+      ],
+      "correct_answer": "240?",
+      "answer": "240?",
+      "explanation": "500 - 175 - 85 = 240?",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g4_word_problems",
+      "question_type": "core",
+      "question_en": "500 175 85 ?",
+      "explanation_en": "500 - 175 - 85 = 240?",
+      "choices_en": [
+        "230?",
+        "240?",
+        "250?",
+        "260?"
+      ],
+      "answer_en": "240?"
+    },
+    {
+      "question_id": "g4_word_problems_q08",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "8 12 pieces 30 pieces pieces?",
+      "choices": [
+        "64 pieces?",
+        "66 pieces?",
+        "68 pieces?",
+        "70 pieces?"
+      ],
+      "correct_answer": "66 pieces?",
+      "answer": "66 pieces?",
+      "explanation": "8 × 12 = 96 96 - 30 = 66?",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge",
+      "question_en": "8 12 pieces 30 pieces pieces?",
+      "explanation_en": "8 × 12 = 96 96 - 30 = 66?",
+      "choices_en": [
+        "64 pieces?",
+        "66 pieces?",
+        "68 pieces?",
+        "70 pieces?"
+      ],
+      "answer_en": "66 pieces?"
+    },
+    {
+      "question_id": "g4_word_problems_q09",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "36 people 6 people?",
+      "choices": [
+        "5 people?",
+        "6 people?",
+        "7 people?",
+        "8 people?"
+      ],
+      "correct_answer": "6 people?",
+      "answer": "6 people?",
+      "explanation": "36 ÷ 6 = 6 people?",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge",
+      "question_en": "36 people 6 people?",
+      "explanation_en": "36 ÷ 6 = 6 people?",
+      "choices_en": [
+        "5 people?",
+        "6 people?",
+        "7 people?",
+        "8 people?"
+      ],
+      "answer_en": "6 people?"
+    },
+    {
+      "question_id": "g4_word_problems_q10",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "500 175 85 ?",
+      "choices": [
+        "230?",
+        "240?",
+        "250?",
+        "260?"
+      ],
+      "correct_answer": "240?",
+      "answer": "240?",
+      "explanation": "500 - 175 - 85 = 240?",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g4_word_problems",
+      "question_type": "challenge",
+      "question_en": "500 175 85 ?",
+      "explanation_en": "500 - 175 - 85 = 240?",
+      "choices_en": [
+        "230?",
+        "240?",
+        "250?",
+        "260?"
+      ],
+      "answer_en": "240?"
+    }
+  ],
+  "quiz_id": "g4_word_problems_ep",
+  "generated_at": "2026-05-16T04:16:41.139964+00:00",
+  "source_lesson_id": "g4_word_problems",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Think Story",
+      "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+    },
+    {
+      "type": "visual_thinking",
+      "title": "Look First",
+      "content": "Find sales first, then cost, then profit."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Step by step: sales, cost, profit.",
+      "model_type": "multi_step_model",
+      "step1": {
+        "label": "sales",
+        "expression": "15 × 8",
+        "result": "120 baht"
+      },
+      "step2": {
+        "label": "cost",
+        "expression": "6 × 8",
+        "result": "48 baht"
+      },
+      "step3": {
+        "label": "profit",
+        "expression": "120 - 48",
+        "result": "72 baht"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "(15 × 8) - (6 × 8) = 72 baht",
+      "content": "Solve one small step at a time."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+      "choices": [
+        "20 baht",
+        "25 baht",
+        "30 baht",
+        "50 baht"
+      ],
+      "correct_answer": "30 baht",
+      "answer": "30 baht",
+      "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+    }
+  ]
+}

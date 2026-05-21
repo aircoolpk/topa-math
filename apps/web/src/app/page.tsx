@@ -1,673 +1,444 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
+import { Facebook, Instagram, Menu, Music2, Play, Star, X } from 'lucide-react'
+import { apiClient } from '@/lib/api-client'
+import { fallbackHomepageConfig, type HomepageConfig, type TopaRankingRow } from '@/lib/topa-content'
+import { MascotAvatar, MascotCard, SectionHeader, StatCard, TopaButton, TopaCard, TopaIcon } from '@/components/topa/TopaUI'
+import { getMascot, mascotRegistry, resolveMascotKey } from '@/lib/mascot-registry'
 
-// ─── Mock Data ───────────────────────────────────────────────────────────────
+const gradeTabs = ['ป.1', 'ป.2', 'ป.3', 'ป.4', 'ป.5', 'ป.6']
+const rankingModes = ['country', 'province'] as const
+type RankingMode = typeof rankingModes[number]
+const featureMascotKeys = ['topa', 'pip', 'timo', 'riko']
 
-const TOP_STUDENTS = [
-  { nickname: 'น้องดาว', level: 12, province: 'กรุงเทพฯ', badge: '🌟', improvement: '+28%' },
-  { nickname: 'มินิคุง', level: 10, province: 'เชียงใหม่', badge: '⚡', improvement: '+35%' },
-  { nickname: 'บอยโจ๊ก', level: 9, province: 'ขอนแก่น', badge: '💪', improvement: '+42%' },
-  { nickname: 'น้องอิ่ม', level: 8, province: 'สงขลา', badge: '🏆', improvement: '+19%' },
-]
-
-const FEATURES = [
-  { emoji: '⭐', title: 'XP กับ Level', desc: 'สะสมคะแนน XP เพื่อขึ้นเลเวล เหมือนเล่นเกมที่ได้เก่งขึ้นจริงๆ' },
-  { emoji: '👤', title: 'ตัวละคร Avatar', desc: 'สร้างตัวละครของตัวเอง เลือกผม ตา เสื้อผ้า ได้ตามใจ' },
-  { emoji: '📋', title: 'เควสรายวัน', desc: 'ภารกิจประจำวันที่ช่วยให้ฝึกฝนสม่ำเสมอ มีรางวัลให้ตื่นเต้น' },
-  { emoji: '🧠', title: 'วิเคราะห์จุดอ่อน', desc: 'AI วิเคราะห์ว่าตัวเองติดขัดตรงไหน และสร้างแบบฝึกให้ตรงจุด' },
-  { emoji: '🎯', title: 'แบบฝึกเฉพาะตัว', desc: 'เรียนรู้จากสิ่งที่ตัวเองยังไม่แม่น ไม่ต้องเรียนสิ่งที่รู้แล้ว' },
-  { emoji: '🏆', title: 'Ranking ทั่วประเทศ', desc: 'เช็คอันดับระดับจังหวัดและประเทศ สร้างแรงบันดาลใจ' },
-]
-
-// ─── Full 6-Grade Curriculum (Static — replace with API when backend supports) ─
-// REPORT: Backend needs a public curriculum API — see /children/{id}/course-map
-// for per-child view. For the public landing page, this static data is used.
-// Backend API needed: GET /public/curriculum or similar returning grade + topics.
-
-type GradeStatus = 'ready' | 'preparing' | 'review_only'
-
-const CURRICULUM = [
-  {
-    grade: 1,
-    title: 'คณิตศาสตร์ ป.1',
-    status: 'ready' as GradeStatus,
-    statusLabel: 'พร้อมเรียน',
-    statusColor: 'bg-green-100 text-green-700',
-    statusIcon: '✅',
-    description: 'เริ่มต้นเรียนรู้ตัวเลขและการคำนวณพื้นฐาน สร้างความเข้าใจที่ดีตั้งแต่ต้น',
-    topics: ['นับเลขและจำนวน', 'เปรียบเทียบจำนวน', 'บวกเลขไม่เกิน 20', 'ลบเลขไม่เกิน 20', 'รูปร่างพื้นฐาน', 'เวลาเบื้องต้น', 'เงินเบื้องต้น'],
-    topicCount: 7,
-    accentClass: 'from-green-400 to-emerald-500',
-  },
-  {
-    grade: 2,
-    title: 'คณิตศาสตร์ ป.2',
-    status: 'ready' as GradeStatus,
-    statusLabel: 'พร้อมเรียน',
-    statusColor: 'bg-green-100 text-green-700',
-    statusIcon: '✅',
-    description: 'ต่อยอดการบวกลบ ฝึกตารางคูณ และเริ่มเรียนรู้เรื่องเงินและเวลา',
-    topics: ['บวกเลขสองหลัก', 'ลบเลขสองหลัก', 'คูณเบื้องต้น', 'ตารางคูณ 2, 5, 10', 'เงินและการทอนเงิน', 'เวลาและปฏิทิน', 'รูปทรงสองมิติ'],
-    topicCount: 7,
-    accentClass: 'from-blue-400 to-primary-500',
-  },
-  {
-    grade: 3,
-    title: 'คณิตศาสตร์ ป.3',
-    status: 'ready' as GradeStatus,
-    statusLabel: 'พร้อมเรียน',
-    statusColor: 'bg-green-100 text-green-700',
-    statusIcon: '✅',
-    description: 'เข้าสู่โลกของการคูณหาร ทบทวนเศษส่วน และแก้โจทย์ปัญหาหลายขั้นตอน',
-    topics: ['คูณหลายหลัก', 'หารเบื้องต้น', 'เศษส่วนเบื้องต้น', 'โจทย์ปัญหาหลายขั้นตอน', 'การวัด', 'พื้นที่เบื้องต้น', 'ทบทวนรวม'],
-    topicCount: 7,
-    accentClass: 'from-primary-400 to-primary-600',
-  },
-  {
-    grade: 4,
-    title: 'คณิตศาสตร์ ป.4',
-    status: 'preparing' as GradeStatus,
-    statusLabel: 'กำลังเตรียม EP',
-    statusColor: 'bg-amber-100 text-amber-700',
-    statusIcon: '🛠️',
-    description: 'มาเตรียมพื้นฐาน ป.4 ล่วงหน้า รองรับหลักสูตรใหม่ (NETPA) ก่อนเปิดเทอม',
-    topics: ['จำนวนนับที่มากขึ้น', 'การคูณและหารหลายหลัก', 'เศษส่วน', 'ทศนิยมเบื้องต้น', 'มุมและรูปเรขาคณิต', 'พื้นที่และเส้นรอบรูป', 'โจทย์ปัญหา'],
-    topicCount: 7,
-    accentClass: 'from-amber-400 to-orange-500',
-  },
-  {
-    grade: 5,
-    title: 'คณิตศาสตร์ ป.5',
-    status: 'preparing' as GradeStatus,
-    statusLabel: 'กำลังเตรียม EP',
-    statusColor: 'bg-amber-100 text-amber-700',
-    statusIcon: '🛠️',
-    description: 'เตรียมพื้นฐาน ป.5 ล่วงหน้า พร้อมรับมือเนื้อหาที่หนักขึ้นก่อนเปิดเทอม',
-    topics: ['เศษส่วนและการคำนวณ', 'ทศนิยม', 'ร้อยละเบื้องต้น', 'บัญญัติไตรยางศ์เบื้องต้น', 'พื้นที่และปริมาตร', 'กราฟและข้อมูล', 'โจทย์ปัญหาหลายขั้นตอน'],
-    topicCount: 7,
-    accentClass: 'from-orange-400 to-red-400',
-  },
-  {
-    grade: 6,
-    title: 'คณิตศาสตร์ ป.6',
-    status: 'review_only' as GradeStatus,
-    statusLabel: 'ฟรี: บททบทวน',
-    statusColor: 'bg-purple-100 text-purple-700',
-    statusIcon: '📖',
-    description: 'สมาชิกฟรีเรียนบททบทวน ป.6 ได้ พร้อมตัวอย่างโจทย์เตรียมสอบเข้า ม.1',
-    topics: ['ห.ร.ม. และ ค.ร.น.', 'เศษส่วน ทศนิยม และร้อยละ', 'อัตราส่วน', 'สมการเบื้องต้น', 'รูปเรขาคณิต', 'ปริมาตร', 'เตรียมพื้นฐานก่อนมัธยม'],
-    topicCount: 7,
-    accentClass: 'from-purple-400 to-pink-500',
-  },
-]
-
-// ─── Pricing Fallback Config ───────────────────────────────────────────────────
-const FALLBACK_PRICES = {
-  free: { price_thb: 0, name_th: 'ทดลองใช้ฟรี' },
-  th_founder_monthly: { price_thb: 199, name_th: 'Plus TH', badge: 'Founder' },
-  th_plus_monthly: { price_thb: 299, name_th: 'Plus TH' },
-  th_plus_yearly_promo: { price_thb: 2990, name_th: 'Plus TH' },
-  ep_founder_monthly: { price_thb: 399, name_th: 'Plus EP', badge: 'Founder' },
-  ep_plus_monthly: { price_thb: 599, name_th: 'Plus EP' },
-  ep_plus_yearly_promo: { price_thb: 5990, name_th: 'Plus EP' },
+function enabled<T extends { enabled?: boolean; order?: number }>(items: T[] = []) {
+  return items.filter((item) => item.enabled !== false).sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }
 
-type FallbackKey = keyof typeof FALLBACK_PRICES
-
-function formatPrice(amount: number): string {
-  return new Intl.NumberFormat('th-TH').format(amount)
+function fallbackChildPhoto(seed: string, index = 0) {
+  const colors = ['#fef3c7', '#dbeafe', '#fee2e2', '#dcfce7', '#f3e8ff']
+  const accents = ['#f59e0b', '#0ea5e9', '#ef4444', '#22c55e', '#a855f7']
+  const initial = encodeURIComponent((seed || 'T').slice(0, 1))
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160"><rect width="160" height="160" rx="42" fill="${colors[index % colors.length]}"/><circle cx="80" cy="66" r="34" fill="${accents[index % accents.length]}"/><path d="M30 148c9-36 30-54 50-54s41 18 50 54" fill="#fff"/><circle cx="68" cy="62" r="5" fill="#111827"/><circle cx="92" cy="62" r="5" fill="#111827"/><path d="M66 78c10 8 18 8 28 0" stroke="#111827" stroke-width="5" stroke-linecap="round" fill="none"/><text x="80" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="900" fill="${accents[index % accents.length]}">${initial}</text></svg>`
+  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`
 }
 
-// ─── Pricing Plans ─────────────────────────────────────────────────────────────
-
-interface HomePricingPlan {
-  name: string
-  emoji: string
-  priceDisplay: string
-  originalPriceDisplay?: string
-  yearlyDisplay?: string
-  color: string
-  features: string[]
-  cta: string
-  ctaHref: string
-  highlight: boolean
-  badge?: string
-}
-
-async function fetchHomePricingPlans(): Promise<HomePricingPlan[]> {
-  // Free plan — always static
-  const freePlan: HomePricingPlan = {
-    name: 'ทดลองใช้ฟรี',
-    emoji: '🌱',
-    priceDisplay: 'ฟรี',
-    color: 'from-gray-400 to-gray-500',
-    features: [
-      'ทดลองเรียนฟรี',
-      'เรียนได้ 3 เควส',
-      'ทำเทสวัดระดับได้จำกัด',
-      'Avatar พื้นฐาน',
-      'เหมาะสำหรับลองใช้งาน',
-    ],
-    cta: 'ทดลองใช้ฟรี',
-    ctaHref: '/register',
-    highlight: false,
-  }
-
-  // Try to fetch live prices from billing API
-  let pricesData: Record<string, { price_thb: number; name_th: string }> = {}
-  try {
-    const res = await fetch('http://127.0.0.1:8001/billing/prices', {
-      headers: { 'Content-Type': 'application/json' },
-    })
-    if (res.ok) {
-      const data = await res.json()
-      for (const plan of data.plans as Array<{ plan_code: string; price_thb: number; name_th: string }>) {
-        pricesData[plan.plan_code] = { price_thb: plan.price_thb, name_th: plan.name_th }
-      }
-    }
-  } catch {
-    // Use fallback
-    pricesData = FALLBACK_PRICES as unknown as Record<string, { price_thb: number; name_th: string }>
-  }
-
-  const thFounder = pricesData['th_founder_monthly'] ?? FALLBACK_PRICES['th_founder_monthly']
-  const thNormal = pricesData['th_plus_monthly'] ?? FALLBACK_PRICES['th_plus_monthly']
-  const thYearly = pricesData['th_plus_yearly_promo'] ?? FALLBACK_PRICES['th_plus_yearly_promo']
-  const epFounder = pricesData['ep_founder_monthly'] ?? FALLBACK_PRICES['ep_founder_monthly']
-  const epNormal = pricesData['ep_plus_monthly'] ?? FALLBACK_PRICES['ep_plus_monthly']
-  const epYearly = pricesData['ep_plus_yearly_promo'] ?? FALLBACK_PRICES['ep_plus_yearly_promo']
-
-  const plusTHPlan: HomePricingPlan = {
-    name: 'Plus TH',
-    emoji: '⚡',
-    priceDisplay: `${formatPrice(thFounder.price_thb)} บาท/เดือน`,
-    originalPriceDisplay: `${formatPrice(thNormal.price_thb)} บาท/เดือน`,
-    yearlyDisplay: `รายปี ${formatPrice(thYearly.price_thb)} บาท`,
-    color: 'from-primary-400 to-primary-600',
-    features: [
-      'คณิตศาสตร์ภาษาไทย ป.1–ป.6',
-      'บทเรียนทั้งหมด',
-      'แบบทดสอบทุกระดับชั้น',
-      'ระบบวิเคราะห์จุดอ่อน',
-      'แบบฝึกเฉพาะบุคคล',
-      'Quest รายวัน / รายสัปดาห์ / รายเดือน',
-      'XP / Level / Rank',
-      'Avatar และของตกแต่งพื้นฐาน',
-    ],
-    cta: 'สมัคร Plus TH',
-    ctaHref: '/pricing?plan=th',
-    highlight: true,
-    badge: 'แนะนำ',
-  }
-
-  const plusEPPlan: HomePricingPlan = {
-    name: 'Plus EP',
-    emoji: '🌏',
-    priceDisplay: `${formatPrice(epFounder.price_thb)} บาท/เดือน`,
-    originalPriceDisplay: `${formatPrice(epNormal.price_thb)} บาท/เดือน`,
-    yearlyDisplay: `รายปี ${formatPrice(epYearly.price_thb)} บาท`,
-    color: 'from-accent-400 to-accent-600',
-    features: [
-      'ทุกอย่างใน Plus TH',
-      'โหมด English Program',
-      'โจทย์และบทเรียนคณิตเป็นภาษาอังกฤษ',
-      'คำศัพท์คณิตศาสตร์อังกฤษ',
-      'เหมาะกับเด็ก EP / Inter / สองภาษา',
-      'ปลดล็อก TH + EP',
-    ],
-    cta: 'สมัคร Plus EP',
-    ctaHref: '/pricing?plan=ep',
-    highlight: false,
-  }
-
-  return [freePlan, plusTHPlan, plusEPPlan]
-}
-
-const TRUST_ITEMS = [
-  { emoji: '🔒', title: 'ปลอดภัยสำหรับเด็ก', desc: 'ไม่มีโฆษณา ไม่มีเนื้อหาไม่เหมาะสม ออกแบบมาสำหรับเด็กโดยเฉพาะ' },
-  { emoji: '📊', title: 'ผู้ปกครองติดตามได้', desc: 'ดูพัฒนาการลูกได้ตลอดเวลา รู้ว่าลูกเก่งเรื่องอะไร ต้องฝึกเพิ่มตรงไหน' },
-  { emoji: '🚫', title: 'ไม่มีโฆษณาในบทเรียน', desc: 'เนื้อหาเรียนรู้สะอาดตา เด็กโฟกัสกับการเรียนได้เต็มที่' },
-]
-
-// ─── Components ─────────────────────────────────────────────────────────────
-
-function StarRating({ stars }: { stars: number }) {
+function SafeCmsImage({ src, alt, className, fallbackSeed, index = 0 }: { src?: string; alt: string; className: string; fallbackSeed: string; index?: number }) {
+  const [broken, setBroken] = useState(false)
+  const resolved = !broken && src ? src : fallbackChildPhoto(fallbackSeed, index)
   return (
-    <span className="text-amber-400">
-      {'★'.repeat(stars)}{'☆'.repeat(5 - stars)}
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={resolved} alt={alt} className={className} onError={() => setBroken(true)} />
   )
 }
 
-function SectionWrapper({ children, className = '', id }: { children: React.ReactNode; className?: string; id?: string }) {
+function TopaLogo({ className = '' }: { className?: string }) {
   return (
-    <section id={id} className={`py-16 md:py-20 ${className}`}>
-      <div className="max-w-6xl mx-auto px-4">{children}</div>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/brand/topa/topa-math-logo.png"
+      alt="TOPA Math"
+      className={`h-9 w-auto object-contain ${className}`}
+    />
+  )
+}
+
+function normalizeHomepageConfig(config: HomepageConfig): HomepageConfig {
+  const incomingMascots = config.mascots?.cards || []
+  const mascotCards = mascotRegistry.map((registry, index) => {
+    const existing = incomingMascots.find((item) => resolveMascotKey(item.key || item.name) === registry.key)
+    return {
+      key: registry.key,
+      name: existing?.name || registry.name,
+      role: existing?.role || registry.role,
+      english_role: existing?.english_role || registry.english_role,
+      description_th: existing?.description_th || registry.description_th,
+      image: existing?.image || registry.image,
+      order: existing?.order || index + 1,
+      enabled: existing?.enabled !== false,
+    }
+  })
+  return {
+    ...fallbackHomepageConfig,
+    ...config,
+    hero: { ...fallbackHomepageConfig.hero, ...config.hero },
+    ranking: { ...fallbackHomepageConfig.ranking, ...config.ranking },
+    reviews: { ...fallbackHomepageConfig.reviews, ...config.reviews },
+    mascots: { ...fallbackHomepageConfig.mascots, ...config.mascots, cards: mascotCards },
+  }
+}
+
+const polishedRankingRows: Array<TopaRankingRow & { grade: string; mode: RankingMode; image?: string }> = [
+  { grade: 'ป.1', mode: 'country', rank: 1, child_name: 'น้องมีนา', province: 'กรุงเทพมหานคร', tests_completed: 42, total_score: 3180, avg_speed: '31 วิ/ข้อ', mascot: 'topa' },
+  { grade: 'ป.1', mode: 'country', rank: 2, child_name: 'น้องอุ่นใจ', province: 'เชียงใหม่', tests_completed: 39, total_score: 3040, avg_speed: '34 วิ/ข้อ', mascot: 'pip' },
+  { grade: 'ป.1', mode: 'country', rank: 3, child_name: 'น้องภูริ', province: 'สงขลา', tests_completed: 36, total_score: 2910, avg_speed: '36 วิ/ข้อ', mascot: 'memo' },
+  { grade: 'ป.2', mode: 'country', rank: 1, child_name: 'น้องต้นน้ำ', province: 'ขอนแก่น', tests_completed: 48, total_score: 3760, avg_speed: '29 วิ/ข้อ', mascot: 'olli' },
+  { grade: 'ป.2', mode: 'country', rank: 2, child_name: 'น้องแพรว', province: 'ชลบุรี', tests_completed: 45, total_score: 3610, avg_speed: '32 วิ/ข้อ', mascot: 'splash' },
+  { grade: 'ป.2', mode: 'country', rank: 3, child_name: 'น้องภาม', province: 'กรุงเทพมหานคร', tests_completed: 43, total_score: 3490, avg_speed: '33 วิ/ข้อ', mascot: 'orbit' },
+  { grade: 'ป.3', mode: 'country', rank: 1, child_name: 'น้องไออุ่น', province: 'เชียงใหม่', tests_completed: 52, total_score: 4210, avg_speed: '28 วิ/ข้อ', mascot: 'nova' },
+  { grade: 'ป.3', mode: 'country', rank: 2, child_name: 'น้องเจ้านาย', province: 'สงขลา', tests_completed: 49, total_score: 4075, avg_speed: '30 วิ/ข้อ', mascot: 'riko' },
+  { grade: 'ป.3', mode: 'country', rank: 3, child_name: 'น้องพริม', province: 'กรุงเทพมหานคร', tests_completed: 47, total_score: 3960, avg_speed: '32 วิ/ข้อ', mascot: 'timo' },
+  { grade: 'ป.4', mode: 'country', rank: 1, child_name: 'น้องกันต์', province: 'ชลบุรี', tests_completed: 57, total_score: 4860, avg_speed: '27 วิ/ข้อ', mascot: 'orbit' },
+  { grade: 'ป.4', mode: 'country', rank: 2, child_name: 'น้องฟ้าใส', province: 'ขอนแก่น', tests_completed: 54, total_score: 4690, avg_speed: '29 วิ/ข้อ', mascot: 'topa' },
+  { grade: 'ป.4', mode: 'country', rank: 3, child_name: 'น้องกวิน', province: 'เชียงใหม่', tests_completed: 51, total_score: 4520, avg_speed: '31 วิ/ข้อ', mascot: 'memo' },
+  { grade: 'ป.5', mode: 'country', rank: 1, child_name: 'น้องลิน', province: 'กรุงเทพมหานคร', tests_completed: 62, total_score: 5480, avg_speed: '25 วิ/ข้อ', mascot: 'splash' },
+  { grade: 'ป.5', mode: 'country', rank: 2, child_name: 'น้องปุณณ์', province: 'สงขลา', tests_completed: 59, total_score: 5310, avg_speed: '27 วิ/ข้อ', mascot: 'nova' },
+  { grade: 'ป.5', mode: 'country', rank: 3, child_name: 'น้องมะลิ', province: 'ชลบุรี', tests_completed: 56, total_score: 5165, avg_speed: '29 วิ/ข้อ', mascot: 'pip' },
+  { grade: 'ป.6', mode: 'country', rank: 1, child_name: 'น้องวิน', province: 'เชียงใหม่', tests_completed: 68, total_score: 6240, avg_speed: '24 วิ/ข้อ', mascot: 'riko' },
+  { grade: 'ป.6', mode: 'country', rank: 2, child_name: 'น้องเอม', province: 'กรุงเทพมหานคร', tests_completed: 65, total_score: 6080, avg_speed: '26 วิ/ข้อ', mascot: 'olli' },
+  { grade: 'ป.6', mode: 'country', rank: 3, child_name: 'น้องธาม', province: 'ขอนแก่น', tests_completed: 61, total_score: 5890, avg_speed: '28 วิ/ข้อ', mascot: 'timo' },
+]
+
+const polishedReviewCards = [
+  { name: 'คุณแม่น้องพริม', school_claim: 'สอบติดห้อง Gifted Math ม.1', quote: 'TOPA ช่วยให้ลูกเห็นจุดอ่อนและฝึกต่อได้เองทุกวัน จากที่กลัวโจทย์ยาว ตอนนี้กล้าอ่านและวางแผนมากขึ้น', image: '', rating: 5, enabled: true },
+  { name: 'น้องต้นกล้า', school_claim: 'เตรียมสอบเข้า ม.1 Gifted', quote: 'แบบฝึกเหมือนเกม แต่ช่วยให้ผมคิดเป็นขั้นตอนและทำโจทย์ได้เร็วขึ้น', image: '', rating: 5, enabled: true },
+  { name: 'คุณพ่อน้องมีนา', school_claim: 'คะแนนคณิตดีขึ้นต่อเนื่อง', quote: 'แดชบอร์ดทำให้รู้ทันทีว่าควรเสริมเรื่องไหน ไม่ต้องเดาเองเหมือนเมื่อก่อน', image: '', rating: 5, enabled: true },
+  { name: 'น้องไออุ่น', school_claim: 'จากไม่มั่นใจสู่กล้าทำโจทย์ท้าทาย', quote: 'ชอบที่มีเพื่อน TOPA คอยให้กำลังใจ ทำผิดก็อยากลองใหม่', image: '', rating: 5, enabled: true },
+  { name: 'คุณแม่น้องวิน', school_claim: 'ฝึกพื้นฐานก่อนขึ้น ม.1', quote: 'บทเรียนสั้น เข้าใจง่าย และเห็นผลจากการฝึกจริงในแต่ละสัปดาห์', image: '', rating: 5, enabled: true },
+]
+
+function rankingRowsFor(grade: string, mode: RankingMode, province: string, cmsRows: TopaRankingRow[]) {
+  const enrichedCms = cmsRows.map((row, index) => ({
+    ...row,
+    grade: (row as TopaRankingRow & { grade?: string }).grade || grade,
+    mode: ((row as TopaRankingRow & { mode?: RankingMode }).mode || 'country') as RankingMode,
+    rank: row.rank || index + 1,
+  }))
+  const realOrCms = enrichedCms.filter((row) => row.grade === grade && row.mode === mode && (mode === 'country' || province === 'ทุกจังหวัด' || row.province === province))
+  const mock = polishedRankingRows
+    .filter((row) => row.grade === grade && row.mode === 'country')
+    .map((row, index) => mode === 'province' && province !== 'ทุกจังหวัด' ? { ...row, province, child_name: `${row.child_name}${index === 0 ? '' : ''}`, total_score: row.total_score - 80 - index * 30, tests_completed: Math.max(20, row.tests_completed - 5 - index) } : row)
+  return [...realOrCms, ...mock].slice(0, 3).map((row, index) => ({ ...row, rank: index + 1 }))
+}
+
+function MascotGroup({ config }: { config: HomepageConfig }) {
+  const mascots = enabled(config.mascots.cards)
+  const heroKeys = ['pip', 'olli', 'topa', 'memo']
+  const heroMascots = heroKeys.map((key) => mascots.find((item) => resolveMascotKey(item.key) === resolveMascotKey(key)) || getMascot(key))
+  return (
+    <div className="relative mx-auto min-h-[440px] max-w-xl">
+      <div className="absolute inset-4 rounded-[2rem] bg-gradient-to-br from-sky-100 via-white to-amber-100 shadow-[0_30px_80px_rgba(45,118,255,0.18)]" />
+      <div className="absolute left-1/2 top-8 z-10 h-64 w-[480px] max-w-[92vw] -translate-x-1/2">
+        <div className="absolute bottom-0 left-0 z-20">
+          <SafeCmsImage src={heroMascots[0].image} alt="Pip mascot" className="h-32 w-32 object-contain drop-shadow-xl" fallbackSeed="Pip" />
+        </div>
+        <div className="absolute bottom-0 left-[22%] z-20">
+          <SafeCmsImage src={heroMascots[1].image} alt="Olli mascot" className="h-44 w-40 object-contain drop-shadow-xl" fallbackSeed="Olli" />
+        </div>
+        <div className="absolute bottom-0 left-[43%] z-30">
+          <SafeCmsImage src={heroMascots[2].image} alt="Topa mascot" className="h-60 w-48 object-contain drop-shadow-2xl" fallbackSeed="Topa" />
+        </div>
+        <div className="absolute bottom-0 right-0 z-20">
+          <SafeCmsImage src={heroMascots[3].image} alt="Memo mascot" className="h-48 w-44 object-contain drop-shadow-xl" fallbackSeed="Memo" />
+        </div>
+      </div>
+      {mascots.slice(1, 9).map((mascot, index) => (
+        <div
+          key={mascot.key}
+          className="absolute z-20"
+          style={{
+            left: ['4%', '74%', '8%', '76%', '20%', '62%', '38%', '50%'][index],
+            top: ['24%', '22%', '58%', '58%', '76%', '76%', '8%', '80%'][index],
+          }}
+        >
+          <MascotAvatar mascot={mascot} index={index + 1} size="md" />
+        </div>
+      ))}
+      <div className="absolute bottom-8 left-8 z-20 rounded-3xl border border-white/80 bg-white/90 p-4 shadow-xl backdrop-blur">
+        <p className="text-xs font-bold text-slate-400">Level / XP</p>
+        <p className="text-xl font-black text-sky-600">Lv. 12</p>
+        <div className="mt-2 h-2 w-32 rounded-full bg-sky-100">
+          <div className="h-full w-3/4 rounded-full bg-gradient-to-r from-sky-400 to-amber-400" />
+        </div>
+      </div>
+      <div className="absolute right-4 top-4 z-20 rounded-3xl border border-white/80 bg-white/90 p-4 shadow-xl backdrop-blur">
+        <p className="text-xs font-bold text-slate-400">Score graph</p>
+        <div className="mt-3 flex h-16 items-end gap-2">
+          {[34, 48, 42, 60, 78].map((height, index) => (
+            <span key={index} className="w-4 rounded-t-lg bg-gradient-to-t from-amber-400 to-sky-400" style={{ height }} />
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function RankingSection({ config }: { config: HomepageConfig }) {
+  const [grade, setGrade] = useState('ป.1')
+  const [mode, setMode] = useState<RankingMode>('country')
+  const [province, setProvince] = useState(config.ranking.provinces[0] || 'ทุกจังหวัด')
+  const mascots = config.mascots.cards
+  const displayRows = rankingRowsFor(grade, mode, province, config.ranking.rows)
+
+  return (
+    <section id="ranking" className="bg-white py-20">
+      <div className="mx-auto max-w-7xl px-4">
+        <SectionHeader eyebrow="Ranking" title={config.ranking.title} subtitle={config.ranking.description} />
+        <TopaCard className="overflow-hidden">
+          <div className="border-b border-sky-100 bg-gradient-to-r from-sky-50 to-amber-50 p-5">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+              <div className="flex gap-2 overflow-x-auto">
+                {gradeTabs.map((item) => (
+                  <button key={item} onClick={() => setGrade(item)} className={`rounded-2xl px-4 py-2 text-sm font-black ${grade === item ? 'bg-sky-500 text-white shadow-lg' : 'bg-white text-slate-600'}`}>
+                    {item}
+                  </button>
+                ))}
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <button onClick={() => setMode('country')} className={`rounded-2xl px-4 py-2 text-sm font-black ${mode === 'country' ? 'bg-amber-400 text-slate-950' : 'bg-white text-slate-600'}`}>อันดับประเทศ</button>
+                <button onClick={() => setMode('province')} className={`rounded-2xl px-4 py-2 text-sm font-black ${mode === 'province' ? 'bg-amber-400 text-slate-950' : 'bg-white text-slate-600'}`}>อันดับจังหวัด</button>
+                <select value={province} onChange={(event) => setProvince(event.target.value)} className="rounded-2xl border border-sky-100 bg-white px-4 py-2 text-sm font-bold text-slate-700">
+                  {config.ranking.provinces.map((item) => <option key={item}>{item}</option>)}
+                </select>
+              </div>
+            </div>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[780px] text-left text-sm">
+              <thead className="bg-slate-50 text-xs font-black text-slate-500">
+                <tr>
+                  {['อันดับ', 'ชื่อเด็ก', 'จังหวัด', 'จำนวนข้อสอบที่ทำ', 'คะแนนรวม', 'ความเร็วเฉลี่ย'].map((head) => <th key={head} className="px-5 py-4">{head}</th>)}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-sky-50">
+                {displayRows.map((row: TopaRankingRow & { image?: string }, index) => {
+                  const mascot = mascots.find((item) => resolveMascotKey(item.key) === resolveMascotKey(row.mascot)) || getMascot(row.mascot)
+                  return (
+                    <tr key={`${row.rank}-${row.child_name}`} className="bg-white hover:bg-sky-50/60">
+                      <td className="px-5 py-4 text-lg font-black text-amber-500">#{index + 1}</td>
+                      <td className="px-5 py-4">
+                        <div className="flex items-center gap-3">
+                          <SafeCmsImage
+                            src={row.image}
+                            alt={row.child_name}
+                            className="h-10 w-10 rounded-full border-2 border-white object-cover shadow"
+                            fallbackSeed={row.child_name}
+                            index={index}
+                          />
+                          <span className="font-black text-slate-900">{row.child_name}</span>
+                          <MascotAvatar mascot={mascot} index={index} size="sm" />
+                        </div>
+                      </td>
+                      <td className="px-5 py-4 font-bold text-slate-600">{row.province}</td>
+                      <td className="px-5 py-4 font-bold text-slate-600">{row.tests_completed}</td>
+                      <td className="px-5 py-4 font-black text-sky-600">{row.total_score.toLocaleString('th-TH')}</td>
+                      <td className="px-5 py-4 font-bold text-slate-600">{row.avg_speed}</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          </div>
+        </TopaCard>
+      </div>
     </section>
   )
 }
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex items-center gap-2 mb-3">
-      <span className="text-2xl">✨</span>
-      <span className="text-sm font-bold text-primary-600 uppercase tracking-wider">{children}</span>
-    </div>
-  )
-}
-
-// ─── Home Pricing Section ──────────────────────────────────────────────────────
-
-function HomePricingCard({ plan }: { plan: HomePricingPlan }) {
-  return (
-    <div
-      className={`relative card flex flex-col ${
-        plan.highlight ? 'ring-2 ring-accent-400 shadow-xl' : ''
-      }`}
-    >
-      {/* Badge */}
-      {plan.badge && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-accent-400 to-accent-600 text-white text-xs font-bold px-4 py-1 rounded-full shadow">
-          {plan.badge === 'Founder' ? '👑' : '✨'} {plan.badge}
-        </div>
-      )}
-
-      {/* Icon */}
-      <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${plan.color} flex items-center justify-center text-white text-lg font-extrabold mb-4 shadow-md`}>
-        {plan.emoji}
-      </div>
-
-      {/* Name */}
-      <h3 className="text-lg font-bold text-gray-900 mb-1">{plan.name}</h3>
-
-      {/* Price */}
-      <div className="mb-1">
-        <span className="text-3xl font-extrabold text-gray-900">{plan.priceDisplay}</span>
-      </div>
-      {plan.originalPriceDisplay && (
-        <div className="mb-1">
-          <span className="text-sm text-gray-400 line-through">{plan.originalPriceDisplay}</span>
-        </div>
-      )}
-      {plan.yearlyDisplay && (
-        <div className="mb-4">
-          <span className="text-sm text-accent-600 font-medium">{plan.yearlyDisplay}</span>
-        </div>
-      )}
-
-      {/* Features */}
-      <ul className="space-y-2 mb-6 flex-1">
-        {plan.features.map((f) => (
-          <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
-            <span className="text-primary-500 flex-shrink-0 mt-0.5">✓</span> {f}
-          </li>
-        ))}
-      </ul>
-
-      {/* CTA */}
-      <Link
-        href={plan.ctaHref}
-        className={`block text-center font-bold py-3 rounded-xl transition-all mt-auto ${
-          plan.highlight
-            ? 'bg-accent-500 hover:bg-accent-600 text-white shadow-md hover:shadow-lg'
-            : plan.name === 'ทดลองใช้ฟรี'
-            ? 'bg-gray-100 hover:bg-gray-200 text-gray-700'
-            : 'bg-primary-50 hover:bg-primary-100 text-primary-700'
-        }`}
-      >
-        {plan.cta}
-      </Link>
-    </div>
-  )
-}
-
-function HomePricingSection() {
-  const [plans, setPlans] = useState<HomePricingPlan[] | null>(null)
+export default function HomePage() {
+  const [config, setConfig] = useState<HomepageConfig>(fallbackHomepageConfig)
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
-    fetchHomePricingPlans().then(setPlans)
+    apiClient.get('/site/homepage', {
+      params: { t: Date.now() },
+      headers: { 'Cache-Control': 'no-store' },
+    }).then((res) => setConfig(normalizeHomepageConfig(res.data as HomepageConfig))).catch(() => setConfig(normalizeHomepageConfig(fallbackHomepageConfig)))
   }, [])
 
-  if (!plans) {
-    // Skeleton
-    return (
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {[1, 2, 3].map((i) => (
-          <div key={i} className="card h-80 bg-gray-100 animate-pulse" />
-        ))}
-      </div>
-    )
-  }
+  const featureCards = useMemo(() => enabled(config.features.cards), [config])
+  const mascots = useMemo(() => enabled(config.mascots.cards), [config])
+  const reviews = useMemo(() => {
+    const cmsReviews = enabled(config.reviews.cards)
+    const seen = new Set(cmsReviews.map((review) => review.name))
+    return [...cmsReviews, ...polishedReviewCards.filter((review) => !seen.has(review.name))].slice(0, 5)
+  }, [config])
+  const reviewTitle = config.reviews.title?.trim() || 'รีวิวจากรุ่นพี่'
+  const curriculum = useMemo(() => enabled(config.curriculum.cards), [config])
+  const trust = useMemo(() => enabled(config.parent_trust.cards), [config])
+  const nav = [
+    ['#curriculum', 'หลักสูตร'],
+    ['#ranking', 'อันดับ'],
+    ['#reviews', 'รีวิว'],
+    ['#parents', 'สำหรับผู้ปกครอง'],
+    ['/pricing', 'ราคา'],
+  ]
 
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      {plans.map((plan) => (
-        <HomePricingCard key={plan.name} plan={plan} />
-      ))}
-    </div>
-  )
-}
-
-// ─── Grade Card ─────────────────────────────────────────────────────────────
-
-function GradeCard({ grade }: { grade: typeof CURRICULUM[0] }) {
-  return (
-    <div className="card border-0 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200">
-      {/* Header with gradient accent bar */}
-      <div className={`h-1.5 bg-gradient-to-r ${grade.accentClass} rounded-t-xl`} />
-
-      <div className="p-5">
-        {/* Grade badge + status */}
-        <div className="flex items-start justify-between mb-3">
-          <div className="flex items-center gap-3">
-            <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${grade.accentClass} flex items-center justify-center text-white text-lg font-extrabold shadow-md flex-shrink-0`}>
-              ป.{grade.grade}
-            </div>
-            <div>
-              <h3 className="font-bold text-gray-900 leading-tight">{grade.title}</h3>
-              <p className="text-xs text-gray-400 mt-0.5">{grade.topicCount} หัวข้อหลัก</p>
-            </div>
-          </div>
-          {/* Status badge */}
-          <span className={`inline-flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-full flex-shrink-0 ${grade.statusColor}`}>
-            <span>{grade.statusIcon}</span>
-            {grade.statusLabel}
-          </span>
-        </div>
-
-        {/* Description */}
-        <p className="text-xs text-gray-500 leading-relaxed mb-4">{grade.description}</p>
-
-        {/* Topic pills */}
-        <div className="flex flex-wrap gap-1.5">
-          {grade.topics.map((topic) => (
-            <span key={topic} className="text-xs bg-gray-100 text-gray-600 px-2.5 py-1 rounded-full font-medium">
-              {topic}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
-
-// ─── Main Component ─────────────────────────────────────────────────────────
-
-export default function LandingPage() {
-  return (
-    <div className="min-h-screen bg-background font-sans">
-
-      {/* ── NAV ── */}
-      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary-100 shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center shadow-md">
-              <span className="text-white text-lg font-black">4</span>
-            </div>
-            <span className="text-xl font-extrabold text-gray-900">4-Craft</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Link href="/login" className="text-sm font-semibold text-gray-600 hover:text-primary-600 transition-colors px-3 py-1.5 rounded-lg hover:bg-primary-50">
-              เข้าสู่ระบบ
-            </Link>
-            <Link href="/register" className="text-sm font-bold text-white bg-primary-500 hover:bg-primary-600 px-5 py-2 rounded-xl shadow-md hover:shadow-lg transition-all">
-              ทดลองฟรี
-            </Link>
-          </div>
-        </div>
-      </nav>
-
-      {/* ── HERO ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-background to-accent-50 pt-12 pb-20">
-        {/* Decorative blobs */}
-        <div className="absolute top-10 left-10 w-64 h-64 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow" />
-        <div className="absolute bottom-10 right-10 w-72 h-72 bg-accent-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow" />
-
-        <div className="relative max-w-4xl mx-auto px-4 text-center">
-          {/* Badge — updated to ป.1–ป.6 */}
-          <div className="inline-flex items-center gap-2 bg-white border border-primary-200 rounded-full px-4 py-1.5 mb-8 shadow-sm">
-            <span className="text-sm font-semibold text-primary-700">🎓 สำหรับเด็ก ป.1–ป.6</span>
-            <span className="w-1.5 h-1.5 bg-primary-400 rounded-full" />
-            <span className="text-sm font-medium text-gray-500">วิชาคณิตศาสตร์</span>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-            เรียนเก่งขึ้นทุกวัน
-            <br />
-            <span className="bg-gradient-to-r from-primary-500 via-accent-500 to-secondary-500 bg-clip-text text-transparent">
-              แบบสนุกเหมือนเล่นเกม
-            </span>
-          </h1>
-
-          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            ฝึกคณิตด้วยเควสสุดสนุก มีตัวละคร มีเลเวล และ AI ช่วยวิเคราะห์จุดอ่อน
-          </p>
-
-          {/* CTA buttons — updated per spec */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/register" className="inline-flex items-center justify-center gap-2 bg-primary-500 hover:bg-primary-600 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all">
-              <span>🚀</span> ทดลองใช้ฟรี 3 เควส
-            </Link>
-            <a href="#curriculum" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-700 font-bold text-lg px-8 py-4 rounded-2xl border-2 border-primary-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all">
-              <span>📚</span> ดูหลักสูตร ป.1–ป.6
-            </a>
-            <Link href="/login" className="inline-flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all">
-              <span>🔑</span> เข้าสู่ระบบ
-            </Link>
-          </div>
-
-          {/* Social proof */}
-          <p className="mt-8 text-sm text-gray-400">
-            มีเด็กๆ กว่า 1,200 คนที่เควสไปแล้ว · คะแนนเฉลี่ย 4.8 ★
-          </p>
-        </div>
-      </section>
-
-      {/* ── FEATURES ── */}
-      <SectionWrapper className="bg-white">
-        <div className="text-center mb-12">
-          <SectionLabel>ระบบเลเวลแบบเกม</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            เหมือนเล่นเกม แต่ได้ความรู้จริงๆ
-          </h2>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {FEATURES.map((f) => (
-            <div key={f.title} className="card-hover text-left">
-              <div className="text-4xl mb-3">{f.emoji}</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-1">{f.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </SectionWrapper>
-
-      {/* ── CURRICULUM (6 GRADES) ── */}
-      <SectionWrapper id="curriculum" className="bg-gradient-to-b from-primary-50 to-background">
-        <div className="text-center mb-12">
-          <SectionLabel>หลักสูตร</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            ครบทุกระดับชั้น ป.1–ป.6
-          </h2>
-          <p className="text-gray-500 mt-3">เนื้อหาแน่น เข้าใจง่าย สอดคล้องกับหลักสูตรแกนกลาง (NETPA)</p>
-        </div>
-
-        {/* 6-card responsive grid: 3 cols desktop, 2 cols tablet, 1 col mobile */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {CURRICULUM.map((grade) => (
-            <GradeCard key={grade.grade} grade={grade} />
-          ))}
-        </div>
-
-        {/* Call to action below curriculum */}
-        <div className="text-center mt-10">
-          <p className="text-gray-500 text-sm mb-4">✨ ป.1–ป.3 เรียนได้ทันที · ป.4–ป.6 ฟรีสำหรับบททบทวน</p>
-          <Link href="/register" className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white font-bold px-8 py-3 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
-            <span>🚀</span> เริ่มทดลองฟรี 3 เควส
+    <div className="min-h-screen bg-[#f7fbff] text-slate-900">
+      <header className="sticky top-0 z-50 border-b border-sky-100 bg-white/90 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+          <Link href="/" className="flex items-center gap-3">
+            <TopaLogo />
           </Link>
+          <nav className="hidden items-center gap-6 lg:flex">
+            {nav.map(([href, label]) => <Link key={label} href={href} className="text-sm font-bold text-slate-600 hover:text-sky-600">{label}</Link>)}
+          </nav>
+          <div className="hidden items-center gap-3 sm:flex">
+            <TopaButton href="/login" variant="ghost">เข้าสู่ระบบ</TopaButton>
+            <TopaButton href="/register">ทดลองใช้ฟรี!</TopaButton>
+          </div>
+          <button className="rounded-xl p-2 text-slate-700 lg:hidden" onClick={() => setMobileOpen((value) => !value)} aria-label="Toggle menu">
+            {mobileOpen ? <X /> : <Menu />}
+          </button>
         </div>
-      </SectionWrapper>
-
-      {/* ── HOW IT WORKS ── */}
-      <SectionWrapper className="bg-white">
-        <div className="text-center mb-12">
-          <SectionLabel>วิธีใช้งาน</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            เริ่มใช้งานง่ายๆ 3 ขั้นตอน
-          </h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            { step: '1', emoji: '📝', title: 'ทดสอบวัดระดับ', desc: 'ทำแบบทดสอบสั้นๆ 5 นาที ระบบจะรู้ว่าตัวเองเก่งเรื่องอะไร ต้องฝึกเพิ่มตรงไหน' },
-            { step: '2', emoji: '🎯', title: 'รับเควสเฉพาะตัว', desc: 'AI สร้างแบบฝึกที่เหมาะกับแต่ละคน เน้นจุดที่ต้องปรับปรุง' },
-            { step: '3', emoji: '🏆', title: 'สะสม XP ขึ้นเลเวล', desc: 'ทำเควสรายวัน ต่อเนื่อง สะสมคะแนน เห็นพัฒนาการชัดเจน' },
-          ].map((item) => (
-            <div key={item.step} className="text-center">
-              <div className="relative inline-block mb-4">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center text-3xl mx-auto shadow-md">
-                  {item.emoji}
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary-500 text-white text-sm font-bold flex items-center justify-center shadow">
-                  {item.step}
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+        {mobileOpen && (
+          <div className="border-t border-sky-100 bg-white px-4 py-4 lg:hidden">
+            <div className="grid gap-2">
+              {nav.map(([href, label]) => <Link key={label} href={href} className="rounded-xl px-3 py-2 font-bold text-slate-700 hover:bg-sky-50">{label}</Link>)}
+              <TopaButton href="/login" variant="secondary">เข้าสู่ระบบ</TopaButton>
+              <TopaButton href="/register">ทดลองใช้ฟรี!</TopaButton>
             </div>
-          ))}
-        </div>
-      </SectionWrapper>
+          </div>
+        )}
+      </header>
 
-      {/* ── PRICING ── */}
-      <SectionWrapper className="bg-gradient-to-b from-background to-primary-50">
-        <div className="text-center mb-12">
-          <SectionLabel>ราคา</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            เลือกแพ็กเกจการเรียนที่เหมาะกับลูกของคุณ
-          </h2>
-          <p className="text-gray-500 mt-2">เริ่มทดลองฟรี แล้วอัปเกรดเมื่อพร้อม ไม่มีสัญญาระยะยาว</p>
-        </div>
-        <HomePricingSection />
-      </SectionWrapper>
-
-      {/* ── TOP STUDENTS ── */}
-      <SectionWrapper className="bg-white">
-        <div className="text-center mb-12">
-          <SectionLabel>นักเรียนยอดเยี่ยม</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            เด็กๆ ที่เก่งขึ้นทุกวัน
-          </h2>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {TOP_STUDENTS.map((student, i) => (
-            <div key={i} className="card text-center">
-              <div className="relative inline-block mb-3">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary-300 to-primary-500 flex items-center justify-center text-white text-2xl font-extrabold shadow-md mx-auto">
-                  {student.nickname.charAt(0)}
-                </div>
-                <div className="absolute -bottom-1 -right-1 w-7 h-7 bg-amber-400 rounded-full flex items-center justify-center text-sm shadow">
-                  {student.badge}
-                </div>
-              </div>
-              <h3 className="font-bold text-gray-900 mb-0.5">{student.nickname}</h3>
-              <p className="text-xs text-gray-400 mb-3">{student.province}</p>
-              <div className="flex items-center justify-center gap-4 mb-3">
-                <div className="text-center">
-                  <div className="text-lg font-extrabold text-primary-600">เลเวล {student.level}</div>
-                  <div className="text-xs text-gray-400">ปัจจุบัน</div>
-                </div>
-                <div className="w-px h-8 bg-gray-200" />
-                <div className="text-center">
-                  <div className="text-lg font-extrabold text-green-600">{student.improvement}</div>
-                  <div className="text-xs text-gray-400">พัฒนา</div>
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <StarRating stars={Math.min(student.level - 5, 5)} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </SectionWrapper>
-
-      {/* ── PARENT TRUST ── */}
-      <SectionWrapper className="bg-gradient-to-b from-accent-50 to-background">
-        <div className="text-center mb-12">
-          <SectionLabel>สำหรับผู้ปกครอง</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            ผู้ปกครองวางใจได้
-          </h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {TRUST_ITEMS.map((item) => (
-            <div key={item.title} className="card text-center">
-              <div className="text-5xl mb-4">{item.emoji}</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </SectionWrapper>
-
-      {/* ── CTA BANNER ── */}
-      <section className="bg-gradient-to-r from-primary-500 to-primary-600 py-16">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-            พร้อมเริ่มต้นแล้วหรือยัง?
-          </h2>
-          <p className="text-primary-100 text-lg mb-8">
-            ทดลองใช้ฟรี 3 เควส ไม่ต้องใช้บัตรเครดิต
-          </p>
-          <Link href="/register" className="inline-flex items-center gap-2 bg-white text-primary-600 font-extrabold text-lg px-10 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all">
-            🚀 เริ่มเลย
-          </Link>
-        </div>
-      </section>
-
-      {/* ── FOOTER ── */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+      <main>
+        <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-amber-50 py-16 md:py-24">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 lg:grid-cols-[1.02fr_0.98fr]">
             <div>
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-sm font-black">4</span>
-                </div>
-                <span className="text-white font-bold text-lg">4-Craft</span>
+              <p className="mb-4 inline-flex rounded-full bg-white px-4 py-2 text-sm font-black text-sky-600 shadow-sm">TH / EP Math for ป.1-6</p>
+              <h1 className="whitespace-pre-line text-5xl font-black leading-tight tracking-normal text-slate-950 md:text-6xl">{config.hero.headline}</h1>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{config.hero.subheadline}</p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <TopaButton href={config.hero.primary_cta_link}>{config.hero.primary_cta_text}</TopaButton>
+                <TopaButton href={config.hero.secondary_cta_link} variant="secondary">{config.hero.secondary_cta_text}</TopaButton>
               </div>
-              {/* Updated footer description */}
-              <p className="text-sm leading-relaxed">ระบบเรียนรู้คณิตศาสตร์แบบปรับตัวสำหรับเด็กไทย ป.1–ป.6 ด้วย AI</p>
+              <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {config.hero.stats.slice(0, 3).map((stat) => <StatCard key={stat.label} {...stat} />)}
+              </div>
             </div>
-            <div>
-              <h4 className="text-white font-semibold mb-3">ผลิตภัณฑ์</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/#curriculum" className="hover:text-white transition-colors">หลักสูตร</Link></li>
-                <li><Link href="/register" className="hover:text-white transition-colors">ทดลองใช้ฟรี</Link></li>
-                <li><Link href="/register" className="hover:text-white transition-colors">ราคา</Link></li>
-              </ul>
+            <MascotGroup config={config} />
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="mx-auto max-w-7xl px-4">
+            <SectionHeader eyebrow="TOPA Experience" title={config.features.title} subtitle={config.features.subtitle} />
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+              {featureCards.map((card, index) => {
+                const featureMascot = mascots.find((item) => resolveMascotKey(item.key) === resolveMascotKey(featureMascotKeys[index])) || mascots[index % mascots.length]
+                return (
+                <TopaCard key={card.title} className="p-6">
+                  <div className="mb-5 flex items-center justify-between gap-3">
+                    <div className="inline-flex rounded-2xl bg-sky-50 p-3 text-sky-600"><TopaIcon name={card.icon} /></div>
+                    <MascotAvatar mascot={featureMascot} index={index} size="lg" />
+                  </div>
+                  <h3 className="text-lg font-black text-slate-950">{card.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">{card.description}</p>
+                </TopaCard>
+                )
+              })}
             </div>
-            <div>
-              <h4 className="text-white font-semibold mb-3">บัญชี</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/login" className="hover:text-white transition-colors">เข้าสู่ระบบ</Link></li>
-                <li><Link href="/register" className="hover:text-white transition-colors">สมัครสมาชิก</Link></li>
-                <li><Link href="/dashboard" className="hover:text-white transition-colors">แดชบอร์ด</Link></li>
-              </ul>
+          </div>
+        </section>
+
+        <RankingSection config={config} />
+
+        <section id="reviews" className="bg-amber-50 py-20">
+          <div className="mx-auto max-w-7xl px-4">
+            <SectionHeader eyebrow="Reviews" title={reviewTitle} />
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {reviews.map((review, index) => (
+                <TopaCard key={review.name} className={`p-6 ${index < 2 ? 'md:col-span-1 lg:col-span-1 ring-4 ring-white' : ''}`}>
+                  <div className="flex items-start gap-4">
+                    <SafeCmsImage
+                      src={review.image}
+                      alt={review.name}
+                      className="h-24 w-24 rounded-3xl border-4 border-white object-cover shadow-lg"
+                      fallbackSeed={review.name}
+                      index={index}
+                    />
+                    <MascotAvatar mascot={mascots[index % mascots.length]} index={index} size="sm" />
+                  </div>
+                  <div className="mt-5 flex text-amber-400">{Array.from({ length: Math.max(1, Math.min(5, review.rating)) }, (_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}</div>
+                  <p className="mt-3 text-lg font-black text-slate-950">{review.school_claim}</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">“{review.quote}”</p>
+                  <p className="mt-4 text-sm font-black text-sky-600">{review.name}</p>
+                </TopaCard>
+              ))}
             </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="mx-auto max-w-7xl px-4">
+            <SectionHeader eyebrow="Mascot Friends" title={config.mascots.title} />
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {mascots.map((mascot, index) => <MascotCard key={mascot.key} mascot={mascot} index={index} />)}
+            </div>
+          </div>
+        </section>
+
+        <section id="curriculum" className="bg-white py-20">
+          <div className="mx-auto max-w-7xl px-4">
+            <SectionHeader eyebrow="Curriculum" title={config.curriculum.title} />
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {curriculum.map((card) => (
+                <TopaCard key={card.title} className="p-6">
+                  <div className="mb-4 inline-flex rounded-2xl bg-amber-50 p-3 text-amber-500"><TopaIcon name={card.icon} /></div>
+                  <h3 className="text-lg font-black text-slate-950">{card.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{card.text}</p>
+                </TopaCard>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="parents" className="py-20">
+          <div className="mx-auto max-w-7xl px-4">
+            <SectionHeader eyebrow="Parent Trust" title={config.parent_trust.title} />
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+              {trust.map((card) => (
+                <TopaCard key={card.title} className="p-5">
+                  <div className="mb-4 text-sky-600"><TopaIcon name={card.icon} /></div>
+                  <h3 className="font-black text-slate-950">{card.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{card.text}</p>
+                </TopaCard>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="px-4 py-20">
+          <div className="mx-auto grid max-w-6xl items-center gap-6 rounded-[2rem] bg-gradient-to-r from-sky-500 to-amber-400 p-8 text-white shadow-2xl md:grid-cols-[1fr_auto] md:p-10">
             <div>
-              <h4 className="text-white font-semibold mb-3">ติดต่อ</h4>
-              <ul className="space-y-2 text-sm">
-                <li>📧 support@4-craft.com</li>
-                <li>📱 02-xxx-xxxx</li>
-                <li className="text-gray-600 text-xs mt-4">© 2025 4-Craft. สงวนลิขสิทธิ์.</li>
-              </ul>
+              <h2 className="text-3xl font-black md:text-4xl">{config.cta_banner.title}</h2>
+              <p className="mt-3 max-w-2xl text-white/90">{config.cta_banner.subtitle}</p>
+            </div>
+            <TopaButton href={config.cta_banner.button_link} variant="secondary" className="bg-white">{config.cta_banner.button_text}</TopaButton>
+          </div>
+        </section>
+      </main>
+
+      <footer className="bg-slate-950 py-12 text-slate-300">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 md:grid-cols-4">
+          <div>
+            <div className="inline-flex rounded-2xl bg-white px-3 py-2"><TopaLogo /></div>
+            <p className="mt-4 text-sm leading-6">{config.footer.footer_text}</p>
+          </div>
+          <div>
+            <h3 className="font-black text-white">เมนูหลัก</h3>
+            <div className="mt-3 grid gap-2 text-sm">{nav.slice(0, 4).map(([href, label]) => <Link key={label} href={href}>{label}</Link>)}</div>
+          </div>
+          <div>
+            <h3 className="font-black text-white">เกี่ยวกับเรา</h3>
+            <div className="mt-3 grid gap-2 text-sm"><Link href="/pricing">ราคา</Link><Link href="/login">เข้าสู่ระบบ</Link><Link href="/register">ทดลองใช้ฟรี</Link></div>
+          </div>
+          <div>
+            <h3 className="font-black text-white">ติดต่อ</h3>
+            <p className="mt-3 text-sm">{config.footer.contact_email}</p>
+            <div className="mt-4 flex gap-3">
+              <Link href={config.footer.facebook_url} aria-label="Facebook"><Facebook className="h-5 w-5" /></Link>
+              <Link href={config.footer.youtube_url} aria-label="YouTube"><Play className="h-5 w-5" /></Link>
+              <Link href={config.footer.tiktok_url} aria-label="TikTok"><Music2 className="h-5 w-5" /></Link>
+              <Link href={config.footer.line_url} aria-label="Line"><Instagram className="h-5 w-5" /></Link>
             </div>
           </div>
         </div>
       </footer>
-
     </div>
   )
 }

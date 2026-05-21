@@ -1,4 +1,6 @@
 import { apiClient } from '@/lib/api-client'
+import type { AxiosError } from 'axios'
+import type { HomepageConfig } from '@/lib/topa-content'
 
 export interface AIGenerationJob {
   id: string
@@ -62,11 +64,41 @@ export interface AdminMetrics {
   new_users_this_month: number
 }
 
+export interface AdminOverview {
+  members: {
+    total: number
+    free: number
+    paid: number
+    paid_th: number
+    paid_ep: number
+  }
+  students: {
+    total: number
+    by_grade: Array<{ grade: number; count: number }>
+    by_gender: Array<{ gender: 'male' | 'female' | 'other' | 'unknown'; count: number }>
+    by_age: Array<{ age: number | string; count: number }>
+  }
+  content: {
+    lessons_total: number
+    questions_total: number
+    tests_total: number
+    draft: number
+    pending: number
+    approved: number
+    rejected: number
+  }
+}
+
 export interface AdminUserRow {
+  id?: string
   user_id: string
   name?: string | null
   email?: string | null
   role?: string | null
+  storage_role?: string | null
+  plan?: string | null
+  plan_expires_at?: string | null
+  is_active?: boolean
   membership_status?: string | null
   subscription_status?: string | null
   plan_type?: string | null
@@ -82,16 +114,76 @@ export interface AdminUserRow {
   created_at?: string | null
   last_login_at?: string | null
   number_of_child_profiles?: number
+  children_count?: number
   actions?: string[]
 }
 
 export interface AdminPlanPayload {
-  plan_type: 'free' | 'thp' | 'ep' | 'family' | 'reviewer'
-  program_type: 'FREE' | 'THP' | 'EP' | 'BOTH'
-  subscription_status: 'free' | 'active' | 'trial' | 'manual_grant' | 'expired' | 'canceled'
-  access_ends_at: string | null
+  plan?: 'free' | 'reviewer' | 'founder' | 'plus' | 'pro'
+  plan_expires_at?: string | null
+  reason?: string
+  note?: string
+  plan_type?: 'free' | 'thp' | 'ep' | 'family' | 'reviewer'
+  program_type?: 'FREE' | 'THP' | 'EP' | 'BOTH'
+  subscription_status?: 'free' | 'active' | 'trial' | 'manual_grant' | 'expired' | 'canceled'
+  access_ends_at?: string | null
   admin_note?: string
   manual_grant_reason?: string
+}
+
+export interface AdminSummary {
+  total_users: number
+  active_users: number
+  free_users: number
+  paid_reviewer_users: number
+  reviewer_users: number
+  total_children: number
+  total_test_sessions: number
+  lessons_visible_by_grade: Record<string, number>
+  th_ep_content_coverage: { has_th: number; has_ep: number; total: number }
+  content_gaps: AdminLessonStatus[]
+}
+
+export interface AdminLessonStatus {
+  lesson_id: string
+  grade_level: number
+  title_th: string
+  title_ep?: string | null
+  has_th: boolean
+  has_ep: boolean
+  has_test: boolean
+  visual_status: string
+  beta_visible: boolean
+  enabled: boolean
+  validation_status: string
+  issue_count: number
+}
+
+export interface AdminChildRow {
+  id: string
+  child_id: string
+  parent_email?: string | null
+  nickname?: string | null
+  name?: string | null
+  grade?: number | null
+  grade_level?: number | null
+  xp?: number | null
+  level?: number | null
+  rank?: string | null
+  created_at?: string | null
+}
+
+export interface AdminTestRow {
+  id: string
+  session_id: string
+  user?: { id: string; email: string } | null
+  child?: { id: string; nickname: string } | null
+  lesson_id?: string | null
+  grade?: number | null
+  score?: { total_questions: number; correct_count: number; accuracy: number } | null
+  status?: string | null
+  started_at?: string | null
+  finished_at?: string | null
 }
 
 export interface AdminSubscriptionRow {
@@ -125,6 +217,31 @@ export interface AdminRevenue {
   conversion_rate: number
   is_mock?: boolean
   note?: string
+}
+
+export interface AdminReferralRow {
+  id: string
+  referrer_user_id: string
+  referrer_email?: string | null
+  referred_user_id?: string | null
+  referred_email?: string | null
+  status: 'clicked' | 'registered' | 'paid'
+  coins_awarded?: number
+  reward_status?: 'pending' | 'active' | 'reversed' | null
+  ledger_id?: string | null
+  created_at?: string | null
+  visitor_hash?: string | null
+}
+
+export interface AdminReferralResponse {
+  rows: AdminReferralRow[]
+  summary: {
+    clicks: number
+    registered: number
+    paid: number
+    pending_coins: number
+    active_coins: number
+  }
 }
 
 export interface AdminLessonRow {
@@ -492,6 +609,27 @@ export interface AdminContentLesson {
 }
 
 export const adminApi = {
+  errorMessage(error: unknown, fallback = 'โหลดข้อมูลไม่สำเร็จ') {
+    const err = error as AxiosError<{ detail?: unknown; message?: unknown }>
+    const baseURL = err.config?.baseURL || ''
+    const url = err.config?.url || ''
+    const endpoint = `${baseURL}${url}`
+    const status = err.response?.status ? `HTTP ${err.response.status}` : 'network'
+    const detail = err.response?.data?.detail ?? err.response?.data?.message ?? err.message
+    const message = typeof detail === 'string' ? detail : JSON.stringify(detail || {})
+    return `${fallback}\nEndpoint: ${endpoint || '-'}\nStatus: ${status}\nMessage: ${message || '-'}`
+  },
+
+  async overview() {
+    const res = await apiClient.get('/admin/overview')
+    return res.data as AdminOverview
+  },
+
+  async summary() {
+    const res = await apiClient.get('/admin/summary')
+    return res.data as AdminSummary
+  },
+
   async generatedContent() {
     const res = await apiClient.get('/admin/generated-content')
     return res.data as AIGenerationJob[]
@@ -502,19 +640,51 @@ export const adminApi = {
     return res.data as ContentQualityReport
   },
 
+  async homepage() {
+    const res = await apiClient.get('/admin/homepage')
+    return res.data as { config: HomepageConfig; backups: Array<{ name: string; path: string; created_at: string }> }
+  },
+
+  async saveHomepage(config: HomepageConfig) {
+    const res = await apiClient.patch('/admin/homepage', { config })
+    return res.data as { saved: boolean; backup?: { backup_path: string }; config: HomepageConfig }
+  },
+
+  async validateHomepage(config: HomepageConfig) {
+    const res = await apiClient.post('/admin/homepage/validate', { config })
+    return res.data as { valid: boolean }
+  },
+
+  async backupHomepage() {
+    const res = await apiClient.post('/admin/homepage/backup')
+    return res.data as { backup_path: string }
+  },
+
+  async restoreHomepage(backupName: string) {
+    const res = await apiClient.post('/admin/homepage/restore', { backup_name: backupName })
+    return res.data as { restored: boolean; config: HomepageConfig }
+  },
+
   async metrics() {
     const res = await apiClient.get('/admin/metrics')
     return res.data as AdminMetrics
   },
 
-  async users() {
-    const res = await apiClient.get('/admin/users')
-    return res.data as { users: AdminUserRow[] }
+  async users(params?: { search?: string; plan?: string; role?: string; active?: boolean | ''; limit?: number; offset?: number }) {
+    const res = await apiClient.get('/admin/users', { params })
+    return res.data as { users: AdminUserRow[]; total: number; limit: number; offset: number }
   },
 
   async getUser(userId: string) {
     const res = await apiClient.get(`/admin/users/${userId}`)
-    return res.data as AdminUserRow
+    return res.data as {
+      profile: AdminUserRow
+      user: AdminUserRow
+      children: AdminChildRow[]
+      recent_test_sessions: AdminTestRow[]
+      recent_lesson_activity: Array<Record<string, unknown>>
+      subscription_summary: Record<string, unknown>
+    }
   },
 
   async changeUserRole(userId: string, role: string, adminNote?: string) {
@@ -525,6 +695,53 @@ export const adminApi = {
   async changeUserPlan(userId: string, payload: AdminPlanPayload) {
     const res = await apiClient.patch(`/admin/users/${userId}/plan`, payload)
     return res.data as AdminUserRow
+  },
+
+  async referrals() {
+    const res = await apiClient.get('/admin/referrals')
+    return res.data as AdminReferralResponse
+  },
+
+  async approveReferralCoins(ledgerId: string) {
+    const res = await apiClient.post(`/admin/referrals/ledger/${ledgerId}/approve`)
+    return res.data as { ok: boolean; ledger_id: string; status: string }
+  },
+
+  async reverseReferralCoins(ledgerId: string) {
+    const res = await apiClient.post(`/admin/referrals/ledger/${ledgerId}/reverse`)
+    return res.data as { ok: boolean; ledger_id: string; status: string }
+  },
+
+  async changeUserActive(userId: string, isActive: boolean, adminNote?: string) {
+    const res = await apiClient.patch(`/admin/users/${userId}/active`, { is_active: isActive, admin_note: adminNote })
+    return res.data as AdminUserRow
+  },
+
+  async children(params?: { grade?: number | ''; limit?: number; offset?: number }) {
+    const res = await apiClient.get('/admin/students', { params })
+    return res.data as { children: AdminChildRow[]; total: number; limit: number; offset: number }
+  },
+
+  async tests(params?: { grade?: number | ''; lesson?: string; user?: string; limit?: number; offset?: number }) {
+    const res = await apiClient.get('/admin/tests', { params })
+    return res.data as { tests: AdminTestRow[]; total: number; limit: number; offset: number }
+  },
+
+  async lessonsStatus() {
+    const res = await apiClient.get('/admin/lessons/status')
+    return res.data as { lessons: AdminLessonStatus[] }
+  },
+
+  async systemHealth() {
+    const res = await apiClient.get('/admin/system/health')
+    return res.data as {
+      api_status: string
+      database_status: string
+      redis_status: string
+      content_file_count: number
+      environment: string
+      app_version?: string
+    }
   },
 
   async extendUserSubscription(userId: string, days = 30, adminNote?: string) {

@@ -49,6 +49,33 @@ CHILD_PROFILE_COLUMNS = {
     "last_active_date": "DATE",
 }
 
+USER_COLUMNS = {
+    "plan": {
+        "sqlite": "VARCHAR(40) DEFAULT 'free'",
+        "postgresql": "VARCHAR(40) DEFAULT 'free'",
+    },
+    "plan_expires_at": {
+        "sqlite": "DATETIME",
+        "postgresql": "TIMESTAMP WITH TIME ZONE",
+    },
+    "is_active": {
+        "sqlite": "BOOLEAN DEFAULT 1",
+        "postgresql": "BOOLEAN DEFAULT TRUE",
+    },
+    "last_login_at": {
+        "sqlite": "DATETIME",
+        "postgresql": "TIMESTAMP WITH TIME ZONE",
+    },
+    "referral_token": {
+        "sqlite": "VARCHAR(80)",
+        "postgresql": "VARCHAR(80)",
+    },
+    "referred_by_user_id": {
+        "sqlite": "VARCHAR(36)",
+        "postgresql": "VARCHAR(36)",
+    },
+}
+
 CHILD_QUEST_COLUMNS = {
     "recurrence_type": "VARCHAR(20) DEFAULT 'none'",
     "period_key": "VARCHAR(40)",
@@ -115,15 +142,108 @@ CREATE_TABLES = [
     """,
 ]
 
+PUBLIC_SHARES_TABLES = {
+    "sqlite": """
+        CREATE TABLE IF NOT EXISTS public_shares (
+            id VARCHAR(36) PRIMARY KEY,
+            token VARCHAR(80) UNIQUE,
+            share_type VARCHAR(40),
+            created_by_user_id VARCHAR(36),
+            data JSON DEFAULT '{}',
+            expires_at DATETIME,
+            revoked_at DATETIME,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    """,
+    "postgresql": """
+        CREATE TABLE IF NOT EXISTS public_shares (
+            id VARCHAR(36) PRIMARY KEY,
+            token VARCHAR(80) UNIQUE,
+            share_type VARCHAR(40),
+            created_by_user_id VARCHAR(36),
+            data JSONB DEFAULT '{}',
+            expires_at TIMESTAMP WITH TIME ZONE,
+            revoked_at TIMESTAMP WITH TIME ZONE,
+            created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+        )
+    """,
+}
+
+REFERRAL_TABLES = {
+    "sqlite": [
+        """
+        CREATE TABLE IF NOT EXISTS referral_events (
+            id VARCHAR(36) PRIMARY KEY,
+            referrer_user_id VARCHAR(36),
+            referred_user_id VARCHAR(36),
+            referral_token VARCHAR(80),
+            event_type VARCHAR(40),
+            share_token VARCHAR(80),
+            visitor_hash VARCHAR(96),
+            metadata JSON DEFAULT '{}',
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        """,
+        """
+        CREATE TABLE IF NOT EXISTS coin_ledger (
+            id VARCHAR(36) PRIMARY KEY,
+            user_id VARCHAR(36),
+            amount INTEGER,
+            type VARCHAR(60),
+            status VARCHAR(20) DEFAULT 'pending',
+            reference_id VARCHAR(120),
+            activated_at DATETIME,
+            note TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        """,
+    ],
+    "postgresql": [
+        """
+        CREATE TABLE IF NOT EXISTS referral_events (
+            id VARCHAR(36) PRIMARY KEY,
+            referrer_user_id VARCHAR(36),
+            referred_user_id VARCHAR(36),
+            referral_token VARCHAR(80),
+            event_type VARCHAR(40),
+            share_token VARCHAR(80),
+            visitor_hash VARCHAR(96),
+            metadata JSONB DEFAULT '{}',
+            created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+        )
+        """,
+        """
+        CREATE TABLE IF NOT EXISTS coin_ledger (
+            id VARCHAR(36) PRIMARY KEY,
+            user_id VARCHAR(36),
+            amount INTEGER,
+            type VARCHAR(60),
+            status VARCHAR(20) DEFAULT 'pending',
+            reference_id VARCHAR(120),
+            activated_at TIMESTAMP WITH TIME ZONE,
+            note TEXT,
+            created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+        )
+        """,
+    ],
+}
+
 
 def ensure_local_schema(engine: Engine) -> None:
-    if engine.dialect.name != "sqlite":
-        return
-
     inspector = inspect(engine)
     table_names = set(inspector.get_table_names())
+    dialect = engine.dialect.name
 
     missing_by_table: dict[str, dict[str, str]] = {}
+    if "users" in table_names:
+        existing_columns = {column["name"] for column in inspector.get_columns("users")}
+        missing_by_table["users"] = {
+            column_name: type_by_dialect.get(dialect, type_by_dialect["sqlite"])
+            for column_name, type_by_dialect in USER_COLUMNS.items()
+            if column_name not in existing_columns
+        }
     if "child_profiles" in table_names:
         existing_columns = {column["name"] for column in inspector.get_columns("child_profiles")}
         missing_by_table["child_profiles"] = {
@@ -160,8 +280,14 @@ def ensure_local_schema(engine: Engine) -> None:
             if column_name not in existing_columns
         }
     with engine.begin() as connection:
-        for create_table_sql in CREATE_TABLES:
-            connection.execute(text(create_table_sql))
+        if dialect == "sqlite":
+            for create_table_sql in CREATE_TABLES:
+                connection.execute(text(create_table_sql))
+        if "public_shares" not in table_names:
+            connection.execute(text(PUBLIC_SHARES_TABLES.get(dialect, PUBLIC_SHARES_TABLES["sqlite"])))
+        for table_name, create_table_sql in zip(("referral_events", "coin_ledger"), REFERRAL_TABLES.get(dialect, REFERRAL_TABLES["sqlite"])):
+            if table_name not in table_names:
+                connection.execute(text(create_table_sql))
         for table_name, missing_columns in missing_by_table.items():
             for column_name, column_type in missing_columns.items():
                 connection.execute(text(f"ALTER TABLE {table_name} ADD COLUMN {column_name} {column_type}"))

@@ -1,6 +1,12 @@
 import axios from 'axios'
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8001'
+const appEnv = process.env.NEXT_PUBLIC_APP_ENV || 'local'
+const isLocalEnv = ['local', 'dev', 'development', 'test'].includes(appEnv.toLowerCase())
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || (isLocalEnv ? 'http://127.0.0.1:8001' : undefined)
+
+if (!BASE_URL) {
+  throw new Error('NEXT_PUBLIC_API_BASE_URL is required when NEXT_PUBLIC_APP_ENV is staging or production')
+}
 
 export const apiClient = axios.create({
   baseURL: BASE_URL,

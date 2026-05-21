@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+!.env.staging.example
+node_modules
+.next
+out
+*.log
+*.err.log
+*.out.log
+*.tsbuildinfo
+.cache

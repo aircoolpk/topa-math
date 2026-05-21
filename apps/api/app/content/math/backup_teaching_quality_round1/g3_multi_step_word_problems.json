@@ -1,0 +1,1057 @@
+﻿{
+  "lesson_id": "g3_multi_step_word_problems",
+  "id": "g3_multi_step_word_problems",
+  "grade_level": 3,
+  "title_th": "โจทย์ปัญหาหลายขั้นตอน",
+  "objective_th": "นักเรียนสามารถวิเคราะห์และแก้โจทย์ปัญหาที่มีหลายขั้นตอนได้ถูกต้อง",
+  "story_intro_th": "ร้านคุณป้ามีขายน้ำผลไม้ แก้วละ 15 บาท วันนี้ขายได้ 8 แก้ว แต่ต้องหักต้นทุนแก้วละ 6 บาท คุณป้าได้กำไรเท่าไหร่? 🍹",
+  "explanation_steps": [
+    "อ่านโจทย์ให้เข้าใจ ตั้งคำถามว่าโจทย์ถามอะไร",
+    "หาให้ได้ก่อนว่าต้องทำอะไรก่อน ขั้นที่ 1 คืออะไร ขั้นที่ 2 คืออะไร",
+    "ขั้นที่ 1: หายอดขาย 15 × 8 = 120 บาท",
+    "ขั้นที่ 2: หาต้นทุน 6 × 8 = 48 บาท",
+    "ขั้นสุดท้าย: หากำไร = ยอดขาย - ต้นทุน = 120 - 48 = 72 บาท"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "โจทย์สองขั้นตอน",
+      "question_th": "นักเรียนซื้อปากกา 5 ด้าม ด้ามละ 12 บาท และยางลบ 3 ด้าม ด้ามละ 8 บาท รวมจ่ายเท่าไหร่?",
+      "solution_th": "ปากกา: 5 × 12 = 60 บาท / ยางลบ: 3 × 8 = 24 บาท / รวม: 60 + 24 = 84 บาท ✅"
+    },
+    {
+      "title_th": "โจทย์สามขั้นตอน",
+      "question_th": "มีส้ม 50 ผล แบ่งให้เพื่อน 7 คน คนละ 5 ผล เหลือส้มกี่ผล?",
+      "solution_th": "แจกไป: 7 × 5 = 35 ผล / เหลือ: 50 - 35 = 15 ผล ✅"
+    },
+    {
+      "title_th": "โจทย์คูณก่อนบวก",
+      "question_th": "โรงเรียนซื้อตู้โลหะ 4 ใบ ใบละ 250 บาท และเก้าอี้ 6 ตัว ตัวละ 80 บาท รวมจ่ายเท่าไหร่?",
+      "solution_th": "ตู้: 4 × 250 = 1000 บาท / เก้าอี้: 6 × 80 = 480 บาท / รวม: 1000 + 480 = 1480 บาท ✅"
+    }
+  ],
+  "common_mistakes": [
+    "อ่านโจทย์ไม่เข้าใจ ทำขั้นตอนสลับกัน",
+    "ลืมขั้นตอนสุดท้าย เช่น หายอดขายได้แล้วแต่ลืมลบต้นทุน",
+    "เขียนผิดเครื่องหมาย เช่น บวกแทนลบ"
+  ],
+  "hints": [
+    "อ่านโจทย์ทีละประโยค เขียนสิ่งที่รู้และสิ่งที่ถามออกมาก่อน",
+    "ถ้ามีหลายขั้นตอน ให้เขียนขั้นตอนในกระดาษทดก่อน",
+    "ตรวจคำตอบโดยดูว่าคำตอบสมเหตุสมผลหรือไม่ เช่น กำไรควรน้อยกว่ายอดขาย"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_multi_step_word_problems",
+  "skill_code": "g3_multi_step_word_problems",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - รูปแบบที่ 1",
+      "story_theme_th": "ธีม: โรงเรียน 🏫",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🏫 โรงเรียน: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🏫",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - รูปแบบที่ 2",
+      "story_theme_th": "ธีม: ผลไม้ 🍎",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🍎 ผลไม้: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🍎",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - รูปแบบที่ 3",
+      "story_theme_th": "ธีม: ของเล่น 🧸",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🧸 ของเล่น: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🧸",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - รูปแบบที่ 4",
+      "story_theme_th": "ธีม: ตลาด 🏪",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🏪 ตลาด: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🏪",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - รูปแบบที่ 5",
+      "story_theme_th": "ธีม: สัตว์เลี้ยง 🐕",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🐕 สัตว์เลี้ยง: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🐕",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - รูปแบบที่ 6",
+      "story_theme_th": "ธีม: สวน 🌻",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🌻 สวน: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🌻",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - รูปแบบที่ 7",
+      "story_theme_th": "ธีม: วาดรูป 🎨",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎨 วาดรูป: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🎨",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - รูปแบบที่ 8",
+      "story_theme_th": "ธีม: ห้องเรียน 📚",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "📚 ห้องเรียน: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 📚",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - รูปแบบที่ 9",
+      "story_theme_th": "ธีม: สนุกกับเพื่อน 🎮",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎮 สนุกกับเพื่อน: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🎮",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - รูปแบบที่ 10",
+      "story_theme_th": "ธีม: งานเทศกาล 🎉",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎉 งานเทศกาล: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🎈🎈🎈🎈🎈",
+          "items_added": "🎈🎈🎈",
+          "question": "มี 🎈 5 ลูก ใน 3 กล่อง รวมกี่ลูก บวกอีก 2 ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🎉",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "[School]  โรงเรียน: โจทย์ปัญหาที่ต้องคิดหลายขั้นตอน มาวิเคราะห์ไปด้วยกัน!"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "(5 × 3) + 2 = ?"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🎈 3 ลูก × 4 กล่อง = ? แล้วบวก 5 ลูก = ?",
+          "choices": [
+            "17 ลูก",
+            "12 ลูก",
+            "7 ลูก",
+            "19 ลูก"
+          ],
+          "answer": "17 ลูก",
+          "explanation": "3 × 4 = 12 แล้วบวก 5 = 17 ลูก",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "17 ลูก"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "โจทย์หลายขั้นตอน",
+  "preview_subtitle_th": "แก้โจทย์ปัญหาทีละขั้น",
+  "cover_theme": "multi_step_word_problems",
+  "cover_emoji": "🧩",
+  "cover_color": "yellow",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "แก้โจทย์ปัญหาทีละขั้น",
+  "learning_objective_th": "นักเรียนสามารถวิเคราะห์และแก้โจทย์ปัญหาที่มีหลายขั้นตอนได้ถูกต้อง",
+  "lesson_intro_th": "ร้านคุณป้ามีขายน้ำผลไม้ แก้วละ 15 บาท วันนี้ขายได้ 8 แก้ว แต่ต้องหักต้นทุนแก้วละ 6 บาท คุณป้าได้กำไรเท่าไหร่? 🍹",
+  "concept_explanation_th": "อ่านโจทย์ให้เข้าใจ ตั้งคำถามว่าโจทย์ถามอะไร หาให้ได้ก่อนว่าต้องทำอะไรก่อน ขั้นที่ 1 คืออะไร ขั้นที่ 2 คืออะไร ขั้นที่ 1: หายอดขาย 15 × 8 = 120 บาท ขั้นที่ 2: หาต้นทุน 6 × 8 = 48 บาท ขั้นสุดท้าย: หากำไร = ยอดขาย - ต้นทุน = 120 - 48 = 72 บาท",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 9
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 6
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท โจทย์ปัญหาหลายขั้นตอน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "โจทย์สองขั้นตอน",
+      "question_th": "นักเรียนซื้อปากกา 5 ด้าม ด้ามละ 12 บาท และยางลบ 3 ด้าม ด้ามละ 8 บาท รวมจ่ายเท่าไหร่?",
+      "solution_th": "ปากกา: 5 × 12 = 60 บาท / ยางลบ: 3 × 8 = 24 บาท / รวม: 60 + 24 = 84 บาท ✅"
+    },
+    {
+      "title_th": "โจทย์สามขั้นตอน",
+      "question_th": "มีส้ม 50 ผล แบ่งให้เพื่อน 7 คน คนละ 5 ผล เหลือส้มกี่ผล?",
+      "solution_th": "แจกไป: 7 × 5 = 35 ผล / เหลือ: 50 - 35 = 15 ผล ✅"
+    },
+    {
+      "title_th": "โจทย์คูณก่อนบวก",
+      "question_th": "โรงเรียนซื้อตู้โลหะ 4 ใบ ใบละ 250 บาท และเก้าอี้ 6 ตัว ตัวละ 80 บาท รวมจ่ายเท่าไหร่?",
+      "solution_th": "ตู้: 4 × 250 = 1000 บาท / เก้าอี้: 6 × 80 = 480 บาท / รวม: 1000 + 480 = 1480 บาท ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "อ่านโจทย์ไม่เข้าใจ ทำขั้นตอนสลับกัน",
+    "ลืมขั้นตอนสุดท้าย เช่น หายอดขายได้แล้วแต่ลืมลบต้นทุน",
+    "เขียนผิดเครื่องหมาย เช่น บวกแทนลบ"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_multi_step_word_problems_q01",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "12",
+        "15",
+        "9",
+        "7"
+      ],
+      "correct_answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q02",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "24"
+      ],
+      "correct_answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q03",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: 6 + 5 = ?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: 6 + 5 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q04",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "42",
+        "48",
+        "36",
+        "13"
+      ],
+      "correct_answer": "42",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
+      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q05",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "18"
+      ],
+      "correct_answer": "14",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
+      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q06",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: 9 + 3 = ?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: 9 + 3 = ?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q07",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "40",
+        "44",
+        "36",
+        "14"
+      ],
+      "correct_answer": "40",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
+      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q08",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "50",
+        "51",
+        "49",
+        "60"
+      ],
+      "correct_answer": "50",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
+      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q09",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: 12 + 6 = ?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: 12 + 6 = ?",
+      "choices": [
+        "18",
+        "19",
+        "17",
+        "28"
+      ],
+      "correct_answer": "18",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
+      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q10",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "26",
+        "28",
+        "24",
+        "15"
+      ],
+      "correct_answer": "26",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
+      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_multi_step_word_problems_q01",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "12",
+        "15",
+        "9",
+        "7"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q02",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "24"
+      ],
+      "correct_answer": "16",
+      "answer": "16",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
+      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q03",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: 6 + 5 = ?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: 6 + 5 = ?",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "21"
+      ],
+      "correct_answer": "11",
+      "answer": "11",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
+      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q04",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "42",
+        "48",
+        "36",
+        "13"
+      ],
+      "correct_answer": "42",
+      "answer": "42",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
+      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q05",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "18"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
+      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q06",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: 9 + 3 = ?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: 9 + 3 = ?",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
+      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q07",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "40",
+        "44",
+        "36",
+        "14"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
+      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "easy",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q08",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "50",
+        "51",
+        "49",
+        "60"
+      ],
+      "correct_answer": "50",
+      "answer": "50",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
+      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q09",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: 12 + 6 = ?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: 12 + 6 = ?",
+      "choices": [
+        "18",
+        "19",
+        "17",
+        "28"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
+      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multi_step_word_problems_q10",
+      "question_th": "โจทย์ปัญหาหลายขั้นตอน: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "โจทย์ปัญหาหลายขั้นตอน: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "26",
+        "28",
+        "24",
+        "15"
+      ],
+      "correct_answer": "26",
+      "answer": "26",
+      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
+      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "difficulty": "medium",
+      "skill_tag": "g3_multi_step_word_problems",
+      "question_type": "challenge"
+    }
+  ]
+}

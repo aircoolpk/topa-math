@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
+import { TopaMascot } from '@/components/brand/TopaBrand'
 
 export default function LoginPage() {
   const router = useRouter()
@@ -39,12 +40,10 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2">
-            <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl flex items-center justify-center shadow-xl">
-              <span className="text-white text-2xl font-black">4</span>
-            </div>
+            <TopaMascot size="md" />
           </Link>
-          <h1 className="text-3xl font-extrabold text-gray-900 mt-3">4-Craft</h1>
-          <p className="text-gray-500 mt-1">ระบบเรียนรู้คณิตศาสตร์แบบปรับตัว</p>
+          <h1 className="text-3xl font-extrabold text-gray-900 mt-3">TOPA Math</h1>
+          <p className="text-gray-500 mt-1">เรียนเลขให้สนุก เข้าใจง่าย มั่นใจทุกโจทย์</p>
         </div>
 
         {/* Card */}

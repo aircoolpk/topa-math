@@ -2,7 +2,7 @@ import { apiClient } from '@/lib/api-client'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
-export type MembershipStatus = 'free' | 'basic' | 'plus' | 'family'
+export type MembershipStatus = 'free' | 'trial' | 'paid' | 'plus' | 'family' | 'basic'
 export type QuestType = 'daily' | 'weekly' | 'monthly'
 
 export interface DashboardChild {
@@ -13,8 +13,10 @@ export interface DashboardChild {
   grade_level: number
   school_name: string | null
   province: string | null
-  avatar_gender: 'girl' | 'boy' | null
+  avatar_gender: 'girl' | 'boy' | 'unspecified' | null
   avatar_config: Record<string, unknown>
+  student_photo_url?: string | null
+  student_photo_path?: string | null
   // Stats
   total_xp: number
   current_level: number
@@ -171,6 +173,11 @@ export interface Lesson {
   // Metadata
   estimated_minutes?: number
   has_test?: boolean
+  has_approved_test?: boolean
+  test_available?: boolean
+  test_unavailable_reason?: string | null
+  language_available?: string
+  ep_available?: boolean
   // Status
   status?: 'locked' | 'unlocked' | 'completed'
   is_locked?: boolean
@@ -198,15 +205,69 @@ export interface DashboardData {
   monthly_quests: Quest[]
   // Lessons
   lessons: Lesson[]
+  current_grade_lessons?: Lesson[]
+  review_lessons?: Lesson[]
+  lesson_sections?: {
+    current_grade_lessons?: Lesson[]
+    review_lessons?: Lesson[]
+    locked_lessons?: Lesson[]
+    future_lessons?: Lesson[]
+    all_lessons?: Lesson[]
+  }
 }
 
 // ─── API ─────────────────────────────────────────────────────────────────────
+
+export interface ShareResponse {
+  mode: 'public_share'
+  token: string
+  share_url: string
+  copy_url: string
+  facebook_url: string
+  x_url: string
+  line_url: string
+}
+
+export interface ReferralSummary {
+  referral_token: string
+  referral_url: string
+  click_count: number
+  registered_count: number
+  paid_count: number
+  pending_coins: number
+  active_coins: number
+  history: Array<{
+    id: string
+    amount: number
+    type: string
+    status: 'pending' | 'active' | 'reversed'
+    reference_id?: string | null
+    created_at?: string | null
+    activated_at?: string | null
+    note?: string | null
+  }>
+}
 
 export const meApi = {
   /** Primary dashboard endpoint */
   async getDashboard(): Promise<DashboardData> {
     const res = await apiClient.get('/me/dashboard')
     return res.data as DashboardData
+  },
+
+  async createDashboardShare(): Promise<ShareResponse> {
+    const res = await apiClient.post('/me/share/dashboard')
+    return res.data as ShareResponse
+  },
+
+  async createTestResultShare(sessionId: string): Promise<ShareResponse> {
+    const res = await apiClient.post('/me/share/test-result', { session_id: sessionId })
+    return res.data as ShareResponse
+  },
+
+  async getReferralSummary(): Promise<ReferralSummary> {
+    const res = await apiClient.get('/me/referral')
+    return res.data as ReferralSummary
   },
 
   /** Test levels (grade 1–6) */
@@ -298,9 +359,23 @@ export const meApi = {
   },
 
   /** Get available lessons */
-  async getLessons(): Promise<Lesson[]> {
-    const res = await apiClient.get('/me/lessons')
-    return res.data as Lesson[]
+  async getLessons(grade?: number): Promise<Lesson[]> {
+    const res = await apiClient.get('/me/lessons', {
+      params: grade ? { grade } : undefined,
+    })
+    const data = res.data as Lesson[] | {
+      lessons?: Lesson[]
+      current_grade_lessons?: Lesson[]
+      review_lessons?: Lesson[]
+      future_lessons?: Lesson[]
+    }
+    if (Array.isArray(data)) return data
+    if (data.lessons?.length) return data.lessons
+    return [
+      ...(data.current_grade_lessons ?? []),
+      ...(data.review_lessons ?? []),
+      ...(data.future_lessons ?? []),
+    ]
   },
 
   /** Start a lesson */
@@ -315,9 +390,11 @@ export const meApi = {
     return res.data as { session_id: string }
   },
 
-  /** Get a single lesson by ID */
-  async getLesson(lessonId: string): Promise<Lesson> {
-    const res = await apiClient.get(`/me/lessons/${lessonId}`)
+  /** Get a single lesson by ID. programType defaults to TH. Use 'EP' for English Program. */
+  async getLesson(lessonId: string, programType?: 'TH' | 'EP'): Promise<Lesson> {
+    const params = programType ? new URLSearchParams({ program_type: programType }) : ''
+    const url = params ? `/me/lessons/${lessonId}?${params}` : `/me/lessons/${lessonId}`
+    const res = await apiClient.get(url)
     return res.data as Lesson
   },
 

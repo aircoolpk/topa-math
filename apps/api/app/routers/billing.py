@@ -12,6 +12,7 @@ from app.core.config import get_settings
 from app.core.database import get_db
 from app.models import ChildProfile, User
 from app.routers.deps import current_user
+from app.services.referrals import award_paid_referral_if_needed
 
 try:
     import stripe
@@ -88,7 +89,7 @@ PLAN_CATALOG: dict[str, BillingPlan] = {
     ),
     "th_plus_yearly_promo": BillingPlan(
         plan_code="th_plus_yearly_promo",
-        price_env="stripe_price_th_plus_yearly_promo",
+        price_env="stripe_price_th_plus_yearly",
         product_id="prod_USga7vRK8g1M0d",
         display_name="Plus TH Year Promotion",
         program_type="TH",
@@ -98,7 +99,7 @@ PLAN_CATALOG: dict[str, BillingPlan] = {
     ),
     "ep_plus_yearly_promo": BillingPlan(
         plan_code="ep_plus_yearly_promo",
-        price_env="stripe_price_ep_plus_yearly_promo",
+        price_env="stripe_price_ep_plus_yearly",
         product_id="prod_USgai3JWRR6tQ2",
         display_name="Plus EP Year Promotion",
         program_type="EP",
@@ -146,6 +147,56 @@ def _price_id_for_plan(plan: BillingPlan) -> str:
     return str(_require_setting(plan.price_env))
 
 
+def _stripe_checkout_ready(plan: BillingPlan) -> tuple[bool, str | None]:
+    settings = get_settings()
+    if stripe is None:
+        return False, "stripe_dependency"
+    if not getattr(settings, "stripe_secret_key", None):
+        return False, "stripe_secret_key"
+    if not getattr(settings, plan.price_env, None):
+        return False, plan.price_env
+    return True, None
+
+
+def _manual_pending_checkout(db: Session, user: User, child: ChildProfile | None, plan: BillingPlan, *, reason: str | None = None) -> dict:
+    now = datetime.now(UTC)
+    request_owner_id = child.id if child else user.id
+    request_id = f"pending-{request_owner_id}"
+    if child:
+        child.subscription_status = "pending"
+        child.active_price_code = plan.plan_code
+        child.price_type = plan.price_type
+        child.billing_program_type = plan.program_type
+        child.admin_note = f"Manual beta payment pending: {plan.plan_code}"
+        child.manual_grant_reason = f"pending_payment:{plan.plan_code}"[:120]
+        db.commit()
+    logger.warning(
+        "Manual beta payment pending user_id=%s child_id=%s plan_code=%s reason=%s",
+        user.id,
+        child.id if child else None,
+        plan.plan_code,
+        reason,
+    )
+    return {
+        "mode": "manual_pending",
+        "status": "pending",
+        "message": "\u0e2a\u0e48\u0e07\u0e04\u0e33\u0e02\u0e2d\u0e2a\u0e21\u0e31\u0e04\u0e23\u0e41\u0e1e\u0e47\u0e01\u0e40\u0e01\u0e08\u0e41\u0e25\u0e49\u0e27 \u0e01\u0e23\u0e38\u0e13\u0e32\u0e23\u0e2d\u0e1c\u0e39\u0e49\u0e14\u0e39\u0e41\u0e25\u0e22\u0e37\u0e19\u0e22\u0e31\u0e19",
+        "payment_request": {
+            "id": request_id,
+            "user_id": user.id,
+            "plan": plan.plan_code,
+            "program": plan.program_type,
+            "billing_period": plan.billing_interval,
+            "price": plan.amount_thb,
+            "status": "pending",
+            "created_at": now.isoformat(),
+        },
+        "plan_code": plan.plan_code,
+        "price_type": plan.price_type,
+        "program_type": plan.program_type,
+    }
+
+
 def is_founder_plan(plan_or_code: BillingPlan | str | None) -> bool:
     plan_code = plan_or_code.plan_code if isinstance(plan_or_code, BillingPlan) else plan_or_code
     return str(plan_code or "") in FOUNDER_PLAN_CODES
@@ -167,7 +218,8 @@ def get_founder_used_count(db: Session) -> int:
 
 
 def _founder_limit() -> int:
-    return max(0, int(get_settings().founder_price_limit or 100))
+    settings = get_settings()
+    return max(0, int(settings.founder_user_limit or settings.founder_price_limit or 100))
 
 
 def _founder_slots(db: Session) -> dict:
@@ -273,13 +325,24 @@ def _apply_subscription_state(child: ChildProfile, subscription: Any, *, plan: B
 
 
 def _status_payload(child: ChildProfile) -> dict:
+    membership_status = child.membership_status or "free"
+    subscription_status = child.subscription_status or "none"
+    is_paid = membership_status in {"paid", "plus"} and subscription_status in {
+        "active",
+        "trialing",
+        "trial",
+        "manual_grant",
+    }
     return {
-        "membership_status": child.membership_status or "free",
+        "membership_status": membership_status,
         "plan_code": child.plan_code or "free",
+        "plan": "plus" if is_paid else "free",
+        "is_paid": is_paid,
         "active_price_code": child.active_price_code,
         "price_type": child.price_type,
         "program_type": child.billing_program_type,
-        "subscription_status": child.subscription_status or "none",
+        "subscription_status": subscription_status,
+        "subscription_id": child.stripe_subscription_id,
         "current_period_end": child.current_period_end.isoformat() if child.current_period_end else None,
         "cancel_at_period_end": bool(child.cancel_at_period_end),
     }
@@ -288,6 +351,8 @@ def _status_payload(child: ChildProfile) -> dict:
 @router.get("/billing/prices")
 def billing_prices(db: Session = Depends(get_db)) -> dict:
     founder = _founder_slots(db)
+    settings = get_settings()
+    founder_only = bool(settings.founder_pricing_enabled) and founder["founder_slots_remaining"] > 0
     free_plan = {
         "plan_code": "free",
         "display_name": "\u0e17\u0e14\u0e25\u0e2d\u0e07\u0e43\u0e0a\u0e49\u0e1f\u0e23\u0e35",
@@ -297,6 +362,11 @@ def billing_prices(db: Session = Depends(get_db)) -> dict:
         "price_type": "free",
         "available": True,
     }
+    visible_plans = [
+        plan
+        for plan in PLAN_CATALOG.values()
+        if is_founder_plan(plan) or not founder_only
+    ]
     return {
         "plans": [
             free_plan,
@@ -310,6 +380,7 @@ def billing_prices(db: Session = Depends(get_db)) -> dict:
                     "billing_interval": plan.billing_interval,
                     "price_type": plan.price_type,
                     "product_id": plan.product_id,
+                    "stripe_price_id": getattr(settings, plan.price_env, None),
                     "available": founder["founder_slots_remaining"] > 0,
                     **founder,
                     "note_th": "\u0e08\u0e33\u0e01\u0e31\u0e14\u0e23\u0e27\u0e21 100 \u0e2a\u0e34\u0e17\u0e18\u0e34\u0e4c\u0e41\u0e23\u0e01",
@@ -323,10 +394,11 @@ def billing_prices(db: Session = Depends(get_db)) -> dict:
                     "billing_interval": plan.billing_interval,
                     "price_type": plan.price_type,
                     "product_id": plan.product_id,
+                    "stripe_price_id": getattr(settings, plan.price_env, None),
                     "available": True,
                 }
             )
-            for plan in PLAN_CATALOG.values()
+            for plan in visible_plans
             ],
         ]
     }
@@ -375,6 +447,14 @@ def _dev_plan_payload(plan: BillingPlan) -> dict:
 def billing_plans(db: Session = Depends(get_db)) -> dict:
     logger.info("GET /billing/plans")
     founder = _founder_slots(db)
+    settings = get_settings()
+    if bool(settings.founder_pricing_enabled) and founder["founder_slots_remaining"] > 0:
+        plans = [
+            {"id": "free", "plan_code": "free", "name": "Free", "display_name": "Free", "program_type": "FREE", "price_monthly": 0, "price_thb": 0, "currency": "THB", "billing_interval": "none", "price_type": "free", "stripe_price_id": None, "is_available": True, "available": True},
+            {**_dev_plan_payload(PLAN_CATALOG["th_founder_monthly"]), "checkout_plan_code": "th_founder_monthly", **founder},
+            {**_dev_plan_payload(PLAN_CATALOG["ep_founder_monthly"]), "checkout_plan_code": "ep_founder_monthly", **founder},
+        ]
+        return {"plans": plans, **founder, "source": "backend"}
     plans = [
         {
             "id": "free",
@@ -481,39 +561,51 @@ def create_checkout_session(payload: CheckoutSessionIn, db: Session = Depends(ge
             status_code=status.HTTP_409_CONFLICT,
             detail="\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e4c Founder Price \u0e04\u0e23\u0e1a\u0e41\u0e25\u0e49\u0e27 \u0e01\u0e23\u0e38\u0e13\u0e32\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e41\u0e1e\u0e47\u0e01\u0e40\u0e01\u0e08\u0e23\u0e32\u0e04\u0e32\u0e1b\u0e01\u0e15\u0e34",
         )
+    child = _optional_profile(db, user)
+    checkout_ready, missing_reason = _stripe_checkout_ready(plan)
+    if not checkout_ready:
+        return _manual_pending_checkout(db, user, child, plan, reason=missing_reason)
+
     price_id = _price_id_for_plan(plan)
     frontend_base_url = str(_require_setting("frontend_base_url"))
     stripe_client = _require_stripe()
-    child = _optional_profile(db, user)
     logger.info("Stripe checkout using price env var %s for plan_code=%s", _env_name(plan.price_env), plan.plan_code)
 
     customer_id = child.stripe_customer_id if child else None
     if not customer_id:
-        customer = stripe_client.Customer.create(
-            email=user.email,
-            metadata={"user_id": user.id, **({"child_id": child.id} if child else {})},
-        )
+        try:
+            customer = stripe_client.Customer.create(
+                email=user.email,
+                metadata={"user_id": user.id, **({"child_id": child.id} if child else {})},
+            )
+        except Exception as exc:
+            logger.exception("Stripe customer creation failed plan_code=%s", plan.plan_code)
+            return _manual_pending_checkout(db, user, child, plan, reason=exc.__class__.__name__)
         customer_id = _id(customer)
         if child:
             child.stripe_customer_id = customer_id
             db.commit()
 
-    session = stripe_client.checkout.Session.create(
-        mode="subscription",
-        customer=customer_id,
-        line_items=[{"price": price_id, "quantity": 1}],
-        success_url=f"{frontend_base_url}/billing/success?session_id={{CHECKOUT_SESSION_ID}}",
-        cancel_url=f"{frontend_base_url}/pricing?canceled=1",
-        client_reference_id=user.id,
-        metadata={
-            "user_id": user.id,
-            **({"child_id": child.id} if child else {}),
-            "plan_code": plan.plan_code,
-            "program_type": plan.program_type,
-            "price_type": plan.price_type,
-            "product_id": plan.product_id,
-        },
-    )
+    try:
+        session = stripe_client.checkout.Session.create(
+            mode="subscription",
+            customer=customer_id,
+            line_items=[{"price": price_id, "quantity": 1}],
+            success_url=f"{frontend_base_url}/billing/success?session_id={{CHECKOUT_SESSION_ID}}",
+            cancel_url=f"{frontend_base_url}/pricing?canceled=1",
+            client_reference_id=user.id,
+            metadata={
+                "user_id": user.id,
+                **({"child_id": child.id} if child else {}),
+                "plan_code": plan.plan_code,
+                "program_type": plan.program_type,
+                "price_type": plan.price_type,
+                "product_id": plan.product_id,
+            },
+        )
+    except Exception as exc:
+        logger.exception("Stripe checkout session failed plan_code=%s", plan.plan_code)
+        return _manual_pending_checkout(db, user, child, plan, reason=exc.__class__.__name__)
     logger.info("Stripe checkout session created plan_code=%s session_id=%s", plan.plan_code, _id(session))
     return {
         "checkout_url": _stripe_get(session, "url"),
@@ -576,6 +668,8 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)) -> dic
             if subscription_id:
                 subscription = stripe_client.Subscription.retrieve(subscription_id)
                 _apply_subscription_state(child, subscription, plan=selected_plan)
+                if child.subscription_status in PAID_SUBSCRIPTION_STATUSES:
+                    award_paid_referral_if_needed(db, child.parent_user_id, reference_id=subscription_id)
 
     elif event_type in {"customer.subscription.created", "customer.subscription.updated"}:
         subscription_id = _id(data_object)
@@ -601,6 +695,8 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)) -> dic
         if child and subscription_id:
             subscription = stripe_client.Subscription.retrieve(subscription_id)
             _apply_subscription_state(child, subscription)
+            if child.subscription_status in PAID_SUBSCRIPTION_STATUSES:
+                award_paid_referral_if_needed(db, child.parent_user_id, reference_id=subscription_id)
 
     elif event_type == "invoice.payment_failed":
         subscription_id = _id(_stripe_get(data_object, "subscription"))

@@ -2,6 +2,8 @@
 .env
 .env.*
 !.env.example
+!.env.docker.example
+!.env.staging.example
 
 # Dependencies
 node_modules/
@@ -30,6 +32,7 @@ __pycache__/
 storage/
 storage/local/
 apps/api/storage/
+storage/uploads/
 apps/api/local/
 
 # Local/scratch tooling containing machine-specific credentials
@@ -44,6 +47,8 @@ stderr.log
 
 # Build/type cache
 *.tsbuildinfo
+.cache/
+**/.cache/
 
 # Local tool/cache folders
 .tools/

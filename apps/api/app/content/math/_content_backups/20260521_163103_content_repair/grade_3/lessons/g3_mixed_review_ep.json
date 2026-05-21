@@ -1,0 +1,1381 @@
+{
+  "lesson_id": "g3_mixed_review_ep",
+  "id": "g3_mixed_review_ep",
+  "grade_level": 3,
+  "title_th": "ทบทวนคณิตศาสตร์ของป.3",
+  "objective_th": "นักเรียนสามารถทำโจทย์คณิตศาสตร์หลากหลายรูปแบบได้ถูกต้อง",
+  "story_intro_th": "วันนี้พี่อลิสทบทวนทุกอย่างที่เรียนมาในป.3 มีโจทย์หลากหลายให้ทำ มาลองทำไปพร้อมๆ กันเถอะ! 🎯",
+  "explanation_steps": [
+    "คูณหลายหลัก: คูณเลขสองหลักกับเลขหนึ่งหลัก โดยคูณทีละหลักแล้วทด",
+    "การหาร: หารไม่เกิน 100 ด้วยตัวหารเลขหนึ่งหลัก มีหรือไม่มีเศษก็ได้",
+    "เศษส่วน: เข้าใจความหมาย เปรียบเทียบ และแปลงเศษส่วนที่เท่ากัน",
+    "โจทย์หลายขั้นตอน: วิเคราะห์โจทย์ หาว่าต้องทำอะไรก่อนหลัง แล้วค่อยแก้ทีละขั้น",
+    "การวัด: แปลงหน่วยความยาว น้ำหนัก ปริมาตร",
+    "พื้นที่: ใช้สูตรกว้าง × ยาว สำหรับสี่เหลี่ยมผืนผ้า ด้าน × ด้าน สำหรับสี่เหลี่ยมจัตุรัส"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "คูณหลายหลัก",
+      "question_th": "47 × 6 = ?",
+      "solution_th": "47 × 6 = 282 ✅"
+    },
+    {
+      "title_th": "หาร",
+      "question_th": "85 ÷ 9 = ? เศษเท่าไหร่?",
+      "solution_th": "85 ÷ 9 = 9 เศษ 4 ✅"
+    },
+    {
+      "title_th": "เศษส่วน",
+      "question_th": "1/2 = ?/4",
+      "solution_th": "2/4 เพราะคูณเศษและส่วนด้วย 2 ✅"
+    },
+    {
+      "title_th": "พื้นที่",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 7 ซม. ยาว 9 ซม. มีพื้นที่เท่าไหร่?",
+      "solution_th": "พื้นที่ = 7 × 9 = 63 ตารางเซนติเมตร ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ทำขั้นตอนสับสน โดยเฉพาะโจทย์หลายขั้นตอน",
+    "แปลงหน่วยผิด เช่น แปลงเมตรเป็นเซนติเมตรไม่คูณ 100",
+    "เศษส่วนเปรียบเทียบผิด โดยไม่ใช้ส่วนเป็นเกณฑ์"
+  ],
+  "hints": [
+    "อ่านโจทย์ช้าๆ เขียนสิ่งที่รู้ออกมาก่อน",
+    "แต่ละขั้นตอนตรวจคำตอบก่อนไปขั้นถัดไป",
+    "ถ้างงให้กลับไปดูสูตรที่เรียนมาในแต่ละเรื่อง"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_mixed_review",
+  "skill_code": "g3_mixed_review_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - รูปแบบที่ 1",
+      "story_theme_th": "ธีม: โรงเรียน 🏫",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "โรงเรียนมีนักเรียน 5 แถว แถวละ 4 คน รวมนักเรียนกี่คน?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "5 × 4 = 20",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "3 × 6 = 18 เพราะ 6+6+6 = 18",
+          "title": "🎯 ลองทำดู",
+          "answer": "18",
+          "type": "mini_quiz",
+          "choices": [
+            "15",
+            "18",
+            "21",
+            "12"
+          ],
+          "question": "3 × 6 = ?",
+          "explanation": "3 × 6 = 18 เพราะ 6+6+6 = 18",
+          "correct_answer": "18",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน - รูปแบบที่ 1",
+      "story_theme_en": "ธีม: โรงเรียน 🏫"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - รูปแบบที่ 2",
+      "story_theme_th": "ธีม: ผลไม้ 🍎",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ซื้อผลไม้ 5 ผล ราคาผลละ 6 บาท รวมเท่าไหร่?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "5 × 6 = 30 บาท",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "7 × 4 = 28 เพราะ 4+4+4+4+4+4+4 = 28",
+          "title": "🎯 ลองทำดู",
+          "answer": "28",
+          "type": "mini_quiz",
+          "choices": [
+            "24",
+            "28",
+            "32",
+            "21"
+          ],
+          "question": "7 × 4 = ?",
+          "explanation": "7 × 4 = 28 เพราะ 4+4+4+4+4+4+4 = 28",
+          "correct_answer": "28",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้ - รูปแบบที่ 2",
+      "story_theme_en": "ธีม: ผลไม้ 🍎"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - รูปแบบที่ 3",
+      "story_theme_th": "ธีม: ของเล่น 🧸",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "แบ่งขนม 12 ชิ้น ให้เพื่อน 3 คน คนละได้กี่ชิ้น?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "12 ÷ 3 = 4 ชิ้น",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "15 ÷ 3 = 5 เพราะ 3×5 = 15 ตรวจสอบ: 5×3 = 15 ✓",
+          "title": "🎯 ลองทำดู",
+          "answer": "5",
+          "type": "mini_quiz",
+          "choices": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "question": "15 ÷ 3 = ?",
+          "explanation": "15 ÷ 3 = 5 เพราะ 3×5 = 15 ตรวจสอบ: 5×3 = 15 ✓",
+          "correct_answer": "5",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น - รูปแบบที่ 3",
+      "story_theme_en": "ธีม: ของเล่น 🧸"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - รูปแบบที่ 4",
+      "story_theme_th": "ธีม: ตลาด 🏪",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "มีส้ม 18 ผล แบ่งให้ 6 คน คนละได้กี่ผล?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "18 ÷ 6 = 3 ผล",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "20 ÷ 4 = 5 เพราะ 4×5 = 20 ตรวจสอบ: 5×4 = 20 ✓",
+          "title": "🎯 ลองทำดู",
+          "answer": "5",
+          "type": "mini_quiz",
+          "choices": [
+            "4",
+            "5",
+            "6",
+            "3"
+          ],
+          "question": "20 ÷ 4 = ?",
+          "explanation": "20 ÷ 4 = 5 เพราะ 4×5 = 20 ตรวจสอบ: 5×4 = 20 ✓",
+          "correct_answer": "5",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด - รูปแบบที่ 4",
+      "story_theme_en": "ธีม: ตลาด 🏪"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - รูปแบบที่ 5",
+      "story_theme_th": "ธีม: สัตว์เลี้ยง 🐕",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "สี่เหลี่ยมกว้าง 7 ซม. ยาว 9 ซม. มีพื้นที่เท่าไหร่?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "7 × 9 = 63 ตรม.",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "5 × 8 = 40 ตรม.",
+          "title": "🎯 ลองทำดู",
+          "answer": "40 ตรม.",
+          "type": "mini_quiz",
+          "choices": [
+            "35 ตรม.",
+            "40 ตรม.",
+            "45 ตรม.",
+            "30 ตรม."
+          ],
+          "question": "พื้นที่สี่เหลี่ยมกว้าง 5 ซม. ยาว 8 ซม. = ?",
+          "explanation": "5 × 8 = 40 ตรม.",
+          "correct_answer": "40 ตรม.",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง - รูปแบบที่ 5",
+      "story_theme_en": "ธีม: สัตว์เลี้ยง 🐕"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - รูปแบบที่ 6",
+      "story_theme_th": "ธีม: สวน 🌻",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "มีลูกบอล 3 กล่อง กล่องละ 8 ลูก รวมลูกบอลกี่ลูก?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "3 × 8 = 24 ลูก",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "2 × 9 = 18 เพราะ 9+9 = 18",
+          "title": "🎯 ลองทำดู",
+          "answer": "18",
+          "type": "mini_quiz",
+          "choices": [
+            "16",
+            "18",
+            "20",
+            "14"
+          ],
+          "question": "2 × 9 = ?",
+          "explanation": "2 × 9 = 18 เพราะ 9+9 = 18",
+          "correct_answer": "18",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🌻 สวน - รูปแบบที่ 6",
+      "story_theme_en": "ธีม: สวน 🌻"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - รูปแบบที่ 7",
+      "story_theme_th": "ธีม: วาดรูป 🎨",
+      "visual_blocks": [
+        {
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "แบ่งน้ำ 24 ลิตร ใส่ถัง 4 ถัง ถังละกี่ลิตร?",
+          "type": "story_intro",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "type": "number_sentence",
+          "expression": "24 ÷ 4 = 6 ลิตร/ถัง",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "explanation_th": "27 ÷ 3 = 9 เพราะ 3×9 = 27 ตรวจสอบ: 9×3 = 27 ✓",
+          "title": "🎯 ลองทำดู",
+          "answer": "9",
+          "type": "mini_quiz",
+          "choices": [
+            "7",
+            "8",
+            "9",
+            "6"
+          ],
+          "question": "27 ÷ 3 = ?",
+          "explanation": "27 ÷ 3 = 9 เพราะ 3×9 = 27 ตรวจสอบ: 9×3 = 27 ✓",
+          "correct_answer": "9",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป - รูปแบบที่ 7",
+      "story_theme_en": "ธีม: วาดรูป 🎨"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - รูปแบบที่ 8",
+      "story_theme_th": "ธีม: ห้องเรียน 📚",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "📚 ห้องเรียน: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🔴🔴🔴🔴🔴",
+          "items_added": "🔴🔴🔴🔴🔴",
+          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 📚",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 × 5 = ?",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "choices": [
+            "9 ลูก",
+            "18 ลูก",
+            "3 ลูก",
+            "36 ลูก"
+          ],
+          "answer": "18 ลูก",
+          "explanation": "3 × 6 = 18 ลูก",
+          "correct_answer": "18 ลูก",
+          "explanation_th": "3 × 6 = 18 ลูก",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน - รูปแบบที่ 8",
+      "story_theme_en": "ธีม: ห้องเรียน 📚"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - รูปแบบที่ 9",
+      "story_theme_th": "ธีม: สนุกกับเพื่อน 🎮",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎮 สนุกกับเพื่อน: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🔴🔴🔴🔴🔴",
+          "items_added": "🔴🔴🔴🔴🔴",
+          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🎮",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 × 5 = ?",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "choices": [
+            "9 ลูก",
+            "18 ลูก",
+            "3 ลูก",
+            "36 ลูก"
+          ],
+          "answer": "18 ลูก",
+          "explanation": "3 × 6 = 18 ลูก",
+          "correct_answer": "18 ลูก",
+          "explanation_th": "3 × 6 = 18 ลูก",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน - รูปแบบที่ 9",
+      "story_theme_en": "ธีม: สนุกกับเพื่อน 🎮"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - รูปแบบที่ 10",
+      "story_theme_th": "ธีม: งานเทศกาล 🎉",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "🎉 งานเทศกาล: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title": "👀 มองภาพก่อน",
+          "items_before": "🔴🔴🔴🔴🔴",
+          "items_added": "🔴🔴🔴🔴🔴",
+          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🎉",
+          "segments": [
+            {
+              "label": "ส่วนที่ 1",
+              "value": 15,
+              "color": "#FF6B6B"
+            },
+            {
+              "label": "ส่วนที่ 2",
+              "value": 8,
+              "color": "#4ECDC4"
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 × 5 = ?",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "choices": [
+            "9 ลูก",
+            "18 ลูก",
+            "3 ลูก",
+            "36 ลูก"
+          ],
+          "answer": "18 ลูก",
+          "explanation": "3 × 6 = 18 ลูก",
+          "correct_answer": "18 ลูก",
+          "explanation_th": "3 × 6 = 18 ลูก",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล - รูปแบบที่ 10",
+      "story_theme_en": "ธีม: งานเทศกาล 🎉"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "[School]  โรงเรียน: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "4 × 5 = ?",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "choices": [
+            "9 ลูก",
+            "18 ลูก",
+            "3 ลูก",
+            "36 ลูก"
+          ],
+          "answer": "18 ลูก",
+          "explanation": "3 × 6 = 18 ลูก",
+          "correct_answer": "18 ลูก",
+          "explanation_th": "3 × 6 = 18 ลูก",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ทบทวนรวม",
+  "preview_subtitle_th": "แก้โจทย์ปัญหาทีละขั้น",
+  "cover_theme": "mixed_review_g3",
+  "cover_emoji": "📝",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "แก้โจทย์ปัญหาทีละขั้น",
+  "learning_objective_th": "นักเรียนสามารถทำโจทย์คณิตศาสตร์หลากหลายรูปแบบได้ถูกต้อง",
+  "lesson_intro_th": "วันนี้พี่อลิสทบทวนทุกอย่างที่เรียนมาในป.3 มีโจทย์หลากหลายให้ทำ มาลองทำไปพร้อมๆ กันเถอะ! 🎯",
+  "concept_explanation_th": "คูณหลายหลัก: คูณเลขสองหลักกับเลขหนึ่งหลัก โดยคูณทีละหลักแล้วทด การหาร: หารไม่เกิน 100 ด้วยตัวหารเลขหนึ่งหลัก มีหรือไม่มีเศษก็ได้ เศษส่วน: เข้าใจความหมาย เปรียบเทียบ และแปลงเศษส่วนที่เท่ากัน โจทย์หลายขั้นตอน: วิเคราะห์โจทย์ หาว่าต้องทำอะไรก่อนหลัง แล้วค่อยแก้ทีละขั้น การวัด: แปลงหน่วยความยาว น้ำหนัก ปริมาตร พื้นที่: ใช้สูตรกว้าง × ยาว สำหรับสี่เหลี่ยมผืนผ้า ด้าน × ด้าน สำหรับสี่เหลี่ยมจัตุรัส",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 9
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 6
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ทบทวนคณิตศาสตร์ของป.3 ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "คูณหลายหลัก",
+      "question_th": "47 × 6 = ?",
+      "solution_th": "47 × 6 = 282 ✅"
+    },
+    {
+      "title_th": "หาร",
+      "question_th": "85 ÷ 9 = ? เศษเท่าไหร่?",
+      "solution_th": "85 ÷ 9 = 9 เศษ 4 ✅"
+    },
+    {
+      "title_th": "เศษส่วน",
+      "question_th": "1/2 = ?/4",
+      "solution_th": "2/4 เพราะคูณเศษและส่วนด้วย 2 ✅"
+    },
+    {
+      "title_th": "พื้นที่",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 7 ซม. ยาว 9 ซม. มีพื้นที่เท่าไหร่?",
+      "solution_th": "พื้นที่ = 7 × 9 = 63 ตารางเซนติเมตร ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ทำขั้นตอนสับสน โดยเฉพาะโจทย์หลายขั้นตอน",
+    "แปลงหน่วยผิด เช่น แปลงเมตรเป็นเซนติเมตรไม่คูณ 100",
+    "เศษส่วนเปรียบเทียบผิด โดยไม่ใช้ส่วนเป็นเกณฑ์"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_mixed_review_q01",
+      "question_th": "36 + 27 เท่ากับเท่าไร?",
+      "question_text": "36 + 27 เท่ากับเท่าไร?",
+      "choices": [
+        "61",
+        "62",
+        "63",
+        "64"
+      ],
+      "correct_answer": "63",
+      "answer": "63",
+      "explanation": "36 + 27 = 63",
+      "explanation_th": "36 + 27 = 63",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q02",
+      "question_th": "84 - 39 เท่ากับเท่าไร?",
+      "question_text": "84 - 39 เท่ากับเท่าไร?",
+      "choices": [
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "84 - 39 = 45",
+      "explanation_th": "84 - 39 = 45",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q03",
+      "question_th": "7 × 6 เท่ากับเท่าไร?",
+      "question_text": "7 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "correct_answer": "42",
+      "answer": "42",
+      "explanation": "7 × 6 = 42",
+      "explanation_th": "7 × 6 = 42",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q04",
+      "question_th": "48 ÷ 6 เท่ากับเท่าไร?",
+      "question_text": "48 ÷ 6 เท่ากับเท่าไร?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "48 ÷ 6 = 8",
+      "explanation_th": "48 ÷ 6 = 8",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q05",
+      "question_th": "1/4 ของ 20 เท่ากับเท่าไร?",
+      "question_text": "1/4 ของ 20 เท่ากับเท่าไร?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "20 ÷ 4 = 5",
+      "explanation_th": "20 ÷ 4 = 5",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q06",
+      "question_th": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
+      "question_text": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
+      "choices": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "1 เมตร = 100 เซนติเมตร",
+      "explanation_th": "1 เมตร = 100 เซนติเมตร",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q07",
+      "question_th": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
+      "question_text": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
+      "choices": [
+        "8",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15",
+      "explanation_th": "5 × 3 = 15",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q08",
+      "question_th": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
+      "question_text": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
+      "choices": [
+        "20 บาท",
+        "25 บาท",
+        "30 บาท",
+        "35 บาท"
+      ],
+      "correct_answer": "25 บาท",
+      "answer": "25 บาท",
+      "explanation": "100 - 75 = 25 บาท",
+      "explanation_th": "100 - 75 = 25 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_mixed_review_q09",
+      "question_th": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
+      "question_text": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "45 ÷ 5 = 9",
+      "explanation_th": "45 ÷ 5 = 9",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_mixed_review_q10",
+      "question_th": "125 + 236 เท่ากับเท่าไร?",
+      "question_text": "125 + 236 เท่ากับเท่าไร?",
+      "choices": [
+        "351",
+        "361",
+        "371",
+        "381"
+      ],
+      "correct_answer": "361",
+      "answer": "361",
+      "explanation": "125 + 236 = 361",
+      "explanation_th": "125 + 236 = 361",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_mixed_review_q01",
+      "question_th": "36 + 27 เท่ากับเท่าไร?",
+      "question_text": "36 + 27 เท่ากับเท่าไร?",
+      "choices": [
+        "61",
+        "62",
+        "63",
+        "64"
+      ],
+      "correct_answer": "63",
+      "answer": "63",
+      "explanation": "36 + 27 = 63",
+      "explanation_th": "36 + 27 = 63",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q02",
+      "question_th": "84 - 39 เท่ากับเท่าไร?",
+      "question_text": "84 - 39 เท่ากับเท่าไร?",
+      "choices": [
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "84 - 39 = 45",
+      "explanation_th": "84 - 39 = 45",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q03",
+      "question_th": "7 × 6 เท่ากับเท่าไร?",
+      "question_text": "7 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "correct_answer": "42",
+      "answer": "42",
+      "explanation": "7 × 6 = 42",
+      "explanation_th": "7 × 6 = 42",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q04",
+      "question_th": "48 ÷ 6 เท่ากับเท่าไร?",
+      "question_text": "48 ÷ 6 เท่ากับเท่าไร?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "48 ÷ 6 = 8",
+      "explanation_th": "48 ÷ 6 = 8",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q05",
+      "question_th": "1/4 ของ 20 เท่ากับเท่าไร?",
+      "question_text": "1/4 ของ 20 เท่ากับเท่าไร?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "20 ÷ 4 = 5",
+      "explanation_th": "20 ÷ 4 = 5",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q06",
+      "question_th": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
+      "question_text": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
+      "choices": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "1 เมตร = 100 เซนติเมตร",
+      "explanation_th": "1 เมตร = 100 เซนติเมตร",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q07",
+      "question_th": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
+      "question_text": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
+      "choices": [
+        "8",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15",
+      "explanation_th": "5 × 3 = 15",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_mixed_review_q08",
+      "question_th": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
+      "question_text": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
+      "choices": [
+        "20 บาท",
+        "25 บาท",
+        "30 บาท",
+        "35 บาท"
+      ],
+      "correct_answer": "25 บาท",
+      "answer": "25 บาท",
+      "explanation": "100 - 75 = 25 บาท",
+      "explanation_th": "100 - 75 = 25 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_mixed_review_q09",
+      "question_th": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
+      "question_text": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "45 ÷ 5 = 9",
+      "explanation_th": "45 ÷ 5 = 9",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_mixed_review_q10",
+      "question_th": "125 + 236 เท่ากับเท่าไร?",
+      "question_text": "125 + 236 เท่ากับเท่าไร?",
+      "choices": [
+        "351",
+        "361",
+        "371",
+        "381"
+      ],
+      "correct_answer": "361",
+      "answer": "361",
+      "explanation": "125 + 236 = 361",
+      "explanation_th": "125 + 236 = 361",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Grade 3 Math Review",
+  "objective_en": "Students will be able to understand this math concept",
+  "story_intro_en": "Look! 3 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: คูณหลายหลัก",
+      "question_en": "47 × 6 = ?",
+      "solution_en": "47 × 6 = 282 ✅"
+    },
+    {
+      "title_en": "Example: หาร",
+      "question_en": "85 ÷ 9 = ? ?",
+      "solution_en": "85 ÷ 9 = 9 4 ✅?"
+    },
+    {
+      "title_en": "Example: เศษส่วน",
+      "question_en": "1/2 = ?/4",
+      "solution_en": "2/4 2 ✅?"
+    },
+    {
+      "title_en": "Example: พื้นที่",
+      "question_en": "7 . 9 . ?",
+      "solution_en": "= 7 × 9 = 63 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ทำขั้นตอนสับสน โดยเฉพาะโจทย์หลายขั้นตอน",
+    "Mistake: แปลงหน่วยผิด เช่น แปลงเมตรเป็นเซนติเมตรไม่คูณ 100",
+    "Mistake: เศษส่วนเปรียบเทียบผิด โดยไม่ใช้ส่วนเป็นเกณฑ์"
+  ],
+  "hints_en": [
+    "Hint: อ่านโจทย์ช้าๆ เขียนสิ่งที่รู้ออกมาก่อน",
+    "Hint: แต่ละขั้นตอนตรวจคำตอบก่อนไปขั้นถัดไป",
+    "Hint: ถ้างงให้กลับไปดูสูตรที่เรียนมาในแต่ละเรื่อง"
+  ],
+  "explanation_steps_en": [
+    "Step: คูณหลายหลัก: คูณเลขสองหลักกับเลขหนึ่งหลัก โดยคูณทีละหลักแล้วทด",
+    "Step: การหาร: หารไม่เกิน 100 ด้วยตัวหารเลขหนึ่งหลัก มีหรือไม่มีเศษก็ได้",
+    "Step: เศษส่วน: เข้าใจความหมาย เปรียบเทียบ และแปลงเศษส่วนที่เท่ากัน",
+    "Step: โจทย์หลายขั้นตอน: วิเคราะห์โจทย์ หาว่าต้องทำอะไรก่อนหลัง แล้วค่อยแก้ทีละขั้น",
+    "Step: การวัด: แปลงหน่วยความยาว น้ำหนัก ปริมาตร",
+    "Step: พื้นที่: ใช้สูตรกว้าง × ยาว สำหรับสี่เหลี่ยมผืนผ้า ด้าน × ด้าน สำหรับสี่เหลี่ยมจัตุรัส"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g3_mixed_review_q01",
+      "question_th": "36 + 27 เท่ากับเท่าไร?",
+      "question_text": "36 + 27 ?",
+      "choices": [
+        "61",
+        "62",
+        "63",
+        "64"
+      ],
+      "correct_answer": "63",
+      "answer": "63",
+      "explanation": "36 + 27 = 63",
+      "explanation_th": "36 + 27 = 63",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core",
+      "question_en": "36 + 27 ?",
+      "explanation_en": "36 + 27 = 63",
+      "choices_en": [
+        "61",
+        "62",
+        "63",
+        "64"
+      ],
+      "answer_en": "63"
+    },
+    {
+      "question_id": "g3_mixed_review_q02",
+      "question_th": "84 - 39 เท่ากับเท่าไร?",
+      "question_text": "84 - 39 ?",
+      "choices": [
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "84 - 39 = 45",
+      "explanation_th": "84 - 39 = 45",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core",
+      "question_en": "84 - 39 ?",
+      "explanation_en": "84 - 39 = 45",
+      "choices_en": [
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "answer_en": "45"
+    },
+    {
+      "question_id": "g3_mixed_review_q03",
+      "question_th": "7 × 6 เท่ากับเท่าไร?",
+      "question_text": "7 × 6 ?",
+      "choices": [
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "correct_answer": "42",
+      "answer": "42",
+      "explanation": "7 × 6 = 42",
+      "explanation_th": "7 × 6 = 42",
+      "difficulty": "easy",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core",
+      "question_en": "7 × 6 ?",
+      "explanation_en": "7 × 6 = 42",
+      "choices_en": [
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "answer_en": "42"
+    },
+    {
+      "question_id": "g3_mixed_review_q04",
+      "question_th": "48 ÷ 6 เท่ากับเท่าไร?",
+      "question_text": "48 ÷ 6 ?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "48 ÷ 6 = 8",
+      "explanation_th": "48 ÷ 6 = 8",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core",
+      "question_en": "48 ÷ 6 ?",
+      "explanation_en": "48 ÷ 6 = 8",
+      "choices_en": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer_en": "8"
+    },
+    {
+      "question_id": "g3_mixed_review_q05",
+      "question_th": "1/4 ของ 20 เท่ากับเท่าไร?",
+      "question_text": "1/4 20 ?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "20 ÷ 4 = 5",
+      "explanation_th": "20 ÷ 4 = 5",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core",
+      "question_en": "1/4 20 ?",
+      "explanation_en": "20 ÷ 4 = 5",
+      "choices_en": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "answer_en": "5"
+    },
+    {
+      "question_id": "g3_mixed_review_q06",
+      "question_th": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
+      "question_text": "1 ?",
+      "choices": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "1 = 100?",
+      "explanation_th": "1 เมตร = 100 เซนติเมตร",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core",
+      "question_en": "1 ?",
+      "explanation_en": "1 = 100?",
+      "choices_en": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "answer_en": "100"
+    },
+    {
+      "question_id": "g3_mixed_review_q07",
+      "question_th": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
+      "question_text": "5 × 3 ?",
+      "choices": [
+        "8",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15",
+      "explanation_th": "5 × 3 = 15",
+      "difficulty": "medium",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "core",
+      "question_en": "5 × 3 ?",
+      "explanation_en": "5 × 3 = 15",
+      "choices_en": [
+        "8",
+        "15",
+        "20",
+        "25"
+      ],
+      "answer_en": "15"
+    },
+    {
+      "question_id": "g3_mixed_review_q08",
+      "question_th": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
+      "question_text": "75 100 ?",
+      "choices": [
+        "20?",
+        "25?",
+        "30?",
+        "35?"
+      ],
+      "correct_answer": "25?",
+      "answer": "25?",
+      "explanation": "100 - 75 = 25?",
+      "explanation_th": "100 - 75 = 25 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge",
+      "question_en": "75 100 ?",
+      "explanation_en": "100 - 75 = 25?",
+      "choices_en": [
+        "20?",
+        "25?",
+        "30?",
+        "35?"
+      ],
+      "answer_en": "25?"
+    },
+    {
+      "question_id": "g3_mixed_review_q09",
+      "question_th": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
+      "question_text": "45 pieces 5 pieces?",
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "45 ÷ 5 = 9",
+      "explanation_th": "45 ÷ 5 = 9",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge",
+      "question_en": "45 pieces 5 pieces?",
+      "explanation_en": "45 ÷ 5 = 9",
+      "choices_en": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "answer_en": "9"
+    },
+    {
+      "question_id": "g3_mixed_review_q10",
+      "question_th": "125 + 236 เท่ากับเท่าไร?",
+      "question_text": "125 + 236 ?",
+      "choices": [
+        "351",
+        "361",
+        "371",
+        "381"
+      ],
+      "correct_answer": "361",
+      "answer": "361",
+      "explanation": "125 + 236 = 361",
+      "explanation_th": "125 + 236 = 361",
+      "difficulty": "hard",
+      "skill_tag": "g3_mixed_review",
+      "question_type": "challenge",
+      "question_en": "125 + 236 ?",
+      "explanation_en": "125 + 236 = 361",
+      "choices_en": [
+        "351",
+        "361",
+        "371",
+        "381"
+      ],
+      "answer_en": "361"
+    }
+  ],
+  "quiz_id": "g3_mixed_review_ep",
+  "generated_at": "2026-05-16T04:16:41.390588+00:00",
+  "source_lesson_id": "g3_mixed_review",
+  "needs_review": true
+}

@@ -1,4 +1,4 @@
-﻿{
+{
   "lesson_id": "g2_time_calendar",
   "id": "g2_time_calendar",
   "grade_level": 2,
@@ -52,76 +52,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🏫 โรงเรียนปิดภาคเรียนวันที่ 20 เมษายน วันนั้นเป็นวันอะไร และเดือนเมษายนมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 20
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 20"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "เมษายน"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "30 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "correct_answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -132,76 +99,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🍎 วันเก็บเกี่ยวผลไม้กำหนดวันที่ 10 พฤษภาคม เป็นวันอะไร และเดือนพฤษภาคมมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 10
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 10"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "พฤษภาคม"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "31 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -212,76 +146,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🧸 วันแข่งของเล่นกำหนดวันที่ 5 มิถุนายน เป็นวันอะไร และเดือนมิถุนายนมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 5
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 5"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "มิถุนายน"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "30 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -292,76 +193,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🏪 วันโปรโมชันราคาวันที่ 25 สิงหาคม เป็นวันอะไร และเดือนสิงหาคมมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 25
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 25"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "สิงหาคม"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "31 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -372,76 +240,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🐕 วันตรวจสุขภาพสัตว์วันที่ 12 กันยายน เป็นวันอะไร และเดือนกันยายนมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 12
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 12"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "กันยายน"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "30 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -452,76 +287,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🌻 วันปลูกต้นไม้กำหนดวันที่ 3 ตุลาคม เป็นวันอะไร และเดือนตุลาคมมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 3
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 3"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "ตุลาคม"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "31 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -532,76 +334,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎨 วันอาภิเษกวันที่ 1 พฤศจิกายน เป็นวันอะไร และเดือนพฤศจิกายนมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 1
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 1"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "พฤศจิกายน"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "30 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -612,76 +381,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "📚 วันสอบวันที่ 15 มกราคม เป็นวันอะไร และเดือนมกราคมมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 15
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 15"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "มกราคม"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "31 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -692,76 +428,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎮 วันแข่งขันเกมวันที่ 7 กุมภาพันธ์ เป็นวันอะไร และเดือนกุมภาพันธ์มีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 7
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 7"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "กุมภาพันธ์"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "28 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -772,76 +475,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎉 วันเทศกาลวันที่ 31 ธันวาคม เป็นวันอะไร และเดือนธันวาคมมีกี่วัน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📅",
-                "count": 31
-              },
-              {
-                "emoji": "📆",
-                "count": 1
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title_th": "🔷 รูปทรง",
-          "data": {
-            "shapes": [
-              {
-                "shape": "rectangle",
-                "color": "#FFB347",
-                "label_th": "วันที่ 31"
-              },
-              {
-                "shape": "circle",
-                "color": "#87CEEB",
-                "label_th": "ธันวาคม"
-              }
-            ]
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "31 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
-                "choices": [
-                  "30วัน",
-                  "29วัน",
-                  "31วัน",
-                  "28วัน"
-                ],
-                "answer": "31วัน"
-              },
-              {
-                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
-              },
-              {
-                "text_th": "ปีอธิกมาตุคือปีไหน?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -852,29 +522,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "📖 Story Time",
-          "content": ""
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "30 + 0 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 Try It",
-          "question": "เดือนกรกฎาคมมีกี่วัน?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "30วัน",
-            "29วัน",
-            "31วัน",
-            "28วัน"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "31วัน",
-          "correct_answer": "31วัน",
-          "explanation": ""
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     }
@@ -945,171 +629,181 @@
   "questions": [
     {
       "question_id": "g2_time_calendar_q01",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "1 สัปดาห์มีกี่วัน?",
+      "question_text": "1 สัปดาห์มีกี่วัน?",
       "choices": [
-        "9",
-        "12",
-        "6",
-        "14"
+        "5 วัน",
+        "6 วัน",
+        "7 วัน",
+        "8 วัน"
       ],
-      "correct_answer": "9",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
-      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "7 วัน",
+      "answer": "7 วัน",
+      "explanation": "1 สัปดาห์มี 7 วัน",
+      "explanation_th": "1 สัปดาห์มี 7 วัน",
       "difficulty": "easy",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q02",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "เดือนมกราคมมีกี่วัน?",
+      "question_text": "เดือนมกราคมมีกี่วัน?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "20"
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "31 วัน",
+      "answer": "31 วัน",
+      "explanation": "เดือนมกราคมมี 31 วัน",
+      "explanation_th": "เดือนมกราคมมี 31 วัน",
       "difficulty": "easy",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q03",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: 5 + 5 = ?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: 5 + 5 = ?",
+      "question_th": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "question_text": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
       "choices": [
-        "10",
-        "11",
-        "9",
-        "20"
+        "วันอาทิตย์",
+        "วันอังคาร",
+        "วันพุธ",
+        "วันศุกร์"
       ],
-      "correct_answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารถัดจากวันจันทร์",
+      "explanation_th": "วันอังคารถัดจากวันจันทร์",
       "difficulty": "easy",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q04",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "question_text": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
       "choices": [
-        "36",
-        "42",
-        "30",
-        "12"
+        "9:00 น.",
+        "10:00 น.",
+        "11:00 น.",
+        "12:00 น."
       ],
-      "correct_answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "10:00 น.",
+      "answer": "10:00 น.",
+      "explanation": "8:00 + 2 ชั่วโมง = 10:00",
+      "explanation_th": "8:00 + 2 ชั่วโมง = 10:00",
+      "difficulty": "medium",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q05",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "question_text": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "16"
+        "15 นาที",
+        "30 นาที",
+        "45 นาที",
+        "60 นาที"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "medium",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q06",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: 8 + 3 = ?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: 8 + 3 = ?",
+      "question_th": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "question_text": "ไตรมาสหนึ่งมีกี่เดือน?",
       "choices": [
-        "11",
-        "12",
-        "10",
-        "21"
+        "2 เดือน",
+        "3 เดือน",
+        "4 เดือน",
+        "6 เดือน"
       ],
-      "correct_answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "3 เดือน",
+      "answer": "3 เดือน",
+      "explanation": "1 ไตรมาสมี 3 เดือน",
+      "explanation_th": "1 ไตรมาสมี 3 เดือน",
+      "difficulty": "medium",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q07",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "question_text": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
       "choices": [
-        "36",
-        "40",
-        "32",
-        "13"
+        "วันเสาร์",
+        "วันอาทิตย์",
+        "วันจันทร์",
+        "วันพุธ"
       ],
-      "correct_answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "วันอาทิตย์",
+      "answer": "วันอาทิตย์",
+      "explanation": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "explanation_th": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "difficulty": "medium",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q08",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "1 วันมีกี่ชั่วโมง?",
+      "question_text": "1 วันมีกี่ชั่วโมง?",
       "choices": [
-        "45",
-        "46",
-        "44",
-        "55"
+        "12 ชั่วโมง",
+        "18 ชั่วโมง",
+        "24 ชั่วโมง",
+        "30 ชั่วโมง"
       ],
-      "correct_answer": "45",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
-      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "24 ชั่วโมง",
+      "answer": "24 ชั่วโมง",
+      "explanation": "1 วันมี 24 ชั่วโมง",
+      "explanation_th": "1 วันมี 24 ชั่วโมง",
+      "difficulty": "hard",
       "skill_tag": "g2_time_calendar",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g2_time_calendar_q09",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: 11 + 6 = ?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: 11 + 6 = ?",
+      "question_th": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "question_text": "45 นาที อีก 15 นาทีครบกี่นาที?",
       "choices": [
-        "17",
-        "18",
-        "16",
-        "27"
+        "50 นาที",
+        "55 นาที",
+        "60 นาที",
+        "65 นาที"
       ],
-      "correct_answer": "17",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
-      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "60 นาที",
+      "answer": "60 นาที",
+      "explanation": "45 + 15 = 60 นาที",
+      "explanation_th": "45 + 15 = 60 นาที",
+      "difficulty": "hard",
       "skill_tag": "g2_time_calendar",
       "question_type": "challenge"
     },
     {
       "question_id": "g2_time_calendar_q10",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "เดือนเมษายนมีกี่วัน?",
+      "question_text": "เดือนเมษายนมีกี่วัน?",
       "choices": [
-        "24",
-        "26",
-        "22",
-        "14"
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
       ],
-      "correct_answer": "24",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
-      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "30 วัน",
+      "answer": "30 วัน",
+      "explanation": "เดือนเมษายนมี 30 วัน",
+      "explanation_th": "เดือนเมษายนมี 30 วัน",
+      "difficulty": "hard",
       "skill_tag": "g2_time_calendar",
       "question_type": "challenge"
     }
@@ -1117,183 +811,225 @@
   "quiz_th": [
     {
       "question_id": "g2_time_calendar_q01",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "1 สัปดาห์มีกี่วัน?",
+      "question_text": "1 สัปดาห์มีกี่วัน?",
       "choices": [
-        "9",
-        "12",
-        "6",
-        "14"
+        "5 วัน",
+        "6 วัน",
+        "7 วัน",
+        "8 วัน"
       ],
-      "correct_answer": "9",
-      "answer": "9",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
-      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "7 วัน",
+      "answer": "7 วัน",
+      "explanation": "1 สัปดาห์มี 7 วัน",
+      "explanation_th": "1 สัปดาห์มี 7 วัน",
       "difficulty": "easy",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q02",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "เดือนมกราคมมีกี่วัน?",
+      "question_text": "เดือนมกราคมมีกี่วัน?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "20"
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "31 วัน",
+      "answer": "31 วัน",
+      "explanation": "เดือนมกราคมมี 31 วัน",
+      "explanation_th": "เดือนมกราคมมี 31 วัน",
       "difficulty": "easy",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q03",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: 5 + 5 = ?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: 5 + 5 = ?",
+      "question_th": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "question_text": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
       "choices": [
-        "10",
-        "11",
-        "9",
-        "20"
+        "วันอาทิตย์",
+        "วันอังคาร",
+        "วันพุธ",
+        "วันศุกร์"
       ],
-      "correct_answer": "10",
-      "answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารถัดจากวันจันทร์",
+      "explanation_th": "วันอังคารถัดจากวันจันทร์",
       "difficulty": "easy",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q04",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "question_text": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
       "choices": [
-        "36",
-        "42",
-        "30",
-        "12"
+        "9:00 น.",
+        "10:00 น.",
+        "11:00 น.",
+        "12:00 น."
       ],
-      "correct_answer": "36",
-      "answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "10:00 น.",
+      "answer": "10:00 น.",
+      "explanation": "8:00 + 2 ชั่วโมง = 10:00",
+      "explanation_th": "8:00 + 2 ชั่วโมง = 10:00",
+      "difficulty": "medium",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q05",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "question_text": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "16"
+        "15 นาที",
+        "30 นาที",
+        "45 นาที",
+        "60 นาที"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "medium",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q06",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: 8 + 3 = ?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: 8 + 3 = ?",
+      "question_th": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "question_text": "ไตรมาสหนึ่งมีกี่เดือน?",
       "choices": [
-        "11",
-        "12",
-        "10",
-        "21"
+        "2 เดือน",
+        "3 เดือน",
+        "4 เดือน",
+        "6 เดือน"
       ],
-      "correct_answer": "11",
-      "answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "3 เดือน",
+      "answer": "3 เดือน",
+      "explanation": "1 ไตรมาสมี 3 เดือน",
+      "explanation_th": "1 ไตรมาสมี 3 เดือน",
+      "difficulty": "medium",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q07",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "question_text": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
       "choices": [
-        "36",
-        "40",
-        "32",
-        "13"
+        "วันเสาร์",
+        "วันอาทิตย์",
+        "วันจันทร์",
+        "วันพุธ"
       ],
-      "correct_answer": "36",
-      "answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "วันอาทิตย์",
+      "answer": "วันอาทิตย์",
+      "explanation": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "explanation_th": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "difficulty": "medium",
       "skill_tag": "g2_time_calendar",
       "question_type": "core"
     },
     {
       "question_id": "g2_time_calendar_q08",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "1 วันมีกี่ชั่วโมง?",
+      "question_text": "1 วันมีกี่ชั่วโมง?",
       "choices": [
-        "45",
-        "46",
-        "44",
-        "55"
+        "12 ชั่วโมง",
+        "18 ชั่วโมง",
+        "24 ชั่วโมง",
+        "30 ชั่วโมง"
       ],
-      "correct_answer": "45",
-      "answer": "45",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
-      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "24 ชั่วโมง",
+      "answer": "24 ชั่วโมง",
+      "explanation": "1 วันมี 24 ชั่วโมง",
+      "explanation_th": "1 วันมี 24 ชั่วโมง",
+      "difficulty": "hard",
       "skill_tag": "g2_time_calendar",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g2_time_calendar_q09",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: 11 + 6 = ?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: 11 + 6 = ?",
+      "question_th": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "question_text": "45 นาที อีก 15 นาทีครบกี่นาที?",
       "choices": [
-        "17",
-        "18",
-        "16",
-        "27"
+        "50 นาที",
+        "55 นาที",
+        "60 นาที",
+        "65 นาที"
       ],
-      "correct_answer": "17",
-      "answer": "17",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
-      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "60 นาที",
+      "answer": "60 นาที",
+      "explanation": "45 + 15 = 60 นาที",
+      "explanation_th": "45 + 15 = 60 นาที",
+      "difficulty": "hard",
       "skill_tag": "g2_time_calendar",
       "question_type": "challenge"
     },
     {
       "question_id": "g2_time_calendar_q10",
-      "question_th": "อ่านปฏิทินและดูเวลาเป็น: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "อ่านปฏิทินและดูเวลาเป็น: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "เดือนเมษายนมีกี่วัน?",
+      "question_text": "เดือนเมษายนมีกี่วัน?",
       "choices": [
-        "24",
-        "26",
-        "22",
-        "14"
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
       ],
-      "correct_answer": "24",
-      "answer": "24",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
-      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "30 วัน",
+      "answer": "30 วัน",
+      "explanation": "เดือนเมษายนมี 30 วัน",
+      "explanation_th": "เดือนเมษายนมี 30 วัน",
+      "difficulty": "hard",
       "skill_tag": "g2_time_calendar",
       "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง อ่านปฏิทินและดูเวลาเป็น ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "18 + 7 = 25",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "18 + 7 = ?",
+      "choices": [
+        "23",
+        "24",
+        "25",
+        "27"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "คำตอบคือ 25"
     }
   ]
 }

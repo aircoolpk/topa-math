@@ -1,3 +1,5 @@
+from datetime import UTC, datetime
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -7,6 +9,7 @@ from app.core.security import create_access_token, hash_password, verify_passwor
 from app.models import User
 from app.routers.deps import current_user
 from app.schemas.api import LoginIn, TokenOut, UserCreate, UserOut
+from app.services.referrals import attach_registration_referral, ensure_referral_token
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -18,6 +21,9 @@ def register(payload: UserCreate, db: Session = Depends(get_db)) -> TokenOut:
         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Email already registered")
     user = User(email=payload.email.lower(), password_hash=hash_password(payload.password), role="parent")
     db.add(user)
+    db.flush()
+    ensure_referral_token(db, user)
+    attach_registration_referral(db, user, payload.referral_token)
     db.commit()
     db.refresh(user)
     return TokenOut(access_token=create_access_token(user.id, user.role))
@@ -28,6 +34,10 @@ def login(payload: LoginIn, db: Session = Depends(get_db)) -> TokenOut:
     user = db.scalar(select(User).where(User.email == payload.email.lower()))
     if not user or not verify_password(payload.password, user.password_hash):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
+    if user.is_active is False:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Account is disabled")
+    user.last_login_at = datetime.now(UTC)
+    db.commit()
     return TokenOut(access_token=create_access_token(user.id, user.role))
 
 

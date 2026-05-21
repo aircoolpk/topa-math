@@ -64,8 +64,14 @@ def program_alias(value: Any) -> str:
     return "TH"
 
 
-def lesson_program_alias(payload: dict[str, Any]) -> str:
-    return program_alias(payload.get("program_type") or payload.get("content_program_type") or payload.get("track"))
+def lesson_program_alias(payload: dict) -> str:
+    pt = (payload.get("program_type") or payload.get("content_program_type") or payload.get("track") or "").strip().upper()
+    if pt in {"EP", "EN", "ENGLISH"}:
+        return "EP"
+    # THP is the Thai program — treat requests for "TH" as matching "THP" too
+    if pt in {"TH", "THP"}:
+        return "TH"
+    return "TH"
 
 
 def _normalize_nested(value: Any) -> Any:
@@ -105,7 +111,13 @@ def _number_text(value: Any) -> str | None:
 
 
 def _normalize_mini_quiz_data(data: dict[str, Any]) -> dict[str, Any]:
+    questions = data.get("questions")
+    if isinstance(questions, list) and questions and isinstance(questions[0], dict):
+        first_question = questions[0]
+        data = {**data, **first_question}
     question = data.get("question_th") or data.get("question") or data.get("question_en") or ""
+    if not question:
+        question = data.get("text_th") or data.get("question_text") or data.get("question_text_th") or ""
     choices = data.get("choices") if isinstance(data.get("choices"), list) else []
     choices = [str(choice).strip() for choice in choices]
     raw_answer = data.get("correct_answer")
@@ -511,14 +523,20 @@ def list_questions(grade_level: int | None = None, lesson_id: str | None = None,
             validation = validate_question_payload(question)
             if issue_only and validation["valid"]:
                 continue
+            question_id = str(question.get("question_id") or question.get("id") or f"{path.stem}_{index + 1}")
+            explanation = question.get("explanation") or question.get("explanation_th") or question.get("explanation_en")
             items.append(
                 {
-                    "question_id": str(question.get("question_id") or question.get("id") or f"{path.stem}:{index}"),
+                    "question_id": question_id,
                     "grade_level": grade,
                     "lesson_id": topic,
                     "question": question.get("question_text_th") or question.get("question_text") or question.get("question") or question.get("question_en"),
                     "choices": question.get("choices") or [],
                     "correct_answer": question.get("correct_answer") or question.get("answer"),
+                    "explanation": explanation,
+                    "explanation_th": explanation,
+                    "difficulty": question.get("difficulty"),
+                    "skill_tag": question.get("skill_tag") or question.get("skill_code"),
                     "validation_status": "valid" if validation["valid"] else "invalid",
                     "errors": validation["errors"],
                 }
@@ -538,7 +556,7 @@ def update_question_payload(question_id: str, patch: dict[str, Any]) -> dict[str
             rows = _load_question_rows(path)
             changed = False
             for index, question in enumerate(rows):
-                current_id = str(question.get("question_id") or question.get("id") or f"{path.stem}:{index}")
+                current_id = str(question.get("question_id") or question.get("id") or f"{path.stem}_{index + 1}")
                 if current_id == question_id:
                     question.update(patch)
                     changed = True
@@ -558,7 +576,7 @@ def update_question_payload(question_id: str, patch: dict[str, Any]) -> dict[str
         for index, question in enumerate(questions):
             if not isinstance(question, dict):
                 continue
-            current_id = str(question.get("question_id") or question.get("id") or f"{path.stem}:{index}")
+            current_id = str(question.get("question_id") or question.get("id") or f"{path.stem}_{index + 1}")
             if current_id == question_id:
                 question.update(patch)
                 _write_json(path, payload)

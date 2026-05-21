@@ -1,0 +1,1220 @@
+{
+  "lesson_id": "g3_division_intro_ep",
+  "id": "g3_division_intro_ep",
+  "grade_level": 3,
+  "title_th": "การหารคือการแบ่งอย่างเท่าๆ กัน",
+  "objective_th": "นักเรียนสามารถหารจำนวนไม่เกิน 100 ด้วยตัวหารที่เป็นเลขหนึ่งหลักได้ถูกต้อง โดยเข้าใจความหมายของการหาร",
+  "story_intro_th": "พี่อลิสชวนแบ่งของเป็นกลุ่มเท่าๆ กัน เพื่อเข้าใจความหมายของการหาร",
+  "explanation_steps": [
+    "การหารคือการแบ่งจำนวนออกเป็นส่วนเท่าๆ กัน",
+    "เครื่องหมาย ÷ อ่านว่า หาร ตัวเลขตัวหน้าคือตัวตั้ง ตัวเลขตัวหลังคือตัวหาร",
+    "ตัวตั้ง ÷ ตัวหาร = ผลหาร เช่น 36 ÷ 6 = 6",
+    "ทดสอบการหารโดยเอาผลหารคูณตัวหาร ต้องได้ตัวตั้ง",
+    "ถ้าหารไม่ลงตัวจะมีเศษ เช่น 37 ÷ 6 = 6 เศษ 1"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "หารลูกปัด",
+      "question_th": "มีลูกปัด 48 ลูก แบ่งใส่ถุง ถุงละ 6 ลูก จะได้กี่ถุง?",
+      "solution_th": "48 ÷ 6 = 8 ถุง ✅"
+    },
+    {
+      "title_th": "หารลูกบอล",
+      "question_th": "ลูกบอล 72 ลูก แบ่งให้ทีม 9 คน คนละกี่ลูก?",
+      "solution_th": "72 ÷ 9 = 8 ลูก ✅"
+    },
+    {
+      "title_th": "หารมีเศษ",
+      "question_th": "ขนม 25 ชิ้น แบ่งให้เพื่อน 4 คน คนละได้กี่ชิ้น เหลือกี่ชิ้น?",
+      "solution_th": "25 ÷ 4 = 6 เศษ 1 คนละ 6 ชิ้น เหลือ 1 ชิ้น ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สลับตัวตั้งกับตัวหาร เช่น คิดว่า 72 ÷ 9 = 72 × 9",
+    "ไม่ตรวจสอบว่าผลหารถูกต้องหรือไม่โดยคูณกลับ",
+    "ลืมว่าการหารไม่ลงตัวจะมีเศษ"
+  ],
+  "hints": [
+    "ถามตัวเองว่า ตัวหารเข้าไปในตัวตั้งได้กี่ครั้ง?",
+    "ใช้สูตรคูณช่วย ถ้ารู้ว่า 6 × 8 = 48 ก็จะรู้ว่า 48 ÷ 6 = 8",
+    "ตรวจคำตอบโดยเอาผลหารคูณตัวหาร ถ้าได้ตัวตั้งแปลว่าถูก"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_division_intro",
+  "skill_code": "g3_division_intro_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "แบ่ง 24 เป็น 4 กลุ่ม",
+      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีลูกชิ้น 24 ลูก ต้องการแบ่งให้เพื่อน 4 คนเท่าๆ กัน เพื่อนแต่ละคนจะได้กี่ลูก?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "grouping_model",
+          "title": "🟦 ดูแผนภาพการแบ่ง",
+          "description": "จัดลูกชิ้น 24 ลูก เป็น 4 กลุ่มเท่าๆ กัน จะได้กลุ่มละ 6 ลูก",
+          "total_items": 24,
+          "groups": 4,
+          "items_per_group": 6
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "24 ÷ 4 = 6 ลูก",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีลูกชิ้น 24 ลูก แบ่งให้ 4 คนเท่าๆ กัน คนละกี่ลูก?",
+          "choices": [
+            "5 ลูก",
+            "6 ลูก",
+            "7 ลูก",
+            "4 ลูก"
+          ],
+          "answer": "6 ลูก",
+          "correct_answer": "6 ลูก",
+          "explanation": "24 ÷ 4 = 6 เพราะ 6 × 4 = 24",
+          "explanation_th": "24 ÷ 4 = 6 เพราะ 6 × 4 = 24",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "แบ่ง 24 เป็น 4 กลุ่ม",
+      "story_theme_en": "แบ่งเท่าๆ กัน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "แบ่ง 18 เป็น 3 กลุ่ม",
+      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีดาว 18 ดวง ต้องการแบ่งให้เพื่อน 3 คนเท่าๆ กัน เพื่อนแต่ละคนจะได้กี่ดวง?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "grouping_model",
+          "title": "🟦 ดูแผนภาพการแบ่ง",
+          "description": "จัดดาว 18 ดวง เป็น 3 กลุ่มเท่าๆ กัน จะได้กลุ่มละ 6 ดวง",
+          "total_items": 18,
+          "groups": 3,
+          "items_per_group": 6
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "18 ÷ 3 = 6 ดวง",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีดาว 18 ดวง แบ่งให้ 3 คนเท่าๆ กัน คนละกี่ดวง?",
+          "choices": [
+            "5 ดวง",
+            "6 ดวง",
+            "7 ดวง",
+            "3 ดวง"
+          ],
+          "answer": "6 ดวง",
+          "correct_answer": "6 ดวง",
+          "explanation": "18 ÷ 3 = 6 เพราะ 6 × 3 = 18",
+          "explanation_th": "18 ÷ 3 = 6 เพราะ 6 × 3 = 18",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "แบ่ง 18 เป็น 3 กลุ่ม",
+      "story_theme_en": "แบ่งเท่าๆ กัน"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "แบ่ง 20 เป็น 5 กลุ่ม",
+      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีขนม 20 ชิ้น ต้องการแบ่งให้เพื่อน 5 คนเท่าๆ กัน เพื่อนแต่ละคนจะได้กี่ชิ้น?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "grouping_model",
+          "title": "🟦 ดูแผนภาพการแบ่ง",
+          "description": "จัดขนม 20 ชิ้น เป็น 5 กลุ่มเท่าๆ กัน จะได้กลุ่มละ 4 ชิ้น",
+          "total_items": 20,
+          "groups": 5,
+          "items_per_group": 4
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "20 ÷ 5 = 4 ชิ้น",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีขนม 20 ชิ้น แบ่งให้ 5 คนเท่าๆ กัน คนละกี่ชิ้น?",
+          "choices": [
+            "3 ชิ้น",
+            "4 ชิ้น",
+            "5 ชิ้น",
+            "5 ชิ้น"
+          ],
+          "answer": "4 ชิ้น",
+          "correct_answer": "4 ชิ้น",
+          "explanation": "20 ÷ 5 = 4 เพราะ 4 × 5 = 20",
+          "explanation_th": "20 ÷ 5 = 4 เพราะ 4 × 5 = 20",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "แบ่ง 20 เป็น 5 กลุ่ม",
+      "story_theme_en": "แบ่งเท่าๆ กัน"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "แบ่ง 30 เป็น 6 กลุ่ม",
+      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีลูกปัด 30 เม็ด ต้องการแบ่งให้เพื่อน 6 คนเท่าๆ กัน เพื่อนแต่ละคนจะได้กี่เม็ด?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "grouping_model",
+          "title": "🟦 ดูแผนภาพการแบ่ง",
+          "description": "จัดลูกปัด 30 เม็ด เป็น 6 กลุ่มเท่าๆ กัน จะได้กลุ่มละ 5 เม็ด",
+          "total_items": 30,
+          "groups": 6,
+          "items_per_group": 5
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "30 ÷ 6 = 5 เม็ด",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีลูกปัด 30 เม็ด แบ่งให้ 6 คนเท่าๆ กัน คนละกี่เม็ด?",
+          "choices": [
+            "4 เม็ด",
+            "5 เม็ด",
+            "6 เม็ด",
+            "6 เม็ด"
+          ],
+          "answer": "5 เม็ด",
+          "correct_answer": "5 เม็ด",
+          "explanation": "30 ÷ 6 = 5 เพราะ 5 × 6 = 30",
+          "explanation_th": "30 ÷ 6 = 5 เพราะ 5 × 6 = 30",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "แบ่ง 30 เป็น 6 กลุ่ม",
+      "story_theme_en": "แบ่งเท่าๆ กัน"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "แบ่ง 16 เป็น 4 กลุ่ม",
+      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีดินสอ 16 แท่ง ต้องการแบ่งให้เพื่อน 4 คนเท่าๆ กัน เพื่อนแต่ละคนจะได้กี่แท่ง?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "grouping_model",
+          "title": "🟦 ดูแผนภาพการแบ่ง",
+          "description": "จัดดินสอ 16 แท่ง เป็น 4 กลุ่มเท่าๆ กัน จะได้กลุ่มละ 4 แท่ง",
+          "total_items": 16,
+          "groups": 4,
+          "items_per_group": 4
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "16 ÷ 4 = 4 แท่ง",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีดินสอ 16 แท่ง แบ่งให้ 4 คนเท่าๆ กัน คนละกี่แท่ง?",
+          "choices": [
+            "3 แท่ง",
+            "4 แท่ง",
+            "5 แท่ง",
+            "4 แท่ง"
+          ],
+          "answer": "4 แท่ง",
+          "correct_answer": "4 แท่ง",
+          "explanation": "16 ÷ 4 = 4 เพราะ 4 × 4 = 16",
+          "explanation_th": "16 ÷ 4 = 4 เพราะ 4 × 4 = 16",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "แบ่ง 16 เป็น 4 กลุ่ม",
+      "story_theme_en": "แบ่งเท่าๆ กัน"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "แบ่ง 21 เป็น 7 กลุ่ม",
+      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีสติกเกอร์ 21 ดวง ต้องการแบ่งให้เพื่อน 7 คนเท่าๆ กัน เพื่อนแต่ละคนจะได้กี่ดวง?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "grouping_model",
+          "title": "🟦 ดูแผนภาพการแบ่ง",
+          "description": "จัดสติกเกอร์ 21 ดวง เป็น 7 กลุ่มเท่าๆ กัน จะได้กลุ่มละ 3 ดวง",
+          "total_items": 21,
+          "groups": 7,
+          "items_per_group": 3
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "21 ÷ 7 = 3 ดวง",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีสติกเกอร์ 21 ดวง แบ่งให้ 7 คนเท่าๆ กัน คนละกี่ดวง?",
+          "choices": [
+            "2 ดวง",
+            "3 ดวง",
+            "4 ดวง",
+            "7 ดวง"
+          ],
+          "answer": "3 ดวง",
+          "correct_answer": "3 ดวง",
+          "explanation": "21 ÷ 7 = 3 เพราะ 3 × 7 = 21",
+          "explanation_th": "21 ÷ 7 = 3 เพราะ 3 × 7 = 21",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "แบ่ง 21 เป็น 7 กลุ่ม",
+      "story_theme_en": "แบ่งเท่าๆ กัน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "แบ่ง 12 เป็น 3 กลุ่ม",
+      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีแก้วน้ำ 12 ใบ ต้องการแบ่งให้เพื่อน 3 คนเท่าๆ กัน เพื่อนแต่ละคนจะได้กี่ใบ?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "grouping_model",
+          "title": "🟦 ดูแผนภาพการแบ่ง",
+          "description": "จัดแก้วน้ำ 12 ใบ เป็น 3 กลุ่มเท่าๆ กัน จะได้กลุ่มละ 4 ใบ",
+          "total_items": 12,
+          "groups": 3,
+          "items_per_group": 4
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "12 ÷ 3 = 4 ใบ",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีแก้วน้ำ 12 ใบ แบ่งให้ 3 คนเท่าๆ กัน คนละกี่ใบ?",
+          "choices": [
+            "3 ใบ",
+            "4 ใบ",
+            "5 ใบ",
+            "3 ใบ"
+          ],
+          "answer": "4 ใบ",
+          "correct_answer": "4 ใบ",
+          "explanation": "12 ÷ 3 = 4 เพราะ 4 × 3 = 12",
+          "explanation_th": "12 ÷ 3 = 4 เพราะ 4 × 3 = 12",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "แบ่ง 12 เป็น 3 กลุ่ม",
+      "story_theme_en": "แบ่งเท่าๆ กัน"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "แบ่ง 28 เป็น 4 กลุ่ม",
+      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "พี่อลิสมีหนังสือ 28 เล่ม ต้องการแบ่งให้เพื่อน 4 คนเท่าๆ กัน เพื่อนแต่ละคนจะได้กี่เล่ม?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "grouping_model",
+          "title": "🟦 ดูแผนภาพการแบ่ง",
+          "description": "จัดหนังสือ 28 เล่ม เป็น 4 กลุ่มเท่าๆ กัน จะได้กลุ่มละ 7 เล่ม",
+          "total_items": 28,
+          "groups": 4,
+          "items_per_group": 7
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "28 ÷ 4 = 7 เล่ม",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "มีหนังสือ 28 เล่ม แบ่งให้ 4 คนเท่าๆ กัน คนละกี่เล่ม?",
+          "choices": [
+            "6 เล่ม",
+            "7 เล่ม",
+            "8 เล่ม",
+            "4 เล่ม"
+          ],
+          "answer": "7 เล่ม",
+          "correct_answer": "7 เล่ม",
+          "explanation": "28 ÷ 4 = 7 เพราะ 7 × 4 = 28",
+          "explanation_th": "28 ÷ 4 = 7 เพราะ 7 × 4 = 28",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "แบ่ง 28 เป็น 4 กลุ่ม",
+      "story_theme_en": "แบ่งเท่าๆ กัน"
+    }
+  ],
+  "preview_title_th": "หารเริ่มต้น",
+  "preview_subtitle_th": "เรียนรู้การคูณและการหาร",
+  "cover_theme": "division_intro",
+  "cover_emoji": "➗",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้การคูณและการหาร",
+  "learning_objective_th": "นักเรียนสามารถหารจำนวนไม่เกิน 100 ด้วยตัวหารที่เป็นเลขหนึ่งหลักได้ถูกต้อง โดยเข้าใจความหมายของการหาร",
+  "lesson_intro_th": "พี่อลิสมีลูกชิ้น 36 ลูก อยากแบ่งให้เพื่อน 6 คน อย่างละเท่าๆ กัน เพื่อนแต่ละคนจะได้ลูกชิ้นกี่ลูก? 🍡",
+  "concept_explanation_th": "การหารคือการแบ่งจำนวนทั้งหมดออกเป็นกลุ่มเท่าๆ กัน หรือหาว่าแต่ละกลุ่มมีเท่าไร",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 9
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 6
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท การหารคือการแบ่งอย่างเท่าๆ กัน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "หารลูกปัด",
+      "question_th": "มีลูกปัด 48 ลูก แบ่งใส่ถุง ถุงละ 6 ลูก จะได้กี่ถุง?",
+      "solution_th": "48 ÷ 6 = 8 ถุง ✅"
+    },
+    {
+      "title_th": "หารลูกบอล",
+      "question_th": "ลูกบอล 72 ลูก แบ่งให้ทีม 9 คน คนละกี่ลูก?",
+      "solution_th": "72 ÷ 9 = 8 ลูก ✅"
+    },
+    {
+      "title_th": "หารมีเศษ",
+      "question_th": "ขนม 25 ชิ้น แบ่งให้เพื่อน 4 คน คนละได้กี่ชิ้น เหลือกี่ชิ้น?",
+      "solution_th": "25 ÷ 4 = 6 เศษ 1 คนละ 6 ชิ้น เหลือ 1 ชิ้น ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สลับตัวตั้งกับตัวหาร เช่น คิดว่า 72 ÷ 9 = 72 × 9",
+    "ไม่ตรวจสอบว่าผลหารถูกต้องหรือไม่โดยคูณกลับ",
+    "ลืมว่าการหารไม่ลงตัวจะมีเศษ"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_division_intro_q01",
+      "question_th": "มีลูกชิ้น 24 ลูก แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "question_text": "มีลูกชิ้น 24 ลูก แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "choices": [
+        "5 ลูก",
+        "6 ลูก",
+        "7 ลูก",
+        "4 ลูก"
+      ],
+      "correct_answer": "6 ลูก",
+      "answer": "6 ลูก",
+      "explanation": "24 ÷ 4 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "explanation_th": "24 ÷ 4 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q02",
+      "question_th": "มีดาว 18 ดวง แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "question_text": "มีดาว 18 ดวง แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "choices": [
+        "5 ดวง",
+        "6 ดวง",
+        "7 ดวง",
+        "3 ดวง"
+      ],
+      "correct_answer": "6 ดวง",
+      "answer": "6 ดวง",
+      "explanation": "18 ÷ 3 = 6 จึงได้กลุ่มละ 6 ดวง",
+      "explanation_th": "18 ÷ 3 = 6 จึงได้กลุ่มละ 6 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q03",
+      "question_th": "มีขนม 20 ชิ้น แบ่งให้ 5 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ชิ้น?",
+      "question_text": "มีขนม 20 ชิ้น แบ่งให้ 5 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ชิ้น?",
+      "choices": [
+        "3 ชิ้น",
+        "4 ชิ้น",
+        "5 ชิ้น",
+        "5 ชิ้น"
+      ],
+      "correct_answer": "4 ชิ้น",
+      "answer": "4 ชิ้น",
+      "explanation": "20 ÷ 5 = 4 จึงได้กลุ่มละ 4 ชิ้น",
+      "explanation_th": "20 ÷ 5 = 4 จึงได้กลุ่มละ 4 ชิ้น",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q04",
+      "question_th": "มีลูกปัด 30 เม็ด แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เม็ด?",
+      "question_text": "มีลูกปัด 30 เม็ด แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เม็ด?",
+      "choices": [
+        "4 เม็ด",
+        "5 เม็ด",
+        "6 เม็ด",
+        "6 เม็ด"
+      ],
+      "correct_answer": "5 เม็ด",
+      "answer": "5 เม็ด",
+      "explanation": "30 ÷ 6 = 5 จึงได้กลุ่มละ 5 เม็ด",
+      "explanation_th": "30 ÷ 6 = 5 จึงได้กลุ่มละ 5 เม็ด",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q05",
+      "question_th": "มีดินสอ 16 แท่ง แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่แท่ง?",
+      "question_text": "มีดินสอ 16 แท่ง แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่แท่ง?",
+      "choices": [
+        "3 แท่ง",
+        "4 แท่ง",
+        "5 แท่ง",
+        "4 แท่ง"
+      ],
+      "correct_answer": "4 แท่ง",
+      "answer": "4 แท่ง",
+      "explanation": "16 ÷ 4 = 4 จึงได้กลุ่มละ 4 แท่ง",
+      "explanation_th": "16 ÷ 4 = 4 จึงได้กลุ่มละ 4 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q06",
+      "question_th": "มีสติกเกอร์ 21 ดวง แบ่งให้ 7 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "question_text": "มีสติกเกอร์ 21 ดวง แบ่งให้ 7 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "choices": [
+        "2 ดวง",
+        "3 ดวง",
+        "4 ดวง",
+        "7 ดวง"
+      ],
+      "correct_answer": "3 ดวง",
+      "answer": "3 ดวง",
+      "explanation": "21 ÷ 7 = 3 จึงได้กลุ่มละ 3 ดวง",
+      "explanation_th": "21 ÷ 7 = 3 จึงได้กลุ่มละ 3 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q07",
+      "question_th": "มีแก้วน้ำ 12 ใบ แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "question_text": "มีแก้วน้ำ 12 ใบ แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "choices": [
+        "3 ใบ",
+        "4 ใบ",
+        "5 ใบ",
+        "3 ใบ"
+      ],
+      "correct_answer": "4 ใบ",
+      "answer": "4 ใบ",
+      "explanation": "12 ÷ 3 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "explanation_th": "12 ÷ 3 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q08",
+      "question_th": "มีหนังสือ 28 เล่ม แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เล่ม?",
+      "question_text": "มีหนังสือ 28 เล่ม แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เล่ม?",
+      "choices": [
+        "6 เล่ม",
+        "7 เล่ม",
+        "8 เล่ม",
+        "4 เล่ม"
+      ],
+      "correct_answer": "7 เล่ม",
+      "answer": "7 เล่ม",
+      "explanation": "28 ÷ 4 = 7 จึงได้กลุ่มละ 7 เล่ม",
+      "explanation_th": "28 ÷ 4 = 7 จึงได้กลุ่มละ 7 เล่ม",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q09",
+      "question_th": "มีลูกบอล 36 ลูก แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "question_text": "มีลูกบอล 36 ลูก แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "choices": [
+        "5 ลูก",
+        "6 ลูก",
+        "7 ลูก",
+        "6 ลูก"
+      ],
+      "correct_answer": "6 ลูก",
+      "answer": "6 ลูก",
+      "explanation": "36 ÷ 6 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "explanation_th": "36 ÷ 6 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q10",
+      "question_th": "มีการ์ด 32 ใบ แบ่งให้ 8 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "question_text": "มีการ์ด 32 ใบ แบ่งให้ 8 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "choices": [
+        "3 ใบ",
+        "4 ใบ",
+        "5 ใบ",
+        "8 ใบ"
+      ],
+      "correct_answer": "4 ใบ",
+      "answer": "4 ใบ",
+      "explanation": "32 ÷ 8 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "explanation_th": "32 ÷ 8 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_division_intro_q01",
+      "question_th": "มีลูกชิ้น 24 ลูก แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "question_text": "มีลูกชิ้น 24 ลูก แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "choices": [
+        "5 ลูก",
+        "6 ลูก",
+        "7 ลูก",
+        "4 ลูก"
+      ],
+      "correct_answer": "6 ลูก",
+      "answer": "6 ลูก",
+      "explanation": "24 ÷ 4 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "explanation_th": "24 ÷ 4 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q02",
+      "question_th": "มีดาว 18 ดวง แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "question_text": "มีดาว 18 ดวง แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "choices": [
+        "5 ดวง",
+        "6 ดวง",
+        "7 ดวง",
+        "3 ดวง"
+      ],
+      "correct_answer": "6 ดวง",
+      "answer": "6 ดวง",
+      "explanation": "18 ÷ 3 = 6 จึงได้กลุ่มละ 6 ดวง",
+      "explanation_th": "18 ÷ 3 = 6 จึงได้กลุ่มละ 6 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q03",
+      "question_th": "มีขนม 20 ชิ้น แบ่งให้ 5 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ชิ้น?",
+      "question_text": "มีขนม 20 ชิ้น แบ่งให้ 5 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ชิ้น?",
+      "choices": [
+        "3 ชิ้น",
+        "4 ชิ้น",
+        "5 ชิ้น",
+        "5 ชิ้น"
+      ],
+      "correct_answer": "4 ชิ้น",
+      "answer": "4 ชิ้น",
+      "explanation": "20 ÷ 5 = 4 จึงได้กลุ่มละ 4 ชิ้น",
+      "explanation_th": "20 ÷ 5 = 4 จึงได้กลุ่มละ 4 ชิ้น",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q04",
+      "question_th": "มีลูกปัด 30 เม็ด แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เม็ด?",
+      "question_text": "มีลูกปัด 30 เม็ด แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เม็ด?",
+      "choices": [
+        "4 เม็ด",
+        "5 เม็ด",
+        "6 เม็ด",
+        "6 เม็ด"
+      ],
+      "correct_answer": "5 เม็ด",
+      "answer": "5 เม็ด",
+      "explanation": "30 ÷ 6 = 5 จึงได้กลุ่มละ 5 เม็ด",
+      "explanation_th": "30 ÷ 6 = 5 จึงได้กลุ่มละ 5 เม็ด",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q05",
+      "question_th": "มีดินสอ 16 แท่ง แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่แท่ง?",
+      "question_text": "มีดินสอ 16 แท่ง แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่แท่ง?",
+      "choices": [
+        "3 แท่ง",
+        "4 แท่ง",
+        "5 แท่ง",
+        "4 แท่ง"
+      ],
+      "correct_answer": "4 แท่ง",
+      "answer": "4 แท่ง",
+      "explanation": "16 ÷ 4 = 4 จึงได้กลุ่มละ 4 แท่ง",
+      "explanation_th": "16 ÷ 4 = 4 จึงได้กลุ่มละ 4 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q06",
+      "question_th": "มีสติกเกอร์ 21 ดวง แบ่งให้ 7 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "question_text": "มีสติกเกอร์ 21 ดวง แบ่งให้ 7 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "choices": [
+        "2 ดวง",
+        "3 ดวง",
+        "4 ดวง",
+        "7 ดวง"
+      ],
+      "correct_answer": "3 ดวง",
+      "answer": "3 ดวง",
+      "explanation": "21 ÷ 7 = 3 จึงได้กลุ่มละ 3 ดวง",
+      "explanation_th": "21 ÷ 7 = 3 จึงได้กลุ่มละ 3 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q07",
+      "question_th": "มีแก้วน้ำ 12 ใบ แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "question_text": "มีแก้วน้ำ 12 ใบ แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "choices": [
+        "3 ใบ",
+        "4 ใบ",
+        "5 ใบ",
+        "3 ใบ"
+      ],
+      "correct_answer": "4 ใบ",
+      "answer": "4 ใบ",
+      "explanation": "12 ÷ 3 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "explanation_th": "12 ÷ 3 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q08",
+      "question_th": "มีหนังสือ 28 เล่ม แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เล่ม?",
+      "question_text": "มีหนังสือ 28 เล่ม แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เล่ม?",
+      "choices": [
+        "6 เล่ม",
+        "7 เล่ม",
+        "8 เล่ม",
+        "4 เล่ม"
+      ],
+      "correct_answer": "7 เล่ม",
+      "answer": "7 เล่ม",
+      "explanation": "28 ÷ 4 = 7 จึงได้กลุ่มละ 7 เล่ม",
+      "explanation_th": "28 ÷ 4 = 7 จึงได้กลุ่มละ 7 เล่ม",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q09",
+      "question_th": "มีลูกบอล 36 ลูก แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "question_text": "มีลูกบอล 36 ลูก แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "choices": [
+        "5 ลูก",
+        "6 ลูก",
+        "7 ลูก",
+        "6 ลูก"
+      ],
+      "correct_answer": "6 ลูก",
+      "answer": "6 ลูก",
+      "explanation": "36 ÷ 6 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "explanation_th": "36 ÷ 6 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_division_intro_q10",
+      "question_th": "มีการ์ด 32 ใบ แบ่งให้ 8 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "question_text": "มีการ์ด 32 ใบ แบ่งให้ 8 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "choices": [
+        "3 ใบ",
+        "4 ใบ",
+        "5 ใบ",
+        "8 ใบ"
+      ],
+      "correct_answer": "4 ใบ",
+      "answer": "4 ใบ",
+      "explanation": "32 ÷ 8 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "explanation_th": "32 ÷ 8 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core"
+    }
+  ],
+  "title_en": "Division as Equal Sharing",
+  "objective_en": "Students will be able to divide by sharing equally",
+  "story_intro_en": "Let's solve this together! Can you solve it?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: หารลูกปัด",
+      "question_en": "marbles 48 balls 6 balls ?",
+      "solution_en": "48 ÷ 6 = 8 ✅?"
+    },
+    {
+      "title_en": "Example: หารลูกบอล",
+      "question_en": "balls 72 balls 9 people people balls?",
+      "solution_en": "72 ÷ 9 = 8 balls ✅?"
+    },
+    {
+      "title_en": "Example: หารมีเศษ",
+      "question_en": "25 pieces 4 people people pieces pieces?",
+      "solution_en": "25 ÷ 4 = 6 1 people 6 pieces 1 pieces ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: สลับตัวตั้งกับตัวหาร เช่น คิดว่า 72 ÷ 9 = 72 × 9",
+    "Mistake: ไม่ตรวจสอบว่าผลหารถูกต้องหรือไม่โดยคูณกลับ",
+    "Mistake: ลืมว่าการหารไม่ลงตัวจะมีเศษ"
+  ],
+  "hints_en": [
+    "Hint: ถามตัวเองว่า ตัวหารเข้าไปในตัวตั้งได้กี่ครั้ง?",
+    "Hint: ใช้สูตรคูณช่วย ถ้ารู้ว่า 6 × 8 = 48 ก็จะรู้ว่า 48 ÷ 6 = 8",
+    "Hint: ตรวจคำตอบโดยเอาผลหารคูณตัวหาร ถ้าได้ตัวตั้งแปลว่าถูก"
+  ],
+  "explanation_steps_en": [
+    "Step: การหารคือการแบ่งจำนวนออกเป็นส่วนเท่าๆ กัน",
+    "Step: เครื่องหมาย ÷ อ่านว่า หาร ตัวเลขตัวหน้าคือตัวตั้ง ตัวเลขตัวหลังคือตัวหาร",
+    "Step: ตัวตั้ง ÷ ตัวหาร = ผลหาร เช่น 36 ÷ 6 = 6",
+    "Step: ทดสอบการหารโดยเอาผลหารคูณตัวหาร ต้องได้ตัวตั้ง",
+    "Step: ถ้าหารไม่ลงตัวจะมีเศษ เช่น 37 ÷ 6 = 6 เศษ 1"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g3_division_intro_q01",
+      "question_th": "มีลูกชิ้น 24 ลูก แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "question_text": "ballspieces 24 balls 4 balls?",
+      "choices": [
+        "5 balls?",
+        "6 balls?",
+        "7 balls?",
+        "4 balls?"
+      ],
+      "correct_answer": "6 balls?",
+      "answer": "6 balls?",
+      "explanation": "24 ÷ 4 = 6 6 balls?",
+      "explanation_th": "24 ÷ 4 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "ballspieces 24 balls 4 balls?",
+      "explanation_en": "24 ÷ 4 = 6 6 balls?",
+      "choices_en": [
+        "5 balls?",
+        "6 balls?",
+        "7 balls?",
+        "4 balls?"
+      ],
+      "answer_en": "6 balls?"
+    },
+    {
+      "question_id": "g3_division_intro_q02",
+      "question_th": "มีดาว 18 ดวง แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "question_text": "stars 18 stickers 3 stickers?",
+      "choices": [
+        "5 stickers?",
+        "6 stickers?",
+        "7 stickers?",
+        "3 stickers?"
+      ],
+      "correct_answer": "6 stickers?",
+      "answer": "6 stickers?",
+      "explanation": "18 ÷ 3 = 6 6 stickers?",
+      "explanation_th": "18 ÷ 3 = 6 จึงได้กลุ่มละ 6 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "stars 18 stickers 3 stickers?",
+      "explanation_en": "18 ÷ 3 = 6 6 stickers?",
+      "choices_en": [
+        "5 stickers?",
+        "6 stickers?",
+        "7 stickers?",
+        "3 stickers?"
+      ],
+      "answer_en": "6 stickers?"
+    },
+    {
+      "question_id": "g3_division_intro_q03",
+      "question_th": "มีขนม 20 ชิ้น แบ่งให้ 5 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ชิ้น?",
+      "question_text": "20 pieces 5 pieces?",
+      "choices": [
+        "3 pieces?",
+        "4 pieces?",
+        "5 pieces?",
+        "5 pieces?"
+      ],
+      "correct_answer": "4 pieces?",
+      "answer": "4 pieces?",
+      "explanation": "20 ÷ 5 = 4 4 pieces?",
+      "explanation_th": "20 ÷ 5 = 4 จึงได้กลุ่มละ 4 ชิ้น",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "20 pieces 5 pieces?",
+      "explanation_en": "20 ÷ 5 = 4 4 pieces?",
+      "choices_en": [
+        "3 pieces?",
+        "4 pieces?",
+        "5 pieces?",
+        "5 pieces?"
+      ],
+      "answer_en": "4 pieces?"
+    },
+    {
+      "question_id": "g3_division_intro_q04",
+      "question_th": "มีลูกปัด 30 เม็ด แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เม็ด?",
+      "question_text": "marbles 30 beads 6 beads?",
+      "choices": [
+        "4 beads?",
+        "5 beads?",
+        "6 beads?",
+        "6 beads?"
+      ],
+      "correct_answer": "5 beads?",
+      "answer": "5 beads?",
+      "explanation": "30 ÷ 6 = 5 5 beads?",
+      "explanation_th": "30 ÷ 6 = 5 จึงได้กลุ่มละ 5 เม็ด",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "marbles 30 beads 6 beads?",
+      "explanation_en": "30 ÷ 6 = 5 5 beads?",
+      "choices_en": [
+        "4 beads?",
+        "5 beads?",
+        "6 beads?",
+        "6 beads?"
+      ],
+      "answer_en": "5 beads?"
+    },
+    {
+      "question_id": "g3_division_intro_q05",
+      "question_th": "มีดินสอ 16 แท่ง แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่แท่ง?",
+      "question_text": "pencils 16 pencils 4 pencils?",
+      "choices": [
+        "3 pencils?",
+        "4 pencils?",
+        "5 pencils?",
+        "4 pencils?"
+      ],
+      "correct_answer": "4 pencils?",
+      "answer": "4 pencils?",
+      "explanation": "16 ÷ 4 = 4 4 pencils?",
+      "explanation_th": "16 ÷ 4 = 4 จึงได้กลุ่มละ 4 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "pencils 16 pencils 4 pencils?",
+      "explanation_en": "16 ÷ 4 = 4 4 pencils?",
+      "choices_en": [
+        "3 pencils?",
+        "4 pencils?",
+        "5 pencils?",
+        "4 pencils?"
+      ],
+      "answer_en": "4 pencils?"
+    },
+    {
+      "question_id": "g3_division_intro_q06",
+      "question_th": "มีสติกเกอร์ 21 ดวง แบ่งให้ 7 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ดวง?",
+      "question_text": "stickers 21 stickers 7 stickers?",
+      "choices": [
+        "2 stickers?",
+        "3 stickers?",
+        "4 stickers?",
+        "7 stickers?"
+      ],
+      "correct_answer": "3 stickers?",
+      "answer": "3 stickers?",
+      "explanation": "21 ÷ 7 = 3 3 stickers?",
+      "explanation_th": "21 ÷ 7 = 3 จึงได้กลุ่มละ 3 ดวง",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "stickers 21 stickers 7 stickers?",
+      "explanation_en": "21 ÷ 7 = 3 3 stickers?",
+      "choices_en": [
+        "2 stickers?",
+        "3 stickers?",
+        "4 stickers?",
+        "7 stickers?"
+      ],
+      "answer_en": "3 stickers?"
+    },
+    {
+      "question_id": "g3_division_intro_q07",
+      "question_th": "มีแก้วน้ำ 12 ใบ แบ่งให้ 3 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "question_text": "12 leaves 3 leaves?",
+      "choices": [
+        "3 leaves?",
+        "4 leaves?",
+        "5 leaves?",
+        "3 leaves?"
+      ],
+      "correct_answer": "4 leaves?",
+      "answer": "4 leaves?",
+      "explanation": "12 ÷ 3 = 4 4 leaves?",
+      "explanation_th": "12 ÷ 3 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "12 leaves 3 leaves?",
+      "explanation_en": "12 ÷ 3 = 4 4 leaves?",
+      "choices_en": [
+        "3 leaves?",
+        "4 leaves?",
+        "5 leaves?",
+        "3 leaves?"
+      ],
+      "answer_en": "4 leaves?"
+    },
+    {
+      "question_id": "g3_division_intro_q08",
+      "question_th": "มีหนังสือ 28 เล่ม แบ่งให้ 4 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่เล่ม?",
+      "question_text": "28 books 4 books?",
+      "choices": [
+        "6 books?",
+        "7 books?",
+        "8 books?",
+        "4 books?"
+      ],
+      "correct_answer": "7 books?",
+      "answer": "7 books?",
+      "explanation": "28 ÷ 4 = 7 7 books?",
+      "explanation_th": "28 ÷ 4 = 7 จึงได้กลุ่มละ 7 เล่ม",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "28 books 4 books?",
+      "explanation_en": "28 ÷ 4 = 7 7 books?",
+      "choices_en": [
+        "6 books?",
+        "7 books?",
+        "8 books?",
+        "4 books?"
+      ],
+      "answer_en": "7 books?"
+    },
+    {
+      "question_id": "g3_division_intro_q09",
+      "question_th": "มีลูกบอล 36 ลูก แบ่งให้ 6 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ลูก?",
+      "question_text": "balls 36 balls 6 balls?",
+      "choices": [
+        "5 balls?",
+        "6 balls?",
+        "7 balls?",
+        "6 balls?"
+      ],
+      "correct_answer": "6 balls?",
+      "answer": "6 balls?",
+      "explanation": "36 ÷ 6 = 6 6 balls?",
+      "explanation_th": "36 ÷ 6 = 6 จึงได้กลุ่มละ 6 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "balls 36 balls 6 balls?",
+      "explanation_en": "36 ÷ 6 = 6 6 balls?",
+      "choices_en": [
+        "5 balls?",
+        "6 balls?",
+        "7 balls?",
+        "6 balls?"
+      ],
+      "answer_en": "6 balls?"
+    },
+    {
+      "question_id": "g3_division_intro_q10",
+      "question_th": "มีการ์ด 32 ใบ แบ่งให้ 8 กลุ่มเท่าๆ กัน แต่ละกลุ่มได้กี่ใบ?",
+      "question_text": "32 leaves 8 leaves?",
+      "choices": [
+        "3 leaves?",
+        "4 leaves?",
+        "5 leaves?",
+        "8 leaves?"
+      ],
+      "correct_answer": "4 leaves?",
+      "answer": "4 leaves?",
+      "explanation": "32 ÷ 8 = 4 4 leaves?",
+      "explanation_th": "32 ÷ 8 = 4 จึงได้กลุ่มละ 4 ใบ",
+      "difficulty": "easy",
+      "skill_tag": "g3_division_intro",
+      "question_type": "core",
+      "question_en": "32 leaves 8 leaves?",
+      "explanation_en": "32 ÷ 8 = 4 4 leaves?",
+      "choices_en": [
+        "3 leaves?",
+        "4 leaves?",
+        "5 leaves?",
+        "8 leaves?"
+      ],
+      "answer_en": "4 leaves?"
+    }
+  ],
+  "quiz_id": "g3_division_intro_ep",
+  "generated_at": "2026-05-16T04:16:41.334118+00:00",
+  "source_lesson_id": "g3_division_intro",
+  "needs_review": true
+}

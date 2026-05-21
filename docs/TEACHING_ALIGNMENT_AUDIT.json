@@ -1,0 +1,556 @@
+{
+  "audit_date": "2026-05-15",
+  "auditor": "subagent",
+  "scope": "Grades 1-6 Lessons",
+  "project": "TOPA Math / 4-Craft",
+  "summary": {
+    "total_lessons_audited": 44,
+    "ready": 29,
+    "needs_minor_fix": 7,
+    "needs_major_fix": 8,
+    "do_not_expose": 0,
+    "grade_breakdown": {
+      "grade_1": {"total": 7, "ready": 1, "needs_minor_fix": 1, "needs_major_fix": 5},
+      "grade_2": {"total": 7, "ready": 2, "needs_minor_fix": 3, "needs_major_fix": 2},
+      "grade_3": {"total": 9, "ready": 7, "needs_minor_fix": 1, "needs_major_fix": 1},
+      "grade_4": {"total": 7, "ready": 5, "needs_minor_fix": 2, "needs_major_fix": 0},
+      "grade_5": {"total": 7, "ready": 7, "needs_minor_fix": 0, "needs_major_fix": 0},
+      "grade_6": {"total": 7, "ready": 7, "needs_minor_fix": 0, "needs_major_fix": 0}
+    }
+  },
+  "exposure_recommendation": {
+    "grade_1_beta": ["g1_compare_numbers"],
+    "grade_2_beta": ["g2_add_two_digit", "g2_multiplication_intro"],
+    "grade_3_beta": ["g3_area_intro", "g3_multiplication_area_model_ep", "g3_multiplication_area_model_thp", "g3_multiplication_multi_digit", "g3_multi_step_word_problems", "g3_mixed_review", "g3_measurement"],
+    "grade_4_beta": "EXPOSE_ALL",
+    "grade_5_beta": "EXPOSE_ALL",
+    "grade_6_beta": "EXPOSE_ALL",
+    "g4_g5_g6_note": "All 21 lessons in grades 4-6 are READY. Only minor visual improvements recommended for 2 G4 lessons (g4_angles_geometry, g4_area_perimeter)."
+  },
+  "lessons": [
+    {
+      "lesson_id": "g1_add_within_20",
+      "grade": 1,
+      "concept": "Addition within 20",
+      "status": "NEEDS_MAJOR_FIX",
+      "story_intro": {"status": "OK", "note": "Concrete: ลูกชิ้น 7+5=12, child-friendly word problem"},
+      "visual_thinking": {"status": "OK", "note": "addition_grouping blocks show 8+7=15, 4+3=7, 5+6=11"},
+      "model_diagram": {"status": "OK", "note": "Addition grouping correct for all variants"},
+      "number_sentence": {"status": "OK", "note": "Correct equations: 8+7=15, 4+3=7, 5+6=11"},
+      "mini_quiz": {"status": "OK", "note": "6+5=11, correct answer"},
+      "lesson_test": {
+        "status": "FAIL",
+        "problem": "Test contains wrong question types: multiplication (8 groups of 4 = 32), subtraction (45-5=40), plain 10+6=16. Only 3-4 questions are on-grade (addition within 20). Same generic template used across all G1 lessons.",
+        "fix": "Regenerate all 10 test questions with story problems about adding two numbers with result ≤ 20"
+      }
+    },
+    {
+      "lesson_id": "g1_compare_numbers",
+      "grade": 1,
+      "concept": "Comparing numbers >, <, =",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "Concrete market story: ส้ม 5 vs มะม่วง 3"},
+      "visual_thinking": {"status": "OK", "note": "Number comparison visual with correct operator"},
+      "model_diagram": {"status": "OK", "note": "Correct comparison expressions 8>5, 7<9, 6=6"},
+      "number_sentence": {"status": "OK", "note": "Correct comparison sentences"},
+      "mini_quiz": {"status": "OK", "note": "Asks which is more, correct answer choices"},
+      "lesson_test": {"status": "OK", "note": "Story-based comparison questions"}
+    },
+    {
+      "lesson_id": "g1_counting_numbers",
+      "grade": 1,
+      "concept": "Counting 1-100",
+      "status": "NEEDS_MAJOR_FIX",
+      "story_intro": {"status": "FAIL", "note": "Story says counting flowers but visual_blocks show addition (5+3=8, 6+4=10)"},
+      "visual_thinking": {"status": "FAIL", "note": "Shows counting visual with items=8, items=10 but expression is addition, not counting"},
+      "model_diagram": {"status": "FAIL", "note": "counting_visual shows addition sentences"},
+      "number_sentence": {"status": "FAIL", "note": "Shows 5+3=8 instead of just showing 8 items to count"},
+      "mini_quiz": {"status": "FAIL", "note": "Asks addition (4+3=?) not counting"},
+      "lesson_test": {"status": "FAIL", "note": "Same generic template questions as g1_add_within_20"},
+      "fix": "This lesson teaches ADDITION, not counting. Fix: Show objects to count (e.g., 🌸🌸🌸🌸🌸🌸🌸🌸), not add. mini_quiz: 'นับดอกไม้ได้กี่ดอก?' Regenerate test."
+    },
+    {
+      "lesson_id": "g1_money_basic",
+      "grade": 1,
+      "concept": "Thai currency recognition",
+      "status": "NEEDS_MAJOR_FIX",
+      "story_intro": {"status": "OK", "note": "Concrete: เหรียญ 5 บาท 2 เหรียญ + 1 บาท 2 เหรียญ"},
+      "visual_thinking": {"status": "OK", "note": "money_visual shows correct coins"},
+      "model_diagram": {"status": "OK", "note": "Correct money total"},
+      "number_sentence": {"status": "OK", "note": "5+5+2=12, correct"},
+      "mini_quiz": {
+        "status": "FAIL",
+        "note": "v01: story=2×5บาท+2×1บาท=12บาท, quiz=5บาท 1 coin=5บาท (answer 5, explanation '5+1=6' wrong). v02: story=15+2=17, quiz answer=10. v03: story=22, quiz answer=15. Story-to-quiz numbers completely mismatched."
+      },
+      "lesson_test": {"status": "FAIL", "note": "Same generic template questions"},
+      "fix": "Align mini_quiz question numbers with story numbers for each variant."
+    },
+    {
+      "lesson_id": "g1_shapes_basic",
+      "grade": 1,
+      "concept": "2D shapes",
+      "status": "NEEDS_MAJOR_FIX",
+      "story_intro": {"status": "FAIL", "note": "Story: 'วาดรูปสามเหลี่ยม 1 รูป เพิ่มอีก 2 รูป' = ADDITION, not about shape properties"},
+      "visual_thinking": {"status": "FAIL", "note": "Shows shapes but then shows 1+2=3, which is addition"},
+      "model_diagram": {"status": "OK", "note": "shape_visual shows triangles, squares, rectangles"},
+      "number_sentence": {"status": "FAIL", "note": "1+2=3 รูป teaches addition, not shapes"},
+      "mini_quiz": {"status": "FAIL", "note": "'1+2=3 รูป' is addition, not shape identification"},
+      "lesson_test": {"status": "FAIL", "note": "Same generic template"},
+      "fix": "Change to shape identification ('รูปนี้ชื่ออะไร? มีกี่มุม?'). mini_quiz: 'รูปนี้มีกี่ด้าน?'"
+    },
+    {
+      "lesson_id": "g1_subtract_within_20",
+      "grade": 1,
+      "concept": "Subtraction within 20",
+      "status": "NEEDS_MAJOR_FIX",
+      "story_intro": {"status": "OK", "note": "Concrete: ลูกกวาด 12 ให้เพื่อน 5 → 7"},
+      "visual_thinking": {"status": "OK", "note": "subtraction_grouping visual correct"},
+      "model_diagram": {"status": "OK", "note": "Correct subtraction model"},
+      "number_sentence": {"status": "OK", "note": "12-5=7 correct"},
+      "mini_quiz": {"status": "OK", "note": "12-5=7 correct answer"},
+      "lesson_test": {"status": "FAIL", "note": "Same generic template: multiplication groups, subtraction with 45-5, 10+6, 11×2. None are subtraction within 20 story problems."},
+      "fix": "Regenerate all 10 test questions with subtraction story problems (minuend ≤ 20)"
+    },
+    {
+      "lesson_id": "g1_time_basic",
+      "grade": 1,
+      "concept": "Reading clocks",
+      "status": "NEEDS_MINOR_FIX",
+      "story_intro": {"status": "OK", "note": "Concrete: ตื่น 6 โมง, อาบน้ำ 7 โมง, ไปโรงเรียน 8 โมง"},
+      "visual_thinking": {"status": "OK", "note": "clock_visual shows correct time (6:00, 3:00, 4:00)"},
+      "model_diagram": {"status": "OK", "note": "Clock visuals correct for each variant"},
+      "number_sentence": {"status": "OK", "note": "Correct time expressions"},
+      "mini_quiz": {"status": "OK", "note": "Asks what time the clock shows, correct answers"},
+      "lesson_test": {
+        "status": "MINOR_ISSUE",
+        "note": "Test has generic template questions (8 groups of 4, 45-5, 10+6). Replace with time-appropriate story problems."
+      },
+      "fix": "Replace test questions with time-appropriate story problems (e.g., duration, clock reading)"
+    },
+    {
+      "lesson_id": "g2_add_two_digit",
+      "grade": 2,
+      "concept": "2-digit addition (no carry)",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "ดาวกระดาษ 23+45=68, child-friendly"},
+      "visual_thinking": {"status": "OK", "note": "place_value_chart shows 34+25 correctly"},
+      "model_diagram": {"status": "OK", "note": "34+25=59 place value correct"},
+      "number_sentence": {"status": "OK", "note": "34+25=59 correct"},
+      "mini_quiz": {"status": "OK", "note": "Question: 34+25, answer 59 คน correct"}
+    },
+    {
+      "lesson_id": "g2_money_change",
+      "grade": 2,
+      "concept": "Making change",
+      "status": "NEEDS_MAJOR_FIX",
+      "story_intro": {"status": "OK", "note": "Concrete: ซื้อ 23 บาท จ่าย 50 บาท"},
+      "visual_thinking": {"status": "OK", "note": "money_visual correct"},
+      "model_diagram": {"status": "OK", "note": "50-35=15, 50-23=27, 100-48=52 correct"},
+      "number_sentence": {"status": "OK", "note": "Correct equations"},
+      "mini_quiz": {
+        "status": "MINOR_ISSUE",
+        "note": "v03: story says ซื้อของเล่น 48บ. but mini_quiz says ซื้อหนังสือ 48บ. — item name mismatch"
+      },
+      "fix": "Align item names between story and mini_quiz"
+    },
+    {
+      "lesson_id": "g2_multiplication_intro",
+      "grade": 2,
+      "concept": "Multiplication as repeated addition",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "กล่องลูกชิ้น 4 กล่อง กล่องละ 3 = 12"},
+      "visual_thinking": {"status": "OK", "note": "array_model and grouping_model both show 4×3=12"},
+      "model_diagram": {"status": "OK", "note": "4×3=12 correct"},
+      "number_sentence": {"status": "OK", "note": "4×3=12 correct"},
+      "mini_quiz": {"status": "OK", "note": "3×4=? answer 12 correct"}
+    },
+    {
+      "lesson_id": "g2_shapes_2d",
+      "grade": 2,
+      "concept": "2D shapes",
+      "status": "NEEDS_MAJOR_FIX",
+      "story_intro": {"status": "OK", "note": "Game with shapes"},
+      "visual_thinking": {
+        "status": "FAIL",
+        "note": "v01: story says สามเหลี่ยม 3 + สี่เหลี่ยม 4 but shape_visual shows triangle (red), circle (blue), rectangle (teal) — NO SQUARES. v02: story says วงกลม 5 + สามเหลี่ยม 2 but shape_visual shows ellipse, circle, triangle."
+      },
+      "model_diagram": {"status": "FAIL", "note": "shape_visual does NOT match story narrative"},
+      "number_sentence": {"status": "OK", "note": "3+4+2=9, 1+2+1=4 correct arithmetic"},
+      "mini_quiz": {
+        "status": "FAIL",
+        "note": "Quiz asks counting shapes (triangles+circles=7) but explanation explains shape sides — this is counting, not shape properties"
+      },
+      "fix": "Fix shape_visual to show shapes mentioned in story. mini_quiz should ask shape properties (e.g., 'รูปนี้มีกี่ด้าน?'), not just count."
+    },
+    {
+      "lesson_id": "g2_subtract_two_digit",
+      "grade": 2,
+      "concept": "2-digit subtraction (no borrow)",
+      "status": "NEEDS_MINOR_FIX",
+      "story_intro": {"status": "OK", "note": "Concrete: กิ๊บผม 65-23=42"},
+      "visual_thinking": {"status": "OK", "note": "76-34=42 correct"},
+      "model_diagram": {"status": "OK", "note": "Subtraction correct"},
+      "number_sentence": {"status": "OK", "note": "76-34=42 correct"},
+      "mini_quiz": {
+        "status": "MINOR_ISSUE",
+        "note": "v01 explanation says '87-43=44' but story is '76-34=42'. Number mismatch between story and explanation in mini_quiz."
+      },
+      "fix": "Align mini_quiz explanation numbers with the story problem numbers"
+    },
+    {
+      "lesson_id": "g2_times_table_2_5_10",
+      "grade": 2,
+      "concept": "Times tables 2, 5, 10",
+      "status": "NEEDS_MINOR_FIX",
+      "story_intro": {"status": "OK", "note": "Game with 5 enemies per level, 4 levels"},
+      "visual_thinking": {"status": "OK", "note": "array_model correct (5×2=10)"},
+      "model_diagram": {"status": "OK", "note": "Correct array"},
+      "number_sentence": {"status": "OK", "note": "5×2=10 correct"},
+      "mini_quiz": {
+        "status": "MINOR_ISSUE",
+        "note": "v01: story=5×2, mini_quiz=7×2. Numbers don't match within variant. v02: story=4×5=20, mini_quiz different."
+      },
+      "fix": "Align mini_quiz with story numbers within each variant"
+    },
+    {
+      "lesson_id": "g2_time_calendar",
+      "grade": 2,
+      "concept": "Calendar and dates",
+      "status": "NEEDS_MINOR_FIX",
+      "story_intro": {"status": "OK", "note": "Concrete: ปิดภาค 20 เมษายน"},
+      "visual_thinking": {"status": "OK", "note": "calendar_visual correct"},
+      "model_diagram": {"status": "OK", "note": "Days in month correct"},
+      "number_sentence": {"status": "OK", "note": "30 วัน, 31 วัน correct"},
+      "mini_quiz": {
+        "status": "MINOR_ISSUE",
+        "note": "v01: story=เมษายน (30 days), mini_quiz asks about กรกฎาคม (31 days). Mismatch. v02: story=พฤษภาคม (31 days), quiz asks about มิถุนายน (30 days)."
+      },
+      "fix": "Make mini_quiz ask about the month mentioned in the story"
+    },
+    {
+      "lesson_id": "g3_area_intro",
+      "grade": 3,
+      "concept": "Area of rectangles/squares",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "Concrete: พื้นห้อง 5×4 เมตร"},
+      "visual_thinking": {"status": "OK", "note": "area_model shows 5×4"},
+      "model_diagram": {"status": "OK", "note": "5×4=20 ตรม. correct"},
+      "number_sentence": {"status": "OK", "note": "5×4=20 correct"},
+      "mini_quiz": {"status": "OK", "note": "6×3=18 correct"}
+    },
+    {
+      "lesson_id": "g3_division_intro",
+      "grade": 3,
+      "concept": "Division as equal sharing",
+      "status": "NEEDS_MINOR_FIX",
+      "story_intro": {
+        "status": "MINOR_ISSUE",
+        "note": "v01: 24 ÷ 4 = 6 concrete. v02-v04: placeholder text 'ผลไม้: มีของหลายชิ้นต้องแบ่ง...' with no concrete numbers. Fails 'concrete child-friendly word problem' requirement."
+      },
+      "visual_thinking": {"status": "OK", "note": "v01 grouping_model correct (24, 4 groups, 6 per group)"},
+      "model_diagram": {"status": "OK", "note": "Correct"},
+      "number_sentence": {"status": "OK", "note": "8÷2=? correct"},
+      "mini_quiz": {"status": "OK", "note": "12÷3=4 correct"},
+      "fix": "Replace placeholder story text in v02-v04 with concrete story problems with actual numbers"
+    },
+    {
+      "lesson_id": "g3_fractions_intro",
+      "grade": 3,
+      "concept": "Introduction to fractions",
+      "status": "NEEDS_MINOR_FIX",
+      "story_intro": {"status": "OK", "note": "Concrete: พิซซ่า 1 แบ่ง 4 คน"},
+      "visual_thinking": {"status": "OK", "note": "fraction_visual correct"},
+      "model_diagram": {"status": "OK", "note": "Correct fraction representation"},
+      "number_sentence": {
+        "status": "MINOR_ISSUE",
+        "note": "v01 shows '1 ÷ 4 = 1/4'. While technically correct for dividing 1 whole by 4, the expression may confuse children. Better to show '1/4 = 1÷4' or just '1/4' directly."
+      },
+      "mini_quiz": {
+        "status": "MINOR_ISSUE",
+        "note": "v01 mini_quiz asks about bread (2 people) but explanation references pizza (4 people) — slight context mismatch"
+      },
+      "fix": "Clarify number_sentence format. Ensure mini_quiz explanation references the quiz story, not the main story."
+    },
+    {
+      "lesson_id": "g3_measurement",
+      "grade": 3,
+      "concept": "Length, weight, volume",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "Concrete: 250ml, 500g, 120cm"},
+      "visual_thinking": {"status": "OK", "note": "measurement_visual correct"},
+      "model_diagram": {"status": "OK", "note": "Correct unit conversions"},
+      "number_sentence": {"status": "OK", "note": "7×3=21ซม., 5×4=20กก., 250×4=1000มล. correct"},
+      "mini_quiz": {"status": "OK", "note": "9×2=18ซม., 6×3=18กก., 200×5=1000มล. all correct"}
+    },
+    {
+      "lesson_id": "g3_mixed_review",
+      "grade": 3,
+      "concept": "G3 mixed review",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "Review all G3 topics"},
+      "visual_thinking": {"status": "OK", "note": "Correct"},
+      "model_diagram": {"status": "OK", "note": "Correct"},
+      "number_sentence": {"status": "OK", "note": "Correct"},
+      "mini_quiz": {"status": "OK", "note": "3×6=18, 15÷3=5 correct"}
+    },
+    {
+      "lesson_id": "g3_multiplication_area_model_ep",
+      "grade": 3,
+      "concept": "Area model multiplication (EP program)",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "Garden: 4 rows × 6 plants = 24"},
+      "visual_thinking": {"status": "OK", "note": "area_model correct"},
+      "model_diagram": {"status": "OK", "note": "4×6=24 correct"},
+      "number_sentence": {"status": "OK", "note": "Correct"},
+      "mini_quiz": {"status": "OK", "note": "Correct"}
+    },
+    {
+      "lesson_id": "g3_multiplication_area_model_thp",
+      "grade": 3,
+      "concept": "Area model multiplication (THP program)",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "แปลงผัก 4×6=24"},
+      "visual_thinking": {"status": "OK", "note": "area_model correct"},
+      "model_diagram": {"status": "OK", "note": "4×6=24 correct"},
+      "number_sentence": {"status": "OK", "note": "Correct"},
+      "mini_quiz": {"status": "OK", "note": "Correct"}
+    },
+    {
+      "lesson_id": "g3_multiplication_multi_digit",
+      "grade": 3,
+      "concept": "Multi-digit multiplication",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "23 students × 4 pencils = 92"},
+      "visual_thinking": {"status": "OK", "note": "Correct"},
+      "model_diagram": {"status": "OK", "note": "23×4=92 correct"},
+      "number_sentence": {"status": "OK", "note": "Correct"},
+      "mini_quiz": {"status": "OK", "note": "45×2=90 correct"}
+    },
+    {
+      "lesson_id": "g3_multi_step_word_problems",
+      "grade": 3,
+      "concept": "Multi-step word problems",
+      "status": "READY",
+      "story_intro": {"status": "OK", "note": "Juice shop: (15×8) - (6×8) = 72 profit"},
+      "visual_thinking": {"status": "OK", "note": "multi_step_model shows all 3 steps"},
+      "model_diagram": {"status": "OK", "note": "Steps clearly labeled"},
+      "number_sentence": {"status": "OK", "note": "(15×8)-(6×8)=72 correct"},
+      "mini_quiz": {"status": "OK", "note": "(10×5)-(4×5)=30 correct"}
+    },
+    {
+      "lesson_id": "g4_angles_geometry",
+      "grade": 4,
+      "concept": "Angles and geometry",
+      "status": "NEEDS_MINOR_FIX",
+      "story_intro": {"status": "OK", "note": "หลังคามุมเอียง, concrete angle story"},
+      "visual_thinking": {
+        "status": "MINOR_ISSUE",
+        "note": "emoji_counter is generic (👀🔢📊❓), shape_visual has empty visual_data. Needs actual angle illustrations."
+      },
+      "model_diagram": {"status": "OK", "note": "Correct angle types"},
+      "number_sentence": {"status": "OK", "note": "Correct"},
+      "mini_quiz": {"status": "OK", "note": "Correct"},
+      "exposure_recommendation": "EXPOSE with minor visual improvements"
+    },
+    {
+      "lesson_id": "g4_area_perimeter",
+      "grade": 4,
+      "concept": "Area and perimeter",
+      "status": "NEEDS_MINOR_FIX",
+      "story_intro": {"status": "OK", "note": "Good story"},
+      "visual_thinking": {
+        "status": "MINOR_ISSUE",
+        "note": "Similar generic visuals as g4_angles_geometry. Needs actual rectangle with labeled width/height and sides."
+      },
+      "model_diagram": {"status": "OK", "note": "Correct"},
+      "number_sentence": {"status": "OK", "note": "Correct"},
+      "mini_quiz": {"status": "OK", "note": "Correct"},
+      "exposure_recommendation": "EXPOSE with minor visual improvements"
+    },
+    {
+      "lesson_id": "g4_decimals_intro",
+      "grade": 4,
+      "concept": "Decimal introduction",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE",
+      "note": "น้ำปลา 35.50 + น้ำมัน 42.75 = 78.25, excellent alignment"
+    },
+    {
+      "lesson_id": "g4_fractions",
+      "grade": 4,
+      "concept": "Fractions",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g4_large_numbers",
+      "grade": 4,
+      "concept": "Large numbers",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g4_multi_digit_operations",
+      "grade": 4,
+      "concept": "Multi-digit operations",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g4_word_problems",
+      "grade": 4,
+      "concept": "Word problems",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g5_data_graphs",
+      "grade": 5,
+      "concept": "Data and graphs",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g5_decimals",
+      "grade": 5,
+      "concept": "Decimals (+, -, ×, ÷)",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g5_fraction_operations",
+      "grade": 5,
+      "concept": "Fraction operations",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g5_multi_step_word_problems",
+      "grade": 5,
+      "concept": "Multi-step word problems",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g5_percent_intro",
+      "grade": 5,
+      "concept": "Percentage introduction",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g5_ratio_intro",
+      "grade": 5,
+      "concept": "Ratio introduction",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g5_volume_area",
+      "grade": 5,
+      "concept": "Volume and area",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g6_equations_intro",
+      "grade": 6,
+      "concept": "Solving equations with variables",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE",
+      "note": "x + 5 = 12 concrete ball story, correct algebra model"
+    },
+    {
+      "lesson_id": "g6_fraction_decimal_percent",
+      "grade": 6,
+      "concept": "Relating fractions, decimals, percents",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g6_gcf_lcm",
+      "grade": 6,
+      "concept": "Greatest common factor, least common multiple",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g6_geometry",
+      "grade": 6,
+      "concept": "Circle geometry",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g6_middle_school_prep",
+      "grade": 6,
+      "concept": "Middle school preparation",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g6_ratio_proportion",
+      "grade": 6,
+      "concept": "Ratio and proportion",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    },
+    {
+      "lesson_id": "g6_volume",
+      "grade": 6,
+      "concept": "Volume of 3D shapes",
+      "status": "READY",
+      "exposure_recommendation": "EXPOSE"
+    }
+  ],
+  "recurring_issues": [
+    {
+      "issue": "Generic test question templates",
+      "affected_lessons": ["g1_add_within_20", "g1_counting_numbers", "g1_money_basic", "g1_shapes_basic", "g1_subtract_within_20", "g1_time_basic"],
+      "root_cause": "Test questions generated from generic template without lesson-specific customization",
+      "fix": "Regenerate test questions per lesson concept and number range"
+    },
+    {
+      "issue": "Story-to-quiz number mismatch",
+      "affected_lessons": ["g1_money_basic", "g2_subtract_two_digit", "g2_times_table_2_5_10", "g2_time_calendar"],
+      "root_cause": "Variants generated with different numbers in story vs quiz without cross-checking",
+      "fix": "Review each variant to ensure mini_quiz uses same item/number context as story_intro"
+    },
+    {
+      "issue": "Addition problems in non-addition lessons",
+      "affected_lessons": ["g1_counting_numbers", "g1_shapes_basic"],
+      "root_cause": "Lessons generated with addition_grouping template regardless of actual concept",
+      "fix": "For counting: show objects to count. For shapes: ask shape identification, not addition"
+    },
+    {
+      "issue": "Placeholder story text in variants",
+      "affected_lessons": ["g3_division_intro (v02-v04)"],
+      "root_cause": "Incomplete variant generation",
+      "fix": "Add concrete story numbers to all variants"
+    }
+  ],
+  "priority_fixes": {
+    "high": [
+      "g1_add_within_20 lesson test regeneration",
+      "g1_subtract_within_20 lesson test regeneration",
+      "g1_counting_numbers full lesson fix",
+      "g1_shapes_basic full lesson fix",
+      "g1_money_basic mini_quiz alignment",
+      "g3_division_intro v02-v04 concrete stories",
+      "g2_shapes_2d visual alignment",
+      "g2_money_change mini_quiz item alignment"
+    ],
+    "medium": [
+      "g1_time_basic lesson test",
+      "g3_fractions_intro clarifications",
+      "g2_subtract_two_digit alignment",
+      "g2_times_table_2_5_10 alignment",
+      "g2_time_calendar alignment",
+      "g4_angles_geometry visual improvements",
+      "g4_area_perimeter visual improvements"
+    ],
+    "low": [
+      "G4-G6 are all ready for beta exposure with only minor visual improvements"
+    ]
+  }
+}

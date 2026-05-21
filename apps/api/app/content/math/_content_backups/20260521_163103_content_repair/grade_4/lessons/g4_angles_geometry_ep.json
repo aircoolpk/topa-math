@@ -1,0 +1,1739 @@
+{
+  "lesson_id": "g4_angles_geometry_ep",
+  "id": "g4_angles_geometry_ep",
+  "grade_level": 4,
+  "title_th": "มุม วัดได้ รู้จักรูปทรง",
+  "objective_th": "นักเรียนสามารถวัดมุมและจำแนกชนิดของมุมได้ และเข้าใจคุณสมบัติของรูปทรงต่างๆ",
+  "story_intro_th": "หลังคาบ้านทำมุมเอียง เพื่อนให้วัดมุมดู มุมแหลม มุมฉาก มุมป้าน ต่างกันยังไงนะ? 📐",
+  "explanation_steps": [
+    "มุมแหลม คือมุมที่เล็กกว่า 90 องศา ปากแหลมหันไปทางไหนก็ได้",
+    "มุมฉาก คือมุมที่เท่ากับ 90 องศา ดูเหมือนตัว L หรือมุมตึก",
+    "มุมป้าน คือมุมที่กว้างกว่า 90 องศา แต่น้อยกว่า 180 องศา",
+    "มุมตรง คือมุมที่เท่ากับ 180 องศา ดูเหมือนเส้นตรง",
+    "ใช้ไม้โปรแทรกเตอร์วัดมุม โดยให้จุดศูนย์กลางอยู่ที่มุม แล้วอ่านตัวเลขที่ขอบไม้โปรแทรกเตอร์"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "จำแนกมุม",
+      "question_th": "มุม 45 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมแหลม เพราะ 45 < 90 ✅"
+    },
+    {
+      "title_th": "จำแนกมุม",
+      "question_th": "มุม 120 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมป้าน เพราะ 90 < 120 < 180 ✅"
+    },
+    {
+      "title_th": "วัดมุมฉาก",
+      "question_th": "มุมของสี่เหลี่ยมจัตุรัสเป็นมุมอะไร?",
+      "solution_th": "มุมฉาก 90 องศา ✅"
+    },
+    {
+      "title_th": "วัดมุม",
+      "question_th": "มุมหนึ่งวัดได้ 72 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมแหลม เพราะน้อยกว่า 90 องศา ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนระหว่างมุมแหลมกับมุมป้าน โดยเฉพาะมุมที่ใกล้ 90 องศา",
+    "ใช้ไม้โปรแทรกเตอร์ผิดวิธี อ่านตัวเลขผิดข้าง",
+    "ไม่รู้ว่ามุมตรงเท่ากับ 180 องศา"
+  ],
+  "hints": [
+    "จำง่ายๆ: มุมแหลม < 90°, มุมฉาก = 90°, มุมป้าน > 90° แต่ < 180°",
+    "ถ้าไม่แน่ใจว่ามุมเท่าไหร่ ให้เปรียบเทียบกับมุมฉากดู",
+    "ใช้ไม้โปรแทรกเตอร์ให้ถูกวิธี: จุดศูนย์กลางต้องอยู่ที่มุม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_angles_geometry",
+  "skill_code": "g4_angles_geometry_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_th": "🏫 ธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🏫 โรงเรียน",
+          "content": {
+            "story_th": "หลังคาโรงเรียนทำมุมเอียง เพื่อนให้วัดมุมดู มุมแหลม มุมฉาก มุมป้าน ต่างกันยังไงนะ? 📐",
+            "theme_th": "🏫 โรงเรียน"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🏫 โรงเรียนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🏫 รูปร่างในโรงเรียน",
+          "description": "มุมต่างๆ ที่เห็นในโรงเรียน เช่น หลังคา หน้าต่าง",
+          "content": {
+            "title_th": "🏫 รูปร่างในโรงเรียน",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_en": "🏫 ธีมโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_th": "🍎 ธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🍎 ผลไม้",
+          "content": {
+            "story_th": "ผลไม้รูปต่างๆ มีมุมไม่เท่ากัน ส้มเป็นทรงกลม แต่สตรอว์เบอร์รี่มีมุมแหลม! 🍎",
+            "theme_th": "🍎 ผลไม้"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🍎 ผลไม้แล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🍎 รูปร่างของผลไม้",
+          "description": "มุมที่เกิดจากรูปร่างของผลไม้ต่างๆ",
+          "content": {
+            "title_th": "🍎 รูปร่างของผลไม้",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_en": "🍎 ธีมผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_th": "🧸 ธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🧸 ของเล่น",
+          "content": {
+            "story_th": "ของเล่นรูปทรงต่างกัน ลูกบอลเป็นวงกลม ไม้บล็อกเป็นสี่เหลี่ยม มุมต่างกันยังไงนะ? 🧸",
+            "theme_th": "🧸 ของเล่น"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🧸 ของเล่นแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🧸 ของเล่นรูปทรงต่างๆ",
+          "description": "ของเล่นรูปทรงมีมุมและด้านต่างกัน",
+          "content": {
+            "title_th": "🧸 ของเล่นรูปทรงต่างๆ",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_en": "🧸 ธีมของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_th": "🏪 ธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🏪 ตลาด",
+          "content": {
+            "story_th": "แผงผลไม้ในตลาดวางเรียงเป็นมุมต่างๆ มาดูกันว่ามุมไหนกว้าง มุมไหนแคบ? 🏪",
+            "theme_th": "🏪 ตลาด"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🏪 ตลาดแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🏪 รูปร่างในร้านค้า",
+          "description": "มุมและรูปร่างที่พบในร้านค้า",
+          "content": {
+            "title_th": "🏪 รูปร่างในร้านค้า",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_en": "🏪 ธีมตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_th": "🐕 ธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🐕 สัตว์เลี้ยง",
+          "content": {
+            "story_th": "หูของสุนัขตั้งขึ้นเป็นมุมแหลม หูของแมวพับลงเป็นมุมอะไรนะ? 🐕",
+            "theme_th": "🐕 สัตว์เลี้ยง"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🐕 สัตว์เลี้ยงแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🐕 รูปร่างของสัตว์เลี้ยง",
+          "description": "มุมที่เกิดจากอุ้งเท้าและหูของสัตว์เลี้ยง",
+          "content": {
+            "title_th": "🐕 รูปร่างของสัตว์เลี้ยง",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_en": "🐕 ธีมสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_th": "🌻 ธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🌻 สวน",
+          "content": {
+            "story_th": "ใบไม้รูปหัวใจมีมุมโค้ง ใบมะม่วงมีมุมแหลม มาดูมุมของใบไม้กัน! 🌻",
+            "theme_th": "🌻 สวน"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🌻 สวนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🌻 รูปร่างในสวน",
+          "description": "มุมของใบไม้และกลีบดอกไม้",
+          "content": {
+            "title_th": "🌻 รูปร่างในสวน",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_en": "🌻 ธีมสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_th": "🎨 ธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎨 วาดรูป",
+          "content": {
+            "story_th": "กระดาษวาดรูปเป็นสี่เหลี่ยมมีมุมฉาก ลองวาดเส้นให้เกิดมุมต่างๆ ดูนะ! 🎨",
+            "theme_th": "🎨 วาดรูป"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎨 วาดรูปแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🎨 รูปร่างในงานศิลปะ",
+          "description": "มุมและเส้นในภาพวาด",
+          "content": {
+            "title_th": "🎨 รูปร่างในงานศิลปะ",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_en": "🎨 ธีมวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_th": "📚 ธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม📚 ห้องเรียน",
+          "content": {
+            "story_th": "หนังสือวางเอียงบนชั้น ทำให้เกิดมุมต่างๆ มาดูว่าหนังสือเอียงเท่าไหร่? 📚",
+            "theme_th": "📚 ห้องเรียน"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ📚 ห้องเรียนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 📚 รูปร่างในห้องเรียน",
+          "description": "มุมของโต๊ะ ตู้ และหนังสือ",
+          "content": {
+            "title_th": "📚 รูปร่างในห้องเรียน",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_en": "📚 ธีมห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_th": "🎮 ธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎮 สนุกกับเพื่อน",
+          "content": {
+            "story_th": "ตัวละครในเกมเดินไปทางต่างๆ ทำให้เกิดมุมเลี้ยว มุมเท่าไหร่นะ? 🎮",
+            "theme_th": "🎮 สนุกกับเพื่อน"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎮 สนุกกับเพื่อนแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🎮 รูปร่างในเกม",
+          "description": "มุมและด้านของตัวละครในเกม",
+          "content": {
+            "title_th": "🎮 รูปร่างในเกม",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_en": "🎮 ธีมสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_th": "🎉 ธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "block_title": "🐣 เรื่องราวชวนคิด",
+          "description": "เรื่องราวในธีม🎉 งานเทศกาล",
+          "content": {
+            "story_th": "ธงในงานเทศกาลโบกสะบัด ทำให้เกิดมุมต่างๆ มาวัดมุมธงกัน! 🎉",
+            "theme_th": "🎉 งานเทศกาล"
+          },
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "block_title": "👀 มองภาพก่อน",
+          "description": "ดูภาพและนับจำนวนที่เห็นในภาพ",
+          "content": {
+            "scenario_th": "ดูภาพที่เกี่ยวกับ🎉 งานเทศกาลแล้วตอบคำถาม",
+            "emoji_grid": [
+              "👀",
+              "🔢",
+              "📊",
+              "❓"
+            ],
+            "question_th": "ในภาพมีสิ่งของกี่ชิ้น มุมกี่มุม หรือตัวเลขอะไรบ้าง?"
+          }
+        },
+        {
+          "type": "shape_visual",
+          "block_title": "📐 🎉 รูปร่างในงานเทศกาล",
+          "description": "มุมของธง โคม และของตกแต่ง",
+          "content": {
+            "title_th": "🎉 รูปร่างในงานเทศกาล",
+            "visual_data": {},
+            "labels_th": []
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "block_title": "🎯 ลองทำดู",
+          "description": "ทดสอบความเข้าใจด้วยคำถาม",
+          "content": {
+            "questions": [
+              {
+                "question_th": "มุม 95° เป็นมุมอะไร?",
+                "options_th": [
+                  "มุมแหลม",
+                  "มุมฉาก",
+                  "มุมป้าน",
+                  "มุมตรง"
+                ],
+                "answer_th": "มุมป้าน",
+                "correct_answer": "มุมป้าน"
+              }
+            ]
+          },
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_en": "🎉 ธีมงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story Time",
+          "content": "หลังคาโรงเรียนทำมุมเอียง เพื่อนให้วัดมุมดู มุมแหลม มุมฉาก มุมป้าน ต่างกันยังไงนะ? 📐",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "number_sentence",
+          "block_title": "✍️ เขียนเป็นประโยคคณิต",
+          "description": "เขียนประโยคคณิตจากโจทย์มุม",
+          "content": {
+            "examples_th": [
+              "มุมแหลม < 90°",
+              "มุมฉาก = 90°",
+              "มุมป้าน > 90°"
+            ],
+            "template_th": "เขียนประโยคคณิตจากโจทย์ที่กำหนด"
+          },
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "",
+          "choices": [],
+          "answer": "",
+          "explanation": "",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "มุมและรูปทรง",
+  "preview_subtitle_th": "มุมต่างๆ ในรูปทรง",
+  "cover_theme": "angles_geometry",
+  "cover_emoji": "📐",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "มุมต่างๆ ในรูปทรง",
+  "learning_objective_th": "นักเรียนสามารถวัดมุมและจำแนกชนิดของมุมได้ และเข้าใจคุณสมบัติของรูปทรงต่างๆ",
+  "lesson_intro_th": "หลังคาบ้านทำมุมเอียง เพื่อนให้วัดมุมดู มุมแหลม มุมฉาก มุมป้าน ต่างกันยังไงนะ? 📐",
+  "concept_explanation_th": "มุมแหลม คือมุมที่เล็กกว่า 90 องศา ปากแหลมหันไปทางไหนก็ได้ มุมฉาก คือมุมที่เท่ากับ 90 องศา ดูเหมือนตัว L หรือมุมตึก มุมป้าน คือมุมที่กว้างกว่า 90 องศา แต่น้อยกว่า 180 องศา มุมตรง คือมุมที่เท่ากับ 180 องศา ดูเหมือนเส้นตรง ใช้ไม้โปรแทรกเตอร์วัดมุม โดยให้จุดศูนย์กลางอยู่ที่มุม แล้วอ่านตัวเลขที่ขอบไม้โปรแทรกเตอร์",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 12
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 8
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท มุม วัดได้ รู้จักรูปทรง ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "จำแนกมุม",
+      "question_th": "มุม 45 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมแหลม เพราะ 45 < 90 ✅"
+    },
+    {
+      "title_th": "จำแนกมุม",
+      "question_th": "มุม 120 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมป้าน เพราะ 90 < 120 < 180 ✅"
+    },
+    {
+      "title_th": "วัดมุมฉาก",
+      "question_th": "มุมของสี่เหลี่ยมจัตุรัสเป็นมุมอะไร?",
+      "solution_th": "มุมฉาก 90 องศา ✅"
+    },
+    {
+      "title_th": "วัดมุม",
+      "question_th": "มุมหนึ่งวัดได้ 72 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมแหลม เพราะน้อยกว่า 90 องศา ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนระหว่างมุมแหลมกับมุมป้าน โดยเฉพาะมุมที่ใกล้ 90 องศา",
+    "ใช้ไม้โปรแทรกเตอร์ผิดวิธี อ่านตัวเลขผิดข้าง",
+    "ไม่รู้ว่ามุมตรงเท่ากับ 180 องศา"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_angles_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_angles_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_angles_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_angles_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_angles_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_angles_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Angles and Shapes",
+  "objective_en": "Students will be able to identify and describe basic shapes",
+  "story_intro_en": "Let's solve this together! Can you solve it?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: จำแนกมุม",
+      "question_en": "45 ?",
+      "solution_en": "45 < 90 ✅?"
+    },
+    {
+      "title_en": "Example: จำแนกมุม",
+      "question_en": "120 ?",
+      "solution_en": "90 < 120 < 180 ✅?"
+    },
+    {
+      "title_en": "Example: วัดมุมฉาก",
+      "question_en": "?",
+      "solution_en": "90 ✅?"
+    },
+    {
+      "title_en": "Example: วัดมุม",
+      "question_en": "72 ?",
+      "solution_en": "90 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: สับสนระหว่างมุมแหลมกับมุมป้าน โดยเฉพาะมุมที่ใกล้ 90 องศา",
+    "Mistake: ใช้ไม้โปรแทรกเตอร์ผิดวิธี อ่านตัวเลขผิดข้าง",
+    "Mistake: ไม่รู้ว่ามุมตรงเท่ากับ 180 องศา"
+  ],
+  "hints_en": [
+    "Hint: จำง่ายๆ: มุมแหลม < 90°, มุมฉาก = 90°, มุมป้าน > 90° แต่ < 180°",
+    "Hint: ถ้าไม่แน่ใจว่ามุมเท่าไหร่ ให้เปรียบเทียบกับมุมฉากดู",
+    "Hint: ใช้ไม้โปรแทรกเตอร์ให้ถูกวิธี: จุดศูนย์กลางต้องอยู่ที่มุม"
+  ],
+  "explanation_steps_en": [
+    "Step: มุมแหลม คือมุมที่เล็กกว่า 90 องศา ปากแหลมหันไปทางไหนก็ได้",
+    "Step: มุมฉาก คือมุมที่เท่ากับ 90 องศา ดูเหมือนตัว L หรือมุมตึก",
+    "Step: มุมป้าน คือมุมที่กว้างกว่า 90 องศา แต่น้อยกว่า 180 องศา",
+    "Step: มุมตรง คือมุมที่เท่ากับ 180 องศา ดูเหมือนเส้นตรง",
+    "Step: ใช้ไม้โปรแทรกเตอร์วัดมุม โดยให้จุดศูนย์กลางอยู่ที่มุม แล้วอ่านตัวเลขที่ขอบไม้โปรแทรกเตอร์"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g4_angles_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "90°?",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "answer_en": "90°"
+    },
+    {
+      "question_id": "g4_angles_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "?",
+      "choices": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "correct_answer": "90°?",
+      "answer": "90°?",
+      "explanation": "90°?",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "answer_en": "90°?"
+    },
+    {
+      "question_id": "g4_angles_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "fruits ?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "180°?",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core",
+      "question_en": "fruits ?",
+      "explanation_en": "180°?",
+      "choices_en": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer_en": "180°"
+    },
+    {
+      "question_id": "g4_angles_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "90°?",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "answer_en": "90°"
+    },
+    {
+      "question_id": "g4_angles_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "?",
+      "choices": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "correct_answer": "90°?",
+      "answer": "90°?",
+      "explanation": "90°?",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "answer_en": "90°?"
+    },
+    {
+      "question_id": "g4_angles_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "fruits ?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "180°?",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core",
+      "question_en": "fruits ?",
+      "explanation_en": "180°?",
+      "choices_en": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer_en": "180°"
+    },
+    {
+      "question_id": "g4_angles_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "90°?",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "answer_en": "90°"
+    },
+    {
+      "question_id": "g4_angles_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "?",
+      "choices": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "correct_answer": "90°?",
+      "answer": "90°?",
+      "explanation": "90°?",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "answer_en": "90°?"
+    },
+    {
+      "question_id": "g4_angles_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "fruits ?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "180°?",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge",
+      "question_en": "fruits ?",
+      "explanation_en": "180°?",
+      "choices_en": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer_en": "180°"
+    },
+    {
+      "question_id": "g4_angles_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "90°?",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "answer_en": "90°"
+    }
+  ],
+  "quiz_id": "g4_angles_geometry_ep",
+  "generated_at": "2026-05-16T04:16:41.596975+00:00",
+  "source_lesson_id": "g4_angles_geometry",
+  "needs_review": true
+}

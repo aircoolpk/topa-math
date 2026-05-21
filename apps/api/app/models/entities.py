@@ -31,6 +31,12 @@ class User(Base, TimestampMixin):
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True)
     password_hash: Mapped[str] = mapped_column(Text)
     role: Mapped[str] = mapped_column(String(20), default="parent")
+    plan: Mapped[str] = mapped_column(String(40), default="free")
+    plan_expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    last_login_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    referral_token: Mapped[str | None] = mapped_column(String(80), unique=True, index=True)
+    referred_by_user_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), index=True)
     children: Mapped[list["ChildProfile"]] = relationship(back_populates="parent", cascade="all, delete-orphan")
 
 
@@ -316,6 +322,46 @@ class TestResult(Base, TimestampMixin):
     total_time_ms: Mapped[int] = mapped_column(Integer, default=0)
     score_awarded: Mapped[int] = mapped_column(Integer, default=0)
     xp_awarded: Mapped[int] = mapped_column(Integer, default=0)
+
+
+class PublicShare(Base, TimestampMixin):
+    __tablename__ = "public_shares"
+
+    id: Mapped[str] = uuid_pk()
+    token: Mapped[str] = mapped_column(String(80), unique=True, index=True)
+    share_type: Mapped[str] = mapped_column(String(40), index=True)
+    created_by_user_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), index=True)
+    data: Mapped[dict] = mapped_column(JsonDict, default=dict)
+    expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    revoked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+
+class ReferralEvent(Base):
+    __tablename__ = "referral_events"
+
+    id: Mapped[str] = uuid_pk()
+    referrer_user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
+    referred_user_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), index=True)
+    referral_token: Mapped[str] = mapped_column(String(80), index=True)
+    event_type: Mapped[str] = mapped_column(String(40), index=True)
+    share_token: Mapped[str | None] = mapped_column(String(80), index=True)
+    visitor_hash: Mapped[str | None] = mapped_column(String(96), index=True)
+    metadata_json: Mapped[dict] = mapped_column("metadata", JsonDict, default=dict)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+
+class CoinLedger(Base):
+    __tablename__ = "coin_ledger"
+
+    id: Mapped[str] = uuid_pk()
+    user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
+    amount: Mapped[int] = mapped_column(Integer)
+    type: Mapped[str] = mapped_column(String(60), index=True)
+    status: Mapped[str] = mapped_column(String(20), default="pending", index=True)
+    reference_id: Mapped[str | None] = mapped_column(String(120), index=True)
+    activated_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    note: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
 
 class QuestionAttemptHistory(Base):

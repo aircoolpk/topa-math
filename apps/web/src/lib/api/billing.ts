@@ -59,6 +59,26 @@ export interface BillingStatus {
   cancel_at_period_end?: string | null
 }
 
+export interface CheckoutSessionResponse {
+  checkout_url?: string
+  mode?: 'stripe_checkout' | 'manual_pending' | string
+  status?: string
+  message?: string
+  plan_code?: string
+  price_type?: string
+  program_type?: string
+  payment_request?: {
+    id: string
+    user_id: string
+    plan: string
+    program: string
+    billing_period: string
+    price: number
+    status: string
+    created_at: string
+  }
+}
+
 // ─── API ─────────────────────────────────────────────────────────────────────
 
 export const DEV_FALLBACK_BILLING_PRICES: BillingPrices = {
@@ -276,7 +296,12 @@ export const billingApi = {
       if (process.env.NODE_ENV === 'development') {
         console.warn('Failed to load billing plans from API, using dev fallback plans')
       }
-      return DEV_FALLBACK_BILLING_PRICES
+      return {
+        ...DEV_FALLBACK_BILLING_PRICES,
+        plans: DEV_FALLBACK_BILLING_PRICES.plans.filter((plan) =>
+          ['free', 'th_founder_monthly', 'ep_founder_monthly'].includes(plan.plan_code)
+        ),
+      }
     }
   },
 
@@ -284,11 +309,11 @@ export const billingApi = {
    * Create a Stripe Checkout session for a selected plan.
    * POST /billing/create-checkout-session
    * Payload: { plan_code: string }
-   * Response: { checkout_url: string }
+   * Response: { checkout_url: string } or manual pending payment details
    */
-  async createCheckoutSession(planCode: string): Promise<{ checkout_url: string }> {
+  async createCheckoutSession(planCode: string): Promise<CheckoutSessionResponse> {
     const res = await apiClient.post('/billing/create-checkout-session', { plan_code: planCode })
-    return res.data as { checkout_url: string }
+    return res.data as CheckoutSessionResponse
   },
 
   /**

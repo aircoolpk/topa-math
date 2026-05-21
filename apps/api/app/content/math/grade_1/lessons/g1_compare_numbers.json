@@ -1,4 +1,4 @@
-﻿{
+{
   "lesson_id": "g1_compare_numbers",
   "id": "g1_compare_numbers",
   "grade_level": 1,
@@ -51,43 +51,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🏫 โรงเรียน 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐",
-          "items_added": "🌟🌟",
-          "question": "มี ⭐⭐⭐ อยู่ 3 อัน เพิ่มอีก 2 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title": "🟦 ลองใช้ Ten Frame",
-          "rows": 2,
-          "cols": 5,
-          "filled": 7,
-          "total": 10
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 4 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "8 มากกว่า",
-          "correct_answer": "8",
-          "explanation_th": "8 มากกว่า"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -98,45 +98,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🍎 ผลไม้ 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐",
-          "items_added": "🌟🌟🌟",
-          "question": "มี ⭐⭐⭐⭐ อยู่ 4 อัน เพิ่มอีก 3 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "📊 ลองใช้ Bar Model",
-          "total": 15,
-          "parts": [
-            8,
-            7
-          ],
-          "label": "รวม"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 5 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "8 มากกว่า",
-          "correct_answer": "8",
-          "explanation_th": "8 มากกว่า"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -147,47 +145,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🧸 ของเล่น 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐⭐",
-          "items_added": "🌟",
-          "question": "มี ⭐⭐⭐⭐⭐ อยู่ 5 อัน เพิ่มอีก 1 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title": "🔷 ลองใช้ Shape Visual",
-          "shapes": [
-            "▲",
-            "●",
-            "■",
-            "◆",
-            "★"
-          ],
-          "count": 5
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 6 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "8 มากกว่า",
-          "correct_answer": "8",
-          "explanation_th": "8 มากกว่า"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -198,43 +192,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🏪 ตลาด 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐⭐⭐",
-          "items_added": "🌟🌟",
-          "question": "มี ⭐⭐⭐⭐⭐⭐ อยู่ 6 อัน เพิ่มอีก 2 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title": "🟦 ลองใช้ Ten Frame",
-          "rows": 2,
-          "cols": 5,
-          "filled": 7,
-          "total": 10
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 7 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "8 มากกว่า",
-          "correct_answer": "8",
-          "explanation_th": "8 มากกว่า"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -245,45 +239,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🐕 สัตว์เลี้ยง 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐⭐⭐⭐",
-          "items_added": "🌟🌟🌟",
-          "question": "มี ⭐⭐⭐⭐⭐⭐⭐ อยู่ 7 อัน เพิ่มอีก 3 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "📊 ลองใช้ Bar Model",
-          "total": 15,
-          "parts": [
-            8,
-            7
-          ],
-          "label": "รวม"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 8 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "8 มากกว่า 8",
-          "correct_answer": "8",
-          "explanation_th": "8 มากกว่า 8"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -294,47 +286,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🌻 สวน 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐",
-          "items_added": "🌟",
-          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 8 อัน เพิ่มอีก 1 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title": "🔷 ลองใช้ Shape Visual",
-          "shapes": [
-            "▲",
-            "●",
-            "■",
-            "◆",
-            "★"
-          ],
-          "count": 5
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 9 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "9 มากกว่า 8",
-          "correct_answer": "8",
-          "explanation_th": "9 มากกว่า 8"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -345,43 +333,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎨 วาดรูป 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐⭐",
-          "items_added": "🌟🌟",
-          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 9 อัน เพิ่มอีก 2 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title": "🟦 ลองใช้ Ten Frame",
-          "rows": 2,
-          "cols": 5,
-          "filled": 7,
-          "total": 10
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 10 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "10 มากกว่า 8",
-          "correct_answer": "8",
-          "explanation_th": "10 มากกว่า 8"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -392,45 +380,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "📚 ห้องเรียน 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐",
-          "items_added": "🌟🌟🌟",
-          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 10 อัน เพิ่มอีก 3 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "📊 ลองใช้ Bar Model",
-          "total": 15,
-          "parts": [
-            8,
-            7
-          ],
-          "label": "รวม"
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 11 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "11 มากกว่า 8",
-          "correct_answer": "8",
-          "explanation_th": "11 มากกว่า 8"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -441,47 +427,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎮 สนุกกับเพื่อน 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐",
-          "items_added": "🌟",
-          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 11 อัน เพิ่มอีก 1 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "shape_visual",
-          "title": "🔷 ลองใช้ Shape Visual",
-          "shapes": [
-            "▲",
-            "●",
-            "■",
-            "◆",
-            "★"
-          ],
-          "count": 5
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 12 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "12 มากกว่า 8",
-          "correct_answer": "8",
-          "explanation_th": "12 มากกว่า 8"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -492,43 +474,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎉 งานเทศกาล 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐",
-          "items_added": "🌟🌟",
-          "question": "มี ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ อยู่ 12 อัน เพิ่มอีก 2 อัน รวมกี่อัน?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "ten_frame",
-          "title": "🟦 ลองใช้ Ten Frame",
-          "rows": 2,
-          "cols": 5,
-          "filled": 7,
-          "total": 10
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 13 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "13 มากกว่า 8",
-          "correct_answer": "8",
-          "explanation_th": "13 มากกว่า 8"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -539,28 +521,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "📖 Story Time",
-          "content": "[School]  โรงเรียน 🌟 มาเปรียบเทียบจำนวนกันเถอะ! อันไหนมากกว่า อันไหนน้อยกว่า"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "9 > 5"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "8 กับ 4 อันไหนมากกว่า?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "7",
-            "5",
-            "8",
-            "9"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "8",
-          "explanation": "8 มากกว่า",
-          "correct_answer": "8",
-          "explanation_th": "8 มากกว่า"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     }
@@ -626,171 +623,181 @@
   "questions": [
     {
       "question_id": "g1_compare_numbers_q01",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 2 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 2 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พี่อลิสมีลูกบอล 8 ลูก พี่หมีมีลูกบอล 5 ลูก ใครมีมากกว่า?",
+      "question_text": "พี่อลิสมีลูกบอล 8 ลูก พี่หมีมีลูกบอล 5 ลูก ใครมีมากกว่า?",
       "choices": [
-        "6",
-        "9",
-        "3",
-        "5"
+        "พี่อลิส",
+        "พี่หมี",
+        "มีเท่ากัน",
+        "บอกไม่ได้"
       ],
-      "correct_answer": "6",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 6",
-      "explanation_th": "คำตอบคือ 6 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "พี่อลิส",
+      "answer": "พี่อลิส",
+      "explanation": "8 มากกว่า 5 ดังนั้นพี่อลิสมีลูกบอลมากกว่า",
+      "explanation_th": "8 มากกว่า 5 ดังนั้นพี่อลิสมีลูกบอลมากกว่า",
       "difficulty": "easy",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q02",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 12 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 12 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ดอกไม้ 6 ดอก กับดอกไม้ 6 ดอก เปรียบเทียบกันเป็นอย่างไร?",
+      "question_text": "ดอกไม้ 6 ดอก กับดอกไม้ 6 ดอก เปรียบเทียบกันเป็นอย่างไร?",
       "choices": [
-        "8",
-        "9",
-        "7",
-        "16"
+        "เท่ากัน",
+        "กลุ่มแรกมากกว่า",
+        "กลุ่มแรกน้อยกว่า",
+        "บอกไม่ได้"
       ],
-      "correct_answer": "8",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 8",
-      "explanation_th": "คำตอบคือ 8 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "เท่ากัน",
+      "answer": "เท่ากัน",
+      "explanation": "6 เท่ากับ 6",
+      "explanation_th": "6 เท่ากับ 6",
       "difficulty": "easy",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q03",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 4 + 5 = ?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 4 + 5 = ?",
+      "question_th": "ลูกปัด 4 เม็ด กับลูกปัด 9 เม็ด จำนวนใดน้อยกว่า?",
+      "question_text": "ลูกปัด 4 เม็ด กับลูกปัด 9 เม็ด จำนวนใดน้อยกว่า?",
       "choices": [
-        "9",
-        "10",
-        "8",
-        "19"
+        "4 เม็ด",
+        "9 เม็ด",
+        "เท่ากัน",
+        "ไม่มีคำตอบ"
       ],
-      "correct_answer": "9",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
-      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "4 เม็ด",
+      "answer": "4 เม็ด",
+      "explanation": "4 น้อยกว่า 9",
+      "explanation_th": "4 น้อยกว่า 9",
       "difficulty": "easy",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q04",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 5 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 5 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "จำนวนใดมากกว่า 12?",
+      "question_text": "จำนวนใดมากกว่า 12?",
       "choices": [
-        "30",
-        "36",
-        "24",
-        "11"
+        "10",
+        "11",
+        "13",
+        "12"
       ],
-      "correct_answer": "30",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 30",
-      "explanation_th": "คำตอบคือ 30 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "13",
+      "answer": "13",
+      "explanation": "13 มากกว่า 12",
+      "explanation_th": "13 มากกว่า 12",
+      "difficulty": "medium",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q05",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 12 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 12 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "จำนวนใดน้อยกว่า 7?",
+      "question_text": "จำนวนใดน้อยกว่า 7?",
       "choices": [
-        "10",
-        "11",
-        "9",
-        "14"
+        "6",
+        "7",
+        "8",
+        "9"
       ],
-      "correct_answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "6",
+      "answer": "6",
+      "explanation": "6 น้อยกว่า 7",
+      "explanation_th": "6 น้อยกว่า 7",
+      "difficulty": "medium",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q06",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 7 + 3 = ?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 7 + 3 = ?",
+      "question_th": "10 กับ 15 จำนวนใดมากกว่า?",
+      "question_text": "10 กับ 15 จำนวนใดมากกว่า?",
       "choices": [
         "10",
-        "11",
-        "9",
-        "20"
+        "15",
+        "เท่ากัน",
+        "ไม่มี"
       ],
-      "correct_answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "15 มากกว่า 10",
+      "explanation_th": "15 มากกว่า 10",
+      "difficulty": "medium",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q07",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 8 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 8 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พี่อลิสมีสติกเกอร์ 14 ดวง พี่หมีมี 14 ดวง เปรียบเทียบกันอย่างไร?",
+      "question_text": "พี่อลิสมีสติกเกอร์ 14 ดวง พี่หมีมี 14 ดวง เปรียบเทียบกันอย่างไร?",
       "choices": [
-        "32",
-        "36",
-        "28",
-        "12"
+        "เท่ากัน",
+        "พี่อลิสมากกว่า",
+        "พี่หมีมากกว่า",
+        "บอกไม่ได้"
       ],
-      "correct_answer": "32",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
-      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "เท่ากัน",
+      "answer": "เท่ากัน",
+      "explanation": "14 เท่ากับ 14",
+      "explanation_th": "14 เท่ากับ 14",
+      "difficulty": "medium",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q08",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 45 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 45 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "เครื่องหมายใดถูกต้อง: 9 __ 5",
+      "question_text": "เครื่องหมายใดถูกต้อง: 9 __ 5",
       "choices": [
-        "40",
-        "41",
-        "39",
-        "50"
+        ">",
+        "<",
+        "=",
+        "+"
       ],
-      "correct_answer": "40",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
-      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": ">",
+      "answer": ">",
+      "explanation": "9 มากกว่า 5 จึงใช้เครื่องหมาย >",
+      "explanation_th": "9 มากกว่า 5 จึงใช้เครื่องหมาย >",
+      "difficulty": "hard",
       "skill_tag": "g1_compare_numbers",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g1_compare_numbers_q09",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 10 + 6 = ?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 10 + 6 = ?",
+      "question_th": "เครื่องหมายใดถูกต้อง: 3 __ 8",
+      "question_text": "เครื่องหมายใดถูกต้อง: 3 __ 8",
       "choices": [
-        "16",
-        "17",
-        "15",
-        "26"
+        "<",
+        ">",
+        "=",
+        "-"
       ],
-      "correct_answer": "16",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
-      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "<",
+      "answer": "<",
+      "explanation": "3 น้อยกว่า 8 จึงใช้เครื่องหมาย <",
+      "explanation_th": "3 น้อยกว่า 8 จึงใช้เครื่องหมาย <",
+      "difficulty": "hard",
       "skill_tag": "g1_compare_numbers",
       "question_type": "challenge"
     },
     {
       "question_id": "g1_compare_numbers_q10",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 11 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 11 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "เครื่องหมายใดถูกต้อง: 11 __ 11",
+      "question_text": "เครื่องหมายใดถูกต้อง: 11 __ 11",
       "choices": [
-        "22",
-        "24",
-        "20",
-        "13"
+        "=",
+        ">",
+        "<",
+        "+"
       ],
-      "correct_answer": "22",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 22",
-      "explanation_th": "คำตอบคือ 22 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "=",
+      "answer": "=",
+      "explanation": "11 เท่ากับ 11",
+      "explanation_th": "11 เท่ากับ 11",
+      "difficulty": "hard",
       "skill_tag": "g1_compare_numbers",
       "question_type": "challenge"
     }
@@ -798,183 +805,225 @@
   "quiz_th": [
     {
       "question_id": "g1_compare_numbers_q01",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 2 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 2 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พี่อลิสมีลูกบอล 8 ลูก พี่หมีมีลูกบอล 5 ลูก ใครมีมากกว่า?",
+      "question_text": "พี่อลิสมีลูกบอล 8 ลูก พี่หมีมีลูกบอล 5 ลูก ใครมีมากกว่า?",
       "choices": [
-        "6",
-        "9",
-        "3",
-        "5"
+        "พี่อลิส",
+        "พี่หมี",
+        "มีเท่ากัน",
+        "บอกไม่ได้"
       ],
-      "correct_answer": "6",
-      "answer": "6",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 6",
-      "explanation_th": "คำตอบคือ 6 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "พี่อลิส",
+      "answer": "พี่อลิส",
+      "explanation": "8 มากกว่า 5 ดังนั้นพี่อลิสมีลูกบอลมากกว่า",
+      "explanation_th": "8 มากกว่า 5 ดังนั้นพี่อลิสมีลูกบอลมากกว่า",
       "difficulty": "easy",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q02",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 12 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 12 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ดอกไม้ 6 ดอก กับดอกไม้ 6 ดอก เปรียบเทียบกันเป็นอย่างไร?",
+      "question_text": "ดอกไม้ 6 ดอก กับดอกไม้ 6 ดอก เปรียบเทียบกันเป็นอย่างไร?",
       "choices": [
-        "8",
-        "9",
-        "7",
-        "16"
+        "เท่ากัน",
+        "กลุ่มแรกมากกว่า",
+        "กลุ่มแรกน้อยกว่า",
+        "บอกไม่ได้"
       ],
-      "correct_answer": "8",
-      "answer": "8",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 8",
-      "explanation_th": "คำตอบคือ 8 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "เท่ากัน",
+      "answer": "เท่ากัน",
+      "explanation": "6 เท่ากับ 6",
+      "explanation_th": "6 เท่ากับ 6",
       "difficulty": "easy",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q03",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 4 + 5 = ?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 4 + 5 = ?",
+      "question_th": "ลูกปัด 4 เม็ด กับลูกปัด 9 เม็ด จำนวนใดน้อยกว่า?",
+      "question_text": "ลูกปัด 4 เม็ด กับลูกปัด 9 เม็ด จำนวนใดน้อยกว่า?",
       "choices": [
-        "9",
-        "10",
-        "8",
-        "19"
+        "4 เม็ด",
+        "9 เม็ด",
+        "เท่ากัน",
+        "ไม่มีคำตอบ"
       ],
-      "correct_answer": "9",
-      "answer": "9",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
-      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "4 เม็ด",
+      "answer": "4 เม็ด",
+      "explanation": "4 น้อยกว่า 9",
+      "explanation_th": "4 น้อยกว่า 9",
       "difficulty": "easy",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q04",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 5 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 5 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "จำนวนใดมากกว่า 12?",
+      "question_text": "จำนวนใดมากกว่า 12?",
       "choices": [
-        "30",
-        "36",
-        "24",
-        "11"
+        "10",
+        "11",
+        "13",
+        "12"
       ],
-      "correct_answer": "30",
-      "answer": "30",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 30",
-      "explanation_th": "คำตอบคือ 30 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "13",
+      "answer": "13",
+      "explanation": "13 มากกว่า 12",
+      "explanation_th": "13 มากกว่า 12",
+      "difficulty": "medium",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q05",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 12 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 12 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "จำนวนใดน้อยกว่า 7?",
+      "question_text": "จำนวนใดน้อยกว่า 7?",
       "choices": [
-        "10",
-        "11",
-        "9",
-        "14"
+        "6",
+        "7",
+        "8",
+        "9"
       ],
-      "correct_answer": "10",
-      "answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "6",
+      "answer": "6",
+      "explanation": "6 น้อยกว่า 7",
+      "explanation_th": "6 น้อยกว่า 7",
+      "difficulty": "medium",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q06",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 7 + 3 = ?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 7 + 3 = ?",
+      "question_th": "10 กับ 15 จำนวนใดมากกว่า?",
+      "question_text": "10 กับ 15 จำนวนใดมากกว่า?",
       "choices": [
         "10",
-        "11",
-        "9",
-        "20"
+        "15",
+        "เท่ากัน",
+        "ไม่มี"
       ],
-      "correct_answer": "10",
-      "answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "15 มากกว่า 10",
+      "explanation_th": "15 มากกว่า 10",
+      "difficulty": "medium",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q07",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 8 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 8 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พี่อลิสมีสติกเกอร์ 14 ดวง พี่หมีมี 14 ดวง เปรียบเทียบกันอย่างไร?",
+      "question_text": "พี่อลิสมีสติกเกอร์ 14 ดวง พี่หมีมี 14 ดวง เปรียบเทียบกันอย่างไร?",
       "choices": [
-        "32",
-        "36",
-        "28",
-        "12"
+        "เท่ากัน",
+        "พี่อลิสมากกว่า",
+        "พี่หมีมากกว่า",
+        "บอกไม่ได้"
       ],
-      "correct_answer": "32",
-      "answer": "32",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 32",
-      "explanation_th": "คำตอบคือ 32 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "เท่ากัน",
+      "answer": "เท่ากัน",
+      "explanation": "14 เท่ากับ 14",
+      "explanation_th": "14 เท่ากับ 14",
+      "difficulty": "medium",
       "skill_tag": "g1_compare_numbers",
       "question_type": "core"
     },
     {
       "question_id": "g1_compare_numbers_q08",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 45 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 45 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "เครื่องหมายใดถูกต้อง: 9 __ 5",
+      "question_text": "เครื่องหมายใดถูกต้อง: 9 __ 5",
       "choices": [
-        "40",
-        "41",
-        "39",
-        "50"
+        ">",
+        "<",
+        "=",
+        "+"
       ],
-      "correct_answer": "40",
-      "answer": "40",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
-      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": ">",
+      "answer": ">",
+      "explanation": "9 มากกว่า 5 จึงใช้เครื่องหมาย >",
+      "explanation_th": "9 มากกว่า 5 จึงใช้เครื่องหมาย >",
+      "difficulty": "hard",
       "skill_tag": "g1_compare_numbers",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g1_compare_numbers_q09",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 10 + 6 = ?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: 10 + 6 = ?",
+      "question_th": "เครื่องหมายใดถูกต้อง: 3 __ 8",
+      "question_text": "เครื่องหมายใดถูกต้อง: 3 __ 8",
       "choices": [
-        "16",
-        "17",
-        "15",
-        "26"
+        "<",
+        ">",
+        "=",
+        "-"
       ],
-      "correct_answer": "16",
-      "answer": "16",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
-      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "<",
+      "answer": "<",
+      "explanation": "3 น้อยกว่า 8 จึงใช้เครื่องหมาย <",
+      "explanation_th": "3 น้อยกว่า 8 จึงใช้เครื่องหมาย <",
+      "difficulty": "hard",
       "skill_tag": "g1_compare_numbers",
       "question_type": "challenge"
     },
     {
       "question_id": "g1_compare_numbers_q10",
-      "question_th": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 11 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ: มี 11 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "เครื่องหมายใดถูกต้อง: 11 __ 11",
+      "question_text": "เครื่องหมายใดถูกต้อง: 11 __ 11",
       "choices": [
-        "22",
-        "24",
-        "20",
-        "13"
+        "=",
+        ">",
+        "<",
+        "+"
       ],
-      "correct_answer": "22",
-      "answer": "22",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 22",
-      "explanation_th": "คำตอบคือ 22 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "=",
+      "answer": "=",
+      "explanation": "11 เท่ากับ 11",
+      "explanation_th": "11 เท่ากับ 11",
+      "difficulty": "hard",
       "skill_tag": "g1_compare_numbers",
       "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง เปรียบเทียบตัวเลข มากกว่า น้อยกว่า เท่ากับ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "18 + 7 = 25",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "18 + 7 = ?",
+      "choices": [
+        "23",
+        "24",
+        "25",
+        "27"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "คำตอบคือ 25"
     }
   ]
 }

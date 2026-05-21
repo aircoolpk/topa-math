@@ -2,10 +2,10 @@
 
 import { useEffect, useState, useMemo } from 'react'
 import Link from 'next/link'
-import type { AdminContentQuestion } from '@/lib/api/admin'
-import { mockContentApi } from '@/lib/mock-content'
+import { getAdminTests, approveTest, rejectTest, updateAdminTest, type AdminTestRow } from '@/lib/api/admin-content'
+import { adminApi } from '@/lib/api/admin'
 
-// ─── Validation helpers ───────────────────────────────────────────────────────
+// ─── Validation helpers ─────────────────────────────────────────────────────
 
 interface QValidation {
   hasWarning: boolean
@@ -13,26 +13,12 @@ interface QValidation {
   errors: string[]
 }
 
-function validateQuestion(q: AdminContentQuestion): QValidation {
+function validateQuestion(q: AdminTestRow): QValidation {
   const errors: string[] = []
-  const choices = q.choices ?? { A: '', B: '', C: '', D: '' }
-  const choiceVals = Object.values(choices).map((v) => String(v).trim())
-  const filledChoices = choiceVals.filter((v) => v.length > 0)
-
+  const choiceStr = q.question ?? ''
   if (!q.question_th && !q.question) errors.push('คำถามว่างเปล่า')
-  if (filledChoices.length < 2) errors.push('ตัวเลือกไม่ครบ 4 ข้อ')
-  if (filledChoices.length > 0) {
-    const uniqueChoices = new Set(filledChoices)
-    if (uniqueChoices.size < filledChoices.length) errors.push('มีตัวเลือกซ้ำกัน')
-  }
-  if (q.correct_answer && !choices[q.correct_answer as keyof typeof choices]?.trim()) {
-    errors.push('คำตอบที่ถูกต้องไม่อยู่ในตัวเลือก')
-  }
 
   const warnings: string[] = []
-  if (!q.explanation_th) warnings.push('ไม่มีคำอธิบาย (TH)')
-  if (!q.explanation) warnings.push('ไม่มีคำอธิบาย (EN)')
-
   return {
     hasWarning: warnings.length > 0,
     hasError: errors.length > 0,
@@ -40,7 +26,7 @@ function validateQuestion(q: AdminContentQuestion): QValidation {
   }
 }
 
-function getQuestionText(q: AdminContentQuestion): string {
+function getQuestionText(q: AdminTestRow): string {
   return q.question_th || q.question || '(ไม่มีคำถาม)'
 }
 
@@ -54,38 +40,80 @@ function DangerBadge({ text }: { text: string }) {
   )
 }
 
-// ─── Question Row ─────────────────────────────────────────────────────────────
+// ─── Status badge ─────────────────────────────────────────────────────────────
 
-function QuestionRow({
+const STATUS_META: Record<string, { label: string; cls: string }> = {
+  approved:    { label: 'เผยแพร่แล้ว', cls: 'bg-green-100 text-green-700' },
+  needs_review: { label: 'ต้องตรวจสอบ', cls: 'bg-amber-100 text-amber-700' },
+  draft:       { label: 'ฉบับร่าง', cls: 'bg-gray-100 text-gray-600' },
+  rejected:    { label: 'ไม่ผ่าน', cls: 'bg-red-100 text-red-600' },
+  archived:    { label: 'เก็บแล้ว', cls: 'bg-gray-100 text-gray-400' },
+}
+
+// ─── Test Row ─────────────────────────────────────────────────────────────────
+
+function TestRow({
   q,
-  onSave,
 }: {
-  q: AdminContentQuestion
-  onSave: (updated: AdminContentQuestion) => void
+  q: AdminTestRow
 }) {
   const [expanded, setExpanded] = useState(false)
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
-  const [edit, setEdit] = useState<AdminContentQuestion>(q)
+  const [edit, setEdit] = useState<AdminTestRow>(q)
+  const [showApprove, setShowApprove] = useState(false)
+  const [showReject, setShowReject] = useState(false)
+  const [rejectNote, setRejectNote] = useState('')
 
   const validation = validateQuestion(q)
   const validationEdit = validateQuestion(edit)
 
-  const choices = edit.choices ?? { A: '', B: '', C: '', D: '' }
+  const statusMeta = STATUS_META[q.status ?? ''] ?? { label: q.status ?? '-', cls: 'bg-gray-100 text-gray-600' }
+  const canApprove = q.status === 'needs_review' || q.status === 'draft'
 
   const handleSave = async () => {
     setSaving(true)
     try {
-      await mockContentApi.saveQuestion(q.lesson_id, edit)
+      await updateAdminTest(q.question_id, {
+        question: edit.question,
+        question_th: edit.question_th,
+        difficulty: edit.difficulty,
+        skill_tag: edit.skill_tag,
+      })
       setSaved(true)
       setTimeout(() => setSaved(false), 2000)
+    } catch (e) {
+      console.error('Save failed:', e)
     } finally {
       setSaving(false)
     }
   }
 
-  const setChoice = (key: string, val: string) => {
-    setEdit({ ...edit, choices: { ...choices, [key]: val } })
+  const handleApprove = async () => {
+    setSaving(true)
+    try {
+      await approveTest(q.question_id)
+      setEdit({ ...edit, status: 'approved' })
+      setShowApprove(false)
+    } catch (e) {
+      console.error('Approve failed:', e)
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const handleReject = async () => {
+    if (!rejectNote.trim()) return
+    setSaving(true)
+    try {
+      await rejectTest(q.question_id, rejectNote)
+      setEdit({ ...edit, status: 'rejected' })
+      setShowReject(false)
+    } catch (e) {
+      console.error('Reject failed:', e)
+    } finally {
+      setSaving(false)
+    }
   }
 
   return (
@@ -106,6 +134,14 @@ function QuestionRow({
         <div className="flex items-center gap-3 min-w-0">
           <span className="shrink-0 rounded-full bg-gray-100 px-2 py-0.5 text-xs font-mono text-gray-500">
             {q.lesson_id}
+          </span>
+          {q.grade_level && (
+            <span className="shrink-0 rounded-full bg-blue-50 px-2 py-0.5 text-xs font-bold text-blue-600">
+              ป.{q.grade_level}
+            </span>
+          )}
+          <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${statusMeta.cls}`}>
+            {statusMeta.label}
           </span>
           <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
             q.difficulty === 'easy' ? 'bg-green-100 text-green-700' :
@@ -165,58 +201,8 @@ function QuestionRow({
             </div>
           </div>
 
-          {/* Choices */}
-          <div>
-            <label className="mb-2 block text-xs font-semibold text-gray-500 uppercase tracking-wide">
-              ตัวเลือก
-            </label>
-            <div className="grid grid-cols-2 gap-3">
-              {(['A', 'B', 'C', 'D'] as const).map((opt) => {
-                const val = choices[opt] ?? ''
-                const isCorrect = edit.correct_answer === opt
-                return (
-                  <div key={opt} className="flex items-center gap-2">
-                    <span
-                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-xs font-bold ${
-                        isCorrect
-                          ? 'bg-green-500 text-white'
-                          : 'bg-gray-100 text-gray-500'
-                      }`}
-                    >
-                      {opt}
-                    </span>
-                    <input
-                      className={`flex-1 rounded-lg border px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary-100 ${
-                        isCorrect ? 'border-green-300 bg-green-50' : 'border-gray-200'
-                      }`}
-                      value={val}
-                      onChange={(e) => setChoice(opt, e.target.value)}
-                      placeholder={`ตัวเลือก ${opt}`}
-                    />
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-
-          {/* Correct answer + difficulty */}
-          <div className="grid grid-cols-3 gap-4">
-            <div>
-              <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wide">
-                คำตอบที่ถูกต้อง
-              </label>
-              <select
-                className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-100"
-                value={edit.correct_answer ?? 'A'}
-                onChange={(e) => setEdit({ ...edit, correct_answer: e.target.value })}
-              >
-                {(['A', 'B', 'C', 'D'] as const).map((o) => (
-                  <option key={o} value={o}>
-                    {o} — {choices[o] || '(ว่าง)'}
-                  </option>
-                ))}
-              </select>
-            </div>
+          {/* Difficulty + Skill tag */}
+          <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wide">
                 ระดับความยาก
@@ -224,9 +210,7 @@ function QuestionRow({
               <select
                 className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-100"
                 value={edit.difficulty ?? 'medium'}
-                onChange={(e) =>
-                  setEdit({ ...edit, difficulty: e.target.value as 'easy' | 'medium' | 'hard' })
-                }
+                onChange={(e) => setEdit({ ...edit, difficulty: e.target.value })}
               >
                 <option value="easy">ง่าย</option>
                 <option value="medium">กลาง</option>
@@ -242,34 +226,6 @@ function QuestionRow({
                 value={edit.skill_tag ?? ''}
                 onChange={(e) => setEdit({ ...edit, skill_tag: e.target.value })}
                 placeholder="เช่น addition_20"
-              />
-            </div>
-          </div>
-
-          {/* Explanations */}
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wide">
-                คำอธิบาย (TH)
-              </label>
-              <textarea
-                className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-100"
-                rows={2}
-                value={edit.explanation_th ?? ''}
-                onChange={(e) => setEdit({ ...edit, explanation_th: e.target.value })}
-                placeholder="คำอธิบายเฉลยภาษาไทย..."
-              />
-            </div>
-            <div>
-              <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wide">
-                คำอธิบาย (EN)
-              </label>
-              <textarea
-                className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-100"
-                rows={2}
-                value={edit.explanation ?? ''}
-                onChange={(e) => setEdit({ ...edit, explanation: e.target.value })}
-                placeholder="Explanation in English..."
               />
             </div>
           </div>
@@ -305,12 +261,81 @@ function QuestionRow({
             >
               ยกเลิก
             </button>
+
+            {canApprove && (
+              <>
+                <button
+                  className="rounded-lg border border-green-200 px-3 py-1.5 text-xs font-semibold text-green-600 hover:bg-green-50 transition-colors"
+                  onClick={() => setShowApprove(true)}
+                >
+                  ✓ อนุมัติ
+                </button>
+                <button
+                  className="rounded-lg border border-red-200 px-3 py-1.5 text-xs font-semibold text-red-600 hover:bg-red-50 transition-colors"
+                  onClick={() => setShowReject(true)}
+                >
+                  ✗ ไม่ผ่าน
+                </button>
+              </>
+            )}
+
             <Link
               href={`/admin/content/lesson/${q.lesson_id}`}
               className="ml-auto rounded-lg border border-blue-200 px-3 py-1.5 text-xs font-semibold text-blue-600 hover:bg-blue-50 transition-colors"
             >
               ไปที่บทเรียน →
             </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Approve confirmation */}
+      {showApprove && (
+        <div className="border-t border-gray-100 px-4 py-4 bg-green-50/50">
+          <p className="text-sm font-semibold text-green-700 mb-2">ยืนยันการอนุมัติข้อสอบนี้?</p>
+          <div className="flex gap-2">
+            <button
+              className="rounded-lg bg-green-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-green-700 disabled:opacity-50"
+              onClick={handleApprove}
+              disabled={saving}
+            >
+              {saving ? 'กำลังบันทึก...' : '✓ อนุมัติ'}
+            </button>
+            <button
+              className="rounded-lg border border-gray-200 px-4 py-1.5 text-sm font-semibold text-gray-600 hover:bg-gray-50"
+              onClick={() => setShowApprove(false)}
+            >
+              ยกเลิก
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Reject confirmation */}
+      {showReject && (
+        <div className="border-t border-gray-100 px-4 py-4 bg-red-50/50 space-y-3">
+          <p className="text-sm font-semibold text-red-700">ระบุเหตุผลที่ไม่ผ่านการตรวจสอบ</p>
+          <textarea
+            className="w-full rounded-lg border border-red-200 px-3 py-2 text-sm"
+            rows={2}
+            value={rejectNote}
+            onChange={(e) => setRejectNote(e.target.value)}
+            placeholder="เช่น คำถามไม่ชัดเจน, คำตอบผิด..."
+          />
+          <div className="flex gap-2">
+            <button
+              className="rounded-lg bg-red-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-red-700 disabled:opacity-50"
+              onClick={handleReject}
+              disabled={saving || !rejectNote.trim()}
+            >
+              {saving ? 'กำลังบันทึก...' : '✗ ยืนยันไม่ผ่าน'}
+            </button>
+            <button
+              className="rounded-lg border border-gray-200 px-4 py-1.5 text-sm font-semibold text-gray-600 hover:bg-gray-50"
+              onClick={() => setShowReject(false)}
+            >
+              ยกเลิก
+            </button>
           </div>
         </div>
       )}
@@ -321,32 +346,40 @@ function QuestionRow({
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function QuestionBankPage() {
-  const [questions, setQuestions] = useState<AdminContentQuestion[]>([])
+  const [tests, setTests] = useState<AdminTestRow[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   // Filters
   const [filterGrade, setFilterGrade] = useState<number | null>(null)
-  const [filterIssue, setFilterIssue] = useState<'all' | 'error' | 'warning' | 'ok'>('all')
+  const [filterStatus, setFilterStatus] = useState<'all' | 'approved' | 'needs_review' | 'draft' | 'rejected'>('all')
   const [filterDifficulty, setFilterDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all')
   const [search, setSearch] = useState('')
 
   useEffect(() => {
-    mockContentApi.getQuestions().then((data) => {
-      setQuestions(data)
-      setLoading(false)
-    })
-  }, [])
+    const params = {
+      grade: filterGrade ?? undefined,
+      status: filterStatus === 'all' ? undefined : filterStatus,
+      difficulty: filterDifficulty === 'all' ? undefined : filterDifficulty,
+    }
+    setLoading(true)
+    setError(null)
+    getAdminTests(params)
+      .then((data) => {
+        setTests(data)
+        setLoading(false)
+      })
+      .catch((e) => {
+        console.error('Failed to load tests:', { endpoint: '/admin/questions', params, error: e })
+        setError(adminApi.errorMessage(e, 'โหลดคลังคำถามไม่สำเร็จ'))
+        setLoading(false)
+      })
+  }, [filterGrade, filterStatus, filterDifficulty])
 
   const filtered = useMemo(() => {
-    return questions.filter((q) => {
-      if (filterGrade != null) {
-        const lessonNum = q.lesson_id.match(/\d+/)?.[0]
-        if (!lessonNum || parseInt(lessonNum) !== filterGrade) return false
-      }
-      const v = validateQuestion(q)
-      if (filterIssue === 'error' && !v.hasError) return false
-      if (filterIssue === 'warning' && !v.hasWarning && !v.hasError) return false
-      if (filterIssue === 'ok' && (v.hasError || v.hasWarning)) return false
+    return tests.filter((q) => {
+      if (filterGrade != null && Number(q.grade_level) !== filterGrade) return false
+      if (filterStatus !== 'all' && q.status !== filterStatus) return false
       if (filterDifficulty !== 'all' && q.difficulty !== filterDifficulty) return false
       if (search) {
         const s = search.toLowerCase()
@@ -359,17 +392,14 @@ export default function QuestionBankPage() {
       }
       return true
     })
-  }, [questions, filterGrade, filterIssue, filterDifficulty, search])
+  }, [tests, filterGrade, filterStatus, filterDifficulty, search])
 
   const stats = useMemo(() => {
-    const total = questions.length
-    const hasError = questions.filter((q) => validateQuestion(q).hasError).length
-    const hasWarning = questions.filter((q) => {
-      const v = validateQuestion(q)
-      return q.difficulty === 'hard' || (!v.hasError && v.hasWarning)
-    }).length
-    return { total, hasError, hasWarning }
-  }, [questions])
+    const total = tests.length
+    const hasError = tests.filter((q) => validateQuestion(q).hasError).length
+    const needsReview = tests.filter((q) => q.status === 'needs_review' || q.status === 'draft').length
+    return { total, hasError, needsReview }
+  }, [tests])
 
   return (
     <main className="mx-auto max-w-6xl space-y-6 px-6 py-8">
@@ -392,19 +422,26 @@ export default function QuestionBankPage() {
         </div>
       </div>
 
+      {/* Error banner */}
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          {error}
+        </div>
+      )}
+
       {/* Summary stats */}
       <div className="grid grid-cols-3 gap-4">
         <div className="rounded-xl border border-gray-100 bg-white px-5 py-4 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">ข้อสอบทั้งหมด</p>
           <p className="mt-1 text-2xl font-extrabold text-gray-950">{stats.total}</p>
         </div>
+        <div className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wide text-amber-400">ต้องตรวจสอบ</p>
+          <p className="mt-1 text-2xl font-extrabold text-amber-700">{stats.needsReview}</p>
+        </div>
         <div className="rounded-xl border border-red-200 bg-red-50 px-5 py-4 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-wide text-red-400">มีข้อผิดพลาด</p>
           <p className="mt-1 text-2xl font-extrabold text-red-700">{stats.hasError}</p>
-        </div>
-        <div className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 shadow-sm">
-          <p className="text-xs font-semibold uppercase tracking-wide text-amber-400">มีคำเตือน</p>
-          <p className="mt-1 text-2xl font-extrabold text-amber-700">{stats.hasWarning}</p>
         </div>
       </div>
 
@@ -437,24 +474,24 @@ export default function QuestionBankPage() {
 
         <div className="flex items-center gap-2">
           <span className="text-xs font-semibold text-gray-400">สถานะ:</span>
-          {([['all', 'ทั้งหมด'], ['error', 'มีข้อผิดพลาด'], ['warning', 'คำเตือน'], ['ok', 'ปกติ']] as const).map(
-            ([val, label]) => (
+          {(['all', 'approved', 'needs_review', 'draft', 'rejected'] as const).map(
+            (val) => (
               <button
                 key={val}
-                onClick={() => setFilterIssue(val as typeof filterIssue)}
+                onClick={() => setFilterStatus(val as typeof filterStatus)}
                 className={`rounded-lg px-3 py-1 text-xs font-semibold transition-colors ${
-                  filterIssue === val
-                    ? val === 'error'
-                      ? 'bg-red-600 text-white'
-                      : val === 'warning'
-                      ? 'bg-amber-600 text-white'
-                      : val === 'ok'
+                  filterStatus === val
+                    ? val === 'approved'
                       ? 'bg-green-600 text-white'
+                      : val === 'needs_review'
+                      ? 'bg-amber-600 text-white'
+                      : val === 'rejected'
+                      ? 'bg-red-600 text-white'
                       : 'bg-gray-600 text-white'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
-                {label}
+                {val === 'all' ? 'ทั้งหมด' : STATUS_META[val]?.label ?? val}
               </button>
             ),
           )}
@@ -502,17 +539,17 @@ export default function QuestionBankPage() {
       ) : filtered.length === 0 ? (
         <div className="rounded-xl border border-dashed border-gray-200 py-16 text-center">
           <p className="text-gray-400">
-            {questions.length === 0 ? 'ยังไม่มีข้อสอบ' : 'ไม่พบข้อสอบตามตัวกรอง'}
+            {tests.length === 0 ? 'ยังไม่มีข้อสอบ' : 'ไม่พบข้อสอบตามตัวกรอง'}
           </p>
         </div>
       ) : (
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
             แสดง <span className="font-semibold text-gray-700">{filtered.length}</span> ข้อจาก{' '}
-            <span className="font-semibold text-gray-700">{questions.length}</span> ข้อ
+            <span className="font-semibold text-gray-700">{tests.length}</span> ข้อ
           </p>
           {filtered.map((q) => (
-            <QuestionRow key={q.question_id} q={q} onSave={() => {}} />
+            <TestRow key={q.question_id} q={q} />
           ))}
         </div>
       )}

@@ -1,4 +1,4 @@
-﻿{
+{
   "lesson_id": "g3_mixed_review",
   "id": "g3_mixed_review",
   "grade_level": 3,
@@ -57,52 +57,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🏫 โรงเรียน: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🏫",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -113,52 +104,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🍎 ผลไม้: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🍎",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -169,52 +151,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🧸 ของเล่น: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🧸",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -225,52 +198,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🏪 ตลาด: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🏪",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -281,52 +245,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🐕 สัตว์เลี้ยง: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🐕",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -337,52 +292,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🌻 สวน: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🌻",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -393,52 +339,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎨 วาดรูป: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🎨",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -449,52 +386,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "📚 ห้องเรียน: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 📚",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -505,52 +433,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎮 สนุกกับเพื่อน: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🎮",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -561,52 +480,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "🐣 เรื่องราวชวนคิด",
-          "content": "🎉 งานเทศกาล: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title": "👀 มองภาพก่อน",
-          "items_before": "🔴🔴🔴🔴🔴",
-          "items_added": "🔴🔴🔴🔴🔴",
-          "question": "มี 🔴 5 ลูก ใน 4 กล่อง รวมกี่ลูก?"
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "bar_model",
-          "title": "🟦 ใช้แผนภาพช่วยคิด",
-          "description": "ใช้แผนภูมิแท่งวิเคราะห์โจทย์ 🎉",
-          "segments": [
-            {
-              "label": "ส่วนที่ 1",
-              "value": 15,
-              "color": "#FF6B6B"
-            },
-            {
-              "label": "ส่วนที่ 2",
-              "value": 8,
-              "color": "#4ECDC4"
-            }
-          ]
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     },
@@ -617,28 +527,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "📖 Story Time",
-          "content": "[School]  โรงเรียน: มาทบทวนการบวก ลบ คูณ หาร ไปพร้อมๆ กัน!"
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title": "✍️ เขียนเป็นประโยคคณิต",
-          "expression": "4 × 5 = ?"
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 ลองทำดู",
-          "question": "🔴 3 ลูก × 6 กล่อง = ?",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
           "choices": [
-            "9 ลูก",
-            "18 ลูก",
-            "3 ลูก",
-            "36 ลูก"
+            "23",
+            "24",
+            "25",
+            "27"
           ],
-          "answer": "18 ลูก",
-          "explanation": "3 × 6 = 18 ลูก",
-          "correct_answer": "18 ลูก",
-          "explanation_th": "3 × 6 = 18 ลูก"
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
         }
       ]
     }
@@ -714,171 +639,181 @@
   "questions": [
     {
       "question_id": "g3_mixed_review_q01",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "36 + 27 เท่ากับเท่าไร?",
+      "question_text": "36 + 27 เท่ากับเท่าไร?",
       "choices": [
-        "12",
-        "15",
-        "9",
-        "7"
+        "61",
+        "62",
+        "63",
+        "64"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "63",
+      "answer": "63",
+      "explanation": "36 + 27 = 63",
+      "explanation_th": "36 + 27 = 63",
       "difficulty": "easy",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q02",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "84 - 39 เท่ากับเท่าไร?",
+      "question_text": "84 - 39 เท่ากับเท่าไร?",
       "choices": [
-        "16",
-        "17",
-        "15",
-        "24"
+        "43",
+        "44",
+        "45",
+        "46"
       ],
-      "correct_answer": "16",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
-      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "84 - 39 = 45",
+      "explanation_th": "84 - 39 = 45",
       "difficulty": "easy",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q03",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: 6 + 5 = ?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: 6 + 5 = ?",
+      "question_th": "7 × 6 เท่ากับเท่าไร?",
+      "question_text": "7 × 6 เท่ากับเท่าไร?",
       "choices": [
-        "11",
-        "12",
-        "10",
-        "21"
+        "40",
+        "42",
+        "44",
+        "46"
       ],
-      "correct_answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "42",
+      "answer": "42",
+      "explanation": "7 × 6 = 42",
+      "explanation_th": "7 × 6 = 42",
       "difficulty": "easy",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q04",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "48 ÷ 6 เท่ากับเท่าไร?",
+      "question_text": "48 ÷ 6 เท่ากับเท่าไร?",
       "choices": [
-        "42",
-        "48",
-        "36",
-        "13"
+        "6",
+        "7",
+        "8",
+        "9"
       ],
-      "correct_answer": "42",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
-      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "48 ÷ 6 = 8",
+      "explanation_th": "48 ÷ 6 = 8",
+      "difficulty": "medium",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q05",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "1/4 ของ 20 เท่ากับเท่าไร?",
+      "question_text": "1/4 ของ 20 เท่ากับเท่าไร?",
       "choices": [
-        "14",
-        "15",
-        "13",
-        "18"
+        "4",
+        "5",
+        "6",
+        "8"
       ],
-      "correct_answer": "14",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
-      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "20 ÷ 4 = 5",
+      "explanation_th": "20 ÷ 4 = 5",
+      "difficulty": "medium",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q06",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: 9 + 3 = ?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: 9 + 3 = ?",
+      "question_th": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
+      "question_text": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "22"
+        "10",
+        "50",
+        "100",
+        "1000"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "1 เมตร = 100 เซนติเมตร",
+      "explanation_th": "1 เมตร = 100 เซนติเมตร",
+      "difficulty": "medium",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q07",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
+      "question_text": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
       "choices": [
-        "40",
-        "44",
-        "36",
-        "14"
+        "8",
+        "15",
+        "20",
+        "25"
       ],
-      "correct_answer": "40",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
-      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15",
+      "explanation_th": "5 × 3 = 15",
+      "difficulty": "medium",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q08",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
+      "question_text": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
       "choices": [
-        "50",
-        "51",
-        "49",
-        "60"
+        "20 บาท",
+        "25 บาท",
+        "30 บาท",
+        "35 บาท"
       ],
-      "correct_answer": "50",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
-      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "25 บาท",
+      "answer": "25 บาท",
+      "explanation": "100 - 75 = 25 บาท",
+      "explanation_th": "100 - 75 = 25 บาท",
+      "difficulty": "hard",
       "skill_tag": "g3_mixed_review",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g3_mixed_review_q09",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: 12 + 6 = ?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: 12 + 6 = ?",
+      "question_th": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
+      "question_text": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
       "choices": [
-        "18",
-        "19",
-        "17",
-        "28"
+        "8",
+        "9",
+        "10",
+        "11"
       ],
-      "correct_answer": "18",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
-      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "45 ÷ 5 = 9",
+      "explanation_th": "45 ÷ 5 = 9",
+      "difficulty": "hard",
       "skill_tag": "g3_mixed_review",
       "question_type": "challenge"
     },
     {
       "question_id": "g3_mixed_review_q10",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "125 + 236 เท่ากับเท่าไร?",
+      "question_text": "125 + 236 เท่ากับเท่าไร?",
       "choices": [
-        "26",
-        "28",
-        "24",
-        "15"
+        "351",
+        "361",
+        "371",
+        "381"
       ],
-      "correct_answer": "26",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
-      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "361",
+      "answer": "361",
+      "explanation": "125 + 236 = 361",
+      "explanation_th": "125 + 236 = 361",
+      "difficulty": "hard",
       "skill_tag": "g3_mixed_review",
       "question_type": "challenge"
     }
@@ -886,183 +821,225 @@
   "quiz_th": [
     {
       "question_id": "g3_mixed_review_q01",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "36 + 27 เท่ากับเท่าไร?",
+      "question_text": "36 + 27 เท่ากับเท่าไร?",
       "choices": [
-        "12",
-        "15",
-        "9",
-        "7"
+        "61",
+        "62",
+        "63",
+        "64"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "63",
+      "answer": "63",
+      "explanation": "36 + 27 = 63",
+      "explanation_th": "36 + 27 = 63",
       "difficulty": "easy",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q02",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "84 - 39 เท่ากับเท่าไร?",
+      "question_text": "84 - 39 เท่ากับเท่าไร?",
       "choices": [
-        "16",
-        "17",
-        "15",
-        "24"
+        "43",
+        "44",
+        "45",
+        "46"
       ],
-      "correct_answer": "16",
-      "answer": "16",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
-      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "84 - 39 = 45",
+      "explanation_th": "84 - 39 = 45",
       "difficulty": "easy",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q03",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: 6 + 5 = ?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: 6 + 5 = ?",
+      "question_th": "7 × 6 เท่ากับเท่าไร?",
+      "question_text": "7 × 6 เท่ากับเท่าไร?",
       "choices": [
-        "11",
-        "12",
-        "10",
-        "21"
+        "40",
+        "42",
+        "44",
+        "46"
       ],
-      "correct_answer": "11",
-      "answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "42",
+      "answer": "42",
+      "explanation": "7 × 6 = 42",
+      "explanation_th": "7 × 6 = 42",
       "difficulty": "easy",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q04",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "48 ÷ 6 เท่ากับเท่าไร?",
+      "question_text": "48 ÷ 6 เท่ากับเท่าไร?",
       "choices": [
-        "42",
-        "48",
-        "36",
-        "13"
+        "6",
+        "7",
+        "8",
+        "9"
       ],
-      "correct_answer": "42",
-      "answer": "42",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
-      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "48 ÷ 6 = 8",
+      "explanation_th": "48 ÷ 6 = 8",
+      "difficulty": "medium",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q05",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "1/4 ของ 20 เท่ากับเท่าไร?",
+      "question_text": "1/4 ของ 20 เท่ากับเท่าไร?",
       "choices": [
-        "14",
-        "15",
-        "13",
-        "18"
+        "4",
+        "5",
+        "6",
+        "8"
       ],
-      "correct_answer": "14",
-      "answer": "14",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
-      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "20 ÷ 4 = 5",
+      "explanation_th": "20 ÷ 4 = 5",
+      "difficulty": "medium",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q06",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: 9 + 3 = ?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: 9 + 3 = ?",
+      "question_th": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
+      "question_text": "เชือก 1 เมตร เท่ากับกี่เซนติเมตร?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "22"
+        "10",
+        "50",
+        "100",
+        "1000"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "1 เมตร = 100 เซนติเมตร",
+      "explanation_th": "1 เมตร = 100 เซนติเมตร",
+      "difficulty": "medium",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q07",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
+      "question_text": "พื้นที่ 5 × 3 เท่ากับกี่ตารางหน่วย?",
       "choices": [
-        "40",
-        "44",
-        "36",
-        "14"
+        "8",
+        "15",
+        "20",
+        "25"
       ],
-      "correct_answer": "40",
-      "answer": "40",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
-      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15",
+      "explanation_th": "5 × 3 = 15",
+      "difficulty": "medium",
       "skill_tag": "g3_mixed_review",
       "question_type": "core"
     },
     {
       "question_id": "g3_mixed_review_q08",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
+      "question_text": "ซื้อของ 75 บาท จ่าย 100 บาท ได้ทอนกี่บาท?",
       "choices": [
-        "50",
-        "51",
-        "49",
-        "60"
+        "20 บาท",
+        "25 บาท",
+        "30 บาท",
+        "35 บาท"
       ],
-      "correct_answer": "50",
-      "answer": "50",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
-      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "25 บาท",
+      "answer": "25 บาท",
+      "explanation": "100 - 75 = 25 บาท",
+      "explanation_th": "100 - 75 = 25 บาท",
+      "difficulty": "hard",
       "skill_tag": "g3_mixed_review",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g3_mixed_review_q09",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: 12 + 6 = ?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: 12 + 6 = ?",
+      "question_th": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
+      "question_text": "มี 45 ชิ้น แบ่ง 5 กลุ่มเท่าๆ กัน ได้กลุ่มละกี่ชิ้น?",
       "choices": [
-        "18",
-        "19",
-        "17",
-        "28"
+        "8",
+        "9",
+        "10",
+        "11"
       ],
-      "correct_answer": "18",
-      "answer": "18",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
-      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "9",
+      "answer": "9",
+      "explanation": "45 ÷ 5 = 9",
+      "explanation_th": "45 ÷ 5 = 9",
+      "difficulty": "hard",
       "skill_tag": "g3_mixed_review",
       "question_type": "challenge"
     },
     {
       "question_id": "g3_mixed_review_q10",
-      "question_th": "ทบทวนคณิตศาสตร์ของป.3: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "ทบทวนคณิตศาสตร์ของป.3: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "125 + 236 เท่ากับเท่าไร?",
+      "question_text": "125 + 236 เท่ากับเท่าไร?",
       "choices": [
-        "26",
-        "28",
-        "24",
-        "15"
+        "351",
+        "361",
+        "371",
+        "381"
       ],
-      "correct_answer": "26",
-      "answer": "26",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
-      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "361",
+      "answer": "361",
+      "explanation": "125 + 236 = 361",
+      "explanation_th": "125 + 236 = 361",
+      "difficulty": "hard",
       "skill_tag": "g3_mixed_review",
       "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง ทบทวนคณิตศาสตร์ของป.3 ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "18 + 7 = 25",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "18 + 7 = ?",
+      "choices": [
+        "23",
+        "24",
+        "25",
+        "27"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "คำตอบคือ 25"
     }
   ]
 }

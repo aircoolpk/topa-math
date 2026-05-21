@@ -12,6 +12,7 @@ class TokenOut(BaseModel):
 class UserCreate(BaseModel):
     email: str
     password: str = Field(min_length=8)
+    referral_token: str | None = None
 
 
 class UserOut(BaseModel):
@@ -37,7 +38,7 @@ class ChildCreate(BaseModel):
     school_district: str | None = None
     student_photo_url: str | None = None
     student_photo_path: str | None = None
-    avatar_gender: Literal["girl", "boy"] | None = None
+    avatar_gender: Literal["girl", "boy", "unspecified"] | None = None
     avatar_config: dict = Field(default_factory=dict)
     program_type: Literal["THP", "EP"] = "THP"
     membership_status: Literal["free", "trial", "paid", "plus"] = "free"
@@ -55,7 +56,7 @@ class ChildUpdate(BaseModel):
     school_district: str | None = None
     student_photo_url: str | None = None
     student_photo_path: str | None = None
-    avatar_gender: Literal["girl", "boy"] | None = None
+    avatar_gender: Literal["girl", "boy", "unspecified"] | None = None
     avatar_config: dict | None = None
     program_type: Literal["THP", "EP"] | None = None
     membership_status: Literal["free", "trial", "paid", "plus"] | None = None

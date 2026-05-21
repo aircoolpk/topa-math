@@ -1,4 +1,4 @@
-﻿{
+{
   "lesson_id": "g2_multiplication_intro",
   "id": "g2_multiplication_intro",
   "grade_level": 2,
@@ -51,178 +51,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🏫 โรงเรียนมีกล่องดินสอ 4 กล่อง กล่องละ 3 แท่ง รวมดินสอกี่แท่ง?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 4
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 3
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 4,
-            "cols": 3,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "4 แถว แถวละ 3"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "4 กลุ่ม กลุ่มละ 3"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "4 × 3 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -233,233 +98,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🍎 มีถุงมังคุด 5 ถุง ถุงละ 4 ผล รวมมังคุดกี่ผล?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 5
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 4
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "5 แถว แถวละ 4"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "5 กลุ่ม กลุ่มละ 4"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "5 × 4 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -470,209 +145,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🧸 มีกล่องของเล่น 3 กล่อง กล่องละ 6 ชิ้น รวมของเล่นกี่ชิ้น?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 3
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 6
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 3,
-            "cols": 6,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "3 แถว แถวละ 6"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "3 กลุ่ม กลุ่มละ 6"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "3 × 6 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -683,227 +192,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🏪 ร้านค้ามีถุงข้าว 4 ถุง ถุงละ 5 กิโล รวมข้าวกี่กิโล?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 4
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 5
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 4,
-            "cols": 5,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "4 แถว แถวละ 5"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "4 กลุ่ม กลุ่มละ 5"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "4 × 5 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -914,227 +239,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🐕 มีตู้ปลา 3 ตู้ ตู้ละ 7 ตัว รวมปลากี่ตัว?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 3
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 7
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 3,
-            "cols": 7,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "3 แถว แถวละ 7"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "3 กลุ่ม กลุ่มละ 7"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "3 × 7 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -1145,227 +286,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🌻 สวนมีแถวต้นไม้ 4 แถว แถวละ 5 ต้น รวมต้นไม้กี่ต้น?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 4
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 5
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 4,
-            "cols": 5,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "4 แถว แถวละ 5"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "4 กลุ่ม กลุ่มละ 5"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "4 × 5 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -1376,227 +333,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎨 แม่แบ่งสีให้เด็ก 6 คน คนละ 3 ก้าน รวมสีกี่ก้าน?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 6
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 3
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 6,
-            "cols": 3,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "6 แถว แถวละ 3"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "6 กลุ่ม กลุ่มละ 3"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "6 × 3 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -1607,245 +380,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "📚 มีชั้นหนังสือ 3 ชั้น ชั้นละ 8 เล่ม รวมหนังสือกี่เล่ม?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 3
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 8
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 3,
-            "cols": 8,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "3 แถว แถวละ 8"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "3 กลุ่ม กลุ่มละ 8"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "3 × 8 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -1856,233 +427,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎮 เกมมีด่าน 5 ด่าน ด่านละ 4 ศัตรู รวมศัตรูกี่ตัว?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 5
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 4
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 5,
-            "cols": 4,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "5 แถว แถวละ 4"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "5 กลุ่ม กลุ่มละ 4"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "5 × 4 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -2093,251 +474,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title_th": "🐣 เรื่องราวชวนคิด",
-          "data": {
-            "text_th": "🎉 งานเทศกาลมีโต๊ะ 4 โต๊ะ โต๊ะละ 6 จาน รวมจานกี่ใบ?"
-          }
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
         },
         {
-          "type": "emoji_counter",
-          "title_th": "👀 มองภาพก่อน",
-          "data": {
-            "items": [
-              {
-                "emoji": "📦",
-                "count": 4
-              },
-              {
-                "emoji": "×",
-                "count": 1
-              },
-              {
-                "emoji": "🎁",
-                "count": 6
-              }
-            ]
-          }
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
         },
         {
-          "type": "array_model",
-          "title_th": "📊 แผนภาพแถว",
-          "data": {
-            "rows": 4,
-            "cols": 6,
-            "cells": [
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ],
-              [
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                },
-                {
-                  "state": "filled"
-                }
-              ]
-            ],
-            "label_th": "4 แถว แถวละ 6"
-          }
-        },
-        {
-          "type": "grouping_model",
-          "title_th": "🔄 จัดกลุ่ม",
-          "data": {
-            "groups": [
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              },
-              {
-                "items": [
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  },
-                  {
-                    "state": "filled"
-                  }
-                ]
-              }
-            ],
-            "total_th": "4 กลุ่ม กลุ่มละ 6"
-          }
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "4 × 6 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title_th": "🎯 ลองทำดู",
-          "data": {
-            "questions": [
-              {
-                "text_th": "3 × 4 = ?",
-                "choices": [
-                  "4",
-                  "2",
-                  "3",
-                  "1"
-                ],
-                "answer": "3",
-                "correct_answer": "3"
-              },
-              {
-                "text_th": "5 × 6 = ?"
-              },
-              {
-                "text_th": "2 × 7 = ?"
-              }
-            ]
-          },
-          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     },
@@ -2348,30 +521,43 @@
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "📖 Story Time",
-          "content": ""
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
         },
         {
           "type": "number_sentence",
-          "title_th": "✍️ เขียนเป็นประโยคคณิต",
-          "data": {
-            "equation": "4 × 3 = ?"
-          }
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "6 × 4 = 24",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
         },
         {
           "type": "mini_quiz",
-          "title": "🎯 Try It",
-          "question": "3 × 4 = ?",
+          "title": "ลองทำดู",
+          "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
           "choices": [
-            "4",
-            "2",
-            "3",
-            "1"
+            "22",
+            "23",
+            "24",
+            "26"
           ],
-          "answer": "3",
-          "correct_answer": "3",
-          "explanation": "",
-          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง"
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "คำตอบคือ 24"
         }
       ]
     }
@@ -2435,171 +621,181 @@
   "questions": [
     {
       "question_id": "g2_multiplication_intro_q01",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
       "choices": [
-        "9",
+        "7",
         "12",
-        "6",
-        "14"
+        "14",
+        "16"
       ],
-      "correct_answer": "9",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
-      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
+      "explanation_th": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
       "difficulty": "easy",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q02",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
       "choices": [
+        "7",
+        "10",
         "12",
-        "13",
-        "11",
-        "20"
+        "15"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "5 × 2 = 10",
+      "explanation_th": "5 × 2 = 10",
       "difficulty": "easy",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q03",
-      "question_th": "การคูณคือการบวกซ้ำๆ: 5 + 5 = ?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: 5 + 5 = ?",
+      "question_th": "4 × 3 เท่ากับเท่าไร?",
+      "question_text": "4 × 3 เท่ากับเท่าไร?",
       "choices": [
-        "10",
+        "7",
         "11",
-        "9",
-        "20"
+        "12",
+        "13"
       ],
-      "correct_answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "4 × 3 = 12",
+      "explanation_th": "4 × 3 = 12",
       "difficulty": "easy",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q04",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
+      "question_text": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
       "choices": [
-        "36",
-        "42",
-        "30",
-        "12"
+        "4 × 2",
+        "2 × 2",
+        "4 + 2",
+        "8 × 2"
       ],
-      "correct_answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "4 × 2",
+      "answer": "4 × 2",
+      "explanation": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "explanation_th": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "difficulty": "medium",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q05",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
       "choices": [
-        "12",
-        "13",
         "11",
-        "16"
+        "25",
+        "30",
+        "35"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "6 × 5 = 30",
+      "explanation_th": "6 × 5 = 30",
+      "difficulty": "medium",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q06",
-      "question_th": "การคูณคือการบวกซ้ำๆ: 8 + 3 = ?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: 8 + 3 = ?",
+      "question_th": "3 × 5 เท่ากับเท่าไร?",
+      "question_text": "3 × 5 เท่ากับเท่าไร?",
       "choices": [
-        "11",
+        "8",
         "12",
-        "10",
-        "21"
+        "15",
+        "20"
       ],
-      "correct_answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "3 × 5 = 15",
+      "explanation_th": "3 × 5 = 15",
+      "difficulty": "medium",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q07",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
+      "question_text": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
       "choices": [
-        "36",
-        "40",
-        "32",
-        "13"
+        "12",
+        "20",
+        "22",
+        "30"
       ],
-      "correct_answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "10 × 2 = 20",
+      "explanation_th": "10 × 2 = 20",
+      "difficulty": "medium",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q08",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
+      "question_text": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
       "choices": [
-        "45",
-        "46",
-        "44",
-        "55"
+        "9",
+        "16",
+        "20",
+        "25"
       ],
-      "correct_answer": "45",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
-      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "4 × 5 = 20",
+      "explanation_th": "4 × 5 = 20",
+      "difficulty": "hard",
       "skill_tag": "g2_multiplication_intro",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g2_multiplication_intro_q09",
-      "question_th": "การคูณคือการบวกซ้ำๆ: 11 + 6 = ?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: 11 + 6 = ?",
+      "question_th": "5 × 5 เท่ากับเท่าไร?",
+      "question_text": "5 × 5 เท่ากับเท่าไร?",
       "choices": [
-        "17",
-        "18",
-        "16",
-        "27"
+        "20",
+        "25",
+        "30",
+        "35"
       ],
-      "correct_answer": "17",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
-      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "5 × 5 = 25",
+      "explanation_th": "5 × 5 = 25",
+      "difficulty": "hard",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "challenge"
     },
     {
       "question_id": "g2_multiplication_intro_q10",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "2 × 9 เท่ากับเท่าไร?",
+      "question_text": "2 × 9 เท่ากับเท่าไร?",
       "choices": [
-        "24",
-        "26",
-        "22",
-        "14"
+        "11",
+        "16",
+        "18",
+        "20"
       ],
-      "correct_answer": "24",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
-      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "2 × 9 = 18",
+      "explanation_th": "2 × 9 = 18",
+      "difficulty": "hard",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "challenge"
     }
@@ -2607,183 +803,225 @@
   "quiz_th": [
     {
       "question_id": "g2_multiplication_intro_q01",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 3 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
       "choices": [
-        "9",
+        "7",
         "12",
-        "6",
-        "14"
+        "14",
+        "16"
       ],
-      "correct_answer": "9",
-      "answer": "9",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 9",
-      "explanation_th": "คำตอบคือ 9 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
+      "explanation_th": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
       "difficulty": "easy",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q02",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 16 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
       "choices": [
+        "7",
+        "10",
         "12",
-        "13",
-        "11",
-        "20"
+        "15"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "5 × 2 = 10",
+      "explanation_th": "5 × 2 = 10",
       "difficulty": "easy",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q03",
-      "question_th": "การคูณคือการบวกซ้ำๆ: 5 + 5 = ?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: 5 + 5 = ?",
+      "question_th": "4 × 3 เท่ากับเท่าไร?",
+      "question_text": "4 × 3 เท่ากับเท่าไร?",
       "choices": [
-        "10",
+        "7",
         "11",
-        "9",
-        "20"
+        "12",
+        "13"
       ],
-      "correct_answer": "10",
-      "answer": "10",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 10",
-      "explanation_th": "คำตอบคือ 10 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "4 × 3 = 12",
+      "explanation_th": "4 × 3 = 12",
       "difficulty": "easy",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q04",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 6 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
+      "question_text": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
       "choices": [
-        "36",
-        "42",
-        "30",
-        "12"
+        "4 × 2",
+        "2 × 2",
+        "4 + 2",
+        "8 × 2"
       ],
-      "correct_answer": "36",
-      "answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "4 × 2",
+      "answer": "4 × 2",
+      "explanation": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "explanation_th": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "difficulty": "medium",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q05",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 14 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
       "choices": [
-        "12",
-        "13",
         "11",
-        "16"
+        "25",
+        "30",
+        "35"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "6 × 5 = 30",
+      "explanation_th": "6 × 5 = 30",
+      "difficulty": "medium",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q06",
-      "question_th": "การคูณคือการบวกซ้ำๆ: 8 + 3 = ?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: 8 + 3 = ?",
+      "question_th": "3 × 5 เท่ากับเท่าไร?",
+      "question_text": "3 × 5 เท่ากับเท่าไร?",
       "choices": [
-        "11",
+        "8",
         "12",
-        "10",
-        "21"
+        "15",
+        "20"
       ],
-      "correct_answer": "11",
-      "answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "3 × 5 = 15",
+      "explanation_th": "3 × 5 = 15",
+      "difficulty": "medium",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q07",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 9 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
+      "question_text": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
       "choices": [
-        "36",
-        "40",
-        "32",
-        "13"
+        "12",
+        "20",
+        "22",
+        "30"
       ],
-      "correct_answer": "36",
-      "answer": "36",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 36",
-      "explanation_th": "คำตอบคือ 36 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "10 × 2 = 20",
+      "explanation_th": "10 × 2 = 20",
+      "difficulty": "medium",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "core"
     },
     {
       "question_id": "g2_multiplication_intro_q08",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 50 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
+      "question_text": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
       "choices": [
-        "45",
-        "46",
-        "44",
-        "55"
+        "9",
+        "16",
+        "20",
+        "25"
       ],
-      "correct_answer": "45",
-      "answer": "45",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 45",
-      "explanation_th": "คำตอบคือ 45 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "4 × 5 = 20",
+      "explanation_th": "4 × 5 = 20",
+      "difficulty": "hard",
       "skill_tag": "g2_multiplication_intro",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g2_multiplication_intro_q09",
-      "question_th": "การคูณคือการบวกซ้ำๆ: 11 + 6 = ?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: 11 + 6 = ?",
+      "question_th": "5 × 5 เท่ากับเท่าไร?",
+      "question_text": "5 × 5 เท่ากับเท่าไร?",
       "choices": [
-        "17",
-        "18",
-        "16",
-        "27"
+        "20",
+        "25",
+        "30",
+        "35"
       ],
-      "correct_answer": "17",
-      "answer": "17",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 17",
-      "explanation_th": "คำตอบคือ 17 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "5 × 5 = 25",
+      "explanation_th": "5 × 5 = 25",
+      "difficulty": "hard",
       "skill_tag": "g2_multiplication_intro",
       "question_type": "challenge"
     },
     {
       "question_id": "g2_multiplication_intro_q10",
-      "question_th": "การคูณคือการบวกซ้ำๆ: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณคือการบวกซ้ำๆ: มี 12 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "2 × 9 เท่ากับเท่าไร?",
+      "question_text": "2 × 9 เท่ากับเท่าไร?",
       "choices": [
-        "24",
-        "26",
+        "11",
+        "16",
+        "18",
+        "20"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "2 × 9 = 18",
+      "explanation_th": "2 × 9 = 18",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง การคูณคือการบวกซ้ำๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "6 × 4 = 24",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "มี 6 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น",
+      "choices": [
         "22",
-        "14"
+        "23",
+        "24",
+        "26"
       ],
       "correct_answer": "24",
       "answer": "24",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 24",
-      "explanation_th": "คำตอบคือ 24 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
-      "skill_tag": "g2_multiplication_intro",
-      "question_type": "challenge"
+      "explanation": "คำตอบคือ 24"
     }
   ]
 }

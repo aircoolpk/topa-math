@@ -1,0 +1,1099 @@
+﻿{
+  "lesson_id": "g2_time_calendar",
+  "id": "g2_time_calendar",
+  "grade_level": 2,
+  "title_th": "อ่านปฏิทินและดูเวลาเป็น",
+  "objective_th": "นักเรียนสามารถอ่านปฏิทินและบอกวันที่ วันในสัปดาห์ และเดือนได้ถูกต้อง",
+  "story_intro_th": "อลิสมีนัดกินข้าวกับเพื่อนวันที่ 15 มีนาคม เป็นวันอะไร และเดือนมีนาคมมีกี่วันนะ? 📅",
+  "explanation_steps": [
+    "ปฏิทินมี 12 เดือน แต่ละเดือนมีจำนวนวันต่างกัน",
+    "เดือนที่มี 31 วัน: มกราคม มีนาคม พฤษภาคม กรกฎาคม สิงหาคม ตุลาคม ธันวาคม",
+    "เดือนที่มี 30 วัน: เมษายน มิถุนายน กันยายน พฤศจิกายน",
+    "เดือนกุมภาพันธ์มี 28 วัน หรือ 29 วันในปีอธิกมาตุ",
+    "สัปดาห์มี 7 วัน: วันอาทิตย์ วันจันทร์ วันอังคาร วันพุธ วันพฤหัสบดี วันศุกร์ วันเสาร์",
+    "เวลาดูวันที่บนปฏิทิน ให้นับไปจากวันที่ 1 ถึงวันที่ที่ต้องการ"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "นับวันในเดือน",
+      "question_th": "เดือนมิถุนายนมีกี่วัน?",
+      "solution_th": "เดือนมิถุนายนมี 30 วัน ✅"
+    },
+    {
+      "title_th": "หาวันในสัปดาห์",
+      "question_th": "วันพุธแล้ว 3 วัน จะเป็นวันอะไร?",
+      "solution_th": "พุธ → พฤหัส → ศุกร์ → เสาร์ ดังนั้น 3 วันหลังพุธคือวันเสาร์ ✅"
+    },
+    {
+      "title_th": "อ่านปฏิทิน",
+      "question_th": "วันที่ 1 มกราคมเป็นวันอังคาร วันที่ 8 มกราคมเป็นวันอะไร?",
+      "solution_th": "8 วันหลังวันอังคาร = 1 + 7 = อังคารอีกสัปดาห์ ดังนั้นวันที่ 8 เป็นวันอังคาร ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนว่าเดือนไหนมี 31 วัน เดือนไหนมี 30 วัน",
+    "นับวันผิด เช่น นับไป 7 วันแล้วหยุดที่วันเดียวกับเดิม",
+    "ไม่เข้าใจว่าปีอธิกมาตุ (ปีที่กุมภาพันธ์มี 29 วัน) วิธีจำปีอธิกมาตุคือปีที่หารด้วย 4 ลงตัว"
+  ],
+  "hints": [
+    "จำเดือน 31 วันด้วยประโยค: มีนามีน้ำ พฤษภาเกษตร สิงหาห้าวัน ตุลาคม สิบเอ็ด ธันวา คือเดือน 3 5 7 8 10 12",
+    "ถ้าต้องนับวันให้ใช้นิ้วนับไปเรื่อยๆ จนถึงวันที่ต้องการ",
+    "จำว่าสัปดาห์หนึ่งมี 7 วัน ถ้านับวันไป 7 วันจะกลับมาวันเดิม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_time_calendar",
+  "skill_code": "g2_time_calendar",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "📖 🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสงเรียนปิดภาคเรียนวันที่ 20 เมษายน เดือนเมษายนมีกี่วัน?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "📅 ปฏิทิน",
+          "data": {
+            "month_th": "เมษายน",
+            "description_th": "เดือนเมษายนมี 30 วัน",
+            "day": 20,
+            "days_in_month": 30
+          },
+          "type": "calendar_visual"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "30 วัน"
+          },
+          "type": "number_sentence"
+        },
+        {
+          "explanation_th": "เดือนกรกฎาคมมี 31 วัน เป็นหนึ่งในเดือนที่มี 31 วัน",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "30 วัน",
+                  "29 วัน",
+                  "31 วัน",
+                  "28 วัน"
+                ],
+                "correct_answer": "31 วัน",
+                "text_th": "เดือนกรกฎาคมมีกี่วัน?"
+              }
+            ]
+          },
+          "type": "mini_quiz"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสนเก็บเกี่ยวผลไม้กำหนดวันที่ 10 พฤษภาคม เดือนพฤษภาคมมีกี่วัน?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "📅 ปฏิทิน",
+          "data": {
+            "month_th": "พฤษภาคม",
+            "description_th": "เดือนพฤษภาคมมี 31 วัน",
+            "day": 10,
+            "days_in_month": 31
+          },
+          "type": "calendar_visual"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "31 วัน"
+          },
+          "type": "number_sentence"
+        },
+        {
+          "explanation_th": "เดือนมิถุนายนมี 30 วัน",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "30 วัน",
+                  "29 วัน",
+                  "31 วัน",
+                  "28 วัน"
+                ],
+                "correct_answer": "30 วัน",
+                "text_th": "เดือนมิถุนายนมีกี่วัน?"
+              }
+            ]
+          },
+          "type": "mini_quiz"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "📖 🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสนแข่งของเล่นกำหนดวันที่ 5 มิถุนายน เดือนมิถุนายนมีกี่วัน?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "📅 ปฏิทิน",
+          "data": {
+            "month_th": "มิถุนายน",
+            "description_th": "เดือนมิถุนายนมี 30 วัน",
+            "day": 5,
+            "days_in_month": 30
+          },
+          "type": "calendar_visual"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "30 วัน"
+          },
+          "type": "number_sentence"
+        },
+        {
+          "explanation_th": "เดือนพฤษภาคมมี 31 วัน",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "30 วัน",
+                  "29 วัน",
+                  "31 วัน",
+                  "28 วัน"
+                ],
+                "correct_answer": "31 วัน",
+                "text_th": "เดือนพฤษภาคมมีกี่วัน?"
+              }
+            ]
+          },
+          "type": "mini_quiz"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "📖 🏪 ตลาด",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสนโปรโมชันราคาวันที่ 25 สิงหาคม เดือนสิงหาคมมีกี่วัน?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "📅 ปฏิทิน",
+          "data": {
+            "month_th": "สิงหาคม",
+            "description_th": "เดือนสิงหาคมมี 31 วัน",
+            "day": 25,
+            "days_in_month": 31
+          },
+          "type": "calendar_visual"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "31 วัน"
+          },
+          "type": "number_sentence"
+        },
+        {
+          "explanation_th": "เดือนกันยายนมี 30 วัน",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "30 วัน",
+                  "29 วัน",
+                  "31 วัน",
+                  "28 วัน"
+                ],
+                "correct_answer": "30 วัน",
+                "text_th": "เดือนกันยายนมีกี่วัน?"
+              }
+            ]
+          },
+          "type": "mini_quiz"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสนตรวจสุขภาพสัตว์วันที่ 12 กันยายน เดือนกันยายนมีกี่วัน?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "📅 ปฏิทิน",
+          "data": {
+            "month_th": "กันยายน",
+            "description_th": "เดือนกันยายนมี 30 วัน",
+            "day": 12,
+            "days_in_month": 30
+          },
+          "type": "calendar_visual"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "30 วัน"
+          },
+          "type": "number_sentence"
+        },
+        {
+          "explanation_th": "เดือนตุลาคมมี 31 วัน",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "30 วัน",
+                  "29 วัน",
+                  "31 วัน",
+                  "28 วัน"
+                ],
+                "correct_answer": "31 วัน",
+                "text_th": "เดือนตุลาคมมีกี่วัน?"
+              }
+            ]
+          },
+          "type": "mini_quiz"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "📖 🌻 สวน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสนประกวดวาดรูปวันที่ 8 ตุลาคม เดือนตุลาคมมีกี่วัน?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "📅 ปฏิทิน",
+          "data": {
+            "month_th": "ตุลาคม",
+            "description_th": "เดือนตุลาคมมี 31 วัน",
+            "day": 8,
+            "days_in_month": 31
+          },
+          "type": "calendar_visual"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "31 วัน"
+          },
+          "type": "number_sentence"
+        },
+        {
+          "explanation_th": "เดือนพฤศจิกายนมี 30 วัน",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "30 วัน",
+                  "29 วัน",
+                  "31 วัน",
+                  "28 วัน"
+                ],
+                "correct_answer": "30 วัน",
+                "text_th": "เดือนพฤศจิกายนมีกี่วัน?"
+              }
+            ]
+          },
+          "type": "mini_quiz"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "📖 🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสนกีฬาสถานที่ 3 พฤษศจิกายน เดือนพฤษศจิกายนมีกี่วัน?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "📅 ปฏิทิน",
+          "data": {
+            "month_th": "พฤษศจิกายน",
+            "description_th": "เดือนพฤษศจิกายนมี 30 วัน",
+            "day": 3,
+            "days_in_month": 30
+          },
+          "type": "calendar_visual"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "30 วัน"
+          },
+          "type": "number_sentence"
+        },
+        {
+          "explanation_th": "เดือนธันวาคมมี 31 วัน",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "30 วัน",
+                  "29 วัน",
+                  "31 วัน",
+                  "28 วัน"
+                ],
+                "correct_answer": "31 วัน",
+                "text_th": "เดือนธันวาคมมีกี่วัน?"
+              }
+            ]
+          },
+          "type": "mini_quiz"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📖 📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิส วันสอบวันที่ 15 มกราคม เป็นวันอะไร และเดือนมกราคมมีกี่วัน?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "📅",
+                "count": 15
+              },
+              {
+                "emoji": "📆",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "shape_visual",
+          "title_th": "🔷 รูปทรง",
+          "data": {
+            "shapes": [
+              {
+                "shape": "rectangle",
+                "color": "#FFB347",
+                "label_th": "วันที่ 15"
+              },
+              {
+                "shape": "circle",
+                "color": "#87CEEB",
+                "label_th": "มกราคม"
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "31 + 0 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
+                "choices": [
+                  "30วัน",
+                  "29วัน",
+                  "31วัน",
+                  "28วัน"
+                ],
+                "answer": "31วัน"
+              },
+              {
+                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
+              },
+              {
+                "text_th": "ปีอธิกมาตุคือปีไหน?"
+              }
+            ]
+          },
+          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิส วันแข่งขันเกมวันที่ 7 กุมภาพันธ์ เป็นวันอะไร และเดือนกุมภาพันธ์มีกี่วัน?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "📅",
+                "count": 7
+              },
+              {
+                "emoji": "📆",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "shape_visual",
+          "title_th": "🔷 รูปทรง",
+          "data": {
+            "shapes": [
+              {
+                "shape": "rectangle",
+                "color": "#FFB347",
+                "label_th": "วันที่ 7"
+              },
+              {
+                "shape": "circle",
+                "color": "#87CEEB",
+                "label_th": "กุมภาพันธ์"
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "28 + 0 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
+                "choices": [
+                  "30วัน",
+                  "29วัน",
+                  "31วัน",
+                  "28วัน"
+                ],
+                "answer": "31วัน"
+              },
+              {
+                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
+              },
+              {
+                "text_th": "ปีอธิกมาตุคือปีไหน?"
+              }
+            ]
+          },
+          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "📖 🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิส วันเทศกาลวันที่ 31 ธันวาคม เป็นวันอะไร และเดือนธันวาคมมีกี่วัน?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "📅",
+                "count": 31
+              },
+              {
+                "emoji": "📆",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "shape_visual",
+          "title_th": "🔷 รูปทรง",
+          "data": {
+            "shapes": [
+              {
+                "shape": "rectangle",
+                "color": "#FFB347",
+                "label_th": "วันที่ 31"
+              },
+              {
+                "shape": "circle",
+                "color": "#87CEEB",
+                "label_th": "ธันวาคม"
+              }
+            ]
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "31 + 0 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "เดือนกรกฎาคมมีกี่วัน?",
+                "choices": [
+                  "30วัน",
+                  "29วัน",
+                  "31วัน",
+                  "28วัน"
+                ],
+                "answer": "31วัน"
+              },
+              {
+                "text_th": "วันพุธแล้ว 3 วันเป็นวันอะไร?"
+              },
+              {
+                "text_th": "ปีอธิกมาตุคือปีไหน?"
+              }
+            ]
+          },
+          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": ""
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "30 + 0 = ?"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 Try It",
+          "question": "เดือนกรกฎาคมมีกี่วัน?",
+          "choices": [
+            "30วัน",
+            "29วัน",
+            "31วัน",
+            "28วัน"
+          ],
+          "answer": "31วัน",
+          "correct_answer": "31วัน",
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เวลาและปฏิทิน",
+  "preview_subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "cover_theme": "time_calendar",
+  "cover_emoji": "📅",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "learning_objective_th": "นักเรียนสามารถอ่านปฏิทินและบอกวันที่ วันในสัปดาห์ และเดือนได้ถูกต้อง",
+  "lesson_intro_th": "อลิสมีนัดกินข้าวกับเพื่อนวันที่ 15 มีนาคม เป็นวันอะไร และเดือนมีนาคมมีกี่วันนะ? 📅",
+  "concept_explanation_th": "ปฏิทินมี 12 เดือน แต่ละเดือนมีจำนวนวันต่างกัน เดือนที่มี 31 วัน: มกราคม มีนาคม พฤษภาคม กรกฎาคม สิงหาคม ตุลาคม ธันวาคม เดือนที่มี 30 วัน: เมษายน มิถุนายน กันยายน พฤศจิกายน เดือนกุมภาพันธ์มี 28 วัน หรือ 29 วันในปีอธิกมาตุ สัปดาห์มี 7 วัน: วันอาทิตย์ วันจันทร์ วันอังคาร วันพุธ วันพฤหัสบดี วันศุกร์ วันเสาร์ เวลาดูวันที่บนปฏิทิน ให้นับไปจากวันที่ 1 ถึงวันที่ที่ต้องการ",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 6
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 4
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท อ่านปฏิทินและดูเวลาเป็น ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "นับวันในเดือน",
+      "question_th": "เดือนมิถุนายนมีกี่วัน?",
+      "solution_th": "เดือนมิถุนายนมี 30 วัน ✅"
+    },
+    {
+      "title_th": "หาวันในสัปดาห์",
+      "question_th": "วันพุธแล้ว 3 วัน จะเป็นวันอะไร?",
+      "solution_th": "พุธ → พฤหัส → ศุกร์ → เสาร์ ดังนั้น 3 วันหลังพุธคือวันเสาร์ ✅"
+    },
+    {
+      "title_th": "อ่านปฏิทิน",
+      "question_th": "วันที่ 1 มกราคมเป็นวันอังคาร วันที่ 8 มกราคมเป็นวันอะไร?",
+      "solution_th": "8 วันหลังวันอังคาร = 1 + 7 = อังคารอีกสัปดาห์ ดังนั้นวันที่ 8 เป็นวันอังคาร ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนว่าเดือนไหนมี 31 วัน เดือนไหนมี 30 วัน",
+    "นับวันผิด เช่น นับไป 7 วันแล้วหยุดที่วันเดียวกับเดิม",
+    "ไม่เข้าใจว่าปีอธิกมาตุ (ปีที่กุมภาพันธ์มี 29 วัน) วิธีจำปีอธิกมาตุคือปีที่หารด้วย 4 ลงตัว"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_time_calendar_q01",
+      "question_th": "1 สัปดาห์มีกี่วัน?",
+      "question_text": "1 สัปดาห์มีกี่วัน?",
+      "choices": [
+        "5 วัน",
+        "6 วัน",
+        "7 วัน",
+        "8 วัน"
+      ],
+      "correct_answer": "7 วัน",
+      "answer": "7 วัน",
+      "explanation": "1 สัปดาห์มี 7 วัน",
+      "explanation_th": "1 สัปดาห์มี 7 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q02",
+      "question_th": "เดือนมกราคมมีกี่วัน?",
+      "question_text": "เดือนมกราคมมีกี่วัน?",
+      "choices": [
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
+      ],
+      "correct_answer": "31 วัน",
+      "answer": "31 วัน",
+      "explanation": "เดือนมกราคมมี 31 วัน",
+      "explanation_th": "เดือนมกราคมมี 31 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q03",
+      "question_th": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "question_text": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "choices": [
+        "วันอาทิตย์",
+        "วันอังคาร",
+        "วันพุธ",
+        "วันศุกร์"
+      ],
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารถัดจากวันจันทร์",
+      "explanation_th": "วันอังคารถัดจากวันจันทร์",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q04",
+      "question_th": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "question_text": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "choices": [
+        "9:00 น.",
+        "10:00 น.",
+        "11:00 น.",
+        "12:00 น."
+      ],
+      "correct_answer": "10:00 น.",
+      "answer": "10:00 น.",
+      "explanation": "8:00 + 2 ชั่วโมง = 10:00",
+      "explanation_th": "8:00 + 2 ชั่วโมง = 10:00",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q05",
+      "question_th": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "question_text": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "choices": [
+        "15 นาที",
+        "30 นาที",
+        "45 นาที",
+        "60 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q06",
+      "question_th": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "question_text": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "choices": [
+        "2 เดือน",
+        "3 เดือน",
+        "4 เดือน",
+        "6 เดือน"
+      ],
+      "correct_answer": "3 เดือน",
+      "answer": "3 เดือน",
+      "explanation": "1 ไตรมาสมี 3 เดือน",
+      "explanation_th": "1 ไตรมาสมี 3 เดือน",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q07",
+      "question_th": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "question_text": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "choices": [
+        "วันเสาร์",
+        "วันอาทิตย์",
+        "วันจันทร์",
+        "วันพุธ"
+      ],
+      "correct_answer": "วันอาทิตย์",
+      "answer": "วันอาทิตย์",
+      "explanation": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "explanation_th": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q08",
+      "question_th": "1 วันมีกี่ชั่วโมง?",
+      "question_text": "1 วันมีกี่ชั่วโมง?",
+      "choices": [
+        "12 ชั่วโมง",
+        "18 ชั่วโมง",
+        "24 ชั่วโมง",
+        "30 ชั่วโมง"
+      ],
+      "correct_answer": "24 ชั่วโมง",
+      "answer": "24 ชั่วโมง",
+      "explanation": "1 วันมี 24 ชั่วโมง",
+      "explanation_th": "1 วันมี 24 ชั่วโมง",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_time_calendar_q09",
+      "question_th": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "question_text": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "choices": [
+        "50 นาที",
+        "55 นาที",
+        "60 นาที",
+        "65 นาที"
+      ],
+      "correct_answer": "60 นาที",
+      "answer": "60 นาที",
+      "explanation": "45 + 15 = 60 นาที",
+      "explanation_th": "45 + 15 = 60 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_time_calendar_q10",
+      "question_th": "เดือนเมษายนมีกี่วัน?",
+      "question_text": "เดือนเมษายนมีกี่วัน?",
+      "choices": [
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
+      ],
+      "correct_answer": "30 วัน",
+      "answer": "30 วัน",
+      "explanation": "เดือนเมษายนมี 30 วัน",
+      "explanation_th": "เดือนเมษายนมี 30 วัน",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_time_calendar_q01",
+      "question_th": "1 สัปดาห์มีกี่วัน?",
+      "question_text": "1 สัปดาห์มีกี่วัน?",
+      "choices": [
+        "5 วัน",
+        "6 วัน",
+        "7 วัน",
+        "8 วัน"
+      ],
+      "correct_answer": "7 วัน",
+      "answer": "7 วัน",
+      "explanation": "1 สัปดาห์มี 7 วัน",
+      "explanation_th": "1 สัปดาห์มี 7 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q02",
+      "question_th": "เดือนมกราคมมีกี่วัน?",
+      "question_text": "เดือนมกราคมมีกี่วัน?",
+      "choices": [
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
+      ],
+      "correct_answer": "31 วัน",
+      "answer": "31 วัน",
+      "explanation": "เดือนมกราคมมี 31 วัน",
+      "explanation_th": "เดือนมกราคมมี 31 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q03",
+      "question_th": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "question_text": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "choices": [
+        "วันอาทิตย์",
+        "วันอังคาร",
+        "วันพุธ",
+        "วันศุกร์"
+      ],
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารถัดจากวันจันทร์",
+      "explanation_th": "วันอังคารถัดจากวันจันทร์",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q04",
+      "question_th": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "question_text": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "choices": [
+        "9:00 น.",
+        "10:00 น.",
+        "11:00 น.",
+        "12:00 น."
+      ],
+      "correct_answer": "10:00 น.",
+      "answer": "10:00 น.",
+      "explanation": "8:00 + 2 ชั่วโมง = 10:00",
+      "explanation_th": "8:00 + 2 ชั่วโมง = 10:00",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q05",
+      "question_th": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "question_text": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "choices": [
+        "15 นาที",
+        "30 นาที",
+        "45 นาที",
+        "60 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q06",
+      "question_th": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "question_text": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "choices": [
+        "2 เดือน",
+        "3 เดือน",
+        "4 เดือน",
+        "6 เดือน"
+      ],
+      "correct_answer": "3 เดือน",
+      "answer": "3 เดือน",
+      "explanation": "1 ไตรมาสมี 3 เดือน",
+      "explanation_th": "1 ไตรมาสมี 3 เดือน",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q07",
+      "question_th": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "question_text": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "choices": [
+        "วันเสาร์",
+        "วันอาทิตย์",
+        "วันจันทร์",
+        "วันพุธ"
+      ],
+      "correct_answer": "วันอาทิตย์",
+      "answer": "วันอาทิตย์",
+      "explanation": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "explanation_th": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q08",
+      "question_th": "1 วันมีกี่ชั่วโมง?",
+      "question_text": "1 วันมีกี่ชั่วโมง?",
+      "choices": [
+        "12 ชั่วโมง",
+        "18 ชั่วโมง",
+        "24 ชั่วโมง",
+        "30 ชั่วโมง"
+      ],
+      "correct_answer": "24 ชั่วโมง",
+      "answer": "24 ชั่วโมง",
+      "explanation": "1 วันมี 24 ชั่วโมง",
+      "explanation_th": "1 วันมี 24 ชั่วโมง",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_time_calendar_q09",
+      "question_th": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "question_text": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "choices": [
+        "50 นาที",
+        "55 นาที",
+        "60 นาที",
+        "65 นาที"
+      ],
+      "correct_answer": "60 นาที",
+      "answer": "60 นาที",
+      "explanation": "45 + 15 = 60 นาที",
+      "explanation_th": "45 + 15 = 60 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_time_calendar_q10",
+      "question_th": "เดือนเมษายนมีกี่วัน?",
+      "question_text": "เดือนเมษายนมีกี่วัน?",
+      "choices": [
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
+      ],
+      "correct_answer": "30 วัน",
+      "answer": "30 วัน",
+      "explanation": "เดือนเมษายนมี 30 วัน",
+      "explanation_th": "เดือนเมษายนมี 30 วัน",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+name: 4craft-dev
+
+services:
+  4craft-postgres:
+    image: postgres:16-alpine
+    container_name: 4craft-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-adaptive_learning}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres_dev_change_me}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - 4craft-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  4craft-redis:
+    image: redis:7-alpine
+    container_name: 4craft-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - 4craft-redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  4craft-api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    container_name: 4craft-api
+    restart: unless-stopped
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8001", "--reload"]
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-local}
+      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg://postgres:postgres_dev_change_me@4craft-postgres:5432/adaptive_learning}
+      REDIS_URL: ${REDIS_URL:-redis://4craft-redis:6379/0}
+      JWT_SECRET: ${JWT_SECRET:-replace_with_local_docker_dev_secret_32_chars_minimum}
+      JWT_ALGORITHM: ${JWT_ALGORITHM:-HS256}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://127.0.0.1:3000}
+      FRONTEND_BASE_URL: ${FRONTEND_BASE_URL:-http://localhost:3000}
+      BACKEND_BASE_URL: ${BACKEND_BASE_URL:-http://localhost:8001}
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-}
+      STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
+    ports:
+      - "${API_PORT:-8001}:8001"
+    volumes:
+      - ./apps/api/app:/app/app
+      - ./apps/api/alembic:/app/alembic
+      - ./apps/api/alembic.ini:/app/alembic.ini:ro
+    depends_on:
+      4craft-postgres:
+        condition: service_healthy
+      4craft-redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/health', timeout=3).read()\""]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  4craft-web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+      target: deps
+    container_name: 4craft-web
+    restart: unless-stopped
+    command: ["npm", "run", "dev", "--", "--hostname", "0.0.0.0", "--port", "3000"]
+    working_dir: /app
+    environment:
+      NEXT_PUBLIC_APP_ENV: ${NEXT_PUBLIC_APP_ENV:-local}
+      NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8001}
+      INTERNAL_API_BASE_URL: ${INTERNAL_API_BASE_URL:-http://4craft-api:8001}
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    volumes:
+      - ./apps/web:/app
+      - 4craft-web-node-modules:/app/node_modules
+    depends_on:
+      4craft-api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000 >/dev/null 2>&1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  4craft-postgres-data:
+  4craft-redis-data:
+  4craft-web-node-modules:

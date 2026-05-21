@@ -1,0 +1,1369 @@
+{
+  "lesson_id": "g2_time_calendar_ep",
+  "id": "g2_time_calendar_ep",
+  "grade_level": 2,
+  "title_th": "อ่านปฏิทินและดูเวลาเป็น",
+  "objective_th": "นักเรียนสามารถอ่านปฏิทินและบอกวันที่ วันในสัปดาห์ และเดือนได้ถูกต้อง",
+  "story_intro_th": "อลิสมีนัดกินข้าวกับเพื่อนวันที่ 15 มีนาคม เป็นวันอะไร และเดือนมีนาคมมีกี่วันนะ? 📅",
+  "explanation_steps": [
+    "ปฏิทินมี 12 เดือน แต่ละเดือนมีจำนวนวันต่างกัน",
+    "เดือนที่มี 31 วัน: มกราคม มีนาคม พฤษภาคม กรกฎาคม สิงหาคม ตุลาคม ธันวาคม",
+    "เดือนที่มี 30 วัน: เมษายน มิถุนายน กันยายน พฤศจิกายน",
+    "เดือนกุมภาพันธ์มี 28 วัน หรือ 29 วันในปีอธิกมาตุ",
+    "สัปดาห์มี 7 วัน: วันอาทิตย์ วันจันทร์ วันอังคาร วันพุธ วันพฤหัสบดี วันศุกร์ วันเสาร์",
+    "เวลาดูวันที่บนปฏิทิน ให้นับไปจากวันที่ 1 ถึงวันที่ที่ต้องการ"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "นับวันในเดือน",
+      "question_th": "เดือนมิถุนายนมีกี่วัน?",
+      "solution_th": "เดือนมิถุนายนมี 30 วัน ✅"
+    },
+    {
+      "title_th": "หาวันในสัปดาห์",
+      "question_th": "วันพุธแล้ว 3 วัน จะเป็นวันอะไร?",
+      "solution_th": "พุธ → พฤหัส → ศุกร์ → เสาร์ ดังนั้น 3 วันหลังพุธคือวันเสาร์ ✅"
+    },
+    {
+      "title_th": "อ่านปฏิทิน",
+      "question_th": "วันที่ 1 มกราคมเป็นวันอังคาร วันที่ 8 มกราคมเป็นวันอะไร?",
+      "solution_th": "8 วันหลังวันอังคาร = 1 + 7 = อังคารอีกสัปดาห์ ดังนั้นวันที่ 8 เป็นวันอังคาร ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนว่าเดือนไหนมี 31 วัน เดือนไหนมี 30 วัน",
+    "นับวันผิด เช่น นับไป 7 วันแล้วหยุดที่วันเดียวกับเดิม",
+    "ไม่เข้าใจว่าปีอธิกมาตุ (ปีที่กุมภาพันธ์มี 29 วัน) วิธีจำปีอธิกมาตุคือปีที่หารด้วย 4 ลงตัว"
+  ],
+  "hints": [
+    "จำเดือน 31 วันด้วยประโยค: มีนามีน้ำ พฤษภาเกษตร สิงหาห้าวัน ตุลาคม สิบเอ็ด ธันวา คือเดือน 3 5 7 8 10 12",
+    "ถ้าต้องนับวันให้ใช้นิ้วนับไปเรื่อยๆ จนถึงวันที่ต้องการ",
+    "จำว่าสัปดาห์หนึ่งมี 7 วัน ถ้านับวันไป 7 วันจะกลับมาวันเดิม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_time_calendar",
+  "skill_code": "g2_time_calendar_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "📖 🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🏫 โรงเรียน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🍎 ผลไม้",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "📖 🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🧸 ของเล่น",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "📖 🏪 ตลาด",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🏪 ตลาด",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "📖 🌻 สวน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🌻 สวน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "📖 🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🎨 วาดรูป",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📖 📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 📚 ห้องเรียน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "📖 🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📖 🎉 งานเทศกาล",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เวลาและปฏิทิน",
+  "preview_subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "cover_theme": "time_calendar",
+  "cover_emoji": "📅",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "learning_objective_th": "นักเรียนสามารถอ่านปฏิทินและบอกวันที่ วันในสัปดาห์ และเดือนได้ถูกต้อง",
+  "lesson_intro_th": "อลิสมีนัดกินข้าวกับเพื่อนวันที่ 15 มีนาคม เป็นวันอะไร และเดือนมีนาคมมีกี่วันนะ? 📅",
+  "concept_explanation_th": "ปฏิทินมี 12 เดือน แต่ละเดือนมีจำนวนวันต่างกัน เดือนที่มี 31 วัน: มกราคม มีนาคม พฤษภาคม กรกฎาคม สิงหาคม ตุลาคม ธันวาคม เดือนที่มี 30 วัน: เมษายน มิถุนายน กันยายน พฤศจิกายน เดือนกุมภาพันธ์มี 28 วัน หรือ 29 วันในปีอธิกมาตุ สัปดาห์มี 7 วัน: วันอาทิตย์ วันจันทร์ วันอังคาร วันพุธ วันพฤหัสบดี วันศุกร์ วันเสาร์ เวลาดูวันที่บนปฏิทิน ให้นับไปจากวันที่ 1 ถึงวันที่ที่ต้องการ",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 6
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 4
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท อ่านปฏิทินและดูเวลาเป็น ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "นับวันในเดือน",
+      "question_th": "เดือนมิถุนายนมีกี่วัน?",
+      "solution_th": "เดือนมิถุนายนมี 30 วัน ✅"
+    },
+    {
+      "title_th": "หาวันในสัปดาห์",
+      "question_th": "วันพุธแล้ว 3 วัน จะเป็นวันอะไร?",
+      "solution_th": "พุธ → พฤหัส → ศุกร์ → เสาร์ ดังนั้น 3 วันหลังพุธคือวันเสาร์ ✅"
+    },
+    {
+      "title_th": "อ่านปฏิทิน",
+      "question_th": "วันที่ 1 มกราคมเป็นวันอังคาร วันที่ 8 มกราคมเป็นวันอะไร?",
+      "solution_th": "8 วันหลังวันอังคาร = 1 + 7 = อังคารอีกสัปดาห์ ดังนั้นวันที่ 8 เป็นวันอังคาร ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนว่าเดือนไหนมี 31 วัน เดือนไหนมี 30 วัน",
+    "นับวันผิด เช่น นับไป 7 วันแล้วหยุดที่วันเดียวกับเดิม",
+    "ไม่เข้าใจว่าปีอธิกมาตุ (ปีที่กุมภาพันธ์มี 29 วัน) วิธีจำปีอธิกมาตุคือปีที่หารด้วย 4 ลงตัว"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_time_calendar_q01",
+      "question_th": "1 สัปดาห์มีกี่วัน?",
+      "question_text": "1 สัปดาห์มีกี่วัน?",
+      "choices": [
+        "5 วัน",
+        "6 วัน",
+        "7 วัน",
+        "8 วัน"
+      ],
+      "correct_answer": "7 วัน",
+      "answer": "7 วัน",
+      "explanation": "1 สัปดาห์มี 7 วัน",
+      "explanation_th": "1 สัปดาห์มี 7 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q02",
+      "question_th": "เดือนมกราคมมีกี่วัน?",
+      "question_text": "เดือนมกราคมมีกี่วัน?",
+      "choices": [
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
+      ],
+      "correct_answer": "31 วัน",
+      "answer": "31 วัน",
+      "explanation": "เดือนมกราคมมี 31 วัน",
+      "explanation_th": "เดือนมกราคมมี 31 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q03",
+      "question_th": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "question_text": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "choices": [
+        "วันอาทิตย์",
+        "วันอังคาร",
+        "วันพุธ",
+        "วันศุกร์"
+      ],
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารถัดจากวันจันทร์",
+      "explanation_th": "วันอังคารถัดจากวันจันทร์",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q04",
+      "question_th": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "question_text": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "choices": [
+        "9:00 น.",
+        "10:00 น.",
+        "11:00 น.",
+        "12:00 น."
+      ],
+      "correct_answer": "10:00 น.",
+      "answer": "10:00 น.",
+      "explanation": "8:00 + 2 ชั่วโมง = 10:00",
+      "explanation_th": "8:00 + 2 ชั่วโมง = 10:00",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q05",
+      "question_th": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "question_text": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "choices": [
+        "15 นาที",
+        "30 นาที",
+        "45 นาที",
+        "60 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q06",
+      "question_th": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "question_text": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "choices": [
+        "2 เดือน",
+        "3 เดือน",
+        "4 เดือน",
+        "6 เดือน"
+      ],
+      "correct_answer": "3 เดือน",
+      "answer": "3 เดือน",
+      "explanation": "1 ไตรมาสมี 3 เดือน",
+      "explanation_th": "1 ไตรมาสมี 3 เดือน",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q07",
+      "question_th": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "question_text": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "choices": [
+        "วันเสาร์",
+        "วันอาทิตย์",
+        "วันจันทร์",
+        "วันพุธ"
+      ],
+      "correct_answer": "วันอาทิตย์",
+      "answer": "วันอาทิตย์",
+      "explanation": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "explanation_th": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q08",
+      "question_th": "1 วันมีกี่ชั่วโมง?",
+      "question_text": "1 วันมีกี่ชั่วโมง?",
+      "choices": [
+        "12 ชั่วโมง",
+        "18 ชั่วโมง",
+        "24 ชั่วโมง",
+        "30 ชั่วโมง"
+      ],
+      "correct_answer": "24 ชั่วโมง",
+      "answer": "24 ชั่วโมง",
+      "explanation": "1 วันมี 24 ชั่วโมง",
+      "explanation_th": "1 วันมี 24 ชั่วโมง",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_time_calendar_q09",
+      "question_th": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "question_text": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "choices": [
+        "50 นาที",
+        "55 นาที",
+        "60 นาที",
+        "65 นาที"
+      ],
+      "correct_answer": "60 นาที",
+      "answer": "60 นาที",
+      "explanation": "45 + 15 = 60 นาที",
+      "explanation_th": "45 + 15 = 60 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_time_calendar_q10",
+      "question_th": "เดือนเมษายนมีกี่วัน?",
+      "question_text": "เดือนเมษายนมีกี่วัน?",
+      "choices": [
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
+      ],
+      "correct_answer": "30 วัน",
+      "answer": "30 วัน",
+      "explanation": "เดือนเมษายนมี 30 วัน",
+      "explanation_th": "เดือนเมษายนมี 30 วัน",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_time_calendar_q01",
+      "question_th": "1 สัปดาห์มีกี่วัน?",
+      "question_text": "1 สัปดาห์มีกี่วัน?",
+      "choices": [
+        "5 วัน",
+        "6 วัน",
+        "7 วัน",
+        "8 วัน"
+      ],
+      "correct_answer": "7 วัน",
+      "answer": "7 วัน",
+      "explanation": "1 สัปดาห์มี 7 วัน",
+      "explanation_th": "1 สัปดาห์มี 7 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q02",
+      "question_th": "เดือนมกราคมมีกี่วัน?",
+      "question_text": "เดือนมกราคมมีกี่วัน?",
+      "choices": [
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
+      ],
+      "correct_answer": "31 วัน",
+      "answer": "31 วัน",
+      "explanation": "เดือนมกราคมมี 31 วัน",
+      "explanation_th": "เดือนมกราคมมี 31 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q03",
+      "question_th": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "question_text": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "choices": [
+        "วันอาทิตย์",
+        "วันอังคาร",
+        "วันพุธ",
+        "วันศุกร์"
+      ],
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารถัดจากวันจันทร์",
+      "explanation_th": "วันอังคารถัดจากวันจันทร์",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q04",
+      "question_th": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "question_text": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "choices": [
+        "9:00 น.",
+        "10:00 น.",
+        "11:00 น.",
+        "12:00 น."
+      ],
+      "correct_answer": "10:00 น.",
+      "answer": "10:00 น.",
+      "explanation": "8:00 + 2 ชั่วโมง = 10:00",
+      "explanation_th": "8:00 + 2 ชั่วโมง = 10:00",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q05",
+      "question_th": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "question_text": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "choices": [
+        "15 นาที",
+        "30 นาที",
+        "45 นาที",
+        "60 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q06",
+      "question_th": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "question_text": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "choices": [
+        "2 เดือน",
+        "3 เดือน",
+        "4 เดือน",
+        "6 เดือน"
+      ],
+      "correct_answer": "3 เดือน",
+      "answer": "3 เดือน",
+      "explanation": "1 ไตรมาสมี 3 เดือน",
+      "explanation_th": "1 ไตรมาสมี 3 เดือน",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q07",
+      "question_th": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "question_text": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "choices": [
+        "วันเสาร์",
+        "วันอาทิตย์",
+        "วันจันทร์",
+        "วันพุธ"
+      ],
+      "correct_answer": "วันอาทิตย์",
+      "answer": "วันอาทิตย์",
+      "explanation": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "explanation_th": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_time_calendar_q08",
+      "question_th": "1 วันมีกี่ชั่วโมง?",
+      "question_text": "1 วันมีกี่ชั่วโมง?",
+      "choices": [
+        "12 ชั่วโมง",
+        "18 ชั่วโมง",
+        "24 ชั่วโมง",
+        "30 ชั่วโมง"
+      ],
+      "correct_answer": "24 ชั่วโมง",
+      "answer": "24 ชั่วโมง",
+      "explanation": "1 วันมี 24 ชั่วโมง",
+      "explanation_th": "1 วันมี 24 ชั่วโมง",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_time_calendar_q09",
+      "question_th": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "question_text": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "choices": [
+        "50 นาที",
+        "55 นาที",
+        "60 นาที",
+        "65 นาที"
+      ],
+      "correct_answer": "60 นาที",
+      "answer": "60 นาที",
+      "explanation": "45 + 15 = 60 นาที",
+      "explanation_th": "45 + 15 = 60 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_time_calendar_q10",
+      "question_th": "เดือนเมษายนมีกี่วัน?",
+      "question_text": "เดือนเมษายนมีกี่วัน?",
+      "choices": [
+        "28 วัน",
+        "29 วัน",
+        "30 วัน",
+        "31 วัน"
+      ],
+      "correct_answer": "30 วัน",
+      "answer": "30 วัน",
+      "explanation": "เดือนเมษายนมี 30 วัน",
+      "explanation_th": "เดือนเมษายนมี 30 วัน",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Calendars and Time",
+  "objective_en": "Students will be able to tell time using clocks",
+  "story_intro_en": "Look! 15 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: นับวันในเดือน",
+      "question_en": "?",
+      "solution_en": "30 ✅?"
+    },
+    {
+      "title_en": "Example: หาวันในสัปดาห์",
+      "question_en": "3 ?",
+      "solution_en": "→ → → 3 ✅?"
+    },
+    {
+      "title_en": "Example: อ่านปฏิทิน",
+      "question_en": "1 8 ?",
+      "solution_en": "8 = 1 + 7 = 8 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: สับสนว่าเดือนไหนมี 31 วัน เดือนไหนมี 30 วัน",
+    "Mistake: นับวันผิด เช่น นับไป 7 วันแล้วหยุดที่วันเดียวกับเดิม",
+    "Mistake: ไม่เข้าใจว่าปีอธิกมาตุ (ปีที่กุมภาพันธ์มี 29 วัน) วิธีจำปีอธิกมาตุคือปีที่หารด้วย 4 ลงตัว"
+  ],
+  "hints_en": [
+    "Hint: จำเดือน 31 วันด้วยประโยค: มีนามีน้ำ พฤษภาเกษตร สิงหาห้าวัน ตุลาคม สิบเอ็ด ธันวา คือเดือน 3 5 7 8 10 12",
+    "Hint: ถ้าต้องนับวันให้ใช้นิ้วนับไปเรื่อยๆ จนถึงวันที่ต้องการ",
+    "Hint: จำว่าสัปดาห์หนึ่งมี 7 วัน ถ้านับวันไป 7 วันจะกลับมาวันเดิม"
+  ],
+  "explanation_steps_en": [
+    "Step: ปฏิทินมี 12 เดือน แต่ละเดือนมีจำนวนวันต่างกัน",
+    "Step: เดือนที่มี 31 วัน: มกราคม มีนาคม พฤษภาคม กรกฎาคม สิงหาคม ตุลาคม ธันวาคม",
+    "Step: เดือนที่มี 30 วัน: เมษายน มิถุนายน กันยายน พฤศจิกายน",
+    "Step: เดือนกุมภาพันธ์มี 28 วัน หรือ 29 วันในปีอธิกมาตุ",
+    "Step: สัปดาห์มี 7 วัน: วันอาทิตย์ วันจันทร์ วันอังคาร วันพุธ วันพฤหัสบดี วันศุกร์ วันเสาร์",
+    "Step: เวลาดูวันที่บนปฏิทิน ให้นับไปจากวันที่ 1 ถึงวันที่ที่ต้องการ"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g2_time_calendar_q01",
+      "question_th": "1 สัปดาห์มีกี่วัน?",
+      "question_text": "1 ?",
+      "choices": [
+        "5?",
+        "6?",
+        "7?",
+        "8?"
+      ],
+      "correct_answer": "7?",
+      "answer": "7?",
+      "explanation": "1 7?",
+      "explanation_th": "1 สัปดาห์มี 7 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core",
+      "question_en": "1 ?",
+      "explanation_en": "1 7?",
+      "choices_en": [
+        "5?",
+        "6?",
+        "7?",
+        "8?"
+      ],
+      "answer_en": "7?"
+    },
+    {
+      "question_id": "g2_time_calendar_q02",
+      "question_th": "เดือนมกราคมมีกี่วัน?",
+      "question_text": "?",
+      "choices": [
+        "28?",
+        "29?",
+        "30?",
+        "31?"
+      ],
+      "correct_answer": "31?",
+      "answer": "31?",
+      "explanation": "31?",
+      "explanation_th": "เดือนมกราคมมี 31 วัน",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "31?",
+      "choices_en": [
+        "28?",
+        "29?",
+        "30?",
+        "31?"
+      ],
+      "answer_en": "31?"
+    },
+    {
+      "question_id": "g2_time_calendar_q03",
+      "question_th": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
+      "question_text": "?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "",
+      "explanation_th": "วันอังคารถัดจากวันจันทร์",
+      "difficulty": "easy",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g2_time_calendar_q04",
+      "question_th": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
+      "question_text": "8:00 . 2 ?",
+      "choices": [
+        "9:00 .?",
+        "10:00 .?",
+        "11:00 .?",
+        "12:00 .?"
+      ],
+      "correct_answer": "10:00 .?",
+      "answer": "10:00 .?",
+      "explanation": "8:00 + 2 = 10:00?",
+      "explanation_th": "8:00 + 2 ชั่วโมง = 10:00",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core",
+      "question_en": "8:00 . 2 ?",
+      "explanation_en": "8:00 + 2 = 10:00?",
+      "choices_en": [
+        "9:00 .?",
+        "10:00 .?",
+        "11:00 .?",
+        "12:00 .?"
+      ],
+      "answer_en": "10:00 .?"
+    },
+    {
+      "question_id": "g2_time_calendar_q05",
+      "question_th": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
+      "question_text": "?",
+      "choices": [
+        "15?",
+        "30?",
+        "45?",
+        "60?"
+      ],
+      "correct_answer": "30?",
+      "answer": "30?",
+      "explanation": "60 30?",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "60 30?",
+      "choices_en": [
+        "15?",
+        "30?",
+        "45?",
+        "60?"
+      ],
+      "answer_en": "30?"
+    },
+    {
+      "question_id": "g2_time_calendar_q06",
+      "question_th": "ไตรมาสหนึ่งมีกี่เดือน?",
+      "question_text": "?",
+      "choices": [
+        "2?",
+        "3?",
+        "4?",
+        "6?"
+      ],
+      "correct_answer": "3?",
+      "answer": "3?",
+      "explanation": "1 3?",
+      "explanation_th": "1 ไตรมาสมี 3 เดือน",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "1 3?",
+      "choices_en": [
+        "2?",
+        "3?",
+        "4?",
+        "6?"
+      ],
+      "answer_en": "3?"
+    },
+    {
+      "question_id": "g2_time_calendar_q07",
+      "question_th": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
+      "question_text": "2 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "+ 2 =?",
+      "explanation_th": "วันศุกร์ + 2 วัน = วันอาทิตย์",
+      "difficulty": "medium",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "core",
+      "question_en": "2 ?",
+      "explanation_en": "+ 2 =?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g2_time_calendar_q08",
+      "question_th": "1 วันมีกี่ชั่วโมง?",
+      "question_text": "1 ?",
+      "choices": [
+        "12?",
+        "18?",
+        "24?",
+        "30?"
+      ],
+      "correct_answer": "24?",
+      "answer": "24?",
+      "explanation": "1 24?",
+      "explanation_th": "1 วันมี 24 ชั่วโมง",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge",
+      "question_en": "1 ?",
+      "explanation_en": "1 24?",
+      "choices_en": [
+        "12?",
+        "18?",
+        "24?",
+        "30?"
+      ],
+      "answer_en": "24?"
+    },
+    {
+      "question_id": "g2_time_calendar_q09",
+      "question_th": "45 นาที อีก 15 นาทีครบกี่นาที?",
+      "question_text": "45 15 ?",
+      "choices": [
+        "50?",
+        "55?",
+        "60?",
+        "65?"
+      ],
+      "correct_answer": "60?",
+      "answer": "60?",
+      "explanation": "45 + 15 = 60?",
+      "explanation_th": "45 + 15 = 60 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge",
+      "question_en": "45 15 ?",
+      "explanation_en": "45 + 15 = 60?",
+      "choices_en": [
+        "50?",
+        "55?",
+        "60?",
+        "65?"
+      ],
+      "answer_en": "60?"
+    },
+    {
+      "question_id": "g2_time_calendar_q10",
+      "question_th": "เดือนเมษายนมีกี่วัน?",
+      "question_text": "?",
+      "choices": [
+        "28?",
+        "29?",
+        "30?",
+        "31?"
+      ],
+      "correct_answer": "30?",
+      "answer": "30?",
+      "explanation": "30?",
+      "explanation_th": "เดือนเมษายนมี 30 วัน",
+      "difficulty": "hard",
+      "skill_tag": "g2_time_calendar",
+      "question_type": "challenge",
+      "question_en": "?",
+      "explanation_en": "30?",
+      "choices_en": [
+        "28?",
+        "29?",
+        "30?",
+        "31?"
+      ],
+      "answer_en": "30?"
+    }
+  ],
+  "quiz_id": "g2_time_calendar_ep",
+  "generated_at": "2026-05-16T04:16:40.987399+00:00",
+  "source_lesson_id": "g2_time_calendar",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Think Story",
+      "content": "Read the problem about Calendars and Time. Find the important numbers first."
+    },
+    {
+      "type": "visual_thinking",
+      "title": "Look First",
+      "content": "Circle what you know and underline what the question asks."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Use equal groups or boxes to organize the numbers.",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "items"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6 × 4 = 24",
+      "content": "Choose the operation that matches the question."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24"
+    }
+  ]
+}

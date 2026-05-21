@@ -4,7 +4,10 @@ import { useEffect, useState, useRef, useCallback } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
-import { meApi } from '@/lib/api/me'
+import { meApi, type ShareResponse } from '@/lib/api/me'
+import { ShareModal } from '@/components/share/ShareModal'
+import { MascotAvatar } from '@/components/topa/TopaUI'
+import { defaultMascots } from '@/lib/topa-content'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -428,6 +431,14 @@ function ChallengeMessage({ accuracy }: { accuracy: number | undefined }) {
 
 const CORRECT_MESSAGES = ['เก่งมาก!', 'วิเศษมาก!', 'ถูกต้อง!', 'เยี่ยมเลย!', 'ดีมาก!']
 const WRONG_MESSAGES = ['ลองดูวิธีคิดอีกนิดนะ', 'ใกล้เคียงแล้ว ลองคิดใหม่นะ', 'ไม่เป็นไร ลองคิดใหม่ได้เลย']
+const QUESTION_COACH_LINES = [
+  'ลองอ่านโจทย์ช้า ๆ ก่อนนะ',
+  'มองหาตัวเลขสำคัญในโจทย์กัน!',
+  'อย่าลืมตรวจคำตอบก่อนกดส่ง',
+  'ข้อนี้ลองวาดภาพช่วยคิดดูสิ',
+  'คิดทีละขั้นแล้วค่อยเลือกคำตอบนะ',
+  'ถ้าไม่แน่ใจ ลองตัดตัวเลือกที่เป็นไปไม่ได้ก่อน',
+]
 
 function getCorrectMessage(): string {
   return CORRECT_MESSAGES[Math.floor(Math.random() * CORRECT_MESSAGES.length)]
@@ -435,6 +446,16 @@ function getCorrectMessage(): string {
 
 function getWrongMessage(): string {
   return WRONG_MESSAGES[Math.floor(Math.random() * WRONG_MESSAGES.length)]
+}
+
+function stableCoach(questionId: string | undefined, index: number) {
+  const seedText = questionId || String(index)
+  const seed = seedText.split('').reduce((sum, char) => sum + char.charCodeAt(0), index)
+  return {
+    mascot: defaultMascots[seed % defaultMascots.length],
+    line: QUESTION_COACH_LINES[seed % QUESTION_COACH_LINES.length],
+    index: seed % defaultMascots.length,
+  }
 }
 
 // ─── Main Component ───────────────────────────────────────────────────────────
@@ -456,6 +477,10 @@ export default function TestSessionPage() {
   const [result, setResult] = useState<TestResult | null>(null)
   const [errorMsg, setErrorMsg] = useState('')
   const [hintUsed, setHintUsed] = useState<Record<string, boolean>>({})
+  const [shareOpen, setShareOpen] = useState(false)
+  const [shareData, setShareData] = useState<ShareResponse | null>(null)
+  const [shareLoading, setShareLoading] = useState(false)
+  const [shareError, setShareError] = useState<string | null>(null)
 
   const startTime = useRef(Date.now())
   const timerInterval = useRef<ReturnType<typeof setInterval> | null>(null)
@@ -571,8 +596,24 @@ export default function TestSessionPage() {
     }
   }
 
+  const handleShareResult = async () => {
+    setShareOpen(true)
+    setShareLoading(true)
+    setShareError(null)
+    try {
+      const response = await meApi.createTestResultShare(sessionId)
+      setShareData(response)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'ไม่สามารถสร้างลิงก์แชร์ผลสอบได้'
+      setShareError(message)
+    } finally {
+      setShareLoading(false)
+    }
+  }
+
   const q = questions[currentIdx]
   const currentResult = q ? answerResults[q.id] : null
+  const coach = stableCoach(q?.id, currentIdx)
 
   // ── Loading ─────────────────────────────────────────────────────────────────
   if (phase === 'loading') {
@@ -622,6 +663,15 @@ export default function TestSessionPage() {
 
     return (
       <div className="min-h-screen bg-gradient-to-b from-primary-50 to-background">
+        <ShareModal
+          open={shareOpen}
+          onClose={() => setShareOpen(false)}
+          share={shareData}
+          loading={shareLoading}
+          error={shareError}
+          title="TOPA Math"
+          text="ลองฝึกเลขสนุก ๆ กับ TOPA Math แล้วมาเก็บคะแนนไปด้วยกัน"
+        />
         <header className="bg-white border-b border-primary-100 shadow-sm">
           <div className="max-w-2xl mx-auto px-4 py-3">
             <div className="flex items-center justify-between">
@@ -766,7 +816,13 @@ export default function TestSessionPage() {
               </div>
             )}
 
-            <div className="px-5 pb-5 pt-2">
+            <div className="px-5 pb-5 pt-2 space-y-3">
+              <button
+                onClick={handleShareResult}
+                className="w-full rounded-xl border border-primary-200 bg-white py-3.5 text-base font-extrabold text-primary-700 hover:bg-primary-50"
+              >
+                แชร์ผลสอบ
+              </button>
               <button
                 onClick={() => { router.refresh(); router.push('/dashboard') }}
                 className="btn-primary w-full py-3.5 text-base"
@@ -834,6 +890,18 @@ export default function TestSessionPage() {
 
           {/* Visual */}
           {q && !isFeedback && <VisualQuestion question={q} />}
+
+          {!isFeedback && (
+            <div className="mx-6 mt-5 rounded-2xl border border-sky-100 bg-gradient-to-r from-sky-50 to-amber-50 p-4">
+              <div className="flex items-center gap-3">
+                <MascotAvatar mascot={coach.mascot} index={coach.index} size="sm" />
+                <div>
+                  <p className="text-xs font-black uppercase tracking-wide text-sky-500">{coach.mascot.name} question coach</p>
+                  <p className="text-sm font-bold text-slate-700">{coach.line}</p>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Question text */}
           <div className="px-6 py-5">
@@ -920,9 +988,7 @@ export default function TestSessionPage() {
               : 'bg-red-50 border-red-300'
           }`}>
             <div className="flex items-start gap-3">
-              <div className="text-3xl flex-shrink-0">
-                {currentResult.is_correct ? '🎉' : '💪'}
-              </div>
+              <MascotAvatar mascot={coach.mascot} index={coach.index} size="sm" />
               <div className="flex-1">
                 <p className="font-extrabold text-lg">
                   {currentResult.is_correct ? getCorrectMessage() : getWrongMessage()}

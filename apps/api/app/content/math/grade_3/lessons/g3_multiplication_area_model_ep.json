@@ -1,4 +1,4 @@
-﻿{
+{
   "lesson_id": "g3_multiplication_area_model_ep",
   "id": "g3_multiplication_area_model_ep",
   "content_schema_version": "2.0",
@@ -51,50 +51,43 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "data": {
-        "title_th": "School garden",
-        "text_th": "A garden has 4 rows. Each row has 6 plants.",
-        "translation_th": "สวนมี 4 แถว แต่ละแถวมีต้นไม้ 6 ต้น"
-      }
+      "title": "Think Story",
+      "content": "Read the problem about Multiplication with an Area Model. Find the important numbers first."
     },
     {
-      "type": "area_model",
-      "data": {
-        "title_th": "Area model",
-        "description_th": "4 rows, 6 in each row",
-        "rows": 4,
-        "cols": 6,
-        "unit": "plants",
-        "total": 24
-      }
+      "type": "visual_thinking",
+      "title": "Look First",
+      "content": "Circle what you know and underline what the question asks."
     },
     {
-      "type": "step_cards",
-      "data": {
-        "title_th": "Steps",
-        "steps": [
-          {
-            "step": 1,
-            "title_th": "Count rows",
-            "description_th": "There are 4 rows. แปลว่า มี 4 แถว"
-          },
-          {
-            "step": 2,
-            "title_th": "Count each row",
-            "description_th": "Each row has 6 plants. แปลว่า แถวละ 6 ต้น"
-          },
-          {
-            "step": 3,
-            "title_th": "Multiply",
-            "description_th": "4 × 6 = 24"
-          },
-          {
-            "step": 4,
-            "title_th": "Answer",
-            "description_th": "There are 24 plants. มีต้นไม้ 24 ต้น"
-          }
-        ]
-      }
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Use equal groups or boxes to organize the numbers.",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "items"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6 × 4 = 24",
+      "content": "Choose the operation that matches the question."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24"
     }
   ],
   "explanation_steps": [
@@ -134,16 +127,44 @@
       "story_theme_th": "school_garden",
       "visual_blocks": [
         {
-          "type": "area_model",
-          "data": {
-            "title_th": "4 rows of 6",
-            "description_th": "4 แถว แถวละ 6",
-            "rows": 4,
-            "cols": 6,
-            "unit": "plants",
-            "total": 24
-          },
-          "title_th": "ใช้แผนภาพช่วยคิด"
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Multiplication with an Area Model. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
         }
       ]
     },
@@ -151,7 +172,48 @@
       "variant_id": "ep_v01",
       "variant_title_en": "School Theme",
       "story_theme_en": "School",
-      "visual_blocks": []
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Multiplication with an Area Model. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ]
     }
   ],
   "subtitle_th": "นักเรียนใช้แถวและหลักเพื่อหาผลคูณ",
@@ -199,171 +261,181 @@
   "questions": [
     {
       "question_id": "g3_multiplication_area_model_ep_q01",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
       "choices": [
-        "12",
-        "15",
-        "9",
-        "7"
+        "20",
+        "24",
+        "28",
+        "30"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "4 × 6 = 24 ช่อง",
+      "explanation_th": "4 × 6 = 24 ช่อง",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q02",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
       "choices": [
-        "16",
-        "17",
+        "8",
         "15",
-        "24"
+        "20",
+        "25"
       ],
-      "correct_answer": "16",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
-      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15 ช่อง",
+      "explanation_th": "5 × 3 = 15 ช่อง",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q03",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: 6 + 5 = ?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: 6 + 5 = ?",
+      "question_th": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
       "choices": [
-        "11",
+        "9",
         "12",
-        "10",
-        "21"
+        "14",
+        "16"
       ],
-      "correct_answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "7 × 2 = 14 ช่อง",
+      "explanation_th": "7 × 2 = 14 ช่อง",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q04",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "question_text": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "42",
-        "48",
-        "36",
-        "13"
+        "20",
+        "22",
+        "24",
+        "26"
       ],
-      "correct_answer": "42",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
-      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24",
+      "explanation_th": "6 × 4 = 24",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q05",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "question_text": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "14",
-        "15",
-        "13",
-        "18"
+        "21",
+        "24",
+        "27",
+        "30"
       ],
-      "correct_answer": "14",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
-      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "3 × 8 = 24",
+      "explanation_th": "3 × 8 = 24",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q06",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: 9 + 3 = ?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: 9 + 3 = ?",
+      "question_th": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "question_text": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "22"
+        "24",
+        "27",
+        "30",
+        "33"
       ],
-      "correct_answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "27",
+      "answer": "27",
+      "explanation": "9 × 3 = 27",
+      "explanation_th": "9 × 3 = 27",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q07",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "question_text": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "40",
-        "44",
-        "36",
-        "14"
+        "12",
+        "20",
+        "22",
+        "30"
       ],
-      "correct_answer": "40",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
-      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q08",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "question_text": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "50",
-        "51",
-        "49",
-        "60"
+        "35",
+        "40",
+        "45",
+        "50"
       ],
-      "correct_answer": "50",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
-      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "8 × 5 = 40",
+      "explanation_th": "8 × 5 = 40",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_area_model_ep",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q09",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: 12 + 6 = ?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: 12 + 6 = ?",
+      "question_th": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "question_text": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "18",
-        "19",
-        "17",
-        "28"
+        "42",
+        "49",
+        "56",
+        "63"
       ],
-      "correct_answer": "18",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
-      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "49",
+      "answer": "49",
+      "explanation": "7 × 7 = 49",
+      "explanation_th": "7 × 7 = 49",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "challenge"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q10",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "question_text": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "26",
-        "28",
-        "24",
-        "15"
+        "50",
+        "60",
+        "70",
+        "80"
       ],
-      "correct_answer": "26",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
-      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "10 × 6 = 60",
+      "explanation_th": "10 × 6 = 60",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "challenge"
     }
@@ -371,183 +443,184 @@
   "quiz_th": [
     {
       "question_id": "g3_multiplication_area_model_ep_q01",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 4 กลุ่ม กลุ่มละ 3 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
       "choices": [
-        "12",
-        "15",
-        "9",
-        "7"
+        "20",
+        "24",
+        "28",
+        "30"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "4 × 6 = 24 ช่อง",
+      "explanation_th": "4 × 6 = 24 ช่อง",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q02",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 20 ชิ้น ใช้ไป 4 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
       "choices": [
-        "16",
-        "17",
+        "8",
         "15",
-        "24"
+        "20",
+        "25"
       ],
-      "correct_answer": "16",
-      "answer": "16",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 16",
-      "explanation_th": "คำตอบคือ 16 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15 ช่อง",
+      "explanation_th": "5 × 3 = 15 ช่อง",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q03",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: 6 + 5 = ?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: 6 + 5 = ?",
+      "question_th": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
       "choices": [
-        "11",
+        "9",
         "12",
-        "10",
-        "21"
+        "14",
+        "16"
       ],
-      "correct_answer": "11",
-      "answer": "11",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 11",
-      "explanation_th": "คำตอบคือ 11 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "7 × 2 = 14 ช่อง",
+      "explanation_th": "7 × 2 = 14 ช่อง",
       "difficulty": "easy",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q04",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 7 กลุ่ม กลุ่มละ 6 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "question_text": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "42",
-        "48",
-        "36",
-        "13"
+        "20",
+        "22",
+        "24",
+        "26"
       ],
-      "correct_answer": "42",
-      "answer": "42",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 42",
-      "explanation_th": "คำตอบคือ 42 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24",
+      "explanation_th": "6 × 4 = 24",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q05",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 16 ชิ้น ใช้ไป 2 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "question_text": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "14",
-        "15",
-        "13",
-        "18"
+        "21",
+        "24",
+        "27",
+        "30"
       ],
-      "correct_answer": "14",
-      "answer": "14",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 14",
-      "explanation_th": "คำตอบคือ 14 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "3 × 8 = 24",
+      "explanation_th": "3 × 8 = 24",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q06",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: 9 + 3 = ?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: 9 + 3 = ?",
+      "question_th": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "question_text": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "12",
-        "13",
-        "11",
-        "22"
+        "24",
+        "27",
+        "30",
+        "33"
       ],
-      "correct_answer": "12",
-      "answer": "12",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 12",
-      "explanation_th": "คำตอบคือ 12 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "27",
+      "answer": "27",
+      "explanation": "9 × 3 = 27",
+      "explanation_th": "9 × 3 = 27",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q07",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 10 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "question_text": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "40",
-        "44",
-        "36",
-        "14"
+        "12",
+        "20",
+        "22",
+        "30"
       ],
-      "correct_answer": "40",
-      "answer": "40",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 40",
-      "explanation_th": "คำตอบคือ 40 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "easy",
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "core"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q08",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 55 ชิ้น ใช้ไป 5 ชิ้น เหลือกี่ชิ้น?",
+      "question_th": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "question_text": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "50",
-        "51",
-        "49",
-        "60"
+        "35",
+        "40",
+        "45",
+        "50"
       ],
-      "correct_answer": "50",
-      "answer": "50",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 50",
-      "explanation_th": "คำตอบคือ 50 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "8 × 5 = 40",
+      "explanation_th": "8 × 5 = 40",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_area_model_ep",
-      "question_type": "core"
+      "question_type": "challenge"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q09",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: 12 + 6 = ?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: 12 + 6 = ?",
+      "question_th": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "question_text": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "18",
-        "19",
-        "17",
-        "28"
+        "42",
+        "49",
+        "56",
+        "63"
       ],
-      "correct_answer": "18",
-      "answer": "18",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 18",
-      "explanation_th": "คำตอบคือ 18 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "49",
+      "answer": "49",
+      "explanation": "7 × 7 = 49",
+      "explanation_th": "7 × 7 = 49",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "challenge"
     },
     {
       "question_id": "g3_multiplication_area_model_ep_q10",
-      "question_th": "การคูณด้วยแบบจำลองพื้นที่: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
-      "question_text": "การคูณด้วยแบบจำลองพื้นที่: มี 13 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_th": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "question_text": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
       "choices": [
-        "26",
-        "28",
-        "24",
-        "15"
+        "50",
+        "60",
+        "70",
+        "80"
       ],
-      "correct_answer": "26",
-      "answer": "26",
-      "explanation": "คิดทีละขั้นจะได้คำตอบ 26",
-      "explanation_th": "คำตอบคือ 26 เพราะคำนวณตามข้อมูลในโจทย์และตรวจด้วยแผนภาพแล้ว",
-      "difficulty": "medium",
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "10 × 6 = 60",
+      "explanation_th": "10 × 6 = 60",
+      "difficulty": "hard",
       "skill_tag": "g3_multiplication_area_model_ep",
       "question_type": "challenge"
     }
-  ]
+  ],
+  "story_intro_th": "Read the problem about Multiplication with an Area Model. Find the important numbers first."
 }

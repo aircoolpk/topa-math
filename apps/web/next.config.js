@@ -1,20 +1,28 @@
 /** @type {import('next').NextConfig} */
+const appEnv = process.env.NEXT_PUBLIC_APP_ENV || 'local'
+const isLocalEnv = ['local', 'dev', 'development', 'test'].includes(appEnv.toLowerCase())
+const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || (isLocalEnv ? 'http://127.0.0.1:8001' : undefined)
+const internalApiBaseUrl = process.env.INTERNAL_API_BASE_URL || apiBaseUrl
+
+if (!apiBaseUrl) {
+  throw new Error('NEXT_PUBLIC_API_BASE_URL is required when NEXT_PUBLIC_APP_ENV is staging or production')
+}
+
 const nextConfig = {
   reactStrictMode: true,
-  // Frontend serves at http://127.0.0.1:3000
-  // Proxy API calls to FastAPI backend at http://127.0.0.1:8001
+  output: 'standalone',
   async rewrites() {
     return {
       beforeFiles: [
-        // API routes only — frontend pages (/, /login, /register, etc.) are NOT proxied
-        { source: '/auth/:path*', destination: 'http://127.0.0.1:8001/auth/:path*' },
-        { source: '/children/:path*', destination: 'http://127.0.0.1:8001/children/:path*' },
-        { source: '/quiz-sessions/:path*', destination: 'http://127.0.0.1:8001/quiz-sessions/:path*' },
-        { source: '/subjects', destination: 'http://127.0.0.1:8001/subjects' },
-        { source: '/skills', destination: 'http://127.0.0.1:8001/skills' },
-        { source: '/rankings', destination: 'http://127.0.0.1:8001/rankings' },
-        { source: '/avatar/:path*', destination: 'http://127.0.0.1:8001/avatar/:path*' },
-        { source: '/health', destination: 'http://127.0.0.1:8001/health' },
+        { source: '/:path*', has: [{ type: 'host', value: 'api.topamath.com' }], destination: `${internalApiBaseUrl}/:path*` },
+        { source: '/auth/:path*', destination: `${internalApiBaseUrl}/auth/:path*` },
+        { source: '/children/:path*', destination: `${internalApiBaseUrl}/children/:path*` },
+        { source: '/quiz-sessions/:path*', destination: `${internalApiBaseUrl}/quiz-sessions/:path*` },
+        { source: '/subjects', destination: `${internalApiBaseUrl}/subjects` },
+        { source: '/skills', destination: `${internalApiBaseUrl}/skills` },
+        { source: '/rankings', destination: `${internalApiBaseUrl}/rankings` },
+        { source: '/avatar/:path*', destination: `${internalApiBaseUrl}/avatar/:path*` },
+        { source: '/health', destination: `${internalApiBaseUrl}/health` },
       ],
     }
   },

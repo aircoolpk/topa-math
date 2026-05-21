@@ -1,0 +1,2044 @@
+{
+  "lesson_id": "g2_subtract_two_digit_ep",
+  "id": "g2_subtract_two_digit_ep",
+  "grade_level": 2,
+  "title_th": "ลบเลขสองหลักแบบไม่ทด",
+  "objective_th": "นักเรียนสามารถลบจำนวนสองหลักสองจำนวนโดยไม่มีตัวกู้ได้ถูกต้อง",
+  "story_intro_th": "อลิสมีกิ๊บเก็บผม 65 อัน ให้เพื่อนไป 23 อัน อลิสเหลือกิ๊บเก็บผมกี่อัน? 💇‍♀️",
+  "explanation_steps": [
+    "เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
+    "ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้",
+    "ลบหลักหน่วยก่อน แล้วลบหลักสิบ",
+    "ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม",
+    "ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 78 แท่ง ให้น้องไป 34 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "78 - 34 = 44 แท่ง ✅"
+    },
+    {
+      "title_th": "ลบสติกเกอร์",
+      "question_th": "มีสติกเกอร์ 95 ดวง แปะไป 42 ดวง เหลือสติกเกอร์กี่ดวง?",
+      "solution_th": "95 - 42 = 53 ดวง ✅"
+    },
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "ตะกร้ามีลูกบอล 86 ลูก เอาออกไป 53 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "86 - 53 = 33 ลูก ✅"
+    }
+  ],
+  "common_mistakes": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน",
+    "ลบหลักสิบก่อนหลักหน่วย ทำให้สับสน",
+    "ลืมว่าตัวตั้งต้องมากกว่าตัวลบ ไม่งั้นจะลบไม่ได้"
+  ],
+  "hints": [
+    "เขียนเลขให้ตรงหลักกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
+    "ลบหลักหน่วยก่อน ถ้าได้ผลลัพธ์เท่าไหร่จดไว้ แล้วค่อยลบหลักสิบ",
+    "ตรวจคำตอบโดยเอาผลลัพธ์บวกกลับด้วยตัวลบ ต้องได้ตัวตั้งเดิม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_subtract_two_digit",
+  "skill_code": "g2_subtract_two_digit_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "📖 🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสงเรียนมีนักเรียน 76 คน ให้ออกไปแข่งขันนอกสถานที่ 34 คน เหลือนักเรียนกี่คน?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 76 + 34 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "76 - 34 = 42"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "87 - 43 = 44 เพราะ 87-40=47 แล้วลบอีก 3 ได้ 44",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "44",
+                  "42",
+                  "46",
+                  "40"
+                ],
+                "correct_answer": "44",
+                "text_th": "87 - 43 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🏫 โรงเรียน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสแอปเปิ้ล 89 ผล แบ่งให้เพื่อน 45 ผล เหลือแอปเปิ้ลกี่ผล?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 89 + 45 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "89 - 45 = 44"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "96 - 53 = 43 เพราะ 96-50=46 แล้วลบอีก 3 ได้ 43",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "43",
+                  "45",
+                  "41",
+                  "47"
+                ],
+                "correct_answer": "43",
+                "text_th": "96 - 53 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🍎 ผลไม้",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "📖 🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสสติกเกอร์ 95 ดวง แปะไป 42 ดวง เหลือสติกเกอร์กี่ดวง?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 95 + 42 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "95 - 42 = 53"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "78 - 34 = 44 เพราะ 78-30=48 แล้วลบอีก 4 ได้ 44",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "44",
+                  "46",
+                  "42",
+                  "48"
+                ],
+                "correct_answer": "44",
+                "text_th": "78 - 34 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🧸 ของเล่น",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "📖 🏪 ตลาด",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสลูกบอล 68 ลูก เอาไปแข่ง 35 ลูก เหลือลูกบอลกี่ลูก?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 68 + 35 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "68 - 35 = 33"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "79 - 46 = 33 เพราะ 79-40=39 แล้วลบอีก 6 ได้ 33",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "33",
+                  "35",
+                  "31",
+                  "37"
+                ],
+                "correct_answer": "33",
+                "text_th": "79 - 46 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🏪 ตลาด",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสกร้ามีลูกบอล 86 ลูก เอาออกไป 53 ลูก เหลือลูกบอลกี่ลูก?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 86 + 53 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "86 - 53 = 33"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "85 - 42 = 43 เพราะ 85-40=45 แล้วลบอีก 2 ได้ 43",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "43",
+                  "45",
+                  "41",
+                  "47"
+                ],
+                "correct_answer": "43",
+                "text_th": "85 - 42 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "📖 🌻 สวน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสดินสอ 77 แท่ง ให้น้องไป 35 แท่ง เหลือดินสอกี่แท่ง?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 77 + 35 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "77 - 35 = 42"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "88 - 46 = 42 เพราะ 88-40=48 แล้วลบอีก 6 ได้ 42",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "42",
+                  "44",
+                  "40",
+                  "46"
+                ],
+                "correct_answer": "42",
+                "text_th": "88 - 46 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🌻 สวน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "📖 🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+      "visual_blocks": [
+        {
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิสหนังสือ 94 เล่ม ยืมไป 61 เล่ม เหลือหนังสือกี่เล่ม?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 94 + 61 — can you find the answer?"
+          },
+          "type": "story_intro"
+        },
+        {
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "94 - 61 = 33"
+          },
+          "type": "number_sentence",
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "explanation_th": "75 - 32 = 43 เพราะ 75-30=45 แล้วลบอีก 2 ได้ 43",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "choices": [
+                  "43",
+                  "45",
+                  "41",
+                  "47"
+                ],
+                "correct_answer": "43",
+                "text_th": "75 - 32 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "type": "mini_quiz"
+        }
+      ],
+      "variant_title_en": "📖 🎨 วาดรูป",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📖 📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิส มีหนังสือ 92 เล่ม ยืมไป 41 เล่ม เหลือหนังสือกี่เล่ม?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 92 + 41 — can you find the answer?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 92
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 41
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 92,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 91,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 90,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 89,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 88,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 87,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 86,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 85,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 84,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 83,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 82,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 81,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 80,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 79,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 78,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 77,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 76,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 41,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 51,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": -10,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "92 - 41 = ?"
+          },
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+        }
+      ],
+      "variant_title_en": "📖 📚 ห้องเรียน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิส มีเพชรในเกม 58 เม็ด ใช้ไป 25 เม็ด เหลือเพชรกี่เม็ด?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 58 + 25 — can you find the answer?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 58
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 25
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 58,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 41,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 40,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 39,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 38,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 37,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 36,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 35,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 34,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 33,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 25,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 33,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": -8,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "58 - 25 = ?"
+          },
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+        }
+      ],
+      "variant_title_en": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "📖 🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title_th": "🐣 เรื่องราวชวนคิด",
+          "data": {
+            "text_th": "🏫 พี่อลิส มีลูกโป่ง 86 ลูก แตกไป 44 ลูก เหลือลูกโป่งกี่ลูก?",
+            "title_en": "Let's find out!",
+            "text_en": "Look! 86 + 44 — can you find the answer?"
+          }
+        },
+        {
+          "type": "emoji_counter",
+          "title_th": "👀 มองภาพก่อน",
+          "data": {
+            "items": [
+              {
+                "emoji": "🎒",
+                "count": 86
+              },
+              {
+                "emoji": "➖",
+                "count": 1
+              },
+              {
+                "emoji": "🎁",
+                "count": 44
+              }
+            ]
+          }
+        },
+        {
+          "type": "count_back_strip",
+          "title_th": "🔢 นับถอยหลัง",
+          "data": {
+            "steps": [
+              {
+                "value": 86,
+                "label_th": "เริ่ม",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 85,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 84,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 83,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 82,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 81,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 80,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 79,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 78,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 77,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 76,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 75,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 74,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 73,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 72,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 71,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 70,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 69,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 68,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 67,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 66,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 65,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 64,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 63,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 62,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 61,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 60,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 59,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 58,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 57,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 56,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 55,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 54,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 53,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 52,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 51,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 50,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 49,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 48,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 47,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 46,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 45,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 44,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 43,
+                "label_th": "ลบ",
+                "color": "#87CEEB"
+              },
+              {
+                "value": 42,
+                "label_th": "ผลลัพธ์",
+                "color": "#FF6B6B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar_model",
+          "title_th": "📊 แผนภาพแท่ง",
+          "data": {
+            "bars": [
+              {
+                "label_th": "ส่วนแรก",
+                "value": 44,
+                "color": "#FFB347"
+              },
+              {
+                "label_th": "ส่วนสอง",
+                "value": 42,
+                "color": "#87CEEB"
+              }
+            ],
+            "result": 2,
+            "operation": "−"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "86 - 44 = ?"
+          },
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "type": "mini_quiz",
+          "title_th": "🎯 ลองทำดู",
+          "data": {
+            "questions": [
+              {
+                "text_th": "87 - 43 = ?",
+                "choices": [
+                  "86",
+                  "85",
+                  "87",
+                  "84"
+                ],
+                "answer": "87"
+              },
+              {
+                "text_th": "95 - 52 = ?"
+              },
+              {
+                "text_th": "73 - 31 = ?"
+              }
+            ],
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          },
+          "explanation_th": "ดูตัวอย่างในบทเรียนเพื่อหาคำตอบที่ถูกต้อง"
+        }
+      ],
+      "variant_title_en": "📖 🎉 งานเทศกาล",
+      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title_th": "✍️ เขียนเป็นประโยคคณิต",
+          "data": {
+            "equation": "76 - 34 = ?"
+          },
+          "title_en": "✍️ Write the solution"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 Try It",
+          "question": "87 - 43 = ?",
+          "choices": [
+            "43",
+            "42",
+            "44",
+            "41"
+          ],
+          "answer": "44",
+          "correct_answer": "44",
+          "explanation": "",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ลบเลขสองหลัก",
+  "preview_subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "cover_theme": "subtract_two_digit",
+  "cover_emoji": "➖",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "learning_objective_th": "นักเรียนสามารถลบจำนวนสองหลักสองจำนวนโดยไม่มีตัวกู้ได้ถูกต้อง",
+  "lesson_intro_th": "อลิสมีกิ๊บเก็บผม 65 อัน ให้เพื่อนไป 23 อัน อลิสเหลือกิ๊บเก็บผมกี่อัน? 💇‍♀️",
+  "concept_explanation_th": "เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้ ลบหลักหน่วยก่อน แล้วลบหลักสิบ ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 20,
+    "parts": [
+      8,
+      12
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ลบเลขสองหลักแบบไม่ทด ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 78 แท่ง ให้น้องไป 34 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "78 - 34 = 44 แท่ง ✅"
+    },
+    {
+      "title_th": "ลบสติกเกอร์",
+      "question_th": "มีสติกเกอร์ 95 ดวง แปะไป 42 ดวง เหลือสติกเกอร์กี่ดวง?",
+      "solution_th": "95 - 42 = 53 ดวง ✅"
+    },
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "ตะกร้ามีลูกบอล 86 ลูก เอาออกไป 53 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "86 - 53 = 33 ลูก ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน",
+    "ลบหลักสิบก่อนหลักหน่วย ทำให้สับสน",
+    "ลืมว่าตัวตั้งต้องมากกว่าตัวลบ ไม่งั้นจะลบไม่ได้"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_subtract_two_digit_q01",
+      "question_th": "65 - 24 เท่ากับเท่าไร?",
+      "question_text": "65 - 24 เท่ากับเท่าไร?",
+      "choices": [
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "correct_answer": "41",
+      "answer": "41",
+      "explanation": "65 - 24 = 41",
+      "explanation_th": "65 - 24 = 41",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q02",
+      "question_th": "72 - 38 เท่ากับเท่าไร?",
+      "question_text": "72 - 38 เท่ากับเท่าไร?",
+      "choices": [
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "correct_answer": "34",
+      "answer": "34",
+      "explanation": "72 - 38 = 34",
+      "explanation_th": "72 - 38 = 34",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q03",
+      "question_th": "90 - 47 เท่ากับเท่าไร?",
+      "question_text": "90 - 47 เท่ากับเท่าไร?",
+      "choices": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "correct_answer": "43",
+      "answer": "43",
+      "explanation": "90 - 47 = 43",
+      "explanation_th": "90 - 47 = 43",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q04",
+      "question_th": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "question_text": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "choices": [
+        "53 ลูก",
+        "54 ลูก",
+        "55 ลูก",
+        "56 ลูก"
+      ],
+      "correct_answer": "55 ลูก",
+      "answer": "55 ลูก",
+      "explanation": "84 - 29 = 55 ลูก",
+      "explanation_th": "84 - 29 = 55 ลูก",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q05",
+      "question_th": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "question_text": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "choices": [
+        "54 เล่ม",
+        "55 เล่ม",
+        "56 เล่ม",
+        "57 เล่ม"
+      ],
+      "correct_answer": "55 เล่ม",
+      "answer": "55 เล่ม",
+      "explanation": "73 - 18 = 55 เล่ม",
+      "explanation_th": "73 - 18 = 55 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q06",
+      "question_th": "61 - 26 เท่ากับเท่าไร?",
+      "question_text": "61 - 26 เท่ากับเท่าไร?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "35",
+      "answer": "35",
+      "explanation": "61 - 26 = 35",
+      "explanation_th": "61 - 26 = 35",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q07",
+      "question_th": "58 - 19 เท่ากับเท่าไร?",
+      "question_text": "58 - 19 เท่ากับเท่าไร?",
+      "choices": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "correct_answer": "39",
+      "answer": "39",
+      "explanation": "58 - 19 = 39",
+      "explanation_th": "58 - 19 = 39",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q08",
+      "question_th": "46 - 27 เท่ากับเท่าไร?",
+      "question_text": "46 - 27 เท่ากับเท่าไร?",
+      "choices": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "correct_answer": "19",
+      "answer": "19",
+      "explanation": "46 - 27 = 19",
+      "explanation_th": "46 - 27 = 19",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q09",
+      "question_th": "100 - 64 เท่ากับเท่าไร?",
+      "question_text": "100 - 64 เท่ากับเท่าไร?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "100 - 64 = 36",
+      "explanation_th": "100 - 64 = 36",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q10",
+      "question_th": "82 - 45 เท่ากับเท่าไร?",
+      "question_text": "82 - 45 เท่ากับเท่าไร?",
+      "choices": [
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "correct_answer": "37",
+      "answer": "37",
+      "explanation": "82 - 45 = 37",
+      "explanation_th": "82 - 45 = 37",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_subtract_two_digit_q01",
+      "question_th": "65 - 24 เท่ากับเท่าไร?",
+      "question_text": "65 - 24 เท่ากับเท่าไร?",
+      "choices": [
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "correct_answer": "41",
+      "answer": "41",
+      "explanation": "65 - 24 = 41",
+      "explanation_th": "65 - 24 = 41",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q02",
+      "question_th": "72 - 38 เท่ากับเท่าไร?",
+      "question_text": "72 - 38 เท่ากับเท่าไร?",
+      "choices": [
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "correct_answer": "34",
+      "answer": "34",
+      "explanation": "72 - 38 = 34",
+      "explanation_th": "72 - 38 = 34",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q03",
+      "question_th": "90 - 47 เท่ากับเท่าไร?",
+      "question_text": "90 - 47 เท่ากับเท่าไร?",
+      "choices": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "correct_answer": "43",
+      "answer": "43",
+      "explanation": "90 - 47 = 43",
+      "explanation_th": "90 - 47 = 43",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q04",
+      "question_th": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "question_text": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "choices": [
+        "53 ลูก",
+        "54 ลูก",
+        "55 ลูก",
+        "56 ลูก"
+      ],
+      "correct_answer": "55 ลูก",
+      "answer": "55 ลูก",
+      "explanation": "84 - 29 = 55 ลูก",
+      "explanation_th": "84 - 29 = 55 ลูก",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q05",
+      "question_th": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "question_text": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "choices": [
+        "54 เล่ม",
+        "55 เล่ม",
+        "56 เล่ม",
+        "57 เล่ม"
+      ],
+      "correct_answer": "55 เล่ม",
+      "answer": "55 เล่ม",
+      "explanation": "73 - 18 = 55 เล่ม",
+      "explanation_th": "73 - 18 = 55 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q06",
+      "question_th": "61 - 26 เท่ากับเท่าไร?",
+      "question_text": "61 - 26 เท่ากับเท่าไร?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "35",
+      "answer": "35",
+      "explanation": "61 - 26 = 35",
+      "explanation_th": "61 - 26 = 35",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q07",
+      "question_th": "58 - 19 เท่ากับเท่าไร?",
+      "question_text": "58 - 19 เท่ากับเท่าไร?",
+      "choices": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "correct_answer": "39",
+      "answer": "39",
+      "explanation": "58 - 19 = 39",
+      "explanation_th": "58 - 19 = 39",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q08",
+      "question_th": "46 - 27 เท่ากับเท่าไร?",
+      "question_text": "46 - 27 เท่ากับเท่าไร?",
+      "choices": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "correct_answer": "19",
+      "answer": "19",
+      "explanation": "46 - 27 = 19",
+      "explanation_th": "46 - 27 = 19",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q09",
+      "question_th": "100 - 64 เท่ากับเท่าไร?",
+      "question_text": "100 - 64 เท่ากับเท่าไร?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "100 - 64 = 36",
+      "explanation_th": "100 - 64 = 36",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q10",
+      "question_th": "82 - 45 เท่ากับเท่าไร?",
+      "question_text": "82 - 45 เท่ากับเท่าไร?",
+      "choices": [
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "correct_answer": "37",
+      "answer": "37",
+      "explanation": "82 - 45 = 37",
+      "explanation_th": "82 - 45 = 37",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Subtracting two-digit numbers",
+  "objective_en": "Students will be able to subtract numbers within 20",
+  "story_intro_en": "Look! 65 + 23 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: ลบดินสอ",
+      "question_en": "pencils 78 pencils 34 pencils pencils pencils?",
+      "solution_en": "78 - 34 = 44 pencils ✅?"
+    },
+    {
+      "title_en": "Example: ลบสติกเกอร์",
+      "question_en": "stickers 95 stickers 42 stickers stickers stickers?",
+      "solution_en": "95 - 42 = 53 stickers ✅?"
+    },
+    {
+      "title_en": "Example: ลบลูกบอล",
+      "question_en": "balls 86 balls 53 balls balls balls?",
+      "solution_en": "86 - 53 = 33 balls ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน",
+    "Mistake: ลบหลักสิบก่อนหลักหน่วย ทำให้สับสน",
+    "Mistake: ลืมว่าตัวตั้งต้องมากกว่าตัวลบ ไม่งั้นจะลบไม่ได้"
+  ],
+  "hints_en": [
+    "Hint: เขียนเลขให้ตรงหลักกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
+    "Hint: ลบหลักหน่วยก่อน ถ้าได้ผลลัพธ์เท่าไหร่จดไว้ แล้วค่อยลบหลักสิบ",
+    "Hint: ตรวจคำตอบโดยเอาผลลัพธ์บวกกลับด้วยตัวลบ ต้องได้ตัวตั้งเดิม"
+  ],
+  "explanation_steps_en": [
+    "Step: เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
+    "Step: ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้",
+    "Step: ลบหลักหน่วยก่อน แล้วลบหลักสิบ",
+    "Step: ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม",
+    "Step: ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g2_subtract_two_digit_q01",
+      "question_th": "65 - 24 เท่ากับเท่าไร?",
+      "question_text": "65 - 24 ?",
+      "choices": [
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "correct_answer": "41",
+      "answer": "41",
+      "explanation": "65 - 24 = 41",
+      "explanation_th": "65 - 24 = 41",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core",
+      "question_en": "65 - 24 ?",
+      "explanation_en": "65 - 24 = 41",
+      "choices_en": [
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "answer_en": "41"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q02",
+      "question_th": "72 - 38 เท่ากับเท่าไร?",
+      "question_text": "72 - 38 ?",
+      "choices": [
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "correct_answer": "34",
+      "answer": "34",
+      "explanation": "72 - 38 = 34",
+      "explanation_th": "72 - 38 = 34",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core",
+      "question_en": "72 - 38 ?",
+      "explanation_en": "72 - 38 = 34",
+      "choices_en": [
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "answer_en": "34"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q03",
+      "question_th": "90 - 47 เท่ากับเท่าไร?",
+      "question_text": "90 - 47 ?",
+      "choices": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "correct_answer": "43",
+      "answer": "43",
+      "explanation": "90 - 47 = 43",
+      "explanation_th": "90 - 47 = 43",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core",
+      "question_en": "90 - 47 ?",
+      "explanation_en": "90 - 47 = 43",
+      "choices_en": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "answer_en": "43"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q04",
+      "question_th": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "question_text": "balls 84 balls 29 balls balls?",
+      "choices": [
+        "53 balls?",
+        "54 balls?",
+        "55 balls?",
+        "56 balls?"
+      ],
+      "correct_answer": "55 balls?",
+      "answer": "55 balls?",
+      "explanation": "84 - 29 = 55 balls?",
+      "explanation_th": "84 - 29 = 55 ลูก",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core",
+      "question_en": "balls 84 balls 29 balls balls?",
+      "explanation_en": "84 - 29 = 55 balls?",
+      "choices_en": [
+        "53 balls?",
+        "54 balls?",
+        "55 balls?",
+        "56 balls?"
+      ],
+      "answer_en": "55 balls?"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q05",
+      "question_th": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "question_text": "73 books 18 books books?",
+      "choices": [
+        "54 books?",
+        "55 books?",
+        "56 books?",
+        "57 books?"
+      ],
+      "correct_answer": "55 books?",
+      "answer": "55 books?",
+      "explanation": "73 - 18 = 55 books?",
+      "explanation_th": "73 - 18 = 55 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core",
+      "question_en": "73 books 18 books books?",
+      "explanation_en": "73 - 18 = 55 books?",
+      "choices_en": [
+        "54 books?",
+        "55 books?",
+        "56 books?",
+        "57 books?"
+      ],
+      "answer_en": "55 books?"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q06",
+      "question_th": "61 - 26 เท่ากับเท่าไร?",
+      "question_text": "61 - 26 ?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "35",
+      "answer": "35",
+      "explanation": "61 - 26 = 35",
+      "explanation_th": "61 - 26 = 35",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core",
+      "question_en": "61 - 26 ?",
+      "explanation_en": "61 - 26 = 35",
+      "choices_en": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "answer_en": "35"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q07",
+      "question_th": "58 - 19 เท่ากับเท่าไร?",
+      "question_text": "58 - 19 ?",
+      "choices": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "correct_answer": "39",
+      "answer": "39",
+      "explanation": "58 - 19 = 39",
+      "explanation_th": "58 - 19 = 39",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core",
+      "question_en": "58 - 19 ?",
+      "explanation_en": "58 - 19 = 39",
+      "choices_en": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "answer_en": "39"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q08",
+      "question_th": "46 - 27 เท่ากับเท่าไร?",
+      "question_text": "46 - 27 ?",
+      "choices": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "correct_answer": "19",
+      "answer": "19",
+      "explanation": "46 - 27 = 19",
+      "explanation_th": "46 - 27 = 19",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge",
+      "question_en": "46 - 27 ?",
+      "explanation_en": "46 - 27 = 19",
+      "choices_en": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "answer_en": "19"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q09",
+      "question_th": "100 - 64 เท่ากับเท่าไร?",
+      "question_text": "100 - 64 ?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "100 - 64 = 36",
+      "explanation_th": "100 - 64 = 36",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge",
+      "question_en": "100 - 64 ?",
+      "explanation_en": "100 - 64 = 36",
+      "choices_en": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "answer_en": "36"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q10",
+      "question_th": "82 - 45 เท่ากับเท่าไร?",
+      "question_text": "82 - 45 ?",
+      "choices": [
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "correct_answer": "37",
+      "answer": "37",
+      "explanation": "82 - 45 = 37",
+      "explanation_th": "82 - 45 = 37",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge",
+      "question_en": "82 - 45 ?",
+      "explanation_en": "82 - 45 = 37",
+      "choices_en": [
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "answer_en": "37"
+    }
+  ],
+  "quiz_id": "g2_subtract_two_digit_ep",
+  "generated_at": "2026-05-16T04:16:40.963327+00:00",
+  "source_lesson_id": "g2_subtract_two_digit",
+  "needs_review": true
+}

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { billingApi, type BillingStatus, type BillingPrices, type BillingPlanRecord } from '@/lib/api/billing'
+import { TopaBrandMark, TopaMascot } from '@/components/brand/TopaBrand'
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -36,6 +37,7 @@ function subscriptionStatusLabel(status: string | null): string {
   switch (status) {
     case 'active':        return 'ใช้งานอยู่'
     case 'past_due':      return 'รอชำระเงิน'
+    case 'pending':       return 'รอผู้ดูแลยืนยัน'
     case 'canceled':     return 'ยกเลิกแล้ว'
     case 'trialing':     return 'ทดลองใช้'
     case 'incomplete':   return 'รอชำระเงิน'
@@ -48,6 +50,7 @@ function subscriptionStatusColor(status: string | null): string {
   switch (status) {
     case 'active':      return 'text-green-600'
     case 'past_due':   return 'text-red-600'
+    case 'pending':    return 'text-amber-600'
     case 'canceled':   return 'text-gray-500'
     case 'trialing':   return 'text-blue-600'
     default:           return 'text-gray-500'
@@ -370,9 +373,7 @@ function MembershipCard({ status, loading }: MembershipCardProps) {
   return (
     <div className="card shadow-md border-primary-100 mb-6">
       <div className="flex items-center gap-2 mb-4">
-        <div className="w-8 h-8 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center">
-          <span className="text-white text-sm font-black">4</span>
-        </div>
+        <TopaMascot size="sm" />
         <h2 className="font-bold text-gray-900 text-base">สถานะสมาชิก</h2>
       </div>
 
@@ -508,6 +509,7 @@ export default function BillingPage() {
   const [subscribeLoading, setSubscribeLoading] = useState<string | null>(null)
   const [subscribeError, setSubscribeError] = useState<string | null>(null)
   const [subscribeErrorPlan, setSubscribeErrorPlan] = useState<string | null>(null)
+  const [subscribeSuccess, setSubscribeSuccess] = useState<string | null>(null)
   const [portalLoading, setPortalLoading] = useState(false)
   const [portalError, setPortalError] = useState<string | null>(null)
 
@@ -536,29 +538,36 @@ export default function BillingPage() {
       .finally(() => setLoadingPrices(false))
   }, [router])
 
+  // Detect if Stripe is unconfigured (backend returned plans without stripe_price_id)
+  const stripeNotConfigured = (prices?.plans ?? []).every((p) => !p.stripe_price_id)
+  const isDevMode = process.env.NODE_ENV === 'development'
+
   const handleSubscribe = async (planCode: string) => {
     const selectedPlan = (prices?.plans ?? []).map(toDisplayPlan).find((plan) => getPlanCode(plan) === planCode)
     if (planCode === 'free') {
       setSubscribeError('คุณใช้แพ็กเกจ Free ได้เลย')
       setSubscribeErrorPlan(planCode)
-      return
-    }
-    if (prices?.using_dev_fallback || selectedPlan?.stripe_price_id === null || !selectedPlan?.stripe_price_id) {
-      setSubscribeError('ระบบชำระเงินยังไม่เปิดในโหมด dev')
-      setSubscribeErrorPlan(planCode)
-      setSubscribeLoading(planCode)
-      setTimeout(() => setSubscribeLoading(null), 1200)
+      setSubscribeSuccess(null)
       return
     }
     setSubscribeLoading(planCode)
     setSubscribeError(null)
     setSubscribeErrorPlan(null)
+    setSubscribeSuccess(null)
     try {
       const checkoutPlanCode = selectedPlan?.checkout_plan_code ?? planCode
       const res = await billingApi.createCheckoutSession(checkoutPlanCode)
-      const checkoutUrl = (res as unknown as Record<string, unknown>).checkout_url as string
-      if (!checkoutUrl) throw new Error('Missing checkout_url')
-      window.location.href = checkoutUrl
+      const checkoutUrl = res.checkout_url
+      if (checkoutUrl) {
+        window.location.href = checkoutUrl
+        return
+      }
+      if (res.mode === 'manual_pending') {
+        setSubscribeSuccess(res.message || 'ส่งคำขอสมัครแพ็กเกจแล้ว กรุณารอผู้ดูแลยืนยัน')
+        setSubscribeLoading(null)
+        return
+      }
+      throw new Error('Missing checkout_url')
     } catch (err: unknown) {
       const errObj = err as Record<string, unknown>
       const isOffline =
@@ -624,11 +633,8 @@ export default function BillingPage() {
       {/* Header */}
       <header className="bg-white border-b border-primary-100 shadow-sm sticky top-0 z-30">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
-          <Link href="/dashboard" className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center shadow">
-              <span className="text-white text-lg font-black">4</span>
-            </div>
-            <span className="font-bold text-gray-900 text-lg">4-Craft</span>
+        <Link href="/dashboard" className="flex items-center gap-2">
+            <TopaBrandMark />
           </Link>
           <Link
             href="/dashboard"
@@ -690,7 +696,18 @@ export default function BillingPage() {
               cardError={portalError}
             />
 
-            {prices?.using_dev_fallback && process.env.NODE_ENV === 'development' && (
+            {subscribeSuccess && (
+              <div className="mb-6 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-semibold text-green-800">
+                {subscribeSuccess}
+              </div>
+            )}
+
+            {stripeNotConfigured && (
+              <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
+                ⚠️ ระบบชำระเงินออนไลน์ยังไม่ได้ตั้งค่า ตอนนี้สามารถส่งคำขอสมัครแพ็กเกจให้ผู้ดูแลยืนยันแบบ manual ได้
+              </div>
+            )}
+            {prices?.using_dev_fallback && !stripeNotConfigured && process.env.NODE_ENV === 'development' && (
               <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
                 ใช้ข้อมูลแพ็กเกจชั่วคราวสำหรับ dev
               </div>

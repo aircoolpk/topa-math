@@ -1,0 +1,940 @@
+﻿{
+  "lesson_id": "g6_volume",
+  "id": "g6_volume",
+  "grade_level": 6,
+  "title_th": "ปริมาตรทรงต่างๆ",
+  "objective_th": "นักเรียนสามารถหาปริมาตรของปริซึม ทรงกระบอก พีระมิด และทรงกลมได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสเทน้ำจากทรงกระบอกใบหนึ่งลงในถ้วย น้ำเต็มถ้วยพอดี ทรงกระบอกมีรัศมี 5 ซม. สูง 12 ซม. ถ้วยมีปริมาตรเท่าไหร่? 🥤",
+  "explanation_steps": [
+    "ปริมาตรปริซึม = พื้นที่ฐาน × สูง",
+    "ปริมาตรทรงกระบอก = π × รัศมี² × สูง",
+    "ปริมาตรพีระมิด = 1/3 × พื้นที่ฐาน × สูง",
+    "ปริมาตรทรงกลม = 4/3 × π × รัศมี³",
+    "หน่วยปริมาตรต้องเป็นลูกบาศก์หน่วย เช่น ลูกบาศก์เซนติเมตร (ซม.³)"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ปริมาตรทรงกระบอก",
+      "question_th": "ทรงกระบอกมีรัศมี 3 ซม. สูง 10 ซม. มีปริมาตรเท่าไหร่? (π = 3.14)",
+      "solution_th": "3.14 × 3² × 10 = 3.14 × 9 × 10 = 282.6 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "ปริมาตรพีระมิด",
+      "question_th": "พีระมิดฐานสี่เหลี่ยมกว้าง 6 ซม. ยาว 6 ซม. สูง 9 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "1/3 × (6×6) × 9 = 1/3 × 36 × 9 = 108 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "ปริมาตรทรงกลม",
+      "question_th": "ทรงกลมมีรัศมี 6 ซม. มีปริมาตรเท่าไหร่? (π = 3.14)",
+      "solution_th": "4/3 × 3.14 × 6³ = 4/3 × 3.14 × 216 = 904.32 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบปริมาตร",
+      "question_th": "ปริซึมสี่เหลี่ยม 10×5×4 กับ ทรงกระบอก r=5, h=8 (π=3.14) อันไหนมีปริมาตรมากกว่า?",
+      "solution_th": "ปริซึม: 10×5×4 = 200 / ทรงกระบอก: 3.14×25×8 = 628 → ทรงกระบอกมากกว่า ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ใช้สูตรพีระมิดโดยลืม ÷3 ทำให้ปริมาตรมากเกินไป 3 เท่า",
+    "ยกกำลังสองรัศมีผิด หรือใช้เส้นผ่านศูนย์กลางแทนรัศมี",
+    "ไม่ใช้ π ที่กำหนดให้ เช่น ใช้ 22/7 แทน 3.14 ทำให้คำตอบไม่ตรงกับที่ต้องการ"
+  ],
+  "hints": [
+    "ปริซึม: พื้นที่ฐาน × สูง / พีระมิด: 1/3 × ปริซึม / ทรงกลม: 4/3 × π × r³",
+    "จำว่า π ≈ 3.14 หรือ 22/7 ขึ้นอยู่กับที่โจทย์กำหนด",
+    "ตรวจคำตอบว่าสมเหตุสมผล เช่น ปริมาตรพีระมิดต้องน้อยกว่าปริซึมที่มีฐานและสูงเท่ากัน"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_volume",
+  "skill_code": "g6_volume",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏫 โรงเรียน มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🍎 ผลไม้ มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🧸 ของเล่น มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏪 ตลาด มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🐕 สัตว์เลี้ยง มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🌻 สวน มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎨 วาดรูป มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่📚 ห้องเรียน มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎮 สนุกกับเพื่อน มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล",
+      "story_theme_th": "เรียนรู้เรื่องvolumeผ่านธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎉 งานเทศกาล มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "items_before": "📐📐📐📐📐",
+          "items_added": "📐³",
+          "question": "ทรงลูกบาศก์ด้าน 5 ซม. มีปริมาตรเท่าไหร่?",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "volume_visual",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "วาดทรงลูกบาศก์ แสดงด้านกว้าง ยาว สูง"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "ที่[School]  โรงเรียน มีกล่องทรงลูกบาศก์ ด้านละ 5 เซนติเมตร อยากรู้ว่ากล่องนี้จุของได้กี่ลูกบาศก์เซนติเมตร? 📦"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "V = 5 × 5 × 5 = 125 ซม.³"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "ทรงลูกบาศก์ด้าน 4 ซม. มีปริมาตรเท่าไหร่?",
+          "choices": [
+            "12 ซม.³",
+            "16 ซม.³",
+            "64 ซม.³",
+            "96 ซม.³"
+          ],
+          "answer": "64 ซม.³",
+          "explanation": "V = 4 × 4 × 4 = 64 ซม.³",
+          "correct_answer": "64 ซม.³",
+          "explanation_th": "V = 4 × 4 × 4 = 64 ซม.³"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ปริมาตร",
+  "preview_subtitle_th": "วัดพื้นที่และเส้นรอบ",
+  "cover_theme": "volume_g6",
+  "cover_emoji": "📦",
+  "cover_color": "purple",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "วัดพื้นที่และเส้นรอบ",
+  "learning_objective_th": "นักเรียนสามารถหาปริมาตรของปริซึม ทรงกระบอก พีระมิด และทรงกลมได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสเทน้ำจากทรงกระบอกใบหนึ่งลงในถ้วย น้ำเต็มถ้วยพอดี ทรงกระบอกมีรัศมี 5 ซม. สูง 12 ซม. ถ้วยมีปริมาตรเท่าไหร่? 🥤",
+  "concept_explanation_th": "ปริมาตรปริซึม = พื้นที่ฐาน × สูง ปริมาตรทรงกระบอก = π × รัศมี² × สูง ปริมาตรพีระมิด = 1/3 × พื้นที่ฐาน × สูง ปริมาตรทรงกลม = 4/3 × π × รัศมี³ หน่วยปริมาตรต้องเป็นลูกบาศก์หน่วย เช่น ลูกบาศก์เซนติเมตร (ซม.³)",
+  "singapore_math_model": {
+    "type": "area_model",
+    "model_type": "area_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "area_model",
+    "rows": 6,
+    "columns": 9,
+    "total": 54,
+    "label_th": "แผนภาพพื้นที่แบบช่อง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ปริมาตรทรงต่างๆ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ปริมาตรทรงกระบอก",
+      "question_th": "ทรงกระบอกมีรัศมี 3 ซม. สูง 10 ซม. มีปริมาตรเท่าไหร่? (π = 3.14)",
+      "solution_th": "3.14 × 3² × 10 = 3.14 × 9 × 10 = 282.6 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "ปริมาตรพีระมิด",
+      "question_th": "พีระมิดฐานสี่เหลี่ยมกว้าง 6 ซม. ยาว 6 ซม. สูง 9 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "1/3 × (6×6) × 9 = 1/3 × 36 × 9 = 108 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "ปริมาตรทรงกลม",
+      "question_th": "ทรงกลมมีรัศมี 6 ซม. มีปริมาตรเท่าไหร่? (π = 3.14)",
+      "solution_th": "4/3 × 3.14 × 6³ = 4/3 × 3.14 × 216 = 904.32 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบปริมาตร",
+      "question_th": "ปริซึมสี่เหลี่ยม 10×5×4 กับ ทรงกระบอก r=5, h=8 (π=3.14) อันไหนมีปริมาตรมากกว่า?",
+      "solution_th": "ปริซึม: 10×5×4 = 200 / ทรงกระบอก: 3.14×25×8 = 628 → ทรงกระบอกมากกว่า ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ใช้สูตรพีระมิดโดยลืม ÷3 ทำให้ปริมาตรมากเกินไป 3 เท่า",
+    "ยกกำลังสองรัศมีผิด หรือใช้เส้นผ่านศูนย์กลางแทนรัศมี",
+    "ไม่ใช้ π ที่กำหนดให้ เช่น ใช้ 22/7 แทน 3.14 ทำให้คำตอบไม่ตรงกับที่ต้องการ"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_volume_q01",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "easy",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q02",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q03",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "easy",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q04",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q05",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q06",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "medium",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q07",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q08",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g6_volume",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_volume_q09",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "hard",
+      "skill_tag": "g6_volume",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_volume_q10",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "hard",
+      "skill_tag": "g6_volume",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_volume_q01",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "easy",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q02",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q03",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "easy",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q04",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q05",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q06",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "medium",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q07",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g6_volume",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_volume_q08",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g6_volume",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_volume_q09",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "hard",
+      "skill_tag": "g6_volume",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_volume_q10",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "hard",
+      "skill_tag": "g6_volume",
+      "question_type": "challenge"
+    }
+  ]
+}

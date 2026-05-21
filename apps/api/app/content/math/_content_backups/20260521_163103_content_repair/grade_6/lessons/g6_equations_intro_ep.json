@@ -1,0 +1,1417 @@
+{
+  "lesson_id": "g6_equations_intro_ep",
+  "id": "g6_equations_intro_ep",
+  "grade_level": 6,
+  "title_th": "สมการ แก้หาค่าตัวแปร",
+  "objective_th": "นักเรียนสามารถเข้าใจความหมายของสมการ และแก้สมการเพื่อหาค่าตัวแปรได้",
+  "story_intro_th": "พี่อลิสมีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่? 🔵",
+  "explanation_steps": [
+    "สมการคือประโยคที่มีเครื่องหมาย = ทั้งสองข้าง",
+    "ตัวแปรคือตัวอักษรที่แทนจำนวนที่ยังไม่ทราบ เช่น x, y",
+    "การแก้สมการคือการหาค่าตัวแปรที่ทำให้สมการถูกต้อง",
+    "หลักการ: ทำสิ่งเดียวกันทั้งสองข้างของสมการ เพื่อให้ตัวแปรอยู่ข้างเดียว",
+    "ถ้าบวกไปข้างหนึ่ง ให้ลบออก ถ้าคูณไปข้างหนึ่ง ให้หารออก"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "แก้สมการบวก",
+      "question_th": "x + 7 = 15 หาค่า x",
+      "solution_th": "x = 15 - 7 → x = 8 ✅"
+    },
+    {
+      "title_th": "แก้สมการลบ",
+      "question_th": "x - 5 = 12 หาค่า x",
+      "solution_th": "x = 12 + 5 → x = 17 ✅"
+    },
+    {
+      "title_th": "แก้สมการคูณ",
+      "question_th": "3x = 24 หาค่า x",
+      "solution_th": "x = 24 ÷ 3 → x = 8 ✅"
+    },
+    {
+      "title_th": "แก้สมการหาร",
+      "question_th": "x ÷ 4 = 6 หาค่า x",
+      "solution_th": "x = 6 × 4 → x = 24 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ทำตรงข้าม เช่น บวกแทนลบ ทำให้สมการผิด",
+    "ลืมว่าต้องทำสิ่งเดียวกันทั้งสองข้างของสมการ",
+    "ไม่ตรวจคำตอบโดยแทนค่ากลับในสมการ"
+  ],
+  "hints": [
+    "สิ่งที่ทำข้างซ้ายของ = ต้องทำข้างขวาด้วย",
+    "ถ้าตัวแปรอยู่ข้างไหน ให้ทำสิ่งตรงข้ามเพื่อให้ตัวแปรอยู่ข้างเดียว",
+    "ตรวจคำตอบโดยแทนค่า x กลับในสมการเดิม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_equations_intro",
+  "skill_code": "g6_equations_intro_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏫 โรงเรียน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🍎 ผลไม้ มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🧸 ของเล่น มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🏪 ตลาด มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🐕 สัตว์เลี้ยง มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🌻 สวน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🌻 สวน",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎨 วาดรูป มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่📚 ห้องเรียน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎮 สนุกกับเพื่อน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล",
+      "story_theme_th": "เรียนรู้เรื่องequations introผ่านธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "🐣 เรื่องราวชวนคิด",
+          "content": "ที่🎉 งานเทศกาล มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "items_before": "⚽⚽⚽",
+          "items_added": "➕🔵🔵🔵🔵🔵",
+          "question": "มีลูกบอล x ลูก + เพื่อนให้ 5 ลูก = 12 ลูก หาค่า x",
+          "type": "emoji_counter"
+        },
+        {
+          "type": "bar_model",
+          "title": "🟦 ใช้แผนภาพช่วยคิด",
+          "content": "ใช้แท่งแสดงค่า x และ 5 รวมเป็น 12"
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล",
+      "story_theme_en": "เรียนรู้เรื่องequations introผ่านธีมงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "📖 Story Time",
+          "content": "ที่[School]  โรงเรียน มีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่?",
+          "data": {
+            "title_en": "Let's find out!",
+            "text_en": ""
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "✍️ เขียนเป็นประโยคคณิต",
+          "expression": "x + 5 = 12 → x = 12 - 5 → x = 7",
+          "title_en": "✍️ Write the solution",
+          "title_th": ""
+        },
+        {
+          "type": "mini_quiz",
+          "title": "🎯 ลองทำดู",
+          "question": "x + 8 = 15 หาค่า x",
+          "choices": [
+            "x = 5",
+            "x = 6",
+            "x = 7",
+            "x = 8"
+          ],
+          "answer": "x = 7",
+          "explanation": "x = 15 - 8 = 7",
+          "explanation_th": "คำนวณตามโจทย์แล้วได้คำตอบที่ถูกต้อง",
+          "correct_answer": "x = 7",
+          "data": {
+            "question_en": "",
+            "explanation_en": "",
+            "choices_en": [],
+            "answer_en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "สมการ",
+  "preview_subtitle_th": "หาค่าที่ยังไม่รู้ในสมการ",
+  "cover_theme": "equations_intro",
+  "cover_emoji": "🔢",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "หาค่าที่ยังไม่รู้ในสมการ",
+  "learning_objective_th": "นักเรียนสามารถเข้าใจความหมายของสมการ และแก้สมการเพื่อหาค่าตัวแปรได้",
+  "lesson_intro_th": "พี่อลิสมีลูกบอล x ลูก เพื่อนให้อีก 5 ลูก รวมเป็น 12 ลูก ถามว่า x คือเท่าไหร่? 🔵",
+  "concept_explanation_th": "สมการคือประโยคที่มีเครื่องหมาย = ทั้งสองข้าง ตัวแปรคือตัวอักษรที่แทนจำนวนที่ยังไม่ทราบ เช่น x, y การแก้สมการคือการหาค่าตัวแปรที่ทำให้สมการถูกต้อง หลักการ: ทำสิ่งเดียวกันทั้งสองข้างของสมการ เพื่อให้ตัวแปรอยู่ข้างเดียว ถ้าบวกไปข้างหนึ่ง ให้ลบออก ถ้าคูณไปข้างหนึ่ง ให้หารออก",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 18
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 12
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท สมการ แก้หาค่าตัวแปร ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "แก้สมการบวก",
+      "question_th": "x + 7 = 15 หาค่า x",
+      "solution_th": "x = 15 - 7 → x = 8 ✅"
+    },
+    {
+      "title_th": "แก้สมการลบ",
+      "question_th": "x - 5 = 12 หาค่า x",
+      "solution_th": "x = 12 + 5 → x = 17 ✅"
+    },
+    {
+      "title_th": "แก้สมการคูณ",
+      "question_th": "3x = 24 หาค่า x",
+      "solution_th": "x = 24 ÷ 3 → x = 8 ✅"
+    },
+    {
+      "title_th": "แก้สมการหาร",
+      "question_th": "x ÷ 4 = 6 หาค่า x",
+      "solution_th": "x = 6 × 4 → x = 24 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ทำตรงข้าม เช่น บวกแทนลบ ทำให้สมการผิด",
+    "ลืมว่าต้องทำสิ่งเดียวกันทั้งสองข้างของสมการ",
+    "ไม่ตรวจคำตอบโดยแทนค่ากลับในสมการ"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_equations_intro_q01",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q02",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q03",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q04",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q05",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q06",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q07",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q08",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_equations_intro_q09",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_equations_intro_q10",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_equations_intro_q01",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q02",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q03",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q04",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q05",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q06",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q07",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_equations_intro_q08",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 เท่ากับเท่าไร?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_equations_intro_q09",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_equations_intro_q10",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 เท่ากับเท่าไร?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Solving Equations",
+  "objective_en": "Students will be able to understand this math concept",
+  "story_intro_en": "Look! 5 + 12 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: แก้สมการบวก",
+      "question_en": "x + 7 = 15 x?",
+      "solution_en": "x = 15 - 7 → x = 8 ✅"
+    },
+    {
+      "title_en": "Example: แก้สมการลบ",
+      "question_en": "x - 5 = 12 x?",
+      "solution_en": "x = 12 + 5 → x = 17 ✅"
+    },
+    {
+      "title_en": "Example: แก้สมการคูณ",
+      "question_en": "3x = 24 x?",
+      "solution_en": "x = 24 ÷ 3 → x = 8 ✅"
+    },
+    {
+      "title_en": "Example: แก้สมการหาร",
+      "question_en": "x ÷ 4 = 6 x?",
+      "solution_en": "x = 6 × 4 → x = 24 ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ทำตรงข้าม เช่น บวกแทนลบ ทำให้สมการผิด",
+    "Mistake: ลืมว่าต้องทำสิ่งเดียวกันทั้งสองข้างของสมการ",
+    "Mistake: ไม่ตรวจคำตอบโดยแทนค่ากลับในสมการ"
+  ],
+  "hints_en": [
+    "Hint: สิ่งที่ทำข้างซ้ายของ = ต้องทำข้างขวาด้วย",
+    "Hint: ถ้าตัวแปรอยู่ข้างไหน ให้ทำสิ่งตรงข้ามเพื่อให้ตัวแปรอยู่ข้างเดียว",
+    "Hint: ตรวจคำตอบโดยแทนค่า x กลับในสมการเดิม"
+  ],
+  "explanation_steps_en": [
+    "Step: สมการคือประโยคที่มีเครื่องหมาย = ทั้งสองข้าง",
+    "Step: ตัวแปรคือตัวอักษรที่แทนจำนวนที่ยังไม่ทราบ เช่น x, y",
+    "Step: การแก้สมการคือการหาค่าตัวแปรที่ทำให้สมการถูกต้อง",
+    "Step: หลักการ: ทำสิ่งเดียวกันทั้งสองข้างของสมการ เพื่อให้ตัวแปรอยู่ข้างเดียว",
+    "Step: ถ้าบวกไปข้างหนึ่ง ให้ลบออก ถ้าคูณไปข้างหนึ่ง ให้หารออก"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g6_equations_intro_q01",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 ?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core",
+      "question_en": "234 + 158 ?",
+      "explanation_en": "234 + 158 = 392",
+      "choices_en": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "answer_en": "392"
+    },
+    {
+      "question_id": "g6_equations_intro_q02",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 ?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core",
+      "question_en": "600 - 275 ?",
+      "explanation_en": "600 - 275 = 325",
+      "choices_en": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "answer_en": "325"
+    },
+    {
+      "question_id": "g6_equations_intro_q03",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 ?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "easy",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core",
+      "question_en": "42 × 6 ?",
+      "explanation_en": "42 × 6 = 252",
+      "choices_en": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "answer_en": "252"
+    },
+    {
+      "question_id": "g6_equations_intro_q04",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 ?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core",
+      "question_en": "234 + 158 ?",
+      "explanation_en": "234 + 158 = 392",
+      "choices_en": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "answer_en": "392"
+    },
+    {
+      "question_id": "g6_equations_intro_q05",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 ?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core",
+      "question_en": "600 - 275 ?",
+      "explanation_en": "600 - 275 = 325",
+      "choices_en": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "answer_en": "325"
+    },
+    {
+      "question_id": "g6_equations_intro_q06",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 ?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core",
+      "question_en": "42 × 6 ?",
+      "explanation_en": "42 × 6 = 252",
+      "choices_en": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "answer_en": "252"
+    },
+    {
+      "question_id": "g6_equations_intro_q07",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 ?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "medium",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "core",
+      "question_en": "234 + 158 ?",
+      "explanation_en": "234 + 158 = 392",
+      "choices_en": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "answer_en": "392"
+    },
+    {
+      "question_id": "g6_equations_intro_q08",
+      "question_th": "600 - 275 เท่ากับเท่าไร?",
+      "question_text": "600 - 275 ?",
+      "choices": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "correct_answer": "325",
+      "answer": "325",
+      "explanation": "600 - 275 = 325",
+      "explanation_th": "600 - 275 = 325",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge",
+      "question_en": "600 - 275 ?",
+      "explanation_en": "600 - 275 = 325",
+      "choices_en": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "answer_en": "325"
+    },
+    {
+      "question_id": "g6_equations_intro_q09",
+      "question_th": "42 × 6 เท่ากับเท่าไร?",
+      "question_text": "42 × 6 ?",
+      "choices": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "correct_answer": "252",
+      "answer": "252",
+      "explanation": "42 × 6 = 252",
+      "explanation_th": "42 × 6 = 252",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge",
+      "question_en": "42 × 6 ?",
+      "explanation_en": "42 × 6 = 252",
+      "choices_en": [
+        "242",
+        "252",
+        "262",
+        "272"
+      ],
+      "answer_en": "252"
+    },
+    {
+      "question_id": "g6_equations_intro_q10",
+      "question_th": "234 + 158 เท่ากับเท่าไร?",
+      "question_text": "234 + 158 ?",
+      "choices": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct_answer": "392",
+      "answer": "392",
+      "explanation": "234 + 158 = 392",
+      "explanation_th": "234 + 158 = 392",
+      "difficulty": "hard",
+      "skill_tag": "g6_equations_intro",
+      "question_type": "challenge",
+      "question_en": "234 + 158 ?",
+      "explanation_en": "234 + 158 = 392",
+      "choices_en": [
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "answer_en": "392"
+    }
+  ],
+  "quiz_id": "g6_equations_intro_ep",
+  "generated_at": "2026-05-16T04:16:42.125269+00:00",
+  "source_lesson_id": "g6_equations_intro",
+  "needs_review": true
+}

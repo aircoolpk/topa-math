@@ -9,7 +9,7 @@ interface AuthState {
   user: AuthUser | null
   isLoading: boolean
   login: (email: string, password: string) => Promise<AuthUser>
-  register: (email: string, password: string) => Promise<void>
+  register: (email: string, password: string, referralToken?: string | null) => Promise<void>
   logout: () => void
   checkAuth: () => Promise<void>
 }
@@ -35,10 +35,10 @@ export const useAuthStore = create<AuthState>()(
         }
       },
 
-      register: async (email, password) => {
+      register: async (email, password, referralToken) => {
         set({ isLoading: true })
         try {
-          const data = await authApi.register(email, password)
+          const data = await authApi.register(email, password, referralToken)
           localStorage.setItem('access_token', data.access_token)
           const user = await authApi.me()
           set({ token: data.access_token, user, isLoading: false })

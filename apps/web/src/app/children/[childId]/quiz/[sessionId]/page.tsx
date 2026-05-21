@@ -5,6 +5,25 @@ import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
 import { learningApi, type Question } from '@/lib/api/learning'
+import { MascotAvatar } from '@/components/topa/TopaUI'
+import { defaultMascots } from '@/lib/topa-content'
+
+const QUESTION_COACH_LINES = [
+  'ลองอ่านโจทย์ช้า ๆ ก่อนนะ',
+  'มองหาตัวเลขสำคัญในโจทย์กัน!',
+  'อย่าลืมตรวจคำตอบก่อนกดส่ง',
+  'ข้อนี้ลองวาดภาพช่วยคิดดูสิ',
+]
+
+function stableCoach(questionId: string | undefined, index: number) {
+  const seedText = questionId || String(index)
+  const seed = seedText.split('').reduce((sum, char) => sum + char.charCodeAt(0), index)
+  return {
+    mascot: defaultMascots[seed % defaultMascots.length],
+    line: QUESTION_COACH_LINES[seed % QUESTION_COACH_LINES.length],
+    index: seed % defaultMascots.length,
+  }
+}
 
 export default function QuizPage() {
   const params = useParams()
@@ -78,6 +97,7 @@ export default function QuizPage() {
   }
 
   const q = questions[current]
+  const coach = stableCoach(q?.id, current)
 
   if (phase === 'intro') {
     return (
@@ -139,6 +159,15 @@ export default function QuizPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <div className="card shadow-lg">
+          <div className="mb-5 rounded-2xl border border-sky-100 bg-gradient-to-r from-sky-50 to-amber-50 p-4">
+            <div className="flex items-center gap-3">
+              <MascotAvatar mascot={coach.mascot} index={coach.index} size="sm" />
+              <div>
+                <p className="text-xs font-black uppercase tracking-wide text-sky-500">{coach.mascot.name} question coach</p>
+                <p className="text-sm font-bold text-slate-700">{coach.line}</p>
+              </div>
+            </div>
+          </div>
           <p className="text-gray-800 font-medium text-lg mb-6 leading-relaxed">{q?.question_text}</p>
 
           {q?.choices && q.choices.length > 0 ? (
