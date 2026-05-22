@@ -17,6 +17,8 @@ from app.services.content_quality import content_quality_report
 from app.services.lesson_content import (
     CONTENT_ROOT,
     find_lesson_file,
+    list_canonical_lessons,
+    list_canonical_tests,
     list_lessons as list_content_lessons,
     list_questions as list_content_questions,
     normalize_lesson_visual_blocks,
@@ -1355,10 +1357,43 @@ def lessons(
     class_level: int | None = Query(default=None),
     status: str | None = Query(default=None),
     search: str | None = Query(default=None),
+    program_type: str | None = Query(default=None),
+    language: str | None = Query(default=None),
     db: Session = Depends(get_db),
     _admin=Depends(require_admin),
 ):
     requested_grade = grade_level or grade or level or class_level
+    requested_program = (program_type or language or "").upper()
+    if requested_program in {"TH", "THP", "EP"}:
+        canonical_items = []
+        for item in list_canonical_lessons("EP" if requested_program == "EP" else "TH", grade=requested_grade, include_admin_status=True):
+            if status and str(item.get("status") or "").lower() != status.lower():
+                continue
+            if search:
+                query = search.lower()
+                if query not in str(item.get("lesson_id") or "").lower() and query not in str(item.get("title") or "").lower():
+                    continue
+            canonical_items.append(
+                {
+                    **item,
+                    "grade": item.get("grade_level"),
+                    "subject": "math",
+                    "topic": item.get("topic_code"),
+                    "published_status": item.get("status"),
+                    "completeness_score": 100 if item.get("student_visible") else 0,
+                    "quiz_questions_count": None,
+                    "validation_errors": [],
+                    "is_mock": False,
+                    "has_test": item.get("has_approved_test"),
+                    "approved_test_count": 1 if item.get("has_approved_test") else 0,
+                    "student_visibility_warning": item.get("student_hidden_reason") or "",
+                }
+            )
+        return {
+            "lessons": canonical_items,
+            "total": len(canonical_items),
+            "active_filters": {"grade": requested_grade, "grade_level": requested_grade, "status": status, "search": search, "program_type": requested_program},
+        }
     quality_by_id = _lesson_validation_map()
     rows = db.execute(
         select(Lesson, Skill, Subject)
@@ -1690,6 +1725,16 @@ def admin_content_lessons(
 ):
     """List all tracked lessons with their status metadata."""
     requested_grade = grade_level or grade or level or class_level
+    if language in {"TH", "THP", "EP"}:
+        items = list_canonical_lessons("EP" if language == "EP" else "TH", grade=requested_grade, include_admin_status=True)
+        if status:
+            items = [item for item in items if str(item.get("status") or "").lower() == status.lower()]
+        if topic:
+            items = [item for item in items if str(item.get("topic_code") or "") == topic]
+        if search:
+            query = search.lower()
+            items = [item for item in items if query in str(item.get("lesson_id") or "").lower() or query in str(item.get("title") or "").lower()]
+        return {"lessons": items, "total": len(items)}
     all_status = load_lessons_status()
     all_tests_status = load_tests_status()
     items = []
@@ -1878,6 +1923,11 @@ def admin_content_tests(
 ):
     """List all tracked tests with their status metadata."""
     requested_grade = grade_level or grade or level or class_level
+    if language in {"TH", "THP", "EP"}:
+        items = list_canonical_tests("EP" if language == "EP" else "TH", grade=requested_grade, lesson_id=lesson_id, approved_only=False)
+        if status:
+            items = [item for item in items if str(item.get("status") or "").lower() == status.lower()]
+        return {"tests": items, "total": len(items)}
     all_status = load_tests_status()
     items = []
     for question in list_content_questions(grade_level=requested_grade, lesson_id=lesson_id):

@@ -248,6 +248,222 @@ def _base_lesson_id(payload: dict[str, Any], path: Path | None = None) -> str:
     return lesson_id
 
 
+def base_lesson_id(value: str | dict[str, Any], path: Path | None = None) -> str:
+    """Return the cross-program lesson id without TH/EP suffixes."""
+    if isinstance(value, dict):
+        return _base_lesson_id(value, path)
+    lesson_id = str(value or "").strip()
+    for suffix in ("_thp", "_th", "_ep"):
+        if lesson_id.lower().endswith(suffix):
+            return lesson_id[: -len(suffix)]
+    return lesson_id
+
+
+def _canonical_lesson_id(payload: dict[str, Any], path: Path) -> str:
+    return str(payload.get("lesson_id") or payload.get("id") or path.stem).strip() or path.stem
+
+
+def _status_is_student_visible(status: dict[str, Any]) -> bool:
+    return str(status.get("status") or "").lower() == "approved"
+
+
+def _question_id(path: Path, question: dict[str, Any], index: int) -> str:
+    return str(question.get("question_id") or question.get("id") or f"{path.stem}_q{index + 1:03d}")
+
+
+def _question_text(question: dict[str, Any], program: str) -> str:
+    if program_alias(program) == "EP":
+        return str(
+            question.get("question_text_en")
+            or question.get("question_en")
+            or question.get("question_text")
+            or question.get("question")
+            or ""
+        )
+    return str(
+        question.get("question_text_th")
+        or question.get("question_th")
+        or question.get("question_text")
+        or question.get("question")
+        or ""
+    )
+
+
+def _question_lesson_id(path: Path, question: dict[str, Any]) -> str:
+    return str(question.get("lesson_id") or path.stem)
+
+
+def _question_program(path: Path, question: dict[str, Any]) -> str:
+    raw = question.get("program") or question.get("program_type") or question.get("content_program_type")
+    if raw:
+        return program_alias(raw)
+    return program_alias("EP" if path.stem.lower().endswith("_ep") else "TH")
+
+
+def _canonical_test_rows(
+    *,
+    program: str,
+    grade: int | None = None,
+    lesson_id: str | None = None,
+    approved_only: bool = True,
+) -> list[tuple[Path, int | None, dict[str, Any], int]]:
+    from app.services.content_status import load_tests_status
+
+    requested_program = program_alias(program)
+    requested_base = base_lesson_id(lesson_id or "") if lesson_id else None
+    statuses = load_tests_status()
+    rows: list[tuple[Path, int | None, dict[str, Any], int]] = []
+    for path in _quiz_files():
+        grade_match = re.search(r"grade_(\d+)", str(path))
+        row_grade = int(grade_match.group(1)) if grade_match else None
+        if grade is not None and row_grade != grade:
+            continue
+        if program_alias(_question_program(path, {})) != requested_program and path.stem.lower().endswith("_ep") != (requested_program == "EP"):
+            continue
+        for index, question in enumerate(_load_question_rows(path)):
+            if not isinstance(question, dict):
+                continue
+            row_lesson_id = _question_lesson_id(path, question)
+            if requested_base and base_lesson_id(row_lesson_id) != requested_base:
+                continue
+            if program_alias(_question_program(path, question)) != requested_program:
+                continue
+            question_id = _question_id(path, question, index)
+            if approved_only and not _status_is_student_visible(statuses.get(question_id, {})):
+                continue
+            rows.append((path, row_grade, question, index))
+    return rows
+
+
+def list_canonical_lessons(
+    program: str,
+    grade: int | None = None,
+    include_admin_status: bool = False,
+) -> list[dict[str, Any]]:
+    """List file-backed lesson content by program using sidecar approval status.
+
+    This is the shared source used by admin and student surfaces. It never
+    cross-falls back between TH and EP.
+    """
+    from app.services.content_status import get_lesson_status
+
+    requested_program = program_alias(program)
+    items: list[dict[str, Any]] = []
+    for path in _lesson_files():
+        payload = _read_json(path)
+        if not payload:
+            continue
+        lesson_id = _canonical_lesson_id(payload, path)
+        lesson_grade = int(payload.get("grade_level") or 0)
+        lesson_program = lesson_program_alias(payload)
+        if lesson_program != requested_program:
+            continue
+        if grade is not None and lesson_grade != grade:
+            continue
+        status = get_lesson_status(lesson_id)
+        approved = _status_is_student_visible(status)
+        if not include_admin_status and not approved:
+            continue
+        test_rows = _canonical_test_rows(program=requested_program, grade=lesson_grade, lesson_id=lesson_id, approved_only=True)
+        title = payload.get("title_th") if requested_program == "TH" else (payload.get("title_en") or payload.get("title_th"))
+        item = {
+            "lesson_id": lesson_id,
+            "id": lesson_id,
+            "base_lesson_id": base_lesson_id(payload, path),
+            "program": requested_program,
+            "program_type": requested_program,
+            "grade_level": lesson_grade,
+            "title": title or lesson_id,
+            "title_th": payload.get("title_th") or "",
+            "title_en": payload.get("title_en") or "",
+            "topic_code": payload.get("topic_code") or base_lesson_id(payload, path),
+            "skill_code": payload.get("skill_code") or payload.get("topic_code") or lesson_id,
+            "estimated_minutes": int(payload.get("estimated_minutes") or 5),
+            "student_visible": approved,
+            "approved": approved,
+            "has_approved_test": bool(test_rows),
+            "test_bank_source": str(test_rows[0][0]) if test_rows else None,
+            "source_path": str(path),
+        }
+        if include_admin_status:
+            reason = ""
+            if not approved:
+                reason = f"status={status.get('status', 'missing') or 'missing'}"
+            item.update(
+                {
+                    "language": requested_program,
+                    "status": str(status.get("status") or "needs_review").lower(),
+                    "reviewer_note": status.get("reviewer_note", ""),
+                    "approved_by": status.get("approved_by", ""),
+                    "approved_at": status.get("approved_at", ""),
+                    "qa_flags": status.get("qa_flags", 0),
+                    "updated_at": status.get("updated_at", ""),
+                    "student_hidden_reason": reason,
+                }
+            )
+        items.append(item)
+    return sorted(items, key=lambda item: (item["grade_level"], item["base_lesson_id"], item["program"]))
+
+
+def get_canonical_lesson(lesson_id: str, program: str) -> tuple[Path, dict[str, Any]] | None:
+    requested_program = program_alias(program)
+    requested_base = base_lesson_id(lesson_id)
+    for path in _lesson_files():
+        payload = _read_json(path)
+        if not payload or lesson_program_alias(payload) != requested_program:
+            continue
+        actual_id = _canonical_lesson_id(payload, path)
+        if lesson_id in {actual_id, path.stem} or base_lesson_id(payload, path) == requested_base:
+            payload.setdefault("lesson_id", actual_id)
+            payload.setdefault("id", actual_id)
+            return path, payload
+    return None
+
+
+def list_canonical_tests(
+    program: str,
+    grade: int | None = None,
+    lesson_id: str | None = None,
+    approved_only: bool = True,
+) -> list[dict[str, Any]]:
+    from app.services.content_status import get_test_status
+
+    requested_program = program_alias(program)
+    items: list[dict[str, Any]] = []
+    for path, row_grade, question, index in _canonical_test_rows(program=requested_program, grade=grade, lesson_id=lesson_id, approved_only=approved_only):
+        question_id = _question_id(path, question, index)
+        status = get_test_status(question_id)
+        row_lesson_id = _question_lesson_id(path, question)
+        items.append(
+            {
+                "test_id": question_id,
+                "question_id": question_id,
+                "lesson_id": row_lesson_id,
+                "base_lesson_id": base_lesson_id(row_lesson_id),
+                "program": requested_program,
+                "language": requested_program,
+                "grade_level": row_grade,
+                "question": _question_text(question, requested_program),
+                "choices": question.get("choices") or [],
+                "correct_answer": question.get("correct_answer") or question.get("answer"),
+                "explanation": question.get("explanation_en") if requested_program == "EP" else (question.get("explanation_th") or question.get("explanation")),
+                "difficulty": question.get("difficulty") or "medium",
+                "skill_tag": question.get("skill_tag") or question.get("skill_code"),
+                "status": str(status.get("status") or "needs_review").lower(),
+                "source_path": str(path),
+            }
+        )
+    return items
+
+
+def get_canonical_test_bank(lesson_id: str, program: str) -> list[dict[str, Any]]:
+    return list_canonical_tests(program=program, lesson_id=lesson_id, approved_only=True)
+
+
+def has_approved_test(lesson_id: str, program: str) -> bool:
+    return bool(get_canonical_test_bank(lesson_id, program))
+
+
 def _lesson_identity_matches(payload: dict[str, Any], path: Path, lesson_id: str) -> bool:
     candidates = {
         path.stem,

@@ -922,7 +922,7 @@ export default function LessonPage() {
     if (!lesson) return
     setTestLoading(true)
     try {
-      const { session_id } = await meApi.startLessonTest(lesson.lesson_id)
+      const { session_id } = await meApi.startLessonTest(lesson.lesson_id, programType)
       router.push(`/dashboard/tests/${session_id}`)
     } catch {
       setTestLoading(false)

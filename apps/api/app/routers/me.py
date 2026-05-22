@@ -52,8 +52,13 @@ from app.services.content_quality import lesson_program_type, validate_lesson_pa
 from app.services.content_status import get_test_status, is_lesson_approved, is_test_approved, load_tests_status
 from app.services.foundation import can_access_program, is_paid, recommended_foundation_grade, remaining_free_tests
 from app.services.lesson_content import (
+    base_lesson_id,
     find_lesson_file,
+    get_canonical_lesson,
+    get_canonical_test_bank,
+    has_approved_test as canonical_has_approved_test,
     lesson_program_alias,
+    list_canonical_lessons,
     list_questions as list_content_questions,
     normalize_lesson_visual_blocks,
     program_alias,
@@ -184,6 +189,24 @@ def _load_json_lesson(lesson_id: str) -> dict | None:
     return payload
 
 
+def _load_canonical_json_lesson(lesson_id: str, program_type: str) -> dict | None:
+    found = get_canonical_lesson(lesson_id, program_type)
+    if not found:
+        return None
+    path, payload = found
+    payload = dict(payload)
+    payload.setdefault("lesson_id", path.stem)
+    payload.setdefault("id", path.stem)
+    if not payload.get("grade_level"):
+        for grade in range(1, 7):
+            if path.parent.parent.name == f"grade_{grade}":
+                payload["grade_level"] = grade
+                break
+    payload.setdefault("topic_code", base_lesson_id(payload, path))
+    payload.setdefault("skill_code", payload.get("topic_code") or path.stem)
+    return payload
+
+
 def _quiz_payload_for_lesson(payload: dict) -> dict | None:
     lesson_id = str(payload.get("lesson_id") or payload.get("id") or "")
     quiz_id = str(payload.get("quiz_id") or lesson_id)
@@ -308,11 +331,11 @@ def _lesson_has_test_content(payload: dict, quiz_payload: dict | None = None) ->
 
 
 def _child_lesson_track(child: ChildProfile) -> str:
-    return "EP" if (child.program_type or "THP").upper() == "EP" else "THP"
+    return "EP" if (child.program_type or "THP").upper() == "EP" else "TH"
 
 
 def _lesson_track_matches_child(payload: dict, child: ChildProfile) -> bool:
-    return lesson_program_type(payload) == _child_lesson_track(child)
+    return program_alias(lesson_program_type(payload)) == _child_lesson_track(child)
 
 
 def _lesson_has_displayable_content(payload: dict) -> bool:
@@ -333,7 +356,7 @@ def _json_lesson_filter_reason(payload: dict, child: ChildProfile) -> str | None
     except (TypeError, ValueError):
         grade_level = 0
     expected_track = _child_lesson_track(child)
-    actual_track = lesson_program_type(payload)
+    actual_track = program_alias(lesson_program_type(payload))
     if actual_track != expected_track:
         return f"language_mismatch expected={expected_track} actual={actual_track}"
     if grade_level not in BETA_READY_GRADES:
@@ -556,7 +579,7 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
     is_locked = not is_beta_visible_grade and not paid and not is_free
     lesson_id = str(payload.get("lesson_id") or payload.get("id"))
     description = payload.get("description_th") or payload.get("objective_th") or payload.get("story_intro_th") or ""
-    has_approved_test = _lesson_has_approved_test_content(lesson_id, str(payload.get("quiz_id") or lesson_id))
+    has_approved_test = canonical_has_approved_test(lesson_id, lesson_program_alias(payload))
     has_test = bool(payload.get("has_test", True)) or has_approved_test
     return {
         "lesson_id": lesson_id,
@@ -596,12 +619,10 @@ def _json_lesson_sections(child: ChildProfile, include_grades: set[int] | None =
         section_grades.update(max(1, min(6, int(grade))) for grade in include_grades)
     section_grades = sorted(section_grades)
     payloads: list[dict] = []
+    child_program = _child_lesson_track(child)
     for grade in section_grades:
-        directory = CONTENT_ROOT / f"grade_{grade}" / "lessons"
-        if not directory.exists():
-            continue
-        for path in sorted(directory.glob("*.json")):
-            payload = _load_json_lesson(path.stem)
+        for item in list_canonical_lessons(child_program, grade=grade, include_admin_status=False):
+            payload = _load_canonical_json_lesson(str(item["lesson_id"]), child_program)
             if payload:
                 payloads.append(payload)
     for payload in payloads:
@@ -664,7 +685,7 @@ def _with_variant_payload(base: dict, variant: dict | None) -> dict:
 def _json_lesson_content_payload(payload: dict, item: dict, variant: dict | None = None) -> dict:
     lesson_id = str(payload.get("lesson_id") or payload.get("id"))
     quiz_id = str(payload.get("quiz_id") or lesson_id)
-    has_approved_test = _lesson_has_approved_test_content(lesson_id, quiz_id)
+    has_approved_test = canonical_has_approved_test(lesson_id, lesson_program_alias(payload))
     return _with_variant_payload({
         "lesson_id": lesson_id,
         "id": lesson_id,
@@ -1428,6 +1449,8 @@ def _mark_lesson_question_metadata(questions: list[Question], lesson: Lesson, sk
 
 
 def _lesson_has_approved_test_content(lesson_id: str, quiz_id: str | None = None) -> bool:
+    if canonical_has_approved_test(lesson_id, "EP" if str(lesson_id).lower().endswith("_ep") else "TH"):
+        return True
     if quiz_id and is_test_approved(quiz_id):
         return True
     all_status = load_tests_status()
@@ -1450,11 +1473,14 @@ def _ensure_lesson_content_questions(db: Session, lesson: Lesson, skill: Skill, 
     content = lesson.content or {}
     topic_code = str(content.get("topic_code") or lesson_id)
     skill_code = str(content.get("skill_code") or skill.code)
-    rows = _content_question_rows_for_lesson({"lesson_id": lesson_id, "grade_level": skill.grade_level})
+    content_program = lesson_program_alias(content)
+    rows = get_canonical_test_bank(lesson_id, content_program)
+    if not rows:
+        rows = _content_question_rows_for_lesson({"lesson_id": lesson_id, "grade_level": skill.grade_level}, approved_only=True)
     materialized: list[Question] = []
     seen_question_ids: set[str] = set()
     for index, row in enumerate(rows, start=1):
-        question_id = str(row.get("question_id") or row.get("id") or f"{lesson_id}_q{index:03d}")
+        question_id = str(row.get("question_id") or row.get("id") or row.get("test_id") or f"{lesson_id}_q{index:03d}")
         if question_id in seen_question_ids:
             continue
         seen_question_ids.add(question_id)
@@ -1463,11 +1489,9 @@ def _ensure_lesson_content_questions(db: Session, lesson: Lesson, skill: Skill, 
             continue
         choices = _choices_list(row.get("choices"))
         question_text = str(
-            row.get("question")
-            or row.get("question_text")
-            or row.get("question_text_th")
-            or row.get("question_text_en")
-            or row.get("question_en")
+            (row.get("question_text_en") or row.get("question_en") or row.get("question") or row.get("question_text"))
+            if content_program == "EP"
+            else (row.get("question_text_th") or row.get("question_th") or row.get("question") or row.get("question_text"))
             or ""
         ).strip()
         correct_answer = str(row.get("correct_answer") or row.get("answer") or "").strip()
@@ -2319,12 +2343,13 @@ def lessons(
     grade_level: int | None = Query(default=None, ge=1, le=6),
     level: int | None = Query(default=None, ge=1, le=6),
     class_level: int | None = Query(default=None, ge=1, le=6),
+    program_type: str | None = Query(default=None),
     db: Session = Depends(get_db),
     user: User = Depends(current_user),
 ) -> dict:
     child = _profile(db, user)
     requested_grade = grade_level or grade or level or class_level
-    include_grades = {requested_grade} if requested_grade is not None else None
+    include_grades = {requested_grade} if requested_grade is not None else set(range(1, 7))
     sections = _filter_lesson_sections_by_grade(_dashboard_lessons(db, child, include_grades=include_grades), requested_grade)
     previous_grade = max(1, int(child.grade_level or 1) - 1)
     review_rows = [
@@ -2354,39 +2379,27 @@ def lesson_detail(
     user: User = Depends(current_user),
 ) -> dict:
     child = _profile(db, user)
-    if program_type is None:
-        json_payload = _load_json_lesson(lesson_id)
-        if json_payload:
-            if not _json_lesson_visible_for_child(json_payload, child):
-                raise HTTPException(status_code=404, detail="Lesson not found")
-            item = _json_lesson_detail_item(json_payload, child)
-            public_id = str(json_payload.get("lesson_id") or json_payload.get("id") or lesson_id)
-            variant = _select_lesson_variant(db, child, public_id, json_payload, record_view=True)
-            db.commit()
-            response = _json_lesson_content_payload(json_payload, item, variant)
-            response["visual_blocks"] = normalize_lesson_visual_blocks(response.get("visual_blocks"))
-            return response
-
+    requested_program = _child_lesson_track(child)
     if program_type is not None:
         raw_program = str(program_type).strip().upper()
         if raw_program not in {"TH", "THP", "EP"}:
             raise HTTPException(status_code=400, detail="program_type must be TH or EP")
         requested_program = program_alias(raw_program)
-        found = find_lesson_file(lesson_id, requested_program)
-        if found:
-            _path, json_payload, ep_fallback = found
-            if ep_fallback:
-                raise HTTPException(status_code=404, detail="Requested program lesson not found")
-            if not _json_lesson_visible_for_child(json_payload, child):
-                raise HTTPException(status_code=404, detail="Lesson not found")
-            item = _json_lesson_detail_item(json_payload, child)
-            public_id = str(json_payload.get("lesson_id") or json_payload.get("id") or lesson_id)
-            variant = _select_lesson_variant(db, child, f"{requested_program}:{public_id}", json_payload, record_view=True)
-            db.commit()
-            response = _json_lesson_content_payload(json_payload, item, variant)
-            response["program_type"] = requested_program
-            response["visual_blocks"] = normalize_lesson_visual_blocks(response.get("visual_blocks"))
-            return response
+
+    json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
+    if json_payload:
+        program_matches_request = lesson_program_alias(json_payload) == requested_program
+        lesson_public_id = str(json_payload.get("lesson_id") or json_payload.get("id") or lesson_id)
+        if not program_matches_request or not is_lesson_approved(lesson_public_id):
+            raise HTTPException(status_code=404, detail="Lesson not found")
+        item = _json_lesson_detail_item(json_payload, child)
+        public_id = lesson_public_id
+        variant = _select_lesson_variant(db, child, f"{requested_program}:{public_id}", json_payload, record_view=True)
+        db.commit()
+        response = _json_lesson_content_payload(json_payload, item, variant)
+        response["program_type"] = requested_program
+        response["visual_blocks"] = normalize_lesson_visual_blocks(response.get("visual_blocks"))
+        return response
 
     lesson = _lesson_by_public_id(db, lesson_id)
     if lesson and _lesson_content_is_real(lesson.content):
@@ -2398,7 +2411,9 @@ def lesson_detail(
         db.commit()
         return _lesson_content_payload(lesson, item, variant)
 
-    json_payload = _load_json_lesson(lesson_id)
+    requested_program = program_alias(program_type) if program_type else _child_lesson_track(child)
+    json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
+    canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
     if json_payload:
         if not _json_lesson_visible_for_child(json_payload, child):
             raise HTTPException(status_code=404, detail="Lesson not found")
@@ -2518,10 +2533,13 @@ def get_test_questions(test_id: str, db: Session = Depends(get_db), user: User =
 @router.post("/lessons/{lesson_id}/start")
 def start_lesson(lesson_id: str, db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
     child = _profile(db, user)
-    json_payload = _load_json_lesson(lesson_id)
-    if json_payload and not _json_lesson_visible_for_child(json_payload, child):
+    requested_program = _child_lesson_track(child)
+    json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
+    canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
+    if json_payload and (lesson_program_alias(json_payload) != requested_program or not is_lesson_approved(canonical_lesson_id)):
+        logger.warning("lesson_start_hidden lesson_id=%s canonical_lesson_id=%s requested_program=%s child_program=%s", lesson_id, canonical_lesson_id, requested_program, child.program_type)
         raise HTTPException(status_code=404, detail="Lesson not found")
-    lesson = _ensure_json_lesson_in_db(db, json_payload) if json_payload else _lesson_by_public_id(db, lesson_id)
+    lesson = _ensure_json_lesson_in_db(db, json_payload) if json_payload else _lesson_by_public_id(db, canonical_lesson_id)
     if not lesson:
         raise HTTPException(status_code=404, detail="Lesson not found")
     if not _db_lesson_visible_for_child(lesson, child):
@@ -2530,11 +2548,11 @@ def start_lesson(lesson_id: str, db: Session = Depends(get_db), user: User = Dep
         item = _json_lesson_item(json_payload, child, 0 if int(json_payload.get("grade_level") or 0) == child.grade_level else None)
     else:
         try:
-            item = _lesson_access_item(db, child, lesson_id)
+            item = _lesson_access_item(db, child, canonical_lesson_id)
         except HTTPException:
             if not is_paid(child):
                 raise
-            item = _db_lesson_detail_item(db, lesson, child, lesson_id)
+            item = _db_lesson_detail_item(db, lesson, child, canonical_lesson_id)
     if item["is_locked"]:
         raise HTTPException(status_code=403, detail="Lesson is locked")
     today = _thai_now().date()
@@ -2563,7 +2581,12 @@ def start_lesson(lesson_id: str, db: Session = Depends(get_db), user: User = Dep
 
 
 @router.post("/lessons/{lesson_id}/test/start")
-def start_lesson_test(lesson_id: str, db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
+def start_lesson_test(
+    lesson_id: str,
+    program_type: str | None = Query(default=None),
+    db: Session = Depends(get_db),
+    user: User = Depends(current_user),
+) -> dict:
     child = _profile(db, user)
     if not is_paid(child) and remaining_free_tests(child) <= 0:
         raise HTTPException(
@@ -2572,31 +2595,36 @@ def start_lesson_test(lesson_id: str, db: Session = Depends(get_db), user: User 
         )
     if not is_paid(child) and remaining_free_tests(child) <= 0:
         raise HTTPException(status_code=403, detail="ใช้สิทธิ์เทสฟรีครบแล้ว กรุณาอัปเกรดเพื่อทำเทสเพิ่มเติม")
-    json_payload = _load_json_lesson(lesson_id)
-    if json_payload and not _json_lesson_visible_for_child(json_payload, child):
+    requested_program = program_alias(program_type) if program_type else _child_lesson_track(child)
+    json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
+    canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
+    if json_payload and (lesson_program_alias(json_payload) != requested_program or not is_lesson_approved(canonical_lesson_id)):
+        logger.warning("lesson_test_start_hidden lesson_id=%s canonical_lesson_id=%s requested_program=%s child_program=%s", lesson_id, canonical_lesson_id, requested_program, child.program_type)
         raise HTTPException(status_code=404, detail={"code": "INVALID_LESSON_ID", "message": "Lesson not found", "lesson_id": lesson_id})
-    if json_payload and not _lesson_has_test_content(json_payload, _quiz_payload_for_lesson(json_payload)):
+    if json_payload and not canonical_has_approved_test(canonical_lesson_id, requested_program):
+        logger.warning("lesson_test_start_no_canonical_bank lesson_id=%s canonical_lesson_id=%s program=%s", lesson_id, canonical_lesson_id, requested_program)
         raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "ยังไม่มีแบบทดสอบสำหรับบทเรียนนี้", "lesson_id": lesson_id})
-    lesson = _ensure_json_lesson_in_db(db, json_payload) if json_payload else _lesson_by_public_id(db, lesson_id)
+    lesson = _ensure_json_lesson_in_db(db, json_payload) if json_payload else _lesson_by_public_id(db, canonical_lesson_id)
     if not lesson:
         raise HTTPException(status_code=404, detail={"code": "INVALID_LESSON_ID", "message": "Lesson not found", "lesson_id": lesson_id})
     if not json_payload and not _db_lesson_visible_for_child(lesson, child):
         raise HTTPException(status_code=404, detail={"code": "INVALID_LESSON_ID", "message": "Lesson not found", "lesson_id": lesson_id})
-    quiz_id = (lesson.content or {}).get("quiz_id") or lesson_id
-    if not _lesson_has_approved_test_content(lesson_id, str(quiz_id)):
+    quiz_id = (lesson.content or {}).get("quiz_id") or canonical_lesson_id
+    if not canonical_has_approved_test(canonical_lesson_id, requested_program):
+        logger.warning("lesson_test_start_unapproved_bank lesson_id=%s quiz_id=%s program=%s", canonical_lesson_id, quiz_id, requested_program)
         raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "ยังไม่มีแบบทดสอบสำหรับบทเรียนนี้", "lesson_id": lesson_id})
     try:
-        item = _lesson_access_item(db, child, lesson_id)
+        item = _lesson_access_item(db, child, canonical_lesson_id)
     except HTTPException:
         if not is_paid(child):
             raise
-        item = _db_lesson_detail_item(db, lesson, child, lesson_id)
+        item = _db_lesson_detail_item(db, lesson, child, canonical_lesson_id)
     if item["is_locked"]:
         raise HTTPException(status_code=403, detail={"code": "PLAN_REQUIRED", "message": "บทเรียน/แบบทดสอบนี้ต้องอัปเกรด Plus", "lesson_id": lesson_id})
     skill = db.get(Skill, lesson.skill_id)
     grade_level = skill.grade_level if skill else child.grade_level
     if skill:
-        direct_questions = _ensure_lesson_content_questions(db, lesson, skill, lesson_id)
+        direct_questions = _ensure_lesson_content_questions(db, lesson, skill, canonical_lesson_id)
         if len(direct_questions) >= 5:
             questions, rotation_metadata = _select_rotating_ratio_questions(
                 db,
@@ -2604,14 +2632,14 @@ def start_lesson_test(lesson_id: str, db: Session = Depends(get_db), user: User 
                 direct_questions,
                 10,
                 rotation_scope="lesson",
-                rotation_key=f"lesson:{lesson_id}",
-                lesson_id=lesson_id,
+                rotation_key=f"lesson:{canonical_lesson_id}",
+                lesson_id=canonical_lesson_id,
                 fill_fallbacks=[direct_questions],
-                context=f"lesson-{lesson_id}",
+                context=f"lesson-{canonical_lesson_id}",
             )
         else:
-            questions, rotation_metadata = _select_lesson_test_questions_rotating(db, child, lesson, skill, 10)
-            _mark_lesson_question_metadata(questions, lesson, skill)
+            logger.warning("lesson_test_start_insufficient_canonical_questions lesson_id=%s program=%s count=%s", canonical_lesson_id, requested_program, len(direct_questions))
+            raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "Approved test bank has too few questions", "lesson_id": canonical_lesson_id})
     else:
         direct_questions = []
         question_pool = db.scalars(select(Question).where(Question.grade_level == grade_level, Question.status == "approved")).all()
@@ -2621,17 +2649,16 @@ def start_lesson_test(lesson_id: str, db: Session = Depends(get_db), user: User 
             question_pool,
             10,
             rotation_scope="lesson",
-            rotation_key=f"lesson:{lesson_id}",
-            lesson_id=lesson_id,
+            rotation_key=f"lesson:{canonical_lesson_id}",
+            lesson_id=canonical_lesson_id,
             fill_fallbacks=[question_pool],
-            context=f"lesson-{lesson_id}",
+            context=f"lesson-{canonical_lesson_id}",
         )
     if not direct_questions and len(questions) < 5:
         raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "ยังไม่มีแบบทดสอบสำหรับบทเรียนนี้", "lesson_id": lesson_id})
     if len(questions) < 5:
-        questions = _select_questions(db, grade_level, limit=10)
-        rotation_metadata = _session_ratio_metadata(questions)
-        rotation_metadata.update({"rotation_scope": "lesson", "rotation_key": f"lesson:{lesson_id}", "rotation_cycle": 1})
+        logger.warning("lesson_test_start_selected_too_few lesson_id=%s program=%s count=%s", canonical_lesson_id, requested_program, len(questions))
+        raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "Approved test bank has too few questions", "lesson_id": canonical_lesson_id})
     session = TestSession(
         child_profile_id=child.id,
         lesson_id=lesson.id,

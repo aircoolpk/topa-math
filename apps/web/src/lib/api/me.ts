@@ -385,8 +385,9 @@ export const meApi = {
   },
 
   /** Start a lesson test */
-  async startLessonTest(lessonId: string): Promise<{ session_id: string }> {
-    const res = await apiClient.post(`/me/lessons/${lessonId}/test/start`)
+  async startLessonTest(lessonId: string, programType?: 'TH' | 'EP'): Promise<{ session_id: string }> {
+    const params = programType ? { program_type: programType } : undefined
+    const res = await apiClient.post(`/me/lessons/${lessonId}/test/start`, undefined, { params })
     return res.data as { session_id: string }
   },
 
