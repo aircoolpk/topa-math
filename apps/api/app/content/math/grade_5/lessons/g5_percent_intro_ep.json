@@ -2,9 +2,9 @@
   "lesson_id": "g5_percent_intro_ep",
   "id": "g5_percent_intro_ep",
   "grade_level": 5,
-  "title_th": "เปอร์เซ็นต์ ใช้ในชีวิตจริง",
-  "objective_th": "นักเรียนสามารถเข้าใจความหมายของเปอร์เซ็นต์ และแปลงเป็นเศษส่วนหรือทศนิยมได้",
-  "story_intro_th": "ร้านขายของมีลดราคา 25% ถ้าราคาเดิม 400 บาท จะลดกี่บาท และราคาใหม่เท่าไหร่? 🏷️",
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
   "explanation_steps": [
     "เปอร์เซ็นต์ (%) หมายถึงต่อ 100 เช่น 25% = 25 ต่อ 100 = 1/4 = 0.25",
     "เปอร์เซ็นต์เป็นเศษส่วน: เอาเปอร์เซ็นต์หารด้วย 100 เช่น 75% = 75/100 = 3/4",
@@ -50,671 +50,53 @@
   "skill_code": "g5_percent_intro_ep",
   "lesson_variants": [
     {
-      "variant_id": "v01",
-      "variant_title_th": "🏫 โรงเรียน",
-      "story_theme_th": "เรื่องราวในโรงเรียน",
+      "variant_id": "g5_percent_intro_ep_01",
+      "variant_title_th": "Percents Variant 1",
+      "variant_title_en": "Percents Variant 1",
+      "story_theme_th": "Ton is learning Percents with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning Percents with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for Percents.",
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+          "title": "Story",
+          "content": "Ton is learning Percents with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
         },
         {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Percents. Use the model to get 30."
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
           "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
+            "11",
+            "24",
+            "28",
+            "32"
           ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🏫 โรงเรียน",
-      "story_theme_en": "เรื่องราวในโรงเรียน"
-    },
-    {
-      "variant_id": "v02",
-      "variant_title_th": "🍎 ผลไม้",
-      "story_theme_th": "เรื่องราวเกี่ยวกับผลไม้",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🍎 ผลไม้",
-      "story_theme_en": "เรื่องราวเกี่ยวกับผลไม้"
-    },
-    {
-      "variant_id": "v03",
-      "variant_title_th": "🧸 ของเล่น",
-      "story_theme_th": "เรื่องราวเกี่ยวกับของเล่น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🧸 ของเล่น",
-      "story_theme_en": "เรื่องราวเกี่ยวกับของเล่น"
-    },
-    {
-      "variant_id": "v04",
-      "variant_title_th": "🏪 ตลาด",
-      "story_theme_th": "เรื่องราวในตลาด",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🏪 ตลาด",
-      "story_theme_en": "เรื่องราวในตลาด"
-    },
-    {
-      "variant_id": "v05",
-      "variant_title_th": "🐕 สัตว์เลี้ยง",
-      "story_theme_th": "เรื่องราวเกี่ยวกับสัตว์เลี้ยง",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🐕 สัตว์เลี้ยง",
-      "story_theme_en": "เรื่องราวเกี่ยวกับสัตว์เลี้ยง"
-    },
-    {
-      "variant_id": "v06",
-      "variant_title_th": "🌻 สวน",
-      "story_theme_th": "เรื่องราวในสวน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🌻 สวน",
-      "story_theme_en": "เรื่องราวในสวน"
-    },
-    {
-      "variant_id": "v07",
-      "variant_title_th": "🎨 วาดรูป",
-      "story_theme_th": "เรื่องราวเกี่ยวกับการวาดรูป",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🎨 วาดรูป",
-      "story_theme_en": "เรื่องราวเกี่ยวกับการวาดรูป"
-    },
-    {
-      "variant_id": "v08",
-      "variant_title_th": "📚 ห้องเรียน",
-      "story_theme_th": "เรื่องราวในห้องเรียน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "📚 ห้องเรียน",
-      "story_theme_en": "เรื่องราวในห้องเรียน"
-    },
-    {
-      "variant_id": "v09",
-      "variant_title_th": "🎮 สนุกกับเพื่อน",
-      "story_theme_th": "เรื่องราวสนุกๆ กับเพื่อน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🎮 สนุกกับเพื่อน",
-      "story_theme_en": "เรื่องราวสนุกๆ กับเพื่อน"
-    },
-    {
-      "variant_id": "v10",
-      "variant_title_th": "🎉 งานเทศกาล",
-      "story_theme_th": "เรื่องราวในงานเทศกาล",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🎉 งานเทศกาล",
-      "story_theme_en": "เรื่องราวในงานเทศกาล"
-    },
-    {
-      "variant_id": "ep_v01",
-      "variant_title_en": "",
-      "story_theme_en": "",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
         }
       ]
     }
@@ -725,9 +107,9 @@
   "cover_emoji": "%",
   "cover_color": "orange",
   "access_type_hint": "free",
-  "status": "published",
+  "status": "approved",
   "quality_required": true,
-  "content_schema_version": "2.0",
+  "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
   "subtitle_th": "จำนวนที่มีจุดทศนิยม",
   "learning_objective_th": "นักเรียนสามารถเข้าใจความหมายของเปอร์เซ็นต์ และแปลงเป็นเศษส่วนหรือทศนิยมได้",
@@ -1151,8 +533,8 @@
       "question_type": "challenge"
     }
   ],
-  "title_en": "Percentages in Real Life",
-  "objective_en": "Students will be able to understand this math concept",
+  "title_en": "Percents",
+  "objective_en": "Learn Percents with a story, a model, a number sentence, and practice.",
   "story_intro_en": "Look! 25 + 400 — can you find the answer?",
   "worked_examples_en": [
     {
@@ -1472,55 +854,136 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "title": "Think Story",
-      "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+      "title": "Story",
+      "content": "Ton is learning Percents with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
     },
     {
-      "type": "visual_thinking",
-      "title": "Look First",
-      "content": "Check the paid money, the price, and the change.",
-      "data": {
-        "paid": 50,
-        "price": 23.75,
-        "change": 26.25,
-        "description_th": "Change = paid money - price"
-      }
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches Percents. Use the model to get 30."
     },
     {
       "type": "model_diagram",
       "title": "Use a Model",
-      "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-      "model_type": "bar_model",
-      "groups": [
-        {
-          "label": "price",
-          "value": 23.75
-        },
-        {
-          "label": "change",
-          "value": 26.25
-        }
-      ]
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
+      "cols": 6,
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "50 - 23.75 = 26.25 baht",
-      "content": "Line up decimal points, then subtract."
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
       "choices": [
-        "24.25 baht",
-        "25.25 baht",
-        "26.25 baht",
-        "27.25 baht"
+        "11",
+        "24",
+        "28",
+        "32"
       ],
-      "correct_answer": "26.25 baht",
-      "answer": "26.25 baht",
-      "explanation": "50.00 - 23.75 = 26.25 baht"
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
     }
-  ]
+  ],
+  "base_lesson_id": "g5_percent_intro",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Percents",
+  "topic": "percent",
+  "icon": "percent",
+  "story_variants": [
+    {
+      "variant_id": "g5_percent_intro_ep_01",
+      "status": "approved",
+      "title": "Percents Variant 1",
+      "story": "Ton is learning Percents with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Percents. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Percents.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Percents with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Percents. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Percents.",
+  "thai_support": ""
 }

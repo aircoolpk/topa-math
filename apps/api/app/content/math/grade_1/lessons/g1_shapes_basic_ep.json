@@ -2,9 +2,9 @@
   "lesson_id": "g1_shapes_basic_ep",
   "id": "g1_shapes_basic_ep",
   "grade_level": 1,
-  "title_th": "รู้จักรูปร่างพื้นฐาน",
-  "objective_th": "นักเรียนสามารถจำแนกรูปร่างพื้นฐาน เช่น วงกลม สามเหลี่ยม สี่เหลี่ยม และรู้จักคุณสมบัติเบื้องต้นของแต่ละรูป",
-  "story_intro_th": "พี่อลิสชวนสังเกตรูปร่างรอบตัว ว่ารูปแต่ละชนิดมีด้านและมุมต่างกันอย่างไร",
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
   "explanation_steps": [
     "วงกลม ไม่มีมุม มีขอบโค้งมน ขนาดเท่ากันทุกทิศทาง เช่น เหรียญบาท",
     "สามเหลี่ยม มี 3 ด้าน 3 มุม ด้านอาจยาวสั้นต่างกัน หรือเท่ากันก็ได้ เช่น เครื่องหมายห้าม",
@@ -45,347 +45,55 @@
   "skill_code": "g1_shapes_basic_ep",
   "lesson_variants": [
     {
-      "variant_id": "v01",
-      "variant_title_th": "รู้จักสามเหลี่ยม",
-      "story_theme_th": "รูปร่างรอบตัว",
+      "variant_id": "g1_shapes_basic_ep_01",
+      "variant_title_th": "G1 Shapes Basic Variant 1",
+      "variant_title_en": "G1 Shapes Basic Variant 1",
+      "story_theme_th": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for G1 Shapes Basic.",
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about รู้จักรูปร่างพื้นฐาน. Find the important numbers first."
+          "title": "Story",
+          "content": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
         },
         {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches G1 Shapes Basic. Use the model to get 30."
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
           "cols": 6,
-          "total": 24,
-          "unit": "items"
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
           "choices": [
-            "20",
-            "22",
+            "11",
             "24",
-            "26"
+            "28",
+            "32"
           ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
         }
-      ],
-      "variant_title_en": "รู้จักสามเหลี่ยม",
-      "story_theme_en": "รูปร่างรอบตัว"
-    },
-    {
-      "variant_id": "v02",
-      "variant_title_th": "รู้จักสี่เหลี่ยมจัตุรัส",
-      "story_theme_th": "รูปร่างรอบตัว",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about รู้จักรูปร่างพื้นฐาน. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "รู้จักสี่เหลี่ยมจัตุรัส",
-      "story_theme_en": "รูปร่างรอบตัว"
-    },
-    {
-      "variant_id": "v03",
-      "variant_title_th": "รู้จักสี่เหลี่ยมผืนผ้า",
-      "story_theme_th": "รูปร่างรอบตัว",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about รู้จักรูปร่างพื้นฐาน. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "รู้จักสี่เหลี่ยมผืนผ้า",
-      "story_theme_en": "รูปร่างรอบตัว"
-    },
-    {
-      "variant_id": "v04",
-      "variant_title_th": "รู้จักวงกลม",
-      "story_theme_th": "รูปร่างรอบตัว",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about รู้จักรูปร่างพื้นฐาน. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "รู้จักวงกลม",
-      "story_theme_en": "รูปร่างรอบตัว"
-    },
-    {
-      "variant_id": "v05",
-      "variant_title_th": "รู้จักวงรี",
-      "story_theme_th": "รูปร่างรอบตัว",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about รู้จักรูปร่างพื้นฐาน. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "รู้จักวงรี",
-      "story_theme_en": "รูปร่างรอบตัว"
-    },
-    {
-      "variant_id": "v06",
-      "variant_title_th": "รู้จักห้าเหลี่ยม",
-      "story_theme_th": "รูปร่างรอบตัว",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about รู้จักรูปร่างพื้นฐาน. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "รู้จักห้าเหลี่ยม",
-      "story_theme_en": "รูปร่างรอบตัว"
-    },
-    {
-      "variant_id": "v07",
-      "variant_title_th": "รู้จักหกเหลี่ยม",
-      "story_theme_th": "รูปร่างรอบตัว",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about รู้จักรูปร่างพื้นฐาน. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "รู้จักหกเหลี่ยม",
-      "story_theme_en": "รูปร่างรอบตัว"
+      ]
     }
   ],
   "preview_title_th": "รูปร่างสารพัด",
@@ -394,9 +102,9 @@
   "cover_emoji": "🔲",
   "cover_color": "pink",
   "access_type_hint": "free",
-  "status": "published",
+  "status": "approved",
   "quality_required": true,
-  "content_schema_version": "2.0",
+  "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
   "subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
   "learning_objective_th": "นักเรียนสามารถจำแนกรูปร่างพื้นฐาน เช่น วงกลม สามเหลี่ยม สี่เหลี่ยม และรู้จักคุณสมบัติเบื้องต้นของแต่ละรูป",
@@ -815,8 +523,8 @@
       "question_type": "core"
     }
   ],
-  "title_en": "รู้จักรูปร่างพื้นฐาน",
-  "objective_en": "Students will be able to identify and describe basic shapes",
+  "title_en": "G1 Shapes Basic",
+  "objective_en": "Learn G1 Shapes Basic with a story, a model, a number sentence, and practice.",
   "story_intro_en": "Let's solve this together! Can you solve it?",
   "worked_examples_en": [
     {
@@ -1131,43 +839,136 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "title": "Think Story",
-      "content": "Read the problem about รู้จักรูปร่างพื้นฐาน. Find the important numbers first."
+      "title": "Story",
+      "content": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
     },
     {
-      "type": "visual_thinking",
-      "title": "Look First",
-      "content": "Circle what you know and underline what the question asks."
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches G1 Shapes Basic. Use the model to get 30."
     },
     {
       "type": "model_diagram",
       "title": "Use a Model",
-      "description": "Use equal groups or boxes to organize the numbers.",
-      "model_type": "array_model",
-      "rows": 4,
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
       "cols": 6,
-      "total": 24,
-      "unit": "items"
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "6 × 4 = 24",
-      "content": "Choose the operation that matches the question."
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
       "choices": [
-        "20",
-        "22",
+        "11",
         "24",
-        "26"
+        "28",
+        "32"
       ],
-      "correct_answer": "24",
-      "answer": "24",
-      "explanation": "6 × 4 = 24"
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
     }
-  ]
+  ],
+  "base_lesson_id": "g1_shapes_basic",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "G1 Shapes Basic",
+  "topic": "geometry",
+  "icon": "shapes",
+  "story_variants": [
+    {
+      "variant_id": "g1_shapes_basic_ep_01",
+      "status": "approved",
+      "title": "G1 Shapes Basic Variant 1",
+      "story": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches G1 Shapes Basic. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for G1 Shapes Basic.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches G1 Shapes Basic. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for G1 Shapes Basic.",
+  "thai_support": ""
 }

@@ -203,7 +203,7 @@ def _numeric_answer(value: Any) -> int | None:
 
 
 def _check_simple_multiplication(question: dict[str, Any]) -> bool | None:
-    text = " ".join(_walk_text({k: question.get(k) for k in ("question_text", "question_text_th", "question_th", "question_en")}))
+    text = " ".join(_walk_text({k: question.get(k) for k in ("question_text", "question_text_th", "question_text_en", "question_th", "question_en")}))
     match = re.search(r"(\d+)\s*(?:x|\*|×)\s*(\d+)", text, flags=re.IGNORECASE)
     if not match:
         return None
@@ -331,7 +331,7 @@ def _validate_question_item(question: dict[str, Any], index: int, program_type: 
     choices = question.get("choices")
     correct_answer = question.get("correct_answer") or question.get("answer")
     explanation = question.get("explanation") or question.get("explanation_th") or question.get("explanation_en")
-    question_text = question.get("question_th") or question.get("question_text") or question.get("question_text_th")
+    question_text = question.get("question_th") or question.get("question_text") or question.get("question_text_th") or question.get("question_text_en")
 
     # Choices must be a list with at least 2 items
     if not isinstance(choices, list):

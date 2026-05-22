@@ -2,9 +2,9 @@
   "lesson_id": "g3_division_intro_ep",
   "id": "g3_division_intro_ep",
   "grade_level": 3,
-  "title_th": "การหารคือการแบ่งอย่างเท่าๆ กัน",
-  "objective_th": "นักเรียนสามารถหารจำนวนไม่เกิน 100 ด้วยตัวหารที่เป็นเลขหนึ่งหลักได้ถูกต้อง โดยเข้าใจความหมายของการหาร",
-  "story_intro_th": "พี่อลิสชวนแบ่งของเป็นกลุ่มเท่าๆ กัน เพื่อเข้าใจความหมายของการหาร",
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
   "explanation_steps": [
     "การหารคือการแบ่งจำนวนออกเป็นส่วนเท่าๆ กัน",
     "เครื่องหมาย ÷ อ่านว่า หาร ตัวเลขตัวหน้าคือตัวตั้ง ตัวเลขตัวหลังคือตัวหาร",
@@ -45,396 +45,55 @@
   "skill_code": "g3_division_intro_ep",
   "lesson_variants": [
     {
-      "variant_id": "v01",
-      "variant_title_th": "แบ่ง 24 เป็น 4 กลุ่ม",
-      "story_theme_th": "แบ่งเท่าๆ กัน",
+      "variant_id": "g3_division_intro_ep_01",
+      "variant_title_th": "Division as Equal Sharing Variant 1",
+      "variant_title_en": "Division as Equal Sharing Variant 1",
+      "story_theme_th": "Ton is learning Division as Equal Sharing with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning Division as Equal Sharing with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for Division as Equal Sharing.",
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
+          "title": "Story",
+          "content": "Ton is learning Division as Equal Sharing with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
         },
         {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Division as Equal Sharing. Use the model to get 30."
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
           "cols": 6,
-          "total": 24,
-          "unit": "items"
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
           "choices": [
-            "20",
-            "22",
+            "11",
             "24",
-            "26"
+            "28",
+            "32"
           ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
         }
-      ],
-      "variant_title_en": "แบ่ง 24 เป็น 4 กลุ่ม",
-      "story_theme_en": "แบ่งเท่าๆ กัน"
-    },
-    {
-      "variant_id": "v02",
-      "variant_title_th": "แบ่ง 18 เป็น 3 กลุ่ม",
-      "story_theme_th": "แบ่งเท่าๆ กัน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "แบ่ง 18 เป็น 3 กลุ่ม",
-      "story_theme_en": "แบ่งเท่าๆ กัน"
-    },
-    {
-      "variant_id": "v03",
-      "variant_title_th": "แบ่ง 20 เป็น 5 กลุ่ม",
-      "story_theme_th": "แบ่งเท่าๆ กัน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "แบ่ง 20 เป็น 5 กลุ่ม",
-      "story_theme_en": "แบ่งเท่าๆ กัน"
-    },
-    {
-      "variant_id": "v04",
-      "variant_title_th": "แบ่ง 30 เป็น 6 กลุ่ม",
-      "story_theme_th": "แบ่งเท่าๆ กัน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "แบ่ง 30 เป็น 6 กลุ่ม",
-      "story_theme_en": "แบ่งเท่าๆ กัน"
-    },
-    {
-      "variant_id": "v05",
-      "variant_title_th": "แบ่ง 16 เป็น 4 กลุ่ม",
-      "story_theme_th": "แบ่งเท่าๆ กัน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "แบ่ง 16 เป็น 4 กลุ่ม",
-      "story_theme_en": "แบ่งเท่าๆ กัน"
-    },
-    {
-      "variant_id": "v06",
-      "variant_title_th": "แบ่ง 21 เป็น 7 กลุ่ม",
-      "story_theme_th": "แบ่งเท่าๆ กัน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "แบ่ง 21 เป็น 7 กลุ่ม",
-      "story_theme_en": "แบ่งเท่าๆ กัน"
-    },
-    {
-      "variant_id": "v07",
-      "variant_title_th": "แบ่ง 12 เป็น 3 กลุ่ม",
-      "story_theme_th": "แบ่งเท่าๆ กัน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "แบ่ง 12 เป็น 3 กลุ่ม",
-      "story_theme_en": "แบ่งเท่าๆ กัน"
-    },
-    {
-      "variant_id": "v08",
-      "variant_title_th": "แบ่ง 28 เป็น 4 กลุ่ม",
-      "story_theme_th": "แบ่งเท่าๆ กัน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "แบ่ง 28 เป็น 4 กลุ่ม",
-      "story_theme_en": "แบ่งเท่าๆ กัน"
+      ]
     }
   ],
   "preview_title_th": "หารเริ่มต้น",
@@ -443,9 +102,9 @@
   "cover_emoji": "➗",
   "cover_color": "orange",
   "access_type_hint": "free",
-  "status": "published",
+  "status": "approved",
   "quality_required": true,
-  "content_schema_version": "2.0",
+  "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
   "subtitle_th": "เรียนรู้การคูณและการหาร",
   "learning_objective_th": "นักเรียนสามารถหารจำนวนไม่เกิน 100 ด้วยตัวหารที่เป็นเลขหนึ่งหลักได้ถูกต้อง โดยเข้าใจความหมายของการหาร",
@@ -865,7 +524,7 @@
     }
   ],
   "title_en": "Division as Equal Sharing",
-  "objective_en": "Students will be able to divide by sharing equally",
+  "objective_en": "Learn Division as Equal Sharing with a story, a model, a number sentence, and practice.",
   "story_intro_en": "Let's solve this together! Can you solve it?",
   "worked_examples_en": [
     {
@@ -1180,43 +839,136 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "title": "Think Story",
-      "content": "Read the problem about Division as Equal Sharing. Find the important numbers first."
+      "title": "Story",
+      "content": "Ton is learning Division as Equal Sharing with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
     },
     {
-      "type": "visual_thinking",
-      "title": "Look First",
-      "content": "Circle what you know and underline what the question asks."
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches Division as Equal Sharing. Use the model to get 30."
     },
     {
       "type": "model_diagram",
       "title": "Use a Model",
-      "description": "Use equal groups or boxes to organize the numbers.",
-      "model_type": "array_model",
-      "rows": 4,
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
       "cols": 6,
-      "total": 24,
-      "unit": "items"
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "6 × 4 = 24",
-      "content": "Choose the operation that matches the question."
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
       "choices": [
-        "20",
-        "22",
+        "11",
         "24",
-        "26"
+        "28",
+        "32"
       ],
-      "correct_answer": "24",
-      "answer": "24",
-      "explanation": "6 × 4 = 24"
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
     }
-  ]
+  ],
+  "base_lesson_id": "g3_division_intro",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Division as Equal Sharing",
+  "topic": "division",
+  "icon": "divide",
+  "story_variants": [
+    {
+      "variant_id": "g3_division_intro_ep_01",
+      "status": "approved",
+      "title": "Division as Equal Sharing Variant 1",
+      "story": "Ton is learning Division as Equal Sharing with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Division as Equal Sharing. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Division as Equal Sharing.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Division as Equal Sharing with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Division as Equal Sharing. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Division as Equal Sharing.",
+  "thai_support": ""
 }

@@ -1,0 +1,969 @@
+{
+  "lesson_id": "g4_large_numbers_ep",
+  "id": "g4_large_numbers_ep",
+  "grade_level": 4,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "เลขหลายหลักมีหลายหลัก หลักทางขวาสุดคือหลักหน่วย ขยับไปทางซ้ายเป็นสิบ ร้อย พัน หมื่น แสน ล้าน",
+    "ค่าประจำหลักบอกว่าตัวเลขในหลักนั้นมีค่าเท่าไหร่ เช่น 5 ในหลักพัน = 5,000",
+    "การอ่านเลขให้อ่านทีละกลุ่มสามหลัก จากซ้ายไปขวา พัน ล้าน พันล้าน",
+    "เช่น 123,456 อ่านว่า หนึ่งแสนสองหมื่นสามพันสี่ร้อยห้าสิบหก",
+    "การเขียนตัวเลขให้เขียนให้ตรงหลักกัน ถ้าเป็นศูนย์ให้เว้นว่างไว้"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "อ่านเลขหลายหลัก",
+      "question_th": "45,678 อ่านว่าอะไร?",
+      "solution_th": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด ✅"
+    },
+    {
+      "title_th": "เขียนตัวเลข",
+      "question_th": "เจ็ดหมื่นสามพันห้าร้อยยี่สิบหก เขียนว่าอย่างไร?",
+      "solution_th": "73,526 ✅"
+    },
+    {
+      "title_th": "เข้าใจค่าประจำหลัก",
+      "question_th": "เลข 8 ในจำนวน 58,432 มีค่าเท่าไหร่?",
+      "solution_th": "8 อยู่หลักพัน ค่าประจำหลักคือ 8,000 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "อ่านเลขผิดโดยไม่จำค่าประจำหลัก เช่น อ่าน 40,000 ว่าสี่พันแทนที่จะเป็นสี่หมื่น",
+    "เขียนตัวเลขเยื้องทำให้หลักไม่ตรงกัน",
+    "ไม่เข้าใจว่าศูนย์มีค่าเป็นตัวเว้นว่างในหลักนั้น"
+  ],
+  "hints": [
+    "จำหลักจากขวาสุด: หน่วย สิบ ร้อย พัน หมื่น แสน ล้าน",
+    "อ่านทีละกลุ่มสามหลัก จากซ้ายไปขวา จะอ่านได้ง่ายขึ้น",
+    "ถ้าเลขเป็นศูนย์ในหลักใด ให้ข้ามไปอ่านหลักถัดไป"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_large_numbers",
+  "skill_code": "g4_large_numbers_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g4_large_numbers_ep_01",
+      "variant_title_th": "Reading and Writing Large Numbers Variant 1",
+      "variant_title_en": "Reading and Writing Large Numbers Variant 1",
+      "story_theme_th": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for Reading and Writing Large Numbers.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Reading and Writing Large Numbers. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เลขหลายหลัก",
+  "preview_subtitle_th": "เรียนรู้จำนวนและการนับอย่างสนุก",
+  "cover_theme": "large_numbers",
+  "cover_emoji": "🔢",
+  "cover_color": "green",
+  "access_type_hint": "free",
+  "status": "approved",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้จำนวนและการนับอย่างสนุก",
+  "learning_objective_th": "นักเรียนสามารถอ่านและเขียนเลขหลายหลักได้ถูกต้อง และเข้าใจค่าประจำหลัก",
+  "lesson_intro_th": "สนามกีฬาแห่งชาติรองรับผู้ชมได้ 75,000 คน ตัวเลขนี้มีค่าอะไรบ้าง มาดูกัน! 🏟️",
+  "concept_explanation_th": "เลขหลายหลักมีหลายหลัก หลักทางขวาสุดคือหลักหน่วย ขยับไปทางซ้ายเป็นสิบ ร้อย พัน หมื่น แสน ล้าน ค่าประจำหลักบอกว่าตัวเลขในหลักนั้นมีค่าเท่าไหร่ เช่น 5 ในหลักพัน = 5,000 การอ่านเลขให้อ่านทีละกลุ่มสามหลัก จากซ้ายไปขวา พัน ล้าน พันล้าน เช่น 123,456 อ่านว่า หนึ่งแสนสองหมื่นสามพันสี่ร้อยห้าสิบหก การเขียนตัวเลขให้เขียนให้ตรงหลักกัน ถ้าเป็นศูนย์ให้เว้นว่างไว้",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 40,
+    "parts": [
+      16,
+      24
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เลขหลายหลักอ่านได้ เขียนเป็น ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "อ่านเลขหลายหลัก",
+      "question_th": "45,678 อ่านว่าอะไร?",
+      "solution_th": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด ✅"
+    },
+    {
+      "title_th": "เขียนตัวเลข",
+      "question_th": "เจ็ดหมื่นสามพันห้าร้อยยี่สิบหก เขียนว่าอย่างไร?",
+      "solution_th": "73,526 ✅"
+    },
+    {
+      "title_th": "เข้าใจค่าประจำหลัก",
+      "question_th": "เลข 8 ในจำนวน 58,432 มีค่าเท่าไหร่?",
+      "solution_th": "8 อยู่หลักพัน ค่าประจำหลักคือ 8,000 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "อ่านเลขผิดโดยไม่จำค่าประจำหลัก เช่น อ่าน 40,000 ว่าสี่พันแทนที่จะเป็นสี่หมื่น",
+    "เขียนตัวเลขเยื้องทำให้หลักไม่ตรงกัน",
+    "ไม่เข้าใจว่าศูนย์มีค่าเป็นตัวเว้นว่างในหลักนั้น"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_large_numbers_q01",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "choices": [
+        "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+        "สี่พันห้าร้อยหกสิบเจ็ด",
+        "สี่แสนห้าหมื่น",
+        "สี่สิบห้า"
+      ],
+      "correct_answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q02",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหมื่น",
+        "หลักพัน",
+        "หลักร้อย",
+        "หลักสิบ"
+      ],
+      "correct_answer": "หลักหมื่น",
+      "answer": "หลักหมื่น",
+      "explanation": "7 อยู่ตำแหน่งหลักหมื่น",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q03",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "รวมค่าประจำหลักได้ 63,245",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q04",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "choices": [
+        "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+        "สี่พันห้าร้อยหกสิบเจ็ด",
+        "สี่แสนห้าหมื่น",
+        "สี่สิบห้า"
+      ],
+      "correct_answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q05",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหมื่น",
+        "หลักพัน",
+        "หลักร้อย",
+        "หลักสิบ"
+      ],
+      "correct_answer": "หลักหมื่น",
+      "answer": "หลักหมื่น",
+      "explanation": "7 อยู่ตำแหน่งหลักหมื่น",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q06",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "รวมค่าประจำหลักได้ 63,245",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q07",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "choices": [
+        "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+        "สี่พันห้าร้อยหกสิบเจ็ด",
+        "สี่แสนห้าหมื่น",
+        "สี่สิบห้า"
+      ],
+      "correct_answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q08",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหมื่น",
+        "หลักพัน",
+        "หลักร้อย",
+        "หลักสิบ"
+      ],
+      "correct_answer": "หลักหมื่น",
+      "answer": "หลักหมื่น",
+      "explanation": "7 อยู่ตำแหน่งหลักหมื่น",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_large_numbers_q09",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "รวมค่าประจำหลักได้ 63,245",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_large_numbers_q10",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "choices": [
+        "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+        "สี่พันห้าร้อยหกสิบเจ็ด",
+        "สี่แสนห้าหมื่น",
+        "สี่สิบห้า"
+      ],
+      "correct_answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_large_numbers_q01",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "choices": [
+        "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+        "สี่พันห้าร้อยหกสิบเจ็ด",
+        "สี่แสนห้าหมื่น",
+        "สี่สิบห้า"
+      ],
+      "correct_answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q02",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหมื่น",
+        "หลักพัน",
+        "หลักร้อย",
+        "หลักสิบ"
+      ],
+      "correct_answer": "หลักหมื่น",
+      "answer": "หลักหมื่น",
+      "explanation": "7 อยู่ตำแหน่งหลักหมื่น",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q03",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "รวมค่าประจำหลักได้ 63,245",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q04",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "choices": [
+        "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+        "สี่พันห้าร้อยหกสิบเจ็ด",
+        "สี่แสนห้าหมื่น",
+        "สี่สิบห้า"
+      ],
+      "correct_answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q05",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหมื่น",
+        "หลักพัน",
+        "หลักร้อย",
+        "หลักสิบ"
+      ],
+      "correct_answer": "หลักหมื่น",
+      "answer": "หลักหมื่น",
+      "explanation": "7 อยู่ตำแหน่งหลักหมื่น",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q06",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "รวมค่าประจำหลักได้ 63,245",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q07",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "choices": [
+        "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+        "สี่พันห้าร้อยหกสิบเจ็ด",
+        "สี่แสนห้าหมื่น",
+        "สี่สิบห้า"
+      ],
+      "correct_answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_large_numbers_q08",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหมื่น",
+        "หลักพัน",
+        "หลักร้อย",
+        "หลักสิบ"
+      ],
+      "correct_answer": "หลักหมื่น",
+      "answer": "หลักหมื่น",
+      "explanation": "7 อยู่ตำแหน่งหลักหมื่น",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_large_numbers_q09",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "รวมค่าประจำหลักได้ 63,245",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_large_numbers_q10",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "choices": [
+        "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+        "สี่พันห้าร้อยหกสิบเจ็ด",
+        "สี่แสนห้าหมื่น",
+        "สี่สิบห้า"
+      ],
+      "correct_answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "answer": "สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Reading and Writing Large Numbers",
+  "objective_en": "Learn Reading and Writing Large Numbers with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Look! 75 + 000 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: อ่านเลขหลายหลัก",
+      "question_en": "45,678 ?",
+      "solution_en": "✅?"
+    },
+    {
+      "title_en": "Example: เขียนตัวเลข",
+      "question_en": "?",
+      "solution_en": "73,526 ✅"
+    },
+    {
+      "title_en": "Example: เข้าใจค่าประจำหลัก",
+      "question_en": "8 58,432 ?",
+      "solution_en": "8 8,000 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: อ่านเลขผิดโดยไม่จำค่าประจำหลัก เช่น อ่าน 40,000 ว่าสี่พันแทนที่จะเป็นสี่หมื่น",
+    "Mistake: เขียนตัวเลขเยื้องทำให้หลักไม่ตรงกัน",
+    "Mistake: ไม่เข้าใจว่าศูนย์มีค่าเป็นตัวเว้นว่างในหลักนั้น"
+  ],
+  "hints_en": [
+    "Hint: จำหลักจากขวาสุด: หน่วย สิบ ร้อย พัน หมื่น แสน ล้าน",
+    "Hint: อ่านทีละกลุ่มสามหลัก จากซ้ายไปขวา จะอ่านได้ง่ายขึ้น",
+    "Hint: ถ้าเลขเป็นศูนย์ในหลักใด ให้ข้ามไปอ่านหลักถัดไป"
+  ],
+  "explanation_steps_en": [
+    "Step: เลขหลายหลักมีหลายหลัก หลักทางขวาสุดคือหลักหน่วย ขยับไปทางซ้ายเป็นสิบ ร้อย พัน หมื่น แสน ล้าน",
+    "Step: ค่าประจำหลักบอกว่าตัวเลขในหลักนั้นมีค่าเท่าไหร่ เช่น 5 ในหลักพัน = 5,000",
+    "Step: การอ่านเลขให้อ่านทีละกลุ่มสามหลัก จากซ้ายไปขวา พัน ล้าน พันล้าน",
+    "Step: เช่น 123,456 อ่านว่า หนึ่งแสนสองหมื่นสามพันสี่ร้อยห้าสิบหก",
+    "Step: การเขียนตัวเลขให้เขียนให้ตรงหลักกัน ถ้าเป็นศูนย์ให้เว้นว่างไว้"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g4_large_numbers_q01",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "45,678 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "45,678?",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core",
+      "question_en": "45,678 ?",
+      "explanation_en": "45,678?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g4_large_numbers_q02",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "7 72,410 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "7?",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core",
+      "question_en": "7 72,410 ?",
+      "explanation_en": "7?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g4_large_numbers_q03",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 ?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "63,245?",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "easy",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core",
+      "question_en": "60,000 + 3,000 + 200 + 40 + 5 ?",
+      "explanation_en": "63,245?",
+      "choices_en": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "answer_en": "63,245"
+    },
+    {
+      "question_id": "g4_large_numbers_q04",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "45,678 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "45,678?",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core",
+      "question_en": "45,678 ?",
+      "explanation_en": "45,678?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g4_large_numbers_q05",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "7 72,410 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "7?",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core",
+      "question_en": "7 72,410 ?",
+      "explanation_en": "7?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g4_large_numbers_q06",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 ?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "63,245?",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core",
+      "question_en": "60,000 + 3,000 + 200 + 40 + 5 ?",
+      "explanation_en": "63,245?",
+      "choices_en": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "answer_en": "63,245"
+    },
+    {
+      "question_id": "g4_large_numbers_q07",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "45,678 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "45,678?",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "medium",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "core",
+      "question_en": "45,678 ?",
+      "explanation_en": "45,678?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g4_large_numbers_q08",
+      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
+      "question_text": "7 72,410 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "7?",
+      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge",
+      "question_en": "7 72,410 ?",
+      "explanation_en": "7?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g4_large_numbers_q09",
+      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
+      "question_text": "60,000 + 3,000 + 200 + 40 + 5 ?",
+      "choices": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "correct_answer": "63,245",
+      "answer": "63,245",
+      "explanation": "63,245?",
+      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge",
+      "question_en": "60,000 + 3,000 + 200 + 40 + 5 ?",
+      "explanation_en": "63,245?",
+      "choices_en": [
+        "63,245",
+        "63,254",
+        "62,345",
+        "60,345"
+      ],
+      "answer_en": "63,245"
+    },
+    {
+      "question_id": "g4_large_numbers_q10",
+      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
+      "question_text": "45,678 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "45,678?",
+      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
+      "difficulty": "hard",
+      "skill_tag": "g4_large_numbers",
+      "question_type": "challenge",
+      "question_en": "45,678 ?",
+      "explanation_en": "45,678?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    }
+  ],
+  "quiz_id": "g4_large_numbers_ep",
+  "generated_at": "2026-05-16T04:16:41.100932+00:00",
+  "source_lesson_id": "g4_large_numbers",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches Reading and Writing Large Numbers. Use the model to get 30."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
+      "cols": 6,
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "choices": [
+        "11",
+        "24",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
+    }
+  ],
+  "base_lesson_id": "g4_large_numbers",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Reading and Writing Large Numbers",
+  "topic": "addition",
+  "icon": "book",
+  "story_variants": [
+    {
+      "variant_id": "g4_large_numbers_ep_01",
+      "status": "approved",
+      "title": "Reading and Writing Large Numbers Variant 1",
+      "story": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Reading and Writing Large Numbers. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Reading and Writing Large Numbers.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Reading and Writing Large Numbers. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Reading and Writing Large Numbers.",
+  "thai_support": ""
+}

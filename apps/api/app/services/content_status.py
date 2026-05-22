@@ -509,12 +509,15 @@ def seed_initial_content_status(*, dry_run: bool = False, force: bool = False) -
     next_tests = dict(tests_status)
     report = _empty_seed_report(dry_run, force)
     now = datetime.now(UTC).isoformat()
+    seen_lessons: set[str] = set()
+    seen_tests: set[str] = set()
 
     for path in _lesson_files():
         payload = _read_json(path)
         if not isinstance(payload, dict):
             continue
         lesson_id = _safe_lesson_id(path.stem)
+        seen_lessons.add(lesson_id)
         grade = int(payload.get("grade_level") or _grade_from_path(path) or 0)
         language = _detect_language(lesson_id)
         report["total_lessons_found"] += 1
@@ -562,9 +565,33 @@ def seed_initial_content_status(*, dry_run: bool = False, force: bool = False) -
         language = _detect_language(path.stem)
         for index, question in enumerate(_read_question_rows(path)):
             test_id = _safe_test_id(_question_id(path, question, index))
+            seen_tests.add(test_id)
             report["total_tests_found"] += 1
             if test_id in tests_status and not force:
                 report["skipped_existing_tests"] += 1
+                continue
+            lesson_for_question = str(question.get("lesson_id") or path.stem)
+            if lesson_for_question not in seen_lessons:
+                status = "archived"
+                errors = ["question row is not tied to an active lesson file"]
+                report["tests_needing_review"] += 1
+                grade_key = str(grade or "unknown")
+                report["warnings_by_grade"][grade_key] = report["warnings_by_grade"].get(grade_key, 0) + len(errors)
+                next_tests[test_id] = {
+                    "status": status,
+                    "lesson_id": lesson_for_question,
+                    "grade_level": grade,
+                    "language": language,
+                    "version": "1",
+                    "question_count": 1,
+                    "approved_question_count": 0,
+                    "approved_at": "",
+                    "approved_by": "",
+                    "reviewer_note": "; ".join(errors[:5]),
+                    "qa_flags": len(errors),
+                    "updated_at": now,
+                }
+                report["changes"].append({"type": "test", "id": test_id, "status": status, "lesson_id": lesson_for_question, "grade_level": grade})
                 continue
             has_errors, errors = _question_has_blocking_errors(question)
             status = "needs_review" if has_errors else "approved"
@@ -576,7 +603,7 @@ def seed_initial_content_status(*, dry_run: bool = False, force: bool = False) -
                 report["warnings_by_grade"][grade_key] = report["warnings_by_grade"].get(grade_key, 0) + len(errors)
             next_tests[test_id] = {
                 "status": status,
-                "lesson_id": question.get("lesson_id") or path.stem,
+                "lesson_id": lesson_for_question,
                 "grade_level": grade,
                 "language": language,
                 "version": "1",
@@ -589,6 +616,35 @@ def seed_initial_content_status(*, dry_run: bool = False, force: bool = False) -
                 "updated_at": now,
             }
             report["changes"].append({"type": "test", "id": test_id, "status": status, "lesson_id": path.stem, "grade_level": grade})
+
+    if force:
+        for lesson_id, entry in list(next_lessons.items()):
+            if lesson_id in seen_lessons or str(entry.get("status") or "").lower() == "archived":
+                continue
+            archived = dict(entry)
+            archived.update(
+                {
+                    "status": "archived",
+                    "reviewer_note": "Archived by seed_content_status because no active lesson file exists.",
+                    "updated_at": now,
+                }
+            )
+            next_lessons[lesson_id] = archived
+            report["changes"].append({"type": "lesson", "id": lesson_id, "status": "archived"})
+        for test_id, entry in list(next_tests.items()):
+            if test_id in seen_tests or str(entry.get("status") or "").lower() == "archived":
+                continue
+            archived = dict(entry)
+            archived.update(
+                {
+                    "status": "archived",
+                    "approved_question_count": 0,
+                    "reviewer_note": "Archived by seed_content_status because no active question row exists.",
+                    "updated_at": now,
+                }
+            )
+            next_tests[test_id] = archived
+            report["changes"].append({"type": "test", "id": test_id, "status": "archived", "lesson_id": entry.get("lesson_id")})
 
     if not dry_run:
         save_lessons_status(next_lessons)

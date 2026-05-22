@@ -436,6 +436,35 @@ def normalize_visual_blocks(value) -> list[dict]:
 
 
 def _lesson_variants(payload: dict) -> list[dict]:
+    story_variants = payload.get("story_variants") or []
+    if isinstance(story_variants, list) and story_variants:
+        normalized_story_variants = []
+        for index, variant in enumerate(story_variants, start=1):
+            if not isinstance(variant, dict):
+                continue
+            if str(variant.get("status") or "approved").lower() != "approved":
+                continue
+            blocks = variant.get("visual_blocks")
+            if not blocks:
+                blocks = [
+                    {"type": "story_intro", "title": variant.get("story_title") or variant.get("title") or "", "content": variant.get("story") or ""},
+                    {"type": "think_story", "title": variant.get("think_title") or "", "content": variant.get("think_story") or ""},
+                    variant.get("model_diagram") or {},
+                    variant.get("number_sentence") or {},
+                    variant.get("practice") or {},
+                ]
+            normalized_story_variants.append(
+                {
+                    "variant_id": str(variant.get("variant_id") or f"v{index:02d}"),
+                    "variant_title_th": variant.get("title") or payload.get("title_th") or payload.get("title_en") or "",
+                    "story_theme_th": variant.get("story") or "",
+                    "helper_tip": variant.get("helper_tip") or payload.get("helper_tip") or "",
+                    "visual_blocks": normalize_visual_blocks(blocks),
+                }
+            )
+        if normalized_story_variants:
+            return normalized_story_variants
+
     variants = payload.get("lesson_variants") or []
     if not isinstance(variants, list) or not variants:
         return [
@@ -623,6 +652,7 @@ def _with_variant_payload(base: dict, variant: dict | None) -> dict:
             "selected_variant_id": variant.get("selected_variant_id") or variant.get("variant_id"),
             "variant_title_th": variant.get("variant_title_th") or "",
             "story_theme_th": variant.get("story_theme_th") or "",
+            "helper_tip": variant.get("helper_tip") or base.get("helper_tip") or "",
             "visual_blocks": normalize_visual_blocks(variant.get("visual_blocks")),
         }
     )
@@ -1432,7 +1462,14 @@ def _ensure_lesson_content_questions(db: Session, lesson: Lesson, skill: Skill, 
         if str(status.get("status") or "").lower() != "approved":
             continue
         choices = _choices_list(row.get("choices"))
-        question_text = str(row.get("question") or row.get("question_text") or row.get("question_text_th") or "").strip()
+        question_text = str(
+            row.get("question")
+            or row.get("question_text")
+            or row.get("question_text_th")
+            or row.get("question_text_en")
+            or row.get("question_en")
+            or ""
+        ).strip()
         correct_answer = str(row.get("correct_answer") or row.get("answer") or "").strip()
         if not question_text or len(choices) < 2 or not correct_answer:
             continue
@@ -2338,21 +2375,9 @@ def lesson_detail(
         found = find_lesson_file(lesson_id, requested_program)
         if found:
             _path, json_payload, ep_fallback = found
+            if ep_fallback:
+                raise HTTPException(status_code=404, detail="Requested program lesson not found")
             if not _json_lesson_visible_for_child(json_payload, child):
-                if requested_program == "EP":
-                    fallback = find_lesson_file(lesson_id, "TH")
-                    if fallback:
-                        _fallback_path, fallback_payload, _ = fallback
-                        if _json_lesson_visible_for_child(fallback_payload, child):
-                            item = _json_lesson_detail_item(fallback_payload, child)
-                            public_id = str(fallback_payload.get("lesson_id") or fallback_payload.get("id") or lesson_id)
-                            variant = _select_lesson_variant(db, child, f"TH:{public_id}", fallback_payload, record_view=True)
-                            db.commit()
-                            response = _json_lesson_content_payload(fallback_payload, item, variant)
-                            response["program_type"] = "TH"
-                            response["visual_blocks"] = normalize_lesson_visual_blocks(response.get("visual_blocks"))
-                            response["ep_fallback"] = True
-                            return response
                 raise HTTPException(status_code=404, detail="Lesson not found")
             item = _json_lesson_detail_item(json_payload, child)
             public_id = str(json_payload.get("lesson_id") or json_payload.get("id") or lesson_id)
@@ -2361,8 +2386,6 @@ def lesson_detail(
             response = _json_lesson_content_payload(json_payload, item, variant)
             response["program_type"] = requested_program
             response["visual_blocks"] = normalize_lesson_visual_blocks(response.get("visual_blocks"))
-            if ep_fallback:
-                response["ep_fallback"] = True
             return response
 
     lesson = _lesson_by_public_id(db, lesson_id)

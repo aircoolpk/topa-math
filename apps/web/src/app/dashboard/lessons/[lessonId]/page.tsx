@@ -294,13 +294,17 @@ function normalizeVisualBlock(raw: RawVisualBlock): VisualBlock | null {
 
     // ── Handle emoji_counter / visual_thinking ─────────────────────────────
     if (r.type === 'emoji_counter' || r.type === 'visual_thinking') {
+      return null
+    }
+
+    if (r.type === 'emoji_counter' || r.type === 'visual_thinking') {
       const dataRecord = innerRecord.data as Record<string, unknown> | undefined
       const innerData = dataRecord ?? innerRecord
       const rawItems = getArray<Record<string, unknown>>(innerData.items ?? innerData.counts ?? [])
       return {
         block_type: 'visual_thinking',
         type: 'visual_thinking',
-        title_th: getText(innerData.title_th || innerData.title) || '👀 มองภาพก่อน',
+        title_th: getText(innerData.title_th || innerData.title) || 'ใช้แผนภาพช่วยคิด',
         content: getText(innerData.content),
         description_th: getText(innerData.description_th || innerData.description),
         data: innerData,
@@ -344,6 +348,22 @@ function BlockStoryIntro({ block }: { block: VisualBlock }) {
 }
 
 // ─── Block 2: 👀 Visual Thinking ───────────────────────────────────────────────
+
+function BlockThinkStory({ block }: { block: VisualBlock }) {
+  return (
+    <div className="card shadow-md bg-sky-50 border-l-4 border-sky-400">
+      <div className="flex items-center gap-2 mb-3">
+        <span className="text-2xl">?</span>
+        <h3 className="font-bold text-sky-800 text-base">
+          {block.title_th || 'เรื่องราวชวนคิด'}
+        </h3>
+      </div>
+      <p className="text-sky-900 text-sm leading-relaxed">
+        {getText(block.content || block.description_th || '')}
+      </p>
+    </div>
+  )
+}
 
 function BlockVisualThinking({ block }: { block: VisualBlock }) {
   const rawItems = getArray<Record<string, unknown>>(block.items)
@@ -400,7 +420,7 @@ function BlockVisualThinking({ block }: { block: VisualBlock }) {
         <div className="flex items-center gap-2 mb-4">
           <span className="text-2xl">👀</span>
           <h3 className="font-bold text-blue-800 text-base">
-            {block.title_th || 'มองภาพก่อน'}
+            {block.title_th || 'ใช้แผนภาพช่วยคิด'}
           </h3>
         </div>
 
@@ -437,7 +457,7 @@ function BlockVisualThinking({ block }: { block: VisualBlock }) {
         <div className="flex items-center gap-2 mb-3">
           <span className="text-2xl">👀</span>
           <h3 className="font-bold text-blue-800 text-base">
-            {block.title_th || 'มองภาพก่อน'}
+            {block.title_th || 'ใช้แผนภาพช่วยคิด'}
           </h3>
         </div>
         <p className="text-sm leading-relaxed text-blue-800">
@@ -456,7 +476,7 @@ function BlockVisualThinking({ block }: { block: VisualBlock }) {
       <div className="flex items-center gap-2 mb-4">
         <span className="text-2xl">👀</span>
         <h3 className="font-bold text-blue-800 text-base">
-          {block.title_th || 'มองภาพก่อน'}
+          {block.title_th || 'ใช้แผนภาพช่วยคิด'}
         </h3>
       </div>
       <div className="flex flex-col items-center gap-4">
@@ -792,8 +812,9 @@ function VisualBlockRenderer({ block }: { block: VisualBlock }) {
 
   switch (rawType) {
     case 'story_intro':      return <BlockStoryIntro block={block} />
-    case 'visual_thinking':   return <BlockVisualThinking block={block} />
-    case 'emoji_counter':    return <BlockVisualThinking block={block} />
+    case 'think_story':      return <BlockThinkStory block={block} />
+    case 'visual_thinking':  return null
+    case 'emoji_counter':    return null
     case 'model_diagram':     return <BlockModelDiagram block={block} />
     case 'grouping_model':    return <BlockModelDiagram block={block} />
     case 'bar_model':         return <BlockModelDiagram block={block} />
@@ -833,8 +854,7 @@ function isRenderableVisualBlock(block: VisualBlock): boolean {
 
 const BLOCK_LABELS: Record<string, string> = {
   story_intro:      '🐣 เรื่องราวชวนคิด',
-  visual_thinking:  '👀 มองภาพก่อน',
-  emoji_counter:    '👀 มองภาพก่อน',
+  think_story:      '???????????????',
   model_diagram:    '🟦 ใช้แผนภาพช่วยคิด',
   grouping_model:   '🟦 ใช้แผนภาพช่วยคิด',
   bar_model:        '🟦 ใช้แผนภาพช่วยคิด',
@@ -884,19 +904,11 @@ export default function LessonPage() {
       if (pt) setProgramType(pt)
       setPhase('content')
     } catch (err: unknown) {
-      const e = err as { response?: { status?: number; data?: { ep_fallback?: boolean } }; message?: string }
-      if (e?.response?.data?.ep_fallback) {
-        // EP not available — show TH with fallback banner
-        const fallbackLesson = await meApi.getLesson(lessonId, 'TH')
-        setLesson(fallbackLesson)
-        setProgramType('TH')
-        setPhase('content')
-      } else {
-        const status = e?.response?.status
-        if (status === 404) setErrorMsg('ไม่พบบทเรียนนี้')
-        else setErrorMsg('โหลดบทเรียนไม่สำเร็จ กรุณาลองใหม่')
-        setPhase('error')
-      }
+      const e = err as { response?: { status?: number }; message?: string }
+      const status = e?.response?.status
+      if (status === 404) setErrorMsg('ไม่พบบทเรียนนี้')
+      else setErrorMsg('โหลดบทเรียนไม่สำเร็จ กรุณาลองใหม่')
+      setPhase('error')
     } finally {
       setLoading(false)
     }

@@ -553,7 +553,12 @@ def _lesson_status_items() -> list[dict[str, Any]]:
         source_path = found_th[0] if found_th else (found_ep[0] if found_ep else None)
         completeness = validate_lesson_file(source_path) if source_path else {"complete": False, "issues": ["missing_lesson_file"]}
         visual_blocks = payload.get("visual_blocks") if isinstance(payload, dict) else None
-        has_visual = bool(visual_blocks or payload.get("model_diagram") or payload.get("visual_thinking"))
+        variants = payload.get("story_variants") if isinstance(payload.get("story_variants"), list) else []
+        approved_variants = [
+            variant for variant in variants
+            if isinstance(variant, dict) and str(variant.get("status") or "approved").lower() == "approved"
+        ]
+        has_visual = bool(visual_blocks or variants or payload.get("model_diagram") or payload.get("think_story"))
         has_test = _question_bank_has_test(lesson_id, grade)
         validation_status = str(lesson.get("validation_status") or "unknown")
         enabled = validation_status != "invalid" and bool(lesson.get("has_th")) and bool(lesson_id) and bool(completeness.get("complete")) and has_test
@@ -563,9 +568,14 @@ def _lesson_status_items() -> list[dict[str, Any]]:
                 "grade_level": grade,
                 "title_th": lesson.get("title_th") or lesson_id,
                 "title_ep": lesson.get("title_en") or None,
+                "program": "EP" if str(lesson.get("program_type") or "").upper() == "EP" else "TH",
                 "has_th": bool(lesson.get("has_th")),
                 "has_ep": bool(lesson.get("has_ep")),
                 "has_test": has_test,
+                "variant_count": len(variants),
+                "approved_variant_count": len(approved_variants),
+                "missing_ep": not bool(lesson.get("has_ep")),
+                "missing_test": not has_test,
                 "visual_status": "ok" if has_visual else "missing",
                 "completeness_status": "complete" if completeness.get("complete") else "blocking_issues",
                 "blocking_issues": completeness.get("issues") or [],

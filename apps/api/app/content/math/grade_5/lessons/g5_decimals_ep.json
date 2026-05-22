@@ -2,9 +2,9 @@
   "lesson_id": "g5_decimals_ep",
   "id": "g5_decimals_ep",
   "grade_level": 5,
-  "title_th": "ทศนิยม บวก ลบ คูณ หาร",
-  "objective_th": "นักเรียนสามารถบวก ลบ คูณ หารทศนิยมได้ถูกต้อง และเข้าใจความสัมพันธ์กับเศษส่วน",
-  "story_intro_th": "ราคาน้ำปลา 35.50 บาท น้ำมันพืช 42.75 บาท แม่ให้ธนบัตร 100 บาท รับเงินทอนเท่าไหร่? 🛒",
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
   "explanation_steps": [
     "บวกลบทศนิยม: เขียนตัวเลขให้ตรงหลักกัน จุดทศนิยมตรงกัน ถ้าจำเป็นต้องเติมศูนย์",
     "คูณทศนิยม: คูณเหมือนเลขเต็มก่อน แล้วนับจำนวนทศนิยมของทั้งสองจำนวนมาวางจุด",
@@ -50,25 +50,22 @@
   "skill_code": "g5_decimals_ep",
   "lesson_variants": [
     {
-      "variant_id": "v01",
-      "variant_title_th": "🏫 โรงเรียน",
-      "story_theme_th": "เรื่องราวในโรงเรียน",
+      "variant_id": "g5_decimals_ep_01",
+      "variant_title_th": "Decimals in Money and Measurement Variant 1",
+      "variant_title_en": "Decimals in Money and Measurement Variant 1",
+      "story_theme_th": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive.",
+      "story_theme_en": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive.",
+      "helper_tip": "Read the story first. Circle the important numbers for Decimals in Money and Measurement.",
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+          "title": "Story",
+          "content": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive."
         },
         {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key facts are 50.00 baht paid and 23.75 baht price. Use subtraction to find the change."
         },
         {
           "type": "model_diagram",
@@ -84,637 +81,28 @@
               "label": "change",
               "value": 26.25
             }
-          ]
+          ],
+          "unit": "baht"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
+          "expression": "50.00 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points and subtract."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "question": "You pay 100 baht for a ruler that costs 35.50 baht. How much change do you get?",
           "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
+            "54.50 baht",
+            "64.50 baht",
+            "65.50 baht",
+            "75.50 baht"
           ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🏫 โรงเรียน",
-      "story_theme_en": "เรื่องราวในโรงเรียน"
-    },
-    {
-      "variant_id": "v02",
-      "variant_title_th": "🍎 ผลไม้",
-      "story_theme_th": "เรื่องราวเกี่ยวกับผลไม้",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🍎 ผลไม้",
-      "story_theme_en": "เรื่องราวเกี่ยวกับผลไม้"
-    },
-    {
-      "variant_id": "v03",
-      "variant_title_th": "🧸 ของเล่น",
-      "story_theme_th": "เรื่องราวเกี่ยวกับของเล่น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🧸 ของเล่น",
-      "story_theme_en": "เรื่องราวเกี่ยวกับของเล่น"
-    },
-    {
-      "variant_id": "v04",
-      "variant_title_th": "🏪 ตลาด",
-      "story_theme_th": "เรื่องราวในตลาด",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🏪 ตลาด",
-      "story_theme_en": "เรื่องราวในตลาด"
-    },
-    {
-      "variant_id": "v05",
-      "variant_title_th": "🐕 สัตว์เลี้ยง",
-      "story_theme_th": "เรื่องราวเกี่ยวกับสัตว์เลี้ยง",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🐕 สัตว์เลี้ยง",
-      "story_theme_en": "เรื่องราวเกี่ยวกับสัตว์เลี้ยง"
-    },
-    {
-      "variant_id": "v06",
-      "variant_title_th": "🌻 สวน",
-      "story_theme_th": "เรื่องราวในสวน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🌻 สวน",
-      "story_theme_en": "เรื่องราวในสวน"
-    },
-    {
-      "variant_id": "v07",
-      "variant_title_th": "🎨 วาดรูป",
-      "story_theme_th": "เรื่องราวเกี่ยวกับการวาดรูป",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🎨 วาดรูป",
-      "story_theme_en": "เรื่องราวเกี่ยวกับการวาดรูป"
-    },
-    {
-      "variant_id": "v08",
-      "variant_title_th": "📚 ห้องเรียน",
-      "story_theme_th": "เรื่องราวในห้องเรียน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "📚 ห้องเรียน",
-      "story_theme_en": "เรื่องราวในห้องเรียน"
-    },
-    {
-      "variant_id": "v09",
-      "variant_title_th": "🎮 สนุกกับเพื่อน",
-      "story_theme_th": "เรื่องราวสนุกๆ กับเพื่อน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🎮 สนุกกับเพื่อน",
-      "story_theme_en": "เรื่องราวสนุกๆ กับเพื่อน"
-    },
-    {
-      "variant_id": "v10",
-      "variant_title_th": "🎉 งานเทศกาล",
-      "story_theme_th": "เรื่องราวในงานเทศกาล",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
-        }
-      ],
-      "variant_title_en": "🎉 งานเทศกาล",
-      "story_theme_en": "เรื่องราวในงานเทศกาล"
-    },
-    {
-      "variant_id": "ep_v01",
-      "variant_title_en": "",
-      "story_theme_en": "",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Check the paid money, the price, and the change.",
-          "data": {
-            "paid": 50,
-            "price": 23.75,
-            "change": 26.25,
-            "description_th": "Change = paid money - price"
-          }
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ]
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "50 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points, then subtract."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
-          "choices": [
-            "24.25 baht",
-            "25.25 baht",
-            "26.25 baht",
-            "27.25 baht"
-          ],
-          "correct_answer": "26.25 baht",
-          "answer": "26.25 baht",
-          "explanation": "50.00 - 23.75 = 26.25 baht"
+          "correct_answer": "64.50 baht",
+          "answer": "64.50 baht",
+          "explanation": "100.00 - 35.50 = 64.50 baht."
         }
       ]
     }
@@ -725,9 +113,9 @@
   "cover_emoji": "🔢",
   "cover_color": "purple",
   "access_type_hint": "free",
-  "status": "published",
+  "status": "approved",
   "quality_required": true,
-  "content_schema_version": "2.0",
+  "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
   "subtitle_th": "จำนวนที่มีจุดทศนิยม",
   "learning_objective_th": "นักเรียนสามารถบวก ลบ คูณ หารทศนิยมได้ถูกต้อง และเข้าใจความสัมพันธ์กับเศษส่วน",
@@ -1146,8 +534,8 @@
       "question_type": "challenge"
     }
   ],
-  "title_en": "Decimals: Add, Subtract, Multiply, Divide",
-  "objective_en": "Students will be able to add numbers within 20",
+  "title_en": "Decimals in Money and Measurement",
+  "objective_en": "Learn Decimals in Money and Measurement with a story, a model, a number sentence, and practice.",
   "story_intro_en": "Look! 35 + 50 + 42 + 75 + 100 — can you find the answer?",
   "worked_examples_en": [
     {
@@ -1467,19 +855,13 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "title": "Think Story",
-      "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+      "title": "Story",
+      "content": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive."
     },
     {
-      "type": "visual_thinking",
-      "title": "Look First",
-      "content": "Check the paid money, the price, and the change.",
-      "data": {
-        "paid": 50,
-        "price": 23.75,
-        "change": 26.25,
-        "description_th": "Change = paid money - price"
-      }
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key facts are 50.00 baht paid and 23.75 baht price. Use subtraction to find the change."
     },
     {
       "type": "model_diagram",
@@ -1495,27 +877,132 @@
           "label": "change",
           "value": 26.25
         }
-      ]
+      ],
+      "unit": "baht"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "50 - 23.75 = 26.25 baht",
-      "content": "Line up decimal points, then subtract."
+      "expression": "50.00 - 23.75 = 26.25 baht",
+      "content": "Line up decimal points and subtract."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+      "question": "You pay 100 baht for a ruler that costs 35.50 baht. How much change do you get?",
       "choices": [
-        "24.25 baht",
-        "25.25 baht",
-        "26.25 baht",
-        "27.25 baht"
+        "54.50 baht",
+        "64.50 baht",
+        "65.50 baht",
+        "75.50 baht"
       ],
-      "correct_answer": "26.25 baht",
-      "answer": "26.25 baht",
-      "explanation": "50.00 - 23.75 = 26.25 baht"
+      "correct_answer": "64.50 baht",
+      "answer": "64.50 baht",
+      "explanation": "100.00 - 35.50 = 64.50 baht."
     }
-  ]
+  ],
+  "base_lesson_id": "g5_decimals",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Decimals in Money and Measurement",
+  "topic": "decimal",
+  "icon": "coins",
+  "story_variants": [
+    {
+      "variant_id": "g5_decimals_ep_01",
+      "status": "approved",
+      "title": "Decimals in Money and Measurement Variant 1",
+      "story": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive.",
+      "think_story": "The key facts are 50.00 baht paid and 23.75 baht price. Use subtraction to find the change.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+        "model_type": "bar_model",
+        "groups": [
+          {
+            "label": "price",
+            "value": 23.75
+          },
+          {
+            "label": "change",
+            "value": 26.25
+          }
+        ],
+        "unit": "baht"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "50.00 - 23.75 = 26.25 baht",
+        "content": "Line up decimal points and subtract."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "You pay 100 baht for a ruler that costs 35.50 baht. How much change do you get?",
+        "choices": [
+          "54.50 baht",
+          "64.50 baht",
+          "65.50 baht",
+          "75.50 baht"
+        ],
+        "correct_answer": "64.50 baht",
+        "answer": "64.50 baht",
+        "explanation": "100.00 - 35.50 = 64.50 baht."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Decimals in Money and Measurement.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key facts are 50.00 baht paid and 23.75 baht price. Use subtraction to find the change."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ],
+          "unit": "baht"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50.00 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points and subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 100 baht for a ruler that costs 35.50 baht. How much change do you get?",
+          "choices": [
+            "54.50 baht",
+            "64.50 baht",
+            "65.50 baht",
+            "75.50 baht"
+          ],
+          "correct_answer": "64.50 baht",
+          "answer": "64.50 baht",
+          "explanation": "100.00 - 35.50 = 64.50 baht."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Decimals in Money and Measurement.",
+  "thai_support": ""
 }

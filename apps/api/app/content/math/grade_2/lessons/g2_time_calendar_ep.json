@@ -2,9 +2,9 @@
   "lesson_id": "g2_time_calendar_ep",
   "id": "g2_time_calendar_ep",
   "grade_level": 2,
-  "title_th": "อ่านปฏิทินและดูเวลาเป็น",
-  "objective_th": "นักเรียนสามารถอ่านปฏิทินและบอกวันที่ วันในสัปดาห์ และเดือนได้ถูกต้อง",
-  "story_intro_th": "อลิสมีนัดกินข้าวกับเพื่อนวันที่ 15 มีนาคม เป็นวันอะไร และเดือนมีนาคมมีกี่วันนะ? 📅",
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
   "explanation_steps": [
     "ปฏิทินมี 12 เดือน แต่ละเดือนมีจำนวนวันต่างกัน",
     "เดือนที่มี 31 วัน: มกราคม มีนาคม พฤษภาคม กรกฎาคม สิงหาคม ตุลาคม ธันวาคม",
@@ -46,539 +46,53 @@
   "skill_code": "g2_time_calendar_ep",
   "lesson_variants": [
     {
-      "variant_id": "v01",
-      "variant_title_th": "📖 🏫 โรงเรียน",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "variant_id": "g2_time_calendar_ep_01",
+      "variant_title_th": "Calendars and Time Variant 1",
+      "variant_title_en": "Calendars and Time Variant 1",
+      "story_theme_th": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for Calendars and Time.",
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
+          "title": "Story",
+          "content": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
         },
         {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Calendars and Time. Use the model to get 30."
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
           "cols": 6,
-          "total": 24,
-          "unit": "items"
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
           "choices": [
-            "20",
-            "22",
+            "11",
             "24",
-            "26"
+            "28",
+            "32"
           ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🏫 โรงเรียน",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน"
-    },
-    {
-      "variant_id": "v02",
-      "variant_title_th": "📖 🍎 ผลไม้",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🍎 ผลไม้",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับผลไม้"
-    },
-    {
-      "variant_id": "v03",
-      "variant_title_th": "📖 🧸 ของเล่น",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🧸 ของเล่น",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับของเล่น"
-    },
-    {
-      "variant_id": "v04",
-      "variant_title_th": "📖 🏪 ตลาด",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🏪 ตลาด",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับตลาด"
-    },
-    {
-      "variant_id": "v05",
-      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🐕 สัตว์เลี้ยง",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง"
-    },
-    {
-      "variant_id": "v06",
-      "variant_title_th": "📖 🌻 สวน",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🌻 สวน",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสวน"
-    },
-    {
-      "variant_id": "v07",
-      "variant_title_th": "📖 🎨 วาดรูป",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🎨 วาดรูป",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป"
-    },
-    {
-      "variant_id": "v08",
-      "variant_title_th": "📖 📚 ห้องเรียน",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 📚 ห้องเรียน",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน"
-    },
-    {
-      "variant_id": "v09",
-      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🎮 สนุกกับเพื่อน",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน"
-    },
-    {
-      "variant_id": "v10",
-      "variant_title_th": "📖 🎉 งานเทศกาล",
-      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "📖 🎉 งานเทศกาล",
-      "story_theme_en": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล"
-    },
-    {
-      "variant_id": "ep_v01",
-      "variant_title_en": "",
-      "story_theme_en": "",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Calendars and Time. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
         }
       ]
     }
@@ -589,9 +103,9 @@
   "cover_emoji": "📅",
   "cover_color": "blue",
   "access_type_hint": "free",
-  "status": "published",
+  "status": "approved",
   "quality_required": true,
-  "content_schema_version": "2.0",
+  "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
   "subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
   "learning_objective_th": "นักเรียนสามารถอ่านปฏิทินและบอกวันที่ วันในสัปดาห์ และเดือนได้ถูกต้อง",
@@ -1011,7 +525,7 @@
     }
   ],
   "title_en": "Calendars and Time",
-  "objective_en": "Students will be able to tell time using clocks",
+  "objective_en": "Learn Calendars and Time with a story, a model, a number sentence, and practice.",
   "story_intro_en": "Look! 15 — can you find the answer?",
   "worked_examples_en": [
     {
@@ -1327,43 +841,136 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "title": "Think Story",
-      "content": "Read the problem about Calendars and Time. Find the important numbers first."
+      "title": "Story",
+      "content": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
     },
     {
-      "type": "visual_thinking",
-      "title": "Look First",
-      "content": "Circle what you know and underline what the question asks."
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches Calendars and Time. Use the model to get 30."
     },
     {
       "type": "model_diagram",
       "title": "Use a Model",
-      "description": "Use equal groups or boxes to organize the numbers.",
-      "model_type": "array_model",
-      "rows": 4,
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
       "cols": 6,
-      "total": 24,
-      "unit": "items"
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "6 × 4 = 24",
-      "content": "Choose the operation that matches the question."
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
       "choices": [
-        "20",
-        "22",
+        "11",
         "24",
-        "26"
+        "28",
+        "32"
       ],
-      "correct_answer": "24",
-      "answer": "24",
-      "explanation": "6 × 4 = 24"
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
     }
-  ]
+  ],
+  "base_lesson_id": "g2_time_calendar",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Calendars and Time",
+  "topic": "addition",
+  "icon": "book",
+  "story_variants": [
+    {
+      "variant_id": "g2_time_calendar_ep_01",
+      "status": "approved",
+      "title": "Calendars and Time Variant 1",
+      "story": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Calendars and Time. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Calendars and Time.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Calendars and Time. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Calendars and Time.",
+  "thai_support": ""
 }

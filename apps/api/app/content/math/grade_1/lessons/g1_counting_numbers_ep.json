@@ -2,9 +2,9 @@
   "lesson_id": "g1_counting_numbers_ep",
   "id": "g1_counting_numbers_ep",
   "grade_level": 1,
-  "title_th": "นับจำนวนอย่างมั่นใจ",
-  "objective_th": "นักเรียนสามารถนับจำนวนสิ่งของได้ถูกต้องตั้งแต่ 1 ถึง 100",
-  "story_intro_th": "พี่อลิสชวนเด็กๆ นับสิ่งของทีละชิ้นจาก 1 ไปจนถึงจำนวนสุดท้าย",
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
   "explanation_steps": [
     "นับเลขเริ่มจาก 1 ไปเรื่อยๆ โดยชี้นิ้วไปที่ของแต่ละชิ้นทีละชิ้น",
     "เวลานับ อย่าข้ามของไป และอย่านับซ้ำ สิ่งของแต่ละชิ้นต้องได้ตัวเลขเดียวเท่านั้น",
@@ -45,396 +45,55 @@
   "skill_code": "g1_counting_numbers_ep",
   "lesson_variants": [
     {
-      "variant_id": "v01",
-      "variant_title_th": "นับลูกบอล 5",
-      "story_theme_th": "นับจำนวนทีละชิ้น",
+      "variant_id": "g1_counting_numbers_ep_01",
+      "variant_title_th": "Counting Numbers Variant 1",
+      "variant_title_en": "Counting Numbers Variant 1",
+      "story_theme_th": "Ton is learning Counting Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning Counting Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for Counting Numbers.",
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
+          "title": "Story",
+          "content": "Ton is learning Counting Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
         },
         {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Counting Numbers. Use the model to get 30."
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
           "cols": 6,
-          "total": 24,
-          "unit": "items"
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
           "choices": [
-            "20",
-            "22",
+            "11",
             "24",
-            "26"
+            "28",
+            "32"
           ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
         }
-      ],
-      "variant_title_en": "นับลูกบอล 5",
-      "story_theme_en": "นับจำนวนทีละชิ้น"
-    },
-    {
-      "variant_id": "v02",
-      "variant_title_th": "นับดอกไม้ 8",
-      "story_theme_th": "นับจำนวนทีละชิ้น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "นับดอกไม้ 8",
-      "story_theme_en": "นับจำนวนทีละชิ้น"
-    },
-    {
-      "variant_id": "v03",
-      "variant_title_th": "นับดาว 10",
-      "story_theme_th": "นับจำนวนทีละชิ้น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "นับดาว 10",
-      "story_theme_en": "นับจำนวนทีละชิ้น"
-    },
-    {
-      "variant_id": "v04",
-      "variant_title_th": "นับลูกปัด 12",
-      "story_theme_th": "นับจำนวนทีละชิ้น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "นับลูกปัด 12",
-      "story_theme_en": "นับจำนวนทีละชิ้น"
-    },
-    {
-      "variant_id": "v05",
-      "variant_title_th": "นับดินสอ 15",
-      "story_theme_th": "นับจำนวนทีละชิ้น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "นับดินสอ 15",
-      "story_theme_en": "นับจำนวนทีละชิ้น"
-    },
-    {
-      "variant_id": "v06",
-      "variant_title_th": "นับสติกเกอร์ 20",
-      "story_theme_th": "นับจำนวนทีละชิ้น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "นับสติกเกอร์ 20",
-      "story_theme_en": "นับจำนวนทีละชิ้น"
-    },
-    {
-      "variant_id": "v07",
-      "variant_title_th": "นับหนังสือ 7",
-      "story_theme_th": "นับจำนวนทีละชิ้น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "นับหนังสือ 7",
-      "story_theme_en": "นับจำนวนทีละชิ้น"
-    },
-    {
-      "variant_id": "v08",
-      "variant_title_th": "นับขนม 14",
-      "story_theme_th": "นับจำนวนทีละชิ้น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "นับขนม 14",
-      "story_theme_en": "นับจำนวนทีละชิ้น"
+      ]
     }
   ],
   "preview_title_th": "นับเลข 1-100 สนุก",
@@ -443,9 +102,9 @@
   "cover_emoji": "🔢",
   "cover_color": "blue",
   "access_type_hint": "free",
-  "status": "published",
+  "status": "approved",
   "quality_required": true,
-  "content_schema_version": "2.0",
+  "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
   "subtitle_th": "เรียนรู้จำนวนและการนับอย่างสนุก",
   "learning_objective_th": "นักเรียนสามารถนับจำนวนสิ่งของได้ถูกต้องตั้งแต่ 1 ถึง 100",
@@ -859,8 +518,8 @@
       "question_type": "core"
     }
   ],
-  "title_en": "นับจำนวนอย่างมั่นใจ",
-  "objective_en": "Students will be able to count numbers in fun ways",
+  "title_en": "Counting Numbers",
+  "objective_en": "Learn Counting Numbers with a story, a model, a number sentence, and practice.",
   "story_intro_en": "Look! 1 — can you find the answer?",
   "worked_examples_en": [
     {
@@ -1175,43 +834,136 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "title": "Think Story",
-      "content": "Read the problem about นับจำนวนอย่างมั่นใจ. Find the important numbers first."
+      "title": "Story",
+      "content": "Ton is learning Counting Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
     },
     {
-      "type": "visual_thinking",
-      "title": "Look First",
-      "content": "Circle what you know and underline what the question asks."
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches Counting Numbers. Use the model to get 30."
     },
     {
       "type": "model_diagram",
       "title": "Use a Model",
-      "description": "Use equal groups or boxes to organize the numbers.",
-      "model_type": "array_model",
-      "rows": 4,
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
       "cols": 6,
-      "total": 24,
-      "unit": "items"
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "6 × 4 = 24",
-      "content": "Choose the operation that matches the question."
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
       "choices": [
-        "20",
-        "22",
+        "11",
         "24",
-        "26"
+        "28",
+        "32"
       ],
-      "correct_answer": "24",
-      "answer": "24",
-      "explanation": "6 × 4 = 24"
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
     }
-  ]
+  ],
+  "base_lesson_id": "g1_counting_numbers",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Counting Numbers",
+  "topic": "counting",
+  "icon": "book",
+  "story_variants": [
+    {
+      "variant_id": "g1_counting_numbers_ep_01",
+      "status": "approved",
+      "title": "Counting Numbers Variant 1",
+      "story": "Ton is learning Counting Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Counting Numbers. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Counting Numbers.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Counting Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Counting Numbers. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Counting Numbers.",
+  "thai_support": ""
 }

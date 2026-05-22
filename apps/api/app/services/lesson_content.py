@@ -12,10 +12,11 @@ CONTENT_ROOT = Path(__file__).resolve().parents[1] / "content" / "math"
 
 ALLOWED_BLOCK_TYPES = {
     "story_intro",
-    "visual_thinking",
+    "think_story",
     "model_diagram",
     "number_sentence",
     "mini_quiz",
+    "helper_tip",
 }
 
 MODEL_BLOCK_TYPES = {
@@ -500,7 +501,13 @@ def validate_question_payload(question: dict[str, Any]) -> dict[str, Any]:
     errors: list[str] = []
     choices = question.get("choices")
     quiz = {
-        "question": question.get("question") or question.get("question_text") or question.get("question_text_th") or question.get("question_en"),
+        "question": (
+            question.get("question")
+            or question.get("question_text")
+            or question.get("question_text_th")
+            or question.get("question_text_en")
+            or question.get("question_en")
+        ),
         "choices": choices,
         "correct_answer": question.get("correct_answer") or question.get("answer"),
         "explanation": question.get("explanation") or question.get("explanation_th") or question.get("explanation_en"),
@@ -530,7 +537,13 @@ def list_questions(grade_level: int | None = None, lesson_id: str | None = None,
                     "question_id": question_id,
                     "grade_level": grade,
                     "lesson_id": topic,
-                    "question": question.get("question_text_th") or question.get("question_text") or question.get("question") or question.get("question_en"),
+                    "question": (
+                        question.get("question_text_th")
+                        or question.get("question_text_en")
+                        or question.get("question_text")
+                        or question.get("question")
+                        or question.get("question_en")
+                    ),
                     "choices": question.get("choices") or [],
                     "correct_answer": question.get("correct_answer") or question.get("answer"),
                     "explanation": explanation,

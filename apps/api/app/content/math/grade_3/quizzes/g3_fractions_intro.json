@@ -1,7 +1,7 @@
 {
-  "quiz_id": "g3_fractions_intro",
   "lesson_id": "g3_fractions_intro",
   "grade_level": 3,
+  "program": "TH",
   "questions": [
     {
       "question_id": "g3_fractions_intro_q001",
@@ -13,21 +13,17 @@
       "routine_level": "routine",
       "difficulty": "easy",
       "confidence_role": "build_confidence",
-      "question_text_th": "31 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 4 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "32",
-        "33",
-        "34",
-        "36"
+        "1/4",
+        "2/4",
+        "4/2",
+        "3/5"
       ],
-      "correct_answer": "34",
-      "explanation_th": "31 + 3 = 34",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/4",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 4 ส่วน จึงเป็น 2/4",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q002",
@@ -39,21 +35,17 @@
       "routine_level": "routine",
       "difficulty": "easy",
       "confidence_role": "build_confidence",
-      "question_text_th": "32 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 5 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "33",
-        "34",
-        "35",
-        "37"
+        "1/5",
+        "2/5",
+        "5/2",
+        "4/6"
       ],
-      "correct_answer": "35",
-      "explanation_th": "32 + 3 = 35",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/5",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 5 ส่วน จึงเป็น 2/5",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q003",
@@ -65,21 +57,17 @@
       "routine_level": "routine",
       "difficulty": "easy",
       "confidence_role": "build_confidence",
-      "question_text_th": "33 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 6 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "34",
-        "35",
-        "36",
-        "38"
+        "1/6",
+        "2/6",
+        "6/2",
+        "5/7"
       ],
-      "correct_answer": "36",
-      "explanation_th": "33 + 3 = 36",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/6",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 6 ส่วน จึงเป็น 2/6",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q004",
@@ -91,21 +79,17 @@
       "routine_level": "routine",
       "difficulty": "medium",
       "confidence_role": "build_confidence",
-      "question_text_th": "34 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 7 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "35",
-        "36",
-        "37",
-        "39"
+        "1/7",
+        "2/7",
+        "7/2",
+        "6/8"
       ],
-      "correct_answer": "37",
-      "explanation_th": "34 + 3 = 37",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/7",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 7 ส่วน จึงเป็น 2/7",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q005",
@@ -117,21 +101,17 @@
       "routine_level": "non_routine",
       "difficulty": "medium",
       "confidence_role": "stretch_thinking",
-      "question_text_th": "35 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 8 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "36",
-        "37",
-        "38",
-        "40"
+        "1/8",
+        "2/8",
+        "8/2",
+        "7/9"
       ],
-      "correct_answer": "38",
-      "explanation_th": "35 + 3 = 38",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/8",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 8 ส่วน จึงเป็น 2/8",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q006",
@@ -143,21 +123,17 @@
       "routine_level": "routine",
       "difficulty": "easy",
       "confidence_role": "build_confidence",
-      "question_text_th": "36 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 9 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "37",
-        "38",
-        "39",
-        "41"
+        "1/9",
+        "2/9",
+        "9/2",
+        "8/10"
       ],
-      "correct_answer": "39",
-      "explanation_th": "36 + 3 = 39",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/9",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 9 ส่วน จึงเป็น 2/9",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q007",
@@ -169,21 +145,17 @@
       "routine_level": "routine",
       "difficulty": "easy",
       "confidence_role": "build_confidence",
-      "question_text_th": "37 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 10 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "38",
-        "39",
-        "40",
-        "42"
+        "1/10",
+        "2/10",
+        "10/2",
+        "9/11"
       ],
-      "correct_answer": "40",
-      "explanation_th": "37 + 3 = 40",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/10",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 10 ส่วน จึงเป็น 2/10",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q008",
@@ -195,21 +167,17 @@
       "routine_level": "routine",
       "difficulty": "easy",
       "confidence_role": "build_confidence",
-      "question_text_th": "38 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 11 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "39",
-        "40",
-        "41",
-        "43"
+        "1/11",
+        "2/11",
+        "11/2",
+        "10/12"
       ],
-      "correct_answer": "41",
-      "explanation_th": "38 + 3 = 41",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/11",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 11 ส่วน จึงเป็น 2/11",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q009",
@@ -221,21 +189,17 @@
       "routine_level": "routine",
       "difficulty": "medium",
       "confidence_role": "build_confidence",
-      "question_text_th": "39 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 12 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "40",
-        "41",
-        "42",
-        "44"
+        "1/12",
+        "2/12",
+        "12/2",
+        "11/13"
       ],
-      "correct_answer": "42",
-      "explanation_th": "39 + 3 = 42",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/12",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 12 ส่วน จึงเป็น 2/12",
+      "explanation_en": ""
     },
     {
       "question_id": "g3_fractions_intro_q010",
@@ -247,21 +211,17 @@
       "routine_level": "non_routine",
       "difficulty": "medium",
       "confidence_role": "stretch_thinking",
-      "question_text_th": "40 + 3 = ?",
+      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 13 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
       "question_text_en": "",
       "choices": [
-        "41",
-        "42",
-        "43",
-        "45"
+        "1/13",
+        "2/13",
+        "13/2",
+        "12/14"
       ],
-      "correct_answer": "43",
-      "explanation_th": "40 + 3 = 43",
-      "explanation_en": "",
-      "hint_th": "เขียนประโยคคณิตก่อน แล้วค่อยคำนวณ",
-      "solution_strategy_th": "step_by_step",
-      "singapore_math_model": "array_model",
-      "common_wrong_reason_th": "Check the operation and place value."
+      "correct_answer": "2/13",
+      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 13 ส่วน จึงเป็น 2/13",
+      "explanation_en": ""
     }
   ]
 }

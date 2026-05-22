@@ -1,20 +1,20 @@
 {
   "lesson_id": "g3_multiplication_area_model_thp_ep",
   "id": "g3_multiplication_area_model_thp_ep",
-  "content_schema_version": "2.0",
+  "content_schema_version": "topa_story_variant_v1",
   "quality_required": true,
   "status": "approved",
   "program_type": "EP",
   "grade_level": 3,
   "subject": "math",
-  "topic_code": "g3_multiplication_area_model",
+  "topic_code": "g3_multiplication_area_model_thp",
   "skill_code": "g3_multiplication_area_model_thp_ep",
   "quiz_id": "g3_multiplication_area_model_thp_ep",
-  "title_th": "การคูณด้วยแบบจำลองพื้นที่",
-  "objective_th": "นักเรียนคูณจำนวนสองจำนวนได้ โดยมองเป็นแถวและหลักในแบบจำลองพื้นที่",
+  "title_th": "",
+  "objective_th": "",
   "estimated_minutes": 15,
   "has_test": true,
-  "story_intro_th": "ครูมีแปลงผักเป็นรูปสี่เหลี่ยม มี 4 แถว แถวละ 6 ช่อง เราหาจำนวนช่องทั้งหมดได้โดยใช้การคูณ",
+  "story_intro_th": "",
   "key_ideas_th": [
     "แบบจำลองพื้นที่ช่วยให้เห็นว่า การคูณคือจำนวนแถวคูณจำนวนช่องในแต่ละแถว",
     "ถ้าแถวเท่ากันทุกแถว เรานับเป็นกลุ่มเท่า ๆ กันได้",
@@ -31,43 +31,44 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "title": "Think Story",
-      "content": "Read the problem about Multiplication with Area Model. Find the important numbers first."
+      "title": "Story",
+      "content": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
     },
     {
-      "type": "visual_thinking",
-      "title": "Look First",
-      "content": "Circle what you know and underline what the question asks."
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches Area of Rectangles. Use the model to get 30."
     },
     {
       "type": "model_diagram",
       "title": "Use a Model",
-      "description": "Use equal groups or boxes to organize the numbers.",
-      "model_type": "array_model",
-      "rows": 4,
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
       "cols": 6,
-      "total": 24,
-      "unit": "items"
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "6 × 4 = 24",
-      "content": "Choose the operation that matches the question."
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
       "choices": [
-        "20",
-        "22",
+        "11",
         "24",
-        "26"
+        "28",
+        "32"
       ],
-      "correct_answer": "24",
-      "answer": "24",
-      "explanation": "6 × 4 = 24"
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
     }
   ],
   "explanation_steps": [
@@ -100,147 +101,53 @@
   ],
   "lesson_variants": [
     {
-      "variant_id": "v01",
-      "variant_title_th": "แปลงผักในโรงเรียน",
-      "story_theme_th": "school_garden",
+      "variant_id": "g3_multiplication_area_model_thp_ep_01",
+      "variant_title_th": "Area of Rectangles Variant 1",
+      "variant_title_en": "Area of Rectangles Variant 1",
+      "story_theme_th": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for Area of Rectangles.",
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Multiplication with Area Model. Find the important numbers first."
+          "title": "Story",
+          "content": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
         },
         {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Area of Rectangles. Use the model to get 30."
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
           "cols": 6,
-          "total": 24,
-          "unit": "items"
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
           "choices": [
-            "20",
-            "22",
+            "11",
             "24",
-            "26"
+            "28",
+            "32"
           ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "แปลงผักในโรงเรียน",
-      "story_theme_en": "school_garden"
-    },
-    {
-      "variant_id": "v02",
-      "variant_title_th": "ถาดขนมในร้าน",
-      "story_theme_th": "snack_tray",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Multiplication with Area Model. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
-        }
-      ],
-      "variant_title_en": "ถาดขนมในร้าน",
-      "story_theme_en": "snack_tray"
-    },
-    {
-      "variant_id": "ep_v01",
-      "variant_title_en": "",
-      "story_theme_en": "",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "Read the problem about Multiplication with Area Model. Find the important numbers first."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Circle what you know and underline what the question asks."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Use equal groups or boxes to organize the numbers.",
-          "model_type": "array_model",
-          "rows": 4,
-          "cols": 6,
-          "total": 24,
-          "unit": "items"
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "6 × 4 = 24",
-          "content": "Choose the operation that matches the question."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "There are 6 groups with 4 items in each group. How many items are there?",
-          "choices": [
-            "20",
-            "22",
-            "24",
-            "26"
-          ],
-          "correct_answer": "24",
-          "answer": "24",
-          "explanation": "6 × 4 = 24"
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
         }
       ]
     }
@@ -645,8 +552,8 @@
       "question_type": "challenge"
     }
   ],
-  "title_en": "Multiplication with Area Model",
-  "objective_en": "Students will be able to multiply using times tables",
+  "title_en": "Area of Rectangles",
+  "objective_en": "Learn Area of Rectangles with a story, a model, a number sentence, and practice.",
   "story_intro_en": "Miss Alice has 4 rows with 6 squares in each row. How many squares are there in total? (4 × 6 = 24)",
   "worked_examples_en": [
     {
@@ -950,5 +857,97 @@
   ],
   "generated_at": "2026-05-16T04:16:41.427493+00:00",
   "source_lesson_id": "g3_multiplication_area_model_thp",
-  "needs_review": true
+  "needs_review": true,
+  "base_lesson_id": "g3_multiplication_area_model_thp",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Area of Rectangles",
+  "topic": "area",
+  "icon": "grid",
+  "story_variants": [
+    {
+      "variant_id": "g3_multiplication_area_model_thp_ep_01",
+      "status": "approved",
+      "title": "Area of Rectangles Variant 1",
+      "story": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Area of Rectangles. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Area of Rectangles.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Area of Rectangles. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Area of Rectangles.",
+  "thai_support": ""
 }

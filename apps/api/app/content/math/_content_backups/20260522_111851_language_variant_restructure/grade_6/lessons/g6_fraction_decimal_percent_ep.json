@@ -1,0 +1,989 @@
+{
+  "lesson_id": "g6_fraction_decimal_percent_ep",
+  "id": "g6_fraction_decimal_percent_ep",
+  "grade_level": 6,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "เศษส่วนเป็นทศนิยม: หารเศษด้วยส่วน เช่น 1/4 = 1 ÷ 4 = 0.25",
+    "ทศนิยมเป็นเศษส่วน: เปลี่ยนทศนิยมเป็นเศษส่วนที่มีส่วนเป็น 10, 100, 1000 แล้วตัดทอน เช่น 0.125 = 125/1000 = 1/8",
+    "เปอร์เซ็นต์เป็นเศษส่วน: เปอร์เซ็นต์ ÷ 100 เช่น 75% = 75/100 = 3/4",
+    "เปอร์เซ็นต์เป็นทศนิยม: เปอร์เซ็นต์ ÷ 100 เช่น 85% = 0.85",
+    "เปรียบเทียบ: แปลงทุกอย่างเป็นทศนิยมก่อนแล้วเปรียบเทียบ"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "เศษส่วนเป็นทศนิยม",
+      "question_th": "3/5 เป็นทศนิยมเท่าไหร่?",
+      "solution_th": "3 ÷ 5 = 0.6 ✅"
+    },
+    {
+      "title_th": "ทศนิยมเป็นเปอร์เซ็นต์",
+      "question_th": "0.45 เป็นเปอร์เซ็นต์เท่าไหร่?",
+      "solution_th": "0.45 × 100 = 45% ✅"
+    },
+    {
+      "title_th": "เปอร์เซ็นต์เป็นเศษส่วน",
+      "question_th": "60% เป็นเศษส่วนเท่าไหร่?",
+      "solution_th": "60/100 = 3/5 ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบเศษส่วน ทศนิยม เปอร์เซ็นต์",
+      "question_th": "1/3, 0.3, 33% อันไหนมากที่สุด?",
+      "solution_th": "1/3 ≈ 0.333, 0.3, 33% = 0.33 → 1/3 มากที่สุด ✅"
+    }
+  ],
+  "common_mistakes": [
+    "แปลงเปอร์เซ็นต์เป็นทศนิยมโดยไม่หารด้วย 100 ทำให้ได้ 85% = 85 แทนที่จะเป็น 0.85",
+    "ตัดเศษส่วนไม่เป็นเศษอย่างต่ำ",
+    "เปรียบเทียบโดยไม่แปลงให้เป็นรูปเดียวกันก่อน"
+  ],
+  "hints": [
+    "เปอร์เซ็นต์ = ÷100, ทศนิยม = ×100 สำหรับเปอร์เซ็นต์",
+    "เศษส่วนเป็นทศนิยม = หารเศษด้วยส่วน",
+    "เปรียบเทียบให้แปลงเป็นทศนิยมก่อนเสมอ จะเห็นชัด"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_fraction_decimal_percent",
+  "skill_code": "g6_fraction_decimal_percent_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g6_fraction_decimal_percent_ep_01",
+      "variant_title_th": "Decimals in Money and Measurement Variant 1",
+      "variant_title_en": "Decimals in Money and Measurement Variant 1",
+      "story_theme_th": "Mali has one small cake for her study group. The cake is cut into 4 equal pieces. Mali takes 1 piece and leaves the rest for her friends. The whole cake is one whole. Because the pieces are equal, we can use a fraction to show Mali's part. The top number tells how many pieces she takes. The bottom number tells how many equal pieces are in the whole cake. Before writing the answer, Mali checks that every piece is the same size. This is important because fractions only work when the whole is split into equal parts. She says the story in her own words, points to the shaded piece, and writes the fraction carefully.",
+      "story_theme_en": "Mali has one small cake for her study group. The cake is cut into 4 equal pieces. Mali takes 1 piece and leaves the rest for her friends. The whole cake is one whole. Because the pieces are equal, we can use a fraction to show Mali's part. The top number tells how many pieces she takes. The bottom number tells how many equal pieces are in the whole cake. Before writing the answer, Mali checks that every piece is the same size. This is important because fractions only work when the whole is split into equal parts. She says the story in her own words, points to the shaded piece, and writes the fraction carefully.",
+      "helper_tip": "Read the story first. Circle the important numbers for Decimals in Money and Measurement.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Mali has one small cake for her study group. The cake is cut into 4 equal pieces. Mali takes 1 piece and leaves the rest for her friends. The whole cake is one whole. Because the pieces are equal, we can use a fraction to show Mali's part. The top number tells how many pieces she takes. The bottom number tells how many equal pieces are in the whole cake. Before writing the answer, Mali checks that every piece is the same size. This is important because fractions only work when the whole is split into equal parts. She says the story in her own words, points to the shaded piece, and writes the fraction carefully."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key facts are 1 whole cake, 4 equal pieces, and 1 piece taken. The fraction is 1/4."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Draw one cake split into 4 equal parts and shade 1 part.",
+          "model_type": "fraction_visual",
+          "numerator": 1,
+          "denominator": 4,
+          "total": 4,
+          "symbol": "□",
+          "unit": "part"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "1/4",
+          "content": "1 part out of 4 equal parts"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A watermelon is cut into 6 equal pieces. Ben takes 2 pieces. What fraction shows Ben's pieces?",
+          "choices": [
+            "1/6",
+            "2/6",
+            "4/6",
+            "6/2"
+          ],
+          "correct_answer": "2/6",
+          "answer": "2/6",
+          "explanation": "Ben takes 2 pieces out of 6 equal pieces, so the fraction is 2/6."
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เศษส่วน ทศนิยม เปอร์เซ็นต์",
+  "preview_subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "cover_theme": "fdp_conversion",
+  "cover_emoji": "🍕",
+  "cover_color": "pink",
+  "access_type_hint": "free",
+  "status": "approved",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "learning_objective_th": "นักเรียนสามารถแปลงเศษส่วน ทศนิยม และเปอร์เซ็นต์ซึ่งกันและกันได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสดูข้อมูลสถิติ: 1/4 ของนักเรียนชอบวิ่ง 0.35 ชอบว่ายน้ำ 42% ชอบเล่นฟุตบอล อยากเปรียบเทียบว่าอันไหนมากสุด? ⚽",
+  "concept_explanation_th": "เศษส่วนเป็นทศนิยม: หารเศษด้วยส่วน เช่น 1/4 = 1 ÷ 4 = 0.25 ทศนิยมเป็นเศษส่วน: เปลี่ยนทศนิยมเป็นเศษส่วนที่มีส่วนเป็น 10, 100, 1000 แล้วตัดทอน เช่น 0.125 = 125/1000 = 1/8 เปอร์เซ็นต์เป็นเศษส่วน: เปอร์เซ็นต์ ÷ 100 เช่น 75% = 75/100 = 3/4 เปอร์เซ็นต์เป็นทศนิยม: เปอร์เซ็นต์ ÷ 100 เช่น 85% = 0.85 เปรียบเทียบ: แปลงทุกอย่างเป็นทศนิยมก่อนแล้วเปรียบเทียบ",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เศษส่วน ทศนิยม เปอร์เซ็นต์ เชื่อมโยงกัน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "เศษส่วนเป็นทศนิยม",
+      "question_th": "3/5 เป็นทศนิยมเท่าไหร่?",
+      "solution_th": "3 ÷ 5 = 0.6 ✅"
+    },
+    {
+      "title_th": "ทศนิยมเป็นเปอร์เซ็นต์",
+      "question_th": "0.45 เป็นเปอร์เซ็นต์เท่าไหร่?",
+      "solution_th": "0.45 × 100 = 45% ✅"
+    },
+    {
+      "title_th": "เปอร์เซ็นต์เป็นเศษส่วน",
+      "question_th": "60% เป็นเศษส่วนเท่าไหร่?",
+      "solution_th": "60/100 = 3/5 ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบเศษส่วน ทศนิยม เปอร์เซ็นต์",
+      "question_th": "1/3, 0.3, 33% อันไหนมากที่สุด?",
+      "solution_th": "1/3 ≈ 0.333, 0.3, 33% = 0.33 → 1/3 มากที่สุด ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "แปลงเปอร์เซ็นต์เป็นทศนิยมโดยไม่หารด้วย 100 ทำให้ได้ 85% = 85 แทนที่จะเป็น 0.85",
+    "ตัดเศษส่วนไม่เป็นเศษอย่างต่ำ",
+    "เปรียบเทียบโดยไม่แปลงให้เป็นรูปเดียวกันก่อน"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_fraction_decimal_percent_q01",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q02",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q03",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q04",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q05",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q06",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q07",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q08",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q09",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q10",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_fraction_decimal_percent_q01",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q02",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q03",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q04",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q05",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q06",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q07",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q08",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q09",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q10",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Decimals in Money and Measurement",
+  "objective_en": "Learn Decimals in Money and Measurement with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Look! 1 + 4 + 0 + 35 + 42 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: เศษส่วนเป็นทศนิยม",
+      "question_en": "3/5 ?",
+      "solution_en": "3 ÷ 5 = 0.6 ✅"
+    },
+    {
+      "title_en": "Example: ทศนิยมเป็นเปอร์เซ็นต์",
+      "question_en": "0.45 ?",
+      "solution_en": "0.45 × 100 = 45% ✅"
+    },
+    {
+      "title_en": "Example: เปอร์เซ็นต์เป็นเศษส่วน",
+      "question_en": "60% ?",
+      "solution_en": "60/100 = 3/5 ✅"
+    },
+    {
+      "title_en": "Example: เปรียบเทียบเศษส่วน ทศนิยม เปอร์เซ็นต์",
+      "question_en": "1/3, 0.3, 33% ?",
+      "solution_en": "1/3 ≈ 0.333, 0.3, 33% = 0.33 → 1/3 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: แปลงเปอร์เซ็นต์เป็นทศนิยมโดยไม่หารด้วย 100 ทำให้ได้ 85% = 85 แทนที่จะเป็น 0.85",
+    "Mistake: ตัดเศษส่วนไม่เป็นเศษอย่างต่ำ",
+    "Mistake: เปรียบเทียบโดยไม่แปลงให้เป็นรูปเดียวกันก่อน"
+  ],
+  "hints_en": [
+    "Hint: เปอร์เซ็นต์ = ÷100, ทศนิยม = ×100 สำหรับเปอร์เซ็นต์",
+    "Hint: เศษส่วนเป็นทศนิยม = หารเศษด้วยส่วน",
+    "Hint: เปรียบเทียบให้แปลงเป็นทศนิยมก่อนเสมอ จะเห็นชัด"
+  ],
+  "explanation_steps_en": [
+    "Step: เศษส่วนเป็นทศนิยม: หารเศษด้วยส่วน เช่น 1/4 = 1 ÷ 4 = 0.25",
+    "Step: ทศนิยมเป็นเศษส่วน: เปลี่ยนทศนิยมเป็นเศษส่วนที่มีส่วนเป็น 10, 100, 1000 แล้วตัดทอน เช่น 0.125 = 125/1000 = 1/8",
+    "Step: เปอร์เซ็นต์เป็นเศษส่วน: เปอร์เซ็นต์ ÷ 100 เช่น 75% = 75/100 = 3/4",
+    "Step: เปอร์เซ็นต์เป็นทศนิยม: เปอร์เซ็นต์ ÷ 100 เช่น 85% = 0.85",
+    "Step: เปรียบเทียบ: แปลงทุกอย่างเป็นทศนิยมก่อนแล้วเปรียบเทียบ"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g6_fraction_decimal_percent_q01",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "animals animals 1 + 2 = 3?",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core",
+      "question_en": "1/4 + 2/4 ?",
+      "explanation_en": "animals animals 1 + 2 = 3?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "3/4"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q02",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 ?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core",
+      "question_en": "3/5 - 1/5 ?",
+      "explanation_en": "3/5 - 1/5 = 2/5",
+      "choices_en": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "answer_en": "2/5"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q03",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 1/2?",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "easy",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core",
+      "question_en": "1/2?",
+      "explanation_en": "2/4 1/2?",
+      "choices_en": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "answer_en": "2/4"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q04",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "animals animals 1 + 2 = 3?",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core",
+      "question_en": "1/4 + 2/4 ?",
+      "explanation_en": "animals animals 1 + 2 = 3?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "3/4"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q05",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 ?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core",
+      "question_en": "3/5 - 1/5 ?",
+      "explanation_en": "3/5 - 1/5 = 2/5",
+      "choices_en": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "answer_en": "2/5"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q06",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 1/2?",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core",
+      "question_en": "1/2?",
+      "explanation_en": "2/4 1/2?",
+      "choices_en": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "answer_en": "2/4"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q07",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "animals animals 1 + 2 = 3?",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "core",
+      "question_en": "1/4 + 2/4 ?",
+      "explanation_en": "animals animals 1 + 2 = 3?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "3/4"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q08",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 ?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge",
+      "question_en": "3/5 - 1/5 ?",
+      "explanation_en": "3/5 - 1/5 = 2/5",
+      "choices_en": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "answer_en": "2/5"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q09",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 1/2?",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge",
+      "question_en": "1/2?",
+      "explanation_en": "2/4 1/2?",
+      "choices_en": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "answer_en": "2/4"
+    },
+    {
+      "question_id": "g6_fraction_decimal_percent_q10",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "animals animals 1 + 2 = 3?",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "hard",
+      "skill_tag": "g6_fraction_decimal_percent",
+      "question_type": "challenge",
+      "question_en": "1/4 + 2/4 ?",
+      "explanation_en": "animals animals 1 + 2 = 3?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "3/4"
+    }
+  ],
+  "quiz_id": "g6_fraction_decimal_percent_ep",
+  "generated_at": "2026-05-16T04:16:42.146227+00:00",
+  "source_lesson_id": "g6_fraction_decimal_percent",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mali has one small cake for her study group. The cake is cut into 4 equal pieces. Mali takes 1 piece and leaves the rest for her friends. The whole cake is one whole. Because the pieces are equal, we can use a fraction to show Mali's part. The top number tells how many pieces she takes. The bottom number tells how many equal pieces are in the whole cake. Before writing the answer, Mali checks that every piece is the same size. This is important because fractions only work when the whole is split into equal parts. She says the story in her own words, points to the shaded piece, and writes the fraction carefully."
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key facts are 1 whole cake, 4 equal pieces, and 1 piece taken. The fraction is 1/4."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Draw one cake split into 4 equal parts and shade 1 part.",
+      "model_type": "fraction_visual",
+      "numerator": 1,
+      "denominator": 4,
+      "total": 4,
+      "symbol": "□",
+      "unit": "part"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "1/4",
+      "content": "1 part out of 4 equal parts"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A watermelon is cut into 6 equal pieces. Ben takes 2 pieces. What fraction shows Ben's pieces?",
+      "choices": [
+        "1/6",
+        "2/6",
+        "4/6",
+        "6/2"
+      ],
+      "correct_answer": "2/6",
+      "answer": "2/6",
+      "explanation": "Ben takes 2 pieces out of 6 equal pieces, so the fraction is 2/6."
+    }
+  ],
+  "base_lesson_id": "g6_fraction_decimal_percent",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Decimals in Money and Measurement",
+  "topic": "fraction",
+  "icon": "fraction",
+  "story_variants": [
+    {
+      "variant_id": "g6_fraction_decimal_percent_ep_01",
+      "status": "approved",
+      "title": "Decimals in Money and Measurement Variant 1",
+      "story": "Mali has one small cake for her study group. The cake is cut into 4 equal pieces. Mali takes 1 piece and leaves the rest for her friends. The whole cake is one whole. Because the pieces are equal, we can use a fraction to show Mali's part. The top number tells how many pieces she takes. The bottom number tells how many equal pieces are in the whole cake. Before writing the answer, Mali checks that every piece is the same size. This is important because fractions only work when the whole is split into equal parts. She says the story in her own words, points to the shaded piece, and writes the fraction carefully.",
+      "think_story": "The key facts are 1 whole cake, 4 equal pieces, and 1 piece taken. The fraction is 1/4.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Draw one cake split into 4 equal parts and shade 1 part.",
+        "model_type": "fraction_visual",
+        "numerator": 1,
+        "denominator": 4,
+        "total": 4,
+        "symbol": "□",
+        "unit": "part"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "1/4",
+        "content": "1 part out of 4 equal parts"
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A watermelon is cut into 6 equal pieces. Ben takes 2 pieces. What fraction shows Ben's pieces?",
+        "choices": [
+          "1/6",
+          "2/6",
+          "4/6",
+          "6/2"
+        ],
+        "correct_answer": "2/6",
+        "answer": "2/6",
+        "explanation": "Ben takes 2 pieces out of 6 equal pieces, so the fraction is 2/6."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Decimals in Money and Measurement.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Mali has one small cake for her study group. The cake is cut into 4 equal pieces. Mali takes 1 piece and leaves the rest for her friends. The whole cake is one whole. Because the pieces are equal, we can use a fraction to show Mali's part. The top number tells how many pieces she takes. The bottom number tells how many equal pieces are in the whole cake. Before writing the answer, Mali checks that every piece is the same size. This is important because fractions only work when the whole is split into equal parts. She says the story in her own words, points to the shaded piece, and writes the fraction carefully."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key facts are 1 whole cake, 4 equal pieces, and 1 piece taken. The fraction is 1/4."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Draw one cake split into 4 equal parts and shade 1 part.",
+          "model_type": "fraction_visual",
+          "numerator": 1,
+          "denominator": 4,
+          "total": 4,
+          "symbol": "□",
+          "unit": "part"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "1/4",
+          "content": "1 part out of 4 equal parts"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A watermelon is cut into 6 equal pieces. Ben takes 2 pieces. What fraction shows Ben's pieces?",
+          "choices": [
+            "1/6",
+            "2/6",
+            "4/6",
+            "6/2"
+          ],
+          "correct_answer": "2/6",
+          "answer": "2/6",
+          "explanation": "Ben takes 2 pieces out of 6 equal pieces, so the fraction is 2/6."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Decimals in Money and Measurement.",
+  "thai_support": ""
+}

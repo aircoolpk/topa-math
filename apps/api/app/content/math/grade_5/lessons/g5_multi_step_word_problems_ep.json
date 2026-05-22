@@ -2,9 +2,9 @@
   "lesson_id": "g5_multi_step_word_problems_ep",
   "id": "g5_multi_step_word_problems_ep",
   "grade_level": 5,
-  "title_th": "โจทย์หลายขั้นตอนระดับ ป.5",
-  "objective_th": "นักเรียนสามารถวิเคราะห์และแก้โจทย์ปัญหาที่ซับซ้อนหลายขั้นตอนได้ถูกต้อง",
-  "story_intro_th": "ร้านค้าซื้อสินค้า 250 ชิ้น ราคาชิ้นละ 45 บาท ขายในราคาชิ้นละ 68 บาท แต่มีสินค้าเสียหาย 15 ชิ้น ร้านได้กำไรเท่าไหร่? 💰",
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
   "explanation_steps": [
     "อ่านโจทย์ให้เข้าใจ ระบุข้อมูลสำคัญและสิ่งที่ถาม",
     "วางแผนขั้นตอน: ขั้น 1 หาต้นทุนรวม ขั้น 2 หารายได้รวม ขั้น 3 หาสินค้าที่เสียหาย ขั้น 4 หากำไร",
@@ -46,51 +46,54 @@
   "skill_code": "g5_multi_step_word_problems_ep",
   "lesson_variants": [
     {
-      "variant_id": "v01",
-      "variant_title_th": "🏫 โรงเรียน",
-      "story_theme_th": "เรื่องราวในโรงเรียน",
+      "variant_id": "g5_multi_step_word_problems_ep_01",
+      "variant_title_th": "Multi-Step Word Problems Variant 1",
+      "variant_title_en": "Multi-Step Word Problems Variant 1",
+      "story_theme_th": "Ton's class sells fruit juice at the school fair. One cup sells for 15 baht, and the class sells 8 cups. Each cup costs 6 baht to make because the class must buy fruit, ice, and cups. Ton wants to know the profit. This is a multi-step problem, so he cannot use only one quick operation. First, he finds the total sales. Second, he finds the total cost. Third, he subtracts the cost from the sales. This organized plan helps him avoid mixing up price, cost, and profit.",
+      "story_theme_en": "Ton's class sells fruit juice at the school fair. One cup sells for 15 baht, and the class sells 8 cups. Each cup costs 6 baht to make because the class must buy fruit, ice, and cups. Ton wants to know the profit. This is a multi-step problem, so he cannot use only one quick operation. First, he finds the total sales. Second, he finds the total cost. Third, he subtracts the cost from the sales. This organized plan helps him avoid mixing up price, cost, and profit.",
+      "helper_tip": "Read the story first. Circle the important numbers for Multi-Step Word Problems.",
       "visual_blocks": [
         {
           "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+          "title": "Story",
+          "content": "Ton's class sells fruit juice at the school fair. One cup sells for 15 baht, and the class sells 8 cups. Each cup costs 6 baht to make because the class must buy fruit, ice, and cups. Ton wants to know the profit. This is a multi-step problem, so he cannot use only one quick operation. First, he finds the total sales. Second, he finds the total cost. Third, he subtracts the cost from the sales. This organized plan helps him avoid mixing up price, cost, and profit."
         },
         {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key facts are 15 baht per cup, 8 cups sold, and 6 baht cost per cup. Find sales, find cost, then subtract to get profit."
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
+          "description": "Show sales, cost, and profit as connected bars.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "sales",
+              "value": 120
+            },
+            {
+              "label": "cost",
+              "value": 48
+            },
+            {
+              "label": "profit",
+              "value": 72
+            }
+          ],
+          "unit": "baht"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
           "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
+          "content": "Solve sales first, cost second, then subtract."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+          "question": "A class sells 5 snacks for 10 baht each. Each snack costs 4 baht to make. What is the profit?",
           "choices": [
             "20 baht",
             "25 baht",
@@ -99,607 +102,7 @@
           ],
           "correct_answer": "30 baht",
           "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🏫 โรงเรียน",
-      "story_theme_en": "เรื่องราวในโรงเรียน"
-    },
-    {
-      "variant_id": "v02",
-      "variant_title_th": "🍎 ผลไม้",
-      "story_theme_th": "เรื่องราวเกี่ยวกับผลไม้",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🍎 ผลไม้",
-      "story_theme_en": "เรื่องราวเกี่ยวกับผลไม้"
-    },
-    {
-      "variant_id": "v03",
-      "variant_title_th": "🧸 ของเล่น",
-      "story_theme_th": "เรื่องราวเกี่ยวกับของเล่น",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🧸 ของเล่น",
-      "story_theme_en": "เรื่องราวเกี่ยวกับของเล่น"
-    },
-    {
-      "variant_id": "v04",
-      "variant_title_th": "🏪 ตลาด",
-      "story_theme_th": "เรื่องราวในตลาด",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🏪 ตลาด",
-      "story_theme_en": "เรื่องราวในตลาด"
-    },
-    {
-      "variant_id": "v05",
-      "variant_title_th": "🐕 สัตว์เลี้ยง",
-      "story_theme_th": "เรื่องราวเกี่ยวกับสัตว์เลี้ยง",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🐕 สัตว์เลี้ยง",
-      "story_theme_en": "เรื่องราวเกี่ยวกับสัตว์เลี้ยง"
-    },
-    {
-      "variant_id": "v06",
-      "variant_title_th": "🌻 สวน",
-      "story_theme_th": "เรื่องราวในสวน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🌻 สวน",
-      "story_theme_en": "เรื่องราวในสวน"
-    },
-    {
-      "variant_id": "v07",
-      "variant_title_th": "🎨 วาดรูป",
-      "story_theme_th": "เรื่องราวเกี่ยวกับการวาดรูป",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🎨 วาดรูป",
-      "story_theme_en": "เรื่องราวเกี่ยวกับการวาดรูป"
-    },
-    {
-      "variant_id": "v08",
-      "variant_title_th": "📚 ห้องเรียน",
-      "story_theme_th": "เรื่องราวในห้องเรียน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "📚 ห้องเรียน",
-      "story_theme_en": "เรื่องราวในห้องเรียน"
-    },
-    {
-      "variant_id": "v09",
-      "variant_title_th": "🎮 สนุกกับเพื่อน",
-      "story_theme_th": "เรื่องราวสนุกๆ กับเพื่อน",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🎮 สนุกกับเพื่อน",
-      "story_theme_en": "เรื่องราวสนุกๆ กับเพื่อน"
-    },
-    {
-      "variant_id": "v10",
-      "variant_title_th": "🎉 งานเทศกาล",
-      "story_theme_th": "เรื่องราวในงานเทศกาล",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
-        }
-      ],
-      "variant_title_en": "🎉 งานเทศกาล",
-      "story_theme_en": "เรื่องราวในงานเทศกาล"
-    },
-    {
-      "variant_id": "ep_v01",
-      "variant_title_en": "",
-      "story_theme_en": "",
-      "visual_blocks": [
-        {
-          "type": "story_intro",
-          "title": "Think Story",
-          "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
-        },
-        {
-          "type": "visual_thinking",
-          "title": "Look First",
-          "content": "Find sales first, then cost, then profit."
-        },
-        {
-          "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Step by step: sales, cost, profit.",
-          "model_type": "multi_step_model",
-          "step1": {
-            "label": "sales",
-            "expression": "15 × 8",
-            "result": "120 baht"
-          },
-          "step2": {
-            "label": "cost",
-            "expression": "6 × 8",
-            "result": "48 baht"
-          },
-          "step3": {
-            "label": "profit",
-            "expression": "120 - 48",
-            "result": "72 baht"
-          }
-        },
-        {
-          "type": "number_sentence",
-          "title": "Number Sentence",
-          "expression": "(15 × 8) - (6 × 8) = 72 baht",
-          "content": "Solve one small step at a time."
-        },
-        {
-          "type": "mini_quiz",
-          "title": "Try It",
-          "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
-          "choices": [
-            "20 baht",
-            "25 baht",
-            "30 baht",
-            "50 baht"
-          ],
-          "correct_answer": "30 baht",
-          "answer": "30 baht",
-          "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+          "explanation": "Sales are 5 × 10 = 50 baht. Cost is 5 × 4 = 20 baht. Profit is 30 baht."
         }
       ]
     }
@@ -710,9 +113,9 @@
   "cover_emoji": "🧩",
   "cover_color": "yellow",
   "access_type_hint": "free",
-  "status": "published",
+  "status": "approved",
   "quality_required": true,
-  "content_schema_version": "2.0",
+  "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
   "subtitle_th": "แก้โจทย์ปัญหาทีละขั้น",
   "learning_objective_th": "นักเรียนสามารถวิเคราะห์และแก้โจทย์ปัญหาที่ซับซ้อนหลายขั้นตอนได้ถูกต้อง",
@@ -1131,8 +534,8 @@
       "question_type": "challenge"
     }
   ],
-  "title_en": "Grade 5 Multi-step Problems",
-  "objective_en": "Students will be able to solve word problems",
+  "title_en": "Multi-Step Word Problems",
+  "objective_en": "Learn Multi-Step Word Problems with a story, a model, a number sentence, and practice.",
   "story_intro_en": "Look! 250 + 45 + 68 + 15 — can you find the answer?",
   "worked_examples_en": [
     {
@@ -1448,45 +851,45 @@
   "visual_blocks": [
     {
       "type": "story_intro",
-      "title": "Think Story",
-      "content": "A juice shop sells 8 cups for 15 baht each. The cost is 6 baht each. Find the profit."
+      "title": "Story",
+      "content": "Ton's class sells fruit juice at the school fair. One cup sells for 15 baht, and the class sells 8 cups. Each cup costs 6 baht to make because the class must buy fruit, ice, and cups. Ton wants to know the profit. This is a multi-step problem, so he cannot use only one quick operation. First, he finds the total sales. Second, he finds the total cost. Third, he subtracts the cost from the sales. This organized plan helps him avoid mixing up price, cost, and profit."
     },
     {
-      "type": "visual_thinking",
-      "title": "Look First",
-      "content": "Find sales first, then cost, then profit."
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key facts are 15 baht per cup, 8 cups sold, and 6 baht cost per cup. Find sales, find cost, then subtract to get profit."
     },
     {
       "type": "model_diagram",
       "title": "Use a Model",
-      "description": "Step by step: sales, cost, profit.",
-      "model_type": "multi_step_model",
-      "step1": {
-        "label": "sales",
-        "expression": "15 × 8",
-        "result": "120 baht"
-      },
-      "step2": {
-        "label": "cost",
-        "expression": "6 × 8",
-        "result": "48 baht"
-      },
-      "step3": {
-        "label": "profit",
-        "expression": "120 - 48",
-        "result": "72 baht"
-      }
+      "description": "Show sales, cost, and profit as connected bars.",
+      "model_type": "bar_model",
+      "groups": [
+        {
+          "label": "sales",
+          "value": 120
+        },
+        {
+          "label": "cost",
+          "value": 48
+        },
+        {
+          "label": "profit",
+          "value": 72
+        }
+      ],
+      "unit": "baht"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
       "expression": "(15 × 8) - (6 × 8) = 72 baht",
-      "content": "Solve one small step at a time."
+      "content": "Solve sales first, cost second, then subtract."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "Sell 5 snacks for 10 baht each. Cost is 4 baht each. What is the profit?",
+      "question": "A class sells 5 snacks for 10 baht each. Each snack costs 4 baht to make. What is the profit?",
       "choices": [
         "20 baht",
         "25 baht",
@@ -1495,7 +898,119 @@
       ],
       "correct_answer": "30 baht",
       "answer": "30 baht",
-      "explanation": "Sales 5×10=50, cost 5×4=20, profit 50-20=30"
+      "explanation": "Sales are 5 × 10 = 50 baht. Cost is 5 × 4 = 20 baht. Profit is 30 baht."
     }
-  ]
+  ],
+  "base_lesson_id": "g5_multi_step_word_problems",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Multi-Step Word Problems",
+  "topic": "multi_step",
+  "icon": "steps",
+  "story_variants": [
+    {
+      "variant_id": "g5_multi_step_word_problems_ep_01",
+      "status": "approved",
+      "title": "Multi-Step Word Problems Variant 1",
+      "story": "Ton's class sells fruit juice at the school fair. One cup sells for 15 baht, and the class sells 8 cups. Each cup costs 6 baht to make because the class must buy fruit, ice, and cups. Ton wants to know the profit. This is a multi-step problem, so he cannot use only one quick operation. First, he finds the total sales. Second, he finds the total cost. Third, he subtracts the cost from the sales. This organized plan helps him avoid mixing up price, cost, and profit.",
+      "think_story": "The key facts are 15 baht per cup, 8 cups sold, and 6 baht cost per cup. Find sales, find cost, then subtract to get profit.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show sales, cost, and profit as connected bars.",
+        "model_type": "bar_model",
+        "groups": [
+          {
+            "label": "sales",
+            "value": 120
+          },
+          {
+            "label": "cost",
+            "value": 48
+          },
+          {
+            "label": "profit",
+            "value": 72
+          }
+        ],
+        "unit": "baht"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "(15 × 8) - (6 × 8) = 72 baht",
+        "content": "Solve sales first, cost second, then subtract."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A class sells 5 snacks for 10 baht each. Each snack costs 4 baht to make. What is the profit?",
+        "choices": [
+          "20 baht",
+          "25 baht",
+          "30 baht",
+          "50 baht"
+        ],
+        "correct_answer": "30 baht",
+        "answer": "30 baht",
+        "explanation": "Sales are 5 × 10 = 50 baht. Cost is 5 × 4 = 20 baht. Profit is 30 baht."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Multi-Step Word Problems.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton's class sells fruit juice at the school fair. One cup sells for 15 baht, and the class sells 8 cups. Each cup costs 6 baht to make because the class must buy fruit, ice, and cups. Ton wants to know the profit. This is a multi-step problem, so he cannot use only one quick operation. First, he finds the total sales. Second, he finds the total cost. Third, he subtracts the cost from the sales. This organized plan helps him avoid mixing up price, cost, and profit."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key facts are 15 baht per cup, 8 cups sold, and 6 baht cost per cup. Find sales, find cost, then subtract to get profit."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show sales, cost, and profit as connected bars.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "sales",
+              "value": 120
+            },
+            {
+              "label": "cost",
+              "value": 48
+            },
+            {
+              "label": "profit",
+              "value": 72
+            }
+          ],
+          "unit": "baht"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "(15 × 8) - (6 × 8) = 72 baht",
+          "content": "Solve sales first, cost second, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A class sells 5 snacks for 10 baht each. Each snack costs 4 baht to make. What is the profit?",
+          "choices": [
+            "20 baht",
+            "25 baht",
+            "30 baht",
+            "50 baht"
+          ],
+          "correct_answer": "30 baht",
+          "answer": "30 baht",
+          "explanation": "Sales are 5 × 10 = 50 baht. Cost is 5 × 4 = 20 baht. Profit is 30 baht."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Multi-Step Word Problems.",
+  "thai_support": ""
 }

@@ -1,0 +1,991 @@
+{
+  "lesson_id": "g2_times_table_2_5_10_ep",
+  "id": "g2_times_table_2_5_10_ep",
+  "grade_level": 2,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "สูตรคูณแม่ 2 คือ การคูณด้วย 2 ทุกครั้ง ผลลัพธ์จะเป็นเลขคู่: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20",
+    "จำได้ง่ายโดยนึกถึงคู่มือหู มีหู 2 ข้าง นับไปเรื่อยๆ",
+    "สูตรคูณแม่ 5 คือ การคูณด้วย 5 ผลลัพธ์ลงท้ายด้วย 0 หรือ 5 เสมอ: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+    "จำได้ง่ายโดยนึกถึงนิ้วมือ 5 นิ้ว ทุกคูณ 5 จะได้จำนวนที่ลงท้ายด้วย 0 หรือ 5",
+    "สูตรคูณแม่ 10 คือ การคูณด้วย 10 ผลลัพธ์จะลงท้ายด้วย 0 เสมอ: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100",
+    "จำได้ง่ายโดยเติม 0 ต่อท้ายตัวเลขที่คูณ เช่น 7 × 10 = 70"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "สูตรคูณแม่ 2",
+      "question_th": "4 × 2 = ?",
+      "solution_th": "4 × 2 = 8 ✅"
+    },
+    {
+      "title_th": "สูตรคูณแม่ 5",
+      "question_th": "7 × 5 = ?",
+      "solution_th": "7 × 5 = 35 ✅"
+    },
+    {
+      "title_th": "สูตรคูณแม่ 10",
+      "question_th": "9 × 10 = ?",
+      "solution_th": "9 × 10 = 90 ✅"
+    },
+    {
+      "title_th": "ใช้สูตรคูณแก้โจทย์",
+      "question_th": "มีลูกบอล 6 กล่อง กล่องละ 5 ลูก รวมมีลูกบอลกี่ลูก?",
+      "solution_th": "6 × 5 = 30 ลูก ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ลืมว่าสูตรคูณแม่ 2 ได้เลขคู่เสมอ",
+    "คูณแม่ 5 ผิดโดยลืมว่าผลลัพธ์ต้องลงท้ายด้วย 0 หรือ 5",
+    "คูณแม่ 10 ผิดโดยไม่เติม 0 ต่อท้าย เช่น คิดว่า 8 × 10 = 8"
+  ],
+  "hints": [
+    "ท่องสูตรคูณทุกวัน จำได้เร็วขึ้นเมื่อทำซ้ำๆ",
+    "ถ้าลืม 7 × 5 ให้นึกว่า 5 + 5 + 5 + 5 + 5 + 5 + 5 = 35",
+    "สูตรคูณแม่ 10 ง่ายที่สุด แค่เติม 0 ต่อท้ายเลขที่คูณ"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_times_table_2_5_10",
+  "skill_code": "g2_times_table_2_5_10_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g2_times_table_2_5_10_ep_01",
+      "variant_title_th": "Times Tables of 2, 5, and 10 Variant 1",
+      "variant_title_en": "Times Tables of 2, 5, and 10 Variant 1",
+      "story_theme_th": "Ton is learning Times Tables of 2, 5, and 10 with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning Times Tables of 2, 5, and 10 with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for Times Tables of 2, 5, and 10.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Times Tables of 2, 5, and 10 with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Times Tables of 2, 5, and 10. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "สูตรคูณ 2, 5, 10",
+  "preview_subtitle_th": "เรียนรู้การคูณและการหาร",
+  "cover_theme": "times_table_2_5_10",
+  "cover_emoji": "✖️",
+  "cover_color": "purple",
+  "access_type_hint": "free",
+  "status": "approved",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้การคูณและการหาร",
+  "learning_objective_th": "นักเรียนสามารถท่องสูตรคูณแม่ 2 5 และ 10 ได้ถูกต้องและรวดเร็ว",
+  "lesson_intro_th": "พี่หนึ่งเล่นเกมตะลุยด่าน ทุกด่านมีศัตรู 5 ตัว ถ้าผ่าน 4 ด่าน จะเจอศัตรูทั้งหมดกี่ตัว? 🎮",
+  "concept_explanation_th": "สูตรคูณแม่ 2 คือ การคูณด้วย 2 ทุกครั้ง ผลลัพธ์จะเป็นเลขคู่: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 จำได้ง่ายโดยนึกถึงคู่มือหู มีหู 2 ข้าง นับไปเรื่อยๆ สูตรคูณแม่ 5 คือ การคูณด้วย 5 ผลลัพธ์ลงท้ายด้วย 0 หรือ 5 เสมอ: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 จำได้ง่ายโดยนึกถึงนิ้วมือ 5 นิ้ว ทุกคูณ 5 จะได้จำนวนที่ลงท้ายด้วย 0 หรือ 5 สูตรคูณแม่ 10 คือ การคูณด้วย 10 ผลลัพธ์จะลงท้ายด้วย 0 เสมอ: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 จำได้ง่ายโดยเติม 0 ต่อท้ายตัวเลขที่คูณ เช่น 7 × 10 = 70",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 6
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 4
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท พี่หนึ่งพาท่องสูตรคูณ 2, 5, 10 ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "สูตรคูณแม่ 2",
+      "question_th": "4 × 2 = ?",
+      "solution_th": "4 × 2 = 8 ✅"
+    },
+    {
+      "title_th": "สูตรคูณแม่ 5",
+      "question_th": "7 × 5 = ?",
+      "solution_th": "7 × 5 = 35 ✅"
+    },
+    {
+      "title_th": "สูตรคูณแม่ 10",
+      "question_th": "9 × 10 = ?",
+      "solution_th": "9 × 10 = 90 ✅"
+    },
+    {
+      "title_th": "ใช้สูตรคูณแก้โจทย์",
+      "question_th": "มีลูกบอล 6 กล่อง กล่องละ 5 ลูก รวมมีลูกบอลกี่ลูก?",
+      "solution_th": "6 × 5 = 30 ลูก ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ลืมว่าสูตรคูณแม่ 2 ได้เลขคู่เสมอ",
+    "คูณแม่ 5 ผิดโดยลืมว่าผลลัพธ์ต้องลงท้ายด้วย 0 หรือ 5",
+    "คูณแม่ 10 ผิดโดยไม่เติม 0 ต่อท้าย เช่น คิดว่า 8 × 10 = 8"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_times_table_2_5_10_q01",
+      "question_th": "2 × 6 เท่ากับเท่าไร?",
+      "question_text": "2 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "2 × 6 = 12",
+      "explanation_th": "2 × 6 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q02",
+      "question_th": "5 × 4 เท่ากับเท่าไร?",
+      "question_text": "5 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "5 × 4 = 20",
+      "explanation_th": "5 × 4 = 20",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q03",
+      "question_th": "10 × 3 เท่ากับเท่าไร?",
+      "question_text": "10 × 3 เท่ากับเท่าไร?",
+      "choices": [
+        "13",
+        "20",
+        "30",
+        "40"
+      ],
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "10 × 3 = 30",
+      "explanation_th": "10 × 3 = 30",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q04",
+      "question_th": "2 × 9 เท่ากับเท่าไร?",
+      "question_text": "2 × 9 เท่ากับเท่าไร?",
+      "choices": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "2 × 9 = 18",
+      "explanation_th": "2 × 9 = 18",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q05",
+      "question_th": "5 × 7 เท่ากับเท่าไร?",
+      "question_text": "5 × 7 เท่ากับเท่าไร?",
+      "choices": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct_answer": "35",
+      "answer": "35",
+      "explanation": "5 × 7 = 35",
+      "explanation_th": "5 × 7 = 35",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q06",
+      "question_th": "10 × 8 เท่ากับเท่าไร?",
+      "question_text": "10 × 8 เท่ากับเท่าไร?",
+      "choices": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "correct_answer": "80",
+      "answer": "80",
+      "explanation": "10 × 8 = 80",
+      "explanation_th": "10 × 8 = 80",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q07",
+      "question_th": "2 × 10 เท่ากับเท่าไร?",
+      "question_text": "2 × 10 เท่ากับเท่าไร?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q08",
+      "question_th": "5 × 9 เท่ากับเท่าไร?",
+      "question_text": "5 × 9 เท่ากับเท่าไร?",
+      "choices": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "5 × 9 = 45",
+      "explanation_th": "5 × 9 = 45",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q09",
+      "question_th": "10 × 10 เท่ากับเท่าไร?",
+      "question_text": "10 × 10 เท่ากับเท่าไร?",
+      "choices": [
+        "10",
+        "50",
+        "100",
+        "110"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "10 × 10 = 100",
+      "explanation_th": "10 × 10 = 100",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q10",
+      "question_th": "2 × 12 เท่ากับเท่าไร?",
+      "question_text": "2 × 12 เท่ากับเท่าไร?",
+      "choices": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "2 × 12 = 24",
+      "explanation_th": "2 × 12 = 24",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_times_table_2_5_10_q01",
+      "question_th": "2 × 6 เท่ากับเท่าไร?",
+      "question_text": "2 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "2 × 6 = 12",
+      "explanation_th": "2 × 6 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q02",
+      "question_th": "5 × 4 เท่ากับเท่าไร?",
+      "question_text": "5 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "5 × 4 = 20",
+      "explanation_th": "5 × 4 = 20",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q03",
+      "question_th": "10 × 3 เท่ากับเท่าไร?",
+      "question_text": "10 × 3 เท่ากับเท่าไร?",
+      "choices": [
+        "13",
+        "20",
+        "30",
+        "40"
+      ],
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "10 × 3 = 30",
+      "explanation_th": "10 × 3 = 30",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q04",
+      "question_th": "2 × 9 เท่ากับเท่าไร?",
+      "question_text": "2 × 9 เท่ากับเท่าไร?",
+      "choices": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "2 × 9 = 18",
+      "explanation_th": "2 × 9 = 18",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q05",
+      "question_th": "5 × 7 เท่ากับเท่าไร?",
+      "question_text": "5 × 7 เท่ากับเท่าไร?",
+      "choices": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct_answer": "35",
+      "answer": "35",
+      "explanation": "5 × 7 = 35",
+      "explanation_th": "5 × 7 = 35",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q06",
+      "question_th": "10 × 8 เท่ากับเท่าไร?",
+      "question_text": "10 × 8 เท่ากับเท่าไร?",
+      "choices": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "correct_answer": "80",
+      "answer": "80",
+      "explanation": "10 × 8 = 80",
+      "explanation_th": "10 × 8 = 80",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q07",
+      "question_th": "2 × 10 เท่ากับเท่าไร?",
+      "question_text": "2 × 10 เท่ากับเท่าไร?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q08",
+      "question_th": "5 × 9 เท่ากับเท่าไร?",
+      "question_text": "5 × 9 เท่ากับเท่าไร?",
+      "choices": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "5 × 9 = 45",
+      "explanation_th": "5 × 9 = 45",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q09",
+      "question_th": "10 × 10 เท่ากับเท่าไร?",
+      "question_text": "10 × 10 เท่ากับเท่าไร?",
+      "choices": [
+        "10",
+        "50",
+        "100",
+        "110"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "10 × 10 = 100",
+      "explanation_th": "10 × 10 = 100",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q10",
+      "question_th": "2 × 12 เท่ากับเท่าไร?",
+      "question_text": "2 × 12 เท่ากับเท่าไร?",
+      "choices": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "2 × 12 = 24",
+      "explanation_th": "2 × 12 = 24",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Times Tables of 2, 5, and 10",
+  "objective_en": "Learn Times Tables of 2, 5, and 10 with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Look! 5 + 4 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: สูตรคูณแม่ 2",
+      "question_en": "4 × 2 = ?",
+      "solution_en": "4 × 2 = 8 ✅"
+    },
+    {
+      "title_en": "Example: สูตรคูณแม่ 5",
+      "question_en": "7 × 5 = ?",
+      "solution_en": "7 × 5 = 35 ✅"
+    },
+    {
+      "title_en": "Example: สูตรคูณแม่ 10",
+      "question_en": "9 × 10 = ?",
+      "solution_en": "9 × 10 = 90 ✅"
+    },
+    {
+      "title_en": "Example: ใช้สูตรคูณแก้โจทย์",
+      "question_en": "balls 6 5 balls balls balls?",
+      "solution_en": "6 × 5 = 30 balls ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ลืมว่าสูตรคูณแม่ 2 ได้เลขคู่เสมอ",
+    "Mistake: คูณแม่ 5 ผิดโดยลืมว่าผลลัพธ์ต้องลงท้ายด้วย 0 หรือ 5",
+    "Mistake: คูณแม่ 10 ผิดโดยไม่เติม 0 ต่อท้าย เช่น คิดว่า 8 × 10 = 8"
+  ],
+  "hints_en": [
+    "Hint: ท่องสูตรคูณทุกวัน จำได้เร็วขึ้นเมื่อทำซ้ำๆ",
+    "Hint: ถ้าลืม 7 × 5 ให้นึกว่า 5 + 5 + 5 + 5 + 5 + 5 + 5 = 35",
+    "Hint: สูตรคูณแม่ 10 ง่ายที่สุด แค่เติม 0 ต่อท้ายเลขที่คูณ"
+  ],
+  "explanation_steps_en": [
+    "Step: สูตรคูณแม่ 2 คือ การคูณด้วย 2 ทุกครั้ง ผลลัพธ์จะเป็นเลขคู่: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20",
+    "Step: จำได้ง่ายโดยนึกถึงคู่มือหู มีหู 2 ข้าง นับไปเรื่อยๆ",
+    "Step: สูตรคูณแม่ 5 คือ การคูณด้วย 5 ผลลัพธ์ลงท้ายด้วย 0 หรือ 5 เสมอ: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+    "Step: จำได้ง่ายโดยนึกถึงนิ้วมือ 5 นิ้ว ทุกคูณ 5 จะได้จำนวนที่ลงท้ายด้วย 0 หรือ 5",
+    "Step: สูตรคูณแม่ 10 คือ การคูณด้วย 10 ผลลัพธ์จะลงท้ายด้วย 0 เสมอ: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100",
+    "Step: จำได้ง่ายโดยเติม 0 ต่อท้ายตัวเลขที่คูณ เช่น 7 × 10 = 70"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g2_times_table_2_5_10_q01",
+      "question_th": "2 × 6 เท่ากับเท่าไร?",
+      "question_text": "2 × 6 ?",
+      "choices": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "2 × 6 = 12",
+      "explanation_th": "2 × 6 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core",
+      "question_en": "2 × 6 ?",
+      "explanation_en": "2 × 6 = 12",
+      "choices_en": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer_en": "12"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q02",
+      "question_th": "5 × 4 เท่ากับเท่าไร?",
+      "question_text": "5 × 4 ?",
+      "choices": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "5 × 4 = 20",
+      "explanation_th": "5 × 4 = 20",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core",
+      "question_en": "5 × 4 ?",
+      "explanation_en": "5 × 4 = 20",
+      "choices_en": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "answer_en": "20"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q03",
+      "question_th": "10 × 3 เท่ากับเท่าไร?",
+      "question_text": "10 × 3 ?",
+      "choices": [
+        "13",
+        "20",
+        "30",
+        "40"
+      ],
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "10 × 3 = 30",
+      "explanation_th": "10 × 3 = 30",
+      "difficulty": "easy",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core",
+      "question_en": "10 × 3 ?",
+      "explanation_en": "10 × 3 = 30",
+      "choices_en": [
+        "13",
+        "20",
+        "30",
+        "40"
+      ],
+      "answer_en": "30"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q04",
+      "question_th": "2 × 9 เท่ากับเท่าไร?",
+      "question_text": "2 × 9 ?",
+      "choices": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "2 × 9 = 18",
+      "explanation_th": "2 × 9 = 18",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core",
+      "question_en": "2 × 9 ?",
+      "explanation_en": "2 × 9 = 18",
+      "choices_en": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "answer_en": "18"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q05",
+      "question_th": "5 × 7 เท่ากับเท่าไร?",
+      "question_text": "5 × 7 ?",
+      "choices": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct_answer": "35",
+      "answer": "35",
+      "explanation": "5 × 7 = 35",
+      "explanation_th": "5 × 7 = 35",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core",
+      "question_en": "5 × 7 ?",
+      "explanation_en": "5 × 7 = 35",
+      "choices_en": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "answer_en": "35"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q06",
+      "question_th": "10 × 8 เท่ากับเท่าไร?",
+      "question_text": "10 × 8 ?",
+      "choices": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "correct_answer": "80",
+      "answer": "80",
+      "explanation": "10 × 8 = 80",
+      "explanation_th": "10 × 8 = 80",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core",
+      "question_en": "10 × 8 ?",
+      "explanation_en": "10 × 8 = 80",
+      "choices_en": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "answer_en": "80"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q07",
+      "question_th": "2 × 10 เท่ากับเท่าไร?",
+      "question_text": "2 × 10 ?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "core",
+      "question_en": "2 × 10 ?",
+      "explanation_en": "2 × 10 = 20",
+      "choices_en": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "answer_en": "20"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q08",
+      "question_th": "5 × 9 เท่ากับเท่าไร?",
+      "question_text": "5 × 9 ?",
+      "choices": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "5 × 9 = 45",
+      "explanation_th": "5 × 9 = 45",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge",
+      "question_en": "5 × 9 ?",
+      "explanation_en": "5 × 9 = 45",
+      "choices_en": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "answer_en": "45"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q09",
+      "question_th": "10 × 10 เท่ากับเท่าไร?",
+      "question_text": "10 × 10 ?",
+      "choices": [
+        "10",
+        "50",
+        "100",
+        "110"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "10 × 10 = 100",
+      "explanation_th": "10 × 10 = 100",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge",
+      "question_en": "10 × 10 ?",
+      "explanation_en": "10 × 10 = 100",
+      "choices_en": [
+        "10",
+        "50",
+        "100",
+        "110"
+      ],
+      "answer_en": "100"
+    },
+    {
+      "question_id": "g2_times_table_2_5_10_q10",
+      "question_th": "2 × 12 เท่ากับเท่าไร?",
+      "question_text": "2 × 12 ?",
+      "choices": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "2 × 12 = 24",
+      "explanation_th": "2 × 12 = 24",
+      "difficulty": "hard",
+      "skill_tag": "g2_times_table_2_5_10",
+      "question_type": "challenge",
+      "question_en": "2 × 12 ?",
+      "explanation_en": "2 × 12 = 24",
+      "choices_en": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "answer_en": "24"
+    }
+  ],
+  "quiz_id": "g2_times_table_2_5_10_ep",
+  "generated_at": "2026-05-16T04:16:41.005600+00:00",
+  "source_lesson_id": "g2_times_table_2_5_10",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Ton is learning Times Tables of 2, 5, and 10 with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches Times Tables of 2, 5, and 10. Use the model to get 30."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
+      "cols": 6,
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "choices": [
+        "11",
+        "24",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
+    }
+  ],
+  "base_lesson_id": "g2_times_table_2_5_10",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Times Tables of 2, 5, and 10",
+  "topic": "addition",
+  "icon": "book",
+  "story_variants": [
+    {
+      "variant_id": "g2_times_table_2_5_10_ep_01",
+      "status": "approved",
+      "title": "Times Tables of 2, 5, and 10 Variant 1",
+      "story": "Ton is learning Times Tables of 2, 5, and 10 with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Times Tables of 2, 5, and 10. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Times Tables of 2, 5, and 10.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Times Tables of 2, 5, and 10 with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Times Tables of 2, 5, and 10. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Times Tables of 2, 5, and 10.",
+  "thai_support": ""
+}
