@@ -1270,8 +1270,8 @@ def members(
     return users(search=search, plan=plan, role=role, active=active, limit=limit, offset=offset, db=db, _admin=_admin)
 
 
-@router.get("/tests")
-def tests(
+@router.get("/test-sessions")
+def test_sessions(
     grade: int | None = Query(default=None, ge=1, le=12),
     lesson: str | None = Query(default=None),
     user: str | None = Query(default=None),
@@ -1301,6 +1301,33 @@ def tests(
             continue
         items.append(_session_payload(session, child, parent, result_by_session.get(session.id)))
     return {"tests": items[offset : offset + limit], "total": len(items), "limit": limit, "offset": offset}
+
+
+@router.get("/tests")
+def tests(
+    grade: int | None = Query(default=None, ge=1, le=12),
+    grade_level: int | None = Query(default=None, ge=1, le=12),
+    lesson: str | None = Query(default=None),
+    lesson_id: str | None = Query(default=None),
+    status: str | None = Query(default=None),
+    language: str | None = Query(default=None),
+    program_type: str | None = Query(default=None),
+    limit: int = Query(default=200, ge=1, le=1000),
+    offset: int = Query(default=0, ge=0),
+    _admin: User = Depends(require_admin),
+):
+    requested_grade = grade_level or grade
+    requested_program = str(program_type or language or "TH").upper()
+    canonical_program = "EP" if requested_program == "EP" else "TH"
+    rows = list_canonical_tests(
+        canonical_program,
+        grade=requested_grade,
+        lesson_id=lesson_id or lesson,
+        approved_only=False,
+    )
+    if status:
+        rows = [row for row in rows if str(row.get("status") or "").lower() == status.lower()]
+    return {"tests": rows[offset : offset + limit], "total": len(rows), "limit": limit, "offset": offset}
 
 
 @router.get("/tests/{test_id}")

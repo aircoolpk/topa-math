@@ -313,6 +313,7 @@ def _canonical_test_rows(
     requested_base = base_lesson_id(lesson_id or "") if lesson_id else None
     statuses = load_tests_status()
     rows: list[tuple[Path, int | None, dict[str, Any], int]] = []
+    seen_question_ids: set[str] = set()
     for path in _quiz_files():
         grade_match = re.search(r"grade_(\d+)", str(path))
         row_grade = int(grade_match.group(1)) if grade_match else None
@@ -329,8 +330,11 @@ def _canonical_test_rows(
             if program_alias(_question_program(path, question)) != requested_program:
                 continue
             question_id = _question_id(path, question, index)
+            if question_id in seen_question_ids:
+                continue
             if approved_only and not _status_is_student_visible(statuses.get(question_id, {})):
                 continue
+            seen_question_ids.add(question_id)
             rows.append((path, row_grade, question, index))
     return rows
 

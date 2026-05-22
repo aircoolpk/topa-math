@@ -60,38 +60,38 @@
         {
           "type": "think_story",
           "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Addition. Use the model to get 30."
+          "content": "The key numbers are 6 and 5. The question asks how many in total. Use addition: 6 + 5 = ?"
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "description": "Show 6 items and 5 more items. Count all items.",
           "model_type": "area_model",
-          "rows": 5,
+          "rows": 2,
           "cols": 6,
-          "total": 30,
+          "total": 11,
           "unit": "items",
           "symbol": "■"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "6 + 5 = 11",
+          "content": "Add the two numbers together."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "There are 4 apples in a basket. Mom puts 3 more apples in. How many apples are there in total?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "6",
+            "7",
+            "8",
+            "9"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "7",
+          "answer": "7",
+          "explanation": "4 + 3 = 7 apples in total."
         }
       ]
     }
@@ -102,7 +102,7 @@
   "cover_emoji": "➔",
   "cover_color": "green",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -523,308 +523,308 @@
   "story_intro_en": "Look! 20 — can you find the answer?",
   "worked_examples_en": [
     {
-      "title_en": "Example: บวกลูกบอล",
-      "question_en": "leaves balls 8 balls leaves balls 6 balls balls?",
-      "solution_en": "8 + 6 = 14 balls ✅?"
+      "title_en": "Example: Adding Balls",
+      "question_en": "The first basket has 8 balls. The second basket has 6 balls. How many balls are there in total?",
+      "solution_en": "8 + 6 = 14 balls ✅"
     },
     {
-      "title_en": "Example: บวกดินสอ",
-      "question_en": "pencils 5 pencils 9 pencils pencils pencils?",
-      "solution_en": "5 + 9 = 14 pencils ✅?"
+      "title_en": "Example: Adding Pencils",
+      "question_en": "Tom has 5 pencils. He buys 9 more pencils. How many pencils does he have now?",
+      "solution_en": "5 + 9 = 14 pencils ✅"
     },
     {
-      "title_en": "Example: บวกน้ำตาล",
-      "question_en": "7 4 ?",
-      "solution_en": "7 + 4 = 11 ✅?"
+      "title_en": "Example: Adding Sugar",
+      "question_en": "Mom gives 7 pieces of sugar. Dad gives 4 more pieces. How many pieces are there in total?",
+      "solution_en": "7 + 4 = 11 pieces ✅"
     }
   ],
   "common_mistakes_en": [
-    "Mistake: นับต่อผิดทิศทาง เช่น นับถอยหลังแทนที่จะนับไปข้างหน้า",
-    "Mistake: บวกเลขผิดโดยลืมไม่บวกตัวเลขตัวหนึ่งเข้าไป",
-    "Mistake: ไม่จำค่าของตัวเลขที่เกิน 10 เช่น คิดว่า 10 + 3 = 13 เป็น 14"
+    "Counting in the wrong direction — counting down instead of going forward.",
+    "Forgetting to add one of the numbers to the sum.",
+    "Not remembering what happens when numbers go past 10, e.g. thinking 10 + 3 = 14 instead of 13."
   ],
   "hints_en": [
-    "Hint: ใช้นิ้วนับช่วย มือหนึ่งมี 10 นิ้ว พอครบ 10 แล้วให้เก็บมือไว้แล้วนับต่อ",
-    "Hint: ถ้าเลขใกล้ 10 อยู่แล้ว ให้บวกให้ครบ 10 ก่อนแล้วค่อยบวกเศษที่เหลือ",
-    "Hint: ตรวจคำตอบโดยการลบกลับ ถ้าสลับที่ก็ได้คำตอบเดียวกัน เช่น 6 + 9 = 9 + 6"
+    "Use your fingers to count. One hand has 10 fingers. When you reach 10, put that hand down and keep counting with the other hand.",
+    "If a number is close to 10, add to make 10 first, then add the rest.",
+    "Check your answer by subtracting backwards. Swapping the order gives the same result, e.g. 6 + 9 = 9 + 6."
   ],
   "explanation_steps_en": [
-    "Step: การบวกคือการเอาจำนวนมารวมกัน ผลลัพธ์เรียกว่า ผลบวก",
-    "Step: นับจำนวนแรกไปทีละขั้น เช่น มี 7 อยู่แล้ว ก็นับต่อ 5 จำนวน: 8, 9, 10, 11, 12 → ได้ 12",
-    "Step: ใช้นิ้วช่วยนับ กำมือแรกมีกี่นิ้ว แล้วนับต่อด้วยมือที่เหลือ",
-    "Step: ถ้าผลบวกเกิน 10 ให้จำว่า 10 กับอีกเท่าไหร่ เช่น 8 + 5 = 10 + 3 = 13",
-    "Step: ตรวจคำตอบโดยลบกลับ ถ้า 7 + 5 = 12 งั้น 12 - 5 ต้องได้ 7"
+    "Addition means putting numbers together. The result is called the sum.",
+    "Count on from the first number one step at a time. For example, if you have 7 and need to add 5, count forward: 8, 9, 10, 11, 12 → the answer is 12.",
+    "Use your fingers to help count. Start with one fist and count on with the other hand.",
+    "If the sum goes past 10, remember how much is left over. For example, 8 + 5 = 10 + 3 = 13.",
+    "Check your answer by subtracting backwards. If 7 + 5 = 12, then 12 - 5 must equal 7."
   ],
   "quiz_en": [
     {
       "question_id": "g1_add_within_20_q01",
       "question_th": "มีลูกบอล 8 ลูก เพิ่มอีก 7 ลูก รวมมีลูกบอลกี่ลูก?",
-      "question_text": "balls 8 balls 7 balls balls balls?",
+      "question_text": "There are 8 balls. I add 7 more balls. How many balls are there in total?",
       "choices": [
-        "14 balls?",
-        "15 balls?",
-        "16 balls?",
-        "13 balls?"
+        "14 balls",
+        "15 balls",
+        "16 balls",
+        "13 balls"
       ],
-      "correct_answer": "15 balls?",
-      "answer": "15 balls?",
-      "explanation": "8 + 7 = 15 balls 15 balls?",
+      "correct_answer": "15 balls",
+      "answer": "15 balls",
+      "explanation": "8 + 7 = 15. There are 15 balls in total.",
       "explanation_th": "8 + 7 = 15 จึงมีลูกบอลทั้งหมด 15 ลูก",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "balls 8 balls 7 balls balls balls?",
-      "explanation_en": "8 + 7 = 15 balls 15 balls?",
+      "question_en": "There are 8 balls. I add 7 more balls. How many balls are there in total?",
+      "explanation_en": "8 + 7 = 15. There are 15 balls in total.",
       "choices_en": [
-        "14 balls?",
-        "15 balls?",
-        "16 balls?",
-        "13 balls?"
+        "14 balls",
+        "15 balls",
+        "16 balls",
+        "13 balls"
       ],
-      "answer_en": "15 balls?"
+      "answer_en": "15 balls"
     },
     {
       "question_id": "g1_add_within_20_q02",
       "question_th": "มีส้ม 4 ผล เพิ่มอีก 3 ผล รวมมีส้มกี่ผล?",
-      "question_text": "oranges 4 fruits 3 fruits oranges fruits?",
+      "question_text": "There are 4 oranges. I add 3 more oranges. How many oranges are there in total?",
       "choices": [
-        "6 fruits?",
-        "7 fruits?",
-        "8 fruits?",
-        "5 fruits?"
+        "6 oranges",
+        "7 oranges",
+        "8 oranges",
+        "5 oranges"
       ],
-      "correct_answer": "7 fruits?",
-      "answer": "7 fruits?",
-      "explanation": "4 + 3 = 7 oranges 7 fruits?",
+      "correct_answer": "7 oranges",
+      "answer": "7 oranges",
+      "explanation": "4 + 3 = 7. There are 7 oranges in total.",
       "explanation_th": "4 + 3 = 7 จึงมีส้มทั้งหมด 7 ผล",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "oranges 4 fruits 3 fruits oranges fruits?",
-      "explanation_en": "4 + 3 = 7 oranges 7 fruits?",
+      "question_en": "There are 4 oranges. I add 3 more oranges. How many oranges are there in total?",
+      "explanation_en": "4 + 3 = 7. There are 7 oranges in total.",
       "choices_en": [
-        "6 fruits?",
-        "7 fruits?",
-        "8 fruits?",
-        "5 fruits?"
+        "6 oranges",
+        "7 oranges",
+        "8 oranges",
+        "5 oranges"
       ],
-      "answer_en": "7 fruits?"
+      "answer_en": "7 oranges"
     },
     {
       "question_id": "g1_add_within_20_q03",
       "question_th": "มีดินสอ 9 แท่ง เพิ่มอีก 5 แท่ง รวมมีดินสอกี่แท่ง?",
-      "question_text": "pencils 9 pencils 5 pencils pencils pencils?",
+      "question_text": "There are 9 pencils. I add 5 more pencils. How many pencils are there in total?",
       "choices": [
-        "13 pencils?",
-        "14 pencils?",
-        "15 pencils?",
-        "12 pencils?"
+        "13 pencils",
+        "14 pencils",
+        "15 pencils",
+        "12 pencils"
       ],
-      "correct_answer": "14 pencils?",
-      "answer": "14 pencils?",
-      "explanation": "9 + 5 = 14 pencils 14 pencils?",
+      "correct_answer": "14 pencils",
+      "answer": "14 pencils",
+      "explanation": "9 + 5 = 14. There are 14 pencils in total.",
       "explanation_th": "9 + 5 = 14 จึงมีดินสอทั้งหมด 14 แท่ง",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "pencils 9 pencils 5 pencils pencils pencils?",
-      "explanation_en": "9 + 5 = 14 pencils 14 pencils?",
+      "question_en": "There are 9 pencils. I add 5 more pencils. How many pencils are there in total?",
+      "explanation_en": "9 + 5 = 14. There are 14 pencils in total.",
       "choices_en": [
-        "13 pencils?",
-        "14 pencils?",
-        "15 pencils?",
-        "12 pencils?"
+        "13 pencils",
+        "14 pencils",
+        "15 pencils",
+        "12 pencils"
       ],
-      "answer_en": "14 pencils?"
+      "answer_en": "14 pencils"
     },
     {
       "question_id": "g1_add_within_20_q04",
       "question_th": "มีสติกเกอร์ 6 ดวง เพิ่มอีก 6 ดวง รวมมีสติกเกอร์กี่ดวง?",
-      "question_text": "stickers 6 stickers 6 stickers stickers stickers?",
+      "question_text": "There are 6 stickers. I add 6 more stickers. How many stickers are there in total?",
       "choices": [
-        "11 stickers?",
-        "12 stickers?",
-        "13 stickers?",
-        "10 stickers?"
+        "11 stickers",
+        "12 stickers",
+        "13 stickers",
+        "10 stickers"
       ],
-      "correct_answer": "12 stickers?",
-      "answer": "12 stickers?",
-      "explanation": "6 + 6 = 12 stickers 12 stickers?",
+      "correct_answer": "12 stickers",
+      "answer": "12 stickers",
+      "explanation": "6 + 6 = 12. There are 12 stickers in total.",
       "explanation_th": "6 + 6 = 12 จึงมีสติกเกอร์ทั้งหมด 12 ดวง",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "stickers 6 stickers 6 stickers stickers stickers?",
-      "explanation_en": "6 + 6 = 12 stickers 12 stickers?",
+      "question_en": "There are 6 stickers. I add 6 more stickers. How many stickers are there in total?",
+      "explanation_en": "6 + 6 = 12. There are 12 stickers in total.",
       "choices_en": [
-        "11 stickers?",
-        "12 stickers?",
-        "13 stickers?",
-        "10 stickers?"
+        "11 stickers",
+        "12 stickers",
+        "13 stickers",
+        "10 stickers"
       ],
-      "answer_en": "12 stickers?"
+      "answer_en": "12 stickers"
     },
     {
       "question_id": "g1_add_within_20_q05",
       "question_th": "มีดาว 10 ดวง เพิ่มอีก 4 ดวง รวมมีดาวกี่ดวง?",
-      "question_text": "stars 10 stickers 4 stickers stars stickers?",
+      "question_text": "There are 10 stars. I add 4 more stars. How many stars are there in total?",
       "choices": [
-        "13 stickers?",
-        "14 stickers?",
-        "15 stickers?",
-        "12 stickers?"
+        "13 stars",
+        "14 stars",
+        "15 stars",
+        "12 stars"
       ],
-      "correct_answer": "14 stickers?",
-      "answer": "14 stickers?",
-      "explanation": "10 + 4 = 14 stars 14 stickers?",
+      "correct_answer": "14 stars",
+      "answer": "14 stars",
+      "explanation": "10 + 4 = 14. There are 14 stars in total.",
       "explanation_th": "10 + 4 = 14 จึงมีดาวทั้งหมด 14 ดวง",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "stars 10 stickers 4 stickers stars stickers?",
-      "explanation_en": "10 + 4 = 14 stars 14 stickers?",
+      "question_en": "There are 10 stars. I add 4 more stars. How many stars are there in total?",
+      "explanation_en": "10 + 4 = 14. There are 14 stars in total.",
       "choices_en": [
-        "13 stickers?",
-        "14 stickers?",
-        "15 stickers?",
-        "12 stickers?"
+        "13 stars",
+        "14 stars",
+        "15 stars",
+        "12 stars"
       ],
-      "answer_en": "14 stickers?"
+      "answer_en": "14 stars"
     },
     {
       "question_id": "g1_add_within_20_q06",
       "question_th": "มีลูกปัด 3 เม็ด เพิ่มอีก 9 เม็ด รวมมีลูกปัดกี่เม็ด?",
-      "question_text": "marbles 3 beads 9 beads marbles beads?",
+      "question_text": "There are 3 beads. I add 9 more beads. How many beads are there in total?",
       "choices": [
-        "11 beads?",
-        "12 beads?",
-        "13 beads?",
-        "10 beads?"
+        "11 beads",
+        "12 beads",
+        "13 beads",
+        "10 beads"
       ],
-      "correct_answer": "12 beads?",
-      "answer": "12 beads?",
-      "explanation": "3 + 9 = 12 marbles 12 beads?",
+      "correct_answer": "12 beads",
+      "answer": "12 beads",
+      "explanation": "3 + 9 = 12. There are 12 beads in total.",
       "explanation_th": "3 + 9 = 12 จึงมีลูกปัดทั้งหมด 12 เม็ด",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "marbles 3 beads 9 beads marbles beads?",
-      "explanation_en": "3 + 9 = 12 marbles 12 beads?",
+      "question_en": "There are 3 beads. I add 9 more beads. How many beads are there in total?",
+      "explanation_en": "3 + 9 = 12. There are 12 beads in total.",
       "choices_en": [
-        "11 beads?",
-        "12 beads?",
-        "13 beads?",
-        "10 beads?"
+        "11 beads",
+        "12 beads",
+        "13 beads",
+        "10 beads"
       ],
-      "answer_en": "12 beads?"
+      "answer_en": "12 beads"
     },
     {
       "question_id": "g1_add_within_20_q07",
       "question_th": "มีหนังสือ 7 เล่ม เพิ่มอีก 2 เล่ม รวมมีหนังสือกี่เล่ม?",
-      "question_text": "7 books 2 books books?",
+      "question_text": "There are 7 books. I add 2 more books. How many books are there in total?",
       "choices": [
-        "8 books?",
-        "9 books?",
-        "10 books?",
-        "7 books?"
+        "8 books",
+        "9 books",
+        "10 books",
+        "7 books"
       ],
-      "correct_answer": "9 books?",
-      "answer": "9 books?",
-      "explanation": "7 + 2 = 9 9 books?",
+      "correct_answer": "9 books",
+      "answer": "9 books",
+      "explanation": "7 + 2 = 9. There are 9 books in total.",
       "explanation_th": "7 + 2 = 9 จึงมีหนังสือทั้งหมด 9 เล่ม",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "7 books 2 books books?",
-      "explanation_en": "7 + 2 = 9 9 books?",
+      "question_en": "There are 7 books. I add 2 more books. How many books are there in total?",
+      "explanation_en": "7 + 2 = 9. There are 9 books in total.",
       "choices_en": [
-        "8 books?",
-        "9 books?",
-        "10 books?",
-        "7 books?"
+        "8 books",
+        "9 books",
+        "10 books",
+        "7 books"
       ],
-      "answer_en": "9 books?"
+      "answer_en": "9 books"
     },
     {
       "question_id": "g1_add_within_20_q08",
       "question_th": "มีขนม 5 ชิ้น เพิ่มอีก 8 ชิ้น รวมมีขนมกี่ชิ้น?",
-      "question_text": "5 pieces 8 pieces pieces?",
+      "question_text": "There are 5 pieces of snack. I add 8 more pieces. How many pieces are there in total?",
       "choices": [
-        "12 pieces?",
-        "13 pieces?",
-        "14 pieces?",
-        "11 pieces?"
+        "12 pieces",
+        "13 pieces",
+        "14 pieces",
+        "11 pieces"
       ],
-      "correct_answer": "13 pieces?",
-      "answer": "13 pieces?",
-      "explanation": "5 + 8 = 13 13 pieces?",
+      "correct_answer": "13 pieces",
+      "answer": "13 pieces",
+      "explanation": "5 + 8 = 13. There are 13 pieces in total.",
       "explanation_th": "5 + 8 = 13 จึงมีขนมทั้งหมด 13 ชิ้น",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "5 pieces 8 pieces pieces?",
-      "explanation_en": "5 + 8 = 13 13 pieces?",
+      "question_en": "There are 5 pieces of snack. I add 8 more pieces. How many pieces are there in total?",
+      "explanation_en": "5 + 8 = 13. There are 13 pieces in total.",
       "choices_en": [
-        "12 pieces?",
-        "13 pieces?",
-        "14 pieces?",
-        "11 pieces?"
+        "12 pieces",
+        "13 pieces",
+        "14 pieces",
+        "11 pieces"
       ],
-      "answer_en": "13 pieces?"
+      "answer_en": "13 pieces"
     },
     {
       "question_id": "g1_add_within_20_q09",
       "question_th": "มีลูกแก้ว 2 ลูก เพิ่มอีก 11 ลูก รวมมีลูกแก้วกี่ลูก?",
-      "question_text": "marbles 2 balls 11 balls marbles balls?",
+      "question_text": "There are 2 marbles. I add 11 more marbles. How many marbles are there in total?",
       "choices": [
-        "12 balls?",
-        "13 balls?",
-        "14 balls?",
-        "11 balls?"
+        "12 marbles",
+        "13 marbles",
+        "14 marbles",
+        "11 marbles"
       ],
-      "correct_answer": "13 balls?",
-      "answer": "13 balls?",
-      "explanation": "2 + 11 = 13 marbles 13 balls?",
+      "correct_answer": "13 marbles",
+      "answer": "13 marbles",
+      "explanation": "2 + 11 = 13. There are 13 marbles in total.",
       "explanation_th": "2 + 11 = 13 จึงมีลูกแก้วทั้งหมด 13 ลูก",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "marbles 2 balls 11 balls marbles balls?",
-      "explanation_en": "2 + 11 = 13 marbles 13 balls?",
+      "question_en": "There are 2 marbles. I add 11 more marbles. How many marbles are there in total?",
+      "explanation_en": "2 + 11 = 13. There are 13 marbles in total.",
       "choices_en": [
-        "12 balls?",
-        "13 balls?",
-        "14 balls?",
-        "11 balls?"
+        "12 marbles",
+        "13 marbles",
+        "14 marbles",
+        "11 marbles"
       ],
-      "answer_en": "13 balls?"
+      "answer_en": "13 marbles"
     },
     {
       "question_id": "g1_add_within_20_q10",
       "question_th": "มีดอกไม้ 12 ลูก เพิ่มอีก 3 ลูก รวมมีดอกไม้กี่ลูก?",
-      "question_text": "12 balls 3 balls balls?",
+      "question_text": "There are 12 flowers. I add 3 more flowers. How many flowers are there in total?",
       "choices": [
-        "14 balls?",
-        "15 balls?",
-        "16 balls?",
-        "13 balls?"
+        "14 flowers",
+        "15 flowers",
+        "16 flowers",
+        "13 flowers"
       ],
-      "correct_answer": "15 balls?",
-      "answer": "15 balls?",
-      "explanation": "12 + 3 = 15 15 balls?",
+      "correct_answer": "15 flowers",
+      "answer": "15 flowers",
+      "explanation": "12 + 3 = 15. There are 15 flowers in total.",
       "explanation_th": "12 + 3 = 15 จึงมีดอกไม้ทั้งหมด 15 ลูก",
       "difficulty": "easy",
       "skill_tag": "g1_add_within_20",
       "question_type": "core",
-      "question_en": "12 balls 3 balls balls?",
-      "explanation_en": "12 + 3 = 15 15 balls?",
+      "question_en": "There are 12 flowers. I add 3 more flowers. How many flowers are there in total?",
+      "explanation_en": "12 + 3 = 15. There are 15 flowers in total.",
       "choices_en": [
-        "14 balls?",
-        "15 balls?",
-        "16 balls?",
-        "13 balls?"
+        "14 flowers",
+        "15 flowers",
+        "16 flowers",
+        "13 flowers"
       ],
-      "answer_en": "15 balls?"
+      "answer_en": "15 flowers"
     }
   ],
   "quiz_id": "g1_add_within_20_ep",
@@ -835,43 +835,43 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and figures out what the question is asking. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
     },
     {
       "type": "think_story",
       "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Addition. Use the model to get 30."
+      "content": "The key numbers are 6 and 5. The question asks how many in total. Use addition: 6 + 5 = ?"
     },
     {
       "type": "model_diagram",
       "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "description": "Show 6 items and 5 more items. Count all items.",
       "model_type": "area_model",
-      "rows": 5,
+      "rows": 2,
       "cols": 6,
-      "total": 30,
+      "total": 11,
       "unit": "items",
       "symbol": "■"
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "6 + 5 = 11",
+      "content": "Add the two numbers together."
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "There are 4 apples in a basket. Mom puts 3 more apples in. How many apples are there in total?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "6",
+        "7",
+        "8",
+        "9"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "7",
+      "answer": "7",
+      "explanation": "4 + 3 = 7 apples in total."
     }
   ],
   "base_lesson_id": "g1_add_within_20",
@@ -890,76 +890,76 @@
       "model_diagram": {
         "type": "model_diagram",
         "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "description": "Show 6 items and 5 more items. Count all items.",
         "model_type": "area_model",
-        "rows": 5,
+        "rows": 2,
         "cols": 6,
-        "total": 30,
+        "total": 11,
         "unit": "items",
         "symbol": "■"
       },
       "number_sentence": {
         "type": "number_sentence",
         "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
+        "expression": "6 + 5 = 11",
+        "content": "Add the two numbers together."
       },
       "practice": {
         "type": "mini_quiz",
         "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "question": "There are 4 apples in a basket. Mom puts 3 more apples in. How many apples are there in total?",
         "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
+          "6",
+          "7",
+          "8",
+          "9"
         ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
+        "correct_answer": "7",
+        "answer": "7",
+        "explanation": "4 + 3 = 7 apples in total."
       },
       "helper_tip": "Read the story first. Circle the important numbers for Addition.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and figures out what the question is asking. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
         },
         {
           "type": "think_story",
           "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Addition. Use the model to get 30."
+          "content": "The key numbers are 6 and 5. The question asks how many in total. Use addition: 6 + 5 = ?"
         },
         {
           "type": "model_diagram",
           "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "description": "Show 6 items and 5 more items. Count all items.",
           "model_type": "area_model",
-          "rows": 5,
+          "rows": 2,
           "cols": 6,
-          "total": 30,
+          "total": 11,
           "unit": "items",
           "symbol": "■"
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "6 + 5 = 11",
+          "content": "Add the two numbers together."
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "There are 4 apples in a basket. Mom puts 3 more apples in. How many apples are there in total?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "6",
+            "7",
+            "8",
+            "9"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "7",
+          "answer": "7",
+          "explanation": "4 + 3 = 7 apples in total."
         }
       ]
     }

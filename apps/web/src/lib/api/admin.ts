@@ -174,12 +174,25 @@ export interface AdminChildRow {
 }
 
 export interface AdminTestRow {
-  id: string
-  session_id: string
+  id?: string
+  test_id?: string
+  question_id?: string
+  session_id?: string
   user?: { id: string; email: string } | null
   child?: { id: string; nickname: string } | null
   lesson_id?: string | null
+  base_lesson_id?: string | null
+  program?: string | null
+  language?: string | null
   grade?: number | null
+  grade_level?: number | null
+  question?: string | null
+  choices?: string[]
+  correct_answer?: string | null
+  explanation?: string | null
+  difficulty?: string | null
+  skill_tag?: string | null
+  source_path?: string | null
   score?: { total_questions: number; correct_count: number; accuracy: number } | null
   status?: string | null
   started_at?: string | null
@@ -722,7 +735,7 @@ export const adminApi = {
     return res.data as { children: AdminChildRow[]; total: number; limit: number; offset: number }
   },
 
-  async tests(params?: { grade?: number | ''; lesson?: string; user?: string; limit?: number; offset?: number }) {
+  async tests(params?: { grade?: number | ''; lesson?: string; lesson_id?: string; language?: string; program_type?: string; status?: string; limit?: number; offset?: number }) {
     const res = await apiClient.get('/admin/tests', { params })
     return res.data as { tests: AdminTestRow[]; total: number; limit: number; offset: number }
   },
