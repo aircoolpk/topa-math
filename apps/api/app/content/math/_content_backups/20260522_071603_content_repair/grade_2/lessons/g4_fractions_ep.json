@@ -1,0 +1,1384 @@
+{
+  "lesson_id": "g4_fractions_ep",
+  "id": "g4_fractions_ep",
+  "grade_level": 4,
+  "title_th": "เศษส่วน บวกลบคูณหาร",
+  "objective_th": "นักเรียนสามารถบวก ลบ เศษส่วนที่มีส่วนเท่ากันได้ และเข้าใจการคูณและหารเศษส่วนเบื้องต้น",
+  "story_intro_th": "พี่อลิสมีพิซซ่า 3/4 ก้อน แบ่งให้เพื่อน 1/4 ก้อน เหลือพิซซ่ากี่ส่วน? 🍕",
+  "explanation_steps": [
+    "เศษส่วนที่มีส่วนเท่ากัน บวกลบโดยเอาเศษบวกลบกัน ไม่ต้องเปลี่ยนส่วน",
+    "เช่น 3/5 + 1/5 = 4/5 หรือ 3/5 - 1/5 = 2/5",
+    "เศษส่วนที่ไม่เท่ากันต้องทำให้ส่วนเท่ากันก่อน โดยหา ค.ร.น. ของส่วน",
+    "การคูณเศษส่วน: เศษ × เศษ ส่วน × ส่วน เช่น 2/3 × 3/4 = 6/12",
+    "การหารเศษส่วน: พลิกเศษส่วนตัวหารกลับด้านแล้วคูณ เช่น 1/2 ÷ 3 = 1/2 × 1/3 = 1/6",
+    "ถ้าเศษส่วนมากกว่า 1 สามารถเขียนเป็นจำนวนคละได้ เช่น 5/3 = 1 2/3"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "บวกเศษส่วน",
+      "question_th": "2/7 + 3/7 = ?",
+      "solution_th": "5/7 ✅"
+    },
+    {
+      "title_th": "ลบเศษส่วน",
+      "question_th": "5/8 - 2/8 = ?",
+      "solution_th": "3/8 ✅"
+    },
+    {
+      "title_th": "คูณเศษส่วน",
+      "question_th": "1/2 × 2/3 = ?",
+      "solution_th": "2/6 = 1/3 ✅"
+    },
+    {
+      "title_th": "หา ค.ร.น. และบวกเศษส่วนต่างส่วน",
+      "question_th": "1/3 + 1/4 = ?",
+      "solution_th": "4/12 + 3/12 = 7/12 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "บวกเศษส่วนต่างส่วนโดยไม่ทำให้ส่วนเท่ากันก่อน",
+    "คูณเศษส่วนโดยเอาเศษคูณส่วนโดยตรงแทนที่จะเป็น เศษ×เศษ ส่วน×ส่วน",
+    "ไม่ตัดเศษส่วนให้เป็นเศษส่วนอย่างต่ำ"
+  ],
+  "hints": [
+    "เศษส่วนต่างส่วนต้องทำให้ส่วนเท่ากันก่อน หา ค.ร.น. ของส่วนมาคูณ",
+    "จำว่าเศษส่วนคูณกัน: เศษ×เศษ ส่วน×ส่วน",
+    "ถ้าเศษกับส่วนมีตัวร่วม ให้ตัดทอนก่อนคูณจะง่ายขึ้น"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_fractions",
+  "skill_code": "g4_fractions_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_th": "🏫 ธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_en": "🏫 ธีมโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_th": "🍎 ธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_en": "🍎 ธีมผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_th": "🧸 ธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_en": "🧸 ธีมของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_th": "🏪 ธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_en": "🏪 ธีมตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_th": "🐕 ธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_en": "🐕 ธีมสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_th": "🌻 ธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_en": "🌻 ธีมสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_th": "🎨 ธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_en": "🎨 ธีมวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_th": "📚 ธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_en": "📚 ธีมห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_th": "🎮 ธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_en": "🎮 ธีมสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_th": "🎉 ธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_en": "🎉 ธีมงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เศษส่วน",
+  "preview_subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "cover_theme": "fractions_g4",
+  "cover_emoji": "🍕",
+  "cover_color": "pink",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "learning_objective_th": "นักเรียนสามารถบวก ลบ เศษส่วนที่มีส่วนเท่ากันได้ และเข้าใจการคูณและหารเศษส่วนเบื้องต้น",
+  "lesson_intro_th": "พี่อลิสมีพิซซ่า 3/4 ก้อน แบ่งให้เพื่อน 1/4 ก้อน เหลือพิซซ่ากี่ส่วน? 🍕",
+  "concept_explanation_th": "เศษส่วนที่มีส่วนเท่ากัน บวกลบโดยเอาเศษบวกลบกัน ไม่ต้องเปลี่ยนส่วน เช่น 3/5 + 1/5 = 4/5 หรือ 3/5 - 1/5 = 2/5 เศษส่วนที่ไม่เท่ากันต้องทำให้ส่วนเท่ากันก่อน โดยหา ค.ร.น. ของส่วน การคูณเศษส่วน: เศษ × เศษ ส่วน × ส่วน เช่น 2/3 × 3/4 = 6/12 การหารเศษส่วน: พลิกเศษส่วนตัวหารกลับด้านแล้วคูณ เช่น 1/2 ÷ 3 = 1/2 × 1/3 = 1/6 ถ้าเศษส่วนมากกว่า 1 สามารถเขียนเป็นจำนวนคละได้ เช่น 5/3 = 1 2/3",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เศษส่วน บวกลบคูณหาร ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "บวกเศษส่วน",
+      "question_th": "2/7 + 3/7 = ?",
+      "solution_th": "5/7 ✅"
+    },
+    {
+      "title_th": "ลบเศษส่วน",
+      "question_th": "5/8 - 2/8 = ?",
+      "solution_th": "3/8 ✅"
+    },
+    {
+      "title_th": "คูณเศษส่วน",
+      "question_th": "1/2 × 2/3 = ?",
+      "solution_th": "2/6 = 1/3 ✅"
+    },
+    {
+      "title_th": "หา ค.ร.น. และบวกเศษส่วนต่างส่วน",
+      "question_th": "1/3 + 1/4 = ?",
+      "solution_th": "4/12 + 3/12 = 7/12 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "บวกเศษส่วนต่างส่วนโดยไม่ทำให้ส่วนเท่ากันก่อน",
+    "คูณเศษส่วนโดยเอาเศษคูณส่วนโดยตรงแทนที่จะเป็น เศษ×เศษ ส่วน×ส่วน",
+    "ไม่ตัดเศษส่วนให้เป็นเศษส่วนอย่างต่ำ"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_fractions_q01",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q02",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q03",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q04",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q05",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q06",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q07",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q08",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_fractions_q09",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_fractions_q10",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_fractions_q01",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q02",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q03",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q04",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q05",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q06",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q07",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_fractions_q08",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_fractions_q09",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "เศษส่วนใดเท่ากับ 1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 ย่อได้เป็น 1/2",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_fractions_q10",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Fractions: Add, Subtract, Multiply, Divide",
+  "objective_en": "Students will be able to add numbers within 20",
+  "story_intro_en": "Look! 3 + 4 + 1 + 4 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: บวกเศษส่วน",
+      "question_en": "2/7 + 3/7 = ?",
+      "solution_en": "5/7 ✅"
+    },
+    {
+      "title_en": "Example: ลบเศษส่วน",
+      "question_en": "5/8 - 2/8 = ?",
+      "solution_en": "3/8 ✅"
+    },
+    {
+      "title_en": "Example: คูณเศษส่วน",
+      "question_en": "1/2 × 2/3 = ?",
+      "solution_en": "2/6 = 1/3 ✅"
+    },
+    {
+      "title_en": "Example: หา ค.ร.น. และบวกเศษส่วนต่างส่วน",
+      "question_en": "1/3 + 1/4 = ?",
+      "solution_en": "4/12 + 3/12 = 7/12 ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: บวกเศษส่วนต่างส่วนโดยไม่ทำให้ส่วนเท่ากันก่อน",
+    "Mistake: คูณเศษส่วนโดยเอาเศษคูณส่วนโดยตรงแทนที่จะเป็น เศษ×เศษ ส่วน×ส่วน",
+    "Mistake: ไม่ตัดเศษส่วนให้เป็นเศษส่วนอย่างต่ำ"
+  ],
+  "hints_en": [
+    "Hint: เศษส่วนต่างส่วนต้องทำให้ส่วนเท่ากันก่อน หา ค.ร.น. ของส่วนมาคูณ",
+    "Hint: จำว่าเศษส่วนคูณกัน: เศษ×เศษ ส่วน×ส่วน",
+    "Hint: ถ้าเศษกับส่วนมีตัวร่วม ให้ตัดทอนก่อนคูณจะง่ายขึ้น"
+  ],
+  "explanation_steps_en": [
+    "Step: เศษส่วนที่มีส่วนเท่ากัน บวกลบโดยเอาเศษบวกลบกัน ไม่ต้องเปลี่ยนส่วน",
+    "Step: เช่น 3/5 + 1/5 = 4/5 หรือ 3/5 - 1/5 = 2/5",
+    "Step: เศษส่วนที่ไม่เท่ากันต้องทำให้ส่วนเท่ากันก่อน โดยหา ค.ร.น. ของส่วน",
+    "Step: การคูณเศษส่วน: เศษ × เศษ ส่วน × ส่วน เช่น 2/3 × 3/4 = 6/12",
+    "Step: การหารเศษส่วน: พลิกเศษส่วนตัวหารกลับด้านแล้วคูณ เช่น 1/2 ÷ 3 = 1/2 × 1/3 = 1/6",
+    "Step: ถ้าเศษส่วนมากกว่า 1 สามารถเขียนเป็นจำนวนคละได้ เช่น 5/3 = 1 2/3"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g4_fractions_q01",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "animals animals 1 + 2 = 3?",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core",
+      "question_en": "1/4 + 2/4 ?",
+      "explanation_en": "animals animals 1 + 2 = 3?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "3/4"
+    },
+    {
+      "question_id": "g4_fractions_q02",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 ?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core",
+      "question_en": "3/5 - 1/5 ?",
+      "explanation_en": "3/5 - 1/5 = 2/5",
+      "choices_en": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "answer_en": "2/5"
+    },
+    {
+      "question_id": "g4_fractions_q03",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 1/2?",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "easy",
+      "skill_tag": "g4_fractions",
+      "question_type": "core",
+      "question_en": "1/2?",
+      "explanation_en": "2/4 1/2?",
+      "choices_en": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "answer_en": "2/4"
+    },
+    {
+      "question_id": "g4_fractions_q04",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "animals animals 1 + 2 = 3?",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core",
+      "question_en": "1/4 + 2/4 ?",
+      "explanation_en": "animals animals 1 + 2 = 3?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "3/4"
+    },
+    {
+      "question_id": "g4_fractions_q05",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 ?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core",
+      "question_en": "3/5 - 1/5 ?",
+      "explanation_en": "3/5 - 1/5 = 2/5",
+      "choices_en": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "answer_en": "2/5"
+    },
+    {
+      "question_id": "g4_fractions_q06",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 1/2?",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core",
+      "question_en": "1/2?",
+      "explanation_en": "2/4 1/2?",
+      "choices_en": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "answer_en": "2/4"
+    },
+    {
+      "question_id": "g4_fractions_q07",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "animals animals 1 + 2 = 3?",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "medium",
+      "skill_tag": "g4_fractions",
+      "question_type": "core",
+      "question_en": "1/4 + 2/4 ?",
+      "explanation_en": "animals animals 1 + 2 = 3?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "3/4"
+    },
+    {
+      "question_id": "g4_fractions_q08",
+      "question_th": "3/5 - 1/5 เท่ากับเท่าไร?",
+      "question_text": "3/5 - 1/5 ?",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "answer": "2/5",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge",
+      "question_en": "3/5 - 1/5 ?",
+      "explanation_en": "3/5 - 1/5 = 2/5",
+      "choices_en": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "answer_en": "2/5"
+    },
+    {
+      "question_id": "g4_fractions_q09",
+      "question_th": "เศษส่วนใดเท่ากับ 1/2?",
+      "question_text": "1/2?",
+      "choices": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "correct_answer": "2/4",
+      "answer": "2/4",
+      "explanation": "2/4 1/2?",
+      "explanation_th": "2/4 ย่อได้เป็น 1/2",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge",
+      "question_en": "1/2?",
+      "explanation_en": "2/4 1/2?",
+      "choices_en": [
+        "2/4",
+        "1/3",
+        "3/4",
+        "2/3"
+      ],
+      "answer_en": "2/4"
+    },
+    {
+      "question_id": "g4_fractions_q10",
+      "question_th": "1/4 + 2/4 เท่ากับเท่าไร?",
+      "question_text": "1/4 + 2/4 ?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "animals animals 1 + 2 = 3?",
+      "explanation_th": "ตัวส่วนเท่ากัน บวกตัวเศษ 1 + 2 = 3",
+      "difficulty": "hard",
+      "skill_tag": "g4_fractions",
+      "question_type": "challenge",
+      "question_en": "1/4 + 2/4 ?",
+      "explanation_en": "animals animals 1 + 2 = 3?",
+      "choices_en": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "answer_en": "3/4"
+    }
+  ],
+  "quiz_id": "g4_fractions_ep",
+  "generated_at": "2026-05-16T04:16:41.082579+00:00",
+  "source_lesson_id": "g4_fractions",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Think Story",
+      "content": "Read the problem about Fractions: Add, Subtract, Multiply, Divide. Find the important numbers first."
+    },
+    {
+      "type": "visual_thinking",
+      "title": "Look First",
+      "content": "Circle what you know and underline what the question asks."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Use equal groups or boxes to organize the numbers.",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "items"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6 × 4 = 24",
+      "content": "Choose the operation that matches the question."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24"
+    }
+  ]
+}

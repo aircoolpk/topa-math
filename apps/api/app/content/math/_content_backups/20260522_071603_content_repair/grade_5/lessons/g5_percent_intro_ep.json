@@ -1,0 +1,1526 @@
+{
+  "lesson_id": "g5_percent_intro_ep",
+  "id": "g5_percent_intro_ep",
+  "grade_level": 5,
+  "title_th": "เปอร์เซ็นต์ ใช้ในชีวิตจริง",
+  "objective_th": "นักเรียนสามารถเข้าใจความหมายของเปอร์เซ็นต์ และแปลงเป็นเศษส่วนหรือทศนิยมได้",
+  "story_intro_th": "ร้านขายของมีลดราคา 25% ถ้าราคาเดิม 400 บาท จะลดกี่บาท และราคาใหม่เท่าไหร่? 🏷️",
+  "explanation_steps": [
+    "เปอร์เซ็นต์ (%) หมายถึงต่อ 100 เช่น 25% = 25 ต่อ 100 = 1/4 = 0.25",
+    "เปอร์เซ็นต์เป็นเศษส่วน: เอาเปอร์เซ็นต์หารด้วย 100 เช่น 75% = 75/100 = 3/4",
+    "เปอร์เซ็นต์เป็นทศนิยม: เอาเปอร์เซ็นต์หารด้วย 100 เช่น 40% = 0.40",
+    "หาค่าเปอร์เซ็นต์ของจำนวน: เอาจำนวนคูณเปอร์เซ็นต์แล้วหารด้วย 100",
+    "เช่น หา 25% ของ 400: 400 × 25 ÷ 100 = 100 บาท"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "เปอร์เซ็นต์เป็นเศษส่วน",
+      "question_th": "20% เป็นเศษส่วนเท่าไหร่?",
+      "solution_th": "20/100 = 1/5 ✅"
+    },
+    {
+      "title_th": "เปอร์เซ็นต์เป็นทศนิยม",
+      "question_th": "65% เป็นทศนิยมเท่าไหร่?",
+      "solution_th": "0.65 ✅"
+    },
+    {
+      "title_th": "หาเปอร์เซ็นต์ของจำนวน",
+      "question_th": "30% ของ 500 บาท เท่ากับกี่บาท?",
+      "solution_th": "500 × 30 ÷ 100 = 150 บาท ✅"
+    },
+    {
+      "title_th": "โจทย์ลดราคา",
+      "question_th": "เสื้อราคา 300 บาท ลด 15% ราคาใหม่เท่าไหร่?",
+      "solution_th": "ลด: 300 × 15 ÷ 100 = 45 บาท / ราคาใหม่: 300 - 45 = 255 บาท ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ไม่เข้าใจว่า 100% = 1 ทั้งหมด ดังนั้น 50% = 0.5 = 1/2",
+    "คูณเปอร์เซ็นต์โดยไม่หารด้วย 100 ทำให้คำตอบมากเกินไป 100 เท่า",
+    "ลืมว่าเปอร์เซ็นต์คือส่วนของจำนวนเต็ม ไม่ใช่จำนวนเต็ม"
+  ],
+  "hints": [
+    "จำได้ง่าย: เปอร์เซ็นต์ = ต่อ 100 ดังนั้น 50% = 50/100 = 0.5",
+    "หาเปอร์เซ็นต์ของจำนวน: จำนวน × เปอร์เซ็นต์ ÷ 100",
+    "100% = 1, 50% = 0.5, 25% = 0.25 จำไว้ใช้บ่อย"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g5_percent_intro",
+  "skill_code": "g5_percent_intro_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวในโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน",
+      "story_theme_en": "เรื่องราวในโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้",
+      "story_theme_en": "เรื่องราวเกี่ยวกับผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น",
+      "story_theme_en": "เรื่องราวเกี่ยวกับของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด",
+      "story_theme_th": "เรื่องราวในตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด",
+      "story_theme_en": "เรื่องราวในตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง",
+      "story_theme_en": "เรื่องราวเกี่ยวกับสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน",
+      "story_theme_th": "เรื่องราวในสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🌻 สวน",
+      "story_theme_en": "เรื่องราวในสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวเกี่ยวกับการวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป",
+      "story_theme_en": "เรื่องราวเกี่ยวกับการวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวในห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน",
+      "story_theme_en": "เรื่องราวในห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวสนุกๆ กับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน",
+      "story_theme_en": "เรื่องราวสนุกๆ กับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวในงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล",
+      "story_theme_en": "เรื่องราวในงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Check the paid money, the price, and the change.",
+          "data": {
+            "paid": 50,
+            "price": 23.75,
+            "change": 26.25,
+            "description_th": "Change = paid money - price"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+          "model_type": "bar_model",
+          "groups": [
+            {
+              "label": "price",
+              "value": 23.75
+            },
+            {
+              "label": "change",
+              "value": 26.25
+            }
+          ]
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "50 - 23.75 = 26.25 baht",
+          "content": "Line up decimal points, then subtract."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+          "choices": [
+            "24.25 baht",
+            "25.25 baht",
+            "26.25 baht",
+            "27.25 baht"
+          ],
+          "correct_answer": "26.25 baht",
+          "answer": "26.25 baht",
+          "explanation": "50.00 - 23.75 = 26.25 baht"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เปอร์เซ็นต์",
+  "preview_subtitle_th": "จำนวนที่มีจุดทศนิยม",
+  "cover_theme": "percent_intro",
+  "cover_emoji": "%",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "จำนวนที่มีจุดทศนิยม",
+  "learning_objective_th": "นักเรียนสามารถเข้าใจความหมายของเปอร์เซ็นต์ และแปลงเป็นเศษส่วนหรือทศนิยมได้",
+  "lesson_intro_th": "ร้านขายของมีลดราคา 25% ถ้าราคาเดิม 400 บาท จะลดกี่บาท และราคาใหม่เท่าไหร่? 🏷️",
+  "concept_explanation_th": "เปอร์เซ็นต์ (%) หมายถึงต่อ 100 เช่น 25% = 25 ต่อ 100 = 1/4 = 0.25 เปอร์เซ็นต์เป็นเศษส่วน: เอาเปอร์เซ็นต์หารด้วย 100 เช่น 75% = 75/100 = 3/4 เปอร์เซ็นต์เป็นทศนิยม: เอาเปอร์เซ็นต์หารด้วย 100 เช่น 40% = 0.40 หาค่าเปอร์เซ็นต์ของจำนวน: เอาจำนวนคูณเปอร์เซ็นต์แล้วหารด้วย 100 เช่น หา 25% ของ 400: 400 × 25 ÷ 100 = 100 บาท",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เปอร์เซ็นต์ ใช้ในชีวิตจริง ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "เปอร์เซ็นต์เป็นเศษส่วน",
+      "question_th": "20% เป็นเศษส่วนเท่าไหร่?",
+      "solution_th": "20/100 = 1/5 ✅"
+    },
+    {
+      "title_th": "เปอร์เซ็นต์เป็นทศนิยม",
+      "question_th": "65% เป็นทศนิยมเท่าไหร่?",
+      "solution_th": "0.65 ✅"
+    },
+    {
+      "title_th": "หาเปอร์เซ็นต์ของจำนวน",
+      "question_th": "30% ของ 500 บาท เท่ากับกี่บาท?",
+      "solution_th": "500 × 30 ÷ 100 = 150 บาท ✅"
+    },
+    {
+      "title_th": "โจทย์ลดราคา",
+      "question_th": "เสื้อราคา 300 บาท ลด 15% ราคาใหม่เท่าไหร่?",
+      "solution_th": "ลด: 300 × 15 ÷ 100 = 45 บาท / ราคาใหม่: 300 - 45 = 255 บาท ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ไม่เข้าใจว่า 100% = 1 ทั้งหมด ดังนั้น 50% = 0.5 = 1/2",
+    "คูณเปอร์เซ็นต์โดยไม่หารด้วย 100 ทำให้คำตอบมากเกินไป 100 เท่า",
+    "ลืมว่าเปอร์เซ็นต์คือส่วนของจำนวนเต็ม ไม่ใช่จำนวนเต็ม"
+  ],
+  "questions": [
+    {
+      "question_id": "g5_percent_intro_q01",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q02",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q03",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหน่วย",
+        "หลักสิบ",
+        "หลักทศนิยมหนึ่งตำแหน่ง",
+        "หลักทศนิยมสองตำแหน่ง"
+      ],
+      "correct_answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "explanation": "3 อยู่ตำแหน่งส่วนสิบ",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q04",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q05",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q06",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหน่วย",
+        "หลักสิบ",
+        "หลักทศนิยมหนึ่งตำแหน่ง",
+        "หลักทศนิยมสองตำแหน่ง"
+      ],
+      "correct_answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "explanation": "3 อยู่ตำแหน่งส่วนสิบ",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q07",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q08",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g5_percent_intro_q09",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหน่วย",
+        "หลักสิบ",
+        "หลักทศนิยมหนึ่งตำแหน่ง",
+        "หลักทศนิยมสองตำแหน่ง"
+      ],
+      "correct_answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "explanation": "3 อยู่ตำแหน่งส่วนสิบ",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g5_percent_intro_q10",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g5_percent_intro_q01",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q02",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q03",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหน่วย",
+        "หลักสิบ",
+        "หลักทศนิยมหนึ่งตำแหน่ง",
+        "หลักทศนิยมสองตำแหน่ง"
+      ],
+      "correct_answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "explanation": "3 อยู่ตำแหน่งส่วนสิบ",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q04",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q05",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q06",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหน่วย",
+        "หลักสิบ",
+        "หลักทศนิยมหนึ่งตำแหน่ง",
+        "หลักทศนิยมสองตำแหน่ง"
+      ],
+      "correct_answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "explanation": "3 อยู่ตำแหน่งส่วนสิบ",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q07",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_percent_intro_q08",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g5_percent_intro_q09",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "choices": [
+        "หลักหน่วย",
+        "หลักสิบ",
+        "หลักทศนิยมหนึ่งตำแหน่ง",
+        "หลักทศนิยมสองตำแหน่ง"
+      ],
+      "correct_answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "answer": "หลักทศนิยมหนึ่งตำแหน่ง",
+      "explanation": "3 อยู่ตำแหน่งส่วนสิบ",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g5_percent_intro_q10",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Percentages in Real Life",
+  "objective_en": "Students will be able to understand this math concept",
+  "story_intro_en": "Look! 25 + 400 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: เปอร์เซ็นต์เป็นเศษส่วน",
+      "question_en": "20% ?",
+      "solution_en": "20/100 = 1/5 ✅"
+    },
+    {
+      "title_en": "Example: เปอร์เซ็นต์เป็นทศนิยม",
+      "question_en": "65% ?",
+      "solution_en": "0.65 ✅"
+    },
+    {
+      "title_en": "Example: หาเปอร์เซ็นต์ของจำนวน",
+      "question_en": "30% 500 ?",
+      "solution_en": "500 × 30 ÷ 100 = 150 ✅?"
+    },
+    {
+      "title_en": "Example: โจทย์ลดราคา",
+      "question_en": "300 15% ?",
+      "solution_en": ": 300 × 15 ÷ 100 = 45 / : 300 - 45 = 255 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ไม่เข้าใจว่า 100% = 1 ทั้งหมด ดังนั้น 50% = 0.5 = 1/2",
+    "Mistake: คูณเปอร์เซ็นต์โดยไม่หารด้วย 100 ทำให้คำตอบมากเกินไป 100 เท่า",
+    "Mistake: ลืมว่าเปอร์เซ็นต์คือส่วนของจำนวนเต็ม ไม่ใช่จำนวนเต็ม"
+  ],
+  "hints_en": [
+    "Hint: จำได้ง่าย: เปอร์เซ็นต์ = ต่อ 100 ดังนั้น 50% = 50/100 = 0.5",
+    "Hint: หาเปอร์เซ็นต์ของจำนวน: จำนวน × เปอร์เซ็นต์ ÷ 100",
+    "Hint: 100% = 1, 50% = 0.5, 25% = 0.25 จำไว้ใช้บ่อย"
+  ],
+  "explanation_steps_en": [
+    "Step: เปอร์เซ็นต์ (%) หมายถึงต่อ 100 เช่น 25% = 25 ต่อ 100 = 1/4 = 0.25",
+    "Step: เปอร์เซ็นต์เป็นเศษส่วน: เอาเปอร์เซ็นต์หารด้วย 100 เช่น 75% = 75/100 = 3/4",
+    "Step: เปอร์เซ็นต์เป็นทศนิยม: เอาเปอร์เซ็นต์หารด้วย 100 เช่น 40% = 0.40",
+    "Step: หาค่าเปอร์เซ็นต์ของจำนวน: เอาจำนวนคูณเปอร์เซ็นต์แล้วหารด้วย 100",
+    "Step: เช่น หา 25% ของ 400: 400 × 25 ÷ 100 = 100 บาท"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g5_percent_intro_q01",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 ?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core",
+      "question_en": "0.5 + 0.3 ?",
+      "explanation_en": "0.5 + 0.3 = 0.8",
+      "choices_en": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "answer_en": "0.8"
+    },
+    {
+      "question_id": "g5_percent_intro_q02",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 ?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core",
+      "question_en": "2.4 - 1.1 ?",
+      "explanation_en": "2.4 - 1.1 = 1.3",
+      "choices_en": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "answer_en": "1.3"
+    },
+    {
+      "question_id": "g5_percent_intro_q03",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "3 4.35 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "3?",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "easy",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core",
+      "question_en": "3 4.35 ?",
+      "explanation_en": "3?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g5_percent_intro_q04",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 ?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core",
+      "question_en": "0.5 + 0.3 ?",
+      "explanation_en": "0.5 + 0.3 = 0.8",
+      "choices_en": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "answer_en": "0.8"
+    },
+    {
+      "question_id": "g5_percent_intro_q05",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 ?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core",
+      "question_en": "2.4 - 1.1 ?",
+      "explanation_en": "2.4 - 1.1 = 1.3",
+      "choices_en": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "answer_en": "1.3"
+    },
+    {
+      "question_id": "g5_percent_intro_q06",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "3 4.35 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "3?",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core",
+      "question_en": "3 4.35 ?",
+      "explanation_en": "3?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g5_percent_intro_q07",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 ?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "medium",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "core",
+      "question_en": "0.5 + 0.3 ?",
+      "explanation_en": "0.5 + 0.3 = 0.8",
+      "choices_en": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "answer_en": "0.8"
+    },
+    {
+      "question_id": "g5_percent_intro_q08",
+      "question_th": "2.4 - 1.1 เท่ากับเท่าไร?",
+      "question_text": "2.4 - 1.1 ?",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "correct_answer": "1.3",
+      "answer": "1.3",
+      "explanation": "2.4 - 1.1 = 1.3",
+      "explanation_th": "2.4 - 1.1 = 1.3",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge",
+      "question_en": "2.4 - 1.1 ?",
+      "explanation_en": "2.4 - 1.1 = 1.3",
+      "choices_en": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "answer_en": "1.3"
+    },
+    {
+      "question_id": "g5_percent_intro_q09",
+      "question_th": "เลข 3 ใน 4.35 อยู่ในหลักใด?",
+      "question_text": "3 4.35 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "3?",
+      "explanation_th": "3 อยู่ตำแหน่งส่วนสิบ",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge",
+      "question_en": "3 4.35 ?",
+      "explanation_en": "3?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g5_percent_intro_q10",
+      "question_th": "0.5 + 0.3 เท่ากับเท่าไร?",
+      "question_text": "0.5 + 0.3 ?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "correct_answer": "0.8",
+      "answer": "0.8",
+      "explanation": "0.5 + 0.3 = 0.8",
+      "explanation_th": "0.5 + 0.3 = 0.8",
+      "difficulty": "hard",
+      "skill_tag": "g5_percent_intro",
+      "question_type": "challenge",
+      "question_en": "0.5 + 0.3 ?",
+      "explanation_en": "0.5 + 0.3 = 0.8",
+      "choices_en": [
+        "0.2",
+        "0.8",
+        "0.9",
+        "1.0"
+      ],
+      "answer_en": "0.8"
+    }
+  ],
+  "quiz_id": "g5_percent_intro_ep",
+  "generated_at": "2026-05-16T04:16:41.940235+00:00",
+  "source_lesson_id": "g5_percent_intro",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Think Story",
+      "content": "A notebook costs 23.75 baht. You pay 50 baht. How much change should you get?"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "Look First",
+      "content": "Check the paid money, the price, and the change.",
+      "data": {
+        "paid": 50,
+        "price": 23.75,
+        "change": 26.25,
+        "description_th": "Change = paid money - price"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
+      "model_type": "bar_model",
+      "groups": [
+        {
+          "label": "price",
+          "value": 23.75
+        },
+        {
+          "label": "change",
+          "value": 26.25
+        }
+      ]
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "50 - 23.75 = 26.25 baht",
+      "content": "Line up decimal points, then subtract."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "You pay 50 baht for an item that costs 23.75 baht. What is the change?",
+      "choices": [
+        "24.25 baht",
+        "25.25 baht",
+        "26.25 baht",
+        "27.25 baht"
+      ],
+      "correct_answer": "26.25 baht",
+      "answer": "26.25 baht",
+      "explanation": "50.00 - 23.75 = 26.25 baht"
+    }
+  ]
+}

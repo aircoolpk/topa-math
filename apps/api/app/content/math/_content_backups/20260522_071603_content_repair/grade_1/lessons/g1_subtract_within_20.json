@@ -1,0 +1,1029 @@
+{
+  "lesson_id": "g1_subtract_within_20",
+  "id": "g1_subtract_within_20",
+  "grade_level": 1,
+  "title_th": "ลบเลขไม่เกิน 20 ง่ายๆ",
+  "objective_th": "นักเรียนสามารถลบจำนวนสองจำนวนที่ตัวตั้งไม่เกิน 20 ได้ถูกต้อง",
+  "story_intro_th": "อลิสมีลูกกวาด 12 ลูก ให้เพื่อนไป 5 ลูก อลิสเหลือลูกกวาดกี่ลูก? 🍬",
+  "explanation_steps": [
+    "การลบคือการเอาจำนวนออกไป ผลลัพธ์เรียกว่า ผลต่าง",
+    "เวลาลบ ให้เอาตัวเลขที่ถูกลบออกจากจำนวนเดิม ดูว่าเหลือเท่าไหร่",
+    "ใช้นิ้วนับถอยหลัง เช่น 12 - 5 ก็นับถอย 5 ขั้น: 11, 10, 9, 8, 7 → ได้ 7",
+    "ถ้าตัวตั้งเป็น 10 ให้แยกเป็น 10 กับอีกเท่าไหร่ ลบจาก 10 ก่อนแล้วค่อยรวม",
+    "ตรวจคำตอบโดยบวกกลับ ถ้า 12 - 5 = 7 งั้น 7 + 5 ต้องได้ 12"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "มีลูกบอล 15 ลูก ให้เพื่อนไป 7 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "15 - 7 = 8 ลูกบอล ✅"
+    },
+    {
+      "title_th": "ลบขนม",
+      "question_th": "แม่ซื้อขนมมา 18 ชิ้น กินไป 9 ชิ้น เหลือขนมกี่ชิ้น?",
+      "solution_th": "18 - 9 = 9 ชิ้น ✅"
+    },
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 13 แท่ง ให้น้องไป 6 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "13 - 6 = 7 แท่ง ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ลบสลับด้าน เช่น คิดว่า 12 - 5 = 7 แต่กลับไปบวกเป็น 5 + 12",
+    "นับถอยหลังผิด เช่น นับไป 4 ขั้นแทนที่จะเป็น 5 ขั้น",
+    "ตัวตั้งน้อยกว่าตัวลบ เช่น 7 - 9 ซึ่งยังไม่เรียนในเรื่องนี้ ต้องตรวจสอบว่าตัวตั้งมากกว่าตัวลบเสมอ"
+  ],
+  "hints": [
+    "ใช้นิ้วนับถอยหลัง ถ้าตัวลบเป็นเท่าไหร่ก็นับถอยเท่านั้นขั้น",
+    "ถ้าลบเลขที่มากกว่า 5 ให้แยกเป็นลบจาก 10 ก่อน เช่น 14 - 6 = (10 - 6) + 4 = 8",
+    "ตรวจคำตอบโดยเอาคำตอบบวกกลับด้วยตัวลบ ถ้าได้ตัวตั้งแปลว่าถูก"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g1_subtract_within_20",
+  "skill_code": "g1_subtract_within_20",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "แบบฝึก 1 — 🏫 โรงเรียน",
+      "story_theme_th": "🏫 โรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "แบบฝึก 2 — 🍎 ผลไม้",
+      "story_theme_th": "🍎 ผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "แบบฝึก 3 — 🧸 ของเล่น",
+      "story_theme_th": "🧸 ของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "แบบฝึก 4 — 🏪 ตลาด",
+      "story_theme_th": "🏪 ตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "แบบฝึก 5 — 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "🐕 สัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "แบบฝึก 6 — 🌻 สวน",
+      "story_theme_th": "🌻 สวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "แบบฝึก 7 — 🎨 วาดรูป",
+      "story_theme_th": "🎨 วาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "แบบฝึก 8 — 📚 ห้องเรียน",
+      "story_theme_th": "📚 ห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "แบบฝึก 9 — 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "🎮 สนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "แบบฝึก 10 — 🎉 งานเทศกาล",
+      "story_theme_th": "🎉 งานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ลบเลขไม่เกิน 20",
+  "preview_subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "cover_theme": "subtract_within_20",
+  "cover_emoji": "➖",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "learning_objective_th": "นักเรียนสามารถลบจำนวนสองจำนวนที่ตัวตั้งไม่เกิน 20 ได้ถูกต้อง",
+  "lesson_intro_th": "อลิสมีลูกกวาด 12 ลูก ให้เพื่อนไป 5 ลูก อลิสเหลือลูกกวาดกี่ลูก? 🍬",
+  "concept_explanation_th": "การลบคือการเอาจำนวนออกไป ผลลัพธ์เรียกว่า ผลต่าง เวลาลบ ให้เอาตัวเลขที่ถูกลบออกจากจำนวนเดิม ดูว่าเหลือเท่าไหร่ ใช้นิ้วนับถอยหลัง เช่น 12 - 5 ก็นับถอย 5 ขั้น: 11, 10, 9, 8, 7 → ได้ 7 ถ้าตัวตั้งเป็น 10 ให้แยกเป็น 10 กับอีกเท่าไหร่ ลบจาก 10 ก่อนแล้วค่อยรวม ตรวจคำตอบโดยบวกกลับ ถ้า 12 - 5 = 7 งั้น 7 + 5 ต้องได้ 12",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 10,
+    "parts": [
+      4,
+      6
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ลบเลขไม่เกิน 20 ง่ายๆ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "มีลูกบอล 15 ลูก ให้เพื่อนไป 7 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "15 - 7 = 8 ลูกบอล ✅"
+    },
+    {
+      "title_th": "ลบขนม",
+      "question_th": "แม่ซื้อขนมมา 18 ชิ้น กินไป 9 ชิ้น เหลือขนมกี่ชิ้น?",
+      "solution_th": "18 - 9 = 9 ชิ้น ✅"
+    },
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 13 แท่ง ให้น้องไป 6 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "13 - 6 = 7 แท่ง ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ลบสลับด้าน เช่น คิดว่า 12 - 5 = 7 แต่กลับไปบวกเป็น 5 + 12",
+    "นับถอยหลังผิด เช่น นับไป 4 ขั้นแทนที่จะเป็น 5 ขั้น",
+    "ตัวตั้งน้อยกว่าตัวลบ เช่น 7 - 9 ซึ่งยังไม่เรียนในเรื่องนี้ ต้องตรวจสอบว่าตัวตั้งมากกว่าตัวลบเสมอ"
+  ],
+  "questions": [
+    {
+      "question_id": "g1_subtract_within_20_q01",
+      "question_th": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "question_text": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "choices": [
+        "5 ลูก",
+        "6 ลูก",
+        "7 ลูก",
+        "8 ลูก"
+      ],
+      "correct_answer": "7 ลูก",
+      "answer": "7 ลูก",
+      "explanation": "12 - 5 = 7 ลูก",
+      "explanation_th": "12 - 5 = 7 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q02",
+      "question_th": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "question_text": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "choices": [
+        "9 ผล",
+        "10 ผล",
+        "11 ผล",
+        "12 ผล"
+      ],
+      "correct_answer": "11 ผล",
+      "answer": "11 ผล",
+      "explanation": "15 - 4 = 11 ผล",
+      "explanation_th": "15 - 4 = 11 ผล",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q03",
+      "question_th": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "question_text": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "choices": [
+        "8 แท่ง",
+        "9 แท่ง",
+        "10 แท่ง",
+        "11 แท่ง"
+      ],
+      "correct_answer": "10 แท่ง",
+      "answer": "10 แท่ง",
+      "explanation": "18 - 8 = 10 แท่ง",
+      "explanation_th": "18 - 8 = 10 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q04",
+      "question_th": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "question_text": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "choices": [
+        "6 ดวง",
+        "7 ดวง",
+        "8 ดวง",
+        "9 ดวง"
+      ],
+      "correct_answer": "7 ดวง",
+      "answer": "7 ดวง",
+      "explanation": "10 - 3 = 7 ดวง",
+      "explanation_th": "10 - 3 = 7 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q05",
+      "question_th": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "9 ชิ้น",
+        "10 ชิ้น",
+        "11 ชิ้น",
+        "12 ชิ้น"
+      ],
+      "correct_answer": "10 ชิ้น",
+      "answer": "10 ชิ้น",
+      "explanation": "16 - 6 = 10 ชิ้น",
+      "explanation_th": "16 - 6 = 10 ชิ้น",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q06",
+      "question_th": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "question_text": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "choices": [
+        "10 เม็ด",
+        "11 เม็ด",
+        "12 เม็ด",
+        "13 เม็ด"
+      ],
+      "correct_answer": "11 เม็ด",
+      "answer": "11 เม็ด",
+      "explanation": "20 - 9 = 11 เม็ด",
+      "explanation_th": "20 - 9 = 11 เม็ด",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q07",
+      "question_th": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "question_text": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "choices": [
+        "9 เล่ม",
+        "10 เล่ม",
+        "11 เล่ม",
+        "12 เล่ม"
+      ],
+      "correct_answer": "10 เล่ม",
+      "answer": "10 เล่ม",
+      "explanation": "13 - 3 = 10 เล่ม",
+      "explanation_th": "13 - 3 = 10 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q08",
+      "question_th": "19 - 7 เท่ากับเท่าไร?",
+      "question_text": "19 - 7 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "19 - 7 = 12",
+      "explanation_th": "19 - 7 = 12",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q09",
+      "question_th": "14 - 8 เท่ากับเท่าไร?",
+      "question_text": "14 - 8 เท่ากับเท่าไร?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer": "6",
+      "answer": "6",
+      "explanation": "14 - 8 = 6",
+      "explanation_th": "14 - 8 = 6",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q10",
+      "question_th": "17 - 9 เท่ากับเท่าไร?",
+      "question_text": "17 - 9 เท่ากับเท่าไร?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "17 - 9 = 8",
+      "explanation_th": "17 - 9 = 8",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g1_subtract_within_20_q01",
+      "question_th": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "question_text": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "choices": [
+        "5 ลูก",
+        "6 ลูก",
+        "7 ลูก",
+        "8 ลูก"
+      ],
+      "correct_answer": "7 ลูก",
+      "answer": "7 ลูก",
+      "explanation": "12 - 5 = 7 ลูก",
+      "explanation_th": "12 - 5 = 7 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q02",
+      "question_th": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "question_text": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "choices": [
+        "9 ผล",
+        "10 ผล",
+        "11 ผล",
+        "12 ผล"
+      ],
+      "correct_answer": "11 ผล",
+      "answer": "11 ผล",
+      "explanation": "15 - 4 = 11 ผล",
+      "explanation_th": "15 - 4 = 11 ผล",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q03",
+      "question_th": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "question_text": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "choices": [
+        "8 แท่ง",
+        "9 แท่ง",
+        "10 แท่ง",
+        "11 แท่ง"
+      ],
+      "correct_answer": "10 แท่ง",
+      "answer": "10 แท่ง",
+      "explanation": "18 - 8 = 10 แท่ง",
+      "explanation_th": "18 - 8 = 10 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q04",
+      "question_th": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "question_text": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "choices": [
+        "6 ดวง",
+        "7 ดวง",
+        "8 ดวง",
+        "9 ดวง"
+      ],
+      "correct_answer": "7 ดวง",
+      "answer": "7 ดวง",
+      "explanation": "10 - 3 = 7 ดวง",
+      "explanation_th": "10 - 3 = 7 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q05",
+      "question_th": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "9 ชิ้น",
+        "10 ชิ้น",
+        "11 ชิ้น",
+        "12 ชิ้น"
+      ],
+      "correct_answer": "10 ชิ้น",
+      "answer": "10 ชิ้น",
+      "explanation": "16 - 6 = 10 ชิ้น",
+      "explanation_th": "16 - 6 = 10 ชิ้น",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q06",
+      "question_th": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "question_text": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "choices": [
+        "10 เม็ด",
+        "11 เม็ด",
+        "12 เม็ด",
+        "13 เม็ด"
+      ],
+      "correct_answer": "11 เม็ด",
+      "answer": "11 เม็ด",
+      "explanation": "20 - 9 = 11 เม็ด",
+      "explanation_th": "20 - 9 = 11 เม็ด",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q07",
+      "question_th": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "question_text": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "choices": [
+        "9 เล่ม",
+        "10 เล่ม",
+        "11 เล่ม",
+        "12 เล่ม"
+      ],
+      "correct_answer": "10 เล่ม",
+      "answer": "10 เล่ม",
+      "explanation": "13 - 3 = 10 เล่ม",
+      "explanation_th": "13 - 3 = 10 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q08",
+      "question_th": "19 - 7 เท่ากับเท่าไร?",
+      "question_text": "19 - 7 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "19 - 7 = 12",
+      "explanation_th": "19 - 7 = 12",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q09",
+      "question_th": "14 - 8 เท่ากับเท่าไร?",
+      "question_text": "14 - 8 เท่ากับเท่าไร?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer": "6",
+      "answer": "6",
+      "explanation": "14 - 8 = 6",
+      "explanation_th": "14 - 8 = 6",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q10",
+      "question_th": "17 - 9 เท่ากับเท่าไร?",
+      "question_text": "17 - 9 เท่ากับเท่าไร?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "17 - 9 = 8",
+      "explanation_th": "17 - 9 = 8",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง ลบเลขไม่เกิน 20 ง่ายๆ ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "18 + 7 = 25",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "18 + 7 = ?",
+      "choices": [
+        "23",
+        "24",
+        "25",
+        "27"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "คำตอบคือ 25"
+    }
+  ]
+}

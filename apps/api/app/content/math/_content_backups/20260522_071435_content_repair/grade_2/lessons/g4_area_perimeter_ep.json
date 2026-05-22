@@ -1,0 +1,1375 @@
+{
+  "lesson_id": "g4_area_perimeter_ep",
+  "id": "g4_area_perimeter_ep",
+  "grade_level": 4,
+  "title_th": "พื้นที่และเส้นรอบรูป",
+  "objective_th": "นักเรียนสามารถหาพื้นที่และเส้นรอบรูปของสี่เหลี่ยมผืนผ้า สี่เหลี่ยมจัตุรัส และสามเหลี่ยมได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสอยากปลูกหญ้าในสวน รอบสวนมีรั้วกี่เมตร และพื้นที่สวนกี่ตารางเมตร? 🌱",
+  "explanation_steps": [
+    "เส้นรอบรูปคือความยาวรอบนอกของรูปร่าง หาผลรวมของทุกด้าน",
+    "สี่เหลี่ยมผืนผ้า เส้นรอบรูป = 2 × (กว้าง + ยาว) พื้นที่ = กว้าง × ยาว",
+    "สี่เหลี่ยมจัตุรัส เส้นรอบรูป = 4 × ด้าน พื้นที่ = ด้าน × ด้าน",
+    "สามเหลี่ยม พื้นที่ = 1/2 × ฐาน × สูง",
+    "หน่วยของพื้นที่ต้องเป็นตารางหน่วย เช่น ตารางเมตร ตารางเซนติเมตร"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "หาเส้นรอบรูปสี่เหลี่ยมผืนผ้า",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ซม. ยาว 10 ซม. มีเส้นรอบรูปเท่าไหร่?",
+      "solution_th": "2 × (6 + 10) = 32 ซม. ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สี่เหลี่ยมจัตุรัส",
+      "question_th": "สี่เหลี่ยมจัตุรัสมีด้านยาว 8 ซม. พื้นที่เท่าไหร่?",
+      "solution_th": "8 × 8 = 64 ตารางเซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สามเหลี่ยม",
+      "question_th": "สามเหลี่ยมฐาน 10 ซม. สูง 6 ซม. พื้นที่เท่าไหร่?",
+      "solution_th": "1/2 × 10 × 6 = 30 ตารางเซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สี่เหลี่ยมผืนผ้า",
+      "question_th": "สนามฟุตบอลกว้าง 25 ม. ยาว 50 ม. มีพื้นที่เท่าไหร่?",
+      "solution_th": "25 × 50 = 1,250 ตารางเมตร ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ใช้สูตรพื้นที่สามเหลี่ยมผิด เช่น ลืม ÷ 2 ทำให้พื้นที่มากเกินไป",
+    "ไม่เขียนหน่วยเป็นตารางหน่วย",
+    "สับสนระหว่างสูตรเส้นรอบรูปกับพื้นที่"
+  ],
+  "hints": [
+    "เส้นรอบรูป = รอบนอก = บวกทุกด้าน / พื้นที่ = ขนาดของพื้นผิว",
+    "สามเหลี่ยมใช้ 1/2 ของสี่เหลี่ยมที่มีฐานและสูงเท่ากัน",
+    "ตรวจคำตอบโดยประมาณค่า พื้นที่สมเหตุสมผลหรือไม่"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_area_perimeter",
+  "skill_code": "g4_area_perimeter_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_th": "🏫 ธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน - บทเรียนที่ v01",
+      "story_theme_en": "🏫 ธีมโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_th": "🍎 ธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้ - บทเรียนที่ v02",
+      "story_theme_en": "🍎 ธีมผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_th": "🧸 ธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น - บทเรียนที่ v03",
+      "story_theme_en": "🧸 ธีมของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_th": "🏪 ธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด - บทเรียนที่ v04",
+      "story_theme_en": "🏪 ธีมตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_th": "🐕 ธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง - บทเรียนที่ v05",
+      "story_theme_en": "🐕 ธีมสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_th": "🌻 ธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🌻 สวน - บทเรียนที่ v06",
+      "story_theme_en": "🌻 ธีมสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_th": "🎨 ธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป - บทเรียนที่ v07",
+      "story_theme_en": "🎨 ธีมวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_th": "📚 ธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน - บทเรียนที่ v08",
+      "story_theme_en": "📚 ธีมห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_th": "🎮 ธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน - บทเรียนที่ v09",
+      "story_theme_en": "🎮 ธีมสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_th": "🎉 ธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล - บทเรียนที่ v10",
+      "story_theme_en": "🎉 ธีมงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "พื้นที่และเส้นรอบ",
+  "preview_subtitle_th": "วัดพื้นที่และเส้นรอบ",
+  "cover_theme": "area_perimeter",
+  "cover_emoji": "📐",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "วัดพื้นที่และเส้นรอบ",
+  "learning_objective_th": "นักเรียนสามารถหาพื้นที่และเส้นรอบรูปของสี่เหลี่ยมผืนผ้า สี่เหลี่ยมจัตุรัส และสามเหลี่ยมได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสอยากปลูกหญ้าในสวน รอบสวนมีรั้วกี่เมตร และพื้นที่สวนกี่ตารางเมตร? 🌱",
+  "concept_explanation_th": "เส้นรอบรูปคือความยาวรอบนอกของรูปร่าง หาผลรวมของทุกด้าน สี่เหลี่ยมผืนผ้า เส้นรอบรูป = 2 × (กว้าง + ยาว) พื้นที่ = กว้าง × ยาว สี่เหลี่ยมจัตุรัส เส้นรอบรูป = 4 × ด้าน พื้นที่ = ด้าน × ด้าน สามเหลี่ยม พื้นที่ = 1/2 × ฐาน × สูง หน่วยของพื้นที่ต้องเป็นตารางหน่วย เช่น ตารางเมตร ตารางเซนติเมตร",
+  "singapore_math_model": {
+    "type": "area_model",
+    "model_type": "area_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "area_model",
+    "rows": 4,
+    "columns": 7,
+    "total": 28,
+    "label_th": "แผนภาพพื้นที่แบบช่อง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท พื้นที่และเส้นรอบรูป ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "หาเส้นรอบรูปสี่เหลี่ยมผืนผ้า",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ซม. ยาว 10 ซม. มีเส้นรอบรูปเท่าไหร่?",
+      "solution_th": "2 × (6 + 10) = 32 ซม. ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สี่เหลี่ยมจัตุรัส",
+      "question_th": "สี่เหลี่ยมจัตุรัสมีด้านยาว 8 ซม. พื้นที่เท่าไหร่?",
+      "solution_th": "8 × 8 = 64 ตารางเซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สามเหลี่ยม",
+      "question_th": "สามเหลี่ยมฐาน 10 ซม. สูง 6 ซม. พื้นที่เท่าไหร่?",
+      "solution_th": "1/2 × 10 × 6 = 30 ตารางเซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สี่เหลี่ยมผืนผ้า",
+      "question_th": "สนามฟุตบอลกว้าง 25 ม. ยาว 50 ม. มีพื้นที่เท่าไหร่?",
+      "solution_th": "25 × 50 = 1,250 ตารางเมตร ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ใช้สูตรพื้นที่สามเหลี่ยมผิด เช่น ลืม ÷ 2 ทำให้พื้นที่มากเกินไป",
+    "ไม่เขียนหน่วยเป็นตารางหน่วย",
+    "สับสนระหว่างสูตรเส้นรอบรูปกับพื้นที่"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_area_perimeter_q01",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q02",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q03",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q04",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q05",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q06",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q07",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q08",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_area_perimeter_q09",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_area_perimeter_q10",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_area_perimeter_q01",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q02",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q03",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q04",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q05",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q06",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q07",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_area_perimeter_q08",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_area_perimeter_q09",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_area_perimeter_q10",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Area and Perimeter",
+  "objective_en": "Students will be able to identify and describe basic shapes",
+  "story_intro_en": "Let's solve this together! Can you solve it?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: หาเส้นรอบรูปสี่เหลี่ยมผืนผ้า",
+      "question_en": "6 . 10 . ?",
+      "solution_en": "2 × (6 + 10) = 32 . ✅?"
+    },
+    {
+      "title_en": "Example: หาพื้นที่สี่เหลี่ยมจัตุรัส",
+      "question_en": "8 . ?",
+      "solution_en": "8 × 8 = 64 ✅?"
+    },
+    {
+      "title_en": "Example: หาพื้นที่สามเหลี่ยม",
+      "question_en": "10 . 6 . ?",
+      "solution_en": "1/2 × 10 × 6 = 30 ✅?"
+    },
+    {
+      "title_en": "Example: หาพื้นที่สี่เหลี่ยมผืนผ้า",
+      "question_en": "25 . 50 . ?",
+      "solution_en": "25 × 50 = 1,250 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ใช้สูตรพื้นที่สามเหลี่ยมผิด เช่น ลืม ÷ 2 ทำให้พื้นที่มากเกินไป",
+    "Mistake: ไม่เขียนหน่วยเป็นตารางหน่วย",
+    "Mistake: สับสนระหว่างสูตรเส้นรอบรูปกับพื้นที่"
+  ],
+  "hints_en": [
+    "Hint: เส้นรอบรูป = รอบนอก = บวกทุกด้าน / พื้นที่ = ขนาดของพื้นผิว",
+    "Hint: สามเหลี่ยมใช้ 1/2 ของสี่เหลี่ยมที่มีฐานและสูงเท่ากัน",
+    "Hint: ตรวจคำตอบโดยประมาณค่า พื้นที่สมเหตุสมผลหรือไม่"
+  ],
+  "explanation_steps_en": [
+    "Step: เส้นรอบรูปคือความยาวรอบนอกของรูปร่าง หาผลรวมของทุกด้าน",
+    "Step: สี่เหลี่ยมผืนผ้า เส้นรอบรูป = 2 × (กว้าง + ยาว) พื้นที่ = กว้าง × ยาว",
+    "Step: สี่เหลี่ยมจัตุรัส เส้นรอบรูป = 4 × ด้าน พื้นที่ = ด้าน × ด้าน",
+    "Step: สามเหลี่ยม พื้นที่ = 1/2 × ฐาน × สูง",
+    "Step: หน่วยของพื้นที่ต้องเป็นตารางหน่วย เช่น ตารางเมตร ตารางเซนติเมตร"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g4_area_perimeter_q01",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "6 . 8 . ?",
+      "choices": [
+        "14 . .?",
+        "28 . .?",
+        "48 . .?",
+        "56 . .?"
+      ],
+      "correct_answer": "48 . .?",
+      "answer": "48 . .?",
+      "explanation": "= 6 × 8 = 48 . .?",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core",
+      "question_en": "6 . 8 . ?",
+      "explanation_en": "= 6 × 8 = 48 . .?",
+      "choices_en": [
+        "14 . .?",
+        "28 . .?",
+        "48 . .?",
+        "56 . .?"
+      ],
+      "answer_en": "48 . .?"
+    },
+    {
+      "question_id": "g4_area_perimeter_q02",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "5 . ?",
+      "choices": [
+        "10 .?",
+        "20 .?",
+        "25 .?",
+        "30 .?"
+      ],
+      "correct_answer": "20 .?",
+      "answer": "20 .?",
+      "explanation": "= 5 + 5 + 5 + 5 = 20 .?",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core",
+      "question_en": "5 . ?",
+      "explanation_en": "= 5 + 5 + 5 + 5 = 20 .?",
+      "choices_en": [
+        "10 .?",
+        "20 .?",
+        "25 .?",
+        "30 .?"
+      ],
+      "answer_en": "20 .?"
+    },
+    {
+      "question_id": "g4_area_perimeter_q03",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "7 × 4 ?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "easy",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core",
+      "question_en": "7 × 4 ?",
+      "explanation_en": "7 × 4 = 28",
+      "choices_en": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "answer_en": "28"
+    },
+    {
+      "question_id": "g4_area_perimeter_q04",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "6 . 8 . ?",
+      "choices": [
+        "14 . .?",
+        "28 . .?",
+        "48 . .?",
+        "56 . .?"
+      ],
+      "correct_answer": "48 . .?",
+      "answer": "48 . .?",
+      "explanation": "= 6 × 8 = 48 . .?",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core",
+      "question_en": "6 . 8 . ?",
+      "explanation_en": "= 6 × 8 = 48 . .?",
+      "choices_en": [
+        "14 . .?",
+        "28 . .?",
+        "48 . .?",
+        "56 . .?"
+      ],
+      "answer_en": "48 . .?"
+    },
+    {
+      "question_id": "g4_area_perimeter_q05",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "5 . ?",
+      "choices": [
+        "10 .?",
+        "20 .?",
+        "25 .?",
+        "30 .?"
+      ],
+      "correct_answer": "20 .?",
+      "answer": "20 .?",
+      "explanation": "= 5 + 5 + 5 + 5 = 20 .?",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core",
+      "question_en": "5 . ?",
+      "explanation_en": "= 5 + 5 + 5 + 5 = 20 .?",
+      "choices_en": [
+        "10 .?",
+        "20 .?",
+        "25 .?",
+        "30 .?"
+      ],
+      "answer_en": "20 .?"
+    },
+    {
+      "question_id": "g4_area_perimeter_q06",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "7 × 4 ?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core",
+      "question_en": "7 × 4 ?",
+      "explanation_en": "7 × 4 = 28",
+      "choices_en": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "answer_en": "28"
+    },
+    {
+      "question_id": "g4_area_perimeter_q07",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "6 . 8 . ?",
+      "choices": [
+        "14 . .?",
+        "28 . .?",
+        "48 . .?",
+        "56 . .?"
+      ],
+      "correct_answer": "48 . .?",
+      "answer": "48 . .?",
+      "explanation": "= 6 × 8 = 48 . .?",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "core",
+      "question_en": "6 . 8 . ?",
+      "explanation_en": "= 6 × 8 = 48 . .?",
+      "choices_en": [
+        "14 . .?",
+        "28 . .?",
+        "48 . .?",
+        "56 . .?"
+      ],
+      "answer_en": "48 . .?"
+    },
+    {
+      "question_id": "g4_area_perimeter_q08",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "5 . ?",
+      "choices": [
+        "10 .?",
+        "20 .?",
+        "25 .?",
+        "30 .?"
+      ],
+      "correct_answer": "20 .?",
+      "answer": "20 .?",
+      "explanation": "= 5 + 5 + 5 + 5 = 20 .?",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge",
+      "question_en": "5 . ?",
+      "explanation_en": "= 5 + 5 + 5 + 5 = 20 .?",
+      "choices_en": [
+        "10 .?",
+        "20 .?",
+        "25 .?",
+        "30 .?"
+      ],
+      "answer_en": "20 .?"
+    },
+    {
+      "question_id": "g4_area_perimeter_q09",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "7 × 4 ?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge",
+      "question_en": "7 × 4 ?",
+      "explanation_en": "7 × 4 = 28",
+      "choices_en": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "answer_en": "28"
+    },
+    {
+      "question_id": "g4_area_perimeter_q10",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "6 . 8 . ?",
+      "choices": [
+        "14 . .?",
+        "28 . .?",
+        "48 . .?",
+        "56 . .?"
+      ],
+      "correct_answer": "48 . .?",
+      "answer": "48 . .?",
+      "explanation": "= 6 × 8 = 48 . .?",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "hard",
+      "skill_tag": "g4_area_perimeter",
+      "question_type": "challenge",
+      "question_en": "6 . 8 . ?",
+      "explanation_en": "= 6 × 8 = 48 . .?",
+      "choices_en": [
+        "14 . .?",
+        "28 . .?",
+        "48 . .?",
+        "56 . .?"
+      ],
+      "answer_en": "48 . .?"
+    }
+  ],
+  "quiz_id": "g4_area_perimeter_ep",
+  "generated_at": "2026-05-16T04:16:41.047884+00:00",
+  "source_lesson_id": "g4_area_perimeter",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Think Story",
+      "content": "Read the problem about Area and Perimeter. Find the important numbers first."
+    },
+    {
+      "type": "visual_thinking",
+      "title": "Look First",
+      "content": "Circle what you know and underline what the question asks."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Use equal groups or boxes to organize the numbers.",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "items"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6 × 4 = 24",
+      "content": "Choose the operation that matches the question."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24"
+    }
+  ]
+}

@@ -1,0 +1,1075 @@
+{
+  "lesson_id": "g2_shapes_2d_ep",
+  "id": "g2_shapes_2d_ep",
+  "grade_level": 2,
+  "title_th": "รู้จักรูปทรงสองมิติ",
+  "objective_th": "นักเรียนสามารถระบุและอธิบายคุณสมบัติของรูปสามเหลี่ยม สี่เหลี่ยม วงกลม และวงรีได้",
+  "story_intro_th": "พี่อลิสชวนสังเกตรูปทรงสองมิติจากด้าน มุม และเส้นขอบ",
+  "explanation_steps": [
+    "สามเหลี่ยม มี 3 ด้าน 3 มุม มุมอาจเป็นมุมแหลม มุมฉาก หรือมุมป้านก็ได้",
+    "สี่เหลี่ยมมี 4 ด้าน 4 มุม แบ่งเป็นหลายชนิด เช่น สี่เหลี่ยมจัตุรัส สี่เหลี่ยมผืนผ้า สี่เหลี่ยมขนมเปียกปูน",
+    "วงกลม ขอบโค้งมนทุกทิศทาง ไม่มีมุม ไม่มีด้าน",
+    "วงรี คล้ายวงกลมแต่ยาวเป็นรูปไข่ กลิ้งแล้วไม่เท่ากันทุกทิศทาง",
+    "เส้นรอบรูปคือความยาวรอบนอกของรูป ใช้วัดความยาวรอบรูปทรง"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "นับด้านของสามเหลี่ยม",
+      "question_th": "รูปสามเหลี่ยมมีกี่ด้าน?",
+      "solution_th": "สามเหลี่ยมมี 3 ด้าน 3 มุม ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบสี่เหลี่ยม",
+      "question_th": "สี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าต่างกันอย่างไร?",
+      "solution_th": "สี่เหลี่ยมจัตุรัสด้านทุกด้านยาวเท่ากัน สี่เหลี่ยมผืนผ้าด้านตรงข้ามยาวเท่ากันแต่ด้านเพื่อนข้างยาวไม่เท่ากัน ✅"
+    },
+    {
+      "title_th": "จำแนกวงกลมกับวงรี",
+      "question_th": "แผ่นกระดาษ A4 กับจานกลม อันไหนเป็นวงกลมแท้?",
+      "solution_th": "จานกลมเป็นวงกลมแทง เพราะกลิ้งเท่ากันทุกทิศทาง แผ่นกระดาษ A4 เป็นสี่เหลี่ยมผืนผ้า ✅"
+    }
+  ],
+  "common_mistakes": [
+    "เรียกวงรีว่าวงกลม เพราะมองว่าโค้งเหมือนกัน",
+    "ไม่แยกสี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าออกจากกัน",
+    "นับจำนวนมุมผิด เช่น นับสามเหลี่ยมเป็น 4 มุม"
+  ],
+  "hints": [
+    "นับด้านและมุมของรูปเพื่อจำแนกชนิด",
+    "วงกลม vs วงรี: ถ้ากลิ้งแล้วเท่ากันทุกทิศทางคือวงกลม ถ้าไม่เท่าคือวงรี",
+    "สี่เหลี่ยมจัตุรัสด้านเท่าทุกด้าน สี่เหลี่ยมผืนผ้าด้านตรงข้ามเท่ากัน 2 คู่"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_shapes_2d",
+  "skill_code": "g2_shapes_2d_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "รู้จักสามเหลี่ยม",
+      "story_theme_th": "รูปทรงสองมิติ",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about รู้จักรูปทรงสองมิติ. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "รู้จักสามเหลี่ยม",
+      "story_theme_en": "รูปทรงสองมิติ"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "รู้จักสี่เหลี่ยม",
+      "story_theme_th": "รูปทรงสองมิติ",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about รู้จักรูปทรงสองมิติ. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "รู้จักสี่เหลี่ยม",
+      "story_theme_en": "รูปทรงสองมิติ"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "รู้จักวงกลม",
+      "story_theme_th": "รูปทรงสองมิติ",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about รู้จักรูปทรงสองมิติ. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "รู้จักวงกลม",
+      "story_theme_en": "รูปทรงสองมิติ"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "รู้จักห้าเหลี่ยม",
+      "story_theme_th": "รูปทรงสองมิติ",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about รู้จักรูปทรงสองมิติ. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "รู้จักห้าเหลี่ยม",
+      "story_theme_en": "รูปทรงสองมิติ"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "รู้จักหกเหลี่ยม",
+      "story_theme_th": "รูปทรงสองมิติ",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about รู้จักรูปทรงสองมิติ. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "รู้จักหกเหลี่ยม",
+      "story_theme_en": "รูปทรงสองมิติ"
+    }
+  ],
+  "preview_title_th": "รูปร่าง 2 มิติ",
+  "preview_subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "cover_theme": "shapes_2d",
+  "cover_emoji": "🔲",
+  "cover_color": "pink",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "learning_objective_th": "นักเรียนสามารถระบุและอธิบายคุณสมบัติของรูปสามเหลี่ยม สี่เหลี่ยม วงกลม และวงรีได้",
+  "lesson_intro_th": "วันนี้เราเล่นเกมต่อภาพรูปทรง เห็นรูปหลายอย่างรอบตัว มาช่วยจำแนกชื่อและคุณสมบัติกันเถอะ! 🔷🔶",
+  "concept_explanation_th": "รูปทรงสองมิติแยกได้จากจำนวนด้านและมุม เช่น สามเหลี่ยม 3 ด้าน สี่เหลี่ยม 4 ด้าน วงกลมไม่มีด้านตรงและไม่มีมุม",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 6
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 4
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท รู้จักรูปทรงสองมิติ 2 มิติ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "นับด้านของสามเหลี่ยม",
+      "question_th": "รูปสามเหลี่ยมมีกี่ด้าน?",
+      "solution_th": "สามเหลี่ยมมี 3 ด้าน 3 มุม ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบสี่เหลี่ยม",
+      "question_th": "สี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าต่างกันอย่างไร?",
+      "solution_th": "สี่เหลี่ยมจัตุรัสด้านทุกด้านยาวเท่ากัน สี่เหลี่ยมผืนผ้าด้านตรงข้ามยาวเท่ากันแต่ด้านเพื่อนข้างยาวไม่เท่ากัน ✅"
+    },
+    {
+      "title_th": "จำแนกวงกลมกับวงรี",
+      "question_th": "แผ่นกระดาษ A4 กับจานกลม อันไหนเป็นวงกลมแท้?",
+      "solution_th": "จานกลมเป็นวงกลมแทง เพราะกลิ้งเท่ากันทุกทิศทาง แผ่นกระดาษ A4 เป็นสี่เหลี่ยมผืนผ้า ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "เรียกวงรีว่าวงกลม เพราะมองว่าโค้งเหมือนกัน",
+    "ไม่แยกสี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าออกจากกัน",
+    "นับจำนวนมุมผิด เช่น นับสามเหลี่ยมเป็น 4 มุม"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_shapes_2d_q01",
+      "question_th": "สามเหลี่ยมมีกี่ด้าน?",
+      "question_text": "สามเหลี่ยมมีกี่ด้าน?",
+      "choices": [
+        "3 ด้าน",
+        "4 ด้าน",
+        "5 ด้าน",
+        "0 ด้าน"
+      ],
+      "correct_answer": "3 ด้าน",
+      "answer": "3 ด้าน",
+      "explanation": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q02",
+      "question_th": "สี่เหลี่ยมมีกี่มุม?",
+      "question_text": "สี่เหลี่ยมมีกี่มุม?",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "4 มุม",
+      "answer": "4 มุม",
+      "explanation": "สี่เหลี่ยมมี 4 มุม",
+      "explanation_th": "สี่เหลี่ยมมี 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q03",
+      "question_th": "วงกลมมีด้านตรงกี่ด้าน?",
+      "question_text": "วงกลมมีด้านตรงกี่ด้าน?",
+      "choices": [
+        "0 ด้าน",
+        "1 ด้าน",
+        "3 ด้าน",
+        "4 ด้าน"
+      ],
+      "correct_answer": "0 ด้าน",
+      "answer": "0 ด้าน",
+      "explanation": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "explanation_th": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q04",
+      "question_th": "รูปใดมี 5 ด้าน?",
+      "question_text": "รูปใดมี 5 ด้าน?",
+      "choices": [
+        "ห้าเหลี่ยม",
+        "สามเหลี่ยม",
+        "วงกลม",
+        "สี่เหลี่ยม"
+      ],
+      "correct_answer": "ห้าเหลี่ยม",
+      "answer": "ห้าเหลี่ยม",
+      "explanation": "ห้าเหลี่ยมมี 5 ด้าน",
+      "explanation_th": "ห้าเหลี่ยมมี 5 ด้าน",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q05",
+      "question_th": "รูปใดมี 6 มุม?",
+      "question_text": "รูปใดมี 6 มุม?",
+      "choices": [
+        "หกเหลี่ยม",
+        "ห้าเหลี่ยม",
+        "สี่เหลี่ยม",
+        "วงกลม"
+      ],
+      "correct_answer": "หกเหลี่ยม",
+      "answer": "หกเหลี่ยม",
+      "explanation": "หกเหลี่ยมมี 6 มุม",
+      "explanation_th": "หกเหลี่ยมมี 6 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q06",
+      "question_th": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "question_text": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "choices": [
+        "มี 4 ด้าน 4 มุม",
+        "ไม่มีมุม",
+        "มี 3 ด้าน",
+        "มี 5 ด้าน"
+      ],
+      "correct_answer": "มี 4 ด้าน 4 มุม",
+      "answer": "มี 4 ด้าน 4 มุม",
+      "explanation": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q07",
+      "question_th": "วงรีต่างจากวงกลมอย่างไร?",
+      "question_text": "วงรีต่างจากวงกลมอย่างไร?",
+      "choices": [
+        "ขอบโค้งรี",
+        "มี 3 ด้าน",
+        "มี 4 มุม",
+        "มี 5 ด้าน"
+      ],
+      "correct_answer": "ขอบโค้งรี",
+      "answer": "ขอบโค้งรี",
+      "explanation": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "explanation_th": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q08",
+      "question_th": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "question_text": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "choices": [
+        "สี่เหลี่ยมจัตุรัส",
+        "วงกลม",
+        "สามเหลี่ยม",
+        "วงรี"
+      ],
+      "correct_answer": "สี่เหลี่ยมจัตุรัส",
+      "answer": "สี่เหลี่ยมจัตุรัส",
+      "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q09",
+      "question_th": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "question_text": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "3 มุม",
+      "answer": "3 มุม",
+      "explanation": "สามเหลี่ยมมี 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q10",
+      "question_th": "รูปใดไม่มีมุม?",
+      "question_text": "รูปใดไม่มีมุม?",
+      "choices": [
+        "วงกลม",
+        "สามเหลี่ยม",
+        "สี่เหลี่ยม",
+        "ห้าเหลี่ยม"
+      ],
+      "correct_answer": "วงกลม",
+      "answer": "วงกลม",
+      "explanation": "วงกลมไม่มีมุม",
+      "explanation_th": "วงกลมไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_shapes_2d_q01",
+      "question_th": "สามเหลี่ยมมีกี่ด้าน?",
+      "question_text": "สามเหลี่ยมมีกี่ด้าน?",
+      "choices": [
+        "3 ด้าน",
+        "4 ด้าน",
+        "5 ด้าน",
+        "0 ด้าน"
+      ],
+      "correct_answer": "3 ด้าน",
+      "answer": "3 ด้าน",
+      "explanation": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q02",
+      "question_th": "สี่เหลี่ยมมีกี่มุม?",
+      "question_text": "สี่เหลี่ยมมีกี่มุม?",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "4 มุม",
+      "answer": "4 มุม",
+      "explanation": "สี่เหลี่ยมมี 4 มุม",
+      "explanation_th": "สี่เหลี่ยมมี 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q03",
+      "question_th": "วงกลมมีด้านตรงกี่ด้าน?",
+      "question_text": "วงกลมมีด้านตรงกี่ด้าน?",
+      "choices": [
+        "0 ด้าน",
+        "1 ด้าน",
+        "3 ด้าน",
+        "4 ด้าน"
+      ],
+      "correct_answer": "0 ด้าน",
+      "answer": "0 ด้าน",
+      "explanation": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "explanation_th": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q04",
+      "question_th": "รูปใดมี 5 ด้าน?",
+      "question_text": "รูปใดมี 5 ด้าน?",
+      "choices": [
+        "ห้าเหลี่ยม",
+        "สามเหลี่ยม",
+        "วงกลม",
+        "สี่เหลี่ยม"
+      ],
+      "correct_answer": "ห้าเหลี่ยม",
+      "answer": "ห้าเหลี่ยม",
+      "explanation": "ห้าเหลี่ยมมี 5 ด้าน",
+      "explanation_th": "ห้าเหลี่ยมมี 5 ด้าน",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q05",
+      "question_th": "รูปใดมี 6 มุม?",
+      "question_text": "รูปใดมี 6 มุม?",
+      "choices": [
+        "หกเหลี่ยม",
+        "ห้าเหลี่ยม",
+        "สี่เหลี่ยม",
+        "วงกลม"
+      ],
+      "correct_answer": "หกเหลี่ยม",
+      "answer": "หกเหลี่ยม",
+      "explanation": "หกเหลี่ยมมี 6 มุม",
+      "explanation_th": "หกเหลี่ยมมี 6 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q06",
+      "question_th": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "question_text": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "choices": [
+        "มี 4 ด้าน 4 มุม",
+        "ไม่มีมุม",
+        "มี 3 ด้าน",
+        "มี 5 ด้าน"
+      ],
+      "correct_answer": "มี 4 ด้าน 4 มุม",
+      "answer": "มี 4 ด้าน 4 มุม",
+      "explanation": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q07",
+      "question_th": "วงรีต่างจากวงกลมอย่างไร?",
+      "question_text": "วงรีต่างจากวงกลมอย่างไร?",
+      "choices": [
+        "ขอบโค้งรี",
+        "มี 3 ด้าน",
+        "มี 4 มุม",
+        "มี 5 ด้าน"
+      ],
+      "correct_answer": "ขอบโค้งรี",
+      "answer": "ขอบโค้งรี",
+      "explanation": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "explanation_th": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q08",
+      "question_th": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "question_text": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "choices": [
+        "สี่เหลี่ยมจัตุรัส",
+        "วงกลม",
+        "สามเหลี่ยม",
+        "วงรี"
+      ],
+      "correct_answer": "สี่เหลี่ยมจัตุรัส",
+      "answer": "สี่เหลี่ยมจัตุรัส",
+      "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q09",
+      "question_th": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "question_text": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "3 มุม",
+      "answer": "3 มุม",
+      "explanation": "สามเหลี่ยมมี 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q10",
+      "question_th": "รูปใดไม่มีมุม?",
+      "question_text": "รูปใดไม่มีมุม?",
+      "choices": [
+        "วงกลม",
+        "สามเหลี่ยม",
+        "สี่เหลี่ยม",
+        "ห้าเหลี่ยม"
+      ],
+      "correct_answer": "วงกลม",
+      "answer": "วงกลม",
+      "explanation": "วงกลมไม่มีมุม",
+      "explanation_th": "วงกลมไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    }
+  ],
+  "title_en": "รู้จักรูปทรงสองมิติ",
+  "objective_en": "Students will be able to identify and describe basic shapes",
+  "story_intro_en": "Let's solve this together! Can you solve it?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: นับด้านของสามเหลี่ยม",
+      "question_en": "?",
+      "solution_en": "3 3 ✅?"
+    },
+    {
+      "title_en": "Example: เปรียบเทียบสี่เหลี่ยม",
+      "question_en": "?",
+      "solution_en": "✅?"
+    },
+    {
+      "title_en": "Example: จำแนกวงกลมกับวงรี",
+      "question_en": "A4 ?",
+      "solution_en": "A4 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: เรียกวงรีว่าวงกลม เพราะมองว่าโค้งเหมือนกัน",
+    "Mistake: ไม่แยกสี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าออกจากกัน",
+    "Mistake: นับจำนวนมุมผิด เช่น นับสามเหลี่ยมเป็น 4 มุม"
+  ],
+  "hints_en": [
+    "Hint: นับด้านและมุมของรูปเพื่อจำแนกชนิด",
+    "Hint: วงกลม vs วงรี: ถ้ากลิ้งแล้วเท่ากันทุกทิศทางคือวงกลม ถ้าไม่เท่าคือวงรี",
+    "Hint: สี่เหลี่ยมจัตุรัสด้านเท่าทุกด้าน สี่เหลี่ยมผืนผ้าด้านตรงข้ามเท่ากัน 2 คู่"
+  ],
+  "explanation_steps_en": [
+    "Step: สามเหลี่ยม มี 3 ด้าน 3 มุม มุมอาจเป็นมุมแหลม มุมฉาก หรือมุมป้านก็ได้",
+    "Step: สี่เหลี่ยมมี 4 ด้าน 4 มุม แบ่งเป็นหลายชนิด เช่น สี่เหลี่ยมจัตุรัส สี่เหลี่ยมผืนผ้า สี่เหลี่ยมขนมเปียกปูน",
+    "Step: วงกลม ขอบโค้งมนทุกทิศทาง ไม่มีมุม ไม่มีด้าน",
+    "Step: วงรี คล้ายวงกลมแต่ยาวเป็นรูปไข่ กลิ้งแล้วไม่เท่ากันทุกทิศทาง",
+    "Step: เส้นรอบรูปคือความยาวรอบนอกของรูป ใช้วัดความยาวรอบรูปทรง"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g2_shapes_2d_q01",
+      "question_th": "สามเหลี่ยมมีกี่ด้าน?",
+      "question_text": "?",
+      "choices": [
+        "3?",
+        "4?",
+        "5?",
+        "0?"
+      ],
+      "correct_answer": "3?",
+      "answer": "3?",
+      "explanation": "3 3?",
+      "explanation_th": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "3 3?",
+      "choices_en": [
+        "3?",
+        "4?",
+        "5?",
+        "0?"
+      ],
+      "answer_en": "3?"
+    },
+    {
+      "question_id": "g2_shapes_2d_q02",
+      "question_th": "สี่เหลี่ยมมีกี่มุม?",
+      "question_text": "?",
+      "choices": [
+        "3?",
+        "4?",
+        "5?",
+        "0?"
+      ],
+      "correct_answer": "4?",
+      "answer": "4?",
+      "explanation": "4?",
+      "explanation_th": "สี่เหลี่ยมมี 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "4?",
+      "choices_en": [
+        "3?",
+        "4?",
+        "5?",
+        "0?"
+      ],
+      "answer_en": "4?"
+    },
+    {
+      "question_id": "g2_shapes_2d_q03",
+      "question_th": "วงกลมมีด้านตรงกี่ด้าน?",
+      "question_text": "?",
+      "choices": [
+        "0?",
+        "1?",
+        "3?",
+        "4?"
+      ],
+      "correct_answer": "0?",
+      "answer": "0?",
+      "explanation": "",
+      "explanation_th": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "",
+      "choices_en": [
+        "0?",
+        "1?",
+        "3?",
+        "4?"
+      ],
+      "answer_en": "0?"
+    },
+    {
+      "question_id": "g2_shapes_2d_q04",
+      "question_th": "รูปใดมี 5 ด้าน?",
+      "question_text": "5 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "5?",
+      "explanation_th": "ห้าเหลี่ยมมี 5 ด้าน",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "5 ?",
+      "explanation_en": "5?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g2_shapes_2d_q05",
+      "question_th": "รูปใดมี 6 มุม?",
+      "question_text": "6 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "6?",
+      "explanation_th": "หกเหลี่ยมมี 6 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "6 ?",
+      "explanation_en": "6?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g2_shapes_2d_q06",
+      "question_th": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "question_text": "?",
+      "choices": [
+        "4 4?",
+        "",
+        "3?",
+        "5?"
+      ],
+      "correct_answer": "4 4?",
+      "answer": "4 4?",
+      "explanation": "4 4?",
+      "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "4 4?",
+      "choices_en": [
+        "4 4?",
+        "",
+        "3?",
+        "5?"
+      ],
+      "answer_en": "4 4?"
+    },
+    {
+      "question_id": "g2_shapes_2d_q07",
+      "question_th": "วงรีต่างจากวงกลมอย่างไร?",
+      "question_text": "?",
+      "choices": [
+        "",
+        "3?",
+        "4?",
+        "5?"
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "",
+      "explanation_th": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "",
+      "choices_en": [
+        "",
+        "3?",
+        "4?",
+        "5?"
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g2_shapes_2d_q08",
+      "question_th": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "question_text": "4 ?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "4 4?",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "4 ?",
+      "explanation_en": "4 4?",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    },
+    {
+      "question_id": "g2_shapes_2d_q09",
+      "question_th": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "question_text": "?",
+      "choices": [
+        "3?",
+        "4?",
+        "5?",
+        "0?"
+      ],
+      "correct_answer": "3?",
+      "answer": "3?",
+      "explanation": "3?",
+      "explanation_th": "สามเหลี่ยมมี 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "3?",
+      "choices_en": [
+        "3?",
+        "4?",
+        "5?",
+        "0?"
+      ],
+      "answer_en": "3?"
+    },
+    {
+      "question_id": "g2_shapes_2d_q10",
+      "question_th": "รูปใดไม่มีมุม?",
+      "question_text": "?",
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_answer": "",
+      "answer": "",
+      "explanation": "",
+      "explanation_th": "วงกลมไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "",
+      "choices_en": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_en": ""
+    }
+  ],
+  "quiz_id": "g2_shapes_2d_ep",
+  "generated_at": "2026-05-16T04:16:40.945184+00:00",
+  "source_lesson_id": "g2_shapes_2d",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Think Story",
+      "content": "Read the problem about รู้จักรูปทรงสองมิติ. Find the important numbers first."
+    },
+    {
+      "type": "visual_thinking",
+      "title": "Look First",
+      "content": "Circle what you know and underline what the question asks."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Use equal groups or boxes to organize the numbers.",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "items"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6 × 4 = 24",
+      "content": "Choose the operation that matches the question."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24"
+    }
+  ]
+}

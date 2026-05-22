@@ -268,10 +268,11 @@ def _content_question_rows_for_lesson(payload_or_id: dict | str, *, approved_onl
     usable = [row for row in rows if _question_row_is_usable(row)]
     if not approved_only:
         return usable
+    all_status = load_tests_status()
     approved = []
     for row in usable:
         question_id = str(row.get("question_id") or row.get("id") or "")
-        if question_id and str(get_test_status(question_id).get("status") or "").lower() == "approved":
+        if question_id and str(all_status.get(question_id, {}).get("status") or "").lower() == "approved":
             approved.append(row)
     return approved
 
@@ -324,15 +325,30 @@ def _lesson_has_displayable_content(payload: dict) -> bool:
     return any(variant.get("visual_blocks") for variant in _lesson_variants(payload))
 
 
-def _json_lesson_visible_for_child(payload: dict, child: ChildProfile) -> bool:
+def _json_lesson_filter_reason(payload: dict, child: ChildProfile) -> str | None:
     lesson_id = str(payload.get("lesson_id") or payload.get("id") or "")
     payload_status = str(payload.get("status") or "approved").lower()
-    return (
-        _lesson_track_matches_child(payload, child)
-        and _lesson_has_displayable_content(payload)
-        and payload_status in {"approved", "published"}
-        and is_lesson_approved(lesson_id)
-    )
+    try:
+        grade_level = int(payload.get("grade_level") or 0)
+    except (TypeError, ValueError):
+        grade_level = 0
+    expected_track = _child_lesson_track(child)
+    actual_track = lesson_program_type(payload)
+    if actual_track != expected_track:
+        return f"language_mismatch expected={expected_track} actual={actual_track}"
+    if grade_level not in BETA_READY_GRADES:
+        return f"grade_not_beta_ready grade={grade_level}"
+    if not any(variant.get("visual_blocks") for variant in _lesson_variants(payload)):
+        return "incomplete_visual_blocks"
+    if payload_status not in {"approved", "published"}:
+        return f"payload_status={payload_status}"
+    if not is_lesson_approved(lesson_id):
+        return "sidecar_not_approved_or_missing"
+    return None
+
+
+def _json_lesson_visible_for_child(payload: dict, child: ChildProfile) -> bool:
+    return _json_lesson_filter_reason(payload, child) is None
 
 
 def _db_lesson_visible_for_child(lesson: Lesson, child: ChildProfile) -> bool:
@@ -511,12 +527,8 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
     is_locked = not is_beta_visible_grade and not paid and not is_free
     lesson_id = str(payload.get("lesson_id") or payload.get("id"))
     description = payload.get("description_th") or payload.get("objective_th") or payload.get("story_intro_th") or ""
-    quiz_payload = _quiz_payload_for_lesson(payload)
-    has_test = bool(payload.get("has_test", True)) and _lesson_has_test_content(payload, quiz_payload)
-    has_approved_test = _lesson_has_question_bank_content(payload, approved_only=True) or _lesson_has_approved_test_content(
-        lesson_id,
-        str(payload.get("quiz_id") or lesson_id),
-    )
+    has_approved_test = _lesson_has_approved_test_content(lesson_id, str(payload.get("quiz_id") or lesson_id))
+    has_test = bool(payload.get("has_test", True)) or has_approved_test
     return {
         "lesson_id": lesson_id,
         "id": lesson_id,
@@ -546,13 +558,43 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
     }
 
 
-def _json_lesson_sections(child: ChildProfile) -> dict | None:
-    rows = [
-        payload
-        for payload in _all_json_lessons()
-        if _json_lesson_visible_for_child(payload, child)
-    ]
+def _json_lesson_sections(child: ChildProfile, include_grades: set[int] | None = None) -> dict | None:
+    rows = []
+    filtered_counts: dict[str, int] = {}
+    child_grade = max(1, min(6, int(child.grade_level or 1)))
+    section_grades = {child_grade, max(1, child_grade - 1)}
+    if include_grades:
+        section_grades.update(max(1, min(6, int(grade))) for grade in include_grades)
+    section_grades = sorted(section_grades)
+    payloads: list[dict] = []
+    for grade in section_grades:
+        directory = CONTENT_ROOT / f"grade_{grade}" / "lessons"
+        if not directory.exists():
+            continue
+        for path in sorted(directory.glob("*.json")):
+            payload = _load_json_lesson(path.stem)
+            if payload:
+                payloads.append(payload)
+    for payload in payloads:
+        reason = _json_lesson_filter_reason(payload, child)
+        if reason:
+            filtered_counts[reason] = filtered_counts.get(reason, 0) + 1
+            continue
+        rows.append(payload)
+    if filtered_counts:
+        logger.debug(
+            "lesson_visibility_filtered child_grade=%s child_program=%s reasons=%s",
+            child.grade_level,
+            child.program_type,
+            filtered_counts,
+        )
     if not rows:
+        logger.warning(
+            "lesson_visibility_empty child_grade=%s child_program=%s reasons=%s",
+            child.grade_level,
+            child.program_type,
+            filtered_counts,
+        )
         return None
     rows.sort(key=lambda payload: (int(payload.get("grade_level") or 0), str(payload.get("lesson_id") or payload.get("id"))))
     current_count = 0
@@ -592,7 +634,7 @@ def _with_variant_payload(base: dict, variant: dict | None) -> dict:
 def _json_lesson_content_payload(payload: dict, item: dict, variant: dict | None = None) -> dict:
     lesson_id = str(payload.get("lesson_id") or payload.get("id"))
     quiz_id = str(payload.get("quiz_id") or lesson_id)
-    has_approved_test = _lesson_has_question_bank_content(payload, approved_only=True) or _lesson_has_approved_test_content(lesson_id, quiz_id)
+    has_approved_test = _lesson_has_approved_test_content(lesson_id, quiz_id)
     return _with_variant_payload({
         "lesson_id": lesson_id,
         "id": lesson_id,
@@ -612,7 +654,7 @@ def _json_lesson_content_payload(payload: dict, item: dict, variant: dict | None
         "common_mistakes": payload.get("common_mistakes") or [],
         "hints": payload.get("hints") or [],
         "estimated_minutes": int(payload.get("estimated_minutes") or item["estimated_minutes"] or 5),
-        "has_test": bool(payload.get("has_test", item["has_test"])) and _lesson_has_test_content(payload, _quiz_payload_for_lesson(payload)),
+        "has_test": bool(payload.get("has_test", item["has_test"])) or has_approved_test,
         "has_approved_test": has_approved_test,
         "test_available": has_approved_test,
         "test_unavailable_reason": None if has_approved_test else "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้",
@@ -1527,8 +1569,8 @@ def _lesson_item(lesson: Lesson, skill: Skill, child: ChildProfile, current_inde
     }
 
 
-def _dashboard_lessons(db: Session, child: ChildProfile) -> dict:
-    json_sections = _json_lesson_sections(child)
+def _dashboard_lessons(db: Session, child: ChildProfile, include_grades: set[int] | None = None) -> dict:
+    json_sections = _json_lesson_sections(child, include_grades=include_grades)
     if json_sections:
         return json_sections
 
@@ -2245,7 +2287,8 @@ def lessons(
 ) -> dict:
     child = _profile(db, user)
     requested_grade = grade_level or grade or level or class_level
-    sections = _filter_lesson_sections_by_grade(_dashboard_lessons(db, child), requested_grade)
+    include_grades = {requested_grade} if requested_grade is not None else None
+    sections = _filter_lesson_sections_by_grade(_dashboard_lessons(db, child, include_grades=include_grades), requested_grade)
     previous_grade = max(1, int(child.grade_level or 1) - 1)
     review_rows = [
         item for item in sections["review_lessons"]

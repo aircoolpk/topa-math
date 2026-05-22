@@ -1,0 +1,1029 @@
+{
+  "lesson_id": "g2_subtract_two_digit",
+  "id": "g2_subtract_two_digit",
+  "grade_level": 2,
+  "title_th": "ลบเลขสองหลักแบบไม่ทด",
+  "objective_th": "นักเรียนสามารถลบจำนวนสองหลักสองจำนวนโดยไม่มีตัวกู้ได้ถูกต้อง",
+  "story_intro_th": "อลิสมีกิ๊บเก็บผม 65 อัน ให้เพื่อนไป 23 อัน อลิสเหลือกิ๊บเก็บผมกี่อัน? 💇‍♀️",
+  "explanation_steps": [
+    "เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
+    "ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้",
+    "ลบหลักหน่วยก่อน แล้วลบหลักสิบ",
+    "ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม",
+    "ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 78 แท่ง ให้น้องไป 34 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "78 - 34 = 44 แท่ง ✅"
+    },
+    {
+      "title_th": "ลบสติกเกอร์",
+      "question_th": "มีสติกเกอร์ 95 ดวง แปะไป 42 ดวง เหลือสติกเกอร์กี่ดวง?",
+      "solution_th": "95 - 42 = 53 ดวง ✅"
+    },
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "ตะกร้ามีลูกบอล 86 ลูก เอาออกไป 53 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "86 - 53 = 33 ลูก ✅"
+    }
+  ],
+  "common_mistakes": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน",
+    "ลบหลักสิบก่อนหลักหน่วย ทำให้สับสน",
+    "ลืมว่าตัวตั้งต้องมากกว่าตัวลบ ไม่งั้นจะลบไม่ได้"
+  ],
+  "hints": [
+    "เขียนเลขให้ตรงหลักกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
+    "ลบหลักหน่วยก่อน ถ้าได้ผลลัพธ์เท่าไหร่จดไว้ แล้วค่อยลบหลักสิบ",
+    "ตรวจคำตอบโดยเอาผลลัพธ์บวกกลับด้วยตัวลบ ต้องได้ตัวตั้งเดิม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_subtract_two_digit",
+  "skill_code": "g2_subtract_two_digit",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "📖 🏫 โรงเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "📖 🍎 ผลไม้",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "📖 🧸 ของเล่น",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "📖 🏪 ตลาด",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "📖 🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "📖 🌻 สวน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "📖 🎨 วาดรูป",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📖 📚 ห้องเรียน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "📖 🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "📖 🎉 งานเทศกาล",
+      "story_theme_th": "เรื่องราวชวนคิดเกี่ยวกับงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "School Theme",
+      "story_theme_en": "School",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราวชวนคิด",
+          "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+        },
+        {
+          "type": "visual_thinking",
+          "title": "มองภาพก่อน",
+          "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "ชิ้น"
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "18 + 7 = 25",
+          "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "18 + 7 = ?",
+          "choices": [
+            "23",
+            "24",
+            "25",
+            "27"
+          ],
+          "correct_answer": "25",
+          "answer": "25",
+          "explanation": "คำตอบคือ 25"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ลบเลขสองหลัก",
+  "preview_subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "cover_theme": "subtract_two_digit",
+  "cover_emoji": "➖",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "THP",
+  "subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "learning_objective_th": "นักเรียนสามารถลบจำนวนสองหลักสองจำนวนโดยไม่มีตัวกู้ได้ถูกต้อง",
+  "lesson_intro_th": "อลิสมีกิ๊บเก็บผม 65 อัน ให้เพื่อนไป 23 อัน อลิสเหลือกิ๊บเก็บผมกี่อัน? 💇‍♀️",
+  "concept_explanation_th": "เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้ ลบหลักหน่วยก่อน แล้วลบหลักสิบ ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 20,
+    "parts": [
+      8,
+      12
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ลบเลขสองหลักแบบไม่ทด ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 78 แท่ง ให้น้องไป 34 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "78 - 34 = 44 แท่ง ✅"
+    },
+    {
+      "title_th": "ลบสติกเกอร์",
+      "question_th": "มีสติกเกอร์ 95 ดวง แปะไป 42 ดวง เหลือสติกเกอร์กี่ดวง?",
+      "solution_th": "95 - 42 = 53 ดวง ✅"
+    },
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "ตะกร้ามีลูกบอล 86 ลูก เอาออกไป 53 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "86 - 53 = 33 ลูก ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน",
+    "ลบหลักสิบก่อนหลักหน่วย ทำให้สับสน",
+    "ลืมว่าตัวตั้งต้องมากกว่าตัวลบ ไม่งั้นจะลบไม่ได้"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_subtract_two_digit_q01",
+      "question_th": "65 - 24 เท่ากับเท่าไร?",
+      "question_text": "65 - 24 เท่ากับเท่าไร?",
+      "choices": [
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "correct_answer": "41",
+      "answer": "41",
+      "explanation": "65 - 24 = 41",
+      "explanation_th": "65 - 24 = 41",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q02",
+      "question_th": "72 - 38 เท่ากับเท่าไร?",
+      "question_text": "72 - 38 เท่ากับเท่าไร?",
+      "choices": [
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "correct_answer": "34",
+      "answer": "34",
+      "explanation": "72 - 38 = 34",
+      "explanation_th": "72 - 38 = 34",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q03",
+      "question_th": "90 - 47 เท่ากับเท่าไร?",
+      "question_text": "90 - 47 เท่ากับเท่าไร?",
+      "choices": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "correct_answer": "43",
+      "answer": "43",
+      "explanation": "90 - 47 = 43",
+      "explanation_th": "90 - 47 = 43",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q04",
+      "question_th": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "question_text": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "choices": [
+        "53 ลูก",
+        "54 ลูก",
+        "55 ลูก",
+        "56 ลูก"
+      ],
+      "correct_answer": "55 ลูก",
+      "answer": "55 ลูก",
+      "explanation": "84 - 29 = 55 ลูก",
+      "explanation_th": "84 - 29 = 55 ลูก",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q05",
+      "question_th": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "question_text": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "choices": [
+        "54 เล่ม",
+        "55 เล่ม",
+        "56 เล่ม",
+        "57 เล่ม"
+      ],
+      "correct_answer": "55 เล่ม",
+      "answer": "55 เล่ม",
+      "explanation": "73 - 18 = 55 เล่ม",
+      "explanation_th": "73 - 18 = 55 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q06",
+      "question_th": "61 - 26 เท่ากับเท่าไร?",
+      "question_text": "61 - 26 เท่ากับเท่าไร?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "35",
+      "answer": "35",
+      "explanation": "61 - 26 = 35",
+      "explanation_th": "61 - 26 = 35",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q07",
+      "question_th": "58 - 19 เท่ากับเท่าไร?",
+      "question_text": "58 - 19 เท่ากับเท่าไร?",
+      "choices": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "correct_answer": "39",
+      "answer": "39",
+      "explanation": "58 - 19 = 39",
+      "explanation_th": "58 - 19 = 39",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q08",
+      "question_th": "46 - 27 เท่ากับเท่าไร?",
+      "question_text": "46 - 27 เท่ากับเท่าไร?",
+      "choices": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "correct_answer": "19",
+      "answer": "19",
+      "explanation": "46 - 27 = 19",
+      "explanation_th": "46 - 27 = 19",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q09",
+      "question_th": "100 - 64 เท่ากับเท่าไร?",
+      "question_text": "100 - 64 เท่ากับเท่าไร?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "100 - 64 = 36",
+      "explanation_th": "100 - 64 = 36",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q10",
+      "question_th": "82 - 45 เท่ากับเท่าไร?",
+      "question_text": "82 - 45 เท่ากับเท่าไร?",
+      "choices": [
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "correct_answer": "37",
+      "answer": "37",
+      "explanation": "82 - 45 = 37",
+      "explanation_th": "82 - 45 = 37",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_subtract_two_digit_q01",
+      "question_th": "65 - 24 เท่ากับเท่าไร?",
+      "question_text": "65 - 24 เท่ากับเท่าไร?",
+      "choices": [
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "correct_answer": "41",
+      "answer": "41",
+      "explanation": "65 - 24 = 41",
+      "explanation_th": "65 - 24 = 41",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q02",
+      "question_th": "72 - 38 เท่ากับเท่าไร?",
+      "question_text": "72 - 38 เท่ากับเท่าไร?",
+      "choices": [
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "correct_answer": "34",
+      "answer": "34",
+      "explanation": "72 - 38 = 34",
+      "explanation_th": "72 - 38 = 34",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q03",
+      "question_th": "90 - 47 เท่ากับเท่าไร?",
+      "question_text": "90 - 47 เท่ากับเท่าไร?",
+      "choices": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "correct_answer": "43",
+      "answer": "43",
+      "explanation": "90 - 47 = 43",
+      "explanation_th": "90 - 47 = 43",
+      "difficulty": "easy",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q04",
+      "question_th": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "question_text": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
+      "choices": [
+        "53 ลูก",
+        "54 ลูก",
+        "55 ลูก",
+        "56 ลูก"
+      ],
+      "correct_answer": "55 ลูก",
+      "answer": "55 ลูก",
+      "explanation": "84 - 29 = 55 ลูก",
+      "explanation_th": "84 - 29 = 55 ลูก",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q05",
+      "question_th": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "question_text": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
+      "choices": [
+        "54 เล่ม",
+        "55 เล่ม",
+        "56 เล่ม",
+        "57 เล่ม"
+      ],
+      "correct_answer": "55 เล่ม",
+      "answer": "55 เล่ม",
+      "explanation": "73 - 18 = 55 เล่ม",
+      "explanation_th": "73 - 18 = 55 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q06",
+      "question_th": "61 - 26 เท่ากับเท่าไร?",
+      "question_text": "61 - 26 เท่ากับเท่าไร?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "35",
+      "answer": "35",
+      "explanation": "61 - 26 = 35",
+      "explanation_th": "61 - 26 = 35",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q07",
+      "question_th": "58 - 19 เท่ากับเท่าไร?",
+      "question_text": "58 - 19 เท่ากับเท่าไร?",
+      "choices": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "correct_answer": "39",
+      "answer": "39",
+      "explanation": "58 - 19 = 39",
+      "explanation_th": "58 - 19 = 39",
+      "difficulty": "medium",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q08",
+      "question_th": "46 - 27 เท่ากับเท่าไร?",
+      "question_text": "46 - 27 เท่ากับเท่าไร?",
+      "choices": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "correct_answer": "19",
+      "answer": "19",
+      "explanation": "46 - 27 = 19",
+      "explanation_th": "46 - 27 = 19",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q09",
+      "question_th": "100 - 64 เท่ากับเท่าไร?",
+      "question_text": "100 - 64 เท่ากับเท่าไร?",
+      "choices": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "100 - 64 = 36",
+      "explanation_th": "100 - 64 = 36",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_subtract_two_digit_q10",
+      "question_th": "82 - 45 เท่ากับเท่าไร?",
+      "question_text": "82 - 45 เท่ากับเท่าไร?",
+      "choices": [
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "correct_answer": "37",
+      "answer": "37",
+      "explanation": "82 - 45 = 37",
+      "explanation_th": "82 - 45 = 37",
+      "difficulty": "hard",
+      "skill_tag": "g2_subtract_two_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราวชวนคิด",
+      "content": "ลองอ่านโจทย์เรื่อง ลบเลขสองหลักแบบไม่ทด ให้ช้า ๆ แล้วหาตัวเลขสำคัญก่อนเริ่มคิด"
+    },
+    {
+      "type": "visual_thinking",
+      "title": "มองภาพก่อน",
+      "content": "แยกข้อมูลที่โจทย์ให้ และวงคำถามสุดท้ายว่าอยากรู้อะไร"
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "ใช้ช่องหรือกลุ่มช่วยจัดข้อมูลให้เห็นภาพ",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "ชิ้น"
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "18 + 7 = 25",
+      "content": "เขียนเครื่องหมายให้ตรงกับสิ่งที่โจทย์ถาม"
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "18 + 7 = ?",
+      "choices": [
+        "23",
+        "24",
+        "25",
+        "27"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "คำตอบคือ 25"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import re
 from datetime import UTC, datetime
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -183,6 +184,7 @@ def _safe_test_id(test_id: str) -> str:
 # ---------------------------------------------------------------------------
 
 
+@lru_cache(maxsize=1)
 def load_lessons_status() -> dict[str, dict[str, Any]]:
     """Load the entire lessons sidecar status file.
 
@@ -197,6 +199,7 @@ def load_lessons_status() -> dict[str, dict[str, Any]]:
 def save_lessons_status(status_dict: dict[str, dict[str, Any]]) -> None:
     """Write the entire lessons sidecar status file."""
     _write_json(_LESSONS_STATUS_FILE, status_dict)
+    load_lessons_status.cache_clear()
 
 
 # ---------------------------------------------------------------------------
@@ -204,6 +207,7 @@ def save_lessons_status(status_dict: dict[str, dict[str, Any]]) -> None:
 # ---------------------------------------------------------------------------
 
 
+@lru_cache(maxsize=1)
 def load_tests_status() -> dict[str, dict[str, Any]]:
     """Load the entire tests sidecar status file.
 
@@ -218,6 +222,7 @@ def load_tests_status() -> dict[str, dict[str, Any]]:
 def save_tests_status(status_dict: dict[str, dict[str, Any]]) -> None:
     """Write the entire tests sidecar status file."""
     _write_json(_TESTS_STATUS_FILE, status_dict)
+    load_tests_status.cache_clear()
 
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,1382 @@
+{
+  "lesson_id": "g6_geometry_ep",
+  "id": "g6_geometry_ep",
+  "grade_level": 6,
+  "title_th": "เรขาคณิต พื้นที่ ปริมาตร มุม",
+  "objective_th": "นักเรียนสามารถคำนวณพื้นที่ ปริมาตร และมุมของรูปทรงต่างๆ ได้ถูกต้อง",
+  "story_intro_th": "พี่อลิสสร้างกล่องของขวัญทรงสี่เหลี่ยมเพื่อใส่ของขวัญ กว้าง 20 ซม. ยาว 30 ซม. สูง 15 ซม. มีพื้นที่ผิวและปริมาตรเท่าไหร่? 🎁",
+  "explanation_steps": [
+    "พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว สี่เหลี่ยมจัตุรัส = ด้าน²",
+    "พื้นที่สามเหลี่ยม = 1/2 × ฐาน × สูง พื้นที่วงกลม = π × รัศมี² (π ≈ 3.14)",
+    "ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง ปริมาตรลูกบาศก์ = ด้าน³",
+    "พื้นที่ผิวปริซึม = ผลรวมของพื้นที่ทุกด้าน",
+    "มุมภายในสามเหลี่ยมรวมกัน = 180° มุมภายในสี่เหลี่ยมรวมกัน = 360°"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "หาพื้นที่วงกลม",
+      "question_th": "วงกลมมีรัศมี 7 ซม. มีพื้นที่เท่าไหร่? (π = 3.14)",
+      "solution_th": "3.14 × 7² = 3.14 × 49 = 153.86 ตารางเซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาปริมาตรปริซึม",
+      "question_th": "กล่องกว้าง 8 ซม. ยาว 12 ซม. สูง 5 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "8 × 12 × 5 = 480 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "หามุมในสามเหลี่ยม",
+      "question_th": "สามเหลี่ยมมีมุม 2 มุม เท่ากับ 50° และ 60° มุมที่สามเท่าไหร่?",
+      "solution_th": "180° - 50° - 60° = 70° ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สามเหลี่ยม",
+      "question_th": "สามเหลี่ยมฐาน 10 ซม. สูง 8 ซม. มีพื้นที่เท่าไหร่?",
+      "solution_th": "1/2 × 10 × 8 = 40 ตารางเซนติเมตร ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ใช้สูตรพื้นที่วงกลมผิด โดยใช้เส้นผ่านศูนย์กลางแทนรัศมี หรือลืมยกกำลังสอง",
+    "ลืม ÷2 ในสูตรพื้นที่สามเหลี่ยม",
+    "คำนวณมุมภายในรูปทรงผิด โดยไม่รู้ว่าสามเหลี่ยมรวม 180° สี่เหลี่ยมรวม 360°"
+  ],
+  "hints": [
+    "พื้นที่วงกลม = πr² จำว่า r ต้องยกกำลังสองก่อนคูณ π",
+    "สามเหลี่ยมมุมรวม 180° สี่เหลี่ยมมุมรวม 360°",
+    "ปริมาตรปริซึม = พื้นที่ฐาน × สูง"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_geometry",
+  "skill_code": "g6_geometry_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "v01",
+      "variant_title_th": "🏫 โรงเรียน",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมโรงเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🏫 โรงเรียน",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมโรงเรียน"
+    },
+    {
+      "variant_id": "v02",
+      "variant_title_th": "🍎 ผลไม้",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมผลไม้",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🍎 ผลไม้",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมผลไม้"
+    },
+    {
+      "variant_id": "v03",
+      "variant_title_th": "🧸 ของเล่น",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมของเล่น",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🧸 ของเล่น",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมของเล่น"
+    },
+    {
+      "variant_id": "v04",
+      "variant_title_th": "🏪 ตลาด",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมตลาด",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🏪 ตลาด",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมตลาด"
+    },
+    {
+      "variant_id": "v05",
+      "variant_title_th": "🐕 สัตว์เลี้ยง",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมสัตว์เลี้ยง",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🐕 สัตว์เลี้ยง",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมสัตว์เลี้ยง"
+    },
+    {
+      "variant_id": "v06",
+      "variant_title_th": "🌻 สวน",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมสวน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🌻 สวน",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมสวน"
+    },
+    {
+      "variant_id": "v07",
+      "variant_title_th": "🎨 วาดรูป",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมวาดรูป",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎨 วาดรูป",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมวาดรูป"
+    },
+    {
+      "variant_id": "v08",
+      "variant_title_th": "📚 ห้องเรียน",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมห้องเรียน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "📚 ห้องเรียน",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมห้องเรียน"
+    },
+    {
+      "variant_id": "v09",
+      "variant_title_th": "🎮 สนุกกับเพื่อน",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมสนุกกับเพื่อน",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎮 สนุกกับเพื่อน",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมสนุกกับเพื่อน"
+    },
+    {
+      "variant_id": "v10",
+      "variant_title_th": "🎉 งานเทศกาล",
+      "story_theme_th": "เรียนรู้เรื่องgeometryผ่านธีมงานเทศกาล",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ],
+      "variant_title_en": "🎉 งานเทศกาล",
+      "story_theme_en": "เรียนรู้เรื่องgeometryผ่านธีมงานเทศกาล"
+    },
+    {
+      "variant_id": "ep_v01",
+      "variant_title_en": "",
+      "story_theme_en": "",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Think Story",
+          "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+        },
+        {
+          "type": "visual_thinking",
+          "title": "Look First",
+          "content": "Circle what you know and underline what the question asks."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Use equal groups or boxes to organize the numbers.",
+          "model_type": "array_model",
+          "rows": 4,
+          "cols": 6,
+          "total": 24,
+          "unit": "items"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 4 = 24",
+          "content": "Choose the operation that matches the question."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 6 groups with 4 items in each group. How many items are there?",
+          "choices": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "correct_answer": "24",
+          "answer": "24",
+          "explanation": "6 × 4 = 24"
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เรขาคณิต",
+  "preview_subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "cover_theme": "geometry_g6",
+  "cover_emoji": "📐",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "published",
+  "quality_required": true,
+  "content_schema_version": "2.0",
+  "program_type": "EP",
+  "subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "learning_objective_th": "นักเรียนสามารถคำนวณพื้นที่ ปริมาตร และมุมของรูปทรงต่างๆ ได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสสร้างกล่องของขวัญทรงสี่เหลี่ยมเพื่อใส่ของขวัญ กว้าง 20 ซม. ยาว 30 ซม. สูง 15 ซม. มีพื้นที่ผิวและปริมาตรเท่าไหร่? 🎁",
+  "concept_explanation_th": "พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว สี่เหลี่ยมจัตุรัส = ด้าน² พื้นที่สามเหลี่ยม = 1/2 × ฐาน × สูง พื้นที่วงกลม = π × รัศมี² (π ≈ 3.14) ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง ปริมาตรลูกบาศก์ = ด้าน³ พื้นที่ผิวปริซึม = ผลรวมของพื้นที่ทุกด้าน มุมภายในสามเหลี่ยมรวมกัน = 180° มุมภายในสี่เหลี่ยมรวมกัน = 360°",
+  "singapore_math_model": {
+    "type": "bar_model",
+    "model_type": "bar_model",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 18
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 12
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เรขาคณิต พื้นที่ ปริมาตร มุม ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "หาพื้นที่วงกลม",
+      "question_th": "วงกลมมีรัศมี 7 ซม. มีพื้นที่เท่าไหร่? (π = 3.14)",
+      "solution_th": "3.14 × 7² = 3.14 × 49 = 153.86 ตารางเซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาปริมาตรปริซึม",
+      "question_th": "กล่องกว้าง 8 ซม. ยาว 12 ซม. สูง 5 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "8 × 12 × 5 = 480 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "หามุมในสามเหลี่ยม",
+      "question_th": "สามเหลี่ยมมีมุม 2 มุม เท่ากับ 50° และ 60° มุมที่สามเท่าไหร่?",
+      "solution_th": "180° - 50° - 60° = 70° ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สามเหลี่ยม",
+      "question_th": "สามเหลี่ยมฐาน 10 ซม. สูง 8 ซม. มีพื้นที่เท่าไหร่?",
+      "solution_th": "1/2 × 10 × 8 = 40 ตารางเซนติเมตร ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ใช้สูตรพื้นที่วงกลมผิด โดยใช้เส้นผ่านศูนย์กลางแทนรัศมี หรือลืมยกกำลังสอง",
+    "ลืม ÷2 ในสูตรพื้นที่สามเหลี่ยม",
+    "คำนวณมุมภายในรูปทรงผิด โดยไม่รู้ว่าสามเหลี่ยมรวม 180° สี่เหลี่ยมรวม 360°"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Geometry: Area, Volume, and Angles",
+  "objective_en": "Students will be able to calculate area and perimeter",
+  "story_intro_en": "Look! 20 + 30 + 15 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: หาพื้นที่วงกลม",
+      "question_en": "7 . ? (π = 3.14)",
+      "solution_en": "3.14 × 7² = 3.14 × 49 = 153.86 ✅?"
+    },
+    {
+      "title_en": "Example: หาปริมาตรปริซึม",
+      "question_en": "8 . 12 . 5 . ?",
+      "solution_en": "8 × 12 × 5 = 480 balls ✅?"
+    },
+    {
+      "title_en": "Example: หามุมในสามเหลี่ยม",
+      "question_en": "2 50° 60° ?",
+      "solution_en": "180° - 50° - 60° = 70° ✅"
+    },
+    {
+      "title_en": "Example: หาพื้นที่สามเหลี่ยม",
+      "question_en": "10 . 8 . ?",
+      "solution_en": "1/2 × 10 × 8 = 40 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ใช้สูตรพื้นที่วงกลมผิด โดยใช้เส้นผ่านศูนย์กลางแทนรัศมี หรือลืมยกกำลังสอง",
+    "Mistake: ลืม ÷2 ในสูตรพื้นที่สามเหลี่ยม",
+    "Mistake: คำนวณมุมภายในรูปทรงผิด โดยไม่รู้ว่าสามเหลี่ยมรวม 180° สี่เหลี่ยมรวม 360°"
+  ],
+  "hints_en": [
+    "Hint: พื้นที่วงกลม = πr² จำว่า r ต้องยกกำลังสองก่อนคูณ π",
+    "Hint: สามเหลี่ยมมุมรวม 180° สี่เหลี่ยมมุมรวม 360°",
+    "Hint: ปริมาตรปริซึม = พื้นที่ฐาน × สูง"
+  ],
+  "explanation_steps_en": [
+    "Step: พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว สี่เหลี่ยมจัตุรัส = ด้าน²",
+    "Step: พื้นที่สามเหลี่ยม = 1/2 × ฐาน × สูง พื้นที่วงกลม = π × รัศมี² (π ≈ 3.14)",
+    "Step: ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง ปริมาตรลูกบาศก์ = ด้าน³",
+    "Step: พื้นที่ผิวปริซึม = ผลรวมของพื้นที่ทุกด้าน",
+    "Step: มุมภายในสามเหลี่ยมรวมกัน = 180° มุมภายในสี่เหลี่ยมรวมกัน = 360°"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g6_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "90°?",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "answer_en": "90°"
+    },
+    {
+      "question_id": "g6_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "?",
+      "choices": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "correct_answer": "90°?",
+      "answer": "90°?",
+      "explanation": "90°?",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "answer_en": "90°?"
+    },
+    {
+      "question_id": "g6_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "fruits ?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "180°?",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core",
+      "question_en": "fruits ?",
+      "explanation_en": "180°?",
+      "choices_en": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer_en": "180°"
+    },
+    {
+      "question_id": "g6_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "90°?",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "answer_en": "90°"
+    },
+    {
+      "question_id": "g6_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "?",
+      "choices": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "correct_answer": "90°?",
+      "answer": "90°?",
+      "explanation": "90°?",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "answer_en": "90°?"
+    },
+    {
+      "question_id": "g6_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "fruits ?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "180°?",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core",
+      "question_en": "fruits ?",
+      "explanation_en": "180°?",
+      "choices_en": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer_en": "180°"
+    },
+    {
+      "question_id": "g6_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "90°?",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "answer_en": "90°"
+    },
+    {
+      "question_id": "g6_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "?",
+      "choices": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "correct_answer": "90°?",
+      "answer": "90°?",
+      "explanation": "90°?",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "90°?",
+        "90°?",
+        "90° 180°?",
+        "180°?"
+      ],
+      "answer_en": "90°?"
+    },
+    {
+      "question_id": "g6_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "fruits ?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "180°?",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge",
+      "question_en": "fruits ?",
+      "explanation_en": "180°?",
+      "choices_en": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer_en": "180°"
+    },
+    {
+      "question_id": "g6_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "90°?",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge",
+      "question_en": "?",
+      "explanation_en": "90°?",
+      "choices_en": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "answer_en": "90°"
+    }
+  ],
+  "quiz_id": "g6_geometry_ep",
+  "generated_at": "2026-05-16T04:16:42.185812+00:00",
+  "source_lesson_id": "g6_geometry",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Think Story",
+      "content": "Read the problem about Geometry: Area, Volume, and Angles. Find the important numbers first."
+    },
+    {
+      "type": "visual_thinking",
+      "title": "Look First",
+      "content": "Circle what you know and underline what the question asks."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Use equal groups or boxes to organize the numbers.",
+      "model_type": "array_model",
+      "rows": 4,
+      "cols": 6,
+      "total": 24,
+      "unit": "items"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6 × 4 = 24",
+      "content": "Choose the operation that matches the question."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "There are 6 groups with 4 items in each group. How many items are there?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24"
+    }
+  ]
+}
