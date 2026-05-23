@@ -1,0 +1,318 @@
+{
+  "variant_id": "numbers_ep_001",
+  "variant_title_th": "จำนวนนับไม่เกิน 100,000",
+  "variant_title_en": "Numbers Up to 100,000",
+  "status": "needs_review",
+  "title_en": "Numbers Up to 100,000",
+  "story_theme_en": "It was Sports Day at school and students came from every district. Teacher asked Lin to help count the decorative flags prepared for the event. There were 4 orange flags, 5 yellow flags, 8 pink flags, 3 white flags, and 0 green flags. Lin needed to write the number that shows how many flags there were in total and say what each digit is worth in its place.",
+  "helper_tip_en": "Have students write each digit in the correct column first, then read the number aloud.",
+  "think_story_en": "Lin has the number 45,830. Read as Forty-five thousand eight hundred thirty. Each digit: 4 in ten-thousands = 40,000; 5 in thousands = 5,000; 8 in hundreds = 800; 3 in tens = 30; 0 in ones = 0. Total = 45,830",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "It was Sports Day. Teacher asked Lin to count the decorative flags.",
+      "data": {
+        "content_en": "It was Sports Day at school and students came from every district. Teacher asked Lin to help count the decorative flags prepared for the event. There were 4 orange flags, 5 yellow flags, 8 pink flags, 3 white flags, and 0 green flags. Lin needed to write the number that shows how many flags there were in total and say what each digit is worth in its place."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "45,830 is read as Forty-five thousand eight hundred thirty. Each digit has a place value.",
+      "data": {
+        "content_en": "Lin has the number 45,830. Read as Forty-five thousand eight hundred thirty. Each digit: 4 in ten-thousands = 40,000; 5 in thousands = 5,000; 8 in hundreds = 800; 3 in tens = 30; 0 in ones = 0. Total = 45,830"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Place Value Table",
+      "description": "A table showing each digit in its correct place value column",
+      "model_type": "place_value_table",
+      "rows_data": [
+        {
+          "Place": "Ten-Thousands",
+          "Digit": "4",
+          "Value": "40,000"
+        },
+        {
+          "Place": "Thousands",
+          "Digit": "5",
+          "Value": "5,000"
+        },
+        {
+          "Place": "Hundreds",
+          "Digit": "8",
+          "Value": "800"
+        },
+        {
+          "Place": "Tens",
+          "Digit": "3",
+          "Value": "30"
+        },
+        {
+          "Place": "Ones",
+          "Digit": "0",
+          "Value": "0"
+        }
+      ],
+      "data": {
+        "model_type": "place_value_table",
+        "number": 45830,
+        "digits": [
+          4,
+          5,
+          8,
+          3,
+          0
+        ],
+        "places_en": [
+          "Ten-Thousands",
+          "Thousands",
+          "Hundreds",
+          "Tens",
+          "Ones"
+        ],
+        "places_th": [
+          "หมื่น",
+          "พัน",
+          "ร้อย",
+          "สิบ",
+          "หน่วย"
+        ],
+        "values": [
+          40000,
+          5000,
+          800,
+          30,
+          0
+        ],
+        "total": 45830,
+        "unit": ""
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Write the Number",
+      "expression": "45,830",
+      "content": "45,830 = 40,000 + 5,000 + 800 + 30 + 0",
+      "data": {
+        "expression": "45,830",
+        "decomposition": "40,000 + 5,000 + 800 + 30 + 0",
+        "word_form": "Forty-five thousand eight hundred thirty",
+        "content_en": "45,830 = 40,000 + 5,000 + 800 + 30 + 0"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "In the number 62,407, the digit 6 is in which place and what is its value?",
+      "choices": [
+        "Thousands place, value 6,000",
+        "Ten-thousands place, value 60,000",
+        "Hundreds place, value 600",
+        "Tens place, value 60"
+      ],
+      "correct_answer": "Ten-thousands place, value 60,000",
+      "explanation": "The digit 6 is in the ten-thousands place, so its value is 6 × 10,000 = 60,000",
+      "data": {
+        "question": "In the number 62,407, the digit 6 is in which place and what is its value?",
+        "choices": [
+          "Thousands place, value 6,000",
+          "Ten-thousands place, value 60,000",
+          "Hundreds place, value 600",
+          "Tens place, value 60"
+        ],
+        "correct_answer": "Ten-thousands place, value 60,000",
+        "explanation": "The digit 6 is in the ten-thousands place, so its value is 6 × 10,000 = 60,000"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Numbers up to 100,000 have 5 digits. Each digit has a place value.",
+    "The rightmost digit is in the ones place (value ×1).",
+    "Moving left: tens (×10), hundreds (×100), thousands (×1,000), ten-thousands (×10,000).",
+    "In 45,830: the digit 4 is in the ten-thousands place = 4 × 10,000 = 40,000.",
+    "The digit 5 is in the thousands place = 5 × 1,000 = 5,000.",
+    "The digit 8 is in the hundreds place = 8 × 100 = 800.",
+    "Add all place values: 40,000 + 5,000 + 800 + 30 + 0 = 45,830. ✅"
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Writing a Number from Place Value",
+      "question_en": "Write the number that has 3 ten-thousands, 7 thousands, 2 hundreds, 5 tens, and 9 ones.",
+      "solution_en": "30,000 + 7,000 + 200 + 50 + 9 = 37,259 ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Confusing thousands place with ten-thousands place, especially when 0 is in the number.",
+    "Writing a digit in the wrong column, thinking 3 in the thousands place means 30,000.",
+    "Forgetting that a 0 in any place still has a place value of that column."
+  ],
+  "hints_en": [
+    "Use a place value table to line up each digit in its correct column first.",
+    "Remember the place values: ten-thousands=10,000, thousands=1,000, hundreds=100, tens=10, ones=1.",
+    "Check by reading the number aloud and converting it back to digits."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "place value",
+      "th": "ค่าประจำหลัก",
+      "definition_en": "The value of a digit based on its position in a number"
+    },
+    {
+      "en": "digit",
+      "th": "ตัวเลข",
+      "definition_en": "A single symbol used to write numbers (0–9)"
+    },
+    {
+      "en": "ten-thousands",
+      "th": "หมื่น",
+      "definition_en": "The place value of the 5th digit from the right, equal to 10,000"
+    },
+    {
+      "en": "thousands",
+      "th": "พัน",
+      "definition_en": "The place value of the 4th digit from the right, equal to 1,000"
+    },
+    {
+      "en": "hundreds",
+      "th": "ร้อย",
+      "definition_en": "The place value of the 3rd digit from the right, equal to 100"
+    },
+    {
+      "en": "tens",
+      "th": "สิบ",
+      "definition_en": "The place value of the 2nd digit from the right, equal to 10"
+    },
+    {
+      "en": "ones",
+      "th": "หน่วย",
+      "definition_en": "The rightmost place value, equal to 1"
+    },
+    {
+      "en": "number",
+      "th": "จำนวน",
+      "definition_en": "A quantity used for counting or measuring"
+    },
+    {
+      "en": "decompose",
+      "th": "แยกค่า",
+      "definition_en": "To break a number into the value of each digit"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "In the number 73,560, what is the value of the digit 7?",
+      "choices": [
+        "7",
+        "700",
+        "7,000",
+        "70,000"
+      ],
+      "answer": "70,000",
+      "explanation": "7 is in the ten-thousands place = 7 × 10,000 = 70,000"
+    },
+    {
+      "q": "What is the correct word form of 91,284?",
+      "choices": [
+        "Ninety-one thousand two hundred eighty-four",
+        "Nine thousand one hundred twenty-eight",
+        "Ninety-one thousand eight hundred forty-two",
+        "Nine hundred twelve thousand eighty-four"
+      ],
+      "answer": "Ninety-one thousand two hundred eighty-four",
+      "explanation": "91,284 = 90,000 + 1,000 + 200 + 80 + 4 = Ninety-one thousand two hundred eighty-four"
+    },
+    {
+      "q": "Which digit is in the thousands place in 48,937?",
+      "choices": [
+        "4",
+        "8",
+        "9",
+        "3"
+      ],
+      "answer": "8",
+      "explanation": "Reading left to right: 4 (ten-thousands), 8 (thousands), 9 (hundreds), 3 (tens), 7 (ones). The thousands digit is 8."
+    },
+    {
+      "q": "What does 5,000 + 600 + 40 + 2 equal?",
+      "choices": [
+        "5,642",
+        "5,462",
+        "6,542",
+        "5,426"
+      ],
+      "answer": "5,642",
+      "explanation": "5,000 + 600 + 40 + 2 = 5,642"
+    },
+    {
+      "q": "Which number is the largest?",
+      "choices": [
+        "23,456",
+        "24,356",
+        "23,645",
+        "22,999"
+      ],
+      "answer": "24,356",
+      "explanation": "Compare ten-thousands: all have 2. Compare thousands: 4 > 3, 2. So 24,356 is largest."
+    },
+    {
+      "q": "How do you write sixty-three thousand five hundred nine in numerals?",
+      "choices": [
+        "63,590",
+        "63,509",
+        "63,059",
+        "60,359"
+      ],
+      "answer": "63,509",
+      "explanation": "Sixty-three thousand = 63,000. Five hundred = 500. Nine = 9. Total = 63,509."
+    },
+    {
+      "q": "In 40,805, what is the value of the digit 4?",
+      "choices": [
+        "4",
+        "400",
+        "4,000",
+        "40,000"
+      ],
+      "answer": "40,000",
+      "explanation": "4 is in the ten-thousands place: 4 × 10,000 = 40,000"
+    },
+    {
+      "q": "Which shows the correct decomposition of 78,032?",
+      "choices": [
+        "70,000 + 8,000 + 300 + 20 + 0",
+        "70,000 + 8,000 + 30 + 2",
+        "78,000 + 300 + 20 + 2",
+        "70,000 + 8,000 + 300 + 2"
+      ],
+      "answer": "78,000 + 300 + 20 + 2",
+      "explanation": "78,032 = 70,000 + 8,000 + 30 + 2, but 8,000 + 30 = 8,030, so total = 78,032. The correct decomposition is 70,000 + 8,000 + 30 + 2 = 78,032."
+    },
+    {
+      "q": "What comes next: 10,000, 20,000, 30,000, ___?",
+      "choices": [
+        "35,000",
+        "40,000",
+        "50,000",
+        "100,000"
+      ],
+      "answer": "40,000",
+      "explanation": "Adding 10,000 each time: 10k → 20k → 30k → 40k."
+    },
+    {
+      "q": "If you arrange 45,300, 45,030, 45,003, and 45,030 from smallest to largest, which is third?",
+      "choices": [
+        "45,003",
+        "45,030",
+        "45,300",
+        "45,030"
+      ],
+      "answer": "45,300",
+      "explanation": "Ordered: 45,003 (1st), 45,030 (2nd), 45,300 (3rd), 45,030 appears twice. The 3rd smallest is 45,300."
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Numbers up to 100,000 have 5 digits. Each position has a place value: ones (1), tens (10), hundreds (100), thousands (1,000), ten-thousands (10,000). To find a digit's value, multiply the digit by its place value. Always use a place value table to organize digits before reading or writing large numbers."
+}

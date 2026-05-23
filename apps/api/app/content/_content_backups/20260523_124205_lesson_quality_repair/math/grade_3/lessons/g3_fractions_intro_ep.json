@@ -1,0 +1,781 @@
+{
+  "lesson_id": "g3_fractions_intro_ep",
+  "id": "g3_fractions_intro_ep",
+  "grade_level": 3,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "เศษส่วนมี 2 ตัวเลข ตัวเลขบนเรียกว่า เศษ ตัวเลขล่างเรียกว่า ส่วน",
+    "ส่วนบอกว่าแบ่งเป็นกี่ส่วนเท่าๆ กัน เศษบอกว่าเอากี่ส่วน",
+    "เช่น 1/4 หมายถึง แบ่งเป็น 4 ส่วนเท่าๆ กัน แล้วเอา 1 ส่วน",
+    "เศษส่วนที่เท่ากันคือเศษส่วนที่แทนจำนวนเดียวกัน เช่น 1/2 = 2/4",
+    "เศษส่วนที่มากกว่า 1 คือเศษส่วนที่เศษมากกว่าส่วน เช่น 5/4"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "อ่านเศษส่วน",
+      "question_th": "ขนมปัง 1 ก้อนแบ่งให้เพื่อน 2 คน คนละได้กี่ส่วน?",
+      "solution_th": "1/2 ของขนมปัง คือแบ่งขนมปังเป็น 2 ส่วนเท่าๆ กัน คนละได้ 1/2 ✅"
+    },
+    {
+      "title_th": "เขียนเศษส่วน",
+      "question_th": "น้ำ 1 ลิตร แบ่งให้น้องคนละ 1/4 ลิตร น้องได้น้ำกี่ส่วน?",
+      "solution_th": "น้องได้ 1/4 ลิตร ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบเศษส่วน",
+      "question_th": "1/3 กับ 1/4 อันไหนมากกว่า?",
+      "solution_th": "1/3 > 1/4 เพราะส่วนเล็กกว่าแปลว่าแต่ละส่วนใหญ่กว่า ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนระหว่างเศษกับส่วน หรือเขียนสลับกัน",
+    "คิดว่าเศษส่วนที่ส่วนมากกว่าจะมากกว่า แต่จริงๆ คือส่วนมากกว่าแปลว่าแต่ละส่วนเล็กกว่า",
+    "ไม่เข้าใจว่าเศษส่วนที่เท่ากันอาจเขียนต่างกันได้ เช่น 1/2 = 2/4"
+  ],
+  "hints": [
+    "ส่วนคือตัวเลขที่บอกว่าแบ่งเป็นกี่ส่วน เศษคือตัวเลขที่บอกว่าเอากี่ส่วน",
+    "จำได้ง่าย: ส่วนใต้ เศษบน เหมือนเค้กแบ่งชิ้น",
+    "ถ้าเปรียบเทียบเศษส่วนที่เศษเท่ากัน ให้ดูส่วน ส่วนน้อยกว่าคือจำนวนมากกว่า"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_fractions_intro",
+  "skill_code": "g3_fractions_intro_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g3_fractions_intro_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Fractions in Everyday Life Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "content_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "data": {
+            "content_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8.",
+          "content_en": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8.",
+          "data": {
+            "content_en": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "fraction_model",
+          "numerator": 3,
+          "denominator": 8,
+          "remaining": 5,
+          "unit": "parts",
+          "symbol": "🍕",
+          "data": {
+            "model_type": "fraction_model",
+            "numerator": 3,
+            "denominator": 8,
+            "remaining": 5,
+            "unit": "parts",
+            "symbol": "🍕"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "3 out of 8 parts = 3/8",
+          "content": "3 out of 8 parts = 3/8",
+          "data": {
+            "expression": "3 out of 8 parts = 3/8",
+            "content_en": "3 out of 8 parts = 3/8"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+          "question_en": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+          "choices": [
+            "1/6",
+            "5/6",
+            "6/1",
+            "1/5"
+          ],
+          "correct_answer": "1/6",
+          "answer": "1/6",
+          "explanation": "She ate 1 of 6 equal pieces, so the fraction is 1/6.",
+          "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+          "data": {
+            "question": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+            "question_en": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+            "choices": [
+              "1/6",
+              "5/6",
+              "6/1",
+              "1/5"
+            ],
+            "correct_answer": "1/6",
+            "answer": "1/6",
+            "explanation": "She ate 1 of 6 equal pieces, so the fraction is 1/6.",
+            "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เศษส่วนเริ่มต้น",
+  "preview_subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "cover_theme": "fractions_intro",
+  "cover_emoji": "🍕",
+  "cover_color": "pink",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้เศษส่วนผ่านภาพ",
+  "learning_objective_th": "นักเรียนสามารถเข้าใจความหมายของเศษส่วน และอ่านเขียนเศษส่วนได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสได้พิซซ่า 1 ก้อน อยากแบ่งให้เพื่อน 4 คน อย่างละเท่าๆ กัน จะแบ่งอย่างไร? 🍕",
+  "concept_explanation_th": "เศษส่วนมี 2 ตัวเลข ตัวเลขบนเรียกว่า เศษ ตัวเลขล่างเรียกว่า ส่วน ส่วนบอกว่าแบ่งเป็นกี่ส่วนเท่าๆ กัน เศษบอกว่าเอากี่ส่วน เช่น 1/4 หมายถึง แบ่งเป็น 4 ส่วนเท่าๆ กัน แล้วเอา 1 ส่วน เศษส่วนที่เท่ากันคือเศษส่วนที่แทนจำนวนเดียวกัน เช่น 1/2 = 2/4 เศษส่วนที่มากกว่า 1 คือเศษส่วนที่เศษมากกว่าส่วน เช่น 5/4",
+  "singapore_math_model": {
+    "type": "fraction_model",
+    "model_type": "fraction_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เศษส่วนในชีวิตประจำวัน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "อ่านเศษส่วน",
+      "question_th": "ขนมปัง 1 ก้อนแบ่งให้เพื่อน 2 คน คนละได้กี่ส่วน?",
+      "solution_th": "1/2 ของขนมปัง คือแบ่งขนมปังเป็น 2 ส่วนเท่าๆ กัน คนละได้ 1/2 ✅"
+    },
+    {
+      "title_th": "เขียนเศษส่วน",
+      "question_th": "น้ำ 1 ลิตร แบ่งให้น้องคนละ 1/4 ลิตร น้องได้น้ำกี่ส่วน?",
+      "solution_th": "น้องได้ 1/4 ลิตร ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบเศษส่วน",
+      "question_th": "1/3 กับ 1/4 อันไหนมากกว่า?",
+      "solution_th": "1/3 > 1/4 เพราะส่วนเล็กกว่าแปลว่าแต่ละส่วนใหญ่กว่า ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนระหว่างเศษกับส่วน หรือเขียนสลับกัน",
+    "คิดว่าเศษส่วนที่ส่วนมากกว่าจะมากกว่า แต่จริงๆ คือส่วนมากกว่าแปลว่าแต่ละส่วนเล็กกว่า",
+    "ไม่เข้าใจว่าเศษส่วนที่เท่ากันอาจเขียนต่างกันได้ เช่น 1/2 = 2/4"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_fractions_intro_q01",
+      "question_th": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "question_text": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "1/4",
+      "answer": "1/4",
+      "explanation": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "explanation_th": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q02",
+      "question_th": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "question_text": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "choices": [
+        "3/8",
+        "5/8",
+        "8/3",
+        "1/8"
+      ],
+      "correct_answer": "3/8",
+      "answer": "3/8",
+      "explanation": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "explanation_th": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q03",
+      "question_th": "1/2 หมายถึงอะไร?",
+      "question_text": "1/2 หมายถึงอะไร?",
+      "choices": [
+        "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+        "2 ส่วนจาก 1 ส่วน",
+        "ทั้งหมด 2 ชิ้นเสมอ",
+        "ไม่มีคำตอบ"
+      ],
+      "correct_answer": "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "answer": "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "explanation": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "explanation_th": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q04",
+      "question_th": "เศษใน 2/5 คือเลขใด?",
+      "question_text": "เศษใน 2/5 คือเลขใด?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "2",
+      "answer": "2",
+      "explanation": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "explanation_th": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q05",
+      "question_th": "ส่วนใน 2/5 คือเลขใด?",
+      "question_text": "ส่วนใน 2/5 คือเลขใด?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "explanation_th": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q06",
+      "question_th": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "question_text": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "choices": [
+        "4/6",
+        "6/4",
+        "2/6",
+        "1/6"
+      ],
+      "correct_answer": "4/6",
+      "answer": "4/6",
+      "explanation": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "explanation_th": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q07",
+      "question_th": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "question_text": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "choices": [
+        "4/4",
+        "1/4",
+        "2/4",
+        "3/4"
+      ],
+      "correct_answer": "4/4",
+      "answer": "4/4",
+      "explanation": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "explanation_th": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q08",
+      "question_th": "ข้อใดมากกว่า 1/4?",
+      "question_text": "ข้อใดมากกว่า 1/4?",
+      "choices": [
+        "3/4",
+        "1/4",
+        "0/4",
+        "1/8"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "explanation_th": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_fractions_intro_q09",
+      "question_th": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "question_text": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "choices": [
+        "2/3",
+        "1/3",
+        "3/2",
+        "3/3"
+      ],
+      "correct_answer": "2/3",
+      "answer": "2/3",
+      "explanation": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "explanation_th": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_fractions_intro_q10",
+      "question_th": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "question_text": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "choices": [
+        "3/10",
+        "10/3",
+        "3/5",
+        "1/2"
+      ],
+      "correct_answer": "3/10",
+      "answer": "3/10",
+      "explanation": "3/10 มีตัวส่วนเป็น 10",
+      "explanation_th": "3/10 มีตัวส่วนเป็น 10",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_fractions_intro_q01",
+      "question_th": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "question_text": "แบ่งพิซซ่าเป็น 4 ชิ้นเท่าๆ กัน กินไป 1 ชิ้น เขียนเป็นเศษส่วนใด?",
+      "choices": [
+        "1/4",
+        "2/4",
+        "3/4",
+        "4/4"
+      ],
+      "correct_answer": "1/4",
+      "answer": "1/4",
+      "explanation": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "explanation_th": "กิน 1 จากทั้งหมด 4 ชิ้น คือ 1/4",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q02",
+      "question_th": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "question_text": "ระบาย 3 ส่วนจาก 8 ส่วน เขียนเป็นเศษส่วนใด?",
+      "choices": [
+        "3/8",
+        "5/8",
+        "8/3",
+        "1/8"
+      ],
+      "correct_answer": "3/8",
+      "answer": "3/8",
+      "explanation": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "explanation_th": "ระบาย 3 จากทั้งหมด 8 ส่วน คือ 3/8",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q03",
+      "question_th": "1/2 หมายถึงอะไร?",
+      "question_text": "1/2 หมายถึงอะไร?",
+      "choices": [
+        "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+        "2 ส่วนจาก 1 ส่วน",
+        "ทั้งหมด 2 ชิ้นเสมอ",
+        "ไม่มีคำตอบ"
+      ],
+      "correct_answer": "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "answer": "1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "explanation": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "explanation_th": "1/2 คือ 1 ส่วนจาก 2 ส่วนเท่าๆ กัน",
+      "difficulty": "easy",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q04",
+      "question_th": "เศษใน 2/5 คือเลขใด?",
+      "question_text": "เศษใน 2/5 คือเลขใด?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "2",
+      "answer": "2",
+      "explanation": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "explanation_th": "ตัวเศษคือเลขด้านบน จึงเป็น 2",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q05",
+      "question_th": "ส่วนใน 2/5 คือเลขใด?",
+      "question_text": "ส่วนใน 2/5 คือเลขใด?",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "3"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "explanation_th": "ตัวส่วนคือเลขด้านล่าง จึงเป็น 5",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q06",
+      "question_th": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "question_text": "รูปแบ่งเป็น 6 ส่วนเท่าๆ กัน ระบาย 4 ส่วน คือเศษส่วนใด?",
+      "choices": [
+        "4/6",
+        "6/4",
+        "2/6",
+        "1/6"
+      ],
+      "correct_answer": "4/6",
+      "answer": "4/6",
+      "explanation": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "explanation_th": "ระบาย 4 จาก 6 ส่วน คือ 4/6",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q07",
+      "question_th": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "question_text": "เศษส่วนใดเท่ากับหนึ่งทั้งหมด?",
+      "choices": [
+        "4/4",
+        "1/4",
+        "2/4",
+        "3/4"
+      ],
+      "correct_answer": "4/4",
+      "answer": "4/4",
+      "explanation": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "explanation_th": "ระบายครบ 4 จาก 4 ส่วน คือหนึ่งทั้งหมด",
+      "difficulty": "medium",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_fractions_intro_q08",
+      "question_th": "ข้อใดมากกว่า 1/4?",
+      "question_text": "ข้อใดมากกว่า 1/4?",
+      "choices": [
+        "3/4",
+        "1/4",
+        "0/4",
+        "1/8"
+      ],
+      "correct_answer": "3/4",
+      "answer": "3/4",
+      "explanation": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "explanation_th": "3 ส่วนจาก 4 มากกว่า 1 ส่วนจาก 4",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_fractions_intro_q09",
+      "question_th": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "question_text": "แบ่งเค้กเป็น 3 ชิ้น กิน 2 ชิ้น คืออะไร?",
+      "choices": [
+        "2/3",
+        "1/3",
+        "3/2",
+        "3/3"
+      ],
+      "correct_answer": "2/3",
+      "answer": "2/3",
+      "explanation": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "explanation_th": "กิน 2 จาก 3 ชิ้น คือ 2/3",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_fractions_intro_q10",
+      "question_th": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "question_text": "ข้อใดคือเศษส่วนที่มีตัวส่วน 10?",
+      "choices": [
+        "3/10",
+        "10/3",
+        "3/5",
+        "1/2"
+      ],
+      "correct_answer": "3/10",
+      "answer": "3/10",
+      "explanation": "3/10 มีตัวส่วนเป็น 10",
+      "explanation_th": "3/10 มีตัวส่วนเป็น 10",
+      "difficulty": "hard",
+      "skill_tag": "g3_fractions_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Fractions in Everyday Life",
+  "objective_en": "Learn Fractions in Everyday Life with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+  "worked_examples_en": [
+    "g3_fractions_intro_ep English item 1",
+    "g3_fractions_intro_ep English item 2",
+    "g3_fractions_intro_ep English item 3"
+  ],
+  "common_mistakes_en": [
+    "g3_fractions_intro_ep English item 1",
+    "g3_fractions_intro_ep English item 2",
+    "g3_fractions_intro_ep English item 3"
+  ],
+  "hints_en": [
+    "g3_fractions_intro_ep English item 1",
+    "g3_fractions_intro_ep English item 2",
+    "g3_fractions_intro_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g3_fractions_intro_ep English item 1",
+    "g3_fractions_intro_ep English item 2",
+    "g3_fractions_intro_ep English item 3",
+    "g3_fractions_intro_ep English item 4",
+    "g3_fractions_intro_ep English item 5"
+  ],
+  "quiz_en": [
+    "g3_fractions_intro_ep English item 1",
+    "g3_fractions_intro_ep English item 2",
+    "g3_fractions_intro_ep English item 3",
+    "g3_fractions_intro_ep English item 4",
+    "g3_fractions_intro_ep English item 5",
+    "g3_fractions_intro_ep English item 6",
+    "g3_fractions_intro_ep English item 7",
+    "g3_fractions_intro_ep English item 8",
+    "g3_fractions_intro_ep English item 9",
+    "g3_fractions_intro_ep English item 10"
+  ],
+  "quiz_id": "g3_fractions_intro_ep",
+  "generated_at": "2026-05-16T04:16:41.352264+00:00",
+  "source_lesson_id": "g3_fractions_intro",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "content_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "data": {
+        "content_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8.",
+      "content_en": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8.",
+      "data": {
+        "content_en": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "fraction_model",
+      "numerator": 3,
+      "denominator": 8,
+      "remaining": 5,
+      "unit": "parts",
+      "symbol": "🍕",
+      "data": {
+        "model_type": "fraction_model",
+        "numerator": 3,
+        "denominator": 8,
+        "remaining": 5,
+        "unit": "parts",
+        "symbol": "🍕"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "3 out of 8 parts = 3/8",
+      "content": "3 out of 8 parts = 3/8",
+      "data": {
+        "expression": "3 out of 8 parts = 3/8",
+        "content_en": "3 out of 8 parts = 3/8"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+      "question_en": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+      "choices": [
+        "1/6",
+        "5/6",
+        "6/1",
+        "1/5"
+      ],
+      "correct_answer": "1/6",
+      "answer": "1/6",
+      "explanation": "She ate 1 of 6 equal pieces, so the fraction is 1/6.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "data": {
+        "question": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+        "question_en": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+        "choices": [
+          "1/6",
+          "5/6",
+          "6/1",
+          "1/5"
+        ],
+        "correct_answer": "1/6",
+        "answer": "1/6",
+        "explanation": "She ate 1 of 6 equal pieces, so the fraction is 1/6.",
+        "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด"
+      }
+    }
+  ],
+  "base_lesson_id": "g3_fractions_intro",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Fractions in Everyday Life",
+  "topic": "fraction",
+  "icon": "fraction",
+  "story_variants": [
+    {
+      "variant_id": "g3_fractions_intro_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Fractions in Everyday Life Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "content_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "data": {
+            "content_en": "Aom cuts one pizza at the market into 8 equal parts. The group eats 3 parts. What fraction of the pizza did they eat? This story practices Fractions in Everyday Life. The teacher asks the group to explain the answer in simple words after they finish the model."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8.",
+          "content_en": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8.",
+          "data": {
+            "content_en": "The whole pizza has 8 equal parts. The group eats 3 parts, so the fraction is 3/8."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "fraction_model",
+          "numerator": 3,
+          "denominator": 8,
+          "remaining": 5,
+          "unit": "parts",
+          "symbol": "🍕",
+          "data": {
+            "model_type": "fraction_model",
+            "numerator": 3,
+            "denominator": 8,
+            "remaining": 5,
+            "unit": "parts",
+            "symbol": "🍕"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "3 out of 8 parts = 3/8",
+          "content": "3 out of 8 parts = 3/8",
+          "data": {
+            "expression": "3 out of 8 parts = 3/8",
+            "content_en": "3 out of 8 parts = 3/8"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+          "question_en": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+          "choices": [
+            "1/6",
+            "5/6",
+            "6/1",
+            "1/5"
+          ],
+          "correct_answer": "1/6",
+          "answer": "1/6",
+          "explanation": "She ate 1 of 6 equal pieces, so the fraction is 1/6.",
+          "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+          "data": {
+            "question": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+            "question_en": "A melon is cut into 6 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+            "choices": [
+              "1/6",
+              "5/6",
+              "6/1",
+              "1/5"
+            ],
+            "correct_answer": "1/6",
+            "answer": "1/6",
+            "explanation": "She ate 1 of 6 equal pieces, so the fraction is 1/6.",
+            "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

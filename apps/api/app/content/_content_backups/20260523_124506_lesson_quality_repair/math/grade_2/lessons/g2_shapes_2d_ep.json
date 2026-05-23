@@ -1,0 +1,781 @@
+{
+  "lesson_id": "g2_shapes_2d_ep",
+  "id": "g2_shapes_2d_ep",
+  "grade_level": 2,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "สามเหลี่ยม มี 3 ด้าน 3 มุม มุมอาจเป็นมุมแหลม มุมฉาก หรือมุมป้านก็ได้",
+    "สี่เหลี่ยมมี 4 ด้าน 4 มุม แบ่งเป็นหลายชนิด เช่น สี่เหลี่ยมจัตุรัส สี่เหลี่ยมผืนผ้า สี่เหลี่ยมขนมเปียกปูน",
+    "วงกลม ขอบโค้งมนทุกทิศทาง ไม่มีมุม ไม่มีด้าน",
+    "วงรี คล้ายวงกลมแต่ยาวเป็นรูปไข่ กลิ้งแล้วไม่เท่ากันทุกทิศทาง",
+    "เส้นรอบรูปคือความยาวรอบนอกของรูป ใช้วัดความยาวรอบรูปทรง"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "นับด้านของสามเหลี่ยม",
+      "question_th": "รูปสามเหลี่ยมมีกี่ด้าน?",
+      "solution_th": "สามเหลี่ยมมี 3 ด้าน 3 มุม ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบสี่เหลี่ยม",
+      "question_th": "สี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าต่างกันอย่างไร?",
+      "solution_th": "สี่เหลี่ยมจัตุรัสด้านทุกด้านยาวเท่ากัน สี่เหลี่ยมผืนผ้าด้านตรงข้ามยาวเท่ากันแต่ด้านเพื่อนข้างยาวไม่เท่ากัน ✅"
+    },
+    {
+      "title_th": "จำแนกวงกลมกับวงรี",
+      "question_th": "แผ่นกระดาษ A4 กับจานกลม อันไหนเป็นวงกลมแท้?",
+      "solution_th": "จานกลมเป็นวงกลมแทง เพราะกลิ้งเท่ากันทุกทิศทาง แผ่นกระดาษ A4 เป็นสี่เหลี่ยมผืนผ้า ✅"
+    }
+  ],
+  "common_mistakes": [
+    "เรียกวงรีว่าวงกลม เพราะมองว่าโค้งเหมือนกัน",
+    "ไม่แยกสี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าออกจากกัน",
+    "นับจำนวนมุมผิด เช่น นับสามเหลี่ยมเป็น 4 มุม"
+  ],
+  "hints": [
+    "นับด้านและมุมของรูปเพื่อจำแนกชนิด",
+    "วงกลม vs วงรี: ถ้ากลิ้งแล้วเท่ากันทุกทิศทางคือวงกลม ถ้าไม่เท่าคือวงรี",
+    "สี่เหลี่ยมจัตุรัสด้านเท่าทุกด้าน สี่เหลี่ยมผืนผ้าด้านตรงข้ามเท่ากัน 2 คู่"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_shapes_2d",
+  "skill_code": "g2_shapes_2d_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g2_shapes_2d_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "G2 Shapes 2D Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35.",
+          "content_en": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35.",
+          "data": {
+            "content_en": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 22,
+          "bottom": 13,
+          "difference": 35,
+          "unit": "shapes",
+          "symbol": "●",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 22,
+            "bottom": 13,
+            "difference": 35,
+            "unit": "shapes",
+            "symbol": "●"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "22 - 13 = 35 shapes",
+          "content": "22 - 13 = 35 shapes",
+          "data": {
+            "expression": "22 - 13 = 35 shapes",
+            "content_en": "22 - 13 = 35 shapes"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+          "choices": [
+            "5 sheets",
+            "3 sheets",
+            "8 sheets",
+            "10 sheets"
+          ],
+          "correct_answer": "5 sheets",
+          "answer": "5 sheets",
+          "explanation": "Add the two groups: 32 + 27 = 5 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+            "choices": [
+              "5 sheets",
+              "3 sheets",
+              "8 sheets",
+              "10 sheets"
+            ],
+            "correct_answer": "5 sheets",
+            "answer": "5 sheets",
+            "explanation": "Add the two groups: 32 + 27 = 5 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "รูปร่าง 2 มิติ",
+  "preview_subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "cover_theme": "shapes_2d",
+  "cover_emoji": "🔲",
+  "cover_color": "pink",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "learning_objective_th": "นักเรียนสามารถระบุและอธิบายคุณสมบัติของรูปสามเหลี่ยม สี่เหลี่ยม วงกลม และวงรีได้",
+  "lesson_intro_th": "วันนี้เราเล่นเกมต่อภาพรูปทรง เห็นรูปหลายอย่างรอบตัว มาช่วยจำแนกชื่อและคุณสมบัติกันเถอะ! 🔷🔶",
+  "concept_explanation_th": "รูปทรงสองมิติแยกได้จากจำนวนด้านและมุม เช่น สามเหลี่ยม 3 ด้าน สี่เหลี่ยม 4 ด้าน วงกลมไม่มีด้านตรงและไม่มีมุม",
+  "singapore_math_model": {
+    "type": "comparison_bar",
+    "model_type": "comparison_bar",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 6
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 4
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท รู้จักรูปทรงสองมิติ 2 มิติ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "นับด้านของสามเหลี่ยม",
+      "question_th": "รูปสามเหลี่ยมมีกี่ด้าน?",
+      "solution_th": "สามเหลี่ยมมี 3 ด้าน 3 มุม ✅"
+    },
+    {
+      "title_th": "เปรียบเทียบสี่เหลี่ยม",
+      "question_th": "สี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าต่างกันอย่างไร?",
+      "solution_th": "สี่เหลี่ยมจัตุรัสด้านทุกด้านยาวเท่ากัน สี่เหลี่ยมผืนผ้าด้านตรงข้ามยาวเท่ากันแต่ด้านเพื่อนข้างยาวไม่เท่ากัน ✅"
+    },
+    {
+      "title_th": "จำแนกวงกลมกับวงรี",
+      "question_th": "แผ่นกระดาษ A4 กับจานกลม อันไหนเป็นวงกลมแท้?",
+      "solution_th": "จานกลมเป็นวงกลมแทง เพราะกลิ้งเท่ากันทุกทิศทาง แผ่นกระดาษ A4 เป็นสี่เหลี่ยมผืนผ้า ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "เรียกวงรีว่าวงกลม เพราะมองว่าโค้งเหมือนกัน",
+    "ไม่แยกสี่เหลี่ยมจัตุรัสกับสี่เหลี่ยมผืนผ้าออกจากกัน",
+    "นับจำนวนมุมผิด เช่น นับสามเหลี่ยมเป็น 4 มุม"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_shapes_2d_q01",
+      "question_th": "สามเหลี่ยมมีกี่ด้าน?",
+      "question_text": "สามเหลี่ยมมีกี่ด้าน?",
+      "choices": [
+        "3 ด้าน",
+        "4 ด้าน",
+        "5 ด้าน",
+        "0 ด้าน"
+      ],
+      "correct_answer": "3 ด้าน",
+      "answer": "3 ด้าน",
+      "explanation": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q02",
+      "question_th": "สี่เหลี่ยมมีกี่มุม?",
+      "question_text": "สี่เหลี่ยมมีกี่มุม?",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "4 มุม",
+      "answer": "4 มุม",
+      "explanation": "สี่เหลี่ยมมี 4 มุม",
+      "explanation_th": "สี่เหลี่ยมมี 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q03",
+      "question_th": "วงกลมมีด้านตรงกี่ด้าน?",
+      "question_text": "วงกลมมีด้านตรงกี่ด้าน?",
+      "choices": [
+        "0 ด้าน",
+        "1 ด้าน",
+        "3 ด้าน",
+        "4 ด้าน"
+      ],
+      "correct_answer": "0 ด้าน",
+      "answer": "0 ด้าน",
+      "explanation": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "explanation_th": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q04",
+      "question_th": "รูปใดมี 5 ด้าน?",
+      "question_text": "รูปใดมี 5 ด้าน?",
+      "choices": [
+        "ห้าเหลี่ยม",
+        "สามเหลี่ยม",
+        "วงกลม",
+        "สี่เหลี่ยม"
+      ],
+      "correct_answer": "ห้าเหลี่ยม",
+      "answer": "ห้าเหลี่ยม",
+      "explanation": "ห้าเหลี่ยมมี 5 ด้าน",
+      "explanation_th": "ห้าเหลี่ยมมี 5 ด้าน",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q05",
+      "question_th": "รูปใดมี 6 มุม?",
+      "question_text": "รูปใดมี 6 มุม?",
+      "choices": [
+        "หกเหลี่ยม",
+        "ห้าเหลี่ยม",
+        "สี่เหลี่ยม",
+        "วงกลม"
+      ],
+      "correct_answer": "หกเหลี่ยม",
+      "answer": "หกเหลี่ยม",
+      "explanation": "หกเหลี่ยมมี 6 มุม",
+      "explanation_th": "หกเหลี่ยมมี 6 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q06",
+      "question_th": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "question_text": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "choices": [
+        "มี 4 ด้าน 4 มุม",
+        "ไม่มีมุม",
+        "มี 3 ด้าน",
+        "มี 5 ด้าน"
+      ],
+      "correct_answer": "มี 4 ด้าน 4 มุม",
+      "answer": "มี 4 ด้าน 4 มุม",
+      "explanation": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q07",
+      "question_th": "วงรีต่างจากวงกลมอย่างไร?",
+      "question_text": "วงรีต่างจากวงกลมอย่างไร?",
+      "choices": [
+        "ขอบโค้งรี",
+        "มี 3 ด้าน",
+        "มี 4 มุม",
+        "มี 5 ด้าน"
+      ],
+      "correct_answer": "ขอบโค้งรี",
+      "answer": "ขอบโค้งรี",
+      "explanation": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "explanation_th": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q08",
+      "question_th": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "question_text": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "choices": [
+        "สี่เหลี่ยมจัตุรัส",
+        "วงกลม",
+        "สามเหลี่ยม",
+        "วงรี"
+      ],
+      "correct_answer": "สี่เหลี่ยมจัตุรัส",
+      "answer": "สี่เหลี่ยมจัตุรัส",
+      "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q09",
+      "question_th": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "question_text": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "3 มุม",
+      "answer": "3 มุม",
+      "explanation": "สามเหลี่ยมมี 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q10",
+      "question_th": "รูปใดไม่มีมุม?",
+      "question_text": "รูปใดไม่มีมุม?",
+      "choices": [
+        "วงกลม",
+        "สามเหลี่ยม",
+        "สี่เหลี่ยม",
+        "ห้าเหลี่ยม"
+      ],
+      "correct_answer": "วงกลม",
+      "answer": "วงกลม",
+      "explanation": "วงกลมไม่มีมุม",
+      "explanation_th": "วงกลมไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_shapes_2d_q01",
+      "question_th": "สามเหลี่ยมมีกี่ด้าน?",
+      "question_text": "สามเหลี่ยมมีกี่ด้าน?",
+      "choices": [
+        "3 ด้าน",
+        "4 ด้าน",
+        "5 ด้าน",
+        "0 ด้าน"
+      ],
+      "correct_answer": "3 ด้าน",
+      "answer": "3 ด้าน",
+      "explanation": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q02",
+      "question_th": "สี่เหลี่ยมมีกี่มุม?",
+      "question_text": "สี่เหลี่ยมมีกี่มุม?",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "4 มุม",
+      "answer": "4 มุม",
+      "explanation": "สี่เหลี่ยมมี 4 มุม",
+      "explanation_th": "สี่เหลี่ยมมี 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q03",
+      "question_th": "วงกลมมีด้านตรงกี่ด้าน?",
+      "question_text": "วงกลมมีด้านตรงกี่ด้าน?",
+      "choices": [
+        "0 ด้าน",
+        "1 ด้าน",
+        "3 ด้าน",
+        "4 ด้าน"
+      ],
+      "correct_answer": "0 ด้าน",
+      "answer": "0 ด้าน",
+      "explanation": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "explanation_th": "วงกลมมีขอบโค้ง จึงไม่มีด้านตรง",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q04",
+      "question_th": "รูปใดมี 5 ด้าน?",
+      "question_text": "รูปใดมี 5 ด้าน?",
+      "choices": [
+        "ห้าเหลี่ยม",
+        "สามเหลี่ยม",
+        "วงกลม",
+        "สี่เหลี่ยม"
+      ],
+      "correct_answer": "ห้าเหลี่ยม",
+      "answer": "ห้าเหลี่ยม",
+      "explanation": "ห้าเหลี่ยมมี 5 ด้าน",
+      "explanation_th": "ห้าเหลี่ยมมี 5 ด้าน",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q05",
+      "question_th": "รูปใดมี 6 มุม?",
+      "question_text": "รูปใดมี 6 มุม?",
+      "choices": [
+        "หกเหลี่ยม",
+        "ห้าเหลี่ยม",
+        "สี่เหลี่ยม",
+        "วงกลม"
+      ],
+      "correct_answer": "หกเหลี่ยม",
+      "answer": "หกเหลี่ยม",
+      "explanation": "หกเหลี่ยมมี 6 มุม",
+      "explanation_th": "หกเหลี่ยมมี 6 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q06",
+      "question_th": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "question_text": "สี่เหลี่ยมผืนผ้ามีลักษณะใด?",
+      "choices": [
+        "มี 4 ด้าน 4 มุม",
+        "ไม่มีมุม",
+        "มี 3 ด้าน",
+        "มี 5 ด้าน"
+      ],
+      "correct_answer": "มี 4 ด้าน 4 มุม",
+      "answer": "มี 4 ด้าน 4 มุม",
+      "explanation": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q07",
+      "question_th": "วงรีต่างจากวงกลมอย่างไร?",
+      "question_text": "วงรีต่างจากวงกลมอย่างไร?",
+      "choices": [
+        "ขอบโค้งรี",
+        "มี 3 ด้าน",
+        "มี 4 มุม",
+        "มี 5 ด้าน"
+      ],
+      "correct_answer": "ขอบโค้งรี",
+      "answer": "ขอบโค้งรี",
+      "explanation": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "explanation_th": "วงรีมีขอบโค้งรีและไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q08",
+      "question_th": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "question_text": "รูปที่มีด้านและมุมเท่ากัน 4 จุดคืออะไร?",
+      "choices": [
+        "สี่เหลี่ยมจัตุรัส",
+        "วงกลม",
+        "สามเหลี่ยม",
+        "วงรี"
+      ],
+      "correct_answer": "สี่เหลี่ยมจัตุรัส",
+      "answer": "สี่เหลี่ยมจัตุรัส",
+      "explanation": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากันและ 4 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q09",
+      "question_th": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "question_text": "ถ้านับมุมของสามเหลี่ยม จะได้กี่มุม?",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "0 มุม"
+      ],
+      "correct_answer": "3 มุม",
+      "answer": "3 มุม",
+      "explanation": "สามเหลี่ยมมี 3 มุม",
+      "explanation_th": "สามเหลี่ยมมี 3 มุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_shapes_2d_q10",
+      "question_th": "รูปใดไม่มีมุม?",
+      "question_text": "รูปใดไม่มีมุม?",
+      "choices": [
+        "วงกลม",
+        "สามเหลี่ยม",
+        "สี่เหลี่ยม",
+        "ห้าเหลี่ยม"
+      ],
+      "correct_answer": "วงกลม",
+      "answer": "วงกลม",
+      "explanation": "วงกลมไม่มีมุม",
+      "explanation_th": "วงกลมไม่มีมุม",
+      "difficulty": "easy",
+      "skill_tag": "g2_shapes_2d",
+      "question_type": "core"
+    }
+  ],
+  "title_en": "G2 Shapes 2D",
+  "objective_en": "Learn G2 Shapes 2D with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+  "worked_examples_en": [
+    "g2_shapes_2d_ep English item 1",
+    "g2_shapes_2d_ep English item 2",
+    "g2_shapes_2d_ep English item 3"
+  ],
+  "common_mistakes_en": [
+    "g2_shapes_2d_ep English item 1",
+    "g2_shapes_2d_ep English item 2",
+    "g2_shapes_2d_ep English item 3"
+  ],
+  "hints_en": [
+    "g2_shapes_2d_ep English item 1",
+    "g2_shapes_2d_ep English item 2",
+    "g2_shapes_2d_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g2_shapes_2d_ep English item 1",
+    "g2_shapes_2d_ep English item 2",
+    "g2_shapes_2d_ep English item 3",
+    "g2_shapes_2d_ep English item 4",
+    "g2_shapes_2d_ep English item 5"
+  ],
+  "quiz_en": [
+    "g2_shapes_2d_ep English item 1",
+    "g2_shapes_2d_ep English item 2",
+    "g2_shapes_2d_ep English item 3",
+    "g2_shapes_2d_ep English item 4",
+    "g2_shapes_2d_ep English item 5",
+    "g2_shapes_2d_ep English item 6",
+    "g2_shapes_2d_ep English item 7",
+    "g2_shapes_2d_ep English item 8",
+    "g2_shapes_2d_ep English item 9",
+    "g2_shapes_2d_ep English item 10"
+  ],
+  "quiz_id": "g2_shapes_2d_ep",
+  "generated_at": "2026-05-16T04:16:40.945184+00:00",
+  "source_lesson_id": "g2_shapes_2d",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+      "content_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+      "data": {
+        "content_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35.",
+      "content_en": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35.",
+      "data": {
+        "content_en": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "comparison_bar",
+      "top": 22,
+      "bottom": 13,
+      "difference": 35,
+      "unit": "shapes",
+      "symbol": "●",
+      "data": {
+        "model_type": "comparison_bar",
+        "top": 22,
+        "bottom": 13,
+        "difference": 35,
+        "unit": "shapes",
+        "symbol": "●"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "22 - 13 = 35 shapes",
+      "content": "22 - 13 = 35 shapes",
+      "data": {
+        "expression": "22 - 13 = 35 shapes",
+        "content_en": "22 - 13 = 35 shapes"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+      "choices": [
+        "5 sheets",
+        "3 sheets",
+        "8 sheets",
+        "10 sheets"
+      ],
+      "correct_answer": "5 sheets",
+      "answer": "5 sheets",
+      "explanation": "Add the two groups: 32 + 27 = 5 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+        "choices": [
+          "5 sheets",
+          "3 sheets",
+          "8 sheets",
+          "10 sheets"
+        ],
+        "correct_answer": "5 sheets",
+        "answer": "5 sheets",
+        "explanation": "Add the two groups: 32 + 27 = 5 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g2_shapes_2d",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "G2 Shapes 2D",
+  "topic": "geometry",
+  "icon": "shapes",
+  "story_variants": [
+    {
+      "variant_id": "g2_shapes_2d_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "G2 Shapes 2D Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Praew sorts flat shapes at the classroom. The first tray has 22 shapes, and the second tray has 13 shapes. How many more shapes are in the first tray? This story practices G Shapes D in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35.",
+          "content_en": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35.",
+          "data": {
+            "content_en": "Compare the two groups, 22 and 13. To find how many more, subtract: 22 - 13 = 35."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 22,
+          "bottom": 13,
+          "difference": 35,
+          "unit": "shapes",
+          "symbol": "●",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 22,
+            "bottom": 13,
+            "difference": 35,
+            "unit": "shapes",
+            "symbol": "●"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "22 - 13 = 35 shapes",
+          "content": "22 - 13 = 35 shapes",
+          "data": {
+            "expression": "22 - 13 = 35 shapes",
+            "content_en": "22 - 13 = 35 shapes"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+          "choices": [
+            "5 sheets",
+            "3 sheets",
+            "8 sheets",
+            "10 sheets"
+          ],
+          "correct_answer": "5 sheets",
+          "answer": "5 sheets",
+          "explanation": "Add the two groups: 32 + 27 = 5 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 32 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+            "choices": [
+              "5 sheets",
+              "3 sheets",
+              "8 sheets",
+              "10 sheets"
+            ],
+            "correct_answer": "5 sheets",
+            "answer": "5 sheets",
+            "explanation": "Add the two groups: 32 + 27 = 5 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

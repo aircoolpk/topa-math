@@ -51,52 +51,88 @@
   "lesson_variants": [
     {
       "variant_id": "g4_area_perimeter_ep_01",
-      "variant_title_th": "Area of Rectangles Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Area of Rectangles Variant 1",
-      "story_theme_th": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for Area of Rectangles.",
+      "story_theme_th": "",
+      "story_theme_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Area of Rectangles. Use the model to get 30."
+          "title": "Think Story",
+          "content": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+          "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+          "data": {
+            "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
           "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "rows": 7,
+          "cols": 9,
+          "total": 63,
+          "unit": "square units",
+          "symbol": "⬜",
+          "data": {
+            "model_type": "area_model",
+            "rows": 7,
+            "cols": 9,
+            "total": 63,
+            "unit": "square units",
+            "symbol": "⬜"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "7 × 9 = 63 square units",
+          "content": "7 × 9 = 63 square units",
+          "data": {
+            "expression": "7 × 9 = 63 square units",
+            "content_en": "7 × 9 = 63 square units"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+          "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "72 pencils",
+            "70 pencils",
+            "75 pencils",
+            "77 pencils"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "72 pencils",
+          "answer": "72 pencils",
+          "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+            "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+            "choices": [
+              "72 pencils",
+              "70 pencils",
+              "75 pencils",
+              "77 pencils"
+            ],
+            "correct_answer": "72 pencils",
+            "answer": "72 pencils",
+            "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -107,7 +143,7 @@
   "cover_emoji": "📐",
   "cover_color": "orange",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -118,7 +154,7 @@
   "singapore_math_model": {
     "type": "area_model",
     "model_type": "area_model",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -528,317 +564,41 @@
   ],
   "title_en": "Area of Rectangles",
   "objective_en": "Learn Area of Rectangles with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Let's solve this together! Can you solve it?",
+  "story_intro_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: หาเส้นรอบรูปสี่เหลี่ยมผืนผ้า",
-      "question_en": "6 . 10 . ?",
-      "solution_en": "2 × (6 + 10) = 32 . ✅?"
-    },
-    {
-      "title_en": "Example: หาพื้นที่สี่เหลี่ยมจัตุรัส",
-      "question_en": "8 . ?",
-      "solution_en": "8 × 8 = 64 ✅?"
-    },
-    {
-      "title_en": "Example: หาพื้นที่สามเหลี่ยม",
-      "question_en": "10 . 6 . ?",
-      "solution_en": "1/2 × 10 × 6 = 30 ✅?"
-    },
-    {
-      "title_en": "Example: หาพื้นที่สี่เหลี่ยมผืนผ้า",
-      "question_en": "25 . 50 . ?",
-      "solution_en": "25 × 50 = 1,250 ✅?"
-    }
+    "g4_area_perimeter_ep English item 1",
+    "g4_area_perimeter_ep English item 2",
+    "g4_area_perimeter_ep English item 3",
+    "g4_area_perimeter_ep English item 4"
   ],
   "common_mistakes_en": [
-    "Mistake: ใช้สูตรพื้นที่สามเหลี่ยมผิด เช่น ลืม ÷ 2 ทำให้พื้นที่มากเกินไป",
-    "Mistake: ไม่เขียนหน่วยเป็นตารางหน่วย",
-    "Mistake: สับสนระหว่างสูตรเส้นรอบรูปกับพื้นที่"
+    "g4_area_perimeter_ep English item 1",
+    "g4_area_perimeter_ep English item 2",
+    "g4_area_perimeter_ep English item 3"
   ],
   "hints_en": [
-    "Hint: เส้นรอบรูป = รอบนอก = บวกทุกด้าน / พื้นที่ = ขนาดของพื้นผิว",
-    "Hint: สามเหลี่ยมใช้ 1/2 ของสี่เหลี่ยมที่มีฐานและสูงเท่ากัน",
-    "Hint: ตรวจคำตอบโดยประมาณค่า พื้นที่สมเหตุสมผลหรือไม่"
+    "g4_area_perimeter_ep English item 1",
+    "g4_area_perimeter_ep English item 2",
+    "g4_area_perimeter_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: เส้นรอบรูปคือความยาวรอบนอกของรูปร่าง หาผลรวมของทุกด้าน",
-    "Step: สี่เหลี่ยมผืนผ้า เส้นรอบรูป = 2 × (กว้าง + ยาว) พื้นที่ = กว้าง × ยาว",
-    "Step: สี่เหลี่ยมจัตุรัส เส้นรอบรูป = 4 × ด้าน พื้นที่ = ด้าน × ด้าน",
-    "Step: สามเหลี่ยม พื้นที่ = 1/2 × ฐาน × สูง",
-    "Step: หน่วยของพื้นที่ต้องเป็นตารางหน่วย เช่น ตารางเมตร ตารางเซนติเมตร"
+    "g4_area_perimeter_ep English item 1",
+    "g4_area_perimeter_ep English item 2",
+    "g4_area_perimeter_ep English item 3",
+    "g4_area_perimeter_ep English item 4",
+    "g4_area_perimeter_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g4_area_perimeter_q01",
-      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
-      "question_text": "6 . 8 . ?",
-      "choices": [
-        "14 . .?",
-        "28 . .?",
-        "48 . .?",
-        "56 . .?"
-      ],
-      "correct_answer": "48 . .?",
-      "answer": "48 . .?",
-      "explanation": "= 6 × 8 = 48 . .?",
-      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
-      "difficulty": "easy",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "core",
-      "question_en": "6 . 8 . ?",
-      "explanation_en": "= 6 × 8 = 48 . .?",
-      "choices_en": [
-        "14 . .?",
-        "28 . .?",
-        "48 . .?",
-        "56 . .?"
-      ],
-      "answer_en": "48 . .?"
-    },
-    {
-      "question_id": "g4_area_perimeter_q02",
-      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
-      "question_text": "5 . ?",
-      "choices": [
-        "10 .?",
-        "20 .?",
-        "25 .?",
-        "30 .?"
-      ],
-      "correct_answer": "20 .?",
-      "answer": "20 .?",
-      "explanation": "= 5 + 5 + 5 + 5 = 20 .?",
-      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
-      "difficulty": "easy",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "core",
-      "question_en": "5 . ?",
-      "explanation_en": "= 5 + 5 + 5 + 5 = 20 .?",
-      "choices_en": [
-        "10 .?",
-        "20 .?",
-        "25 .?",
-        "30 .?"
-      ],
-      "answer_en": "20 .?"
-    },
-    {
-      "question_id": "g4_area_perimeter_q03",
-      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
-      "question_text": "7 × 4 ?",
-      "choices": [
-        "11",
-        "21",
-        "28",
-        "32"
-      ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "7 × 4 = 28",
-      "explanation_th": "7 × 4 = 28",
-      "difficulty": "easy",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "core",
-      "question_en": "7 × 4 ?",
-      "explanation_en": "7 × 4 = 28",
-      "choices_en": [
-        "11",
-        "21",
-        "28",
-        "32"
-      ],
-      "answer_en": "28"
-    },
-    {
-      "question_id": "g4_area_perimeter_q04",
-      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
-      "question_text": "6 . 8 . ?",
-      "choices": [
-        "14 . .?",
-        "28 . .?",
-        "48 . .?",
-        "56 . .?"
-      ],
-      "correct_answer": "48 . .?",
-      "answer": "48 . .?",
-      "explanation": "= 6 × 8 = 48 . .?",
-      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
-      "difficulty": "medium",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "core",
-      "question_en": "6 . 8 . ?",
-      "explanation_en": "= 6 × 8 = 48 . .?",
-      "choices_en": [
-        "14 . .?",
-        "28 . .?",
-        "48 . .?",
-        "56 . .?"
-      ],
-      "answer_en": "48 . .?"
-    },
-    {
-      "question_id": "g4_area_perimeter_q05",
-      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
-      "question_text": "5 . ?",
-      "choices": [
-        "10 .?",
-        "20 .?",
-        "25 .?",
-        "30 .?"
-      ],
-      "correct_answer": "20 .?",
-      "answer": "20 .?",
-      "explanation": "= 5 + 5 + 5 + 5 = 20 .?",
-      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
-      "difficulty": "medium",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "core",
-      "question_en": "5 . ?",
-      "explanation_en": "= 5 + 5 + 5 + 5 = 20 .?",
-      "choices_en": [
-        "10 .?",
-        "20 .?",
-        "25 .?",
-        "30 .?"
-      ],
-      "answer_en": "20 .?"
-    },
-    {
-      "question_id": "g4_area_perimeter_q06",
-      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
-      "question_text": "7 × 4 ?",
-      "choices": [
-        "11",
-        "21",
-        "28",
-        "32"
-      ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "7 × 4 = 28",
-      "explanation_th": "7 × 4 = 28",
-      "difficulty": "medium",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "core",
-      "question_en": "7 × 4 ?",
-      "explanation_en": "7 × 4 = 28",
-      "choices_en": [
-        "11",
-        "21",
-        "28",
-        "32"
-      ],
-      "answer_en": "28"
-    },
-    {
-      "question_id": "g4_area_perimeter_q07",
-      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
-      "question_text": "6 . 8 . ?",
-      "choices": [
-        "14 . .?",
-        "28 . .?",
-        "48 . .?",
-        "56 . .?"
-      ],
-      "correct_answer": "48 . .?",
-      "answer": "48 . .?",
-      "explanation": "= 6 × 8 = 48 . .?",
-      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
-      "difficulty": "medium",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "core",
-      "question_en": "6 . 8 . ?",
-      "explanation_en": "= 6 × 8 = 48 . .?",
-      "choices_en": [
-        "14 . .?",
-        "28 . .?",
-        "48 . .?",
-        "56 . .?"
-      ],
-      "answer_en": "48 . .?"
-    },
-    {
-      "question_id": "g4_area_perimeter_q08",
-      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
-      "question_text": "5 . ?",
-      "choices": [
-        "10 .?",
-        "20 .?",
-        "25 .?",
-        "30 .?"
-      ],
-      "correct_answer": "20 .?",
-      "answer": "20 .?",
-      "explanation": "= 5 + 5 + 5 + 5 = 20 .?",
-      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
-      "difficulty": "hard",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "challenge",
-      "question_en": "5 . ?",
-      "explanation_en": "= 5 + 5 + 5 + 5 = 20 .?",
-      "choices_en": [
-        "10 .?",
-        "20 .?",
-        "25 .?",
-        "30 .?"
-      ],
-      "answer_en": "20 .?"
-    },
-    {
-      "question_id": "g4_area_perimeter_q09",
-      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
-      "question_text": "7 × 4 ?",
-      "choices": [
-        "11",
-        "21",
-        "28",
-        "32"
-      ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "7 × 4 = 28",
-      "explanation_th": "7 × 4 = 28",
-      "difficulty": "hard",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "challenge",
-      "question_en": "7 × 4 ?",
-      "explanation_en": "7 × 4 = 28",
-      "choices_en": [
-        "11",
-        "21",
-        "28",
-        "32"
-      ],
-      "answer_en": "28"
-    },
-    {
-      "question_id": "g4_area_perimeter_q10",
-      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
-      "question_text": "6 . 8 . ?",
-      "choices": [
-        "14 . .?",
-        "28 . .?",
-        "48 . .?",
-        "56 . .?"
-      ],
-      "correct_answer": "48 . .?",
-      "answer": "48 . .?",
-      "explanation": "= 6 × 8 = 48 . .?",
-      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
-      "difficulty": "hard",
-      "skill_tag": "g4_area_perimeter",
-      "question_type": "challenge",
-      "question_en": "6 . 8 . ?",
-      "explanation_en": "= 6 × 8 = 48 . .?",
-      "choices_en": [
-        "14 . .?",
-        "28 . .?",
-        "48 . .?",
-        "56 . .?"
-      ],
-      "answer_en": "48 . .?"
-    }
+    "g4_area_perimeter_ep English item 1",
+    "g4_area_perimeter_ep English item 2",
+    "g4_area_perimeter_ep English item 3",
+    "g4_area_perimeter_ep English item 4",
+    "g4_area_perimeter_ep English item 5",
+    "g4_area_perimeter_ep English item 6",
+    "g4_area_perimeter_ep English item 7",
+    "g4_area_perimeter_ep English item 8",
+    "g4_area_perimeter_ep English item 9",
+    "g4_area_perimeter_ep English item 10"
   ],
   "quiz_id": "g4_area_perimeter_ep",
   "generated_at": "2026-05-16T04:16:41.614371+00:00",
@@ -848,43 +608,79 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "content_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "data": {
+        "content_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Area of Rectangles. Use the model to get 30."
+      "title": "Think Story",
+      "content": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+      "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+      "data": {
+        "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
       "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
-      "unit": "items",
-      "symbol": "■"
+      "rows": 7,
+      "cols": 9,
+      "total": 63,
+      "unit": "square units",
+      "symbol": "⬜",
+      "data": {
+        "model_type": "area_model",
+        "rows": 7,
+        "cols": 9,
+        "total": 63,
+        "unit": "square units",
+        "symbol": "⬜"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "7 × 9 = 63 square units",
+      "content": "7 × 9 = 63 square units",
+      "data": {
+        "expression": "7 × 9 = 63 square units",
+        "content_en": "7 × 9 = 63 square units"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+      "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "72 pencils",
+        "70 pencils",
+        "75 pencils",
+        "77 pencils"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "72 pencils",
+      "answer": "72 pencils",
+      "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+        "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+        "choices": [
+          "72 pencils",
+          "70 pencils",
+          "75 pencils",
+          "77 pencils"
+        ],
+        "correct_answer": "72 pencils",
+        "answer": "72 pencils",
+        "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g4_area_perimeter",
@@ -896,87 +692,94 @@
   "story_variants": [
     {
       "variant_id": "g4_area_perimeter_ep_01",
-      "status": "approved",
-      "title": "Area of Rectangles Variant 1",
-      "story": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Area of Rectangles. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Area of Rectangles.",
+      "variant_title_th": "",
+      "variant_title_en": "Area of Rectangles Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Area of Rectangles with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Time arranges bus tickets at the bus stop in 7 rows. Each row has 9 items. The rows are equal, so Time wants to know the total number of square units. This story practices Area of Rectangles in the library with wooden trays before lending items to friends. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Area of Rectangles. Use the model to get 30."
+          "title": "Think Story",
+          "content": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+          "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+          "data": {
+            "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
           "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "rows": 7,
+          "cols": 9,
+          "total": 63,
+          "unit": "square units",
+          "symbol": "⬜",
+          "data": {
+            "model_type": "area_model",
+            "rows": 7,
+            "cols": 9,
+            "total": 63,
+            "unit": "square units",
+            "symbol": "⬜"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "7 × 9 = 63 square units",
+          "content": "7 × 9 = 63 square units",
+          "data": {
+            "expression": "7 × 9 = 63 square units",
+            "content_en": "7 × 9 = 63 square units"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+          "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "72 pencils",
+            "70 pencils",
+            "75 pencils",
+            "77 pencils"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "72 pencils",
+          "answer": "72 pencils",
+          "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+            "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+            "choices": [
+              "72 pencils",
+              "70 pencils",
+              "75 pencils",
+              "77 pencils"
+            ],
+            "correct_answer": "72 pencils",
+            "answer": "72 pencils",
+            "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Area of Rectangles.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

@@ -1,0 +1,1059 @@
+{
+  "lesson_id": "g2_money_change_ep",
+  "id": "g2_money_change_ep",
+  "grade_level": 2,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "เงินทอนคือส่วนต่างระหว่างเงินที่จ่ายกับราคาสินค้า",
+    "วิธีคิดเงินทอน: เอาราคาสินค้าลบออกจากเงินที่จ่าย หรือนับขึ้นจากราคาสินค้าไปถึงเงินที่จ่าย",
+    "วิธีนับขึ้น: เริ่มที่ราคา 23 บาท นับขึ้นไปจนครบ 50 บาท",
+    "23 → 24 → 25 → ... → 30 → 35 → 40 → 45 → 50 รวม 27 บาท คือเงินทอน",
+    "แยกเงินทอนเป็นธนบัตรและเหรียญให้ถูกต้อง เช่น 27 บาท = 20 + 5 + 2"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ทอนเงินซื้อขนม",
+      "question_th": "ขนมราคา 15 บาท จ่าย 20 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "20 - 15 = 5 บาท ✅"
+    },
+    {
+      "title_th": "ทอนเงินซื้อดินสอ",
+      "question_th": "ดินสอราคา 37 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "50 - 37 = 13 บาท ✅"
+    },
+    {
+      "title_th": "ทอนเงินซื้อหนังสือ",
+      "question_th": "หนังสือราคา 68 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "100 - 68 = 32 บาท ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ลบสลับด้าน เช่น 50 - 37 = 23 แทนที่จะเป็น 13",
+    "ไม่แยกเงินทอนเป็นธนบัตรเหรียญถูกต้อง",
+    "นับขึ้นผิดจำนวนขั้น ทำให้ได้เงินทอนไม่ถูกต้อง"
+  ],
+  "hints": [
+    "วิธีง่ายที่สุด: เงินทอน = เงินที่จ่าย - ราคาสินค้า",
+    "ถ้างง ให้นับขึ้นจากราคาสินค้าไปถึงเงินที่จ่าย จะช่วยให้เห็นภาพ",
+    "ตรวจคำตอบโดยเอาเงินทอนบวกราคาสินค้า ต้องได้เงินที่จ่าย"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_money_change",
+  "skill_code": "g2_money_change_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g2_money_change_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Money and Change Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+          "content_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+          "data": {
+            "content_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?"
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht.",
+          "content_en": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht.",
+          "data": {
+            "content_en": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "money_change",
+          "start": 150,
+          "spent": 35,
+          "result": 115,
+          "unit": "baht",
+          "symbol": "💵",
+          "item": "cookies",
+          "data": {
+            "model_type": "money_change",
+            "start": 150,
+            "spent": 35,
+            "result": 115,
+            "unit": "baht",
+            "symbol": "💵",
+            "item": "cookies"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "150 - 35 = 115 baht",
+          "content": "150 - 35 = 115 baht",
+          "data": {
+            "expression": "150 - 35 = 115 baht",
+            "content_en": "150 - 35 = 115 baht"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+          "question_en": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+          "choices": [
+            "88 baht",
+            "86 baht",
+            "91 baht",
+            "93 baht"
+          ],
+          "correct_answer": "88 baht",
+          "answer": "88 baht",
+          "explanation": "Subtract the cost: 120 - 32 = 88 baht.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+            "question_en": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+            "choices": [
+              "88 baht",
+              "86 baht",
+              "91 baht",
+              "93 baht"
+            ],
+            "correct_answer": "88 baht",
+            "answer": "88 baht",
+            "explanation": "Subtract the cost: 120 - 32 = 88 baht.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เงินทอน",
+  "preview_subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "cover_theme": "money_change",
+  "cover_emoji": "💰",
+  "cover_color": "yellow",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "learning_objective_th": "นักเรียนสามารถคำนวณเงินทอนเมื่อซื้อของได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสซื้อขนมราคา 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท? 🛒💰",
+  "concept_explanation_th": "เงินทอนหาได้จาก เงินที่จ่าย - ราคาสินค้า",
+  "singapore_math_model": {
+    "type": "money_change",
+    "model_type": "money_change",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 6
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 4
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เงินทอนคิดง่ายนิดเดียว ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ทอนเงินซื้อขนม",
+      "question_th": "ขนมราคา 15 บาท จ่าย 20 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "20 - 15 = 5 บาท ✅"
+    },
+    {
+      "title_th": "ทอนเงินซื้อดินสอ",
+      "question_th": "ดินสอราคา 37 บาท จ่าย 50 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "50 - 37 = 13 บาท ✅"
+    },
+    {
+      "title_th": "ทอนเงินซื้อหนังสือ",
+      "question_th": "หนังสือราคา 68 บาท จ่าย 100 บาท ได้เงินทอนกี่บาท?",
+      "solution_th": "100 - 68 = 32 บาท ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ลบสลับด้าน เช่น 50 - 37 = 23 แทนที่จะเป็น 13",
+    "ไม่แยกเงินทอนเป็นธนบัตรเหรียญถูกต้อง",
+    "นับขึ้นผิดจำนวนขั้น ทำให้ได้เงินทอนไม่ถูกต้อง"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_money_change_q01",
+      "question_th": "พี่อลิสซื้ออาหารกล่อง 35 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้ออาหารกล่อง 35 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "13 บาท",
+        "15 บาท",
+        "16 บาท",
+        "18 บาท"
+      ],
+      "correct_answer": "15 บาท",
+      "answer": "15 บาท",
+      "explanation": "50 - 35 = 15 บาท จึงได้เงินทอน 15 บาท",
+      "explanation_th": "50 - 35 = 15 บาท จึงได้เงินทอน 15 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q02",
+      "question_th": "พี่อลิสซื้อผลไม้ 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อผลไม้ 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "25 บาท",
+        "27 บาท",
+        "28 บาท",
+        "30 บาท"
+      ],
+      "correct_answer": "27 บาท",
+      "answer": "27 บาท",
+      "explanation": "50 - 23 = 27 บาท จึงได้เงินทอน 27 บาท",
+      "explanation_th": "50 - 23 = 27 บาท จึงได้เงินทอน 27 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q03",
+      "question_th": "พี่อลิสซื้อขนม 45 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อขนม 45 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "53 บาท",
+        "55 บาท",
+        "56 บาท",
+        "58 บาท"
+      ],
+      "correct_answer": "55 บาท",
+      "answer": "55 บาท",
+      "explanation": "100 - 45 = 55 บาท จึงได้เงินทอน 55 บาท",
+      "explanation_th": "100 - 45 = 55 บาท จึงได้เงินทอน 55 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q04",
+      "question_th": "พี่อลิสซื้อสมุด 68 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อสมุด 68 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "30 บาท",
+        "32 บาท",
+        "33 บาท",
+        "35 บาท"
+      ],
+      "correct_answer": "32 บาท",
+      "answer": "32 บาท",
+      "explanation": "100 - 68 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "explanation_th": "100 - 68 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q05",
+      "question_th": "พี่อลิสซื้อน้ำผลไม้ 18 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อน้ำผลไม้ 18 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "30 บาท",
+        "32 บาท",
+        "33 บาท",
+        "35 บาท"
+      ],
+      "correct_answer": "32 บาท",
+      "answer": "32 บาท",
+      "explanation": "50 - 18 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "explanation_th": "50 - 18 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q06",
+      "question_th": "พี่อลิสซื้ออุปกรณ์เรียน 72 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้ออุปกรณ์เรียน 72 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "26 บาท",
+        "28 บาท",
+        "29 บาท",
+        "31 บาท"
+      ],
+      "correct_answer": "28 บาท",
+      "answer": "28 บาท",
+      "explanation": "100 - 72 = 28 บาท จึงได้เงินทอน 28 บาท",
+      "explanation_th": "100 - 72 = 28 บาท จึงได้เงินทอน 28 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q07",
+      "question_th": "พี่อลิสซื้อดินสอสี 40 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อดินสอสี 40 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "8 บาท",
+        "10 บาท",
+        "11 บาท",
+        "13 บาท"
+      ],
+      "correct_answer": "10 บาท",
+      "answer": "10 บาท",
+      "explanation": "50 - 40 = 10 บาท จึงได้เงินทอน 10 บาท",
+      "explanation_th": "50 - 40 = 10 บาท จึงได้เงินทอน 10 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q08",
+      "question_th": "พี่อลิสซื้อหนังสือ 59 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อหนังสือ 59 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "39 บาท",
+        "41 บาท",
+        "42 บาท",
+        "44 บาท"
+      ],
+      "correct_answer": "41 บาท",
+      "answer": "41 บาท",
+      "explanation": "100 - 59 = 41 บาท จึงได้เงินทอน 41 บาท",
+      "explanation_th": "100 - 59 = 41 บาท จึงได้เงินทอน 41 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q09",
+      "question_th": "พี่อลิสซื้อข้าวกล่อง 29 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อข้าวกล่อง 29 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "19 บาท",
+        "21 บาท",
+        "22 บาท",
+        "24 บาท"
+      ],
+      "correct_answer": "21 บาท",
+      "answer": "21 บาท",
+      "explanation": "50 - 29 = 21 บาท จึงได้เงินทอน 21 บาท",
+      "explanation_th": "50 - 29 = 21 บาท จึงได้เงินทอน 21 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q10",
+      "question_th": "พี่อลิสซื้อสีไม้ 86 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อสีไม้ 86 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "12 บาท",
+        "14 บาท",
+        "15 บาท",
+        "17 บาท"
+      ],
+      "correct_answer": "14 บาท",
+      "answer": "14 บาท",
+      "explanation": "100 - 86 = 14 บาท จึงได้เงินทอน 14 บาท",
+      "explanation_th": "100 - 86 = 14 บาท จึงได้เงินทอน 14 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_money_change_q01",
+      "question_th": "พี่อลิสซื้ออาหารกล่อง 35 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้ออาหารกล่อง 35 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "13 บาท",
+        "15 บาท",
+        "16 บาท",
+        "18 บาท"
+      ],
+      "correct_answer": "15 บาท",
+      "answer": "15 บาท",
+      "explanation": "50 - 35 = 15 บาท จึงได้เงินทอน 15 บาท",
+      "explanation_th": "50 - 35 = 15 บาท จึงได้เงินทอน 15 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q02",
+      "question_th": "พี่อลิสซื้อผลไม้ 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อผลไม้ 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "25 บาท",
+        "27 บาท",
+        "28 บาท",
+        "30 บาท"
+      ],
+      "correct_answer": "27 บาท",
+      "answer": "27 บาท",
+      "explanation": "50 - 23 = 27 บาท จึงได้เงินทอน 27 บาท",
+      "explanation_th": "50 - 23 = 27 บาท จึงได้เงินทอน 27 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q03",
+      "question_th": "พี่อลิสซื้อขนม 45 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อขนม 45 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "53 บาท",
+        "55 บาท",
+        "56 บาท",
+        "58 บาท"
+      ],
+      "correct_answer": "55 บาท",
+      "answer": "55 บาท",
+      "explanation": "100 - 45 = 55 บาท จึงได้เงินทอน 55 บาท",
+      "explanation_th": "100 - 45 = 55 บาท จึงได้เงินทอน 55 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q04",
+      "question_th": "พี่อลิสซื้อสมุด 68 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อสมุด 68 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "30 บาท",
+        "32 บาท",
+        "33 บาท",
+        "35 บาท"
+      ],
+      "correct_answer": "32 บาท",
+      "answer": "32 บาท",
+      "explanation": "100 - 68 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "explanation_th": "100 - 68 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q05",
+      "question_th": "พี่อลิสซื้อน้ำผลไม้ 18 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อน้ำผลไม้ 18 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "30 บาท",
+        "32 บาท",
+        "33 บาท",
+        "35 บาท"
+      ],
+      "correct_answer": "32 บาท",
+      "answer": "32 บาท",
+      "explanation": "50 - 18 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "explanation_th": "50 - 18 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q06",
+      "question_th": "พี่อลิสซื้ออุปกรณ์เรียน 72 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้ออุปกรณ์เรียน 72 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "26 บาท",
+        "28 บาท",
+        "29 บาท",
+        "31 บาท"
+      ],
+      "correct_answer": "28 บาท",
+      "answer": "28 บาท",
+      "explanation": "100 - 72 = 28 บาท จึงได้เงินทอน 28 บาท",
+      "explanation_th": "100 - 72 = 28 บาท จึงได้เงินทอน 28 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q07",
+      "question_th": "พี่อลิสซื้อดินสอสี 40 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อดินสอสี 40 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "8 บาท",
+        "10 บาท",
+        "11 บาท",
+        "13 บาท"
+      ],
+      "correct_answer": "10 บาท",
+      "answer": "10 บาท",
+      "explanation": "50 - 40 = 10 บาท จึงได้เงินทอน 10 บาท",
+      "explanation_th": "50 - 40 = 10 บาท จึงได้เงินทอน 10 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q08",
+      "question_th": "พี่อลิสซื้อหนังสือ 59 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อหนังสือ 59 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "39 บาท",
+        "41 บาท",
+        "42 บาท",
+        "44 บาท"
+      ],
+      "correct_answer": "41 บาท",
+      "answer": "41 บาท",
+      "explanation": "100 - 59 = 41 บาท จึงได้เงินทอน 41 บาท",
+      "explanation_th": "100 - 59 = 41 บาท จึงได้เงินทอน 41 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q09",
+      "question_th": "พี่อลิสซื้อข้าวกล่อง 29 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อข้าวกล่อง 29 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "19 บาท",
+        "21 บาท",
+        "22 บาท",
+        "24 บาท"
+      ],
+      "correct_answer": "21 บาท",
+      "answer": "21 บาท",
+      "explanation": "50 - 29 = 21 บาท จึงได้เงินทอน 21 บาท",
+      "explanation_th": "50 - 29 = 21 บาท จึงได้เงินทอน 21 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_money_change_q10",
+      "question_th": "พี่อลิสซื้อสีไม้ 86 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "พี่อลิสซื้อสีไม้ 86 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "choices": [
+        "12 บาท",
+        "14 บาท",
+        "15 บาท",
+        "17 บาท"
+      ],
+      "correct_answer": "14 บาท",
+      "answer": "14 บาท",
+      "explanation": "100 - 86 = 14 บาท จึงได้เงินทอน 14 บาท",
+      "explanation_th": "100 - 86 = 14 บาท จึงได้เงินทอน 14 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core"
+    }
+  ],
+  "title_en": "Money and Change",
+  "objective_en": "Learn Money and Change with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+  "worked_examples_en": [
+    {
+      "title_en": "g2_money_change_ep English content pending review",
+      "question_en": "15 20 ?",
+      "solution_en": "20 - 15 = 5 ✅?"
+    },
+    {
+      "title_en": "g2_money_change_ep English content pending review",
+      "question_en": "pencils 37 50 ?",
+      "solution_en": "50 - 37 = 13 ✅?"
+    },
+    {
+      "title_en": "g2_money_change_ep English content pending review",
+      "question_en": "68 100 ?",
+      "solution_en": "100 - 68 = 32 ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ลบสลับด้าน เช่น 50 - 37 = 23 แทนที่จะเป็น 13",
+    "Mistake: ไม่แยกเงินทอนเป็นธนบัตรเหรียญถูกต้อง",
+    "Mistake: นับขึ้นผิดจำนวนขั้น ทำให้ได้เงินทอนไม่ถูกต้อง"
+  ],
+  "hints_en": [
+    "Hint: วิธีง่ายที่สุด: เงินทอน = เงินที่จ่าย - ราคาสินค้า",
+    "Hint: ถ้างง ให้นับขึ้นจากราคาสินค้าไปถึงเงินที่จ่าย จะช่วยให้เห็นภาพ",
+    "Hint: ตรวจคำตอบโดยเอาเงินทอนบวกราคาสินค้า ต้องได้เงินที่จ่าย"
+  ],
+  "explanation_steps_en": [
+    "Step: เงินทอนคือส่วนต่างระหว่างเงินที่จ่ายกับราคาสินค้า",
+    "Step: วิธีคิดเงินทอน: เอาราคาสินค้าลบออกจากเงินที่จ่าย หรือนับขึ้นจากราคาสินค้าไปถึงเงินที่จ่าย",
+    "Step: วิธีนับขึ้น: เริ่มที่ราคา 23 บาท นับขึ้นไปจนครบ 50 บาท",
+    "Step: 23 → 24 → 25 → ... → 30 → 35 → 40 → 45 → 50 รวม 27 บาท คือเงินทอน",
+    "Step: แยกเงินทอนเป็นธนบัตรและเหรียญให้ถูกต้อง เช่น 27 บาท = 20 + 5 + 2"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g2_money_change_q01",
+      "question_th": "พี่อลิสซื้ออาหารกล่อง 35 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "35 50 ?",
+      "choices": [
+        "13?",
+        "15?",
+        "16?",
+        "18?"
+      ],
+      "correct_answer": "15?",
+      "answer": "15?",
+      "explanation": "50 - 35 = 15 15?",
+      "explanation_th": "50 - 35 = 15 บาท จึงได้เงินทอน 15 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "35 50 ?",
+      "explanation_en": "50 - 35 = 15 15?",
+      "choices_en": [
+        "13?",
+        "15?",
+        "16?",
+        "18?"
+      ],
+      "answer_en": "15?"
+    },
+    {
+      "question_id": "g2_money_change_q02",
+      "question_th": "พี่อลิสซื้อผลไม้ 23 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "fruits 23 50 ?",
+      "choices": [
+        "25?",
+        "27?",
+        "28?",
+        "30?"
+      ],
+      "correct_answer": "27?",
+      "answer": "27?",
+      "explanation": "50 - 23 = 27 27?",
+      "explanation_th": "50 - 23 = 27 บาท จึงได้เงินทอน 27 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "fruits 23 50 ?",
+      "explanation_en": "50 - 23 = 27 27?",
+      "choices_en": [
+        "25?",
+        "27?",
+        "28?",
+        "30?"
+      ],
+      "answer_en": "27?"
+    },
+    {
+      "question_id": "g2_money_change_q03",
+      "question_th": "พี่อลิสซื้อขนม 45 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "45 100 ?",
+      "choices": [
+        "53?",
+        "55?",
+        "56?",
+        "58?"
+      ],
+      "correct_answer": "55?",
+      "answer": "55?",
+      "explanation": "100 - 45 = 55 55?",
+      "explanation_th": "100 - 45 = 55 บาท จึงได้เงินทอน 55 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "45 100 ?",
+      "explanation_en": "100 - 45 = 55 55?",
+      "choices_en": [
+        "53?",
+        "55?",
+        "56?",
+        "58?"
+      ],
+      "answer_en": "55?"
+    },
+    {
+      "question_id": "g2_money_change_q04",
+      "question_th": "พี่อลิสซื้อสมุด 68 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "68 100 ?",
+      "choices": [
+        "30?",
+        "32?",
+        "33?",
+        "35?"
+      ],
+      "correct_answer": "32?",
+      "answer": "32?",
+      "explanation": "100 - 68 = 32 32?",
+      "explanation_th": "100 - 68 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "68 100 ?",
+      "explanation_en": "100 - 68 = 32 32?",
+      "choices_en": [
+        "30?",
+        "32?",
+        "33?",
+        "35?"
+      ],
+      "answer_en": "32?"
+    },
+    {
+      "question_id": "g2_money_change_q05",
+      "question_th": "พี่อลิสซื้อน้ำผลไม้ 18 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "fruits 18 50 ?",
+      "choices": [
+        "30?",
+        "32?",
+        "33?",
+        "35?"
+      ],
+      "correct_answer": "32?",
+      "answer": "32?",
+      "explanation": "50 - 18 = 32 32?",
+      "explanation_th": "50 - 18 = 32 บาท จึงได้เงินทอน 32 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "fruits 18 50 ?",
+      "explanation_en": "50 - 18 = 32 32?",
+      "choices_en": [
+        "30?",
+        "32?",
+        "33?",
+        "35?"
+      ],
+      "answer_en": "32?"
+    },
+    {
+      "question_id": "g2_money_change_q06",
+      "question_th": "พี่อลิสซื้ออุปกรณ์เรียน 72 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "72 100 ?",
+      "choices": [
+        "26?",
+        "28?",
+        "29?",
+        "31?"
+      ],
+      "correct_answer": "28?",
+      "answer": "28?",
+      "explanation": "100 - 72 = 28 28?",
+      "explanation_th": "100 - 72 = 28 บาท จึงได้เงินทอน 28 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "72 100 ?",
+      "explanation_en": "100 - 72 = 28 28?",
+      "choices_en": [
+        "26?",
+        "28?",
+        "29?",
+        "31?"
+      ],
+      "answer_en": "28?"
+    },
+    {
+      "question_id": "g2_money_change_q07",
+      "question_th": "พี่อลิสซื้อดินสอสี 40 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "pencils 40 50 ?",
+      "choices": [
+        "8?",
+        "10?",
+        "11?",
+        "13?"
+      ],
+      "correct_answer": "10?",
+      "answer": "10?",
+      "explanation": "50 - 40 = 10 10?",
+      "explanation_th": "50 - 40 = 10 บาท จึงได้เงินทอน 10 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "pencils 40 50 ?",
+      "explanation_en": "50 - 40 = 10 10?",
+      "choices_en": [
+        "8?",
+        "10?",
+        "11?",
+        "13?"
+      ],
+      "answer_en": "10?"
+    },
+    {
+      "question_id": "g2_money_change_q08",
+      "question_th": "พี่อลิสซื้อหนังสือ 59 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "59 100 ?",
+      "choices": [
+        "39?",
+        "41?",
+        "42?",
+        "44?"
+      ],
+      "correct_answer": "41?",
+      "answer": "41?",
+      "explanation": "100 - 59 = 41 41?",
+      "explanation_th": "100 - 59 = 41 บาท จึงได้เงินทอน 41 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "59 100 ?",
+      "explanation_en": "100 - 59 = 41 41?",
+      "choices_en": [
+        "39?",
+        "41?",
+        "42?",
+        "44?"
+      ],
+      "answer_en": "41?"
+    },
+    {
+      "question_id": "g2_money_change_q09",
+      "question_th": "พี่อลิสซื้อข้าวกล่อง 29 บาท จ่ายเงิน 50 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "29 50 ?",
+      "choices": [
+        "19?",
+        "21?",
+        "22?",
+        "24?"
+      ],
+      "correct_answer": "21?",
+      "answer": "21?",
+      "explanation": "50 - 29 = 21 21?",
+      "explanation_th": "50 - 29 = 21 บาท จึงได้เงินทอน 21 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "29 50 ?",
+      "explanation_en": "50 - 29 = 21 21?",
+      "choices_en": [
+        "19?",
+        "21?",
+        "22?",
+        "24?"
+      ],
+      "answer_en": "21?"
+    },
+    {
+      "question_id": "g2_money_change_q10",
+      "question_th": "พี่อลิสซื้อสีไม้ 86 บาท จ่ายเงิน 100 บาท ได้เงินทอนกี่บาท?",
+      "question_text": "86 100 ?",
+      "choices": [
+        "12?",
+        "14?",
+        "15?",
+        "17?"
+      ],
+      "correct_answer": "14?",
+      "answer": "14?",
+      "explanation": "100 - 86 = 14 14?",
+      "explanation_th": "100 - 86 = 14 บาท จึงได้เงินทอน 14 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g2_money_change",
+      "question_type": "core",
+      "question_en": "86 100 ?",
+      "explanation_en": "100 - 86 = 14 14?",
+      "choices_en": [
+        "12?",
+        "14?",
+        "15?",
+        "17?"
+      ],
+      "answer_en": "14?"
+    }
+  ],
+  "quiz_id": "g2_money_change_ep",
+  "generated_at": "2026-05-16T04:16:40.902405+00:00",
+  "source_lesson_id": "g2_money_change",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+      "content_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+      "data": {
+        "content_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht.",
+      "content_en": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht.",
+      "data": {
+        "content_en": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "money_change",
+      "start": 150,
+      "spent": 35,
+      "result": 115,
+      "unit": "baht",
+      "symbol": "💵",
+      "item": "cookies",
+      "data": {
+        "model_type": "money_change",
+        "start": 150,
+        "spent": 35,
+        "result": 115,
+        "unit": "baht",
+        "symbol": "💵",
+        "item": "cookies"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "150 - 35 = 115 baht",
+      "content": "150 - 35 = 115 baht",
+      "data": {
+        "expression": "150 - 35 = 115 baht",
+        "content_en": "150 - 35 = 115 baht"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+      "question_en": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+      "choices": [
+        "88 baht",
+        "86 baht",
+        "91 baht",
+        "93 baht"
+      ],
+      "correct_answer": "88 baht",
+      "answer": "88 baht",
+      "explanation": "Subtract the cost: 120 - 32 = 88 baht.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+        "question_en": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+        "choices": [
+          "88 baht",
+          "86 baht",
+          "91 baht",
+          "93 baht"
+        ],
+        "correct_answer": "88 baht",
+        "answer": "88 baht",
+        "explanation": "Subtract the cost: 120 - 32 = 88 baht.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g2_money_change",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Money and Change",
+  "topic": "decimal",
+  "icon": "coins",
+  "story_variants": [
+    {
+      "variant_id": "g2_money_change_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Money and Change Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+          "content_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?",
+          "data": {
+            "content_en": "Ton has 150 baht in paper plates. At the classroom, Ton buys cookies for 35 baht. How much money is left after paying?"
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht.",
+          "content_en": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht.",
+          "data": {
+            "content_en": "The story starts with 150 baht and spends 35 baht. We subtract to find the change: 150 - 35 = 115 baht."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "money_change",
+          "start": 150,
+          "spent": 35,
+          "result": 115,
+          "unit": "baht",
+          "symbol": "💵",
+          "item": "cookies",
+          "data": {
+            "model_type": "money_change",
+            "start": 150,
+            "spent": 35,
+            "result": 115,
+            "unit": "baht",
+            "symbol": "💵",
+            "item": "cookies"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "150 - 35 = 115 baht",
+          "content": "150 - 35 = 115 baht",
+          "data": {
+            "expression": "150 - 35 = 115 baht",
+            "content_en": "150 - 35 = 115 baht"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+          "question_en": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+          "choices": [
+            "88 baht",
+            "86 baht",
+            "91 baht",
+            "93 baht"
+          ],
+          "correct_answer": "88 baht",
+          "answer": "88 baht",
+          "explanation": "Subtract the cost: 120 - 32 = 88 baht.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+            "question_en": "Nan has 120 baht. She buys a notebook for 32 baht. How much money is left?",
+            "choices": [
+              "88 baht",
+              "86 baht",
+              "91 baht",
+              "93 baht"
+            ],
+            "correct_answer": "88 baht",
+            "answer": "88 baht",
+            "explanation": "Subtract the cost: 120 - 32 = 88 baht.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

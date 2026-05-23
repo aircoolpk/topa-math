@@ -1,0 +1,785 @@
+{
+  "lesson_id": "g5_volume_area_ep",
+  "id": "g5_volume_area_ep",
+  "grade_level": 5,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "ปริมาตรคือจำนวนลูกบาศก์ที่บรรจุในรูปทรง ใช้หน่วย ลูกบาศก์เซนติเมตร (ซม.³) หรือ ลูกบาศก์เมตร (ม.³)",
+    "ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง",
+    "ปริมาตรลูกบาศก์ = ด้าน × ด้าน × ด้าน",
+    "พื้นที่ผิวคือผลรวมของพื้นที่ทุกด้านของรูปทรง ใช้หน่วยตารางหน่วย",
+    "1 ลิตร = 1,000 มิลลิลิตร = 1,000 ลูกบาศก์เซนติเมตร"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "หาปริมาตรลูกบาศก์",
+      "question_th": "กล่องทรงลูกบาศก์มีด้านยาว 5 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "5 × 5 × 5 = 125 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาปริมาตรปริซึมสี่เหลี่ยม",
+      "question_th": "ตู้ปลากว้าง 50 ซม. ยาว 30 ซม. สูง 40 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "50 × 30 × 40 = 60,000 ลูกบาศก์เซนติเมตร = 60 ลิตร ✅"
+    },
+    {
+      "title_th": "เปลี่ยนหน่วยปริมาตร",
+      "question_th": "2 ลิตร เท่ากับกี่ลูกบาศก์เซนติเมตร?",
+      "solution_th": "2,000 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาพื้นที่ผิวลูกบาศก์",
+      "question_th": "ลูกบาศก์มีด้านยาว 4 ซม. มีพื้นที่ผิวเท่าไหร่?",
+      "solution_th": "6 × (4 × 4) = 96 ตารางเซนติเมตร ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนระหว่างปริมาตรกับพื้นที่ ปริมาตรใช้สูตรกว้าง×ยาว×สูง พื้นที่ใช้กว้าง×ยาว",
+    "ไม่เข้าใจว่าปริมาตรต้องเป็นลูกบาศก์หน่วย",
+    "เปลี่ยนลิตรเป็นลูกบาศก์เซนติเมตรผิด โดยคูณหรือหารด้วย 1,000 สลับกัน"
+  ],
+  "hints": [
+    "ปริมาตร = กี่ลูกบาศก์บรรจุได้ พื้นที่ = กี่ตารางหน่วยปูได้",
+    "จำว่า 1 ลิตร = 1,000 มิลลิลิตร = 1,000 ลูกบาศก์เซนติเมตร",
+    "ลูกบาศก์มี 6 ด้าน พื้นที่ผิว = 6 × พื้นที่ด้านหนึ่งด้าน"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g5_volume_area",
+  "skill_code": "g5_volume_area_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g5_volume_area_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Area of Rectangles Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+          "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+          "data": {
+            "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "area_model",
+          "rows": 7,
+          "cols": 9,
+          "total": 63,
+          "unit": "square units",
+          "symbol": "⬜",
+          "data": {
+            "model_type": "area_model",
+            "rows": 7,
+            "cols": 9,
+            "total": 63,
+            "unit": "square units",
+            "symbol": "⬜"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "7 × 9 = 63 square units",
+          "content": "7 × 9 = 63 square units",
+          "data": {
+            "expression": "7 × 9 = 63 square units",
+            "content_en": "7 × 9 = 63 square units"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+          "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+          "choices": [
+            "72 pencils",
+            "70 pencils",
+            "75 pencils",
+            "77 pencils"
+          ],
+          "correct_answer": "72 pencils",
+          "answer": "72 pencils",
+          "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+            "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+            "choices": [
+              "72 pencils",
+              "70 pencils",
+              "75 pencils",
+              "77 pencils"
+            ],
+            "correct_answer": "72 pencils",
+            "answer": "72 pencils",
+            "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ปริมาตร",
+  "preview_subtitle_th": "วัดพื้นที่และเส้นรอบ",
+  "cover_theme": "volume_g5",
+  "cover_emoji": "📦",
+  "cover_color": "purple",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "วัดพื้นที่และเส้นรอบ",
+  "learning_objective_th": "นักเรียนสามารถหาปริมาตรของปริซึมสี่เหลี่ยมและลูกบาศก์ได้ และเข้าใจความแตกต่างระหว่างปริมาตรกับพื้นที่",
+  "lesson_intro_th": "ตู้ปลาใบหนึ่งกว้าง 50 ซม. ยาว 30 ซม. สูง 40 ซม. จะใส่น้ำได้กี่ลิตร? 🐠",
+  "concept_explanation_th": "ปริมาตรคือจำนวนลูกบาศก์ที่บรรจุในรูปทรง ใช้หน่วย ลูกบาศก์เซนติเมตร (ซม.³) หรือ ลูกบาศก์เมตร (ม.³) ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง ปริมาตรลูกบาศก์ = ด้าน × ด้าน × ด้าน พื้นที่ผิวคือผลรวมของพื้นที่ทุกด้านของรูปทรง ใช้หน่วยตารางหน่วย 1 ลิตร = 1,000 มิลลิลิตร = 1,000 ลูกบาศก์เซนติเมตร",
+  "singapore_math_model": {
+    "type": "area_model",
+    "model_type": "area_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "area_model",
+    "rows": 5,
+    "columns": 8,
+    "total": 40,
+    "label_th": "แผนภาพพื้นที่แบบช่อง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ปริมาตรกับพื้นที่ผิว ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "หาปริมาตรลูกบาศก์",
+      "question_th": "กล่องทรงลูกบาศก์มีด้านยาว 5 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "5 × 5 × 5 = 125 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาปริมาตรปริซึมสี่เหลี่ยม",
+      "question_th": "ตู้ปลากว้าง 50 ซม. ยาว 30 ซม. สูง 40 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "50 × 30 × 40 = 60,000 ลูกบาศก์เซนติเมตร = 60 ลิตร ✅"
+    },
+    {
+      "title_th": "เปลี่ยนหน่วยปริมาตร",
+      "question_th": "2 ลิตร เท่ากับกี่ลูกบาศก์เซนติเมตร?",
+      "solution_th": "2,000 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาพื้นที่ผิวลูกบาศก์",
+      "question_th": "ลูกบาศก์มีด้านยาว 4 ซม. มีพื้นที่ผิวเท่าไหร่?",
+      "solution_th": "6 × (4 × 4) = 96 ตารางเซนติเมตร ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนระหว่างปริมาตรกับพื้นที่ ปริมาตรใช้สูตรกว้าง×ยาว×สูง พื้นที่ใช้กว้าง×ยาว",
+    "ไม่เข้าใจว่าปริมาตรต้องเป็นลูกบาศก์หน่วย",
+    "เปลี่ยนลิตรเป็นลูกบาศก์เซนติเมตรผิด โดยคูณหรือหารด้วย 1,000 สลับกัน"
+  ],
+  "questions": [
+    {
+      "question_id": "g5_volume_area_q01",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "easy",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q02",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q03",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "easy",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q04",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q05",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q06",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "medium",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q07",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q08",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g5_volume_area",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g5_volume_area_q09",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "hard",
+      "skill_tag": "g5_volume_area",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g5_volume_area_q10",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "hard",
+      "skill_tag": "g5_volume_area",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g5_volume_area_q01",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "easy",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q02",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q03",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "easy",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q04",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q05",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q06",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "medium",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q07",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "medium",
+      "skill_tag": "g5_volume_area",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g5_volume_area_q08",
+      "question_th": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 5 ซม. มีเส้นรอบรูปเท่าไร?",
+      "choices": [
+        "10 ซม.",
+        "20 ซม.",
+        "25 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "answer": "20 ซม.",
+      "explanation": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "explanation_th": "เส้นรอบรูป = 5 + 5 + 5 + 5 = 20 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g5_volume_area",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g5_volume_area_q09",
+      "question_th": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "question_text": "พื้นที่ 7 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "21",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "7 × 4 = 28",
+      "explanation_th": "7 × 4 = 28",
+      "difficulty": "hard",
+      "skill_tag": "g5_volume_area",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g5_volume_area_q10",
+      "question_th": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 6 ม. ยาว 8 ม. มีพื้นที่เท่าไร?",
+      "choices": [
+        "14 ตร.ม.",
+        "28 ตร.ม.",
+        "48 ตร.ม.",
+        "56 ตร.ม."
+      ],
+      "correct_answer": "48 ตร.ม.",
+      "answer": "48 ตร.ม.",
+      "explanation": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "explanation_th": "พื้นที่ = 6 × 8 = 48 ตร.ม.",
+      "difficulty": "hard",
+      "skill_tag": "g5_volume_area",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Area of Rectangles",
+  "objective_en": "Learn Area of Rectangles with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+  "worked_examples_en": [
+    "g5_volume_area_ep English item 1",
+    "g5_volume_area_ep English item 2",
+    "g5_volume_area_ep English item 3",
+    "g5_volume_area_ep English item 4"
+  ],
+  "common_mistakes_en": [
+    "g5_volume_area_ep English item 1",
+    "g5_volume_area_ep English item 2",
+    "g5_volume_area_ep English item 3"
+  ],
+  "hints_en": [
+    "g5_volume_area_ep English item 1",
+    "g5_volume_area_ep English item 2",
+    "g5_volume_area_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g5_volume_area_ep English item 1",
+    "g5_volume_area_ep English item 2",
+    "g5_volume_area_ep English item 3",
+    "g5_volume_area_ep English item 4",
+    "g5_volume_area_ep English item 5"
+  ],
+  "quiz_en": [
+    "g5_volume_area_ep English item 1",
+    "g5_volume_area_ep English item 2",
+    "g5_volume_area_ep English item 3",
+    "g5_volume_area_ep English item 4",
+    "g5_volume_area_ep English item 5",
+    "g5_volume_area_ep English item 6",
+    "g5_volume_area_ep English item 7",
+    "g5_volume_area_ep English item 8",
+    "g5_volume_area_ep English item 9",
+    "g5_volume_area_ep English item 10"
+  ],
+  "quiz_id": "g5_volume_area_ep",
+  "generated_at": "2026-05-16T04:16:41.982887+00:00",
+  "source_lesson_id": "g5_volume_area",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "data": {
+        "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+      "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+      "data": {
+        "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "area_model",
+      "rows": 7,
+      "cols": 9,
+      "total": 63,
+      "unit": "square units",
+      "symbol": "⬜",
+      "data": {
+        "model_type": "area_model",
+        "rows": 7,
+        "cols": 9,
+        "total": 63,
+        "unit": "square units",
+        "symbol": "⬜"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "7 × 9 = 63 square units",
+      "content": "7 × 9 = 63 square units",
+      "data": {
+        "expression": "7 × 9 = 63 square units",
+        "content_en": "7 × 9 = 63 square units"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+      "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+      "choices": [
+        "72 pencils",
+        "70 pencils",
+        "75 pencils",
+        "77 pencils"
+      ],
+      "correct_answer": "72 pencils",
+      "answer": "72 pencils",
+      "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+        "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+        "choices": [
+          "72 pencils",
+          "70 pencils",
+          "75 pencils",
+          "77 pencils"
+        ],
+        "correct_answer": "72 pencils",
+        "answer": "72 pencils",
+        "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g5_volume_area",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Area of Rectangles",
+  "topic": "area",
+  "icon": "grid",
+  "story_variants": [
+    {
+      "variant_id": "g5_volume_area_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Area of Rectangles Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 9 items. The rows are equal, so Earn wants to know the total number of square units. This story practices Area of Rectangles in the music room with number magnets while friends set up instruments. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+          "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units.",
+          "data": {
+            "content_en": "There are 7 equal rows and 9 in each row. Equal rows use multiplication: 7 × 9 = 63 square units."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "area_model",
+          "rows": 7,
+          "cols": 9,
+          "total": 63,
+          "unit": "square units",
+          "symbol": "⬜",
+          "data": {
+            "model_type": "area_model",
+            "rows": 7,
+            "cols": 9,
+            "total": 63,
+            "unit": "square units",
+            "symbol": "⬜"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "7 × 9 = 63 square units",
+          "content": "7 × 9 = 63 square units",
+          "data": {
+            "expression": "7 × 9 = 63 square units",
+            "content_en": "7 × 9 = 63 square units"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+          "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+          "choices": [
+            "72 pencils",
+            "70 pencils",
+            "75 pencils",
+            "77 pencils"
+          ],
+          "correct_answer": "72 pencils",
+          "answer": "72 pencils",
+          "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+            "question_en": "A teacher has 8 boxes of pencils. Each box has 9 pencils. How many pencils are there?",
+            "choices": [
+              "72 pencils",
+              "70 pencils",
+              "75 pencils",
+              "77 pencils"
+            ],
+            "correct_answer": "72 pencils",
+            "answer": "72 pencils",
+            "explanation": "Use multiplication: 8 × 9 = 72 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

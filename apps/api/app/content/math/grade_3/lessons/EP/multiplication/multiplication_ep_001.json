@@ -1,0 +1,266 @@
+{
+  "variant_id": "multiplication_ep_001",
+  "variant_title_th": "การคูณ — ความหมายและแผนภูมิแบบแถว",
+  "variant_title_en": "Multiplication — Meaning and Array Model",
+  "status": "needs_review",
+  "title_en": "Multiplication",
+  "story_theme_en": "Teacher asked Lin to arrange classroom desks in rows for an exam. Lin arranged the desks in 7 rows with 6 desks in each row. Lin needed to find the total number of desks. Multiplication helps find the total when there are equal groups.",
+  "helper_tip_en": "Have students draw an array by placing dots in rows and columns, then count or multiply.",
+  "think_story_en": "7 rows of 6 desks each = 7x6 = 42 desks. Use array: 7 rows, 6 dots per row, total = 42. Or use the 6 times table: 6x7 = 42.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin arranges desks in rows for an exam.",
+      "data": {
+        "content_en": "Teacher asked Lin to arrange classroom desks in rows for an exam. Lin arranged the desks in 7 rows with 6 desks in each row. Lin needed to find the total number of desks. Multiplication helps find the total when there are equal groups."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "7 rows of 6 desks each = 7x6 = 42 desks. Array: 7 rows, 6 dots per row, total = 42.",
+      "data": {
+        "content_en": "7 rows of 6 desks each = 7x6 = 42 desks. Use array: 7 rows, 6 dots per row, total = 42. Or use the 6 times table: 6x7 = 42."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Array Model",
+      "description": "An array showing 7 rows with 6 dots in each row = 42 total",
+      "model_type": "array_model",
+      "data": {
+        "model_type": "array_model",
+        "rows": 7,
+        "cols": 6,
+        "total": 42,
+        "unit": "desks",
+        "symbol": "X",
+        "calculation": "7 rows x 6 per row = 42"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "7x6=42 desks",
+      "content": "7x6=42 desks | 7 multiplied by 6 = 42",
+      "data": {
+        "expression": "7x6=42 desks",
+        "a": 7,
+        "b": 6,
+        "result": 42,
+        "unit": "desks",
+        "content_en": "7x6=42 desks | 7 multiplied by 6 = 42"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A school arranges flowers in 5 rows with 8 flowers in each row. How many flowers total?",
+      "choices": [
+        "13 flowers",
+        "40 flowers",
+        "58 flowers",
+        "45 flowers"
+      ],
+      "correct_answer": "40 flowers",
+      "explanation": "5x8=40 flowers",
+      "data": {
+        "question": "A school arranges flowers in 5 rows with 8 flowers in each row. How many flowers total?",
+        "choices": [
+          "13 flowers",
+          "40 flowers",
+          "58 flowers",
+          "45 flowers"
+        ],
+        "correct_answer": "40 flowers",
+        "explanation": "5x8=40 flowers"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Multiplication is adding equal groups together in one step.",
+    "In this problem: 7 rows with 6 desks each = 6+6+6+6+6+6+6 = 42.",
+    "Write as a multiplication sentence: 7x6 = 42.",
+    "Use an array diagram to visualize: 7 rows with 6 dots in each row.",
+    "Check using the multiplication table: 6x7 = 42."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Multiplication with Array",
+      "question_en": "There are 4 rows of lipsticks with 9 in each row. How many lipsticks total?",
+      "solution_en": "4x9 = 36 lipsticks"
+    }
+  ],
+  "common_mistakes_en": [
+    "Writing the multiplication sentence with numbers swapped even though the answer is correct.",
+    "Adding instead of multiplying: using 7+6 instead of 7x6.",
+    "Forgetting that the order of multiplication does not matter (commutative property)."
+  ],
+  "hints_en": [
+    "Look for clue words: rows and in each row mean multiplication.",
+    "Draw dots in rows to count, or use the relevant times table.",
+    "Check by swapping: 7x6 = 6x7 = 42."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "multiplication",
+      "th": "การคูณ",
+      "definition_en": "Adding equal groups together in one step"
+    },
+    {
+      "en": "row",
+      "th": "แถว",
+      "definition_en": "A horizontal line of items"
+    },
+    {
+      "en": "column",
+      "th": "คอลัมน์",
+      "definition_en": "A vertical line of items"
+    },
+    {
+      "en": "product",
+      "th": "ผลคูณ",
+      "definition_en": "The answer to a multiplication problem"
+    },
+    {
+      "en": "array",
+      "th": "แผนภูมิแบบแถว",
+      "definition_en": "Objects arranged in equal rows and columns"
+    },
+    {
+      "en": "equal groups",
+      "th": "กลุ่มเท่า",
+      "definition_en": "Groups that have the same number of items in each"
+    },
+    {
+      "en": "times table",
+      "th": "สูตรคูณ",
+      "definition_en": "A table showing products of multiplying by a number"
+    },
+    {
+      "en": "multiplier",
+      "th": "ตัวคูณ",
+      "definition_en": "The number by which another is multiplied"
+    },
+    {
+      "en": "multiplicand",
+      "th": "ตัวตั้งคูณ",
+      "definition_en": "The number that is being multiplied"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "6x4=?",
+      "choices": [
+        "10",
+        "24",
+        "46",
+        "64"
+      ],
+      "answer": "24",
+      "explanation": "6x4=24"
+    },
+    {
+      "q": "Farmer plants 8 rows of corn with 7 corns in each row. How many corns?",
+      "choices": [
+        "15",
+        "56",
+        "78",
+        "87"
+      ],
+      "answer": "56",
+      "explanation": "8x7=56"
+    },
+    {
+      "q": "Which matches 3 rows of 9?",
+      "choices": [
+        "3+9",
+        "3x9",
+        "9-3",
+        "9/3"
+      ],
+      "answer": "3x9",
+      "explanation": "3 rows of 9 means 3x9=27"
+    },
+    {
+      "q": "Chocolate box has 5 rows with 6 chocolates in each row. How many?",
+      "choices": [
+        "11",
+        "30",
+        "56",
+        "65"
+      ],
+      "answer": "30",
+      "explanation": "5x6=30"
+    },
+    {
+      "q": "What is 9x3?",
+      "choices": [
+        "12",
+        "21",
+        "27",
+        "93"
+      ],
+      "answer": "27",
+      "explanation": "9x3=27"
+    },
+    {
+      "q": "7 bags with 8 marbles each. Total?",
+      "choices": [
+        "15",
+        "56",
+        "78",
+        "87"
+      ],
+      "answer": "56",
+      "explanation": "7x8=56"
+    },
+    {
+      "q": "Which equals 6x6?",
+      "choices": [
+        "12",
+        "36",
+        "63",
+        "66"
+      ],
+      "answer": "36",
+      "explanation": "6x6=36"
+    },
+    {
+      "q": "Classroom has 4 rows of desks with 9 desks per row. How many desks?",
+      "choices": [
+        "13",
+        "36",
+        "49",
+        "94"
+      ],
+      "answer": "36",
+      "explanation": "4x9=36"
+    },
+    {
+      "q": "1 box has 10 pencils. How many pencils in 7 boxes?",
+      "choices": [
+        "17",
+        "70",
+        "71",
+        "77"
+      ],
+      "answer": "70",
+      "explanation": "7x10=70"
+    },
+    {
+      "q": "Tile pattern has 3 rows of 12 tiles. How many tiles?",
+      "choices": [
+        "15",
+        "36",
+        "48",
+        "123"
+      ],
+      "answer": "36",
+      "explanation": "3x12=36"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Multiplication is adding equal groups together in one step. Look for rows of or groups of. Write the number of rows first, then the number in each row, separated by x. Check using the multiplication table."
+}

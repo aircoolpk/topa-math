@@ -1,0 +1,751 @@
+{
+  "lesson_id": "g3_multiplication_area_model_ep",
+  "id": "g3_multiplication_area_model_ep",
+  "content_schema_version": "topa_story_variant_v1",
+  "quality_required": true,
+  "status": "needs_review",
+  "program_type": "EP",
+  "grade_level": 3,
+  "subject": "math",
+  "topic_code": "g3_multiplication_area_model",
+  "skill_code": "g3_multiplication_area_model_ep",
+  "quiz_id": "g3_multiplication_area_model_ep",
+  "title_en": "Area of Rectangles",
+  "title_th": "",
+  "objective_en": "Learn Area of Rectangles with a story, a model, a number sentence, and practice.",
+  "objective_th": "",
+  "thai_support": "",
+  "estimated_minutes": 15,
+  "has_test": true,
+  "vocabulary": [
+    {
+      "word": "row",
+      "meaning_th": "แถวแนวนอน",
+      "example_en": "There are 4 rows.",
+      "example_th": "มี 4 แถว"
+    },
+    {
+      "word": "column",
+      "meaning_th": "หลักแนวตั้ง",
+      "example_en": "Each row has 6 columns.",
+      "example_th": "แต่ละแถวมี 6 หลัก"
+    },
+    {
+      "word": "area model",
+      "meaning_th": "แบบจำลองพื้นที่",
+      "example_en": "Use an area model to see 4 times 6.",
+      "example_th": "ใช้แบบจำลองพื้นที่เพื่อเห็น 4 คูณ 6"
+    }
+  ],
+  "explanation_en": "An area model shows multiplication as equal rows. Count the rows. Count how many are in each row. Then multiply.",
+  "explanation_th": "แบบจำลองพื้นที่แสดงการคูณเป็นแถวที่เท่ากัน นับจำนวนแถว นับจำนวนในแต่ละแถว แล้วคูณ",
+  "singapore_math_model": {
+    "type": "array_model",
+    "model_type": "array_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+      "content_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+      "data": {
+        "content_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads.",
+      "content_en": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads.",
+      "data": {
+        "content_en": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "array_model",
+      "rows": 5,
+      "cols": 6,
+      "total": 30,
+      "unit": "beads",
+      "symbol": "🔵",
+      "data": {
+        "model_type": "array_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "beads",
+        "symbol": "🔵"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5 × 6 = 30 beads",
+      "content": "5 × 6 = 30 beads",
+      "data": {
+        "expression": "5 × 6 = 30 beads",
+        "content_en": "5 × 6 = 30 beads"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+      "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+      "choices": [
+        "48 pencils",
+        "46 pencils",
+        "51 pencils",
+        "53 pencils"
+      ],
+      "correct_answer": "48 pencils",
+      "answer": "48 pencils",
+      "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+        "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+        "choices": [
+          "48 pencils",
+          "46 pencils",
+          "51 pencils",
+          "53 pencils"
+        ],
+        "correct_answer": "48 pencils",
+        "answer": "48 pencils",
+        "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "อ่านโจทย์ของบท การคูณด้วยแบบจำลองพื้นที่ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples": [
+    {
+      "title_en": "Example 1",
+      "title_th": "ตัวอย่างที่ 1",
+      "question_en": "There are 3 rows. Each row has 5 stars. How many stars are there?",
+      "question_th": "มี 3 แถว แถวละ 5 ดาว มีดาวกี่ดวง",
+      "solution_en": "3 × 5 = 15. There are 15 stars.",
+      "solution_th": "3 × 5 = 15 มีดาว 15 ดวง"
+    },
+    {
+      "title_en": "Example 2",
+      "title_th": "ตัวอย่างที่ 2",
+      "question_en": "There are 2 rows. Each row has 8 books. How many books are there?",
+      "question_th": "มี 2 แถว แถวละ 8 เล่ม มีหนังสือกี่เล่ม",
+      "solution_en": "2 × 8 = 16. There are 16 books.",
+      "solution_th": "2 × 8 = 16 มีหนังสือ 16 เล่ม"
+    }
+  ],
+  "common_mistakes": [
+    "รีบคำนวณโดยยังไม่อ่านว่าโจทย์ถามหาอะไร",
+    "ใส่ตัวเลขผิดตำแหน่งในแผนภาพ ทำให้เลือกวิธีคิดผิด",
+    "ลืมตรวจหน่วยของคำตอบ เช่น ช่อง ตารางหน่วย บาท หรือชิ้น"
+  ],
+  "lesson_variants": [
+    {
+      "variant_id": "g3_multiplication_area_model_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Area of Rectangles Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+          "content_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+          "data": {
+            "content_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads.",
+          "content_en": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads.",
+          "data": {
+            "content_en": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "array_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "beads",
+          "symbol": "🔵",
+          "data": {
+            "model_type": "array_model",
+            "rows": 5,
+            "cols": 6,
+            "total": 30,
+            "unit": "beads",
+            "symbol": "🔵"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30 beads",
+          "content": "5 × 6 = 30 beads",
+          "data": {
+            "expression": "5 × 6 = 30 beads",
+            "content_en": "5 × 6 = 30 beads"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+          "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+          "choices": [
+            "48 pencils",
+            "46 pencils",
+            "51 pencils",
+            "53 pencils"
+          ],
+          "correct_answer": "48 pencils",
+          "answer": "48 pencils",
+          "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+            "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+            "choices": [
+              "48 pencils",
+              "46 pencils",
+              "51 pencils",
+              "53 pencils"
+            ],
+            "correct_answer": "48 pencils",
+            "answer": "48 pencils",
+            "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "subtitle_th": "นักเรียนใช้แถวและหลักเพื่อหาผลคูณ",
+  "learning_objective_th": "นักเรียนใช้แถวและหลักเพื่อหาผลคูณ",
+  "lesson_intro_th": "บทเรียนนี้ชวนฝึกการคูณด้วยแบบจำลองพื้นที่จากสถานการณ์ใกล้ตัว",
+  "concept_explanation_th": "1 Count the rows. นับจำนวนแถว 2 Count how many are in each row. นับจำนวนในแต่ละแถว 3 Multiply rows by each row. คูณจำนวนแถวกับจำนวนในแต่ละแถว",
+  "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "area_model",
+    "rows": 3,
+    "columns": 6,
+    "total": 18,
+    "label_th": "แผนภาพพื้นที่แบบช่อง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท การคูณด้วยแบบจำลองพื้นที่ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_en": "Example 1",
+      "title_th": "ตัวอย่างที่ 1",
+      "question_en": "There are 3 rows. Each row has 5 stars. How many stars are there?",
+      "question_th": "มี 3 แถว แถวละ 5 ดาว มีดาวกี่ดวง",
+      "solution_en": "3 × 5 = 15. There are 15 stars.",
+      "solution_th": "3 × 5 = 15 มีดาว 15 ดวง"
+    },
+    {
+      "title_en": "Example 2",
+      "title_th": "ตัวอย่างที่ 2",
+      "question_en": "There are 2 rows. Each row has 8 books. How many books are there?",
+      "question_th": "มี 2 แถว แถวละ 8 เล่ม มีหนังสือกี่เล่ม",
+      "solution_en": "2 × 8 = 16. There are 16 books.",
+      "solution_th": "2 × 8 = 16 มีหนังสือ 16 เล่ม"
+    }
+  ],
+  "common_mistakes_th": [
+    "รีบคำนวณโดยยังไม่อ่านว่าโจทย์ถามหาอะไร",
+    "ใส่ตัวเลขผิดตำแหน่งในแผนภาพ ทำให้เลือกวิธีคิดผิด",
+    "ลืมตรวจหน่วยของคำตอบ เช่น ช่อง ตารางหน่วย บาท หรือชิ้น"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_multiplication_area_model_ep_q01",
+      "question_th": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "20",
+        "24",
+        "28",
+        "30"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "4 × 6 = 24 ช่อง",
+      "explanation_th": "4 × 6 = 24 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q02",
+      "question_th": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "8",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15 ช่อง",
+      "explanation_th": "5 × 3 = 15 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q03",
+      "question_th": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "9",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "7 × 2 = 14 ช่อง",
+      "explanation_th": "7 × 2 = 14 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q04",
+      "question_th": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "question_text": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24",
+      "explanation_th": "6 × 4 = 24",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q05",
+      "question_th": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "question_text": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "21",
+        "24",
+        "27",
+        "30"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "3 × 8 = 24",
+      "explanation_th": "3 × 8 = 24",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q06",
+      "question_th": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "question_text": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "24",
+        "27",
+        "30",
+        "33"
+      ],
+      "correct_answer": "27",
+      "answer": "27",
+      "explanation": "9 × 3 = 27",
+      "explanation_th": "9 × 3 = 27",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q07",
+      "question_th": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "question_text": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q08",
+      "question_th": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "question_text": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "8 × 5 = 40",
+      "explanation_th": "8 × 5 = 40",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q09",
+      "question_th": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "question_text": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "42",
+        "49",
+        "56",
+        "63"
+      ],
+      "correct_answer": "49",
+      "answer": "49",
+      "explanation": "7 × 7 = 49",
+      "explanation_th": "7 × 7 = 49",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q10",
+      "question_th": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "question_text": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "10 × 6 = 60",
+      "explanation_th": "10 × 6 = 60",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_multiplication_area_model_ep_q01",
+      "question_th": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "20",
+        "24",
+        "28",
+        "30"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "4 × 6 = 24 ช่อง",
+      "explanation_th": "4 × 6 = 24 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q02",
+      "question_th": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "8",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15 ช่อง",
+      "explanation_th": "5 × 3 = 15 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q03",
+      "question_th": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "9",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "7 × 2 = 14 ช่อง",
+      "explanation_th": "7 × 2 = 14 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q04",
+      "question_th": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "question_text": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24",
+      "explanation_th": "6 × 4 = 24",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q05",
+      "question_th": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "question_text": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "21",
+        "24",
+        "27",
+        "30"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "3 × 8 = 24",
+      "explanation_th": "3 × 8 = 24",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q06",
+      "question_th": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "question_text": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "24",
+        "27",
+        "30",
+        "33"
+      ],
+      "correct_answer": "27",
+      "answer": "27",
+      "explanation": "9 × 3 = 27",
+      "explanation_th": "9 × 3 = 27",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q07",
+      "question_th": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "question_text": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q08",
+      "question_th": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "question_text": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "8 × 5 = 40",
+      "explanation_th": "8 × 5 = 40",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q09",
+      "question_th": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "question_text": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "42",
+        "49",
+        "56",
+        "63"
+      ],
+      "correct_answer": "49",
+      "answer": "49",
+      "explanation": "7 × 7 = 49",
+      "explanation_th": "7 × 7 = 49",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_ep_q10",
+      "question_th": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "question_text": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "10 × 6 = 60",
+      "explanation_th": "10 × 6 = 60",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_ep",
+      "question_type": "challenge"
+    }
+  ],
+  "story_intro_th": "",
+  "base_lesson_id": "g3_multiplication_area_model",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Area of Rectangles",
+  "topic": "area",
+  "icon": "grid",
+  "story_variants": [
+    {
+      "variant_id": "g3_multiplication_area_model_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Area of Rectangles Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+          "content_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+          "data": {
+            "content_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads.",
+          "content_en": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads.",
+          "data": {
+            "content_en": "There are 5 equal rows and 6 in each row. Equal rows use multiplication: 5 × 6 = 30 beads."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "array_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "beads",
+          "symbol": "🔵",
+          "data": {
+            "model_type": "array_model",
+            "rows": 5,
+            "cols": 6,
+            "total": 30,
+            "unit": "beads",
+            "symbol": "🔵"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30 beads",
+          "content": "5 × 6 = 30 beads",
+          "data": {
+            "expression": "5 × 6 = 30 beads",
+            "content_en": "5 × 6 = 30 beads"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+          "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+          "choices": [
+            "48 pencils",
+            "46 pencils",
+            "51 pencils",
+            "53 pencils"
+          ],
+          "correct_answer": "48 pencils",
+          "answer": "48 pencils",
+          "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+            "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+            "choices": [
+              "48 pencils",
+              "46 pencils",
+              "51 pencils",
+              "53 pencils"
+            ],
+            "correct_answer": "48 pencils",
+            "answer": "48 pencils",
+            "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "story_intro_en": "Earn arranges beads at the craft table in 5 rows. Each row has 6 items. The rows are equal, so Earn wants to know the total number of beads. This story practices Area of Rectangles. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

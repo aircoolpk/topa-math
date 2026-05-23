@@ -1,0 +1,179 @@
+{
+  "lesson_id": "addition_subtraction_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "addsub_ep_q001_e01",
+      "question_text": "Case 1: Mother has 25 eggs. She uses 12 eggs. How many eggs are left?",
+      "question_text_th": "สถานการณ์ที่ 1: แม่มีไข่ 25 ฟอง ใช้ไป 12 ฟอง เหลือไข่กี่ฟอง",
+      "choices": [
+        "13 eggs",
+        "15 eggs",
+        "23 eggs",
+        "11 eggs"
+      ],
+      "correct_answer": "13 eggs",
+      "answer": "13 eggs",
+      "explanation": "Subtract used eggs: 25 - 12 = 13 eggs",
+      "explanation_th": "ลบไข่ที่ใช้: 25 - 12 = 13 ฟอง",
+      "difficulty": "easy",
+      "hint_th": "แยกลบ: 5-2=3, 2-1=1"
+    },
+    {
+      "question_id": "addsub_ep_q001_e02",
+      "question_text": "Case 2: Lin has 34 pencils. She buys 15 more. How many pencils does she have now?",
+      "question_text_th": "สถานการณ์ที่ 2: ลินมีดินสอ 34 แท่ง ซื้อเพิ่ม 15 แท่ง มีดินสอกี่แท่ง",
+      "choices": [
+        "49 pencils",
+        "39 pencils",
+        "51 pencils",
+        "19 pencils"
+      ],
+      "correct_answer": "49 pencils",
+      "answer": "49 pencils",
+      "explanation": "Add new pencils: 34 + 15 = 49 pencils",
+      "explanation_th": "บวกดินสอที่ซื้อ: 34 + 15 = 49 แท่ง",
+      "difficulty": "easy",
+      "hint_th": "แยกบวก: 4+5=9, 3+1=4"
+    },
+    {
+      "question_id": "addsub_ep_q001_e03",
+      "question_text": "Case 3: Mali has 47 marbles. She gives 23 to her friend. How many marbles does she have left?",
+      "question_text_th": "สถานการณ์ที่ 3: มะลิมีลูกแก้ว 47 ลูก ให้เพื่อนไป 23 ลูก เหลือลูกแก้วกี่ลูก",
+      "choices": [
+        "24 marbles",
+        "14 marbles",
+        "34 marbles",
+        "44 marbles"
+      ],
+      "correct_answer": "24 marbles",
+      "answer": "24 marbles",
+      "explanation": "Subtract given marbles: 47 - 23 = 24 marbles",
+      "explanation_th": "ลบลูกแก้วที่ให้: 47 - 23 = 24 ลูก",
+      "difficulty": "easy",
+      "hint_th": "แยกลบ: 7-3=4, 4-2=2"
+    },
+    {
+      "question_id": "addsub_ep_q001_m01",
+      "question_text": "Case 4: A shop has 68 items. It sells 29 items today. How many items are left?",
+      "question_text_th": "สถานการณ์ที่ 4: ร้านขายของมีสินค้า 68 ชิ้น วันนี้ขายได้ 29 ชิ้น เหลือสินค้ากี่ชิ้น",
+      "choices": [
+        "39 items",
+        "49 items",
+        "29 items",
+        "38 items"
+      ],
+      "correct_answer": "39 items",
+      "answer": "39 items",
+      "explanation": "Subtract sold items: 68 - 29 = 39 items",
+      "explanation_th": "ลบสินค้าที่ขาย: 68 - 29 = 39 ชิ้น",
+      "difficulty": "medium",
+      "hint_th": "Borrow 1 from 6 → 18-9=9, 5-2=3"
+    },
+    {
+      "question_id": "addsub_ep_q001_m02",
+      "question_text": "Case 5: A school has 56 students. 38 new students join. How many students are there now?",
+      "question_text_th": "สถานการณ์ที่ 5: โรงเรียนมีนักเรียน 56 คน มีนักเรียนใหม่เข้ามาอีก 38 คน รวมมีนักเรียนกี่คน",
+      "choices": [
+        "94 students",
+        "84 students",
+        "96 students",
+        "86 students"
+      ],
+      "correct_answer": "94 students",
+      "answer": "94 students",
+      "explanation": "Add new students: 56 + 38 = 94 students",
+      "explanation_th": "บวกนักเรียนใหม่: 56 + 38 = 94 คน",
+      "difficulty": "medium",
+      "hint_th": "Carry 1: 6+8=14 write 4 carry 1, 5+3+1=9"
+    },
+    {
+      "question_id": "addsub_ep_q001_m03",
+      "question_text": "Case 6: Lin reads 47 pages today and 36 pages tomorrow. How many pages did she read in total?",
+      "question_text_th": "สถานการณ์ที่ 6: ลินอ่านหนังสือได้ 47 หน้า วันต่อมาอ่านได้อีก 36 หน้า รวมอ่านได้กี่หน้า",
+      "choices": [
+        "73 pages",
+        "83 pages",
+        "71 pages",
+        "93 pages"
+      ],
+      "correct_answer": "83 pages",
+      "answer": "83 pages",
+      "explanation": "Add pages read: 47 + 36 = 83 pages",
+      "explanation_th": "บวกหน้าที่อ่าน: 47 + 36 = 83 หน้า",
+      "difficulty": "medium",
+      "hint_th": "7+6=13 write 3 carry 1, 4+3+1=8"
+    },
+    {
+      "question_id": "addsub_ep_q001_m04",
+      "question_text": "Case 7: A garden has 72 mango trees and 19 jasmine trees. How many trees are there in total?",
+      "question_text_th": "สถานการณ์ที่ 7: สวนมีต้นมะม่วง 72 ต้น ต้นมะลิ 19 ต้น รวมต้นไม้กี่ต้น",
+      "choices": [
+        "91 trees",
+        "81 trees",
+        "93 trees",
+        "89 trees"
+      ],
+      "correct_answer": "91 trees",
+      "answer": "91 trees",
+      "explanation": "Add both tree types: 72 + 19 = 91 trees",
+      "explanation_th": "บวกต้นไม้ทั้งสองชนิด: 72 + 19 = 91 ต้น",
+      "difficulty": "medium",
+      "hint_th": "2+9=11 write 1 carry 1, 7+1+1=9"
+    },
+    {
+      "question_id": "addsub_ep_q001_h01",
+      "question_text": "Case 8: A tank has 85 liters of water. 37 liters are used and 28 liters are added. How much water is there now?",
+      "question_text_th": "สถานการณ์ที่ 8: มีน้ำในถัง 85 ลิตร ใช้ไป 37 ลิตร แล้วเติมน้ำเพิ่ม 28 ลิตร มีน้ำกี่ลิตร",
+      "choices": [
+        "76 liters",
+        "86 liters",
+        "66 liters",
+        "96 liters"
+      ],
+      "correct_answer": "76 liters",
+      "answer": "76 liters",
+      "explanation": "85 - 37 + 28 = 76 liters",
+      "explanation_th": "85 - 37 + 28 = 76 ลิตร",
+      "difficulty": "hard",
+      "hint_th": "85-37=48 then +28=76"
+    },
+    {
+      "question_id": "addsub_ep_q001_h02",
+      "question_text": "Case 9: Lin has 95 baht. She buys a pen for 38 baht. Then her mother gives her 25 baht. How much does she have now?",
+      "question_text_th": "สถานการณ์ที่ 9: ลินมีเงิน 95 บาท ซื้อปากกา 38 บาท แล้วแม่ให้อีก 25 บาท มีเงินกี่บาท",
+      "choices": [
+        "82 baht",
+        "92 baht",
+        "72 baht",
+        "85 baht"
+      ],
+      "correct_answer": "82 baht",
+      "answer": "82 baht",
+      "explanation": "95 - 38 + 25 = 82 baht",
+      "explanation_th": "95 - 38 + 25 = 82 บาท",
+      "difficulty": "hard",
+      "hint_th": "95-38=57 then +25=82"
+    },
+    {
+      "question_id": "addsub_ep_q001_h03",
+      "question_text": "Case 10: A warehouse has 84 boxes. 46 are sold but 57 new boxes arrive. How many boxes are there now?",
+      "question_text_th": "สถานการณ์ที่ 10: คลังสินค้ามีกล่อง 84 กล่อง ขายไป 46 กล่อง แต่ได้รับสินค้าใหม่เพิ่ม 57 กล่อง มีกล่องกี่กล่อง",
+      "choices": [
+        "95 boxes",
+        "85 boxes",
+        "105 boxes",
+        "90 boxes"
+      ],
+      "correct_answer": "95 boxes",
+      "answer": "95 boxes",
+      "explanation": "84 - 46 + 57 = 95 boxes",
+      "explanation_th": "84 - 46 + 57 = 95 กล่อง",
+      "difficulty": "hard",
+      "hint_th": "84-46=38 then +57=95"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

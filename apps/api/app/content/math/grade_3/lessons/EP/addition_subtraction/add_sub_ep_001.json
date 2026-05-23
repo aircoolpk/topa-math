@@ -1,0 +1,283 @@
+{
+  "variant_id": "add_sub_ep_001",
+  "variant_title_th": "การบวกและการลบจำนวนไม่เกิน 100,000",
+  "variant_title_en": "Addition and Subtraction",
+  "status": "needs_review",
+  "title_en": "Addition and Subtraction Up to 100,000",
+  "story_theme_en": "Lin and Mali were saving money for a school science camp. Lin saved 45,200 baht and Mali saved 23,800 baht. They wanted to know how much they had together. The science camp cost 34,200 baht. How much money would they have left after paying for the camp?",
+  "helper_tip_en": "Have students line up digits in their correct columns before adding or subtracting. A column divider line helps.",
+  "think_story_en": "Addition: Lin has 45,200 + Mali has 23,800 = Together 69,000 baht. Subtraction: They have 69,000 minus camp cost 34,200 = They have 34,800 baht left.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin and Mali save money for a school science camp.",
+      "data": {
+        "content_en": "Lin and Mali were saving money for a school science camp. Lin saved 45,200 baht and Mali saved 23,800 baht. They wanted to know how much they had together. The science camp cost 34,200 baht. How much money would they have left after paying for the camp?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Addition: 45,200 + 23,800 = 69,000 | Subtraction: 69,000 - 34,200 = 34,800",
+      "data": {
+        "content_en": "Addition: Lin has 45,200 + Mali has 23,800 = Together 69,000 baht. Subtraction: They have 69,000 minus camp cost 34,200 = They have 34,800 baht left."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the part-whole relationship for addition and subtraction",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "part_a": 45200,
+        "part_b": 23800,
+        "whole": 69000,
+        "subtract_amount": 34200,
+        "final_remainder": 34800,
+        "unit": "baht"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentences",
+      "expression": "45,200 + 23,800 = 69,000",
+      "content": "45,200 + 23,800 = 69,000  |  69,000 - 34,200 = 34,800",
+      "data": {
+        "expression": "45,200 + 23,800 = 69,000",
+        "operations": [
+          {
+            "op": "+",
+            "a": 45200,
+            "b": 23800,
+            "result": 69000
+          },
+          {
+            "op": "-",
+            "a": 69000,
+            "b": 34200,
+            "result": 34800
+          }
+        ],
+        "content_en": "45,200 + 23,800 = 69,000 | 69,000 - 34,200 = 34,800"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A school has 52,400 students. 28,600 are boys. How many are girls?",
+      "choices": [
+        "23,800 students",
+        "21,800 students",
+        "24,800 students",
+        "22,800 students"
+      ],
+      "correct_answer": "23,800 students",
+      "explanation": "52,400 - 28,600 = 23,800 students",
+      "data": {
+        "question": "A school has 52,400 students. 28,600 are boys. How many are girls?",
+        "choices": [
+          "23,800 students",
+          "21,800 students",
+          "24,800 students",
+          "22,800 students"
+        ],
+        "correct_answer": "23,800 students",
+        "explanation": "52,400 - 28,600 = 23,800 students"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "When adding or subtracting numbers up to 100,000, always line up digits in their correct columns first.",
+    "Draw a column divider line so ones line up with ones, tens with tens, and so on.",
+    "Add or subtract one column at a time from right to left: ones → tens → hundreds → thousands → ten-thousands.",
+    "When adding, if the result is greater than 9, carry the extra digit to the next column.",
+    "When subtracting, if the bottom digit is larger than the top digit, borrow from the next column.",
+    "Check your answer by doing the opposite operation: addition check with subtraction, subtraction check with addition."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Addition",
+      "question_en": "Ai has 38,500 baht and receives 27,300 baht more. How much does Ai have in total?",
+      "solution_en": "38,500 + 27,300 = 65,800 baht ✅"
+    },
+    {
+      "title_en": "Example: Subtraction",
+      "question_en": "There were 84,600 students. 42,300 left. How many students are left?",
+      "solution_en": "84,600 - 42,300 = 42,300 students ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Writing digits in the wrong columns, especially with numbers that have different numbers of digits.",
+    "Forgetting to carry when addition exceeds 9, or forgetting to borrow when the bottom digit is larger.",
+    "Confusing addition and subtraction in multi-step word problems."
+  ],
+  "hints_en": [
+    "Draw a column divider line before you start: |Ten-thousands|Thousands|Hundreds|Tens|Ones|",
+    "Work from right to left. If you get more than 9, carry to the next column.",
+    "Check your answer by doing the opposite operation."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "addition",
+      "th": "การบวก",
+      "definition_en": "Combining numbers together using the + sign"
+    },
+    {
+      "en": "subtraction",
+      "th": "การลบ",
+      "definition_en": "Taking away an amount using the - sign"
+    },
+    {
+      "en": "sum",
+      "th": "ผลรวม",
+      "definition_en": "The answer to an addition problem"
+    },
+    {
+      "en": "difference",
+      "th": "ผลต่าง",
+      "definition_en": "The answer to a subtraction problem"
+    },
+    {
+      "en": "carry",
+      "th": "ทด",
+      "definition_en": "When addition exceeds 9, carrying the extra digit to the next column"
+    },
+    {
+      "en": "borrow",
+      "th": "กู้",
+      "definition_en": "When subtracting, borrowing from the next column"
+    },
+    {
+      "en": "column",
+      "th": "หลัก",
+      "definition_en": "A vertical position in a number representing a place value"
+    },
+    {
+      "en": "remain",
+      "th": "เหลือ",
+      "definition_en": "What is left after subtracting"
+    },
+    {
+      "en": "total",
+      "th": "รวม",
+      "definition_en": "The complete amount after adding"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "34,500 + 28,400 = ?",
+      "choices": [
+        "62,800",
+        "62,900",
+        "63,000",
+        "62,700"
+      ],
+      "answer": "62,900",
+      "explanation": "34,500 + 28,400 = 62,900"
+    },
+    {
+      "q": "75,800 - 43,500 = ?",
+      "choices": [
+        "32,200",
+        "32,300",
+        "32,400",
+        "33,300"
+      ],
+      "answer": "32,300",
+      "explanation": "75,800 - 43,500 = 32,300"
+    },
+    {
+      "q": "Ai bought items for 28,750 baht and paid with a 50,000 baht note. How much change did Ai get?",
+      "choices": [
+        "21,150 baht",
+        "21,250 baht",
+        "21,350 baht",
+        "22,250 baht"
+      ],
+      "answer": "21,250 baht",
+      "explanation": "50,000 - 28,750 = 21,250 baht"
+    },
+    {
+      "q": "A factory produced 56,300 toys in January and 48,700 toys in February. How many toys in total?",
+      "choices": [
+        "104,000",
+        "105,000",
+        "104,900",
+        "105,100"
+      ],
+      "answer": "105,000",
+      "explanation": "56,300 + 48,700 = 105,000"
+    },
+    {
+      "q": "A library had 89,600 books. 37,400 books were borrowed. How many books are left?",
+      "choices": [
+        "51,200",
+        "52,200",
+        "52,300",
+        "51,300"
+      ],
+      "answer": "52,200",
+      "explanation": "89,600 - 37,400 = 52,200"
+    },
+    {
+      "q": "Lin had 64,800 baht. After buying a uniform for 29,600 baht, how much does Lin have left?",
+      "choices": [
+        "34,200 baht",
+        "35,200 baht",
+        "35,300 baht",
+        "34,300 baht"
+      ],
+      "answer": "35,200 baht",
+      "explanation": "64,800 - 29,600 = 35,200 baht"
+    },
+    {
+      "q": "A stadium has 92,500 seats. 48,300 seats are filled. How many seats are empty?",
+      "choices": [
+        "44,100",
+        "44,200",
+        "43,200",
+        "44,300"
+      ],
+      "answer": "44,200",
+      "explanation": "92,500 - 48,300 = 44,200"
+    },
+    {
+      "q": "Tom saved 37,200 baht and Mai saved 45,800 baht. How much did they save together?",
+      "choices": [
+        "82,900",
+        "83,000",
+        "83,100",
+        "82,000"
+      ],
+      "answer": "83,000",
+      "explanation": "37,200 + 45,800 = 83,000"
+    },
+    {
+      "q": "A market sold 68,400 kg of fruit in the morning and 25,900 kg in the afternoon. How much in total?",
+      "choices": [
+        "94,200 kg",
+        "94,300 kg",
+        "93,300 kg",
+        "94,400 kg"
+      ],
+      "answer": "94,300 kg",
+      "explanation": "68,400 + 25,900 = 94,300 kg"
+    },
+    {
+      "q": "A train had 80,000 passengers. 35,600 got off at the first station and 28,900 got off at the second station. How many are still on the train?",
+      "choices": [
+        "15,500",
+        "15,400",
+        "15,300",
+        "15,600"
+      ],
+      "answer": "15,500",
+      "explanation": "80,000 - 35,600 - 28,900 = 15,500"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Addition and subtraction up to 100,000 follow the same column method as smaller numbers. Always align digits by place value, work right to left, and remember to carry or borrow when needed. Check by reversing the operation."
+}

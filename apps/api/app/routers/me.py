@@ -388,7 +388,7 @@ def _json_lesson_filter_reason(payload: dict, child: ChildProfile, expected_prog
         return "incomplete_visual_blocks"
     if payload_status not in {"approved", "published"}:
         return f"payload_status={payload_status}"
-    if not is_lesson_approved(lesson_id):
+    if not payload.get("is_grade3_topic_folder_group") and not is_lesson_approved(lesson_id):
         return "sidecar_not_approved_or_missing"
     return None
 
@@ -515,7 +515,7 @@ def _lesson_variants(payload: dict) -> list[dict]:
     if not isinstance(variants, list) or not variants:
         return [
             {
-                "variant_id": "default",
+                "variant_id": str(payload.get("selected_variant_id") or payload.get("variant_id") or "default"),
                 "variant_title_th": payload.get("title_th") or payload.get("lesson_id") or payload.get("id") or "",
                 "story_theme_th": payload.get("story_theme_th") or "",
                 "visual_blocks": normalize_visual_blocks(payload.get("visual_blocks")),
@@ -624,7 +624,7 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
         "has_test": has_test,
         "has_approved_test": has_approved_test,
         "test_available": has_test and has_approved_test,
-        "test_unavailable_reason": None if has_test and has_approved_test else "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้",
+        "test_unavailable_reason": None if has_test and has_approved_test else (payload.get("test_unavailable_reason") or "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้"),
         "language_available": lesson_program_alias(payload),
         "ep_available": bool(payload.get("ep_available")) if "ep_available" in payload else bool(find_lesson_file(_base_lesson_id(lesson_id), "EP")),
         "is_review": is_review,
@@ -652,11 +652,15 @@ def _json_lesson_sections(
     for item in list_canonical_lessons(child_program, include_admin_status=False):
         if int(item.get("grade_level") or 0) not in section_grades:
             continue
-        source_path = item.get("source_path")
-        try:
-            payload = json.loads(Path(str(source_path)).read_text(encoding="utf-8-sig")) if source_path else None
-        except (OSError, json.JSONDecodeError):
-            payload = None
+        if item.get("is_grade3_topic_folder_group"):
+            found = get_canonical_lesson(str(item.get("lesson_id")), child_program)
+            payload = dict(found[1]) if found else None
+        else:
+            source_path = item.get("source_path")
+            try:
+                payload = json.loads(Path(str(source_path)).read_text(encoding="utf-8-sig")) if source_path else None
+            except (OSError, json.JSONDecodeError):
+                payload = None
         if not isinstance(payload, dict):
             continue
         payload.setdefault("lesson_id", item["lesson_id"])
@@ -753,7 +757,7 @@ def _json_lesson_content_payload(payload: dict, item: dict, variant: dict | None
         "has_test": bool(payload.get("has_test", item["has_test"])) or has_approved_test,
         "has_approved_test": has_approved_test,
         "test_available": has_approved_test,
-        "test_unavailable_reason": None if has_approved_test else "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้",
+        "test_unavailable_reason": None if has_approved_test else (payload.get("test_unavailable_reason") or "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้"),
         "language_available": lesson_program_alias(payload),
         "ep_available": bool(find_lesson_file(_base_lesson_id(lesson_id), "EP")),
         "topic_code": payload.get("topic_code") or item["topic_code"],
@@ -2452,7 +2456,7 @@ def lesson_detail(
     if json_payload:
         program_matches_request = lesson_program_alias(json_payload) == requested_program
         lesson_public_id = str(json_payload.get("lesson_id") or json_payload.get("id") or lesson_id)
-        if not program_matches_request or not is_lesson_approved(lesson_public_id):
+        if not program_matches_request or (not json_payload.get("is_grade3_topic_folder_group") and not is_lesson_approved(lesson_public_id)):
             raise HTTPException(status_code=404, detail="Lesson not found")
         item = _json_lesson_detail_item(json_payload, child)
         public_id = lesson_public_id
@@ -2605,7 +2609,7 @@ def start_lesson(
     _require_program_access(user, child, requested_program)
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
-    if json_payload and (lesson_program_alias(json_payload) != requested_program or not is_lesson_approved(canonical_lesson_id)):
+    if json_payload and (lesson_program_alias(json_payload) != requested_program or (not json_payload.get("is_grade3_topic_folder_group") and not is_lesson_approved(canonical_lesson_id))):
         logger.warning("lesson_start_hidden lesson_id=%s canonical_lesson_id=%s requested_program=%s child_program=%s", lesson_id, canonical_lesson_id, requested_program, child.program_type)
         raise HTTPException(status_code=404, detail="Lesson not found")
     lesson = _ensure_json_lesson_in_db(db, json_payload) if json_payload else _lesson_by_public_id(db, canonical_lesson_id)
@@ -2673,7 +2677,7 @@ def start_lesson_test(
         raise HTTPException(status_code=403, detail="ใช้สิทธิ์เทสฟรีครบแล้ว กรุณาอัปเกรดเพื่อทำเทสเพิ่มเติม")
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
-    if json_payload and (lesson_program_alias(json_payload) != requested_program or not is_lesson_approved(canonical_lesson_id)):
+    if json_payload and (lesson_program_alias(json_payload) != requested_program or (not json_payload.get("is_grade3_topic_folder_group") and not is_lesson_approved(canonical_lesson_id))):
         logger.warning("lesson_test_start_hidden lesson_id=%s canonical_lesson_id=%s requested_program=%s child_program=%s", lesson_id, canonical_lesson_id, requested_program, child.program_type)
         raise HTTPException(status_code=404, detail={"code": "INVALID_LESSON_ID", "message": "Lesson not found", "lesson_id": lesson_id})
     if json_payload and not canonical_has_approved_test(canonical_lesson_id, requested_program):

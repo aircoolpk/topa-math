@@ -46,52 +46,88 @@
   "lesson_variants": [
     {
       "variant_id": "g1_compare_numbers_ep_01",
-      "variant_title_th": "Comparing Numbers Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Comparing Numbers Variant 1",
-      "story_theme_th": "Ton is learning Comparing Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning Comparing Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for Comparing Numbers.",
+      "story_theme_th": "",
+      "story_theme_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Comparing Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Comparing Numbers. Use the model to get 30."
+          "title": "Think Story",
+          "content": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5.",
+          "content_en": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5.",
+          "data": {
+            "content_en": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 30,
+          "bottom": 25,
+          "difference": 5,
+          "unit": "cookies",
+          "symbol": "🍪",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 30,
+            "bottom": 25,
+            "difference": 5,
+            "unit": "cookies",
+            "symbol": "🍪"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "30 - 25 = 5 cookies",
+          "content": "30 - 25 = 5 cookies",
+          "data": {
+            "expression": "30 - 25 = 5 cookies",
+            "content_en": "30 - 25 = 5 cookies"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "4 sheets",
+            "2 sheets",
+            "7 sheets",
+            "9 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "4 sheets",
+          "answer": "4 sheets",
+          "explanation": "Add the two groups: 26 + 22 = 4 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+            "choices": [
+              "4 sheets",
+              "2 sheets",
+              "7 sheets",
+              "9 sheets"
+            ],
+            "correct_answer": "4 sheets",
+            "answer": "4 sheets",
+            "explanation": "Add the two groups: 26 + 22 = 4 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -102,7 +138,7 @@
   "cover_emoji": "⚖️",
   "cover_color": "purple",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -111,9 +147,9 @@
   "lesson_intro_th": "ที่ตลาดมีผลไม้วางขายหลายอย่าง ส้ม 5 ผล และ มะม่วง 3 ผล อันไหนมากกว่ากันนะ? 🍊🥭",
   "concept_explanation_th": "เครื่องหมาย > หมายถึง มากกว่า เช่น 8 > 5 อ่านว่า แปดมากกว่าห้า เครื่องหมาย < หมายถึง น้อยกว่า เช่น 3 < 7 อ่านว่า สามน้อยกว่าเจ็ด เครื่องหมาย = หมายถึง เท่ากัน เช่น 4 = 4 อ่านว่า สี่เท่ากับสี่ เวลาเปรียบเทียบ ให้ดูว่าตัวเลขตัวไหนอยู่หน้ามากกว่า ตัวเลขที่มากกว่าจะอยู่ด้านที่ปากเครื่องหมายเปิด ปากเปิดหันหาเลขที่มากกว่า เช่น 7 > 3 ปากเปิดหันไปที่ 7 เพราะเจ็ดมากกว่าสาม",
   "singapore_math_model": {
-    "type": "number_bond",
-    "model_type": "number_bond",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "comparison_bar",
+    "model_type": "comparison_bar",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -520,312 +556,40 @@
   ],
   "title_en": "Comparing Numbers",
   "objective_en": "Learn Comparing Numbers with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Look! 5 + 3 — can you find the answer?",
+  "story_intro_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: เปรียบเทียบจำนวนลูกบอล",
-      "question_en": "balls 6 balls balls 4 balls balls ?",
-      "solution_en": "6 > 4 balls ✅?"
-    },
-    {
-      "title_en": "Example: เปรียบเทียบจำนวนน้ำตาล",
-      "question_en": "8 8 ?",
-      "solution_en": "8 = 8 ✅?"
-    },
-    {
-      "title_en": "Example: เปรียบเทียบจำนวนสติกเกอร์",
-      "question_en": "stickers 3 stickers stickers 9 stickers ?",
-      "solution_en": "3 < 9 stickers ✅?"
-    }
+    "g1_compare_numbers_ep English item 1",
+    "g1_compare_numbers_ep English item 2",
+    "g1_compare_numbers_ep English item 3"
   ],
   "common_mistakes_en": [
-    "Mistake: สลับเครื่องหมาย > กับ < โดยเฉพาะเวลาอ่านจากซ้ายไปขวา",
-    "Mistake: ไม่สังเกตว่าปากเครื่องหมายต้องหันไปที่ตัวเลขที่มากกว่าเสมอ",
-    "Mistake: เปรียบเทียบผิดโดยดูที่จำนวนตัวเลขแทนที่จะดูค่าของตัวเลข"
+    "g1_compare_numbers_ep English item 1",
+    "g1_compare_numbers_ep English item 2",
+    "g1_compare_numbers_ep English item 3"
   ],
   "hints_en": [
-    "Hint: จำได้ง่ายๆ ปากเปิดหันไปหาตัวเลขที่มากกว่าเสมอ",
-    "Hint: ถ้างง ให้วาดเส้นตรงเปรียบเทียบสองจำนวนนั้นดู",
-    "Hint: นึกถึงเจ้าปลากินปลา ปลาตัวใหญ่กินตัวเล็ก ปากเปิดหันไปทางที่มากกว่า"
+    "g1_compare_numbers_ep English item 1",
+    "g1_compare_numbers_ep English item 2",
+    "g1_compare_numbers_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: เครื่องหมาย > หมายถึง มากกว่า เช่น 8 > 5 อ่านว่า แปดมากกว่าห้า",
-    "Step: เครื่องหมาย < หมายถึง น้อยกว่า เช่น 3 < 7 อ่านว่า สามน้อยกว่าเจ็ด",
-    "Step: เครื่องหมาย = หมายถึง เท่ากัน เช่น 4 = 4 อ่านว่า สี่เท่ากับสี่",
-    "Step: เวลาเปรียบเทียบ ให้ดูว่าตัวเลขตัวไหนอยู่หน้ามากกว่า ตัวเลขที่มากกว่าจะอยู่ด้านที่ปากเครื่องหมายเปิด",
-    "Step: ปากเปิดหันหาเลขที่มากกว่า เช่น 7 > 3 ปากเปิดหันไปที่ 7 เพราะเจ็ดมากกว่าสาม"
+    "g1_compare_numbers_ep English item 1",
+    "g1_compare_numbers_ep English item 2",
+    "g1_compare_numbers_ep English item 3",
+    "g1_compare_numbers_ep English item 4",
+    "g1_compare_numbers_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g1_compare_numbers_q01",
-      "question_th": "พี่อลิสมีลูกบอล 8 ลูก พี่หมีมีลูกบอล 5 ลูก ใครมีมากกว่า?",
-      "question_text": "balls 8 balls balls 5 balls ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "8 5 balls?",
-      "explanation_th": "8 มากกว่า 5 ดังนั้นพี่อลิสมีลูกบอลมากกว่า",
-      "difficulty": "easy",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "core",
-      "question_en": "balls 8 balls balls 5 balls ?",
-      "explanation_en": "8 5 balls?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g1_compare_numbers_q02",
-      "question_th": "ดอกไม้ 6 ดอก กับดอกไม้ 6 ดอก เปรียบเทียบกันเป็นอย่างไร?",
-      "question_text": "6 6 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "6 6?",
-      "explanation_th": "6 เท่ากับ 6",
-      "difficulty": "easy",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "core",
-      "question_en": "6 6 ?",
-      "explanation_en": "6 6?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g1_compare_numbers_q03",
-      "question_th": "ลูกปัด 4 เม็ด กับลูกปัด 9 เม็ด จำนวนใดน้อยกว่า?",
-      "question_text": "marbles 4 beads marbles 9 beads ?",
-      "choices": [
-        "4 beads?",
-        "9 beads?",
-        "",
-        ""
-      ],
-      "correct_answer": "4 beads?",
-      "answer": "4 beads?",
-      "explanation": "4 9?",
-      "explanation_th": "4 น้อยกว่า 9",
-      "difficulty": "easy",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "core",
-      "question_en": "marbles 4 beads marbles 9 beads ?",
-      "explanation_en": "4 9?",
-      "choices_en": [
-        "4 beads?",
-        "9 beads?",
-        "",
-        ""
-      ],
-      "answer_en": "4 beads?"
-    },
-    {
-      "question_id": "g1_compare_numbers_q04",
-      "question_th": "จำนวนใดมากกว่า 12?",
-      "question_text": "12?",
-      "choices": [
-        "10",
-        "11",
-        "13",
-        "12"
-      ],
-      "correct_answer": "13",
-      "answer": "13",
-      "explanation": "13 12?",
-      "explanation_th": "13 มากกว่า 12",
-      "difficulty": "medium",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "core",
-      "question_en": "12?",
-      "explanation_en": "13 12?",
-      "choices_en": [
-        "10",
-        "11",
-        "13",
-        "12"
-      ],
-      "answer_en": "13"
-    },
-    {
-      "question_id": "g1_compare_numbers_q05",
-      "question_th": "จำนวนใดน้อยกว่า 7?",
-      "question_text": "7?",
-      "choices": [
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "correct_answer": "6",
-      "answer": "6",
-      "explanation": "6 7?",
-      "explanation_th": "6 น้อยกว่า 7",
-      "difficulty": "medium",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "core",
-      "question_en": "7?",
-      "explanation_en": "6 7?",
-      "choices_en": [
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "answer_en": "6"
-    },
-    {
-      "question_id": "g1_compare_numbers_q06",
-      "question_th": "10 กับ 15 จำนวนใดมากกว่า?",
-      "question_text": "10 15 ?",
-      "choices": [
-        "10",
-        "15",
-        "",
-        ""
-      ],
-      "correct_answer": "15",
-      "answer": "15",
-      "explanation": "15 10?",
-      "explanation_th": "15 มากกว่า 10",
-      "difficulty": "medium",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "core",
-      "question_en": "10 15 ?",
-      "explanation_en": "15 10?",
-      "choices_en": [
-        "10",
-        "15",
-        "",
-        ""
-      ],
-      "answer_en": "15"
-    },
-    {
-      "question_id": "g1_compare_numbers_q07",
-      "question_th": "พี่อลิสมีสติกเกอร์ 14 ดวง พี่หมีมี 14 ดวง เปรียบเทียบกันอย่างไร?",
-      "question_text": "stickers 14 stickers 14 stickers ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "14 14?",
-      "explanation_th": "14 เท่ากับ 14",
-      "difficulty": "medium",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "core",
-      "question_en": "stickers 14 stickers 14 stickers ?",
-      "explanation_en": "14 14?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g1_compare_numbers_q08",
-      "question_th": "เครื่องหมายใดถูกต้อง: 9 __ 5",
-      "question_text": ": 9 __ 5?",
-      "choices": [
-        ">",
-        "<",
-        "=",
-        "+"
-      ],
-      "correct_answer": ">",
-      "answer": ">",
-      "explanation": "9 5 >?",
-      "explanation_th": "9 มากกว่า 5 จึงใช้เครื่องหมาย >",
-      "difficulty": "hard",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "challenge",
-      "question_en": ": 9 __ 5?",
-      "explanation_en": "9 5 >?",
-      "choices_en": [
-        ">",
-        "<",
-        "=",
-        "+"
-      ],
-      "answer_en": ">"
-    },
-    {
-      "question_id": "g1_compare_numbers_q09",
-      "question_th": "เครื่องหมายใดถูกต้อง: 3 __ 8",
-      "question_text": ": 3 __ 8?",
-      "choices": [
-        "<",
-        ">",
-        "=",
-        "-"
-      ],
-      "correct_answer": "<",
-      "answer": "<",
-      "explanation": "3 8 <?",
-      "explanation_th": "3 น้อยกว่า 8 จึงใช้เครื่องหมาย <",
-      "difficulty": "hard",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "challenge",
-      "question_en": ": 3 __ 8?",
-      "explanation_en": "3 8 <?",
-      "choices_en": [
-        "<",
-        ">",
-        "=",
-        "-"
-      ],
-      "answer_en": "<"
-    },
-    {
-      "question_id": "g1_compare_numbers_q10",
-      "question_th": "เครื่องหมายใดถูกต้อง: 11 __ 11",
-      "question_text": ": 11 __ 11?",
-      "choices": [
-        "=",
-        ">",
-        "<",
-        "+"
-      ],
-      "correct_answer": "=",
-      "answer": "=",
-      "explanation": "11 11?",
-      "explanation_th": "11 เท่ากับ 11",
-      "difficulty": "hard",
-      "skill_tag": "g1_compare_numbers",
-      "question_type": "challenge",
-      "question_en": ": 11 __ 11?",
-      "explanation_en": "11 11?",
-      "choices_en": [
-        "=",
-        ">",
-        "<",
-        "+"
-      ],
-      "answer_en": "="
-    }
+    "g1_compare_numbers_ep English item 1",
+    "g1_compare_numbers_ep English item 2",
+    "g1_compare_numbers_ep English item 3",
+    "g1_compare_numbers_ep English item 4",
+    "g1_compare_numbers_ep English item 5",
+    "g1_compare_numbers_ep English item 6",
+    "g1_compare_numbers_ep English item 7",
+    "g1_compare_numbers_ep English item 8",
+    "g1_compare_numbers_ep English item 9",
+    "g1_compare_numbers_ep English item 10"
   ],
   "quiz_id": "g1_compare_numbers_ep",
   "generated_at": "2026-05-16T04:16:40.476557+00:00",
@@ -835,43 +599,79 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Comparing Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "content_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "data": {
+        "content_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Comparing Numbers. Use the model to get 30."
+      "title": "Think Story",
+      "content": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5.",
+      "content_en": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5.",
+      "data": {
+        "content_en": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
-      "unit": "items",
-      "symbol": "■"
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "comparison_bar",
+      "top": 30,
+      "bottom": 25,
+      "difference": 5,
+      "unit": "cookies",
+      "symbol": "🍪",
+      "data": {
+        "model_type": "comparison_bar",
+        "top": 30,
+        "bottom": 25,
+        "difference": 5,
+        "unit": "cookies",
+        "symbol": "🍪"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "30 - 25 = 5 cookies",
+      "content": "30 - 25 = 5 cookies",
+      "data": {
+        "expression": "30 - 25 = 5 cookies",
+        "content_en": "30 - 25 = 5 cookies"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "4 sheets",
+        "2 sheets",
+        "7 sheets",
+        "9 sheets"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "4 sheets",
+      "answer": "4 sheets",
+      "explanation": "Add the two groups: 26 + 22 = 4 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+        "choices": [
+          "4 sheets",
+          "2 sheets",
+          "7 sheets",
+          "9 sheets"
+        ],
+        "correct_answer": "4 sheets",
+        "answer": "4 sheets",
+        "explanation": "Add the two groups: 26 + 22 = 4 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g1_compare_numbers",
@@ -883,87 +683,94 @@
   "story_variants": [
     {
       "variant_id": "g1_compare_numbers_ep_01",
-      "status": "approved",
-      "title": "Comparing Numbers Variant 1",
-      "story": "Ton is learning Comparing Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Comparing Numbers. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Comparing Numbers.",
+      "variant_title_th": "",
+      "variant_title_en": "Comparing Numbers Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Comparing Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Ton makes a picture chart at the classroom. One group has 30 cookies, and another group has 25 cookies. How many more cookies does the first group have? This story practices Comparing Numbers in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Comparing Numbers. Use the model to get 30."
+          "title": "Think Story",
+          "content": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5.",
+          "content_en": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5.",
+          "data": {
+            "content_en": "Compare the two groups, 30 and 25. To find how many more, subtract: 30 - 25 = 5."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 30,
+          "bottom": 25,
+          "difference": 5,
+          "unit": "cookies",
+          "symbol": "🍪",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 30,
+            "bottom": 25,
+            "difference": 5,
+            "unit": "cookies",
+            "symbol": "🍪"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "30 - 25 = 5 cookies",
+          "content": "30 - 25 = 5 cookies",
+          "data": {
+            "expression": "30 - 25 = 5 cookies",
+            "content_en": "30 - 25 = 5 cookies"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "4 sheets",
+            "2 sheets",
+            "7 sheets",
+            "9 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "4 sheets",
+          "answer": "4 sheets",
+          "explanation": "Add the two groups: 26 + 22 = 4 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 26 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+            "choices": [
+              "4 sheets",
+              "2 sheets",
+              "7 sheets",
+              "9 sheets"
+            ],
+            "correct_answer": "4 sheets",
+            "answer": "4 sheets",
+            "explanation": "Add the two groups: 26 + 22 = 4 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Comparing Numbers.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

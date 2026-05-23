@@ -46,58 +46,90 @@
   "lesson_variants": [
     {
       "variant_id": "g1_money_basic_ep_01",
-      "variant_title_th": "Money and Change Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Money and Change Variant 1",
-      "story_theme_th": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive.",
-      "story_theme_en": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive.",
-      "helper_tip": "Read the story first. Circle the important numbers for Money and Change.",
+      "story_theme_th": "",
+      "story_theme_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive."
+          "content": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
+          "content_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
+          "data": {
+            "content_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key facts are 50.00 baht paid and 23.75 baht price. Use subtraction to find the change."
+          "title": "Think Story",
+          "content": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht.",
+          "content_en": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht.",
+          "data": {
+            "content_en": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ],
-          "unit": "baht"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "money_change",
+          "start": 80,
+          "spent": 22,
+          "result": 58,
+          "unit": "baht",
+          "symbol": "💵",
+          "item": "cards",
+          "data": {
+            "model_type": "money_change",
+            "start": 80,
+            "spent": 22,
+            "result": 58,
+            "unit": "baht",
+            "symbol": "💵",
+            "item": "cards"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "50.00 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points and subtract."
+          "expression": "80 - 22 = 58 baht",
+          "content": "80 - 22 = 58 baht",
+          "data": {
+            "expression": "80 - 22 = 58 baht",
+            "content_en": "80 - 22 = 58 baht"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "You pay 100 baht for a ruler that costs 35.50 baht. How much change do you get?",
+          "question": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+          "question_en": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
           "choices": [
-            "54.50 baht",
-            "64.50 baht",
-            "65.50 baht",
-            "75.50 baht"
+            "119 baht",
+            "117 baht",
+            "122 baht",
+            "124 baht"
           ],
-          "correct_answer": "64.50 baht",
-          "answer": "64.50 baht",
-          "explanation": "100.00 - 35.50 = 64.50 baht."
+          "correct_answer": "119 baht",
+          "answer": "119 baht",
+          "explanation": "Subtract the cost: 150 - 31 = 119 baht.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+            "question_en": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+            "choices": [
+              "119 baht",
+              "117 baht",
+              "122 baht",
+              "124 baht"
+            ],
+            "correct_answer": "119 baht",
+            "answer": "119 baht",
+            "explanation": "Subtract the cost: 150 - 31 = 119 baht.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -108,7 +140,7 @@
   "cover_emoji": "💰",
   "cover_color": "yellow",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -117,9 +149,9 @@
   "lesson_intro_th": "วันนี้พี่อลิสไปตลาดซื้อของ มีธนบัตรและเหรียญหลายแบบ ช่วยจำแนกดูหน่อยไหม? 🛒💰",
   "concept_explanation_th": "เงินแต่ละเหรียญมีมูลค่า เช่น 1 บาท 2 บาท 5 บาท 10 บาท เมื่อนำมารวมกันให้นับมูลค่าทีละเหรียญ",
   "singapore_math_model": {
-    "type": "bar_model",
-    "model_type": "bar_model",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "money_change",
+    "model_type": "money_change",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -531,312 +563,40 @@
   ],
   "title_en": "Money and Change",
   "objective_en": "Learn Money and Change with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Let's solve this together! Can you solve it?",
+  "story_intro_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: จำแนกธนบัตร",
-      "question_en": "leaves ?",
-      "solution_en": "leaves 20 ✅?"
-    },
-    {
-      "title_en": "Example: เปรียบเทียบค่าเงิน",
-      "question_en": "100 5 ?",
-      "solution_en": "100 5 100 > 5 ✅?"
-    },
-    {
-      "title_en": "Example: รวมค่าเงิน",
-      "question_en": "2 3 1 2 ?",
-      "solution_en": "2x3=6 + 1x2=2 = 8 ✅?"
-    }
+    "g1_money_basic_ep English item 1",
+    "g1_money_basic_ep English item 2",
+    "g1_money_basic_ep English item 3"
   ],
   "common_mistakes_en": [
-    "Mistake: สับสนระหว่างเหรียญ 25 สตางค์กับ 50 สตางค์",
-    "Mistake: คิดว่าเหรียญ 10 บาทใหญ่กว่าธนบัตร 20 บาทเสมอ แต่จริงๆ แล้วธนบัตรมีค่ามากกว่า",
-    "Mistake: ไม่เข้าใจว่า 1 บาท = 100 สตางค์ ทำให้เปรียบเทียบผิด"
+    "g1_money_basic_ep English item 1",
+    "g1_money_basic_ep English item 2",
+    "g1_money_basic_ep English item 3"
   ],
   "hints_en": [
-    "Hint: ธนบัตรมีกระดาษ เหรียญเป็นโลหะ เหรียญที่ใหญ่ที่สุดคือเหรียญ 10 บาท",
-    "Hint: ตัวเลขบนธนบัตรหรือเหรียญบอกค่าของมัน ยิ่งตัวเลขมาก ยิ่งมีค่ามาก",
-    "Hint: ถ้าต้องเปรียบเทียบ ให้ดูตัวเลขก่อน ตัวเลขที่มากกว่าคือค่าที่มากกว่า"
+    "g1_money_basic_ep English item 1",
+    "g1_money_basic_ep English item 2",
+    "g1_money_basic_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: ธนบัตรไทยมี 20 บาท 50 บาท 100 บาท 500 บาท และ 1000 บาท ยิ่งสีเข้ม ยิ่งมีค่ามาก",
-    "Step: เหรียญไทยมี 25 สตางค์ 50 สตางค์ 1 บาท 2 บาท 5 บาท และ 10 บาท เหรียญโลหะที่ใหญ่ที่สุดคือ 10 บาท",
-    "Step: 1 บาท = 100 สตางค์ ดังนั้น 1 บาทมากกว่า 50 สตางค์ เสมอ",
-    "Step: เวลาดูว่าธนบัตรหรือเหรียญมีค่าเท่าไหร่ ให้ดูตัวเลขที่พิมพ์บนหน้าบัตรหรือเหรียญ",
-    "Step: เมื่อซื้อของ ให้ดูว่าต้องจ่ายเท่าไหร่ แล้วเลือกธนบัตรหรือเหรียญที่มีค่ารวมกันเท่ากับราคาสินค้า"
+    "g1_money_basic_ep English item 1",
+    "g1_money_basic_ep English item 2",
+    "g1_money_basic_ep English item 3",
+    "g1_money_basic_ep English item 4",
+    "g1_money_basic_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g1_money_basic_q01",
-      "question_th": "เหรียญ 5 บาท 1 เหรียญ และ เหรียญ 1 บาท 2 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "5 1 1 2 ?",
-      "choices": [
-        "5?",
-        "7?",
-        "9?",
-        "12?"
-      ],
-      "correct_answer": "7?",
-      "answer": "7?",
-      "explanation": ": 5 + 1 + 1 = 7?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 5 + 1 + 1 = 7 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "5 1 1 2 ?",
-      "explanation_en": ": 5 + 1 + 1 = 7?",
-      "choices_en": [
-        "5?",
-        "7?",
-        "9?",
-        "12?"
-      ],
-      "answer_en": "7?"
-    },
-    {
-      "question_id": "g1_money_basic_q02",
-      "question_th": "เหรียญ 5 บาท 2 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "5 2 ?",
-      "choices": [
-        "8?",
-        "10?",
-        "12?",
-        "15?"
-      ],
-      "correct_answer": "10?",
-      "answer": "10?",
-      "explanation": ": 5 + 5 = 10?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 5 + 5 = 10 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "5 2 ?",
-      "explanation_en": ": 5 + 5 = 10?",
-      "choices_en": [
-        "8?",
-        "10?",
-        "12?",
-        "15?"
-      ],
-      "answer_en": "10?"
-    },
-    {
-      "question_id": "g1_money_basic_q03",
-      "question_th": "เหรียญ 10 บาท 1 เหรียญ และ เหรียญ 5 บาท 1 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "10 1 5 1 ?",
-      "choices": [
-        "13?",
-        "15?",
-        "17?",
-        "20?"
-      ],
-      "correct_answer": "15?",
-      "answer": "15?",
-      "explanation": ": 10 + 5 = 15?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 10 + 5 = 15 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "10 1 5 1 ?",
-      "explanation_en": ": 10 + 5 = 15?",
-      "choices_en": [
-        "13?",
-        "15?",
-        "17?",
-        "20?"
-      ],
-      "answer_en": "15?"
-    },
-    {
-      "question_id": "g1_money_basic_q04",
-      "question_th": "เหรียญ 5 บาท 1 เหรียญ และ เหรียญ 2 บาท 2 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "5 1 2 2 ?",
-      "choices": [
-        "7?",
-        "9?",
-        "11?",
-        "14?"
-      ],
-      "correct_answer": "9?",
-      "answer": "9?",
-      "explanation": ": 5 + 2 + 2 = 9?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 5 + 2 + 2 = 9 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "5 1 2 2 ?",
-      "explanation_en": ": 5 + 2 + 2 = 9?",
-      "choices_en": [
-        "7?",
-        "9?",
-        "11?",
-        "14?"
-      ],
-      "answer_en": "9?"
-    },
-    {
-      "question_id": "g1_money_basic_q05",
-      "question_th": "เหรียญ 10 บาท 1 เหรียญ และ เหรียญ 1 บาท 4 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "10 1 1 4 ?",
-      "choices": [
-        "12?",
-        "14?",
-        "16?",
-        "19?"
-      ],
-      "correct_answer": "14?",
-      "answer": "14?",
-      "explanation": ": 10 + 1 + 1 + 1 + 1 = 14?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 10 + 1 + 1 + 1 + 1 = 14 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "10 1 1 4 ?",
-      "explanation_en": ": 10 + 1 + 1 + 1 + 1 = 14?",
-      "choices_en": [
-        "12?",
-        "14?",
-        "16?",
-        "19?"
-      ],
-      "answer_en": "14?"
-    },
-    {
-      "question_id": "g1_money_basic_q06",
-      "question_th": "เหรียญ 20 บาท 1 เหรียญ และ เหรียญ 5 บาท 1 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "20 1 5 1 ?",
-      "choices": [
-        "23?",
-        "25?",
-        "27?",
-        "30?"
-      ],
-      "correct_answer": "25?",
-      "answer": "25?",
-      "explanation": ": 20 + 5 = 25?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 20 + 5 = 25 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "20 1 5 1 ?",
-      "explanation_en": ": 20 + 5 = 25?",
-      "choices_en": [
-        "23?",
-        "25?",
-        "27?",
-        "30?"
-      ],
-      "answer_en": "25?"
-    },
-    {
-      "question_id": "g1_money_basic_q07",
-      "question_th": "เหรียญ 5 บาท 3 เหรียญ และ เหรียญ 1 บาท 2 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "5 3 1 2 ?",
-      "choices": [
-        "15?",
-        "17?",
-        "19?",
-        "22?"
-      ],
-      "correct_answer": "17?",
-      "answer": "17?",
-      "explanation": ": 5 + 5 + 5 + 1 + 1 = 17?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 5 + 5 + 5 + 1 + 1 = 17 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "5 3 1 2 ?",
-      "explanation_en": ": 5 + 5 + 5 + 1 + 1 = 17?",
-      "choices_en": [
-        "15?",
-        "17?",
-        "19?",
-        "22?"
-      ],
-      "answer_en": "17?"
-    },
-    {
-      "question_id": "g1_money_basic_q08",
-      "question_th": "เหรียญ 2 บาท 3 เหรียญ และ เหรียญ 1 บาท 4 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "2 3 1 4 ?",
-      "choices": [
-        "8?",
-        "10?",
-        "12?",
-        "15?"
-      ],
-      "correct_answer": "10?",
-      "answer": "10?",
-      "explanation": ": 2 + 2 + 2 + 1 + 1 + 1 + 1 = 10?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 2 + 2 + 2 + 1 + 1 + 1 + 1 = 10 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "2 3 1 4 ?",
-      "explanation_en": ": 2 + 2 + 2 + 1 + 1 + 1 + 1 = 10?",
-      "choices_en": [
-        "8?",
-        "10?",
-        "12?",
-        "15?"
-      ],
-      "answer_en": "10?"
-    },
-    {
-      "question_id": "g1_money_basic_q09",
-      "question_th": "เหรียญ 10 บาท 2 เหรียญ และ เหรียญ 1 บาท 3 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "10 2 1 3 ?",
-      "choices": [
-        "21?",
-        "23?",
-        "25?",
-        "28?"
-      ],
-      "correct_answer": "23?",
-      "answer": "23?",
-      "explanation": ": 10 + 10 + 1 + 1 + 1 = 23?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 10 + 10 + 1 + 1 + 1 = 23 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "10 2 1 3 ?",
-      "explanation_en": ": 10 + 10 + 1 + 1 + 1 = 23?",
-      "choices_en": [
-        "21?",
-        "23?",
-        "25?",
-        "28?"
-      ],
-      "answer_en": "23?"
-    },
-    {
-      "question_id": "g1_money_basic_q10",
-      "question_th": "เหรียญ 20 บาท 1 เหรียญ และ เหรียญ 10 บาท 1 เหรียญ รวมเป็นเงินกี่บาท?",
-      "question_text": "20 1 10 1 ?",
-      "choices": [
-        "28?",
-        "30?",
-        "32?",
-        "35?"
-      ],
-      "correct_answer": "30?",
-      "answer": "30?",
-      "explanation": ": 20 + 10 = 30?",
-      "explanation_th": "นับมูลค่าเหรียญรวมกัน: 20 + 10 = 30 บาท",
-      "difficulty": "easy",
-      "skill_tag": "g1_money_basic",
-      "question_type": "core",
-      "question_en": "20 1 10 1 ?",
-      "explanation_en": ": 20 + 10 = 30?",
-      "choices_en": [
-        "28?",
-        "30?",
-        "32?",
-        "35?"
-      ],
-      "answer_en": "30?"
-    }
+    "g1_money_basic_ep English item 1",
+    "g1_money_basic_ep English item 2",
+    "g1_money_basic_ep English item 3",
+    "g1_money_basic_ep English item 4",
+    "g1_money_basic_ep English item 5",
+    "g1_money_basic_ep English item 6",
+    "g1_money_basic_ep English item 7",
+    "g1_money_basic_ep English item 8",
+    "g1_money_basic_ep English item 9",
+    "g1_money_basic_ep English item 10"
   ],
   "quiz_id": "g1_money_basic_ep",
   "generated_at": "2026-05-16T04:16:40.521514+00:00",
@@ -846,49 +606,81 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive."
+      "content": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
+      "content_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
+      "data": {
+        "content_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key facts are 50.00 baht paid and 23.75 baht price. Use subtraction to find the change."
+      "title": "Think Story",
+      "content": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht.",
+      "content_en": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht.",
+      "data": {
+        "content_en": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-      "model_type": "bar_model",
-      "groups": [
-        {
-          "label": "price",
-          "value": 23.75
-        },
-        {
-          "label": "change",
-          "value": 26.25
-        }
-      ],
-      "unit": "baht"
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "money_change",
+      "start": 80,
+      "spent": 22,
+      "result": 58,
+      "unit": "baht",
+      "symbol": "💵",
+      "item": "cards",
+      "data": {
+        "model_type": "money_change",
+        "start": 80,
+        "spent": 22,
+        "result": 58,
+        "unit": "baht",
+        "symbol": "💵",
+        "item": "cards"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "50.00 - 23.75 = 26.25 baht",
-      "content": "Line up decimal points and subtract."
+      "expression": "80 - 22 = 58 baht",
+      "content": "80 - 22 = 58 baht",
+      "data": {
+        "expression": "80 - 22 = 58 baht",
+        "content_en": "80 - 22 = 58 baht"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "You pay 100 baht for a ruler that costs 35.50 baht. How much change do you get?",
+      "question": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+      "question_en": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
       "choices": [
-        "54.50 baht",
-        "64.50 baht",
-        "65.50 baht",
-        "75.50 baht"
+        "119 baht",
+        "117 baht",
+        "122 baht",
+        "124 baht"
       ],
-      "correct_answer": "64.50 baht",
-      "answer": "64.50 baht",
-      "explanation": "100.00 - 35.50 = 64.50 baht."
+      "correct_answer": "119 baht",
+      "answer": "119 baht",
+      "explanation": "Subtract the cost: 150 - 31 = 119 baht.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+        "question_en": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+        "choices": [
+          "119 baht",
+          "117 baht",
+          "122 baht",
+          "124 baht"
+        ],
+        "correct_answer": "119 baht",
+        "answer": "119 baht",
+        "explanation": "Subtract the cost: 150 - 31 = 119 baht.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g1_money_basic",
@@ -900,99 +692,96 @@
   "story_variants": [
     {
       "variant_id": "g1_money_basic_ep_01",
-      "status": "approved",
-      "title": "Money and Change Variant 1",
-      "story": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive.",
-      "think_story": "The key facts are 50.00 baht paid and 23.75 baht price. Use subtraction to find the change.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-        "model_type": "bar_model",
-        "groups": [
-          {
-            "label": "price",
-            "value": 23.75
-          },
-          {
-            "label": "change",
-            "value": 26.25
-          }
-        ],
-        "unit": "baht"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "50.00 - 23.75 = 26.25 baht",
-        "content": "Line up decimal points and subtract."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "You pay 100 baht for a ruler that costs 35.50 baht. How much change do you get?",
-        "choices": [
-          "54.50 baht",
-          "64.50 baht",
-          "65.50 baht",
-          "75.50 baht"
-        ],
-        "correct_answer": "64.50 baht",
-        "answer": "64.50 baht",
-        "explanation": "100.00 - 35.50 = 64.50 baht."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Money and Change.",
+      "variant_title_th": "",
+      "variant_title_en": "Money and Change Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Nina buys a notebook for 23.75 baht. She pays with a 50 baht banknote. The shopkeeper needs to find the change. Money amounts can have decimal points, so Nina lines up the decimal points before subtracting. She thinks of 50 baht as 50.00 baht. Then she subtracts the price from the money paid. Nina checks each place value: baht, tenths, and hundredths. She does not move the decimal point. She writes the numbers in a neat column, subtracts from right to left, and reads the answer as the amount of change she should receive."
+          "content": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
+          "content_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete.",
+          "data": {
+            "content_en": "Win has 80 baht in a storage box. At home, Win buys cards for 22 baht. How much money is left after paying? This story practices Money and Change in the music room with number magnets while friends set up instruments. After solving, the class says the unit aloud so the final answer is complete."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key facts are 50.00 baht paid and 23.75 baht price. Use subtraction to find the change."
+          "title": "Think Story",
+          "content": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht.",
+          "content_en": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht.",
+          "data": {
+            "content_en": "The story starts with 80 baht and spends 22 baht. We subtract to find the change: 80 - 22 = 58 baht."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "50 baht is split into 23.75 baht price and 26.25 baht change.",
-          "model_type": "bar_model",
-          "groups": [
-            {
-              "label": "price",
-              "value": 23.75
-            },
-            {
-              "label": "change",
-              "value": 26.25
-            }
-          ],
-          "unit": "baht"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "money_change",
+          "start": 80,
+          "spent": 22,
+          "result": 58,
+          "unit": "baht",
+          "symbol": "💵",
+          "item": "cards",
+          "data": {
+            "model_type": "money_change",
+            "start": 80,
+            "spent": 22,
+            "result": 58,
+            "unit": "baht",
+            "symbol": "💵",
+            "item": "cards"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "50.00 - 23.75 = 26.25 baht",
-          "content": "Line up decimal points and subtract."
+          "expression": "80 - 22 = 58 baht",
+          "content": "80 - 22 = 58 baht",
+          "data": {
+            "expression": "80 - 22 = 58 baht",
+            "content_en": "80 - 22 = 58 baht"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "You pay 100 baht for a ruler that costs 35.50 baht. How much change do you get?",
+          "question": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+          "question_en": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
           "choices": [
-            "54.50 baht",
-            "64.50 baht",
-            "65.50 baht",
-            "75.50 baht"
+            "119 baht",
+            "117 baht",
+            "122 baht",
+            "124 baht"
           ],
-          "correct_answer": "64.50 baht",
-          "answer": "64.50 baht",
-          "explanation": "100.00 - 35.50 = 64.50 baht."
+          "correct_answer": "119 baht",
+          "answer": "119 baht",
+          "explanation": "Subtract the cost: 150 - 31 = 119 baht.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+            "question_en": "Nan has 150 baht. She buys a notebook for 31 baht. How much money is left?",
+            "choices": [
+              "119 baht",
+              "117 baht",
+              "122 baht",
+              "124 baht"
+            ],
+            "correct_answer": "119 baht",
+            "answer": "119 baht",
+            "explanation": "Subtract the cost: 150 - 31 = 119 baht.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Money and Change.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

@@ -1,0 +1,710 @@
+{
+  "lesson_id": "g3_multiplication_area_model_thp",
+  "id": "g3_multiplication_area_model_thp",
+  "content_schema_version": "topa_story_variant_v1",
+  "quality_required": true,
+  "status": "needs_review",
+  "program_type": "THP",
+  "grade_level": 3,
+  "subject": "math",
+  "topic_code": "g3_multiplication_area_model",
+  "skill_code": "g3_multiplication_area_model_thp",
+  "quiz_id": "g3_multiplication_area_model_thp",
+  "title_th": "การคูณด้วยแบบจำลองพื้นที่",
+  "objective_th": "เข้าใจเรื่องการคูณด้วยแบบจำลองพื้นที่จากสถานการณ์จริง ใช้แผนภาพและประโยควิธีทำได้ถูกต้อง",
+  "estimated_minutes": 15,
+  "has_test": true,
+  "story_intro_th": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้",
+  "key_ideas_th": [
+    "แบบจำลองพื้นที่ช่วยให้เห็นว่า การคูณคือจำนวนแถวคูณจำนวนช่องในแต่ละแถว",
+    "ถ้าแถวเท่ากันทุกแถว เรานับเป็นกลุ่มเท่า ๆ กันได้",
+    "จำนวนช่องทั้งหมดเท่ากับ แถว × ช่องในแต่ละแถว"
+  ],
+  "singapore_math_model": {
+    "type": "array_model",
+    "model_type": "array_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้",
+      "data": {
+        "content_th": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "เรื่องราวชวนคิด",
+      "content": "โจทย์ให้ 8 แถว และแต่ละแถวมี 10 จึงใช้การคูณ 8 × 10 เพราะเป็นกลุ่มเท่า ๆ กัน ผลลัพธ์คือ 80 ชิ้น",
+      "data": {
+        "content_th": "โจทย์ให้ 8 แถว และแต่ละแถวมี 10 จึงใช้การคูณ 8 × 10 เพราะเป็นกลุ่มเท่า ๆ กัน ผลลัพธ์คือ 80 ชิ้น"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "ใช้แผนภาพช่วยคิด",
+      "description": "แผนภาพใช้สิ่งของและตัวเลขเดียวกับโจทย์",
+      "model_type": "array_model",
+      "rows": 8,
+      "cols": 10,
+      "total": 80,
+      "unit": "ชิ้น",
+      "symbol": "●",
+      "data": {
+        "model_type": "array_model",
+        "rows": 8,
+        "cols": 10,
+        "total": 80,
+        "unit": "ชิ้น",
+        "symbol": "●"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "เขียนเป็นประโยควิธีทำ",
+      "expression": "8 × 10 = 80 ชิ้น",
+      "content": "8 × 10 = 80 ชิ้น",
+      "data": {
+        "expression": "8 × 10 = 80 ชิ้น",
+        "content_th": "8 × 10 = 80 ชิ้น"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+      "question_th": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+      "choices": [
+        "48 แท่ง",
+        "46 แท่ง",
+        "51 แท่ง",
+        "53 แท่ง"
+      ],
+      "correct_answer": "48 แท่ง",
+      "answer": "48 แท่ง",
+      "explanation": "มี 6 กลุ่มเท่า ๆ กัน กลุ่มละ 8 จึงใช้ 6 × 8 = 48",
+      "data": {
+        "question": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+        "question_th": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+        "choices": [
+          "48 แท่ง",
+          "46 แท่ง",
+          "51 แท่ง",
+          "53 แท่ง"
+        ],
+        "correct_answer": "48 แท่ง",
+        "answer": "48 แท่ง",
+        "explanation": "มี 6 กลุ่มเท่า ๆ กัน กลุ่มละ 8 จึงใช้ 6 × 8 = 48"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "มองรูปเป็นแถวที่เท่ากัน",
+    "นับจำนวนแถวก่อน",
+    "นับจำนวนช่องในหนึ่งแถว",
+    "คูณจำนวนแถวกับจำนวนช่องในหนึ่งแถว",
+    "ตรวจคำตอบโดยนับช่องทั้งหมด"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ตัวอย่างที่ 1",
+      "question_th": "แปลงดอกไม้มี 3 แถว แถวละ 5 ต้น มีดอกไม้กี่ต้น",
+      "solution_th": "3 × 5 = 15 จึงมีดอกไม้ 15 ต้น"
+    },
+    {
+      "title_th": "ตัวอย่างที่ 2",
+      "question_th": "โต๊ะเรียงเป็น 2 แถว แถวละ 8 ตัว มีโต๊ะกี่ตัว",
+      "solution_th": "2 × 8 = 16 จึงมีโต๊ะ 16 ตัว"
+    }
+  ],
+  "common_mistakes": [
+    "บวก 4 + 6 แทนการคูณ 4 × 6",
+    "นับเฉพาะแถวเดียวแล้วลืมนับทุกแถว",
+    "เขียนคำตอบโดยไม่ใส่หน่วย เช่น ช่อง ต้น หรือตัว"
+  ],
+  "hints": [
+    "ถ้ารูปมีแถวเท่ากัน ให้คิดว่า แถว × จำนวนในแต่ละแถว",
+    "วาดตารางเล็ก ๆ เพื่อช่วยตรวจคำตอบได้"
+  ],
+  "lesson_variants": [
+    {
+      "variant_id": "g3_multiplication_area_model_thp_01",
+      "variant_title_th": "การคูณด้วยแบบจำลองพื้นที่ แบบที่ 1",
+      "variant_title_en": "Variant 1",
+      "story_theme_th": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้",
+      "story_theme_en": "Variant 1 story for g3_multiplication_area_model_thp",
+      "helper_tip": "อ่านโจทย์ให้ครบ วงตัวเลขสำคัญ แล้วดูว่าคำถามต้องการหาอะไร",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราว",
+          "content": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้",
+          "data": {
+            "content_th": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้"
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "เรื่องราวชวนคิด",
+          "content": "โจทย์ให้ 8 แถว และแต่ละแถวมี 10 จึงใช้การคูณ 8 × 10 เพราะเป็นกลุ่มเท่า ๆ กัน ผลลัพธ์คือ 80 ชิ้น",
+          "data": {
+            "content_th": "โจทย์ให้ 8 แถว และแต่ละแถวมี 10 จึงใช้การคูณ 8 × 10 เพราะเป็นกลุ่มเท่า ๆ กัน ผลลัพธ์คือ 80 ชิ้น"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "แผนภาพใช้สิ่งของและตัวเลขเดียวกับโจทย์",
+          "model_type": "array_model",
+          "rows": 8,
+          "cols": 10,
+          "total": 80,
+          "unit": "ชิ้น",
+          "symbol": "●",
+          "data": {
+            "model_type": "array_model",
+            "rows": 8,
+            "cols": 10,
+            "total": 80,
+            "unit": "ชิ้น",
+            "symbol": "●"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "8 × 10 = 80 ชิ้น",
+          "content": "8 × 10 = 80 ชิ้น",
+          "data": {
+            "expression": "8 × 10 = 80 ชิ้น",
+            "content_th": "8 × 10 = 80 ชิ้น"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+          "question_th": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+          "choices": [
+            "48 แท่ง",
+            "46 แท่ง",
+            "51 แท่ง",
+            "53 แท่ง"
+          ],
+          "correct_answer": "48 แท่ง",
+          "answer": "48 แท่ง",
+          "explanation": "มี 6 กลุ่มเท่า ๆ กัน กลุ่มละ 8 จึงใช้ 6 × 8 = 48",
+          "data": {
+            "question": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+            "question_th": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+            "choices": [
+              "48 แท่ง",
+              "46 แท่ง",
+              "51 แท่ง",
+              "53 แท่ง"
+            ],
+            "correct_answer": "48 แท่ง",
+            "answer": "48 แท่ง",
+            "explanation": "มี 6 กลุ่มเท่า ๆ กัน กลุ่มละ 8 จึงใช้ 6 × 8 = 48"
+          }
+        }
+      ]
+    }
+  ],
+  "subtitle_th": "นักเรียนคูณจำนวนสองจำนวนได้ โดยมองเป็นแถวและหลักในแบบจำลองพื้นที่",
+  "learning_objective_th": "นักเรียนคูณจำนวนสองจำนวนได้ โดยมองเป็นแถวและหลักในแบบจำลองพื้นที่",
+  "lesson_intro_th": "แปลงผักกว้าง 6 เมตร ยาว 5 เมตร มีพื้นที่เท่าไหร่? 🌿",
+  "concept_explanation_th": "มองรูปเป็นแถวที่เท่ากัน นับจำนวนแถวก่อน นับจำนวนช่องในหนึ่งแถว คูณจำนวนแถวกับจำนวนช่องในหนึ่งแถว ตรวจคำตอบโดยนับช่องทั้งหมด",
+  "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "area_model",
+    "rows": 3,
+    "columns": 6,
+    "total": 18,
+    "label_th": "แผนภาพพื้นที่แบบช่อง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท การคูณด้วยแบบจำลองพื้นที่ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ตัวอย่างที่ 1",
+      "question_th": "แปลงดอกไม้มี 3 แถว แถวละ 5 ต้น มีดอกไม้กี่ต้น",
+      "solution_th": "3 × 5 = 15 จึงมีดอกไม้ 15 ต้น"
+    },
+    {
+      "title_th": "ตัวอย่างที่ 2",
+      "question_th": "โต๊ะเรียงเป็น 2 แถว แถวละ 8 ตัว มีโต๊ะกี่ตัว",
+      "solution_th": "2 × 8 = 16 จึงมีโต๊ะ 16 ตัว"
+    }
+  ],
+  "common_mistakes_th": [
+    "บวก 4 + 6 แทนการคูณ 4 × 6",
+    "นับเฉพาะแถวเดียวแล้วลืมนับทุกแถว",
+    "เขียนคำตอบโดยไม่ใส่หน่วย เช่น ช่อง ต้น หรือตัว"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_multiplication_area_model_thp_q01",
+      "question_th": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "20",
+        "24",
+        "28",
+        "30"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "4 × 6 = 24 ช่อง",
+      "explanation_th": "4 × 6 = 24 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q02",
+      "question_th": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "8",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15 ช่อง",
+      "explanation_th": "5 × 3 = 15 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q03",
+      "question_th": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "9",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "7 × 2 = 14 ช่อง",
+      "explanation_th": "7 × 2 = 14 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q04",
+      "question_th": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "question_text": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24",
+      "explanation_th": "6 × 4 = 24",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q05",
+      "question_th": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "question_text": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "21",
+        "24",
+        "27",
+        "30"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "3 × 8 = 24",
+      "explanation_th": "3 × 8 = 24",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q06",
+      "question_th": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "question_text": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "24",
+        "27",
+        "30",
+        "33"
+      ],
+      "correct_answer": "27",
+      "answer": "27",
+      "explanation": "9 × 3 = 27",
+      "explanation_th": "9 × 3 = 27",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q07",
+      "question_th": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "question_text": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q08",
+      "question_th": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "question_text": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "8 × 5 = 40",
+      "explanation_th": "8 × 5 = 40",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q09",
+      "question_th": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "question_text": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "42",
+        "49",
+        "56",
+        "63"
+      ],
+      "correct_answer": "49",
+      "answer": "49",
+      "explanation": "7 × 7 = 49",
+      "explanation_th": "7 × 7 = 49",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q10",
+      "question_th": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "question_text": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "10 × 6 = 60",
+      "explanation_th": "10 × 6 = 60",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_multiplication_area_model_thp_q01",
+      "question_th": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตารางมี 4 แถว แถวละ 6 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "20",
+        "24",
+        "28",
+        "30"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "4 × 6 = 24 ช่อง",
+      "explanation_th": "4 × 6 = 24 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q02",
+      "question_th": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "ตาราง 5 แถว แถวละ 3 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "8",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "5 × 3 = 15 ช่อง",
+      "explanation_th": "5 × 3 = 15 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q03",
+      "question_th": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "question_text": "พื้นที่กว้าง 7 ช่อง ยาว 2 ช่อง มีทั้งหมดกี่ช่อง?",
+      "choices": [
+        "9",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "14",
+      "answer": "14",
+      "explanation": "7 × 2 = 14 ช่อง",
+      "explanation_th": "7 × 2 = 14 ช่อง",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q04",
+      "question_th": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "question_text": "6 แถว แถวละ 4 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "6 × 4 = 24",
+      "explanation_th": "6 × 4 = 24",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q05",
+      "question_th": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "question_text": "3 แถว แถวละ 8 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "21",
+        "24",
+        "27",
+        "30"
+      ],
+      "correct_answer": "24",
+      "answer": "24",
+      "explanation": "3 × 8 = 24",
+      "explanation_th": "3 × 8 = 24",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q06",
+      "question_th": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "question_text": "9 แถว แถวละ 3 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "24",
+        "27",
+        "30",
+        "33"
+      ],
+      "correct_answer": "27",
+      "answer": "27",
+      "explanation": "9 × 3 = 27",
+      "explanation_th": "9 × 3 = 27",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q07",
+      "question_th": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "question_text": "2 แถว แถวละ 10 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "2 × 10 = 20",
+      "explanation_th": "2 × 10 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q08",
+      "question_th": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "question_text": "8 แถว แถวละ 5 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "8 × 5 = 40",
+      "explanation_th": "8 × 5 = 40",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q09",
+      "question_th": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "question_text": "7 แถว แถวละ 7 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "42",
+        "49",
+        "56",
+        "63"
+      ],
+      "correct_answer": "49",
+      "answer": "49",
+      "explanation": "7 × 7 = 49",
+      "explanation_th": "7 × 7 = 49",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_area_model_thp_q10",
+      "question_th": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "question_text": "10 แถว แถวละ 6 ช่อง รวมกี่ช่อง?",
+      "choices": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "10 × 6 = 60",
+      "explanation_th": "10 × 6 = 60",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_area_model_thp",
+      "question_type": "challenge"
+    }
+  ],
+  "base_lesson_id": "g3_multiplication_area_model",
+  "program": "TH",
+  "language": "th",
+  "lesson_title": "การคูณด้วยแบบจำลองพื้นที่",
+  "title_en": "Area of Rectangles",
+  "topic": "area",
+  "icon": "grid",
+  "story_variants": [
+    {
+      "variant_id": "g3_multiplication_area_model_thp_01",
+      "variant_title_th": "การคูณด้วยแบบจำลองพื้นที่ แบบที่ 1",
+      "variant_title_en": "Variant 1",
+      "story_theme_th": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้",
+      "story_theme_en": "Variant 1 story for g3_multiplication_area_model_thp",
+      "helper_tip": "อ่านโจทย์ให้ครบ วงตัวเลขสำคัญ แล้วดูว่าคำถามต้องการหาอะไร",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "เรื่องราว",
+          "content": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้",
+          "data": {
+            "content_th": "น้องเอิร์นช่วยเพื่อนในห้องจัดลูกปัดบนโต๊ะที่โต๊ะงานประดิษฐ์ โดยวางเป็น 8 แถว แถวละ 10 ชิ้น เพื่อให้เห็นรูปแบบซ้ำอย่างเป็นระเบียบ น้องเอิร์นต้องหาจำนวนทั้งหมดว่ามีเท่าไรจากจำนวนแถวและจำนวนในแต่ละแถว โจทย์นี้ฝึกแนวคิดการคูณด้วยแบบจำลองพื้นที่ผ่านภารกิจที่ลานกิจกรรม เด็ก ๆ ต้องจัดแถวของให้ตรงกับเส้นสีแดงหลังซ้อมร้องเพลง หลังคิดเสร็จ นักเรียนต้องบอกด้วยว่าคำตอบมีหน่วยอะไร เพื่อให้ประโยควิธีทำสมบูรณ์และตรวจสอบได้"
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "เรื่องราวชวนคิด",
+          "content": "โจทย์ให้ 8 แถว และแต่ละแถวมี 10 จึงใช้การคูณ 8 × 10 เพราะเป็นกลุ่มเท่า ๆ กัน ผลลัพธ์คือ 80 ชิ้น",
+          "data": {
+            "content_th": "โจทย์ให้ 8 แถว และแต่ละแถวมี 10 จึงใช้การคูณ 8 × 10 เพราะเป็นกลุ่มเท่า ๆ กัน ผลลัพธ์คือ 80 ชิ้น"
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "ใช้แผนภาพช่วยคิด",
+          "description": "แผนภาพใช้สิ่งของและตัวเลขเดียวกับโจทย์",
+          "model_type": "array_model",
+          "rows": 8,
+          "cols": 10,
+          "total": 80,
+          "unit": "ชิ้น",
+          "symbol": "●",
+          "data": {
+            "model_type": "array_model",
+            "rows": 8,
+            "cols": 10,
+            "total": 80,
+            "unit": "ชิ้น",
+            "symbol": "●"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "เขียนเป็นประโยควิธีทำ",
+          "expression": "8 × 10 = 80 ชิ้น",
+          "content": "8 × 10 = 80 ชิ้น",
+          "data": {
+            "expression": "8 × 10 = 80 ชิ้น",
+            "content_th": "8 × 10 = 80 ชิ้น"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "ลองทำดู",
+          "question": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+          "question_th": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+          "choices": [
+            "48 แท่ง",
+            "46 แท่ง",
+            "51 แท่ง",
+            "53 แท่ง"
+          ],
+          "correct_answer": "48 แท่ง",
+          "answer": "48 แท่ง",
+          "explanation": "มี 6 กลุ่มเท่า ๆ กัน กลุ่มละ 8 จึงใช้ 6 × 8 = 48",
+          "data": {
+            "question": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+            "question_th": "ครูวางดินสอเป็น 6 กล่อง กล่องละ 8 แท่ง มีดินสอทั้งหมดกี่แท่ง",
+            "choices": [
+              "48 แท่ง",
+              "46 แท่ง",
+              "51 แท่ง",
+              "53 แท่ง"
+            ],
+            "correct_answer": "48 แท่ง",
+            "answer": "48 แท่ง",
+            "explanation": "มี 6 กลุ่มเท่า ๆ กัน กลุ่มละ 8 จึงใช้ 6 × 8 = 48"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "อ่านโจทย์ให้ครบ วงตัวเลขสำคัญ แล้วดูว่าคำถามต้องการหาอะไร",
+  "objective_en": ""
+}

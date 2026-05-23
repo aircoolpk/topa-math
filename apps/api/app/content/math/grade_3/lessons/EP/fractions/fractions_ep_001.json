@@ -1,0 +1,262 @@
+{
+  "variant_id": "fractions_ep_001",
+  "variant_title_th": "เศษส่วน — ความหมายและการเปรียบเทียบ",
+  "variant_title_en": "Fractions — Meaning and Comparison",
+  "status": "needs_review",
+  "title_en": "Fractions",
+  "story_theme_en": "The teacher divided a banana cake equally among 4 students. Mali received 1 piece and Lin received 1 piece. How much of the whole cake did each student get? And which fraction is greater?",
+  "helper_tip_en": "Have students draw a circle (cake) divided into equal parts and shade the parts received.",
+  "think_story_en": "Cake divided into 4 equal parts. Mali gets 1/4. Lin gets 1/4. 1/4 = 1/4, both get the same amount. 3/4 of the cake is left over.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Teacher divides a cake among 4 students.",
+      "data": {
+        "content_en": "The teacher divided a banana cake equally among 4 students. Mali received 1 piece and Lin received 1 piece. How much of the whole cake did each student get? And which fraction is greater?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "1/4 = 1/4, same amount. 3/4 of cake is left.",
+      "data": {
+        "content_en": "Cake divided into 4 equal parts. Mali gets 1/4. Lin gets 1/4. 1/4 = 1/4, both get the same amount. 3/4 of the cake is left over."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Fraction Pie Model",
+      "description": "A pie divided into 4 equal parts showing 1/4 shaded",
+      "model_type": "fraction_pie_model",
+      "data": {
+        "model_type": "fraction_pie_model",
+        "whole": 1,
+        "num_parts": 4,
+        "shaded_parts": 1,
+        "numerator": 1,
+        "denominator": 4,
+        "unit_name": "cake",
+        "shaded_color": "#FF9999"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "1/4 + 1/4 = 2/4 of the cake",
+      "content": "1/4 + 1/4 = 2/4 of the cake | Cake divided into 4 equal parts",
+      "data": {
+        "expression": "1/4 + 1/4 = 2/4 of the cake",
+        "content_en": "1/4 + 1/4 = 2/4 of the cake | Cake divided into 4 equal parts"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A pizza is divided into 6 equal slices. Mark eats 2 slices. What fraction of the pizza did Mark eat?",
+      "choices": [
+        "1/6",
+        "2/6",
+        "2/3",
+        "1/3"
+      ],
+      "correct_answer": "2/6",
+      "explanation": "Divided into 6, ate 2 slices = 2/6 of the pizza",
+      "data": {
+        "question": "A pizza is divided into 6 equal slices. Mark eats 2 slices. What fraction of the pizza did Mark eat?",
+        "choices": [
+          "1/6",
+          "2/6",
+          "2/3",
+          "1/3"
+        ],
+        "correct_answer": "2/6",
+        "explanation": "Divided into 6, ate 2 slices = 2/6 of the pizza"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "A fraction has 2 parts: numerator (top) tells how many parts you have; denominator (bottom) tells how many equal parts the whole is divided into.",
+    "Cake divided into 4 parts = denominator 4. Mali gets 1 part = numerator 1. So Mali gets 1/4 of the cake.",
+    "When comparing fractions with the same denominator, look at the numerator. Larger numerator = larger fraction.",
+    "1/4 and 1/4: numerators are equal, so both students get the same amount."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Comparing Fractions",
+      "question_en": "Compare 3/5 and 2/5. Which is greater?",
+      "solution_en": "3/5 > 2/5 because denominators are equal (5), and 3 > 2."
+    }
+  ],
+  "common_mistakes_en": [
+    "Mixing up numerator and denominator.",
+    "Thinking a fraction with bigger numbers is always greater without checking the denominator.",
+    "Forgetting that fractions must represent equal parts."
+  ],
+  "hints_en": [
+    "Remember: Denominator (bottom) = how many parts it is divided into. Numerator (top) = how many parts are taken.",
+    "Draw a circle divided into equal parts and shade the parts you need.",
+    "When denominators are the same, compare numerators only."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "fraction",
+      "th": "เศษส่วน",
+      "definition_en": "A number representing part of a whole divided into equal parts"
+    },
+    {
+      "en": "numerator",
+      "th": "ตัวเศษ",
+      "definition_en": "The top number of a fraction showing how many parts are taken"
+    },
+    {
+      "en": "denominator",
+      "th": "ตัวส่วน",
+      "definition_en": "The bottom number of a fraction showing how many equal parts the whole is divided into"
+    },
+    {
+      "en": "equivalent fractions",
+      "th": "เศษส่วนเท่ากัน",
+      "definition_en": "Fractions that have the same value, e.g., 2/4 = 1/2"
+    },
+    {
+      "en": "compare fractions",
+      "th": "เปรียบเทียบเศษส่วน",
+      "definition_en": "Deciding which fraction is greater or smaller"
+    },
+    {
+      "en": "part",
+      "th": "ส่วน",
+      "definition_en": "One piece of something that has been divided"
+    },
+    {
+      "en": "equal parts",
+      "th": "ส่วนเท่าๆ กัน",
+      "definition_en": "Parts that are the same size"
+    },
+    {
+      "en": "whole",
+      "th": "สิ่งทั้งหมด",
+      "definition_en": "All of something, not divided"
+    },
+    {
+      "en": "simplify",
+      "th": "ทอนเศษส่วน",
+      "definition_en": "Reducing a fraction by dividing numerator and denominator by the same number"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "What fraction of the shape is shaded if 3 out of 5 equal parts are shaded?",
+      "choices": [
+        "3/5",
+        "5/3",
+        "3/8",
+        "5/3"
+      ],
+      "answer": "3/5",
+      "explanation": "3 shaded parts out of 5 equal parts = 3/5"
+    },
+    {
+      "q": "Compare 2/7 and 5/7. Which is greater?",
+      "choices": [
+        "2/7",
+        "5/7",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "answer": "5/7",
+      "explanation": "Same denominator (7), 5 > 2, so 5/7 > 2/7"
+    },
+    {
+      "q": "What is 1/4 of 12?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": "3",
+      "explanation": "12/4 = 3"
+    },
+    {
+      "q": "Are 1/2 and 2/4 equivalent fractions?",
+      "choices": [
+        "Yes, they are equal",
+        "No, 1/2 is greater",
+        "No, 2/4 is greater",
+        "Only in some cases"
+      ],
+      "answer": "Yes, they are equal",
+      "explanation": "2/4 simplifies to 1/2 by dividing both by 2."
+    },
+    {
+      "q": "Lin ate 2/5 of a cake and Mali ate 1/5. How much more did Lin eat?",
+      "choices": [
+        "1/5",
+        "3/5",
+        "1/10",
+        "3/10"
+      ],
+      "answer": "1/5",
+      "explanation": "2/5-1/5=1/5"
+    },
+    {
+      "q": "How many quarters (1/4) make a whole?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "4",
+      "explanation": "4 quarters (4x1/4) = 4/4 = 1 whole"
+    },
+    {
+      "q": "What fraction of the stars are black? 5 stars total, 2 are black.",
+      "choices": [
+        "2/5",
+        "3/5",
+        "5/2",
+        "1/5"
+      ],
+      "answer": "2/5",
+      "explanation": "2 black out of 5 total = 2/5"
+    },
+    {
+      "q": "Compare 3/8 and 3/6. Which is greater?",
+      "choices": [
+        "3/8",
+        "3/6",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "answer": "3/6",
+      "explanation": "Same numerator (3), 6 > 8, so 3/6 > 3/8"
+    },
+    {
+      "q": "What is 2/3 of 9?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": "6",
+      "explanation": "9x2/3 = 18/3 = 6"
+    },
+    {
+      "q": "Three friends share a pizza equally. Each gets what fraction?",
+      "choices": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "1/4"
+      ],
+      "answer": "1/3",
+      "explanation": "1 whole divided by 3 friends = 1/3 each"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "A fraction has a numerator (top) and denominator (bottom). Denominator = number of equal parts the whole is divided into. Numerator = number of those parts we have. When denominators are equal, compare numerators. Simplify by dividing both by the same number."
+}

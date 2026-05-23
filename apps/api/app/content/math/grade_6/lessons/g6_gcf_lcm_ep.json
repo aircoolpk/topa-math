@@ -51,52 +51,88 @@
   "lesson_variants": [
     {
       "variant_id": "g6_gcf_lcm_ep_01",
-      "variant_title_th": "G6 Gcf Lcm Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "G6 Gcf Lcm Variant 1",
-      "story_theme_th": "Ton is learning G6 Gcf Lcm with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning G6 Gcf Lcm with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for G6 Gcf Lcm.",
+      "story_theme_th": "",
+      "story_theme_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning G6 Gcf Lcm with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches G6 Gcf Lcm. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items.",
+          "content_en": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items.",
+          "data": {
+            "content_en": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 45,
+          "part_b": 27,
+          "total": 72,
           "unit": "items",
-          "symbol": "■"
+          "symbol": "🍪",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 45,
+            "part_b": 27,
+            "total": 72,
+            "unit": "items",
+            "symbol": "🍪"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "45 + 27 = 72 items",
+          "content": "45 + 27 = 72 items",
+          "data": {
+            "expression": "45 + 27 = 72 items",
+            "content_en": "45 + 27 = 72 items"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "72 sheets",
+            "70 sheets",
+            "75 sheets",
+            "77 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "72 sheets",
+          "answer": "72 sheets",
+          "explanation": "Add the two groups: 45 + 27 = 72 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+            "choices": [
+              "72 sheets",
+              "70 sheets",
+              "75 sheets",
+              "77 sheets"
+            ],
+            "correct_answer": "72 sheets",
+            "answer": "72 sheets",
+            "explanation": "Add the two groups: 45 + 27 = 72 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -107,7 +143,7 @@
   "cover_emoji": "🔢",
   "cover_color": "green",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -116,9 +152,9 @@
   "lesson_intro_th": "พี่อลิสมีลูกชิ้น 12 ลูก และขนม 18 ชิ้น อยากแบ่งเป็นถุงเท่าๆ กันโดยไม่เหลือเศษ จะแบ่งได้กี่ถุงและแต่ละถุงมีอะไรบ้าง? 🍡",
   "concept_explanation_th": "ห.ร.ม. (ตัวหารร่วมมาก) คือจำนวนที่มากที่สุดที่หารจำนวนตั้งแต่สองจำนวนขึ้นไปลงตัว วิธีหา ห.ร.ม.: เขียนตัวประกอบของแต่ละจำนวน หาตัวประกอบร่วมที่มากที่สุด ค.ร.น. (ตัวคูณร่วมน้อย) คือจำนวนที่น้อยที่สุดที่จำนวนตั้งแต่สองจำนวนขึ้นไปหารลงตัว วิธีหา ค.ร.น.: เขียนตัวคูณของแต่ละจำนวน หาตัวคูณร่วมที่น้อยที่สุด ห.ร.ม. ใช้ตัดเศษส่วนให้เป็นเศษอย่างต่ำ ค.ร.น. ใช้หาส่วนร่วมเมื่อบวกลบเศษส่วน",
   "singapore_math_model": {
-    "type": "bar_model",
-    "model_type": "bar_model",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -535,317 +571,41 @@
   ],
   "title_en": "G6 Gcf Lcm",
   "objective_en": "Learn G6 Gcf Lcm with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Look! 12 + 18 — can you find the answer?",
+  "story_intro_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: หา ห.ร.ม. ของ 12 และ 18",
-      "question_en": ". . . 12 18 ?",
-      "solution_en": "animals 12: 1,2,3,4,6,12 / animals 18: 1,2,3,6,9,18 / animals : 1,2,3,6 / . . . = 6 ✅?"
-    },
-    {
-      "title_en": "Example: หา ค.ร.น. ของ 4 และ 6",
-      "question_en": ". . . 4 6 ?",
-      "solution_en": "animals 4: 4,8,12,16,20... / animals 6: 6,12,18... / . . . = 12 ✅?"
-    },
-    {
-      "title_en": "Example: ใช้ ห.ร.ม. ตัดเศษส่วน",
-      "question_en": "8/12?",
-      "solution_en": ". . . 8 12 = 4 / 8÷4 / 12÷4 = 2/3 ✅?"
-    },
-    {
-      "title_en": "Example: ใช้ ค.ร.น. บวกเศษส่วน",
-      "question_en": "1/4 + 1/6 = ?",
-      "solution_en": ". . . 4 6 = 12 / 3/12 + 2/12 = 5/12 ✅?"
-    }
+    "g6_gcf_lcm_ep English item 1",
+    "g6_gcf_lcm_ep English item 2",
+    "g6_gcf_lcm_ep English item 3",
+    "g6_gcf_lcm_ep English item 4"
   ],
   "common_mistakes_en": [
-    "Mistake: หา ห.ร.ม. ผิดโดยเลือกตัวประกอบที่ไม่ใช่ตัวหารร่วมมาก",
-    "Mistake: หา ค.ร.น. ผิดโดยหาตัวคูณร่วมที่ไม่ใช่ตัวคูณร่วมน้อยที่สุด",
-    "Mistake: ไม่แยกให้ออกว่าต้องใช้ ห.ร.ม. หรือ ค.ร.น. ขึ้นอยู่กับโจทย์"
+    "g6_gcf_lcm_ep English item 1",
+    "g6_gcf_lcm_ep English item 2",
+    "g6_gcf_lcm_ep English item 3"
   ],
   "hints_en": [
-    "Hint: ห.ร.ม. ใช้เมื่อต้องการหาจำนวนที่มากที่สุดที่จะแบ่งลงตัว",
-    "Hint: ค.ร.น. ใช้เมื่อต้องการหาจำนวนที่น้อยที่สุดที่จะมาหารลงตัวทั้งหมด",
-    "Hint: จำง่าย: ห.ร.ม. คือตัวหารร่วมที่ใหญ่ที่สุด / ค.ร.น. คือตัวคูณร่วมที่เล็กที่สุด"
+    "g6_gcf_lcm_ep English item 1",
+    "g6_gcf_lcm_ep English item 2",
+    "g6_gcf_lcm_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: ห.ร.ม. (ตัวหารร่วมมาก) คือจำนวนที่มากที่สุดที่หารจำนวนตั้งแต่สองจำนวนขึ้นไปลงตัว",
-    "Step: วิธีหา ห.ร.ม.: เขียนตัวประกอบของแต่ละจำนวน หาตัวประกอบร่วมที่มากที่สุด",
-    "Step: ค.ร.น. (ตัวคูณร่วมน้อย) คือจำนวนที่น้อยที่สุดที่จำนวนตั้งแต่สองจำนวนขึ้นไปหารลงตัว",
-    "Step: วิธีหา ค.ร.น.: เขียนตัวคูณของแต่ละจำนวน หาตัวคูณร่วมที่น้อยที่สุด",
-    "Step: ห.ร.ม. ใช้ตัดเศษส่วนให้เป็นเศษอย่างต่ำ ค.ร.น. ใช้หาส่วนร่วมเมื่อบวกลบเศษส่วน"
+    "g6_gcf_lcm_ep English item 1",
+    "g6_gcf_lcm_ep English item 2",
+    "g6_gcf_lcm_ep English item 3",
+    "g6_gcf_lcm_ep English item 4",
+    "g6_gcf_lcm_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g6_gcf_lcm_q01",
-      "question_th": "234 + 158 เท่ากับเท่าไร?",
-      "question_text": "234 + 158 ?",
-      "choices": [
-        "382",
-        "392",
-        "402",
-        "412"
-      ],
-      "correct_answer": "392",
-      "answer": "392",
-      "explanation": "234 + 158 = 392",
-      "explanation_th": "234 + 158 = 392",
-      "difficulty": "easy",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "core",
-      "question_en": "234 + 158 ?",
-      "explanation_en": "234 + 158 = 392",
-      "choices_en": [
-        "382",
-        "392",
-        "402",
-        "412"
-      ],
-      "answer_en": "392"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q02",
-      "question_th": "600 - 275 เท่ากับเท่าไร?",
-      "question_text": "600 - 275 ?",
-      "choices": [
-        "315",
-        "325",
-        "335",
-        "345"
-      ],
-      "correct_answer": "325",
-      "answer": "325",
-      "explanation": "600 - 275 = 325",
-      "explanation_th": "600 - 275 = 325",
-      "difficulty": "easy",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "core",
-      "question_en": "600 - 275 ?",
-      "explanation_en": "600 - 275 = 325",
-      "choices_en": [
-        "315",
-        "325",
-        "335",
-        "345"
-      ],
-      "answer_en": "325"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q03",
-      "question_th": "42 × 6 เท่ากับเท่าไร?",
-      "question_text": "42 × 6 ?",
-      "choices": [
-        "242",
-        "252",
-        "262",
-        "272"
-      ],
-      "correct_answer": "252",
-      "answer": "252",
-      "explanation": "42 × 6 = 252",
-      "explanation_th": "42 × 6 = 252",
-      "difficulty": "easy",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "core",
-      "question_en": "42 × 6 ?",
-      "explanation_en": "42 × 6 = 252",
-      "choices_en": [
-        "242",
-        "252",
-        "262",
-        "272"
-      ],
-      "answer_en": "252"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q04",
-      "question_th": "234 + 158 เท่ากับเท่าไร?",
-      "question_text": "234 + 158 ?",
-      "choices": [
-        "382",
-        "392",
-        "402",
-        "412"
-      ],
-      "correct_answer": "392",
-      "answer": "392",
-      "explanation": "234 + 158 = 392",
-      "explanation_th": "234 + 158 = 392",
-      "difficulty": "medium",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "core",
-      "question_en": "234 + 158 ?",
-      "explanation_en": "234 + 158 = 392",
-      "choices_en": [
-        "382",
-        "392",
-        "402",
-        "412"
-      ],
-      "answer_en": "392"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q05",
-      "question_th": "600 - 275 เท่ากับเท่าไร?",
-      "question_text": "600 - 275 ?",
-      "choices": [
-        "315",
-        "325",
-        "335",
-        "345"
-      ],
-      "correct_answer": "325",
-      "answer": "325",
-      "explanation": "600 - 275 = 325",
-      "explanation_th": "600 - 275 = 325",
-      "difficulty": "medium",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "core",
-      "question_en": "600 - 275 ?",
-      "explanation_en": "600 - 275 = 325",
-      "choices_en": [
-        "315",
-        "325",
-        "335",
-        "345"
-      ],
-      "answer_en": "325"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q06",
-      "question_th": "42 × 6 เท่ากับเท่าไร?",
-      "question_text": "42 × 6 ?",
-      "choices": [
-        "242",
-        "252",
-        "262",
-        "272"
-      ],
-      "correct_answer": "252",
-      "answer": "252",
-      "explanation": "42 × 6 = 252",
-      "explanation_th": "42 × 6 = 252",
-      "difficulty": "medium",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "core",
-      "question_en": "42 × 6 ?",
-      "explanation_en": "42 × 6 = 252",
-      "choices_en": [
-        "242",
-        "252",
-        "262",
-        "272"
-      ],
-      "answer_en": "252"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q07",
-      "question_th": "234 + 158 เท่ากับเท่าไร?",
-      "question_text": "234 + 158 ?",
-      "choices": [
-        "382",
-        "392",
-        "402",
-        "412"
-      ],
-      "correct_answer": "392",
-      "answer": "392",
-      "explanation": "234 + 158 = 392",
-      "explanation_th": "234 + 158 = 392",
-      "difficulty": "medium",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "core",
-      "question_en": "234 + 158 ?",
-      "explanation_en": "234 + 158 = 392",
-      "choices_en": [
-        "382",
-        "392",
-        "402",
-        "412"
-      ],
-      "answer_en": "392"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q08",
-      "question_th": "600 - 275 เท่ากับเท่าไร?",
-      "question_text": "600 - 275 ?",
-      "choices": [
-        "315",
-        "325",
-        "335",
-        "345"
-      ],
-      "correct_answer": "325",
-      "answer": "325",
-      "explanation": "600 - 275 = 325",
-      "explanation_th": "600 - 275 = 325",
-      "difficulty": "hard",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "challenge",
-      "question_en": "600 - 275 ?",
-      "explanation_en": "600 - 275 = 325",
-      "choices_en": [
-        "315",
-        "325",
-        "335",
-        "345"
-      ],
-      "answer_en": "325"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q09",
-      "question_th": "42 × 6 เท่ากับเท่าไร?",
-      "question_text": "42 × 6 ?",
-      "choices": [
-        "242",
-        "252",
-        "262",
-        "272"
-      ],
-      "correct_answer": "252",
-      "answer": "252",
-      "explanation": "42 × 6 = 252",
-      "explanation_th": "42 × 6 = 252",
-      "difficulty": "hard",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "challenge",
-      "question_en": "42 × 6 ?",
-      "explanation_en": "42 × 6 = 252",
-      "choices_en": [
-        "242",
-        "252",
-        "262",
-        "272"
-      ],
-      "answer_en": "252"
-    },
-    {
-      "question_id": "g6_gcf_lcm_q10",
-      "question_th": "234 + 158 เท่ากับเท่าไร?",
-      "question_text": "234 + 158 ?",
-      "choices": [
-        "382",
-        "392",
-        "402",
-        "412"
-      ],
-      "correct_answer": "392",
-      "answer": "392",
-      "explanation": "234 + 158 = 392",
-      "explanation_th": "234 + 158 = 392",
-      "difficulty": "hard",
-      "skill_tag": "g6_gcf_lcm",
-      "question_type": "challenge",
-      "question_en": "234 + 158 ?",
-      "explanation_en": "234 + 158 = 392",
-      "choices_en": [
-        "382",
-        "392",
-        "402",
-        "412"
-      ],
-      "answer_en": "392"
-    }
+    "g6_gcf_lcm_ep English item 1",
+    "g6_gcf_lcm_ep English item 2",
+    "g6_gcf_lcm_ep English item 3",
+    "g6_gcf_lcm_ep English item 4",
+    "g6_gcf_lcm_ep English item 5",
+    "g6_gcf_lcm_ep English item 6",
+    "g6_gcf_lcm_ep English item 7",
+    "g6_gcf_lcm_ep English item 8",
+    "g6_gcf_lcm_ep English item 9",
+    "g6_gcf_lcm_ep English item 10"
   ],
   "quiz_id": "g6_gcf_lcm_ep",
   "generated_at": "2026-05-16T04:16:42.166238+00:00",
@@ -855,43 +615,79 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning G6 Gcf Lcm with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+      "content_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+      "data": {
+        "content_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches G6 Gcf Lcm. Use the model to get 30."
+      "title": "Think Story",
+      "content": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items.",
+      "content_en": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items.",
+      "data": {
+        "content_en": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "part_whole_model",
+      "part_a": 45,
+      "part_b": 27,
+      "total": 72,
       "unit": "items",
-      "symbol": "■"
+      "symbol": "🍪",
+      "data": {
+        "model_type": "part_whole_model",
+        "part_a": 45,
+        "part_b": 27,
+        "total": 72,
+        "unit": "items",
+        "symbol": "🍪"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "45 + 27 = 72 items",
+      "content": "45 + 27 = 72 items",
+      "data": {
+        "expression": "45 + 27 = 72 items",
+        "content_en": "45 + 27 = 72 items"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "72 sheets",
+        "70 sheets",
+        "75 sheets",
+        "77 sheets"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "72 sheets",
+      "answer": "72 sheets",
+      "explanation": "Add the two groups: 45 + 27 = 72 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+        "choices": [
+          "72 sheets",
+          "70 sheets",
+          "75 sheets",
+          "77 sheets"
+        ],
+        "correct_answer": "72 sheets",
+        "answer": "72 sheets",
+        "explanation": "Add the two groups: 45 + 27 = 72 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g6_gcf_lcm",
@@ -903,87 +699,94 @@
   "story_variants": [
     {
       "variant_id": "g6_gcf_lcm_ep_01",
-      "status": "approved",
-      "title": "G6 Gcf Lcm Variant 1",
-      "story": "Ton is learning G6 Gcf Lcm with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches G6 Gcf Lcm. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for G6 Gcf Lcm.",
+      "variant_title_th": "",
+      "variant_title_en": "G6 Gcf Lcm Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning G6 Gcf Lcm with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Ton collects cookies for an activity at the classroom. One box has 45 items, and paper plates has 27 more items. How many items does Ton have in all? This story practices G Gcf Lcm in the music room with number magnets while friends set up instruments. The children circle the important numbers and underline what the question asks."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches G6 Gcf Lcm. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items.",
+          "content_en": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items.",
+          "data": {
+            "content_en": "The story has two groups: 45 and 27. To find the total, add them: 45 + 27 = 72 items."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 45,
+          "part_b": 27,
+          "total": 72,
           "unit": "items",
-          "symbol": "■"
+          "symbol": "🍪",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 45,
+            "part_b": 27,
+            "total": 72,
+            "unit": "items",
+            "symbol": "🍪"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "45 + 27 = 72 items",
+          "content": "45 + 27 = 72 items",
+          "data": {
+            "expression": "45 + 27 = 72 items",
+            "content_en": "45 + 27 = 72 items"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "72 sheets",
+            "70 sheets",
+            "75 sheets",
+            "77 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "72 sheets",
+          "answer": "72 sheets",
+          "explanation": "Add the two groups: 45 + 27 = 72 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 45 sheets of paper. The teacher adds 27 more sheets. How many sheets are there in all?",
+            "choices": [
+              "72 sheets",
+              "70 sheets",
+              "75 sheets",
+              "77 sheets"
+            ],
+            "correct_answer": "72 sheets",
+            "answer": "72 sheets",
+            "explanation": "Add the two groups: 45 + 27 = 72 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for G6 Gcf Lcm.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

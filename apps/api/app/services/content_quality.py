@@ -3,6 +3,8 @@ import re
 from pathlib import Path
 from typing import Any
 
+from app.scripts.audit_lesson_content_quality import run_audit
+
 
 SINGAPORE_MODELS = {
     "number_bond",
@@ -385,6 +387,14 @@ def _quiz_path_for_lesson(lesson_path: Path, payload: dict[str, Any]) -> Path | 
 
 
 def content_quality_report(content_root: Path = CONTENT_ROOT) -> dict[str, Any]:
+    audit = run_audit(content_root)
+    audit_by_path: dict[str, list[dict[str, str]]] = {}
+    for section in ("lessons", "quizzes"):
+        for item in audit.get(section, []):
+            audit_by_path.setdefault(str(item.get("path")), []).extend(item.get("issues") or [])
+    for item in audit.get("duplicate_story_issues", []):
+        audit_by_path.setdefault(str(item.get("path")), []).append(item)
+
     lessons: list[dict[str, Any]] = []
     by_topic: dict[str, set[str]] = {}
     for lesson_path in sorted(content_root.glob("grade_*/lessons/*.json")):
@@ -403,8 +413,26 @@ def content_quality_report(content_root: Path = CONTENT_ROOT) -> dict[str, Any]:
             continue
         payload.setdefault("lesson_id", lesson_path.stem)
         quiz_path = _quiz_path_for_lesson(lesson_path, payload)
-        quiz_payload = _load_json(quiz_path) if quiz_path else None
-        validation = validate_lesson_payload(payload, quiz_payload=quiz_payload)
+        audit_issues = [
+            {"code": item["code"], "message": item["message"], "severity": item.get("severity", "error")}
+            for item in audit_by_path.get(str(lesson_path), [])
+        ]
+        if quiz_path:
+            audit_issues.extend(
+                {"code": item["code"], "message": item["message"], "severity": item.get("severity", "error")}
+                for item in audit_by_path.get(str(quiz_path), [])
+            )
+        program_type = lesson_program_type(payload)
+        status = str(payload.get("status") or "approved").lower()
+        validation = {
+            "lesson_id": payload.get("lesson_id") or payload.get("id"),
+            "program_type": program_type,
+            "grade_level": payload.get("grade_level"),
+            "topic_code": payload.get("topic_code") or payload.get("skill_code"),
+            "publish_status": payload.get("status") or "approved",
+            "publishable": status in {"approved", "published"} and not any(issue["severity"] == "error" for issue in audit_issues),
+            "issues": audit_issues,
+        }
         topic_code = str(validation.get("topic_code") or lesson_path.stem)
         program_type = str(validation["program_type"])
         by_topic.setdefault(topic_code, set()).add(program_type)
@@ -424,12 +452,18 @@ def content_quality_report(content_root: Path = CONTENT_ROOT) -> dict[str, Any]:
         if "EP" not in tracks:
             missing_tracks.append({"topic_code": topic_code, "missing": "EP", "code": "missing_ep_lesson"})
 
+    issue_counts: dict[str, int] = {}
+    for lesson in lessons:
+        for item in lesson.get("issues", []):
+            issue_counts[item["code"]] = issue_counts.get(item["code"], 0) + 1
+
     return {
         "summary": {
             "total_lessons": len(lessons),
             "publishable": sum(1 for lesson in lessons if lesson.get("publishable")),
             "needs_review": sum(1 for lesson in lessons if not lesson.get("publishable")),
             "missing_tracks": len(missing_tracks),
+            "issue_counts": dict(sorted(issue_counts.items())),
         },
         "missing_tracks": missing_tracks,
         "lessons": lessons,

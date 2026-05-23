@@ -1,0 +1,179 @@
+{
+  "lesson_id": "numbers_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "numbers_ep_q002_e01",
+      "question_text": "Case 1: A park has 9,000 trees. 3,000 trees are cut down. How many trees are left?",
+      "question_text_th": "สถานการณ์ที่ 1: สวนสาธารณะมีต้นไม้ 9,000 ต้น ถูกตัดไป 3,000 ต้น เหลือต้นไม้กี่ต้น",
+      "choices": [
+        "5,000 trees",
+        "6,000 trees",
+        "7,000 trees",
+        "12,000 trees"
+      ],
+      "correct_answer": "6,000 trees",
+      "answer": "6,000 trees",
+      "explanation": "Subtract cut trees: 9,000 - 3,000 = 6,000 trees",
+      "explanation_th": "ลบต้นไม้ที่ถูกตัด: 9,000 - 3,000 = 6,000 ต้น",
+      "difficulty": "easy",
+      "hint_th": "cut down = ลบออก"
+    },
+    {
+      "question_id": "numbers_ep_q002_e02",
+      "question_text": "Case 2: A shop has 6,000 sweets. 4,000 are sold. How many sweets are left?",
+      "question_text_th": "สถานการณ์ที่ 2: ร้านมีขนม 6,000 ชิ้น ขายไป 4,000 ชิ้น เหลือขนมกี่ชิ้น",
+      "choices": [
+        "2,000 sweets",
+        "3,000 sweets",
+        "10,000 sweets",
+        "1,000 sweets"
+      ],
+      "correct_answer": "2,000 sweets",
+      "answer": "2,000 sweets",
+      "explanation": "Subtract sold sweets: 6,000 - 4,000 = 2,000 sweets",
+      "explanation_th": "ลบขนมที่ขาย: 6,000 - 4,000 = 2,000 ชิ้น",
+      "difficulty": "easy",
+      "hint_th": "sold = ขายออกไป"
+    },
+    {
+      "question_id": "numbers_ep_q002_e03",
+      "question_text": "Case 3: A school has 15,000 students. 5,000 students graduate. How many students are left?",
+      "question_text_th": "สถานการณ์ที่ 3: โรงเรียนมีนักเรียน 15,000 คน จบการศึกษาไป 5,000 คน เหลือนักเรียนกี่คน",
+      "choices": [
+        "9,000 students",
+        "10,000 students",
+        "20,000 students",
+        "11,000 students"
+      ],
+      "correct_answer": "10,000 students",
+      "answer": "10,000 students",
+      "explanation": "Subtract graduates: 15,000 - 5,000 = 10,000 students",
+      "explanation_th": "ลบนักเรียนที่จบ: 15,000 - 5,000 = 10,000 คน",
+      "difficulty": "easy",
+      "hint_th": "graduate = จบการศึกษา"
+    },
+    {
+      "question_id": "numbers_ep_q002_m01",
+      "question_text": "Case 4: A warehouse has 56,000 items. 28,500 are shipped out. How many items are left?",
+      "question_text_th": "สถานการณ์ที่ 4: คลังสินค้ามีสินค้า 56,000 ชิ้น ส่งออกไป 28,500 ชิ้น เหลือสินค้ากี่ชิ้น",
+      "choices": [
+        "27,500 items",
+        "28,500 items",
+        "26,500 items",
+        "84,500 items"
+      ],
+      "correct_answer": "27,500 items",
+      "answer": "27,500 items",
+      "explanation": "Subtract shipped items: 56,000 - 28,500 = 27,500 items",
+      "explanation_th": "ลบสินค้าที่ส่งออก: 56,000 - 28,500 = 27,500 ชิ้น",
+      "difficulty": "medium",
+      "hint_th": "56,000 - 28,500 = 27,500"
+    },
+    {
+      "question_id": "numbers_ep_q002_m02",
+      "question_text": "Case 5: A mall has 38,000 customers. 17,400 are members. How many are non-members?",
+      "question_text_th": "สถานการณ์ที่ 5: ห้างมีลูกค้า 38,000 คน ลูกค้าที่เป็นสมาชิก 17,400 คน ลูกค้าที่ไม่ใช่สมาชิกกี่คน",
+      "choices": [
+        "20,600 customers",
+        "21,600 customers",
+        "19,600 customers",
+        "55,400 customers"
+      ],
+      "correct_answer": "20,600 customers",
+      "answer": "20,600 customers",
+      "explanation": "Subtract members: 38,000 - 17,400 = 20,600 non-members",
+      "explanation_th": "ลบลูกค้าสมาชิกออก: 38,000 - 17,400 = 20,600 คน",
+      "difficulty": "medium",
+      "hint_th": "38,000 - 17,400 = 20,600"
+    },
+    {
+      "question_id": "numbers_ep_q002_m03",
+      "question_text": "Case 6: A train station has 47,200 passengers. 18,600 get off. How many are still on the train?",
+      "question_text_th": "สถานการณ์ที่ 6: สถานีรถไฟมีผู้โดยสาร 47,200 คน ลงไป 18,600 คน ยังเหลือผู้โดยสารกี่คน",
+      "choices": [
+        "27,600 passengers",
+        "28,600 passengers",
+        "29,600 passengers",
+        "65,800 passengers"
+      ],
+      "correct_answer": "28,600 passengers",
+      "answer": "28,600 passengers",
+      "explanation": "Subtract passengers who got off: 47,200 - 18,600 = 28,600 passengers",
+      "explanation_th": "ลบผู้โดยสารที่ลง: 47,200 - 18,600 = 28,600 คน",
+      "difficulty": "medium",
+      "hint_th": "47,200-18,600=28,600"
+    },
+    {
+      "question_id": "numbers_ep_q002_m04",
+      "question_text": "Case 7: A swimming pool has 63,000 liters of water. 29,500 liters are drained. How much water is left?",
+      "question_text_th": "สถานการณ์ที่ 7: สระว่ายน้ำมีน้ำ 63,000 ลิตร ปล่อยน้ำออก 29,500 ลิตร เหลือน้ำกี่ลิตร",
+      "choices": [
+        "33,500 liters",
+        "34,500 liters",
+        "32,500 liters",
+        "92,500 liters"
+      ],
+      "correct_answer": "33,500 liters",
+      "answer": "33,500 liters",
+      "explanation": "Subtract drained water: 63,000 - 29,500 = 33,500 liters",
+      "explanation_th": "ลบน้ำที่ปล่อยออก: 63,000 - 29,500 = 33,500 ลิตร",
+      "difficulty": "medium",
+      "hint_th": "63,000-29,500=33,500"
+    },
+    {
+      "question_id": "numbers_ep_q002_h01",
+      "question_text": "Case 8: A hotel has 75,000 guests. 38,750 check out but 24,500 new guests check in. How many guests are there now?",
+      "question_text_th": "สถานการณ์ที่ 8: โรงแรมมีแขก 75,000 คน เช็คเอาท์ไป 38,750 คน แต่มีแขกใหม่เข้ามา 24,500 คน มีแขกกี่คน",
+      "choices": [
+        "60,750 guests",
+        "61,750 guests",
+        "60,000 guests",
+        "62,750 guests"
+      ],
+      "correct_answer": "60,750 guests",
+      "answer": "60,750 guests",
+      "explanation": "Subtract departures then add arrivals: 75,000 - 38,750 + 24,500 = 60,750 guests",
+      "explanation_th": "ลบแขกเก่าแล้วบวกแขกใหม่: 75,000 - 38,750 + 24,500 = 60,750 คน",
+      "difficulty": "hard",
+      "hint_th": "75,000-38,750=36,250 then +24,500=60,750"
+    },
+    {
+      "question_id": "numbers_ep_q002_h02",
+      "question_text": "Case 9: A rice warehouse has 85,200 bags. 37,800 are shipped out and 28,600 new bags arrive. How many bags now?",
+      "question_text_th": "สถานการณ์ที่ 9: โกดังเก็บข้าวสาร 85,200 ถุง ส่งออกไป 37,800 ถุง และรับเข้ามาใหม่ 28,600 ถุง มีข้าวกี่ถุง",
+      "choices": [
+        "76,000 bags",
+        "75,000 bags",
+        "77,000 bags",
+        "76,100 bags"
+      ],
+      "correct_answer": "76,000 bags",
+      "answer": "76,000 bags",
+      "explanation": "85,200 - 37,800 + 28,600 = 76,000 bags",
+      "explanation_th": "85,200 - 37,800 + 28,600 = 76,000 ถุง",
+      "difficulty": "hard",
+      "hint_th": "85,200-37,800=47,400 then +28,600=76,000"
+    },
+    {
+      "question_id": "numbers_ep_q002_h03",
+      "question_text": "Case 10: A stadium has 92,000 seats. Day 1 has 48,500 viewers and Day 2 has 36,750 viewers. How many seats are empty?",
+      "question_text_th": "สถานการณ์ที่ 10: สนามกีฬามีที่นั่ง 92,000 ที่ วันแรกมีคนดู 48,500 คน วันที่สองมีคนดู 36,750 คน ยังเหลือที่นั่งว่างกี่ที่",
+      "choices": [
+        "6,750 seats",
+        "7,750 seats",
+        "5,750 seats",
+        "6,850 seats"
+      ],
+      "correct_answer": "6,750 seats",
+      "answer": "6,750 seats",
+      "explanation": "Total viewers = 48,500 + 36,750 = 85,250. Empty seats = 92,000 - 85,250 = 6,750",
+      "explanation_th": "รวมคนดู = 48,500 + 36,750 = 85,250 คน ที่นั่งว่าง = 92,000 - 85,250 = 6,750 ที่",
+      "difficulty": "hard",
+      "hint_th": "หาคนดูรวมก่อน แล้วค่อยลบออกจากที่นั่งทั้งหมด"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

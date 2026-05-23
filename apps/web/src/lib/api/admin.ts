@@ -37,6 +37,7 @@ export interface ContentQualityReport {
     publishable: number
     needs_review: number
     missing_tracks: number
+    issue_counts?: Record<string, number>
   }
   missing_tracks: Array<{ topic_code: string; missing: 'THP' | 'EP'; code: string }>
   lessons: ContentQualityLesson[]
@@ -193,6 +194,11 @@ export interface AdminTestRow {
   difficulty?: string | null
   skill_tag?: string | null
   source_path?: string | null
+  source_folder?: string | null
+  topic_folder?: string | null
+  quiz_variant_count?: number | null
+  approved_quiz_count?: number | null
+  file_structure?: string | null
   score?: { total_questions: number; correct_count: number; accuracy: number } | null
   status?: string | null
   started_at?: string | null

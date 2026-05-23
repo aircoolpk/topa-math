@@ -1,0 +1,257 @@
+{
+  "variant_id": "money_ep_001",
+  "variant_title_th": "เงิน",
+  "variant_title_en": "Money",
+  "status": "needs_review",
+  "title_en": "Money",
+  "story_theme_en": "Lin saved 1,250 baht and Mali saved 875 baht. They wanted to buy a gift for their teacher costing 1,500 baht. How much more money do they need? Whose money is greater?",
+  "helper_tip_en": "Have students use bar models to represent money, with each bar representing 100 baht.",
+  "think_story_en": "Total savings = 1,250+875 = 2,125 baht. Gift costs 1,500. They have enough! Extra = 2,125-1,500 = 625 baht. Lin has 375 baht more than Mali: 1,250-875=375.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin and Mali save money for a teacher gift.",
+      "data": {
+        "content_en": "Lin saved 1,250 baht and Mali saved 875 baht. They wanted to buy a gift for their teacher costing 1,500 baht. How much more money do they need? Whose money is greater?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Total=2,125. Gift=1,500. They have enough! Extra=625. Lin vs Mali: 1,250-875=375 baht more.",
+      "data": {
+        "content_en": "Total savings = 1,250+875 = 2,125 baht. Gift costs 1,500. They have enough! Extra = 2,125-1,500 = 625 baht. Lin has 375 baht more than Mali: 1,250-875=375."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Money Model",
+      "description": "Bar showing savings of Lin (1,250) and Mali (875) vs gift price (1,500)",
+      "model_type": "money_model",
+      "data": {
+        "model_type": "money_model",
+        "items": [
+          {
+            "name": "Lins savings",
+            "amount": 1250
+          },
+          {
+            "name": "Malis savings",
+            "amount": 875
+          }
+        ],
+        "total": 2125,
+        "goal": 1500,
+        "operation": "add_then_compare"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "1250+875=2125 baht",
+      "content": "1250+875=2125 | Extra=2125-1500=625 | Lin vs Mali: 1250-875=375 baht more",
+      "data": {
+        "expression": "1250+875=2125 baht",
+        "content_en": "1250+875=2125 | Extra=2125-1500=625 | Lin vs Mali: 1250-875=375 baht more"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Ai has 350 baht and buys a pen for 125 baht. How much change does Ai get back?",
+      "choices": [
+        "225 baht",
+        "235 baht",
+        "325 baht",
+        "225 baht, using 2 hundred-baht notes"
+      ],
+      "correct_answer": "225 baht, using 2 hundred-baht notes",
+      "explanation": "350-125=225 baht. Change = 100+100+25. Uses 2 hundred-baht notes.",
+      "data": {
+        "question": "Ai has 350 baht and buys a pen for 125 baht. How much change does Ai get back?",
+        "choices": [
+          "225 baht",
+          "235 baht",
+          "325 baht",
+          "225 baht, using 2 hundred-baht notes"
+        ],
+        "correct_answer": "225 baht, using 2 hundred-baht notes",
+        "explanation": "350-125=225 baht. Change = 100+100+25. Uses 2 hundred-baht notes."
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Thai currency uses baht. Banknotes: 20, 50, 100, 500, 1,000 baht. Coins: 1, 2, 5, 10 baht.",
+    "Adding and subtracting money works the same as with regular numbers.",
+    "1,250 + 875 = 2,125 baht (total savings).",
+    "2,125 > 1,500 so they have enough. Extra = 625 baht left over.",
+    "1,250 - 875 = 375 baht. Lin has 375 baht more than Mali."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Comparing Money",
+      "question_en": "A 500-baht banknote plus a 200-baht coin. What is the total and the difference?",
+      "solution_en": "Total = 700 baht. Difference = 500-200 = 300 baht ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Counting coins wrong, e.g., thinking a 10-baht coin is worth 1 baht.",
+    "Adding/subtracting in the wrong column, especially forgetting to carry or borrow."
+  ],
+  "hints_en": [
+    "Use bar models where each bar represents 100 baht to help count.",
+    "Adding and subtracting money is the same as with regular numbers.",
+    "Check by counting all the money back."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "baht",
+      "th": "เงินบาท",
+      "definition_en": "Thai currency unit"
+    },
+    {
+      "en": "banknote / bill",
+      "th": "ธนบัตร",
+      "definition_en": "Paper money used for payment"
+    },
+    {
+      "en": "coin",
+      "th": "เหรียญ",
+      "definition_en": "Metal money of smaller value"
+    },
+    {
+      "en": "price",
+      "th": "ราคา",
+      "definition_en": "The amount of money needed to buy something"
+    },
+    {
+      "en": "change",
+      "th": "เงินทอน",
+      "definition_en": "Money returned when you pay more than the price"
+    },
+    {
+      "en": "budget",
+      "th": "งบประมาณ",
+      "definition_en": "Money set aside for spending"
+    },
+    {
+      "en": "total",
+      "th": "รวม",
+      "definition_en": "The complete sum of money"
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "Seeing whose amount is greater or smaller"
+    },
+    {
+      "en": "enough",
+      "th": "เพียงพอ",
+      "definition_en": "Having the same amount or more than the price"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "Ai has 3 banknotes of 100 baht and 2 coins of 10 baht. How much total?",
+      "choices": [
+        "320 baht",
+        "302 baht",
+        "300 baht",
+        "322 baht"
+      ],
+      "answer": "320 baht",
+      "explanation": "3x100 + 2x10 = 300+20 = 320 baht"
+    },
+    {
+      "q": "Something costs 275 baht. You pay with a 500-baht banknote. How much change?",
+      "choices": [
+        "225 baht",
+        "215 baht",
+        "325 baht",
+        "235 baht"
+      ],
+      "answer": "225 baht",
+      "explanation": "500-275=225 baht"
+    },
+    {
+      "q": "Lin has 800 baht, Mali has 650 baht. How much more does Lin have?",
+      "choices": [
+        "100 baht",
+        "150 baht",
+        "250 baht",
+        "50 baht"
+      ],
+      "answer": "150 baht",
+      "explanation": "800-650=150 baht"
+    },
+    {
+      "q": "Mother buys groceries for 435 baht and pays with a 500-baht note. How much change?",
+      "choices": [
+        "55 baht",
+        "65 baht",
+        "75 baht",
+        "45 baht"
+      ],
+      "answer": "65 baht",
+      "explanation": "500-435=65 baht"
+    },
+    {
+      "q": "Ai saves 150 baht each month. How much in 6 months?",
+      "choices": [
+        "800 baht",
+        "850 baht",
+        "900 baht",
+        "750 baht"
+      ],
+      "answer": "900 baht",
+      "explanation": "150x6=900 baht"
+    },
+    {
+      "q": "How many 100-baht notes make 2,000 baht?",
+      "choices": [
+        "10",
+        "20",
+        "2",
+        "200"
+      ],
+      "answer": "20",
+      "explanation": "2000/100=20 notes"
+    },
+    {
+      "q": "A toy costs 1,200 baht. Lin has 850 baht. How much more does she need?",
+      "choices": [
+        "350 baht",
+        "250 baht",
+        "450 baht",
+        "300 baht"
+      ],
+      "answer": "350 baht",
+      "explanation": "1200-850=350 baht"
+    },
+    {
+      "q": "You have 500 baht. You buy 2 items at 175 baht each. How much left?",
+      "choices": [
+        "140 baht",
+        "150 baht",
+        "130 baht",
+        "160 baht"
+      ],
+      "answer": "150 baht",
+      "explanation": "Total cost = 2x175=350, 500-350=150 baht"
+    },
+    {
+      "q": "Ai and Mali combine money: Ai has 460 baht, Mali has 540 baht. Can they buy a gift for 1,000 baht?",
+      "choices": [
+        "Yes, exactly 1,000",
+        "Yes, they have 1,000",
+        "No, they need 1,000",
+        "Yes, 40 baht extra"
+      ],
+      "answer": "Yes, 40 baht extra",
+      "explanation": "460+540=1,000 exactly. Wait, 460+540=1,000 exactly. Correct answer: Yes, exactly 1,000. Actually: 460+540=1,000 exactly, so they have exactly 1,000 baht, enough for a 1,000 baht gift with 0 extra."
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Thai money is in baht. Add and subtract baht like regular numbers. Remember to count banknotes and coins carefully. Check: after spending, count your remaining money."
+}

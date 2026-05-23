@@ -1,0 +1,969 @@
+{
+  "lesson_id": "g1_subtract_within_20_ep",
+  "id": "g1_subtract_within_20_ep",
+  "grade_level": 1,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "การลบคือการเอาจำนวนออกไป ผลลัพธ์เรียกว่า ผลต่าง",
+    "เวลาลบ ให้เอาตัวเลขที่ถูกลบออกจากจำนวนเดิม ดูว่าเหลือเท่าไหร่",
+    "ใช้นิ้วนับถอยหลัง เช่น 12 - 5 ก็นับถอย 5 ขั้น: 11, 10, 9, 8, 7 → ได้ 7",
+    "ถ้าตัวตั้งเป็น 10 ให้แยกเป็น 10 กับอีกเท่าไหร่ ลบจาก 10 ก่อนแล้วค่อยรวม",
+    "ตรวจคำตอบโดยบวกกลับ ถ้า 12 - 5 = 7 งั้น 7 + 5 ต้องได้ 12"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "มีลูกบอล 15 ลูก ให้เพื่อนไป 7 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "15 - 7 = 8 ลูกบอล ✅"
+    },
+    {
+      "title_th": "ลบขนม",
+      "question_th": "แม่ซื้อขนมมา 18 ชิ้น กินไป 9 ชิ้น เหลือขนมกี่ชิ้น?",
+      "solution_th": "18 - 9 = 9 ชิ้น ✅"
+    },
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 13 แท่ง ให้น้องไป 6 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "13 - 6 = 7 แท่ง ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ลบสลับด้าน เช่น คิดว่า 12 - 5 = 7 แต่กลับไปบวกเป็น 5 + 12",
+    "นับถอยหลังผิด เช่น นับไป 4 ขั้นแทนที่จะเป็น 5 ขั้น",
+    "ตัวตั้งน้อยกว่าตัวลบ เช่น 7 - 9 ซึ่งยังไม่เรียนในเรื่องนี้ ต้องตรวจสอบว่าตัวตั้งมากกว่าตัวลบเสมอ"
+  ],
+  "hints": [
+    "ใช้นิ้วนับถอยหลัง ถ้าตัวลบเป็นเท่าไหร่ก็นับถอยเท่านั้นขั้น",
+    "ถ้าลบเลขที่มากกว่า 5 ให้แยกเป็นลบจาก 10 ก่อน เช่น 14 - 6 = (10 - 6) + 4 = 8",
+    "ตรวจคำตอบโดยเอาคำตอบบวกกลับด้วยตัวลบ ถ้าได้ตัวตั้งแปลว่าถูก"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g1_subtract_within_20",
+  "skill_code": "g1_subtract_within_20_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g1_subtract_within_20_ep_01",
+      "variant_title_th": "Subtraction Variant 1",
+      "variant_title_en": "Subtraction Variant 1",
+      "story_theme_th": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "story_theme_en": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "helper_tip": "Read the story first. Circle the important numbers for Subtraction.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Subtraction with objects from class. The teacher shows him a story: Ton has 11 pencils. He gives 5 pencils to his sister. Ton reads the problem slowly. He circles the two important numbers — 11 and 5. He asks, what does the question ask? He draws a simple model to see the numbers. The model helps him write a number sentence and check the unit. He does not guess. He thinks: what does each number mean?"
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 11 and 5. The question asks how many are left after taking 5 away. Use subtraction: 11 - 5 = ?"
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 11 items. Cross out 5 items. Count the remaining items.",
+          "model_type": "area_model",
+          "rows": 1,
+          "cols": 11,
+          "total": 11,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "11 - 5 = 6",
+          "content": "Subtract the second number from the first."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "There are 9 oranges in a box. Mom takes 4 oranges to make juice. How many oranges are left in the box?",
+          "choices": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correct_answer": "5",
+          "answer": "5",
+          "explanation": "9 - 4 = 5 oranges left."
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ลบเลขไม่เกิน 20",
+  "preview_subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "cover_theme": "subtract_within_20",
+  "cover_emoji": "➖",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "ฝึกลบเลขและนับถอยหลัง",
+  "learning_objective_th": "นักเรียนสามารถลบจำนวนสองจำนวนที่ตัวตั้งไม่เกิน 20 ได้ถูกต้อง",
+  "lesson_intro_th": "อลิสมีลูกกวาด 12 ลูก ให้เพื่อนไป 5 ลูก อลิสเหลือลูกกวาดกี่ลูก? 🍬",
+  "concept_explanation_th": "การลบคือการเอาจำนวนออกไป ผลลัพธ์เรียกว่า ผลต่าง เวลาลบ ให้เอาตัวเลขที่ถูกลบออกจากจำนวนเดิม ดูว่าเหลือเท่าไหร่ ใช้นิ้วนับถอยหลัง เช่น 12 - 5 ก็นับถอย 5 ขั้น: 11, 10, 9, 8, 7 → ได้ 7 ถ้าตัวตั้งเป็น 10 ให้แยกเป็น 10 กับอีกเท่าไหร่ ลบจาก 10 ก่อนแล้วค่อยรวม ตรวจคำตอบโดยบวกกลับ ถ้า 12 - 5 = 7 งั้น 7 + 5 ต้องได้ 12",
+  "singapore_math_model": {
+    "type": "number_bond",
+    "model_type": "number_bond",
+    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "number_bond",
+    "whole": 10,
+    "parts": [
+      4,
+      6
+    ],
+    "label_th": "แผนภาพจำนวนสัมพันธ์"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ลบเลขไม่เกิน 20 ง่ายๆ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพจำนวนสัมพันธ์ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "ลบลูกบอล",
+      "question_th": "มีลูกบอล 15 ลูก ให้เพื่อนไป 7 ลูก เหลือลูกบอลกี่ลูก?",
+      "solution_th": "15 - 7 = 8 ลูกบอล ✅"
+    },
+    {
+      "title_th": "ลบขนม",
+      "question_th": "แม่ซื้อขนมมา 18 ชิ้น กินไป 9 ชิ้น เหลือขนมกี่ชิ้น?",
+      "solution_th": "18 - 9 = 9 ชิ้น ✅"
+    },
+    {
+      "title_th": "ลบดินสอ",
+      "question_th": "มีดินสอ 13 แท่ง ให้น้องไป 6 แท่ง เหลือดินสอกี่แท่ง?",
+      "solution_th": "13 - 6 = 7 แท่ง ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ลบสลับด้าน เช่น คิดว่า 12 - 5 = 7 แต่กลับไปบวกเป็น 5 + 12",
+    "นับถอยหลังผิด เช่น นับไป 4 ขั้นแทนที่จะเป็น 5 ขั้น",
+    "ตัวตั้งน้อยกว่าตัวลบ เช่น 7 - 9 ซึ่งยังไม่เรียนในเรื่องนี้ ต้องตรวจสอบว่าตัวตั้งมากกว่าตัวลบเสมอ"
+  ],
+  "questions": [
+    {
+      "question_id": "g1_subtract_within_20_q01",
+      "question_th": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "question_text": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "choices": [
+        "5 ลูก",
+        "6 ลูก",
+        "7 ลูก",
+        "8 ลูก"
+      ],
+      "correct_answer": "7 ลูก",
+      "answer": "7 ลูก",
+      "explanation": "12 - 5 = 7 ลูก",
+      "explanation_th": "12 - 5 = 7 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q02",
+      "question_th": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "question_text": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "choices": [
+        "9 ผล",
+        "10 ผล",
+        "11 ผล",
+        "12 ผล"
+      ],
+      "correct_answer": "11 ผล",
+      "answer": "11 ผล",
+      "explanation": "15 - 4 = 11 ผล",
+      "explanation_th": "15 - 4 = 11 ผล",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q03",
+      "question_th": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "question_text": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "choices": [
+        "8 แท่ง",
+        "9 แท่ง",
+        "10 แท่ง",
+        "11 แท่ง"
+      ],
+      "correct_answer": "10 แท่ง",
+      "answer": "10 แท่ง",
+      "explanation": "18 - 8 = 10 แท่ง",
+      "explanation_th": "18 - 8 = 10 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q04",
+      "question_th": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "question_text": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "choices": [
+        "6 ดวง",
+        "7 ดวง",
+        "8 ดวง",
+        "9 ดวง"
+      ],
+      "correct_answer": "7 ดวง",
+      "answer": "7 ดวง",
+      "explanation": "10 - 3 = 7 ดวง",
+      "explanation_th": "10 - 3 = 7 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q05",
+      "question_th": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "9 ชิ้น",
+        "10 ชิ้น",
+        "11 ชิ้น",
+        "12 ชิ้น"
+      ],
+      "correct_answer": "10 ชิ้น",
+      "answer": "10 ชิ้น",
+      "explanation": "16 - 6 = 10 ชิ้น",
+      "explanation_th": "16 - 6 = 10 ชิ้น",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q06",
+      "question_th": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "question_text": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "choices": [
+        "10 เม็ด",
+        "11 เม็ด",
+        "12 เม็ด",
+        "13 เม็ด"
+      ],
+      "correct_answer": "11 เม็ด",
+      "answer": "11 เม็ด",
+      "explanation": "20 - 9 = 11 เม็ด",
+      "explanation_th": "20 - 9 = 11 เม็ด",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q07",
+      "question_th": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "question_text": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "choices": [
+        "9 เล่ม",
+        "10 เล่ม",
+        "11 เล่ม",
+        "12 เล่ม"
+      ],
+      "correct_answer": "10 เล่ม",
+      "answer": "10 เล่ม",
+      "explanation": "13 - 3 = 10 เล่ม",
+      "explanation_th": "13 - 3 = 10 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q08",
+      "question_th": "19 - 7 เท่ากับเท่าไร?",
+      "question_text": "19 - 7 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "19 - 7 = 12",
+      "explanation_th": "19 - 7 = 12",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q09",
+      "question_th": "14 - 8 เท่ากับเท่าไร?",
+      "question_text": "14 - 8 เท่ากับเท่าไร?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer": "6",
+      "answer": "6",
+      "explanation": "14 - 8 = 6",
+      "explanation_th": "14 - 8 = 6",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q10",
+      "question_th": "17 - 9 เท่ากับเท่าไร?",
+      "question_text": "17 - 9 เท่ากับเท่าไร?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "17 - 9 = 8",
+      "explanation_th": "17 - 9 = 8",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g1_subtract_within_20_q01",
+      "question_th": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "question_text": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "choices": [
+        "5 ลูก",
+        "6 ลูก",
+        "7 ลูก",
+        "8 ลูก"
+      ],
+      "correct_answer": "7 ลูก",
+      "answer": "7 ลูก",
+      "explanation": "12 - 5 = 7 ลูก",
+      "explanation_th": "12 - 5 = 7 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q02",
+      "question_th": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "question_text": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "choices": [
+        "9 ผล",
+        "10 ผล",
+        "11 ผล",
+        "12 ผล"
+      ],
+      "correct_answer": "11 ผล",
+      "answer": "11 ผล",
+      "explanation": "15 - 4 = 11 ผล",
+      "explanation_th": "15 - 4 = 11 ผล",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q03",
+      "question_th": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "question_text": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "choices": [
+        "8 แท่ง",
+        "9 แท่ง",
+        "10 แท่ง",
+        "11 แท่ง"
+      ],
+      "correct_answer": "10 แท่ง",
+      "answer": "10 แท่ง",
+      "explanation": "18 - 8 = 10 แท่ง",
+      "explanation_th": "18 - 8 = 10 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q04",
+      "question_th": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "question_text": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "choices": [
+        "6 ดวง",
+        "7 ดวง",
+        "8 ดวง",
+        "9 ดวง"
+      ],
+      "correct_answer": "7 ดวง",
+      "answer": "7 ดวง",
+      "explanation": "10 - 3 = 7 ดวง",
+      "explanation_th": "10 - 3 = 7 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q05",
+      "question_th": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "9 ชิ้น",
+        "10 ชิ้น",
+        "11 ชิ้น",
+        "12 ชิ้น"
+      ],
+      "correct_answer": "10 ชิ้น",
+      "answer": "10 ชิ้น",
+      "explanation": "16 - 6 = 10 ชิ้น",
+      "explanation_th": "16 - 6 = 10 ชิ้น",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q06",
+      "question_th": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "question_text": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "choices": [
+        "10 เม็ด",
+        "11 เม็ด",
+        "12 เม็ด",
+        "13 เม็ด"
+      ],
+      "correct_answer": "11 เม็ด",
+      "answer": "11 เม็ด",
+      "explanation": "20 - 9 = 11 เม็ด",
+      "explanation_th": "20 - 9 = 11 เม็ด",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q07",
+      "question_th": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "question_text": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "choices": [
+        "9 เล่ม",
+        "10 เล่ม",
+        "11 เล่ม",
+        "12 เล่ม"
+      ],
+      "correct_answer": "10 เล่ม",
+      "answer": "10 เล่ม",
+      "explanation": "13 - 3 = 10 เล่ม",
+      "explanation_th": "13 - 3 = 10 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q08",
+      "question_th": "19 - 7 เท่ากับเท่าไร?",
+      "question_text": "19 - 7 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "19 - 7 = 12",
+      "explanation_th": "19 - 7 = 12",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q09",
+      "question_th": "14 - 8 เท่ากับเท่าไร?",
+      "question_text": "14 - 8 เท่ากับเท่าไร?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer": "6",
+      "answer": "6",
+      "explanation": "14 - 8 = 6",
+      "explanation_th": "14 - 8 = 6",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q10",
+      "question_th": "17 - 9 เท่ากับเท่าไร?",
+      "question_text": "17 - 9 เท่ากับเท่าไร?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct_answer": "8",
+      "answer": "8",
+      "explanation": "17 - 9 = 8",
+      "explanation_th": "17 - 9 = 8",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Subtraction",
+  "objective_en": "Learn Subtraction with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Look! 12 + 5 — can you find the answer?",
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Subtracting Balls",
+      "question_en": "Tom has 15 balls. He gives 7 balls to his friend. How many balls does he have left?",
+      "solution_en": "15 - 7 = 8 balls left."
+    },
+    {
+      "title_en": "Example: Subtracting Snacks",
+      "question_en": "Mom buys 18 snacks. The family eats 9 snacks. How many snacks are left?",
+      "solution_en": "18 - 9 = 9 snacks left."
+    },
+    {
+      "title_en": "Example: Subtracting Pencils",
+      "question_en": "Lisa has 13 pencils. She gives 6 pencils to her little brother. How many pencils does she have now?",
+      "solution_en": "13 - 6 = 7 pencils left."
+    }
+  ],
+  "common_mistakes_en": [
+    "Subtracting in the wrong order — for example, thinking 12 - 5 = 7 is wrong because 12 is the bigger number.",
+    "Counting backwards the wrong number of steps — for example, counting back 4 steps instead of 5.",
+    "The first number (top number) must always be bigger than the second number. If 7 - 9 appears, that is not in this lesson yet."
+  ],
+  "hints_en": [
+    "Use your fingers to count backwards. Count back the same number as the second number.",
+    "If the second number is bigger than 5, break it: subtract from 10 first, then add the rest. Example: 14 - 6 = (10 - 6) + 4 = 8.",
+    "Check your answer by adding the answer back to the second number. If you get the first number, the answer is correct."
+  ],
+  "explanation_steps_en": [
+    "Subtraction means taking a number away. The result is called the difference.",
+    "When you subtract, start with the bigger number and count backwards. How many are left after taking away?",
+    "Use your fingers to count backwards. For example, for 12 - 5, count back 5 steps: 11, 10, 9, 8, 7 → the answer is 7.",
+    "If the second number is bigger than 5, break it apart. For example, 14 - 6 = (10 - 6) + 4 = 8.",
+    "Check your answer by adding back. If 12 - 5 = 7, then 7 + 5 must equal 12."
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g1_subtract_within_20_q01",
+      "question_th": "พี่อลิสมีลูกชิ้น 12 ลูก ให้เพื่อน 5 ลูก เหลือกี่ลูก?",
+      "question_text": "Alice has 12 fish-shaped snacks. She gives 5 to her friend. How many fish-shaped snacks does she have left?",
+      "choices": [
+        "5 snacks",
+        "6 snacks",
+        "7 snacks",
+        "8 snacks"
+      ],
+      "correct_answer": "7 snacks",
+      "answer": "7 snacks",
+      "explanation": "12 - 5 = 7 fish-shaped snacks left.",
+      "explanation_th": "12 - 5 = 7 ลูก",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core",
+      "question_en": "Alice has 12 fish-shaped snacks. She gives 5 to her friend. How many fish-shaped snacks does she have left?",
+      "explanation_en": "12 - 5 = 7 fish-shaped snacks left.",
+      "choices_en": [
+        "5 snacks",
+        "6 snacks",
+        "7 snacks",
+        "8 snacks"
+      ],
+      "answer_en": "7 snacks"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q02",
+      "question_th": "มีส้ม 15 ผล กินไป 4 ผล เหลือกี่ผล?",
+      "question_text": "There are 15 oranges. The family eats 4 oranges. How many oranges are left?",
+      "choices": [
+        "9 oranges",
+        "10 oranges",
+        "11 oranges",
+        "12 oranges"
+      ],
+      "correct_answer": "11 oranges",
+      "answer": "11 oranges",
+      "explanation": "15 - 4 = 11 oranges left.",
+      "explanation_th": "15 - 4 = 11 ผล",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core",
+      "question_en": "There are 15 oranges. The family eats 4 oranges. How many oranges are left?",
+      "explanation_en": "15 - 4 = 11 oranges left.",
+      "choices_en": [
+        "9 oranges",
+        "10 oranges",
+        "11 oranges",
+        "12 oranges"
+      ],
+      "answer_en": "11 oranges"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q03",
+      "question_th": "มีดินสอ 18 แท่ง แจกไป 8 แท่ง เหลือกี่แท่ง?",
+      "question_text": "Tom has 18 pencils. He gives away 8 pencils to his classmates. How many pencils does Tom have now?",
+      "choices": [
+        "8 pencils",
+        "9 pencils",
+        "10 pencils",
+        "11 pencils"
+      ],
+      "correct_answer": "10 pencils",
+      "answer": "10 pencils",
+      "explanation": "18 - 8 = 10 pencils left.",
+      "explanation_th": "18 - 8 = 10 แท่ง",
+      "difficulty": "easy",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core",
+      "question_en": "Tom has 18 pencils. He gives away 8 pencils to his classmates. How many pencils does Tom have now?",
+      "explanation_en": "18 - 8 = 10 pencils left.",
+      "choices_en": [
+        "8 pencils",
+        "9 pencils",
+        "10 pencils",
+        "11 pencils"
+      ],
+      "answer_en": "10 pencils"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q04",
+      "question_th": "มีดาว 10 ดวง ลบออก 3 ดวง เหลือกี่ดวง?",
+      "question_text": "A sticker sheet has 10 stars. Sara sticks 3 stars on her notebook. How many stars are left on the sheet?",
+      "choices": [
+        "6 stars",
+        "7 stars",
+        "8 stars",
+        "9 stars"
+      ],
+      "correct_answer": "7 stars",
+      "answer": "7 stars",
+      "explanation": "10 - 3 = 7 stars left.",
+      "explanation_th": "10 - 3 = 7 ดวง",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core",
+      "question_en": "A sticker sheet has 10 stars. Sara sticks 3 stars on her notebook. How many stars are left on the sheet?",
+      "explanation_en": "10 - 3 = 7 stars left.",
+      "choices_en": [
+        "6 stars",
+        "7 stars",
+        "8 stars",
+        "9 stars"
+      ],
+      "answer_en": "7 stars"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q05",
+      "question_th": "มีขนม 16 ชิ้น แบ่งให้เพื่อน 6 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "There are 16 cookies. Mom gives 6 cookies to a neighbor. How many cookies are left?",
+      "choices": [
+        "9 cookies",
+        "10 cookies",
+        "11 cookies",
+        "12 cookies"
+      ],
+      "correct_answer": "10 cookies",
+      "answer": "10 cookies",
+      "explanation": "16 - 6 = 10 cookies left.",
+      "explanation_th": "16 - 6 = 10 ชิ้น",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core",
+      "question_en": "There are 16 cookies. Mom gives 6 cookies to a neighbor. How many cookies are left?",
+      "explanation_en": "16 - 6 = 10 cookies left.",
+      "choices_en": [
+        "9 cookies",
+        "10 cookies",
+        "11 cookies",
+        "12 cookies"
+      ],
+      "answer_en": "10 cookies"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q06",
+      "question_th": "มีลูกปัด 20 เม็ด ใช้ไป 9 เม็ด เหลือกี่เม็ด?",
+      "question_text": "Lisa has 20 beads. She uses 9 beads to make a necklace. How many beads does she have left?",
+      "choices": [
+        "10 beads",
+        "11 beads",
+        "12 beads",
+        "13 beads"
+      ],
+      "correct_answer": "11 beads",
+      "answer": "11 beads",
+      "explanation": "20 - 9 = 11 beads left.",
+      "explanation_th": "20 - 9 = 11 เม็ด",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core",
+      "question_en": "Lisa has 20 beads. She uses 9 beads to make a necklace. How many beads does she have left?",
+      "explanation_en": "20 - 9 = 11 beads left.",
+      "choices_en": [
+        "10 beads",
+        "11 beads",
+        "12 beads",
+        "13 beads"
+      ],
+      "answer_en": "11 beads"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q07",
+      "question_th": "มีหนังสือ 13 เล่ม คืนห้องสมุด 3 เล่ม เหลือกี่เล่ม?",
+      "question_text": "A library shelf has 13 books. A student returns 3 books to the shelf. How many books are on the shelf now?",
+      "choices": [
+        "9 books",
+        "10 books",
+        "11 books",
+        "12 books"
+      ],
+      "correct_answer": "10 books",
+      "answer": "10 books",
+      "explanation": "13 - 3 = 10 books left.",
+      "explanation_th": "13 - 3 = 10 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "core",
+      "question_en": "A library shelf has 13 books. A student returns 3 books to the shelf. How many books are on the shelf now?",
+      "explanation_en": "13 - 3 = 10 books left.",
+      "choices_en": [
+        "9 books",
+        "10 books",
+        "11 books",
+        "12 books"
+      ],
+      "answer_en": "10 books"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q08",
+      "question_th": "19 - 7 เท่ากับเท่าไร?",
+      "question_text": "There are 19 children on a bus. 7 children get off at the first stop. How many children are still on the bus?",
+      "choices": [
+        "11 children",
+        "12 children",
+        "13 children",
+        "14 children"
+      ],
+      "correct_answer": "12 children",
+      "answer": "12 children",
+      "explanation": "19 - 7 = 12 children left on the bus.",
+      "explanation_th": "19 - 7 = 12",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge",
+      "question_en": "There are 19 children on a bus. 7 children get off at the first stop. How many children are still on the bus?",
+      "explanation_en": "19 - 7 = 12 children left on the bus.",
+      "choices_en": [
+        "11 children",
+        "12 children",
+        "13 children",
+        "14 children"
+      ],
+      "answer_en": "12 children"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q09",
+      "question_th": "14 - 8 เท่ากับเท่าไร?",
+      "question_text": "Grandma has 14 eggs. She uses 8 eggs to bake a cake. How many eggs are left?",
+      "choices": [
+        "5 eggs",
+        "6 eggs",
+        "7 eggs",
+        "8 eggs"
+      ],
+      "correct_answer": "6 eggs",
+      "answer": "6 eggs",
+      "explanation": "14 - 8 = 6 eggs left.",
+      "explanation_th": "14 - 8 = 6",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge",
+      "question_en": "Grandma has 14 eggs. She uses 8 eggs to bake a cake. How many eggs are left?",
+      "explanation_en": "14 - 8 = 6 eggs left.",
+      "choices_en": [
+        "5 eggs",
+        "6 eggs",
+        "7 eggs",
+        "8 eggs"
+      ],
+      "answer_en": "6 eggs"
+    },
+    {
+      "question_id": "g1_subtract_within_20_q10",
+      "question_th": "17 - 9 เท่ากับเท่าไร?",
+      "question_text": "A water bottle has 17 cups of water. Dad drinks 9 cups. How many cups of water are left?",
+      "choices": [
+        "7 cups",
+        "8 cups",
+        "9 cups",
+        "10 cups"
+      ],
+      "correct_answer": "8 cups",
+      "answer": "8 cups",
+      "explanation": "17 - 9 = 8 cups left.",
+      "explanation_th": "17 - 9 = 8",
+      "difficulty": "hard",
+      "skill_tag": "g1_subtract_within_20",
+      "question_type": "challenge",
+      "question_en": "A water bottle has 17 cups of water. Dad drinks 9 cups. How many cups of water are left?",
+      "explanation_en": "17 - 9 = 8 cups left.",
+      "choices_en": [
+        "7 cups",
+        "8 cups",
+        "9 cups",
+        "10 cups"
+      ],
+      "answer_en": "8 cups"
+    }
+  ],
+  "quiz_id": "g1_subtract_within_20_ep",
+  "generated_at": "2026-05-16T04:16:40.560808+00:00",
+  "source_lesson_id": "g1_subtract_within_20",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The key numbers are 6 and 5. Choose the operation that matches Subtraction. Use the model to get 30."
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Model",
+      "description": "Show 5 rows and 6 columns. Count all boxes.",
+      "model_type": "area_model",
+      "rows": 5,
+      "cols": 6,
+      "total": 30,
+      "unit": "items",
+      "symbol": "■"
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5 × 6 = 30",
+      "content": "Multiply rows by columns."
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "choices": [
+        "11",
+        "24",
+        "28",
+        "32"
+      ],
+      "correct_answer": "28",
+      "answer": "28",
+      "explanation": "4 × 7 = 28 tiles."
+    }
+  ],
+  "base_lesson_id": "g1_subtract_within_20",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Subtraction",
+  "topic": "subtraction",
+  "icon": "book",
+  "story_variants": [
+    {
+      "variant_id": "g1_subtract_within_20_ep_01",
+      "status": "approved",
+      "title": "Subtraction Variant 1",
+      "story": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
+      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Subtraction. Use the model to get 30.",
+      "model_diagram": {
+        "type": "model_diagram",
+        "title": "Use a Model",
+        "description": "Show 5 rows and 6 columns. Count all boxes.",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "items",
+        "symbol": "■"
+      },
+      "number_sentence": {
+        "type": "number_sentence",
+        "title": "Number Sentence",
+        "expression": "5 × 6 = 30",
+        "content": "Multiply rows by columns."
+      },
+      "practice": {
+        "type": "mini_quiz",
+        "title": "Try It",
+        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+        "choices": [
+          "11",
+          "24",
+          "28",
+          "32"
+        ],
+        "correct_answer": "28",
+        "answer": "28",
+        "explanation": "4 × 7 = 28 tiles."
+      },
+      "helper_tip": "Read the story first. Circle the important numbers for Subtraction.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+        },
+        {
+          "type": "think_story",
+          "title": "Think About It",
+          "content": "The key numbers are 6 and 5. Choose the operation that matches Subtraction. Use the model to get 30."
+        },
+        {
+          "type": "model_diagram",
+          "title": "Use a Model",
+          "description": "Show 5 rows and 6 columns. Count all boxes.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 6,
+          "total": 30,
+          "unit": "items",
+          "symbol": "■"
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 6 = 30",
+          "content": "Multiply rows by columns."
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "choices": [
+            "11",
+            "24",
+            "28",
+            "32"
+          ],
+          "correct_answer": "28",
+          "answer": "28",
+          "explanation": "4 × 7 = 28 tiles."
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story first. Circle the important numbers for Subtraction.",
+  "thai_support": ""
+}

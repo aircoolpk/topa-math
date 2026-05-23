@@ -1,0 +1,282 @@
+{
+  "variant_id": "data_charts_ep_001",
+  "variant_title_th": "แผนภูมิรูปภาพและแผนภูมิแท่ง",
+  "variant_title_en": "Pictographs and Bar Charts",
+  "status": "needs_review",
+  "title_en": "Data — Pictographs and Bar Charts",
+  "story_theme_en": "Lin created a survey about favorite fruits among her 25 classmates. Results: Orange 5 students, Strawberry 10 students, Banana 5 students, Grape 5 students. Lin needed to make a pictograph where each picture = 5 students.",
+  "helper_tip_en": "Have students count symbols in each row and multiply by the symbol value shown in the key.",
+  "think_story_en": "Pictograph: Strawberry 10 = 2 symbols (2x5=10) | Orange 5 = 1 | Banana 5 = 1 | Grape 5 = 1 | Total = 25 students. Strawberry is most popular.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin surveys favorite fruits.",
+      "data": {
+        "content_en": "Lin created a survey about favorite fruits among her 25 classmates. Results: Orange 5 students, Strawberry 10 students, Banana 5 students, Grape 5 students. Lin needed to make a pictograph where each picture = 5 students."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Strawberry: 2x5=10 | Orange: 1x5=5 | Banana: 1x5=5 | Grape: 1x5=5 | Total = 25. Strawberry most popular.",
+      "data": {
+        "content_en": "Pictograph: Strawberry 10 = 2 symbols (2x5=10) | Orange 5 = 1 | Banana 5 = 1 | Grape 5 = 1 | Total = 25 students. Strawberry is most popular."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Pictograph",
+      "description": "A pictograph showing fruit preferences, 1 symbol = 5 students",
+      "model_type": "pictograph",
+      "data": {
+        "model_type": "pictograph",
+        "title": "Favorite Fruits of 25 Students",
+        "scale": 5,
+        "categories": [
+          {
+            "label_en": "Strawberry",
+            "count": 10,
+            "symbols": 2
+          },
+          {
+            "label_en": "Orange",
+            "count": 5,
+            "symbols": 1
+          },
+          {
+            "label_en": "Banana",
+            "count": 5,
+            "symbols": 1
+          },
+          {
+            "label_en": "Grape",
+            "count": 5,
+            "symbols": 1
+          }
+        ],
+        "total": 25,
+        "unit": "students"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "10+5+5+5=25",
+      "content": "10+5+5+5=25 students | Strawberry most popular: 10 students",
+      "data": {
+        "expression": "10+5+5+5=25",
+        "content_en": "10+5+5+5=25 students | Strawberry most popular: 10 students"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "From the pictograph, which fruit do students like most and how many?",
+      "choices": [
+        "Orange, 5",
+        "Strawberry, 10",
+        "Banana, 5",
+        "Grape, 5"
+      ],
+      "correct_answer": "Strawberry, 10",
+      "explanation": "Strawberry: 2 symbols x 5 = 10 students, the most.",
+      "data": {
+        "question": "From the pictograph, which fruit do students like most and how many?",
+        "choices": [
+          "Orange, 5",
+          "Strawberry, 10",
+          "Banana, 5",
+          "Grape, 5"
+        ],
+        "correct_answer": "Strawberry, 10",
+        "explanation": "Strawberry: 2 symbols x 5 = 10 students, the most."
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "A pictograph uses pictures to represent data. Each picture has the same value.",
+    "Before reading a pictograph, check the key to find what 1 picture equals.",
+    "Count the pictures in each row, then multiply by the value of each picture.",
+    "A bar chart uses bars to represent data. Read the height or length of each bar.",
+    "To summarize data: find the highest value, lowest value, and total."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Reading a Pictograph",
+      "question_en": "If 1 picture = 10 students and there are 3 pictures of oranges, how many students like oranges?",
+      "solution_en": "3 x 10 = 30 students"
+    }
+  ],
+  "common_mistakes_en": [
+    "Forgetting to check the key and multiplying by the wrong value.",
+    "Counting half a symbol as a full one.",
+    "Mixing up the X-axis and Y-axis on a bar chart."
+  ],
+  "hints_en": [
+    "Always read the key first: 1 picture = ? students.",
+    "Count pictures one row at a time and multiply by the symbol value.",
+    "Check by adding all categories to see if they match the total."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "pictograph",
+      "th": "แผนภูมิรูปภาพ",
+      "definition_en": "A chart that uses pictures to represent data"
+    },
+    {
+      "en": "bar chart",
+      "th": "แผนภูมิแท่ง",
+      "definition_en": "A chart that uses bars to represent data"
+    },
+    {
+      "en": "key / legend",
+      "th": "กุญแจสำคัญ",
+      "definition_en": "The part of a chart that shows what each symbol represents"
+    },
+    {
+      "en": "data",
+      "th": "ข้อมูล",
+      "definition_en": "Information collected for analysis, usually in numbers"
+    },
+    {
+      "en": "category",
+      "th": "หมวดหมู่",
+      "definition_en": "A group that data belongs to"
+    },
+    {
+      "en": "most / greatest",
+      "th": "มากที่สุด",
+      "definition_en": "The largest or highest value in the data"
+    },
+    {
+      "en": "least / smallest",
+      "th": "น้อยที่สุด",
+      "definition_en": "The smallest or lowest value in the data"
+    },
+    {
+      "en": "total",
+      "th": "ผลรวม",
+      "definition_en": "The complete sum of all data"
+    },
+    {
+      "en": "scale",
+      "th": "มาตราส่วน",
+      "definition_en": "The value of each unit on a chart"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "In a pictograph, 1 apple = 4 students. 3 apples for A and 5 for B. How many more chose B?",
+      "choices": [
+        "2",
+        "8",
+        "12",
+        "20"
+      ],
+      "answer": "8",
+      "explanation": "A=3x4=12, B=5x4=20, diff=20-12=8"
+    },
+    {
+      "q": "A bar chart shows: Dogs=30, Cats=20, Birds=10. Total?",
+      "choices": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "answer": "60",
+      "explanation": "30+20+10=60"
+    },
+    {
+      "q": "Pets: Dogs=25, Cats=25, Fish=15, Birds=10. Most popular?",
+      "choices": [
+        "Dogs and Cats",
+        "Fish",
+        "Birds",
+        "Dogs"
+      ],
+      "answer": "Dogs and Cats",
+      "explanation": "Both Dogs and Cats have 25, highest."
+    },
+    {
+      "q": "If 1 star = 8 points, how many points is a row with 4 stars?",
+      "choices": [
+        "12",
+        "24",
+        "32",
+        "48"
+      ],
+      "answer": "32",
+      "explanation": "4x8=32"
+    },
+    {
+      "q": "Books read: Lin=3, Ai=2, Mai=4 (1 book=1). Lin+Mai total?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "answer": "7",
+      "explanation": "3+4=7 books"
+    },
+    {
+      "q": "Monthly sales: Jan=40, Feb=55, Mar=35, Apr=50. Highest month?",
+      "choices": [
+        "January",
+        "February",
+        "March",
+        "April"
+      ],
+      "answer": "February",
+      "explanation": "55 is highest."
+    },
+    {
+      "q": "Survey: 12 blue, 8 red, 5 green, 5 yellow. Total surveyed?",
+      "choices": [
+        "25",
+        "30",
+        "20",
+        "28"
+      ],
+      "answer": "30",
+      "explanation": "12+8+5+5=30"
+    },
+    {
+      "q": "If 1 soccer ball = 6 players, 5 balls = ? players",
+      "choices": [
+        "11",
+        "24",
+        "30",
+        "36"
+      ],
+      "answer": "30",
+      "explanation": "5x6=30"
+    },
+    {
+      "q": "Scores: 70,80,90,85. Average score?",
+      "choices": [
+        "80",
+        "81",
+        "82",
+        "85"
+      ],
+      "answer": "81",
+      "explanation": "(70+80+90+85)/4=81.25, rounded to 81"
+    },
+    {
+      "q": "1 fruit=3 students. Strawberries=4, Mangoes=6, Bananas=3, Durian=5. Most popular?",
+      "choices": [
+        "Strawberries",
+        "Mangoes",
+        "Bananas",
+        "Durian"
+      ],
+      "answer": "Mangoes",
+      "explanation": "Strawberries:4x3=12, Mangoes:6x3=18, Bananas:3x3=9, Durian:5x3=15. Mangoes highest=18."
+    }
+  ],
+  "questions": [],
+  "explanation_en": "A pictograph uses pictures to represent data. Always check the key first. Multiply symbols by symbol value. A bar chart uses bars of different heights to show comparisons."
+}

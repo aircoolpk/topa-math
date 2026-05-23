@@ -1,0 +1,781 @@
+{
+  "lesson_id": "g3_measurement_ep",
+  "id": "g3_measurement_ep",
+  "grade_level": 3,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "ความยาวใช้หน่วย เซนติเมตร (ซม.) เมตร (ม.) กิโลเมตร (กม.)",
+    "1 เมตร = 100 เซนติเมตร / 1 กิโลเมตร = 1000 เมตร",
+    "น้ำหนักใช้หน่วย กรัม (ก.) กิโลกรัม (กก.) / 1 กิโลกรัม = 1000 กรัม",
+    "ปริมาตรใช้หน่วย มิลลิลิตร (มล.) ลิตร (ล.) / 1 ลิตร = 1000 มิลลิลิตร",
+    "เลือกหน่วยที่เหมาะสมกับขนาดของสิ่งที่วัด"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "แปลงหน่วยความยาว",
+      "question_th": "2 เมตร เท่ากับกี่เซนติเมตร?",
+      "solution_th": "2 × 100 = 200 เซนติเมตร ✅"
+    },
+    {
+      "title_th": "แปลงหน่วยน้ำหนัก",
+      "question_th": "3 กิโลกรัม เท่ากับกี่กรัม?",
+      "solution_th": "3 × 1000 = 3000 กรัม ✅"
+    },
+    {
+      "title_th": "เลือกหน่วยที่เหมาะสม",
+      "question_th": "น้ำหนักตัวของคนจะใช้หน่วยอะไร?",
+      "solution_th": "ใช้กิโลกรัม (เช่น 35 กก.) เพราะกรัมใช้กับของเล็กๆ ✅"
+    }
+  ],
+  "common_mistakes": [
+    "แปลงหน่วยผิด เช่น คิดว่า 1 เมตร = 10 เซนติเมตร แทนที่จะเป็น 100",
+    "เลือกหน่วยไม่เหมาะสม เช่น บอกความสูงคนเป็นเซนติเมตรแทนเมตร",
+    "ไม่เข้าใจว่าหน่วยใหญ่กว่าแปลงเป็นหน่วยเล็กกว่าต้องคูณ หน่วยเล็กกว่าแปลงเป็นหน่วยใหญ่ต้องหาร"
+  ],
+  "hints": [
+    "จำว่า ม. → ซม. คูณ 100 / กก. → ก. คูณ 1000 / ล. → มล. คูณ 1000",
+    "ถ้าจำไม่ได้ ให้นึกถึงตารางแปลงหน่วยที่คุ้นเคย เช่น 1 เมตร = 100 ซม. บนไม้บรรทัด",
+    "เลือกหน่วยโดยดูว่าสิ่งที่วัดใหญ่แค่ไหน ของใหญ่ใช้หน่วยใหญ่ ของเล็กใช้หน่วยเล็ก"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_measurement",
+  "skill_code": "g3_measurement_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g3_measurement_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Measurement Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+          "content_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+          "data": {
+            "content_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items.",
+          "content_en": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items.",
+          "data": {
+            "content_en": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 27,
+          "part_b": 16,
+          "total": 43,
+          "unit": "items",
+          "symbol": "🥖",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 27,
+            "part_b": 16,
+            "total": 43,
+            "unit": "items",
+            "symbol": "🥖"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "27 + 16 = 43 items",
+          "content": "27 + 16 = 43 items",
+          "data": {
+            "expression": "27 + 16 = 43 items",
+            "content_en": "27 + 16 = 43 items"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+          "choices": [
+            "58 sheets",
+            "56 sheets",
+            "61 sheets",
+            "63 sheets"
+          ],
+          "correct_answer": "58 sheets",
+          "answer": "58 sheets",
+          "explanation": "Add the two groups: 36 + 22 = 58 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+            "choices": [
+              "58 sheets",
+              "56 sheets",
+              "61 sheets",
+              "63 sheets"
+            ],
+            "correct_answer": "58 sheets",
+            "answer": "58 sheets",
+            "explanation": "Add the two groups: 36 + 22 = 58 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "การวัด",
+  "preview_subtitle_th": "วัดความยาวและน้ำหนัก",
+  "cover_theme": "measurement",
+  "cover_emoji": "📏",
+  "cover_color": "purple",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "วัดความยาวและน้ำหนัก",
+  "learning_objective_th": "นักเรียนสามารถวัดความยาว น้ำหนัก และปริมาตรโดยใช้หน่วยวัดที่เหมาะสมได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสอยากทำน้ำปลา ใช้เมนูวัดน้ำ 250 มิลลิลิตร วัดข้าวสาร 500 กรัม และวัดโต๊ะ 120 เซนติเมตร หน่วยเหล่านี้คืออะไรนะ? 📏",
+  "concept_explanation_th": "ความยาวใช้หน่วย เซนติเมตร (ซม.) เมตร (ม.) กิโลเมตร (กม.) 1 เมตร = 100 เซนติเมตร / 1 กิโลเมตร = 1000 เมตร น้ำหนักใช้หน่วย กรัม (ก.) กิโลกรัม (กก.) / 1 กิโลกรัม = 1000 กรัม ปริมาตรใช้หน่วย มิลลิลิตร (มล.) ลิตร (ล.) / 1 ลิตร = 1000 มิลลิลิตร เลือกหน่วยที่เหมาะสมกับขนาดของสิ่งที่วัด",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 9
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 6
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท วัดความยาว น้ำหนัก ปริมาตร ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "แปลงหน่วยความยาว",
+      "question_th": "2 เมตร เท่ากับกี่เซนติเมตร?",
+      "solution_th": "2 × 100 = 200 เซนติเมตร ✅"
+    },
+    {
+      "title_th": "แปลงหน่วยน้ำหนัก",
+      "question_th": "3 กิโลกรัม เท่ากับกี่กรัม?",
+      "solution_th": "3 × 1000 = 3000 กรัม ✅"
+    },
+    {
+      "title_th": "เลือกหน่วยที่เหมาะสม",
+      "question_th": "น้ำหนักตัวของคนจะใช้หน่วยอะไร?",
+      "solution_th": "ใช้กิโลกรัม (เช่น 35 กก.) เพราะกรัมใช้กับของเล็กๆ ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "แปลงหน่วยผิด เช่น คิดว่า 1 เมตร = 10 เซนติเมตร แทนที่จะเป็น 100",
+    "เลือกหน่วยไม่เหมาะสม เช่น บอกความสูงคนเป็นเซนติเมตรแทนเมตร",
+    "ไม่เข้าใจว่าหน่วยใหญ่กว่าแปลงเป็นหน่วยเล็กกว่าต้องคูณ หน่วยเล็กกว่าแปลงเป็นหน่วยใหญ่ต้องหาร"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_measurement_q01",
+      "question_th": "1 เมตรเท่ากับกี่เซนติเมตร?",
+      "question_text": "1 เมตรเท่ากับกี่เซนติเมตร?",
+      "choices": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "1 เมตร = 100 เซนติเมตร",
+      "explanation_th": "1 เมตร = 100 เซนติเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q02",
+      "question_th": "เชือกยาว 35 ซม. กับ 20 ซม. รวมยาวกี่ซม.?",
+      "question_text": "เชือกยาว 35 ซม. กับ 20 ซม. รวมยาวกี่ซม.?",
+      "choices": [
+        "45 ซม.",
+        "55 ซม.",
+        "65 ซม.",
+        "70 ซม."
+      ],
+      "correct_answer": "55 ซม.",
+      "answer": "55 ซม.",
+      "explanation": "35 + 20 = 55 ซม.",
+      "explanation_th": "35 + 20 = 55 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q03",
+      "question_th": "ดินสอยาว 18 ซม. ยางลบยาว 5 ซม. ดินสอยาวกว่ากี่ซม.?",
+      "question_text": "ดินสอยาว 18 ซม. ยางลบยาว 5 ซม. ดินสอยาวกว่ากี่ซม.?",
+      "choices": [
+        "11 ซม.",
+        "12 ซม.",
+        "13 ซม.",
+        "14 ซม."
+      ],
+      "correct_answer": "13 ซม.",
+      "answer": "13 ซม.",
+      "explanation": "18 - 5 = 13 ซม.",
+      "explanation_th": "18 - 5 = 13 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q04",
+      "question_th": "1 กิโลกรัมเท่ากับกี่กรัม?",
+      "question_text": "1 กิโลกรัมเท่ากับกี่กรัม?",
+      "choices": [
+        "10 กรัม",
+        "100 กรัม",
+        "1000 กรัม",
+        "10000 กรัม"
+      ],
+      "correct_answer": "1000 กรัม",
+      "answer": "1000 กรัม",
+      "explanation": "1 กิโลกรัม = 1000 กรัม",
+      "explanation_th": "1 กิโลกรัม = 1000 กรัม",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q05",
+      "question_th": "น้ำ 1 ลิตรเท่ากับกี่มิลลิลิตร?",
+      "question_text": "น้ำ 1 ลิตรเท่ากับกี่มิลลิลิตร?",
+      "choices": [
+        "100 มล.",
+        "500 มล.",
+        "1000 มล.",
+        "1500 มล."
+      ],
+      "correct_answer": "1000 มล.",
+      "answer": "1000 มล.",
+      "explanation": "1 ลิตร = 1000 มิลลิลิตร",
+      "explanation_th": "1 ลิตร = 1000 มิลลิลิตร",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q06",
+      "question_th": "ริบบิ้นยาว 2 เมตร คือกี่เซนติเมตร?",
+      "question_text": "ริบบิ้นยาว 2 เมตร คือกี่เซนติเมตร?",
+      "choices": [
+        "20 ซม.",
+        "100 ซม.",
+        "200 ซม.",
+        "2000 ซม."
+      ],
+      "correct_answer": "200 ซม.",
+      "answer": "200 ซม.",
+      "explanation": "2 เมตร = 200 ซม.",
+      "explanation_th": "2 เมตร = 200 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q07",
+      "question_th": "ถุงข้าวหนัก 3 กก. คือกี่กรัม?",
+      "question_text": "ถุงข้าวหนัก 3 กก. คือกี่กรัม?",
+      "choices": [
+        "300 กรัม",
+        "3000 กรัม",
+        "30 กรัม",
+        "3 กรัม"
+      ],
+      "correct_answer": "3000 กรัม",
+      "answer": "3000 กรัม",
+      "explanation": "3 กก. = 3000 กรัม",
+      "explanation_th": "3 กก. = 3000 กรัม",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q08",
+      "question_th": "น้ำผลไม้ 750 มล. เติมอีก 250 มล. รวมกี่ลิตร?",
+      "question_text": "น้ำผลไม้ 750 มล. เติมอีก 250 มล. รวมกี่ลิตร?",
+      "choices": [
+        "1 ลิตร",
+        "2 ลิตร",
+        "500 มล.",
+        "1500 มล."
+      ],
+      "correct_answer": "1 ลิตร",
+      "answer": "1 ลิตร",
+      "explanation": "750 + 250 = 1000 มล. = 1 ลิตร",
+      "explanation_th": "750 + 250 = 1000 มล. = 1 ลิตร",
+      "difficulty": "hard",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_measurement_q09",
+      "question_th": "เส้นทาง 1000 เมตรเท่ากับกี่กิโลเมตร?",
+      "question_text": "เส้นทาง 1000 เมตรเท่ากับกี่กิโลเมตร?",
+      "choices": [
+        "1 กม.",
+        "10 กม.",
+        "100 กม.",
+        "1000 กม."
+      ],
+      "correct_answer": "1 กม.",
+      "answer": "1 กม.",
+      "explanation": "1000 เมตร = 1 กิโลเมตร",
+      "explanation_th": "1000 เมตร = 1 กิโลเมตร",
+      "difficulty": "hard",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_measurement_q10",
+      "question_th": "แท่งไม้ยาว 90 ซม. ตัดออก 30 ซม. เหลือกี่ซม.?",
+      "question_text": "แท่งไม้ยาว 90 ซม. ตัดออก 30 ซม. เหลือกี่ซม.?",
+      "choices": [
+        "50 ซม.",
+        "60 ซม.",
+        "70 ซม.",
+        "80 ซม."
+      ],
+      "correct_answer": "60 ซม.",
+      "answer": "60 ซม.",
+      "explanation": "90 - 30 = 60 ซม.",
+      "explanation_th": "90 - 30 = 60 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_measurement_q01",
+      "question_th": "1 เมตรเท่ากับกี่เซนติเมตร?",
+      "question_text": "1 เมตรเท่ากับกี่เซนติเมตร?",
+      "choices": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "1 เมตร = 100 เซนติเมตร",
+      "explanation_th": "1 เมตร = 100 เซนติเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q02",
+      "question_th": "เชือกยาว 35 ซม. กับ 20 ซม. รวมยาวกี่ซม.?",
+      "question_text": "เชือกยาว 35 ซม. กับ 20 ซม. รวมยาวกี่ซม.?",
+      "choices": [
+        "45 ซม.",
+        "55 ซม.",
+        "65 ซม.",
+        "70 ซม."
+      ],
+      "correct_answer": "55 ซม.",
+      "answer": "55 ซม.",
+      "explanation": "35 + 20 = 55 ซม.",
+      "explanation_th": "35 + 20 = 55 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q03",
+      "question_th": "ดินสอยาว 18 ซม. ยางลบยาว 5 ซม. ดินสอยาวกว่ากี่ซม.?",
+      "question_text": "ดินสอยาว 18 ซม. ยางลบยาว 5 ซม. ดินสอยาวกว่ากี่ซม.?",
+      "choices": [
+        "11 ซม.",
+        "12 ซม.",
+        "13 ซม.",
+        "14 ซม."
+      ],
+      "correct_answer": "13 ซม.",
+      "answer": "13 ซม.",
+      "explanation": "18 - 5 = 13 ซม.",
+      "explanation_th": "18 - 5 = 13 ซม.",
+      "difficulty": "easy",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q04",
+      "question_th": "1 กิโลกรัมเท่ากับกี่กรัม?",
+      "question_text": "1 กิโลกรัมเท่ากับกี่กรัม?",
+      "choices": [
+        "10 กรัม",
+        "100 กรัม",
+        "1000 กรัม",
+        "10000 กรัม"
+      ],
+      "correct_answer": "1000 กรัม",
+      "answer": "1000 กรัม",
+      "explanation": "1 กิโลกรัม = 1000 กรัม",
+      "explanation_th": "1 กิโลกรัม = 1000 กรัม",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q05",
+      "question_th": "น้ำ 1 ลิตรเท่ากับกี่มิลลิลิตร?",
+      "question_text": "น้ำ 1 ลิตรเท่ากับกี่มิลลิลิตร?",
+      "choices": [
+        "100 มล.",
+        "500 มล.",
+        "1000 มล.",
+        "1500 มล."
+      ],
+      "correct_answer": "1000 มล.",
+      "answer": "1000 มล.",
+      "explanation": "1 ลิตร = 1000 มิลลิลิตร",
+      "explanation_th": "1 ลิตร = 1000 มิลลิลิตร",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q06",
+      "question_th": "ริบบิ้นยาว 2 เมตร คือกี่เซนติเมตร?",
+      "question_text": "ริบบิ้นยาว 2 เมตร คือกี่เซนติเมตร?",
+      "choices": [
+        "20 ซม.",
+        "100 ซม.",
+        "200 ซม.",
+        "2000 ซม."
+      ],
+      "correct_answer": "200 ซม.",
+      "answer": "200 ซม.",
+      "explanation": "2 เมตร = 200 ซม.",
+      "explanation_th": "2 เมตร = 200 ซม.",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q07",
+      "question_th": "ถุงข้าวหนัก 3 กก. คือกี่กรัม?",
+      "question_text": "ถุงข้าวหนัก 3 กก. คือกี่กรัม?",
+      "choices": [
+        "300 กรัม",
+        "3000 กรัม",
+        "30 กรัม",
+        "3 กรัม"
+      ],
+      "correct_answer": "3000 กรัม",
+      "answer": "3000 กรัม",
+      "explanation": "3 กก. = 3000 กรัม",
+      "explanation_th": "3 กก. = 3000 กรัม",
+      "difficulty": "medium",
+      "skill_tag": "g3_measurement",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_measurement_q08",
+      "question_th": "น้ำผลไม้ 750 มล. เติมอีก 250 มล. รวมกี่ลิตร?",
+      "question_text": "น้ำผลไม้ 750 มล. เติมอีก 250 มล. รวมกี่ลิตร?",
+      "choices": [
+        "1 ลิตร",
+        "2 ลิตร",
+        "500 มล.",
+        "1500 มล."
+      ],
+      "correct_answer": "1 ลิตร",
+      "answer": "1 ลิตร",
+      "explanation": "750 + 250 = 1000 มล. = 1 ลิตร",
+      "explanation_th": "750 + 250 = 1000 มล. = 1 ลิตร",
+      "difficulty": "hard",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_measurement_q09",
+      "question_th": "เส้นทาง 1000 เมตรเท่ากับกี่กิโลเมตร?",
+      "question_text": "เส้นทาง 1000 เมตรเท่ากับกี่กิโลเมตร?",
+      "choices": [
+        "1 กม.",
+        "10 กม.",
+        "100 กม.",
+        "1000 กม."
+      ],
+      "correct_answer": "1 กม.",
+      "answer": "1 กม.",
+      "explanation": "1000 เมตร = 1 กิโลเมตร",
+      "explanation_th": "1000 เมตร = 1 กิโลเมตร",
+      "difficulty": "hard",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_measurement_q10",
+      "question_th": "แท่งไม้ยาว 90 ซม. ตัดออก 30 ซม. เหลือกี่ซม.?",
+      "question_text": "แท่งไม้ยาว 90 ซม. ตัดออก 30 ซม. เหลือกี่ซม.?",
+      "choices": [
+        "50 ซม.",
+        "60 ซม.",
+        "70 ซม.",
+        "80 ซม."
+      ],
+      "correct_answer": "60 ซม.",
+      "answer": "60 ซม.",
+      "explanation": "90 - 30 = 60 ซม.",
+      "explanation_th": "90 - 30 = 60 ซม.",
+      "difficulty": "hard",
+      "skill_tag": "g3_measurement",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Measurement",
+  "objective_en": "Learn Measurement with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+  "worked_examples_en": [
+    "g3_measurement_ep English item 1",
+    "g3_measurement_ep English item 2",
+    "g3_measurement_ep English item 3"
+  ],
+  "common_mistakes_en": [
+    "g3_measurement_ep English item 1",
+    "g3_measurement_ep English item 2",
+    "g3_measurement_ep English item 3"
+  ],
+  "hints_en": [
+    "g3_measurement_ep English item 1",
+    "g3_measurement_ep English item 2",
+    "g3_measurement_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g3_measurement_ep English item 1",
+    "g3_measurement_ep English item 2",
+    "g3_measurement_ep English item 3",
+    "g3_measurement_ep English item 4",
+    "g3_measurement_ep English item 5"
+  ],
+  "quiz_en": [
+    "g3_measurement_ep English item 1",
+    "g3_measurement_ep English item 2",
+    "g3_measurement_ep English item 3",
+    "g3_measurement_ep English item 4",
+    "g3_measurement_ep English item 5",
+    "g3_measurement_ep English item 6",
+    "g3_measurement_ep English item 7",
+    "g3_measurement_ep English item 8",
+    "g3_measurement_ep English item 9",
+    "g3_measurement_ep English item 10"
+  ],
+  "quiz_id": "g3_measurement_ep",
+  "generated_at": "2026-05-16T04:16:41.373005+00:00",
+  "source_lesson_id": "g3_measurement",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+      "content_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+      "data": {
+        "content_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items.",
+      "content_en": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items.",
+      "data": {
+        "content_en": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "part_whole_model",
+      "part_a": 27,
+      "part_b": 16,
+      "total": 43,
+      "unit": "items",
+      "symbol": "🥖",
+      "data": {
+        "model_type": "part_whole_model",
+        "part_a": 27,
+        "part_b": 16,
+        "total": 43,
+        "unit": "items",
+        "symbol": "🥖"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "27 + 16 = 43 items",
+      "content": "27 + 16 = 43 items",
+      "data": {
+        "expression": "27 + 16 = 43 items",
+        "content_en": "27 + 16 = 43 items"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+      "choices": [
+        "58 sheets",
+        "56 sheets",
+        "61 sheets",
+        "63 sheets"
+      ],
+      "correct_answer": "58 sheets",
+      "answer": "58 sheets",
+      "explanation": "Add the two groups: 36 + 22 = 58 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+        "choices": [
+          "58 sheets",
+          "56 sheets",
+          "61 sheets",
+          "63 sheets"
+        ],
+        "correct_answer": "58 sheets",
+        "answer": "58 sheets",
+        "explanation": "Add the two groups: 36 + 22 = 58 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g3_measurement",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Measurement",
+  "topic": "measurement",
+  "icon": "ruler",
+  "story_variants": [
+    {
+      "variant_id": "g3_measurement_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Measurement Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+          "content_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence.",
+          "data": {
+            "content_en": "Mint collects bread for an activity at the school shop. One box has 27 items, and a coin purse has 16 more items. How many items does Mint have in all? This story practices Measurement in the reading corner with green name labels before lunch break. A partner checks the unit in the answer before the group writes the number sentence."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items.",
+          "content_en": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items.",
+          "data": {
+            "content_en": "The story has two groups: 27 and 16. To find the total, add them: 27 + 16 = 43 items."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 27,
+          "part_b": 16,
+          "total": 43,
+          "unit": "items",
+          "symbol": "🥖",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 27,
+            "part_b": 16,
+            "total": 43,
+            "unit": "items",
+            "symbol": "🥖"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "27 + 16 = 43 items",
+          "content": "27 + 16 = 43 items",
+          "data": {
+            "expression": "27 + 16 = 43 items",
+            "content_en": "27 + 16 = 43 items"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+          "choices": [
+            "58 sheets",
+            "56 sheets",
+            "61 sheets",
+            "63 sheets"
+          ],
+          "correct_answer": "58 sheets",
+          "answer": "58 sheets",
+          "explanation": "Add the two groups: 36 + 22 = 58 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 36 sheets of paper. The teacher adds 22 more sheets. How many sheets are there in all?",
+            "choices": [
+              "58 sheets",
+              "56 sheets",
+              "61 sheets",
+              "63 sheets"
+            ],
+            "correct_answer": "58 sheets",
+            "answer": "58 sheets",
+            "explanation": "Add the two groups: 36 + 22 = 58 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

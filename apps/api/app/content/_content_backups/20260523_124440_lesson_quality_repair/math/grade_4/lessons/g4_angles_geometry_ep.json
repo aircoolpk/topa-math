@@ -1,0 +1,792 @@
+{
+  "lesson_id": "g4_angles_geometry_ep",
+  "id": "g4_angles_geometry_ep",
+  "grade_level": 4,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "มุมแหลม คือมุมที่เล็กกว่า 90 องศา ปากแหลมหันไปทางไหนก็ได้",
+    "มุมฉาก คือมุมที่เท่ากับ 90 องศา ดูเหมือนตัว L หรือมุมตึก",
+    "มุมป้าน คือมุมที่กว้างกว่า 90 องศา แต่น้อยกว่า 180 องศา",
+    "มุมตรง คือมุมที่เท่ากับ 180 องศา ดูเหมือนเส้นตรง",
+    "ใช้ไม้โปรแทรกเตอร์วัดมุม โดยให้จุดศูนย์กลางอยู่ที่มุม แล้วอ่านตัวเลขที่ขอบไม้โปรแทรกเตอร์"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "จำแนกมุม",
+      "question_th": "มุม 45 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมแหลม เพราะ 45 < 90 ✅"
+    },
+    {
+      "title_th": "จำแนกมุม",
+      "question_th": "มุม 120 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมป้าน เพราะ 90 < 120 < 180 ✅"
+    },
+    {
+      "title_th": "วัดมุมฉาก",
+      "question_th": "มุมของสี่เหลี่ยมจัตุรัสเป็นมุมอะไร?",
+      "solution_th": "มุมฉาก 90 องศา ✅"
+    },
+    {
+      "title_th": "วัดมุม",
+      "question_th": "มุมหนึ่งวัดได้ 72 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมแหลม เพราะน้อยกว่า 90 องศา ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนระหว่างมุมแหลมกับมุมป้าน โดยเฉพาะมุมที่ใกล้ 90 องศา",
+    "ใช้ไม้โปรแทรกเตอร์ผิดวิธี อ่านตัวเลขผิดข้าง",
+    "ไม่รู้ว่ามุมตรงเท่ากับ 180 องศา"
+  ],
+  "hints": [
+    "จำง่ายๆ: มุมแหลม < 90°, มุมฉาก = 90°, มุมป้าน > 90° แต่ < 180°",
+    "ถ้าไม่แน่ใจว่ามุมเท่าไหร่ ให้เปรียบเทียบกับมุมฉากดู",
+    "ใช้ไม้โปรแทรกเตอร์ให้ถูกวิธี: จุดศูนย์กลางต้องอยู่ที่มุม"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g4_angles_geometry",
+  "skill_code": "g4_angles_geometry_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g4_angles_geometry_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Geometry Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+          "content_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+          "data": {
+            "content_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56.",
+          "content_en": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56.",
+          "data": {
+            "content_en": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 35,
+          "bottom": 21,
+          "difference": 56,
+          "unit": "cookies",
+          "symbol": "🍪",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 35,
+            "bottom": 21,
+            "difference": 56,
+            "unit": "cookies",
+            "symbol": "🍪"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "35 - 21 = 56 cookies",
+          "content": "35 - 21 = 56 cookies",
+          "data": {
+            "expression": "35 - 21 = 56 cookies",
+            "content_en": "35 - 21 = 56 cookies"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+          "choices": [
+            "9 sheets",
+            "7 sheets",
+            "12 sheets",
+            "14 sheets"
+          ],
+          "correct_answer": "9 sheets",
+          "answer": "9 sheets",
+          "explanation": "Add the two groups: 52 + 43 = 9 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+            "choices": [
+              "9 sheets",
+              "7 sheets",
+              "12 sheets",
+              "14 sheets"
+            ],
+            "correct_answer": "9 sheets",
+            "answer": "9 sheets",
+            "explanation": "Add the two groups: 52 + 43 = 9 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "มุมและรูปทรง",
+  "preview_subtitle_th": "มุมต่างๆ ในรูปทรง",
+  "cover_theme": "angles_geometry",
+  "cover_emoji": "📐",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "มุมต่างๆ ในรูปทรง",
+  "learning_objective_th": "นักเรียนสามารถวัดมุมและจำแนกชนิดของมุมได้ และเข้าใจคุณสมบัติของรูปทรงต่างๆ",
+  "lesson_intro_th": "หลังคาบ้านทำมุมเอียง เพื่อนให้วัดมุมดู มุมแหลม มุมฉาก มุมป้าน ต่างกันยังไงนะ? 📐",
+  "concept_explanation_th": "มุมแหลม คือมุมที่เล็กกว่า 90 องศา ปากแหลมหันไปทางไหนก็ได้ มุมฉาก คือมุมที่เท่ากับ 90 องศา ดูเหมือนตัว L หรือมุมตึก มุมป้าน คือมุมที่กว้างกว่า 90 องศา แต่น้อยกว่า 180 องศา มุมตรง คือมุมที่เท่ากับ 180 องศา ดูเหมือนเส้นตรง ใช้ไม้โปรแทรกเตอร์วัดมุม โดยให้จุดศูนย์กลางอยู่ที่มุม แล้วอ่านตัวเลขที่ขอบไม้โปรแทรกเตอร์",
+  "singapore_math_model": {
+    "type": "comparison_bar",
+    "model_type": "comparison_bar",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 12
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 8
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท มุม วัดได้ รู้จักรูปทรง ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "จำแนกมุม",
+      "question_th": "มุม 45 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมแหลม เพราะ 45 < 90 ✅"
+    },
+    {
+      "title_th": "จำแนกมุม",
+      "question_th": "มุม 120 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมป้าน เพราะ 90 < 120 < 180 ✅"
+    },
+    {
+      "title_th": "วัดมุมฉาก",
+      "question_th": "มุมของสี่เหลี่ยมจัตุรัสเป็นมุมอะไร?",
+      "solution_th": "มุมฉาก 90 องศา ✅"
+    },
+    {
+      "title_th": "วัดมุม",
+      "question_th": "มุมหนึ่งวัดได้ 72 องศา เป็นมุมอะไร?",
+      "solution_th": "มุมแหลม เพราะน้อยกว่า 90 องศา ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนระหว่างมุมแหลมกับมุมป้าน โดยเฉพาะมุมที่ใกล้ 90 องศา",
+    "ใช้ไม้โปรแทรกเตอร์ผิดวิธี อ่านตัวเลขผิดข้าง",
+    "ไม่รู้ว่ามุมตรงเท่ากับ 180 องศา"
+  ],
+  "questions": [
+    {
+      "question_id": "g4_angles_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_angles_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_angles_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g4_angles_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g4_angles_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_angles_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g4_angles_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g4_angles_geometry",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Geometry",
+  "objective_en": "Learn Geometry with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+  "worked_examples_en": [
+    "g4_angles_geometry_ep English item 1",
+    "g4_angles_geometry_ep English item 2",
+    "g4_angles_geometry_ep English item 3",
+    "g4_angles_geometry_ep English item 4"
+  ],
+  "common_mistakes_en": [
+    "g4_angles_geometry_ep English item 1",
+    "g4_angles_geometry_ep English item 2",
+    "g4_angles_geometry_ep English item 3"
+  ],
+  "hints_en": [
+    "g4_angles_geometry_ep English item 1",
+    "g4_angles_geometry_ep English item 2",
+    "g4_angles_geometry_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g4_angles_geometry_ep English item 1",
+    "g4_angles_geometry_ep English item 2",
+    "g4_angles_geometry_ep English item 3",
+    "g4_angles_geometry_ep English item 4",
+    "g4_angles_geometry_ep English item 5"
+  ],
+  "quiz_en": [
+    "g4_angles_geometry_ep English item 1",
+    "g4_angles_geometry_ep English item 2",
+    "g4_angles_geometry_ep English item 3",
+    "g4_angles_geometry_ep English item 4",
+    "g4_angles_geometry_ep English item 5",
+    "g4_angles_geometry_ep English item 6",
+    "g4_angles_geometry_ep English item 7",
+    "g4_angles_geometry_ep English item 8",
+    "g4_angles_geometry_ep English item 9",
+    "g4_angles_geometry_ep English item 10"
+  ],
+  "quiz_id": "g4_angles_geometry_ep",
+  "generated_at": "2026-05-16T04:16:41.596975+00:00",
+  "source_lesson_id": "g4_angles_geometry",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+      "content_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+      "data": {
+        "content_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56.",
+      "content_en": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56.",
+      "data": {
+        "content_en": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "comparison_bar",
+      "top": 35,
+      "bottom": 21,
+      "difference": 56,
+      "unit": "cookies",
+      "symbol": "🍪",
+      "data": {
+        "model_type": "comparison_bar",
+        "top": 35,
+        "bottom": 21,
+        "difference": 56,
+        "unit": "cookies",
+        "symbol": "🍪"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "35 - 21 = 56 cookies",
+      "content": "35 - 21 = 56 cookies",
+      "data": {
+        "expression": "35 - 21 = 56 cookies",
+        "content_en": "35 - 21 = 56 cookies"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+      "choices": [
+        "9 sheets",
+        "7 sheets",
+        "12 sheets",
+        "14 sheets"
+      ],
+      "correct_answer": "9 sheets",
+      "answer": "9 sheets",
+      "explanation": "Add the two groups: 52 + 43 = 9 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+        "choices": [
+          "9 sheets",
+          "7 sheets",
+          "12 sheets",
+          "14 sheets"
+        ],
+        "correct_answer": "9 sheets",
+        "answer": "9 sheets",
+        "explanation": "Add the two groups: 52 + 43 = 9 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g4_angles_geometry",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Geometry",
+  "topic": "geometry",
+  "icon": "shapes",
+  "story_variants": [
+    {
+      "variant_id": "g4_angles_geometry_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Geometry Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+          "content_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation.",
+          "data": {
+            "content_en": "Ton makes a picture chart at the classroom. One group has 35 cookies, and another group has 21 cookies. How many more cookies does the first group have? This story practices Geometry in the school garden with a clipboard while the teacher checks each group. This happens while the class prepares materials, so the answer must match the real situation."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56.",
+          "content_en": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56.",
+          "data": {
+            "content_en": "Compare the two groups, 35 and 21. To find how many more, subtract: 35 - 21 = 56."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 35,
+          "bottom": 21,
+          "difference": 56,
+          "unit": "cookies",
+          "symbol": "🍪",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 35,
+            "bottom": 21,
+            "difference": 56,
+            "unit": "cookies",
+            "symbol": "🍪"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "35 - 21 = 56 cookies",
+          "content": "35 - 21 = 56 cookies",
+          "data": {
+            "expression": "35 - 21 = 56 cookies",
+            "content_en": "35 - 21 = 56 cookies"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+          "choices": [
+            "9 sheets",
+            "7 sheets",
+            "12 sheets",
+            "14 sheets"
+          ],
+          "correct_answer": "9 sheets",
+          "answer": "9 sheets",
+          "explanation": "Add the two groups: 52 + 43 = 9 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 52 sheets of paper. The teacher adds 43 more sheets. How many sheets are there in all?",
+            "choices": [
+              "9 sheets",
+              "7 sheets",
+              "12 sheets",
+              "14 sheets"
+            ],
+            "correct_answer": "9 sheets",
+            "answer": "9 sheets",
+            "explanation": "Add the two groups: 52 + 43 = 9 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

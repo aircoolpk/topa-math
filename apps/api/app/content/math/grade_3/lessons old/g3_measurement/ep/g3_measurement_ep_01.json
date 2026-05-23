@@ -1,0 +1,262 @@
+{
+  "variant_id": "g3_measurement_ep_01",
+  "variant_title_en": "Measurement - Variant 1",
+  "status": "needs_review",
+  "title_en": "Measurement",
+  "story_theme_en": "Mom bought 120 centimeters of beautiful ribbon from the market. She cut off 35 centimeters to make a hair ribbon. Mom wanted to know how much ribbon was left. Subtraction helps us find how much is left.",
+  "helper_tip_en": "Read the problem carefully. Circle the important numbers. Then figure out what the question is asking.",
+  "think_story_en": "We have 4 rows and 6 in each row. Use 4 x 6 = 85 cm.",
+  "explanation_steps_en": [
+    "Read the problem carefully - what are we taking away?",
+    "Write the two numbers: the total and the amount to subtract.",
+    "Subtract the smaller number from the bigger number.",
+    "Remember to write the unit (cm or m) in your answer.",
+    "Check by adding the answer back to what was taken away."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "A rope was 90 cm long. Mom cut off 25 cm. How long is the rope now?",
+      "solution_en": "90 - 25 = 65 65 cm"
+    }
+  ],
+  "common_mistakes_en": [
+    "Doing the wrong operation.",
+    "Forgetting the unit.",
+    "Reading the problem too quickly."
+  ],
+  "hints_en": [
+    "Read the problem twice before answering.",
+    "Look for clue words.",
+    "Check your answer."
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mom bought 120 centimeters of beautiful ribbon from the market. She cut off 35 centimeters to make a hair ribbon. Mom wanted to know how much ribbon was left. Subtraction helps us find how much is left.",
+      "data": {
+        "content_en": "Mom bought 120 centimeters of beautiful ribbon from the market. She cut off 35 centimeters to make a hair ribbon. Mom wanted to know how much ribbon was left. Subtraction helps us find how much is left."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "We have 4 rows and 6 in each row. Use 4 x 6 = 85.",
+      "data": {
+        "content_en": "We have 4 rows and 6 in each row. Use 4 x 6 = 85."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Diagram to Help You Think",
+      "description": "Cross out the amount being subtracted",
+      "model_type": "subtraction_model",
+      "starting": 120,
+      "subtract": 35,
+      "result": 85,
+      "unit": "cm",
+      "data": {
+        "model_type": "subtraction_model",
+        "starting": 120,
+        "subtract": 35,
+        "result": 85,
+        "unit": "cm"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Write the Number Sentence",
+      "expression": "120 − 35 = 85",
+      "content": "120 − 35 = 85",
+      "data": {
+        "expression": "120 − 35 = 85",
+        "content_en": "120 − 35 = 85"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A rope was 90 cm long. Mom cut off 25 cm. How long is the rope now?",
+      "choices": [
+        "65 cm",
+        "65 cm",
+        "65 cm",
+        "65 cm"
+      ],
+      "correct_answer": "65 cm",
+      "explanation": "90 - 25 = 65",
+      "data": {
+        "question": "A rope was 90 cm long. Mom cut off 25 cm. How long is the rope now?",
+        "choices": [
+          "65 cm",
+          "65 cm",
+          "65 cm",
+          "65 cm"
+        ],
+        "correct_answer": "65 cm",
+        "explanation": "90 - 25 = 65"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "length",
+      "th": "ความยาว",
+      "definition_en": "How long something is"
+    },
+    {
+      "en": "centimeter",
+      "th": "เซนติเมตร",
+      "definition_en": "A unit for measuring length (cm)"
+    },
+    {
+      "en": "meter",
+      "th": "เมตร",
+      "definition_en": "A unit for measuring length (m)"
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away - find the difference"
+    },
+    {
+      "en": "remain",
+      "th": "เหลือ",
+      "definition_en": "What is left after taking away"
+    },
+    {
+      "en": "cut",
+      "th": "ตัด",
+      "definition_en": "To separate with scissors or a knife"
+    },
+    {
+      "en": "ribbon",
+      "th": "ริบบิ้น",
+      "definition_en": "A long thin strip of cloth used for decoration"
+    },
+    {
+      "en": "measure",
+      "th": "วัด",
+      "definition_en": "To find the size or amount of something"
+    },
+    {
+      "en": "shorter",
+      "th": "สั้นกว่า",
+      "definition_en": "Having less length"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "A rope was 85 cm long. Mom cut off 30 cm. How long is the rope now?",
+      "choices": [
+        "45 cm",
+        "55 cm",
+        "65 cm",
+        "75 cm"
+      ],
+      "answer": "55 cm",
+      "explanation": "85 minus 30 = 55"
+    },
+    {
+      "q": "Lin had 120 cm of ribbon. She used 45 cm for a gift. How much ribbon is left?",
+      "choices": [
+        "65 cm",
+        "75 cm",
+        "85 cm",
+        "95 cm"
+      ],
+      "answer": "75 cm",
+      "explanation": "120 minus 45 = 75"
+    },
+    {
+      "q": "A wooden stick was 95 cm long. Tom cut 25 cm off. How long is the stick now?",
+      "choices": [
+        "60 cm",
+        "65 cm",
+        "70 cm",
+        "75 cm"
+      ],
+      "answer": "70 cm",
+      "explanation": "95 minus 25 = 70"
+    },
+    {
+      "q": "Mom bought 150 cm of cloth. She used 60 cm for a skirt. How much cloth is left?",
+      "choices": [
+        "80 cm",
+        "90 cm",
+        "100 cm",
+        "110 cm"
+      ],
+      "answer": "90 cm",
+      "explanation": "150 minus 60 = 90"
+    },
+    {
+      "q": "A pencil was 18 cm long. After sharpening it was 15 cm. How much was cut off?",
+      "choices": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "5 cm"
+      ],
+      "answer": "3 cm",
+      "explanation": "18 minus 15 = 3"
+    },
+    {
+      "q": "Ai had 200 cm of wire. She used 75 cm for a project. How much wire is left?",
+      "choices": [
+        "115 cm",
+        "125 cm",
+        "135 cm",
+        "145 cm"
+      ],
+      "answer": "125 cm",
+      "explanation": "200 minus 75 = 125"
+    },
+    {
+      "q": "A table is 130 cm wide. Lin placed a 40 cm book on it. How much space is free?",
+      "choices": [
+        "80 cm",
+        "90 cm",
+        "100 cm",
+        "110 cm"
+      ],
+      "answer": "90 cm",
+      "explanation": "130 minus 40 = 90"
+    },
+    {
+      "q": "Grandma had 180 cm of thread. She used 55 cm to sew a button. How much is left?",
+      "choices": [
+        "115 cm",
+        "125 cm",
+        "135 cm",
+        "145 cm"
+      ],
+      "answer": "125 cm",
+      "explanation": "180 minus 55 = 125"
+    },
+    {
+      "q": "A plank of wood was 220 cm long. Dad cut 90 cm off. How long is the plank now?",
+      "choices": [
+        "120 cm",
+        "130 cm",
+        "140 cm",
+        "150 cm"
+      ],
+      "answer": "130 cm",
+      "explanation": "220 minus 90 = 130"
+    },
+    {
+      "q": "Lin measured 100 cm of ribbon. She used 35 cm for her hair. How much is left?",
+      "choices": [
+        "55 cm",
+        "65 cm",
+        "75 cm",
+        "85 cm"
+      ],
+      "answer": "65 cm",
+      "explanation": "100 minus 35 = 65"
+    }
+  ],
+  "explanation_en": "To solve this problem, identify the key numbers, choose the right operation, calculate carefully, and always check your answer. Remember to include the correct unit."
+}

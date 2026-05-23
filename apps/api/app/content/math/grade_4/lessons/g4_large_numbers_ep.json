@@ -46,52 +46,88 @@
   "lesson_variants": [
     {
       "variant_id": "g4_large_numbers_ep_01",
-      "variant_title_th": "Reading and Writing Large Numbers Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Reading and Writing Large Numbers Variant 1",
-      "story_theme_th": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for Reading and Writing Large Numbers.",
+      "story_theme_th": "",
+      "story_theme_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+          "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+          "data": {
+            "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Reading and Writing Large Numbers. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items.",
+          "content_en": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items.",
+          "data": {
+            "content_en": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 32,
+          "part_b": 19,
+          "total": 51,
           "unit": "items",
-          "symbol": "■"
+          "symbol": "🎟️",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 32,
+            "part_b": 19,
+            "total": 51,
+            "unit": "items",
+            "symbol": "🎟️"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "32 + 19 = 51 items",
+          "content": "32 + 19 = 51 items",
+          "data": {
+            "expression": "32 + 19 = 51 items",
+            "content_en": "32 + 19 = 51 items"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "76 sheets",
+            "74 sheets",
+            "79 sheets",
+            "81 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "76 sheets",
+          "answer": "76 sheets",
+          "explanation": "Add the two groups: 47 + 29 = 76 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "choices": [
+              "76 sheets",
+              "74 sheets",
+              "79 sheets",
+              "81 sheets"
+            ],
+            "correct_answer": "76 sheets",
+            "answer": "76 sheets",
+            "explanation": "Add the two groups: 47 + 29 = 76 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -102,7 +138,7 @@
   "cover_emoji": "🔢",
   "cover_color": "green",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -111,9 +147,9 @@
   "lesson_intro_th": "สนามกีฬาแห่งชาติรองรับผู้ชมได้ 75,000 คน ตัวเลขนี้มีค่าอะไรบ้าง มาดูกัน! 🏟️",
   "concept_explanation_th": "เลขหลายหลักมีหลายหลัก หลักทางขวาสุดคือหลักหน่วย ขยับไปทางซ้ายเป็นสิบ ร้อย พัน หมื่น แสน ล้าน ค่าประจำหลักบอกว่าตัวเลขในหลักนั้นมีค่าเท่าไหร่ เช่น 5 ในหลักพัน = 5,000 การอ่านเลขให้อ่านทีละกลุ่มสามหลัก จากซ้ายไปขวา พัน ล้าน พันล้าน เช่น 123,456 อ่านว่า หนึ่งแสนสองหมื่นสามพันสี่ร้อยห้าสิบหก การเขียนตัวเลขให้เขียนให้ตรงหลักกัน ถ้าเป็นศูนย์ให้เว้นว่างไว้",
   "singapore_math_model": {
-    "type": "number_bond",
-    "model_type": "number_bond",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -520,312 +556,40 @@
   ],
   "title_en": "Reading and Writing Large Numbers",
   "objective_en": "Learn Reading and Writing Large Numbers with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Look! 75 + 000 — can you find the answer?",
+  "story_intro_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: อ่านเลขหลายหลัก",
-      "question_en": "45,678 ?",
-      "solution_en": "✅?"
-    },
-    {
-      "title_en": "Example: เขียนตัวเลข",
-      "question_en": "?",
-      "solution_en": "73,526 ✅"
-    },
-    {
-      "title_en": "Example: เข้าใจค่าประจำหลัก",
-      "question_en": "8 58,432 ?",
-      "solution_en": "8 8,000 ✅?"
-    }
+    "g4_large_numbers_ep English item 1",
+    "g4_large_numbers_ep English item 2",
+    "g4_large_numbers_ep English item 3"
   ],
   "common_mistakes_en": [
-    "Mistake: อ่านเลขผิดโดยไม่จำค่าประจำหลัก เช่น อ่าน 40,000 ว่าสี่พันแทนที่จะเป็นสี่หมื่น",
-    "Mistake: เขียนตัวเลขเยื้องทำให้หลักไม่ตรงกัน",
-    "Mistake: ไม่เข้าใจว่าศูนย์มีค่าเป็นตัวเว้นว่างในหลักนั้น"
+    "g4_large_numbers_ep English item 1",
+    "g4_large_numbers_ep English item 2",
+    "g4_large_numbers_ep English item 3"
   ],
   "hints_en": [
-    "Hint: จำหลักจากขวาสุด: หน่วย สิบ ร้อย พัน หมื่น แสน ล้าน",
-    "Hint: อ่านทีละกลุ่มสามหลัก จากซ้ายไปขวา จะอ่านได้ง่ายขึ้น",
-    "Hint: ถ้าเลขเป็นศูนย์ในหลักใด ให้ข้ามไปอ่านหลักถัดไป"
+    "g4_large_numbers_ep English item 1",
+    "g4_large_numbers_ep English item 2",
+    "g4_large_numbers_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: เลขหลายหลักมีหลายหลัก หลักทางขวาสุดคือหลักหน่วย ขยับไปทางซ้ายเป็นสิบ ร้อย พัน หมื่น แสน ล้าน",
-    "Step: ค่าประจำหลักบอกว่าตัวเลขในหลักนั้นมีค่าเท่าไหร่ เช่น 5 ในหลักพัน = 5,000",
-    "Step: การอ่านเลขให้อ่านทีละกลุ่มสามหลัก จากซ้ายไปขวา พัน ล้าน พันล้าน",
-    "Step: เช่น 123,456 อ่านว่า หนึ่งแสนสองหมื่นสามพันสี่ร้อยห้าสิบหก",
-    "Step: การเขียนตัวเลขให้เขียนให้ตรงหลักกัน ถ้าเป็นศูนย์ให้เว้นว่างไว้"
+    "g4_large_numbers_ep English item 1",
+    "g4_large_numbers_ep English item 2",
+    "g4_large_numbers_ep English item 3",
+    "g4_large_numbers_ep English item 4",
+    "g4_large_numbers_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g4_large_numbers_q01",
-      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
-      "question_text": "45,678 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "45,678?",
-      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
-      "difficulty": "easy",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "core",
-      "question_en": "45,678 ?",
-      "explanation_en": "45,678?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g4_large_numbers_q02",
-      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
-      "question_text": "7 72,410 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "7?",
-      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
-      "difficulty": "easy",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "core",
-      "question_en": "7 72,410 ?",
-      "explanation_en": "7?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g4_large_numbers_q03",
-      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
-      "question_text": "60,000 + 3,000 + 200 + 40 + 5 ?",
-      "choices": [
-        "63,245",
-        "63,254",
-        "62,345",
-        "60,345"
-      ],
-      "correct_answer": "63,245",
-      "answer": "63,245",
-      "explanation": "63,245?",
-      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
-      "difficulty": "easy",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "core",
-      "question_en": "60,000 + 3,000 + 200 + 40 + 5 ?",
-      "explanation_en": "63,245?",
-      "choices_en": [
-        "63,245",
-        "63,254",
-        "62,345",
-        "60,345"
-      ],
-      "answer_en": "63,245"
-    },
-    {
-      "question_id": "g4_large_numbers_q04",
-      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
-      "question_text": "45,678 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "45,678?",
-      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
-      "difficulty": "medium",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "core",
-      "question_en": "45,678 ?",
-      "explanation_en": "45,678?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g4_large_numbers_q05",
-      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
-      "question_text": "7 72,410 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "7?",
-      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
-      "difficulty": "medium",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "core",
-      "question_en": "7 72,410 ?",
-      "explanation_en": "7?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g4_large_numbers_q06",
-      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
-      "question_text": "60,000 + 3,000 + 200 + 40 + 5 ?",
-      "choices": [
-        "63,245",
-        "63,254",
-        "62,345",
-        "60,345"
-      ],
-      "correct_answer": "63,245",
-      "answer": "63,245",
-      "explanation": "63,245?",
-      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
-      "difficulty": "medium",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "core",
-      "question_en": "60,000 + 3,000 + 200 + 40 + 5 ?",
-      "explanation_en": "63,245?",
-      "choices_en": [
-        "63,245",
-        "63,254",
-        "62,345",
-        "60,345"
-      ],
-      "answer_en": "63,245"
-    },
-    {
-      "question_id": "g4_large_numbers_q07",
-      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
-      "question_text": "45,678 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "45,678?",
-      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
-      "difficulty": "medium",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "core",
-      "question_en": "45,678 ?",
-      "explanation_en": "45,678?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g4_large_numbers_q08",
-      "question_th": "เลข 7 ใน 72,410 อยู่ในหลักใด?",
-      "question_text": "7 72,410 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "7?",
-      "explanation_th": "7 อยู่ตำแหน่งหลักหมื่น",
-      "difficulty": "hard",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "challenge",
-      "question_en": "7 72,410 ?",
-      "explanation_en": "7?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g4_large_numbers_q09",
-      "question_th": "60,000 + 3,000 + 200 + 40 + 5 คือจำนวนใด?",
-      "question_text": "60,000 + 3,000 + 200 + 40 + 5 ?",
-      "choices": [
-        "63,245",
-        "63,254",
-        "62,345",
-        "60,345"
-      ],
-      "correct_answer": "63,245",
-      "answer": "63,245",
-      "explanation": "63,245?",
-      "explanation_th": "รวมค่าประจำหลักได้ 63,245",
-      "difficulty": "hard",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "challenge",
-      "question_en": "60,000 + 3,000 + 200 + 40 + 5 ?",
-      "explanation_en": "63,245?",
-      "choices_en": [
-        "63,245",
-        "63,254",
-        "62,345",
-        "60,345"
-      ],
-      "answer_en": "63,245"
-    },
-    {
-      "question_id": "g4_large_numbers_q10",
-      "question_th": "อ่านจำนวน 45,678 ได้อย่างไร?",
-      "question_text": "45,678 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "45,678?",
-      "explanation_th": "45,678 อ่านว่า สี่หมื่นห้าพันหกร้อยเจ็ดสิบแปด",
-      "difficulty": "hard",
-      "skill_tag": "g4_large_numbers",
-      "question_type": "challenge",
-      "question_en": "45,678 ?",
-      "explanation_en": "45,678?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    }
+    "g4_large_numbers_ep English item 1",
+    "g4_large_numbers_ep English item 2",
+    "g4_large_numbers_ep English item 3",
+    "g4_large_numbers_ep English item 4",
+    "g4_large_numbers_ep English item 5",
+    "g4_large_numbers_ep English item 6",
+    "g4_large_numbers_ep English item 7",
+    "g4_large_numbers_ep English item 8",
+    "g4_large_numbers_ep English item 9",
+    "g4_large_numbers_ep English item 10"
   ],
   "quiz_id": "g4_large_numbers_ep",
   "generated_at": "2026-05-16T04:16:41.669627+00:00",
@@ -835,43 +599,79 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+      "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+      "data": {
+        "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Reading and Writing Large Numbers. Use the model to get 30."
+      "title": "Think Story",
+      "content": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items.",
+      "content_en": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items.",
+      "data": {
+        "content_en": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "part_whole_model",
+      "part_a": 32,
+      "part_b": 19,
+      "total": 51,
       "unit": "items",
-      "symbol": "■"
+      "symbol": "🎟️",
+      "data": {
+        "model_type": "part_whole_model",
+        "part_a": 32,
+        "part_b": 19,
+        "total": 51,
+        "unit": "items",
+        "symbol": "🎟️"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "32 + 19 = 51 items",
+      "content": "32 + 19 = 51 items",
+      "data": {
+        "expression": "32 + 19 = 51 items",
+        "content_en": "32 + 19 = 51 items"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "76 sheets",
+        "74 sheets",
+        "79 sheets",
+        "81 sheets"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "76 sheets",
+      "answer": "76 sheets",
+      "explanation": "Add the two groups: 47 + 29 = 76 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+        "choices": [
+          "76 sheets",
+          "74 sheets",
+          "79 sheets",
+          "81 sheets"
+        ],
+        "correct_answer": "76 sheets",
+        "answer": "76 sheets",
+        "explanation": "Add the two groups: 47 + 29 = 76 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g4_large_numbers",
@@ -883,87 +683,94 @@
   "story_variants": [
     {
       "variant_id": "g4_large_numbers_ep_01",
-      "status": "approved",
-      "title": "Reading and Writing Large Numbers Variant 1",
-      "story": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Reading and Writing Large Numbers. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Reading and Writing Large Numbers.",
+      "variant_title_th": "",
+      "variant_title_en": "Reading and Writing Large Numbers Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Reading and Writing Large Numbers with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+          "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched.",
+          "data": {
+            "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 32 items, and a wallet has 19 more items. How many items does Time have in all? This story practices Reading and Writing Large Numbers in the front table with star stickers during a small class display. The group compares the answer with the diagram again to make sure the numbers were not switched."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Reading and Writing Large Numbers. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items.",
+          "content_en": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items.",
+          "data": {
+            "content_en": "The story has two groups: 32 and 19. To find the total, add them: 32 + 19 = 51 items."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 32,
+          "part_b": 19,
+          "total": 51,
           "unit": "items",
-          "symbol": "■"
+          "symbol": "🎟️",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 32,
+            "part_b": 19,
+            "total": 51,
+            "unit": "items",
+            "symbol": "🎟️"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "32 + 19 = 51 items",
+          "content": "32 + 19 = 51 items",
+          "data": {
+            "expression": "32 + 19 = 51 items",
+            "content_en": "32 + 19 = 51 items"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "76 sheets",
+            "74 sheets",
+            "79 sheets",
+            "81 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "76 sheets",
+          "answer": "76 sheets",
+          "explanation": "Add the two groups: 47 + 29 = 76 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 47 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "choices": [
+              "76 sheets",
+              "74 sheets",
+              "79 sheets",
+              "81 sheets"
+            ],
+            "correct_answer": "76 sheets",
+            "answer": "76 sheets",
+            "explanation": "Add the two groups: 47 + 29 = 76 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Reading and Writing Large Numbers.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

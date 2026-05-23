@@ -1,0 +1,774 @@
+{
+  "lesson_id": "g3_area_intro_ep",
+  "id": "g3_area_intro_ep",
+  "grade_level": 3,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "พื้นที่คือขนาดของพื้นผิวที่รูปร่างครอบคลุม",
+    "หน่วยพื้นที่คือตารางหน่วย เช่น ตารางเซนติเมตร (ซม.²) ตารางเมตร (ม.²)",
+    "พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว",
+    "พื้นที่สี่เหลี่ยมจัตุรัส = ด้าน × ด้าน (เพราะด้านทุกด้านยาวเท่ากัน)",
+    "ถ้าวัดเซนติเมตร พื้นที่จะเป็นตารางเซนติเมตร ถ้าวัดเมตร พื้นที่จะเป็นตารางเมตร"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "หาพื้นที่สี่เหลี่ยมผืนผ้า",
+      "question_th": "สนามหญ้ากว้าง 8 เมตร ยาว 5 เมตร มีพื้นที่เท่าไหร่?",
+      "solution_th": "พื้นที่ = 8 × 5 = 40 ตารางเมตร ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สี่เหลี่ยมจัตุรัส",
+      "question_th": "กระดานรูปสี่เหลี่ยมจัตุรัสมีด้านยาว 6 เมตร พื้นที่เท่าไหร่?",
+      "solution_th": "พื้นที่ = 6 × 6 = 36 ตารางเมตร ✅"
+    },
+    {
+      "title_th": "ใช้พื้นที่ในชีวิตจริง",
+      "question_th": "ห้องนอนกว้าง 4 เมตร ยาว 5 เมตร ต้องปูพื้นกี่ตารางเมตร?",
+      "solution_th": "พื้นที่ = 4 × 5 = 20 ตารางเมตร ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ใช้สูตรผิด เช่น ใช้กว้าง + ยาว แทนที่จะเป็น กว้าง × ยาว",
+    "ลืมเขียนหน่วยเป็นตารางเมตร หรือตารางเซนติเมตร",
+    "วัดด้านผิด ทำให้กว้างและยาวสลับกัน แต่ผลคูณเท่ากันอยู่ดี"
+  ],
+  "hints": [
+    "พื้นที่คือการวัดว่าพื้นผิวกินพื้นที่เท่าไหร่ ใช้สูตรกว้าง × ยาว",
+    "ถ้าลืมสูตร ให้นึกว่าวางตารางเล็กๆ ให้เต็มพื้นที่ นับดูว่ามีกี่ตาราง",
+    "หน่วยพื้นที่ต้องเป็นตารางหน่วย เช่น ตารางเซนติเมตร ตารางเมตร"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_area_intro",
+  "skill_code": "g3_area_intro_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g3_area_intro_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Area of Rectangles Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+          "content_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+          "data": {
+            "content_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units.",
+          "content_en": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units.",
+          "data": {
+            "content_en": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 7,
+          "total": 35,
+          "unit": "square units",
+          "symbol": "⬜",
+          "data": {
+            "model_type": "area_model",
+            "rows": 5,
+            "cols": 7,
+            "total": 35,
+            "unit": "square units",
+            "symbol": "⬜"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 7 = 35 square units",
+          "content": "5 × 7 = 35 square units",
+          "data": {
+            "expression": "5 × 7 = 35 square units",
+            "content_en": "5 × 7 = 35 square units"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+          "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+          "choices": [
+            "48 pencils",
+            "46 pencils",
+            "51 pencils",
+            "53 pencils"
+          ],
+          "correct_answer": "48 pencils",
+          "answer": "48 pencils",
+          "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+            "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+            "choices": [
+              "48 pencils",
+              "46 pencils",
+              "51 pencils",
+              "53 pencils"
+            ],
+            "correct_answer": "48 pencils",
+            "answer": "48 pencils",
+            "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "พื้นที่",
+  "preview_subtitle_th": "วัดพื้นที่และเส้นรอบ",
+  "cover_theme": "area_intro",
+  "cover_emoji": "📐",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "วัดพื้นที่และเส้นรอบ",
+  "learning_objective_th": "นักเรียนสามารถหาพื้นที่ของรูปสี่เหลี่ยมผืนผ้าและสี่เหลี่ยมจัตุรัสโดยใช้สูตรได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสอยากปูพื้นห้องด้วยพรม ห้องกว้าง 5 เมตร ยาว 4 เมตร ต้องใช้พรมกี่ตารางเมตร? 🏠",
+  "concept_explanation_th": "พื้นที่รูปสี่เหลี่ยมผืนผ้าหาได้จาก กว้าง × ยาว ผลลัพธ์มีหน่วยเป็นตารางหน่วย",
+  "singapore_math_model": {
+    "type": "area_model",
+    "model_type": "area_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "area_model",
+    "width": 5,
+    "height": 4,
+    "total": 20,
+    "unit": "ตารางเมตร"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท พื้นที่คือขนาดของพื้นผิว ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "หาพื้นที่สี่เหลี่ยมผืนผ้า",
+      "question_th": "สนามหญ้ากว้าง 8 เมตร ยาว 5 เมตร มีพื้นที่เท่าไหร่?",
+      "solution_th": "พื้นที่ = 8 × 5 = 40 ตารางเมตร ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สี่เหลี่ยมจัตุรัส",
+      "question_th": "กระดานรูปสี่เหลี่ยมจัตุรัสมีด้านยาว 6 เมตร พื้นที่เท่าไหร่?",
+      "solution_th": "พื้นที่ = 6 × 6 = 36 ตารางเมตร ✅"
+    },
+    {
+      "title_th": "ใช้พื้นที่ในชีวิตจริง",
+      "question_th": "ห้องนอนกว้าง 4 เมตร ยาว 5 เมตร ต้องปูพื้นกี่ตารางเมตร?",
+      "solution_th": "พื้นที่ = 4 × 5 = 20 ตารางเมตร ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ใช้สูตรผิด เช่น ใช้กว้าง + ยาว แทนที่จะเป็น กว้าง × ยาว",
+    "ลืมเขียนหน่วยเป็นตารางเมตร หรือตารางเซนติเมตร",
+    "วัดด้านผิด ทำให้กว้างและยาวสลับกัน แต่ผลคูณเท่ากันอยู่ดี"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_area_intro_q01",
+      "question_th": "ห้องเรียนกว้าง 5 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "ห้องเรียนกว้าง 5 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "9 ตารางเมตร",
+        "20 ตารางเมตร",
+        "22 ตารางเมตร",
+        "1 ตารางเมตร"
+      ],
+      "correct_answer": "20 ตารางเมตร",
+      "answer": "20 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 5 × 4 = 20 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 5 × 4 = 20 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q02",
+      "question_th": "สวนผักกว้าง 7 เมตร ยาว 5 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "สวนผักกว้าง 7 เมตร ยาว 5 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "12 ตารางเมตร",
+        "35 ตารางเมตร",
+        "37 ตารางเมตร",
+        "2 ตารางเมตร"
+      ],
+      "correct_answer": "35 ตารางเมตร",
+      "answer": "35 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 7 × 5 = 35 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 7 × 5 = 35 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q03",
+      "question_th": "สนามหญ้ากว้าง 6 เมตร ยาว 3 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "สนามหญ้ากว้าง 6 เมตร ยาว 3 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "9 ตารางเมตร",
+        "18 ตารางเมตร",
+        "20 ตารางเมตร",
+        "3 ตารางเมตร"
+      ],
+      "correct_answer": "18 ตารางเมตร",
+      "answer": "18 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 6 × 3 = 18 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 6 × 3 = 18 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q04",
+      "question_th": "แปลงดอกไม้กว้าง 8 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "แปลงดอกไม้กว้าง 8 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "12 ตารางเมตร",
+        "32 ตารางเมตร",
+        "34 ตารางเมตร",
+        "4 ตารางเมตร"
+      ],
+      "correct_answer": "32 ตารางเมตร",
+      "answer": "32 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 8 × 4 = 32 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 8 × 4 = 32 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q05",
+      "question_th": "ทางเดินกว้าง 9 เมตร ยาว 2 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "ทางเดินกว้าง 9 เมตร ยาว 2 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "11 ตารางเมตร",
+        "18 ตารางเมตร",
+        "20 ตารางเมตร",
+        "7 ตารางเมตร"
+      ],
+      "correct_answer": "18 ตารางเมตร",
+      "answer": "18 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 9 × 2 = 18 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 9 × 2 = 18 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q06",
+      "question_th": "พื้นห้องสมุดกว้าง 7 เมตร ยาว 6 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "พื้นห้องสมุดกว้าง 7 เมตร ยาว 6 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "13 ตารางเมตร",
+        "42 ตารางเมตร",
+        "44 ตารางเมตร",
+        "1 ตารางเมตร"
+      ],
+      "correct_answer": "42 ตารางเมตร",
+      "answer": "42 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 7 × 6 = 42 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 7 × 6 = 42 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q07",
+      "question_th": "กระดานกิจกรรมกว้าง 10 เมตร ยาว 3 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "กระดานกิจกรรมกว้าง 10 เมตร ยาว 3 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "13 ตารางเมตร",
+        "30 ตารางเมตร",
+        "32 ตารางเมตร",
+        "7 ตารางเมตร"
+      ],
+      "correct_answer": "30 ตารางเมตร",
+      "answer": "30 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 10 × 3 = 30 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 10 × 3 = 30 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q08",
+      "question_th": "เสื่อปูพื้นกว้าง 4 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "เสื่อปูพื้นกว้าง 4 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "8 ตารางเมตร",
+        "16 ตารางเมตร",
+        "18 ตารางเมตร",
+        "0 ตารางเมตร"
+      ],
+      "correct_answer": "16 ตารางเมตร",
+      "answer": "16 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 4 × 4 = 16 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 4 × 4 = 16 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q09",
+      "question_th": "แปลงผักกว้าง 11 เมตร ยาว 2 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "แปลงผักกว้าง 11 เมตร ยาว 2 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "13 ตารางเมตร",
+        "22 ตารางเมตร",
+        "24 ตารางเมตร",
+        "9 ตารางเมตร"
+      ],
+      "correct_answer": "22 ตารางเมตร",
+      "answer": "22 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 11 × 2 = 22 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 11 × 2 = 22 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q10",
+      "question_th": "ลานกิจกรรมกว้าง 6 เมตร ยาว 6 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "ลานกิจกรรมกว้าง 6 เมตร ยาว 6 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "12 ตารางเมตร",
+        "36 ตารางเมตร",
+        "38 ตารางเมตร",
+        "0 ตารางเมตร"
+      ],
+      "correct_answer": "36 ตารางเมตร",
+      "answer": "36 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 6 × 6 = 36 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 6 × 6 = 36 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_area_intro_q01",
+      "question_th": "ห้องเรียนกว้าง 5 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "ห้องเรียนกว้าง 5 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "9 ตารางเมตร",
+        "20 ตารางเมตร",
+        "22 ตารางเมตร",
+        "1 ตารางเมตร"
+      ],
+      "correct_answer": "20 ตารางเมตร",
+      "answer": "20 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 5 × 4 = 20 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 5 × 4 = 20 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q02",
+      "question_th": "สวนผักกว้าง 7 เมตร ยาว 5 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "สวนผักกว้าง 7 เมตร ยาว 5 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "12 ตารางเมตร",
+        "35 ตารางเมตร",
+        "37 ตารางเมตร",
+        "2 ตารางเมตร"
+      ],
+      "correct_answer": "35 ตารางเมตร",
+      "answer": "35 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 7 × 5 = 35 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 7 × 5 = 35 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q03",
+      "question_th": "สนามหญ้ากว้าง 6 เมตร ยาว 3 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "สนามหญ้ากว้าง 6 เมตร ยาว 3 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "9 ตารางเมตร",
+        "18 ตารางเมตร",
+        "20 ตารางเมตร",
+        "3 ตารางเมตร"
+      ],
+      "correct_answer": "18 ตารางเมตร",
+      "answer": "18 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 6 × 3 = 18 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 6 × 3 = 18 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q04",
+      "question_th": "แปลงดอกไม้กว้าง 8 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "แปลงดอกไม้กว้าง 8 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "12 ตารางเมตร",
+        "32 ตารางเมตร",
+        "34 ตารางเมตร",
+        "4 ตารางเมตร"
+      ],
+      "correct_answer": "32 ตารางเมตร",
+      "answer": "32 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 8 × 4 = 32 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 8 × 4 = 32 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q05",
+      "question_th": "ทางเดินกว้าง 9 เมตร ยาว 2 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "ทางเดินกว้าง 9 เมตร ยาว 2 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "11 ตารางเมตร",
+        "18 ตารางเมตร",
+        "20 ตารางเมตร",
+        "7 ตารางเมตร"
+      ],
+      "correct_answer": "18 ตารางเมตร",
+      "answer": "18 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 9 × 2 = 18 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 9 × 2 = 18 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q06",
+      "question_th": "พื้นห้องสมุดกว้าง 7 เมตร ยาว 6 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "พื้นห้องสมุดกว้าง 7 เมตร ยาว 6 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "13 ตารางเมตร",
+        "42 ตารางเมตร",
+        "44 ตารางเมตร",
+        "1 ตารางเมตร"
+      ],
+      "correct_answer": "42 ตารางเมตร",
+      "answer": "42 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 7 × 6 = 42 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 7 × 6 = 42 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q07",
+      "question_th": "กระดานกิจกรรมกว้าง 10 เมตร ยาว 3 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "กระดานกิจกรรมกว้าง 10 เมตร ยาว 3 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "13 ตารางเมตร",
+        "30 ตารางเมตร",
+        "32 ตารางเมตร",
+        "7 ตารางเมตร"
+      ],
+      "correct_answer": "30 ตารางเมตร",
+      "answer": "30 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 10 × 3 = 30 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 10 × 3 = 30 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q08",
+      "question_th": "เสื่อปูพื้นกว้าง 4 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "เสื่อปูพื้นกว้าง 4 เมตร ยาว 4 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "8 ตารางเมตร",
+        "16 ตารางเมตร",
+        "18 ตารางเมตร",
+        "0 ตารางเมตร"
+      ],
+      "correct_answer": "16 ตารางเมตร",
+      "answer": "16 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 4 × 4 = 16 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 4 × 4 = 16 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q09",
+      "question_th": "แปลงผักกว้าง 11 เมตร ยาว 2 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "แปลงผักกว้าง 11 เมตร ยาว 2 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "13 ตารางเมตร",
+        "22 ตารางเมตร",
+        "24 ตารางเมตร",
+        "9 ตารางเมตร"
+      ],
+      "correct_answer": "22 ตารางเมตร",
+      "answer": "22 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 11 × 2 = 22 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 11 × 2 = 22 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_area_intro_q10",
+      "question_th": "ลานกิจกรรมกว้าง 6 เมตร ยาว 6 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "question_text": "ลานกิจกรรมกว้าง 6 เมตร ยาว 6 เมตร มีพื้นที่กี่ตารางเมตร?",
+      "choices": [
+        "12 ตารางเมตร",
+        "36 ตารางเมตร",
+        "38 ตารางเมตร",
+        "0 ตารางเมตร"
+      ],
+      "correct_answer": "36 ตารางเมตร",
+      "answer": "36 ตารางเมตร",
+      "explanation": "พื้นที่ = กว้าง × ยาว = 6 × 6 = 36 ตารางเมตร",
+      "explanation_th": "พื้นที่ = กว้าง × ยาว = 6 × 6 = 36 ตารางเมตร",
+      "difficulty": "easy",
+      "skill_tag": "g3_area_intro",
+      "question_type": "core"
+    }
+  ],
+  "title_en": "Area of Rectangles",
+  "objective_en": "Learn Area of Rectangles with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+  "worked_examples_en": [
+    "g3_area_intro_ep English item 1",
+    "g3_area_intro_ep English item 2",
+    "g3_area_intro_ep English item 3"
+  ],
+  "common_mistakes_en": [
+    "g3_area_intro_ep English item 1",
+    "g3_area_intro_ep English item 2",
+    "g3_area_intro_ep English item 3"
+  ],
+  "hints_en": [
+    "g3_area_intro_ep English item 1",
+    "g3_area_intro_ep English item 2",
+    "g3_area_intro_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g3_area_intro_ep English item 1",
+    "g3_area_intro_ep English item 2",
+    "g3_area_intro_ep English item 3",
+    "g3_area_intro_ep English item 4",
+    "g3_area_intro_ep English item 5"
+  ],
+  "quiz_en": [
+    "g3_area_intro_ep English item 1",
+    "g3_area_intro_ep English item 2",
+    "g3_area_intro_ep English item 3",
+    "g3_area_intro_ep English item 4",
+    "g3_area_intro_ep English item 5",
+    "g3_area_intro_ep English item 6",
+    "g3_area_intro_ep English item 7",
+    "g3_area_intro_ep English item 8",
+    "g3_area_intro_ep English item 9",
+    "g3_area_intro_ep English item 10"
+  ],
+  "quiz_id": "g3_area_intro_ep",
+  "generated_at": "2026-05-16T04:16:41.315272+00:00",
+  "source_lesson_id": "g3_area_intro",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+      "content_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+      "data": {
+        "content_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units.",
+      "content_en": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units.",
+      "data": {
+        "content_en": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "area_model",
+      "rows": 5,
+      "cols": 7,
+      "total": 35,
+      "unit": "square units",
+      "symbol": "⬜",
+      "data": {
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 7,
+        "total": 35,
+        "unit": "square units",
+        "symbol": "⬜"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5 × 7 = 35 square units",
+      "content": "5 × 7 = 35 square units",
+      "data": {
+        "expression": "5 × 7 = 35 square units",
+        "content_en": "5 × 7 = 35 square units"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+      "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+      "choices": [
+        "48 pencils",
+        "46 pencils",
+        "51 pencils",
+        "53 pencils"
+      ],
+      "correct_answer": "48 pencils",
+      "answer": "48 pencils",
+      "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+        "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+        "choices": [
+          "48 pencils",
+          "46 pencils",
+          "51 pencils",
+          "53 pencils"
+        ],
+        "correct_answer": "48 pencils",
+        "answer": "48 pencils",
+        "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g3_area_intro",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Area of Rectangles",
+  "topic": "area",
+  "icon": "grid",
+  "story_variants": [
+    {
+      "variant_id": "g3_area_intro_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Area of Rectangles Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+          "content_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation.",
+          "data": {
+            "content_en": "Aom arranges oranges at the market in 5 rows. Each row has 7 items. The rows are equal, so Aom wants to know the total number of square units. This story practices Area of Rectangles in the reading corner with green name labels before lunch break. The children use real classroom objects to build the model before choosing the operation."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units.",
+          "content_en": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units.",
+          "data": {
+            "content_en": "There are 5 equal rows and 7 in each row. Equal rows use multiplication: 5 × 7 = 35 square units."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "area_model",
+          "rows": 5,
+          "cols": 7,
+          "total": 35,
+          "unit": "square units",
+          "symbol": "⬜",
+          "data": {
+            "model_type": "area_model",
+            "rows": 5,
+            "cols": 7,
+            "total": 35,
+            "unit": "square units",
+            "symbol": "⬜"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "5 × 7 = 35 square units",
+          "content": "5 × 7 = 35 square units",
+          "data": {
+            "expression": "5 × 7 = 35 square units",
+            "content_en": "5 × 7 = 35 square units"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+          "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+          "choices": [
+            "48 pencils",
+            "46 pencils",
+            "51 pencils",
+            "53 pencils"
+          ],
+          "correct_answer": "48 pencils",
+          "answer": "48 pencils",
+          "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+            "question_en": "A teacher has 6 boxes of pencils. Each box has 8 pencils. How many pencils are there?",
+            "choices": [
+              "48 pencils",
+              "46 pencils",
+              "51 pencils",
+              "53 pencils"
+            ],
+            "correct_answer": "48 pencils",
+            "answer": "48 pencils",
+            "explanation": "Use multiplication: 6 × 8 = 48 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

@@ -1,0 +1,270 @@
+{
+  "variant_id": "g3_multi_step_word_problems_ep_01",
+  "variant_title_en": "Multi Step Word Problems - Variant 1",
+  "status": "needs_review",
+  "title_en": "Multi Step Word Problems",
+  "story_theme_en": "A sweet shop sold cake slices for 15 baht each. The shop sold 8 slices in one day. But each slice cost 6 baht to make. The shop owner wanted to know the profit for the day.",
+  "helper_tip_en": "Read the problem carefully. Circle the important numbers. Then figure out what the question is asking.",
+  "think_story_en": "We have 1 rows and 3 in each row. Use 1 x 3 = 72 baht.",
+  "explanation_steps_en": [
+    "Read the whole problem - there is more than one step.",
+    "Find all the key numbers.",
+    "Do the first step (usually multiplication).",
+    "Do the second step (subtraction or addition).",
+    "Check your answer by reviewing each step."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "A shop sold 5 drinks at 20 baht each. Each drink cost 8 baht to make. What is the profit?",
+      "solution_en": "(20x5) - (8x5) = 60 60 baht"
+    }
+  ],
+  "common_mistakes_en": [
+    "Doing the wrong operation.",
+    "Forgetting the unit.",
+    "Reading the problem too quickly."
+  ],
+  "hints_en": [
+    "Read the problem twice before answering.",
+    "Look for clue words.",
+    "Check your answer."
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A sweet shop sold cake slices for 15 baht each. The shop sold 8 slices in one day. But each slice cost 6 baht to make. The shop owner wanted to know the profit for the day.",
+      "data": {
+        "content_en": "A sweet shop sold cake slices for 15 baht each. The shop sold 8 slices in one day. But each slice cost 6 baht to make. The shop owner wanted to know the profit for the day."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "We have 1 rows and 3 in each row. Use 1 x 3 = 72.",
+      "data": {
+        "content_en": "We have 1 rows and 3 in each row. Use 1 x 3 = 72."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Diagram to Help You Think",
+      "description": "Step 1: Find total revenue. Step 2: Find total cost. Step 3: Subtract.",
+      "model_type": "multistep_model",
+      "step1_revenue": 120,
+      "step1_qty": 8,
+      "step1_price": 15,
+      "step2_cost_each": 6,
+      "step2_qty": 8,
+      "step2_total_cost": 48,
+      "profit": 72,
+      "unit": "baht",
+      "data": {
+        "model_type": "multistep_model",
+        "step1_revenue": 120,
+        "step1_qty": 8,
+        "step1_price": 15,
+        "step2_cost_each": 6,
+        "step2_qty": 8,
+        "step2_total_cost": 48,
+        "profit": 72,
+        "unit": "baht"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Write the Number Sentence",
+      "expression": "(15×8) − (6×8) = 72",
+      "content": "(15×8) − (6×8) = 72",
+      "data": {
+        "expression": "(15×8) − (6×8) = 72",
+        "content_en": "(15×8) − (6×8) = 72"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A shop sold 5 drinks at 20 baht each. Each drink cost 8 baht to make. What is the profit?",
+      "choices": [
+        "60 baht",
+        "60 baht",
+        "60 baht",
+        "60 baht"
+      ],
+      "correct_answer": "60 baht",
+      "explanation": "(20x5) - (8x5) = 60",
+      "data": {
+        "question": "A shop sold 5 drinks at 20 baht each. Each drink cost 8 baht to make. What is the profit?",
+        "choices": [
+          "60 baht",
+          "60 baht",
+          "60 baht",
+          "60 baht"
+        ],
+        "correct_answer": "60 baht",
+        "explanation": "(20x5) - (8x5) = 60"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "profit",
+      "th": "กำไร",
+      "definition_en": "Money left after subtracting the cost from the selling price"
+    },
+    {
+      "en": "cost",
+      "th": "ต้นทุน",
+      "definition_en": "The money spent to make or buy something"
+    },
+    {
+      "en": "selling price",
+      "th": "ราคาขาย",
+      "definition_en": "The amount of money received when selling an item"
+    },
+    {
+      "en": "multi-step problem",
+      "th": "โจทย์หลายขั้นตอน",
+      "definition_en": "A problem that requires more than one math operation to solve"
+    },
+    {
+      "en": "baht",
+      "th": "บาท",
+      "definition_en": "Thai currency unit"
+    },
+    {
+      "en": "slice",
+      "th": "ชิ้น",
+      "definition_en": "A cut piece of food"
+    },
+    {
+      "en": "shop",
+      "th": "ร้าน",
+      "definition_en": "A place where things are sold"
+    },
+    {
+      "en": "day",
+      "th": "วัน",
+      "definition_en": "A period of 24 hours"
+    },
+    {
+      "en": "each",
+      "th": "แต่ละ",
+      "definition_en": "Every one separately"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "A shop sold 6 drinks at 25 baht each. Each drink cost 10 baht to make. What was the profit?",
+      "choices": [
+        "60 baht",
+        "90 baht",
+        "150 baht",
+        "120 baht"
+      ],
+      "answer": "90 baht",
+      "explanation": "(25x6) - (10x6) = 150 - 60 = 90"
+    },
+    {
+      "q": "A bakery sold 10 cakes at 30 baht each. Each cake cost 12 baht to make. What was the profit?",
+      "choices": [
+        "120 baht",
+        "180 baht",
+        "300 baht",
+        "168 baht"
+      ],
+      "answer": "180 baht",
+      "explanation": "(30x10) - (12x10) = 300 - 120 = 180"
+    },
+    {
+      "q": "A fruit shop sold 8 durians at 150 baht each. Each durian cost 80 baht. What was the profit?",
+      "choices": [
+        "560 baht",
+        "640 baht",
+        "480 baht",
+        "720 baht"
+      ],
+      "answer": "560 baht",
+      "explanation": "(150x8) - (80x8) = 1200 - 640 = 560"
+    },
+    {
+      "q": "Lin sold 5 notebooks at 45 baht each. Each notebook cost 20 baht to buy. What was her profit?",
+      "choices": [
+        "100 baht",
+        "125 baht",
+        "225 baht",
+        "165 baht"
+      ],
+      "answer": "125 baht",
+      "explanation": "(45x5) - (20x5) = 225 - 100 = 125"
+    },
+    {
+      "q": "A shop sold 7 pizzas at 80 baht each. Each pizza cost 35 baht to make. What was the profit?",
+      "choices": [
+        "280 baht",
+        "315 baht",
+        "560 baht",
+        "245 baht"
+      ],
+      "answer": "315 baht",
+      "explanation": "(80x7) - (35x7) = 560 - 245 = 315"
+    },
+    {
+      "q": "Mom sold 12 cups of juice at 20 baht each. Each cup cost 8 baht to make. What was the profit?",
+      "choices": [
+        "120 baht",
+        "144 baht",
+        "240 baht",
+        "96 baht"
+      ],
+      "answer": "144 baht",
+      "explanation": "(20x12) - (8x12) = 240 - 96 = 144"
+    },
+    {
+      "q": "A bookshop sold 9 comics at 55 baht each. Each comic cost 25 baht to buy. What was the profit?",
+      "choices": [
+        "270 baht",
+        "495 baht",
+        "225 baht",
+        "320 baht"
+      ],
+      "answer": "270 baht",
+      "explanation": "(55x9) - (25x9) = 495 - 225 = 270"
+    },
+    {
+      "q": "Chef sold 15 ice creams at 30 baht each. Each ice cream cost 12 baht to make. What was the profit?",
+      "choices": [
+        "180 baht",
+        "270 baht",
+        "450 baht",
+        "150 baht"
+      ],
+      "answer": "270 baht",
+      "explanation": "(30x15) - (12x15) = 450 - 180 = 270"
+    },
+    {
+      "q": "A toy shop sold 4 robots at 200 baht each. Each robot cost 90 baht to make. What was the profit?",
+      "choices": [
+        "440 baht",
+        "800 baht",
+        "360 baht",
+        "110 baht"
+      ],
+      "answer": "440 baht",
+      "explanation": "(200x4) - (90x4) = 800 - 360 = 440"
+    },
+    {
+      "q": "Lin sold 11 flowers at 18 baht each. Each flower cost 7 baht to grow. What was the profit?",
+      "choices": [
+        "121 baht",
+        "198 baht",
+        "77 baht",
+        "154 baht"
+      ],
+      "answer": "121 baht",
+      "explanation": "(18x11) - (7x11) = 198 - 77 = 121"
+    }
+  ],
+  "explanation_en": "To solve this problem, identify the key numbers, choose the right operation, calculate carefully, and always check your answer. Remember to include the correct unit."
+}

@@ -98,6 +98,13 @@ export interface AdminLessonRow {
   issue_count: number
   updated_at: string
   approved_at?: string
+  topic_folder?: string
+  source_folder?: string
+  source_path?: string
+  variant_count?: number
+  approved_variant_count?: number
+  variant_files?: string[]
+  file_structure?: string
 }
 
 export interface AdminLessonDetail extends AdminLessonRow {

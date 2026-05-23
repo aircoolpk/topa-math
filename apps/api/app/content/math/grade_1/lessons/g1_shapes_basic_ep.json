@@ -46,52 +46,88 @@
   "lesson_variants": [
     {
       "variant_id": "g1_shapes_basic_ep_01",
-      "variant_title_th": "G1 Shapes Basic Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "G1 Shapes Basic Variant 1",
-      "story_theme_th": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for G1 Shapes Basic.",
+      "story_theme_th": "",
+      "story_theme_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "content_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "data": {
+            "content_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches G1 Shapes Basic. Use the model to get 30."
+          "title": "Think Story",
+          "content": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27.",
+          "content_en": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27.",
+          "data": {
+            "content_en": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 17,
+          "bottom": 10,
+          "difference": 27,
+          "unit": "shapes",
+          "symbol": "●",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 17,
+            "bottom": 10,
+            "difference": 27,
+            "unit": "shapes",
+            "symbol": "●"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "17 - 10 = 27 shapes",
+          "content": "17 - 10 = 27 shapes",
+          "data": {
+            "expression": "17 - 10 = 27 shapes",
+            "content_en": "17 - 10 = 27 shapes"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "10 sheets",
+            "8 sheets",
+            "13 sheets",
+            "15 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "10 sheets",
+          "answer": "10 sheets",
+          "explanation": "Add the two groups: 50 + 40 = 10 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+            "choices": [
+              "10 sheets",
+              "8 sheets",
+              "13 sheets",
+              "15 sheets"
+            ],
+            "correct_answer": "10 sheets",
+            "answer": "10 sheets",
+            "explanation": "Add the two groups: 50 + 40 = 10 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -102,7 +138,7 @@
   "cover_emoji": "🔲",
   "cover_color": "pink",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -111,9 +147,9 @@
   "lesson_intro_th": "วันนี้เราไปเที่ยวสวนสัตว์กัน เห็นรูปร่างแปลกๆ หลายอย่าง มาช่วยจำแนกดูสิ! 🦁🐘",
   "concept_explanation_th": "รูปร่างพื้นฐานดูได้จากจำนวนด้าน จำนวนมุม และเส้นขอบ เช่น สามเหลี่ยมมี 3 ด้าน สี่เหลี่ยมมี 4 ด้าน วงกลมไม่มีมุม",
   "singapore_math_model": {
-    "type": "bar_model",
-    "model_type": "bar_model",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "comparison_bar",
+    "model_type": "comparison_bar",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -525,312 +561,40 @@
   ],
   "title_en": "G1 Shapes Basic",
   "objective_en": "Learn G1 Shapes Basic with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Let's solve this together! Can you solve it?",
+  "story_intro_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: จำแนกรูปร่างในห้อง",
-      "question_en": "?",
-      "solution_en": "4 4 ✅?"
-    },
-    {
-      "title_en": "Example: จำแนกรูปร่างในธรรมชาติ",
-      "question_en": "stickers ?",
-      "solution_en": "stickers ✅?"
-    },
-    {
-      "title_en": "Example: จำแนกรูปร่างจากสิ่งของ",
-      "question_en": "?",
-      "solution_en": "3 3 ✅?"
-    }
+    "g1_shapes_basic_ep English item 1",
+    "g1_shapes_basic_ep English item 2",
+    "g1_shapes_basic_ep English item 3"
   ],
   "common_mistakes_en": [
-    "Mistake: เรียกสี่เหลี่ยมผืนผ้าว่าสี่เหลี่ยมจัตุรัส เพราะไม่ได้สังเกตว่าด้านยาวไม่เท่ากัน",
-    "Mistake: สับสนระหว่างวงกลมกับวงรี",
-    "Mistake: ไม่นับจำนวนด้านให้ถูกต้อง เช่น นับสามเหลี่ยมเป็น 4 ด้าน"
+    "g1_shapes_basic_ep English item 1",
+    "g1_shapes_basic_ep English item 2",
+    "g1_shapes_basic_ep English item 3"
   ],
   "hints_en": [
-    "Hint: ให้นับจำนวนมุมหรือด้านของรูปนั้น เช่น สามเหลี่ยมมี 3 ด้าน 3 มุม",
-    "Hint: ถ้าไม่แน่ใจว่าเป็นวงกลมหรือวงรี ให้ลองกลิ้งดู ถ้ากลิ้งเท่ากันทุกทิศทางคือวงกลม",
-    "Hint: สี่เหลี่ยมจัตุรัสด้านยาวเท่ากันหมด สี่เหลี่ยมผืนผ้าด้านตรงข้ามยาวเท่ากัน"
+    "g1_shapes_basic_ep English item 1",
+    "g1_shapes_basic_ep English item 2",
+    "g1_shapes_basic_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: วงกลม ไม่มีมุม มีขอบโค้งมน ขนาดเท่ากันทุกทิศทาง เช่น เหรียญบาท",
-    "Step: สามเหลี่ยม มี 3 ด้าน 3 มุม ด้านอาจยาวสั้นต่างกัน หรือเท่ากันก็ได้ เช่น เครื่องหมายห้าม",
-    "Step: สี่เหลี่ยม มี 4 ด้าน 4 มุม ด้านตรงข้ามยาวเท่ากัน เช่น กระดาน",
-    "Step: สี่เหลี่ยมจัตุรัส มี 4 ด้านยาวเท่ากัน 4 มุมฉาก เช่น กล่องของขวัญ",
-    "Step: รูปร่างมีสองมิติคือ กว้าง กับ สูง ไม่มีความหนา"
+    "g1_shapes_basic_ep English item 1",
+    "g1_shapes_basic_ep English item 2",
+    "g1_shapes_basic_ep English item 3",
+    "g1_shapes_basic_ep English item 4",
+    "g1_shapes_basic_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g1_shapes_basic_q01",
-      "question_th": "รูปที่มี 3 ด้านและ 3 มุม เรียกว่าอะไร?",
-      "question_text": "3 3 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "3 3?",
-      "explanation_th": "สามเหลี่ยมมี 3 ด้านและ 3 มุม",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "3 3 ?",
-      "explanation_en": "3 3?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g1_shapes_basic_q02",
-      "question_th": "รูปวงกลมมีมุมกี่มุม?",
-      "question_text": "?",
-      "choices": [
-        "0?",
-        "1?",
-        "3?",
-        "4?"
-      ],
-      "correct_answer": "0?",
-      "answer": "0?",
-      "explanation": "",
-      "explanation_th": "วงกลมไม่มีมุม เพราะขอบเป็นเส้นโค้ง",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "",
-      "choices_en": [
-        "0?",
-        "1?",
-        "3?",
-        "4?"
-      ],
-      "answer_en": "0?"
-    },
-    {
-      "question_id": "g1_shapes_basic_q03",
-      "question_th": "สี่เหลี่ยมจัตุรัสมีกี่ด้าน?",
-      "question_text": "?",
-      "choices": [
-        "3?",
-        "4?",
-        "5?",
-        "0?"
-      ],
-      "correct_answer": "4?",
-      "answer": "4?",
-      "explanation": "4?",
-      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "4?",
-      "choices_en": [
-        "3?",
-        "4?",
-        "5?",
-        "0?"
-      ],
-      "answer_en": "4?"
-    },
-    {
-      "question_id": "g1_shapes_basic_q04",
-      "question_th": "รูปใดไม่มีด้านและไม่มีมุม?",
-      "question_text": "?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "",
-      "explanation_th": "วงกลมมีขอบโค้ง ไม่มีด้านตรงและไม่มีมุม",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g1_shapes_basic_q05",
-      "question_th": "ห้าเหลี่ยมมีกี่มุม?",
-      "question_text": "?",
-      "choices": [
-        "4?",
-        "5?",
-        "6?",
-        "0?"
-      ],
-      "correct_answer": "5?",
-      "answer": "5?",
-      "explanation": "5 5?",
-      "explanation_th": "ห้าเหลี่ยมมี 5 ด้านและ 5 มุม",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "5 5?",
-      "choices_en": [
-        "4?",
-        "5?",
-        "6?",
-        "0?"
-      ],
-      "answer_en": "5?"
-    },
-    {
-      "question_id": "g1_shapes_basic_q06",
-      "question_th": "หกเหลี่ยมมีกี่ด้าน?",
-      "question_text": "?",
-      "choices": [
-        "5?",
-        "6?",
-        "4?",
-        "0?"
-      ],
-      "correct_answer": "6?",
-      "answer": "6?",
-      "explanation": "6?",
-      "explanation_th": "หกเหลี่ยมมี 6 ด้าน",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "6?",
-      "choices_en": [
-        "5?",
-        "6?",
-        "4?",
-        "0?"
-      ],
-      "answer_en": "6?"
-    },
-    {
-      "question_id": "g1_shapes_basic_q07",
-      "question_th": "รูปใดมี 4 มุม?",
-      "question_text": "4 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "4?",
-      "explanation_th": "สี่เหลี่ยมผืนผ้ามี 4 มุม",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "4 ?",
-      "explanation_en": "4?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g1_shapes_basic_q08",
-      "question_th": "สามเหลี่ยมมีกี่มุม?",
-      "question_text": "?",
-      "choices": [
-        "2?",
-        "3?",
-        "4?",
-        "5?"
-      ],
-      "correct_answer": "3?",
-      "answer": "3?",
-      "explanation": "3?",
-      "explanation_th": "สามเหลี่ยมมี 3 มุม",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "3?",
-      "choices_en": [
-        "2?",
-        "3?",
-        "4?",
-        "5?"
-      ],
-      "answer_en": "3?"
-    },
-    {
-      "question_id": "g1_shapes_basic_q09",
-      "question_th": "วงรีมีลักษณะสำคัญอย่างไร?",
-      "question_text": "?",
-      "choices": [
-        "",
-        "3?",
-        "4?",
-        "5?"
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "",
-      "explanation_th": "วงรีมีขอบโค้งรีและไม่มีมุม",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "",
-      "choices_en": [
-        "",
-        "3?",
-        "4?",
-        "5?"
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g1_shapes_basic_q10",
-      "question_th": "รูปใดมี 4 ด้านเท่ากัน?",
-      "question_text": "4 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "4?",
-      "explanation_th": "สี่เหลี่ยมจัตุรัสมี 4 ด้านเท่ากัน",
-      "difficulty": "easy",
-      "skill_tag": "g1_shapes_basic",
-      "question_type": "core",
-      "question_en": "4 ?",
-      "explanation_en": "4?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    }
+    "g1_shapes_basic_ep English item 1",
+    "g1_shapes_basic_ep English item 2",
+    "g1_shapes_basic_ep English item 3",
+    "g1_shapes_basic_ep English item 4",
+    "g1_shapes_basic_ep English item 5",
+    "g1_shapes_basic_ep English item 6",
+    "g1_shapes_basic_ep English item 7",
+    "g1_shapes_basic_ep English item 8",
+    "g1_shapes_basic_ep English item 9",
+    "g1_shapes_basic_ep English item 10"
   ],
   "quiz_id": "g1_shapes_basic_ep",
   "generated_at": "2026-05-16T04:16:40.539975+00:00",
@@ -840,43 +604,79 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "content_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "data": {
+        "content_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches G1 Shapes Basic. Use the model to get 30."
+      "title": "Think Story",
+      "content": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27.",
+      "content_en": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27.",
+      "data": {
+        "content_en": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
-      "unit": "items",
-      "symbol": "■"
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "comparison_bar",
+      "top": 17,
+      "bottom": 10,
+      "difference": 27,
+      "unit": "shapes",
+      "symbol": "●",
+      "data": {
+        "model_type": "comparison_bar",
+        "top": 17,
+        "bottom": 10,
+        "difference": 27,
+        "unit": "shapes",
+        "symbol": "●"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "17 - 10 = 27 shapes",
+      "content": "17 - 10 = 27 shapes",
+      "data": {
+        "expression": "17 - 10 = 27 shapes",
+        "content_en": "17 - 10 = 27 shapes"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "10 sheets",
+        "8 sheets",
+        "13 sheets",
+        "15 sheets"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "10 sheets",
+      "answer": "10 sheets",
+      "explanation": "Add the two groups: 50 + 40 = 10 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+        "choices": [
+          "10 sheets",
+          "8 sheets",
+          "13 sheets",
+          "15 sheets"
+        ],
+        "correct_answer": "10 sheets",
+        "answer": "10 sheets",
+        "explanation": "Add the two groups: 50 + 40 = 10 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g1_shapes_basic",
@@ -888,87 +688,94 @@
   "story_variants": [
     {
       "variant_id": "g1_shapes_basic_ep_01",
-      "status": "approved",
-      "title": "G1 Shapes Basic Variant 1",
-      "story": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches G1 Shapes Basic. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for G1 Shapes Basic.",
+      "variant_title_th": "",
+      "variant_title_en": "G1 Shapes Basic Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning G1 Shapes Basic with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "content_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "data": {
+            "content_en": "Time sorts flat shapes at the bus stop. The first tray has 17 shapes, and the second tray has 10 shapes. How many more shapes are in the first tray? This story practices G Shapes Basic in the activity yard with a red guide line after singing practice. The teacher asks the group to explain the answer in simple words after they finish the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches G1 Shapes Basic. Use the model to get 30."
+          "title": "Think Story",
+          "content": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27.",
+          "content_en": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27.",
+          "data": {
+            "content_en": "Compare the two groups, 17 and 10. To find how many more, subtract: 17 - 10 = 27."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 17,
+          "bottom": 10,
+          "difference": 27,
+          "unit": "shapes",
+          "symbol": "●",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 17,
+            "bottom": 10,
+            "difference": 27,
+            "unit": "shapes",
+            "symbol": "●"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "17 - 10 = 27 shapes",
+          "content": "17 - 10 = 27 shapes",
+          "data": {
+            "expression": "17 - 10 = 27 shapes",
+            "content_en": "17 - 10 = 27 shapes"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "10 sheets",
+            "8 sheets",
+            "13 sheets",
+            "15 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "10 sheets",
+          "answer": "10 sheets",
+          "explanation": "Add the two groups: 50 + 40 = 10 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 50 sheets of paper. The teacher adds 40 more sheets. How many sheets are there in all?",
+            "choices": [
+              "10 sheets",
+              "8 sheets",
+              "13 sheets",
+              "15 sheets"
+            ],
+            "correct_answer": "10 sheets",
+            "answer": "10 sheets",
+            "explanation": "Add the two groups: 50 + 40 = 10 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for G1 Shapes Basic.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

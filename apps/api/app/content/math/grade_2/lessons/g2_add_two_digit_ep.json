@@ -46,52 +46,88 @@
   "lesson_variants": [
     {
       "variant_id": "g2_add_two_digit_ep_01",
-      "variant_title_th": "Addition Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Addition Variant 1",
-      "story_theme_th": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for Addition.",
+      "story_theme_th": "",
+      "story_theme_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "content_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "data": {
+            "content_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Addition. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items.",
+          "content_en": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items.",
+          "data": {
+            "content_en": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 31,
+          "part_b": 19,
+          "total": 50,
           "unit": "items",
-          "symbol": "■"
+          "symbol": "🍪",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 31,
+            "part_b": 19,
+            "total": 50,
+            "unit": "items",
+            "symbol": "🍪"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "31 + 19 = 50 items",
+          "content": "31 + 19 = 50 items",
+          "data": {
+            "expression": "31 + 19 = 50 items",
+            "content_en": "31 + 19 = 50 items"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "55 sheets",
+            "53 sheets",
+            "58 sheets",
+            "60 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "55 sheets",
+          "answer": "55 sheets",
+          "explanation": "Add the two groups: 34 + 21 = 55 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+            "choices": [
+              "55 sheets",
+              "53 sheets",
+              "58 sheets",
+              "60 sheets"
+            ],
+            "correct_answer": "55 sheets",
+            "answer": "55 sheets",
+            "explanation": "Add the two groups: 34 + 21 = 55 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -102,7 +138,7 @@
   "cover_emoji": "🔢",
   "cover_color": "green",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -111,9 +147,9 @@
   "lesson_intro_th": "พี่อลิสเก็บดาวกระดาษได้ 23 ดวง แล้วเก็บเพิ่มได้อีก 45 ดวง รวมพี่อลิสมีดาวกระดาษกี่ดวง? ⭐",
   "concept_explanation_th": "เวลาบวกเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน หลักหน่วยอยู่ขวาสุด หลักสิบอยู่ซ้าย บวกหลักหน่วยก่อน แล้วบวกหลักสิบ ถ้าผลบวกหลักหน่วยไม่เกิน 9 แปลว่าไม่ต้องทด ผลลัพธ์อยู่ในหลักเดียวกันกับตัวตั้ง บรรทัดเดียวกัน ตรวจคำตอบโดยสลับที่ เช่น 45 + 23 = 23 + 45",
   "singapore_math_model": {
-    "type": "number_bond",
-    "model_type": "number_bond",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -520,312 +556,40 @@
   ],
   "title_en": "Addition",
   "objective_en": "Learn Addition with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Look! 23 + 45 — can you find the answer?",
+  "story_intro_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: บวกดินสอ",
-      "question_en": "pencils 32 pencils pencils 45 pencils pencils?",
-      "solution_en": "32 + 45 = 77 pencils ✅?"
-    },
-    {
-      "title_en": "Example: บวกลูกปัด",
-      "question_en": "marbles 23 balls 54 balls balls?",
-      "solution_en": "23 + 54 = 77 balls ✅?"
-    },
-    {
-      "title_en": "Example: บวกขนม",
-      "question_en": "41 pieces 38 pieces pieces?",
-      "solution_en": "41 + 38 = 79 pieces ✅?"
-    }
+    "g2_add_two_digit_ep English item 1",
+    "g2_add_two_digit_ep English item 2",
+    "g2_add_two_digit_ep English item 3"
   ],
   "common_mistakes_en": [
-    "Mistake: เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน เช่น เขียนหลักสิบอยู่ใต้หลักหน่วย",
-    "Mistake: บวกผิดหลัก เช่น บวกหลักสิบก่อนหลักหน่วย",
-    "Mistake: ลืมบวกหลักใดหลักหนึ่ง ทำให้ผลลัพธ์ผิด"
+    "g2_add_two_digit_ep English item 1",
+    "g2_add_two_digit_ep English item 2",
+    "g2_add_two_digit_ep English item 3"
   ],
   "hints_en": [
-    "Hint: เขียนเลขให้ตรงหลักกัน หลักหน่วยตรงหลักหน่วย หลักสิบตรงหลักสิบ",
-    "Hint: บวกหลักหน่วยก่อนเสมอ แล้วค่อยบวกหลักสิบ",
-    "Hint: ตรวจคำตอบโดยลบกลับ: เอาผลลัพธ์ลบตัวบวกตัวหนึ่ง ต้องได้อีกตัว"
+    "g2_add_two_digit_ep English item 1",
+    "g2_add_two_digit_ep English item 2",
+    "g2_add_two_digit_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: เวลาบวกเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน หลักหน่วยอยู่ขวาสุด หลักสิบอยู่ซ้าย",
-    "Step: บวกหลักหน่วยก่อน แล้วบวกหลักสิบ",
-    "Step: ถ้าผลบวกหลักหน่วยไม่เกิน 9 แปลว่าไม่ต้องทด",
-    "Step: ผลลัพธ์อยู่ในหลักเดียวกันกับตัวตั้ง บรรทัดเดียวกัน",
-    "Step: ตรวจคำตอบโดยสลับที่ เช่น 45 + 23 = 23 + 45"
+    "g2_add_two_digit_ep English item 1",
+    "g2_add_two_digit_ep English item 2",
+    "g2_add_two_digit_ep English item 3",
+    "g2_add_two_digit_ep English item 4",
+    "g2_add_two_digit_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g2_add_two_digit_q01",
-      "question_th": "34 + 25 เท่ากับเท่าไร?",
-      "question_text": "34 + 25 ?",
-      "choices": [
-        "57",
-        "58",
-        "59",
-        "60"
-      ],
-      "correct_answer": "59",
-      "answer": "59",
-      "explanation": "34 + 25 = 59",
-      "explanation_th": "34 + 25 = 59",
-      "difficulty": "easy",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "core",
-      "question_en": "34 + 25 ?",
-      "explanation_en": "34 + 25 = 59",
-      "choices_en": [
-        "57",
-        "58",
-        "59",
-        "60"
-      ],
-      "answer_en": "59"
-    },
-    {
-      "question_id": "g2_add_two_digit_q02",
-      "question_th": "47 + 18 เท่ากับเท่าไร?",
-      "question_text": "47 + 18 ?",
-      "choices": [
-        "63",
-        "64",
-        "65",
-        "66"
-      ],
-      "correct_answer": "65",
-      "answer": "65",
-      "explanation": "47 + 18 = 65",
-      "explanation_th": "47 + 18 = 65",
-      "difficulty": "easy",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "core",
-      "question_en": "47 + 18 ?",
-      "explanation_en": "47 + 18 = 65",
-      "choices_en": [
-        "63",
-        "64",
-        "65",
-        "66"
-      ],
-      "answer_en": "65"
-    },
-    {
-      "question_id": "g2_add_two_digit_q03",
-      "question_th": "56 + 27 เท่ากับเท่าไร?",
-      "question_text": "56 + 27 ?",
-      "choices": [
-        "81",
-        "82",
-        "83",
-        "84"
-      ],
-      "correct_answer": "83",
-      "answer": "83",
-      "explanation": "56 + 27 = 83",
-      "explanation_th": "56 + 27 = 83",
-      "difficulty": "easy",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "core",
-      "question_en": "56 + 27 ?",
-      "explanation_en": "56 + 27 = 83",
-      "choices_en": [
-        "81",
-        "82",
-        "83",
-        "84"
-      ],
-      "answer_en": "83"
-    },
-    {
-      "question_id": "g2_add_two_digit_q04",
-      "question_th": "พี่อลิสมีสติกเกอร์ 28 ดวง ได้เพิ่ม 35 ดวง รวมกี่ดวง?",
-      "question_text": "stickers 28 stickers 35 stickers stickers?",
-      "choices": [
-        "61 stickers?",
-        "62 stickers?",
-        "63 stickers?",
-        "64 stickers?"
-      ],
-      "correct_answer": "63 stickers?",
-      "answer": "63 stickers?",
-      "explanation": "28 + 35 = 63 stickers?",
-      "explanation_th": "28 + 35 = 63 ดวง",
-      "difficulty": "medium",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "core",
-      "question_en": "stickers 28 stickers 35 stickers stickers?",
-      "explanation_en": "28 + 35 = 63 stickers?",
-      "choices_en": [
-        "61 stickers?",
-        "62 stickers?",
-        "63 stickers?",
-        "64 stickers?"
-      ],
-      "answer_en": "63 stickers?"
-    },
-    {
-      "question_id": "g2_add_two_digit_q05",
-      "question_th": "ร้านมีหนังสือ 46 เล่ม รับเพิ่ม 29 เล่ม รวมกี่เล่ม?",
-      "question_text": "46 books 29 books books?",
-      "choices": [
-        "74 books?",
-        "75 books?",
-        "76 books?",
-        "77 books?"
-      ],
-      "correct_answer": "75 books?",
-      "answer": "75 books?",
-      "explanation": "46 + 29 = 75 books?",
-      "explanation_th": "46 + 29 = 75 เล่ม",
-      "difficulty": "medium",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "core",
-      "question_en": "46 books 29 books books?",
-      "explanation_en": "46 + 29 = 75 books?",
-      "choices_en": [
-        "74 books?",
-        "75 books?",
-        "76 books?",
-        "77 books?"
-      ],
-      "answer_en": "75 books?"
-    },
-    {
-      "question_id": "g2_add_two_digit_q06",
-      "question_th": "68 + 14 เท่ากับเท่าไร?",
-      "question_text": "68 + 14 ?",
-      "choices": [
-        "80",
-        "81",
-        "82",
-        "83"
-      ],
-      "correct_answer": "82",
-      "answer": "82",
-      "explanation": "68 + 14 = 82",
-      "explanation_th": "68 + 14 = 82",
-      "difficulty": "medium",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "core",
-      "question_en": "68 + 14 ?",
-      "explanation_en": "68 + 14 = 82",
-      "choices_en": [
-        "80",
-        "81",
-        "82",
-        "83"
-      ],
-      "answer_en": "82"
-    },
-    {
-      "question_id": "g2_add_two_digit_q07",
-      "question_th": "39 + 44 เท่ากับเท่าไร?",
-      "question_text": "39 + 44 ?",
-      "choices": [
-        "82",
-        "83",
-        "84",
-        "85"
-      ],
-      "correct_answer": "83",
-      "answer": "83",
-      "explanation": "39 + 44 = 83",
-      "explanation_th": "39 + 44 = 83",
-      "difficulty": "medium",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "core",
-      "question_en": "39 + 44 ?",
-      "explanation_en": "39 + 44 = 83",
-      "choices_en": [
-        "82",
-        "83",
-        "84",
-        "85"
-      ],
-      "answer_en": "83"
-    },
-    {
-      "question_id": "g2_add_two_digit_q08",
-      "question_th": "25 + 37 เท่ากับเท่าไร?",
-      "question_text": "25 + 37 ?",
-      "choices": [
-        "60",
-        "61",
-        "62",
-        "63"
-      ],
-      "correct_answer": "62",
-      "answer": "62",
-      "explanation": "25 + 37 = 62",
-      "explanation_th": "25 + 37 = 62",
-      "difficulty": "hard",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "challenge",
-      "question_en": "25 + 37 ?",
-      "explanation_en": "25 + 37 = 62",
-      "choices_en": [
-        "60",
-        "61",
-        "62",
-        "63"
-      ],
-      "answer_en": "62"
-    },
-    {
-      "question_id": "g2_add_two_digit_q09",
-      "question_th": "49 + 36 เท่ากับเท่าไร?",
-      "question_text": "49 + 36 ?",
-      "choices": [
-        "84",
-        "85",
-        "86",
-        "87"
-      ],
-      "correct_answer": "85",
-      "answer": "85",
-      "explanation": "49 + 36 = 85",
-      "explanation_th": "49 + 36 = 85",
-      "difficulty": "hard",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "challenge",
-      "question_en": "49 + 36 ?",
-      "explanation_en": "49 + 36 = 85",
-      "choices_en": [
-        "84",
-        "85",
-        "86",
-        "87"
-      ],
-      "answer_en": "85"
-    },
-    {
-      "question_id": "g2_add_two_digit_q10",
-      "question_th": "57 + 28 เท่ากับเท่าไร?",
-      "question_text": "57 + 28 ?",
-      "choices": [
-        "83",
-        "84",
-        "85",
-        "86"
-      ],
-      "correct_answer": "85",
-      "answer": "85",
-      "explanation": "57 + 28 = 85",
-      "explanation_th": "57 + 28 = 85",
-      "difficulty": "hard",
-      "skill_tag": "g2_add_two_digit",
-      "question_type": "challenge",
-      "question_en": "57 + 28 ?",
-      "explanation_en": "57 + 28 = 85",
-      "choices_en": [
-        "83",
-        "84",
-        "85",
-        "86"
-      ],
-      "answer_en": "85"
-    }
+    "g2_add_two_digit_ep English item 1",
+    "g2_add_two_digit_ep English item 2",
+    "g2_add_two_digit_ep English item 3",
+    "g2_add_two_digit_ep English item 4",
+    "g2_add_two_digit_ep English item 5",
+    "g2_add_two_digit_ep English item 6",
+    "g2_add_two_digit_ep English item 7",
+    "g2_add_two_digit_ep English item 8",
+    "g2_add_two_digit_ep English item 9",
+    "g2_add_two_digit_ep English item 10"
   ],
   "quiz_id": "g2_add_two_digit_ep",
   "generated_at": "2026-05-16T04:16:40.880721+00:00",
@@ -835,43 +599,79 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "content_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "data": {
+        "content_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Addition. Use the model to get 30."
+      "title": "Think Story",
+      "content": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items.",
+      "content_en": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items.",
+      "data": {
+        "content_en": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "part_whole_model",
+      "part_a": 31,
+      "part_b": 19,
+      "total": 50,
       "unit": "items",
-      "symbol": "■"
+      "symbol": "🍪",
+      "data": {
+        "model_type": "part_whole_model",
+        "part_a": 31,
+        "part_b": 19,
+        "total": 50,
+        "unit": "items",
+        "symbol": "🍪"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "31 + 19 = 50 items",
+      "content": "31 + 19 = 50 items",
+      "data": {
+        "expression": "31 + 19 = 50 items",
+        "content_en": "31 + 19 = 50 items"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "55 sheets",
+        "53 sheets",
+        "58 sheets",
+        "60 sheets"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "55 sheets",
+      "answer": "55 sheets",
+      "explanation": "Add the two groups: 34 + 21 = 55 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+        "choices": [
+          "55 sheets",
+          "53 sheets",
+          "58 sheets",
+          "60 sheets"
+        ],
+        "correct_answer": "55 sheets",
+        "answer": "55 sheets",
+        "explanation": "Add the two groups: 34 + 21 = 55 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g2_add_two_digit",
@@ -883,87 +683,94 @@
   "story_variants": [
     {
       "variant_id": "g2_add_two_digit_ep_01",
-      "status": "approved",
-      "title": "Addition Variant 1",
-      "story": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Addition. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Addition.",
+      "variant_title_th": "",
+      "variant_title_en": "Addition Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Addition with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "content_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model.",
+          "data": {
+            "content_en": "Ton collects cookies for an activity at the classroom. One box has 31 items, and paper plates has 19 more items. How many items does Ton have in all? This story practices Addition in the cafeteria with number cards after the trays are cleaned. The teacher asks the group to explain the answer in simple words after they finish the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Addition. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items.",
+          "content_en": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items.",
+          "data": {
+            "content_en": "The story has two groups: 31 and 19. To find the total, add them: 31 + 19 = 50 items."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 31,
+          "part_b": 19,
+          "total": 50,
           "unit": "items",
-          "symbol": "■"
+          "symbol": "🍪",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 31,
+            "part_b": 19,
+            "total": 50,
+            "unit": "items",
+            "symbol": "🍪"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "31 + 19 = 50 items",
+          "content": "31 + 19 = 50 items",
+          "data": {
+            "expression": "31 + 19 = 50 items",
+            "content_en": "31 + 19 = 50 items"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "55 sheets",
+            "53 sheets",
+            "58 sheets",
+            "60 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "55 sheets",
+          "answer": "55 sheets",
+          "explanation": "Add the two groups: 34 + 21 = 55 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 34 sheets of paper. The teacher adds 21 more sheets. How many sheets are there in all?",
+            "choices": [
+              "55 sheets",
+              "53 sheets",
+              "58 sheets",
+              "60 sheets"
+            ],
+            "correct_answer": "55 sheets",
+            "answer": "55 sheets",
+            "explanation": "Add the two groups: 34 + 21 = 55 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Addition.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

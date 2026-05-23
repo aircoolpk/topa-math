@@ -47,52 +47,86 @@
   "lesson_variants": [
     {
       "variant_id": "g2_time_calendar_ep_01",
-      "variant_title_th": "Calendars and Time Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Calendars and Time Variant 1",
-      "story_theme_th": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for Calendars and Time.",
+      "story_theme_th": "",
+      "story_theme_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Calendars and Time. Use the model to get 30."
+          "title": "Think Story",
+          "content": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line.",
+          "content_en": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line.",
+          "data": {
+            "content_en": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "time_line",
+          "start_hour": 8,
+          "elapsed_minutes": 60,
+          "unit": "minutes",
+          "symbol": "🕒",
+          "data": {
+            "model_type": "time_line",
+            "start_hour": 8,
+            "elapsed_minutes": 60,
+            "unit": "minutes",
+            "symbol": "🕒"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "8:00 + 60 minutes = finish time",
+          "content": "8:00 + 60 minutes = finish time",
+          "data": {
+            "expression": "8:00 + 60 minutes = finish time",
+            "content_en": "8:00 + 60 minutes = finish time"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+          "question_en": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "40 minutes",
+            "38 minutes",
+            "43 minutes",
+            "45 minutes"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "40 minutes",
+          "answer": "40 minutes",
+          "explanation": "The story tells us the elapsed time is 40 minutes.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+            "question_en": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+            "choices": [
+              "40 minutes",
+              "38 minutes",
+              "43 minutes",
+              "45 minutes"
+            ],
+            "correct_answer": "40 minutes",
+            "answer": "40 minutes",
+            "explanation": "The story tells us the elapsed time is 40 minutes.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -103,7 +137,7 @@
   "cover_emoji": "📅",
   "cover_color": "blue",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -112,9 +146,9 @@
   "lesson_intro_th": "อลิสมีนัดกินข้าวกับเพื่อนวันที่ 15 มีนาคม เป็นวันอะไร และเดือนมีนาคมมีกี่วันนะ? 📅",
   "concept_explanation_th": "ปฏิทินมี 12 เดือน แต่ละเดือนมีจำนวนวันต่างกัน เดือนที่มี 31 วัน: มกราคม มีนาคม พฤษภาคม กรกฎาคม สิงหาคม ตุลาคม ธันวาคม เดือนที่มี 30 วัน: เมษายน มิถุนายน กันยายน พฤศจิกายน เดือนกุมภาพันธ์มี 28 วัน หรือ 29 วันในปีอธิกมาตุ สัปดาห์มี 7 วัน: วันอาทิตย์ วันจันทร์ วันอังคาร วันพุธ วันพฤหัสบดี วันศุกร์ วันเสาร์ เวลาดูวันที่บนปฏิทิน ให้นับไปจากวันที่ 1 ถึงวันที่ที่ต้องการ",
   "singapore_math_model": {
-    "type": "bar_model",
-    "model_type": "bar_model",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "time_line",
+    "model_type": "time_line",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -526,313 +560,41 @@
   ],
   "title_en": "Calendars and Time",
   "objective_en": "Learn Calendars and Time with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Look! 15 — can you find the answer?",
+  "story_intro_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: นับวันในเดือน",
-      "question_en": "?",
-      "solution_en": "30 ✅?"
-    },
-    {
-      "title_en": "Example: หาวันในสัปดาห์",
-      "question_en": "3 ?",
-      "solution_en": "→ → → 3 ✅?"
-    },
-    {
-      "title_en": "Example: อ่านปฏิทิน",
-      "question_en": "1 8 ?",
-      "solution_en": "8 = 1 + 7 = 8 ✅?"
-    }
+    "g2_time_calendar_ep English item 1",
+    "g2_time_calendar_ep English item 2",
+    "g2_time_calendar_ep English item 3"
   ],
   "common_mistakes_en": [
-    "Mistake: สับสนว่าเดือนไหนมี 31 วัน เดือนไหนมี 30 วัน",
-    "Mistake: นับวันผิด เช่น นับไป 7 วันแล้วหยุดที่วันเดียวกับเดิม",
-    "Mistake: ไม่เข้าใจว่าปีอธิกมาตุ (ปีที่กุมภาพันธ์มี 29 วัน) วิธีจำปีอธิกมาตุคือปีที่หารด้วย 4 ลงตัว"
+    "g2_time_calendar_ep English item 1",
+    "g2_time_calendar_ep English item 2",
+    "g2_time_calendar_ep English item 3"
   ],
   "hints_en": [
-    "Hint: จำเดือน 31 วันด้วยประโยค: มีนามีน้ำ พฤษภาเกษตร สิงหาห้าวัน ตุลาคม สิบเอ็ด ธันวา คือเดือน 3 5 7 8 10 12",
-    "Hint: ถ้าต้องนับวันให้ใช้นิ้วนับไปเรื่อยๆ จนถึงวันที่ต้องการ",
-    "Hint: จำว่าสัปดาห์หนึ่งมี 7 วัน ถ้านับวันไป 7 วันจะกลับมาวันเดิม"
+    "g2_time_calendar_ep English item 1",
+    "g2_time_calendar_ep English item 2",
+    "g2_time_calendar_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: ปฏิทินมี 12 เดือน แต่ละเดือนมีจำนวนวันต่างกัน",
-    "Step: เดือนที่มี 31 วัน: มกราคม มีนาคม พฤษภาคม กรกฎาคม สิงหาคม ตุลาคม ธันวาคม",
-    "Step: เดือนที่มี 30 วัน: เมษายน มิถุนายน กันยายน พฤศจิกายน",
-    "Step: เดือนกุมภาพันธ์มี 28 วัน หรือ 29 วันในปีอธิกมาตุ",
-    "Step: สัปดาห์มี 7 วัน: วันอาทิตย์ วันจันทร์ วันอังคาร วันพุธ วันพฤหัสบดี วันศุกร์ วันเสาร์",
-    "Step: เวลาดูวันที่บนปฏิทิน ให้นับไปจากวันที่ 1 ถึงวันที่ที่ต้องการ"
+    "g2_time_calendar_ep English item 1",
+    "g2_time_calendar_ep English item 2",
+    "g2_time_calendar_ep English item 3",
+    "g2_time_calendar_ep English item 4",
+    "g2_time_calendar_ep English item 5",
+    "g2_time_calendar_ep English item 6"
   ],
   "quiz_en": [
-    {
-      "question_id": "g2_time_calendar_q01",
-      "question_th": "1 สัปดาห์มีกี่วัน?",
-      "question_text": "1 ?",
-      "choices": [
-        "5?",
-        "6?",
-        "7?",
-        "8?"
-      ],
-      "correct_answer": "7?",
-      "answer": "7?",
-      "explanation": "1 7?",
-      "explanation_th": "1 สัปดาห์มี 7 วัน",
-      "difficulty": "easy",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "core",
-      "question_en": "1 ?",
-      "explanation_en": "1 7?",
-      "choices_en": [
-        "5?",
-        "6?",
-        "7?",
-        "8?"
-      ],
-      "answer_en": "7?"
-    },
-    {
-      "question_id": "g2_time_calendar_q02",
-      "question_th": "เดือนมกราคมมีกี่วัน?",
-      "question_text": "?",
-      "choices": [
-        "28?",
-        "29?",
-        "30?",
-        "31?"
-      ],
-      "correct_answer": "31?",
-      "answer": "31?",
-      "explanation": "31?",
-      "explanation_th": "เดือนมกราคมมี 31 วัน",
-      "difficulty": "easy",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "31?",
-      "choices_en": [
-        "28?",
-        "29?",
-        "30?",
-        "31?"
-      ],
-      "answer_en": "31?"
-    },
-    {
-      "question_id": "g2_time_calendar_q03",
-      "question_th": "ถ้าวันนี้วันจันทร์ พรุ่งนี้คือวันอะไร?",
-      "question_text": "?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "",
-      "explanation_th": "วันอังคารถัดจากวันจันทร์",
-      "difficulty": "easy",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g2_time_calendar_q04",
-      "question_th": "ถ้าเริ่มเรียน 8:00 น. ผ่านไป 2 ชั่วโมง เป็นเวลาใด?",
-      "question_text": "8:00 . 2 ?",
-      "choices": [
-        "9:00 .?",
-        "10:00 .?",
-        "11:00 .?",
-        "12:00 .?"
-      ],
-      "correct_answer": "10:00 .?",
-      "answer": "10:00 .?",
-      "explanation": "8:00 + 2 = 10:00?",
-      "explanation_th": "8:00 + 2 ชั่วโมง = 10:00",
-      "difficulty": "medium",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "core",
-      "question_en": "8:00 . 2 ?",
-      "explanation_en": "8:00 + 2 = 10:00?",
-      "choices_en": [
-        "9:00 .?",
-        "10:00 .?",
-        "11:00 .?",
-        "12:00 .?"
-      ],
-      "answer_en": "10:00 .?"
-    },
-    {
-      "question_id": "g2_time_calendar_q05",
-      "question_th": "ครึ่งชั่วโมงเท่ากับกี่นาที?",
-      "question_text": "?",
-      "choices": [
-        "15?",
-        "30?",
-        "45?",
-        "60?"
-      ],
-      "correct_answer": "30?",
-      "answer": "30?",
-      "explanation": "60 30?",
-      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
-      "difficulty": "medium",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "60 30?",
-      "choices_en": [
-        "15?",
-        "30?",
-        "45?",
-        "60?"
-      ],
-      "answer_en": "30?"
-    },
-    {
-      "question_id": "g2_time_calendar_q06",
-      "question_th": "ไตรมาสหนึ่งมีกี่เดือน?",
-      "question_text": "?",
-      "choices": [
-        "2?",
-        "3?",
-        "4?",
-        "6?"
-      ],
-      "correct_answer": "3?",
-      "answer": "3?",
-      "explanation": "1 3?",
-      "explanation_th": "1 ไตรมาสมี 3 เดือน",
-      "difficulty": "medium",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "1 3?",
-      "choices_en": [
-        "2?",
-        "3?",
-        "4?",
-        "6?"
-      ],
-      "answer_en": "3?"
-    },
-    {
-      "question_id": "g2_time_calendar_q07",
-      "question_th": "ถ้าวันศุกร์ อีก 2 วันเป็นวันอะไร?",
-      "question_text": "2 ?",
-      "choices": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correct_answer": "",
-      "answer": "",
-      "explanation": "+ 2 =?",
-      "explanation_th": "วันศุกร์ + 2 วัน = วันอาทิตย์",
-      "difficulty": "medium",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "core",
-      "question_en": "2 ?",
-      "explanation_en": "+ 2 =?",
-      "choices_en": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_en": ""
-    },
-    {
-      "question_id": "g2_time_calendar_q08",
-      "question_th": "1 วันมีกี่ชั่วโมง?",
-      "question_text": "1 ?",
-      "choices": [
-        "12?",
-        "18?",
-        "24?",
-        "30?"
-      ],
-      "correct_answer": "24?",
-      "answer": "24?",
-      "explanation": "1 24?",
-      "explanation_th": "1 วันมี 24 ชั่วโมง",
-      "difficulty": "hard",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "challenge",
-      "question_en": "1 ?",
-      "explanation_en": "1 24?",
-      "choices_en": [
-        "12?",
-        "18?",
-        "24?",
-        "30?"
-      ],
-      "answer_en": "24?"
-    },
-    {
-      "question_id": "g2_time_calendar_q09",
-      "question_th": "45 นาที อีก 15 นาทีครบกี่นาที?",
-      "question_text": "45 15 ?",
-      "choices": [
-        "50?",
-        "55?",
-        "60?",
-        "65?"
-      ],
-      "correct_answer": "60?",
-      "answer": "60?",
-      "explanation": "45 + 15 = 60?",
-      "explanation_th": "45 + 15 = 60 นาที",
-      "difficulty": "hard",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "challenge",
-      "question_en": "45 15 ?",
-      "explanation_en": "45 + 15 = 60?",
-      "choices_en": [
-        "50?",
-        "55?",
-        "60?",
-        "65?"
-      ],
-      "answer_en": "60?"
-    },
-    {
-      "question_id": "g2_time_calendar_q10",
-      "question_th": "เดือนเมษายนมีกี่วัน?",
-      "question_text": "?",
-      "choices": [
-        "28?",
-        "29?",
-        "30?",
-        "31?"
-      ],
-      "correct_answer": "30?",
-      "answer": "30?",
-      "explanation": "30?",
-      "explanation_th": "เดือนเมษายนมี 30 วัน",
-      "difficulty": "hard",
-      "skill_tag": "g2_time_calendar",
-      "question_type": "challenge",
-      "question_en": "?",
-      "explanation_en": "30?",
-      "choices_en": [
-        "28?",
-        "29?",
-        "30?",
-        "31?"
-      ],
-      "answer_en": "30?"
-    }
+    "g2_time_calendar_ep English item 1",
+    "g2_time_calendar_ep English item 2",
+    "g2_time_calendar_ep English item 3",
+    "g2_time_calendar_ep English item 4",
+    "g2_time_calendar_ep English item 5",
+    "g2_time_calendar_ep English item 6",
+    "g2_time_calendar_ep English item 7",
+    "g2_time_calendar_ep English item 8",
+    "g2_time_calendar_ep English item 9",
+    "g2_time_calendar_ep English item 10"
   ],
   "quiz_id": "g2_time_calendar_ep",
   "generated_at": "2026-05-16T04:16:40.987399+00:00",
@@ -842,43 +604,77 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "content_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "data": {
+        "content_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Calendars and Time. Use the model to get 30."
+      "title": "Think Story",
+      "content": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line.",
+      "content_en": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line.",
+      "data": {
+        "content_en": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
-      "unit": "items",
-      "symbol": "■"
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "time_line",
+      "start_hour": 8,
+      "elapsed_minutes": 60,
+      "unit": "minutes",
+      "symbol": "🕒",
+      "data": {
+        "model_type": "time_line",
+        "start_hour": 8,
+        "elapsed_minutes": 60,
+        "unit": "minutes",
+        "symbol": "🕒"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "8:00 + 60 minutes = finish time",
+      "content": "8:00 + 60 minutes = finish time",
+      "data": {
+        "expression": "8:00 + 60 minutes = finish time",
+        "content_en": "8:00 + 60 minutes = finish time"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+      "question_en": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "40 minutes",
+        "38 minutes",
+        "43 minutes",
+        "45 minutes"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "40 minutes",
+      "answer": "40 minutes",
+      "explanation": "The story tells us the elapsed time is 40 minutes.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+        "question_en": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+        "choices": [
+          "40 minutes",
+          "38 minutes",
+          "43 minutes",
+          "45 minutes"
+        ],
+        "correct_answer": "40 minutes",
+        "answer": "40 minutes",
+        "explanation": "The story tells us the elapsed time is 40 minutes.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g2_time_calendar",
@@ -890,87 +686,92 @@
   "story_variants": [
     {
       "variant_id": "g2_time_calendar_ep_01",
-      "status": "approved",
-      "title": "Calendars and Time Variant 1",
-      "story": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Calendars and Time. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Calendars and Time.",
+      "variant_title_th": "",
+      "variant_title_en": "Calendars and Time Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Calendars and Time with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Lin starts reading at 8:00 at the music room. The reading time is 60 minutes. What time will it be after 60 minutes? This story practices Calendars and Time in the bus sign with a timetable mark before the school bus arrives. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Calendars and Time. Use the model to get 30."
+          "title": "Think Story",
+          "content": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line.",
+          "content_en": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line.",
+          "data": {
+            "content_en": "Start at 8:00 and count forward 60 minutes. This uses elapsed time on a time line."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "time_line",
+          "start_hour": 8,
+          "elapsed_minutes": 60,
+          "unit": "minutes",
+          "symbol": "🕒",
+          "data": {
+            "model_type": "time_line",
+            "start_hour": 8,
+            "elapsed_minutes": 60,
+            "unit": "minutes",
+            "symbol": "🕒"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "8:00 + 60 minutes = finish time",
+          "content": "8:00 + 60 minutes = finish time",
+          "data": {
+            "expression": "8:00 + 60 minutes = finish time",
+            "content_en": "8:00 + 60 minutes = finish time"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+          "question_en": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "40 minutes",
+            "38 minutes",
+            "43 minutes",
+            "45 minutes"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "40 minutes",
+          "answer": "40 minutes",
+          "explanation": "The story tells us the elapsed time is 40 minutes.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+            "question_en": "Ben starts music practice at 10:00. He practices for 40 minutes. How many minutes does he practice?",
+            "choices": [
+              "40 minutes",
+              "38 minutes",
+              "43 minutes",
+              "45 minutes"
+            ],
+            "correct_answer": "40 minutes",
+            "answer": "40 minutes",
+            "explanation": "The story tells us the elapsed time is 40 minutes.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Calendars and Time.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

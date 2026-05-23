@@ -4,224 +4,177 @@
   "program": "EP",
   "questions": [
     {
-      "question_id": "g4_fractions_ep_q001",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 4 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
+      "question_id": "g4_fractions_ep_q01",
+      "question_text": "Case 1: A melon is cut into 8 equal pieces. Mina eats 6 pieces. What fraction did she eat?",
+      "question_text_en": "Case 1: A melon is cut into 8 equal pieces. Mina eats 6 pieces. What fraction did she eat?",
       "choices": [
-        "1/4",
-        "2/4",
-        "4/2",
-        "3/4"
-      ],
-      "correct_answer": "2/4",
-      "explanation_en": "She gives 2 pieces out of 4 equal pieces, so the fraction is 2/4.",
-      "explanation_th": ""
-    },
-    {
-      "question_id": "g4_fractions_ep_q002",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 5 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
-      "choices": [
-        "1/5",
-        "2/5",
-        "5/2",
-        "3/5"
-      ],
-      "correct_answer": "2/5",
-      "explanation_en": "She gives 2 pieces out of 5 equal pieces, so the fraction is 2/5.",
-      "explanation_th": ""
-    },
-    {
-      "question_id": "g4_fractions_ep_q003",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 6 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
-      "choices": [
-        "1/6",
-        "2/6",
-        "6/2",
-        "3/6"
-      ],
-      "correct_answer": "2/6",
-      "explanation_en": "She gives 2 pieces out of 6 equal pieces, so the fraction is 2/6.",
-      "explanation_th": ""
-    },
-    {
-      "question_id": "g4_fractions_ep_q004",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "medium",
-      "confidence_role": "build_confidence",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 7 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
-      "choices": [
-        "1/7",
-        "2/7",
-        "7/2",
-        "3/7"
-      ],
-      "correct_answer": "2/7",
-      "explanation_en": "She gives 2 pieces out of 7 equal pieces, so the fraction is 2/7.",
-      "explanation_th": ""
-    },
-    {
-      "question_id": "g4_fractions_ep_q005",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "challenge",
-      "routine_level": "non_routine",
-      "difficulty": "medium",
-      "confidence_role": "stretch_thinking",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 8 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
-      "choices": [
-        "1/8",
+        "6/8",
         "2/8",
+        "8/6",
+        "6/2"
+      ],
+      "correct_answer": "6/8",
+      "answer": "6/8",
+      "explanation": "She ate 6 of 8 equal pieces, so the fraction is 6/8.",
+      "explanation_en": "She ate 6 of 8 equal pieces, so the fraction is 6/8.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "g4_fractions_ep_q02",
+      "question_text": "Case 2: A melon is cut into 7 equal pieces. Mina eats 5 pieces. What fraction did she eat?",
+      "question_text_en": "Case 2: A melon is cut into 7 equal pieces. Mina eats 5 pieces. What fraction did she eat?",
+      "choices": [
+        "5/7",
+        "2/7",
+        "7/5",
+        "5/2"
+      ],
+      "correct_answer": "5/7",
+      "answer": "5/7",
+      "explanation": "She ate 5 of 7 equal pieces, so the fraction is 5/7.",
+      "explanation_en": "She ate 5 of 7 equal pieces, so the fraction is 5/7.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "g4_fractions_ep_q03",
+      "question_text": "Case 3: A melon is cut into 7 equal pieces. Mina eats 5 pieces. What fraction did she eat?",
+      "question_text_en": "Case 3: A melon is cut into 7 equal pieces. Mina eats 5 pieces. What fraction did she eat?",
+      "choices": [
+        "5/7",
+        "2/7",
+        "7/5",
+        "5/2"
+      ],
+      "correct_answer": "5/7",
+      "answer": "5/7",
+      "explanation": "She ate 5 of 7 equal pieces, so the fraction is 5/7.",
+      "explanation_en": "She ate 5 of 7 equal pieces, so the fraction is 5/7.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "g4_fractions_ep_q04",
+      "question_text": "Case 4: A melon is cut into 8 equal pieces. Mina eats 2 pieces. What fraction did she eat?",
+      "question_text_en": "Case 4: A melon is cut into 8 equal pieces. Mina eats 2 pieces. What fraction did she eat?",
+      "choices": [
+        "2/8",
+        "6/8",
         "8/2",
-        "3/8"
+        "2/6"
       ],
       "correct_answer": "2/8",
-      "explanation_en": "She gives 2 pieces out of 8 equal pieces, so the fraction is 2/8.",
-      "explanation_th": ""
+      "answer": "2/8",
+      "explanation": "She ate 2 of 8 equal pieces, so the fraction is 2/8.",
+      "explanation_en": "She ate 2 of 8 equal pieces, so the fraction is 2/8.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "easy"
     },
     {
-      "question_id": "g4_fractions_ep_q006",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 9 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
+      "question_id": "g4_fractions_ep_q05",
+      "question_text": "Case 5: A melon is cut into 7 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
+      "question_text_en": "Case 5: A melon is cut into 7 equal pieces. Mina eats 1 pieces. What fraction did she eat?",
       "choices": [
-        "1/9",
+        "1/7",
+        "6/7",
+        "7/1",
+        "1/6"
+      ],
+      "correct_answer": "1/7",
+      "answer": "1/7",
+      "explanation": "She ate 1 of 7 equal pieces, so the fraction is 1/7.",
+      "explanation_en": "She ate 1 of 7 equal pieces, so the fraction is 1/7.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "g4_fractions_ep_q06",
+      "question_text": "Case 6: A melon is cut into 7 equal pieces. Mina eats 5 pieces. What fraction did she eat?",
+      "question_text_en": "Case 6: A melon is cut into 7 equal pieces. Mina eats 5 pieces. What fraction did she eat?",
+      "choices": [
+        "5/7",
+        "2/7",
+        "7/5",
+        "5/2"
+      ],
+      "correct_answer": "5/7",
+      "answer": "5/7",
+      "explanation": "She ate 5 of 7 equal pieces, so the fraction is 5/7.",
+      "explanation_en": "She ate 5 of 7 equal pieces, so the fraction is 5/7.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "g4_fractions_ep_q07",
+      "question_text": "Case 7: A melon is cut into 8 equal pieces. Mina eats 2 pieces. What fraction did she eat?",
+      "question_text_en": "Case 7: A melon is cut into 8 equal pieces. Mina eats 2 pieces. What fraction did she eat?",
+      "choices": [
+        "2/8",
+        "6/8",
+        "8/2",
+        "2/6"
+      ],
+      "correct_answer": "2/8",
+      "answer": "2/8",
+      "explanation": "She ate 2 of 8 equal pieces, so the fraction is 2/8.",
+      "explanation_en": "She ate 2 of 8 equal pieces, so the fraction is 2/8.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "g4_fractions_ep_q08",
+      "question_text": "Case 8: A melon is cut into 9 equal pieces. Mina eats 7 pieces. What fraction did she eat?",
+      "question_text_en": "Case 8: A melon is cut into 9 equal pieces. Mina eats 7 pieces. What fraction did she eat?",
+      "choices": [
+        "7/9",
         "2/9",
-        "9/2",
-        "3/9"
+        "9/7",
+        "7/2"
       ],
-      "correct_answer": "2/9",
-      "explanation_en": "She gives 2 pieces out of 9 equal pieces, so the fraction is 2/9.",
-      "explanation_th": ""
+      "correct_answer": "7/9",
+      "answer": "7/9",
+      "explanation": "She ate 7 of 9 equal pieces, so the fraction is 7/9.",
+      "explanation_en": "She ate 7 of 9 equal pieces, so the fraction is 7/9.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "medium"
     },
     {
-      "question_id": "g4_fractions_ep_q007",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 10 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
+      "question_id": "g4_fractions_ep_q09",
+      "question_text": "Case 9: A melon is cut into 8 equal pieces. Mina eats 2 pieces. What fraction did she eat?",
+      "question_text_en": "Case 9: A melon is cut into 8 equal pieces. Mina eats 2 pieces. What fraction did she eat?",
       "choices": [
-        "1/10",
-        "2/10",
-        "10/2",
-        "3/10"
+        "2/8",
+        "6/8",
+        "8/2",
+        "2/6"
       ],
-      "correct_answer": "2/10",
-      "explanation_en": "She gives 2 pieces out of 10 equal pieces, so the fraction is 2/10.",
-      "explanation_th": ""
+      "correct_answer": "2/8",
+      "answer": "2/8",
+      "explanation": "She ate 2 of 8 equal pieces, so the fraction is 2/8.",
+      "explanation_en": "She ate 2 of 8 equal pieces, so the fraction is 2/8.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "medium"
     },
     {
-      "question_id": "g4_fractions_ep_q008",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 11 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
+      "question_id": "g4_fractions_ep_q10",
+      "question_text": "Case 10: A melon is cut into 8 equal pieces. Mina eats 2 pieces. What fraction did she eat?",
+      "question_text_en": "Case 10: A melon is cut into 8 equal pieces. Mina eats 2 pieces. What fraction did she eat?",
       "choices": [
-        "1/11",
-        "2/11",
-        "11/2",
-        "3/11"
+        "2/8",
+        "6/8",
+        "8/2",
+        "2/6"
       ],
-      "correct_answer": "2/11",
-      "explanation_en": "She gives 2 pieces out of 11 equal pieces, so the fraction is 2/11.",
-      "explanation_th": ""
-    },
-    {
-      "question_id": "g4_fractions_ep_q009",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "medium",
-      "confidence_role": "build_confidence",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 12 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
-      "choices": [
-        "1/12",
-        "2/12",
-        "12/2",
-        "3/12"
-      ],
-      "correct_answer": "2/12",
-      "explanation_en": "She gives 2 pieces out of 12 equal pieces, so the fraction is 2/12.",
-      "explanation_th": ""
-    },
-    {
-      "question_id": "g4_fractions_ep_q010",
-      "grade_level": 4,
-      "lesson_id": "g4_fractions_ep",
-      "topic_code": "g4_fractions",
-      "skill_code": "g4_fractions_ep",
-      "question_type": "challenge",
-      "routine_level": "non_routine",
-      "difficulty": "medium",
-      "confidence_role": "stretch_thinking",
-      "question_text_th": "",
-      "question_text_en": "Mali cuts one cake into 13 equal pieces. She gives 2 pieces to her friends. What fraction shows the pieces she gives away?",
-      "choices": [
-        "1/13",
-        "2/13",
-        "13/2",
-        "3/13"
-      ],
-      "correct_answer": "2/13",
-      "explanation_en": "She gives 2 pieces out of 13 equal pieces, so the fraction is 2/13.",
-      "explanation_th": ""
+      "correct_answer": "2/8",
+      "answer": "2/8",
+      "explanation": "She ate 2 of 8 equal pieces, so the fraction is 2/8.",
+      "explanation_en": "She ate 2 of 8 equal pieces, so the fraction is 2/8.",
+      "hint_th": "ดูจำนวนชิ้นที่กินเทียบกับทั้งหมด",
+      "difficulty": "medium"
     }
-  ]
+  ],
+  "program_type": "EP",
+  "status": "needs_review",
+  "review_status": "needs_review"
 }

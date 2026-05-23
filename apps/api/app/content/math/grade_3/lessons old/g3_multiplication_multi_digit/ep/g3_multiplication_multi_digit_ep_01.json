@@ -1,0 +1,264 @@
+{
+  "variant_id": "g3_multiplication_multi_digit_ep_01",
+  "variant_title_en": "Multiplication Multi Digit - Variant 1",
+  "status": "needs_review",
+  "title_en": "Multiplication Multi Digit",
+  "story_theme_en": "Olymp planted rose bushes around the classroom garden. She planted them in 12 rows with 3 rose bushes in each row. Olymp wanted to know how many rose bushes she planted in total.",
+  "helper_tip_en": "Read the problem carefully. Circle the important numbers. Then figure out what the question is asking.",
+  "think_story_en": "We have 3 rows and 12 in each row. Use 3 x 12 = 36 bushes.",
+  "explanation_steps_en": [
+    "Find how many rows there are.",
+    "Find how many items are in each row.",
+    "Multiply rows x items-per-row.",
+    "Write the answer with the correct unit.",
+    "Check by drawing an array."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "A farmer planted 15 rows of corn with 4 corns in each row. How many corns?",
+      "solution_en": "15 x 4 = 60 60 corns"
+    }
+  ],
+  "common_mistakes_en": [
+    "Doing the wrong operation.",
+    "Forgetting the unit.",
+    "Reading the problem too quickly."
+  ],
+  "hints_en": [
+    "Read the problem twice before answering.",
+    "Look for clue words.",
+    "Check your answer."
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Olymp planted rose bushes around the classroom garden. She planted them in 12 rows with 3 rose bushes in each row. Olymp wanted to know how many rose bushes she planted in total.",
+      "data": {
+        "content_en": "Olymp planted rose bushes around the classroom garden. She planted them in 12 rows with 3 rose bushes in each row. Olymp wanted to know how many rose bushes she planted in total."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "We have 3 rows and 12 in each row. Use 3 x 12 = 36.",
+      "data": {
+        "content_en": "We have 3 rows and 12 in each row. Use 3 x 12 = 36."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Diagram to Help You Think",
+      "description": "The diagram uses the same items and numbers as the problem",
+      "model_type": "area_model",
+      "rows": 3,
+      "cols": 12,
+      "total": 36,
+      "unit": "bushes",
+      "symbol": "⬜",
+      "data": {
+        "model_type": "area_model",
+        "rows": 3,
+        "cols": 12,
+        "total": 36,
+        "unit": "bushes",
+        "symbol": "⬜"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Write the Number Sentence",
+      "expression": "12 × 3 = 36",
+      "content": "12 × 3 = 36",
+      "data": {
+        "expression": "12 × 3 = 36",
+        "content_en": "12 × 3 = 36"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A farmer planted 15 rows of corn with 4 corns in each row. How many corns?",
+      "choices": [
+        "60 corns",
+        "60 corns",
+        "60 corns",
+        "60 corns"
+      ],
+      "correct_answer": "60 corns",
+      "explanation": "15 x 4 = 60",
+      "data": {
+        "question": "A farmer planted 15 rows of corn with 4 corns in each row. How many corns?",
+        "choices": [
+          "60 corns",
+          "60 corns",
+          "60 corns",
+          "60 corns"
+        ],
+        "correct_answer": "60 corns",
+        "explanation": "15 x 4 = 60"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "multiply",
+      "th": "คูณ",
+      "definition_en": "To add equal groups together"
+    },
+    {
+      "en": "product",
+      "th": "ผลคูณ",
+      "definition_en": "The result of multiplication"
+    },
+    {
+      "en": "rows",
+      "th": "แถว",
+      "definition_en": "Horizontal lines of items"
+    },
+    {
+      "en": "columns",
+      "th": "คอลัมน์",
+      "definition_en": "Vertical lines of items"
+    },
+    {
+      "en": "array",
+      "th": "แถวหน้ากระดาน",
+      "definition_en": "Objects arranged in rows and columns"
+    },
+    {
+      "en": "rose",
+      "th": "กุหลาบ",
+      "definition_en": "A beautiful flower"
+    },
+    {
+      "en": "plant",
+      "th": "ปลูก",
+      "definition_en": "To put a plant into the ground"
+    },
+    {
+      "en": "garden",
+      "th": "สวน",
+      "definition_en": "An area where plants are grown"
+    },
+    {
+      "en": "in each row",
+      "th": "ในแต่ละแถว",
+      "definition_en": "For every row"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "A farmer planted 14 rows of corn with 3 corns in each row. How many corns in total?",
+      "choices": [
+        "17 corns",
+        "42 corns",
+        "11 corns",
+        "41 corns"
+      ],
+      "answer": "42 corns",
+      "explanation": "14 x 3 = 42"
+    },
+    {
+      "q": "Olymp arranged 16 rows of flowers with 4 flowers in each row. How many flowers?",
+      "choices": [
+        "20 flowers",
+        "64 flowers",
+        "12 flowers",
+        "48 flowers"
+      ],
+      "answer": "64 flowers",
+      "explanation": "16 x 4 = 64"
+    },
+    {
+      "q": "Lin planted 13 rows of lettuce with 5 lettuces in each row. How many lettuces?",
+      "choices": [
+        "18 lettuces",
+        "65 lettuces",
+        "8 lettuces",
+        "75 lettuces"
+      ],
+      "answer": "65 lettuces",
+      "explanation": "13 x 5 = 65"
+    },
+    {
+      "q": "An orchard has 11 rows of apple trees with 6 trees in each row. How many trees?",
+      "choices": [
+        "17 trees",
+        "66 trees",
+        "5 trees",
+        "56 trees"
+      ],
+      "answer": "66 trees",
+      "explanation": "11 x 6 = 66"
+    },
+    {
+      "q": "Tai put 12 marbles in each of 7 bags. How many marbles in total?",
+      "choices": [
+        "19 marbles",
+        "84 marbles",
+        "5 marbles",
+        "72 marbles"
+      ],
+      "answer": "84 marbles",
+      "explanation": "12 x 7 = 84"
+    },
+    {
+      "q": "A bakery placed 18 cupcakes in each of 4 boxes. How many cupcakes?",
+      "choices": [
+        "22 cupcakes",
+        "14 cupcakes",
+        "72 cupcakes",
+        "68 cupcakes"
+      ],
+      "answer": "72 cupcakes",
+      "explanation": "18 x 4 = 72"
+    },
+    {
+      "q": "Lin read 15 pages each day for 3 days. How many pages did Lin read?",
+      "choices": [
+        "18 pages",
+        "12 pages",
+        "45 pages",
+        "35 pages"
+      ],
+      "answer": "45 pages",
+      "explanation": "15 x 3 = 45"
+    },
+    {
+      "q": "A school has 17 classrooms with 4 windows each. How many windows in total?",
+      "choices": [
+        "21 windows",
+        "68 windows",
+        "13 windows",
+        "61 windows"
+      ],
+      "answer": "68 windows",
+      "explanation": "17 x 4 = 68"
+    },
+    {
+      "q": "Chef cooked 19 dumplings in each of 5 steamer baskets. How many dumplings?",
+      "choices": [
+        "14 dumplings",
+        "24 dumplings",
+        "95 dumplings",
+        "85 dumplings"
+      ],
+      "answer": "95 dumplings",
+      "explanation": "19 x 5 = 95"
+    },
+    {
+      "q": "A gardener planted 20 rows of sunflowers with 3 sunflowers in each row. How many?",
+      "choices": [
+        "23 sunflowers",
+        "60 sunflowers",
+        "17 sunflowers",
+        "63 sunflowers"
+      ],
+      "answer": "60 sunflowers",
+      "explanation": "20 x 3 = 60"
+    }
+  ],
+  "explanation_en": "To solve this problem, identify the key numbers, choose the right operation, calculate carefully, and always check your answer. Remember to include the correct unit."
+}

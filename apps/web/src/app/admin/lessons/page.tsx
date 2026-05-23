@@ -16,8 +16,11 @@ export default function AdminLessonsPage() {
   const [error, setError] = useState('')
 
   async function load() {
-    const data = await getAdminLessons({})
-    setLessons(data || [])
+    const [thData, epData] = await Promise.all([
+      getAdminLessons({ language: 'TH' }),
+      getAdminLessons({ language: 'EP' }),
+    ])
+    setLessons([...(thData || []), ...(epData || [])])
   }
 
   useEffect(() => {
@@ -103,7 +106,9 @@ export default function AdminLessonsPage() {
                     <div>
                       <p className="font-bold text-gray-900">{lesson.title || lesson.title_th || lesson.lesson_id}</p>
                       <p className="font-mono text-xs text-gray-400">{lesson.lesson_id}</p>
-                      <p className="text-xs text-gray-500">{lesson.topic || '-'} | {lesson.status} | issues: {lesson.issue_count ?? 0} | approved tests: {lesson.approved_test_count ?? 0}</p>
+                      <p className="text-xs text-gray-500">{lesson.topic_folder || lesson.topic || '-'} | {lesson.status} | variants: {lesson.approved_variant_count ?? lesson.variant_count ?? '-'} / {lesson.variant_count ?? '-'} | approved tests: {lesson.approved_test_count ?? 0}</p>
+                      {lesson.source_folder && <p className="mt-1 font-mono text-[11px] text-gray-400">{lesson.source_folder}</p>}
+                      {lesson.variant_files?.length ? <p className="mt-1 text-[11px] text-gray-500">files: {lesson.variant_files.join(', ')}</p> : null}
                     </div>
                     <div className="flex flex-wrap items-center gap-2">
                       <Link className={buttonClass} href={`/dashboard/lessons/${lesson.lesson_id}`}>preview</Link>

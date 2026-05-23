@@ -1,0 +1,262 @@
+{
+  "variant_id": "g3_division_intro_ep_01",
+  "variant_title_en": "Division Intro - Variant 1",
+  "status": "needs_review",
+  "title_en": "Division Intro",
+  "story_theme_en": "Chef Ai made 30 chocolate chip cookies at the bakery. She put them in boxes with 6 cookies in each box. Chef Ai wondered how many boxes she would need. Division helps us share things equally into groups.",
+  "helper_tip_en": "Read the problem carefully. Circle the important numbers. Then figure out what the question is asking.",
+  "think_story_en": "We have 5 rows and 6 in each row. Use 5 x 6 = 5 boxes.",
+  "explanation_steps_en": [
+    "Division is sharing equally.",
+    "Look at the dividend (total) and divisor (size of each group).",
+    "Divide the total by the size of each group.",
+    "Write the quotient as your answer.",
+    "Check: divisor x quotient = dividend."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Chef filled 24 cupcakes into boxes of 4. How many boxes are there?",
+      "solution_en": "24 ÷ 4 = 6 6 boxes"
+    }
+  ],
+  "common_mistakes_en": [
+    "Doing the wrong operation.",
+    "Forgetting the unit.",
+    "Reading the problem too quickly."
+  ],
+  "hints_en": [
+    "Read the problem twice before answering.",
+    "Look for clue words.",
+    "Check your answer."
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Chef Ai made 30 chocolate chip cookies at the bakery. She put them in boxes with 6 cookies in each box. Chef Ai wondered how many boxes she would need. Division helps us share things equally into groups.",
+      "data": {
+        "content_en": "Chef Ai made 30 chocolate chip cookies at the bakery. She put them in boxes with 6 cookies in each box. Chef Ai wondered how many boxes she would need. Division helps us share things equally into groups."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "We have 5 rows and 6 in each row. Use 5 x 6 = 5.",
+      "data": {
+        "content_en": "We have 5 rows and 6 in each row. Use 5 x 6 = 5."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Diagram to Help You Think",
+      "description": "Draw circles to represent equal groups",
+      "model_type": "division_model",
+      "total_items": 30,
+      "items_per_group": 6,
+      "num_groups": 5,
+      "unit": "boxes",
+      "data": {
+        "model_type": "division_model",
+        "total_items": 30,
+        "items_per_group": 6,
+        "num_groups": 5,
+        "unit": "boxes"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Write the Number Sentence",
+      "expression": "30 ÷ 6 = 5",
+      "content": "30 ÷ 6 = 5",
+      "data": {
+        "expression": "30 ÷ 6 = 5",
+        "content_en": "30 ÷ 6 = 5"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Chef filled 24 cupcakes into boxes of 4. How many boxes are there?",
+      "choices": [
+        "6 boxes",
+        "6 boxes",
+        "6 boxes",
+        "6 boxes"
+      ],
+      "correct_answer": "6 boxes",
+      "explanation": "24 ÷ 4 = 6",
+      "data": {
+        "question": "Chef filled 24 cupcakes into boxes of 4. How many boxes are there?",
+        "choices": [
+          "6 boxes",
+          "6 boxes",
+          "6 boxes",
+          "6 boxes"
+        ],
+        "correct_answer": "6 boxes",
+        "explanation": "24 ÷ 4 = 6"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "divide",
+      "th": "หาร",
+      "definition_en": "To share equally into groups"
+    },
+    {
+      "en": "division",
+      "th": "การหาร",
+      "definition_en": "The operation of dividing numbers into equal groups"
+    },
+    {
+      "en": "equal groups",
+      "th": "กลุ่มเท่าๆ กัน",
+      "definition_en": "Groups that have the same number of items"
+    },
+    {
+      "en": "quotient",
+      "th": "ผลหาร",
+      "definition_en": "The result of division"
+    },
+    {
+      "en": "divisor",
+      "th": "ตัวหาร",
+      "definition_en": "The number we divide by"
+    },
+    {
+      "en": "dividend",
+      "th": "ตัวตั้ง",
+      "definition_en": "The number being divided"
+    },
+    {
+      "en": "remainder",
+      "th": "เศษ",
+      "definition_en": "What is left over when division is not exact"
+    },
+    {
+      "en": "cookies",
+      "th": "คุกกี้",
+      "definition_en": "Sweet baked treats"
+    },
+    {
+      "en": "boxes",
+      "th": "กล่อง",
+      "definition_en": "Containers used to hold items"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "Chef put 18 cookies into boxes of 3. How many boxes are there?",
+      "choices": [
+        "3 boxes",
+        "5 boxes",
+        "6 boxes",
+        "9 boxes"
+      ],
+      "answer": "6 boxes",
+      "explanation": "18 divided by 3 = 6"
+    },
+    {
+      "q": "Teacher had 24 pencils and gave 4 to each student. How many students got pencils?",
+      "choices": [
+        "4 students",
+        "6 students",
+        "8 students",
+        "20 students"
+      ],
+      "answer": "6 students",
+      "explanation": "24 divided by 4 = 6"
+    },
+    {
+      "q": "A baker put 20 cupcakes on trays with 5 per tray. How many trays?",
+      "choices": [
+        "4 trays",
+        "5 trays",
+        "10 trays",
+        "15 trays"
+      ],
+      "answer": "4 trays",
+      "explanation": "20 divided by 5 = 4"
+    },
+    {
+      "q": "Mom shared 28 stickers equally among 7 friends. How many each?",
+      "choices": [
+        "3 stickers",
+        "4 stickers",
+        "5 stickers",
+        "7 stickers"
+      ],
+      "answer": "4 stickers",
+      "explanation": "28 divided by 7 = 4"
+    },
+    {
+      "q": "A farmer put 36 eggs into cartons of 6. How many cartons?",
+      "choices": [
+        "5 cartons",
+        "6 cartons",
+        "7 cartons",
+        "8 cartons"
+      ],
+      "answer": "6 cartons",
+      "explanation": "36 divided by 6 = 6"
+    },
+    {
+      "q": "Lin read 45 pages in 5 days equally. How many pages per day?",
+      "choices": [
+        "5 pages",
+        "7 pages",
+        "8 pages",
+        "9 pages"
+      ],
+      "answer": "9 pages",
+      "explanation": "45 divided by 5 = 9"
+    },
+    {
+      "q": "Chef packed 40 cookies into boxes of 8. How many boxes?",
+      "choices": [
+        "4 boxes",
+        "5 boxes",
+        "6 boxes",
+        "8 boxes"
+      ],
+      "answer": "5 boxes",
+      "explanation": "40 divided by 8 = 5"
+    },
+    {
+      "q": "Teacher had 48 stars and gave 6 to each child. How many children?",
+      "choices": [
+        "6 children",
+        "8 children",
+        "10 children",
+        "12 children"
+      ],
+      "answer": "8 children",
+      "explanation": "48 divided by 6 = 8"
+    },
+    {
+      "q": "A garden has 56 flowers in 7 rows. How many flowers per row?",
+      "choices": [
+        "6 flowers",
+        "7 flowers",
+        "8 flowers",
+        "9 flowers"
+      ],
+      "answer": "8 flowers",
+      "explanation": "56 divided by 7 = 8"
+    },
+    {
+      "q": "Mom cut 72 cm ribbon into 9 equal pieces. How long is each piece?",
+      "choices": [
+        "6 cm",
+        "7 cm",
+        "8 cm",
+        "9 cm"
+      ],
+      "answer": "8 cm",
+      "explanation": "72 divided by 9 = 8"
+    }
+  ],
+  "explanation_en": "To solve this problem, identify the key numbers, choose the right operation, calculate carefully, and always check your answer. Remember to include the correct unit."
+}

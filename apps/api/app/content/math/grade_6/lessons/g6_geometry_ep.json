@@ -51,52 +51,88 @@
   "lesson_variants": [
     {
       "variant_id": "g6_geometry_ep_01",
-      "variant_title_th": "Geometry Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Geometry Variant 1",
-      "story_theme_th": "Ton is learning Geometry with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning Geometry with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for Geometry.",
+      "story_theme_th": "",
+      "story_theme_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Geometry with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+          "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+          "data": {
+            "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Geometry. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+          "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+          "data": {
+            "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 42,
+          "part_b": 25,
+          "total": 67,
           "unit": "items",
-          "symbol": "■"
+          "symbol": "🎟️",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 42,
+            "part_b": 25,
+            "total": 67,
+            "unit": "items",
+            "symbol": "🎟️"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "42 + 25 = 67 items",
+          "content": "42 + 25 = 67 items",
+          "data": {
+            "expression": "42 + 25 = 67 items",
+            "content_en": "42 + 25 = 67 items"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "82 sheets",
+            "80 sheets",
+            "85 sheets",
+            "87 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "82 sheets",
+          "answer": "82 sheets",
+          "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+            "choices": [
+              "82 sheets",
+              "80 sheets",
+              "85 sheets",
+              "87 sheets"
+            ],
+            "correct_answer": "82 sheets",
+            "answer": "82 sheets",
+            "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -107,7 +143,7 @@
   "cover_emoji": "📐",
   "cover_color": "blue",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -116,9 +152,9 @@
   "lesson_intro_th": "พี่อลิสสร้างกล่องของขวัญทรงสี่เหลี่ยมเพื่อใส่ของขวัญ กว้าง 20 ซม. ยาว 30 ซม. สูง 15 ซม. มีพื้นที่ผิวและปริมาตรเท่าไหร่? 🎁",
   "concept_explanation_th": "พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว สี่เหลี่ยมจัตุรัส = ด้าน² พื้นที่สามเหลี่ยม = 1/2 × ฐาน × สูง พื้นที่วงกลม = π × รัศมี² (π ≈ 3.14) ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง ปริมาตรลูกบาศก์ = ด้าน³ พื้นที่ผิวปริซึม = ผลรวมของพื้นที่ทุกด้าน มุมภายในสามเหลี่ยมรวมกัน = 180° มุมภายในสี่เหลี่ยมรวมกัน = 360°",
   "singapore_math_model": {
-    "type": "bar_model",
-    "model_type": "bar_model",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -535,317 +571,41 @@
   ],
   "title_en": "Geometry",
   "objective_en": "Learn Geometry with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Look! 20 + 30 + 15 — can you find the answer?",
+  "story_intro_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: หาพื้นที่วงกลม",
-      "question_en": "7 . ? (π = 3.14)",
-      "solution_en": "3.14 × 7² = 3.14 × 49 = 153.86 ✅?"
-    },
-    {
-      "title_en": "Example: หาปริมาตรปริซึม",
-      "question_en": "8 . 12 . 5 . ?",
-      "solution_en": "8 × 12 × 5 = 480 balls ✅?"
-    },
-    {
-      "title_en": "Example: หามุมในสามเหลี่ยม",
-      "question_en": "2 50° 60° ?",
-      "solution_en": "180° - 50° - 60° = 70° ✅"
-    },
-    {
-      "title_en": "Example: หาพื้นที่สามเหลี่ยม",
-      "question_en": "10 . 8 . ?",
-      "solution_en": "1/2 × 10 × 8 = 40 ✅?"
-    }
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3",
+    "g6_geometry_ep English item 4"
   ],
   "common_mistakes_en": [
-    "Mistake: ใช้สูตรพื้นที่วงกลมผิด โดยใช้เส้นผ่านศูนย์กลางแทนรัศมี หรือลืมยกกำลังสอง",
-    "Mistake: ลืม ÷2 ในสูตรพื้นที่สามเหลี่ยม",
-    "Mistake: คำนวณมุมภายในรูปทรงผิด โดยไม่รู้ว่าสามเหลี่ยมรวม 180° สี่เหลี่ยมรวม 360°"
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3"
   ],
   "hints_en": [
-    "Hint: พื้นที่วงกลม = πr² จำว่า r ต้องยกกำลังสองก่อนคูณ π",
-    "Hint: สามเหลี่ยมมุมรวม 180° สี่เหลี่ยมมุมรวม 360°",
-    "Hint: ปริมาตรปริซึม = พื้นที่ฐาน × สูง"
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว สี่เหลี่ยมจัตุรัส = ด้าน²",
-    "Step: พื้นที่สามเหลี่ยม = 1/2 × ฐาน × สูง พื้นที่วงกลม = π × รัศมี² (π ≈ 3.14)",
-    "Step: ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง ปริมาตรลูกบาศก์ = ด้าน³",
-    "Step: พื้นที่ผิวปริซึม = ผลรวมของพื้นที่ทุกด้าน",
-    "Step: มุมภายในสามเหลี่ยมรวมกัน = 180° มุมภายในสี่เหลี่ยมรวมกัน = 360°"
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3",
+    "g6_geometry_ep English item 4",
+    "g6_geometry_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g6_geometry_q01",
-      "question_th": "มุมฉากมีขนาดกี่องศา?",
-      "question_text": "?",
-      "choices": [
-        "45°",
-        "90°",
-        "120°",
-        "180°"
-      ],
-      "correct_answer": "90°",
-      "answer": "90°",
-      "explanation": "90°?",
-      "explanation_th": "มุมฉากมีขนาด 90°",
-      "difficulty": "easy",
-      "skill_tag": "g6_geometry",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "90°?",
-      "choices_en": [
-        "45°",
-        "90°",
-        "120°",
-        "180°"
-      ],
-      "answer_en": "90°"
-    },
-    {
-      "question_id": "g6_geometry_q02",
-      "question_th": "มุมแหลมมีขนาดอย่างไร?",
-      "question_text": "?",
-      "choices": [
-        "90°?",
-        "90°?",
-        "90° 180°?",
-        "180°?"
-      ],
-      "correct_answer": "90°?",
-      "answer": "90°?",
-      "explanation": "90°?",
-      "explanation_th": "มุมแหลมน้อยกว่า 90°",
-      "difficulty": "easy",
-      "skill_tag": "g6_geometry",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "90°?",
-      "choices_en": [
-        "90°?",
-        "90°?",
-        "90° 180°?",
-        "180°?"
-      ],
-      "answer_en": "90°?"
-    },
-    {
-      "question_id": "g6_geometry_q03",
-      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
-      "question_text": "fruits ?",
-      "choices": [
-        "90°",
-        "180°",
-        "270°",
-        "360°"
-      ],
-      "correct_answer": "180°",
-      "answer": "180°",
-      "explanation": "180°?",
-      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
-      "difficulty": "easy",
-      "skill_tag": "g6_geometry",
-      "question_type": "core",
-      "question_en": "fruits ?",
-      "explanation_en": "180°?",
-      "choices_en": [
-        "90°",
-        "180°",
-        "270°",
-        "360°"
-      ],
-      "answer_en": "180°"
-    },
-    {
-      "question_id": "g6_geometry_q04",
-      "question_th": "มุมฉากมีขนาดกี่องศา?",
-      "question_text": "?",
-      "choices": [
-        "45°",
-        "90°",
-        "120°",
-        "180°"
-      ],
-      "correct_answer": "90°",
-      "answer": "90°",
-      "explanation": "90°?",
-      "explanation_th": "มุมฉากมีขนาด 90°",
-      "difficulty": "medium",
-      "skill_tag": "g6_geometry",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "90°?",
-      "choices_en": [
-        "45°",
-        "90°",
-        "120°",
-        "180°"
-      ],
-      "answer_en": "90°"
-    },
-    {
-      "question_id": "g6_geometry_q05",
-      "question_th": "มุมแหลมมีขนาดอย่างไร?",
-      "question_text": "?",
-      "choices": [
-        "90°?",
-        "90°?",
-        "90° 180°?",
-        "180°?"
-      ],
-      "correct_answer": "90°?",
-      "answer": "90°?",
-      "explanation": "90°?",
-      "explanation_th": "มุมแหลมน้อยกว่า 90°",
-      "difficulty": "medium",
-      "skill_tag": "g6_geometry",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "90°?",
-      "choices_en": [
-        "90°?",
-        "90°?",
-        "90° 180°?",
-        "180°?"
-      ],
-      "answer_en": "90°?"
-    },
-    {
-      "question_id": "g6_geometry_q06",
-      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
-      "question_text": "fruits ?",
-      "choices": [
-        "90°",
-        "180°",
-        "270°",
-        "360°"
-      ],
-      "correct_answer": "180°",
-      "answer": "180°",
-      "explanation": "180°?",
-      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
-      "difficulty": "medium",
-      "skill_tag": "g6_geometry",
-      "question_type": "core",
-      "question_en": "fruits ?",
-      "explanation_en": "180°?",
-      "choices_en": [
-        "90°",
-        "180°",
-        "270°",
-        "360°"
-      ],
-      "answer_en": "180°"
-    },
-    {
-      "question_id": "g6_geometry_q07",
-      "question_th": "มุมฉากมีขนาดกี่องศา?",
-      "question_text": "?",
-      "choices": [
-        "45°",
-        "90°",
-        "120°",
-        "180°"
-      ],
-      "correct_answer": "90°",
-      "answer": "90°",
-      "explanation": "90°?",
-      "explanation_th": "มุมฉากมีขนาด 90°",
-      "difficulty": "medium",
-      "skill_tag": "g6_geometry",
-      "question_type": "core",
-      "question_en": "?",
-      "explanation_en": "90°?",
-      "choices_en": [
-        "45°",
-        "90°",
-        "120°",
-        "180°"
-      ],
-      "answer_en": "90°"
-    },
-    {
-      "question_id": "g6_geometry_q08",
-      "question_th": "มุมแหลมมีขนาดอย่างไร?",
-      "question_text": "?",
-      "choices": [
-        "90°?",
-        "90°?",
-        "90° 180°?",
-        "180°?"
-      ],
-      "correct_answer": "90°?",
-      "answer": "90°?",
-      "explanation": "90°?",
-      "explanation_th": "มุมแหลมน้อยกว่า 90°",
-      "difficulty": "hard",
-      "skill_tag": "g6_geometry",
-      "question_type": "challenge",
-      "question_en": "?",
-      "explanation_en": "90°?",
-      "choices_en": [
-        "90°?",
-        "90°?",
-        "90° 180°?",
-        "180°?"
-      ],
-      "answer_en": "90°?"
-    },
-    {
-      "question_id": "g6_geometry_q09",
-      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
-      "question_text": "fruits ?",
-      "choices": [
-        "90°",
-        "180°",
-        "270°",
-        "360°"
-      ],
-      "correct_answer": "180°",
-      "answer": "180°",
-      "explanation": "180°?",
-      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
-      "difficulty": "hard",
-      "skill_tag": "g6_geometry",
-      "question_type": "challenge",
-      "question_en": "fruits ?",
-      "explanation_en": "180°?",
-      "choices_en": [
-        "90°",
-        "180°",
-        "270°",
-        "360°"
-      ],
-      "answer_en": "180°"
-    },
-    {
-      "question_id": "g6_geometry_q10",
-      "question_th": "มุมฉากมีขนาดกี่องศา?",
-      "question_text": "?",
-      "choices": [
-        "45°",
-        "90°",
-        "120°",
-        "180°"
-      ],
-      "correct_answer": "90°",
-      "answer": "90°",
-      "explanation": "90°?",
-      "explanation_th": "มุมฉากมีขนาด 90°",
-      "difficulty": "hard",
-      "skill_tag": "g6_geometry",
-      "question_type": "challenge",
-      "question_en": "?",
-      "explanation_en": "90°?",
-      "choices_en": [
-        "45°",
-        "90°",
-        "120°",
-        "180°"
-      ],
-      "answer_en": "90°"
-    }
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3",
+    "g6_geometry_ep English item 4",
+    "g6_geometry_ep English item 5",
+    "g6_geometry_ep English item 6",
+    "g6_geometry_ep English item 7",
+    "g6_geometry_ep English item 8",
+    "g6_geometry_ep English item 9",
+    "g6_geometry_ep English item 10"
   ],
   "quiz_id": "g6_geometry_ep",
   "generated_at": "2026-05-16T04:16:42.185812+00:00",
@@ -855,43 +615,79 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Geometry with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+      "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+      "data": {
+        "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Geometry. Use the model to get 30."
+      "title": "Think Story",
+      "content": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+      "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+      "data": {
+        "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "part_whole_model",
+      "part_a": 42,
+      "part_b": 25,
+      "total": 67,
       "unit": "items",
-      "symbol": "■"
+      "symbol": "🎟️",
+      "data": {
+        "model_type": "part_whole_model",
+        "part_a": 42,
+        "part_b": 25,
+        "total": 67,
+        "unit": "items",
+        "symbol": "🎟️"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "42 + 25 = 67 items",
+      "content": "42 + 25 = 67 items",
+      "data": {
+        "expression": "42 + 25 = 67 items",
+        "content_en": "42 + 25 = 67 items"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "82 sheets",
+        "80 sheets",
+        "85 sheets",
+        "87 sheets"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "82 sheets",
+      "answer": "82 sheets",
+      "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+        "choices": [
+          "82 sheets",
+          "80 sheets",
+          "85 sheets",
+          "87 sheets"
+        ],
+        "correct_answer": "82 sheets",
+        "answer": "82 sheets",
+        "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g6_geometry",
@@ -903,87 +699,94 @@
   "story_variants": [
     {
       "variant_id": "g6_geometry_ep_01",
-      "status": "approved",
-      "title": "Geometry Variant 1",
-      "story": "Ton is learning Geometry with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Geometry. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Geometry.",
+      "variant_title_th": "",
+      "variant_title_en": "Geometry Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Geometry with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+          "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+          "data": {
+            "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Geometry. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+          "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+          "data": {
+            "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 42,
+          "part_b": 25,
+          "total": 67,
           "unit": "items",
-          "symbol": "■"
+          "symbol": "🎟️",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 42,
+            "part_b": 25,
+            "total": 67,
+            "unit": "items",
+            "symbol": "🎟️"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "42 + 25 = 67 items",
+          "content": "42 + 25 = 67 items",
+          "data": {
+            "expression": "42 + 25 = 67 items",
+            "content_en": "42 + 25 = 67 items"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "82 sheets",
+            "80 sheets",
+            "85 sheets",
+            "87 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "82 sheets",
+          "answer": "82 sheets",
+          "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+            "choices": [
+              "82 sheets",
+              "80 sheets",
+              "85 sheets",
+              "87 sheets"
+            ],
+            "correct_answer": "82 sheets",
+            "answer": "82 sheets",
+            "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Geometry.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

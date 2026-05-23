@@ -1,0 +1,265 @@
+{
+  "variant_id": "weight_cap_ep_001",
+  "variant_title_th": "การชั่งและการตวง",
+  "variant_title_en": "Weight and Capacity",
+  "status": "needs_review",
+  "title_en": "Weight and Capacity",
+  "story_theme_en": "Lin helped her mother buy vegetables at the market. Mother bought jasmine flowers and water spinach. The total weight was 850 grams. Mother knew the jasmine flowers weighed 320 grams. Lin needed to find the weight of the water spinach and convert the total weight to kilograms.",
+  "helper_tip_en": "Have students write the known weights in the form: total = part one + part two, then solve.",
+  "think_story_en": "Total weight 850 g, jasmine 320 g. Spinach = 850-320 = 530 g. 850 g = 0.850 kg.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin buys vegetables at the market.",
+      "data": {
+        "content_en": "Lin helped her mother buy vegetables at the market. Mother bought jasmine flowers and water spinach. Total weight was 850 grams. Jasmine weighed 320 grams. Lin needed to find the weight of water spinach and convert to kilograms."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "850-320=530 g. 850 g = 0.850 kg.",
+      "data": {
+        "content_en": "Total weight 850 g, jasmine 320 g. Spinach = 850-320 = 530 g. 850 g = 0.850 kg."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Weight Model",
+      "description": "Bar showing 850 g total divided into jasmine 320 g and spinach 530 g",
+      "model_type": "weight_model",
+      "data": {
+        "model_type": "weight_model",
+        "total": 850,
+        "parts": [
+          320,
+          530
+        ],
+        "unit": "grams",
+        "operation": "subtract"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "850-320=530 g",
+      "content": "850-320=530 g | 850 g = 0.850 kg",
+      "data": {
+        "expression": "850-320=530 g",
+        "a": 850,
+        "b": 320,
+        "result": 530,
+        "unit": "g",
+        "content_en": "850-320=530 g | 850 g = 0.850 kg"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Total weight of two fruits is 1,200 g. First fruit weighs 450 g. How much does the second fruit weigh?",
+      "choices": [
+        "650 g",
+        "750 g",
+        "850 g",
+        "950 g"
+      ],
+      "correct_answer": "750 g",
+      "explanation": "1,200-450=750 g",
+      "data": {
+        "question": "Total weight of two fruits is 1,200 g. First fruit weighs 450 g. How much does the second fruit weigh?",
+        "choices": [
+          "650 g",
+          "750 g",
+          "850 g",
+          "950 g"
+        ],
+        "correct_answer": "750 g",
+        "explanation": "1,200-450=750 g"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Weight is measured in kilograms (kg) and grams (g). 1 kg = 1,000 g.",
+    "Capacity is measured in liters (L) and milliliters (mL). 1 L = 1,000 mL.",
+    "850 - 320 = 530 g is the weight of the water spinach.",
+    "Convert to kg: 850 g = 850/1000 = 0.850 kg."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Converting Weight Units",
+      "question_en": "How many kilograms is 2,500 g?",
+      "solution_en": "2,500/1,000 = 2.5 kg ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Forgetting that 1 kg = 1,000 g when converting units.",
+    "Confusing weight with capacity."
+  ],
+  "hints_en": [
+    "Remember: 1 kg = 1,000 g and 1 L = 1,000 mL.",
+    "Use a weight bar model to analyze the problem.",
+    "Check by adding the weights back together."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "weight",
+      "th": "น้ำหนัก",
+      "definition_en": "How heavy something is"
+    },
+    {
+      "en": "kilogram (kg)",
+      "th": "กิโลกรัม",
+      "definition_en": "A unit of weight, 1 kg = 1,000 g"
+    },
+    {
+      "en": "gram (g)",
+      "th": "กรัม",
+      "definition_en": "A smaller unit of weight, 1 g = 1,000 mg"
+    },
+    {
+      "en": "capacity",
+      "th": "ความจุ",
+      "definition_en": "The amount a container can hold"
+    },
+    {
+      "en": "liter (L)",
+      "th": "ลิตร",
+      "definition_en": "A unit of capacity, 1 L = 1,000 mL"
+    },
+    {
+      "en": "milliliter (mL)",
+      "th": "มิลลิลิตร",
+      "definition_en": "A smaller unit of capacity, 1 mL = 0.001 L"
+    },
+    {
+      "en": "scale",
+      "th": "เครื่องชั่ง",
+      "definition_en": "A tool used to measure weight"
+    },
+    {
+      "en": "measuring cup",
+      "th": "ถ้วยตวง",
+      "definition_en": "A tool used to measure capacity"
+    },
+    {
+      "en": "convert units",
+      "th": "แปลงหน่วย",
+      "definition_en": "Changing a measurement from one unit to another"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "How many grams in 3.5 kg?",
+      "choices": [
+        "350 g",
+        "3,500 g",
+        "35,000 g",
+        "350,000 g"
+      ],
+      "answer": "3,500 g",
+      "explanation": "3.5x1000=3,500 g"
+    },
+    {
+      "q": "A jug holds 2 L of water. How many mL is this?",
+      "choices": [
+        "200 mL",
+        "2,000 mL",
+        "20,000 mL",
+        "20 mL"
+      ],
+      "answer": "2,000 mL",
+      "explanation": "2x1000=2,000 mL"
+    },
+    {
+      "q": "A bag of rice weighs 5 kg. How much is this in grams?",
+      "choices": [
+        "500 g",
+        "5,000 g",
+        "50,000 g",
+        "500,000 g"
+      ],
+      "answer": "5,000 g",
+      "explanation": "5x1000=5,000 g"
+    },
+    {
+      "q": "Lin has 750 mL of milk. She pours 300 mL into a glass. How much milk is left?",
+      "choices": [
+        "350 mL",
+        "400 mL",
+        "450 mL",
+        "550 mL"
+      ],
+      "answer": "450 mL",
+      "explanation": "750-300=450 mL"
+    },
+    {
+      "q": "Which is heavier: 2 kg of cotton or 2 kg of iron?",
+      "choices": [
+        "Cotton",
+        "Iron",
+        "They are the same weight",
+        "Cannot tell"
+      ],
+      "answer": "They are the same weight",
+      "explanation": "Both weigh 2 kg."
+    },
+    {
+      "q": "A water tank holds 1,500 L. 600 L is used. How much water is left?",
+      "choices": [
+        "900 L",
+        "800 L",
+        "1,000 L",
+        "850 L"
+      ],
+      "answer": "900 L",
+      "explanation": "1,500-600=900 L"
+    },
+    {
+      "q": "Convert 750 grams to kilograms.",
+      "choices": [
+        "0.75 kg",
+        "7.5 kg",
+        "75 kg",
+        "750 kg"
+      ],
+      "answer": "0.75 kg",
+      "explanation": "750/1000=0.75 kg"
+    },
+    {
+      "q": "Mother buys 1.2 kg of chicken and 800 g of fish. Total weight in grams?",
+      "choices": [
+        "2,000 g",
+        "1,200 g",
+        "2,800 g",
+        "1,000 g"
+      ],
+      "answer": "2,000 g",
+      "explanation": "1.2 kg=1,200 g, 1,200+800=2,000 g"
+    },
+    {
+      "q": "A recipe needs 250 mL of milk. How many liters is this?",
+      "choices": [
+        "0.25 L",
+        "2.5 L",
+        "25 L",
+        "0.025 L"
+      ],
+      "answer": "0.25 L",
+      "explanation": "250/1000=0.25 L"
+    },
+    {
+      "q": "A farmer has 3 kg of seeds. He plants 1,200 g. How many grams are left?",
+      "choices": [
+        "1,800 g",
+        "1,700 g",
+        "1,900 g",
+        "2,800 g"
+      ],
+      "answer": "1,800 g",
+      "explanation": "3 kg=3,000 g, 3,000-1,200=1,800 g"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Weight is measured in grams (g) and kilograms (kg). 1 kg = 1,000 g. Capacity is measured in milliliters (mL) and liters (L). 1 L = 1,000 mL. Always convert to the same unit before adding or subtracting."
+}

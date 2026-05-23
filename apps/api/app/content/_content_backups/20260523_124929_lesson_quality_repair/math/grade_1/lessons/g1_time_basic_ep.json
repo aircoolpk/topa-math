@@ -1,0 +1,777 @@
+{
+  "lesson_id": "g1_time_basic_ep",
+  "id": "g1_time_basic_ep",
+  "grade_level": 1,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "หน้าปัดนาฬิกามีเลข 1 ถึง 12 วางรอบๆ ขอบนาฬิกา",
+    "เข็มสั้นชี้ชั่วโมง เข็มยาวชี้นาที เข็มยาวชี้เลข 12 คือ 0 นาที",
+    "เมื่อเข็มยาวชี้เลข 12 อ่านว่า x โมงตรง เช่น เข็มสั้นชี้ 8 คือ 8 โมง",
+    "เวลาอ่านนาที ให้นับจากเลข 12 ไปเรื่อยๆ ตามเข็มบอก แต่ละเลขคิดเป็น 5 นาที",
+    "ครึ่งชั่วโมงคือ 30 นาที เข็มยาวจะชี้ที่เลข 6 เสมอ",
+    "พยายามจำว่าเลข 3 คือ 15 นาที เลข 6 คือ 30 นาที เลข 9 คือ 45 นาที"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "อ่านเวลาเต็มชั่วโมง",
+      "question_th": "เข็มสั้นชี้เลข 5 เข็มยาวชี้เลข 12 คือกี่โมง?",
+      "solution_th": "5 โมง เพราะเข็มสั้นชี้ 5 และเข็มยาวชี้ 12 หมายถึง 0 นาที ✅"
+    },
+    {
+      "title_th": "อ่านเวลาครึ่งชั่วโมง",
+      "question_th": "เข็มสั้นชี้ระหว่าง 3 กับ 4 เข็มยาวชี้เลข 6 คือกี่โมงกี่นาที?",
+      "solution_th": "3 โมงครึ่ง เพราะเข็มยาวชี้ 6 คือ 30 นาที ✅"
+    },
+    {
+      "title_th": "อ่านเวลาบอกนาที",
+      "question_th": "เข็มยาวชี้เลข 3 คือกี่นาที?",
+      "solution_th": "15 นาที เพราะนับจาก 12 ถึง 3 ได้ 3 ช่อง คูณ 5 ได้ 15 นาที ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สลับเข็มสั้นกับเข็มยาว โดยเฉพาะตอนอ่านว่าเข็มไหนชี้เลขอะไร",
+    "ลืมว่าแต่ละช่องบนหน้าปัดเท่ากับ 5 นาที ไม่ใช่ 1 นาที",
+    "อ่านผิดเช่น เข็มสั้นชี้ระหว่าง 2 กับ 3 แต่อ่านว่า 2 โมงแทนที่จะบอกว่าประมาณ 2 โมง"
+  ],
+  "hints": [
+    "เข็มสั้นกับเข็มยาวต่างกัน เข็มสั้นบอกชั่วโมง เข็มยาวบอกนาที",
+    "ถ้างงว่าเข็มยาวชี้เท่าไหร่ ให้นับจากเลข 12 ไปตามเข็ม กี่ช่องคูณ 5 ก็จะได้จำนวนนาที",
+    "จำเลขสำคัญไว้: 12 = 0 นาที, 3 = 15 นาที, 6 = 30 นาที, 9 = 45 นาที"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g1_time_basic",
+  "skill_code": "g1_time_basic_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g1_time_basic_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Telling Time Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+          "content_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+          "data": {
+            "content_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line.",
+          "content_en": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line.",
+          "data": {
+            "content_en": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "time_line",
+          "start_hour": 8,
+          "elapsed_minutes": 40,
+          "unit": "minutes",
+          "symbol": "🕒",
+          "data": {
+            "model_type": "time_line",
+            "start_hour": 8,
+            "elapsed_minutes": 40,
+            "unit": "minutes",
+            "symbol": "🕒"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "8:00 + 40 minutes = finish time",
+          "content": "8:00 + 40 minutes = finish time",
+          "data": {
+            "expression": "8:00 + 40 minutes = finish time",
+            "content_en": "8:00 + 40 minutes = finish time"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+          "question_en": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+          "choices": [
+            "25 minutes",
+            "23 minutes",
+            "28 minutes",
+            "30 minutes"
+          ],
+          "correct_answer": "25 minutes",
+          "answer": "25 minutes",
+          "explanation": "The story tells us the elapsed time is 25 minutes.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+            "question_en": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+            "choices": [
+              "25 minutes",
+              "23 minutes",
+              "28 minutes",
+              "30 minutes"
+            ],
+            "correct_answer": "25 minutes",
+            "answer": "25 minutes",
+            "explanation": "The story tells us the elapsed time is 25 minutes.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "ดูเวลาเป็น",
+  "preview_subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "cover_theme": "reading_clock",
+  "cover_emoji": "⏰",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "ใช้ชีวิตจริงกับตัวเลข",
+  "learning_objective_th": "นักเรียนสามารถอ่านเวลาบนหน้าปัดนาฬิกาได้ถูกต้อง โดยบอกได้ว่ากี่โมงและกี่นาที",
+  "lesson_intro_th": "พี่อลิสตื่นตอน 6 โมงเช้า อาบน้ำ 7 โมง ไปโรงเรียน 8 โมง เข็มนาฬิกาบอกเวลาได้ยังไงนะ? ⏰",
+  "concept_explanation_th": "หน้าปัดนาฬิกามีเลข 1 ถึง 12 วางรอบๆ ขอบนาฬิกา เข็มสั้นชี้ชั่วโมง เข็มยาวชี้นาที เข็มยาวชี้เลข 12 คือ 0 นาที เมื่อเข็มยาวชี้เลข 12 อ่านว่า x โมงตรง เช่น เข็มสั้นชี้ 8 คือ 8 โมง เวลาอ่านนาที ให้นับจากเลข 12 ไปเรื่อยๆ ตามเข็มบอก แต่ละเลขคิดเป็น 5 นาที ครึ่งชั่วโมงคือ 30 นาที เข็มยาวจะชี้ที่เลข 6 เสมอ พยายามจำว่าเลข 3 คือ 15 นาที เลข 6 คือ 30 นาที เลข 9 คือ 45 นาที",
+  "singapore_math_model": {
+    "type": "time_line",
+    "model_type": "time_line",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 3
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 2
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท ดูเวลาเป็นนาฬิกาและนาที ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "อ่านเวลาเต็มชั่วโมง",
+      "question_th": "เข็มสั้นชี้เลข 5 เข็มยาวชี้เลข 12 คือกี่โมง?",
+      "solution_th": "5 โมง เพราะเข็มสั้นชี้ 5 และเข็มยาวชี้ 12 หมายถึง 0 นาที ✅"
+    },
+    {
+      "title_th": "อ่านเวลาครึ่งชั่วโมง",
+      "question_th": "เข็มสั้นชี้ระหว่าง 3 กับ 4 เข็มยาวชี้เลข 6 คือกี่โมงกี่นาที?",
+      "solution_th": "3 โมงครึ่ง เพราะเข็มยาวชี้ 6 คือ 30 นาที ✅"
+    },
+    {
+      "title_th": "อ่านเวลาบอกนาที",
+      "question_th": "เข็มยาวชี้เลข 3 คือกี่นาที?",
+      "solution_th": "15 นาที เพราะนับจาก 12 ถึง 3 ได้ 3 ช่อง คูณ 5 ได้ 15 นาที ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สลับเข็มสั้นกับเข็มยาว โดยเฉพาะตอนอ่านว่าเข็มไหนชี้เลขอะไร",
+    "ลืมว่าแต่ละช่องบนหน้าปัดเท่ากับ 5 นาที ไม่ใช่ 1 นาที",
+    "อ่านผิดเช่น เข็มสั้นชี้ระหว่าง 2 กับ 3 แต่อ่านว่า 2 โมงแทนที่จะบอกว่าประมาณ 2 โมง"
+  ],
+  "questions": [
+    {
+      "question_id": "g1_time_basic_q01",
+      "question_th": "เข็มยาวชี้เลข 12 เข็มสั้นชี้เลข 3 เป็นเวลาอะไร?",
+      "question_text": "เข็มยาวชี้เลข 12 เข็มสั้นชี้เลข 3 เป็นเวลาอะไร?",
+      "choices": [
+        "3 นาฬิกา",
+        "12 นาฬิกา",
+        "6 นาฬิกา",
+        "9 นาฬิกา"
+      ],
+      "correct_answer": "3 นาฬิกา",
+      "answer": "3 นาฬิกา",
+      "explanation": "เข็มยาวชี้ 12 และเข็มสั้นชี้ 3 คือ 3 นาฬิกา",
+      "explanation_th": "เข็มยาวชี้ 12 และเข็มสั้นชี้ 3 คือ 3 นาฬิกา",
+      "difficulty": "easy",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q02",
+      "question_th": "1 ชั่วโมงมีกี่นาที?",
+      "question_text": "1 ชั่วโมงมีกี่นาที?",
+      "choices": [
+        "30 นาที",
+        "45 นาที",
+        "60 นาที",
+        "100 นาที"
+      ],
+      "correct_answer": "60 นาที",
+      "answer": "60 นาที",
+      "explanation": "1 ชั่วโมงเท่ากับ 60 นาที",
+      "explanation_th": "1 ชั่วโมงเท่ากับ 60 นาที",
+      "difficulty": "easy",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q03",
+      "question_th": "ครึ่งชั่วโมงมีกี่นาที?",
+      "question_text": "ครึ่งชั่วโมงมีกี่นาที?",
+      "choices": [
+        "15 นาที",
+        "30 นาที",
+        "45 นาที",
+        "60 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "easy",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q04",
+      "question_th": "ตอนเช้ามักทำกิจกรรมใด?",
+      "question_text": "ตอนเช้ามักทำกิจกรรมใด?",
+      "choices": [
+        "ตื่นนอน",
+        "กินอาหารเย็น",
+        "เข้านอน",
+        "ดูดาว"
+      ],
+      "correct_answer": "ตื่นนอน",
+      "answer": "ตื่นนอน",
+      "explanation": "ตื่นนอนเป็นกิจกรรมในตอนเช้า",
+      "explanation_th": "ตื่นนอนเป็นกิจกรรมในตอนเช้า",
+      "difficulty": "medium",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q05",
+      "question_th": "เวลา 7 นาฬิกาเหมาะกับกิจกรรมใดมากที่สุด?",
+      "question_text": "เวลา 7 นาฬิกาเหมาะกับกิจกรรมใดมากที่สุด?",
+      "choices": [
+        "ไปโรงเรียน",
+        "นอนกลางคืน",
+        "กินอาหารเย็น",
+        "ดูดาว"
+      ],
+      "correct_answer": "ไปโรงเรียน",
+      "answer": "ไปโรงเรียน",
+      "explanation": "7 นาฬิกาเป็นช่วงเช้าก่อนไปโรงเรียน",
+      "explanation_th": "7 นาฬิกาเป็นช่วงเช้าก่อนไปโรงเรียน",
+      "difficulty": "medium",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q06",
+      "question_th": "ถ้าเริ่มเรียน 9 นาฬิกา ผ่านไป 1 ชั่วโมง จะเป็นเวลาใด?",
+      "question_text": "ถ้าเริ่มเรียน 9 นาฬิกา ผ่านไป 1 ชั่วโมง จะเป็นเวลาใด?",
+      "choices": [
+        "10 นาฬิกา",
+        "9 นาฬิกา",
+        "11 นาฬิกา",
+        "8 นาฬิกา"
+      ],
+      "correct_answer": "10 นาฬิกา",
+      "answer": "10 นาฬิกา",
+      "explanation": "9 นาฬิกา บวก 1 ชั่วโมง เป็น 10 นาฬิกา",
+      "explanation_th": "9 นาฬิกา บวก 1 ชั่วโมง เป็น 10 นาฬิกา",
+      "difficulty": "medium",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q07",
+      "question_th": "วันใดอยู่หลังวันจันทร์?",
+      "question_text": "วันใดอยู่หลังวันจันทร์?",
+      "choices": [
+        "วันอังคาร",
+        "วันอาทิตย์",
+        "วันเสาร์",
+        "วันศุกร์"
+      ],
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารอยู่ถัดจากวันจันทร์",
+      "explanation_th": "วันอังคารอยู่ถัดจากวันจันทร์",
+      "difficulty": "medium",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q08",
+      "question_th": "วันใดอยู่ก่อนวันพุธ?",
+      "question_text": "วันใดอยู่ก่อนวันพุธ?",
+      "choices": [
+        "วันอังคาร",
+        "วันพฤหัสบดี",
+        "วันศุกร์",
+        "วันเสาร์"
+      ],
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารอยู่ก่อนวันพุธ",
+      "explanation_th": "วันอังคารอยู่ก่อนวันพุธ",
+      "difficulty": "hard",
+      "skill_tag": "g1_time_basic",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_time_basic_q09",
+      "question_th": "เข็มยาวชี้เลข 6 หมายถึงกี่นาที?",
+      "question_text": "เข็มยาวชี้เลข 6 หมายถึงกี่นาที?",
+      "choices": [
+        "30 นาที",
+        "15 นาที",
+        "45 นาที",
+        "60 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "เลข 6 บนนาฬิกาแทน 30 นาที",
+      "explanation_th": "เลข 6 บนนาฬิกาแทน 30 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g1_time_basic",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_time_basic_q10",
+      "question_th": "เวลา 8:30 อ่านว่าอย่างไร?",
+      "question_text": "เวลา 8:30 อ่านว่าอย่างไร?",
+      "choices": [
+        "8 นาฬิกา 30 นาที",
+        "8 นาฬิกา",
+        "9 นาฬิกา 30 นาที",
+        "30 นาฬิกา"
+      ],
+      "correct_answer": "8 นาฬิกา 30 นาที",
+      "answer": "8 นาฬิกา 30 นาที",
+      "explanation": "8:30 อ่านว่า 8 นาฬิกา 30 นาที",
+      "explanation_th": "8:30 อ่านว่า 8 นาฬิกา 30 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g1_time_basic",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g1_time_basic_q01",
+      "question_th": "เข็มยาวชี้เลข 12 เข็มสั้นชี้เลข 3 เป็นเวลาอะไร?",
+      "question_text": "เข็มยาวชี้เลข 12 เข็มสั้นชี้เลข 3 เป็นเวลาอะไร?",
+      "choices": [
+        "3 นาฬิกา",
+        "12 นาฬิกา",
+        "6 นาฬิกา",
+        "9 นาฬิกา"
+      ],
+      "correct_answer": "3 นาฬิกา",
+      "answer": "3 นาฬิกา",
+      "explanation": "เข็มยาวชี้ 12 และเข็มสั้นชี้ 3 คือ 3 นาฬิกา",
+      "explanation_th": "เข็มยาวชี้ 12 และเข็มสั้นชี้ 3 คือ 3 นาฬิกา",
+      "difficulty": "easy",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q02",
+      "question_th": "1 ชั่วโมงมีกี่นาที?",
+      "question_text": "1 ชั่วโมงมีกี่นาที?",
+      "choices": [
+        "30 นาที",
+        "45 นาที",
+        "60 นาที",
+        "100 นาที"
+      ],
+      "correct_answer": "60 นาที",
+      "answer": "60 นาที",
+      "explanation": "1 ชั่วโมงเท่ากับ 60 นาที",
+      "explanation_th": "1 ชั่วโมงเท่ากับ 60 นาที",
+      "difficulty": "easy",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q03",
+      "question_th": "ครึ่งชั่วโมงมีกี่นาที?",
+      "question_text": "ครึ่งชั่วโมงมีกี่นาที?",
+      "choices": [
+        "15 นาที",
+        "30 นาที",
+        "45 นาที",
+        "60 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "explanation_th": "ครึ่งของ 60 นาทีคือ 30 นาที",
+      "difficulty": "easy",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q04",
+      "question_th": "ตอนเช้ามักทำกิจกรรมใด?",
+      "question_text": "ตอนเช้ามักทำกิจกรรมใด?",
+      "choices": [
+        "ตื่นนอน",
+        "กินอาหารเย็น",
+        "เข้านอน",
+        "ดูดาว"
+      ],
+      "correct_answer": "ตื่นนอน",
+      "answer": "ตื่นนอน",
+      "explanation": "ตื่นนอนเป็นกิจกรรมในตอนเช้า",
+      "explanation_th": "ตื่นนอนเป็นกิจกรรมในตอนเช้า",
+      "difficulty": "medium",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q05",
+      "question_th": "เวลา 7 นาฬิกาเหมาะกับกิจกรรมใดมากที่สุด?",
+      "question_text": "เวลา 7 นาฬิกาเหมาะกับกิจกรรมใดมากที่สุด?",
+      "choices": [
+        "ไปโรงเรียน",
+        "นอนกลางคืน",
+        "กินอาหารเย็น",
+        "ดูดาว"
+      ],
+      "correct_answer": "ไปโรงเรียน",
+      "answer": "ไปโรงเรียน",
+      "explanation": "7 นาฬิกาเป็นช่วงเช้าก่อนไปโรงเรียน",
+      "explanation_th": "7 นาฬิกาเป็นช่วงเช้าก่อนไปโรงเรียน",
+      "difficulty": "medium",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q06",
+      "question_th": "ถ้าเริ่มเรียน 9 นาฬิกา ผ่านไป 1 ชั่วโมง จะเป็นเวลาใด?",
+      "question_text": "ถ้าเริ่มเรียน 9 นาฬิกา ผ่านไป 1 ชั่วโมง จะเป็นเวลาใด?",
+      "choices": [
+        "10 นาฬิกา",
+        "9 นาฬิกา",
+        "11 นาฬิกา",
+        "8 นาฬิกา"
+      ],
+      "correct_answer": "10 นาฬิกา",
+      "answer": "10 นาฬิกา",
+      "explanation": "9 นาฬิกา บวก 1 ชั่วโมง เป็น 10 นาฬิกา",
+      "explanation_th": "9 นาฬิกา บวก 1 ชั่วโมง เป็น 10 นาฬิกา",
+      "difficulty": "medium",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q07",
+      "question_th": "วันใดอยู่หลังวันจันทร์?",
+      "question_text": "วันใดอยู่หลังวันจันทร์?",
+      "choices": [
+        "วันอังคาร",
+        "วันอาทิตย์",
+        "วันเสาร์",
+        "วันศุกร์"
+      ],
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารอยู่ถัดจากวันจันทร์",
+      "explanation_th": "วันอังคารอยู่ถัดจากวันจันทร์",
+      "difficulty": "medium",
+      "skill_tag": "g1_time_basic",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g1_time_basic_q08",
+      "question_th": "วันใดอยู่ก่อนวันพุธ?",
+      "question_text": "วันใดอยู่ก่อนวันพุธ?",
+      "choices": [
+        "วันอังคาร",
+        "วันพฤหัสบดี",
+        "วันศุกร์",
+        "วันเสาร์"
+      ],
+      "correct_answer": "วันอังคาร",
+      "answer": "วันอังคาร",
+      "explanation": "วันอังคารอยู่ก่อนวันพุธ",
+      "explanation_th": "วันอังคารอยู่ก่อนวันพุธ",
+      "difficulty": "hard",
+      "skill_tag": "g1_time_basic",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_time_basic_q09",
+      "question_th": "เข็มยาวชี้เลข 6 หมายถึงกี่นาที?",
+      "question_text": "เข็มยาวชี้เลข 6 หมายถึงกี่นาที?",
+      "choices": [
+        "30 นาที",
+        "15 นาที",
+        "45 นาที",
+        "60 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "answer": "30 นาที",
+      "explanation": "เลข 6 บนนาฬิกาแทน 30 นาที",
+      "explanation_th": "เลข 6 บนนาฬิกาแทน 30 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g1_time_basic",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g1_time_basic_q10",
+      "question_th": "เวลา 8:30 อ่านว่าอย่างไร?",
+      "question_text": "เวลา 8:30 อ่านว่าอย่างไร?",
+      "choices": [
+        "8 นาฬิกา 30 นาที",
+        "8 นาฬิกา",
+        "9 นาฬิกา 30 นาที",
+        "30 นาฬิกา"
+      ],
+      "correct_answer": "8 นาฬิกา 30 นาที",
+      "answer": "8 นาฬิกา 30 นาที",
+      "explanation": "8:30 อ่านว่า 8 นาฬิกา 30 นาที",
+      "explanation_th": "8:30 อ่านว่า 8 นาฬิกา 30 นาที",
+      "difficulty": "hard",
+      "skill_tag": "g1_time_basic",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Telling Time",
+  "objective_en": "Learn Telling Time with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+  "worked_examples_en": [
+    "g1_time_basic_ep English item 1",
+    "g1_time_basic_ep English item 2",
+    "g1_time_basic_ep English item 3"
+  ],
+  "common_mistakes_en": [
+    "g1_time_basic_ep English item 1",
+    "g1_time_basic_ep English item 2",
+    "g1_time_basic_ep English item 3"
+  ],
+  "hints_en": [
+    "g1_time_basic_ep English item 1",
+    "g1_time_basic_ep English item 2",
+    "g1_time_basic_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g1_time_basic_ep English item 1",
+    "g1_time_basic_ep English item 2",
+    "g1_time_basic_ep English item 3",
+    "g1_time_basic_ep English item 4",
+    "g1_time_basic_ep English item 5",
+    "g1_time_basic_ep English item 6"
+  ],
+  "quiz_en": [
+    "g1_time_basic_ep English item 1",
+    "g1_time_basic_ep English item 2",
+    "g1_time_basic_ep English item 3",
+    "g1_time_basic_ep English item 4",
+    "g1_time_basic_ep English item 5",
+    "g1_time_basic_ep English item 6",
+    "g1_time_basic_ep English item 7",
+    "g1_time_basic_ep English item 8",
+    "g1_time_basic_ep English item 9",
+    "g1_time_basic_ep English item 10"
+  ],
+  "quiz_id": "g1_time_basic_ep",
+  "generated_at": "2026-05-16T04:16:40.584264+00:00",
+  "source_lesson_id": "g1_time_basic",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+      "content_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+      "data": {
+        "content_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line.",
+      "content_en": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line.",
+      "data": {
+        "content_en": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "time_line",
+      "start_hour": 8,
+      "elapsed_minutes": 40,
+      "unit": "minutes",
+      "symbol": "🕒",
+      "data": {
+        "model_type": "time_line",
+        "start_hour": 8,
+        "elapsed_minutes": 40,
+        "unit": "minutes",
+        "symbol": "🕒"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "8:00 + 40 minutes = finish time",
+      "content": "8:00 + 40 minutes = finish time",
+      "data": {
+        "expression": "8:00 + 40 minutes = finish time",
+        "content_en": "8:00 + 40 minutes = finish time"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+      "question_en": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+      "choices": [
+        "25 minutes",
+        "23 minutes",
+        "28 minutes",
+        "30 minutes"
+      ],
+      "correct_answer": "25 minutes",
+      "answer": "25 minutes",
+      "explanation": "The story tells us the elapsed time is 25 minutes.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+        "question_en": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+        "choices": [
+          "25 minutes",
+          "23 minutes",
+          "28 minutes",
+          "30 minutes"
+        ],
+        "correct_answer": "25 minutes",
+        "answer": "25 minutes",
+        "explanation": "The story tells us the elapsed time is 25 minutes.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g1_time_basic",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Telling Time",
+  "topic": "addition",
+  "icon": "book",
+  "story_variants": [
+    {
+      "variant_id": "g1_time_basic_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Telling Time Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+          "content_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence.",
+          "data": {
+            "content_en": "Win starts reading at 8:00 at home. The reading time is 40 minutes. What time will it be after 40 minutes? This story practices Telling Time in the playground with chalk lines before a team game. A partner checks the unit in the answer before the group writes the number sentence."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line.",
+          "content_en": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line.",
+          "data": {
+            "content_en": "Start at 8:00 and count forward 40 minutes. This uses elapsed time on a time line."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "time_line",
+          "start_hour": 8,
+          "elapsed_minutes": 40,
+          "unit": "minutes",
+          "symbol": "🕒",
+          "data": {
+            "model_type": "time_line",
+            "start_hour": 8,
+            "elapsed_minutes": 40,
+            "unit": "minutes",
+            "symbol": "🕒"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "8:00 + 40 minutes = finish time",
+          "content": "8:00 + 40 minutes = finish time",
+          "data": {
+            "expression": "8:00 + 40 minutes = finish time",
+            "content_en": "8:00 + 40 minutes = finish time"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+          "question_en": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+          "choices": [
+            "25 minutes",
+            "23 minutes",
+            "28 minutes",
+            "30 minutes"
+          ],
+          "correct_answer": "25 minutes",
+          "answer": "25 minutes",
+          "explanation": "The story tells us the elapsed time is 25 minutes.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+            "question_en": "Ben starts music practice at 8:00. He practices for 25 minutes. How many minutes does he practice?",
+            "choices": [
+              "25 minutes",
+              "23 minutes",
+              "28 minutes",
+              "30 minutes"
+            ],
+            "correct_answer": "25 minutes",
+            "answer": "25 minutes",
+            "explanation": "The story tells us the elapsed time is 25 minutes.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

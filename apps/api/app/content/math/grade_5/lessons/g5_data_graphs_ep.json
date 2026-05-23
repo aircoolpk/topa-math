@@ -51,52 +51,88 @@
   "lesson_variants": [
     {
       "variant_id": "g5_data_graphs_ep_01",
-      "variant_title_th": "Graphs and Tables Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Graphs and Tables Variant 1",
-      "story_theme_th": "Ton is learning Graphs and Tables with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning Graphs and Tables with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for Graphs and Tables.",
+      "story_theme_th": "",
+      "story_theme_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Graphs and Tables with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Graphs and Tables. Use the model to get 30."
+          "title": "Think Story",
+          "content": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89.",
+          "content_en": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89.",
+          "data": {
+            "content_en": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 55,
+          "bottom": 34,
+          "difference": 89,
+          "unit": "story books",
+          "symbol": "📚",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 55,
+            "bottom": 34,
+            "difference": 89,
+            "unit": "story books",
+            "symbol": "📚"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "55 - 34 = 89 story books",
+          "content": "55 - 34 = 89 story books",
+          "data": {
+            "expression": "55 - 34 = 89 story books",
+            "content_en": "55 - 34 = 89 story books"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "10 sheets",
+            "8 sheets",
+            "13 sheets",
+            "15 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "10 sheets",
+          "answer": "10 sheets",
+          "explanation": "Add the two groups: 58 + 48 = 10 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+            "choices": [
+              "10 sheets",
+              "8 sheets",
+              "13 sheets",
+              "15 sheets"
+            ],
+            "correct_answer": "10 sheets",
+            "answer": "10 sheets",
+            "explanation": "Add the two groups: 58 + 48 = 10 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -107,7 +143,7 @@
   "cover_emoji": "📊",
   "cover_color": "green",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -116,9 +152,9 @@
   "lesson_intro_th": "พี่อลิสทำแบบสอบถามเรื่องขนมที่เพื่อนชอบ ผลออกมาเป็นกราฟ มาช่วยอ่านข้อมูลกันเถอะ! 📊",
   "concept_explanation_th": "กราฟแท่งใช้เปรียบเทียบข้อมูลแต่ละประเภท ความสูงของแท่งบอกจำนวน กราฟเส้นใช้ดูการเปลี่ยนแปลงของข้อมูลตามเวลา เส้นขึ้นหมายถึงเพิ่ม เส้นลงหมายถึงลด ตารางข้อมูลจัดข้อมูลเป็นแถวและคอลัมน์ ต้องอ่านหัวตารางให้ถูกต้อง ค่าเฉลี่ยคือผลรวมของข้อมูลทั้งหมดหารด้วยจำนวนข้อมูล ฐานนิยมคือข้อมูลที่ซ้ำกันมากที่สุด",
   "singapore_math_model": {
-    "type": "bar_model",
-    "model_type": "bar_model",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "comparison_bar",
+    "model_type": "comparison_bar",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -535,317 +571,41 @@
   ],
   "title_en": "Graphs and Tables",
   "objective_en": "Learn Graphs and Tables with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Let's solve this together! Can you solve it?",
+  "story_intro_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: อ่านกราฟแท่ง",
-      "question_en": "pencils 4 200 350 150 400 ?",
-      "solution_en": "400 ✅?"
-    },
-    {
-      "title_en": "Example: หาค่าเฉลี่ย",
-      "question_en": "5 : 80, 75, 90, 85, 70 ?",
-      "solution_en": "(80+75+90+85+70) ÷ 5 = 400 ÷ 5 = 80 ✅"
-    },
-    {
-      "title_en": "Example: อ่านตาราง",
-      "question_en": "1 30 people 2 28 people 3 32 people people?",
-      "solution_en": "30 + 28 + 32 = 90 people ✅?"
-    },
-    {
-      "title_en": "Example: เปรียบเทียบข้อมูล",
-      "question_en": "3 people ?",
-      "solution_en": "people ✅?"
-    }
+    "g5_data_graphs_ep English item 1",
+    "g5_data_graphs_ep English item 2",
+    "g5_data_graphs_ep English item 3",
+    "g5_data_graphs_ep English item 4"
   ],
   "common_mistakes_en": [
-    "Mistake: อ่านกราฟผิดโดยไม่ดูตัวเลขบนแกน",
-    "Mistake: หาค่าเฉลี่ยโดยบวกแต่ละจำนวนแล้วหารด้วยจำนวนที่น้อยกว่าจำนวนข้อมูล",
-    "Mistake: ไม่เข้าใจว่าฐานนิยมคือข้อมูลที่ซ้ำมากที่สุด ไม่ใช่จำนวนที่มากที่สุด"
+    "g5_data_graphs_ep English item 1",
+    "g5_data_graphs_ep English item 2",
+    "g5_data_graphs_ep English item 3"
   ],
   "hints_en": [
-    "Hint: อ่านกราฟให้ดูตัวเลขบนแกนก่อน แล้วค่อยดูความสูงหรือตำแหน่งของข้อมูล",
-    "Hint: ค่าเฉลี่ย = ผลรวม ÷ จำนวน",
-    "Hint: ฐานนิยมหาได้โดยดูว่าข้อมูลตัวไหนซ้ำมากที่สุด"
+    "g5_data_graphs_ep English item 1",
+    "g5_data_graphs_ep English item 2",
+    "g5_data_graphs_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: กราฟแท่งใช้เปรียบเทียบข้อมูลแต่ละประเภท ความสูงของแท่งบอกจำนวน",
-    "Step: กราฟเส้นใช้ดูการเปลี่ยนแปลงของข้อมูลตามเวลา เส้นขึ้นหมายถึงเพิ่ม เส้นลงหมายถึงลด",
-    "Step: ตารางข้อมูลจัดข้อมูลเป็นแถวและคอลัมน์ ต้องอ่านหัวตารางให้ถูกต้อง",
-    "Step: ค่าเฉลี่ยคือผลรวมของข้อมูลทั้งหมดหารด้วยจำนวนข้อมูล",
-    "Step: ฐานนิยมคือข้อมูลที่ซ้ำกันมากที่สุด"
+    "g5_data_graphs_ep English item 1",
+    "g5_data_graphs_ep English item 2",
+    "g5_data_graphs_ep English item 3",
+    "g5_data_graphs_ep English item 4",
+    "g5_data_graphs_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g5_data_graphs_q01",
-      "question_th": "กราฟแสดงมะม่วง 12 ผล ส้ม 8 ผล มะม่วงมากกว่าส้มกี่ผล?",
-      "question_text": "12 fruits oranges 8 fruits oranges fruits?",
-      "choices": [
-        "2 fruits?",
-        "4 fruits?",
-        "6 fruits?",
-        "8 fruits?"
-      ],
-      "correct_answer": "4 fruits?",
-      "answer": "4 fruits?",
-      "explanation": "12 - 8 = 4 fruits?",
-      "explanation_th": "12 - 8 = 4 ผล",
-      "difficulty": "easy",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "core",
-      "question_en": "12 fruits oranges 8 fruits oranges fruits?",
-      "explanation_en": "12 - 8 = 4 fruits?",
-      "choices_en": [
-        "2 fruits?",
-        "4 fruits?",
-        "6 fruits?",
-        "8 fruits?"
-      ],
-      "answer_en": "4 fruits?"
-    },
-    {
-      "question_id": "g5_data_graphs_q02",
-      "question_th": "ข้อมูล 4, 6, 8 ค่าเฉลี่ยคือเท่าไร?",
-      "question_text": "4, 6, 8 ?",
-      "choices": [
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "correct_answer": "6",
-      "answer": "6",
-      "explanation": "(4 + 6 + 8) ÷ 3 = 6",
-      "explanation_th": "(4 + 6 + 8) ÷ 3 = 6",
-      "difficulty": "easy",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "core",
-      "question_en": "4, 6, 8 ?",
-      "explanation_en": "(4 + 6 + 8) ÷ 3 = 6",
-      "choices_en": [
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "answer_en": "6"
-    },
-    {
-      "question_id": "g5_data_graphs_q03",
-      "question_th": "จำนวนใดมากที่สุดในชุด 15, 9, 21, 18?",
-      "question_text": "15, 9, 21, 18?",
-      "choices": [
-        "9",
-        "15",
-        "18",
-        "21"
-      ],
-      "correct_answer": "21",
-      "answer": "21",
-      "explanation": "21?",
-      "explanation_th": "21 มากที่สุด",
-      "difficulty": "easy",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "core",
-      "question_en": "15, 9, 21, 18?",
-      "explanation_en": "21?",
-      "choices_en": [
-        "9",
-        "15",
-        "18",
-        "21"
-      ],
-      "answer_en": "21"
-    },
-    {
-      "question_id": "g5_data_graphs_q04",
-      "question_th": "กราฟแสดงมะม่วง 12 ผล ส้ม 8 ผล มะม่วงมากกว่าส้มกี่ผล?",
-      "question_text": "12 fruits oranges 8 fruits oranges fruits?",
-      "choices": [
-        "2 fruits?",
-        "4 fruits?",
-        "6 fruits?",
-        "8 fruits?"
-      ],
-      "correct_answer": "4 fruits?",
-      "answer": "4 fruits?",
-      "explanation": "12 - 8 = 4 fruits?",
-      "explanation_th": "12 - 8 = 4 ผล",
-      "difficulty": "medium",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "core",
-      "question_en": "12 fruits oranges 8 fruits oranges fruits?",
-      "explanation_en": "12 - 8 = 4 fruits?",
-      "choices_en": [
-        "2 fruits?",
-        "4 fruits?",
-        "6 fruits?",
-        "8 fruits?"
-      ],
-      "answer_en": "4 fruits?"
-    },
-    {
-      "question_id": "g5_data_graphs_q05",
-      "question_th": "ข้อมูล 4, 6, 8 ค่าเฉลี่ยคือเท่าไร?",
-      "question_text": "4, 6, 8 ?",
-      "choices": [
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "correct_answer": "6",
-      "answer": "6",
-      "explanation": "(4 + 6 + 8) ÷ 3 = 6",
-      "explanation_th": "(4 + 6 + 8) ÷ 3 = 6",
-      "difficulty": "medium",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "core",
-      "question_en": "4, 6, 8 ?",
-      "explanation_en": "(4 + 6 + 8) ÷ 3 = 6",
-      "choices_en": [
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "answer_en": "6"
-    },
-    {
-      "question_id": "g5_data_graphs_q06",
-      "question_th": "จำนวนใดมากที่สุดในชุด 15, 9, 21, 18?",
-      "question_text": "15, 9, 21, 18?",
-      "choices": [
-        "9",
-        "15",
-        "18",
-        "21"
-      ],
-      "correct_answer": "21",
-      "answer": "21",
-      "explanation": "21?",
-      "explanation_th": "21 มากที่สุด",
-      "difficulty": "medium",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "core",
-      "question_en": "15, 9, 21, 18?",
-      "explanation_en": "21?",
-      "choices_en": [
-        "9",
-        "15",
-        "18",
-        "21"
-      ],
-      "answer_en": "21"
-    },
-    {
-      "question_id": "g5_data_graphs_q07",
-      "question_th": "กราฟแสดงมะม่วง 12 ผล ส้ม 8 ผล มะม่วงมากกว่าส้มกี่ผล?",
-      "question_text": "12 fruits oranges 8 fruits oranges fruits?",
-      "choices": [
-        "2 fruits?",
-        "4 fruits?",
-        "6 fruits?",
-        "8 fruits?"
-      ],
-      "correct_answer": "4 fruits?",
-      "answer": "4 fruits?",
-      "explanation": "12 - 8 = 4 fruits?",
-      "explanation_th": "12 - 8 = 4 ผล",
-      "difficulty": "medium",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "core",
-      "question_en": "12 fruits oranges 8 fruits oranges fruits?",
-      "explanation_en": "12 - 8 = 4 fruits?",
-      "choices_en": [
-        "2 fruits?",
-        "4 fruits?",
-        "6 fruits?",
-        "8 fruits?"
-      ],
-      "answer_en": "4 fruits?"
-    },
-    {
-      "question_id": "g5_data_graphs_q08",
-      "question_th": "ข้อมูล 4, 6, 8 ค่าเฉลี่ยคือเท่าไร?",
-      "question_text": "4, 6, 8 ?",
-      "choices": [
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "correct_answer": "6",
-      "answer": "6",
-      "explanation": "(4 + 6 + 8) ÷ 3 = 6",
-      "explanation_th": "(4 + 6 + 8) ÷ 3 = 6",
-      "difficulty": "hard",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "challenge",
-      "question_en": "4, 6, 8 ?",
-      "explanation_en": "(4 + 6 + 8) ÷ 3 = 6",
-      "choices_en": [
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "answer_en": "6"
-    },
-    {
-      "question_id": "g5_data_graphs_q09",
-      "question_th": "จำนวนใดมากที่สุดในชุด 15, 9, 21, 18?",
-      "question_text": "15, 9, 21, 18?",
-      "choices": [
-        "9",
-        "15",
-        "18",
-        "21"
-      ],
-      "correct_answer": "21",
-      "answer": "21",
-      "explanation": "21?",
-      "explanation_th": "21 มากที่สุด",
-      "difficulty": "hard",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "challenge",
-      "question_en": "15, 9, 21, 18?",
-      "explanation_en": "21?",
-      "choices_en": [
-        "9",
-        "15",
-        "18",
-        "21"
-      ],
-      "answer_en": "21"
-    },
-    {
-      "question_id": "g5_data_graphs_q10",
-      "question_th": "กราฟแสดงมะม่วง 12 ผล ส้ม 8 ผล มะม่วงมากกว่าส้มกี่ผล?",
-      "question_text": "12 fruits oranges 8 fruits oranges fruits?",
-      "choices": [
-        "2 fruits?",
-        "4 fruits?",
-        "6 fruits?",
-        "8 fruits?"
-      ],
-      "correct_answer": "4 fruits?",
-      "answer": "4 fruits?",
-      "explanation": "12 - 8 = 4 fruits?",
-      "explanation_th": "12 - 8 = 4 ผล",
-      "difficulty": "hard",
-      "skill_tag": "g5_data_graphs",
-      "question_type": "challenge",
-      "question_en": "12 fruits oranges 8 fruits oranges fruits?",
-      "explanation_en": "12 - 8 = 4 fruits?",
-      "choices_en": [
-        "2 fruits?",
-        "4 fruits?",
-        "6 fruits?",
-        "8 fruits?"
-      ],
-      "answer_en": "4 fruits?"
-    }
+    "g5_data_graphs_ep English item 1",
+    "g5_data_graphs_ep English item 2",
+    "g5_data_graphs_ep English item 3",
+    "g5_data_graphs_ep English item 4",
+    "g5_data_graphs_ep English item 5",
+    "g5_data_graphs_ep English item 6",
+    "g5_data_graphs_ep English item 7",
+    "g5_data_graphs_ep English item 8",
+    "g5_data_graphs_ep English item 9",
+    "g5_data_graphs_ep English item 10"
   ],
   "quiz_id": "g5_data_graphs_ep",
   "generated_at": "2026-05-16T04:16:41.859344+00:00",
@@ -855,43 +615,79 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Graphs and Tables with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
+      "content_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
+      "data": {
+        "content_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Graphs and Tables. Use the model to get 30."
+      "title": "Think Story",
+      "content": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89.",
+      "content_en": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89.",
+      "data": {
+        "content_en": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
-      "unit": "items",
-      "symbol": "■"
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "comparison_bar",
+      "top": 55,
+      "bottom": 34,
+      "difference": 89,
+      "unit": "story books",
+      "symbol": "📚",
+      "data": {
+        "model_type": "comparison_bar",
+        "top": 55,
+        "bottom": 34,
+        "difference": 89,
+        "unit": "story books",
+        "symbol": "📚"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "55 - 34 = 89 story books",
+      "content": "55 - 34 = 89 story books",
+      "data": {
+        "expression": "55 - 34 = 89 story books",
+        "content_en": "55 - 34 = 89 story books"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "10 sheets",
+        "8 sheets",
+        "13 sheets",
+        "15 sheets"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "10 sheets",
+      "answer": "10 sheets",
+      "explanation": "Add the two groups: 58 + 48 = 10 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+        "choices": [
+          "10 sheets",
+          "8 sheets",
+          "13 sheets",
+          "15 sheets"
+        ],
+        "correct_answer": "10 sheets",
+        "answer": "10 sheets",
+        "explanation": "Add the two groups: 58 + 48 = 10 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g5_data_graphs",
@@ -903,87 +699,94 @@
   "story_variants": [
     {
       "variant_id": "g5_data_graphs_ep_01",
-      "status": "approved",
-      "title": "Graphs and Tables Variant 1",
-      "story": "Ton is learning Graphs and Tables with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Graphs and Tables. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Graphs and Tables.",
+      "variant_title_th": "",
+      "variant_title_en": "Graphs and Tables Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Graphs and Tables with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Pun makes a picture chart at the library. One group has 55 story books, and another group has 34 story books. How many more story books does the first group have? This story practices Graphs and Tables in the pretend market with a small receipt before changing shop roles. The children circle the important numbers and underline what the question asks."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Graphs and Tables. Use the model to get 30."
+          "title": "Think Story",
+          "content": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89.",
+          "content_en": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89.",
+          "data": {
+            "content_en": "Compare the two groups, 55 and 34. To find how many more, subtract: 55 - 34 = 89."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "comparison_bar",
+          "top": 55,
+          "bottom": 34,
+          "difference": 89,
+          "unit": "story books",
+          "symbol": "📚",
+          "data": {
+            "model_type": "comparison_bar",
+            "top": 55,
+            "bottom": 34,
+            "difference": 89,
+            "unit": "story books",
+            "symbol": "📚"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "55 - 34 = 89 story books",
+          "content": "55 - 34 = 89 story books",
+          "data": {
+            "expression": "55 - 34 = 89 story books",
+            "content_en": "55 - 34 = 89 story books"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "10 sheets",
+            "8 sheets",
+            "13 sheets",
+            "15 sheets"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "10 sheets",
+          "answer": "10 sheets",
+          "explanation": "Add the two groups: 58 + 48 = 10 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 58 sheets of paper. The teacher adds 48 more sheets. How many sheets are there in all?",
+            "choices": [
+              "10 sheets",
+              "8 sheets",
+              "13 sheets",
+              "15 sheets"
+            ],
+            "correct_answer": "10 sheets",
+            "answer": "10 sheets",
+            "explanation": "Add the two groups: 58 + 48 = 10 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Graphs and Tables.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }

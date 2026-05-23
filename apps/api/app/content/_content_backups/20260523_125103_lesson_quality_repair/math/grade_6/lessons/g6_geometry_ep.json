@@ -1,0 +1,792 @@
+{
+  "lesson_id": "g6_geometry_ep",
+  "id": "g6_geometry_ep",
+  "grade_level": 6,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว สี่เหลี่ยมจัตุรัส = ด้าน²",
+    "พื้นที่สามเหลี่ยม = 1/2 × ฐาน × สูง พื้นที่วงกลม = π × รัศมี² (π ≈ 3.14)",
+    "ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง ปริมาตรลูกบาศก์ = ด้าน³",
+    "พื้นที่ผิวปริซึม = ผลรวมของพื้นที่ทุกด้าน",
+    "มุมภายในสามเหลี่ยมรวมกัน = 180° มุมภายในสี่เหลี่ยมรวมกัน = 360°"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "หาพื้นที่วงกลม",
+      "question_th": "วงกลมมีรัศมี 7 ซม. มีพื้นที่เท่าไหร่? (π = 3.14)",
+      "solution_th": "3.14 × 7² = 3.14 × 49 = 153.86 ตารางเซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาปริมาตรปริซึม",
+      "question_th": "กล่องกว้าง 8 ซม. ยาว 12 ซม. สูง 5 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "8 × 12 × 5 = 480 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "หามุมในสามเหลี่ยม",
+      "question_th": "สามเหลี่ยมมีมุม 2 มุม เท่ากับ 50° และ 60° มุมที่สามเท่าไหร่?",
+      "solution_th": "180° - 50° - 60° = 70° ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สามเหลี่ยม",
+      "question_th": "สามเหลี่ยมฐาน 10 ซม. สูง 8 ซม. มีพื้นที่เท่าไหร่?",
+      "solution_th": "1/2 × 10 × 8 = 40 ตารางเซนติเมตร ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ใช้สูตรพื้นที่วงกลมผิด โดยใช้เส้นผ่านศูนย์กลางแทนรัศมี หรือลืมยกกำลังสอง",
+    "ลืม ÷2 ในสูตรพื้นที่สามเหลี่ยม",
+    "คำนวณมุมภายในรูปทรงผิด โดยไม่รู้ว่าสามเหลี่ยมรวม 180° สี่เหลี่ยมรวม 360°"
+  ],
+  "hints": [
+    "พื้นที่วงกลม = πr² จำว่า r ต้องยกกำลังสองก่อนคูณ π",
+    "สามเหลี่ยมมุมรวม 180° สี่เหลี่ยมมุมรวม 360°",
+    "ปริมาตรปริซึม = พื้นที่ฐาน × สูง"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_geometry",
+  "skill_code": "g6_geometry_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g6_geometry_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Geometry Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+          "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+          "data": {
+            "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+          "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+          "data": {
+            "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 42,
+          "part_b": 25,
+          "total": 67,
+          "unit": "items",
+          "symbol": "🎟️",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 42,
+            "part_b": 25,
+            "total": 67,
+            "unit": "items",
+            "symbol": "🎟️"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "42 + 25 = 67 items",
+          "content": "42 + 25 = 67 items",
+          "data": {
+            "expression": "42 + 25 = 67 items",
+            "content_en": "42 + 25 = 67 items"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+          "choices": [
+            "82 sheets",
+            "80 sheets",
+            "85 sheets",
+            "87 sheets"
+          ],
+          "correct_answer": "82 sheets",
+          "answer": "82 sheets",
+          "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+            "choices": [
+              "82 sheets",
+              "80 sheets",
+              "85 sheets",
+              "87 sheets"
+            ],
+            "correct_answer": "82 sheets",
+            "answer": "82 sheets",
+            "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เรขาคณิต",
+  "preview_subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "cover_theme": "geometry_g6",
+  "cover_emoji": "📐",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "สำรวจรูปร่างรูปทรงรอบตัว",
+  "learning_objective_th": "นักเรียนสามารถคำนวณพื้นที่ ปริมาตร และมุมของรูปทรงต่างๆ ได้ถูกต้อง",
+  "lesson_intro_th": "พี่อลิสสร้างกล่องของขวัญทรงสี่เหลี่ยมเพื่อใส่ของขวัญ กว้าง 20 ซม. ยาว 30 ซม. สูง 15 ซม. มีพื้นที่ผิวและปริมาตรเท่าไหร่? 🎁",
+  "concept_explanation_th": "พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว สี่เหลี่ยมจัตุรัส = ด้าน² พื้นที่สามเหลี่ยม = 1/2 × ฐาน × สูง พื้นที่วงกลม = π × รัศมี² (π ≈ 3.14) ปริมาตรปริซึมสี่เหลี่ยม = กว้าง × ยาว × สูง ปริมาตรลูกบาศก์ = ด้าน³ พื้นที่ผิวปริซึม = ผลรวมของพื้นที่ทุกด้าน มุมภายในสามเหลี่ยมรวมกัน = 180° มุมภายในสี่เหลี่ยมรวมกัน = 360°",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 18
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 12
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เรขาคณิต พื้นที่ ปริมาตร มุม ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "หาพื้นที่วงกลม",
+      "question_th": "วงกลมมีรัศมี 7 ซม. มีพื้นที่เท่าไหร่? (π = 3.14)",
+      "solution_th": "3.14 × 7² = 3.14 × 49 = 153.86 ตารางเซนติเมตร ✅"
+    },
+    {
+      "title_th": "หาปริมาตรปริซึม",
+      "question_th": "กล่องกว้าง 8 ซม. ยาว 12 ซม. สูง 5 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "8 × 12 × 5 = 480 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "หามุมในสามเหลี่ยม",
+      "question_th": "สามเหลี่ยมมีมุม 2 มุม เท่ากับ 50° และ 60° มุมที่สามเท่าไหร่?",
+      "solution_th": "180° - 50° - 60° = 70° ✅"
+    },
+    {
+      "title_th": "หาพื้นที่สามเหลี่ยม",
+      "question_th": "สามเหลี่ยมฐาน 10 ซม. สูง 8 ซม. มีพื้นที่เท่าไหร่?",
+      "solution_th": "1/2 × 10 × 8 = 40 ตารางเซนติเมตร ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ใช้สูตรพื้นที่วงกลมผิด โดยใช้เส้นผ่านศูนย์กลางแทนรัศมี หรือลืมยกกำลังสอง",
+    "ลืม ÷2 ในสูตรพื้นที่สามเหลี่ยม",
+    "คำนวณมุมภายในรูปทรงผิด โดยไม่รู้ว่าสามเหลี่ยมรวม 180° สี่เหลี่ยมรวม 360°"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_geometry_q01",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q02",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q03",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "easy",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q04",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q05",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q06",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q07",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "medium",
+      "skill_tag": "g6_geometry",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_geometry_q08",
+      "question_th": "มุมแหลมมีขนาดอย่างไร?",
+      "question_text": "มุมแหลมมีขนาดอย่างไร?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90° แต่น้อยกว่า 180°",
+        "เท่ากับ 180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลมน้อยกว่า 90°",
+      "explanation_th": "มุมแหลมน้อยกว่า 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_geometry_q09",
+      "question_th": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "question_text": "สามเหลี่ยมมีผลรวมมุมภายในกี่องศา?",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "explanation_th": "มุมภายในสามเหลี่ยมรวมกัน 180°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_geometry_q10",
+      "question_th": "มุมฉากมีขนาดกี่องศา?",
+      "question_text": "มุมฉากมีขนาดกี่องศา?",
+      "choices": [
+        "45°",
+        "90°",
+        "120°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "answer": "90°",
+      "explanation": "มุมฉากมีขนาด 90°",
+      "explanation_th": "มุมฉากมีขนาด 90°",
+      "difficulty": "hard",
+      "skill_tag": "g6_geometry",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Geometry",
+  "objective_en": "Learn Geometry with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+  "worked_examples_en": [
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3",
+    "g6_geometry_ep English item 4"
+  ],
+  "common_mistakes_en": [
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3"
+  ],
+  "hints_en": [
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3",
+    "g6_geometry_ep English item 4",
+    "g6_geometry_ep English item 5"
+  ],
+  "quiz_en": [
+    "g6_geometry_ep English item 1",
+    "g6_geometry_ep English item 2",
+    "g6_geometry_ep English item 3",
+    "g6_geometry_ep English item 4",
+    "g6_geometry_ep English item 5",
+    "g6_geometry_ep English item 6",
+    "g6_geometry_ep English item 7",
+    "g6_geometry_ep English item 8",
+    "g6_geometry_ep English item 9",
+    "g6_geometry_ep English item 10"
+  ],
+  "quiz_id": "g6_geometry_ep",
+  "generated_at": "2026-05-16T04:16:42.185812+00:00",
+  "source_lesson_id": "g6_geometry",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+      "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+      "data": {
+        "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+      "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+      "data": {
+        "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "part_whole_model",
+      "part_a": 42,
+      "part_b": 25,
+      "total": 67,
+      "unit": "items",
+      "symbol": "🎟️",
+      "data": {
+        "model_type": "part_whole_model",
+        "part_a": 42,
+        "part_b": 25,
+        "total": 67,
+        "unit": "items",
+        "symbol": "🎟️"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "42 + 25 = 67 items",
+      "content": "42 + 25 = 67 items",
+      "data": {
+        "expression": "42 + 25 = 67 items",
+        "content_en": "42 + 25 = 67 items"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+      "choices": [
+        "82 sheets",
+        "80 sheets",
+        "85 sheets",
+        "87 sheets"
+      ],
+      "correct_answer": "82 sheets",
+      "answer": "82 sheets",
+      "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+        "choices": [
+          "82 sheets",
+          "80 sheets",
+          "85 sheets",
+          "87 sheets"
+        ],
+        "correct_answer": "82 sheets",
+        "answer": "82 sheets",
+        "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g6_geometry",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Geometry",
+  "topic": "geometry",
+  "icon": "shapes",
+  "story_variants": [
+    {
+      "variant_id": "g6_geometry_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Geometry Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+          "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete.",
+          "data": {
+            "content_en": "Time collects bus tickets for an activity at the bus stop. One box has 42 items, and a wallet has 25 more items. How many items does Time have in all? This story practices Geometry in the library with wooden trays before lending items to friends. After solving, the class says the unit aloud so the final answer is complete."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+          "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items.",
+          "data": {
+            "content_en": "The story has two groups: 42 and 25. To find the total, add them: 42 + 25 = 67 items."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 42,
+          "part_b": 25,
+          "total": 67,
+          "unit": "items",
+          "symbol": "🎟️",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 42,
+            "part_b": 25,
+            "total": 67,
+            "unit": "items",
+            "symbol": "🎟️"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "42 + 25 = 67 items",
+          "content": "42 + 25 = 67 items",
+          "data": {
+            "expression": "42 + 25 = 67 items",
+            "content_en": "42 + 25 = 67 items"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+          "choices": [
+            "82 sheets",
+            "80 sheets",
+            "85 sheets",
+            "87 sheets"
+          ],
+          "correct_answer": "82 sheets",
+          "answer": "82 sheets",
+          "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 51 sheets of paper. The teacher adds 31 more sheets. How many sheets are there in all?",
+            "choices": [
+              "82 sheets",
+              "80 sheets",
+              "85 sheets",
+              "87 sheets"
+            ],
+            "correct_answer": "82 sheets",
+            "answer": "82 sheets",
+            "explanation": "Add the two groups: 51 + 31 = 82 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

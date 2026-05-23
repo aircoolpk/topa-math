@@ -155,12 +155,12 @@ export default function DashboardPage() {
   const currentLessons = filterProgramLessons(dashboard?.current_grade_lessons || dashboard?.lesson_sections?.current_grade_lessons || dashboard?.lessons || [])
     .filter((lesson) => (lesson.status !== 'locked' && !lesson.is_locked) || lesson.is_free_preview)
     .filter((lesson) => !child?.grade_level || lesson.grade_level === child.grade_level)
-    .slice(0, 6)
+  const visibleCurrentLessons = child?.grade_level === 3 ? currentLessons : currentLessons.slice(0, 6)
   const reviewLessons = filterProgramLessons(dashboard?.review_lessons || dashboard?.lesson_sections?.review_lessons || [])
     .filter((lesson) => (lesson.status !== 'locked' && !lesson.is_locked) || lesson.is_free_preview)
     .filter((lesson) => !child?.grade_level || lesson.grade_level === Math.max(1, child.grade_level - 1))
     .slice(0, 4)
-  const lessons = currentLessons.length ? currentLessons : filterProgramLessons(dashboard?.lessons || []).filter((lesson) => lesson.status !== 'locked' || lesson.is_free_preview).slice(0, 6)
+  const lessons = visibleCurrentLessons.length ? visibleCurrentLessons : filterProgramLessons(dashboard?.lessons || []).filter((lesson) => lesson.status !== 'locked' || lesson.is_free_preview).slice(0, child?.grade_level === 3 ? 11 : 6)
   const mascot = defaultMascots[(child?.current_level || 0) % defaultMascots.length]
   const testLevel = dashboard?.test_levels?.find((level: TestLevel) => level.status !== 'locked')
 

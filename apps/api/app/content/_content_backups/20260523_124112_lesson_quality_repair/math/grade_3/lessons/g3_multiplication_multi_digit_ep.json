@@ -1,0 +1,1046 @@
+{
+  "lesson_id": "g3_multiplication_multi_digit_ep",
+  "id": "g3_multiplication_multi_digit_ep",
+  "grade_level": 3,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "เวลาคูณเลขหลายหลัก ให้เขียนตัวเลขเรียงหลักกันให้ตรง",
+    "คูณหลักหน่วยก่อน แล้วค่อยคูณหลักสิบ",
+    "ถ้าผลคูณของหลักใดเกิน 9 ให้ทดตัวเลขไปบวกกับผลคูณของหลักถัดไป",
+    "การคูณเลขสองหลักกับเลขหนึ่งหลัก ให้คูณเลขหนึ่งหลักกับทั้งสองหลักของเลขสองหลัก",
+    "ตรวจคำตอบโดยสลับที่หรือประมาณค่า"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "คูณเลขสองหลัก",
+      "question_th": "36 × 4 = ?",
+      "solution_th": "36 × 4 = 144 ✅"
+    },
+    {
+      "title_th": "คูณเลขสองหลักในโจทย์",
+      "question_th": "แม่ซื้อส้ม 25 ผล ผลละ 3 บาท รวมราคาเท่าไหร่?",
+      "solution_th": "25 × 3 = 75 บาท ✅"
+    },
+    {
+      "title_th": "คูณเลขสามหลัก",
+      "question_th": "123 × 3 = ?",
+      "solution_th": "123 × 3 = 369 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ทดตัวเลขผิดหลัก ทำให้ผลลัพธ์ผิด",
+    "คูณหลักเดียวแล้วลืมอีกหลักหนึ่ง",
+    "ตัวทดไปบวกผิดที่ ทำให้ผลคูณไม่ถูกต้อง"
+  ],
+  "hints": [
+    "ทำทีละหลัก คูณหลักหน่วยก่อน แล้วค่อยไปหลักสิบ",
+    "ถ้าผลคูณเกิน 9 ให้ทดตัวเลขไปบวกกับผลคูณของหลักถัดไป",
+    "ตรวจคำตอบโดยประมาณค่า เช่น 36 × 4 ใกล้เคียง 40 × 4 = 160 ดังนั้นคำตอบควรใกล้ 160"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g3_multiplication_multi_digit",
+  "skill_code": "g3_multiplication_multi_digit_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g3_multiplication_multi_digit_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Multiplication with Equal Groups Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+          "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+          "data": {
+            "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads.",
+          "content_en": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads.",
+          "data": {
+            "content_en": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "array_model",
+          "rows": 7,
+          "cols": 8,
+          "total": 56,
+          "unit": "beads",
+          "symbol": "🔵",
+          "data": {
+            "model_type": "array_model",
+            "rows": 7,
+            "cols": 8,
+            "total": 56,
+            "unit": "beads",
+            "symbol": "🔵"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "7 × 8 = 56 beads",
+          "content": "7 × 8 = 56 beads",
+          "data": {
+            "expression": "7 × 8 = 56 beads",
+            "content_en": "7 × 8 = 56 beads"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+          "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+          "choices": [
+            "42 pencils",
+            "40 pencils",
+            "45 pencils",
+            "47 pencils"
+          ],
+          "correct_answer": "42 pencils",
+          "answer": "42 pencils",
+          "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+            "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+            "choices": [
+              "42 pencils",
+              "40 pencils",
+              "45 pencils",
+              "47 pencils"
+            ],
+            "correct_answer": "42 pencils",
+            "answer": "42 pencils",
+            "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "คูณเลขหลายหลัก",
+  "preview_subtitle_th": "เรียนรู้การคูณและการหาร",
+  "cover_theme": "multiplication_multi_digit",
+  "cover_emoji": "✖️",
+  "cover_color": "green",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้การคูณและการหาร",
+  "learning_objective_th": "นักเรียนสามารถคูณเลขสองหลักกับเลขหนึ่งหลักได้ถูกต้อง",
+  "lesson_intro_th": "โรงเรียนมีนักเรียน 23 คน แต่ละคนได้รับดินสอ 4 แท่ง รวมโรงเรียนแจกดินสอกี่แท่ง? ✏️",
+  "concept_explanation_th": "เวลาคูณเลขหลายหลัก ให้เขียนตัวเลขเรียงหลักกันให้ตรง คูณหลักหน่วยก่อน แล้วค่อยคูณหลักสิบ ถ้าผลคูณของหลักใดเกิน 9 ให้ทดตัวเลขไปบวกกับผลคูณของหลักถัดไป การคูณเลขสองหลักกับเลขหนึ่งหลัก ให้คูณเลขหนึ่งหลักกับทั้งสองหลักของเลขสองหลัก ตรวจคำตอบโดยสลับที่หรือประมาณค่า",
+  "singapore_math_model": {
+    "type": "array_model",
+    "model_type": "array_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "area_model",
+    "rows": 3,
+    "columns": 6,
+    "total": 18,
+    "label_th": "แผนภาพพื้นที่แบบช่อง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท คูณเลขหลายหลักแบบเข้าใจง่าย ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "คูณเลขสองหลัก",
+      "question_th": "36 × 4 = ?",
+      "solution_th": "36 × 4 = 144 ✅"
+    },
+    {
+      "title_th": "คูณเลขสองหลักในโจทย์",
+      "question_th": "แม่ซื้อส้ม 25 ผล ผลละ 3 บาท รวมราคาเท่าไหร่?",
+      "solution_th": "25 × 3 = 75 บาท ✅"
+    },
+    {
+      "title_th": "คูณเลขสามหลัก",
+      "question_th": "123 × 3 = ?",
+      "solution_th": "123 × 3 = 369 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ทดตัวเลขผิดหลัก ทำให้ผลลัพธ์ผิด",
+    "คูณหลักเดียวแล้วลืมอีกหลักหนึ่ง",
+    "ตัวทดไปบวกผิดที่ ทำให้ผลคูณไม่ถูกต้อง"
+  ],
+  "questions": [
+    {
+      "question_id": "g3_multiplication_multi_digit_q01",
+      "question_th": "23 × 4 เท่ากับเท่าไร?",
+      "question_text": "23 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "82",
+        "92",
+        "102",
+        "112"
+      ],
+      "correct_answer": "92",
+      "answer": "92",
+      "explanation": "23 × 4 = 92",
+      "explanation_th": "23 × 4 = 92",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q02",
+      "question_th": "36 × 3 เท่ากับเท่าไร?",
+      "question_text": "36 × 3 เท่ากับเท่าไร?",
+      "choices": [
+        "98",
+        "108",
+        "118",
+        "128"
+      ],
+      "correct_answer": "108",
+      "answer": "108",
+      "explanation": "36 × 3 = 108",
+      "explanation_th": "36 × 3 = 108",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q03",
+      "question_th": "45 × 6 เท่ากับเท่าไร?",
+      "question_text": "45 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "260",
+        "270",
+        "280",
+        "290"
+      ],
+      "correct_answer": "270",
+      "answer": "270",
+      "explanation": "45 × 6 = 270",
+      "explanation_th": "45 × 6 = 270",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q04",
+      "question_th": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
+      "question_text": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
+      "choices": [
+        "100 เล่ม",
+        "110 เล่ม",
+        "120 เล่ม",
+        "130 เล่ม"
+      ],
+      "correct_answer": "120 เล่ม",
+      "answer": "120 เล่ม",
+      "explanation": "24 × 5 = 120 เล่ม",
+      "explanation_th": "24 × 5 = 120 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q05",
+      "question_th": "32 × 7 เท่ากับเท่าไร?",
+      "question_text": "32 × 7 เท่ากับเท่าไร?",
+      "choices": [
+        "214",
+        "224",
+        "234",
+        "244"
+      ],
+      "correct_answer": "224",
+      "answer": "224",
+      "explanation": "32 × 7 = 224",
+      "explanation_th": "32 × 7 = 224",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q06",
+      "question_th": "58 × 2 เท่ากับเท่าไร?",
+      "question_text": "58 × 2 เท่ากับเท่าไร?",
+      "choices": [
+        "106",
+        "116",
+        "126",
+        "136"
+      ],
+      "correct_answer": "116",
+      "answer": "116",
+      "explanation": "58 × 2 = 116",
+      "explanation_th": "58 × 2 = 116",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q07",
+      "question_th": "67 × 4 เท่ากับเท่าไร?",
+      "question_text": "67 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "258",
+        "268",
+        "278",
+        "288"
+      ],
+      "correct_answer": "268",
+      "answer": "268",
+      "explanation": "67 × 4 = 268",
+      "explanation_th": "67 × 4 = 268",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q08",
+      "question_th": "125 × 3 เท่ากับเท่าไร?",
+      "question_text": "125 × 3 เท่ากับเท่าไร?",
+      "choices": [
+        "365",
+        "375",
+        "385",
+        "395"
+      ],
+      "correct_answer": "375",
+      "answer": "375",
+      "explanation": "125 × 3 = 375",
+      "explanation_th": "125 × 3 = 375",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q09",
+      "question_th": "214 × 2 เท่ากับเท่าไร?",
+      "question_text": "214 × 2 เท่ากับเท่าไร?",
+      "choices": [
+        "418",
+        "428",
+        "438",
+        "448"
+      ],
+      "correct_answer": "428",
+      "answer": "428",
+      "explanation": "214 × 2 = 428",
+      "explanation_th": "214 × 2 = 428",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q10",
+      "question_th": "150 × 6 เท่ากับเท่าไร?",
+      "question_text": "150 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "800",
+        "850",
+        "900",
+        "950"
+      ],
+      "correct_answer": "900",
+      "answer": "900",
+      "explanation": "150 × 6 = 900",
+      "explanation_th": "150 × 6 = 900",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g3_multiplication_multi_digit_q01",
+      "question_th": "23 × 4 เท่ากับเท่าไร?",
+      "question_text": "23 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "82",
+        "92",
+        "102",
+        "112"
+      ],
+      "correct_answer": "92",
+      "answer": "92",
+      "explanation": "23 × 4 = 92",
+      "explanation_th": "23 × 4 = 92",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q02",
+      "question_th": "36 × 3 เท่ากับเท่าไร?",
+      "question_text": "36 × 3 เท่ากับเท่าไร?",
+      "choices": [
+        "98",
+        "108",
+        "118",
+        "128"
+      ],
+      "correct_answer": "108",
+      "answer": "108",
+      "explanation": "36 × 3 = 108",
+      "explanation_th": "36 × 3 = 108",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q03",
+      "question_th": "45 × 6 เท่ากับเท่าไร?",
+      "question_text": "45 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "260",
+        "270",
+        "280",
+        "290"
+      ],
+      "correct_answer": "270",
+      "answer": "270",
+      "explanation": "45 × 6 = 270",
+      "explanation_th": "45 × 6 = 270",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q04",
+      "question_th": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
+      "question_text": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
+      "choices": [
+        "100 เล่ม",
+        "110 เล่ม",
+        "120 เล่ม",
+        "130 เล่ม"
+      ],
+      "correct_answer": "120 เล่ม",
+      "answer": "120 เล่ม",
+      "explanation": "24 × 5 = 120 เล่ม",
+      "explanation_th": "24 × 5 = 120 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q05",
+      "question_th": "32 × 7 เท่ากับเท่าไร?",
+      "question_text": "32 × 7 เท่ากับเท่าไร?",
+      "choices": [
+        "214",
+        "224",
+        "234",
+        "244"
+      ],
+      "correct_answer": "224",
+      "answer": "224",
+      "explanation": "32 × 7 = 224",
+      "explanation_th": "32 × 7 = 224",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q06",
+      "question_th": "58 × 2 เท่ากับเท่าไร?",
+      "question_text": "58 × 2 เท่ากับเท่าไร?",
+      "choices": [
+        "106",
+        "116",
+        "126",
+        "136"
+      ],
+      "correct_answer": "116",
+      "answer": "116",
+      "explanation": "58 × 2 = 116",
+      "explanation_th": "58 × 2 = 116",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q07",
+      "question_th": "67 × 4 เท่ากับเท่าไร?",
+      "question_text": "67 × 4 เท่ากับเท่าไร?",
+      "choices": [
+        "258",
+        "268",
+        "278",
+        "288"
+      ],
+      "correct_answer": "268",
+      "answer": "268",
+      "explanation": "67 × 4 = 268",
+      "explanation_th": "67 × 4 = 268",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q08",
+      "question_th": "125 × 3 เท่ากับเท่าไร?",
+      "question_text": "125 × 3 เท่ากับเท่าไร?",
+      "choices": [
+        "365",
+        "375",
+        "385",
+        "395"
+      ],
+      "correct_answer": "375",
+      "answer": "375",
+      "explanation": "125 × 3 = 375",
+      "explanation_th": "125 × 3 = 375",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q09",
+      "question_th": "214 × 2 เท่ากับเท่าไร?",
+      "question_text": "214 × 2 เท่ากับเท่าไร?",
+      "choices": [
+        "418",
+        "428",
+        "438",
+        "448"
+      ],
+      "correct_answer": "428",
+      "answer": "428",
+      "explanation": "214 × 2 = 428",
+      "explanation_th": "214 × 2 = 428",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q10",
+      "question_th": "150 × 6 เท่ากับเท่าไร?",
+      "question_text": "150 × 6 เท่ากับเท่าไร?",
+      "choices": [
+        "800",
+        "850",
+        "900",
+        "950"
+      ],
+      "correct_answer": "900",
+      "answer": "900",
+      "explanation": "150 × 6 = 900",
+      "explanation_th": "150 × 6 = 900",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Multiplication with Equal Groups",
+  "objective_en": "Learn Multiplication with Equal Groups with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+  "worked_examples_en": [
+    {
+      "title_en": "g3_multiplication_multi_digit_ep English content pending review",
+      "question_en": "36 × 4 = ?",
+      "solution_en": "36 × 4 = 144 ✅"
+    },
+    {
+      "title_en": "g3_multiplication_multi_digit_ep English content pending review",
+      "question_en": "oranges 25 fruits fruits 3 ?",
+      "solution_en": "25 × 3 = 75 ✅?"
+    },
+    {
+      "title_en": "g3_multiplication_multi_digit_ep English content pending review",
+      "question_en": "123 × 3 = ?",
+      "solution_en": "123 × 3 = 369 ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: ทดตัวเลขผิดหลัก ทำให้ผลลัพธ์ผิด",
+    "Mistake: คูณหลักเดียวแล้วลืมอีกหลักหนึ่ง",
+    "Mistake: ตัวทดไปบวกผิดที่ ทำให้ผลคูณไม่ถูกต้อง"
+  ],
+  "hints_en": [
+    "Hint: ทำทีละหลัก คูณหลักหน่วยก่อน แล้วค่อยไปหลักสิบ",
+    "Hint: ถ้าผลคูณเกิน 9 ให้ทดตัวเลขไปบวกกับผลคูณของหลักถัดไป",
+    "Hint: ตรวจคำตอบโดยประมาณค่า เช่น 36 × 4 ใกล้เคียง 40 × 4 = 160 ดังนั้นคำตอบควรใกล้ 160"
+  ],
+  "explanation_steps_en": [
+    "Step: เวลาคูณเลขหลายหลัก ให้เขียนตัวเลขเรียงหลักกันให้ตรง",
+    "Step: คูณหลักหน่วยก่อน แล้วค่อยคูณหลักสิบ",
+    "Step: ถ้าผลคูณของหลักใดเกิน 9 ให้ทดตัวเลขไปบวกกับผลคูณของหลักถัดไป",
+    "Step: การคูณเลขสองหลักกับเลขหนึ่งหลัก ให้คูณเลขหนึ่งหลักกับทั้งสองหลักของเลขสองหลัก",
+    "Step: ตรวจคำตอบโดยสลับที่หรือประมาณค่า"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g3_multiplication_multi_digit_q01",
+      "question_th": "23 × 4 เท่ากับเท่าไร?",
+      "question_text": "23 × 4 ?",
+      "choices": [
+        "82",
+        "92",
+        "102",
+        "112"
+      ],
+      "correct_answer": "92",
+      "answer": "92",
+      "explanation": "23 × 4 = 92",
+      "explanation_th": "23 × 4 = 92",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core",
+      "question_en": "23 × 4 ?",
+      "explanation_en": "23 × 4 = 92",
+      "choices_en": [
+        "82",
+        "92",
+        "102",
+        "112"
+      ],
+      "answer_en": "92"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q02",
+      "question_th": "36 × 3 เท่ากับเท่าไร?",
+      "question_text": "36 × 3 ?",
+      "choices": [
+        "98",
+        "108",
+        "118",
+        "128"
+      ],
+      "correct_answer": "108",
+      "answer": "108",
+      "explanation": "36 × 3 = 108",
+      "explanation_th": "36 × 3 = 108",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core",
+      "question_en": "36 × 3 ?",
+      "explanation_en": "36 × 3 = 108",
+      "choices_en": [
+        "98",
+        "108",
+        "118",
+        "128"
+      ],
+      "answer_en": "108"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q03",
+      "question_th": "45 × 6 เท่ากับเท่าไร?",
+      "question_text": "45 × 6 ?",
+      "choices": [
+        "260",
+        "270",
+        "280",
+        "290"
+      ],
+      "correct_answer": "270",
+      "answer": "270",
+      "explanation": "45 × 6 = 270",
+      "explanation_th": "45 × 6 = 270",
+      "difficulty": "easy",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core",
+      "question_en": "45 × 6 ?",
+      "explanation_en": "45 × 6 = 270",
+      "choices_en": [
+        "260",
+        "270",
+        "280",
+        "290"
+      ],
+      "answer_en": "270"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q04",
+      "question_th": "พี่อลิสมีสมุด 24 กอง กองละ 5 เล่ม รวมกี่เล่ม?",
+      "question_text": "24 5 books books?",
+      "choices": [
+        "100 books?",
+        "110 books?",
+        "120 books?",
+        "130 books?"
+      ],
+      "correct_answer": "120 books?",
+      "answer": "120 books?",
+      "explanation": "24 × 5 = 120 books?",
+      "explanation_th": "24 × 5 = 120 เล่ม",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core",
+      "question_en": "24 5 books books?",
+      "explanation_en": "24 × 5 = 120 books?",
+      "choices_en": [
+        "100 books?",
+        "110 books?",
+        "120 books?",
+        "130 books?"
+      ],
+      "answer_en": "120 books?"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q05",
+      "question_th": "32 × 7 เท่ากับเท่าไร?",
+      "question_text": "32 × 7 ?",
+      "choices": [
+        "214",
+        "224",
+        "234",
+        "244"
+      ],
+      "correct_answer": "224",
+      "answer": "224",
+      "explanation": "32 × 7 = 224",
+      "explanation_th": "32 × 7 = 224",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core",
+      "question_en": "32 × 7 ?",
+      "explanation_en": "32 × 7 = 224",
+      "choices_en": [
+        "214",
+        "224",
+        "234",
+        "244"
+      ],
+      "answer_en": "224"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q06",
+      "question_th": "58 × 2 เท่ากับเท่าไร?",
+      "question_text": "58 × 2 ?",
+      "choices": [
+        "106",
+        "116",
+        "126",
+        "136"
+      ],
+      "correct_answer": "116",
+      "answer": "116",
+      "explanation": "58 × 2 = 116",
+      "explanation_th": "58 × 2 = 116",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core",
+      "question_en": "58 × 2 ?",
+      "explanation_en": "58 × 2 = 116",
+      "choices_en": [
+        "106",
+        "116",
+        "126",
+        "136"
+      ],
+      "answer_en": "116"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q07",
+      "question_th": "67 × 4 เท่ากับเท่าไร?",
+      "question_text": "67 × 4 ?",
+      "choices": [
+        "258",
+        "268",
+        "278",
+        "288"
+      ],
+      "correct_answer": "268",
+      "answer": "268",
+      "explanation": "67 × 4 = 268",
+      "explanation_th": "67 × 4 = 268",
+      "difficulty": "medium",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "core",
+      "question_en": "67 × 4 ?",
+      "explanation_en": "67 × 4 = 268",
+      "choices_en": [
+        "258",
+        "268",
+        "278",
+        "288"
+      ],
+      "answer_en": "268"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q08",
+      "question_th": "125 × 3 เท่ากับเท่าไร?",
+      "question_text": "125 × 3 ?",
+      "choices": [
+        "365",
+        "375",
+        "385",
+        "395"
+      ],
+      "correct_answer": "375",
+      "answer": "375",
+      "explanation": "125 × 3 = 375",
+      "explanation_th": "125 × 3 = 375",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge",
+      "question_en": "125 × 3 ?",
+      "explanation_en": "125 × 3 = 375",
+      "choices_en": [
+        "365",
+        "375",
+        "385",
+        "395"
+      ],
+      "answer_en": "375"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q09",
+      "question_th": "214 × 2 เท่ากับเท่าไร?",
+      "question_text": "214 × 2 ?",
+      "choices": [
+        "418",
+        "428",
+        "438",
+        "448"
+      ],
+      "correct_answer": "428",
+      "answer": "428",
+      "explanation": "214 × 2 = 428",
+      "explanation_th": "214 × 2 = 428",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge",
+      "question_en": "214 × 2 ?",
+      "explanation_en": "214 × 2 = 428",
+      "choices_en": [
+        "418",
+        "428",
+        "438",
+        "448"
+      ],
+      "answer_en": "428"
+    },
+    {
+      "question_id": "g3_multiplication_multi_digit_q10",
+      "question_th": "150 × 6 เท่ากับเท่าไร?",
+      "question_text": "150 × 6 ?",
+      "choices": [
+        "800",
+        "850",
+        "900",
+        "950"
+      ],
+      "correct_answer": "900",
+      "answer": "900",
+      "explanation": "150 × 6 = 900",
+      "explanation_th": "150 × 6 = 900",
+      "difficulty": "hard",
+      "skill_tag": "g3_multiplication_multi_digit",
+      "question_type": "challenge",
+      "question_en": "150 × 6 ?",
+      "explanation_en": "150 × 6 = 900",
+      "choices_en": [
+        "800",
+        "850",
+        "900",
+        "950"
+      ],
+      "answer_en": "900"
+    }
+  ],
+  "quiz_id": "g3_multiplication_multi_digit_ep",
+  "generated_at": "2026-05-16T04:16:41.443907+00:00",
+  "source_lesson_id": "g3_multiplication_multi_digit",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+      "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+      "data": {
+        "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads.",
+      "content_en": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads.",
+      "data": {
+        "content_en": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "array_model",
+      "rows": 7,
+      "cols": 8,
+      "total": 56,
+      "unit": "beads",
+      "symbol": "🔵",
+      "data": {
+        "model_type": "array_model",
+        "rows": 7,
+        "cols": 8,
+        "total": 56,
+        "unit": "beads",
+        "symbol": "🔵"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "7 × 8 = 56 beads",
+      "content": "7 × 8 = 56 beads",
+      "data": {
+        "expression": "7 × 8 = 56 beads",
+        "content_en": "7 × 8 = 56 beads"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+      "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+      "choices": [
+        "42 pencils",
+        "40 pencils",
+        "45 pencils",
+        "47 pencils"
+      ],
+      "correct_answer": "42 pencils",
+      "answer": "42 pencils",
+      "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+        "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+        "choices": [
+          "42 pencils",
+          "40 pencils",
+          "45 pencils",
+          "47 pencils"
+        ],
+        "correct_answer": "42 pencils",
+        "answer": "42 pencils",
+        "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g3_multiplication_multi_digit",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Multiplication with Equal Groups",
+  "topic": "multiplication",
+  "icon": "times",
+  "story_variants": [
+    {
+      "variant_id": "g3_multiplication_multi_digit_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Multiplication with Equal Groups Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+          "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads.",
+          "data": {
+            "content_en": "Earn arranges beads at the craft table in 7 rows. Each row has 8 items. The rows are equal, so Earn wants to know the total number of beads."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads.",
+          "content_en": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads.",
+          "data": {
+            "content_en": "There are 7 equal rows and 8 in each row. Equal rows use multiplication: 7 × 8 = 56 beads."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "array_model",
+          "rows": 7,
+          "cols": 8,
+          "total": 56,
+          "unit": "beads",
+          "symbol": "🔵",
+          "data": {
+            "model_type": "array_model",
+            "rows": 7,
+            "cols": 8,
+            "total": 56,
+            "unit": "beads",
+            "symbol": "🔵"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "7 × 8 = 56 beads",
+          "content": "7 × 8 = 56 beads",
+          "data": {
+            "expression": "7 × 8 = 56 beads",
+            "content_en": "7 × 8 = 56 beads"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+          "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+          "choices": [
+            "42 pencils",
+            "40 pencils",
+            "45 pencils",
+            "47 pencils"
+          ],
+          "correct_answer": "42 pencils",
+          "answer": "42 pencils",
+          "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+            "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+            "choices": [
+              "42 pencils",
+              "40 pencils",
+              "45 pencils",
+              "47 pencils"
+            ],
+            "correct_answer": "42 pencils",
+            "answer": "42 pencils",
+            "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

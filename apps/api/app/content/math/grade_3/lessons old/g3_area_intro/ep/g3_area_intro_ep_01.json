@@ -1,0 +1,277 @@
+{
+  "variant_id": "g3_area_intro_ep_01",
+  "variant_title_en": "Area of Rectangles — Variant 1",
+  "status": "needs_review",
+  "title_en": "Area of Rectangles",
+  "story_theme_en": "Min went to help the teacher plant vegetables at Suwan Farm. The teacher asked Min to plant cabbage seedlings in rows. Min planted them in 5 rows with 6 seedlings in each row. The teacher asked Min to count how many seedlings were planted in total. Before answering, students must also say what unit the answer uses so the number sentence is complete and can be checked.",
+  "helper_tip_en": "Read the problem carefully. Circle the important numbers. Then figure out what the question is asking.",
+  "think_story_en": "The problem gives 5 rows with 6 seedlings in each row. We use 5 × 6 because we have equal groups. 5 × 6 = 30. The unit is seedlings (ต้น).",
+  "explanation_steps_en": [
+    "Area is the size of the surface that a shape covers.",
+    "Area units are square units such as square centimeters (cm²) or square meters (m²).",
+    "Area of a rectangle = width × length.",
+    "Area of a square = side × side (because all sides are equal).",
+    "If you measure in centimeters, the area is in square centimeters. If you measure in meters, the area is in square meters."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Find the area of a rectangle",
+      "question_en": "A grass field is 8 meters wide and 5 meters long. What is its area?",
+      "solution_en": "Area = 8 × 5 = 40 square meters ✅"
+    },
+    {
+      "title_en": "Find the area of a square",
+      "question_en": "A square board has sides that are 6 meters long. What is its area?",
+      "solution_en": "Area = 6 × 6 = 36 square meters ✅"
+    },
+    {
+      "title_en": "Using area in real life",
+      "question_en": "A bedroom is 4 meters wide and 5 meters long. How many square meters of flooring are needed?",
+      "solution_en": "Area = 4 × 5 = 20 square meters ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Using the wrong formula — for example, using width + length instead of width × length.",
+    "Forgetting to write the unit as square meters or square centimeters.",
+    "Measuring the wrong sides — width and length are swapped, but the product is the same."
+  ],
+  "hints_en": [
+    "Area means how much surface something covers. Use the formula width × length.",
+    "If you forget the formula, imagine placing small squares to fill the area and count them.",
+    "Area units must be square units such as square centimeters or square meters."
+  ],
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin helped the music teacher arrange music notes on a table in the music room. She placed them in 7 rows with 8 notes in each row to see the pattern clearly. Lin needed to find the total number of notes from the rows and columns. This exercise teaches the concept of area of a rectangle through a school bus schedule activity. Before the school bus arrives, children must mark a schedule grid. After solving, students must also say what unit the answer uses so the number sentence is complete and can be checked.",
+      "data": {
+        "content_en": "Lin helped the music teacher arrange music notes on a table in the music room. She placed them in 7 rows with 8 notes in each row to see the pattern clearly. Lin needed to find the total number of notes from the rows and columns. This exercise teaches the concept of area of a rectangle through a school bus schedule activity. Before the school bus arrives, children must mark a schedule grid. After solving, students must also say what unit the answer uses so the number sentence is complete and can be checked."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "The problem gives 7 rows with 8 in each row, so we use 7 × 8 because we have equal groups. The result is 56 square units.",
+      "data": {
+        "content_en": "The problem gives 7 rows with 8 in each row, so we use 7 × 8 because we have equal groups. The result is 56 square units."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Use a Diagram to Help You Think",
+      "description": "The diagram uses the same items and numbers as the problem",
+      "model_type": "area_model",
+      "rows": 5,
+      "cols": 6,
+      "total": 30,
+      "unit": "square units",
+      "symbol": "⬜",
+      "data": {
+        "type": "model_diagram",
+        "title": "Use a Diagram to Help You Think",
+        "description": "The diagram uses the same items and numbers as the problem",
+        "model_type": "area_model",
+        "rows": 5,
+        "cols": 6,
+        "total": 30,
+        "unit": "square units",
+        "symbol": "⬜"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Write the Number Sentence",
+      "expression": "5 × 6 = 30 seedlings",
+      "content": "5 × 6 = 30 seedlings",
+      "data": {
+        "expression": "5 × 6 = 30 seedlings",
+        "content_en": "5 × 6 = 30 seedlings"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "The teacher placed pencils in 5 boxes with 7 pencils in each box. How many pencils are there in total?",
+      "choices": [
+        "35 pencils",
+        "33 pencils",
+        "38 pencils",
+        "40 pencils"
+      ],
+      "correct_answer": "35 pencils",
+      "explanation": "There are 5 equal groups of 7, so we use 5 × 7 = 35",
+      "data": {
+        "question": "The teacher placed pencils in 5 boxes with 7 pencils in each box. How many pencils are there in total?",
+        "choices": [
+          "35 pencils",
+          "33 pencils",
+          "38 pencils",
+          "40 pencils"
+        ],
+        "correct_answer": "35 pencils",
+        "explanation": "There are 5 equal groups of 7, so we use 5 × 7 = 35"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "area",
+      "th": "พื้นที่",
+      "definition_en": "The size of a surface inside a shape"
+    },
+    {
+      "en": "rectangle",
+      "th": "รูปสี่เหลี่ยมผืนผ้า",
+      "definition_en": "A shape with 4 sides and 4 right angles"
+    },
+    {
+      "en": "square",
+      "th": "รูปสี่เหลี่ยมจัตุรัส",
+      "definition_en": "A shape with 4 equal sides and 4 right angles"
+    },
+    {
+      "en": "width",
+      "th": "ความกว้าง",
+      "definition_en": "How wide something is"
+    },
+    {
+      "en": "length",
+      "th": "ความยาว",
+      "definition_en": "How long something is"
+    },
+    {
+      "en": "square units",
+      "th": "ตารางหน่วย",
+      "definition_en": "The unit used to measure area"
+    },
+    {
+      "en": "multiply",
+      "th": "คูณ",
+      "definition_en": "To add equal groups together"
+    },
+    {
+      "en": "rows",
+      "th": "แถว",
+      "definition_en": "Horizontal lines of items"
+    },
+    {
+      "en": "columns",
+      "th": "คอลัมน์",
+      "definition_en": "Vertical lines of items"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "A classroom is 5 meters wide and 4 meters long. What is its area in square meters?",
+      "choices": [
+        "9 sq m",
+        "20 sq m",
+        "22 sq m",
+        "1 sq m"
+      ],
+      "answer": "20 sq m",
+      "explanation": "Area = width × length = 5 × 4 = 20 square meters"
+    },
+    {
+      "q": "A garden is 7 meters wide and 5 meters long. What is its area in square meters?",
+      "choices": [
+        "12 sq m",
+        "35 sq m",
+        "37 sq m",
+        "2 sq m"
+      ],
+      "answer": "35 sq m",
+      "explanation": "Area = 7 × 5 = 35 square meters"
+    },
+    {
+      "q": "A lawn is 6 meters wide and 3 meters long. What is its area?",
+      "choices": [
+        "9 sq m",
+        "18 sq m",
+        "20 sq m",
+        "3 sq m"
+      ],
+      "answer": "18 sq m",
+      "explanation": "Area = 6 × 3 = 18 square meters"
+    },
+    {
+      "q": "A flower bed is 8 meters wide and 4 meters long. What is its area?",
+      "choices": [
+        "12 sq m",
+        "32 sq m",
+        "34 sq m",
+        "4 sq m"
+      ],
+      "answer": "32 sq m",
+      "explanation": "Area = 8 × 4 = 32 square meters"
+    },
+    {
+      "q": "A walkway is 9 meters wide and 2 meters long. What is its area?",
+      "choices": [
+        "11 sq m",
+        "18 sq m",
+        "20 sq m",
+        "7 sq m"
+      ],
+      "answer": "18 sq m",
+      "explanation": "Area = 9 × 2 = 18 square meters"
+    },
+    {
+      "q": "A library floor is 7 meters wide and 6 meters long. What is its area?",
+      "choices": [
+        "13 sq m",
+        "42 sq m",
+        "44 sq m",
+        "1 sq m"
+      ],
+      "answer": "42 sq m",
+      "explanation": "Area = 7 × 6 = 42 square meters"
+    },
+    {
+      "q": "An activity board is 10 meters wide and 3 meters long. What is its area?",
+      "choices": [
+        "13 sq m",
+        "30 sq m",
+        "32 sq m",
+        "7 sq m"
+      ],
+      "answer": "30 sq m",
+      "explanation": "Area = 10 × 3 = 30 square meters"
+    },
+    {
+      "q": "A rug is 4 meters wide and 4 meters long. What is its area?",
+      "choices": [
+        "8 sq m",
+        "16 sq m",
+        "18 sq m",
+        "0 sq m"
+      ],
+      "answer": "16 sq m",
+      "explanation": "Area = 4 × 4 = 16 square meters"
+    },
+    {
+      "q": "A vegetable patch is 11 meters wide and 2 meters long. What is its area?",
+      "choices": [
+        "13 sq m",
+        "22 sq m",
+        "24 sq m",
+        "9 sq m"
+      ],
+      "answer": "22 sq m",
+      "explanation": "Area = 11 × 2 = 22 square meters"
+    },
+    {
+      "q": "An activity court is 6 meters wide and 6 meters long. What is its area?",
+      "choices": [
+        "12 sq m",
+        "36 sq m",
+        "38 sq m",
+        "0 sq m"
+      ],
+      "answer": "36 sq m",
+      "explanation": "Area = 6 × 6 = 36 square meters"
+    }
+  ],
+  "explanation_en": "To find the area of a rectangle, multiply the width by the length. For a square, multiply side by side. Always remember to write the answer with the correct unit: square meters (m²) or square centimeters (cm²)."
+}

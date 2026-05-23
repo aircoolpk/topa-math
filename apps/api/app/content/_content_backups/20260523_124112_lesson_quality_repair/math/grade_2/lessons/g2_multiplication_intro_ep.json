@@ -1,0 +1,1046 @@
+{
+  "lesson_id": "g2_multiplication_intro_ep",
+  "id": "g2_multiplication_intro_ep",
+  "grade_level": 2,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "การคูณคือการบวกจำนวนเท่าๆ กันหลายครั้ง เช่น 4 × 3 หมายถึง 3 + 3 + 3 + 3",
+    "เครื่องหมาย × อ่านว่า คูณ 4 × 3 อ่านว่า สี่คูณสาม หรือ สี่เท่าของสาม",
+    "ตัวเลขตัวหน้าคือจำนวนกลุ่ม ตัวเลขตัวหลังคือจำนวนสิ่งของในแต่ละกลุ่ม",
+    "เช่น 4 × 3 หมายถึง มี 4 กลุ่ม กลุ่มละ 3 ได้แก่ 3 + 3 + 3 + 3 = 12",
+    "สลับที่การคูณได้ เช่น 4 × 3 = 3 × 4 = 12"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "คูณลูกปัด",
+      "question_th": "มีถุงลูกปัด 5 ใบ ใบละ 4 ลูก รวมมีลูกปัดกี่ลูก?",
+      "solution_th": "5 × 4 = 20 ลูกปัด ✅"
+    },
+    {
+      "title_th": "คูณดินสอ",
+      "question_th": "แม่ซื้อดินสอ 6 กล่อง กล่องละ 2 แท่ง รวมได้ดินสอกี่แท่ง?",
+      "solution_th": "6 × 2 = 12 แท่ง ✅"
+    },
+    {
+      "title_th": "คูณขนม",
+      "question_th": "มีเพื่อน 4 คน แต่ละคนได้ขนม 5 ชิ้น รวมขนมกี่ชิ้น?",
+      "solution_th": "4 × 5 = 20 ชิ้น ✅"
+    }
+  ],
+  "common_mistakes": [
+    "สับสนระหว่าง 4 × 3 กับ 4 + 3 ว่าอันไหนมากกว่า",
+    "ไม่เข้าใจว่าตัวเลขตัวหน้าเป็นจำนวนกลุ่ม ตัวหลังเป็นจำนวนในกลุ่ม",
+    "คูณผิดโดยลืมว่าต้องบวกซ้ำหลายครั้ง เช่น คิดว่า 4 × 3 = 7"
+  ],
+  "hints": [
+    "จำได้ง่ายๆ การคูณคือการบวกซ้ำ ถามว่า มีกี่กลุ่ม? กลุ่มละเท่าไหร่? รวมกันเท่าไหร่?",
+    "วาดภาพช่วยได้ เช่น วาดกล่อง 4 ใบ ใส่ลูกบอลใบละ 3 ลูก",
+    "สลับที่ได้เสมอ ถ้างงว่า 4 × 3 ให้ลองคิดว่า 3 × 4 ก็ได้คำตอบเดียวกัน"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g2_multiplication_intro",
+  "skill_code": "g2_multiplication_intro_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g2_multiplication_intro_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Multiplication with Equal Groups Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+          "content_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+          "data": {
+            "content_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets.",
+          "content_en": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets.",
+          "data": {
+            "content_en": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "array_model",
+          "rows": 6,
+          "cols": 8,
+          "total": 48,
+          "unit": "bus tickets",
+          "symbol": "🎟️",
+          "data": {
+            "model_type": "array_model",
+            "rows": 6,
+            "cols": 8,
+            "total": 48,
+            "unit": "bus tickets",
+            "symbol": "🎟️"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 8 = 48 bus tickets",
+          "content": "6 × 8 = 48 bus tickets",
+          "data": {
+            "expression": "6 × 8 = 48 bus tickets",
+            "content_en": "6 × 8 = 48 bus tickets"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+          "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+          "choices": [
+            "42 pencils",
+            "40 pencils",
+            "45 pencils",
+            "47 pencils"
+          ],
+          "correct_answer": "42 pencils",
+          "answer": "42 pencils",
+          "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+            "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+            "choices": [
+              "42 pencils",
+              "40 pencils",
+              "45 pencils",
+              "47 pencils"
+            ],
+            "correct_answer": "42 pencils",
+            "answer": "42 pencils",
+            "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "การคูณเริ่มต้น",
+  "preview_subtitle_th": "เรียนรู้การคูณและการหาร",
+  "cover_theme": "multiplication_intro",
+  "cover_emoji": "✖️",
+  "cover_color": "blue",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "เรียนรู้การคูณและการหาร",
+  "learning_objective_th": "นักเรียนสามารถเข้าใจความหมายของการคูณในฐานะการบวกจำนวนเท่าๆ กันซ้ำๆ และใช้เครื่องหมาย × ได้",
+  "lesson_intro_th": "พี่อลิสมีกล่องลูกชิ้น 4 กล่อง กล่องละ 3 ลูก รวมพี่อลิสมีลูกชิ้นกี่ลูก? 🍡",
+  "concept_explanation_th": "การคูณคือการบวกจำนวนเท่าๆ กันหลายครั้ง เช่น 4 × 3 หมายถึง 3 + 3 + 3 + 3 เครื่องหมาย × อ่านว่า คูณ 4 × 3 อ่านว่า สี่คูณสาม หรือ สี่เท่าของสาม ตัวเลขตัวหน้าคือจำนวนกลุ่ม ตัวเลขตัวหลังคือจำนวนสิ่งของในแต่ละกลุ่ม เช่น 4 × 3 หมายถึง มี 4 กลุ่ม กลุ่มละ 3 ได้แก่ 3 + 3 + 3 + 3 = 12 สลับที่การคูณได้ เช่น 4 × 3 = 3 × 4 = 12",
+  "singapore_math_model": {
+    "type": "array_model",
+    "model_type": "array_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพพื้นที่พร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "area_model",
+    "rows": 2,
+    "columns": 5,
+    "total": 10,
+    "label_th": "แผนภาพพื้นที่แบบช่อง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท การคูณคือการบวกซ้ำๆ ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพพื้นที่ เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "คูณลูกปัด",
+      "question_th": "มีถุงลูกปัด 5 ใบ ใบละ 4 ลูก รวมมีลูกปัดกี่ลูก?",
+      "solution_th": "5 × 4 = 20 ลูกปัด ✅"
+    },
+    {
+      "title_th": "คูณดินสอ",
+      "question_th": "แม่ซื้อดินสอ 6 กล่อง กล่องละ 2 แท่ง รวมได้ดินสอกี่แท่ง?",
+      "solution_th": "6 × 2 = 12 แท่ง ✅"
+    },
+    {
+      "title_th": "คูณขนม",
+      "question_th": "มีเพื่อน 4 คน แต่ละคนได้ขนม 5 ชิ้น รวมขนมกี่ชิ้น?",
+      "solution_th": "4 × 5 = 20 ชิ้น ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "สับสนระหว่าง 4 × 3 กับ 4 + 3 ว่าอันไหนมากกว่า",
+    "ไม่เข้าใจว่าตัวเลขตัวหน้าเป็นจำนวนกลุ่ม ตัวหลังเป็นจำนวนในกลุ่ม",
+    "คูณผิดโดยลืมว่าต้องบวกซ้ำหลายครั้ง เช่น คิดว่า 4 × 3 = 7"
+  ],
+  "questions": [
+    {
+      "question_id": "g2_multiplication_intro_q01",
+      "question_th": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "7",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
+      "explanation_th": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q02",
+      "question_th": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "7",
+        "10",
+        "12",
+        "15"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "5 × 2 = 10",
+      "explanation_th": "5 × 2 = 10",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q03",
+      "question_th": "4 × 3 เท่ากับเท่าไร?",
+      "question_text": "4 × 3 เท่ากับเท่าไร?",
+      "choices": [
+        "7",
+        "11",
+        "12",
+        "13"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "4 × 3 = 12",
+      "explanation_th": "4 × 3 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q04",
+      "question_th": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
+      "question_text": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
+      "choices": [
+        "4 × 2",
+        "2 × 2",
+        "4 + 2",
+        "8 × 2"
+      ],
+      "correct_answer": "4 × 2",
+      "answer": "4 × 2",
+      "explanation": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "explanation_th": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q05",
+      "question_th": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "11",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "6 × 5 = 30",
+      "explanation_th": "6 × 5 = 30",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q06",
+      "question_th": "3 × 5 เท่ากับเท่าไร?",
+      "question_text": "3 × 5 เท่ากับเท่าไร?",
+      "choices": [
+        "8",
+        "12",
+        "15",
+        "20"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "3 × 5 = 15",
+      "explanation_th": "3 × 5 = 15",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q07",
+      "question_th": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
+      "question_text": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "10 × 2 = 20",
+      "explanation_th": "10 × 2 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q08",
+      "question_th": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
+      "question_text": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
+      "choices": [
+        "9",
+        "16",
+        "20",
+        "25"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "4 × 5 = 20",
+      "explanation_th": "4 × 5 = 20",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q09",
+      "question_th": "5 × 5 เท่ากับเท่าไร?",
+      "question_text": "5 × 5 เท่ากับเท่าไร?",
+      "choices": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "5 × 5 = 25",
+      "explanation_th": "5 × 5 = 25",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q10",
+      "question_th": "2 × 9 เท่ากับเท่าไร?",
+      "question_text": "2 × 9 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "16",
+        "18",
+        "20"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "2 × 9 = 18",
+      "explanation_th": "2 × 9 = 18",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g2_multiplication_intro_q01",
+      "question_th": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "7",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
+      "explanation_th": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q02",
+      "question_th": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "7",
+        "10",
+        "12",
+        "15"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "5 × 2 = 10",
+      "explanation_th": "5 × 2 = 10",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q03",
+      "question_th": "4 × 3 เท่ากับเท่าไร?",
+      "question_text": "4 × 3 เท่ากับเท่าไร?",
+      "choices": [
+        "7",
+        "11",
+        "12",
+        "13"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "4 × 3 = 12",
+      "explanation_th": "4 × 3 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q04",
+      "question_th": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
+      "question_text": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
+      "choices": [
+        "4 × 2",
+        "2 × 2",
+        "4 + 2",
+        "8 × 2"
+      ],
+      "correct_answer": "4 × 2",
+      "answer": "4 × 2",
+      "explanation": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "explanation_th": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q05",
+      "question_th": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
+      "choices": [
+        "11",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "6 × 5 = 30",
+      "explanation_th": "6 × 5 = 30",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q06",
+      "question_th": "3 × 5 เท่ากับเท่าไร?",
+      "question_text": "3 × 5 เท่ากับเท่าไร?",
+      "choices": [
+        "8",
+        "12",
+        "15",
+        "20"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "3 × 5 = 15",
+      "explanation_th": "3 × 5 = 15",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q07",
+      "question_th": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
+      "question_text": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "10 × 2 = 20",
+      "explanation_th": "10 × 2 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q08",
+      "question_th": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
+      "question_text": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
+      "choices": [
+        "9",
+        "16",
+        "20",
+        "25"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "4 × 5 = 20",
+      "explanation_th": "4 × 5 = 20",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q09",
+      "question_th": "5 × 5 เท่ากับเท่าไร?",
+      "question_text": "5 × 5 เท่ากับเท่าไร?",
+      "choices": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "5 × 5 = 25",
+      "explanation_th": "5 × 5 = 25",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q10",
+      "question_th": "2 × 9 เท่ากับเท่าไร?",
+      "question_text": "2 × 9 เท่ากับเท่าไร?",
+      "choices": [
+        "11",
+        "16",
+        "18",
+        "20"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "2 × 9 = 18",
+      "explanation_th": "2 × 9 = 18",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Multiplication with Equal Groups",
+  "objective_en": "Learn Multiplication with Equal Groups with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+  "worked_examples_en": [
+    {
+      "title_en": "g2_multiplication_intro_ep English content pending review",
+      "question_en": "marbles 5 leaves leaves 4 balls marbles balls?",
+      "solution_en": "5 × 4 = 20 marbles ✅?"
+    },
+    {
+      "title_en": "g2_multiplication_intro_ep English content pending review",
+      "question_en": "pencils 6 2 pencils pencils pencils?",
+      "solution_en": "6 × 2 = 12 pencils ✅?"
+    },
+    {
+      "title_en": "g2_multiplication_intro_ep English content pending review",
+      "question_en": "4 people people 5 pieces pieces?",
+      "solution_en": "4 × 5 = 20 pieces ✅?"
+    }
+  ],
+  "common_mistakes_en": [
+    "Mistake: สับสนระหว่าง 4 × 3 กับ 4 + 3 ว่าอันไหนมากกว่า",
+    "Mistake: ไม่เข้าใจว่าตัวเลขตัวหน้าเป็นจำนวนกลุ่ม ตัวหลังเป็นจำนวนในกลุ่ม",
+    "Mistake: คูณผิดโดยลืมว่าต้องบวกซ้ำหลายครั้ง เช่น คิดว่า 4 × 3 = 7"
+  ],
+  "hints_en": [
+    "Hint: จำได้ง่ายๆ การคูณคือการบวกซ้ำ ถามว่า มีกี่กลุ่ม? กลุ่มละเท่าไหร่? รวมกันเท่าไหร่?",
+    "Hint: วาดภาพช่วยได้ เช่น วาดกล่อง 4 ใบ ใส่ลูกบอลใบละ 3 ลูก",
+    "Hint: สลับที่ได้เสมอ ถ้างงว่า 4 × 3 ให้ลองคิดว่า 3 × 4 ก็ได้คำตอบเดียวกัน"
+  ],
+  "explanation_steps_en": [
+    "Step: การคูณคือการบวกจำนวนเท่าๆ กันหลายครั้ง เช่น 4 × 3 หมายถึง 3 + 3 + 3 + 3",
+    "Step: เครื่องหมาย × อ่านว่า คูณ 4 × 3 อ่านว่า สี่คูณสาม หรือ สี่เท่าของสาม",
+    "Step: ตัวเลขตัวหน้าคือจำนวนกลุ่ม ตัวเลขตัวหลังคือจำนวนสิ่งของในแต่ละกลุ่ม",
+    "Step: เช่น 4 × 3 หมายถึง มี 4 กลุ่ม กลุ่มละ 3 ได้แก่ 3 + 3 + 3 + 3 = 12",
+    "Step: สลับที่การคูณได้ เช่น 4 × 3 = 3 × 4 = 12"
+  ],
+  "quiz_en": [
+    {
+      "question_id": "g2_multiplication_intro_q01",
+      "question_th": "มี 3 กลุ่ม กลุ่มละ 4 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "3 4 pieces pieces?",
+      "choices": [
+        "7",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "3 4 3 × 4 = 12?",
+      "explanation_th": "3 กลุ่ม กลุ่มละ 4 คือ 3 × 4 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core",
+      "question_en": "3 4 pieces pieces?",
+      "explanation_en": "3 4 3 × 4 = 12?",
+      "choices_en": [
+        "7",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer_en": "12"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q02",
+      "question_th": "มี 5 กลุ่ม กลุ่มละ 2 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "5 2 pieces pieces?",
+      "choices": [
+        "7",
+        "10",
+        "12",
+        "15"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "5 × 2 = 10",
+      "explanation_th": "5 × 2 = 10",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core",
+      "question_en": "5 2 pieces pieces?",
+      "explanation_en": "5 × 2 = 10",
+      "choices_en": [
+        "7",
+        "10",
+        "12",
+        "15"
+      ],
+      "answer_en": "10"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q03",
+      "question_th": "4 × 3 เท่ากับเท่าไร?",
+      "question_text": "4 × 3 ?",
+      "choices": [
+        "7",
+        "11",
+        "12",
+        "13"
+      ],
+      "correct_answer": "12",
+      "answer": "12",
+      "explanation": "4 × 3 = 12",
+      "explanation_th": "4 × 3 = 12",
+      "difficulty": "easy",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core",
+      "question_en": "4 × 3 ?",
+      "explanation_en": "4 × 3 = 12",
+      "choices_en": [
+        "7",
+        "11",
+        "12",
+        "13"
+      ],
+      "answer_en": "12"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q04",
+      "question_th": "2 + 2 + 2 + 2 เขียนเป็นการคูณได้อย่างไร?",
+      "question_text": "2 + 2 + 2 + 2 ?",
+      "choices": [
+        "4 × 2",
+        "2 × 2",
+        "4 + 2",
+        "8 × 2"
+      ],
+      "correct_answer": "4 × 2",
+      "answer": "4 × 2",
+      "explanation": "2 4 4 × 2?",
+      "explanation_th": "มีเลข 2 อยู่ 4 กลุ่ม จึงเป็น 4 × 2",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core",
+      "question_en": "2 + 2 + 2 + 2 ?",
+      "explanation_en": "2 4 4 × 2?",
+      "choices_en": [
+        "4 × 2",
+        "2 × 2",
+        "4 + 2",
+        "8 × 2"
+      ],
+      "answer_en": "4 × 2"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q05",
+      "question_th": "มีถาด 6 ใบ ใบละ 5 ชิ้น รวมกี่ชิ้น?",
+      "question_text": "6 leaves leaves 5 pieces pieces?",
+      "choices": [
+        "11",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "6 × 5 = 30",
+      "explanation_th": "6 × 5 = 30",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core",
+      "question_en": "6 leaves leaves 5 pieces pieces?",
+      "explanation_en": "6 × 5 = 30",
+      "choices_en": [
+        "11",
+        "25",
+        "30",
+        "35"
+      ],
+      "answer_en": "30"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q06",
+      "question_th": "3 × 5 เท่ากับเท่าไร?",
+      "question_text": "3 × 5 ?",
+      "choices": [
+        "8",
+        "12",
+        "15",
+        "20"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "3 × 5 = 15",
+      "explanation_th": "3 × 5 = 15",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core",
+      "question_en": "3 × 5 ?",
+      "explanation_en": "3 × 5 = 15",
+      "choices_en": [
+        "8",
+        "12",
+        "15",
+        "20"
+      ],
+      "answer_en": "15"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q07",
+      "question_th": "10 กลุ่ม กลุ่มละ 2 รวมเท่าไร?",
+      "question_text": "10 2 ?",
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "10 × 2 = 20",
+      "explanation_th": "10 × 2 = 20",
+      "difficulty": "medium",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "core",
+      "question_en": "10 2 ?",
+      "explanation_en": "10 × 2 = 20",
+      "choices_en": [
+        "12",
+        "20",
+        "22",
+        "30"
+      ],
+      "answer_en": "20"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q08",
+      "question_th": "4 กลุ่ม กลุ่มละ 5 รวมเท่าไร?",
+      "question_text": "4 5 ?",
+      "choices": [
+        "9",
+        "16",
+        "20",
+        "25"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "4 × 5 = 20",
+      "explanation_th": "4 × 5 = 20",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge",
+      "question_en": "4 5 ?",
+      "explanation_en": "4 × 5 = 20",
+      "choices_en": [
+        "9",
+        "16",
+        "20",
+        "25"
+      ],
+      "answer_en": "20"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q09",
+      "question_th": "5 × 5 เท่ากับเท่าไร?",
+      "question_text": "5 × 5 ?",
+      "choices": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "5 × 5 = 25",
+      "explanation_th": "5 × 5 = 25",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge",
+      "question_en": "5 × 5 ?",
+      "explanation_en": "5 × 5 = 25",
+      "choices_en": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "answer_en": "25"
+    },
+    {
+      "question_id": "g2_multiplication_intro_q10",
+      "question_th": "2 × 9 เท่ากับเท่าไร?",
+      "question_text": "2 × 9 ?",
+      "choices": [
+        "11",
+        "16",
+        "18",
+        "20"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "2 × 9 = 18",
+      "explanation_th": "2 × 9 = 18",
+      "difficulty": "hard",
+      "skill_tag": "g2_multiplication_intro",
+      "question_type": "challenge",
+      "question_en": "2 × 9 ?",
+      "explanation_en": "2 × 9 = 18",
+      "choices_en": [
+        "11",
+        "16",
+        "18",
+        "20"
+      ],
+      "answer_en": "18"
+    }
+  ],
+  "quiz_id": "g2_multiplication_intro_ep",
+  "generated_at": "2026-05-16T04:16:40.920588+00:00",
+  "source_lesson_id": "g2_multiplication_intro",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+      "content_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+      "data": {
+        "content_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets.",
+      "content_en": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets.",
+      "data": {
+        "content_en": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "array_model",
+      "rows": 6,
+      "cols": 8,
+      "total": 48,
+      "unit": "bus tickets",
+      "symbol": "🎟️",
+      "data": {
+        "model_type": "array_model",
+        "rows": 6,
+        "cols": 8,
+        "total": 48,
+        "unit": "bus tickets",
+        "symbol": "🎟️"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6 × 8 = 48 bus tickets",
+      "content": "6 × 8 = 48 bus tickets",
+      "data": {
+        "expression": "6 × 8 = 48 bus tickets",
+        "content_en": "6 × 8 = 48 bus tickets"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+      "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+      "choices": [
+        "42 pencils",
+        "40 pencils",
+        "45 pencils",
+        "47 pencils"
+      ],
+      "correct_answer": "42 pencils",
+      "answer": "42 pencils",
+      "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+        "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+        "choices": [
+          "42 pencils",
+          "40 pencils",
+          "45 pencils",
+          "47 pencils"
+        ],
+        "correct_answer": "42 pencils",
+        "answer": "42 pencils",
+        "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g2_multiplication_intro",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Multiplication with Equal Groups",
+  "topic": "multiplication",
+  "icon": "times",
+  "story_variants": [
+    {
+      "variant_id": "g2_multiplication_intro_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Multiplication with Equal Groups Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+          "content_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets.",
+          "data": {
+            "content_en": "Time arranges bus tickets at the bus stop in 6 rows. Each row has 8 items. The rows are equal, so Time wants to know the total number of bus tickets."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets.",
+          "content_en": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets.",
+          "data": {
+            "content_en": "There are 6 equal rows and 8 in each row. Equal rows use multiplication: 6 × 8 = 48 bus tickets."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "array_model",
+          "rows": 6,
+          "cols": 8,
+          "total": 48,
+          "unit": "bus tickets",
+          "symbol": "🎟️",
+          "data": {
+            "model_type": "array_model",
+            "rows": 6,
+            "cols": 8,
+            "total": 48,
+            "unit": "bus tickets",
+            "symbol": "🎟️"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "6 × 8 = 48 bus tickets",
+          "content": "6 × 8 = 48 bus tickets",
+          "data": {
+            "expression": "6 × 8 = 48 bus tickets",
+            "content_en": "6 × 8 = 48 bus tickets"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+          "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+          "choices": [
+            "42 pencils",
+            "40 pencils",
+            "45 pencils",
+            "47 pencils"
+          ],
+          "correct_answer": "42 pencils",
+          "answer": "42 pencils",
+          "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+            "question_en": "A teacher has 6 boxes of pencils. Each box has 7 pencils. How many pencils are there?",
+            "choices": [
+              "42 pencils",
+              "40 pencils",
+              "45 pencils",
+              "47 pencils"
+            ],
+            "correct_answer": "42 pencils",
+            "answer": "42 pencils",
+            "explanation": "Use multiplication: 6 × 7 = 42 pencils.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

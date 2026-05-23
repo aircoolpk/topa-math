@@ -1,0 +1,281 @@
+{
+  "variant_id": "time_ep_001",
+  "variant_title_th": "เวลา — การอ่านเวลาและการบวกลบเวลา",
+  "variant_title_en": "Time — Reading Time and Adding/Subtracting Time",
+  "status": "needs_review",
+  "title_en": "Time",
+  "story_theme_en": "Lin planned her Monday morning schedule. She wakes up at 07:30. Bathing and getting dressed takes 45 minutes. Eating breakfast takes 25 minutes and walking to school takes 20 minutes. Lin needs to leave at what time to arrive at school on time at 08:30?",
+  "helper_tip_en": "Have students draw the clock face and move the hands step by step to find each new time.",
+  "think_story_en": "Wake at 07:30 + 45 min bathing = 08:15. + 25 min breakfast = 08:40. + 20 min walking = 09:00. Lin must leave at 08:40 to arrive at school by 08:30 on time.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin plans her Monday morning schedule.",
+      "data": {
+        "content_en": "Lin planned her Monday morning schedule. She wakes up at 07:30. Bathing and getting dressed takes 45 minutes. Eating breakfast takes 25 minutes and walking to school takes 20 minutes. Lin needs to leave at what time to arrive at school on time at 08:30?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "07:30 + 45 min = 08:15 → +25 min = 08:40 → +20 min = 09:00. Must leave at 08:40 to arrive by 08:30.",
+      "data": {
+        "content_en": "Wake at 07:30 + 45 min bathing = 08:15. + 25 min breakfast = 08:40. + 20 min walking = 09:00. Lin must leave at 08:40 to arrive at school by 08:30 on time."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Timeline",
+      "description": "A timeline showing Lin's morning activities in order",
+      "model_type": "timeline",
+      "data": {
+        "model_type": "timeline",
+        "events": [
+          {
+            "time": "07:30",
+            "label_en": "Wake up",
+            "duration_min": 0
+          },
+          {
+            "time": "08:15",
+            "label_en": "Bathing and dressing done",
+            "duration_min": 45
+          },
+          {
+            "time": "08:40",
+            "label_en": "Breakfast done",
+            "duration_min": 25
+          },
+          {
+            "time": "09:00",
+            "label_en": "Arrive at school",
+            "duration_min": 20
+          }
+        ],
+        "total_min": 90,
+        "unit": "minutes"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "07:30 + 45 + 25 + 20 = 90 min = 1 hr 30 min",
+      "content": "07:30 + 45 + 25 + 20 = 90 minutes = 1 hour 30 minutes",
+      "data": {
+        "expression": "07:30 + 45 min + 25 min + 20 min = 09:00",
+        "content_en": "07:30 + 45 + 25 + 20 = 90 minutes = 1 hour 30 minutes"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Lin started her homework at 14:45 and finished at 16:10. How long did she study?",
+      "choices": [
+        "1 hour 15 minutes",
+        "1 hour 25 minutes",
+        "1 hour 35 minutes",
+        "2 hours 15 minutes"
+      ],
+      "correct_answer": "1 hour 25 minutes",
+      "explanation": "14:45 to 15:00 = 15 min, 15:00 to 16:00 = 1 hour, 16:00 to 16:10 = 10 min. Total = 1 hour 25 minutes",
+      "data": {
+        "question": "Lin started her homework at 14:45 and finished at 16:10. How long did she study?",
+        "choices": [
+          "1 hour 15 minutes",
+          "1 hour 25 minutes",
+          "1 hour 35 minutes",
+          "2 hours 15 minutes"
+        ],
+        "correct_answer": "1 hour 25 minutes",
+        "explanation": "14:45 to 15:00 = 15 min, 15:00 to 16:00 = 1 hour, 16:00 to 16:10 = 10 min. Total = 1 hour 25 minutes"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Time uses two systems: 12-hour (AM/PM) and 24-hour format.",
+    "1 hour = 60 minutes. Half an hour = 30 minutes. A quarter hour = 15 minutes.",
+    "When adding time, add the minutes first. If the total exceeds 60, convert to hours.",
+    "When subtracting time, if the minutes being subtracted are more than the available minutes, borrow 1 hour = 60 minutes.",
+    "Finding elapsed time: End Time − Start Time = Duration.",
+    "A timeline or number line can help visualize the time passing."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Adding Time",
+      "question_en": "Ai started reading at 09:15 and read for 1 hour 40 minutes. What time did Ai finish?",
+      "solution_en": "09:15 + 1 hour 40 minutes = 10:55 ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Forgetting that 1 hour = 60 minutes and not converting when minutes exceed 60.",
+    "Confusing AM (before noon) with PM (after noon).",
+    "Subtracting time directly without borrowing 1 hour (= 60 min) when the minutes to subtract are larger."
+  ],
+  "hints_en": [
+    "Remember: 1 hour = 60 minutes",
+    "Use a timeline or number line to visualize the time passing.",
+    "Check your answer by working backward."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "clock",
+      "th": "นาฬิกา",
+      "definition_en": "A tool used to tell time"
+    },
+    {
+      "en": "hour",
+      "th": "ชั่วโมง",
+      "definition_en": "A unit of time equal to 60 minutes"
+    },
+    {
+      "en": "minute",
+      "th": "นาที",
+      "definition_en": "A unit of time equal to 60 seconds"
+    },
+    {
+      "en": "AM",
+      "th": "AM",
+      "definition_en": "The time period from midnight to noon (00:01 to 11:59)"
+    },
+    {
+      "en": "PM",
+      "th": "PM",
+      "definition_en": "The time period from noon to midnight (12:01 to 23:59)"
+    },
+    {
+      "en": "start time",
+      "th": "เวลาเริ่มต้น",
+      "definition_en": "The time at which an activity begins"
+    },
+    {
+      "en": "end time",
+      "th": "เวลาสิ้นสุด",
+      "definition_en": "The time at which an activity finishes"
+    },
+    {
+      "en": "duration",
+      "th": "ระยะเวลา",
+      "definition_en": "The length of time between start and end"
+    },
+    {
+      "en": "elapsed time",
+      "th": "เวลาที่ผ่านไป",
+      "definition_en": "The amount of time that passes between two moments"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "How many minutes are in 2 hours and 35 minutes?",
+      "choices": [
+        "155 minutes",
+        "235 minutes",
+        "135 minutes",
+        "145 minutes"
+      ],
+      "answer": "155 minutes",
+      "explanation": "2 × 60 + 35 = 120 + 35 = 155 minutes"
+    },
+    {
+      "q": "Ai left home at 07:45 and arrived at school at 08:30. How long was the trip?",
+      "choices": [
+        "40 minutes",
+        "45 minutes",
+        "55 minutes",
+        "50 minutes"
+      ],
+      "answer": "45 minutes",
+      "explanation": "07:45 to 08:00 = 15 min, 08:00 to 08:30 = 30 min. Total = 45 min"
+    },
+    {
+      "q": "A movie started at 13:15 and ended at 15:45. How long was the movie?",
+      "choices": [
+        "2 hours 15 minutes",
+        "2 hours 30 minutes",
+        "2 hours 45 minutes",
+        "3 hours"
+      ],
+      "answer": "2 hours 30 minutes",
+      "explanation": "13:15 to 15:15 = 2 hours, 15:15 to 15:45 = 30 min. Total = 2h 30min"
+    },
+    {
+      "q": "Lin needs to be at school at 08:00. It takes 35 minutes to walk there. What time should Lin leave home?",
+      "choices": [
+        "07:15",
+        "07:20",
+        "07:25",
+        "07:30"
+      ],
+      "answer": "07:25",
+      "explanation": "08:00 - 35 min = 07:25"
+    },
+    {
+      "q": "A bus departs at 09:50 and arrives at 11:20. How long is the bus ride?",
+      "choices": [
+        "1 hour 20 minutes",
+        "1 hour 30 minutes",
+        "1 hour 10 minutes",
+        "1 hour 40 minutes"
+      ],
+      "answer": "1 hour 30 minutes",
+      "explanation": "09:50 to 10:50 = 1 hour, 10:50 to 11:20 = 30 min. Total = 1h 30min"
+    },
+    {
+      "q": "What time is shown on a 24-hour clock when it is 3:45 PM?",
+      "choices": [
+        "03:45",
+        "13:45",
+        "15:45",
+        "14:45"
+      ],
+      "answer": "15:45",
+      "explanation": "PM hours add 12 to the hour: 3 + 12 = 15. So 3:45 PM = 15:45"
+    },
+    {
+      "q": "Ai studied from 16:30 to 18:00. How many minutes did Ai study?",
+      "choices": [
+        "80 minutes",
+        "90 minutes",
+        "100 minutes",
+        "110 minutes"
+      ],
+      "answer": "90 minutes",
+      "explanation": "16:30 to 17:30 = 1 hour (60 min), 17:30 to 18:00 = 30 min. Total = 90 min"
+    },
+    {
+      "q": "A bakery opens at 07:00 and closes at 19:00. How many hours is it open?",
+      "choices": [
+        "10 hours",
+        "11 hours",
+        "12 hours",
+        "13 hours"
+      ],
+      "answer": "12 hours",
+      "explanation": "07:00 to 19:00 = 12 hours"
+    },
+    {
+      "q": "Lin went to bed at 21:30 and woke up at 06:00. How long did Lin sleep?",
+      "choices": [
+        "7 hours 30 minutes",
+        "8 hours 30 minutes",
+        "9 hours 30 minutes",
+        "8 hours"
+      ],
+      "answer": "8 hours 30 minutes",
+      "explanation": "21:30 to 06:00 = 21:30 to 24:00 = 2h 30min, plus 0:00 to 6:00 = 6h. Total = 8h 30min"
+    },
+    {
+      "q": "A class starts at 08:45 and ends at 10:15. How long is the class?",
+      "choices": [
+        "1 hour 15 minutes",
+        "1 hour 30 minutes",
+        "1 hour 45 minutes",
+        "2 hours"
+      ],
+      "answer": "1 hour 30 minutes",
+      "explanation": "08:45 to 09:45 = 1 hour, 09:45 to 10:15 = 30 min. Total = 1h 30min"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Time is measured in hours and minutes. 1 hour = 60 minutes. To add time, add minutes first and convert if minutes exceed 60. To subtract time, borrow 1 hour (60 min) when needed. Elapsed time = end time − start time."
+}

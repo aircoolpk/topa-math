@@ -4,224 +4,166 @@
   "program": "TH",
   "questions": [
     {
-      "question_id": "g5_fraction_operations_q001",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 4 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
+      "question_id": "g5_fraction_operations_q01",
+      "question_text": "สถานการณ์ที่ 1: แตงโมหนึ่งลูกถูกแบ่งเป็น 10 ชิ้นเท่า ๆ กัน น้องกินไป 7 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 1: แตงโมหนึ่งลูกถูกแบ่งเป็น 10 ชิ้นเท่า ๆ กัน น้องกินไป 7 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
       "choices": [
-        "1/4",
-        "2/4",
-        "4/2",
-        "3/5"
+        "7/10",
+        "3/10",
+        "10/7",
+        "7/3"
       ],
-      "correct_answer": "2/4",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 4 ส่วน จึงเป็น 2/4",
-      "explanation_en": ""
+      "correct_answer": "7/10",
+      "answer": "7/10",
+      "explanation": "กินไป 7 จากทั้งหมด 10 ส่วน จึงเป็น 7/10",
+      "explanation_th": "กินไป 7 จากทั้งหมด 10 ส่วน จึงเป็น 7/10",
+      "difficulty": "easy"
     },
     {
-      "question_id": "g5_fraction_operations_q002",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 5 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
+      "question_id": "g5_fraction_operations_q02",
+      "question_text": "สถานการณ์ที่ 2: แตงโมหนึ่งลูกถูกแบ่งเป็น 9 ชิ้นเท่า ๆ กัน น้องกินไป 2 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 2: แตงโมหนึ่งลูกถูกแบ่งเป็น 9 ชิ้นเท่า ๆ กัน น้องกินไป 2 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
       "choices": [
-        "1/5",
-        "2/5",
-        "5/2",
-        "4/6"
-      ],
-      "correct_answer": "2/5",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 5 ส่วน จึงเป็น 2/5",
-      "explanation_en": ""
-    },
-    {
-      "question_id": "g5_fraction_operations_q003",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 6 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
-      "choices": [
-        "1/6",
-        "2/6",
-        "6/2",
-        "5/7"
-      ],
-      "correct_answer": "2/6",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 6 ส่วน จึงเป็น 2/6",
-      "explanation_en": ""
-    },
-    {
-      "question_id": "g5_fraction_operations_q004",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "medium",
-      "confidence_role": "build_confidence",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 7 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
-      "choices": [
-        "1/7",
-        "2/7",
-        "7/2",
-        "6/8"
-      ],
-      "correct_answer": "2/7",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 7 ส่วน จึงเป็น 2/7",
-      "explanation_en": ""
-    },
-    {
-      "question_id": "g5_fraction_operations_q005",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "challenge",
-      "routine_level": "non_routine",
-      "difficulty": "medium",
-      "confidence_role": "stretch_thinking",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 8 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
-      "choices": [
-        "1/8",
-        "2/8",
-        "8/2",
-        "7/9"
-      ],
-      "correct_answer": "2/8",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 8 ส่วน จึงเป็น 2/8",
-      "explanation_en": ""
-    },
-    {
-      "question_id": "g5_fraction_operations_q006",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 9 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
-      "choices": [
-        "1/9",
         "2/9",
+        "7/9",
         "9/2",
-        "8/10"
+        "2/7"
       ],
       "correct_answer": "2/9",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 9 ส่วน จึงเป็น 2/9",
-      "explanation_en": ""
+      "answer": "2/9",
+      "explanation": "กินไป 2 จากทั้งหมด 9 ส่วน จึงเป็น 2/9",
+      "explanation_th": "กินไป 2 จากทั้งหมด 9 ส่วน จึงเป็น 2/9",
+      "difficulty": "easy"
     },
     {
-      "question_id": "g5_fraction_operations_q007",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 10 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
+      "question_id": "g5_fraction_operations_q03",
+      "question_text": "สถานการณ์ที่ 3: แตงโมหนึ่งลูกถูกแบ่งเป็น 8 ชิ้นเท่า ๆ กัน น้องกินไป 1 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 3: แตงโมหนึ่งลูกถูกแบ่งเป็น 8 ชิ้นเท่า ๆ กัน น้องกินไป 1 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
       "choices": [
-        "1/10",
-        "2/10",
-        "10/2",
-        "9/11"
+        "1/8",
+        "7/8",
+        "8/1",
+        "1/7"
       ],
-      "correct_answer": "2/10",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 10 ส่วน จึงเป็น 2/10",
-      "explanation_en": ""
+      "correct_answer": "1/8",
+      "answer": "1/8",
+      "explanation": "กินไป 1 จากทั้งหมด 8 ส่วน จึงเป็น 1/8",
+      "explanation_th": "กินไป 1 จากทั้งหมด 8 ส่วน จึงเป็น 1/8",
+      "difficulty": "easy"
     },
     {
-      "question_id": "g5_fraction_operations_q008",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "easy",
-      "confidence_role": "build_confidence",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 11 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
+      "question_id": "g5_fraction_operations_q04",
+      "question_text": "สถานการณ์ที่ 4: แตงโมหนึ่งลูกถูกแบ่งเป็น 8 ชิ้นเท่า ๆ กัน น้องกินไป 5 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 4: แตงโมหนึ่งลูกถูกแบ่งเป็น 8 ชิ้นเท่า ๆ กัน น้องกินไป 5 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
       "choices": [
-        "1/11",
-        "2/11",
-        "11/2",
-        "10/12"
+        "5/8",
+        "3/8",
+        "8/5",
+        "5/3"
       ],
-      "correct_answer": "2/11",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 11 ส่วน จึงเป็น 2/11",
-      "explanation_en": ""
+      "correct_answer": "5/8",
+      "answer": "5/8",
+      "explanation": "กินไป 5 จากทั้งหมด 8 ส่วน จึงเป็น 5/8",
+      "explanation_th": "กินไป 5 จากทั้งหมด 8 ส่วน จึงเป็น 5/8",
+      "difficulty": "easy"
     },
     {
-      "question_id": "g5_fraction_operations_q009",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "core",
-      "routine_level": "routine",
-      "difficulty": "medium",
-      "confidence_role": "build_confidence",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 12 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
+      "question_id": "g5_fraction_operations_q05",
+      "question_text": "สถานการณ์ที่ 5: แตงโมหนึ่งลูกถูกแบ่งเป็น 10 ชิ้นเท่า ๆ กัน น้องกินไป 3 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 5: แตงโมหนึ่งลูกถูกแบ่งเป็น 10 ชิ้นเท่า ๆ กัน น้องกินไป 3 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
       "choices": [
-        "1/12",
-        "2/12",
-        "12/2",
-        "11/13"
+        "3/10",
+        "7/10",
+        "10/3",
+        "3/7"
       ],
-      "correct_answer": "2/12",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 12 ส่วน จึงเป็น 2/12",
-      "explanation_en": ""
+      "correct_answer": "3/10",
+      "answer": "3/10",
+      "explanation": "กินไป 3 จากทั้งหมด 10 ส่วน จึงเป็น 3/10",
+      "explanation_th": "กินไป 3 จากทั้งหมด 10 ส่วน จึงเป็น 3/10",
+      "difficulty": "medium"
     },
     {
-      "question_id": "g5_fraction_operations_q010",
-      "grade_level": 5,
-      "lesson_id": "g5_fraction_operations",
-      "topic_code": "g5_fraction_operations",
-      "skill_code": "g5_fraction_operations",
-      "question_type": "challenge",
-      "routine_level": "non_routine",
-      "difficulty": "medium",
-      "confidence_role": "stretch_thinking",
-      "question_text_th": "น้องฟ้าแบ่งเค้ก 1 ก้อนเป็น 13 ส่วนเท่า ๆ กัน แล้วหยิบ 2 ส่วนให้เพื่อน เศษส่วนที่แสดงส่วนที่หยิบคือข้อใด",
-      "question_text_en": "",
+      "question_id": "g5_fraction_operations_q06",
+      "question_text": "สถานการณ์ที่ 6: แตงโมหนึ่งลูกถูกแบ่งเป็น 10 ชิ้นเท่า ๆ กัน น้องกินไป 3 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 6: แตงโมหนึ่งลูกถูกแบ่งเป็น 10 ชิ้นเท่า ๆ กัน น้องกินไป 3 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
       "choices": [
-        "1/13",
-        "2/13",
-        "13/2",
-        "12/14"
+        "3/10",
+        "7/10",
+        "10/3",
+        "3/7"
       ],
-      "correct_answer": "2/13",
-      "explanation_th": "หยิบ 2 ส่วนจากทั้งหมด 13 ส่วน จึงเป็น 2/13",
-      "explanation_en": ""
+      "correct_answer": "3/10",
+      "answer": "3/10",
+      "explanation": "กินไป 3 จากทั้งหมด 10 ส่วน จึงเป็น 3/10",
+      "explanation_th": "กินไป 3 จากทั้งหมด 10 ส่วน จึงเป็น 3/10",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "g5_fraction_operations_q07",
+      "question_text": "สถานการณ์ที่ 7: แตงโมหนึ่งลูกถูกแบ่งเป็น 11 ชิ้นเท่า ๆ กัน น้องกินไป 4 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 7: แตงโมหนึ่งลูกถูกแบ่งเป็น 11 ชิ้นเท่า ๆ กัน น้องกินไป 4 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "choices": [
+        "4/11",
+        "7/11",
+        "11/4",
+        "4/7"
+      ],
+      "correct_answer": "4/11",
+      "answer": "4/11",
+      "explanation": "กินไป 4 จากทั้งหมด 11 ส่วน จึงเป็น 4/11",
+      "explanation_th": "กินไป 4 จากทั้งหมด 11 ส่วน จึงเป็น 4/11",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "g5_fraction_operations_q08",
+      "question_text": "สถานการณ์ที่ 8: แตงโมหนึ่งลูกถูกแบ่งเป็น 10 ชิ้นเท่า ๆ กัน น้องกินไป 3 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 8: แตงโมหนึ่งลูกถูกแบ่งเป็น 10 ชิ้นเท่า ๆ กัน น้องกินไป 3 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "choices": [
+        "3/10",
+        "7/10",
+        "10/3",
+        "3/7"
+      ],
+      "correct_answer": "3/10",
+      "answer": "3/10",
+      "explanation": "กินไป 3 จากทั้งหมด 10 ส่วน จึงเป็น 3/10",
+      "explanation_th": "กินไป 3 จากทั้งหมด 10 ส่วน จึงเป็น 3/10",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "g5_fraction_operations_q09",
+      "question_text": "สถานการณ์ที่ 9: แตงโมหนึ่งลูกถูกแบ่งเป็น 8 ชิ้นเท่า ๆ กัน น้องกินไป 5 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 9: แตงโมหนึ่งลูกถูกแบ่งเป็น 8 ชิ้นเท่า ๆ กัน น้องกินไป 5 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "choices": [
+        "5/8",
+        "3/8",
+        "8/5",
+        "5/3"
+      ],
+      "correct_answer": "5/8",
+      "answer": "5/8",
+      "explanation": "กินไป 5 จากทั้งหมด 8 ส่วน จึงเป็น 5/8",
+      "explanation_th": "กินไป 5 จากทั้งหมด 8 ส่วน จึงเป็น 5/8",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "g5_fraction_operations_q10",
+      "question_text": "สถานการณ์ที่ 10: แตงโมหนึ่งลูกถูกแบ่งเป็น 8 ชิ้นเท่า ๆ กัน น้องกินไป 1 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "question_text_th": "สถานการณ์ที่ 10: แตงโมหนึ่งลูกถูกแบ่งเป็น 8 ชิ้นเท่า ๆ กัน น้องกินไป 1 ชิ้น น้องกินแตงโมเป็นเศษส่วนเท่าใด",
+      "choices": [
+        "1/8",
+        "7/8",
+        "8/1",
+        "1/7"
+      ],
+      "correct_answer": "1/8",
+      "answer": "1/8",
+      "explanation": "กินไป 1 จากทั้งหมด 8 ส่วน จึงเป็น 1/8",
+      "explanation_th": "กินไป 1 จากทั้งหมด 8 ส่วน จึงเป็น 1/8",
+      "difficulty": "medium"
     }
-  ]
+  ],
+  "program_type": "THP",
+  "status": "approved"
 }

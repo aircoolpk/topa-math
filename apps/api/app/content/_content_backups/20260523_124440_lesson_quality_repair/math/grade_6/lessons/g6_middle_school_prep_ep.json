@@ -1,0 +1,794 @@
+{
+  "lesson_id": "g6_middle_school_prep_ep",
+  "id": "g6_middle_school_prep_ep",
+  "grade_level": 6,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "เศษส่วน ทศนิยม เปอร์เซ็นต์: แปลงซึ่งกันและกันได้ และบวกลบคูณหารได้",
+    "อัตราส่วนและสัดส่วน: แก้สัดส่วนหาค่าที่หายไป",
+    "สมการ: แก้สมการหาค่าตัวแปร เช่น 2x + 5 = 15",
+    "เรขาคณิต: หาพื้นที่ ปริมาตร และมุมของรูปทรงต่างๆ",
+    "ห.ร.ม. และ ค.ร.น.: หาได้และนำไปใช้ในการแก้โจทย์",
+    "โจทย์หลายขั้นตอน: วิเคราะห์และแก้ปัญหาที่ซับซ้อน"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "แปลงเศษส่วนเป็นเปอร์เซ็นต์",
+      "question_th": "3/8 เป็นเปอร์เซ็นต์เท่าไหร่?",
+      "solution_th": "3÷8 = 0.375 × 100 = 37.5% ✅"
+    },
+    {
+      "title_th": "แก้สมการ",
+      "question_th": "4x - 7 = 21 หาค่า x",
+      "solution_th": "4x = 28 → x = 7 ✅"
+    },
+    {
+      "title_th": "หาปริมาตร",
+      "question_th": "กล่องทรงลูกบาศก์มีด้านยาว 9 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "9³ = 729 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "โจทย์หลายขั้นตอน",
+      "question_th": "ร้านซื้อสินค้า 500 ชิ้น ชิ้นละ 80 บาท ขายชิ้ละ 120 บาท แต่มี 50 ชิ้นเสียหาย ร้านได้กำไรเท่าไหร่?",
+      "solution_th": "ต้นทุน: 500×80=40,000 / ขายได้: (500-50)×120=54,000 / กำไร: 54,000-40,000=14,000 บาท ✅"
+    }
+  ],
+  "common_mistakes": [
+    "ทำโจทย์หลายขั้นตอนโดยข้ามขั้นตอนสำคัญ",
+    "ใช้สูตรผิด เช่น ใช้พื้นที่แทนปริมาตร",
+    "ไม่ตรวจสอบคำตอบว่าสมเหตุสมผลหรือไม่"
+  ],
+  "hints": [
+    "ทบทวนสูตรทุกหัวข้อก่อนสอบ",
+    "อ่านโจทย์ช้าๆ วางแผนขั้นตอนก่อนทำ",
+    "ตรวจสอบคำตอบทุกข้อ ทั้งสมการ คำนวณ และการแปลงหน่วย"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_middle_school_prep",
+  "skill_code": "g6_middle_school_prep_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g6_middle_school_prep_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Ready for Middle School Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items.",
+          "content_en": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items.",
+          "data": {
+            "content_en": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 51,
+          "part_b": 31,
+          "total": 82,
+          "unit": "items",
+          "symbol": "⭐",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 51,
+            "part_b": 31,
+            "total": 82,
+            "unit": "items",
+            "symbol": "⭐"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "51 + 31 = 82 items",
+          "content": "51 + 31 = 82 items",
+          "data": {
+            "expression": "51 + 31 = 82 items",
+            "content_en": "51 + 31 = 82 items"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "choices": [
+            "77 sheets",
+            "75 sheets",
+            "80 sheets",
+            "82 sheets"
+          ],
+          "correct_answer": "77 sheets",
+          "answer": "77 sheets",
+          "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "choices": [
+              "77 sheets",
+              "75 sheets",
+              "80 sheets",
+              "82 sheets"
+            ],
+            "correct_answer": "77 sheets",
+            "answer": "77 sheets",
+            "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "เตรียมขึ้นมัธยม",
+  "preview_subtitle_th": "เตรียมความพร้อมสู่มัธยม",
+  "cover_theme": "middle_school_prep",
+  "cover_emoji": "🎓",
+  "cover_color": "yellow",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "เตรียมความพร้อมสู่มัธยม",
+  "learning_objective_th": "นักเรียนสามารถทำโจทย์คณิตศาสตร์ที่ครอบคลุมทุกหัวข้อที่เรียนมาใน ป.6 และเตรียมความพร้อมสำหรับ ม.1",
+  "lesson_intro_th": "พี่อลิสกำลังจะจบ ป.6 แล้ว พรุ่งนี้จะสอบเข้า ม.1 มาทบทวนทุกอย่างที่เรียนมาและเตรียมตัวให้พร้อม! 🎓",
+  "concept_explanation_th": "เศษส่วน ทศนิยม เปอร์เซ็นต์: แปลงซึ่งกันและกันได้ และบวกลบคูณหารได้ อัตราส่วนและสัดส่วน: แก้สัดส่วนหาค่าที่หายไป สมการ: แก้สมการหาค่าตัวแปร เช่น 2x + 5 = 15 เรขาคณิต: หาพื้นที่ ปริมาตร และมุมของรูปทรงต่างๆ ห.ร.ม. และ ค.ร.น.: หาได้และนำไปใช้ในการแก้โจทย์ โจทย์หลายขั้นตอน: วิเคราะห์และแก้ปัญหาที่ซับซ้อน",
+  "singapore_math_model": {
+    "type": "part_whole_model",
+    "model_type": "part_whole_model",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพแท่งพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "bar_model",
+    "segments": [
+      {
+        "label_th": "ส่วนที่รู้",
+        "value": 18
+      },
+      {
+        "label_th": "ส่วนที่หา",
+        "value": 12
+      }
+    ],
+    "label_th": "แผนภาพแท่ง"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท เตรียมพร้อมสู่ ม.1 ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพแท่ง เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "แปลงเศษส่วนเป็นเปอร์เซ็นต์",
+      "question_th": "3/8 เป็นเปอร์เซ็นต์เท่าไหร่?",
+      "solution_th": "3÷8 = 0.375 × 100 = 37.5% ✅"
+    },
+    {
+      "title_th": "แก้สมการ",
+      "question_th": "4x - 7 = 21 หาค่า x",
+      "solution_th": "4x = 28 → x = 7 ✅"
+    },
+    {
+      "title_th": "หาปริมาตร",
+      "question_th": "กล่องทรงลูกบาศก์มีด้านยาว 9 ซม. มีปริมาตรเท่าไหร่?",
+      "solution_th": "9³ = 729 ลูกบาศก์เซนติเมตร ✅"
+    },
+    {
+      "title_th": "โจทย์หลายขั้นตอน",
+      "question_th": "ร้านซื้อสินค้า 500 ชิ้น ชิ้นละ 80 บาท ขายชิ้ละ 120 บาท แต่มี 50 ชิ้นเสียหาย ร้านได้กำไรเท่าไหร่?",
+      "solution_th": "ต้นทุน: 500×80=40,000 / ขายได้: (500-50)×120=54,000 / กำไร: 54,000-40,000=14,000 บาท ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "ทำโจทย์หลายขั้นตอนโดยข้ามขั้นตอนสำคัญ",
+    "ใช้สูตรผิด เช่น ใช้พื้นที่แทนปริมาตร",
+    "ไม่ตรวจสอบคำตอบว่าสมเหตุสมผลหรือไม่"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_middle_school_prep_q01",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q02",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "easy",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q03",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "easy",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q04",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q05",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q06",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q07",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q08",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q09",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q10",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_middle_school_prep_q01",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q02",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "easy",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q03",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "easy",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q04",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q05",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q06",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q07",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q08",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q09",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_middle_school_prep_q10",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g6_middle_school_prep",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Ready for Middle School",
+  "objective_en": "Learn Ready for Middle School with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+  "worked_examples_en": [
+    "g6_middle_school_prep_ep English item 1",
+    "g6_middle_school_prep_ep English item 2",
+    "g6_middle_school_prep_ep English item 3",
+    "g6_middle_school_prep_ep English item 4"
+  ],
+  "common_mistakes_en": [
+    "g6_middle_school_prep_ep English item 1",
+    "g6_middle_school_prep_ep English item 2",
+    "g6_middle_school_prep_ep English item 3"
+  ],
+  "hints_en": [
+    "g6_middle_school_prep_ep English item 1",
+    "g6_middle_school_prep_ep English item 2",
+    "g6_middle_school_prep_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g6_middle_school_prep_ep English item 1",
+    "g6_middle_school_prep_ep English item 2",
+    "g6_middle_school_prep_ep English item 3",
+    "g6_middle_school_prep_ep English item 4",
+    "g6_middle_school_prep_ep English item 5",
+    "g6_middle_school_prep_ep English item 6"
+  ],
+  "quiz_en": [
+    "g6_middle_school_prep_ep English item 1",
+    "g6_middle_school_prep_ep English item 2",
+    "g6_middle_school_prep_ep English item 3",
+    "g6_middle_school_prep_ep English item 4",
+    "g6_middle_school_prep_ep English item 5",
+    "g6_middle_school_prep_ep English item 6",
+    "g6_middle_school_prep_ep English item 7",
+    "g6_middle_school_prep_ep English item 8",
+    "g6_middle_school_prep_ep English item 9",
+    "g6_middle_school_prep_ep English item 10"
+  ],
+  "quiz_id": "g6_middle_school_prep_ep",
+  "generated_at": "2026-05-16T04:16:42.204830+00:00",
+  "source_lesson_id": "g6_middle_school_prep",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "content_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "data": {
+        "content_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items.",
+      "content_en": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items.",
+      "data": {
+        "content_en": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "part_whole_model",
+      "part_a": 51,
+      "part_b": 31,
+      "total": 82,
+      "unit": "items",
+      "symbol": "⭐",
+      "data": {
+        "model_type": "part_whole_model",
+        "part_a": 51,
+        "part_b": 31,
+        "total": 82,
+        "unit": "items",
+        "symbol": "⭐"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "51 + 31 = 82 items",
+      "content": "51 + 31 = 82 items",
+      "data": {
+        "expression": "51 + 31 = 82 items",
+        "content_en": "51 + 31 = 82 items"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+      "choices": [
+        "77 sheets",
+        "75 sheets",
+        "80 sheets",
+        "82 sheets"
+      ],
+      "correct_answer": "77 sheets",
+      "answer": "77 sheets",
+      "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+        "choices": [
+          "77 sheets",
+          "75 sheets",
+          "80 sheets",
+          "82 sheets"
+        ],
+        "correct_answer": "77 sheets",
+        "answer": "77 sheets",
+        "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g6_middle_school_prep",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Ready for Middle School",
+  "topic": "addition",
+  "icon": "book",
+  "story_variants": [
+    {
+      "variant_id": "g6_middle_school_prep_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Ready for Middle School Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "content_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model.",
+          "data": {
+            "content_en": "Praew collects stickers for an activity at the classroom. One box has 51 items, and a sticker book has 31 more items. How many items does Praew have in all? This story practices Ready for Middle School in the cafeteria with number cards after the trays are cleaned. The class draws a small picture first, so each number in the story has a clear place in the model."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items.",
+          "content_en": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items.",
+          "data": {
+            "content_en": "The story has two groups: 51 and 31. To find the total, add them: 51 + 31 = 82 items."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "part_whole_model",
+          "part_a": 51,
+          "part_b": 31,
+          "total": 82,
+          "unit": "items",
+          "symbol": "⭐",
+          "data": {
+            "model_type": "part_whole_model",
+            "part_a": 51,
+            "part_b": 31,
+            "total": 82,
+            "unit": "items",
+            "symbol": "⭐"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "51 + 31 = 82 items",
+          "content": "51 + 31 = 82 items",
+          "data": {
+            "expression": "51 + 31 = 82 items",
+            "content_en": "51 + 31 = 82 items"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "choices": [
+            "77 sheets",
+            "75 sheets",
+            "80 sheets",
+            "82 sheets"
+          ],
+          "correct_answer": "77 sheets",
+          "answer": "77 sheets",
+          "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "choices": [
+              "77 sheets",
+              "75 sheets",
+              "80 sheets",
+              "82 sheets"
+            ],
+            "correct_answer": "77 sheets",
+            "answer": "77 sheets",
+            "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

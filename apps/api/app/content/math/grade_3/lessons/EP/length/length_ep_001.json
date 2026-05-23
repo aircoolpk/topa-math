@@ -1,0 +1,265 @@
+{
+  "variant_id": "length_ep_001",
+  "variant_title_th": "การวัดความยาว",
+  "variant_title_en": "Length Measurement",
+  "status": "needs_review",
+  "title_en": "Length Measurement",
+  "story_theme_en": "Lin helped the teacher measure the school playground. It was 120 meters long. The teacher asked Lin to divide the playground into 2 parts. The first part is 35 meters long. How long is the second part? Subtraction helps find the remaining length.",
+  "helper_tip_en": "Have students draw a straight line to represent the playground and write the known lengths at both ends.",
+  "think_story_en": "Playground = 120 m. Part 1 = 35 m. Part 2 = 120 - 35 = 85 m. Check: 35+85=120 m.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin measures the school playground.",
+      "data": {
+        "content_en": "Lin helped the teacher measure the school playground. It was 120 meters long. The teacher asked Lin to divide the playground into 2 parts. The first part is 35 meters long. How long is the second part?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "120-35=85 m. Check: 35+85=120 m.",
+      "data": {
+        "content_en": "Playground = 120 m. Part 1 = 35 m. Part 2 = 120 - 35 = 85 m. Check: 35+85=120 m."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Length Measurement Model",
+      "description": "A bar showing 120m divided into 35m and 85m",
+      "model_type": "measurement_bar",
+      "data": {
+        "model_type": "measurement_bar",
+        "total": 120,
+        "parts": [
+          35,
+          85
+        ],
+        "unit": "m",
+        "operation": "subtract"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "120-35=85 m",
+      "content": "120-35=85 m",
+      "data": {
+        "expression": "120-35=85 m",
+        "a": 120,
+        "b": 35,
+        "result": 85,
+        "unit": "m",
+        "content_en": "120-35=85 m"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A wire is 200 cm long. 75 cm is cut off. How much wire is left?",
+      "choices": [
+        "125 cm",
+        "135 cm",
+        "145 cm",
+        "225 cm"
+      ],
+      "correct_answer": "125 cm",
+      "explanation": "200-75=125 cm",
+      "data": {
+        "question": "A wire is 200 cm long. 75 cm is cut off. How much wire is left?",
+        "choices": [
+          "125 cm",
+          "135 cm",
+          "145 cm",
+          "225 cm"
+        ],
+        "correct_answer": "125 cm",
+        "explanation": "200-75=125 cm"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Length is measured using units like centimeters (cm) and meters (m).",
+    "When adding or subtracting lengths, all measurements must use the same unit.",
+    "120 - 35 = 85 m gives the length of the second part.",
+    "Check: 35 + 85 = 120 m. ✅"
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Subtracting Length",
+      "question_en": "A wooden plank is 85 cm long. 30 cm is cut off. How long is the remaining piece?",
+      "solution_en": "85-30 = 55 cm ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Adding or subtracting measurements with different units without converting first.",
+    "Forgetting to borrow when the bottom digit is larger in column subtraction."
+  ],
+  "hints_en": [
+    "Convert to the same unit first: 1 m = 100 cm.",
+    "Draw a straight line to represent the length and write known lengths at both ends.",
+    "Check by adding back."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "length",
+      "th": "ความยาว",
+      "definition_en": "The distance from one end to the other"
+    },
+    {
+      "en": "centimeter (cm)",
+      "th": "เซนติเมตร",
+      "definition_en": "A unit of length, 1 cm = 10 mm"
+    },
+    {
+      "en": "meter (m)",
+      "th": "เมตร",
+      "definition_en": "A unit of length, 1 m = 100 cm"
+    },
+    {
+      "en": "millimeter (mm)",
+      "th": "มิลลิเมตร",
+      "definition_en": "A unit of length, 1 mm = 0.1 cm"
+    },
+    {
+      "en": "kilometer (km)",
+      "th": "กิโลเมตร",
+      "definition_en": "A unit of length, 1 km = 1,000 m"
+    },
+    {
+      "en": "straight line",
+      "th": "เส้นตรง",
+      "definition_en": "A line that does not curve"
+    },
+    {
+      "en": "measurement",
+      "th": "การวัด",
+      "definition_en": "Finding the size or quantity of something"
+    },
+    {
+      "en": "unit",
+      "th": "หน่วย",
+      "definition_en": "A standard used for measuring"
+    },
+    {
+      "en": "difference",
+      "th": "ผลต่าง",
+      "definition_en": "What remains after subtracting"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "150 cm + 80 cm = ? m ? cm",
+      "choices": [
+        "2 m 30 cm",
+        "2 m 3 cm",
+        "1 m 30 cm",
+        "3 m 30 cm"
+      ],
+      "answer": "2 m 30 cm",
+      "explanation": "150+80=230 cm = 2 m 30 cm"
+    },
+    {
+      "q": "A road is 3 km long. A section of 1,200 m is under repair. How much road is still open?",
+      "choices": [
+        "1,800 m",
+        "1,700 m",
+        "1,900 m",
+        "2,800 m"
+      ],
+      "answer": "1,800 m",
+      "explanation": "3 km = 3,000 m, 3,000-1,200=1,800 m"
+    },
+    {
+      "q": "Lin has a ribbon 250 cm long. She cuts 85 cm. How long is the remaining ribbon?",
+      "choices": [
+        "155 cm",
+        "165 cm",
+        "175 cm",
+        "185 cm"
+      ],
+      "answer": "165 cm",
+      "explanation": "250-85=165 cm"
+    },
+    {
+      "q": "Which is the longest?",
+      "choices": [
+        "150 cm",
+        "2 m",
+        "1.5 m",
+        "180 cm"
+      ],
+      "answer": "180 cm",
+      "explanation": "2m=200cm, 1.5m=150cm, 180cm is longest"
+    },
+    {
+      "q": "A fence is 12 m long. It is divided into 3 equal sections. How long is each section?",
+      "choices": [
+        "3 m",
+        "4 m",
+        "5 m",
+        "6 m"
+      ],
+      "answer": "4 m",
+      "explanation": "12/3=4 m"
+    },
+    {
+      "q": "Ai walks 800 m to school. Mali walks 1,200 m. How much farther does Mali walk?",
+      "choices": [
+        "200 m",
+        "300 m",
+        "400 m",
+        "500 m"
+      ],
+      "answer": "400 m",
+      "explanation": "1,200-800=400 m"
+    },
+    {
+      "q": "Convert 5 m to centimeters.",
+      "choices": [
+        "50 cm",
+        "500 cm",
+        "5,000 cm",
+        "5 cm"
+      ],
+      "answer": "500 cm",
+      "explanation": "1 m = 100 cm, so 5 m = 500 cm"
+    },
+    {
+      "q": "A table is 180 cm long. It is placed next to a table 120 cm long. What is the total length?",
+      "choices": [
+        "290 cm",
+        "300 cm",
+        "310 cm",
+        "320 cm"
+      ],
+      "answer": "300 cm",
+      "explanation": "180+120=300 cm"
+    },
+    {
+      "q": "Which unit is best for measuring the distance between two cities?",
+      "choices": [
+        "centimeters",
+        "meters",
+        "kilometers",
+        "millimeters"
+      ],
+      "answer": "kilometers",
+      "explanation": "Cities are far apart, so kilometers are appropriate."
+    },
+    {
+      "q": "A stick is 95 cm long. 37 cm is painted red and the rest is blue. How long is the blue part?",
+      "choices": [
+        "58 cm",
+        "62 cm",
+        "68 cm",
+        "52 cm"
+      ],
+      "answer": "58 cm",
+      "explanation": "95-37=58 cm"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Length is measured in millimeters (mm), centimeters (cm), meters (m), and kilometers (km). Always convert to the same unit before adding or subtracting."
+}

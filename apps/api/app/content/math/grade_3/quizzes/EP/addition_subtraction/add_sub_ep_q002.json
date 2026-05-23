@@ -1,0 +1,179 @@
+{
+  "lesson_id": "addition_subtraction_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "addsub_ep_q002_e01",
+      "question_text": "Case 1: Mali has 42 meters of fabric. She cuts 20 meters to use. How much fabric is left?",
+      "question_text_th": "สถานการณ์ที่ 1: มะลิมีผ้า 42 เมตร ตัดใช้ไป 20 เมตร เหลือผ้ากี่เมตร",
+      "choices": [
+        "22 meters",
+        "12 meters",
+        "62 meters",
+        "32 meters"
+      ],
+      "correct_answer": "22 meters",
+      "answer": "22 meters",
+      "explanation": "Subtract cut fabric: 42 - 20 = 22 meters",
+      "explanation_th": "ลบผ้าที่ตัด: 42 - 20 = 22 เมตร",
+      "difficulty": "easy",
+      "hint_th": "2-0=2, 4-2=2"
+    },
+    {
+      "question_id": "addsub_ep_q002_e02",
+      "question_text": "Case 2: Lin has 35 flowers. She receives 24 more flowers. How many flowers does she have now?",
+      "question_text_th": "สถานการณ์ที่ 2: ลินมีดอกไม้ 35 ดอก ได้รับเพิ่มอีก 24 ดอก มีดอกไม้กี่ดอก",
+      "choices": [
+        "59 flowers",
+        "51 flowers",
+        "69 flowers",
+        "61 flowers"
+      ],
+      "correct_answer": "59 flowers",
+      "answer": "59 flowers",
+      "explanation": "Add received flowers: 35 + 24 = 59 flowers",
+      "explanation_th": "บวกดอกไม้ที่ได้รับ: 35 + 24 = 59 ดอก",
+      "difficulty": "easy",
+      "hint_th": "5+4=9, 3+2=5"
+    },
+    {
+      "question_id": "addsub_ep_q002_e03",
+      "question_text": "Case 3: A cake shop sells 53 cakes on day 1 and 26 cakes on day 2. How many cakes in total?",
+      "question_text_th": "สถานการณ์ที่ 3: ร้านขายขนมเค้กวันแรก 53 ชิ้น วันที่สอง 26 ชิ้น รวมขายได้กี่ชิ้น",
+      "choices": [
+        "79 cakes",
+        "89 cakes",
+        "77 cakes",
+        "69 cakes"
+      ],
+      "correct_answer": "79 cakes",
+      "answer": "79 cakes",
+      "explanation": "Add two-day sales: 53 + 26 = 79 cakes",
+      "explanation_th": "บวกยอดขายสองวัน: 53 + 26 = 79 ชิ้น",
+      "difficulty": "easy",
+      "hint_th": "3+6=9, 5+2=7"
+    },
+    {
+      "question_id": "addsub_ep_q002_m01",
+      "question_text": "Case 4: A library has 78 books. 39 books are borrowed. How many books are left?",
+      "question_text_th": "สถานการณ์ที่ 4: ห้องสมุดมีหนังสือ 78 เล่ม ยืมไป 39 เล่ม เหลือหนังสือกี่เล่ม",
+      "choices": [
+        "39 books",
+        "49 books",
+        "29 books",
+        "38 books"
+      ],
+      "correct_answer": "39 books",
+      "answer": "39 books",
+      "explanation": "Subtract borrowed books: 78 - 39 = 39 books",
+      "explanation_th": "ลบหนังสือที่ยืม: 78 - 39 = 39 เล่ม",
+      "difficulty": "medium",
+      "hint_th": "Borrow: 18-9=9, 6-3=3 → 39"
+    },
+    {
+      "question_id": "addsub_ep_q002_m02",
+      "question_text": "Case 5: A farm collects 57 kg of oranges and collects 46 kg more. How many kg in total?",
+      "question_text_th": "สถานการณ์ที่ 5: สวนเก็บส้มได้ 57 กิโลกรัม เก็บเพิ่มอีก 46 กิโลกรัม รวมเก็บส้มได้กี่กิโลกรัม",
+      "choices": [
+        "93 kg",
+        "103 kg",
+        "91 kg",
+        "113 kg"
+      ],
+      "correct_answer": "103 kg",
+      "answer": "103 kg",
+      "explanation": "Add new oranges: 57 + 46 = 103 kg",
+      "explanation_th": "บวกส้มที่เก็บเพิ่ม: 57 + 46 = 103 กก.",
+      "difficulty": "medium",
+      "hint_th": "7+6=13 write 3 carry 1, 5+4+1=10 → 103"
+    },
+    {
+      "question_id": "addsub_ep_q002_m03",
+      "question_text": "Case 6: There is 64 liters of fruit juice. 28 liters are sold and 35 liters of new juice are added. How much juice now?",
+      "question_text_th": "สถานการณ์ที่ 6: มีน้ำผลไม้ 64 ลิตร ขายไป 28 ลิตร เติมน้ำผลไม้ใหม่ 35 ลิตร มีน้ำผลไม้กี่ลิตร",
+      "choices": [
+        "71 liters",
+        "81 liters",
+        "61 liters",
+        "66 liters"
+      ],
+      "correct_answer": "71 liters",
+      "answer": "71 liters",
+      "explanation": "64 - 28 + 35 = 71 liters",
+      "explanation_th": "64 - 28 + 35 = 71 ลิตร",
+      "difficulty": "medium",
+      "hint_th": "64-28=36 then +35=71"
+    },
+    {
+      "question_id": "addsub_ep_q002_m04",
+      "question_text": "Case 7: There are 58 male students and 47 female students. How many students in total?",
+      "question_text_th": "สถานการณ์ที่ 7: นักเรียนชาย 58 คน นักเรียนหญิง 47 คน รวมนักเรียนกี่คน",
+      "choices": [
+        "105 students",
+        "95 students",
+        "115 students",
+        "85 students"
+      ],
+      "correct_answer": "105 students",
+      "answer": "105 students",
+      "explanation": "Add boys and girls: 58 + 47 = 105 students",
+      "explanation_th": "บวกนักเรียนชายและหญิง: 58 + 47 = 105 คน",
+      "difficulty": "medium",
+      "hint_th": "8+7=15 write 5 carry 1, 5+4+1=10 → 105"
+    },
+    {
+      "question_id": "addsub_ep_q002_h01",
+      "question_text": "Case 8: A water tank has 92 liters. 48 liters are used and 37 liters are added. How much water now?",
+      "question_text_th": "สถานการณ์ที่ 8: ถังน้ำมีน้ำ 92 ลิตร ใช้ไป 48 ลิตร แล้วเติมน้ำ 37 ลิตร มีน้ำกี่ลิตร",
+      "choices": [
+        "81 liters",
+        "91 liters",
+        "71 liters",
+        "86 liters"
+      ],
+      "correct_answer": "81 liters",
+      "answer": "81 liters",
+      "explanation": "92 - 48 + 37 = 81 liters",
+      "explanation_th": "92 - 48 + 37 = 81 ลิตร",
+      "difficulty": "hard",
+      "hint_th": "92-48=44 then +37=81"
+    },
+    {
+      "question_id": "addsub_ep_q002_h02",
+      "question_text": "Case 9: A shop has 76 items. 39 are sold and 58 new items arrive. How many items does the shop have now?",
+      "question_text_th": "สถานการณ์ที่ 9: ร้านมีสินค้า 76 ชิ้น ขายไป 39 ชิ้น ได้รับสินค้าใหม่เพิ่ม 58 ชิ้น มีสินค้ากี่ชิ้น",
+      "choices": [
+        "95 items",
+        "85 items",
+        "105 items",
+        "90 items"
+      ],
+      "correct_answer": "95 items",
+      "answer": "95 items",
+      "explanation": "76 - 39 + 58 = 95 items",
+      "explanation_th": "76 - 39 + 58 = 95 ชิ้น",
+      "difficulty": "hard",
+      "hint_th": "76-39=37 then +58=95"
+    },
+    {
+      "question_id": "addsub_ep_q002_h03",
+      "question_text": "Case 10: Lin has 88 meters of rope. She cuts 45 meters to use and then buys 62 more meters. How much rope now?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินมีเชือก 88 เมตร ตัดใช้ไป 45 เมตร แล้วซื้อเพิ่ม 62 เมตร มีเชือกกี่เมตร",
+      "choices": [
+        "105 meters",
+        "95 meters",
+        "100 meters",
+        "110 meters"
+      ],
+      "correct_answer": "105 meters",
+      "answer": "105 meters",
+      "explanation": "88 - 45 + 62 = 105 meters",
+      "explanation_th": "88 - 45 + 62 = 105 เมตร",
+      "difficulty": "hard",
+      "hint_th": "88-45=43 then +62=105"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

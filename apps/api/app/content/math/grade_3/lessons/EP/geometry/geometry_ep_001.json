@@ -1,0 +1,301 @@
+{
+  "variant_id": "geometry_ep_001",
+  "variant_title_th": "รูปเรขาคณิต — รูป 2 มิติ",
+  "variant_title_en": "Geometry — 2D Shapes",
+  "status": "needs_review",
+  "title_en": "Geometry",
+  "story_theme_en": "Lin helped the art teacher organize the shapes that children cut out from colored paper. There were triangles, rectangles, squares, and circles. Lin needed to sort the shapes by looking at the number of sides, the number of corners, and whether the sides were equal in length.",
+  "helper_tip_en": "Have students use their finger to trace and count each side and corner of a shape one by one.",
+  "think_story_en": "Triangle: 3 sides, 3 corners. Rectangle: 4 sides, 4 corners. Square: 4 equal sides, 4 right angles. Circle: 0 sides, 0 corners, it is a curved line.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin helps the art teacher organize cut-out shapes.",
+      "data": {
+        "content_en": "Lin helped the art teacher organize the shapes that children cut out from colored paper. There were triangles, rectangles, squares, and circles. Lin needed to sort the shapes by looking at the number of sides, the number of corners, and whether the sides were equal in length."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Triangle: 3 sides, 3 corners. Rectangle: 4 sides, 4 corners. Circle: 0 sides, 0 corners.",
+      "data": {
+        "content_en": "Triangle: 3 sides, 3 corners. Rectangle: 4 sides, 4 corners. Square: 4 equal sides, 4 right angles. Circle: 0 sides, 0 corners, it is a curved line."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Shape Attributes Table",
+      "description": "A table comparing the properties of different 2D shapes",
+      "model_type": "shape_attribute_table",
+      "data": {
+        "model_type": "shape_attribute_table",
+        "headers_en": [
+          "Shape",
+          "Number of Sides",
+          "Number of Corners",
+          "Equal Sides?",
+          "Right Angles?"
+        ],
+        "rows": [
+          [
+            "Triangle",
+            "3",
+            "3",
+            "Not required",
+            "No"
+          ],
+          [
+            "Square",
+            "4",
+            "4",
+            "Yes, all equal",
+            "Yes, all 90°"
+          ],
+          [
+            "Rectangle",
+            "4",
+            "4",
+            "Opposite sides equal",
+            "Yes, all 90°"
+          ],
+          [
+            "Circle",
+            "0",
+            "0",
+            "N/A",
+            "No"
+          ],
+          [
+            "Oval",
+            "0",
+            "0",
+            "N/A",
+            "No"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Shape Properties",
+      "expression": "Triangle: 3 sides + 3 corners",
+      "content": "Triangle = 3 sides + 3 corners | Rectangle = 4 sides + 4 corners | Circle = 0 sides + 0 corners",
+      "data": {
+        "expression": "Triangle: 3 sides, 3 corners",
+        "content_en": "Triangle = 3 sides + 3 corners | Rectangle = 4 sides + 4 corners | Circle = 0 sides + 0 corners"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Which shape has 4 equal sides and 4 right angles?",
+      "choices": [
+        "Rectangle",
+        "Square",
+        "Triangle",
+        "Pentagon"
+      ],
+      "correct_answer": "Square",
+      "explanation": "A square has 4 equal sides and 4 right angles (90°). A rectangle has 4 right angles but only opposite sides are equal.",
+      "data": {
+        "question": "Which shape has 4 equal sides and 4 right angles?",
+        "choices": [
+          "Rectangle",
+          "Square",
+          "Triangle",
+          "Pentagon"
+        ],
+        "correct_answer": "Square",
+        "explanation": "A square has 4 equal sides and 4 right angles (90°). A rectangle has 4 right angles but only opposite sides are equal."
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "2D shapes are flat shapes that have length and width but no thickness.",
+    "A side is a straight line that forms the edge of a shape.",
+    "A corner (angle) is the point where two sides meet.",
+    "A triangle has 3 sides and 3 corners.",
+    "A rectangle has 4 sides and 4 corners. A square is a special rectangle where all 4 sides are equal AND all 4 angles are right angles (90°).",
+    "A circle has no sides and no corners — it is made of a single curved line."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Sorting Shapes",
+      "question_en": "A shape has 4 sides with equal length and 4 right angles. What shape is it?",
+      "solution_en": "Square ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Counting sides or corners incorrectly, especially on shapes with slanted sides.",
+    "Confusing a square with a rectangle — a rectangle does NOT have all sides equal.",
+    "Thinking an oval has sides — it has none."
+  ],
+  "hints_en": [
+    "Use your finger to trace and count each side going around the shape clockwise.",
+    "Use the corner of a book or paper to check if an angle is a right angle.",
+    "Draw each shape and write its properties next to it."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "2D shape",
+      "th": "รูปร่าง 2 มิติ",
+      "definition_en": "A flat shape that has length and width but no thickness"
+    },
+    {
+      "en": "side",
+      "th": "ด้าน",
+      "definition_en": "A straight line that forms the edge of a shape"
+    },
+    {
+      "en": "corner / angle",
+      "th": "มุม",
+      "definition_en": "The point where two sides of a shape meet"
+    },
+    {
+      "en": "right angle",
+      "th": "มุมฉาก",
+      "definition_en": "An angle that is exactly 90 degrees"
+    },
+    {
+      "en": "triangle",
+      "th": "รูปสามเหลี่ยม",
+      "definition_en": "A shape with 3 sides and 3 corners"
+    },
+    {
+      "en": "quadrilateral",
+      "th": "รูปสี่เหลี่ยม",
+      "definition_en": "A shape with 4 sides and 4 corners"
+    },
+    {
+      "en": "square",
+      "th": "รูปสี่เหลี่ยมจัตุรัส",
+      "definition_en": "A quadrilateral with 4 equal sides and 4 right angles"
+    },
+    {
+      "en": "rectangle",
+      "th": "รูปสี่เหลี่ยมผืนผ้า",
+      "definition_en": "A quadrilateral with opposite sides equal and 4 right angles"
+    },
+    {
+      "en": "circle",
+      "th": "รูปวงกลม",
+      "definition_en": "A round shape with no sides and no corners"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "How many sides does a triangle have?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "3",
+      "explanation": "A triangle has 3 sides."
+    },
+    {
+      "q": "Which shape has 4 sides and 4 right angles?",
+      "choices": [
+        "Triangle",
+        "Pentagon",
+        "Quadrilateral",
+        "Circle"
+      ],
+      "answer": "Quadrilateral",
+      "explanation": "A quadrilateral has 4 sides and 4 corners."
+    },
+    {
+      "q": "What is the difference between a square and a rectangle?",
+      "choices": [
+        "Square has 3 sides",
+        "Rectangle has more sides",
+        "Only square has all 4 sides equal",
+        "They are exactly the same"
+      ],
+      "answer": "Only square has all 4 sides equal",
+      "explanation": "Both have 4 right angles, but only a square has all 4 sides equal."
+    },
+    {
+      "q": "How many corners does a circle have?",
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "0"
+      ],
+      "answer": "0",
+      "explanation": "A circle has no sides and no corners."
+    },
+    {
+      "q": "A shape has 5 sides and 5 corners. What is it?",
+      "choices": [
+        "Triangle",
+        "Quadrilateral",
+        "Pentagon",
+        "Hexagon"
+      ],
+      "answer": "Pentagon",
+      "explanation": "A pentagon has 5 sides and 5 corners."
+    },
+    {
+      "q": "Which shape can roll?",
+      "choices": [
+        "Triangle",
+        "Rectangle",
+        "Square",
+        "Circle"
+      ],
+      "answer": "Circle",
+      "explanation": "A circle can roll because it has no corners."
+    },
+    {
+      "q": "A rectangle has opposite sides that are: ",
+      "choices": [
+        "All equal",
+        "Different lengths",
+        "Only 2 equal",
+        "Curved"
+      ],
+      "answer": "Only 2 equal",
+      "explanation": "A rectangle has 2 pairs of equal opposite sides, not all 4 equal."
+    },
+    {
+      "q": "How many right angles does a square have?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "0"
+      ],
+      "answer": "4",
+      "explanation": "A square has 4 right angles (90 degrees each)."
+    },
+    {
+      "q": "Which shape has 0 sides?",
+      "choices": [
+        "Triangle",
+        "Square",
+        "Circle",
+        "Rectangle"
+      ],
+      "answer": "Circle",
+      "explanation": "A circle has no sides or corners."
+    },
+    {
+      "q": "An octagon has how many sides?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "8",
+      "explanation": "Octa means 8. An octagon has 8 sides and 8 corners."
+    }
+  ],
+  "questions": [],
+  "explanation_en": "2D shapes are flat. Count their sides and corners to identify them. A triangle has 3 of each. A quadrilateral has 4 of each. A square is a special rectangle with all 4 sides equal. A circle has 0 sides and 0 corners."
+}

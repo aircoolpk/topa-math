@@ -1,0 +1,792 @@
+{
+  "lesson_id": "g6_ratio_proportion_ep",
+  "id": "g6_ratio_proportion_ep",
+  "grade_level": 6,
+  "title_th": "",
+  "objective_th": "",
+  "story_intro_th": "",
+  "explanation_steps": [
+    "อัตราส่วน a:b หมายถึง a/b",
+    "สัดส่วนคือประโยคที่บอกว่าอัตราส่วนสองอัตราส่วนเท่ากัน เช่น a/b = c/d",
+    "วิธีแก้สัดส่วน: คูณข้าม = a × d = b × c",
+    "เช่น ถ้า 3/4 = x/12 จะได้ 3×12 = 4×x ดังนั้น x = 9",
+    "สัดส่วนใช้แก้โจทย์ที่ต้องขยายหรือย่ออัตราส่วน"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "แก้สัดส่วน",
+      "question_th": "2/5 = x/20 หาค่า x",
+      "solution_th": "2×20 = 5×x → 40 = 5x → x = 8 ✅"
+    },
+    {
+      "title_th": "ใช้สัดส่วนในการทำอาหาร",
+      "question_th": "สูตรขนมใช้แป้ง 2 ส่วน น้ำตาล 3 ส่วน ถ้าใช้แป้ง 200 กรัม ต้องใช้น้ำตาลกี่กรัม?",
+      "solution_th": "2/3 = 200/x → 2x = 600 → x = 300 กรัม ✅"
+    },
+    {
+      "title_th": "ใช้สัดส่วนหาความเร็ว",
+      "question_th": "รถวิ่ง 120 กม. ใน 2 ชม. ถ้าวิ่ง 5 ชม. จะวิ่งได้กี่กม.?",
+      "solution_th": "120/2 = x/5 → 600 = 2x → x = 300 กม. ✅"
+    },
+    {
+      "title_th": "หาอัตราส่วนที่เท่ากัน",
+      "question_th": "5:8 = ?:24 หาค่าที่หายไป",
+      "solution_th": "5×24 = 8×x → 120 = 8x → x = 15 ดังนั้น 5:8 = 15:24 ✅"
+    }
+  ],
+  "common_mistakes": [
+    "คูณข้ามผิด เช่น a/b = c/d กลายเป็น a×c = b×d แทนที่จะเป็น a×d = b×c",
+    "สับสนระหว่างตัวเลขในสัดส่วนว่าตัวไหนอยู่ตรงไหน",
+    "ไม่ตรวจสอบว่าคำตอบสมเหตุสมผลหรือไม่"
+  ],
+  "hints": [
+    "จำสูตรสัดส่วน: a/b = c/d จะได้ a×d = b×c",
+    "ถ้างงให้เขียนเป็นเศษส่วนก่อน แล้วค่อยหาค่าที่หายไป",
+    "ตรวจคำตอบโดยแทนค่ากลับในสัดส่วน"
+  ],
+  "estimated_minutes": 10,
+  "has_test": true,
+  "topic_code": "g6_ratio_proportion",
+  "skill_code": "g6_ratio_proportion_ep",
+  "lesson_variants": [
+    {
+      "variant_id": "g6_ratio_proportion_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Ratios Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31.",
+          "content_en": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31.",
+          "data": {
+            "content_en": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "ratio_bar",
+          "part_a": 51,
+          "part_b": 31,
+          "total": 82,
+          "unit": "parts",
+          "symbol": "🥤",
+          "data": {
+            "model_type": "ratio_bar",
+            "part_a": 51,
+            "part_b": 31,
+            "total": 82,
+            "unit": "parts",
+            "symbol": "🥤"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "51:31 = original proportion",
+          "content": "51:31 = original proportion",
+          "data": {
+            "expression": "51:31 = original proportion",
+            "content_en": "51:31 = original proportion"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "choices": [
+            "77 sheets",
+            "75 sheets",
+            "80 sheets",
+            "82 sheets"
+          ],
+          "correct_answer": "77 sheets",
+          "answer": "77 sheets",
+          "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "choices": [
+              "77 sheets",
+              "75 sheets",
+              "80 sheets",
+              "82 sheets"
+            ],
+            "correct_answer": "77 sheets",
+            "answer": "77 sheets",
+            "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "preview_title_th": "อัตราส่วนและสัดส่วน",
+  "preview_subtitle_th": "เปรียบเทียบสิ่งต่างๆ",
+  "cover_theme": "ratio_proportion",
+  "cover_emoji": "⚖️",
+  "cover_color": "orange",
+  "access_type_hint": "free",
+  "status": "needs_review",
+  "quality_required": true,
+  "content_schema_version": "topa_story_variant_v1",
+  "program_type": "EP",
+  "subtitle_th": "เปรียบเทียบสิ่งต่างๆ",
+  "learning_objective_th": "นักเรียนสามารถเข้าใจความสัมพันธ์ระหว่างอัตราส่วนและสัดส่วน และใช้แก้โจทย์ได้",
+  "lesson_intro_th": "สูตรทำน้ำปลา ใช้น้ำ 3 ส่วน ซีอิ๊ว 1 ส่วน ถ้าอยากทำน้ำปลา 2 ลิตร โดยใช้อัตราส่วนเดิม ต้องใช้น้ำและซีอิ๊วอย่างละเท่าไหร่? 🧂",
+  "concept_explanation_th": "อัตราส่วน a:b หมายถึง a/b สัดส่วนคือประโยคที่บอกว่าอัตราส่วนสองอัตราส่วนเท่ากัน เช่น a/b = c/d วิธีแก้สัดส่วน: คูณข้าม = a × d = b × c เช่น ถ้า 3/4 = x/12 จะได้ 3×12 = 4×x ดังนั้น x = 9 สัดส่วนใช้แก้โจทย์ที่ต้องขยายหรือย่ออัตราส่วน",
+  "singapore_math_model": {
+    "type": "ratio_bar",
+    "model_type": "ratio_bar",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
+  },
+  "visual_model_prompt_th": "แสดงแผนภาพส่วนและทั้งหมดพร้อมตัวเลขชัดเจน",
+  "diagram_data": {
+    "type": "part_whole_model",
+    "parts": [
+      {
+        "label_th": "ส่วนที่ 1",
+        "value": 1
+      },
+      {
+        "label_th": "ส่วนที่ 2",
+        "value": 1
+      }
+    ],
+    "whole_label_th": "ทั้งหมด"
+  },
+  "step_by_step_th": [
+    "อ่านโจทย์ของบท อัตราส่วนและสัดส่วน ให้เข้าใจก่อนว่าโจทย์ถามหาอะไร",
+    "วาดหรือดูแผนภาพส่วนและทั้งหมด เพื่อแยกข้อมูลที่รู้",
+    "เขียนตัวเลขลงในแผนภาพให้ตรงกับข้อมูลในโจทย์",
+    "เลือกวิธีคำนวณที่เหมาะสม แล้วคิดทีละขั้นอย่างเป็นระเบียบ",
+    "ตรวจคำตอบอีกครั้งว่าเข้ากับโจทย์และหน่วยที่ใช้หรือไม่"
+  ],
+  "worked_examples_th": [
+    {
+      "title_th": "แก้สัดส่วน",
+      "question_th": "2/5 = x/20 หาค่า x",
+      "solution_th": "2×20 = 5×x → 40 = 5x → x = 8 ✅"
+    },
+    {
+      "title_th": "ใช้สัดส่วนในการทำอาหาร",
+      "question_th": "สูตรขนมใช้แป้ง 2 ส่วน น้ำตาล 3 ส่วน ถ้าใช้แป้ง 200 กรัม ต้องใช้น้ำตาลกี่กรัม?",
+      "solution_th": "2/3 = 200/x → 2x = 600 → x = 300 กรัม ✅"
+    },
+    {
+      "title_th": "ใช้สัดส่วนหาความเร็ว",
+      "question_th": "รถวิ่ง 120 กม. ใน 2 ชม. ถ้าวิ่ง 5 ชม. จะวิ่งได้กี่กม.?",
+      "solution_th": "120/2 = x/5 → 600 = 2x → x = 300 กม. ✅"
+    },
+    {
+      "title_th": "หาอัตราส่วนที่เท่ากัน",
+      "question_th": "5:8 = ?:24 หาค่าที่หายไป",
+      "solution_th": "5×24 = 8×x → 120 = 8x → x = 15 ดังนั้น 5:8 = 15:24 ✅"
+    }
+  ],
+  "common_mistakes_th": [
+    "คูณข้ามผิด เช่น a/b = c/d กลายเป็น a×c = b×d แทนที่จะเป็น a×d = b×c",
+    "สับสนระหว่างตัวเลขในสัดส่วนว่าตัวไหนอยู่ตรงไหน",
+    "ไม่ตรวจสอบว่าคำตอบสมเหตุสมผลหรือไม่"
+  ],
+  "questions": [
+    {
+      "question_id": "g6_ratio_proportion_q01",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q02",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q03",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q04",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q05",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q06",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q07",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q08",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q09",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q10",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    }
+  ],
+  "quiz_th": [
+    {
+      "question_id": "g6_ratio_proportion_q01",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q02",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q03",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "easy",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q04",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q05",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q06",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q07",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "medium",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "core"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q08",
+      "question_th": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "question_text": "มีขนม 8 กล่อง กล่องละ 12 ชิ้น แจกไป 30 ชิ้น เหลือกี่ชิ้น?",
+      "choices": [
+        "64 ชิ้น",
+        "66 ชิ้น",
+        "68 ชิ้น",
+        "70 ชิ้น"
+      ],
+      "correct_answer": "66 ชิ้น",
+      "answer": "66 ชิ้น",
+      "explanation": "8 × 12 = 96 และ 96 - 30 = 66",
+      "explanation_th": "8 × 12 = 96 และ 96 - 30 = 66",
+      "difficulty": "hard",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q09",
+      "question_th": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "question_text": "นักเรียน 36 คน แบ่งเป็น 6 กลุ่ม กลุ่มละกี่คน?",
+      "choices": [
+        "5 คน",
+        "6 คน",
+        "7 คน",
+        "8 คน"
+      ],
+      "correct_answer": "6 คน",
+      "answer": "6 คน",
+      "explanation": "36 ÷ 6 = 6 คน",
+      "explanation_th": "36 ÷ 6 = 6 คน",
+      "difficulty": "hard",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    },
+    {
+      "question_id": "g6_ratio_proportion_q10",
+      "question_th": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "question_text": "มีเงิน 500 บาท ซื้อของ 175 บาท แล้วซื้อเพิ่ม 85 บาท เหลือกี่บาท?",
+      "choices": [
+        "230 บาท",
+        "240 บาท",
+        "250 บาท",
+        "260 บาท"
+      ],
+      "correct_answer": "240 บาท",
+      "answer": "240 บาท",
+      "explanation": "500 - 175 - 85 = 240 บาท",
+      "explanation_th": "500 - 175 - 85 = 240 บาท",
+      "difficulty": "hard",
+      "skill_tag": "g6_ratio_proportion",
+      "question_type": "challenge"
+    }
+  ],
+  "title_en": "Ratios",
+  "objective_en": "Learn Ratios with a story, a model, a number sentence, and practice.",
+  "story_intro_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+  "worked_examples_en": [
+    "g6_ratio_proportion_ep English item 1",
+    "g6_ratio_proportion_ep English item 2",
+    "g6_ratio_proportion_ep English item 3",
+    "g6_ratio_proportion_ep English item 4"
+  ],
+  "common_mistakes_en": [
+    "g6_ratio_proportion_ep English item 1",
+    "g6_ratio_proportion_ep English item 2",
+    "g6_ratio_proportion_ep English item 3"
+  ],
+  "hints_en": [
+    "g6_ratio_proportion_ep English item 1",
+    "g6_ratio_proportion_ep English item 2",
+    "g6_ratio_proportion_ep English item 3"
+  ],
+  "explanation_steps_en": [
+    "g6_ratio_proportion_ep English item 1",
+    "g6_ratio_proportion_ep English item 2",
+    "g6_ratio_proportion_ep English item 3",
+    "g6_ratio_proportion_ep English item 4",
+    "g6_ratio_proportion_ep English item 5"
+  ],
+  "quiz_en": [
+    "g6_ratio_proportion_ep English item 1",
+    "g6_ratio_proportion_ep English item 2",
+    "g6_ratio_proportion_ep English item 3",
+    "g6_ratio_proportion_ep English item 4",
+    "g6_ratio_proportion_ep English item 5",
+    "g6_ratio_proportion_ep English item 6",
+    "g6_ratio_proportion_ep English item 7",
+    "g6_ratio_proportion_ep English item 8",
+    "g6_ratio_proportion_ep English item 9",
+    "g6_ratio_proportion_ep English item 10"
+  ],
+  "quiz_id": "g6_ratio_proportion_ep",
+  "generated_at": "2026-05-16T04:16:42.223442+00:00",
+  "source_lesson_id": "g6_ratio_proportion",
+  "needs_review": true,
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+      "content_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+      "data": {
+        "content_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think Story",
+      "content": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31.",
+      "content_en": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31.",
+      "data": {
+        "content_en": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "ratio_bar",
+      "part_a": 51,
+      "part_b": 31,
+      "total": 82,
+      "unit": "parts",
+      "symbol": "🥤",
+      "data": {
+        "model_type": "ratio_bar",
+        "part_a": 51,
+        "part_b": 31,
+        "total": 82,
+        "unit": "parts",
+        "symbol": "🥤"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "51:31 = original proportion",
+      "content": "51:31 = original proportion",
+      "data": {
+        "expression": "51:31 = original proportion",
+        "content_en": "51:31 = original proportion"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+      "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+      "choices": [
+        "77 sheets",
+        "75 sheets",
+        "80 sheets",
+        "82 sheets"
+      ],
+      "correct_answer": "77 sheets",
+      "answer": "77 sheets",
+      "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+        "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+        "choices": [
+          "77 sheets",
+          "75 sheets",
+          "80 sheets",
+          "82 sheets"
+        ],
+        "correct_answer": "77 sheets",
+        "answer": "77 sheets",
+        "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
+    }
+  ],
+  "base_lesson_id": "g6_ratio_proportion",
+  "program": "EP",
+  "language": "ep",
+  "lesson_title": "Ratios",
+  "topic": "ratio",
+  "icon": "ratio",
+  "story_variants": [
+    {
+      "variant_id": "g6_ratio_proportion_ep_01",
+      "variant_title_th": "",
+      "variant_title_en": "Ratios Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
+      "visual_blocks": [
+        {
+          "type": "story_intro",
+          "title": "Story",
+          "content": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Aom prepares two pitchers of herbal drink at the market. The strong recipe uses 51 parts syrup and 31 parts water. The next batch must taste the same, so what original proportion should the class keep? This story practices Ratios in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks."
+          }
+        },
+        {
+          "type": "think_story",
+          "title": "Think Story",
+          "content": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31.",
+          "content_en": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31.",
+          "data": {
+            "content_en": "The original proportion is 51 parts syrup to 31 parts water. To scale it, multiply both parts by the same number and keep 51:31."
+          }
+        },
+        {
+          "type": "model_diagram",
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "ratio_bar",
+          "part_a": 51,
+          "part_b": 31,
+          "total": 82,
+          "unit": "parts",
+          "symbol": "🥤",
+          "data": {
+            "model_type": "ratio_bar",
+            "part_a": 51,
+            "part_b": 31,
+            "total": 82,
+            "unit": "parts",
+            "symbol": "🥤"
+          }
+        },
+        {
+          "type": "number_sentence",
+          "title": "Number Sentence",
+          "expression": "51:31 = original proportion",
+          "content": "51:31 = original proportion",
+          "data": {
+            "expression": "51:31 = original proportion",
+            "content_en": "51:31 = original proportion"
+          }
+        },
+        {
+          "type": "mini_quiz",
+          "title": "Try It",
+          "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+          "choices": [
+            "77 sheets",
+            "75 sheets",
+            "80 sheets",
+            "82 sheets"
+          ],
+          "correct_answer": "77 sheets",
+          "answer": "77 sheets",
+          "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "question_en": "The class has 48 sheets of paper. The teacher adds 29 more sheets. How many sheets are there in all?",
+            "choices": [
+              "77 sheets",
+              "75 sheets",
+              "80 sheets",
+              "82 sheets"
+            ],
+            "correct_answer": "77 sheets",
+            "answer": "77 sheets",
+            "explanation": "Add the two groups: 48 + 29 = 77 sheets.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
+        }
+      ]
+    }
+  ],
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
+}

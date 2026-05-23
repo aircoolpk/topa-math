@@ -12,6 +12,24 @@ CONTENT_ROOT = Path(__file__).resolve().parents[1] / "content" / "math"
 ACTIVE_GRADES = range(1, 7)
 ACTIVE_CONTENT_KINDS = {"lessons", "quizzes"}
 
+GRADE3_TOPIC_TITLES: dict[str, tuple[str, str]] = {
+    "addition_subtraction": ("การบวกและการลบ", "Addition and Subtraction"),
+    "data_charts": ("แผนภูมิและข้อมูล", "Data and Charts"),
+    "division": ("การหารแบบแบ่งเท่า ๆ กัน", "Division"),
+    "fractions": ("เศษส่วนในชีวิตประจำวัน", "Fractions in Daily Life"),
+    "geometry": ("รูปทรงและเรขาคณิต", "Geometry"),
+    "length": ("การวัดความยาว", "Length Measurement"),
+    "money": ("เงินทอนในชีวิตประจำวัน", "Money and Change"),
+    "multiplication": ("การคูณ", "Multiplication"),
+    "numbers": ("จำนวนและค่าประจำหลัก", "Numbers and Place Value"),
+    "time": ("เวลา", "Time"),
+    "weight_capacity": ("น้ำหนักและความจุ", "Weight and Capacity"),
+}
+
+GRADE3_TOPIC_ORDER = list(GRADE3_TOPIC_TITLES)
+GRADE3_GROUP_TO_TOPIC = {f"g3_{topic}": topic for topic in GRADE3_TOPIC_ORDER}
+GRADE3_NO_TEST_REASON_TH = "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้"
+
 ALLOWED_BLOCK_TYPES = {
     "story_intro",
     "think_story",
@@ -40,6 +58,211 @@ def _read_json(path: Path) -> dict[str, Any] | None:
     except Exception:
         return None
     return value if isinstance(value, dict) else None
+
+
+def _grade3_program_dir(kind: str, program: str) -> Path:
+    return CONTENT_ROOT / "grade_3" / kind / program_alias(program)
+
+
+def _grade3_topic_dir(kind: str, topic_folder: str, program: str) -> Path:
+    return _grade3_program_dir(kind, program) / topic_folder
+
+
+def _grade3_lesson_group_id(topic_folder: str) -> str:
+    return f"g3_{topic_folder}"
+
+
+def _grade3_topic_from_group(lesson_group_id: str) -> str | None:
+    return GRADE3_GROUP_TO_TOPIC.get(base_lesson_id(lesson_group_id))
+
+
+def _grade3_variant_files(kind: str, topic_folder: str, program: str) -> list[Path]:
+    folder = _grade3_topic_dir(kind, topic_folder, program)
+    if not folder.exists() or not folder.is_dir():
+        return []
+    try:
+        folder.resolve().relative_to((CONTENT_ROOT / "grade_3" / kind).resolve())
+    except ValueError:
+        return []
+    return sorted(path for path in folder.glob("*.json") if path.is_file())
+
+
+def _grade3_variant_status(payload: dict[str, Any]) -> str:
+    return str(payload.get("status") or payload.get("review_status") or payload.get("publish_status") or "active").strip().lower()
+
+
+def _grade3_variant_is_active(payload: dict[str, Any], *, approved_only: bool = False) -> bool:
+    status = _grade3_variant_status(payload)
+    if approved_only:
+        return status in {"approved", "published", "active"}
+    return status not in {"archived", "deleted", "disabled", "inactive", "rejected"}
+
+
+def _read_grade3_variant(path: Path, topic_folder: str, program: str, kind: str) -> dict[str, Any] | None:
+    payload = _read_json(path)
+    if not isinstance(payload, dict):
+        return None
+    payload = dict(payload)
+    group_id = _grade3_lesson_group_id(topic_folder)
+    title_th, title_en = GRADE3_TOPIC_TITLES.get(topic_folder, (group_id, group_id))
+    payload["lesson_id"] = group_id
+    payload["id"] = group_id
+    payload["lesson_group_id"] = group_id
+    payload["topic_folder"] = topic_folder
+    payload["grade_level"] = 3
+    payload["program_type"] = program_alias(program)
+    payload["content_program_type"] = program_alias(program)
+    payload["topic_code"] = group_id
+    payload["skill_code"] = group_id
+    payload["selected_variant_id"] = payload.get("variant_id") or path.stem
+    payload["variant_id"] = payload.get("variant_id") or path.stem
+    payload["variant_status"] = _grade3_variant_status(payload)
+    payload["source_path"] = str(path)
+    payload["active_content_source_path"] = str(path)
+    payload["source_folder"] = str(path.parent)
+    payload["file_structure"] = "grade3_topic_folder"
+    payload["is_grade3_topic_folder_group"] = True
+    payload["loaded_from_backup"] = False
+    payload["status"] = "approved" if kind == "lessons" else payload.get("status", "approved")
+    if kind == "lessons":
+        quiz_available = has_grade3_approved_quiz(topic_folder, program)
+        payload["has_approved_test"] = quiz_available
+        payload["test_available"] = quiz_available
+        payload["test_unavailable_reason"] = None if quiz_available else GRADE3_NO_TEST_REASON_TH
+    payload["title_th"] = payload.get("title_th") or title_th
+    payload["title_en"] = payload.get("title_en") or title_en
+    payload.setdefault("estimated_minutes", 10)
+    return payload
+
+
+def select_grade3_lesson_variant(topic_folder: str, program_type: str, user_id: str | None = None) -> tuple[Path, dict[str, Any]] | None:
+    """Select one active Grade 3 topic-folder lesson variant without touching content."""
+    candidates: list[tuple[Path, dict[str, Any]]] = []
+    for path in _grade3_variant_files("lessons", topic_folder, program_type):
+        payload = _read_json(path)
+        if isinstance(payload, dict) and _grade3_variant_is_active(payload):
+            wrapped = _read_grade3_variant(path, topic_folder, program_type, "lessons")
+            if wrapped:
+                candidates.append((path, wrapped))
+    if not candidates:
+        return None
+    # Deterministic first-valid selection for now; supports 001..999 future variants.
+    return candidates[0]
+
+
+def list_grade3_quiz_variants(topic_folder: str, program_type: str, approved_only: bool = True) -> list[tuple[Path, dict[str, Any]]]:
+    variants: list[tuple[Path, dict[str, Any]]] = []
+    for path in _grade3_variant_files("quizzes", topic_folder, program_type):
+        payload = _read_json(path)
+        if isinstance(payload, dict) and _grade3_variant_is_active(payload, approved_only=approved_only):
+            wrapped = _read_grade3_variant(path, topic_folder, program_type, "quizzes") or payload
+            wrapped["quiz_variant_id"] = payload.get("quiz_id") or payload.get("variant_id") or path.stem
+            variants.append((path, wrapped))
+    return variants
+
+
+def has_grade3_approved_quiz(topic_folder: str, program_type: str) -> bool:
+    return bool(list_grade3_quiz_variants(topic_folder, program_type, approved_only=True))
+
+
+def get_grade3_lesson_group(lesson_group_id: str, program_type: str) -> tuple[Path, dict[str, Any]] | None:
+    topic_folder = _grade3_topic_from_group(lesson_group_id)
+    if not topic_folder:
+        return None
+    return select_grade3_lesson_variant(topic_folder, program_type)
+
+
+def list_grade3_topic_lessons(program_type: str) -> list[dict[str, Any]]:
+    requested_program = program_alias(program_type)
+    items: list[dict[str, Any]] = []
+    for order, topic_folder in enumerate(GRADE3_TOPIC_ORDER, start=1):
+        folder = _grade3_topic_dir("lessons", topic_folder, requested_program)
+        variants: list[tuple[Path, dict[str, Any]]] = []
+        for path in _grade3_variant_files("lessons", topic_folder, requested_program):
+            raw = _read_json(path)
+            if isinstance(raw, dict) and _grade3_variant_is_active(raw):
+                wrapped = _read_grade3_variant(path, topic_folder, requested_program, "lessons")
+                if wrapped:
+                    variants.append((path, wrapped))
+        if not variants:
+            continue
+        selected_path, selected_payload = variants[0]
+        group_id = _grade3_lesson_group_id(topic_folder)
+        fallback_th, fallback_en = GRADE3_TOPIC_TITLES[topic_folder]
+        quiz_variants = list_grade3_quiz_variants(topic_folder, requested_program, approved_only=True)
+        items.append(
+            {
+                "lesson_id": group_id,
+                "id": group_id,
+                "base_lesson_id": group_id,
+                "lesson_group_id": group_id,
+                "program": requested_program,
+                "program_type": requested_program,
+                "grade_level": 3,
+                "title": selected_payload.get("title_th") if requested_program == "TH" else (selected_payload.get("title_en") or selected_payload.get("title_th")),
+                "title_th": selected_payload.get("title_th") or fallback_th,
+                "title_en": selected_payload.get("title_en") or fallback_en,
+                "topic_code": group_id,
+                "skill_code": group_id,
+                "topic_folder": topic_folder,
+                "estimated_minutes": int(selected_payload.get("estimated_minutes") or 10),
+                "student_visible": True,
+                "approved": True,
+                "status": "approved",
+                "has_approved_test": bool(quiz_variants),
+                "test_available": bool(quiz_variants),
+                "test_unavailable_reason": None if quiz_variants else GRADE3_NO_TEST_REASON_TH,
+                "test_bank_source": str(quiz_variants[0][0]) if quiz_variants else None,
+                "source_path": str(selected_path),
+                "active_content_source_path": str(selected_path),
+                "source_folder": str(folder),
+                "file_structure": "grade3_topic_folder",
+                "is_grade3_topic_folder_group": True,
+                "selected_variant_id": selected_payload.get("selected_variant_id") or selected_path.stem,
+                "variant_count": len(variants),
+                "approved_variant_count": len(variants),
+                "variant_files": [path.name for path, _payload in variants],
+                "quiz_variant_count": len(quiz_variants),
+                "approved_quiz_count": len(quiz_variants),
+                "loaded_from_backup": False,
+                "sort_order": order,
+            }
+        )
+    return items
+
+
+def start_grade3_topic_test(lesson_group_id: str, program_type: str) -> list[dict[str, Any]]:
+    topic_folder = _grade3_topic_from_group(lesson_group_id)
+    if not topic_folder:
+        return []
+    return get_grade3_topic_test_bank(topic_folder, program_type)
+
+
+def get_grade3_topic_test_bank(topic_folder: str, program_type: str) -> list[dict[str, Any]]:
+    requested_program = program_alias(program_type)
+    rows: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for path, payload in list_grade3_quiz_variants(topic_folder, requested_program, approved_only=True):
+        questions = payload.get("questions")
+        if not isinstance(questions, list):
+            continue
+        group_id = _grade3_lesson_group_id(topic_folder)
+        for index, question in enumerate(questions):
+            if not isinstance(question, dict):
+                continue
+            question_id = str(question.get("question_id") or question.get("id") or f"{path.stem}_q{index + 1:03d}")
+            if question_id in seen:
+                continue
+            seen.add(question_id)
+            row = dict(question)
+            row["question_id"] = question_id
+            row["lesson_id"] = group_id
+            row["program"] = requested_program
+            row["program_type"] = requested_program
+            row["source_path"] = str(path)
+            row["topic_folder"] = topic_folder
+            rows.append(row)
+    return rows
 
 
 def _write_json(path: Path, payload: dict[str, Any]) -> None:
@@ -412,6 +635,8 @@ def list_canonical_lessons(
             continue
         lesson_id = _canonical_lesson_id(payload, path)
         lesson_grade = int(payload.get("grade_level") or 0)
+        if lesson_grade == 3:
+            continue
         lesson_program = lesson_program_alias(payload)
         if lesson_program != requested_program:
             continue
@@ -464,11 +689,16 @@ def list_canonical_lessons(
                 }
             )
         items.append(item)
+    if grade is None or grade == 3:
+        items.extend(list_grade3_topic_lessons(requested_program))
     return sorted(items, key=lambda item: (item["grade_level"], item["base_lesson_id"], item["program"]))
 
 
 def get_canonical_lesson(lesson_id: str, program: str) -> tuple[Path, dict[str, Any]] | None:
     requested_program = program_alias(program)
+    grade3_group = get_grade3_lesson_group(lesson_id, requested_program)
+    if grade3_group:
+        return grade3_group
     requested_base = base_lesson_id(lesson_id)
     for path in _lesson_files():
         payload = _read_json(path)
@@ -491,6 +721,49 @@ def list_canonical_tests(
     from app.services.content_status import get_test_status
 
     requested_program = program_alias(program)
+    if grade == 3 or (lesson_id and _grade3_topic_from_group(lesson_id)):
+        topic_filter = _grade3_topic_from_group(lesson_id or "") if lesson_id else None
+        grade3_items: list[dict[str, Any]] = []
+        topics = [topic_filter] if topic_filter else GRADE3_TOPIC_ORDER
+        for topic_folder in [topic for topic in topics if topic]:
+            group_id = _grade3_lesson_group_id(topic_folder)
+            for path, payload in list_grade3_quiz_variants(topic_folder, requested_program, approved_only=approved_only):
+                questions = payload.get("questions")
+                if not isinstance(questions, list):
+                    continue
+                for index, question in enumerate(questions):
+                    if not isinstance(question, dict):
+                        continue
+                    question_id = str(question.get("question_id") or question.get("id") or f"{path.stem}_q{index + 1:03d}")
+                    grade3_items.append(
+                        {
+                            "test_id": question_id,
+                            "question_id": question_id,
+                            "lesson_id": group_id,
+                            "base_lesson_id": group_id,
+                            "lesson_group_id": group_id,
+                            "program": requested_program,
+                            "language": requested_program,
+                            "grade_level": 3,
+                            "question": _question_text(question, requested_program),
+                            "choices": question.get("choices") or [],
+                            "correct_answer": question.get("correct_answer") or question.get("answer"),
+                            "explanation": question.get("explanation_en") if requested_program == "EP" else (question.get("explanation_th") or question.get("explanation")),
+                            "difficulty": question.get("difficulty") or "medium",
+                            "skill_tag": question.get("skill_tag") or question.get("skill_code") or group_id,
+                            "status": _grade3_variant_status(payload),
+                            "source_path": str(path),
+                            "active_content_source_path": str(path),
+                            "source_folder": str(path.parent),
+                            "topic_folder": topic_folder,
+                            "file_structure": "grade3_topic_folder",
+                            "loaded_from_backup": False,
+                        }
+                    )
+        if grade == 3:
+            return grade3_items
+        if lesson_id and _grade3_topic_from_group(lesson_id):
+            return grade3_items
     items: list[dict[str, Any]] = []
     for path, row_grade, question, index in _canonical_test_rows(program=requested_program, grade=grade, lesson_id=lesson_id, approved_only=approved_only):
         question_id = _question_id(path, question, index)
@@ -518,14 +791,56 @@ def list_canonical_tests(
                 "loaded_from_backup": not path_is_active_content(path, "quizzes"),
             }
         )
+    if grade is None and not lesson_id:
+        for topic_folder in GRADE3_TOPIC_ORDER:
+            group_id = _grade3_lesson_group_id(topic_folder)
+            for path, payload in list_grade3_quiz_variants(topic_folder, requested_program, approved_only=approved_only):
+                questions = payload.get("questions")
+                if not isinstance(questions, list):
+                    continue
+                for index, question in enumerate(questions):
+                    if not isinstance(question, dict):
+                        continue
+                    question_id = str(question.get("question_id") or question.get("id") or f"{path.stem}_q{index + 1:03d}")
+                    items.append(
+                        {
+                            "test_id": question_id,
+                            "question_id": question_id,
+                            "lesson_id": group_id,
+                            "base_lesson_id": group_id,
+                            "lesson_group_id": group_id,
+                            "program": requested_program,
+                            "language": requested_program,
+                            "grade_level": 3,
+                            "question": _question_text(question, requested_program),
+                            "choices": question.get("choices") or [],
+                            "correct_answer": question.get("correct_answer") or question.get("answer"),
+                            "explanation": question.get("explanation_en") if requested_program == "EP" else (question.get("explanation_th") or question.get("explanation")),
+                            "difficulty": question.get("difficulty") or "medium",
+                            "skill_tag": question.get("skill_tag") or question.get("skill_code") or group_id,
+                            "status": _grade3_variant_status(payload),
+                            "source_path": str(path),
+                            "active_content_source_path": str(path),
+                            "source_folder": str(path.parent),
+                            "topic_folder": topic_folder,
+                            "file_structure": "grade3_topic_folder",
+                            "loaded_from_backup": False,
+                        }
+                    )
     return items
 
 
 def get_canonical_test_bank(lesson_id: str, program: str) -> list[dict[str, Any]]:
+    topic_folder = _grade3_topic_from_group(lesson_id)
+    if topic_folder:
+        return get_grade3_topic_test_bank(topic_folder, program)
     return list_canonical_tests(program=program, lesson_id=lesson_id, approved_only=True)
 
 
 def has_approved_test(lesson_id: str, program: str) -> bool:
+    topic_folder = _grade3_topic_from_group(lesson_id)
+    if topic_folder:
+        return has_grade3_approved_quiz(topic_folder, program)
     return bool(get_canonical_test_bank(lesson_id, program))
 
 
@@ -543,6 +858,10 @@ def _lesson_identity_matches(payload: dict[str, Any], path: Path, lesson_id: str
 
 def find_lesson_file(lesson_id: str, program_type: str | None = None) -> tuple[Path, dict[str, Any], bool] | None:
     requested = program_alias(program_type) if program_type else None
+    if requested:
+        grade3_group = get_grade3_lesson_group(lesson_id, requested)
+        if grade3_group:
+            return grade3_group[0], grade3_group[1], False
     matches: list[tuple[Path, dict[str, Any]]] = []
     for path in _lesson_files():
         payload = _read_json(path)
@@ -568,11 +887,39 @@ def list_lessons(grade_level: int | None = None, program_type: str | None = None
     requested = program_alias(program_type) if program_type else None
     query = (search or "").strip().lower()
     grouped: dict[str, dict[str, Any]] = {}
+    if grade_level in {None, 3}:
+        programs = [requested] if requested else ["TH", "EP"]
+        for program in programs:
+            for item in list_grade3_topic_lessons(program):
+                if query and query not in " ".join([item["lesson_id"], item.get("title_th", ""), item.get("title_en", ""), item.get("topic_folder", "")]).lower():
+                    continue
+                grouped[item["lesson_id"] if requested else f"{item['lesson_id']}:{program}"] = {
+                    "lesson_id": item["lesson_id"],
+                    "grade_level": 3,
+                    "title_th": item["title_th"],
+                    "title_en": item["title_en"],
+                    "topic_code": item["topic_code"],
+                    "skill_code": item["skill_code"],
+                    "topic_folder": item["topic_folder"],
+                    "source_folder": item["source_folder"],
+                    "variant_count": item["variant_count"],
+                    "approved_variant_count": item["approved_variant_count"],
+                    "variant_files": item["variant_files"],
+                    "program_type": program,
+                    "has_th": program == "TH",
+                    "has_ep": program == "EP",
+                    "validation_status": "valid",
+                    "issue_count": 0,
+                }
+        if grade_level == 3:
+            return sorted(grouped.values(), key=lambda item: (item["grade_level"], item.get("program_type", ""), item["lesson_id"]))
     for path in _lesson_files():
         payload = _read_json(path)
         if not payload:
             continue
         grade = int(payload.get("grade_level") or 0)
+        if grade == 3:
+            continue
         if grade_level is not None and grade != grade_level:
             continue
         program = lesson_program_alias(payload)

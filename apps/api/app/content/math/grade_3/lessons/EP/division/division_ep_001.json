@@ -1,0 +1,261 @@
+{
+  "variant_id": "division_ep_001",
+  "variant_title_th": "การหาร — ความหมายและการแบ่งเท่าๆ กัน",
+  "variant_title_en": "Division — Meaning and Equal Sharing",
+  "status": "needs_review",
+  "title_en": "Division",
+  "story_theme_en": "Chef Ai made 30 chocolate chip cookies and wanted to put them in boxes. Each box must have the same number of cookies, with 6 cookies in each box. Chef Ai needed to know how many boxes she would get. Division helps us share things equally into groups.",
+  "helper_tip_en": "Have students draw 6 circles and distribute cookies one by one until all are shared equally.",
+  "think_story_en": "30 cookies shared into 6 boxes. 30/6 = 5. Each box gets 5 cookies, 5 boxes in total. Check: 5x6=30.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Chef Ai shares 30 cookies into 6 boxes.",
+      "data": {
+        "content_en": "Chef Ai made 30 chocolate chip cookies and wanted to put them in boxes. Each box must have 6 cookies. Chef Ai needed to know how many boxes she would get."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "30/6=5. 5 cookies per box, 5 boxes. Check: 5x6=30.",
+      "data": {
+        "content_en": "30 cookies shared into 6 boxes. 30/6 = 5. Each box gets 5 cookies, 5 boxes total. Check: 5x6=30."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Equal Sharing Model",
+      "description": "30 cookies divided equally into 6 boxes with 5 cookies each",
+      "model_type": "equal_sharing_model",
+      "data": {
+        "model_type": "equal_sharing_model",
+        "total_items": 30,
+        "num_groups": 6,
+        "items_per_group": 5,
+        "result": 5,
+        "unit": "boxes",
+        "operation": "sharing",
+        "check": "5x6=30"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "30/6=5 boxes",
+      "content": "30/6=5 | 30 divided by 6 = 5",
+      "data": {
+        "expression": "30/6=5 boxes",
+        "dividend": 30,
+        "divisor": 6,
+        "quotient": 5,
+        "unit": "boxes",
+        "content_en": "30/6=5 | 30 divided by 6 = 5"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "There are 24 oranges shared equally among 6 friends. How many does each get?",
+      "choices": [
+        "3 oranges",
+        "4 oranges",
+        "6 oranges",
+        "8 oranges"
+      ],
+      "correct_answer": "4 oranges",
+      "explanation": "24/6=4 oranges",
+      "data": {
+        "question": "There are 24 oranges shared equally among 6 friends. How many does each get?",
+        "choices": [
+          "3 oranges",
+          "4 oranges",
+          "6 oranges",
+          "8 oranges"
+        ],
+        "correct_answer": "4 oranges",
+        "explanation": "24/6=4 oranges"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Division as equal sharing means distributing a total amount equally into groups.",
+    "In this problem: 30 cookies shared into 6 boxes equally. Each box gets the same number.",
+    "30/6 = 5. Each box gets 5 cookies. There are 5 boxes in total.",
+    "Check using multiplication: 5x6 = 30."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Equal Sharing Division",
+      "question_en": "There are 35 flowers divided into 7 vases equally. How many flowers per vase?",
+      "solution_en": "35/7 = 5 flowers per vase"
+    }
+  ],
+  "common_mistakes_en": [
+    "Confusing the dividend (total) with the divisor (number of groups).",
+    "Using repeated subtraction instead of division.",
+    "Forgetting that division is about equal sharing."
+  ],
+  "hints_en": [
+    "Look for clue words: shared equally among, divided into, each.",
+    "Use multiplication to check: Quotient x Divisor = Dividend.",
+    "Draw circles for each group and distribute items one by one."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "division",
+      "th": "การหาร",
+      "definition_en": "Sharing an amount equally into groups"
+    },
+    {
+      "en": "dividend",
+      "th": "ตัวตั้งหาร",
+      "definition_en": "The total number being divided up"
+    },
+    {
+      "en": "divisor",
+      "th": "ตัวหาร",
+      "definition_en": "The number we are dividing by"
+    },
+    {
+      "en": "quotient",
+      "th": "ผลหาร",
+      "definition_en": "The answer to a division problem"
+    },
+    {
+      "en": "equal sharing",
+      "th": "แบ่งเท่าๆ กัน",
+      "definition_en": "Distributing so each group gets the same amount"
+    },
+    {
+      "en": "remainder",
+      "th": "เศษ",
+      "definition_en": "What is left over when division is not exact"
+    },
+    {
+      "en": "group",
+      "th": "กลุ่ม",
+      "definition_en": "A set of items together"
+    },
+    {
+      "en": "check",
+      "th": "ตรวจสอบ",
+      "definition_en": "Using multiplication to verify division"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "30/5=?",
+      "choices": [
+        "5",
+        "6",
+        "25",
+        "35"
+      ],
+      "answer": "6",
+      "explanation": "30/5=6"
+    },
+    {
+      "q": "Teacher has 48 pencils, divides among 6 students. Each gets?",
+      "choices": [
+        "6",
+        "8",
+        "12",
+        "42"
+      ],
+      "answer": "8",
+      "explanation": "48/6=8 pencils each"
+    },
+    {
+      "q": "Which matches 20 divided into 4 equal groups?",
+      "choices": [
+        "20/4",
+        "4/20",
+        "20x4",
+        "20-4"
+      ],
+      "answer": "20/4",
+      "explanation": "20/4=5"
+    },
+    {
+      "q": "Baker puts 36 cupcakes into boxes of 6. How many boxes?",
+      "choices": [
+        "6",
+        "7",
+        "30",
+        "6"
+      ],
+      "answer": "6",
+      "explanation": "36/6=6 boxes"
+    },
+    {
+      "q": "42/7=?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": "6",
+      "explanation": "42/7=6"
+    },
+    {
+      "q": "Lin shares 56 stickers among 7 friends. Each gets?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "8",
+      "explanation": "56/7=8 stickers each"
+    },
+    {
+      "q": "Farm has 72 eggs packed into cartons of 8. How many cartons?",
+      "choices": [
+        "8",
+        "9",
+        "64",
+        "80"
+      ],
+      "answer": "9",
+      "explanation": "72/8=9 cartons"
+    },
+    {
+      "q": "Correct check for 45/5=9?",
+      "choices": [
+        "9+5=14",
+        "9x5=45",
+        "9-5=4",
+        "45-5=40"
+      ],
+      "answer": "9x5=45",
+      "explanation": "9x5=45, so 45/5=9"
+    },
+    {
+      "q": "63 books on shelves with 9 books per shelf. How many shelves?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "7",
+      "explanation": "63/9=7 shelves"
+    },
+    {
+      "q": "81/9=?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "answer": "9",
+      "explanation": "81/9=9"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Division is sharing equally. Look for shared equally among, divided into, each. Write the total (dividend) first, then the number of groups (divisor). Check by multiplying the quotient by the divisor."
+}

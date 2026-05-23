@@ -46,52 +46,90 @@
   "lesson_variants": [
     {
       "variant_id": "g2_subtract_two_digit_ep_01",
-      "variant_title_th": "Subtraction Variant 1",
+      "variant_title_th": "",
       "variant_title_en": "Subtraction Variant 1",
-      "story_theme_th": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "story_theme_en": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "helper_tip": "Read the story first. Circle the important numbers for Subtraction.",
+      "story_theme_th": "",
+      "story_theme_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Subtraction. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht.",
+          "content_en": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht.",
+          "data": {
+            "content_en": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "money_change",
+          "start": 80,
+          "spent": 26,
+          "result": 54,
+          "unit": "baht",
+          "symbol": "💵",
+          "item": "bus tickets",
+          "data": {
+            "model_type": "money_change",
+            "start": 80,
+            "spent": 26,
+            "result": 54,
+            "unit": "baht",
+            "symbol": "💵",
+            "item": "bus tickets"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "80 - 26 = 54 baht",
+          "content": "80 - 26 = 54 baht",
+          "data": {
+            "expression": "80 - 26 = 54 baht",
+            "content_en": "80 - 26 = 54 baht"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+          "question_en": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "71 baht",
+            "69 baht",
+            "74 baht",
+            "76 baht"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "71 baht",
+          "answer": "71 baht",
+          "explanation": "Subtract the cost: 100 - 29 = 71 baht.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+            "question_en": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+            "choices": [
+              "71 baht",
+              "69 baht",
+              "74 baht",
+              "76 baht"
+            ],
+            "correct_answer": "71 baht",
+            "answer": "71 baht",
+            "explanation": "Subtract the cost: 100 - 29 = 71 baht.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
@@ -102,7 +140,7 @@
   "cover_emoji": "➖",
   "cover_color": "orange",
   "access_type_hint": "free",
-  "status": "approved",
+  "status": "needs_review",
   "quality_required": true,
   "content_schema_version": "topa_story_variant_v1",
   "program_type": "EP",
@@ -111,9 +149,9 @@
   "lesson_intro_th": "อลิสมีกิ๊บเก็บผม 65 อัน ให้เพื่อนไป 23 อัน อลิสเหลือกิ๊บเก็บผมกี่อัน? 💇‍♀️",
   "concept_explanation_th": "เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้ ลบหลักหน่วยก่อน แล้วลบหลักสิบ ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม",
   "singapore_math_model": {
-    "type": "number_bond",
-    "model_type": "number_bond",
-    "description_th": "ใช้แผนภาพแบบ Singapore Math เพื่อมองเห็นความสัมพันธ์ของจำนวน"
+    "type": "money_change",
+    "model_type": "money_change",
+    "description_th": "แผนภาพตรงกับสถานการณ์และตัวเลขในโจทย์"
   },
   "visual_model_prompt_th": "แสดงแผนภาพจำนวนสัมพันธ์พร้อมตัวเลขชัดเจน",
   "diagram_data": {
@@ -520,312 +558,40 @@
   ],
   "title_en": "Subtraction",
   "objective_en": "Learn Subtraction with a story, a model, a number sentence, and practice.",
-  "story_intro_en": "Look! 65 + 23 — can you find the answer?",
+  "story_intro_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
   "worked_examples_en": [
-    {
-      "title_en": "Example: ลบดินสอ",
-      "question_en": "pencils 78 pencils 34 pencils pencils pencils?",
-      "solution_en": "78 - 34 = 44 pencils ✅?"
-    },
-    {
-      "title_en": "Example: ลบสติกเกอร์",
-      "question_en": "stickers 95 stickers 42 stickers stickers stickers?",
-      "solution_en": "95 - 42 = 53 stickers ✅?"
-    },
-    {
-      "title_en": "Example: ลบลูกบอล",
-      "question_en": "balls 86 balls 53 balls balls balls?",
-      "solution_en": "86 - 53 = 33 balls ✅?"
-    }
+    "g2_subtract_two_digit_ep English item 1",
+    "g2_subtract_two_digit_ep English item 2",
+    "g2_subtract_two_digit_ep English item 3"
   ],
   "common_mistakes_en": [
-    "Mistake: เขียนตัวเลขเยื้องกันทำให้หลักไม่ตรงกัน",
-    "Mistake: ลบหลักสิบก่อนหลักหน่วย ทำให้สับสน",
-    "Mistake: ลืมว่าตัวตั้งต้องมากกว่าตัวลบ ไม่งั้นจะลบไม่ได้"
+    "g2_subtract_two_digit_ep English item 1",
+    "g2_subtract_two_digit_ep English item 2",
+    "g2_subtract_two_digit_ep English item 3"
   ],
   "hints_en": [
-    "Hint: เขียนเลขให้ตรงหลักกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
-    "Hint: ลบหลักหน่วยก่อน ถ้าได้ผลลัพธ์เท่าไหร่จดไว้ แล้วค่อยลบหลักสิบ",
-    "Hint: ตรวจคำตอบโดยเอาผลลัพธ์บวกกลับด้วยตัวลบ ต้องได้ตัวตั้งเดิม"
+    "g2_subtract_two_digit_ep English item 1",
+    "g2_subtract_two_digit_ep English item 2",
+    "g2_subtract_two_digit_ep English item 3"
   ],
   "explanation_steps_en": [
-    "Step: เวลาลบเลขสองหลัก ให้เขียนตัวเลขเรียงกันให้หลักตรงกัน ตัวตั้งอยู่บน ตัวลบอยู่ล่าง",
-    "Step: ตัวตั้งต้องมากกว่าตัวลบเสมอ ไม่งั้นจะลบไม่ได้ในเรื่องนี้",
-    "Step: ลบหลักหน่วยก่อน แล้วลบหลักสิบ",
-    "Step: ถ้าหลักหน่วยของตัวตั้งน้อยกว่าตัวลบ ต้องขอยืม แต่ในบทนี้ยังไม่มีการยืม",
-    "Step: ตรวจคำตอบโดยบวกผลต่างกับตัวลบ ต้องได้ตัวตั้งเดิม"
+    "g2_subtract_two_digit_ep English item 1",
+    "g2_subtract_two_digit_ep English item 2",
+    "g2_subtract_two_digit_ep English item 3",
+    "g2_subtract_two_digit_ep English item 4",
+    "g2_subtract_two_digit_ep English item 5"
   ],
   "quiz_en": [
-    {
-      "question_id": "g2_subtract_two_digit_q01",
-      "question_th": "65 - 24 เท่ากับเท่าไร?",
-      "question_text": "65 - 24 ?",
-      "choices": [
-        "39",
-        "40",
-        "41",
-        "42"
-      ],
-      "correct_answer": "41",
-      "answer": "41",
-      "explanation": "65 - 24 = 41",
-      "explanation_th": "65 - 24 = 41",
-      "difficulty": "easy",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "core",
-      "question_en": "65 - 24 ?",
-      "explanation_en": "65 - 24 = 41",
-      "choices_en": [
-        "39",
-        "40",
-        "41",
-        "42"
-      ],
-      "answer_en": "41"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q02",
-      "question_th": "72 - 38 เท่ากับเท่าไร?",
-      "question_text": "72 - 38 ?",
-      "choices": [
-        "32",
-        "33",
-        "34",
-        "35"
-      ],
-      "correct_answer": "34",
-      "answer": "34",
-      "explanation": "72 - 38 = 34",
-      "explanation_th": "72 - 38 = 34",
-      "difficulty": "easy",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "core",
-      "question_en": "72 - 38 ?",
-      "explanation_en": "72 - 38 = 34",
-      "choices_en": [
-        "32",
-        "33",
-        "34",
-        "35"
-      ],
-      "answer_en": "34"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q03",
-      "question_th": "90 - 47 เท่ากับเท่าไร?",
-      "question_text": "90 - 47 ?",
-      "choices": [
-        "42",
-        "43",
-        "44",
-        "45"
-      ],
-      "correct_answer": "43",
-      "answer": "43",
-      "explanation": "90 - 47 = 43",
-      "explanation_th": "90 - 47 = 43",
-      "difficulty": "easy",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "core",
-      "question_en": "90 - 47 ?",
-      "explanation_en": "90 - 47 = 43",
-      "choices_en": [
-        "42",
-        "43",
-        "44",
-        "45"
-      ],
-      "answer_en": "43"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q04",
-      "question_th": "มีลูกบอล 84 ลูก ใช้ไป 29 ลูก เหลือกี่ลูก?",
-      "question_text": "balls 84 balls 29 balls balls?",
-      "choices": [
-        "53 balls?",
-        "54 balls?",
-        "55 balls?",
-        "56 balls?"
-      ],
-      "correct_answer": "55 balls?",
-      "answer": "55 balls?",
-      "explanation": "84 - 29 = 55 balls?",
-      "explanation_th": "84 - 29 = 55 ลูก",
-      "difficulty": "medium",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "core",
-      "question_en": "balls 84 balls 29 balls balls?",
-      "explanation_en": "84 - 29 = 55 balls?",
-      "choices_en": [
-        "53 balls?",
-        "54 balls?",
-        "55 balls?",
-        "56 balls?"
-      ],
-      "answer_en": "55 balls?"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q05",
-      "question_th": "มีหนังสือ 73 เล่ม ยืมไป 18 เล่ม เหลือกี่เล่ม?",
-      "question_text": "73 books 18 books books?",
-      "choices": [
-        "54 books?",
-        "55 books?",
-        "56 books?",
-        "57 books?"
-      ],
-      "correct_answer": "55 books?",
-      "answer": "55 books?",
-      "explanation": "73 - 18 = 55 books?",
-      "explanation_th": "73 - 18 = 55 เล่ม",
-      "difficulty": "medium",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "core",
-      "question_en": "73 books 18 books books?",
-      "explanation_en": "73 - 18 = 55 books?",
-      "choices_en": [
-        "54 books?",
-        "55 books?",
-        "56 books?",
-        "57 books?"
-      ],
-      "answer_en": "55 books?"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q06",
-      "question_th": "61 - 26 เท่ากับเท่าไร?",
-      "question_text": "61 - 26 ?",
-      "choices": [
-        "34",
-        "35",
-        "36",
-        "37"
-      ],
-      "correct_answer": "35",
-      "answer": "35",
-      "explanation": "61 - 26 = 35",
-      "explanation_th": "61 - 26 = 35",
-      "difficulty": "medium",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "core",
-      "question_en": "61 - 26 ?",
-      "explanation_en": "61 - 26 = 35",
-      "choices_en": [
-        "34",
-        "35",
-        "36",
-        "37"
-      ],
-      "answer_en": "35"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q07",
-      "question_th": "58 - 19 เท่ากับเท่าไร?",
-      "question_text": "58 - 19 ?",
-      "choices": [
-        "38",
-        "39",
-        "40",
-        "41"
-      ],
-      "correct_answer": "39",
-      "answer": "39",
-      "explanation": "58 - 19 = 39",
-      "explanation_th": "58 - 19 = 39",
-      "difficulty": "medium",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "core",
-      "question_en": "58 - 19 ?",
-      "explanation_en": "58 - 19 = 39",
-      "choices_en": [
-        "38",
-        "39",
-        "40",
-        "41"
-      ],
-      "answer_en": "39"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q08",
-      "question_th": "46 - 27 เท่ากับเท่าไร?",
-      "question_text": "46 - 27 ?",
-      "choices": [
-        "18",
-        "19",
-        "20",
-        "21"
-      ],
-      "correct_answer": "19",
-      "answer": "19",
-      "explanation": "46 - 27 = 19",
-      "explanation_th": "46 - 27 = 19",
-      "difficulty": "hard",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "challenge",
-      "question_en": "46 - 27 ?",
-      "explanation_en": "46 - 27 = 19",
-      "choices_en": [
-        "18",
-        "19",
-        "20",
-        "21"
-      ],
-      "answer_en": "19"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q09",
-      "question_th": "100 - 64 เท่ากับเท่าไร?",
-      "question_text": "100 - 64 ?",
-      "choices": [
-        "34",
-        "35",
-        "36",
-        "37"
-      ],
-      "correct_answer": "36",
-      "answer": "36",
-      "explanation": "100 - 64 = 36",
-      "explanation_th": "100 - 64 = 36",
-      "difficulty": "hard",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "challenge",
-      "question_en": "100 - 64 ?",
-      "explanation_en": "100 - 64 = 36",
-      "choices_en": [
-        "34",
-        "35",
-        "36",
-        "37"
-      ],
-      "answer_en": "36"
-    },
-    {
-      "question_id": "g2_subtract_two_digit_q10",
-      "question_th": "82 - 45 เท่ากับเท่าไร?",
-      "question_text": "82 - 45 ?",
-      "choices": [
-        "36",
-        "37",
-        "38",
-        "39"
-      ],
-      "correct_answer": "37",
-      "answer": "37",
-      "explanation": "82 - 45 = 37",
-      "explanation_th": "82 - 45 = 37",
-      "difficulty": "hard",
-      "skill_tag": "g2_subtract_two_digit",
-      "question_type": "challenge",
-      "question_en": "82 - 45 ?",
-      "explanation_en": "82 - 45 = 37",
-      "choices_en": [
-        "36",
-        "37",
-        "38",
-        "39"
-      ],
-      "answer_en": "37"
-    }
+    "g2_subtract_two_digit_ep English item 1",
+    "g2_subtract_two_digit_ep English item 2",
+    "g2_subtract_two_digit_ep English item 3",
+    "g2_subtract_two_digit_ep English item 4",
+    "g2_subtract_two_digit_ep English item 5",
+    "g2_subtract_two_digit_ep English item 6",
+    "g2_subtract_two_digit_ep English item 7",
+    "g2_subtract_two_digit_ep English item 8",
+    "g2_subtract_two_digit_ep English item 9",
+    "g2_subtract_two_digit_ep English item 10"
   ],
   "quiz_id": "g2_subtract_two_digit_ep",
   "generated_at": "2026-05-16T04:16:40.963327+00:00",
@@ -835,43 +601,81 @@
     {
       "type": "story_intro",
       "title": "Story",
-      "content": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+      "content": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+      "content_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+      "data": {
+        "content_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks."
+      }
     },
     {
       "type": "think_story",
-      "title": "Think About It",
-      "content": "The key numbers are 6 and 5. Choose the operation that matches Subtraction. Use the model to get 30."
+      "title": "Think Story",
+      "content": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht.",
+      "content_en": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht.",
+      "data": {
+        "content_en": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht."
+      }
     },
     {
       "type": "model_diagram",
-      "title": "Use a Model",
-      "description": "Show 5 rows and 6 columns. Count all boxes.",
-      "model_type": "area_model",
-      "rows": 5,
-      "cols": 6,
-      "total": 30,
-      "unit": "items",
-      "symbol": "■"
+      "title": "Model Diagram",
+      "description": "The model uses the same objects and numbers as the story.",
+      "model_type": "money_change",
+      "start": 80,
+      "spent": 26,
+      "result": 54,
+      "unit": "baht",
+      "symbol": "💵",
+      "item": "bus tickets",
+      "data": {
+        "model_type": "money_change",
+        "start": 80,
+        "spent": 26,
+        "result": 54,
+        "unit": "baht",
+        "symbol": "💵",
+        "item": "bus tickets"
+      }
     },
     {
       "type": "number_sentence",
       "title": "Number Sentence",
-      "expression": "5 × 6 = 30",
-      "content": "Multiply rows by columns."
+      "expression": "80 - 26 = 54 baht",
+      "content": "80 - 26 = 54 baht",
+      "data": {
+        "expression": "80 - 26 = 54 baht",
+        "content_en": "80 - 26 = 54 baht"
+      }
     },
     {
       "type": "mini_quiz",
       "title": "Try It",
-      "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+      "question": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+      "question_en": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
       "choices": [
-        "11",
-        "24",
-        "28",
-        "32"
+        "71 baht",
+        "69 baht",
+        "74 baht",
+        "76 baht"
       ],
-      "correct_answer": "28",
-      "answer": "28",
-      "explanation": "4 × 7 = 28 tiles."
+      "correct_answer": "71 baht",
+      "answer": "71 baht",
+      "explanation": "Subtract the cost: 100 - 29 = 71 baht.",
+      "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+      "data": {
+        "question": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+        "question_en": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+        "choices": [
+          "71 baht",
+          "69 baht",
+          "74 baht",
+          "76 baht"
+        ],
+        "correct_answer": "71 baht",
+        "answer": "71 baht",
+        "explanation": "Subtract the cost: 100 - 29 = 71 baht.",
+        "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+      }
     }
   ],
   "base_lesson_id": "g2_subtract_two_digit",
@@ -883,87 +687,96 @@
   "story_variants": [
     {
       "variant_id": "g2_subtract_two_digit_ep_01",
-      "status": "approved",
-      "title": "Subtraction Variant 1",
-      "story": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later.",
-      "think_story": "The key numbers are 6 and 5. Choose the operation that matches Subtraction. Use the model to get 30.",
-      "model_diagram": {
-        "type": "model_diagram",
-        "title": "Use a Model",
-        "description": "Show 5 rows and 6 columns. Count all boxes.",
-        "model_type": "area_model",
-        "rows": 5,
-        "cols": 6,
-        "total": 30,
-        "unit": "items",
-        "symbol": "■"
-      },
-      "number_sentence": {
-        "type": "number_sentence",
-        "title": "Number Sentence",
-        "expression": "5 × 6 = 30",
-        "content": "Multiply rows by columns."
-      },
-      "practice": {
-        "type": "mini_quiz",
-        "title": "Try It",
-        "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
-        "choices": [
-          "11",
-          "24",
-          "28",
-          "32"
-        ],
-        "correct_answer": "28",
-        "answer": "28",
-        "explanation": "4 × 7 = 28 tiles."
-      },
-      "helper_tip": "Read the story first. Circle the important numbers for Subtraction.",
+      "variant_title_th": "",
+      "variant_title_en": "Subtraction Variant 1",
+      "story_theme_th": "",
+      "story_theme_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+      "helper_tip": "Read the story, find the numbers, and choose the operation.",
       "visual_blocks": [
         {
           "type": "story_intro",
           "title": "Story",
-          "content": "Ton is learning Subtraction with objects from class. The teacher gives two important numbers: 6 and 5. Ton reads the problem slowly and decides which operation matches the story. Then he draws a simple model so he can see the numbers clearly. The model helps him write a number sentence and check that the answer uses the correct unit. He does not guess from the numbers alone. He asks, what does each number mean, and what is the question asking? After that, he connects the picture to the number sentence. This habit helps him solve a new problem with different numbers later."
+          "content": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+          "content_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks.",
+          "data": {
+            "content_en": "Time has 80 baht in a wallet. At the bus stop, Time buys bus tickets for 26 baht. How much money is left after paying? This story practices Subtraction in the library with wooden trays before lending items to friends. The children circle the important numbers and underline what the question asks."
+          }
         },
         {
           "type": "think_story",
-          "title": "Think About It",
-          "content": "The key numbers are 6 and 5. Choose the operation that matches Subtraction. Use the model to get 30."
+          "title": "Think Story",
+          "content": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht.",
+          "content_en": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht.",
+          "data": {
+            "content_en": "The story starts with 80 baht and spends 26 baht. We subtract to find the change: 80 - 26 = 54 baht."
+          }
         },
         {
           "type": "model_diagram",
-          "title": "Use a Model",
-          "description": "Show 5 rows and 6 columns. Count all boxes.",
-          "model_type": "area_model",
-          "rows": 5,
-          "cols": 6,
-          "total": 30,
-          "unit": "items",
-          "symbol": "■"
+          "title": "Model Diagram",
+          "description": "The model uses the same objects and numbers as the story.",
+          "model_type": "money_change",
+          "start": 80,
+          "spent": 26,
+          "result": 54,
+          "unit": "baht",
+          "symbol": "💵",
+          "item": "bus tickets",
+          "data": {
+            "model_type": "money_change",
+            "start": 80,
+            "spent": 26,
+            "result": 54,
+            "unit": "baht",
+            "symbol": "💵",
+            "item": "bus tickets"
+          }
         },
         {
           "type": "number_sentence",
           "title": "Number Sentence",
-          "expression": "5 × 6 = 30",
-          "content": "Multiply rows by columns."
+          "expression": "80 - 26 = 54 baht",
+          "content": "80 - 26 = 54 baht",
+          "data": {
+            "expression": "80 - 26 = 54 baht",
+            "content_en": "80 - 26 = 54 baht"
+          }
         },
         {
           "type": "mini_quiz",
           "title": "Try It",
-          "question": "A small garden has 4 rows and 7 columns of tiles. How many tiles are there in all?",
+          "question": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+          "question_en": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
           "choices": [
-            "11",
-            "24",
-            "28",
-            "32"
+            "71 baht",
+            "69 baht",
+            "74 baht",
+            "76 baht"
           ],
-          "correct_answer": "28",
-          "answer": "28",
-          "explanation": "4 × 7 = 28 tiles."
+          "correct_answer": "71 baht",
+          "answer": "71 baht",
+          "explanation": "Subtract the cost: 100 - 29 = 71 baht.",
+          "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ",
+          "data": {
+            "question": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+            "question_en": "Nan has 100 baht. She buys a notebook for 29 baht. How much money is left?",
+            "choices": [
+              "71 baht",
+              "69 baht",
+              "74 baht",
+              "76 baht"
+            ],
+            "correct_answer": "71 baht",
+            "answer": "71 baht",
+            "explanation": "Subtract the cost: 100 - 29 = 71 baht.",
+            "hint_th": "อ่านโจทย์แล้วหาตัวเลขสำคัญ"
+          }
         }
       ]
     }
   ],
-  "helper_tip": "Read the story first. Circle the important numbers for Subtraction.",
-  "thai_support": ""
+  "helper_tip": "Read the story, find the numbers, and choose the operation.",
+  "thai_support": "",
+  "ep_review_status": "needs_review",
+  "vocabulary_th": "คำใบ้ภาษาไทยสำหรับครูใช้ประกอบการทบทวน"
 }
