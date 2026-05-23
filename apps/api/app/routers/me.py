@@ -50,7 +50,7 @@ from app.schemas.api import (
 from app.services.answers import answer_match_details, is_answer_correct
 from app.services.content_quality import lesson_program_type, validate_lesson_payload
 from app.services.content_status import get_test_status, is_lesson_approved, is_test_approved, load_tests_status
-from app.services.foundation import can_access_program, is_paid, recommended_foundation_grade, remaining_free_tests
+from app.services.foundation import can_access_program, is_ep_plus, is_paid, recommended_foundation_grade, remaining_free_tests
 from app.services.lesson_content import (
     base_lesson_id,
     find_lesson_file,
@@ -321,6 +321,40 @@ def _lesson_has_test_content(payload: dict, quiz_payload: dict | None = None) ->
 
 def _child_lesson_track(child: ChildProfile) -> str:
     return "EP" if (child.program_type or "THP").upper() == "EP" else "TH"
+
+
+def _normalize_requested_program(program_type: str | None) -> str:
+    if program_type is None or str(program_type).strip() == "":
+        return "TH"
+    raw_program = str(program_type).strip().upper()
+    if raw_program not in {"TH", "THP", "EP"}:
+        raise HTTPException(status_code=400, detail="program_type must be TH or EP")
+    return program_alias(raw_program)
+
+
+def _can_access_ep(user: User, child: ChildProfile) -> bool:
+    return (user.role or "").lower() == "admin" or is_ep_plus(child)
+
+
+def _program_payload(user: User, child: ChildProfile, active_program: str) -> dict:
+    can_access_ep = _can_access_ep(user, child)
+    return {
+        "active_program": program_alias(active_program),
+        "can_access_ep": can_access_ep,
+        "available_programs": ["TH", "EP"] if can_access_ep else ["TH"],
+    }
+
+
+def _require_program_access(user: User, child: ChildProfile, requested_program: str) -> None:
+    if program_alias(requested_program) == "EP" and not _can_access_ep(user, child):
+        raise HTTPException(
+            status_code=403,
+            detail={
+                "code": "EP_PACKAGE_LOCKED",
+                "message": "แพ็กเกจ EP ยังไม่ได้เปิดใช้งาน",
+                **_program_payload(user, child, "TH"),
+            },
+        )
 
 
 def _lesson_track_matches_child(payload: dict, child: ChildProfile) -> bool:
@@ -2369,12 +2403,8 @@ def lessons(
 ) -> dict:
     child = _profile(db, user)
     requested_grade = grade_level or grade or level or class_level
-    requested_program = None
-    if program_type:
-        raw_program = str(program_type).strip().upper()
-        if raw_program not in {"TH", "THP", "EP"}:
-            raise HTTPException(status_code=400, detail="program_type must be TH or EP")
-        requested_program = program_alias(raw_program)
+    requested_program = _normalize_requested_program(program_type)
+    _require_program_access(user, child, requested_program)
     include_grades = {requested_grade} if requested_grade is not None else set(range(1, 7))
     sections = _filter_lesson_sections_by_grade(
         _dashboard_lessons(
@@ -2393,9 +2423,10 @@ def lessons(
     primary_rows = sections["current_grade_lessons"]
     remaining = remaining_free_tests(child) if not is_paid(child) else 999999
     return {
+        **_program_payload(user, child, requested_program),
         "current_grade": child.grade_level,
         "requested_grade": requested_grade,
-        "program_type": requested_program or _child_lesson_track(child),
+        "program_type": requested_program,
         "membership_status": child.membership_status or "free",
         "remaining_free_tests": remaining,
         "current_grade_lessons": primary_rows,
@@ -2414,12 +2445,8 @@ def lesson_detail(
     user: User = Depends(current_user),
 ) -> dict:
     child = _profile(db, user)
-    requested_program = _child_lesson_track(child)
-    if program_type is not None:
-        raw_program = str(program_type).strip().upper()
-        if raw_program not in {"TH", "THP", "EP"}:
-            raise HTTPException(status_code=400, detail="program_type must be TH or EP")
-        requested_program = program_alias(raw_program)
+    requested_program = _normalize_requested_program(program_type)
+    _require_program_access(user, child, requested_program)
 
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     if json_payload:
@@ -2446,7 +2473,7 @@ def lesson_detail(
         db.commit()
         return _lesson_content_payload(lesson, item, variant)
 
-    requested_program = program_alias(program_type) if program_type else _child_lesson_track(child)
+    requested_program = _normalize_requested_program(program_type)
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
     if json_payload:
@@ -2556,6 +2583,7 @@ def get_test_questions(test_id: str, db: Session = Depends(get_db), user: User =
         "session_id": session.id,
         "grade_level": grade_level,
         "title_th": _test_title(grade_level),
+        "program_type": (session.metadata_json or {}).get("program_type", "TH"),
         "time_limit_seconds": session.timer_seconds,
         "core_question_count": (session.metadata_json or {}).get("core_question_count", 0),
         "challenge_question_count": (session.metadata_json or {}).get("challenge_question_count", 0),
@@ -2566,9 +2594,15 @@ def get_test_questions(test_id: str, db: Session = Depends(get_db), user: User =
 
 
 @router.post("/lessons/{lesson_id}/start")
-def start_lesson(lesson_id: str, db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
+def start_lesson(
+    lesson_id: str,
+    program_type: str | None = Query(default=None),
+    db: Session = Depends(get_db),
+    user: User = Depends(current_user),
+) -> dict:
     child = _profile(db, user)
-    requested_program = _child_lesson_track(child)
+    requested_program = _normalize_requested_program(program_type)
+    _require_program_access(user, child, requested_program)
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
     if json_payload and (lesson_program_alias(json_payload) != requested_program or not is_lesson_approved(canonical_lesson_id)):
@@ -2577,7 +2611,12 @@ def start_lesson(lesson_id: str, db: Session = Depends(get_db), user: User = Dep
     lesson = _ensure_json_lesson_in_db(db, json_payload) if json_payload else _lesson_by_public_id(db, canonical_lesson_id)
     if not lesson:
         raise HTTPException(status_code=404, detail="Lesson not found")
-    if not _db_lesson_visible_for_child(lesson, child):
+    if json_payload:
+        hidden_reason = _json_lesson_filter_reason(json_payload, child, expected_program=requested_program)
+        if hidden_reason:
+            logger.warning("lesson_start_hidden reason=%s lesson_id=%s program=%s", hidden_reason, canonical_lesson_id, requested_program)
+            raise HTTPException(status_code=404, detail="Lesson not found")
+    elif not _db_lesson_visible_for_child(lesson, child):
         raise HTTPException(status_code=404, detail="Lesson not found")
     if json_payload:
         item = _json_lesson_item(json_payload, child, 0 if int(json_payload.get("grade_level") or 0) == child.grade_level else None)
@@ -2623,6 +2662,8 @@ def start_lesson_test(
     user: User = Depends(current_user),
 ) -> dict:
     child = _profile(db, user)
+    requested_program = _normalize_requested_program(program_type)
+    _require_program_access(user, child, requested_program)
     if not is_paid(child) and remaining_free_tests(child) <= 0:
         raise HTTPException(
             status_code=403,
@@ -2630,7 +2671,6 @@ def start_lesson_test(
         )
     if not is_paid(child) and remaining_free_tests(child) <= 0:
         raise HTTPException(status_code=403, detail="ใช้สิทธิ์เทสฟรีครบแล้ว กรุณาอัปเกรดเพื่อทำเทสเพิ่มเติม")
-    requested_program = program_alias(program_type) if program_type else _child_lesson_track(child)
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
     if json_payload and (lesson_program_alias(json_payload) != requested_program or not is_lesson_approved(canonical_lesson_id)):
@@ -2694,6 +2734,11 @@ def start_lesson_test(
     if len(questions) < 5:
         logger.warning("lesson_test_start_selected_too_few lesson_id=%s program=%s count=%s", canonical_lesson_id, requested_program, len(questions))
         raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "Approved test bank has too few questions", "lesson_id": canonical_lesson_id})
+    rotation_metadata = {
+        **rotation_metadata,
+        "program_type": requested_program,
+        "lesson_public_id": canonical_lesson_id,
+    }
     session = TestSession(
         child_profile_id=child.id,
         lesson_id=lesson.id,
@@ -3006,14 +3051,20 @@ def rank_summary(db: Session = Depends(get_db), user: User = Depends(current_use
 
 
 @router.get("/dashboard")
-def dashboard(db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
+def dashboard(
+    program_type: str | None = Query(default=None),
+    db: Session = Depends(get_db),
+    user: User = Depends(current_user),
+) -> dict:
     child = _profile(db, user)
+    requested_program = _normalize_requested_program(program_type)
+    _require_program_access(user, child, requested_program)
     stats_row = get_or_create_stats(db, child)
     refresh_rank(child)
     daily = _fixed_quests(db, child, "daily")
     weekly = _fixed_quests(db, child, "weekly")
     monthly = _fixed_quests(db, child, "monthly")
-    lesson_sections = _dashboard_lessons(db, child)
+    lesson_sections = _dashboard_lessons(db, child, program_type_override=requested_program)
     current_grade_lessons = lesson_sections["current_grade_lessons"]
     previous_grade = max(1, int(child.grade_level or 1) - 1)
     review_lessons = [
@@ -3035,7 +3086,10 @@ def dashboard(db: Session = Depends(get_db), user: User = Depends(current_user))
         "school_province": child.school_province,
         "school_district": child.school_district,
         "grade_level": child.grade_level,
-        "program_type": child.program_type or "THP",
+        "program_type": requested_program,
+        "active_program": requested_program,
+        "can_access_ep": _can_access_ep(user, child),
+        "available_programs": _program_payload(user, child, requested_program)["available_programs"],
         "membership_status": child.membership_status or "free",
         "student_photo_url": child.student_photo_url,
         "student_photo_path": child.student_photo_path,
@@ -3054,7 +3108,9 @@ def dashboard(db: Session = Depends(get_db), user: User = Depends(current_user))
     }
     remaining = remaining_free_tests(child) if not is_paid(child) else 999999
     weak_skills = _dashboard_weak_skills(db, child, current_grade_lessons, review_lessons)
+    program_meta = _program_payload(user, child, requested_program)
     return {
+        **program_meta,
         "child": child_summary,
         "status": {
             "level": child.current_level,
@@ -3089,7 +3145,7 @@ def dashboard(db: Session = Depends(get_db), user: User = Depends(current_user))
         "days_active": child.days_active,
         "total_score": child.total_score,
         "rank_title": child.current_rank_title,
-        "program_type": child.program_type,
+        "program_type": requested_program,
         "avatar": {
             "avatar_gender": child.avatar_gender,
             "avatar_config": child.avatar_config or {},

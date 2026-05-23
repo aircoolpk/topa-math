@@ -1074,14 +1074,6 @@ export default function LessonPage() {
           </div>
         </div>
 
-        {/* EP Fallback Banner */}
-        {programType === 'EP' && lesson.program_type !== 'EP' && (
-          <div className="mb-5 bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 text-sm text-blue-700 flex items-center gap-2">
-            <span className="text-lg">ℹ️</span>
-            <p>บทเรียน EP ยังไม่พร้อม แสดงบทเรียนภาษาไทยชั่วคราว</p>
-          </div>
-        )}
-
         {/* Variant Banner */}
         {(lesson.variant_title_th || lesson.story_theme_th) && (
           <div className="mb-5 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-xl px-4 py-2.5 flex items-center gap-3">

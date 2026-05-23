@@ -3,9 +3,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { BarChart3, BookOpen, Camera, Flame, GraduationCap, LineChart, Share2, Sparkles, Star, Target, Trophy } from 'lucide-react'
+import { BarChart3, BookOpen, Camera, Flame, GraduationCap, LineChart, Lock, Share2, Sparkles, Star, Target, Trophy } from 'lucide-react'
 import { useAuthStore } from '@/store/auth'
-import { meApi, type DashboardData, type Lesson, type Quest, type TestLevel } from '@/lib/api/me'
+import { meApi, type DashboardData, type Lesson, type LessonProgram, type Quest, type TestLevel } from '@/lib/api/me'
 import { MascotAvatar, SectionHeader, TopaButton, TopaCard } from '@/components/topa/TopaUI'
 import { defaultMascots } from '@/lib/topa-content'
 import { PhotoAvatar } from '@/components/avatar/PhotoAvatar'
@@ -81,13 +81,60 @@ function EmptyState({ text }: { text: string }) {
   return <TopaCard className="p-8 text-center text-sm font-semibold text-slate-500">{text}</TopaCard>
 }
 
+function isEpLesson(lesson: Lesson) {
+  return lesson.program_type === 'EP' || lesson.lesson_id.toLowerCase().endsWith('_ep')
+}
+
+function ProgramSwitch({
+  activeProgram,
+  canAccessEp,
+  onSelect,
+}: {
+  activeProgram: LessonProgram
+  canAccessEp: boolean
+  onSelect: (program: LessonProgram) => void
+}) {
+  const epLocked = !canAccessEp
+  return (
+    <div className="inline-flex rounded-full bg-white/95 p-1 shadow-sm ring-1 ring-white/70">
+      <button
+        type="button"
+        onClick={() => onSelect('TH')}
+        className={`min-w-16 rounded-full px-4 py-2 text-sm font-black transition ${activeProgram === 'TH' ? 'bg-amber-400 text-slate-950 shadow-sm' : 'text-slate-600 hover:bg-sky-50'}`}
+      >
+        TH
+      </button>
+      <button
+        type="button"
+        onClick={() => onSelect('EP')}
+        title={epLocked ? 'แพ็กเกจ EP ยังไม่ได้เปิดใช้งาน' : 'EP'}
+        className={`min-w-20 rounded-full px-4 py-2 text-sm font-black transition ${activeProgram === 'EP' ? 'bg-sky-600 text-white shadow-sm' : epLocked ? 'text-slate-400 hover:bg-slate-100' : 'text-slate-600 hover:bg-sky-50'}`}
+      >
+        <span className="inline-flex items-center justify-center gap-1">
+          {epLocked && <Lock className="h-3.5 w-3.5" />}
+          EP
+        </span>
+      </button>
+    </div>
+  )
+}
+
 export default function DashboardPage() {
   const router = useRouter()
   const { checkAuth } = useAuthStore()
   const [dashboard, setDashboard] = useState<DashboardData | null>(null)
   const [error, setError] = useState('')
+  const [programMessage, setProgramMessage] = useState('')
   const [loading, setLoading] = useState(true)
   const [testLoading, setTestLoading] = useState('')
+  const [activeProgram, setActiveProgram] = useState<LessonProgram>('TH')
+
+  const loadDashboard = async (program: LessonProgram) => {
+    setProgramMessage('')
+    const data = await meApi.getDashboard(program)
+    setDashboard(data)
+    setActiveProgram((data.active_program || program) === 'EP' ? 'EP' : 'TH')
+  }
 
   useEffect(() => {
     checkAuth().then(() => {
@@ -95,8 +142,7 @@ export default function DashboardPage() {
         router.replace('/login')
         return
       }
-      meApi.getDashboard()
-        .then(setDashboard)
+      loadDashboard('TH')
         .catch(() => setError('โหลดแดชบอร์ดไม่สำเร็จ กรุณาลองใหม่อีกครั้ง'))
         .finally(() => setLoading(false))
     })
@@ -105,27 +151,28 @@ export default function DashboardPage() {
   const child = dashboard?.child
   const quests = useMemo(() => [...(dashboard?.daily_quests || []), ...(dashboard?.weekly_quests || []), ...(dashboard?.monthly_quests || [])].slice(0, 6), [dashboard])
   const weakSkills = dashboard?.weak_skills?.slice(0, 3) || []
-  const currentLessons = (dashboard?.current_grade_lessons || dashboard?.lesson_sections?.current_grade_lessons || dashboard?.lessons || [])
+  const filterProgramLessons = (items: Lesson[]) => items.filter((lesson) => activeProgram === 'EP' ? isEpLesson(lesson) : !isEpLesson(lesson))
+  const currentLessons = filterProgramLessons(dashboard?.current_grade_lessons || dashboard?.lesson_sections?.current_grade_lessons || dashboard?.lessons || [])
     .filter((lesson) => (lesson.status !== 'locked' && !lesson.is_locked) || lesson.is_free_preview)
     .filter((lesson) => !child?.grade_level || lesson.grade_level === child.grade_level)
     .slice(0, 6)
-  const reviewLessons = (dashboard?.review_lessons || dashboard?.lesson_sections?.review_lessons || [])
+  const reviewLessons = filterProgramLessons(dashboard?.review_lessons || dashboard?.lesson_sections?.review_lessons || [])
     .filter((lesson) => (lesson.status !== 'locked' && !lesson.is_locked) || lesson.is_free_preview)
     .filter((lesson) => !child?.grade_level || lesson.grade_level === Math.max(1, child.grade_level - 1))
     .slice(0, 4)
-  const lessons = currentLessons.length ? currentLessons : (dashboard?.lessons || []).filter((lesson) => lesson.status !== 'locked' || lesson.is_free_preview).slice(0, 6)
+  const lessons = currentLessons.length ? currentLessons : filterProgramLessons(dashboard?.lessons || []).filter((lesson) => lesson.status !== 'locked' || lesson.is_free_preview).slice(0, 6)
   const mascot = defaultMascots[(child?.current_level || 0) % defaultMascots.length]
   const testLevel = dashboard?.test_levels?.find((level: TestLevel) => level.status !== 'locked')
 
   const startLesson = async (lesson: Lesson) => {
-    await meApi.startLesson(lesson.lesson_id).catch(() => null)
-    router.push(`/dashboard/lessons/${lesson.lesson_id}`)
+    await meApi.startLesson(lesson.lesson_id, activeProgram).catch(() => null)
+    router.push(`/dashboard/lessons/${lesson.lesson_id}?program_type=${activeProgram}`)
   }
 
   const startTest = async (lesson: Lesson) => {
     setTestLoading(lesson.lesson_id)
     try {
-      const result = await meApi.startLessonTest(lesson.lesson_id)
+      const result = await meApi.startLessonTest(lesson.lesson_id, activeProgram)
       router.push(`/dashboard/tests/${result.session_id}`)
     } finally {
       setTestLoading('')
@@ -134,8 +181,30 @@ export default function DashboardPage() {
 
   const startRecommendedPractice = () => {
     const first = weakSkills[0]
-    if (first?.recommended_lesson_id) router.push(`/dashboard/lessons/${first.recommended_lesson_id}`)
+    if (first?.recommended_lesson_id) router.push(`/dashboard/lessons/${first.recommended_lesson_id}?program_type=${activeProgram}`)
     else if (testLevel) meApi.startTest({ grade_level: testLevel.grade, session_type: 'placement' }).then((result) => router.push(`/dashboard/tests/${result.session_id}`))
+  }
+
+  const selectProgram = async (program: LessonProgram) => {
+    if (program === activeProgram) return
+    if (program === 'EP' && !dashboard?.can_access_ep && !dashboard?.child?.can_access_ep) {
+      setProgramMessage('แพ็กเกจ EP ยังไม่ได้เปิดใช้งาน')
+      return
+    }
+    setLoading(true)
+    try {
+      await loadDashboard(program)
+    } catch (err: unknown) {
+      const e = err as { response?: { status?: number; data?: { detail?: { message?: string } } } }
+      if (program === 'EP' && e?.response?.status === 403) {
+        setActiveProgram('TH')
+        setProgramMessage(e.response.data?.detail?.message || 'แพ็กเกจ EP ยังไม่ได้เปิดใช้งาน')
+      } else {
+        setError('โหลดแดชบอร์ดไม่สำเร็จ กรุณาลองใหม่อีกครั้ง')
+      }
+    } finally {
+      setLoading(false)
+    }
   }
 
   const updateProfilePhoto = (studentPhotoUrl: string) => {
@@ -161,6 +230,7 @@ export default function DashboardPage() {
 
       <main className="mx-auto max-w-7xl px-4 py-8">
         {error && <div className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{error}</div>}
+        {programMessage && <div className="mb-5 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-black text-amber-800">{programMessage}</div>}
 
         <section className="mb-8 grid gap-6 lg:grid-cols-[1fr_360px]">
           <TopaCard className="overflow-hidden">
@@ -171,12 +241,15 @@ export default function DashboardPage() {
                   <h1 className="mt-2 text-4xl font-black">สวัสดี {child?.nickname || 'นักเรียน TOPA'}</h1>
                   <p className="mt-3 text-white/90">ป.{child?.grade_level || '-'} · {child?.membership || 'free'} plan · {child?.rank_title || 'TOPA Learner'}</p>
                 </div>
-                <PhotoAvatar
-                  studentPhotoUrl={child?.student_photo_url || null}
-                  avatarGender={child?.avatar_gender || null}
-                  size="xl"
-                  alt={child ? `${child.nickname || child.first_name} profile photo` : 'Student profile photo'}
-                />
+                <div className="flex flex-col items-center gap-3">
+                  <PhotoAvatar
+                    studentPhotoUrl={child?.student_photo_url || null}
+                    avatarGender={child?.avatar_gender || null}
+                    size="xl"
+                    alt={child ? `${child.nickname || child.first_name} profile photo` : 'Student profile photo'}
+                  />
+                  <ProgramSwitch activeProgram={activeProgram} canAccessEp={Boolean(dashboard?.can_access_ep || child?.can_access_ep)} onSelect={selectProgram} />
+                </div>
               </div>
               {child?.id && (
                 <div className="mt-6 flex flex-wrap items-center gap-3">

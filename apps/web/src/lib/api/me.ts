@@ -27,6 +27,10 @@ export interface DashboardChild {
   coins: number
   // Membership
   membership: MembershipStatus
+  program_type?: LessonProgram | 'THP' | string
+  active_program?: LessonProgram
+  can_access_ep?: boolean
+  available_programs?: LessonProgram[]
   // Test attempts
   free_test_attempts_remaining: number
   free_test_attempts_limit: number
@@ -189,6 +193,10 @@ export interface Lesson {
 
 export interface DashboardData {
   child: DashboardChild
+  active_program?: LessonProgram
+  can_access_ep?: boolean
+  available_programs?: LessonProgram[]
+  program_type?: LessonProgram | 'THP' | string
   // Foundation test recommendation
   foundation_test: {
     recommended_grade: number
@@ -252,8 +260,8 @@ export interface ReferralSummary {
 
 export const meApi = {
   /** Primary dashboard endpoint */
-  async getDashboard(): Promise<DashboardData> {
-    const res = await apiClient.get('/me/dashboard')
+  async getDashboard(programType: LessonProgram = 'TH'): Promise<DashboardData> {
+    const res = await apiClient.get('/me/dashboard', { params: { program_type: programType } })
     return res.data as DashboardData
   },
 
@@ -384,8 +392,9 @@ export const meApi = {
   },
 
   /** Start a lesson */
-  async startLesson(lessonId: string): Promise<{ lesson_id: string }> {
-    const res = await apiClient.post(`/me/lessons/${lessonId}/start`)
+  async startLesson(lessonId: string, programType?: LessonProgram): Promise<{ lesson_id: string }> {
+    const params = programType ? { program_type: programType } : undefined
+    const res = await apiClient.post(`/me/lessons/${lessonId}/start`, undefined, { params })
     return res.data as { lesson_id: string }
   },
 

@@ -25,7 +25,23 @@ def is_th_plus(child: ChildProfile) -> bool:
 
 
 def is_ep_plus(child: ChildProfile) -> bool:
-    return is_paid(child) and (child.plan_code or "").lower() == "ep_plus"
+    if not is_paid(child):
+        return False
+    program_fields = {
+        (child.billing_program_type or "").upper(),
+        (child.program_type or "").upper(),
+    }
+    plan_fields = " ".join(
+        str(value or "").lower()
+        for value in (
+            child.plan_code,
+            child.plan_type,
+            child.active_price_code,
+            child.price_type,
+            child.manual_grant_reason,
+        )
+    )
+    return bool(program_fields & {"EP", "BOTH"}) or "ep_" in plan_fields or "ep-plus" in plan_fields
 
 
 def can_access_program(child: ChildProfile, program_type: str | None) -> bool:
