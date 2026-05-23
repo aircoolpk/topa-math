@@ -16,12 +16,14 @@ from app.services.referrals import admin_referral_rows, award_paid_referral_if_n
 from app.services.content_quality import content_quality_report
 from app.services.lesson_content import (
     CONTENT_ROOT,
+    active_content_roots,
     find_lesson_file,
     list_canonical_lessons,
     list_canonical_tests,
     list_lessons as list_content_lessons,
     list_questions as list_content_questions,
     normalize_lesson_visual_blocks,
+    path_is_active_content,
     qa_summary as content_qa_summary,
     save_lesson,
     validate_all_questions,
@@ -530,16 +532,10 @@ def _lesson_payload(db: Session, lesson: Lesson, skill: Skill | None, subject: S
 
 
 def _question_bank_has_test(lesson_id: str, grade_level: int) -> bool:
-    bank_path = CONTENT_ROOT / "question_banks" / f"grade_{grade_level}" / f"{lesson_id}.jsonl"
-    quiz_path = CONTENT_ROOT / f"grade_{grade_level}" / "quizzes" / f"{lesson_id}.json"
-    try:
-        if bank_path.exists() and bank_path.stat().st_size > 0:
-            return True
-        if quiz_path.exists() and quiz_path.stat().st_size > 0:
-            return True
-    except OSError:
-        return False
-    return False
+    return bool(
+        list_canonical_tests("TH", grade=grade_level, lesson_id=lesson_id, approved_only=True)
+        or list_canonical_tests("EP", grade=grade_level, lesson_id=lesson_id, approved_only=True)
+    )
 
 
 def _lesson_status_items() -> list[dict[str, Any]]:
@@ -1563,7 +1559,13 @@ def system_health(db: Session = Depends(get_db), _admin: User = Depends(require_
 
     content_file_count = 0
     try:
-        content_file_count = sum(1 for path in Path(CONTENT_ROOT).rglob("*") if path.is_file())
+        content_file_count = sum(
+            1
+            for kind in ("lessons", "quizzes")
+            for root in active_content_roots(kind)
+            for path in list(root.glob("*.json")) + list(root.glob("*/*.json"))
+            if path.is_file() and path_is_active_content(path, kind)
+        )
     except OSError:
         content_file_count = 0
 

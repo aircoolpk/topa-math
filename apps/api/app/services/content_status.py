@@ -47,10 +47,10 @@ def backup_lesson(lesson_id: str, edited_by: str = "", note: str = "") -> Path |
     Returns the backup path, or None if the lesson file does not exist.
     """
     safe_id = _safe_lesson_id(lesson_id)
-    # Find the lesson file
-    for grade in range(1, 7):
-        lessons_dir = _CONTENT_ROOT / f"grade_{grade}" / "lessons"
-        for path in lessons_dir.glob(f"{safe_id}*.json"):
+    from app.services.lesson_content import _lesson_files
+
+    for path in _lesson_files():
+        if path.stem == safe_id or path.stem.startswith(f"{safe_id}_"):
             return _write_lesson_backup(path, safe_id, edited_by, note)
     return None
 
@@ -58,7 +58,7 @@ def backup_lesson(lesson_id: str, edited_by: str = "", note: str = "") -> Path |
 def backup_question(question_id: str, edited_by: str = "", note: str = "") -> Path | None:
     """Backup a question JSON file before it is overwritten.
 
-    Searches quizzes/ and question_banks/ directories for the question file.
+    Searches only active grade_N/quizzes roots for the question file.
     """
     from app.services.lesson_content import _quiz_files, _load_question_rows
 
@@ -374,32 +374,40 @@ def _detect_language(lesson_id: str) -> str:
 
 
 def _lesson_files() -> list[Path]:
-    return sorted(_CONTENT_ROOT.glob("grade_*/lessons/*.json"))
+    from app.services.lesson_content import active_content_roots, path_is_active_content
+
+    files: list[Path] = []
+    for root in active_content_roots("lessons"):
+        if not root.exists():
+            continue
+        files.extend(path for path in root.glob("*/*.json") if path_is_active_content(path, "lessons"))
+        subfolders = {path.parent.name for path in files if path.parent.parent == root}
+        files.extend(
+            path
+            for path in root.glob("*.json")
+            if path_is_active_content(path, "lessons") and path.stem not in subfolders
+        )
+    return sorted(files)
 
 
 def _question_files() -> list[Path]:
-    paths = sorted(_CONTENT_ROOT.glob("grade_*/quizzes/*.json"))
-    paths.extend(sorted(_CONTENT_ROOT.glob("question_banks/grade_*/*.jsonl")))
-    return paths
+    from app.services.lesson_content import active_content_roots, path_is_active_content
+
+    files: list[Path] = []
+    for root in active_content_roots("quizzes"):
+        if not root.exists():
+            continue
+        files.extend(path for path in root.glob("*/*.json") if path_is_active_content(path, "quizzes"))
+        subfolders = {path.parent.name for path in files if path.parent.parent == root}
+        files.extend(
+            path
+            for path in root.glob("*.json")
+            if path_is_active_content(path, "quizzes") and path.stem not in subfolders
+        )
+    return sorted(files)
 
 
 def _read_question_rows(path: Path) -> list[dict[str, Any]]:
-    if path.suffix == ".jsonl":
-        rows: list[dict[str, Any]] = []
-        try:
-            lines = path.read_text(encoding="utf-8-sig").splitlines()
-        except OSError:
-            return []
-        for line in lines:
-            if not line.strip():
-                continue
-            try:
-                value = json.loads(line)
-            except json.JSONDecodeError:
-                continue
-            if isinstance(value, dict):
-                rows.append(value)
-        return rows
     payload = _read_json(path) or {}
     questions = payload.get("questions")
     return questions if isinstance(questions, list) else []

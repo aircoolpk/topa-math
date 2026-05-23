@@ -2,14 +2,24 @@
 
 ## Canonical Source
 
-Student and admin content is file-backed under:
+Student and admin content is file-backed only under the active grade folders:
 
-- TH/EP lessons: `apps/api/app/content/math/grade_<n>/lessons/*.json`
-- TH/EP tests: `apps/api/app/content/math/grade_<n>/quizzes/*.json`
-- Optional legacy question banks: `apps/api/app/content/math/question_banks/grade_<n>/*.jsonl`
+- TH/EP lessons: `C:\web-app\4-craft.com\apps\api\app\content\math\grade_[N]\lessons`
+- TH/EP tests: `C:\web-app\4-craft.com\apps\api\app\content\math\grade_[N]\quizzes`
 - Approval metadata: `apps/api/app/content/math/_content_status/lessons.json` and `apps/api/app/content/math/_content_status/tests.json`
 
 Only approved sidecar entries are student-visible. Draft, needs_review, rejected, archived, missing, or invalid entries stay admin-only.
+
+Do not add active student/admin content to:
+
+- `_content_backups`
+- `backup_*`
+- `question_banks`
+- old `g1`, `g4`, `g5`, or `g6` folders
+- `_archived_legacy_not_loaded`
+- `_content_status` except for status metadata only
+
+The active loader supports both current flat files directly inside `lessons` or `quizzes`, and one-level lesson-specific folders. Backup, archive, legacy, and status folders are not scanned for active content.
 
 ## Lesson IDs
 
@@ -30,6 +40,24 @@ EP lesson file:
 ```text
 apps/api/app/content/math/grade_3/lessons/g3_area_intro_ep.json
 ```
+
+Recommended lesson-specific folder structure:
+
+```text
+apps/api/app/content/math/grade_5/lessons/g5_data_graphs/
+  g5_data_graphs.json
+  g5_data_graphs_001.json
+  ...
+  g5_data_graphs_999.json
+
+apps/api/app/content/math/grade_5/lessons/g5_data_graphs_ep/
+  g5_data_graphs_ep.json
+  g5_data_graphs_ep_001.json
+  ...
+  g5_data_graphs_ep_999.json
+```
+
+If both a flat file and a same-named lesson-specific folder exist, the loader prefers files in the lesson-specific folder.
 
 The EP variant uses the same base lesson id plus `_ep`. TH content must not use `_ep`.
 
@@ -97,6 +125,24 @@ Question example:
 
 EP questions should use `lesson_id` with `_ep`, English problem text, simple choices, answer, English explanation, and Thai hint/translation fields where the schema supports them.
 
+Recommended quiz folder structure:
+
+```text
+apps/api/app/content/math/grade_5/quizzes/g5_data_graphs/
+  g5_data_graphs.json
+  g5_data_graphs_001.json
+  ...
+  g5_data_graphs_999.json
+
+apps/api/app/content/math/grade_5/quizzes/g5_data_graphs_ep/
+  g5_data_graphs_ep.json
+  g5_data_graphs_ep_001.json
+  ...
+  g5_data_graphs_ep_999.json
+```
+
+Random variants can be added as `_001` through `_999` files. Keep `lesson_id`, `base_lesson_id` or `topic_code`, `grade_level`, and `program_type` consistent across variants so the loader can pair TH/EP lessons and quizzes correctly.
+
 ## Approval Workflow
 
 Run the status scanner after adding files:
@@ -112,6 +158,18 @@ PY
 ```
 
 Admin may then approve or reject content in `/admin/lessons` and `/admin/tests`. Students only see approved lesson files and approved test questions from the matching program.
+
+To preview a folder migration without changing files:
+
+```powershell
+docker exec -it 4craft-api python -m app.scripts.migrate_content_to_lesson_folders --dry-run
+```
+
+Run the non-dry command only after reviewing the planned moves and backup path:
+
+```powershell
+docker exec -it 4craft-api python -m app.scripts.migrate_content_to_lesson_folders
+```
 
 ## EP Authoring Policy
 
@@ -143,6 +201,13 @@ for program in ["TH", "EP"]:
 PY
 ```
 
+Validate active roots:
+
+```powershell
+cd C:\web-app\4-craft.com\apps\api
+pytest tests/test_active_content_roots.py
+```
+
 Then verify in browser/API:
 
 - `/admin/lessons?program_type=TH&grade=3`
@@ -151,4 +216,3 @@ Then verify in browser/API:
 - `/me/dashboard`
 - `/me/lessons/g3_area_intro?program_type=TH`
 - `/me/lessons/g3_area_intro/test/start?program_type=TH`
-

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useCallback } from 'react'
-import { useRouter, useParams } from 'next/navigation'
+import { useRouter, useParams, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
 import { meApi, type Lesson, type VisualBlock } from '@/lib/api/me'
@@ -878,13 +878,15 @@ export default function LessonPage() {
   const params = useParams()
   const lessonId = params.lessonId as string
   const router = useRouter()
+  const searchParams = useSearchParams()
   const { checkAuth } = useAuthStore()
+  const requestedProgram = searchParams.get('program_type') === 'EP' || lessonId.toLowerCase().endsWith('_ep') ? 'EP' : 'TH'
 
   const [phase, setPhase] = useState<Phase>('loading')
   const [lesson, setLesson] = useState<Lesson | null>(null)
   const [errorMsg, setErrorMsg] = useState('')
   const [testLoading, setTestLoading] = useState(false)
-  const [programType, setProgramType] = useState<'TH' | 'EP'>('TH')
+  const [programType, setProgramType] = useState<'TH' | 'EP'>(requestedProgram)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
@@ -915,8 +917,8 @@ export default function LessonPage() {
   }, [lessonId])
 
   useEffect(() => {
-    loadLesson()
-  }, [loadLesson])
+    loadLesson(requestedProgram)
+  }, [loadLesson, requestedProgram])
 
   const handleTakeTest = async () => {
     if (!lesson) return

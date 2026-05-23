@@ -268,17 +268,6 @@ def _content_question_rows_for_lesson(payload_or_id: dict | str, *, approved_onl
     if not lesson_id or not grade_level:
         return []
     rows: list[dict] = []
-    bank_path = CONTENT_ROOT / "question_banks" / f"grade_{grade_level}" / f"{lesson_id}.jsonl"
-    if bank_path.exists():
-        try:
-            for line in bank_path.read_text(encoding="utf-8-sig").splitlines():
-                if not line.strip():
-                    continue
-                value = json.loads(line)
-                if isinstance(value, dict):
-                    rows.append(value)
-        except (OSError, json.JSONDecodeError):
-            rows = []
     quiz_path = CONTENT_ROOT / f"grade_{grade_level}" / "quizzes" / f"{lesson_id}.json"
     if quiz_path.exists():
         try:
@@ -348,14 +337,14 @@ def _lesson_has_displayable_content(payload: dict) -> bool:
     return any(variant.get("visual_blocks") for variant in _lesson_variants(payload))
 
 
-def _json_lesson_filter_reason(payload: dict, child: ChildProfile) -> str | None:
+def _json_lesson_filter_reason(payload: dict, child: ChildProfile, expected_program: str | None = None) -> str | None:
     lesson_id = str(payload.get("lesson_id") or payload.get("id") or "")
     payload_status = str(payload.get("status") or "approved").lower()
     try:
         grade_level = int(payload.get("grade_level") or 0)
     except (TypeError, ValueError):
         grade_level = 0
-    expected_track = _child_lesson_track(child)
+    expected_track = program_alias(expected_program) if expected_program else _child_lesson_track(child)
     actual_track = program_alias(lesson_program_type(payload))
     if actual_track != expected_track:
         return f"language_mismatch expected={expected_track} actual={actual_track}"
@@ -579,7 +568,9 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
     is_locked = not is_beta_visible_grade and not paid and not is_free
     lesson_id = str(payload.get("lesson_id") or payload.get("id"))
     description = payload.get("description_th") or payload.get("objective_th") or payload.get("story_intro_th") or ""
-    has_approved_test = canonical_has_approved_test(lesson_id, lesson_program_alias(payload))
+    has_approved_test = bool(payload.get("has_approved_test"))
+    if "has_approved_test" not in payload:
+        has_approved_test = canonical_has_approved_test(lesson_id, lesson_program_alias(payload))
     has_test = bool(payload.get("has_test", True)) or has_approved_test
     return {
         "lesson_id": lesson_id,
@@ -601,7 +592,7 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
         "test_available": has_test and has_approved_test,
         "test_unavailable_reason": None if has_test and has_approved_test else "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้",
         "language_available": lesson_program_alias(payload),
-        "ep_available": bool(find_lesson_file(_base_lesson_id(lesson_id), "EP")),
+        "ep_available": bool(payload.get("ep_available")) if "ep_available" in payload else bool(find_lesson_file(_base_lesson_id(lesson_id), "EP")),
         "is_review": is_review,
         "access_type": "review" if is_review else "current",
         "status": "locked" if is_locked else "available",
@@ -610,7 +601,11 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
     }
 
 
-def _json_lesson_sections(child: ChildProfile, include_grades: set[int] | None = None) -> dict | None:
+def _json_lesson_sections(
+    child: ChildProfile,
+    include_grades: set[int] | None = None,
+    program_type_override: str | None = None,
+) -> dict | None:
     rows = []
     filtered_counts: dict[str, int] = {}
     child_grade = max(1, min(6, int(child.grade_level or 1)))
@@ -619,14 +614,28 @@ def _json_lesson_sections(child: ChildProfile, include_grades: set[int] | None =
         section_grades.update(max(1, min(6, int(grade))) for grade in include_grades)
     section_grades = sorted(section_grades)
     payloads: list[dict] = []
-    child_program = _child_lesson_track(child)
-    for grade in section_grades:
-        for item in list_canonical_lessons(child_program, grade=grade, include_admin_status=False):
-            payload = _load_canonical_json_lesson(str(item["lesson_id"]), child_program)
-            if payload:
-                payloads.append(payload)
+    child_program = program_alias(program_type_override) if program_type_override else _child_lesson_track(child)
+    for item in list_canonical_lessons(child_program, include_admin_status=False):
+        if int(item.get("grade_level") or 0) not in section_grades:
+            continue
+        source_path = item.get("source_path")
+        try:
+            payload = json.loads(Path(str(source_path)).read_text(encoding="utf-8-sig")) if source_path else None
+        except (OSError, json.JSONDecodeError):
+            payload = None
+        if not isinstance(payload, dict):
+            continue
+        payload.setdefault("lesson_id", item["lesson_id"])
+        payload.setdefault("id", item["lesson_id"])
+        payload.setdefault("grade_level", item["grade_level"])
+        payload.setdefault("topic_code", item.get("base_lesson_id") or item["lesson_id"])
+        payload.setdefault("skill_code", item.get("skill_code") or item.get("topic_code") or item["lesson_id"])
+        payload["has_approved_test"] = bool(item.get("has_approved_test"))
+        payload["test_available"] = bool(item.get("has_approved_test"))
+        payload["ep_available"] = child_program == "EP"
+        payloads.append(payload)
     for payload in payloads:
-        reason = _json_lesson_filter_reason(payload, child)
+        reason = _json_lesson_filter_reason(payload, child, expected_program=child_program)
         if reason:
             filtered_counts[reason] = filtered_counts.get(reason, 0) + 1
             continue
@@ -635,14 +644,14 @@ def _json_lesson_sections(child: ChildProfile, include_grades: set[int] | None =
         logger.debug(
             "lesson_visibility_filtered child_grade=%s child_program=%s reasons=%s",
             child.grade_level,
-            child.program_type,
+            child_program,
             filtered_counts,
         )
     if not rows:
         logger.warning(
             "lesson_visibility_empty child_grade=%s child_program=%s reasons=%s",
             child.grade_level,
-            child.program_type,
+            child_program,
             filtered_counts,
         )
         return None
@@ -685,7 +694,9 @@ def _with_variant_payload(base: dict, variant: dict | None) -> dict:
 def _json_lesson_content_payload(payload: dict, item: dict, variant: dict | None = None) -> dict:
     lesson_id = str(payload.get("lesson_id") or payload.get("id"))
     quiz_id = str(payload.get("quiz_id") or lesson_id)
-    has_approved_test = canonical_has_approved_test(lesson_id, lesson_program_alias(payload))
+    has_approved_test = bool(payload.get("has_approved_test"))
+    if "has_approved_test" not in payload:
+        has_approved_test = canonical_has_approved_test(lesson_id, lesson_program_alias(payload))
     return _with_variant_payload({
         "lesson_id": lesson_id,
         "id": lesson_id,
@@ -1630,8 +1641,17 @@ def _lesson_item(lesson: Lesson, skill: Skill, child: ChildProfile, current_inde
     }
 
 
-def _dashboard_lessons(db: Session, child: ChildProfile, include_grades: set[int] | None = None) -> dict:
-    json_sections = _json_lesson_sections(child, include_grades=include_grades)
+def _dashboard_lessons(
+    db: Session,
+    child: ChildProfile,
+    include_grades: set[int] | None = None,
+    program_type_override: str | None = None,
+) -> dict:
+    json_sections = _json_lesson_sections(
+        child,
+        include_grades=include_grades,
+        program_type_override=program_type_override,
+    )
     if json_sections:
         return json_sections
 
@@ -2349,8 +2369,22 @@ def lessons(
 ) -> dict:
     child = _profile(db, user)
     requested_grade = grade_level or grade or level or class_level
+    requested_program = None
+    if program_type:
+        raw_program = str(program_type).strip().upper()
+        if raw_program not in {"TH", "THP", "EP"}:
+            raise HTTPException(status_code=400, detail="program_type must be TH or EP")
+        requested_program = program_alias(raw_program)
     include_grades = {requested_grade} if requested_grade is not None else set(range(1, 7))
-    sections = _filter_lesson_sections_by_grade(_dashboard_lessons(db, child, include_grades=include_grades), requested_grade)
+    sections = _filter_lesson_sections_by_grade(
+        _dashboard_lessons(
+            db,
+            child,
+            include_grades=include_grades,
+            program_type_override=requested_program,
+        ),
+        requested_grade,
+    )
     previous_grade = max(1, int(child.grade_level or 1) - 1)
     review_rows = [
         item for item in sections["review_lessons"]
@@ -2361,13 +2395,14 @@ def lessons(
     return {
         "current_grade": child.grade_level,
         "requested_grade": requested_grade,
+        "program_type": requested_program or _child_lesson_track(child),
         "membership_status": child.membership_status or "free",
         "remaining_free_tests": remaining,
         "current_grade_lessons": primary_rows,
         "review_lessons": review_rows,
         "locked_lessons": sections["locked_lessons"],
         "future_lessons": sections.get("future_lessons", []),
-        "lessons": primary_rows if requested_grade is None else (sections.get("all_lessons") or review_rows + primary_rows),
+        "lessons": sections.get("all_lessons") or review_rows + primary_rows,
     }
 
 

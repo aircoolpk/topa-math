@@ -139,6 +139,8 @@ export interface VisualBlock {
   [key: string]: unknown
 }
 
+export type LessonProgram = 'TH' | 'EP'
+
 export interface Lesson {
   // Identification
   lesson_id: string
@@ -147,7 +149,7 @@ export interface Lesson {
   grade_level: number
   topic_code?: string
   skill_code?: string
-  program_type?: 'THP' | 'EP'
+  program_type?: 'TH' | 'THP' | 'EP'
   // Display
   title_th?: string
   title_en?: string
@@ -359,9 +361,12 @@ export const meApi = {
   },
 
   /** Get available lessons */
-  async getLessons(grade?: number): Promise<Lesson[]> {
+  async getLessons(grade?: number, programType?: LessonProgram): Promise<Lesson[]> {
+    const params: Record<string, number | LessonProgram> = {}
+    if (grade !== undefined) params.grade = grade
+    if (programType) params.program_type = programType
     const res = await apiClient.get('/me/lessons', {
-      params: grade ? { grade } : undefined,
+      params: Object.keys(params).length ? params : undefined,
     })
     const data = res.data as Lesson[] | {
       lessons?: Lesson[]

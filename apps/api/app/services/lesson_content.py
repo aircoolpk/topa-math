@@ -9,6 +9,8 @@ from typing import Any
 
 
 CONTENT_ROOT = Path(__file__).resolve().parents[1] / "content" / "math"
+ACTIVE_GRADES = range(1, 7)
+ACTIVE_CONTENT_KINDS = {"lessons", "quizzes"}
 
 ALLOWED_BLOCK_TYPES = {
     "story_intro",
@@ -233,8 +235,54 @@ def normalize_lesson_visual_blocks(value: Any) -> list[dict[str, Any]]:
     return normalized
 
 
+def active_content_roots(kind: str) -> list[Path]:
+    if kind not in ACTIVE_CONTENT_KINDS:
+        raise ValueError(f"Unsupported content kind: {kind}")
+    return [CONTENT_ROOT / f"grade_{grade}" / kind for grade in ACTIVE_GRADES]
+
+
+def _is_active_content_path(path: Path, kind: str) -> bool:
+    if kind not in ACTIVE_CONTENT_KINDS:
+        return False
+    try:
+        resolved = path.resolve()
+    except OSError:
+        resolved = path
+    if resolved.suffix.lower() != ".json":
+        return False
+    for root in active_content_roots(kind):
+        try:
+            relative = resolved.relative_to(root.resolve())
+        except ValueError:
+            continue
+        parts = relative.parts
+        return len(parts) in {1, 2} and all(part not in {"__pycache__"} for part in parts)
+    return False
+
+
+def _active_json_files(kind: str) -> list[Path]:
+    files: list[Path] = []
+    for root in active_content_roots(kind):
+        if not root.exists():
+            continue
+        subfolder_files = [path for path in root.glob("*/*.json") if _is_active_content_path(path, kind)]
+        subfolder_names = {path.parent.name for path in subfolder_files}
+        flat_files = [
+            path
+            for path in root.glob("*.json")
+            if _is_active_content_path(path, kind) and path.stem not in subfolder_names
+        ]
+        files.extend(subfolder_files)
+        files.extend(flat_files)
+    return sorted(files)
+
+
+def path_is_active_content(path: str | Path, kind: str) -> bool:
+    return _is_active_content_path(Path(path), kind)
+
+
 def _lesson_files() -> list[Path]:
-    return sorted(CONTENT_ROOT.glob("grade_*/lessons/*.json"))
+    return _active_json_files("lessons")
 
 
 def _base_lesson_id(payload: dict[str, Any], path: Path | None = None) -> str:
@@ -353,6 +401,11 @@ def list_canonical_lessons(
 
     requested_program = program_alias(program)
     items: list[dict[str, Any]] = []
+    test_rows_by_lesson: dict[str, list[tuple[Path, int | None, dict[str, Any], int]]] = {}
+    for row in _canonical_test_rows(program=requested_program, grade=grade, approved_only=True):
+        path, _row_grade, question, _index = row
+        row_lesson_id = _question_lesson_id(path, question)
+        test_rows_by_lesson.setdefault(base_lesson_id(row_lesson_id), []).append(row)
     for path in _lesson_files():
         payload = _read_json(path)
         if not payload:
@@ -368,7 +421,7 @@ def list_canonical_lessons(
         approved = _status_is_student_visible(status)
         if not include_admin_status and not approved:
             continue
-        test_rows = _canonical_test_rows(program=requested_program, grade=lesson_grade, lesson_id=lesson_id, approved_only=True)
+        test_rows = test_rows_by_lesson.get(base_lesson_id(lesson_id), [])
         title = payload.get("title_th") if requested_program == "TH" else (payload.get("title_en") or payload.get("title_th"))
         item = {
             "lesson_id": lesson_id,
@@ -388,6 +441,9 @@ def list_canonical_lessons(
             "has_approved_test": bool(test_rows),
             "test_bank_source": str(test_rows[0][0]) if test_rows else None,
             "source_path": str(path),
+            "active_content_source_path": str(path),
+            "file_structure": "subfolder" if path.parent.name != "lessons" else "flat",
+            "loaded_from_backup": not path_is_active_content(path, "lessons"),
         }
         if include_admin_status:
             reason = ""
@@ -396,8 +452,10 @@ def list_canonical_lessons(
             item.update(
                 {
                     "language": requested_program,
-                    "status": str(status.get("status") or "needs_review").lower(),
-                    "reviewer_note": status.get("reviewer_note", ""),
+                "status": str(status.get("status") or "needs_review").lower(),
+                "approved": approved,
+                "student_visible": approved,
+                "reviewer_note": status.get("reviewer_note", ""),
                     "approved_by": status.get("approved_by", ""),
                     "approved_at": status.get("approved_at", ""),
                     "qa_flags": status.get("qa_flags", 0),
@@ -455,6 +513,9 @@ def list_canonical_tests(
                 "skill_tag": question.get("skill_tag") or question.get("skill_code"),
                 "status": str(status.get("status") or "needs_review").lower(),
                 "source_path": str(path),
+                "active_content_source_path": str(path),
+                "file_structure": "subfolder" if path.parent.name != "quizzes" else "flat",
+                "loaded_from_backup": not path_is_active_content(path, "quizzes"),
             }
         )
     return items
@@ -694,24 +755,10 @@ def save_lesson(lesson_id: str, program_type: str | None, payload: dict[str, Any
 
 
 def _quiz_files() -> list[Path]:
-    paths = sorted(CONTENT_ROOT.glob("grade_*/quizzes/*.json"))
-    paths.extend(sorted(CONTENT_ROOT.glob("question_banks/grade_*/*.jsonl")))
-    return paths
+    return _active_json_files("quizzes")
 
 
 def _load_question_rows(path: Path) -> list[dict[str, Any]]:
-    if path.suffix == ".jsonl":
-        rows = []
-        for line in path.read_text(encoding="utf-8-sig").splitlines():
-            if not line.strip():
-                continue
-            try:
-                value = json.loads(line)
-            except Exception:
-                continue
-            if isinstance(value, dict):
-                rows.append(value)
-        return rows
     payload = _read_json(path) or {}
     questions = payload.get("questions")
     return questions if isinstance(questions, list) else []
