@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 import { BarChart3, BookOpen, Camera, GraduationCap, LineChart, Lock, Share2, Sparkles, Star, Target, Trophy } from 'lucide-react'
 import { useAuthStore } from '@/store/auth'
 import { meApi, type DashboardData, type Lesson, type LessonProgram, type Quest, type TestLevel } from '@/lib/api/me'
+import { rankingsApi } from '@/lib/api/rankings'
 import { MascotAvatar, SectionHeader, TopaButton, TopaCard } from '@/components/topa/TopaUI'
 import { TopaLogo } from '@/components/brand/TopaBrand'
 import { defaultMascots } from '@/lib/topa-content'
@@ -136,6 +137,7 @@ export default function DashboardPage() {
   const [activeProgram, setActiveProgram] = useState<LessonProgram>('TH')
   const [affiliateRegisteredCount, setAffiliateRegisteredCount] = useState(0)
   const [rankSummary, setRankSummary] = useState<{ total_score: number; rank_title: string; rank_position?: number | null; total_in_grade?: number | null } | null>(null)
+  const [ownRank, setOwnRank] = useState<{ rank_position: number; total_in_grade: number } | null>(null)
 
   const loadAffiliateSummary = useCallback(async () => {
     try {
@@ -158,6 +160,28 @@ export default function DashboardPage() {
     } catch {
       // No child profile yet — keep summary null
       setRankSummary(null)
+    }
+  }, [])
+
+  /**
+   * Real leaderboard position for the current child.
+   * `/me/rank-summary` only exposes the rank TITLE, so the numeric position
+   * has to come from `/rankings` → `child_own_rank.rank_position`.
+   */
+  const loadOwnRank = useCallback(async (gradeLevel: number) => {
+    try {
+      const data = await rankingsApi.get(gradeLevel, 'country')
+      const own = data.child_own_rank
+      if (own) {
+        setOwnRank({
+          rank_position: own.rank_position,
+          total_in_grade: data.entries?.length || 0,
+        })
+      } else {
+        setOwnRank(null)
+      }
+    } catch {
+      setOwnRank(null)
     }
   }, [])
 
@@ -222,6 +246,15 @@ export default function DashboardPage() {
   }, [dashboard, loadAffiliateSummary, loadRankSummary])
 
   useEffect(() => {
+    const grade = dashboard?.child?.grade_level ?? dashboard?.grade_level
+    if (typeof grade === 'number' && grade > 0) {
+      void loadOwnRank(grade)
+    } else {
+      setOwnRank(null)
+    }
+  }, [dashboard, loadOwnRank])
+
+  useEffect(() => {
     return () => dashboardAbortRef.current?.abort()
   }, [])
 
@@ -240,6 +273,24 @@ export default function DashboardPage() {
   const lessons = visibleCurrentLessons.length ? visibleCurrentLessons : filterProgramLessons(dashboard?.lessons || []).filter((lesson) => lesson.status !== 'locked' || lesson.is_free_preview).slice(0, child?.grade_level === 3 ? 11 : 6)
   const mascot = defaultMascots[(child?.current_level || 0) % defaultMascots.length]
   const testLevel = dashboard?.test_levels?.find((level: TestLevel) => level.status !== 'locked')
+
+  // "บทเรียนจบ" — backend `lesson_summary.completed` is authoritative.
+  // The visible `lessons` list only contains unlocked items, so counting
+  // `status === 'completed'` there always yielded 0.
+  const completedLessonCount = dashboard?.lesson_summary?.completed
+    ?? dashboard?.lessons?.filter((lesson) => lesson.status === 'completed').length
+    ?? 0
+
+  // "เทสที่ทำ" — `test_levels` is a lock-status list, not a completion log.
+  // The real counter is `profile.total_tests_completed` (fallback: status).
+  const completedTestCount = dashboard?.profile?.total_tests_completed
+    ?? dashboard?.child?.total_tests_completed
+    ?? dashboard?.status?.test_attempts_used
+    ?? 0
+
+  // "อันดับปัจจุบัน" — numeric position (rank_summary only carries the title).
+  const currentRankPosition = ownRank?.rank_position ?? rankSummary?.rank_position ?? null
+  const totalInGrade = ownRank?.total_in_grade || rankSummary?.total_in_grade || null
 
   const startLesson = async (lesson: Lesson) => {
     const lessonGroupId = lesson.lesson_group_id || lesson.lesson_id
@@ -404,8 +455,8 @@ export default function DashboardPage() {
           <Stat label="Level" value={child?.current_level || 1} icon={<Star />} />
           <Stat label="XP" value={(child?.total_xp || 0).toLocaleString('th-TH')} icon={<Sparkles />} />
           <Stat label="คะแนนรวม" value={(child?.total_score || 0).toLocaleString('th-TH')} icon={<Trophy />} />
-          <Stat label="บทเรียนจบ" value={lessons.filter((lesson) => lesson.status === 'completed').length} icon={<BookOpen />} />
-          <Stat label="เทสที่ทำ" value={dashboard?.test_levels?.filter((level) => level.status === 'completed').length || 0} icon={<GraduationCap />} />
+          <Stat label="บทเรียนจบ" value={completedLessonCount} icon={<BookOpen />} />
+          <Stat label="เทสที่ทำ" value={completedTestCount} icon={<GraduationCap />} />
           <Stat label="Affiliate" value={affiliateRegisteredCount.toLocaleString('th-TH')} icon={<Share2 />} href="/dashboard/affiliate" />
         </section>
 
@@ -440,18 +491,21 @@ export default function DashboardPage() {
               <div className="flex items-center justify-between">
                 <span className="text-sm font-bold text-slate-500">อันดับปัจจุบัน</span>
                 <span className="text-3xl font-black text-sky-600">
-                  {rankSummary?.rank_position ? `#${rankSummary.rank_position}` : '—'}
+                  {currentRankPosition ? `#${currentRankPosition}` : '—'}
                 </span>
               </div>
               <p className="mt-2 text-xs font-semibold text-slate-500">
-                {rankSummary?.rank_title || (child?.total_score ? `${child.total_score.toLocaleString('th-TH')} คะแนน` : 'ยังไม่มีคะแนนสะสม')}
+                {rankSummary?.rank_title
+                  || dashboard?.child?.current_rank_title
+                  || (child?.total_score ? `${child.total_score.toLocaleString('th-TH')} คะแนน` : 'ยังไม่มีคะแนนสะสม')}
+                {totalInGrade ? ` · จากทั้งหมด ${totalInGrade} คน` : ''}
               </p>
               <div className="mt-4 h-3 rounded-full bg-white">
                 <div
                   className="h-full rounded-full bg-gradient-to-r from-sky-400 to-amber-400"
                   style={{
-                    width: rankSummary?.rank_position && rankSummary?.total_in_grade
-                      ? `${Math.min(100, Math.max(0, 100 - ((rankSummary.rank_position / rankSummary.total_in_grade) * 100)))}%`
+                    width: currentRankPosition && totalInGrade
+                      ? `${Math.min(100, Math.max(0, 100 - ((currentRankPosition / totalInGrade) * 100)))}%`
                       : '0%',
                   }}
                 />

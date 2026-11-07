@@ -79,6 +79,9 @@ class ChildOut(BaseModel):
     avatar_config: dict
     program_type: str
     membership_status: str
+    # Aliases kept in sync with membership_status / current_rank_title so the
+    # web client can read `membership` and `rank_title` directly.
+    membership: str = "free"
     total_score: int
     total_xp: int
     coins: int
@@ -90,6 +93,7 @@ class ChildOut(BaseModel):
     average_test_accuracy: float
     average_test_speed: float
     current_rank_title: str
+    rank_title: str = ""
     streak_count: int
     created_at: datetime
     updated_at: datetime

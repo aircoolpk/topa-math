@@ -17,3 +17,14 @@ def rank_title_for_score(score: int) -> str:
         if score >= min_score:
             current = title
     return current
+
+
+def next_rank_title_for_score(score: int) -> str | None:
+    """Return the rank title one step above ``score``, or None at the top rank."""
+    current_index = 0
+    for index, (_title, min_score) in enumerate(RANK_RULES):
+        if score >= min_score:
+            current_index = index
+    if current_index + 1 < len(RANK_RULES):
+        return RANK_RULES[current_index + 1][0]
+    return None

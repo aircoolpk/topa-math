@@ -74,6 +74,7 @@ from app.services.lesson_content import (
 )
 from app.services.mastery import AnswerResult, calculate_mastery_score, infer_mistake_type, mastery_level
 from app.services.rank_titles import rank_title_for_score
+from app.services.ranking import rank_position
 from app.services.student_progress import (
     apply_quest_progress,
     award_progress,
@@ -2566,7 +2567,7 @@ def _lessons(db: Session, child: ChildProfile, *, review_only: bool = False, rec
             continue
         if review_only and not is_review:
             continue
-        is_locked = child.membership_status != "paid" and not is_review
+        is_locked = not is_paid(child) and not is_review
         content = dict(lesson.content or {})
         content.update(
             {
@@ -2880,12 +2881,11 @@ def recommended_lessons(db: Session = Depends(get_db), user: User = Depends(curr
 
 
 @router.get("/test-levels")
-def test_levels(db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
+def test_levels(db: Session = Depends(get_db), user: User = Depends(current_user)) -> list[dict]:
     child = _profile(db, user)
-    return {
-        "levels": _test_level_items(child),
-        "remaining_free_tests": remaining_free_tests(child) if not is_paid(child) else 999999,
-    }
+    # The web client types this endpoint as TestLevel[] (see lib/api/me.ts),
+    # so the payload is the plain list of levels.
+    return _test_level_items(child)
 
 
 @router.post("/tests/start")
@@ -3465,11 +3465,14 @@ def stats(db: Session = Depends(get_db), user: User = Depends(current_user)) -> 
 def rank_summary(db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
     child = _profile(db, user)
     child.current_rank_title = rank_title_for_score(child.total_score)
+    rank_position_value, total_in_grade = rank_position(db, child, scope="grade")
     return {
         "total_score": child.total_score,
         "rank_title": child.current_rank_title,
         "grade_level": child.grade_level,
         "leaderboard_scope": "grade",
+        "rank_position": rank_position_value,
+        "total_in_grade": total_in_grade,
     }
 
 
@@ -3579,6 +3582,7 @@ def dashboard(
     test_levels = _dashboard_section(db, user, "test_levels", [], lambda: _test_level_items(child)) if has_grade else []
     child_out = child_to_out(child).model_dump()
     child_out["grade_level"] = child.grade_level
+    dashboard_rank_position, dashboard_total_in_grade = rank_position(db, child, scope="grade")
     child_summary = {
         "id": child.id,
         "first_name": child.first_name,
@@ -3711,6 +3715,9 @@ def dashboard(
             "total_score": child.total_score or 0,
             "rank_title": child.current_rank_title or "",
             "grade_level": child.grade_level,
+            "leaderboard_scope": "grade",
+            "rank_position": dashboard_rank_position,
+            "total_in_grade": dashboard_total_in_grade,
         },
         "lesson_summary": {
             "available": len([lesson for lesson in lesson_items if not lesson["is_locked"]]),

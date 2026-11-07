@@ -1,12 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import Link from 'next/link'
 import type { ChildOut, RankSummary, Badge } from '@/lib/api/children'
 import { AvatarUpload } from '@/components/avatar/AvatarUpload'
 import { PhotoAvatar } from '@/components/avatar/PhotoAvatar'
 import { ShareModal } from '@/components/share/ShareModal'
 import { meApi, type ShareResponse } from '@/lib/api/me'
+import { xpLevelProgress } from '@/lib/utils'
 
 interface Props {
   child: ChildOut
@@ -75,19 +76,26 @@ export function AvatarCharacter({
 
 // ─── Rank title badge ─────────────────────────────────────────────────────────
 
+/**
+ * Keys MUST match `apps/api/app/services/rank_titles.py`:
+ * เด็กหลังห้อง / เด็กนักเรียน / เด็กเก่ง / เด็กหัวแถว / หัวหน้าห้อง / ประธานรุ่น / เด็กอัจฉริยะ
+ */
 const RANK_CONFIG: Record<string, { emoji: string; bg: string; text: string }> = {
-  'นักเรียนใหม่':     { emoji: '🌱', bg: 'bg-green-100', text: 'text-green-700' },
-  'นักเรียนตัวจิ๋ว':   { emoji: '🐣', bg: 'bg-amber-100', text: 'text-amber-700' },
-  'นักคณิตศาสตร์':    { emoji: '🧠', bg: 'bg-blue-100', text: 'text-blue-700' },
-  'ผู้พิชิต':          { emoji: '⚔️', bg: 'bg-purple-100', text: 'text-purple-700' },
-  'แชมป์':             { emoji: '🏆', bg: 'bg-amber-100', text: 'text-amber-800' },
-  'ตำนาน':             { emoji: '👑', bg: 'bg-yellow-100', text: 'text-yellow-700' },
+  'เด็กหลังห้อง':  { emoji: '🌱', bg: 'bg-green-100', text: 'text-green-700' },
+  'เด็กนักเรียน':  { emoji: '🐣', bg: 'bg-lime-100', text: 'text-lime-700' },
+  'เด็กเก่ง':     { emoji: '🧠', bg: 'bg-blue-100', text: 'text-blue-700' },
+  'เด็กหัวแถว':   { emoji: '⚔️', bg: 'bg-purple-100', text: 'text-purple-700' },
+  'หัวหน้าห้อง':   { emoji: '🏆', bg: 'bg-amber-100', text: 'text-amber-800' },
+  'ประธานรุ่น':    { emoji: '👑', bg: 'bg-yellow-100', text: 'text-yellow-700' },
+  'เด็กอัจฉริยะ':  { emoji: '💎', bg: 'bg-pink-100', text: 'text-pink-700' },
 }
+
+const DEFAULT_RANK_TITLE = 'เด็กหลังห้อง'
 
 function RankBadge({ rank }: { rank: string }) {
   const cfg = RANK_CONFIG[rank] ?? { emoji: '⭐', bg: 'bg-gray-100', text: 'text-gray-600' }
   return (
-    <span className={`inline-flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-full ${cfg.bg} ${cfg.text}`}>
+    <span className={`inline-flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap ${cfg.bg} ${cfg.text}`}>
       {cfg.emoji} {rank}
     </span>
   )
@@ -109,13 +117,48 @@ function StatPill({ emoji, label, value, color = 'text-gray-700' }: {
 
 // ─── Badge item ───────────────────────────────────────────────────────────────
 
-function BadgeItem({ badge }: { badge: Badge }) {
+/**
+ * Client-side Thai fallback for the legacy English badge payload.
+ * The backend is moving to `name_th`; this keeps the UI Thai until then.
+ */
+const BADGE_NAME_TH: Record<string, string> = {
+  'first-lesson': 'บทเรียนแรก',
+  'streak-3': 'ต่อเนื่อง 3 วัน',
+  'streak-7': 'ต่อเนื่อง 7 วัน',
+  'addition-hero': 'ผู้เชี่ยวชาญการบวก',
+  'speed-star': 'ดาวความเร็ว',
+  'improvement-champion': 'แชมป์การพัฒนา',
+}
+
+function badgeLabel(badge: Badge): string {
   return (
-    <div className="flex flex-col items-center gap-1 p-2">
+    badge.name_th?.trim() ||
+    BADGE_NAME_TH[badge.code]?.trim() ||
+    badge.name?.trim() ||
+    badge.code
+  )
+}
+
+function badgeIcon(badge: Badge): string {
+  return badge.icon?.trim() || badge.icon_url?.trim() || '🏅'
+}
+
+function BadgeItem({ badge }: { badge: Badge }) {
+  const icon = badgeIcon(badge)
+  const isImage = icon.startsWith('http://') || icon.startsWith('https://') || icon.startsWith('/')
+  return (
+    <div className="flex flex-col items-center gap-1 p-2 w-16">
       <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center text-lg shadow-sm border-2 border-white">
-        {badge.icon_url ? '🏅' : '⭐'}
+        {isImage ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={icon} alt="" className="w-6 h-6 object-contain" />
+        ) : (
+          icon
+        )}
       </div>
-      <span className="text-xs text-gray-600 font-medium text-center leading-tight">{badge.name}</span>
+      <span className="text-xs text-gray-600 font-medium text-center leading-tight line-clamp-2">
+        {badgeLabel(badge)}
+      </span>
     </div>
   )
 }
@@ -123,19 +166,26 @@ function BadgeItem({ badge }: { badge: Badge }) {
 // ─── XP progress bar ──────────────────────────────────────────────────────────
 
 function XPBar({ child, rankSummary }: { child: ChildOut; rankSummary?: RankSummary | null }) {
-  const xpForNextLevel = rankSummary?.xp_to_next_rank ?? 1000
-  const xpInCurrentLevel = rankSummary ? Math.max(0, rankSummary.total_xp - (child.total_xp - (child.total_xp % 1000))) : (child.total_xp % 1000)
-  const percent = Math.min(100, (xpInCurrentLevel / xpForNextLevel) * 100)
+  const totalXp = child.total_xp ?? 0
+  // Local fallback mirrors `apps/api/app/services/xp.py` (ceil(100 * level ** 1.35)).
+  const local = xpLevelProgress(totalXp)
+
+  const xpIntoLevel = rankSummary?.xp_into_level ?? local.xpIntoLevel
+  const xpNeeded = rankSummary?.xp_needed_for_next_level ?? local.xpNeededForNextLevel
+  const percent = xpNeeded > 0
+    ? Math.min(100, Math.max(0, (xpIntoLevel / xpNeeded) * 100))
+    : 0
+
+  const level = rankSummary?.level ?? local.level
+  const xpToNextRank = rankSummary?.xp_to_next_rank ?? local.xpToNextLevel
+  const nextRankName = rankSummary?.next_rank ?? 'ระดับถัดไป'
 
   return (
     <div className="w-full max-w-xs">
-      <div className="flex justify-between text-xs text-gray-500 mb-1.5">
-        <span className="font-medium">XP {child.total_xp.toLocaleString()}</span>
-        <span className="font-bold">
-          {rankSummary
-            ? `${rankSummary.xp_to_next_rank} XP สู่ ${rankSummary.next_rank ?? 'ระดับถัดไป'}`
-            : `เลเวล ${child.current_level}`
-          }
+      <div className="flex justify-between items-baseline text-xs text-gray-500 mb-1.5 gap-2">
+        <span className="font-medium whitespace-nowrap">XP {totalXp.toLocaleString()}</span>
+        <span className="font-bold text-right">
+          {xpToNextRank} XP สู่ {nextRankName}
         </span>
       </div>
       <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
@@ -144,6 +194,9 @@ function XPBar({ child, rankSummary }: { child: ChildOut; rankSummary?: RankSumm
           style={{ width: `${percent}%` }}
         />
       </div>
+      <p className="text-[11px] text-gray-400 mt-1">
+        เลเวล {level} · {xpIntoLevel}/{xpNeeded} XP ของเลเวลนี้
+      </p>
     </div>
   )
 }
@@ -190,8 +243,8 @@ function FloatingStat({ emoji, value, label, className = '' }: {
   emoji: string; value: string | number; label: string; className?: string
 }) {
   return (
-    <div className={`absolute bg-white rounded-2xl shadow-lg px-3 py-1.5 flex items-center gap-2 ${className}`}>
-      <span className="text-lg">{emoji}</span>
+    <div className={`absolute bg-white rounded-2xl shadow-lg px-3 py-1.5 flex items-center gap-2 whitespace-nowrap ${className}`}>
+      <span className="text-lg leading-none">{emoji}</span>
       <div className="flex flex-col">
         <span className="text-sm font-black text-gray-800 leading-tight">{value}</span>
         <span className="text-xs text-gray-400">{label}</span>
@@ -213,8 +266,26 @@ export default function ProfileHero({ child, rankSummary, badges = [], onAvatarU
     onAvatarUpdate?.(avatarUrl)
   }
 
-  async function openShareSheet() {
+  // Rank title NAME — the child profile returns `current_rank_title`,
+  // the rank summary returns `current_rank` / `rank_title`.
+  const rankTitle =
+    child.current_rank_title?.trim() ||
+    child.rank_title?.trim() ||
+    rankSummary?.current_rank?.trim() ||
+    rankSummary?.rank_title?.trim() ||
+    DEFAULT_RANK_TITLE
+
+  // Only badges the child actually earned.
+  const earnedBadges = badges.filter((badge) => badge.earned !== false)
+
+  // Province/country position are NUMBERS — `current_rank` is the rank title name.
+  const provinceRank = typeof rankSummary?.province_rank === 'number' ? rankSummary.province_rank : null
+  const countryRank = typeof rankSummary?.country_rank === 'number' ? rankSummary.country_rank : null
+
+  // Cache the share payload — opening the sheet must not POST every time.
+  const openShareSheet = useCallback(async () => {
     setShareOpen(true)
+    if (shareData) return
     setShareLoading(true)
     setShareError(null)
     try {
@@ -226,7 +297,7 @@ export default function ProfileHero({ child, rankSummary, badges = [], onAvatarU
     } finally {
       setShareLoading(false)
     }
-  }
+  }, [shareData])
 
   return (
     <div className="w-full">
@@ -254,21 +325,22 @@ export default function ProfileHero({ child, rankSummary, badges = [], onAvatarU
               size="lg"
             />
             <div className="flex-1 min-w-0">
-              <h1 className="text-xl font-extrabold text-gray-800 leading-tight">
-                {child.first_name} {child.last_name}
+              <h1 className="text-xl font-extrabold text-gray-800 leading-tight break-words">
+                {child.first_name || ''} {child.last_name || ''}
+                {!child.first_name && !child.last_name ? child.nickname : ''}
               </h1>
               {child.nickname && (
                 <p className="text-sm text-gray-500 mt-0.5">ชื่อเล่น: {child.nickname}</p>
               )}
               <div className="mt-2">
-                <RankBadge rank={child.rank_title || 'นักเรียนใหม่'} />
+                <RankBadge rank={rankTitle} />
               </div>
             </div>
           </div>
 
           {/* School + Grade */}
           <div className="bg-gray-50 rounded-xl p-3 mb-5">
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="flex items-center gap-2 text-sm text-gray-600 flex-wrap">
               <span>🏫</span>
               <span>{child.school_name ?? 'ไม่ระบุโรงเรียน'}</span>
               <span className="text-gray-300">•</span>
@@ -277,17 +349,16 @@ export default function ProfileHero({ child, rankSummary, badges = [], onAvatarU
           </div>
 
           {/* THP / EP Buttons */}
-          <div className="flex gap-3 mb-5">
-            <div className="flex-1 flex justify-center">
-              <AvatarUpload
-                childId={child.id}
-                currentAvatarUrl={child.student_photo_url ?? ''}
-                onUploadSuccess={handleAvatarSuccess}
-              />
-            </div>
+          <div className="flex flex-col sm:flex-row gap-3 mb-5">
+            <Link
+              href={`/children/${child.id}/avatar`}
+              className="flex-1 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md whitespace-nowrap"
+            >
+              🎨 แต่งตัวละคร (THP)
+            </Link>
             <Link
               href={`/children/${child.id}/rankings`}
-              className="flex-1 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md"
+              className="flex-1 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md whitespace-nowrap"
             >
               📝 อันดับ (EP)
             </Link>
@@ -336,55 +407,36 @@ export default function ProfileHero({ child, rankSummary, badges = [], onAvatarU
         {/* ═══ RIGHT: Avatar Panel ═══ */}
         <div className="w-full lg:w-96 relative">
 
-          {/* Game Card Background */}
-          <div className="bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 rounded-2xl shadow-lg p-6 border border-purple-200 relative overflow-hidden">
+          {/* Game Card Background — overflow-visible so floating badges are never clipped */}
+          <div className="bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 rounded-2xl shadow-lg p-6 border border-purple-200 relative">
 
-            {/* Decorative circles */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-purple-200 rounded-full opacity-20 -translate-y-1/2 translate-x-1/2" />
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-pink-200 rounded-full opacity-20 translate-y-1/2 -translate-x-1/2" />
+            {/* Decorative circles (clipped by their own layer, not the whole card) */}
+            <div className="absolute inset-0 overflow-hidden rounded-2xl pointer-events-none" aria-hidden>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-200 rounded-full opacity-20 -translate-y-1/2 translate-x-1/2" />
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-pink-200 rounded-full opacity-20 translate-y-1/2 -translate-x-1/2" />
+            </div>
 
             {/* Large Avatar Centered */}
             <div className="flex justify-center mb-4 relative z-10">
-              <div className="relative">
-                <PhotoAvatar
-                  studentPhotoUrl={child.student_photo_url}
-                  avatarGender={avatarGender}
-                  size="xl"
-                />
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 z-20">
-                  <AvatarUpload
-                    childId={child.id}
-                    currentAvatarUrl={child.student_photo_url ?? ''}
-                    onUploadSuccess={handleAvatarSuccess}
-                  />
-                </div>
-              </div>
+              <PhotoAvatar
+                studentPhotoUrl={child.student_photo_url}
+                avatarGender={avatarGender}
+                size="xl"
+              />
             </div>
 
-            {/* Floating Status Badges */}
+            {/* Floating Status Badges — anchored INSIDE the card padding box (never clipped) */}
             <FloatingStat
               emoji="🪙"
               value={child.coins?.toLocaleString() ?? 0}
               label="เหรียญ"
-              className="top-0 left-0 -translate-x-1/2 -translate-y-1/2"
+              className="top-6 left-6 z-20"
             />
             <FloatingStat
               emoji="⭐"
               value={child.total_xp?.toLocaleString() ?? 0}
               label="XP"
-              className="top-0 right-0 translate-x-1/2 -translate-y-1/2"
-            />
-            <FloatingStat
-              emoji="🎮"
-              value={child.current_level}
-              label="เลเวล"
-              className="bottom-20 left-0 -translate-x-1/2"
-            />
-            <FloatingStat
-              emoji="🔥"
-              value={child.streak_count ?? 0}
-              label="วันต่อเนื่อง"
-              className="bottom-20 right-0 translate-x-1/2"
+              className="top-6 right-6 z-20"
             />
 
             {/* Rank + Nickname */}
@@ -392,18 +444,41 @@ export default function ProfileHero({ child, rankSummary, badges = [], onAvatarU
               <div className="text-sm font-bold text-gray-500 mb-1">
                 {child.nickname ?? child.first_name}
               </div>
-              <RankBadge rank={child.rank_title || 'นักเรียนใหม่'} />
+              <RankBadge rank={rankTitle} />
             </div>
 
-            {/* Province / Country Rank Pills */}
-            <div className="flex justify-center gap-3 mb-4 relative z-10">
-              <div className="bg-white/80 backdrop-blur-sm rounded-full px-4 py-1.5 shadow-sm border border-purple-100">
-                <span className="text-xs font-bold text-purple-700">🌏 อันดับจังหวัด: #{rankSummary?.current_rank ?? '-'}</span>
+            {/* Level + Streak row — normal flow so it can never cover the share card */}
+            <div className="flex items-center justify-center gap-3 mb-4 relative z-10">
+              <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 shadow-sm border border-purple-100 whitespace-nowrap">
+                <span className="text-base leading-none">🎮</span>
+                <span className="text-sm font-black text-gray-800">{child.current_level}</span>
+                <span className="text-xs text-gray-500">เลเวล</span>
+              </div>
+              <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 shadow-sm border border-purple-100 whitespace-nowrap">
+                <span className="text-base leading-none">🔥</span>
+                <span className="text-sm font-black text-gray-800">{child.streak_count ?? 0}</span>
+                <span className="text-xs text-gray-500">วันต่อเนื่อง</span>
               </div>
             </div>
 
-            {/* Action Buttons */}
-            <div className="flex gap-3 mb-5 relative z-10">
+            {/* Province / Country Rank Pills */}
+            <div className="flex flex-wrap justify-center gap-3 mb-4 relative z-10">
+              <div className="bg-white/80 backdrop-blur-sm rounded-full px-4 py-1.5 shadow-sm border border-purple-100">
+                <span className="text-xs font-bold text-purple-700 whitespace-nowrap">
+                  🌏 อันดับจังหวัด: {provinceRank !== null ? `#${provinceRank}` : '-'}
+                </span>
+              </div>
+              {countryRank !== null && (
+                <div className="bg-white/80 backdrop-blur-sm rounded-full px-4 py-1.5 shadow-sm border border-purple-100">
+                  <span className="text-xs font-bold text-purple-700 whitespace-nowrap">
+                    🇹🇭 อันดับประเทศ: #{countryRank}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {/* Action Buttons — the single upload button on this page */}
+            <div className="flex flex-col sm:flex-row gap-3 mb-5 relative z-10">
               <div className="flex-1 flex justify-center">
                 <AvatarUpload
                   childId={child.id}
@@ -413,24 +488,26 @@ export default function ProfileHero({ child, rankSummary, badges = [], onAvatarU
               </div>
               <button
                 onClick={openShareSheet}
-                className="flex-1 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md"
+                className="flex-1 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white text-sm font-bold py-2.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md whitespace-nowrap"
               >
                 📤 แชร์โปรไฟล์
               </button>
             </div>
 
             {/* Badges Section */}
-            {badges.length > 0 && (
+            {earnedBadges.length > 0 && (
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-3 mb-4 border border-white/80 relative z-10">
-                <p className="text-xs text-gray-600 font-semibold mb-2 text-center">🏅 เหรียญที่ได้รับ ({badges.length})</p>
+                <p className="text-xs text-gray-600 font-semibold mb-2 text-center">
+                  🏅 เหรียญที่ได้รับ ({earnedBadges.length})
+                </p>
                 <div className="flex flex-wrap justify-center gap-1">
-                  {badges.slice(0, 8).map(badge => (
-                    <BadgeItem key={badge.id} badge={badge} />
+                  {earnedBadges.slice(0, 8).map(badge => (
+                    <BadgeItem key={badge.code || badge.id} badge={badge} />
                   ))}
-                  {badges.length > 8 && (
-                    <div className="flex flex-col items-center gap-1 p-2">
+                  {earnedBadges.length > 8 && (
+                    <div className="flex flex-col items-center gap-1 p-2 w-16">
                       <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-700 border-2 border-white">
-                        +{badges.length - 8}
+                        +{earnedBadges.length - 8}
                       </div>
                       <span className="text-xs text-gray-400">เหรียญ</span>
                     </div>

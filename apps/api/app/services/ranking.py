@@ -1,6 +1,11 @@
 from dataclasses import dataclass
 from datetime import datetime
 
+from sqlalchemy import and_, func, or_, select
+from sqlalchemy.orm import Session
+
+from app.models import ChildProfile
+
 
 @dataclass(frozen=True)
 class RankingInput:
@@ -51,3 +56,72 @@ def build_rankings(rows: list[RankingInput], grade_level: int, province: str | N
         item["rank_position"] = index
         item["generated_at"] = datetime.utcnow().isoformat()
     return scored
+
+
+# ─── Leaderboard position helpers (shared by /rankings, /me/rank-summary,
+#     /children/{id}/rank-summary) ────────────────────────────────────────────
+#
+# The leaderboard ranks a child by (total_score DESC, total_xp DESC) inside a
+# scope. "grade" scope = every ranked child in the same grade level;
+# "province" scope = same grade level restricted to one province.
+# A child is only ranked when they have completed at least one test and have
+# a province on file, which mirrors the WHERE clause used by GET /rankings.
+
+
+def _ranked_filters(child: ChildProfile, scope: str, province: str | None = None):
+    filters = [
+        ChildProfile.grade_level == child.grade_level,
+        ChildProfile.total_tests_completed > 0,
+        ChildProfile.province.is_not(None),
+    ]
+    if scope == "province" and province:
+        filters.append(ChildProfile.province == province)
+    return filters
+
+
+def _is_rankable(child: ChildProfile, scope: str, province: str | None = None) -> bool:
+    if not child.grade_level:
+        return False
+    if not (child.total_tests_completed or 0) > 0:
+        return False
+    if not child.province:
+        return False
+    if scope == "province" and province and child.province != province:
+        return False
+    return True
+
+
+def rank_position(
+    db: Session,
+    child: ChildProfile,
+    scope: str = "grade",
+    province: str | None = None,
+) -> tuple[int | None, int]:
+    """Return (rank_position, total_in_scope) for ``child`` inside ``scope``.
+
+    ``rank_position`` is 1-based and ``None`` when the child is not rankable
+    in that scope (no province, no completed tests, …). ``total_in_scope`` is
+    always the size of the comparable group.
+    """
+    filters = _ranked_filters(child, scope, province)
+    total_in_scope = int(
+        db.execute(select(func.count()).select_from(ChildProfile).where(*filters)).scalar() or 0
+    )
+    if not _is_rankable(child, scope, province):
+        return None, total_in_scope
+
+    higher = db.execute(
+        select(func.count())
+        .select_from(ChildProfile)
+        .where(*filters)
+        .where(
+            or_(
+                ChildProfile.total_score > (child.total_score or 0),
+                and_(
+                    ChildProfile.total_score == (child.total_score or 0),
+                    ChildProfile.total_xp > (child.total_xp or 0),
+                ),
+            )
+        )
+    ).scalar()
+    return int(higher or 0) + 1, total_in_scope

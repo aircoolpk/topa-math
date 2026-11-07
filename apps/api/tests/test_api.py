@@ -15,7 +15,7 @@ from app.core.config import get_settings
 from app.core.security import create_access_token
 from app.core.schema_maintenance import ensure_local_schema
 from app.main import app
-from app.models import AffiliateCommissionLedger, AffiliateWithdrawalRequest, AdminAuditLog, CheckInEvent, ChildProfile, LearningQuest, Lesson, LessonActivity, LessonVariantView, Question, QuestionAttemptHistory, QuizAnswer, Skill, Subject, TestResult as DbTestResult, TestSession as DbTestSession, User
+from app.models import AffiliateCommissionLedger, AffiliateWithdrawalRequest, AdminAuditLog, Badge, CheckInEvent, ChildBadge, ChildProfile, LearningQuest, Lesson, LessonActivity, LessonVariantView, Question, QuestionAttemptHistory, QuizAnswer, Skill, Subject, TestResult as DbTestResult, TestSession as DbTestSession, User
 from app.scripts.set_user_plus import set_user_plus
 from app.seeds.import_content import import_content
 from app.seeds.import_question_banks import import_question_banks
@@ -1358,12 +1358,30 @@ def test_rank_badges_course_map_and_recommended_quest(content_client: TestClient
 
     badges = content_client.get(f"/children/{child['id']}/badges", headers=headers)
     assert badges.status_code == 200
-    assert badges.json()
-    assert {"code", "name", "description", "icon", "earned"} <= set(badges.json()[0])
+    # /children/{id}/badges returns ONLY earned badges (not the whole catalogue)
+    assert badges.json() == []
+    with Session(engine) as session:
+        badge = session.scalar(select(Badge).where(Badge.code == "addition-hero"))
+        assert badge is not None
+        session.add(ChildBadge(child_profile_id=child["id"], badge_id=badge.id))
+        session.commit()
+    earned = content_client.get(f"/children/{child['id']}/badges", headers=headers)
+    assert earned.status_code == 200
+    assert len(earned.json()) == 1
+    assert {"id", "code", "name", "name_th", "description", "icon", "icon_url", "category", "earned"} <= set(earned.json()[0])
+    assert earned.json()[0]["code"] == "addition-hero"
+    assert earned.json()[0]["earned"] is True
+    assert earned.json()[0]["name_th"] == "ผู้เชี่ยวชาญการบวก"
+    assert earned.json()[0]["icon"]
 
     rank = content_client.get(f"/children/{child['id']}/rank-summary", headers=headers)
     assert rank.status_code == 200
     assert {"province_rank", "country_rank", "rank_title", "total_score", "total_xp", "average_accuracy", "average_speed_seconds"} <= set(rank.json())
+    # frontend contract (lib/api/children.ts)
+    assert {"current_rank", "xp_to_next_rank", "next_rank", "level", "xp_into_level"} <= set(rank.json())
+    assert rank.json()["current_rank"] == rank.json()["rank_title"]
+    assert rank.json()["xp_to_next_rank"] > 0
+    assert rank.json()["level"] >= 1
 
     course_map = content_client.get(f"/children/{child['id']}/course-map", headers=headers)
     assert course_map.status_code == 200
@@ -1371,10 +1389,20 @@ def test_rank_badges_course_map_and_recommended_quest(content_client: TestClient
     assert any(item["grade_level"] == 2 and item["lesson_type"] == "current" for item in items)
     assert any(item["grade_level"] == 1 and item["lesson_type"] == "review" for item in items)
     assert any(item["is_locked"] and item["lock_reason"] for item in items if item["lesson_type"] == "current")
+    # frontend aliases (lib/api/children.ts) must coexist with the legacy keys
+    for item in items:
+        assert {"grade", "title", "lesson_id", "quiz_id"} <= set(item)
+        assert item["grade"] == item["grade_level"]
+        assert item["title"] == item["title_th"]
+        assert item["quiz_id"] == item["linked_quiz_id"]
 
     recommended = content_client.get(f"/children/{child['id']}/recommended-next-quest", headers=headers)
     assert recommended.status_code == 200
     assert {"quest_id", "title_th", "description_th", "quest_type", "reason_th", "xp_reward", "coin_reward", "progress_current", "progress_total", "status"} <= set(recommended.json())
+    # frontend aliases
+    assert {"title", "description"} <= set(recommended.json())
+    assert recommended.json()["title"] == recommended.json()["title_th"]
+    assert recommended.json()["description"] == recommended.json()["description_th"]
 
 
 def test_me_quest_listing_check_in_and_dashboard(seeded_client: TestClient):
@@ -1419,7 +1447,46 @@ def test_me_quest_listing_check_in_and_dashboard(seeded_client: TestClient):
     assert payload["profile"]["nickname"] == "Little Star"
     assert payload["program_type"] == "THP"
     assert payload["quest_summary"]["daily"] >= 3
+    # BUG-06: child_summary must expose rank_title (frontend falls back to total_score without it)
+    assert payload["child"]["rank_title"]
+    assert payload["child"]["membership_status"] == "free"
+    assert payload["child"]["membership"] == "free"
+    # BUG-08: backend must send the counters the dashboard counts
+    assert isinstance(payload["lesson_summary"]["completed"], int)
+    assert isinstance(payload["profile"]["total_tests_completed"], int)
     assert payload["lesson_summary"]["available"] > 0
+
+
+def test_me_rank_summary_returns_rank_position_and_total_in_grade(seeded_client: TestClient):
+    headers = register_and_login(seeded_client)
+    create_child(seeded_client, headers)
+
+    rank = seeded_client.get("/me/rank-summary", headers=headers)
+    assert rank.status_code == 200
+    payload = rank.json()
+    assert {"total_score", "rank_title", "grade_level", "leaderboard_scope", "rank_position", "total_in_grade"} <= set(payload)
+    assert payload["leaderboard_scope"] == "grade"
+    assert isinstance(payload["total_in_grade"], int)
+    assert payload["total_in_grade"] >= 0
+    if payload["rank_position"] is not None:
+        assert 1 <= payload["rank_position"] <= max(1, payload["total_in_grade"])
+
+
+def test_plus_membership_unlocks_current_grade_lessons(seeded_client: TestClient):
+    headers = register_and_login_as(seeded_client, "plus-contract@example.com")
+    child = seeded_client.post("/children", headers=headers, json={"nickname": "Plus Kid", "grade_level": 2, "membership_status": "plus"})
+    assert child.status_code == 200
+
+    # BUG-05: frontend reads child.membership, backend must expose both names
+    assert child.json()["membership"] == "plus"
+    assert child.json()["membership_status"] == "plus"
+    assert child.json()["rank_title"]
+
+    course_map = seeded_client.get(f"/children/{child.json()['id']}/course-map", headers=headers)
+    assert course_map.status_code == 200
+    current = [i for i in course_map.json()["items"] if i["grade_level"] == 2]
+    assert current
+    assert all(item["is_locked"] is False for item in current)
 
 
 def test_me_dashboard_without_child_returns_stable_setup_payload(seeded_client: TestClient):
@@ -1965,8 +2032,9 @@ def test_me_test_levels_foundation_and_membership_rules(seeded_client: TestClien
     levels = seeded_client.get("/me/test-levels", headers=headers)
     assert levels.status_code == 200
     payload = levels.json()
-    assert payload["remaining_free_tests"] == 5
-    assert [level for level in payload["levels"] if not level["is_locked"]][0]["grade_level"] == 1
+    # /me/test-levels returns the plain TestLevel[] list (see lib/api/me.ts)
+    assert isinstance(payload, list)
+    assert [level for level in payload if not level["is_locked"]][0]["grade_level"] == 1
     blocked_level = seeded_client.post("/me/tests/start", headers=headers, json={"grade_level": 2, "mode": "foundation"})
     assert blocked_level.status_code == 403
     assert blocked_level.json()["detail"] == "สมาชิกฟรีทำได้เฉพาะเทสที่ระบบแนะนำ"
@@ -1975,7 +2043,7 @@ def test_me_test_levels_foundation_and_membership_rules(seeded_client: TestClien
     assert paid.status_code == 200
     paid_levels = seeded_client.get("/me/test-levels", headers=headers)
     assert paid_levels.status_code == 200
-    assert all(not level["is_locked"] for level in paid_levels.json()["levels"])
+    assert all(not level["is_locked"] for level in paid_levels.json())
 
 
 def test_plus_user_can_access_all_test_levels_and_lessons(seeded_client: TestClient):
@@ -2031,7 +2099,7 @@ def test_paid_plan_user_can_access_all_current_th_tests_and_lessons(seeded_clien
 
     levels = seeded_client.get("/me/test-levels", headers=headers)
     assert levels.status_code == 200
-    assert all(not level["is_locked"] for level in levels.json()["levels"])
+    assert all(not level["is_locked"] for level in levels.json())
 
     lessons = seeded_client.get("/me/lessons", headers=headers)
     assert lessons.status_code == 200

@@ -108,17 +108,58 @@ export const learningApi = {
 
 // ─── Course Map Types ─────────────────────────────────────────────────────────
 
+/**
+ * GET /children/{childId}/course-map
+ *
+ * Backend items currently expose `grade_level`, `title_th`, `linked_lesson_id`
+ * and `linked_quiz_id`; the alias fields (`grade`, `title`, `lesson_id`,
+ * `quiz_id`) are being added server-side. Both shapes are supported here.
+ */
 export interface CourseMapItem {
-  grade: number
-  title: string
+  id?: string
+  grade?: number
+  grade_level?: number
+  title?: string
+  title_th?: string | null
+  topic_code?: string | null
   skill_code: string
   status: 'locked' | 'available' | 'completed'
+  is_locked?: boolean
+  lock_reason?: string | null
+  lesson_type?: 'current' | 'review' | string
+  estimated_minutes?: number | null
+  difficulty?: string | null
   xp_reward: number
-  lesson_id: string | null
-  quiz_id: string | null
+  lesson_id?: string | null
+  linked_lesson_id?: string | null
+  quiz_id?: string | null
+  linked_quiz_id?: string | null
 }
 
 export interface CourseMapResponse {
   items: CourseMapItem[]
   current_grade: number
+}
+
+// ─── Normalizers ─────────────────────────────────────────────────────────────
+
+/** Grade of a course-map item (supports both `grade` and `grade_level`). */
+export function courseItemGrade(item: CourseMapItem): number | null {
+  const value = item.grade_level ?? item.grade
+  return typeof value === 'number' ? value : null
+}
+
+/** Title of a course-map item (supports both `title` and `title_th`). */
+export function courseItemTitle(item: CourseMapItem): string {
+  return item.title_th?.trim() || item.title?.trim() || item.skill_code
+}
+
+/** Lesson id of a course-map item (supports `lesson_id` and `linked_lesson_id`). */
+export function courseItemLessonId(item: CourseMapItem): string | null {
+  return item.lesson_id ?? item.linked_lesson_id ?? null
+}
+
+/** Quiz id of a course-map item (supports `quiz_id` and `linked_quiz_id`). */
+export function courseItemQuizId(item: CourseMapItem): string | null {
+  return item.quiz_id ?? item.linked_quiz_id ?? null
 }

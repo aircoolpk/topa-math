@@ -5,12 +5,19 @@ import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
 import { childrenApi, type ChildOut, type RankSummary, type Badge, type RecommendedNextQuest } from '@/lib/api/children'
-import { learningApi, type CourseMapResponse, type CourseMapItem } from '@/lib/api/learning'
+import {
+  learningApi,
+  courseItemGrade,
+  courseItemLessonId,
+  courseItemQuizId,
+  courseItemTitle,
+  type CourseMapResponse,
+  type CourseMapItem,
+} from '@/lib/api/learning'
 import ProfileHero from '@/components/profile/ProfileHero'
 import QuestSection from '@/components/quest/QuestSection'
-import { gradeLabel } from '@/lib/utils'
+import { gradeLabel, isPaidMembership } from '@/lib/utils'
 import { TopaBrandMark } from '@/components/brand/TopaBrand'
-import { AvatarUpload } from '@/components/avatar/AvatarUpload'
 
 // ─── Recommendation Cards ─────────────────────────────────────────────────────
 
@@ -102,9 +109,10 @@ function RecommendationsSection({
   childId: string
   childGrade: number
 }) {
-  // Derive available lessons from course map (unlocked, not completed)
+  // Derive available lessons from course map (unlocked, not completed).
+  // Backend exposes the grade as `grade_level` (alias `grade` is also supported).
   const availableLessons = courseMap?.items.filter(
-    item => item.status === 'available' && item.grade === childGrade
+    item => item.status === 'available' && courseItemGrade(item) === childGrade
   ) ?? []
 
   // Card 1: Weak skill / recommended lesson
@@ -121,6 +129,10 @@ function RecommendationsSection({
   // Fallback title for when no quest data
   const fallbackTitle = `📚 บทเรียน ป.${childGrade}`
 
+  // `/recommended-next-quest` returns `title_th` / `description_th`.
+  const questTitle = mainQuest?.title_th?.trim() || mainQuest?.title?.trim() || ''
+  const questDescription = mainQuest?.description_th?.trim() || mainQuest?.description?.trim() || null
+
   return (
     <div className="mb-6">
       <h2 className="text-lg font-extrabold text-gray-900 mb-3">✨ ระบบแนะนำสำหรับวันนี้</h2>
@@ -135,16 +147,16 @@ function RecommendationsSection({
           </p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {/* Card 1: Weak Skill Practice */}
           {weakSkillLesson ? (
             <RecommendationCard
               icon={getSkillIcon(weakSkillLesson.skill_code)}
-              title={weakSkillLesson.title}
+              title={courseItemTitle(weakSkillLesson)}
               description={weakSkillLesson.skill_code}
               xpReward={weakSkillLesson.xp_reward}
               coinReward={Math.floor(weakSkillLesson.xp_reward * 0.3)}
-              lessonId={weakSkillLesson.lesson_id}
+              lessonId={courseItemLessonId(weakSkillLesson)}
               childId={childId}
               badge="📌 ฝึกจุดอ่อน"
               badgeColor="bg-rose-100 text-rose-700"
@@ -152,12 +164,12 @@ function RecommendationsSection({
           ) : mainQuest ? (
             <RecommendationCard
               icon={getSkillIcon(mainQuest.skill_code)}
-              title={mainQuest.title}
-              description={mainQuest.description}
+              title={questTitle || fallbackTitle}
+              description={questDescription}
               xpReward={mainQuest.xp_reward}
               coinReward={mainQuest.coin_reward}
               estimatedMinutes={mainQuest.estimated_minutes}
-              lessonId={mainQuest.lesson_id}
+              lessonId={mainQuest.lesson_id ?? null}
               questId={mainQuest.quest_id}
               childId={childId}
               badge="📌 ฝึกจุดอ่อน"
@@ -181,12 +193,12 @@ function RecommendationsSection({
           {mainQuest ? (
             <RecommendationCard
               icon={getSkillIcon(mainQuest.skill_code)}
-              title={mainQuest.title}
-              description={mainQuest.description}
+              title={questTitle || fallbackTitle}
+              description={questDescription}
               xpReward={mainQuest.xp_reward}
               coinReward={mainQuest.coin_reward}
               estimatedMinutes={mainQuest.estimated_minutes}
-              lessonId={mainQuest.lesson_id}
+              lessonId={mainQuest.lesson_id ?? null}
               questId={mainQuest.quest_id}
               childId={childId}
               badge="✨ แนะนำ"
@@ -195,11 +207,11 @@ function RecommendationsSection({
           ) : weakSkillLesson ? (
             <RecommendationCard
               icon={getSkillIcon(weakSkillLesson.skill_code)}
-              title={weakSkillLesson.title}
+              title={courseItemTitle(weakSkillLesson)}
               description={weakSkillLesson.skill_code}
               xpReward={weakSkillLesson.xp_reward}
               coinReward={Math.floor(weakSkillLesson.xp_reward * 0.3)}
-              lessonId={weakSkillLesson.lesson_id}
+              lessonId={courseItemLessonId(weakSkillLesson)}
               childId={childId}
               badge="✨ แนะนำ"
               badgeColor="bg-accent-100 text-accent-700"
@@ -223,10 +235,10 @@ function RecommendationsSection({
             <RecommendationCard
               icon="⚡"
               title="🔥 เควสประจำวัน"
-              description={dailyChallengeLesson.title}
+              description={courseItemTitle(dailyChallengeLesson)}
               xpReward={dailyChallengeLesson.xp_reward}
               coinReward={Math.floor(dailyChallengeLesson.xp_reward * 0.5)}
-              lessonId={dailyChallengeLesson.lesson_id}
+              lessonId={courseItemLessonId(dailyChallengeLesson)}
               childId={childId}
               badge="🔥 ด่วน"
               badgeColor="bg-amber-100 text-amber-700"
@@ -259,25 +271,29 @@ function CourseMapSection({
   childGrade,
 }: {
   courseMap: CourseMapResponse | null
-  membership: 'free' | 'basic' | 'plus' | 'family'
+  membership: string
   childId: string
   childGrade: number
 }) {
   const [activeTab, setActiveTab] = useState<'current' | 'review'>('current')
-  const canAccessPaid = membership !== 'free'
+  // Backend treats { paid, plus, trial } as paid membership.
+  const canAccessPaid = isPaidMembership(membership)
 
   // Build items by grade from course map
   const allGrades = courseMap
-    ? [...new Set(courseMap.items.map(i => i.grade))].sort((a, b) => a - b)
+    ? [...new Set(courseMap.items.map(courseItemGrade).filter((g): g is number => g !== null))].sort((a, b) => a - b)
     : []
 
-  // Current grade items: grade === childGrade
+  // Current grade items: grade === childGrade (backend sends `grade_level`)
   const currentGradeItems: CourseMapItem[] =
-    courseMap?.items.filter(i => i.grade === childGrade) ?? []
+    courseMap?.items.filter(i => courseItemGrade(i) === childGrade) ?? []
 
   // Review grade items: grade < childGrade (previous grades)
   const reviewItems: CourseMapItem[] =
-    courseMap?.items.filter(i => i.grade < childGrade) ?? []
+    courseMap?.items.filter(i => {
+      const grade = courseItemGrade(i)
+      return grade !== null && grade < childGrade
+    }) ?? []
 
   const displayItems = activeTab === 'current' ? currentGradeItems : reviewItems
 
@@ -292,8 +308,11 @@ function CourseMapSection({
   }
 
   function LessonCard({ item }: { item: CourseMapItem }) {
-    const isClickable = item.status !== 'locked' && (item.status === 'available' || item.status === 'completed')
-    const isPaidContent = item.grade === childGrade // current grade = paid
+    const grade = courseItemGrade(item)
+    const lessonId = courseItemLessonId(item)
+    const isLocked = item.status === 'locked' || item.is_locked === true
+    const isClickable = !isLocked && (item.status === 'available' || item.status === 'completed')
+    const isPaidContent = grade === childGrade // current grade = paid
     const needsMembership = isPaidContent && !canAccessPaid
 
     return (
@@ -301,7 +320,7 @@ function CourseMapSection({
         className={
           isClickable && !needsMembership
             ? 'rounded-2xl border-2 border-primary-100 bg-gradient-to-br from-white to-primary-50 p-4 cursor-pointer hover:shadow-lg hover:-translate-y-0.5 hover:border-primary-300 transition-all'
-            : item.status === 'locked'
+            : isLocked
             ? 'rounded-2xl border-2 border-gray-200 bg-gray-50 p-4 opacity-60'
             : 'rounded-2xl border-2 border-amber-100 bg-gradient-to-br from-white to-amber-50 p-4'
         }
@@ -309,13 +328,13 @@ function CourseMapSection({
         <div className="flex items-start justify-between gap-2 mb-2">
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1 flex-wrap">
-              <h4 className={`font-bold text-sm leading-tight ${item.status === 'locked' ? 'text-gray-400' : 'text-gray-900'}`}>
-                {item.title}
+              <h4 className={`font-bold text-sm leading-tight ${isLocked ? 'text-gray-400' : 'text-gray-900'}`}>
+                {courseItemTitle(item)}
               </h4>
-              {item.grade < childGrade && (
+              {grade !== null && grade < childGrade && (
                 <span className="badge bg-blue-100 text-blue-700 text-xs font-semibold">📖 ทบทวน</span>
               )}
-              {item.grade === childGrade && (
+              {grade !== null && grade === childGrade && (
                 <span className="badge bg-primary-100 text-primary-700 text-xs font-semibold">📚 ปัจจุบัน</span>
               )}
             </div>
@@ -325,10 +344,10 @@ function CourseMapSection({
         </div>
 
         <div className="flex items-center justify-between">
-          <span className={`badge text-xs font-bold ${item.status === 'locked' ? 'bg-gray-100 text-gray-400' : 'bg-primary-100 text-primary-700'}`}>
+          <span className={`badge text-xs font-bold ${isLocked ? 'bg-gray-100 text-gray-400' : 'bg-primary-100 text-primary-700'}`}>
             +{item.xp_reward} XP
           </span>
-          {item.status === 'locked' ? (
+          {isLocked ? (
             <span className="text-xs text-gray-400 flex items-center gap-1">
               🔒 ล็อก — ต้องเรียนบทก่อนหน้า
             </span>
@@ -342,11 +361,11 @@ function CourseMapSection({
             </span>
           ) : (
             <Link
-              href={item.lesson_id
-                ? `/children/${childId}/quiz/${item.lesson_id}`
-                : `/children/${childId}/quiz/new?lesson=${item.lesson_id}`
+              href={lessonId
+                ? `/children/${childId}/quiz/${lessonId}`
+                : `/children/${childId}/quiz/new?lesson=${courseItemQuizId(item) ?? lessonId ?? ''}`
               }
-              className="text-xs bg-primary-500 hover:bg-primary-600 text-white font-bold px-3 py-1.5 rounded-xl transition-colors shadow-sm"
+              className="text-xs bg-primary-500 hover:bg-primary-600 text-white font-bold px-3 py-1.5 rounded-xl transition-colors shadow-sm whitespace-nowrap"
             >
               เริ่มเรียน →
             </Link>
@@ -363,7 +382,7 @@ function CourseMapSection({
     <div className="mb-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-extrabold text-gray-900">📚 บทเรียน</h2>
-        {membership === 'free' && (
+        {!canAccessPaid && (
           <div className="bg-amber-50 border border-amber-200 rounded-xl px-3 py-1.5 text-xs text-amber-700 font-semibold">
             ⭐ สมัครเป็นสมาชิกเพื่อปลดล็อกบทเรียน ป.{childGrade}
           </div>
@@ -411,7 +430,7 @@ function CourseMapSection({
       ) : (
         <div className="space-y-3">
           {displayItems.map((item) => (
-            <LessonCard key={item.skill_code} item={item} />
+            <LessonCard key={courseItemLessonId(item) ?? item.id ?? item.skill_code} item={item} />
           ))}
         </div>
       )}
@@ -528,13 +547,12 @@ export default function ChildDashboardPage() {
           <div className="flex-1">
             <TopaBrandMark />
           </div>
-          <AvatarUpload
-            childId={childId}
-            currentAvatarUrl={child.student_photo_url}
-            onUploadSuccess={(avatarUrl) =>
-              setChild((prev) => prev ? { ...prev, student_photo_url: avatarUrl || null } : prev)
-            }
-          />
+          <Link
+            href={`/children/${childId}/avatar`}
+            className="text-sm font-bold text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-xl transition-colors whitespace-nowrap"
+          >
+            🎨 แต่งตัวละคร
+          </Link>
         </div>
       </header>
 
@@ -585,7 +603,7 @@ export default function ChildDashboardPage() {
         ) : (
           <CourseMapSection
             courseMap={courseMap}
-            membership={child.membership ?? 'free'}
+            membership={child.membership_status ?? child.membership ?? 'free'}
             childId={childId}
             childGrade={child.grade_level}
           />

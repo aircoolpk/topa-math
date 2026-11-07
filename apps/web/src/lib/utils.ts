@@ -1,9 +1,62 @@
-export function xpToNextLevel(xp: number): { current: number; needed: number; percent: number } {
-  const level = Math.floor(xp / 1000)
-  const current = xp % 1000
-  const needed = 1000
-  const percent = Math.round((current / needed) * 100)
-  return { current, needed, percent }
+/**
+ * XP / level helpers.
+ *
+ * These MUST stay in sync with the backend service
+ * `apps/api/app/services/xp.py`:
+ *
+ *   required_xp_for_next_level(level) = ceil(100 * level ** 1.35)
+ *   level_from_total_xp(total_xp)      = greedy consume of the thresholds above
+ *
+ * The old frontend assumed a flat "1000 XP per level" model, which produced
+ * wrong progress percentages (e.g. 455 XP => 45.5% instead of 22.7%).
+ */
+
+/** XP required to advance from `level` to `level + 1`. */
+export function requiredXpForNextLevel(level: number): number {
+  return Math.ceil(100 * Math.pow(Math.max(1, level), 1.35))
+}
+
+export interface XpLevelProgress {
+  /** Level derived from total XP (mirrors `level_from_total_xp`). */
+  level: number
+  /** XP accumulated inside the current level. */
+  xpIntoLevel: number
+  /** XP required to leave the current level. */
+  xpNeededForNextLevel: number
+  /** XP still missing to reach the next level. */
+  xpToNextLevel: number
+  /** Progress inside the current level (0–100). */
+  percent: number
+}
+
+/** Port of `level_from_total_xp` + the XP-into-level remainder. */
+export function xpLevelProgress(totalXp: number | null | undefined): XpLevelProgress {
+  let level = 1
+  let remaining = Math.max(0, Math.floor(totalXp ?? 0))
+  while (remaining >= requiredXpForNextLevel(level)) {
+    remaining -= requiredXpForNextLevel(level)
+    level += 1
+  }
+  const xpNeededForNextLevel = requiredXpForNextLevel(level)
+  const percent = xpNeededForNextLevel > 0
+    ? Math.min(100, Math.max(0, (remaining / xpNeededForNextLevel) * 100))
+    : 0
+  return {
+    level,
+    xpIntoLevel: remaining,
+    xpNeededForNextLevel,
+    xpToNextLevel: Math.max(0, xpNeededForNextLevel - remaining),
+    percent,
+  }
+}
+
+/**
+ * Membership statuses that unlock paid content.
+ * Backend `PAID_MEMBERSHIP_STATUSES` = { paid, plus, trial }.
+ */
+export function isPaidMembership(status?: string | null): boolean {
+  if (!status) return false
+  return ['paid', 'plus', 'trial', 'family', 'basic'].includes(status.toLowerCase())
 }
 
 export function gradeLabel(g: number): string {

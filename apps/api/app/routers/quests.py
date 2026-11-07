@@ -8,8 +8,11 @@ from app.core.database import get_db
 from app.models import Badge, ChildBadge, ChildProfile, ChildQuest, LearningQuest, Lesson, Skill, User, XPEvent
 from app.routers.deps import current_user
 from app.schemas.api import QuestActionOut, QuestOut
-from app.services.rank_titles import rank_title_for_score
-from app.services.xp import level_from_total_xp
+from app.services.badges import badge_meta
+from app.services.foundation import is_paid
+from app.services.rank_titles import next_rank_title_for_score, rank_title_for_score
+from app.services.ranking import rank_position
+from app.services.xp import level_from_total_xp, level_progress
 
 router = APIRouter(prefix="/children/{child_id}", tags=["quests"])
 
@@ -79,10 +82,20 @@ def _list_quests(child_id: str, recurrence_type: str | None, db: Session, user: 
 def _course_map_item(lesson: Lesson, skill: Skill, child: ChildProfile) -> dict:
     content = lesson.content or {}
     lesson_type = "review" if skill.grade_level < child.grade_level else "current"
-    is_locked = child.membership_status not in {"paid"} and lesson_type != "review"
+    # is_paid() accepts every entitled membership tier (paid / plus / trial),
+    # so Plus members are no longer locked out of current-grade lessons.
+    entitled = is_paid(child)
+    is_locked = not entitled and lesson_type != "review"
+    title = content.get("title_th") or lesson.title
+    linked_quiz_id = content.get("quiz_id") or content.get("linked_quiz_id")
     return {
         "id": lesson.id,
-        "title_th": content.get("title_th") or lesson.title,
+        "title_th": title,
+        # Aliases expected by the web client (CourseMapItem).
+        "title": title,
+        "grade": skill.grade_level,
+        "lesson_id": lesson.id,
+        "quiz_id": linked_quiz_id,
         "topic_code": content.get("topic_code") or skill.code,
         "skill_code": skill.code,
         "grade_level": skill.grade_level,
@@ -94,7 +107,7 @@ def _course_map_item(lesson: Lesson, skill: Skill, child: ChildProfile) -> dict:
         "lock_reason": "Free users can access review lessons only" if is_locked else None,
         "status": "locked" if is_locked else "available",
         "linked_lesson_id": lesson.id,
-        "linked_quiz_id": content.get("quiz_id") or content.get("linked_quiz_id"),
+        "linked_quiz_id": linked_quiz_id,
     }
 
 
@@ -121,21 +134,33 @@ def monthly_quests(child_id: str, db: Session = Depends(get_db), user: User = De
 @router.get("/badges")
 def child_badges(child_id: str, db: Session = Depends(get_db), user: User = Depends(current_user)) -> list[dict]:
     child = _child_for_user(child_id, user, db)
-    earned_badge_ids = {
-        row.badge_id
-        for row in db.scalars(select(ChildBadge).where(ChildBadge.child_profile_id == child.id)).all()
-    }
-    badges = db.scalars(select(Badge).order_by(Badge.code)).all()
-    return [
-        {
-            "code": badge.code,
-            "name": badge.name,
-            "description": badge.description,
-            "icon": badge.icon_url or "🏅",
-            "earned": badge.id in earned_badge_ids,
-        }
-        for badge in badges
-    ]
+    earned_rows = db.scalars(
+        select(ChildBadge).where(ChildBadge.child_profile_id == child.id)
+    ).all()
+    if not earned_rows:
+        return []
+    earned_at_by_badge = {row.badge_id: row.awarded_at for row in earned_rows}
+    badges = db.scalars(select(Badge).where(Badge.id.in_(list(earned_at_by_badge)))).all()
+    payload = []
+    for badge in badges:
+        meta = badge_meta(badge.code)
+        earned_at = earned_at_by_badge.get(badge.id)
+        payload.append(
+            {
+                "id": badge.id,
+                "code": badge.code,
+                "name": badge.name,
+                "name_th": meta.name_th or badge.name,
+                "description": badge.description,
+                "icon": badge.icon_url or meta.icon,
+                "icon_url": badge.icon_url or meta.icon,
+                "category": meta.category,
+                "earned": True,
+                "earned_at": earned_at.isoformat() if earned_at else None,
+            }
+        )
+    payload.sort(key=lambda item: item["code"])
+    return payload
 
 
 @router.get("/rank-summary")
@@ -144,12 +169,22 @@ def rank_summary(child_id: str, db: Session = Depends(get_db), user: User = Depe
     score_for_title = child.total_score or child.total_xp
     child.current_rank_title = rank_title_for_score(score_for_title)
     db.commit()
+
+    level, xp_into_level, xp_to_next_level = level_progress(child.total_xp)
+    province_rank, _province_total = rank_position(db, child, scope="province", province=child.province)
+    country_rank, country_total = rank_position(db, child, scope="country")
     return {
-        "province_rank": None,
-        "country_rank": None,
+        "province_rank": province_rank,
+        "country_rank": country_rank,
+        "total_in_country": country_total,
         "rank_title": child.current_rank_title,
+        "current_rank": child.current_rank_title,
+        "next_rank": next_rank_title_for_score(score_for_title),
         "total_score": child.total_score,
         "total_xp": child.total_xp,
+        "level": level,
+        "xp_into_level": xp_into_level,
+        "xp_to_next_rank": xp_to_next_level,
         "average_accuracy": float(child.average_test_accuracy or 0) if child.total_tests_completed else None,
         "average_speed_seconds": round(float(child.average_test_speed or 0) / 1000, 2) if child.total_tests_completed else None,
     }
@@ -199,8 +234,16 @@ def recommended_next_quest(child_id: str, db: Session = Depends(get_db), user: U
             "quest_id": quest.quest_id,
             "title_th": quest.title,
             "description_th": quest.description,
-            "quest_type": quest.recurrence_type if quest.recurrence_type != "none" else quest.quest_type,
             "reason_th": "แนะนำภารกิจที่ยังทำไม่เสร็จสำหรับวันนี้",
+            # Aliases expected by the web client (RecommendedNextQuest).
+            "title": quest.title,
+            "description": quest.description,
+            "skill_code": quest.skill_code,
+            "grade_level": quest.grade_level,
+            "estimated_minutes": quest.estimated_minutes,
+            "lesson_id": quest.lesson_id,
+            "quiz_id": quest.quiz_id,
+            "quest_type": quest.recurrence_type if quest.recurrence_type != "none" else quest.quest_type,
             "xp_reward": quest.xp_reward,
             "coin_reward": quest.coin_reward,
             "progress_current": out.progress_current,
@@ -211,8 +254,15 @@ def recommended_next_quest(child_id: str, db: Session = Depends(get_db), user: U
         "quest_id": None,
         "title_th": "ยังไม่มีภารกิจแนะนำ",
         "description_th": "ทำได้ดีมาก ลองกลับมาใหม่ภายหลัง",
-        "quest_type": "daily",
         "reason_th": "ภารกิจพร้อมใช้งานถูกทำครบแล้ว",
+        "title": "ยังไม่มีภารกิจแนะนำ",
+        "description": "ทำได้ดีมาก ลองกลับมาใหม่ภายหลัง",
+        "skill_code": None,
+        "grade_level": child.grade_level,
+        "estimated_minutes": None,
+        "lesson_id": None,
+        "quiz_id": None,
+        "quest_type": "daily",
         "xp_reward": 0,
         "coin_reward": 0,
         "progress_current": 0,

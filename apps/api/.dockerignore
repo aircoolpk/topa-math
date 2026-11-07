@@ -20,3 +20,14 @@ backup_lessons_round1
 backup_miniquiz_round1
 backup_miniquiz_round2
 adaptive_learning_api.egg-info
+
+# Stale backup / legacy trees inside the canonical content folder.
+# They are not loaded by app.services.lesson_content (it only reads
+# grade_N/{lessons,quizzes}/{TH,EP}) and only bloat the build context/image.
+app/content/_content_backups
+app/content/math/_content_backups
+app/content/math/_archived_legacy_not_loaded
+app/content/math/backup_*
+app/content/math/New folder
+app/content/math/grade_*/lessons old
+app/content/math/grade_*/quizzes old

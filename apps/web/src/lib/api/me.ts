@@ -25,9 +25,12 @@ export interface DashboardChild {
   total_score: number
   days_active: number
   rank_title: string
+  current_rank_title?: string | null
   coins: number
+  total_tests_completed?: number
   // Membership
   membership: MembershipStatus
+  membership_status?: MembershipStatus
   program_type?: LessonProgram | 'THP' | string
   active_program?: LessonProgram
   can_access_ep?: boolean
@@ -284,6 +287,45 @@ export interface DashboardData {
   }
   recommended_skills?: WeakSkill[]
   affiliate_summary?: AffiliateSummary
+  /** Full child profile (`ChildOut`) — carries `total_tests_completed`, `current_rank_title`, … */
+  profile?: {
+    id?: string
+    total_xp?: number
+    total_score?: number
+    current_level?: number
+    streak_count?: number
+    days_active?: number
+    coins?: number
+    total_tests_completed?: number
+    average_test_accuracy?: number
+    current_rank_title?: string | null
+    rank_title?: string | null
+    membership_status?: string | null
+    membership?: string | null
+  }
+  /** Aggregate counters — `completed` is the real "บทเรียนจบ" number. */
+  lesson_summary?: {
+    available?: number
+    locked?: number
+    completed?: number
+  }
+  quest_summary?: {
+    daily?: number
+    weekly?: number
+    monthly?: number
+    completed?: number
+  }
+  status?: {
+    level?: number
+    total_xp?: number
+    total_score?: number
+    coins?: number
+    days_active?: number
+    rank_title?: string
+    test_attempts_used?: number
+    free_test_limit?: number
+    remaining_free_tests?: number
+  }
 }
 
 // ─── API ─────────────────────────────────────────────────────────────────────
