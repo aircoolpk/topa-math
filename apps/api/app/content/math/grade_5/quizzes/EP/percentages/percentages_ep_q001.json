@@ -1,0 +1,179 @@
+{
+  "lesson_id": "percentages_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "pct_ep_q001_e01",
+      "question_text": "Situation 1: A shirt costs 850 baht. 25% discount. How much is the discount?",
+      "question_text_th": "Situation 1: A shirt costs 850 baht. 25% discount. How much is the discount?",
+      "choices": [
+        "212.50 baht",
+        "212.50",
+        "200 baht",
+        "225 baht"
+      ],
+      "correct_answer": "212.50 baht",
+      "answer": "212.50 baht",
+      "explanation": "850 x 25/100 = 212.50 baht",
+      "explanation_th": "850 x 25/100 = 212.50 baht",
+      "difficulty": "easy",
+      "hint_th": "850 x 25% = 850 x 0.25 = 212.50 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_e02",
+      "question_text": "Situation 2: A bag costs 600 baht. 10% discount. What is the new price?",
+      "question_text_th": "Situation 2: A bag costs 600 baht. 10% discount. What is the new price?",
+      "choices": [
+        "540 baht",
+        "540",
+        "550 baht",
+        "530 baht"
+      ],
+      "correct_answer": "540 baht",
+      "answer": "540 baht",
+      "explanation": "600 x 10% = 60 baht discount | 600 - 60 = 540 baht",
+      "explanation_th": "600 x 10% = 60 baht discount | 600 - 60 = 540 baht",
+      "difficulty": "easy",
+      "hint_th": "600 x 10% = 60 baht off | 600 - 60 = 540 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_e03",
+      "question_text": "Situation 3: Deposit 50,000 baht at 3% interest per year. Interest earned in one year?",
+      "question_text_th": "Situation 3: Deposit 50,000 baht at 3% interest per year. Interest earned in one year?",
+      "choices": [
+        "1,500 baht",
+        "1500",
+        "1,300 baht",
+        "1,600 baht"
+      ],
+      "correct_answer": "1,500 baht",
+      "answer": "1,500 baht",
+      "explanation": "50,000 x 3/100 = 1,500 baht",
+      "explanation_th": "50,000 x 3/100 = 1,500 baht",
+      "difficulty": "easy",
+      "hint_th": "50,000 x 3% = 50,000 x 0.03 = 1,500 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_m01",
+      "question_text": "Situation 4: Shirt 850 baht. 25% off, then 10% off the discounted price. Final price?",
+      "question_text_th": "Situation 4: Shirt 850 baht. 25% off, then 10% off the discounted price. Final price?",
+      "choices": [
+        "573.75 baht",
+        "573.75",
+        "574 baht",
+        "573 baht"
+      ],
+      "correct_answer": "573.75 baht",
+      "answer": "573.75 baht",
+      "explanation": "850x25%=212.50 off -> 637.50 | 637.50x10%=63.75 off -> 637.50-63.75=573.75 baht",
+      "explanation_th": "850x25%=212.50 off -> 637.50 | 637.50x10%=63.75 off -> 637.50-63.75=573.75 baht",
+      "difficulty": "medium",
+      "hint_th": "850-212.50=637.50 | 637.50-63.75=573.75 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_m02",
+      "question_text": "Situation 5: Deposit 50,000 baht at 3% per year for 2.5 years. How much interest?",
+      "question_text_th": "Situation 5: Deposit 50,000 baht at 3% per year for 2.5 years. How much interest?",
+      "choices": [
+        "3,750 baht",
+        "3750",
+        "3,500 baht",
+        "4,000 baht"
+      ],
+      "correct_answer": "3,750 baht",
+      "answer": "3,750 baht",
+      "explanation": "50,000 x 3/100 x 2.5 = 50,000 x 0.075 = 3,750 baht",
+      "explanation_th": "50,000 x 3/100 x 2.5 = 50,000 x 0.075 = 3,750 baht",
+      "difficulty": "medium",
+      "hint_th": "50,000 x 0.03 x 2.5 = 3,750 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_m03",
+      "question_text": "Situation 6: Shop buys goods for 450 baht. Wants 20% profit. Selling price?",
+      "question_text_th": "Situation 6: Shop buys goods for 450 baht. Wants 20% profit. Selling price?",
+      "choices": [
+        "540 baht",
+        "540",
+        "530 baht",
+        "550 baht"
+      ],
+      "correct_answer": "540 baht",
+      "answer": "540 baht",
+      "explanation": "450 x 20/100 = 90 baht profit | 450 + 90 = 540 baht",
+      "explanation_th": "450 x 20/100 = 90 baht profit | 450 + 90 = 540 baht",
+      "difficulty": "medium",
+      "hint_th": "Profit = 450 x 20% = 90 baht | Selling = 450 + 90 = 540 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_m04",
+      "question_text": "Situation 7: TV 12,000 baht. 15% off, then 7% VAT added. Final price?",
+      "question_text_th": "Situation 7: TV 12,000 baht. 15% off, then 7% VAT added. Final price?",
+      "choices": [
+        "10,914 baht",
+        "10914",
+        "10,906 baht",
+        "10,000 baht"
+      ],
+      "correct_answer": "10,914 baht",
+      "answer": "10,914 baht",
+      "explanation": "12000x15%=1800 off -> 10200 | VAT = 10200x7%=714 | 10200+714=10914 baht",
+      "explanation_th": "12000x15%=1800 off -> 10200 | VAT = 10200x7%=714 | 10200+714=10914 baht",
+      "difficulty": "medium",
+      "hint_th": "12000-1800=10200 | VAT = 714 | Total = 10914 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_h01",
+      "question_text": "Situation 8: Product 850 baht. 20% off, then 10% off new price. Final price?",
+      "question_text_th": "Situation 8: Product 850 baht. 20% off, then 10% off new price. Final price?",
+      "choices": [
+        "612 baht",
+        "612",
+        "610 baht",
+        "615 baht"
+      ],
+      "correct_answer": "612 baht",
+      "answer": "612 baht",
+      "explanation": "850x20%=170 off -> 680 | 680x10%=68 off -> 680-68=612 baht",
+      "explanation_th": "850x20%=170 off -> 680 | 680x10%=68 off -> 680-68=612 baht",
+      "difficulty": "hard",
+      "hint_th": "850-170=680 | 680-68=612 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_h02",
+      "question_text": "Situation 9: Goods 3,500 baht. Sold at 30% profit but 5% discount on selling price. Net profit?",
+      "question_text_th": "Situation 9: Goods 3,500 baht. Sold at 30% profit but 5% discount on selling price. Net profit?",
+      "choices": [
+        "822.50 baht",
+        "822.50",
+        "825 baht",
+        "820 baht"
+      ],
+      "correct_answer": "822.50 baht",
+      "answer": "822.50 baht",
+      "explanation": "Selling = 3500x1.30 = 4550 | Discount = 4550x5% = 227.50 | Net profit = 4550-3500-227.50 = 822.50",
+      "explanation_th": "Selling = 3500x1.30 = 4550 | Discount = 4550x5% = 227.50 | Net profit = 4550-3500-227.50 = 822.50",
+      "difficulty": "hard",
+      "hint_th": "Selling=4550 | Discount=227.50 | Net profit=4550-3500-227.50=822.50 baht"
+    },
+    {
+      "question_id": "pct_ep_q001_h03",
+      "question_text": "Situation 10: Deposit 80,000 baht at 4% per year, pay 15% tax on interest. Net interest?",
+      "question_text_th": "Situation 10: Deposit 80,000 baht at 4% per year, pay 15% tax on interest. Net interest?",
+      "choices": [
+        "2,720 baht",
+        "2720",
+        "2,800 baht",
+        "2,600 baht"
+      ],
+      "correct_answer": "2,720 baht",
+      "answer": "2,720 baht",
+      "explanation": "80000x4%=3200 interest | Tax = 3200x15%=480 | Net = 3200-480=2720 baht",
+      "explanation_th": "80000x4%=3200 interest | Tax = 3200x15%=480 | Net = 3200-480=2720 baht",
+      "difficulty": "hard",
+      "hint_th": "Interest = 3,200 | Tax = 480 | Net = 2,720 baht"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

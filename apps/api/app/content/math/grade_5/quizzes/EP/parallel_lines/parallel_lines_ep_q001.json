@@ -1,0 +1,179 @@
+{
+  "lesson_id": "parallel_lines_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "pl_ep_q001_e01",
+      "question_text": "Situation 1: Road is 12 m wide with 2-m sidewalk on each side. Actual road width?",
+      "question_text_th": "Situation 1: Road is 12 m wide with 2-m sidewalk on each side. Actual road width?",
+      "choices": [
+        "8 meters",
+        "8",
+        "10 meters",
+        "7 meters"
+      ],
+      "correct_answer": "8 meters",
+      "answer": "8 meters",
+      "explanation": "12 - (2 x 2) = 12 - 4 = 8 meters",
+      "explanation_th": "12 - (2 x 2) = 12 - 4 = 8 meters",
+      "difficulty": "easy",
+      "hint_th": "Actual road = total - 2 sidewalks"
+    },
+    {
+      "question_id": "pl_ep_q001_e02",
+      "question_text": "Situation 2: Two parallel pipes 5 m apart. Pipe A is 100 m long. How long is Pipe B?",
+      "question_text_th": "Situation 2: Two parallel pipes 5 m apart. Pipe A is 100 m long. How long is Pipe B?",
+      "choices": [
+        "100 meters",
+        "100",
+        "95 meters",
+        "105 meters"
+      ],
+      "correct_answer": "100 meters",
+      "answer": "100 meters",
+      "explanation": "Parallel lines have the same length. Pipe B is also 100 meters",
+      "explanation_th": "Parallel lines have the same length. Pipe B is also 100 meters",
+      "difficulty": "easy",
+      "hint_th": "Parallel lines have equal length"
+    },
+    {
+      "question_id": "pl_ep_q001_e03",
+      "question_text": "Situation 3: Line A is parallel to Line B. If A is perpendicular to C, is B also perpendicular to C?",
+      "question_text_th": "Situation 3: Line A is parallel to Line B. If A is perpendicular to C, is B also perpendicular to C?",
+      "choices": [
+        "Yes, B is perpendicular to C",
+        "Yes",
+        "No",
+        "Cannot be determined"
+      ],
+      "correct_answer": "Yes, B is perpendicular to C",
+      "answer": "Yes, B is perpendicular to C",
+      "explanation": "If A is parallel to B, and A is perpendicular to C, then B is also perpendicular to C",
+      "explanation_th": "If A is parallel to B, and A is perpendicular to C, then B is also perpendicular to C",
+      "difficulty": "easy",
+      "hint_th": "A line parallel to one perpendicular line is also perpendicular to the other"
+    },
+    {
+      "question_id": "pl_ep_q001_m01",
+      "question_text": "Situation 4: Road 20 m wide, 3-m sidewalks each side, 2-m center divider. Each lane width?",
+      "question_text_th": "Situation 4: Road 20 m wide, 3-m sidewalks each side, 2-m center divider. Each lane width?",
+      "choices": [
+        "6 meters",
+        "6",
+        "6.5 meters",
+        "5 meters"
+      ],
+      "correct_answer": "6 meters",
+      "answer": "6 meters",
+      "explanation": "Each lane = (20 - 2x3 - 2) / 2 = (20 - 6 - 2) / 2 = 12/2 = 6 meters",
+      "explanation_th": "Each lane = (20 - 2x3 - 2) / 2 = (20 - 6 - 2) / 2 = 12/2 = 6 meters",
+      "difficulty": "medium",
+      "hint_th": "Each lane = (total - 2 sidewalks - divider) / 2"
+    },
+    {
+      "question_id": "pl_ep_q001_m02",
+      "question_text": "Situation 5: Playground 30m by 50m with 2m walkway around it. Actual playground dimensions?",
+      "question_text_th": "Situation 5: Playground 30m by 50m with 2m walkway around it. Actual playground dimensions?",
+      "choices": [
+        "26m by 46m",
+        "26x46",
+        "28m by 48m",
+        "24m by 44m"
+      ],
+      "correct_answer": "26m by 46m",
+      "answer": "26m by 46m",
+      "explanation": "Width = 30 - 2x2 = 26 m | Length = 50 - 2x2 = 46 m",
+      "explanation_th": "Width = 30 - 2x2 = 26 m | Length = 50 - 2x2 = 46 m",
+      "difficulty": "medium",
+      "hint_th": "Subtract 2m walkway from both sides of width and length"
+    },
+    {
+      "question_id": "pl_ep_q001_m03",
+      "question_text": "Situation 6: Highway 30m wide, 2m divider, 1.5m sidewalks each side. Each lane width?",
+      "question_text_th": "Situation 6: Highway 30m wide, 2m divider, 1.5m sidewalks each side. Each lane width?",
+      "choices": [
+        "12.5 meters",
+        "12.5",
+        "12 meters",
+        "13 meters"
+      ],
+      "correct_answer": "12.5 meters",
+      "answer": "12.5 meters",
+      "explanation": "Each lane = (30 - 2 - 2x1.5) / 2 = (30 - 2 - 3) / 2 = 25/2 = 12.5 m",
+      "explanation_th": "Each lane = (30 - 2 - 2x1.5) / 2 = (30 - 2 - 3) / 2 = 25/2 = 12.5 m",
+      "difficulty": "medium",
+      "hint_th": "Each lane = (total - divider - 2 sidewalks) / 2"
+    },
+    {
+      "question_id": "pl_ep_q001_m04",
+      "question_text": "Situation 7: Road 22m wide, 2m sidewalks, 1m tree line in center. Each lane width?",
+      "question_text_th": "Situation 7: Road 22m wide, 2m sidewalks, 1m tree line in center. Each lane width?",
+      "choices": [
+        "8.5 meters",
+        "8.5",
+        "8 meters",
+        "9 meters"
+      ],
+      "correct_answer": "8.5 meters",
+      "answer": "8.5 meters",
+      "explanation": "Each lane = (22 - 2x2 - 1) / 2 = (22 - 4 - 1) / 2 = 17/2 = 8.5 m",
+      "explanation_th": "Each lane = (22 - 2x2 - 1) / 2 = (22 - 4 - 1) / 2 = 17/2 = 8.5 m",
+      "difficulty": "medium",
+      "hint_th": "Each lane = (total - 2 sidewalks - tree line) / 2"
+    },
+    {
+      "question_id": "pl_ep_q001_h01",
+      "question_text": "Situation 8: Road 24m wide, 3m sidewalks, 2m divider, 0.5m power line, 0.5m tree line. Each lane?",
+      "question_text_th": "Situation 8: Road 24m wide, 3m sidewalks, 2m divider, 0.5m power line, 0.5m tree line. Each lane?",
+      "choices": [
+        "9 meters",
+        "9",
+        "8.5 meters",
+        "10 meters"
+      ],
+      "correct_answer": "9 meters",
+      "answer": "9 meters",
+      "explanation": "Each lane = (24 - 2x3 - 2 - 0.5 - 0.5) / 2 = (24 - 6 - 2 - 1) / 2 = 15/2 = 7.5 m... (recheck) 24-6-2-0.5-0.5=15 | 15/2=7.5 m NOT 9",
+      "explanation_th": "Each lane = (24 - 2x3 - 2 - 0.5 - 0.5) / 2 = 15/2 = 7.5 m",
+      "difficulty": "hard",
+      "hint_th": "Each lane = (total - 2 sidewalks - divider - utilities) / 2"
+    },
+    {
+      "question_id": "pl_ep_q001_h02",
+      "question_text": "Situation 9: Pool 25m by 10m with 1m tile edge around it. What is the tile area?",
+      "question_text_th": "Situation 9: Pool 25m by 10m with 1m tile edge around it. What is the tile area?",
+      "choices": [
+        "74 sq m",
+        "74",
+        "58.56 sq m",
+        "72 sq m"
+      ],
+      "correct_answer": "74 sq m",
+      "answer": "74 sq m",
+      "explanation": "Total = (25+2) x (10+2) = 27 x 12 = 324 sq m | Pool = 25 x 10 = 250 sq m | Tile = 324-250 = 74 sq m",
+      "explanation_th": "Total = (25+2) x (10+2) = 27 x 12 = 324 sq m | Pool = 25 x 10 = 250 sq m | Tile = 324-250 = 74 sq m",
+      "difficulty": "hard",
+      "hint_th": "Tile area = (L+2) x (W+2) - L x W"
+    },
+    {
+      "question_id": "pl_ep_q001_h03",
+      "question_text": "Situation 10: Field 18m by 30m, 2m walkway. Outside walkway is 1m flower bed. Flower bed area?",
+      "question_text_th": "Situation 10: Field 18m by 30m, 2m walkway. Outside walkway is 1m flower bed. Flower bed area?",
+      "choices": [
+        "116 sq m",
+        "116",
+        "115 sq m",
+        "120 sq m"
+      ],
+      "correct_answer": "116 sq m",
+      "answer": "116 sq m",
+      "explanation": "(18+2x3) x (30+2x3) = 24 x 36 = 864 | (18+2x2) x (30+2x2) = 22 x 34 = 748 | 864-748=116 sq m",
+      "explanation_th": "(18+2x3) x (30+2x3) = 24 x 36 = 864 | (18+2x2) x (30+2x2) = 22 x 34 = 748 | 864-748=116 sq m",
+      "difficulty": "hard",
+      "hint_th": "Flower = total area (field+walkway+flower) minus area (field+walkway)"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

@@ -1,10 +1,10 @@
 # Lesson Language And Variant Audit
 
-- Total lessons: 87
-- Complete lessons: 87
+- Total lessons: 0
+- Complete lessons: 0
 - Broken lessons: 0
-- TH lessons: 43
-- EP lessons: 44
+- TH lessons: 0
+- EP lessons: 0
 
 ## Blocking Examples
 

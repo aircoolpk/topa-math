@@ -1,0 +1,202 @@
+{
+  "variant_id": "add_sub_to_1000_ep_002",
+  "variant_title_th": "การบวกและการลบจำนวนนับไม่เกิน 1,000",
+  "variant_title_en": "Addition and Subtraction up to 1,000",
+  "status": "needs_review",
+  "title_th": "การบวกและการลบจำนวนนับไม่เกิน 1,000",
+  "title_en": "Addition and Subtraction up to 1,000",
+  "story_theme_th": "Book has a stamp collection of 620 stamps. He gave Malisa 245 stamps. He received 178 more stamps from his friend. How many stamps does Book have now?",
+  "helper_tip": "Subtract first, then add. Line up digits by place value.",
+  "think_story_th": "Subtract: 620 - 245 = 375 stamps, Add: 375 + 178 = 553 stamps",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Book has a stamp collection of 620 stamps. He gave Malisa 245 stamps. He received 178 more stamps from his friend. How many stamps does Book have now?",
+      "data": {
+        "content_th": "Book has a stamp collection of 620 stamps. He gave Malisa 245 stamps. He received 178 more stamps from his friend. How many stamps does Book have now?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Subtract: 620 - 245 = 375 stamps, Add: 375 + 178 = 553 stamps",
+      "data": {
+        "content_th": "Subtract: 620 - 245 = 375 stamps, Add: 375 + 178 = 553 stamps"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Collected",
+            "value": 620,
+            "display": "620 stamps",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Gave Malisa",
+            "value": 245,
+            "display": "245 stamps",
+            "color": "#FF6B6B",
+            "width_pct": 40
+          },
+          {
+            "label": "After giving",
+            "value": 375,
+            "display": "375 stamps",
+            "color": "#96CEB4",
+            "width_pct": 60,
+            "is_remainder": true
+          },
+          {
+            "label": "Received",
+            "value": 178,
+            "display": "178 stamps",
+            "color": "#45B7D1",
+            "width_pct": 29
+          },
+          {
+            "label": "Total",
+            "value": 553,
+            "display": "553 stamps",
+            "color": "#C7F464",
+            "width_pct": 89,
+            "is_total": true
+          }
+        ],
+        "unit": "stamps"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find stamps left after giving",
+            "expression": "620 - 245 = 375",
+            "a": 620,
+            "b": 245,
+            "res": 375,
+            "op": "-",
+            "formula": {
+              "display": "620 - 245 = 375",
+              "a": 620,
+              "b": 245,
+              "result": 375,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "620",
+              "b_display": "245",
+              "result_display": "375",
+              "operation": "subtract"
+            },
+            "story_connection": "620 - 245 = 375 stamps"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find total stamps",
+            "expression": "375 + 178 = 553",
+            "a": 375,
+            "b": 178,
+            "res": 553,
+            "op": "+",
+            "formula": {
+              "display": "375 + 178 = 553",
+              "a": 375,
+              "b": 178,
+              "result": 553,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "375",
+              "b_display": "178",
+              "result_display": "553",
+              "operation": "add"
+            },
+            "story_connection": "375 + 178 = 553 stamps"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "620 - 245 + 178 = 553",
+      "content": "620 - 245 + 178 = 553",
+      "data": {
+        "expression": "620 - 245 + 178 = 553",
+        "content_th": "620 - 245 + 178 = 553",
+        "operations": [
+          {
+            "op": "-",
+            "a": 620,
+            "b": 245,
+            "result": 375
+          },
+          {
+            "op": "+",
+            "a": 375,
+            "b": 178,
+            "result": 553
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A bakery made 780 breads. They sold 350 and made 295 more. How many breads are there?",
+      "choices": [
+        "715 breads",
+        "725 breads",
+        "705 breads",
+        "735 breads"
+      ],
+      "correct_answer": "725 breads",
+      "explanation": "780 - 350 = 430, 430 + 295 = 725 breads",
+      "data": {
+        "question": "A bakery made 780 breads. They sold 350 and made 295 more. How many breads are there?",
+        "choices": [
+          "715 breads",
+          "725 breads",
+          "705 breads",
+          "735 breads"
+        ],
+        "correct_answer": "725 breads",
+        "explanation": "780 - 350 = 430, 430 + 295 = 725 breads"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

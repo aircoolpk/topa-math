@@ -1,0 +1,381 @@
+{
+  "quiz_id": "fractions_ep_q001",
+  "title_th": "เศษส่วน",
+  "title_en": "Fractions",
+  "status": "needs_review",
+  "variant_id": "fractions_ep_q001",
+  "variant_title_th": "เศษส่วน",
+  "variant_title_en": "Fractions",
+  "questions": [
+    {
+      "question_id": "fraction_q001_m01",
+      "type": "multiple_choice",
+      "question_th": "1/4 + 1/4 = ?",
+      "question_en": "1/4 + 1/4 = ?",
+      "choices_th": [
+        "1/8",
+        "1/2",
+        "2/8",
+        "4/4"
+      ],
+      "choices_en": [
+        "1/8",
+        "1/2",
+        "2/8",
+        "4/4"
+      ],
+      "correct_answer_th": "1/2",
+      "correct_answer_en": "1/2",
+      "answer_th": "1/2",
+      "answer_en": "1/2",
+      "answer": "1/2",
+      "explanation_th": "1/4 + 1/4 = 2/4 = 1/2",
+      "explanation_en": "1/4 + 1/4 = 2/4 = 1/2",
+      "difficulty": "easy",
+      "choices": [
+        "1/8",
+        "1/2",
+        "2/8",
+        "4/4"
+      ],
+      "correct_answer": "1/2",
+      "question_text": "1/4 + 1/4 = ?",
+      "explanation": "1/4 + 1/4 = 2/4 = 1/2",
+      "question_text_th": "1/4 + 1/4 = ?",
+      "question_text_en": "1/4 + 1/4 = ?"
+    },
+    {
+      "question_id": "fraction_q001_m02",
+      "type": "multiple_choice",
+      "question_th": "3/5 - 1/5 = ?",
+      "question_en": "3/5 - 1/5 = ?",
+      "choices_th": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "choices_en": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer_th": "2/5",
+      "correct_answer_en": "2/5",
+      "answer_th": "2/5",
+      "answer_en": "2/5",
+      "answer": "2/5",
+      "explanation_th": "3/5 - 1/5 = 2/5",
+      "explanation_en": "3/5 - 1/5 = 2/5",
+      "difficulty": "easy",
+      "choices": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "2/5",
+      "question_text": "3/5 - 1/5 = ?",
+      "explanation": "3/5 - 1/5 = 2/5",
+      "question_text_th": "3/5 - 1/5 = ?",
+      "question_text_en": "3/5 - 1/5 = ?"
+    },
+    {
+      "question_id": "fraction_q001_m03",
+      "type": "multiple_choice",
+      "question_th": "พิซซ่า 1 ถาด แบ่งให้เด็ก 4 คน คนละเท่าๆ กัน คนหนึ่งได้เท่าไร",
+      "question_en": "A pizza is divided equally among 4 children. How much does each child get?",
+      "choices_th": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5"
+      ],
+      "choices_en": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5"
+      ],
+      "correct_answer_th": "1/4",
+      "correct_answer_en": "1/4",
+      "answer_th": "1/4",
+      "answer_en": "1/4",
+      "answer": "1/4",
+      "explanation_th": "1 pizza ÷ 4 children = 1/4",
+      "explanation_en": "1 pizza ÷ 4 children = 1/4",
+      "difficulty": "easy",
+      "choices": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5"
+      ],
+      "correct_answer": "1/4",
+      "question_text": "พิซซ่า 1 ถาด แบ่งให้เด็ก 4 คน คนละเท่าๆ กัน คนหนึ่งได้เท่าไร",
+      "explanation": "1 pizza ÷ 4 children = 1/4",
+      "question_text_th": "พิซซ่า 1 ถาด แบ่งให้เด็ก 4 คน คนละเท่าๆ กัน คนหนึ่งได้เท่าไร",
+      "question_text_en": "A pizza is divided equally among 4 children. How much does each child get?"
+    },
+    {
+      "question_id": "fraction_q001_m04",
+      "type": "multiple_choice",
+      "question_th": "2/3 + 1/6 = ?",
+      "question_en": "2/3 + 1/6 = ?",
+      "choices_th": [
+        "3/9",
+        "5/6",
+        "3/6",
+        "1/2"
+      ],
+      "choices_en": [
+        "3/9",
+        "5/6",
+        "3/6",
+        "1/2"
+      ],
+      "correct_answer_th": "5/6",
+      "correct_answer_en": "5/6",
+      "answer_th": "5/6",
+      "answer_en": "5/6",
+      "answer": "5/6",
+      "explanation_th": "2/3 = 4/6, 4/6 + 1/6 = 5/6",
+      "explanation_en": "2/3 = 4/6, 4/6 + 1/6 = 5/6",
+      "difficulty": "medium",
+      "choices": [
+        "3/9",
+        "5/6",
+        "3/6",
+        "1/2"
+      ],
+      "correct_answer": "5/6",
+      "question_text": "2/3 + 1/6 = ?",
+      "explanation": "2/3 = 4/6, 4/6 + 1/6 = 5/6",
+      "question_text_th": "2/3 + 1/6 = ?",
+      "question_text_en": "2/3 + 1/6 = ?"
+    },
+    {
+      "question_id": "fraction_q001_m05",
+      "type": "multiple_choice",
+      "question_th": "5/8 - 1/4 = ?",
+      "question_en": "5/8 - 1/4 = ?",
+      "choices_th": [
+        "3/8",
+        "4/8",
+        "3/4",
+        "1/2"
+      ],
+      "choices_en": [
+        "3/8",
+        "4/8",
+        "3/4",
+        "1/2"
+      ],
+      "correct_answer_th": "3/8",
+      "correct_answer_en": "3/8",
+      "answer_th": "3/8",
+      "answer_en": "3/8",
+      "answer": "3/8",
+      "explanation_th": "1/4 = 2/8, 5/8 - 2/8 = 3/8",
+      "explanation_en": "1/4 = 2/8, 5/8 - 2/8 = 3/8",
+      "difficulty": "medium",
+      "choices": [
+        "3/8",
+        "4/8",
+        "3/4",
+        "1/2"
+      ],
+      "correct_answer": "3/8",
+      "question_text": "5/8 - 1/4 = ?",
+      "explanation": "1/4 = 2/8, 5/8 - 2/8 = 3/8",
+      "question_text_th": "5/8 - 1/4 = ?",
+      "question_text_en": "5/8 - 1/4 = ?"
+    },
+    {
+      "question_id": "fraction_q001_m06",
+      "type": "multiple_choice",
+      "question_th": "เปรี้ยว 2/5 ของถ้วย และหวาน 1/4 ของถ้วย รวมกันกี่ส่วนของถ้วย",
+      "question_en": "Tang has 2/5 of a bowl and Som has 1/4 of a bowl. How many parts of the bowl in total?",
+      "choices_th": [
+        "13/20",
+        "3/9",
+        "5/9",
+        "8/20"
+      ],
+      "choices_en": [
+        "13/20",
+        "3/9",
+        "5/9",
+        "8/20"
+      ],
+      "correct_answer_th": "13/20",
+      "correct_answer_en": "13/20",
+      "answer_th": "13/20",
+      "answer_en": "13/20",
+      "answer": "13/20",
+      "explanation_th": "2/5 = 8/20, 1/4 = 5/20, total = 13/20",
+      "explanation_en": "2/5 = 8/20, 1/4 = 5/20, total = 13/20",
+      "difficulty": "medium",
+      "choices": [
+        "13/20",
+        "3/9",
+        "5/9",
+        "8/20"
+      ],
+      "correct_answer": "13/20",
+      "question_text": "เปรี้ยว 2/5 ของถ้วย และหวาน 1/4 ของถ้วย รวมกันกี่ส่วนของถ้วย",
+      "explanation": "2/5 = 8/20, 1/4 = 5/20, total = 13/20",
+      "question_text_th": "เปรี้ยว 2/5 ของถ้วย และหวาน 1/4 ของถ้วย รวมกันกี่ส่วนของถ้วย",
+      "question_text_en": "Tang has 2/5 of a bowl and Som has 1/4 of a bowl. How many parts of the bowl in total?"
+    },
+    {
+      "question_id": "fraction_q001_m07",
+      "type": "multiple_choice",
+      "question_th": "1/3 ของ 60 คือเท่าไร",
+      "question_en": "1/3 of 60 = ?",
+      "choices_th": [
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "choices_en": [
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "correct_answer_th": "20",
+      "correct_answer_en": "20",
+      "answer_th": "20",
+      "answer_en": "20",
+      "answer": "20",
+      "explanation_th": "1/3 × 60 = 60 ÷ 3 = 20",
+      "explanation_en": "1/3 × 60 = 60 ÷ 3 = 20",
+      "difficulty": "easy",
+      "choices": [
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "correct_answer": "20",
+      "question_text": "1/3 ของ 60 คือเท่าไร",
+      "explanation": "1/3 × 60 = 60 ÷ 3 = 20",
+      "question_text_th": "1/3 ของ 60 คือเท่าไร",
+      "question_text_en": "1/3 of 60 = ?"
+    },
+    {
+      "question_id": "fraction_q001_m08",
+      "type": "multiple_choice",
+      "question_th": "3/7 + 2/5 = ?",
+      "question_en": "3/7 + 2/5 = ?",
+      "choices_th": [
+        "5/12",
+        "29/35",
+        "1",
+        "15/35"
+      ],
+      "choices_en": [
+        "5/12",
+        "29/35",
+        "1",
+        "15/35"
+      ],
+      "correct_answer_th": "29/35",
+      "correct_answer_en": "29/35",
+      "answer_th": "29/35",
+      "answer_en": "29/35",
+      "answer": "29/35",
+      "explanation_th": "3/7 = 15/35, 2/5 = 14/35, total = 29/35",
+      "explanation_en": "3/7 = 15/35, 2/5 = 14/35, total = 29/35",
+      "difficulty": "hard",
+      "choices": [
+        "5/12",
+        "29/35",
+        "1",
+        "15/35"
+      ],
+      "correct_answer": "29/35",
+      "question_text": "3/7 + 2/5 = ?",
+      "explanation": "3/7 = 15/35, 2/5 = 14/35, total = 29/35",
+      "question_text_th": "3/7 + 2/5 = ?",
+      "question_text_en": "3/7 + 2/5 = ?"
+    },
+    {
+      "question_id": "fraction_q001_m09",
+      "type": "multiple_choice",
+      "question_th": "5/6 - 1/3 = ?",
+      "question_en": "5/6 - 1/3 = ?",
+      "choices_th": [
+        "1/2",
+        "3/6",
+        "1",
+        "2/3"
+      ],
+      "choices_en": [
+        "1/2",
+        "3/6",
+        "1",
+        "2/3"
+      ],
+      "correct_answer_th": "1/2",
+      "correct_answer_en": "1/2",
+      "answer_th": "1/2",
+      "answer_en": "1/2",
+      "answer": "1/2",
+      "explanation_th": "1/3 = 2/6, 5/6 - 2/6 = 3/6 = 1/2",
+      "explanation_en": "1/3 = 2/6, 5/6 - 2/6 = 3/6 = 1/2",
+      "difficulty": "medium",
+      "choices": [
+        "1/2",
+        "3/6",
+        "1",
+        "2/3"
+      ],
+      "correct_answer": "1/2",
+      "question_text": "5/6 - 1/3 = ?",
+      "explanation": "1/3 = 2/6, 5/6 - 2/6 = 3/6 = 1/2",
+      "question_text_th": "5/6 - 1/3 = ?",
+      "question_text_en": "5/6 - 1/3 = ?"
+    },
+    {
+      "question_id": "fraction_q001_m10",
+      "type": "multiple_choice",
+      "question_th": "2/9 + 4/9 = ?",
+      "question_en": "2/9 + 4/9 = ?",
+      "choices_th": [
+        "2/3",
+        "6/18",
+        "6/9",
+        "1"
+      ],
+      "choices_en": [
+        "2/3",
+        "6/18",
+        "6/9",
+        "1"
+      ],
+      "correct_answer_th": "2/3",
+      "correct_answer_en": "2/3",
+      "answer_th": "2/3",
+      "answer_en": "2/3",
+      "answer": "2/3",
+      "explanation_th": "2/9 + 4/9 = 6/9 = 2/3",
+      "explanation_en": "2/9 + 4/9 = 6/9 = 2/3",
+      "difficulty": "easy",
+      "choices": [
+        "2/3",
+        "6/18",
+        "6/9",
+        "1"
+      ],
+      "correct_answer": "2/3",
+      "question_text": "2/9 + 4/9 = ?",
+      "explanation": "2/9 + 4/9 = 6/9 = 2/3",
+      "question_text_th": "2/9 + 4/9 = ?",
+      "question_text_en": "2/9 + 4/9 = ?"
+    }
+  ]
+}

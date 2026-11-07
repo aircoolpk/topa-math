@@ -1,0 +1,326 @@
+{
+  "variant_id": "mixed_operations_ep_001",
+  "variant_title_th": "การดำเนินการผสม - ปาร์ตี้วันเกิด",
+  "variant_title_en": "Birthday Party Theme",
+  "status": "needs_review",
+  "title_en": "Mixed Addition and Subtraction",
+  "title_th": "การบวกและการลบผสมกัน",
+  "story_theme_en": "Mai has 25 candies. She receives 18 more candies from her friends at her birthday party. Later, she gives 12 candies to her brother. How many candies does Mai have now?",
+  "helper_tip_en": "Read the problem carefully. First add the candies received, then subtract the candies given away. Draw a bar model to help you see the parts and the whole.",
+  "think_story_en": "Mai starts with 25 candies. She receives 18 more: 25 + 18 = 43 candies. Then she gives away 12: 43 - 12 = 31 candies. Mai has 31 candies now.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mai has 25 candies. She receives 18 more candies from her friends at her birthday party. Later, she gives 12 candies to her brother. How many candies does Mai have now?",
+      "data": {
+        "content_en": "Mai has 25 candies. She receives 18 more candies from her friends at her birthday party. Later, she gives 12 candies to her brother. How many candies does Mai have now?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Mai starts with 25 candies. She receives 18 more: 25 + 18 = 43 candies. Then she gives away 12: 43 - 12 = 31 candies. Mai has 31 candies now.",
+      "data": {
+        "content_en": "Mai starts with 25 candies. She receives 18 more: 25 + 18 = 43 candies. Then she gives away 12: 43 - 12 = 31 candies. Mai has 31 candies now."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the part-whole relationship",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "part_a": 25,
+        "part_b": 18,
+        "whole": 43,
+        "subtract_amount": 12,
+        "final_remainder": 31,
+        "unit": "candies",
+        "bars": [
+          {
+            "label": "Mai's candies",
+            "value": 25,
+            "display": "25 candies",
+            "color": "#4ECDC4",
+            "width_pct": 58
+          },
+          {
+            "label": "Received",
+            "value": 18,
+            "display": "18 candies",
+            "color": "#45B7D1",
+            "width_pct": 42
+          },
+          {
+            "label": "Total",
+            "value": 43,
+            "display": "43 candies",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Given away",
+            "value": 12,
+            "display": "12 candies",
+            "color": "#FF6B6B",
+            "width_pct": 28
+          },
+          {
+            "label": "Remaining",
+            "value": 31,
+            "display": "31 candies",
+            "color": "#C7F464",
+            "width_pct": 72,
+            "is_remainder": true
+          }
+        ],
+        "relationships": [
+          {
+            "from": 0,
+            "to": 2,
+            "type": "adds_to",
+            "label": "+"
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "type": "adds_to",
+            "label": "+"
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "type": "subtracts_to",
+            "label": "-"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "type": "equals_remainder",
+            "label": "="
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and calculate the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find the total candies after receiving",
+            "expression": "25 + 18 = 43",
+            "formula": {
+              "display": "25 + 18 = 43",
+              "a": 25,
+              "b": 18,
+              "result": 43,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}25&\\\\ +\\quad 18&\\\\ \\hline 43&\\\\ \\hline \\end{array}",
+              "a_display": "25",
+              "b_display": "18",
+              "result_display": "43",
+              "operation": "add"
+            },
+            "story_connection": "Mai's 25 candies + received 18 = 43 candies"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find the remaining candies after giving away",
+            "expression": "43 - 12 = 31",
+            "formula": {
+              "display": "43 - 12 = 31",
+              "a": 43,
+              "b": 12,
+              "result": 31,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}43&\\\\ -\\quad 12&\\\\ \\hline 31&\\\\ \\hline \\end{array}",
+              "a_display": "43",
+              "b_display": "12",
+              "result_display": "31",
+              "operation": "subtract"
+            },
+            "story_connection": "Total 43 candies - given away 12 = 31 candies remaining"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentences",
+      "expression": "25 + 18 = 43",
+      "content": "25 + 18 = 43  |  43 - 12 = 31",
+      "data": {
+        "expression": "25 + 18 = 43",
+        "operations": [
+          {
+            "op": "+",
+            "a": 25,
+            "b": 18,
+            "result": 43
+          },
+          {
+            "op": "-",
+            "a": 43,
+            "b": 12,
+            "result": 31
+          }
+        ],
+        "content_en": "25 + 18 = 43 | 43 - 12 = 31"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Tom has 34 stickers. He buys 15 more stickers. Then he loses 8 stickers. How many stickers does Tom have now?",
+      "choices": [
+        "41 stickers",
+        "49 stickers",
+        "43 stickers",
+        "39 stickers"
+      ],
+      "correct_answer": "41 stickers",
+      "explanation": "34 + 15 = 49, then 49 - 8 = 41 stickers",
+      "data": {
+        "question": "Tom has 34 stickers. He buys 15 more stickers. Then he loses 8 stickers. How many stickers does Tom have now?",
+        "choices": [
+          "41 stickers",
+          "49 stickers",
+          "43 stickers",
+          "39 stickers"
+        ],
+        "correct_answer": "41 stickers",
+        "explanation": "34 + 15 = 49, then 49 - 8 = 41 stickers"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Read the word problem carefully. Find what numbers are involved and what the question asks.",
+    "Look for words that tell you to add (receive, get, buy, find) or subtract (give away, lose, spend, eat).",
+    "Draw a bar model to show the parts and the whole.",
+    "First do the addition, then do the subtraction in order.",
+    "Check your answer by reading the problem again."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Mixed Operations",
+      "question_en": "Lin has 20 marbles. She wins 14 more. Then she gives away 6. How many does she have?",
+      "solution_en": "20 + 14 = 34, then 34 - 6 = 28 marbles. ✅"
+    },
+    {
+      "title_en": "Example: Two-Step Word Problem",
+      "question_en": "A shop has 45 apples. They sell 23 in the morning and 12 in the afternoon. How many are left?",
+      "solution_en": "45 - 23 = 22, then 22 - 12 = 10 apples left. ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Doing subtraction before addition when both operations are present.",
+    "Forgetting to carry when adding (e.g., 8 + 7 = 15, writing 5 and carrying 1).",
+    "Not reading the problem carefully and doing the wrong operation."
+  ],
+  "hints_en": [
+    "Look for clue words: 'receives', 'gets', 'buys' mean add. 'Gives away', 'loses', 'eats' mean subtract.",
+    "Draw a bar model to visualize the parts and whole.",
+    "Solve in the order the actions happen."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together using the + sign"
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number using the - sign"
+    },
+    {
+      "en": "total",
+      "th": "รวม",
+      "definition_en": "The complete amount after adding"
+    },
+    {
+      "en": "remaining",
+      "th": "เหลือ",
+      "definition_en": "What is left after subtracting"
+    },
+    {
+      "en": "receive",
+      "th": "ได้รับ",
+      "definition_en": "To be given something"
+    },
+    {
+      "en": "give away",
+      "th": "แจก",
+      "definition_en": "To hand out or share something"
+    },
+    {
+      "en": "operation",
+      "th": "การดำเนินการ",
+      "definition_en": "A mathematical action like addition or subtraction"
+    },
+    {
+      "en": "mixed operations",
+      "th": "การดำเนินการผสม",
+      "definition_en": "Using both addition and subtraction in one problem"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "30 + 25 - 10 = ?",
+      "choices": [
+        "45",
+        "55",
+        "35",
+        "65"
+      ],
+      "answer": "45",
+      "explanation": "30 + 25 = 55, then 55 - 10 = 45"
+    },
+    {
+      "q": "A shop has 50 boxes of crayons. They sell 18 on Monday and 12 on Tuesday. How many boxes are left?",
+      "choices": [
+        "20 boxes",
+        "30 boxes",
+        "18 boxes",
+        "22 boxes"
+      ],
+      "answer": "20 boxes",
+      "explanation": "50 - 18 = 32, then 32 - 12 = 20"
+    },
+    {
+      "q": "48 + 14 - 22 = ?",
+      "choices": [
+        "40",
+        "38",
+        "36",
+        "42"
+      ],
+      "answer": "40",
+      "explanation": "48 + 14 = 62, then 62 - 22 = 40"
+    },
+    {
+      "q": "Lin has 36 coins. She finds 15 more and then spends 20. How many does she have?",
+      "choices": [
+        "31 coins",
+        "29 coins",
+        "33 coins",
+        "27 coins"
+      ],
+      "answer": "31 coins",
+      "explanation": "36 + 15 = 51, then 51 - 20 = 31"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Mixed operations problems involve both addition and subtraction. Read carefully to identify when to add (when receiving, gaining, or finding) and when to subtract (when giving away, losing, or spending). Solve in the order the events happen."
+}

@@ -1,0 +1,179 @@
+{
+  "lesson_id": "weight_measurement_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "wt_ep_q001_e01",
+      "question_text": "A watermelon weighs 7 kg. A papaya weighs 3 kg. How much heavier is the watermelon than the papaya?",
+      "question_text_th": "แตงโมหนัก 7 กิโลกรัม มะลึกหนัก 3 กิโลกรัม แตงโมหนักกว่ามะลึกกี่กิโลกรัม",
+      "choices": [
+        "4 kg heavier",
+        "7 kg heavier",
+        "2 kg heavier",
+        "10 kg heavier"
+      ],
+      "correct_answer": "4 kg heavier",
+      "answer": "4 kg heavier",
+      "explanation": "7 - 3 = 4 kg heavier",
+      "explanation_th": "7 - 3 = 4 กก.",
+      "difficulty": "easy",
+      "hint_th": "Subtract the weights."
+    },
+    {
+      "question_id": "wt_ep_q001_e02",
+      "question_text": "Book's bag weighs 5 kg. Mali's bag weighs 8 kg. How much heavier is Mali's bag than Book's bag?",
+      "question_text_th": "กระเป๋าบุ๊กหนัก 5 กิโลกรัม กระเป๋ามะลิหนัก 8 กิโลกรัม กระเป๋ามะลิหนักกว่าบุ๊กกี่กิโลกรัม",
+      "choices": [
+        "3 kg heavier",
+        "6 kg heavier",
+        "1 kg heavier",
+        "9 kg heavier"
+      ],
+      "correct_answer": "3 kg heavier",
+      "answer": "3 kg heavier",
+      "explanation": "8 - 5 = 3 kg heavier",
+      "explanation_th": "8 - 5 = 3 กก.",
+      "difficulty": "easy",
+      "hint_th": "Find the difference."
+    },
+    {
+      "question_id": "wt_ep_q001_e03",
+      "question_text": "A pumpkin weighs 6 kg. A tomato weighs 2 kg. How much do they weigh together?",
+      "question_text_th": "ฟักทองหนัก 6 กิโลกรัม มะเขือเทศหนัก 2 กิโลกรัม ทั้งสองหนักรวมกี่กิโลกรัม",
+      "choices": [
+        "8 kg",
+        "11 kg",
+        "6 kg",
+        "14 kg"
+      ],
+      "correct_answer": "8 kg",
+      "answer": "8 kg",
+      "explanation": "6 + 2 = 8 kg",
+      "explanation_th": "6 + 2 = 8 กก.",
+      "difficulty": "easy",
+      "hint_th": "Add the two weights."
+    },
+    {
+      "question_id": "wt_ep_q001_m01",
+      "question_text": "A bag of rice weighs 15 kg. A box of cookies weighs 6 kg. How much heavier is the rice than the cookies?",
+      "question_text_th": "ข้าวสารหนัก 15 กิโลกรัม กล่องคุกกี้หนัก 6 กิโลกรัม ข้าวสารหนักกว่าคุกกี้กี่กิโลกรัม",
+      "choices": [
+        "9 kg heavier",
+        "12 kg heavier",
+        "7 kg heavier",
+        "15 kg heavier"
+      ],
+      "correct_answer": "9 kg heavier",
+      "answer": "9 kg heavier",
+      "explanation": "15 - 6 = 9 kg heavier",
+      "explanation_th": "15 - 6 = 9 กก.",
+      "difficulty": "medium",
+      "hint_th": "Subtract the weights."
+    },
+    {
+      "question_id": "wt_ep_q001_m02",
+      "question_text": "Lin weighs 18 kg. Ai weighs 12 kg. How much heavier is Lin than Ai?",
+      "question_text_th": "ลินหนัก 18 กิโลกรัม อ้ายหนัก 12 กิโลกรัม ลินหนักกว่าอ้ายกี่กิโลกรัม",
+      "choices": [
+        "6 kg heavier",
+        "9 kg heavier",
+        "4 kg heavier",
+        "12 kg heavier"
+      ],
+      "correct_answer": "6 kg heavier",
+      "answer": "6 kg heavier",
+      "explanation": "18 - 12 = 6 kg heavier",
+      "explanation_th": "18 - 12 = 6 กก.",
+      "difficulty": "medium",
+      "hint_th": "Subtract Ai from Lin."
+    },
+    {
+      "question_id": "wt_ep_q001_m03",
+      "question_text": "A small box weighs 7 kg. A big box weighs 14 kg. How much heavier is the big box than the small box?",
+      "question_text_th": "กล่องเล็กหนัก 7 กิโลกรัม กล่องใหญ่หนัก 14 กิโลกรัม กล่องใหญ่หนักกว่ากล่องเล็กกี่กิโลกรัม",
+      "choices": [
+        "7 kg heavier",
+        "10 kg heavier",
+        "5 kg heavier",
+        "13 kg heavier"
+      ],
+      "correct_answer": "7 kg heavier",
+      "answer": "7 kg heavier",
+      "explanation": "14 - 7 = 7 kg heavier",
+      "explanation_th": "14 - 7 = 7 กก.",
+      "difficulty": "medium",
+      "hint_th": "Double the small box."
+    },
+    {
+      "question_id": "wt_ep_q001_m04",
+      "question_text": "Mali's pumpkin weighs 20 kg. She cuts it into two parts: one part weighs 8 kg. How much does the other part weigh?",
+      "question_text_th": "ฟักทองมะลิหนัก 20 กิโลกรัม ตัดเป็นสองส่วน ส่วนหนึ่งหนัก 8 กิโลกรัม อีกส่วนหนักกี่กิโลกรัม",
+      "choices": [
+        "12 kg",
+        "15 kg",
+        "10 kg",
+        "18 kg"
+      ],
+      "correct_answer": "12 kg",
+      "answer": "12 kg",
+      "explanation": "20 - 8 = 12 kg",
+      "explanation_th": "20 - 8 = 12 กก.",
+      "difficulty": "medium",
+      "hint_th": "Subtract from total."
+    },
+    {
+      "question_id": "wt_ep_q001_h01",
+      "question_text": "A watermelon weighs 9 kg. A papaya weighs 4 kg. A mango weighs 3 kg. What is the total weight of all three fruits?",
+      "question_text_th": "แตงโมหนัก 9 กิโลกรัม มะลึกหนัก 4 กิโลกรัม มะม่วงหนัก 3 กิโลกรัม รวมทั้งสามผลหนักกี่กิโลกรัม",
+      "choices": [
+        "16 kg",
+        "19 kg",
+        "14 kg",
+        "22 kg"
+      ],
+      "correct_answer": "16 kg",
+      "answer": "16 kg",
+      "explanation": "9 + 4 + 3 = 16 kg",
+      "explanation_th": "9 + 4 + 3 = 16 กก.",
+      "difficulty": "hard",
+      "hint_th": "Add all three."
+    },
+    {
+      "question_id": "wt_ep_q001_h02",
+      "question_text": "A bag of rice weighs 18 kg. After using some rice, the bag weighs 11 kg. How much rice was used?",
+      "question_text_th": "ข้าวสารหนัก 18 กิโลกรัม ใช้ไปบางส่วน เหลือ 11 กิโลกรัม ใช้ข้าวไปกี่กิโลกรัม",
+      "choices": [
+        "7 kg",
+        "10 kg",
+        "5 kg",
+        "13 kg"
+      ],
+      "correct_answer": "7 kg",
+      "answer": "7 kg",
+      "explanation": "18 - 11 = 7 kg",
+      "explanation_th": "18 - 11 = 7 กก.",
+      "difficulty": "hard",
+      "hint_th": "Subtract remaining."
+    },
+    {
+      "question_id": "wt_ep_q001_h03",
+      "question_text": "Lin has a watermelon of 15 kg and a pumpkin of 9 kg. She gives the pumpkin to Mali and gets a papaya of 7 kg from Mali. What is the difference between Lin's fruits now?",
+      "question_text_th": "ลินมีแตงโม 15 กิโลกรัม และฟักทอง 9 กิโลกรัม ให้ฟักทองมะลิ และรับมะลึก 7 กิโลกรัมจากมะลิ ลินมีผลไม้รวมต่างกันกี่กิโลกรัม",
+      "choices": [
+        "13 kg difference",
+        "16 kg difference",
+        "11 kg difference",
+        "19 kg difference"
+      ],
+      "correct_answer": "13 kg difference",
+      "answer": "13 kg difference",
+      "explanation": "(15 + 7) - 9 = 22 - 9 = 13 kg difference",
+      "explanation_th": "(15 + 7) - 9 = 22 - 9 = 13 กก.",
+      "difficulty": "hard",
+      "hint_th": "Swap and compare."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

@@ -1,0 +1,193 @@
+{
+  "variant_id": "percentages_ratios_ep_001",
+  "variant_title_en": "Percentages and Ratios",
+  "status": "needs_review",
+  "title_en": "Percentages and Ratios",
+  "title_th": "ร้อยละและอัตราส่วน",
+  "story_theme_en": "A shop gives a 25% discount on a T-shirt originally priced at 200 baht. What is the new price? If Lin buys 4 T-shirts, how much does she pay in total?",
+  "helper_tip": "25% = 25/100 = 1/4 of the price",
+  "hint_th": "ร้อยละ 25 = 25/100 = 1/4 ของราคา",
+  "think_story_en": "Discount 25% of 200 = 25/100 × 200 = 50 baht. New price = 200 - 50 = 150 baht. Buying 4 T-shirts = 150 × 4 = 600 baht.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A shop gives a 25% discount on a T-shirt originally priced at 200 baht. What is the new price? If Lin buys 4 T-shirts, how much does she pay in total?",
+      "data": {
+        "content_en": "A shop gives a 25% discount on a T-shirt originally priced at 200 baht. What is the new price? If Lin buys 4 T-shirts, how much does she pay in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Discount 25% of 200 = 25/100 × 200 = 50 baht. New price = 200 - 50 = 150 baht. Buying 4 T-shirts = 150 × 4 = 600 baht.",
+      "data": {
+        "content_en": "Discount 25% of 200 = 25/100 × 200 = 50 baht. New price = 200 - 50 = 150 baht. Buying 4 T-shirts = 150 × 4 = 600 baht."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "baht",
+        "bars": [
+          {
+            "label": "Original Price",
+            "value": 200,
+            "display": "200 baht",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "25% Discount",
+            "value": 50,
+            "display": "50 baht",
+            "color": "#FF6B6B",
+            "width_pct": 25
+          },
+          {
+            "label": "New Price",
+            "value": 150,
+            "display": "150 baht",
+            "color": "#96CEB4",
+            "width_pct": 75,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "25/100 × 200 = 50",
+            "formula": {
+              "display": "25/100 × 200 = 50",
+              "a": 25,
+              "b": 100,
+              "result": 50,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}25&\\ ÷\\quad 100&\\ \\hline 50&\\\\ \\hline \\end{array}",
+              "a_display": "25",
+              "b_display": "100",
+              "result_display": "50",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 25/100 × 200 = 50"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "200 - 50 = 150",
+            "formula": {
+              "display": "200 - 50 = 150",
+              "a": 200,
+              "b": 50,
+              "result": 150,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}200&\\ -\\quad 50&\\ \\hline 150&\\\\ \\hline \\end{array}",
+              "a_display": "200",
+              "b_display": "50",
+              "result_display": "150",
+              "operation": "subtract"
+            },
+            "story_connection": "From bar model: 200 - 50 = 150"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "150 × 4 = 600",
+            "formula": {
+              "display": "150 × 4 = 600",
+              "a": 150,
+              "b": 4,
+              "result": 600,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}150&\\ ×\\quad 4&\\ \\hline 600&\\\\ \\hline \\end{array}",
+              "a_display": "150",
+              "b_display": "4",
+              "result_display": "600",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 150 × 4 = 600"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "25/100 × 200 = 50 | 200 - 50 = 150 | 150 × 4 = 600",
+      "content": "25/100 × 200 = 50 | 200 - 50 = 150 | 150 × 4 = 600",
+      "data": {
+        "expression": "25/100 × 200 = 50 | 200 - 50 = 150 | 150 × 4 = 600",
+        "operations": [
+          {
+            "op": "×",
+            "a": 0.25,
+            "b": 200,
+            "result": 50
+          },
+          {
+            "op": "-",
+            "a": 200,
+            "b": 50,
+            "result": 150
+          },
+          {
+            "op": "×",
+            "a": 150,
+            "b": 4,
+            "result": 600
+          }
+        ],
+        "content_en": "25/100 × 200 = 50 | 200 - 50 = 150 | 150 × 4 = 600"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "An item costs 80 baht with a 15% discount. What is the new price?",
+      "choices": [
+        "68 baht",
+        "65 baht",
+        "70 baht",
+        "72 baht"
+      ],
+      "correct_answer": "68 baht",
+      "explanation": "Discount 15% of 80 = 12 baht, new price = 80 - 12 = 68 baht",
+      "data": {
+        "question": "An item costs 80 baht with a 15% discount. What is the new price?",
+        "choices": [
+          "68 baht",
+          "65 baht",
+          "70 baht",
+          "72 baht"
+        ],
+        "correct_answer": "68 baht",
+        "explanation": "Discount 15% of 80 = 12 baht, new price = 80 - 12 = 68 baht"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

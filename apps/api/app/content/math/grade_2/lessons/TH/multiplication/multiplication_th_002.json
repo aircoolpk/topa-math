@@ -1,0 +1,218 @@
+{
+  "variant_id": "multiplication_th_002",
+  "variant_title_th": "การคูณ",
+  "variant_title_en": "Multiplication",
+  "status": "needs_review",
+  "title_th": "การคูณ",
+  "title_en": "Multiplication",
+  "story_theme_th": "มะลิซื้อสมุดราคาเล่มละ 14 บาท ซื้อ 5 เล่ม ได้ส่วนลดรวม 12 บาท มะลิต้องจ่ายเงินเท่าไร และถ้ามีเงิน 100 บาท จะเหลือเงินกี่บาท",
+  "helper_tip": "การคูณก่อนลบ 2 x 3 + 4 = 10 แต่ 2 x (3 + 4) = 14",
+  "think_story_th": "รวม: 14 x 5 = 70 บาท, หลังหัก: 70 - 12 = 58 บาท, เหลือ: 100 - 58 = 42 บาท",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "มะลิซื้อสมุดราคาเล่มละ 14 บาท ซื้อ 5 เล่ม ได้ส่วนลดรวม 12 บาท มะลิต้องจ่ายเงินเท่าไร และถ้ามีเงิน 100 บาท จะเหลือเงินกี่บาท",
+      "data": {
+        "content_th": "มะลิซื้อสมุดราคาเล่มละ 14 บาท ซื้อ 5 เล่ม ได้ส่วนลดรวม 12 บาท มะลิต้องจ่ายเงินเท่าไร และถ้ามีเงิน 100 บาท จะเหลือเงินกี่บาท"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "รวม: 14 x 5 = 70 บาท, หลังหัก: 70 - 12 = 58 บาท, เหลือ: 100 - 58 = 42 บาท",
+      "data": {
+        "content_th": "รวม: 14 x 5 = 70 บาท, หลังหัก: 70 - 12 = 58 บาท, เหลือ: 100 - 58 = 42 บาท"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "สมุด 5 เล่ม",
+            "value": 70,
+            "display": "70 บาท",
+            "color": "#4ECDC4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "ส่วนลด",
+            "value": 12,
+            "display": "12 บาท",
+            "color": "#FF6B6B",
+            "width_pct": 17
+          },
+          {
+            "label": "จ่ายจริง",
+            "value": 58,
+            "display": "58 บาท",
+            "color": "#C7F464",
+            "width_pct": 83,
+            "is_remainder": true
+          }
+        ],
+        "unit": "บาท"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: หาราคาสมุดรวม",
+            "expression": "14 x 5 = 70",
+            "a": 14,
+            "b": 5,
+            "res": 70,
+            "op": "*",
+            "formula": {
+              "display": "14 x 5 = 70",
+              "a": 14,
+              "b": 5,
+              "result": 70,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "14",
+              "b_display": "5",
+              "result_display": "70",
+              "operation": "multiply"
+            },
+            "story_connection": "14 x 5 = 70 บาท"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาเงินที่ต้องจ่าย",
+            "expression": "70 - 12 = 58",
+            "a": 70,
+            "b": 12,
+            "res": 58,
+            "op": "-",
+            "formula": {
+              "display": "70 - 12 = 58",
+              "a": 70,
+              "b": 12,
+              "result": 58,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "70",
+              "b_display": "12",
+              "result_display": "58",
+              "operation": "subtract"
+            },
+            "story_connection": "70 - 12 = 58 บาท"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3: หาเงินที่เหลือ",
+            "expression": "100 - 58 = 42",
+            "a": 100,
+            "b": 58,
+            "res": 42,
+            "op": "-",
+            "formula": {
+              "display": "100 - 58 = 42",
+              "a": 100,
+              "b": 58,
+              "result": 42,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "100",
+              "b_display": "58",
+              "result_display": "42",
+              "operation": "subtract"
+            },
+            "story_connection": "100 - 58 = 42 บาท"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "14 x 5 = 70 และ 70 - 12 = 58 และ 100 - 58 = 42",
+      "content": "14 x 5 = 70 และ 70 - 12 = 58 และ 100 - 58 = 42",
+      "data": {
+        "expression": "14 x 5 = 70 และ 70 - 12 = 58 และ 100 - 58 = 42",
+        "content_th": "14 x 5 = 70 และ 70 - 12 = 58 และ 100 - 58 = 42",
+        "operations": [
+          {
+            "op": "*",
+            "a": 14,
+            "b": 5,
+            "result": 70
+          },
+          {
+            "op": "-",
+            "a": 70,
+            "b": 12,
+            "result": 58
+          },
+          {
+            "op": "-",
+            "a": 100,
+            "b": 58,
+            "result": 42
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ขนมเค้กกล่องละ 9 ชิ้น อ้ายซื้อ 5 กล่อง มีขนมเค้กทั้งหมดกี่ชิ้น",
+      "choices": [
+        "45 ชิ้น",
+        "54 ชิ้น",
+        "36 ชิ้น",
+        "14 ชิ้น"
+      ],
+      "correct_answer": "45 ชิ้น",
+      "explanation": "9 x 5 = 45 ชิ้น",
+      "data": {
+        "question": "ขนมเค้กกล่องละ 9 ชิ้น อ้ายซื้อ 5 กล่อง มีขนมเค้กทั้งหมดกี่ชิ้น",
+        "choices": [
+          "45 ชิ้น",
+          "54 ชิ้น",
+          "36 ชิ้น",
+          "14 ชิ้น"
+        ],
+        "correct_answer": "45 ชิ้น",
+        "explanation": "9 x 5 = 45 ชิ้น"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

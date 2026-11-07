@@ -1,4 +1,5 @@
 from app.models import ChildProfile
+from datetime import UTC, datetime
 
 
 PAID_MEMBERSHIP_STATUSES = {"paid", "plus", "trial"}
@@ -17,6 +18,10 @@ def remaining_free_tests(child: ChildProfile) -> int:
 
 
 def is_paid(child: ChildProfile) -> bool:
+    if getattr(child, 'membership_provider', None) == 'mpp':
+        end = child.mpp_access_ends_at
+        end = end.replace(tzinfo=UTC) if end and end.tzinfo is None else end
+        return (child.membership_status or '').lower() in PAID_MEMBERSHIP_STATUSES and bool(end and end > datetime.now(UTC))
     return (child.membership_status or "free").lower() in PAID_MEMBERSHIP_STATUSES
 
 
@@ -27,6 +32,8 @@ def is_th_plus(child: ChildProfile) -> bool:
 def is_ep_plus(child: ChildProfile) -> bool:
     if not is_paid(child):
         return False
+    if getattr(child, 'membership_provider', None) == 'mpp':
+        return child.plan_code == 'ep_plus'
     program_fields = {
         (child.billing_program_type or "").upper(),
         (child.program_type or "").upper(),

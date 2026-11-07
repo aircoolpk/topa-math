@@ -1,0 +1,188 @@
+{
+  "variant_id": "division_ep_002",
+  "variant_title_th": "การหาร",
+  "variant_title_en": "Division",
+  "status": "needs_review",
+  "title_th": "การหาร",
+  "title_en": "Division",
+  "story_theme_th": "Ai has 72 pencils. He wants to put them in boxes with 9 pencils per box. How many boxes does Ai need? And if he has 8 boxes, how many pencils can he put in?",
+  "helper_tip": "Division has two types: Find number of boxes = Total items divided by Items per box. Or Find total items = Number of boxes times Items per box.",
+  "think_story_th": "72 / 9 = 8 boxes, 8 x 9 = 72 pencils",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Ai has 72 pencils. He wants to put them in boxes with 9 pencils per box. How many boxes does Ai need? And if he has 8 boxes, how many pencils can he put in?",
+      "data": {
+        "content_th": "Ai has 72 pencils. He wants to put them in boxes with 9 pencils per box. How many boxes does Ai need? And if he has 8 boxes, how many pencils can he put in?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "72 / 9 = 8 boxes, 8 x 9 = 72 pencils",
+      "data": {
+        "content_th": "72 / 9 = 8 boxes, 8 x 9 = 72 pencils"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Total pencils",
+            "value": 72,
+            "display": "72 pencils",
+            "color": "#4ECDC4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Per box",
+            "value": 9,
+            "display": "9 pencils",
+            "color": "#45B7D1",
+            "width_pct": 13
+          },
+          {
+            "label": "Number of boxes",
+            "value": 8,
+            "display": "8 boxes",
+            "color": "#C7F464",
+            "width_pct": 11,
+            "is_result": true
+          }
+        ],
+        "unit": "pencils"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find number of boxes",
+            "expression": "72 / 9 = 8",
+            "a": 72,
+            "b": 9,
+            "res": 8,
+            "op": "/",
+            "formula": {
+              "display": "72 / 9 = 8",
+              "a": 72,
+              "b": 9,
+              "result": 8,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "72",
+              "b_display": "9",
+              "result_display": "8",
+              "operation": "divide"
+            },
+            "story_connection": "72 / 9 = 8 boxes"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Check the answer",
+            "expression": "8 x 9 = 72",
+            "a": 8,
+            "b": 9,
+            "res": 72,
+            "op": "*",
+            "formula": {
+              "display": "8 x 9 = 72",
+              "a": 8,
+              "b": 9,
+              "result": 72,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "8",
+              "b_display": "9",
+              "result_display": "72",
+              "operation": "multiply"
+            },
+            "story_connection": "8 x 9 = 72 Correct!"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "72 / 9 = 8 and 8 x 9 = 72",
+      "content": "72 / 9 = 8 and 8 x 9 = 72",
+      "data": {
+        "expression": "72 / 9 = 8 and 8 x 9 = 72",
+        "content_th": "72 / 9 = 8 and 8 x 9 = 72",
+        "operations": [
+          {
+            "op": "/",
+            "a": 72,
+            "b": 9,
+            "result": 8
+          },
+          {
+            "op": "*",
+            "a": 8,
+            "b": 9,
+            "result": 72
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A cookie has 56 pieces. Put them in bags with 7 pieces per bag. How many bags are needed?",
+      "choices": [
+        "8 bags",
+        "7 bags",
+        "9 bags",
+        "6 bags"
+      ],
+      "correct_answer": "8 bags",
+      "explanation": "56 / 7 = 8 bags",
+      "data": {
+        "question": "A cookie has 56 pieces. Put them in bags with 7 pieces per bag. How many bags are needed?",
+        "choices": [
+          "8 bags",
+          "7 bags",
+          "9 bags",
+          "6 bags"
+        ],
+        "correct_answer": "8 bags",
+        "explanation": "56 / 7 = 8 bags"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

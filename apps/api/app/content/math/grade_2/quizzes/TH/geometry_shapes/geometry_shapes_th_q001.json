@@ -1,0 +1,133 @@
+{
+  "quiz_id": "geometry_shapes_th_q001",
+  "topic_key": "geometry_shapes",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ geometry_shapes_th_q001",
+  "title_en": "Quiz geometry_shapes_th_q001",
+  "questions": [
+    {
+      "question": "รูปสี่เหลี่ยมมีกี่ด้าน",
+      "choices": [
+        "4 ด้าน",
+        "3 ด้าน",
+        "5 ด้าน",
+        "6 ด้าน"
+      ],
+      "correct_answer": "4 ด้าน",
+      "explanation": "สี่เหลี่ยมมี 4 ด้าน 4 มุม",
+      "difficulty": "easy"
+    },
+    {
+      "question": "รูปสามเหลี่ยมมีกี่มุม",
+      "choices": [
+        "3 มุม",
+        "4 มุม",
+        "5 มุม",
+        "6 มุม"
+      ],
+      "correct_answer": "3 มุม",
+      "explanation": "สามเหลี่ยมมี 3 มุม 3 ด้าน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "รูปวงกลมมีอะไร",
+      "choices": [
+        "ไม่มีมุม",
+        "3 มุม",
+        "4 มุม",
+        "หลายมุม"
+      ],
+      "correct_answer": "ไม่มีมุม",
+      "explanation": "วงกลมไม่มีมุม ไม่มีด้าน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "สี่เหลี่ยมจัตุรัส ด้านทุกด้านยาวเท่าไหร่",
+      "choices": [
+        "ยาวเท่ากัน",
+        "ยาวต่างกัน",
+        "มี 2 ด้านเท่า",
+        "ไม่แน่นอน"
+      ],
+      "correct_answer": "ยาวเท่ากัน",
+      "explanation": "สี่เหลี่ยมจัตุรัสมีด้านเท่ากันทุกด้าน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "รูปสี่เหลี่ยมผืนผ้า มีด้านที่ยาวเท่ากันกี่ด้าน",
+      "choices": [
+        "2 คู่ (4 ด้าน)",
+        "1 คู่ (2 ด้าน)",
+        "ทุกด้านเท่า",
+        "ไม่มีด้านเท่า"
+      ],
+      "correct_answer": "2 คู่ (4 ด้าน)",
+      "explanation": "สี่เหลี่ยมผืนผ้ามีด้านตรงข้ามยาวเท่ากัน 2 คู่",
+      "difficulty": "medium"
+    },
+    {
+      "question": "รูปทรงกลม มีหน้ากี่หน้า",
+      "choices": [
+        "1 หน้า",
+        "2 หน้า",
+        "6 หน้า",
+        "ไม่มีหน้า"
+      ],
+      "correct_answer": "1 หน้า",
+      "explanation": "ทรงกลมมีหน้าเดียวไม่มีขอบ",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ลูกบาศก์ มีกี่ขอบ",
+      "choices": [
+        "12 ขอบ",
+        "8 ขอบ",
+        "6 ขอบ",
+        "4 ขอบ"
+      ],
+      "correct_answer": "12 ขอบ",
+      "explanation": "ลูกบาศก์มี 12 ขอบ",
+      "difficulty": "medium"
+    },
+    {
+      "question": "รูปห้าเหลี่ยม มีกี่ด้าน",
+      "choices": [
+        "5 ด้าน",
+        "6 ด้าน",
+        "4 ด้าน",
+        "7 ด้าน"
+      ],
+      "correct_answer": "5 ด้าน",
+      "explanation": "ห้าเหลี่ยมมี 5 ด้าน 5 มุม",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ทรงสี่เหลี่ยมมุมฉาก (ปริซึม) มีหน้ารูปอะไร",
+      "choices": [
+        "สี่เหลี่ยม",
+        "สามเหลี่ยม",
+        "วงกลม",
+        "หลายรูปแบบ"
+      ],
+      "correct_answer": "สี่เหลี่ยม",
+      "explanation": "ปริซึมมีหน้าเป็นสี่เหลี่ยม",
+      "difficulty": "hard"
+    },
+    {
+      "question": "รูปหกเหลี่ยม มีกี่ด้าน",
+      "choices": [
+        "6 ด้าน",
+        "5 ด้าน",
+        "7 ด้าน",
+        "8 ด้าน"
+      ],
+      "correct_answer": "6 ด้าน",
+      "explanation": "หกเหลี่ยมมี 6 ด้าน 6 มุม",
+      "difficulty": "easy"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

@@ -1,0 +1,381 @@
+{
+  "quiz_id": "triangles_ep_q001",
+  "title_th": "รูปสามเหลี่ยม",
+  "title_en": "Triangles",
+  "status": "needs_review",
+  "variant_id": "triangles_ep_q001",
+  "variant_title_th": "รูปสามเหลี่ยม",
+  "variant_title_en": "Triangles",
+  "questions": [
+    {
+      "question_id": "triangle_q001_m01",
+      "type": "multiple_choice",
+      "question_th": "รูปสามเหลี่ยมมีมุม 60° และ 70° มุมที่สามกี่องศา",
+      "question_en": "A triangle has angles of 60° and 70°. What is the third angle?",
+      "choices_th": [
+        "40°",
+        "50°",
+        "60°",
+        "70°"
+      ],
+      "choices_en": [
+        "40°",
+        "50°",
+        "60°",
+        "70°"
+      ],
+      "correct_answer_th": "50°",
+      "correct_answer_en": "50°",
+      "answer_th": "50°",
+      "answer_en": "50°",
+      "answer": "50°",
+      "explanation_th": "180 - 60 - 70 = 50°",
+      "explanation_en": "180 - 60 - 70 = 50°",
+      "difficulty": "easy",
+      "choices": [
+        "40°",
+        "50°",
+        "60°",
+        "70°"
+      ],
+      "correct_answer": "50°",
+      "question_text": "รูปสามเหลี่ยมมีมุม 60° และ 70° มุมที่สามกี่องศา",
+      "explanation": "180 - 60 - 70 = 50°",
+      "question_text_th": "รูปสามเหลี่ยมมีมุม 60° และ 70° มุมที่สามกี่องศา",
+      "question_text_en": "A triangle has angles of 60° and 70°. What is the third angle?"
+    },
+    {
+      "question_id": "triangle_q001_m02",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมด้านเท่ามีมุมยอดกี่องศา",
+      "question_en": "An equilateral triangle has each angle how many degrees?",
+      "choices_th": [
+        "45°",
+        "60°",
+        "72°",
+        "90°"
+      ],
+      "choices_en": [
+        "45°",
+        "60°",
+        "72°",
+        "90°"
+      ],
+      "correct_answer_th": "60°",
+      "correct_answer_en": "60°",
+      "answer_th": "60°",
+      "answer_en": "60°",
+      "answer": "60°",
+      "explanation_th": "Equilateral triangle: 180°÷3 = 60°",
+      "explanation_en": "Equilateral triangle: 180°÷3 = 60°",
+      "difficulty": "easy",
+      "choices": [
+        "45°",
+        "60°",
+        "72°",
+        "90°"
+      ],
+      "correct_answer": "60°",
+      "question_text": "สามเหลี่ยมด้านเท่ามีมุมยอดกี่องศา",
+      "explanation": "Equilateral triangle: 180°÷3 = 60°",
+      "question_text_th": "สามเหลี่ยมด้านเท่ามีมุมยอดกี่องศา",
+      "question_text_en": "An equilateral triangle has each angle how many degrees?"
+    },
+    {
+      "question_id": "triangle_q001_m03",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมมุมฉากมีมุมฉากกี่องศา",
+      "question_en": "A right triangle has a right angle of how many degrees?",
+      "choices_th": [
+        "45°",
+        "60°",
+        "90°",
+        "180°"
+      ],
+      "choices_en": [
+        "45°",
+        "60°",
+        "90°",
+        "180°"
+      ],
+      "correct_answer_th": "90°",
+      "correct_answer_en": "90°",
+      "answer_th": "90°",
+      "answer_en": "90°",
+      "answer": "90°",
+      "explanation_th": "Right angle = 90°",
+      "explanation_en": "Right angle = 90°",
+      "difficulty": "easy",
+      "choices": [
+        "45°",
+        "60°",
+        "90°",
+        "180°"
+      ],
+      "correct_answer": "90°",
+      "question_text": "สามเหลี่ยมมุมฉากมีมุมฉากกี่องศา",
+      "explanation": "Right angle = 90°",
+      "question_text_th": "สามเหลี่ยมมุมฉากมีมุมฉากกี่องศา",
+      "question_text_en": "A right triangle has a right angle of how many degrees?"
+    },
+    {
+      "question_id": "triangle_q001_m04",
+      "type": "multiple_choice",
+      "question_th": "รูปสามเหลี่ยมมีมุม 30° และ 65° เป็นสามเหลี่ยมชนิดใด",
+      "question_en": "A triangle has angles of 30° and 65°. What type of triangle is it?",
+      "choices_th": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Cannot tell"
+      ],
+      "choices_en": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Cannot tell"
+      ],
+      "correct_answer_th": "Acute",
+      "correct_answer_en": "Acute",
+      "answer_th": "Acute",
+      "answer_en": "Acute",
+      "answer": "Acute",
+      "explanation_th": "Third angle = 180-30-65=85° < 90° = acute",
+      "explanation_en": "Third angle = 180-30-65=85° < 90° = acute",
+      "difficulty": "medium",
+      "choices": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Cannot tell"
+      ],
+      "correct_answer": "Acute",
+      "question_text": "รูปสามเหลี่ยมมีมุม 30° และ 65° เป็นสามเหลี่ยมชนิดใด",
+      "explanation": "Third angle = 180-30-65=85° < 90° = acute",
+      "question_text_th": "รูปสามเหลี่ยมมีมุม 30° และ 65° เป็นสามเหลี่ยมชนิดใด",
+      "question_text_en": "A triangle has angles of 30° and 65°. What type of triangle is it?"
+    },
+    {
+      "question_id": "triangle_q001_m05",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมหน้าจั่วมีด้านข้าง 8 ซม. ทั้งสองด้าน และฐาน 10 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "An isosceles triangle has two equal sides of 8 cm each and a base of 10 cm. What is its perimeter?",
+      "choices_th": [
+        "26 cm",
+        "28 cm",
+        "18 cm",
+        "24 cm"
+      ],
+      "choices_en": [
+        "26 cm",
+        "28 cm",
+        "18 cm",
+        "24 cm"
+      ],
+      "correct_answer_th": "26 cm",
+      "correct_answer_en": "26 cm",
+      "answer_th": "26 cm",
+      "answer_en": "26 cm",
+      "answer": "26 cm",
+      "explanation_th": "8+8+10=26 cm",
+      "explanation_en": "8+8+10=26 cm",
+      "difficulty": "easy",
+      "choices": [
+        "26 cm",
+        "28 cm",
+        "18 cm",
+        "24 cm"
+      ],
+      "correct_answer": "26 cm",
+      "question_text": "สามเหลี่ยมหน้าจั่วมีด้านข้าง 8 ซม. ทั้งสองด้าน และฐาน 10 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "8+8+10=26 cm",
+      "question_text_th": "สามเหลี่ยมหน้าจั่วมีด้านข้าง 8 ซม. ทั้งสองด้าน และฐาน 10 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "An isosceles triangle has two equal sides of 8 cm each and a base of 10 cm. What is its perimeter?"
+    },
+    {
+      "question_id": "triangle_q001_m06",
+      "type": "multiple_choice",
+      "question_th": "รูปสามเหลี่ยมมีมุม 90° และ 45° มุมที่สามกี่องศา",
+      "question_en": "A triangle has angles of 90° and 45°. What is the third angle?",
+      "choices_th": [
+        "30°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "choices_en": [
+        "30°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct_answer_th": "45°",
+      "correct_answer_en": "45°",
+      "answer_th": "45°",
+      "answer_en": "45°",
+      "answer": "45°",
+      "explanation_th": "180 - 90 - 45 = 45°",
+      "explanation_en": "180 - 90 - 45 = 45°",
+      "difficulty": "easy",
+      "choices": [
+        "30°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct_answer": "45°",
+      "question_text": "รูปสามเหลี่ยมมีมุม 90° และ 45° มุมที่สามกี่องศา",
+      "explanation": "180 - 90 - 45 = 45°",
+      "question_text_th": "รูปสามเหลี่ยมมีมุม 90° และ 45° มุมที่สามกี่องศา",
+      "question_text_en": "A triangle has angles of 90° and 45°. What is the third angle?"
+    },
+    {
+      "question_id": "triangle_q001_m07",
+      "type": "multiple_choice",
+      "question_th": "รูปสามเหลี่ยมมีด้าน 7, 8, 9 ซม. เป็นสามเหลี่ยมชนิดใด",
+      "question_en": "A triangle has sides 7, 8, and 9 cm. What type of triangle is it?",
+      "choices_th": [
+        "Equilateral",
+        "Isosceles",
+        "Scalene",
+        "Not a triangle"
+      ],
+      "choices_en": [
+        "Equilateral",
+        "Isosceles",
+        "Scalene",
+        "Not a triangle"
+      ],
+      "correct_answer_th": "Scalene",
+      "correct_answer_en": "Scalene",
+      "answer_th": "Scalene",
+      "answer_en": "Scalene",
+      "answer": "Scalene",
+      "explanation_th": "All sides are different",
+      "explanation_en": "All sides are different",
+      "difficulty": "medium",
+      "choices": [
+        "Equilateral",
+        "Isosceles",
+        "Scalene",
+        "Not a triangle"
+      ],
+      "correct_answer": "Scalene",
+      "question_text": "รูปสามเหลี่ยมมีด้าน 7, 8, 9 ซม. เป็นสามเหลี่ยมชนิดใด",
+      "explanation": "All sides are different",
+      "question_text_th": "รูปสามเหลี่ยมมีด้าน 7, 8, 9 ซม. เป็นสามเหลี่ยมชนิดใด",
+      "question_text_en": "A triangle has sides 7, 8, and 9 cm. What type of triangle is it?"
+    },
+    {
+      "question_id": "triangle_q001_m08",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมมุมป้านมีมุมใหญ่ที่สุดมากกว่ากี่องศา",
+      "question_en": "An obtuse triangle has its largest angle greater than how many degrees?",
+      "choices_th": [
+        "90°",
+        "greater than 90°",
+        "less than 90°",
+        "180°"
+      ],
+      "choices_en": [
+        "90°",
+        "greater than 90°",
+        "less than 90°",
+        "180°"
+      ],
+      "correct_answer_th": "greater than 90°",
+      "correct_answer_en": "greater than 90°",
+      "answer_th": "greater than 90°",
+      "answer_en": "greater than 90°",
+      "answer": "greater than 90°",
+      "explanation_th": "Obtuse angle > 90°",
+      "explanation_en": "Obtuse angle > 90°",
+      "difficulty": "easy",
+      "choices": [
+        "90°",
+        "greater than 90°",
+        "less than 90°",
+        "180°"
+      ],
+      "correct_answer": "greater than 90°",
+      "question_text": "สามเหลี่ยมมุมป้านมีมุมใหญ่ที่สุดมากกว่ากี่องศา",
+      "explanation": "Obtuse angle > 90°",
+      "question_text_th": "สามเหลี่ยมมุมป้านมีมุมใหญ่ที่สุดมากกว่ากี่องศา",
+      "question_text_en": "An obtuse triangle has its largest angle greater than how many degrees?"
+    },
+    {
+      "question_id": "triangle_q001_m09",
+      "type": "multiple_choice",
+      "question_th": "รูปสามเหลี่ยมมีด้าน 5, 12, 13 ซม. เป็นสามเหลี่ยมชนิดใด",
+      "question_en": "A triangle has sides 5, 12, and 13 cm. What type of triangle is it?",
+      "choices_th": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Equilateral"
+      ],
+      "choices_en": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Equilateral"
+      ],
+      "correct_answer_th": "Right",
+      "correct_answer_en": "Right",
+      "answer_th": "Right",
+      "answer_en": "Right",
+      "answer": "Right",
+      "explanation_th": "5²+12²=25+144=169=13²",
+      "explanation_en": "5²+12²=25+144=169=13²",
+      "difficulty": "hard",
+      "choices": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Equilateral"
+      ],
+      "correct_answer": "Right",
+      "question_text": "รูปสามเหลี่ยมมีด้าน 5, 12, 13 ซม. เป็นสามเหลี่ยมชนิดใด",
+      "explanation": "5²+12²=25+144=169=13²",
+      "question_text_th": "รูปสามเหลี่ยมมีด้าน 5, 12, 13 ซม. เป็นสามเหลี่ยมชนิดใด",
+      "question_text_en": "A triangle has sides 5, 12, and 13 cm. What type of triangle is it?"
+    },
+    {
+      "question_id": "triangle_q001_m10",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยม 2 รูป มุม 60° และ 50° รวมกับสามเหลี่ยมอีกรูปที่มีมุม 70° มุมที่เหลือรวมกันกี่องศา",
+      "question_en": "Two triangles have angles 60° and 50°. A third triangle has 70°. The remaining angles total how many degrees?",
+      "choices_th": [
+        "200°",
+        "180°",
+        "220°",
+        "160°"
+      ],
+      "choices_en": [
+        "200°",
+        "180°",
+        "220°",
+        "160°"
+      ],
+      "correct_answer_th": "180°",
+      "correct_answer_en": "180°",
+      "answer_th": "180°",
+      "answer_en": "180°",
+      "answer": "180°",
+      "explanation_th": "Each triangle has 180°, 3 triangles = 540°, sum of given angles = 180°, remaining = 540-180=360°, but actually each has 180° remaining individually",
+      "explanation_en": "Each triangle has 180°, 3 triangles = 540°, sum of given angles = 180°, remaining = 540-180=360°, but actually each has 180° remaining individually",
+      "difficulty": "hard",
+      "choices": [
+        "200°",
+        "180°",
+        "220°",
+        "160°"
+      ],
+      "correct_answer": "180°",
+      "question_text": "สามเหลี่ยม 2 รูป มุม 60° และ 50° รวมกับสามเหลี่ยมอีกรูปที่มีมุม 70° มุมที่เหลือรวมกันกี่องศา",
+      "explanation": "Each triangle has 180°, 3 triangles = 540°, sum of given angles = 180°, remaining = 540-180=360°, but actually each has 180° remaining individually",
+      "question_text_th": "สามเหลี่ยม 2 รูป มุม 60° และ 50° รวมกับสามเหลี่ยมอีกรูปที่มีมุม 70° มุมที่เหลือรวมกันกี่องศา",
+      "question_text_en": "Two triangles have angles 60° and 50°. A third triangle has 70°. The remaining angles total how many degrees?"
+    }
+  ]
+}

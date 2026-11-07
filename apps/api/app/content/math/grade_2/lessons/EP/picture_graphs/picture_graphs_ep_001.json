@@ -1,0 +1,194 @@
+{
+  "variant_id": "picture_graphs_ep_001",
+  "variant_title_th": "แผนภูมิรูปภาพ",
+  "variant_title_en": "Picture Graphs",
+  "status": "needs_review",
+  "title_th": "แผนภูมิรูปภาพ",
+  "title_en": "Picture Graphs",
+  "story_theme_th": "Malisa surveyed the favorite fruits of 5 friends. The results were: Orange 4 people, Banana 6 people, Mango 3 people, Watermelon 5 people. How many friends did Malisa survey in total? Which fruit is the most popular and how many people like it?",
+  "helper_tip": "Reading a picture graph: Each picture represents a set number. Count the pictures and multiply by the value of each picture.",
+  "think_story_th": "Total: 4+6+3+5 = 18 people, Most popular: Banana 6 people",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Malisa surveyed the favorite fruits of 5 friends. The results were: Orange 4 people, Banana 6 people, Mango 3 people, Watermelon 5 people. How many friends did Malisa survey in total? Which fruit is the most popular and how many people like it?",
+      "data": {
+        "content_th": "Malisa surveyed the favorite fruits of 5 friends. The results were: Orange 4 people, Banana 6 people, Mango 3 people, Watermelon 5 people. How many friends did Malisa survey in total? Which fruit is the most popular and how many people like it?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Total: 4+6+3+5 = 18 people, Most popular: Banana 6 people",
+      "data": {
+        "content_th": "Total: 4+6+3+5 = 18 people, Most popular: Banana 6 people"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Orange",
+            "value": 4,
+            "display": "4 people",
+            "color": "#FF9F43",
+            "width_pct": 67
+          },
+          {
+            "label": "Banana",
+            "value": 6,
+            "display": "6 people",
+            "color": "#FECA57",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Mango",
+            "value": 3,
+            "display": "3 people",
+            "color": "#FF6B6B",
+            "width_pct": 50
+          },
+          {
+            "label": "Watermelon",
+            "value": 5,
+            "display": "5 people",
+            "color": "#4ECDC4",
+            "width_pct": 83
+          }
+        ],
+        "unit": "people"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find total number of people",
+            "expression": "4 + 6 + 3 + 5 = 18",
+            "a": 4,
+            "b": 14,
+            "res": 18,
+            "op": "+",
+            "formula": {
+              "display": "4+6+3+5=18",
+              "a": 4,
+              "b": 14,
+              "result": 18,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "4",
+              "b_display": "14",
+              "result_display": "18",
+              "operation": "add"
+            },
+            "story_connection": "4+6+3+5=18 people"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find the most popular",
+            "expression": "6 people (Banana)",
+            "a": 6,
+            "b": 0,
+            "res": 6,
+            "op": "+",
+            "formula": {
+              "display": "6",
+              "a": 6,
+              "b": 0,
+              "result": 6,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "6",
+              "b_display": "0",
+              "result_display": "6",
+              "operation": "add"
+            },
+            "story_connection": "Banana has 6 people - the most popular"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "4 + 6 + 3 + 5 = 18 people",
+      "content": "4 + 6 + 3 + 5 = 18 people",
+      "data": {
+        "expression": "4 + 6 + 3 + 5 = 18 people",
+        "content_th": "4 + 6 + 3 + 5 = 18 people",
+        "operations": [
+          {
+            "op": "+",
+            "a": 4,
+            "b": 14,
+            "result": 18
+          },
+          {
+            "op": "+",
+            "a": 6,
+            "b": 0,
+            "result": 6
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Survey favorite pets: Dog 5, Cat 3, Goldfish 4, Bird 2. How many people in total?",
+      "choices": [
+        "14 people",
+        "12 people",
+        "15 people",
+        "13 people"
+      ],
+      "correct_answer": "14 people",
+      "explanation": "5+3+4+2=14 people",
+      "data": {
+        "question": "Survey favorite pets: Dog 5, Cat 3, Goldfish 4, Bird 2. How many people in total?",
+        "choices": [
+          "14 people",
+          "12 people",
+          "15 people",
+          "13 people"
+        ],
+        "correct_answer": "14 people",
+        "explanation": "5+3+4+2=14 people"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

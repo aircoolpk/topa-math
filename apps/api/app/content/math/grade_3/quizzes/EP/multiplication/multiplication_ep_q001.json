@@ -1,0 +1,179 @@
+{
+  "lesson_id": "multiplication_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "mul_ep_q001_e01",
+      "question_text": "Case 1: Lin buys 3 pens at 7 baht each. How much does she pay in total?",
+      "question_text_th": "สถานการณ์ที่ 1: ลินซื้อปากกา 3 ด้าม ด้ามละ 7 บาท รวมต้องจ่ายกี่บาท",
+      "choices": [
+        "21 baht",
+        "20 baht",
+        "18 baht",
+        "24 baht"
+      ],
+      "correct_answer": "21 baht",
+      "answer": "3 x 7 = 21 baht",
+      "explanation": "3 x 7 = 21 baht",
+      "explanation_th": "3 x 7 = 21 บาท",
+      "difficulty": "easy",
+      "hint_th": "Multiply number of pens by price per pen"
+    },
+    {
+      "question_id": "mul_ep_q001_e02",
+      "question_text": "Case 2: A pair of socks has 2 sides. If Lin buys 5 pairs, how many sock sides does she have?",
+      "question_text_th": "สถานการณ์ที่ 2: ถุงเท้า 1 คู่ มี 2 ข้าง ถ้าซื้อถุงเท้า 5 คู่ มีถุงเท้ากี่ข้าง",
+      "choices": [
+        "10 sides",
+        "7 sides",
+        "12 sides",
+        "5 sides"
+      ],
+      "correct_answer": "10 sides",
+      "answer": "5 x 2 = 10 sides",
+      "explanation": "5 x 2 = 10 sides",
+      "explanation_th": "5 x 2 = 10 ข้าง",
+      "difficulty": "easy",
+      "hint_th": "Multiply pairs by 2"
+    },
+    {
+      "question_id": "mul_ep_q001_e03",
+      "question_text": "Case 3: A juice box pack has 6 small boxes. If Lin buys 4 large packs, how many small boxes does she have?",
+      "question_text_th": "สถานการณ์ที่ 3: กล่องน้ำผลไม้กล่องหนึ่งมี 6 กล่องย่อย ถ้าซื้อ 4 กล่องใหญ่ มีกล่องย่อยกี่กล่อง",
+      "choices": [
+        "24 boxes",
+        "20 boxes",
+        "18 boxes",
+        "10 boxes"
+      ],
+      "correct_answer": "24 boxes",
+      "answer": "4 x 6 = 24 boxes",
+      "explanation": "4 x 6 = 24 boxes",
+      "explanation_th": "4 x 6 = 24 กล่อง",
+      "difficulty": "easy",
+      "hint_th": "Multiply large packs by small boxes per pack"
+    },
+    {
+      "question_id": "mul_ep_q001_m01",
+      "question_text": "Case 4: Lin puts 7 flowers in each vase and fills 8 vases. How many flowers in total?",
+      "question_text_th": "สถานการณ์ที่ 4: ลินจัดดอกไม้แจกันละ 7 ดอก จัดได้ 8 แจกัน รวมมีดอกไม้กี่ดอก",
+      "choices": [
+        "56 flowers",
+        "54 flowers",
+        "48 flowers",
+        "42 flowers"
+      ],
+      "correct_answer": "56 flowers",
+      "answer": "8 x 7 = 56 flowers",
+      "explanation": "8 x 7 = 56 flowers",
+      "explanation_th": "8 x 7 = 56 ดอก",
+      "difficulty": "medium",
+      "hint_th": "Vases x flowers per vase"
+    },
+    {
+      "question_id": "mul_ep_q001_m02",
+      "question_text": "Case 5: One table has 4 legs. If there are 9 tables, how many table legs in total?",
+      "question_text_th": "สถานการณ์ที่ 5: โต๊ะหนึ่งตัวมี 4 ขา มีโต๊ะ 9 ตัว รวมมีขาโต๊ะกี่ขา",
+      "choices": [
+        "36 legs",
+        "35 legs",
+        "40 legs",
+        "32 legs"
+      ],
+      "correct_answer": "36 legs",
+      "answer": "9 x 4 = 36 legs",
+      "explanation": "9 x 4 = 36 legs",
+      "explanation_th": "9 x 4 = 36 ขา",
+      "difficulty": "medium",
+      "hint_th": "Tables x legs per table"
+    },
+    {
+      "question_id": "mul_ep_q001_m03",
+      "question_text": "Case 6: Lin buys snacks at 8 baht per bag. She buys 6 bags and pays with a 50 baht note. How much change does she get?",
+      "question_text_th": "สถานการณ์ที่ 6: ลินซื้อขนมถุงละ 8 บาท ซื้อ 6 ถุง แล้วใช้เงิน 50 บาท จะได้เงินทอนกี่บาท",
+      "choices": [
+        "2 baht",
+        "3 baht",
+        "4 baht",
+        "1 baht"
+      ],
+      "correct_answer": "2 baht",
+      "answer": "6 x 8 = 48 baht, 50 - 48 = 2 baht change",
+      "explanation": "6 x 8 = 48 baht, 50 - 48 = 2 baht change",
+      "explanation_th": "6 x 8 = 48 บาท, 50 - 48 = 2 บาท",
+      "difficulty": "medium",
+      "hint_th": "Find total cost first, then subtract from 50"
+    },
+    {
+      "question_id": "mul_ep_q001_m04",
+      "question_text": "Case 7: A mango orchard has 6 rows with 9 mango trees in each row. How many mango trees are there?",
+      "question_text_th": "สถานการณ์ที่ 7: สวนมะม่วงมีต้น 6 แถว แถวละ 9 ต้น รวมมีต้นมะม่วงกี่ต้น",
+      "choices": [
+        "54 trees",
+        "56 trees",
+        "48 trees",
+        "63 trees"
+      ],
+      "correct_answer": "54 trees",
+      "answer": "6 x 9 = 54 trees",
+      "explanation": "6 x 9 = 54 trees",
+      "explanation_th": "6 x 9 = 54 ต้น",
+      "difficulty": "medium",
+      "hint_th": "Rows x trees per row"
+    },
+    {
+      "question_id": "mul_ep_q001_h01",
+      "question_text": "Case 8: Lin buys 5 books at 35 baht each and 3 pencils at 7 baht each. How much does she pay in total?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินซื้อหนังสือเล่มละ 35 บาท 5 เล่ม และดินสอแท่งละ 7 บาท 3 แท่ง รวมต้องจ่ายกี่บาท",
+      "choices": [
+        "196 baht",
+        "190 baht",
+        "189 baht",
+        "175 baht"
+      ],
+      "correct_answer": "196 baht",
+      "answer": "Books: 5x35=175 baht, Pencils: 3x7=21 baht, Total: 175+21=196 baht",
+      "explanation": "Books: 5x35=175 baht, Pencils: 3x7=21 baht, Total: 175+21=196 baht",
+      "explanation_th": "หนังสือ 175 + ดินสอ 21 = 196 บาท",
+      "difficulty": "hard",
+      "hint_th": "Find books and pencils cost separately, then add"
+    },
+    {
+      "question_id": "mul_ep_q001_h02",
+      "question_text": "Case 9: A paper box has 24 sheets. If Lin buys 7 boxes, how many sheets does she have? And if she gives 8 sheets to each friend, how many friends can she give to?",
+      "question_text_th": "สถานการณ์ที่ 9: กล่องกระดาษกล่องหนึ่งมี 24 แผ่น ถ้าซื้อ 7 กล่อง จะมีกระดาษกี่แผ่น และถ้าแจกเพื่อนคนละ 8 แผ่น จะแจกได้กี่คน",
+      "choices": [
+        "168 sheets, 21 friends",
+        "168 sheets, 20 friends",
+        "165 sheets, 21 friends",
+        "160 sheets, 20 friends"
+      ],
+      "correct_answer": "168 sheets, 21 friends",
+      "answer": "Paper: 7x24=168 sheets, Friends: 168 divided by 8 = 21 friends",
+      "explanation": "Paper: 7x24=168 sheets, Friends: 168 divided by 8 = 21 friends",
+      "explanation_th": "กระดาษ 168 แผ่น, แจกได้ 168÷8=21 คน",
+      "difficulty": "hard",
+      "hint_th": "Multiply for total sheets first, then divide by 8"
+    },
+    {
+      "question_id": "mul_ep_q001_h03",
+      "question_text": "Case 10: A swimming pool is 12 meters wide and 25 meters long. What is the area of the swimming pool?",
+      "question_text_th": "สถานการณ์ที่ 10: สระว่ายน้ำกว้าง 12 เมตร ยาว 25 เมตร มีพื้นที่กี่ตารางเมตร",
+      "choices": [
+        "300 sq m",
+        "290 sq m",
+        "310 sq m",
+        "275 sq m"
+      ],
+      "correct_answer": "300 sq m",
+      "answer": "Area = width x length = 12 x 25 = 300 square meters",
+      "explanation": "Area = width x length = 12 x 25 = 300 square meters",
+      "explanation_th": "12 x 25 = 300 ตร.ม.",
+      "difficulty": "hard",
+      "hint_th": "Area = width x length"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

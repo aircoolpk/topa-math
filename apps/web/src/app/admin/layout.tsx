@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { TopaLogo } from '@/components/brand/TopaBrand'
 import { usePathname, useRouter } from 'next/navigation'
 import { useAuthStore } from '@/store/auth'
 
@@ -15,6 +16,8 @@ const navItems = [
   ['/admin/homepage', 'หน้าแรก'],
   ['/admin/system', 'ระบบ'],
   ['/admin/subscriptions', 'สมาชิก'],
+  ['/admin/affiliates', 'Affiliate'],
+  ['/admin/payment-integration-test', 'Payment UAT'],
 ]
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -30,8 +33,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   useEffect(() => {
     if (!ready) return
-    const token = localStorage.getItem('access_token')
-    if (!token || !user?.role) {
+    if (!user?.role) {
       router.replace('/login')
       return
     }
@@ -59,7 +61,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <aside className="border-b border-gray-200 bg-white lg:fixed lg:inset-y-0 lg:left-0 lg:w-72 lg:border-b-0 lg:border-r">
         <div className="flex h-full flex-col px-5 py-5">
           <div>
-            <Link href="/admin" className="text-xl font-extrabold text-gray-950">TOPA Math Admin</Link>
+            <Link href="/admin" className="inline-flex items-center gap-2">
+              <TopaLogo size="sm" />
+              <span className="text-sm font-extrabold text-gray-950">Admin</span>
+            </Link>
             <p className="text-sm text-gray-500">Content and operations console</p>
           </div>
           <nav className="mt-6 grid gap-1">
@@ -81,4 +86,3 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     </div>
   )
 }
-

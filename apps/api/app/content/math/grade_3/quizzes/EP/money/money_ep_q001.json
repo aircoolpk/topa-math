@@ -1,0 +1,179 @@
+{
+  "lesson_id": "money_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "money_ep_q001_e01",
+      "question_text": "Case 1: Lin has 4 coins of 5 baht each. How much money is that in total?",
+      "question_text_th": "สถานการณ์ที่ 1: ลินมีเหรียญ 5 บาท 4 เหรียญ รวมเป็นเงินกี่บาท",
+      "choices": [
+        "20 baht",
+        "18 baht",
+        "25 baht",
+        "15 baht"
+      ],
+      "correct_answer": "20 baht",
+      "answer": "4 x 5 = 20 baht",
+      "explanation": "4 x 5 = 20 baht",
+      "explanation_th": "4 x 5 = 20 บาท",
+      "difficulty": "easy",
+      "hint_th": "Multiply number of coins by value"
+    },
+    {
+      "question_id": "money_ep_q001_e02",
+      "question_text": "Case 2: Banknotes of 100 baht each, 3 notes. How much money is that?",
+      "question_text_th": "สถานการณ์ที่ 2: ธนบัตรใบละ 100 บาท 3 ใบ รวมเป็นเงินกี่บาท",
+      "choices": [
+        "300 baht",
+        "200 baht",
+        "400 baht",
+        "500 baht"
+      ],
+      "correct_answer": "300 baht",
+      "answer": "3 x 100 = 300 baht",
+      "explanation": "3 x 100 = 300 baht",
+      "explanation_th": "3 x 100 = 300 บาท",
+      "difficulty": "easy",
+      "hint_th": "Multiply number of notes by value"
+    },
+    {
+      "question_id": "money_ep_q001_e03",
+      "question_text": "Case 3: Lin has 50 baht and buys snacks for 30 baht. How much money is left?",
+      "question_text_th": "สถานการณ์ที่ 3: ลินมีเงิน 50 บาท ซื้อขนม 30 บาท เหลือเงินกี่บาท",
+      "choices": [
+        "20 baht",
+        "15 baht",
+        "25 baht",
+        "30 baht"
+      ],
+      "correct_answer": "20 baht",
+      "answer": "50 - 30 = 20 baht",
+      "explanation": "50 - 30 = 20 baht",
+      "explanation_th": "50 - 30 = 20 บาท",
+      "difficulty": "easy",
+      "hint_th": "Subtract snack cost from money had"
+    },
+    {
+      "question_id": "money_ep_q001_m01",
+      "question_text": "Case 4: Lin buys a notebook for 25 baht and a pencil for 15 baht. She pays with 50 baht. How much change does she get?",
+      "question_text_th": "สถานการณ์ที่ 4: ลินซื้อสมุด 25 บาท และดินสอ 15 บาท จ่ายเงิน 50 บาท จะได้เงินทอนกี่บาท",
+      "choices": [
+        "10 baht",
+        "15 baht",
+        "20 baht",
+        "5 baht"
+      ],
+      "correct_answer": "10 baht",
+      "answer": "25+15=40 baht, 50-40=10 baht change",
+      "explanation": "25+15=40 baht, 50-40=10 baht change",
+      "explanation_th": "25+15=40, 50-40=10 บาท",
+      "difficulty": "medium",
+      "hint_th": "Add items first, then subtract from 50"
+    },
+    {
+      "question_id": "money_ep_q001_m02",
+      "question_text": "Case 5: Lin buys a toy for 87 baht and pays with 100 baht. How much change does she get?",
+      "question_text_th": "สถานการณ์ที่ 5: ลินซื้อของเล่นราคา 87 บาท จ่ายเงิน 100 บาท จะได้เงินทอนกี่บาท",
+      "choices": [
+        "13 baht",
+        "12 baht",
+        "15 baht",
+        "10 baht"
+      ],
+      "correct_answer": "13 baht",
+      "answer": "100 - 87 = 13 baht change",
+      "explanation": "100 - 87 = 13 baht change",
+      "explanation_th": "100 - 87 = 13 บาท",
+      "difficulty": "medium",
+      "hint_th": "Subtract cost from money paid"
+    },
+    {
+      "question_id": "money_ep_q001_m03",
+      "question_text": "Case 6: Lin buys 2 books at 48 baht each. How much does she pay in total?",
+      "question_text_th": "สถานการณ์ที่ 6: ลินซื้อหนังสือ 2 เล่ม เล่มละ 48 บาท รวมต้องจ่ายกี่บาท",
+      "choices": [
+        "96 baht",
+        "90 baht",
+        "100 baht",
+        "86 baht"
+      ],
+      "correct_answer": "96 baht",
+      "answer": "2 x 48 = 96 baht",
+      "explanation": "2 x 48 = 96 baht",
+      "explanation_th": "2 x 48 = 96 บาท",
+      "difficulty": "medium",
+      "hint_th": "Multiply book price by 2"
+    },
+    {
+      "question_id": "money_ep_q001_m04",
+      "question_text": "Case 7: Lin buys 3 snacks priced at 12 baht, 18 baht, and 25 baht. How much does she pay in total?",
+      "question_text_th": "สถานการณ์ที่ 7: ลินซื้อขนม 3 อย่าง ราคา 12 บาท 18 บาท และ 25 บาท รวมต้องจ่ายกี่บาท",
+      "choices": [
+        "55 baht",
+        "50 baht",
+        "60 baht",
+        "45 baht"
+      ],
+      "correct_answer": "55 baht",
+      "answer": "12+18+25 = 55 baht",
+      "explanation": "12+18+25 = 55 baht",
+      "explanation_th": "12+18+25 = 55 บาท",
+      "difficulty": "medium",
+      "hint_th": "Add all three snack prices"
+    },
+    {
+      "question_id": "money_ep_q001_h01",
+      "question_text": "Case 8: Lin buys 3 pens at 15 baht each and 4 notebooks at 12 baht each. She pays with 100 baht. How much change?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินซื้อปากกา 3 ด้าม ด้ามละ 15 บาท และสมุด 4 เล่ม เล่มละ 12 บาท จ่ายเงิน 100 บาท จะได้เงินทอนกี่บาท",
+      "choices": [
+        "7 baht",
+        "5 baht",
+        "10 baht",
+        "8 baht"
+      ],
+      "correct_answer": "7 baht",
+      "answer": "Pens: 3x15=45, Notebooks: 4x12=48, Total: 45+48=93, Change: 100-93=7 baht",
+      "explanation": "Pens: 3x15=45, Notebooks: 4x12=48, Total: 45+48=93, Change: 100-93=7 baht",
+      "explanation_th": "ปากกา 45 + สมุด 48 = 93 บาท, 100-93=7 บาท",
+      "difficulty": "hard",
+      "hint_th": "Find pen and notebook costs separately, then add, then subtract change"
+    },
+    {
+      "question_id": "money_ep_q001_h02",
+      "question_text": "Case 9: Lin has 200 baht and buys a gift for her mother for 75 baht and a gift for her father for 85 baht. How much money is left?",
+      "question_text_th": "สถานการณ์ที่ 9: ลินมีเงิน 200 บาท ซื้อของขวัญให้แม่ราคา 75 บาท และของขวัญให้พ่อราคา 85 บาท เหลือเงินกี่บาท",
+      "choices": [
+        "40 baht",
+        "35 baht",
+        "45 baht",
+        "50 baht"
+      ],
+      "correct_answer": "40 baht",
+      "answer": "Gifts total: 75+85=160 baht, Left: 200-160=40 baht",
+      "explanation": "Gifts total: 75+85=160 baht, Left: 200-160=40 baht",
+      "explanation_th": "75+85=160, 200-160=40 บาท",
+      "difficulty": "hard",
+      "hint_th": "Add both gift prices, then subtract from 200"
+    },
+    {
+      "question_id": "money_ep_q001_h03",
+      "question_text": "Case 10: Lin buys 5 boxes of fruit juice at 9 baht each and 4 cakes at 7 baht each. What is the total spent? And if she has 100 baht, how much is left?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินซื้อน้ำผลไม้ 5 กล่อง กล่องละ 9 บาท และขนมครบ 4 ชิ้น ชิ้นละ 7 บาท ใช้เงินทั้งหมดกี่บาท และถ้ามีเงิน 100 บาท จะเหลือกี่บาท",
+      "choices": [
+        "73 baht, 27 left",
+        "70 baht, 30 left",
+        "75 baht, 25 left",
+        "72 baht, 28 left"
+      ],
+      "correct_answer": "73 baht, 27 left",
+      "answer": "Juice: 5x9=45, Cakes: 4x7=28, Total: 45+28=73 baht, Left: 100-73=27 baht",
+      "explanation": "Juice: 5x9=45, Cakes: 4x7=28, Total: 45+28=73 baht, Left: 100-73=27 baht",
+      "explanation_th": "น้ำผลไม้ 45 + ขนม 28 = 73 บาท, 100-73=27 บาท",
+      "difficulty": "hard",
+      "hint_th": "Find each cost, add together, then subtract from 100"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

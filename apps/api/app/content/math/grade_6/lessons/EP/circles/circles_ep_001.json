@@ -1,0 +1,186 @@
+{
+  "variant_id": "circles_ep_001",
+  "variant_title_en": "Circles",
+  "status": "needs_review",
+  "title_en": "Circles",
+  "title_th": "วงกลม",
+  "story_theme_en": "A bicycle wheel has a radius of 35 centimeters. If the wheel turns one full rotation, how far will it travel? (Use π ≈ 22/7)",
+  "helper_tip": "Circumference = 2 × π × radius",
+  "hint_th": "เส้นรอบวง = 2 × π × รัศมี",
+  "think_story_en": "Circumference = 2 × π × radius = 2 × 22/7 × 35 = 2 × 22 × 5 = 220 cm = 2.2 m. One rotation travels 220 cm.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A bicycle wheel has a radius of 35 centimeters. If the wheel turns one full rotation, how far will it travel? (Use π ≈ 22/7)",
+      "data": {
+        "content_en": "A bicycle wheel has a radius of 35 centimeters. If the wheel turns one full rotation, how far will it travel? (Use π ≈ 22/7)"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Circumference = 2 × π × radius = 2 × 22/7 × 35 = 2 × 22 × 5 = 220 cm = 2.2 m. One rotation travels 220 cm.",
+      "data": {
+        "content_en": "Circumference = 2 × π × radius = 2 × 22/7 × 35 = 2 × 22 × 5 = 220 cm = 2.2 m. One rotation travels 220 cm."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "centimeters",
+        "bars": [
+          {
+            "label": "Radius",
+            "value": 35,
+            "display": "35 cm",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Circumference",
+            "value": 220,
+            "display": "220 cm",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "2 × 22 = 44",
+            "formula": {
+              "display": "2 × 22 = 44",
+              "a": 2,
+              "b": 22,
+              "result": 44,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}2&\\ ×\\quad 22&\\ \\hline 44&\\\\ \\hline \\end{array}",
+              "a_display": "2",
+              "b_display": "22",
+              "result_display": "44",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 2 × 22 = 44"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "35 ÷ 7 = 5",
+            "formula": {
+              "display": "35 ÷ 7 = 5",
+              "a": 7,
+              "b": 35,
+              "result": 5,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}7&\\ ÷\\quad 35&\\ \\hline 5&\\\\ \\hline \\end{array}",
+              "a_display": "7",
+              "b_display": "35",
+              "result_display": "5",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 35 ÷ 7 = 5"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "44 × 5 = 220",
+            "formula": {
+              "display": "44 × 5 = 220",
+              "a": 44,
+              "b": 5,
+              "result": 220,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}44&\\ ×\\quad 5&\\ \\hline 220&\\\\ \\hline \\end{array}",
+              "a_display": "44",
+              "b_display": "5",
+              "result_display": "220",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 44 × 5 = 220"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "2 × 22 = 44 | 35 ÷ 7 = 5 | 44 × 5 = 220",
+      "content": "2 × 22 = 44 | 35 ÷ 7 = 5 | 44 × 5 = 220",
+      "data": {
+        "expression": "2 × 22 = 44 | 35 ÷ 7 = 5 | 44 × 5 = 220",
+        "operations": [
+          {
+            "op": "×",
+            "a": 2,
+            "b": 22,
+            "result": 44
+          },
+          {
+            "op": "÷",
+            "a": 35,
+            "b": 7,
+            "result": 5
+          },
+          {
+            "op": "×",
+            "a": 44,
+            "b": 5,
+            "result": 220
+          }
+        ],
+        "content_en": "2 × 22 = 44 | 35 ÷ 7 = 5 | 44 × 5 = 220"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A circle has a radius of 14 cm. What is its circumference? (π = 22/7)",
+      "choices": [
+        "88 cm",
+        "66 cm",
+        "44 cm",
+        "110 cm"
+      ],
+      "correct_answer": "88 cm",
+      "explanation": "2 × 22/7 × 14 = 88 cm",
+      "data": {
+        "question": "A circle has a radius of 14 cm. What is its circumference? (π = 22/7)",
+        "choices": [
+          "88 cm",
+          "66 cm",
+          "44 cm",
+          "110 cm"
+        ],
+        "correct_answer": "88 cm",
+        "explanation": "2 × 22/7 × 14 = 88 cm"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

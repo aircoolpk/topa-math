@@ -1,0 +1,179 @@
+{
+  "lesson_id": "rectangles_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 12 หาพื้นที่และรอบรูป",
+      "question_text_en": "Square side=12. Area and perimeter?",
+      "choices": [
+        "144 ตร.หน่วย รอบ 48 หน่วย",
+        "144 ตร.หน่วย รอบ 36 หน่วย",
+        "120 ตร.หน่วย รอบ 48 หน่วย",
+        "144 ตร.หน่วย รอบ 50 หน่วย"
+      ],
+      "correct_answer": "144 ตร.หน่วย รอบ 48 หน่วย",
+      "answer": "144 ตร.หน่วย รอบ 48 หน่วย",
+      "explanation": "12x12=144 | 4x12=48",
+      "explanation_th": "12×12=144 ตร.หน่วย | 4×12=48 หน่วย",
+      "difficulty": "easy",
+      "hint_th": "พื้นที่=12x12=144 รอบ=4x12=48"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 8 ยาว 12 หาพื้นที่และรอบรูป",
+      "question_text_en": "Rectangle w=8, l=12. Area and perimeter?",
+      "choices": [
+        "96 ตร.หน่วย รอบ 40 หน่วย",
+        "96 ตร.หน่วย รอบ 20 หน่วย",
+        "80 ตร.หน่วย รอบ 40 หน่วย",
+        "96 ตร.หน่วย รอบ 35 หน่วย"
+      ],
+      "correct_answer": "96 ตร.หน่วย รอบ 40 หน่วย",
+      "answer": "96 ตร.หน่วย รอบ 40 หน่วย",
+      "explanation": "8x12=96 | 2x(8+12)=2x20=40",
+      "explanation_th": "8×12=96 ตร.หน่วย | 2×(8+12)=2×20=40 หน่วย",
+      "difficulty": "easy",
+      "hint_th": "พื้นที่=8x12=96 รอบ=2x(8+12)=40"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "สวนสี่เหลี่ยมกว้าง 30 ยาว 50 ม. หาพื้นที่",
+      "question_text_en": "Garden w=30, l=50m. Area?",
+      "choices": [
+        "1,500 ตร.ม.",
+        "80 ตร.ม.",
+        "1,400 ตร.ม.",
+        "1,600 ตร.ม."
+      ],
+      "correct_answer": "1,500 ตร.ม.",
+      "answer": "1,500 ตร.ม.",
+      "explanation": "30x50=1,500",
+      "explanation_th": "30×50=1,500 ตร.ม.",
+      "difficulty": "easy",
+      "hint_th": "30x50=1,500"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "กระดาษกว้าง 21 ยาว 29.7 ซม. หาพื้นที่",
+      "question_text_en": "Paper w=21, l=29.7 cm. Area?",
+      "choices": [
+        "623.7 ตร.ซม.",
+        "50.7 ตร.ซม.",
+        "622.70 ตร.ซม.",
+        "624.70 ตร.ซม."
+      ],
+      "correct_answer": "623.7 ตร.ซม.",
+      "answer": "623.7 ตร.ซม.",
+      "explanation": "21x29.7=623.7",
+      "explanation_th": "21×29.7=623.7 ตร.ซม.",
+      "difficulty": "easy",
+      "hint_th": "21×29.7=623.7 ตร.ซม."
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "สี่เหลี่ยมผืนผ้ารอบ 100 ซม. กว้าง 20 ซม. ยาว?",
+      "question_text_en": "Rect perim 100 cm, w=20 cm. Length?",
+      "choices": [
+        "30 ซม.",
+        "25 ซม.",
+        "35 ซม.",
+        "32 ซม."
+      ],
+      "correct_answer": "30 ซม.",
+      "answer": "30 ซม.",
+      "explanation": "2x(20+ยาว)=100 | 20+ยาว=50 | ยาว=30 ซม.",
+      "explanation_th": "2×(20+ยาว)=100 → 20+ยาว=50 → ยาว=30 ซม.",
+      "difficulty": "medium",
+      "hint_th": "รอบ=2x(กว้าง+ยาว) → แก้สมการ"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "พื้นที่สี่เหลี่ยมผืนผ้า 72 ตร.ซม. ยาว 9 ซม. กว้าง?",
+      "question_text_en": "Rect area 72 sq cm, l=9 cm. Width?",
+      "choices": [
+        "8 ซม.",
+        "7 ซม.",
+        "9 ซม.",
+        "16 ซม."
+      ],
+      "correct_answer": "8 ซม.",
+      "answer": "8 ซม.",
+      "explanation": "72/9=8 ซม.",
+      "explanation_th": "72÷9=8 ซม.",
+      "difficulty": "easy",
+      "hint_th": "กว้าง = พื้นที่/ยาว"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "สี่เหลี่ยมจัตุรัสพื้นที่ 144 ตร.ซม. ด้านละ?",
+      "question_text_en": "Square area 144 sq cm. Side?",
+      "choices": [
+        "12 ซม.",
+        "11 ซม.",
+        "13 ซม.",
+        "10 ซม."
+      ],
+      "correct_answer": "12 ซม.",
+      "answer": "12 ซม.",
+      "explanation": "√144=12 ซม.",
+      "explanation_th": "√144=12 ซม.",
+      "difficulty": "easy",
+      "hint_th": "ด้าน = √พื้นที่ = √144 = 12"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "กระดานกว้าง 100 ยาว 200 ซม. รอบ 600 ซม. กระดานกับกรอบ?",
+      "question_text_en": "Board w=100, l=200 cm. Frame 600 cm. Board vs frame?",
+      "choices": [
+        "พอดี ไม่เกินไม่ขาด",
+        "เกิน 100 ซม.",
+        "ขาด 100 ซม.",
+        "ขาด 200 ซม."
+      ],
+      "correct_answer": "พอดี ไม่เกินไม่ขาด",
+      "answer": "พอดี ไม่เกินไม่ขาด",
+      "explanation": "รอบกระดาน=2x(100+200)=600 ซม. พอดี!",
+      "explanation_th": "2×(100+200)=600 ซม. ซึ่งพอดีกับกรอบ 600 ซม.",
+      "difficulty": "medium",
+      "hint_th": "รอบกระดาน=2x(100+200)=600 ซม. พอดี"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ข้อใดถูก: พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว",
+      "question_text_en": "Which: Rectangle area = width × length?",
+      "choices": [
+        "ถูกต้อง",
+        "ผิด ต้องเป็น กว้าง+ยาว",
+        "ผิด ต้องเป็น 2×(กว้าง+ยาว)",
+        "ผิด ต้องเป็น ก×2+ย×2"
+      ],
+      "correct_answer": "ถูกต้อง",
+      "answer": "ถูกต้อง",
+      "explanation": "พื้นที่สี่เหลี่ยมผืนผ้า = ก×ย ถูกต้อง",
+      "explanation_th": "พื้นที่สี่เหลี่ยมผืนผ้า = ก×ย ถูกต้อง",
+      "difficulty": "easy",
+      "hint_th": "พื้นที่ = กว้าง × ยาว"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 5 ยาว 15 ม. หาพื้นที่และรอบรูป",
+      "question_text_en": "Rectangle w=5, l=15m. Area and perimeter?",
+      "choices": [
+        "75 ตร.ม. รอบ 40 ม.",
+        "75 ตร.ม. รอบ 20 ม.",
+        "100 ตร.ม. รอบ 40 ม.",
+        "75 ตร.ม. รอบ 30 ม."
+      ],
+      "correct_answer": "75 ตร.ม. รอบ 40 ม.",
+      "answer": "75 ตร.ม. รอบ 40 ม.",
+      "explanation": "5x15=75 | 2x(5+15)=2x20=40",
+      "explanation_th": "5×15=75 ตร.ม. | 2×(5+15)=2×20=40 ม.",
+      "difficulty": "easy",
+      "hint_th": "พื้นที่=5x15=75 รอบ=2x(5+15)=40"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

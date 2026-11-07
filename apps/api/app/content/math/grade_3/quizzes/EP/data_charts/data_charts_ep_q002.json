@@ -1,0 +1,179 @@
+{
+  "lesson_id": "data_charts_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "data_ep_q002_e01",
+      "question_text": "Case 1: Pictograph, 1 picture = 3 students. Oranges have 4 pictures. How many students like oranges?",
+      "question_text_th": "สถานการณ์ที่ 1: แผนภูมิรูปภาพ 1 รูป = 3 คน ส้มมี 4 รูป มีคนชอบส้มกี่คน",
+      "choices": [
+        "12 students",
+        "7 students",
+        "6 students",
+        "9 students"
+      ],
+      "correct_answer": "12 students",
+      "answer": "4 pictures x 3 students = 12 students",
+      "explanation": "4 pictures x 3 students = 12 students",
+      "explanation_th": "4 รูป x 3 คน = 12 คน",
+      "difficulty": "easy",
+      "hint_th": "Multiply pictures by 3"
+    },
+    {
+      "question_id": "data_ep_q002_e02",
+      "question_text": "Case 2: Bar chart shows heights: Lin 120 cm, Mali 115 cm, An 125 cm, Ai 118 cm. Who is the tallest?",
+      "question_text_th": "สถานการณ์ที่ 2: แผนภูมิแท่งแสดงความสูง: ลิน 120 ซม., มะลิ 115 ซม., อ้น 125 ซม., ไอ 118 ซม. ใครสูงที่สุด",
+      "choices": [
+        "An",
+        "Lin",
+        "Mali",
+        "Ai"
+      ],
+      "correct_answer": "An",
+      "answer": "125 cm is the highest → An is the tallest",
+      "explanation": "125 cm is the highest → An is the tallest",
+      "explanation_th": "125 ซม. เป็นค่าสูงสุด → อ้นสูงที่สุด",
+      "difficulty": "easy",
+      "hint_th": "Find the highest value"
+    },
+    {
+      "question_id": "data_ep_q002_e03",
+      "question_text": "Case 3: Pictograph, 1 picture = 2 people. Bananas have 7 pictures, Oranges have 5 pictures. Total people?",
+      "question_text_th": "สถานการณ์ที่ 3: แผนภูมิรูปภาพ 1 รูป = 2 คน กล้วยมี 7 รูป และส้มมี 5 รูป รวมกี่คน",
+      "choices": [
+        "24 people",
+        "12 people",
+        "14 people",
+        "22 people"
+      ],
+      "correct_answer": "24 people",
+      "answer": "Bananas 7x2=14 + Oranges 5x2=10 = 24 people",
+      "explanation": "Bananas 7x2=14 + Oranges 5x2=10 = 24 people",
+      "explanation_th": "กล้วย 7x2=14 + ส้ม 5x2=10 = 24 คน",
+      "difficulty": "easy",
+      "hint_th": "Multiply each then add"
+    },
+    {
+      "question_id": "data_ep_q002_m01",
+      "question_text": "Case 4: Bar chart shows daily sales: Mon 65 items, Tue 48 items, Wed 73 items, Thu 55 items. Which day had the lowest sales?",
+      "question_text_th": "สถานการณ์ที่ 4: แผนภูมิแท่งแสดงยอดขายรายวัน: จันทร์ 65, อังคาร 48, พุธ 73, พฤหัส 55 ชิ้น วันใดขายได้น้อยที่สุด",
+      "choices": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Monday"
+      ],
+      "correct_answer": "Tuesday",
+      "answer": "48 items is the lowest → Tuesday had the lowest sales",
+      "explanation": "48 items is the lowest → Tuesday had the lowest sales",
+      "explanation_th": "48 ชิ้น เป็นค่าต่ำสุด → อังคารขายได้น้อยที่สุด",
+      "difficulty": "medium",
+      "hint_th": "Find the lowest value"
+    },
+    {
+      "question_id": "data_ep_q002_m02",
+      "question_text": "Case 5: Pictograph, 1 picture = 4 points. Team A=8, B=5, C=9 pictures. How many points did Team C get?",
+      "question_text_th": "สถานการณ์ที่ 5: แผนภูมิรูปภาพ 1 รูป = 4 คะแนน ทีม A=8, B=5, C=9 รูป ทีม C ได้กี่คะแนน",
+      "choices": [
+        "36 points",
+        "32 points",
+        "20 points",
+        "40 points"
+      ],
+      "correct_answer": "36 points",
+      "answer": "Team C: 9 pictures x 4 points = 36 points",
+      "explanation": "Team C: 9 pictures x 4 points = 36 points",
+      "explanation_th": "ทีม C: 9 รูป x 4 = 36 คะแนน",
+      "difficulty": "medium",
+      "hint_th": "Multiply pictures by 4"
+    },
+    {
+      "question_id": "data_ep_q002_m03",
+      "question_text": "Case 6: Bar chart shows books on 4 shelves: Shelf 1 = 120 books, Shelf 2 = 95, Shelf 3 = 140, Shelf 4 = 85. Total books?",
+      "question_text_th": "สถานการณ์ที่ 6: แผนภูมิแท่งแสดงจำนวนหนังสือในห้องสมุด 4 ชั้น: ชั้น 1=120, ชั้น 2=95, ชั้น 3=140, ชั้น 4=85 เล่ม รวมมีหนังสือกี่เล่ม",
+      "choices": [
+        "440 books",
+        "425 books",
+        "450 books",
+        "435 books"
+      ],
+      "correct_answer": "440 books",
+      "answer": "120 + 95 + 140 + 85 = 440 books",
+      "explanation": "120 + 95 + 140 + 85 = 440 books",
+      "explanation_th": "120+95+140+85 = 440 เล่ม",
+      "difficulty": "medium",
+      "hint_th": "Add all shelves"
+    },
+    {
+      "question_id": "data_ep_q002_m04",
+      "question_text": "Case 7: Pictograph, 1 picture = 5 people. Oranges=6, Bananas=8, Grapes=4, Mangoes=5. How many people like bananas and which fruit is most popular?",
+      "question_text_th": "สถานการณ์ที่ 7: แผนภูมิรูปภาพ 1 รูป = 5 คน ส้ม=6, กล้วย=8, องุ่น=4, มะม่วง=5 รูป มีคนชอบกล้วยกี่คน และผลไม้ชนิดใดมากที่สุด",
+      "choices": [
+        "40 people, Bananas",
+        "38 people, Oranges",
+        "40 people, Mangoes",
+        "35 people, Grapes"
+      ],
+      "correct_answer": "40 people, Bananas",
+      "answer": "Bananas: 8x5=40, Oranges: 6x5=30, Grapes: 4x5=20, Mangoes: 5x5=25 → Bananas most popular with 40 people",
+      "explanation": "Bananas: 8x5=40, Oranges: 6x5=30, Grapes: 4x5=20, Mangoes: 5x5=25 → Bananas most popular with 40 people",
+      "explanation_th": "กล้วย 40 คน, มากที่สุด (ส้ม 30, องุ่น 20, มะม่วง 25)",
+      "difficulty": "medium",
+      "hint_th": "Multiply each by 5 then compare"
+    },
+    {
+      "question_id": "data_ep_q002_h01",
+      "question_text": "Case 8: Pictograph, 1 picture = 5 people. Oranges=8, Bananas=6, Grapes=7, Mangoes=5 pictures. What is the probability that a randomly chosen person likes grapes?",
+      "question_text_th": "สถานการณ์ที่ 8: แผนภูมิรูปภาพ 1 รูป = 5 คน ส้ม=8, กล้วย=6, องุ่น=7, มะม่วง=5 รูป ความน่าจะเป็นที่ชอบองุ่น",
+      "choices": [
+        "7/26",
+        "5/26",
+        "7/20",
+        "6/26"
+      ],
+      "correct_answer": "7/26",
+      "answer": "Oranges=8x5=40, Bananas=6x5=30, Grapes=7x5=35, Mangoes=5x5=25, Total=130 → P=35/130=7/26",
+      "explanation": "Oranges=8x5=40, Bananas=6x5=30, Grapes=7x5=35, Mangoes=5x5=25, Total=130 → P=35/130=7/26",
+      "explanation_th": "องุ่น=35/130=7/26",
+      "difficulty": "hard",
+      "hint_th": "Find total first, then ratio"
+    },
+    {
+      "question_id": "data_ep_q002_h02",
+      "question_text": "Case 9: Bar chart shows monthly sales: Jan=42, Feb=58, Mar=35, Apr=67, May=53. What is the total of months with sales greater than 50 items?",
+      "question_text_th": "สถานการณ์ที่ 9: แผนภูมิแท่งแสดงยอดขาย 5 เดือน: ม.ค.=42, ก.พ.=58, มี.ค.=35, เม.ย.=67, พ.ค.=53 ผลรวมของเดือนที่ขายได้มากกว่า 50 ชิ้น",
+      "choices": [
+        "178 items",
+        "165 items",
+        "185 items",
+        "195 items"
+      ],
+      "correct_answer": "178 items",
+      "answer": "Feb=58, Apr=67, May=53 → 58+67+53 = 178 items (Jan42, Mar35 < 50)",
+      "explanation": "Feb=58, Apr=67, May=53 → 58+67+53 = 178 items (Jan42, Mar35 < 50)",
+      "explanation_th": "ก.พ.+เม.ย.+พ.ค. = 58+67+53 = 178 ชิ้น",
+      "difficulty": "hard",
+      "hint_th": "Filter months with sales>50 then sum"
+    },
+    {
+      "question_id": "data_ep_q002_h03",
+      "question_text": "Case 10: Bar chart shows test scores: Lin 88, Mali 76, An 95, Ai 82, Bee 91. What is the average score of all 5 students?",
+      "question_text_th": "สถานการณ์ที่ 10: แผนภูมิแท่งแสดงคะแนนสอบ: ลิน 88, มะลิ 76, อ้น 95, ไอ 82, บี 91 ค่าเฉลี่ยของคะแนนทั้ง 5 คน เป็นเท่าไร",
+      "choices": [
+        "86.4 points",
+        "86 points",
+        "85 points",
+        "87 points"
+      ],
+      "correct_answer": "86.4 points",
+      "answer": "Total = 88+76+95+82+91 = 432, Average = 432÷5 = 86.4 points",
+      "explanation": "Total = 88+76+95+82+91 = 432, Average = 432÷5 = 86.4 points",
+      "explanation_th": "ผลรวม = 432 ÷ 5 = 86.4 คะแนน",
+      "difficulty": "hard",
+      "hint_th": "Average = Sum ÷ Count"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

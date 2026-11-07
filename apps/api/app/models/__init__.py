@@ -1,6 +1,9 @@
 from app.models.entities import (
     AIGenerationJob,
     AdminAuditLog,
+    AffiliateCommissionLedger,
+    AffiliatePayoutAccount,
+    AffiliateWithdrawalRequest,
     AvatarItem,
     Badge,
     ChildBadge,
@@ -38,6 +41,9 @@ from app.models.entities import (
 __all__ = [
     "AIGenerationJob",
     "AdminAuditLog",
+    "AffiliateCommissionLedger",
+    "AffiliatePayoutAccount",
+    "AffiliateWithdrawalRequest",
     "AvatarItem",
     "Badge",
     "ChildBadge",

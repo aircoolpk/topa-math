@@ -31,8 +31,8 @@ export default function AdminSystemPage() {
         </section>
       )}
       <section className="rounded-lg bg-white p-5 text-sm text-gray-600 shadow-sm">
-        <h2 className="mb-2 text-lg font-bold text-gray-950">Docker / Beta notes</h2>
-        <p>ใช้ Docker Desktop ตรวจ container `4craft-web`, `4craft-api`, `4craft-postgres`, `4craft-redis` และเก็บ Stripe ให้อยู่ใน test mode เท่านั้น</p>
+        <h2 className="mb-2 text-lg font-bold text-gray-950">Docker / API notes</h2>
+        <p>ใช้ Docker Desktop ตรวจ container `4craft-api`, `4craft-postgres`, `4craft-redis`, `4craft-cloudflared` และให้ frontend deploy ผ่าน Cloudflare Pages</p>
       </section>
     </main>
   )

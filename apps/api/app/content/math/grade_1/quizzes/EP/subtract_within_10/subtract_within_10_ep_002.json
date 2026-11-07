@@ -1,0 +1,179 @@
+{
+  "lesson_id": "subtract_within_10_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "subw10_ep_q002_e01",
+      "question_text": "Pim has 6 oranges. She eats 2 oranges. How many oranges does Pim have left?",
+      "question_text_th": "พิมมีส้ม 6 ผล กินไป 2 ผล พิมเหลือส้มกี่ผล",
+      "choices": [
+        "4 oranges",
+        "7 oranges",
+        "2 oranges",
+        "8 oranges"
+      ],
+      "correct_answer": "4 oranges",
+      "answer": "4 oranges",
+      "explanation": "6 - 2 = 4 oranges",
+      "explanation_th": "ลบส้ม: 6 - 2 = 4 ผล",
+      "difficulty": "easy",
+      "hint_th": "Eat 2 oranges."
+    },
+    {
+      "question_id": "subw10_ep_q002_e02",
+      "question_text": "Ai has 9 balloons. One balloon flies away. How many balloons does Ai have left?",
+      "question_text_th": "อ้ายมีลูกโปร่ง 9 ลูก ลูกโปร่งลอยหนีไป 1 ลูก อ้ายเหลือลูกโปร่งกี่ลูก",
+      "choices": [
+        "8 balloons",
+        "11 balloons",
+        "6 balloons",
+        "12 balloons"
+      ],
+      "correct_answer": "8 balloons",
+      "answer": "8 balloons",
+      "explanation": "9 - 1 = 8 balloons",
+      "explanation_th": "ลบลูกโปร่ง: 9 - 1 = 8 ลูก",
+      "difficulty": "easy",
+      "hint_th": "One flies away."
+    },
+    {
+      "question_id": "subw10_ep_q002_e03",
+      "question_text": "Lin has 5 dolls. She gives 1 doll to her sister. How many dolls does Lin have now?",
+      "question_text_th": "ลินมีตุ๊กตา 5 ตัว ให้พี่ 1 ตัว ลินเหลือตุ๊กตากี่ตัว",
+      "choices": [
+        "4 dolls",
+        "7 dolls",
+        "2 dolls",
+        "8 dolls"
+      ],
+      "correct_answer": "4 dolls",
+      "answer": "4 dolls",
+      "explanation": "5 - 1 = 4 dolls",
+      "explanation_th": "ลบตุ๊กตา: 5 - 1 = 4 ตัว",
+      "difficulty": "easy",
+      "hint_th": "Give 1 doll."
+    },
+    {
+      "question_id": "subw10_ep_q002_m01",
+      "question_text": "Mai has 10 flowers. She puts 4 flowers in a vase. How many flowers does Mai have outside the vase?",
+      "question_text_th": "ไมมีดอกไม้ 10 ดอก ใส่ในแจกัน 4 ดอก ไมมีดอกไม้นอกแจกันกี่ดอก",
+      "choices": [
+        "6 flowers",
+        "9 flowers",
+        "4 flowers",
+        "10 flowers"
+      ],
+      "correct_answer": "6 flowers",
+      "answer": "6 flowers",
+      "explanation": "10 - 4 = 6 flowers",
+      "explanation_th": "ลบดอกไม้: 10 - 4 = 6 ดอก",
+      "difficulty": "medium",
+      "hint_th": "Put in vase."
+    },
+    {
+      "question_id": "subw10_ep_q002_m02",
+      "question_text": "Tad has 8 candies. He eats 3 candies. His mother gives him 2 more. How many candies does Tad have now?",
+      "question_text_th": "ต้นมีลูกชุบ 8 ชิ้น กินไป 3 ชิ้น แม่ให้เพิ่ม 2 ชิ้น ต้นมีลูกชุบกี่ชิ้น",
+      "choices": [
+        "7 candies",
+        "10 candies",
+        "5 candies",
+        "11 candies"
+      ],
+      "correct_answer": "7 candies",
+      "answer": "7 candies",
+      "explanation": "8 - 3 + 2 = 7 candies",
+      "explanation_th": "ลบแล้วบวก: 8 - 3 + 2 = 7 ชิ้น",
+      "difficulty": "medium",
+      "hint_th": "Eat then get more."
+    },
+    {
+      "question_id": "subw10_ep_q002_m03",
+      "question_text": "Book has 7 pencils. He loses 5 pencils. How many pencils does Book have left?",
+      "question_text_th": "บุ๊กมีดินสอ 7 แท่ง ทำหายไป 5 แท่ง บุ๊กเหลือดินสอกี่แท่ง",
+      "choices": [
+        "2 pencils",
+        "5 pencils",
+        "6 pencils",
+        "3 pencils"
+      ],
+      "correct_answer": "2 pencils",
+      "answer": "2 pencils",
+      "explanation": "7 - 5 = 2 pencils",
+      "explanation_th": "ลบดินสอ: 7 - 5 = 2 แท่ง",
+      "difficulty": "medium",
+      "hint_th": "Lose 5 pencils."
+    },
+    {
+      "question_id": "subw10_ep_q002_m04",
+      "question_text": "Mali has 9 stickers. She gives 6 stickers to her friends. How many stickers does Mali have left?",
+      "question_text_th": "มะลิมีสติกเกอร์ 9 ดวง ให้เพื่อน 6 ดวง มะลิเหลือสติกเกอร์กี่ดวง",
+      "choices": [
+        "3 stickers",
+        "6 stickers",
+        "1 stickers",
+        "7 stickers"
+      ],
+      "correct_answer": "3 stickers",
+      "answer": "3 stickers",
+      "explanation": "9 - 6 = 3 stickers",
+      "explanation_th": "ลบสติกเกอร์: 9 - 6 = 3 ดวง",
+      "difficulty": "medium",
+      "hint_th": "Give to friends."
+    },
+    {
+      "question_id": "subw10_ep_q002_h01",
+      "question_text": "Ai has 8 marbles. He loses 3 marbles. Then he wins 5 marbles from Book. How many marbles does Ai have now?",
+      "question_text_th": "อ้ายมีลูกแก้ว 8 ลูก เสียไป 3 ลูก แล้วชนะจากบุ๊กได้ 5 ลูก อ้ายมีลูกแก้วกี่ลูก",
+      "choices": [
+        "10 marbles",
+        "13 marbles",
+        "8 marbles",
+        "14 marbles"
+      ],
+      "correct_answer": "10 marbles",
+      "answer": "10 marbles",
+      "explanation": "8 - 3 + 5 = 10 marbles",
+      "explanation_th": "ลบแล้วชนะ: 8 - 3 + 5 = 10 ลูก",
+      "difficulty": "hard",
+      "hint_th": "Lose then win."
+    },
+    {
+      "question_id": "subw10_ep_q002_h02",
+      "question_text": "A shop has 9 boxes of crayons. A school buys 4 boxes and another school buys 3 boxes. How many boxes does the shop have left?",
+      "question_text_th": "ร้านมีกล่องสีเทียน 9 กล่อง โรงเรียนซื้อ 4 กล่อง อีกโรงเรียนซื้อ 3 กล่อง เหลือกี่กล่อง",
+      "choices": [
+        "2 boxes",
+        "5 boxes",
+        "6 boxes",
+        "4 boxes"
+      ],
+      "correct_answer": "2 boxes",
+      "answer": "2 boxes",
+      "explanation": "9 - 4 - 3 = 2 boxes",
+      "explanation_th": "ลบทีละโรงเรียน: 9 - 4 - 3 = 2 กล่อง",
+      "difficulty": "hard",
+      "hint_th": "Two schools."
+    },
+    {
+      "question_id": "subw10_ep_q002_h03",
+      "question_text": "Lin has 6 flowers. She gives 2 flowers to Mali and 1 flower to Ai. Then she picks 4 more flowers in the garden. How many flowers does Lin have now?",
+      "question_text_th": "ลินมีดอกไม้ 6 ดอก ให้มะลิ 2 ดอก และให้อ้าย 1 ดอก แล้วเก็บเพิ่มจากสวนได้ 4 ดอก ลินมีดอกไม้กี่ดอก",
+      "choices": [
+        "7 flowers",
+        "10 flowers",
+        "5 flowers",
+        "11 flowers"
+      ],
+      "correct_answer": "7 flowers",
+      "answer": "7 flowers",
+      "explanation": "6 - 2 - 1 + 4 = 7 flowers",
+      "explanation_th": "ลบให้แล้วเก็บ: 6 - 2 - 1 + 4 = 7 ดอก",
+      "difficulty": "hard",
+      "hint_th": "Give away then pick."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

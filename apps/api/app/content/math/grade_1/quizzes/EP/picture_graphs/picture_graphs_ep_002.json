@@ -1,0 +1,179 @@
+{
+  "lesson_id": "picture_graphs_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "pg_ep_q002_e01",
+      "question_text": "A picture graph: Star has 5 votes, Heart has 8 votes, Circle has 3 votes. How many votes does Heart get?",
+      "question_text_th": "กราฟภาพ: ดาวได้ 5 โหวต หัวใจได้ 8 โหวต วงกลมได้ 3 โหวต หัวใจได้กี่โหวต",
+      "choices": [
+        "8 votes",
+        "12 votes",
+        "6 votes",
+        "13 votes"
+      ],
+      "correct_answer": "8 votes",
+      "answer": "8 votes",
+      "explanation": "Heart got 8 votes",
+      "explanation_th": "หัวใจได้ 8 โหวต",
+      "difficulty": "easy",
+      "hint_th": "Read the Heart row."
+    },
+    {
+      "question_id": "pg_ep_q002_e02",
+      "question_text": "Graph shows: Red 7 votes, Blue 4 votes, Green 9 votes. Which color gets the fewest votes?",
+      "question_text_th": "กราฟ: แดง 7 น้ำเงิน 4 เขียว 9 สีไหนได้โหวตน้อยที่สุด",
+      "choices": [
+        "Blue",
+        "8 (Blue)",
+        "2 (Blue)",
+        "9 (Blue)"
+      ],
+      "correct_answer": "Blue",
+      "answer": "Blue",
+      "explanation": "Blue with 4 votes",
+      "explanation_th": "น้ำเงิน 4 โหวต",
+      "difficulty": "easy",
+      "hint_th": "Find the smallest."
+    },
+    {
+      "question_id": "pg_ep_q002_e03",
+      "question_text": "A graph: Cat 6 votes, Dog 9 votes, Bird 2 votes. How many votes do Cat and Bird get together?",
+      "question_text_th": "กราฟ: แมว 6 โหวต หมา 9 โหวต นก 2 โหวต แมวและนกได้โหวตรวมกี่โหวต",
+      "choices": [
+        "8 votes",
+        "12 votes",
+        "6 votes",
+        "13 votes"
+      ],
+      "correct_answer": "8 votes",
+      "answer": "8 votes",
+      "explanation": "6 + 2 = 8 votes",
+      "explanation_th": "6 + 2 = 8 โหวต",
+      "difficulty": "easy",
+      "hint_th": "Add Cat and Bird."
+    },
+    {
+      "question_id": "pg_ep_q002_m01",
+      "question_text": "Students choose favorite subject. Math: 8, Science: 5, Art: 9, Music: 4. How many more students like Art than Science?",
+      "question_text_th": "นักเรียนเลือกวิชาที่ชอบ คณิต 8 วิทยาศาสตร์ 5 ศิลปะ 9 ดนตรี 4 มีนักเรียนชอบศิลปะมากกว่าวิทยาศาสตร์กี่คน",
+      "choices": [
+        "4 more students",
+        "8 more students",
+        "2 more students",
+        "9 more students"
+      ],
+      "correct_answer": "4 more students",
+      "answer": "4 more students",
+      "explanation": "9 - 5 = 4 more students",
+      "explanation_th": "9 - 5 = 4 คน",
+      "difficulty": "medium",
+      "hint_th": "Art minus Science."
+    },
+    {
+      "question_id": "pg_ep_q002_m02",
+      "question_text": "A survey of pets: Dog 7, Cat 5, Fish 8, Bird 3. How many students have a pet?",
+      "question_text_th": "สำรวจสัตว์เลี้ยง: หมา 7 คน แมว 5 คน ปลา 8 คน นก 3 คน มีนักเรียนมีสัตว์เลี้ยงกี่คน",
+      "choices": [
+        "23 students",
+        "27 students",
+        "21 students",
+        "28 students"
+      ],
+      "correct_answer": "23 students",
+      "answer": "23 students",
+      "explanation": "7 + 5 + 8 + 3 = 23 students",
+      "explanation_th": "บวกทั้งหมด: 7 + 5 + 8 + 3 = 23 คน",
+      "difficulty": "medium",
+      "hint_th": "Add all four."
+    },
+    {
+      "question_id": "pg_ep_q002_m03",
+      "question_text": "Graph: Apple juice 6, Orange juice 9, Grape juice 4, Mango juice 7. How many more votes does Orange juice have than Grape juice?",
+      "question_text_th": "กราฟ: น้ำแอปเปิ้ล 6 น้ำส้ม 9 น้ำองุ่น 4 น้ำมะม่วง 7 น้ำส้มได้โหวตมากกว่าน้ำองุ่นกี่โหวต",
+      "choices": [
+        "5 more votes",
+        "9 more votes",
+        "3 more votes",
+        "10 more votes"
+      ],
+      "correct_answer": "5 more votes",
+      "answer": "5 more votes",
+      "explanation": "9 - 4 = 5 more votes",
+      "explanation_th": "9 - 4 = 5 โหวต",
+      "difficulty": "medium",
+      "hint_th": "Orange minus Grape."
+    },
+    {
+      "question_id": "pg_ep_q002_m04",
+      "question_text": "A graph: Toy car 8, Toy plane 5, Toy boat 7, Toy train 4. How many votes do Toy car and Toy boat get together?",
+      "question_text_th": "กราฟ: รถบังค์ 8 เครื่องบิน 5 เรือ 7 รถไฟ 4 รถบังค์และเรือได้โหวตรวมกี่โหวต",
+      "choices": [
+        "15 votes",
+        "19 votes",
+        "13 votes",
+        "20 votes"
+      ],
+      "correct_answer": "15 votes",
+      "answer": "15 votes",
+      "explanation": "8 + 7 = 15 votes",
+      "explanation_th": "8 + 7 = 15 โหวต",
+      "difficulty": "medium",
+      "hint_th": "Add car and boat."
+    },
+    {
+      "question_id": "pg_ep_q002_h01",
+      "question_text": "A picture graph shows: Red beads 6, Blue beads 8, Yellow beads 5, Green beads 9. If each symbol = 2 real beads, how many real beads are there in total?",
+      "question_text_th": "กราฟ: ลูกปัดแดง 6 น้ำเงิน 8 เหลือง 5 เขียว 9 ถ้าแต่ลายแทนลูกปัดจริง 2 ลูก มีลูกปัดจริงทั้งหมดกี่ลูก",
+      "choices": [
+        "56 real beads",
+        "60 real beads",
+        "54 real beads",
+        "61 real beads"
+      ],
+      "correct_answer": "56 real beads",
+      "answer": "56 real beads",
+      "explanation": "(6 + 8 + 5 + 9) × 2 = 56 real beads",
+      "explanation_th": "(6 + 8 + 5 + 9) × 2 = 56 ลูก",
+      "difficulty": "hard",
+      "hint_th": "Multiply sum by 2."
+    },
+    {
+      "question_id": "pg_ep_q002_h02",
+      "question_text": "A class graph: Football 7, Basketball 9, Tennis 4, Swimming 6. If each vote = 2 students, how many students chose Football or Swimming?",
+      "question_text_th": "กราฟ: ฟุตบอล 7 บาสเกตบอล 9 เทนนิส 4 ว่ายน้ำ 6 ถ้าแต่ละโหวต = 2 นักเรียน มีนักเรียนเลือกฟุตบอลหรือว่ายน้ำกี่คน",
+      "choices": [
+        "26 students",
+        "30 students",
+        "24 students",
+        "31 students"
+      ],
+      "correct_answer": "26 students",
+      "answer": "26 students",
+      "explanation": "(7 + 6) × 2 = 26 students",
+      "explanation_th": "(7 + 6) × 2 = 26 คน",
+      "difficulty": "hard",
+      "hint_th": "Add then multiply."
+    },
+    {
+      "question_id": "pg_ep_q002_h03",
+      "question_text": "A survey: Bus 8 students, Car 5, Bicycle 9, Walk 4. How many more students take a bicycle or walk than take a bus or car?",
+      "question_text_th": "สำรวจ: รถบัส 8 รถยนต์ 5 จักรยาน 9 เดิน 4 มีนักเรียนจักรยานหรือเดินมากกว่ารถบัสหรือรถยนต์กี่คน",
+      "choices": [
+        "0 students",
+        "4 students",
+        "3 students",
+        "5 students"
+      ],
+      "correct_answer": "0 students",
+      "answer": "0 students",
+      "explanation": "(9+4) = 13, (8+5) = 13, difference = 0",
+      "explanation_th": "(9+4) - (8+5) = 13 - 13 = 0",
+      "difficulty": "hard",
+      "hint_th": "Compare two groups."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

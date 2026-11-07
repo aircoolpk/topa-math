@@ -1,0 +1,218 @@
+{
+  "variant_id": "weight_measurement_ep_001",
+  "variant_title_th": "การวัดน้ำหนัก",
+  "variant_title_en": "Weight Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดน้ำหนัก",
+  "title_en": "Weight Measurement",
+  "story_theme_th": "Mother bought mangosteen weighing 750 grams and durian weighing 1 kilogram 200 grams. How much lighter is the mangosteen than the durian? And what is their total weight in kilograms?",
+  "helper_tip": "Convert units to be the same first. 1 kilogram = 1,000 grams.",
+  "think_story_th": "Durian = 1,200 g, Mangosteen lighter by: 1,200 - 750 = 450 g, Total: 750 + 1,200 = 1,950 g",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mother bought mangosteen weighing 750 grams and durian weighing 1 kilogram 200 grams. How much lighter is the mangosteen than the durian? And what is their total weight in kilograms?",
+      "data": {
+        "content_th": "Mother bought mangosteen weighing 750 grams and durian weighing 1 kilogram 200 grams. How much lighter is the mangosteen than the durian? And what is their total weight in kilograms?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Durian = 1,200 g, Mangosteen lighter by: 1,200 - 750 = 450 g, Total: 750 + 1,200 = 1,950 g",
+      "data": {
+        "content_th": "Durian = 1,200 g, Mangosteen lighter by: 1,200 - 750 = 450 g, Total: 750 + 1,200 = 1,950 g"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Mangosteen",
+            "value": 750,
+            "display": "750 g",
+            "color": "#4ECDC4",
+            "width_pct": 62
+          },
+          {
+            "label": "Durian",
+            "value": 1200,
+            "display": "1,200 g",
+            "color": "#45B7D1",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Difference",
+            "value": 450,
+            "display": "450 g",
+            "color": "#C7F464",
+            "width_pct": 38,
+            "is_remainder": true
+          }
+        ],
+        "unit": "grams"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Convert to grams",
+            "expression": "1 kg 200 g = 1,200 g",
+            "a": 1,
+            "b": 1200,
+            "res": 1200,
+            "op": "+",
+            "formula": {
+              "display": "1x1000+200=1,200",
+              "a": 1,
+              "b": 1200,
+              "result": 1200,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "1,000",
+              "b_display": "200",
+              "result_display": "1,200",
+              "operation": "add"
+            },
+            "story_connection": "1 kg = 1,000 g + 200 g = 1,200 g"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find the difference",
+            "expression": "1,200 - 750 = 450",
+            "a": 1200,
+            "b": 750,
+            "res": 450,
+            "op": "-",
+            "formula": {
+              "display": "1,200 - 750 = 450",
+              "a": 1200,
+              "b": 750,
+              "result": 450,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "1,200",
+              "b_display": "750",
+              "result_display": "450",
+              "operation": "subtract"
+            },
+            "story_connection": "1,200 - 750 = 450 g"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Find total weight",
+            "expression": "750 + 1,200 = 1,950 g",
+            "a": 750,
+            "b": 1200,
+            "res": 1950,
+            "op": "+",
+            "formula": {
+              "display": "750 + 1,200 = 1,950",
+              "a": 750,
+              "b": 1200,
+              "result": 1950,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "750",
+              "b_display": "1,200",
+              "result_display": "1,950",
+              "operation": "add"
+            },
+            "story_connection": "750 + 1,200 = 1,950 g"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "1,200 - 750 = 450 and 750 + 1,200 = 1,950",
+      "content": "1,200 - 750 = 450 and 750 + 1,200 = 1,950",
+      "data": {
+        "expression": "1,200 - 750 = 450 and 750 + 1,200 = 1,950",
+        "content_th": "1,200 - 750 = 450 and 750 + 1,200 = 1,950",
+        "operations": [
+          {
+            "op": "+",
+            "a": 1,
+            "b": 1200,
+            "result": 1200
+          },
+          {
+            "op": "-",
+            "a": 1200,
+            "b": 750,
+            "result": 450
+          },
+          {
+            "op": "+",
+            "a": 750,
+            "b": 1200,
+            "result": 1950
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "An orange weighs 680 grams. A mango weighs 920 grams. How much heavier is the mango?",
+      "choices": [
+        "240 g",
+        "140 g",
+        "340 g",
+        "440 g"
+      ],
+      "correct_answer": "240 g",
+      "explanation": "920 - 680 = 240 g",
+      "data": {
+        "question": "An orange weighs 680 grams. A mango weighs 920 grams. How much heavier is the mango?",
+        "choices": [
+          "240 g",
+          "140 g",
+          "340 g",
+          "440 g"
+        ],
+        "correct_answer": "240 g",
+        "explanation": "920 - 680 = 240 g"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -1,0 +1,158 @@
+{
+  "variant_id": "division_ep_001",
+  "variant_title_th": "การหาร",
+  "variant_title_en": "Division",
+  "status": "needs_review",
+  "title_th": "การหาร",
+  "title_en": "Division",
+  "story_theme_th": "Lin has 48 chocolates. She wants to share them equally among 6 friends. How many chocolates does each friend get?",
+  "helper_tip": "Division splits things into equal parts. Amount per group = Total amount divided by Number of groups.",
+  "think_story_th": "48 / 6 = 8 pieces per friend",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin has 48 chocolates. She wants to share them equally among 6 friends. How many chocolates does each friend get?",
+      "data": {
+        "content_th": "Lin has 48 chocolates. She wants to share them equally among 6 friends. How many chocolates does each friend get?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "48 / 6 = 8 pieces per friend",
+      "data": {
+        "content_th": "48 / 6 = 8 pieces per friend"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Total 48",
+            "value": 48,
+            "display": "48 pieces",
+            "color": "#4ECDC4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Share to 6",
+            "value": 6,
+            "display": "6 friends",
+            "color": "#45B7D1",
+            "width_pct": 13
+          },
+          {
+            "label": "Each gets",
+            "value": 8,
+            "display": "8 pieces",
+            "color": "#C7F464",
+            "width_pct": 17,
+            "is_result": true
+          }
+        ],
+        "unit": "pieces"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find pieces per person",
+            "expression": "48 / 6 = 8",
+            "a": 48,
+            "b": 6,
+            "res": 8,
+            "op": "/",
+            "formula": {
+              "display": "48 / 6 = 8",
+              "a": 48,
+              "b": 6,
+              "result": 8,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "48",
+              "b_display": "6",
+              "result_display": "8",
+              "operation": "divide"
+            },
+            "story_connection": "48 / 6 = 8 pieces per friend"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "48 / 6 = 8",
+      "content": "48 / 6 = 8",
+      "data": {
+        "expression": "48 / 6 = 8",
+        "content_th": "48 / 6 = 8",
+        "operations": [
+          {
+            "op": "/",
+            "a": 48,
+            "b": 6,
+            "result": 8
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Malisa has 36 candies. She shares them equally with 4 friends. How many candies does each person get?",
+      "choices": [
+        "8 candies",
+        "9 candies",
+        "6 candies",
+        "7 candies"
+      ],
+      "correct_answer": "9 candies",
+      "explanation": "36 / 4 = 9 candies",
+      "data": {
+        "question": "Malisa has 36 candies. She shares them equally with 4 friends. How many candies does each person get?",
+        "choices": [
+          "8 candies",
+          "9 candies",
+          "6 candies",
+          "7 candies"
+        ],
+        "correct_answer": "9 candies",
+        "explanation": "36 / 4 = 9 candies"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

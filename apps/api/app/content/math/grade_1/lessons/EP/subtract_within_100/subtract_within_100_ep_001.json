@@ -1,0 +1,211 @@
+{
+  "variant_id": "subtract_within_100_ep_001",
+  "variant_title_en": "Subtraction within 100",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Subtraction within 100",
+  "title_th": "",
+  "story_theme_en": "Lin has 72 stamps. She gives 38 stamps to her friend. How many stamps does Lin have left?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Stamps: 72. Gives away: 38. 72 - 38 = 34 stamps left.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin has 72 stamps. She gives 38 stamps to her friend. How many stamps does Lin have left?",
+      "data": {
+        "content_en": "Lin has 72 stamps. She gives 38 stamps to her friend. How many stamps does Lin have left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Stamps: 72. Gives away: 38. 72 - 38 = 34 stamps left.",
+      "data": {
+        "content_en": "Stamps: 72. Gives away: 38. 72 - 38 = 34 stamps left."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "subtract",
+        "unit": "stamps",
+        "bars": [
+          {
+            "label": "Stamps",
+            "value": 72,
+            "display": "72 stamps",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Give away",
+            "value": 38,
+            "display": "-38",
+            "color": "#FF6B6B",
+            "width_pct": 52
+          },
+          {
+            "label": "Left",
+            "value": 34,
+            "display": "34 stamps",
+            "color": "#C7F464",
+            "width_pct": 47,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Subtract",
+            "expression": "72 - 38 = 34",
+            "formula": {
+              "display": "72 - 38 = 34",
+              "a": 72,
+              "b": 38,
+              "result": 34,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}72&&\\\\\\\\ - 38&&\\\\\\\\ \\\\hline 34&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "72",
+              "b_display": "38",
+              "result_display": "34",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 72 - 38 = 34"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "72 - 38 = 34",
+      "content": "72 - 38 = 34",
+      "data": {
+        "expression": "72 - 38 = 34",
+        "operations": [
+          {
+            "op": "-",
+            "a": 72,
+            "b": 38,
+            "result": 34
+          }
+        ],
+        "content_en": "72 - 38 = 34"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Book has 80 pencils. He sells 41 pencils. How many pencils does he have left?",
+      "choices": [
+        "39 pencils",
+        "44 pencils",
+        "36 pencils",
+        "47 pencils"
+      ],
+      "correct_answer": "39 pencils",
+      "explanation": "80 - 41 = 39 pencils",
+      "data": {
+        "question": "Book has 80 pencils. He sells 41 pencils. How many pencils does he have left?",
+        "choices": [
+          "39 pencils",
+          "44 pencils",
+          "36 pencils",
+          "47 pencils"
+        ],
+        "correct_answer": "39 pencils",
+        "explanation": "80 - 41 = 39 pencils"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "left",
+      "th": "เหลือ",
+      "definition_en": "What remains after taking away."
+    },
+    {
+      "en": "sell",
+      "th": "ขาย",
+      "definition_en": "To give something for money."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Lin has 72 stamps. She gives 38 stamps to her friend. How many stamps does Lin h...",
+      "solution_en": "72 - 38 = 34"
+    }
+  ],
+  "questions": []
+}

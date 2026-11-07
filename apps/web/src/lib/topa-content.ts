@@ -13,6 +13,7 @@ export type TopaFeatureCard = {
   description: string
   order: number
   enabled: boolean
+  image?: string
 }
 
 export type TopaRankingRow = {
@@ -23,15 +24,21 @@ export type TopaRankingRow = {
   total_score: number
   avg_speed: string
   mascot?: string
+  image?: string
 }
 
 export type TopaReviewCard = {
   name: string
-  school_claim: string
+  grade_label: string
+  province: string
   quote: string
-  image: string
+  image_path: string
   rating: number
   enabled: boolean
+  order?: number
+  school_claim?: string
+  grade?: string
+  image?: string
 }
 
 export type TopaMascotItem = {
@@ -47,9 +54,16 @@ export type TopaMascotItem = {
 
 export type TopaSimpleCard = {
   title: string
-  icon: string
+  icon?: string
   text: string
   enabled: boolean
+  // CMS-driven extensions — optional so older fallback configs still typecheck.
+  grade?: string
+  description?: string
+  status?: string
+  button_text?: string
+  order?: number
+  image?: string
 }
 
 export type HomepageConfig = {
@@ -70,7 +84,10 @@ export type HomepageConfig = {
   }
   ranking: {
     title: string
+    subtitle?: string
     description: string
+    promo_text?: string
+    promo_image?: string
     use_demo: boolean
     provinces: string[]
     rows: TopaRankingRow[]
@@ -141,7 +158,7 @@ export const fallbackHomepageConfig: HomepageConfig = {
     primary_cta_link: '/register',
     secondary_cta_text: 'ดูอันดับท็อปไทย',
     secondary_cta_link: '#ranking',
-    mascot_group_image: '/brand/topa/mascot-hero-group.png',
+    mascot_group_image: '/brand/topa/homepage-hero-cover-transparent.png',
     stats: [
       { label: 'นักเรียน', value: '1,200+ คน', detail: 'กำลังฝึกเลขกับ TOPA' },
       { label: 'คะแนนเฉลี่ย', value: '4.8/5', detail: 'จากผู้ปกครองและเด็ก ๆ' },
@@ -162,7 +179,10 @@ export const fallbackHomepageConfig: HomepageConfig = {
   },
   ranking: {
     title: 'TOPA Ranking',
+    subtitle: 'จัดอันดับเก่งเลขทั่วไทย',
     description: 'ดูอันดับนักเรียนตัวอย่างจากทั่วไทย เลือกระดับชั้นและจังหวัดได้',
+    promo_text: 'แข่งขันสนุก\nกระตุ้นให้เด็ก\nอยากฝึกทุกวัน',
+    promo_image: '/brand/topa/ranking-promo-action.png',
     use_demo: true,
     provinces: ['ทุกจังหวัด', 'กรุงเทพมหานคร', 'เชียงใหม่', 'ขอนแก่น', 'สงขลา', 'ชลบุรี'],
     rows: [
@@ -175,8 +195,10 @@ export const fallbackHomepageConfig: HomepageConfig = {
   reviews: {
     title: 'รีวิวจากรุ่นพี่',
     cards: [
-      { name: 'คุณแม่น้องพริม', school_claim: 'สอบติดห้อง Gifted โรงเรียนชั้นนำ', quote: 'TOPA ช่วยให้ลูกฝึกโจทย์อย่างมีเป้าหมาย เห็นจุดอ่อนชัด และกล้าทำข้อสอบมากขึ้น', image: '', rating: 5, enabled: true },
-      { name: 'น้องต้นกล้า', school_claim: 'เตรียมสอบเข้า ม.1 Gifted Math', quote: 'แบบฝึกสนุกเหมือนเล่นเกม แต่ช่วยให้ผมคิดเป็นขั้นตอนและทำโจทย์ได้เร็วขึ้น', image: '', rating: 5, enabled: true },
+      { name: 'น้องมีน', grade_label: 'ป.3', province: 'กรุงเทพฯ', quote: 'สนุกจนลืมเลขว่ายากครับ ได้คะแนนแนะนำบททุกวัน ตอนนี้กล้าทำโจทย์เองและมั่นใจมากครับ!', image_path: '/brand/topa/reviews/review-child-1.png', rating: 5, enabled: true, order: 1 },
+      { name: 'น้องข้าวหอม', grade_label: 'ป.2', province: 'เชียงใหม่', quote: 'ก่อนหนูไม่ค่อยชอบเลขเลย แต่พอมาเรียนกับ TOPA สนุกมาก มีเพื่อนในนั้นด้วย อยากฝึกทุกวันเลยค่ะ', image_path: '/brand/topa/reviews/review-child-2.png', rating: 5, enabled: true, order: 2 },
+      { name: 'น้องไทเกอร์', grade_label: 'ป.5', province: 'ขอนแก่น', quote: 'แบบฝึกตรงจุดจริงครับ ทำให้เข้าใจง่ายขึ้นมาก ชอบที่มีคะแนนเก็บตลอด คุณครูชมเลยครับ', image_path: '/brand/topa/reviews/review-child-3.png', rating: 5, enabled: true, order: 3 },
+      { name: 'น้องพิมพ์', grade_label: 'ป.4', province: 'สงขลา', quote: 'มีอันดับให้แข่งกับเพื่อน ทำให้หนูตั้งใจเรียนทุกวัน TOPA ทำให้หนูรักเลขไปแล้วค่ะ!', image_path: '/brand/topa/reviews/review-child-4.png', rating: 5, enabled: true, order: 4 },
     ],
   },
   mascots: { title: 'เพื่อนช่วยเรียนของ TOPA', cards: defaultMascots },
@@ -206,7 +228,7 @@ export const fallbackHomepageConfig: HomepageConfig = {
     subtitle: 'ทดลองเรียนฟรี 3 วัน แล้วดูว่าการฝึกเลขทุกวันเปลี่ยนความมั่นใจได้แค่ไหน',
     button_text: 'ทดลองใช้ฟรี 3 วัน!',
     button_link: '/register',
-    mascot_image: '/brand/topa/mascot-topa.png',
+    mascot_image: '/brand/topa/mascot-topa-transparent.png',
   },
   footer: {
     contact_email: 'support@topamath.com',

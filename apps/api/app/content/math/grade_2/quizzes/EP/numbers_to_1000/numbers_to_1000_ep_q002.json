@@ -1,0 +1,133 @@
+{
+  "quiz_id": "numbers_to_1000_ep_q002",
+  "topic_key": "numbers_to_1000",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz numbers_to_1000_ep_q002",
+  "title_en": "Quiz numbers_to_1000_ep_q002",
+  "questions": [
+    {
+      "question": "Three hundred fifty-one is written as",
+      "choices": [
+        "351",
+        "315",
+        "531",
+        "513"
+      ],
+      "correct_answer": "351",
+      "explanation": "300+50+1 = 351",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which number is the smallest? 890, 980, 809, 908",
+      "choices": [
+        "809",
+        "890",
+        "980",
+        "908"
+      ],
+      "correct_answer": "809",
+      "explanation": "809 has the smallest hundreds digit (8)",
+      "difficulty": "easy"
+    },
+    {
+      "question": "567 - 234 = ?",
+      "choices": [
+        "333",
+        "323",
+        "433",
+        "343"
+      ],
+      "correct_answer": "333",
+      "explanation": "567-234=333",
+      "difficulty": "easy"
+    },
+    {
+      "question": "200 + 600 = ?",
+      "choices": [
+        "800",
+        "700",
+        "900",
+        "600"
+      ],
+      "correct_answer": "800",
+      "explanation": "2+6=8 so 200+600=800",
+      "difficulty": "easy"
+    },
+    {
+      "question": "The ones digit of 482 is",
+      "choices": [
+        "2",
+        "4",
+        "8",
+        "482"
+      ],
+      "correct_answer": "2",
+      "explanation": "4=hundreds, 8=tens, 2=ones",
+      "difficulty": "easy"
+    },
+    {
+      "question": "385 + 429 = ?",
+      "choices": [
+        "814",
+        "804",
+        "714",
+        "904"
+      ],
+      "correct_answer": "814",
+      "explanation": "385+400=785, 785+29=814",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A school has 456 students. 37 are late. How many are not late?",
+      "choices": [
+        "419 students",
+        "429 students",
+        "389 students",
+        "493 students"
+      ],
+      "correct_answer": "419 students",
+      "explanation": "456-37=419 students",
+      "difficulty": "medium"
+    },
+    {
+      "question": "700 - 265 = ?",
+      "choices": [
+        "435",
+        "445",
+        "535",
+        "545"
+      ],
+      "correct_answer": "435",
+      "explanation": "700-200=500, 500-65=435",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Three consecutive numbers start with 234. What is the last number?",
+      "choices": [
+        "236",
+        "237",
+        "235",
+        "233"
+      ],
+      "correct_answer": "236",
+      "explanation": "234, 235, 236 (add 1 each time)",
+      "difficulty": "medium"
+    },
+    {
+      "question": "876 - 498 = ?",
+      "choices": [
+        "378",
+        "388",
+        "368",
+        "478"
+      ],
+      "correct_answer": "378",
+      "explanation": "876-400=476, 476-98=378",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

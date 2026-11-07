@@ -1,0 +1,202 @@
+{
+  "variant_id": "add_sub_to_1000_th_002",
+  "variant_title_th": "การบวกและการลบจำนวนนับไม่เกิน 1,000",
+  "variant_title_en": "Addition and Subtraction up to 1,000",
+  "status": "needs_review",
+  "title_th": "การบวกและการลบจำนวนนับไม่เกิน 1,000",
+  "title_en": "Addition and Subtraction up to 1,000",
+  "story_theme_th": "บุ๊กสะสมแสตมป์ 620 ดวง ให้มะลิไป 245 ดวง ได้รับเพิ่มจากเพื่อนอีก 178 ดวง บุ๊กมีแสตมป์กี่ดวง",
+  "helper_tip": "ลบก่อนแล้วค่อยบวก เขียนตัวเลขเรียงหลักให้ตรงกัน",
+  "think_story_th": "ลบ: 620 - 245 = 375 ดวง, บวก: 375 + 178 = 553 ดวง",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "บุ๊กสะสมแสตมป์ 620 ดวง ให้มะลิไป 245 ดวง ได้รับเพิ่มจากเพื่อนอีก 178 ดวง บุ๊กมีแสตมป์กี่ดวง",
+      "data": {
+        "content_th": "บุ๊กสะสมแสตมป์ 620 ดวง ให้มะลิไป 245 ดวง ได้รับเพิ่มจากเพื่อนอีก 178 ดวง บุ๊กมีแสตมป์กี่ดวง"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "ลบ: 620 - 245 = 375 ดวง, บวก: 375 + 178 = 553 ดวง",
+      "data": {
+        "content_th": "ลบ: 620 - 245 = 375 ดวง, บวก: 375 + 178 = 553 ดวง"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "สะสมไว้",
+            "value": 620,
+            "display": "620 ดวง",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "ให้มะลิ",
+            "value": 245,
+            "display": "245 ดวง",
+            "color": "#FF6B6B",
+            "width_pct": 40
+          },
+          {
+            "label": "เหลือหลังให้",
+            "value": 375,
+            "display": "375 ดวง",
+            "color": "#96CEB4",
+            "width_pct": 60,
+            "is_remainder": true
+          },
+          {
+            "label": "ได้เพิ่ม",
+            "value": 178,
+            "display": "178 ดวง",
+            "color": "#45B7D1",
+            "width_pct": 29
+          },
+          {
+            "label": "รวม",
+            "value": 553,
+            "display": "553 ดวง",
+            "color": "#C7F464",
+            "width_pct": 89,
+            "is_total": true
+          }
+        ],
+        "unit": "ดวง"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: หาแสตมป์ที่เหลือหลังให้",
+            "expression": "620 - 245 = 375",
+            "a": 620,
+            "b": 245,
+            "res": 375,
+            "op": "-",
+            "formula": {
+              "display": "620 - 245 = 375",
+              "a": 620,
+              "b": 245,
+              "result": 375,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "620",
+              "b_display": "245",
+              "result_display": "375",
+              "operation": "subtract"
+            },
+            "story_connection": "620 - 245 = 375 ดวง"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาแสตมป์รวมที่มี",
+            "expression": "375 + 178 = 553",
+            "a": 375,
+            "b": 178,
+            "res": 553,
+            "op": "+",
+            "formula": {
+              "display": "375 + 178 = 553",
+              "a": 375,
+              "b": 178,
+              "result": 553,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "375",
+              "b_display": "178",
+              "result_display": "553",
+              "operation": "add"
+            },
+            "story_connection": "375 + 178 = 553 ดวง"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "620 - 245 + 178 = 553",
+      "content": "620 - 245 + 178 = 553",
+      "data": {
+        "expression": "620 - 245 + 178 = 553",
+        "content_th": "620 - 245 + 178 = 553",
+        "operations": [
+          {
+            "op": "-",
+            "a": 620,
+            "b": 245,
+            "result": 375
+          },
+          {
+            "op": "+",
+            "a": 375,
+            "b": 178,
+            "result": 553
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "โรงงานผลิตขนมปัง 780 ก้อน ขายไป 350 ก้อน ได้ผลิตเพิ่มอีก 295 ก้อน มีขนมปังกี่ก้อน",
+      "choices": [
+        "715 ก้อน",
+        "725 ก้อน",
+        "705 ก้อน",
+        "735 ก้อน"
+      ],
+      "correct_answer": "725 ก้อน",
+      "explanation": "780 - 350 = 430, 430 + 295 = 725 ก้อน",
+      "data": {
+        "question": "โรงงานผลิตขนมปัง 780 ก้อน ขายไป 350 ก้อน ได้ผลิตเพิ่มอีก 295 ก้อน มีขนมปังกี่ก้อน",
+        "choices": [
+          "715 ก้อน",
+          "725 ก้อน",
+          "705 ก้อน",
+          "735 ก้อน"
+        ],
+        "correct_answer": "725 ก้อน",
+        "explanation": "780 - 350 = 430, 430 + 295 = 725 ก้อน"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

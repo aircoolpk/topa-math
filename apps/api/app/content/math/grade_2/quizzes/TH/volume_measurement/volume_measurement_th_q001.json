@@ -1,0 +1,133 @@
+{
+  "quiz_id": "volume_measurement_th_q001",
+  "topic_key": "volume_measurement",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ volume_measurement_th_q001",
+  "title_en": "Quiz volume_measurement_th_q001",
+  "questions": [
+    {
+      "question": "1 ลิตร เท่ากับกี่มิลลิลิตร",
+      "choices": [
+        "1,000 มล.",
+        "100 มล.",
+        "10 มล.",
+        "100,000 มล."
+      ],
+      "correct_answer": "1,000 มล.",
+      "explanation": "1 ล. = 1,000 มล.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "500 มิลลิลิตร + 700 มิลลิลิตร = ? ลิตร",
+      "choices": [
+        "1 ล. 200 มล.",
+        "1 ล. 100 มล.",
+        "1 ล. 300 มล.",
+        "1.2 ล."
+      ],
+      "correct_answer": "1 ล. 200 มล.",
+      "explanation": "1,200 มล. = 1 ล. 200 มล.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "น้ำเต็มขวด 2 ลิตร ดื่มไป 750 มิลลิลิตร เหลือน้ำกี่มิลลิลิตร",
+      "choices": [
+        "1,250 มล.",
+        "1,500 มล.",
+        "1,750 มล.",
+        "1,000 มล."
+      ],
+      "correct_answer": "1,250 มล.",
+      "explanation": "2,000-750=1,250 มล.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "น้ำส้ม 1 ลิตร 500 มิลลิลิตร กับ น้ำเปล่า 2 ลิตร ต่างกันเท่าไร",
+      "choices": [
+        "500 มล.",
+        "1 ล.",
+        "1.5 ล.",
+        "2 ล."
+      ],
+      "correct_answer": "500 มล.",
+      "explanation": "2,000-1,500=500 มล.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ผสมน้ำผลไม้ 350 + 250 + 400 = ? มิลลิลิตร",
+      "choices": [
+        "1,000 มล.",
+        "900 มล.",
+        "1,100 มล.",
+        "800 มล."
+      ],
+      "correct_answer": "1,000 มล.",
+      "explanation": "350+250+400=1,000 มล.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "2 ลิตร 500 มิลลิลิตร - 1 ลิตร 200 มิลลิลิตร = ?",
+      "choices": [
+        "1 ล. 300 มล.",
+        "1 ล. 200 มล.",
+        "1 ล. 500 มล.",
+        "3 ล. 700 มล."
+      ],
+      "correct_answer": "1 ล. 300 มล.",
+      "explanation": "2,500-1,200=1,300 มล.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "มีน้ำ 3 ลิตร ใช้ไป 1 ลิตร 750 มิลลิลิตร เหลือน้ำกี่มิลลิลิตร",
+      "choices": [
+        "1,250 มล.",
+        "1,500 มล.",
+        "2,250 มล.",
+        "1,750 มล."
+      ],
+      "correct_answer": "1,250 มล.",
+      "explanation": "3,000-1,750=1,250 มล.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "น้ำผึ้ง 800 มิลลิลิตร ผสมน้ำ 200 มิลลิลิตร รวมเท่าไร",
+      "choices": [
+        "1 ล.",
+        "900 มล.",
+        "1,100 มล.",
+        "600 มล."
+      ],
+      "correct_answer": "1 ล.",
+      "explanation": "800+200=1,000 มล. = 1 ล.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ครึ่งลิตร เท่ากับกี่มิลลิลิตร",
+      "choices": [
+        "500 มล.",
+        "250 มล.",
+        "750 มล.",
+        "1,000 มล."
+      ],
+      "correct_answer": "500 มล.",
+      "explanation": "0.5 ล. = 500 มล.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "น้ำ 1 ลิตร 400 มิลลิลิตร กับ น้ำ 1 ลิตร 600 มิลลิลิตร รวมกี่ลิตร",
+      "choices": [
+        "3 ล.",
+        "2 ล.",
+        "3.0 ล.",
+        "5 ล."
+      ],
+      "correct_answer": "3 ล.",
+      "explanation": "1,400+1,600=3,000 มล. = 3 ล.",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

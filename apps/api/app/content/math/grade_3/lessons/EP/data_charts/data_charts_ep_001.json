@@ -30,33 +30,77 @@
       "description": "A pictograph showing fruit preferences, 1 symbol = 5 students",
       "model_type": "pictograph",
       "data": {
-        "model_type": "pictograph",
-        "title": "Favorite Fruits of 25 Students",
-        "scale": 5,
+        "chart_title": "Favorite Fruits of 25 Students",
+        "unit": "students",
+        "value_per_picture": 5,
+        "icon": "🍓",
         "categories": [
           {
-            "label_en": "Strawberry",
-            "count": 10,
-            "symbols": 2
+            "label": "Strawberry",
+            "value": 10,
+            "pictures": 2
           },
           {
-            "label_en": "Orange",
-            "count": 5,
-            "symbols": 1
+            "label": "Orange",
+            "value": 5,
+            "pictures": 1
           },
           {
-            "label_en": "Banana",
-            "count": 5,
-            "symbols": 1
+            "label": "Banana",
+            "value": 5,
+            "pictures": 1
           },
           {
-            "label_en": "Grape",
-            "count": 5,
-            "symbols": 1
+            "label": "Grape",
+            "value": 5,
+            "pictures": 1
           }
         ],
-        "total": 25,
-        "unit": "students"
+        "total_value": 25
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract Symbol",
+      "operation": "count_scale",
+      "steps": [
+        "Read the key: 1 symbol = 5 students",
+        "Count symbols in each category row",
+        "Multiply symbols by scale value (symbols × 5)",
+        "Record each category total"
+      ],
+      "data": {
+        "operation": "count_scale",
+        "scale": 5,
+        "unit": "students",
+        "symbol_representation": "1 symbol = 5 students",
+        "category_results": [
+          {
+            "category": "Strawberry",
+            "symbols": 2,
+            "scale": 5,
+            "total": 10
+          },
+          {
+            "category": "Orange",
+            "symbols": 1,
+            "scale": 5,
+            "total": 5
+          },
+          {
+            "category": "Banana",
+            "symbols": 1,
+            "scale": 5,
+            "total": 5
+          },
+          {
+            "category": "Grape",
+            "symbols": 1,
+            "scale": 5,
+            "total": 5
+          }
+        ],
+        "summary": "Count symbols per category, multiply by scale (5), read value for each category"
       }
     },
     {
@@ -66,7 +110,27 @@
       "content": "10+5+5+5=25 students | Strawberry most popular: 10 students",
       "data": {
         "expression": "10+5+5+5=25",
-        "content_en": "10+5+5+5=25 students | Strawberry most popular: 10 students"
+        "content_en": "10+5+5+5=25 students | Strawberry most popular: 10 students",
+        "operations": [
+          {
+            "op": "+",
+            "a": 10.0,
+            "b": 5,
+            "result": 15
+          },
+          {
+            "op": "+",
+            "a": 15.0,
+            "b": 5,
+            "result": 20
+          },
+          {
+            "op": "+",
+            "a": 20.0,
+            "b": 5,
+            "result": 25
+          }
+        ]
       }
     },
     {

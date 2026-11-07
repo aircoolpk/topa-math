@@ -1,0 +1,179 @@
+{
+  "lesson_id": "division_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "div_ep_q002_e01",
+      "question_text": "Case 1: Lin has 14 fruits and shares them equally among 7 friends. How many fruits does each friend get?",
+      "question_text_th": "สถานการณ์ที่ 1: ลินมีผลไม้ 14 ผล แบ่งให้เพื่อน 7 คนเท่าๆ กัน แต่ละคนได้กี่ผล",
+      "choices": [
+        "2 fruits",
+        "3 fruits",
+        "4 fruits",
+        "1 fruit"
+      ],
+      "correct_answer": "2 fruits",
+      "answer": "14 divided by 7 = 2 fruits",
+      "explanation": "14 divided by 7 = 2 fruits",
+      "explanation_th": "14 ÷ 7 = 2 ผล",
+      "difficulty": "easy",
+      "hint_th": "Divide fruits by number of friends"
+    },
+    {
+      "question_id": "div_ep_q002_e02",
+      "question_text": "Case 2: A teacher has 24 sugar bags and shares them equally among 4 students. How many bags does each student get?",
+      "question_text_th": "สถานการณ์ที่ 2: ครูมีน้ำตาล 24 ถุง แบ่งให้นักเรียน 4 คนเท่าๆ กัน แต่ละคนได้กี่ถุง",
+      "choices": [
+        "6 bags",
+        "5 bags",
+        "4 bags",
+        "8 bags"
+      ],
+      "correct_answer": "6 bags",
+      "answer": "24 divided by 4 = 6 bags",
+      "explanation": "24 divided by 4 = 6 bags",
+      "explanation_th": "24 ÷ 4 = 6 ถุง",
+      "difficulty": "easy",
+      "hint_th": "Divide sugar bags by number of students"
+    },
+    {
+      "question_id": "div_ep_q002_e03",
+      "question_text": "Case 3: There are 16 pieces of cake and 8 children. If shared equally, how many pieces does each child get?",
+      "question_text_th": "สถานการณ์ที่ 3: ขนมเค้ก 16 ชิ้น แบ่งให้เด็ก 8 คนเท่าๆ กัน แต่ละคนได้กี่ชิ้น",
+      "choices": [
+        "2 pieces",
+        "3 pieces",
+        "4 pieces",
+        "1 piece"
+      ],
+      "correct_answer": "2 pieces",
+      "answer": "16 divided by 8 = 2 pieces",
+      "explanation": "16 divided by 8 = 2 pieces",
+      "explanation_th": "16 ÷ 8 = 2 ชิ้น",
+      "difficulty": "easy",
+      "hint_th": "Divide cake by number of children"
+    },
+    {
+      "question_id": "div_ep_q002_m01",
+      "question_text": "Case 4: Lin has 48 baht and buys pencils at 6 baht each. How many pencils can she buy?",
+      "question_text_th": "สถานการณ์ที่ 4: ลินมีเงิน 48 บาท ซื้อดินสอแท่งละ 6 บาท ซื้อดินสอได้กี่แท่ง",
+      "choices": [
+        "8 pencils",
+        "7 pencils",
+        "9 pencils",
+        "6 pencils"
+      ],
+      "correct_answer": "8 pencils",
+      "answer": "48 divided by 6 = 8 pencils",
+      "explanation": "48 divided by 6 = 8 pencils",
+      "explanation_th": "48 ÷ 6 = 8 แท่ง",
+      "difficulty": "medium",
+      "hint_th": "Divide money by price per pencil"
+    },
+    {
+      "question_id": "div_ep_q002_m02",
+      "question_text": "Case 5: Lin has 37 flowers and puts 5 flowers in each vase. How many vases can she fill and how many flowers are left?",
+      "question_text_th": "สถานการณ์ที่ 5: ลินมีดอกไม้ 37 ดอก ปักแจกันละ 5 ดอก จะปักได้กี่แจกัน และเหลือดอกไม้กี่ดอก",
+      "choices": [
+        "7 vases, 2 flowers left",
+        "6 vases, 3 flowers left",
+        "7 vases, 3 flowers left",
+        "8 vases, 0 flowers left"
+      ],
+      "correct_answer": "7 vases, 2 flowers left",
+      "answer": "37 divided by 5 = 7 remainder 2 (7x5=35, 37-35=2)",
+      "explanation": "37 divided by 5 = 7 remainder 2 (7x5=35, 37-35=2)",
+      "explanation_th": "37 ÷ 5 = 7 เศษ 2",
+      "difficulty": "medium",
+      "hint_th": "37 ÷ 5 = 7 remainder 2"
+    },
+    {
+      "question_id": "div_ep_q002_m03",
+      "question_text": "Case 6: An orange orchard collects 84 oranges and puts them in bags with 7 oranges each. How many bags are needed?",
+      "question_text_th": "สถานการณ์ที่ 6: สวนส้มเก็บส้มได้ 84 ผล แบ่งใส่ถุงละ 7 ผล ต้องใช้ถุงกี่ใบ",
+      "choices": [
+        "12 bags",
+        "11 bags",
+        "10 bags",
+        "13 bags"
+      ],
+      "correct_answer": "12 bags",
+      "answer": "84 divided by 7 = 12 bags",
+      "explanation": "84 divided by 7 = 12 bags",
+      "explanation_th": "84 ÷ 7 = 12 ใบ",
+      "difficulty": "medium",
+      "hint_th": "Divide oranges by oranges per bag"
+    },
+    {
+      "question_id": "div_ep_q002_m04",
+      "question_text": "Case 7: There are 54 juice bottles and each box holds 9 bottles. How many boxes are needed?",
+      "question_text_th": "สถานการณ์ที่ 7: น้ำผลไม้ 54 ขวด แบ่งใส่ลังละ 9 ขวด ต้องใช้ลังกี่ใบ",
+      "choices": [
+        "6 boxes",
+        "5 boxes",
+        "7 boxes",
+        "8 boxes"
+      ],
+      "correct_answer": "6 boxes",
+      "answer": "54 divided by 9 = 6 boxes",
+      "explanation": "54 divided by 9 = 6 boxes",
+      "explanation_th": "54 ÷ 9 = 6 ใบ",
+      "difficulty": "medium",
+      "hint_th": "Divide bottles by bottles per box"
+    },
+    {
+      "question_id": "div_ep_q002_h01",
+      "question_text": "Case 8: Lin has 67 baht and buys notebooks at 8 baht each. How many notebooks can she buy and how much money is left?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินมีเงิน 67 บาท ซื้อสมุดเล่มละ 8 บาท ซื้อได้กี่เล่ม และเหลือเงินกี่บาท",
+      "choices": [
+        "8 notebooks, 3 baht left",
+        "7 notebooks, 4 baht left",
+        "9 notebooks, 0 baht left",
+        "8 notebooks, 4 baht left"
+      ],
+      "correct_answer": "8 notebooks, 3 baht left",
+      "answer": "67 divided by 8 = 8 remainder 3 (8x8=64, 67-64=3)",
+      "explanation": "67 divided by 8 = 8 remainder 3 (8x8=64, 67-64=3)",
+      "explanation_th": "67 ÷ 8 = 8 เศษ 3 บาท",
+      "difficulty": "hard",
+      "hint_th": "67 ÷ 8 = 8 remainder 3"
+    },
+    {
+      "question_id": "div_ep_q002_h02",
+      "question_text": "Case 9: A factory produces 108 items, puts 9 items in each box. How many boxes are there? And if they give them to 6 shops equally, how many boxes per shop?",
+      "question_text_th": "สถานการณ์ที่ 9: โรงงานผลิตของได้ 108 ชิ้น บรรจุกล่องละ 9 ชิ้น จะได้กี่กล่อง และถ้าแจกจ่ายให้ร้านค้า 6 ร้านเท่าๆ กัน ร้านละกี่กล่อง",
+      "choices": [
+        "12 boxes, 2 per shop",
+        "12 boxes, 3 per shop",
+        "11 boxes, 2 per shop",
+        "13 boxes, 2 per shop"
+      ],
+      "correct_answer": "12 boxes, 2 per shop",
+      "answer": "Boxes: 108÷9=12, Per shop: 12÷6=2",
+      "explanation": "Boxes: 108÷9=12, Per shop: 12÷6=2",
+      "explanation_th": "กล่อง 12 ใบ, แจก 6 ร้าน ร้านละ 2 ใบ",
+      "difficulty": "hard",
+      "hint_th": "Find boxes first, then divide by 6"
+    },
+    {
+      "question_id": "div_ep_q002_h03",
+      "question_text": "Case 10: Lin has 95 baht and buys pencils at 11 baht each. How many pencils can she buy and how much money is left?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินมีเงิน 95 บาท ซื้อดินสอแท่งละ 11 บาท ซื้อได้กี่แท่ง และเหลือเงินกี่บาท",
+      "choices": [
+        "8 pencils, 7 baht left",
+        "9 pencils, 5 baht left",
+        "8 pencils, 6 baht left",
+        "7 pencils, 7 baht left"
+      ],
+      "correct_answer": "8 pencils, 7 baht left",
+      "answer": "95 divided by 11 = 8 remainder 7 (8x11=88, 95-88=7)",
+      "explanation": "95 divided by 11 = 8 remainder 7 (8x11=88, 95-88=7)",
+      "explanation_th": "95 ÷ 11 = 8 เศษ 7 บาท",
+      "difficulty": "hard",
+      "hint_th": "95 ÷ 11 = 8 remainder 7"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

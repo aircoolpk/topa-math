@@ -1,3 +1,4 @@
+import type { AxiosRequestConfig } from 'axios'
 import { apiClient } from '@/lib/api-client'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -10,7 +11,7 @@ export interface DashboardChild {
   first_name: string
   last_name: string
   nickname: string
-  grade_level: number
+  grade_level: number | null
   school_name: string | null
   province: string | null
   avatar_gender: 'girl' | 'boy' | 'unspecified' | null
@@ -145,10 +146,27 @@ export interface VisualBlock {
 
 export type LessonProgram = 'TH' | 'EP'
 
+export interface LessonContentDiagnostics {
+  grade_level: number
+  program_type: LessonProgram | string
+  topic_folders_found: number
+  lesson_variants_found: number
+  approved_variants: number
+  needs_review_variants: number
+  rejected_variants: number
+  student_visible_count: number
+  quiz_variants_found: number
+  approved_quiz_variants: number
+  hidden_reason?: string | null
+}
+
 export interface Lesson {
   // Identification
   lesson_id: string
   id?: string
+  lesson_group_id?: string
+  topic_folder?: string
+  selected_variant_id?: string
   // Classification
   grade_level: number
   topic_code?: string
@@ -158,8 +176,34 @@ export interface Lesson {
   title_th?: string
   title_en?: string
   title?: string
+  subtitle?: string
+  icon?: string
+  helper_tip?: string
+  story?: string
+  think_story?: string
+  model_diagram?: VisualBlock | null
+  number_sentence?: VisualBlock | null
+  practice?: VisualBlock | null
+  lesson_view_model?: {
+    lesson_group_id?: string
+    selected_variant_id?: string
+    grade_level?: number
+    program_type?: LessonProgram | string
+    topic_folder?: string
+    title?: string
+    subtitle?: string
+    icon?: string
+    mascot_helper?: { mascot_id?: string | null; mascot_name?: string | null; image_src?: string | null; title?: string | null; tip?: string }
+    story_label?: string
+    story?: string
+    think_story?: string
+    model_diagram?: VisualBlock | null
+    number_sentence?: { steps?: Array<Record<string, unknown>>; final_answer?: string | number | null; unit?: string; expression?: string }
+    practice?: { question?: string; choices?: string[]; correct_answer?: string; explanation?: string }
+    test_available?: boolean
+    test_unavailable_reason?: string | null
+  }
   // Variant / story theme
-  selected_variant_id?: string
   variant_title_th?: string
   story_theme_th?: string
   // Visual blocks (new Singapore Math content)
@@ -178,10 +222,14 @@ export interface Lesson {
   hints?: string[]
   // Metadata
   estimated_minutes?: number
+  duration?: number
+  description?: string
+  description_th?: string
   has_test?: boolean
   has_approved_test?: boolean
   test_available?: boolean
   test_unavailable_reason?: string | null
+  test_disabled_reason?: string | null
   language_available?: string
   ep_available?: boolean
   // Status
@@ -191,8 +239,18 @@ export interface Lesson {
   is_free_preview?: boolean
 }
 
+export interface LessonsResponse {
+  lessons?: Lesson[]
+  current_grade_lessons?: Lesson[]
+  review_lessons?: Lesson[]
+  future_lessons?: Lesson[]
+  content_diagnostics?: LessonContentDiagnostics | null
+}
+
 export interface DashboardData {
-  child: DashboardChild
+  child: DashboardChild | null
+  grade_level?: number | null
+  setup_required?: boolean
   active_program?: LessonProgram
   can_access_ep?: boolean
   available_programs?: LessonProgram[]
@@ -224,6 +282,8 @@ export interface DashboardData {
     future_lessons?: Lesson[]
     all_lessons?: Lesson[]
   }
+  recommended_skills?: WeakSkill[]
+  affiliate_summary?: AffiliateSummary
 }
 
 // ─── API ─────────────────────────────────────────────────────────────────────
@@ -236,6 +296,15 @@ export interface ShareResponse {
   facebook_url: string
   x_url: string
   line_url: string
+}
+
+export interface RankSummary {
+  total_score: number
+  rank_title: string
+  grade_level: number | null
+  leaderboard_scope?: string
+  rank_position?: number | null
+  total_in_grade?: number | null
 }
 
 export interface ReferralSummary {
@@ -258,10 +327,61 @@ export interface ReferralSummary {
   }>
 }
 
+export interface AffiliateSummary {
+  referral_token: string
+  referral_url: string
+  registered_count: number
+  paid_member_count: number
+  total_referred_paid_minor: number
+  total_commission_minor: number
+  pending_balance_minor: number
+  available_balance_minor: number
+  withdrawn_balance_minor: number
+  min_withdrawal_minor: number
+  payout_account?: {
+    id: string
+    payout_method: 'bank' | 'promptpay' | string
+    account_holder_name: string
+    bank_name?: string | null
+    account_masked?: string | null
+    promptpay_masked?: string | null
+    updated_at?: string | null
+  } | null
+  registrations: Array<{ user_id: string; email_masked?: string | null; created_at?: string | null; has_paid: boolean }>
+  commissions: Array<{
+    id: string
+    referred_user_id: string
+    referred_email_masked?: string | null
+    payment_reference_id: string
+    amount_paid_minor: number
+    commission_minor: number
+    currency: string
+    rate_bps: number
+    status: 'pending' | 'available' | 'reversed' | 'withdrawn'
+    available_at?: string | null
+    created_at?: string | null
+  }>
+  withdrawals: Array<{
+    id: string
+    amount_minor: number
+    currency: string
+    status: 'pending_review' | 'approved' | 'processing' | 'paid' | 'rejected'
+    admin_note?: string | null
+    requested_at?: string | null
+    updated_at?: string | null
+    paid_at?: string | null
+  }>
+}
+
 export const meApi = {
   /** Primary dashboard endpoint */
-  async getDashboard(programType: LessonProgram = 'TH'): Promise<DashboardData> {
-    const res = await apiClient.get('/me/dashboard', { params: { program_type: programType } })
+  async getDashboard(programType: LessonProgram = 'TH', config?: AxiosRequestConfig): Promise<DashboardData> {
+    const res = await apiClient.get('/me/dashboard', {
+      ...config,
+      params: { ...(config?.params || {}), program_type: programType },
+      requestLabel: config?.requestLabel || 'dashboard',
+      timeout: config?.timeout ?? 15000,
+    })
     return res.data as DashboardData
   },
 
@@ -278,6 +398,27 @@ export const meApi = {
   async getReferralSummary(): Promise<ReferralSummary> {
     const res = await apiClient.get('/me/referral')
     return res.data as ReferralSummary
+  },
+
+  async getAffiliateSummary(): Promise<AffiliateSummary> {
+    const res = await apiClient.get('/me/affiliate', { skipAuthRedirect: true, requestLabel: 'dashboard-affiliate', timeout: 8000 })
+    return res.data as AffiliateSummary
+  },
+
+  /** Rank summary for the current child (score, title, leaderboard scope) */
+  async getRankSummary(): Promise<RankSummary> {
+    const res = await apiClient.get('/me/rank-summary', { skipAuthRedirect: true, requestLabel: 'rank-summary', timeout: 8000 })
+    return res.data as RankSummary
+  },
+
+  async saveAffiliatePayoutAccount(payload: Record<string, string | null>) {
+    const res = await apiClient.put('/me/affiliate/payout-account', payload)
+    return res.data as { ok: boolean; payout_account_id: string }
+  },
+
+  async createAffiliateWithdrawal(amountMinor: number) {
+    const res = await apiClient.post('/me/affiliate/withdrawals', { amount_minor: amountMinor })
+    return res.data as { ok: boolean; withdrawal: AffiliateSummary['withdrawals'][number] }
   },
 
   /** Test levels (grade 1–6) */
@@ -370,25 +511,24 @@ export const meApi = {
 
   /** Get available lessons */
   async getLessons(grade?: number, programType?: LessonProgram): Promise<Lesson[]> {
-    const params: Record<string, number | LessonProgram> = {}
-    if (grade !== undefined) params.grade = grade
-    if (programType) params.program_type = programType
-    const res = await apiClient.get('/me/lessons', {
-      params: Object.keys(params).length ? params : undefined,
-    })
-    const data = res.data as Lesson[] | {
-      lessons?: Lesson[]
-      current_grade_lessons?: Lesson[]
-      review_lessons?: Lesson[]
-      future_lessons?: Lesson[]
-    }
-    if (Array.isArray(data)) return data
+    const data = await this.getLessonsPayload(grade, programType)
     if (data.lessons?.length) return data.lessons
     return [
       ...(data.current_grade_lessons ?? []),
       ...(data.review_lessons ?? []),
       ...(data.future_lessons ?? []),
     ]
+  },
+
+  async getLessonsPayload(grade?: number, programType?: LessonProgram): Promise<LessonsResponse> {
+    const params: Record<string, number | LessonProgram> = {}
+    if (grade !== undefined) params.grade = grade
+    if (programType) params.program_type = programType
+    const res = await apiClient.get('/me/lessons', {
+      params: Object.keys(params).length ? params : undefined,
+    })
+    const data = res.data as Lesson[] | LessonsResponse
+    return Array.isArray(data) ? { lessons: data } : data
   },
 
   /** Start a lesson */

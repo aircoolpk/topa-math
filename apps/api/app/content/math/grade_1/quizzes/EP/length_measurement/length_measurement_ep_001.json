@@ -1,0 +1,179 @@
+{
+  "lesson_id": "length_measurement_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "len_ep_q001_e01",
+      "question_text": "A green ribbon is 12 cm long. A red ribbon is 7 cm long. How much longer is the green ribbon?",
+      "question_text_th": "ริบบิ้นสีเขียวยาว 12 เซนติเมตร ริบบิ้นสีแดงยาว 7 เซนติเมตร ริบบิ้นสีเขียวยาวกว่ากี่เซนติเมตร",
+      "choices": [
+        "5 cm longer",
+        "10 cm longer",
+        "2 cm longer",
+        "13 cm longer"
+      ],
+      "correct_answer": "5 cm longer",
+      "answer": "5 cm longer",
+      "explanation": "12 - 7 = 5 cm longer",
+      "explanation_th": "12 - 7 = 5 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Subtract the lengths."
+    },
+    {
+      "question_id": "len_ep_q001_e02",
+      "question_text": "Book's pencil is 15 cm long. His eraser is 6 cm long. How much longer is the pencil than the eraser?",
+      "question_text_th": "ดินสอบุ๊กยาว 15 เซนติเมตร ยางลบยาว 6 เซนติเมตร ดินสอยาวกว่ายางลบกี่เซนติเมตร",
+      "choices": [
+        "9 cm longer",
+        "14 cm longer",
+        "6 cm longer",
+        "17 cm longer"
+      ],
+      "correct_answer": "9 cm longer",
+      "answer": "9 cm longer",
+      "explanation": "15 - 6 = 9 cm longer",
+      "explanation_th": "15 - 6 = 9 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Subtract eraser from pencil."
+    },
+    {
+      "question_id": "len_ep_q001_e03",
+      "question_text": "Lin has a rope 10 cm long. She cuts 3 cm off. How long is the rope now?",
+      "question_text_th": "ลินมีเชือกยาว 10 เซนติเมตร ตัดออก 3 เซนติเมตร เชือกตอนนี้ยาวเท่าไหร่",
+      "choices": [
+        "7 cm",
+        "12 cm",
+        "4 cm",
+        "15 cm"
+      ],
+      "correct_answer": "7 cm",
+      "answer": "7 cm",
+      "explanation": "10 - 3 = 7 cm",
+      "explanation_th": "10 - 3 = 7 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Subtract cut length."
+    },
+    {
+      "question_id": "len_ep_q001_m01",
+      "question_text": "A blue stick is 18 cm long. A yellow stick is 9 cm long. How much longer is the blue stick?",
+      "question_text_th": "ไม้กระดาษสีน้ำเงินยาว 18 เซนติเมตร ไม้กระดาษสีเหลืองยาว 9 เซนติเมตร ไม้สีน้ำเงินยาวกว่ากี่เซนติเมตร",
+      "choices": [
+        "9 cm longer",
+        "14 cm longer",
+        "6 cm longer",
+        "17 cm longer"
+      ],
+      "correct_answer": "9 cm longer",
+      "answer": "9 cm longer",
+      "explanation": "18 - 9 = 9 cm longer",
+      "explanation_th": "18 - 9 = 9 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Subtract."
+    },
+    {
+      "question_id": "len_ep_q001_m02",
+      "question_text": "Mali's ribbon is 25 cm long. She uses 10 cm for a gift. How long is the remaining ribbon?",
+      "question_text_th": "ริบบิ้นมะลิยาว 25 เซนติเมตร ใช้ทำของขวัญ 10 เซนติเมตร เหลือริบบิ้นยาวเท่าไหร่",
+      "choices": [
+        "15 cm",
+        "20 cm",
+        "12 cm",
+        "23 cm"
+      ],
+      "correct_answer": "15 cm",
+      "answer": "15 cm",
+      "explanation": "25 - 10 = 15 cm",
+      "explanation_th": "25 - 10 = 15 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Subtract used part."
+    },
+    {
+      "question_id": "len_ep_q001_m03",
+      "question_text": "A pencil is 14 cm long. An eraser is 5 cm long. How much shorter is the eraser than the pencil?",
+      "question_text_th": "ดินสอยาว 14 เซนติเมตร ยางลบยาว 5 เซนติเมตร ยางลบสั้นกว่าดินสอกี่เซนติเมตร",
+      "choices": [
+        "9 cm shorter",
+        "14 cm shorter",
+        "6 cm shorter",
+        "17 cm shorter"
+      ],
+      "correct_answer": "9 cm shorter",
+      "answer": "9 cm shorter",
+      "explanation": "14 - 5 = 9 cm shorter",
+      "explanation_th": "14 - 5 = 9 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Subtract eraser."
+    },
+    {
+      "question_id": "len_ep_q001_m04",
+      "question_text": "Tad's book is 20 cm long. Book's book is 13 cm long. How much longer is Tad's book?",
+      "question_text_th": "หนังสือต้นยาว 20 เซนติเมตร หนังสือบุ๊กยาว 13 เซนติเมตร หนังสือต้นยาวกว่ากี่เซนติเมตร",
+      "choices": [
+        "7 cm longer",
+        "12 cm longer",
+        "4 cm longer",
+        "15 cm longer"
+      ],
+      "correct_answer": "7 cm longer",
+      "answer": "7 cm longer",
+      "explanation": "20 - 13 = 7 cm longer",
+      "explanation_th": "20 - 13 = 7 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Subtract."
+    },
+    {
+      "question_id": "len_ep_q001_h01",
+      "question_text": "A green ribbon is 30 cm long. A red ribbon is 12 cm long. Lin cuts 8 cm from the green ribbon. How long is the green ribbon now?",
+      "question_text_th": "ริบบิ้นเขียวยาว 30 เซนติเมตร ริบบิ้นแดงยาว 12 เซนติเมตร ลินตัดริบบิ้นเขียวออก 8 เซนติเมตร ริบบิ้นเขียวตอนนี้ยาวเท่าไหร่",
+      "choices": [
+        "22 cm",
+        "27 cm",
+        "19 cm",
+        "30 cm"
+      ],
+      "correct_answer": "22 cm",
+      "answer": "22 cm",
+      "explanation": "30 - 8 = 22 cm",
+      "explanation_th": "30 - 8 = 22 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Subtract cut."
+    },
+    {
+      "question_id": "len_ep_q001_h02",
+      "question_text": "Book's rope is 45 cm. He cuts 15 cm off and then ties another rope of 20 cm to it. How long is Book's rope now?",
+      "question_text_th": "เชือกบุ๊กยาว 45 เซนติเมตร ตัดออก 15 เซนติเมตร แล้วผูกเชือกอีกเส้นยาว 20 เซนติเมตร ตอนนี้เชือกบุ๊กยาวเท่าไหร่",
+      "choices": [
+        "50 cm",
+        "55 cm",
+        "47 cm",
+        "58 cm"
+      ],
+      "correct_answer": "50 cm",
+      "answer": "50 cm",
+      "explanation": "45 - 15 + 20 = 50 cm",
+      "explanation_th": "45 - 15 + 20 = 50 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Cut then add."
+    },
+    {
+      "question_id": "len_ep_q001_h03",
+      "question_text": "A blue stick is 36 cm. A red stick is 14 cm. Lin cuts 10 cm from the blue stick and 5 cm from the red stick. What is the total length of both sticks now?",
+      "question_text_th": "ไม้สีน้ำเงินยาว 36 เซนติเมตร ไม้สีแดงยาว 14 เซนติเมตร ลินตัดไม้สีน้ำเงิน 10 ซม และไม้สีแดง 5 ซม รวมยาวเท่าไหร่ตอนนี้",
+      "choices": [
+        "35 cm",
+        "40 cm",
+        "32 cm",
+        "43 cm"
+      ],
+      "correct_answer": "35 cm",
+      "answer": "35 cm",
+      "explanation": "(36-10) + (14-5) = 26 + 9 = 35 cm",
+      "explanation_th": "(36-10)+(14-5) = 26+9 = 35 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Cut both then add."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

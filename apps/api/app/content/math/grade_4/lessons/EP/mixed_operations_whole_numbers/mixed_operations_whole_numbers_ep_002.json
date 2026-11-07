@@ -1,0 +1,165 @@
+{
+  "variant_id": "mixed_operations_whole_numbers_ep_002",
+  "variant_title_en": "Mixed Operations of Whole Numbers",
+  "status": "needs_review",
+  "title_en": "Mixed Operations of Whole Numbers",
+  "story_theme_en": "A delivery company sends goods in 15 containers with 2,480 boxes per container. How many boxes in total? If these boxes are shared equally among 12 shops, how many boxes does each shop get?",
+  "helper_tip": "Multiply first, then divide. Check your work by multiplying backwards.",
+  "hint_th": "คูณก่อน แล้วค่อยหาร",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A delivery company sends goods in 15 containers with 2,480 boxes per container. How many boxes in total? If these boxes are shared equally among 12 shops, how many boxes does each shop get?",
+      "data": {
+        "content_en": "A delivery company sends goods in 15 containers with 2,480 boxes per container. How many boxes in total? If these boxes are shared equally among 12 shops, how many boxes does each shop get?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Find total boxes → 15 x 2,480 = total boxes | Step 2: Divide among shops → total / 12 = boxes per shop",
+      "data": {
+        "content_en": "Step 1: Find total boxes → 15 x 2,480 = total boxes | Step 2: Divide among shops → total / 12 = boxes per shop"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Array Model",
+      "model_type": "array_model",
+      "data": {
+        "model_type": "array_model",
+        "operation": "multiply_then_divide",
+        "rows": 15,
+        "cols": 2480,
+        "total": 37200,
+        "unit": "boxes"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Multiply total boxes",
+            "expression": "15 x 2,480 = 37,200",
+            "formula": {
+              "display": "15 x 2,480 = 37,200",
+              "a": 15,
+              "b": 2480,
+              "result": 37200,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}15&\\\\\\\\ ×\\\\quad 2480&\\\\\\\\ \\\\hline 37200&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "15",
+              "b_display": "2480",
+              "result_display": "37200",
+              "operation": "mul"
+            },
+            "story_connection": "15 containers x 2,480 boxes = 37,200 boxes"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Divide among shops",
+            "expression": "37,200 / 12 = 3,100 boxes each, remainder 0",
+            "formula": {
+              "display": "37,200 / 12 = 3,100 boxes each, remainder 0",
+              "a": 37200,
+              "b": 12,
+              "result": 3100,
+              "operation": "div"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}37200&\\\\\\\\ ÷\\\\quad 12&\\\\\\\\ \\\\hline 3100&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "37200",
+              "b_display": "12",
+              "result_display": "3100",
+              "operation": "div"
+            },
+            "story_connection": "37,200 / 12 = 3,100 boxes per shop"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "15 x 2,480 = 37,200 | 37,200 / 12 = 3,100 remainder 0",
+      "content": "15 x 2,480 = 37,200 boxes  |  37,200 / 12 = 3,100 boxes per shop, remainder 0",
+      "data": {
+        "expression": "15 x 2,480 = 37,200 | 37,200 / 12 = 3,100 remainder 0",
+        "operations": [
+          {
+            "op": "x",
+            "a": 15,
+            "b": 2480,
+            "result": 37200
+          },
+          {
+            "op": "/",
+            "a": 37200,
+            "b": 12,
+            "result": 3100
+          }
+        ],
+        "content_en": "15 x 2,480 = 37,200 boxes  |  37,200 / 12 = 3,100 boxes per shop, remainder 0"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A bakery bakes bread in 25 layers with 48 loaves per layer. How many loaves in total? If they put them in bags with 60 loaves per bag, how many full bags can they make?",
+      "choices": [
+        "1,200 loaves 20 bags remainder 0",
+        "1,200 loaves 18 bags remainder 40",
+        "1,200 loaves 20 bags remainder 0 loaves",
+        "1,180 loaves 19 bags remainder 40"
+      ],
+      "correct_answer": "1,200 loaves 20 bags remainder 0",
+      "explanation": "25 x 48 = 1,200 loaves | 1,200 / 60 = 20 bags remainder 0",
+      "data": {
+        "question": "A bakery bakes bread in 25 layers with 48 loaves per layer. How many loaves in total? If they put them in bags with 60 loaves per bag, how many full bags can they make?",
+        "choices": [
+          "1,200 loaves 20 bags remainder 0",
+          "1,200 loaves 18 bags remainder 40",
+          "1,200 loaves 20 bags remainder 0 loaves",
+          "1,180 loaves 19 bags remainder 40"
+        ],
+        "correct_answer": "1,200 loaves 20 bags remainder 0",
+        "explanation": "25 x 48 = 1,200 loaves | 1,200 / 60 = 20 bags remainder 0"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "8 x 12 + 5 x 20 = ?",
+      "solution_en": "8 x 12 = 96 | 5 x 20 = 100 | 96 + 100 = 196"
+    }
+  ],
+  "common_mistakes": [
+    "Adding before multiplying (wrong order)",
+    "Dividing without checking the product first"
+  ],
+  "hints": [
+    "Multiply and divide BEFORE adding and subtracting.",
+    "If there are multiple multiplications, do left to right, then add."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "order of operations",
+      "th": "ลำดับการคำนวณ",
+      "definition_en": "The correct sequence for doing math operations"
+    },
+    {
+      "en": "remainder",
+      "th": "เศษ",
+      "definition_en": "Amount left over after division"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "variant_id": "numbers_over_100000_ep_002",
+  "variant_title_en": "Numbers Greater than 100,000",
+  "status": "needs_review",
+  "title_en": "Numbers Greater than 100,000",
+  "story_theme_en": "A market vendor sells vegetables for 3 days. Monday she earned 78,450 baht. Tuesday she earned 56,780 baht. Wednesday she earned 89,270 baht. How much did she earn in 3 days? If she buys ingredients for 145,000 baht, how much money will she have left?",
+  "helper_tip": "Add all the numbers first, then subtract. Write numbers in the correct columns.",
+  "hint_th": "บวกทุกจำนวนก่อน แล้วค่อยลบ เขียนตัวเลขให้ตรงหลัก",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A market vendor sells vegetables for 3 days. Monday she earned 78,450 baht. Tuesday she earned 56,780 baht. Wednesday she earned 89,270 baht. How much did she earn in 3 days? If she buys ingredients for 145,000 baht, how much money will she have left?",
+      "data": {
+        "content_en": "A market vendor sells vegetables for 3 days. Monday she earned 78,450 baht. Tuesday she earned 56,780 baht. Wednesday she earned 89,270 baht. How much did she earn in 3 days? If she buys ingredients for 145,000 baht, how much money will she have left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Find total earnings → 78,450 + 56,780 + 89,270 = total | Step 2: Subtract cost → total - 145,000 = money left",
+      "data": {
+        "content_en": "Step 1: Find total earnings → 78,450 + 56,780 + 89,270 = total | Step 2: Subtract cost → total - 145,000 = money left"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "bars": [
+          {
+            "label": "Monday",
+            "value": 78450,
+            "display": "78,450 baht",
+            "color": "#4ECDC4",
+            "width_pct": 60
+          },
+          {
+            "label": "Tuesday",
+            "value": 56780,
+            "display": "56,780 baht",
+            "color": "#45B7D1",
+            "width_pct": 43
+          },
+          {
+            "label": "Wednesday",
+            "value": 89270,
+            "display": "89,270 baht",
+            "color": "#96CEB4",
+            "width_pct": 68
+          },
+          {
+            "label": "Total (3 days)",
+            "value": 224500,
+            "display": "224,500 baht",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Ingredients",
+            "value": 145000,
+            "display": "145,000 baht",
+            "color": "#FF6B6B",
+            "width_pct": 65
+          },
+          {
+            "label": "Money Left",
+            "value": 79500,
+            "display": "79,500 baht",
+            "color": "#C7F464",
+            "width_pct": 35,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add Monday + Tuesday",
+            "expression": "78,450 + 56,780 = 135,230",
+            "formula": {
+              "display": "78,450 + 56,780 = 135,230",
+              "a": 78450,
+              "b": 56780,
+              "result": 135230,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}78450&\\\\\\\\ +\\\\quad 56780&\\\\\\\\ \\\\hline 135230&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "78450",
+              "b_display": "56780",
+              "result_display": "135230",
+              "operation": "add"
+            },
+            "story_connection": "78,450 + 56,780 = 135,230 baht"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add Wednesday",
+            "expression": "135,230 + 89,270 = 224,500",
+            "formula": {
+              "display": "135,230 + 89,270 = 224,500",
+              "a": 135230,
+              "b": 89270,
+              "result": 224500,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}135230&\\\\\\\\ +\\\\quad 89270&\\\\\\\\ \\\\hline 224500&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "135230",
+              "b_display": "89270",
+              "result_display": "224500",
+              "operation": "add"
+            },
+            "story_connection": "135,230 + 89,270 = 224,500 baht"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Subtract cost",
+            "expression": "224,500 - 145,000 = 79,500",
+            "formula": {
+              "display": "224,500 - 145,000 = 79,500",
+              "a": 224500,
+              "b": 145000,
+              "result": 79500,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}224500&\\\\\\\\ -\\\\quad 145000&\\\\\\\\ \\\\hline 79500&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "224500",
+              "b_display": "145000",
+              "result_display": "79500",
+              "operation": "sub"
+            },
+            "story_connection": "224,500 - 145,000 = 79,500 baht left"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "(78,450 + 56,780 + 89,270) - 145,000 = 79,500",
+      "content": "(78,450 + 56,780 + 89,270) - 145,000 = 79,500 baht",
+      "data": {
+        "expression": "(78,450 + 56,780 + 89,270) - 145,000 = 79,500",
+        "operations": [
+          {
+            "op": "+",
+            "a": 78450,
+            "b": 56780,
+            "result": 135230
+          },
+          {
+            "op": "+",
+            "a": 135230,
+            "b": 89270,
+            "result": 224500
+          },
+          {
+            "op": "-",
+            "a": 224500,
+            "b": 145000,
+            "result": 79500
+          }
+        ],
+        "content_en": "(78,450 + 56,780 + 89,270) - 145,000 = 79,500 baht"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A shop sells goods for 4 days. It earns 52,300 + 68,750 + 47,150 + 81,400 baht. How much is the total?",
+      "choices": [
+        "239,600 baht",
+        "249,600 baht",
+        "229,600 baht",
+        "259,600 baht"
+      ],
+      "correct_answer": "249,600 baht",
+      "explanation": "52,300 + 68,750 + 47,150 + 81,400 = 249,600 baht",
+      "data": {
+        "question": "A shop sells goods for 4 days. It earns 52,300 + 68,750 + 47,150 + 81,400 baht. How much is the total?",
+        "choices": [
+          "239,600 baht",
+          "249,600 baht",
+          "229,600 baht",
+          "259,600 baht"
+        ],
+        "correct_answer": "249,600 baht",
+        "explanation": "52,300 + 68,750 + 47,150 + 81,400 = 249,600 baht"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "A shop earns 45,000 + 67,500 + 58,900 baht in 3 days. How much is the total?",
+      "solution_en": "45,000 + 67,500 + 58,900 = 171,400 baht"
+    }
+  ],
+  "common_mistakes": [
+    "Adding numbers in the wrong columns",
+    "Forgetting to carry when the sum exceeds 9",
+    "Subtracting before adding all numbers first"
+  ],
+  "hints": [
+    "Draw a place value line: |hundred-thousands|ten-thousands|thousands|hundreds|tens|ones|",
+    "Add from right to left, carrying when needed."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "income",
+      "th": "รายได้",
+      "definition_en": "Money earned from selling"
+    },
+    {
+      "en": "cost",
+      "th": "ต้นทุน",
+      "definition_en": "The price of buying something"
+    },
+    {
+      "en": "profit",
+      "th": "กำไร",
+      "definition_en": "Money left after subtracting cost from income"
+    }
+  ]
+}

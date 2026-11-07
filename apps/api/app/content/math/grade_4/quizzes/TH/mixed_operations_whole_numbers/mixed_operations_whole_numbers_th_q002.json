@@ -1,0 +1,179 @@
+{
+  "lesson_id": "mixed_operations_whole_numbers_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "7 x 6 + 7 x 4 = ?",
+      "question_text_en": "7 x 6 + 7 x 4 = ?",
+      "choices": [
+        "70",
+        "84",
+        "56",
+        "98"
+      ],
+      "correct_answer": "70",
+      "answer": "70",
+      "explanation": "7x6=42 | 7x4=28 | 42+28=70 หรือ 7x(6+4)=7x10=70",
+      "explanation_th": "7×6=42 | 7×4=28 | 42+28=70 หรือ 7×(6+4)=7×10=70",
+      "difficulty": "easy",
+      "hint_th": "ใช้การกระจาย: 7x(6+4)=70"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "50 - 20 / 5 = ?",
+      "question_text_en": "50 - 20 / 5 = ?",
+      "choices": [
+        "46",
+        "6",
+        "42",
+        "10"
+      ],
+      "correct_answer": "46",
+      "answer": "46",
+      "explanation": "20/5=4 | 50-4=46 หารก่อนลบ",
+      "explanation_th": "20÷5=4 | 50-4=46",
+      "difficulty": "easy",
+      "hint_th": "หารก่อนบวกลบ"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "(12 + 8) x 5 = ?",
+      "question_text_en": "(12 + 8) x 5 = ?",
+      "choices": [
+        "100",
+        "20",
+        "40",
+        "80"
+      ],
+      "correct_answer": "100",
+      "answer": "100",
+      "explanation": "12+8=20 | 20x5=100",
+      "explanation_th": "12+8=20 | 20×5=100",
+      "difficulty": "easy",
+      "hint_th": "ทำในวงเล็บก่อน"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "36 / 6 + 36 / 4 = ?",
+      "question_text_en": "36 / 6 + 36 / 4 = ?",
+      "choices": [
+        "15",
+        "9",
+        "18",
+        "12"
+      ],
+      "correct_answer": "15",
+      "answer": "15",
+      "explanation": "36/6=6 | 36/4=9 | 6+9=15",
+      "explanation_th": "36÷6=6 | 36÷4=9 | 6+9=15",
+      "difficulty": "medium",
+      "hint_th": "หารก่อนบวก"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "100 - 15 x 5 + 25 = ?",
+      "question_text_en": "100 - 15 x 5 + 25 = ?",
+      "choices": [
+        "50",
+        "60",
+        "40",
+        "70"
+      ],
+      "correct_answer": "50",
+      "answer": "50",
+      "explanation": "15x5=75 | 100-75+25=50",
+      "explanation_th": "15×5=75 | 100-75+25=50",
+      "difficulty": "medium",
+      "hint_th": "คูณก่อน แล้วลบบวกซ้ายไปขวา"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "8 x (15 - 7) = ?",
+      "question_text_en": "8 x (15 - 7) = ?",
+      "choices": [
+        "64",
+        "56",
+        "8",
+        "48"
+      ],
+      "correct_answer": "64",
+      "answer": "64",
+      "explanation": "15-7=8 | 8x8=64",
+      "explanation_th": "15-7=8 | 8×8=64",
+      "difficulty": "easy",
+      "hint_th": "ทำในวงเล็บก่อน แล้วคูณ"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "5 x 6 + 3 x 4 - 2 x 3 = ?",
+      "question_text_en": "5 x 6 + 3 x 4 - 2 x 3 = ?",
+      "choices": [
+        "36",
+        "30",
+        "42",
+        "24"
+      ],
+      "correct_answer": "36",
+      "answer": "36",
+      "explanation": "5x6=30 | 3x4=12 | 2x3=6 | 30+12-6=36",
+      "explanation_th": "5×6=30 | 3×4=12 | 2×3=6 | 30+12-6=36",
+      "difficulty": "medium",
+      "hint_th": "คูณก่อนทั้งหมด แล้วบวกลบซ้ายไปขวา"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "(45 - 15) / (6 + 4) = ?",
+      "question_text_en": "(45 - 15) / (6 + 4) = ?",
+      "choices": [
+        "3",
+        "30",
+        "4",
+        "2"
+      ],
+      "correct_answer": "3",
+      "answer": "3",
+      "explanation": "45-15=30 | 6+4=10 | 30/10=3",
+      "explanation_th": "45-15=30 | 6+4=10 | 30÷10=3",
+      "difficulty": "hard",
+      "hint_th": "ทำวงเล็บทั้งสองก่อน แล้วหาร"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "จำนวนหนึ่งหารด้วย 7 แล้วบวก 12 ได้ 25 จำนวนนั้นคือเท่าไร",
+      "question_text_en": "A number divided by 7 then add 12 equals 25. What is the number?",
+      "choices": [
+        "91",
+        "84",
+        "98",
+        "77"
+      ],
+      "correct_answer": "91",
+      "answer": "91",
+      "explanation": "x/25-12=13 → x/7=13 → x=91",
+      "explanation_th": "x÷25-12=13 → x÷7=13 → x=91",
+      "difficulty": "hard",
+      "hint_th": "แก้สมการ: x/25-12=13 → x/7=13 → x=91"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "3 x (8 + 2) - 2 x (10 - 6) = ?",
+      "question_text_en": "3 x (8 + 2) - 2 x (10 - 6) = ?",
+      "choices": [
+        "22",
+        "30",
+        "18",
+        "26"
+      ],
+      "correct_answer": "22",
+      "answer": "22",
+      "explanation": "8+2=10 | 10-6=4 | 3x10=30 | 2x4=8 | 30-8=22",
+      "explanation_th": "8+2=10 | 10-6=4 | 3×10=30 | 2×4=8 | 30-8=22",
+      "difficulty": "hard",
+      "hint_th": "ทำวงเล็บก่อน แล้วคูณ แล้วลบ"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

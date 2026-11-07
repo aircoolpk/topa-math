@@ -1,0 +1,236 @@
+{
+  "variant_id": "data_presentation_ep_001",
+  "variant_title_en": "Data Presentation",
+  "status": "needs_review",
+  "title_en": "Data Presentation",
+  "story_theme_en": "Lin's fruit shop keeps a weekly sales record. Monday: sold 125 kg of mangoes. Tuesday: sold 98 kg. Wednesday: sold 156 kg. Thursday: sold 87 kg. Friday: sold 142 kg. What is the total sales for the week? Which day had the highest sales?",
+  "helper_tip": "Add all values together, then compare to find the highest value.",
+  "hint_th": "บวกค่าทั้งหมด แล้วเปรียบเทียบหาค่าสูงสุด",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin's fruit shop keeps a weekly sales record. Monday: sold 125 kg of mangoes. Tuesday: sold 98 kg. Wednesday: sold 156 kg. Thursday: sold 87 kg. Friday: sold 142 kg. What is the total sales for the week? Which day had the highest sales?",
+      "data": {
+        "content_en": "Lin's fruit shop keeps a weekly sales record. Monday: sold 125 kg of mangoes. Tuesday: sold 98 kg. Wednesday: sold 156 kg. Thursday: sold 87 kg. Friday: sold 142 kg. What is the total sales for the week? Which day had the highest sales?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Add all sales → 125 + 98 + 156 + 87 + 142 = total | Step 2: Find highest → compare each day → Wednesday 156 kg is the highest",
+      "data": {
+        "content_en": "Step 1: Add all sales → 125 + 98 + 156 + 87 + 142 = total | Step 2: Find highest → compare each day → Wednesday 156 kg is the highest"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Chart",
+      "model_type": "bar_chart",
+      "data": {
+        "model_type": "bar_chart",
+        "operation": "sum_compare",
+        "bars": [
+          {
+            "label": "Monday",
+            "value": 125,
+            "display": "125 kg",
+            "color": "#4ECDC4",
+            "width_pct": 80
+          },
+          {
+            "label": "Tuesday",
+            "value": 98,
+            "display": "98 kg",
+            "color": "#45B7D1",
+            "width_pct": 63
+          },
+          {
+            "label": "Wednesday",
+            "value": 156,
+            "display": "156 kg",
+            "color": "#FFD93D",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Thursday",
+            "value": 87,
+            "display": "87 kg",
+            "color": "#96CEB4",
+            "width_pct": 56
+          },
+          {
+            "label": "Friday",
+            "value": 142,
+            "display": "142 kg",
+            "color": "#FF6B6B",
+            "width_pct": 91
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add Monday + Tuesday",
+            "expression": "125 + 98 = 223",
+            "formula": {
+              "display": "125 + 98 = 223",
+              "a": 125,
+              "b": 98,
+              "result": 223,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}125&\\\\\\\\ +\\\\quad 98&\\\\\\\\ \\\\hline 223&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "125",
+              "b_display": "98",
+              "result_display": "223",
+              "operation": "add"
+            },
+            "story_connection": "125 + 98 = 223 kg"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add Wednesday",
+            "expression": "223 + 156 = 379",
+            "formula": {
+              "display": "223 + 156 = 379",
+              "a": 223,
+              "b": 156,
+              "result": 379,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}223&\\\\\\\\ +\\\\quad 156&\\\\\\\\ \\\\hline 379&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "223",
+              "b_display": "156",
+              "result_display": "379",
+              "operation": "add"
+            },
+            "story_connection": "223 + 156 = 379 kg"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Add Thursday + Friday",
+            "expression": "379 + 87 + 142 = 608",
+            "formula": {
+              "display": "379 + 87 + 142 = 608",
+              "a": 379,
+              "b": 87,
+              "result": 466,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}379&\\\\\\\\ +\\\\quad 87&\\\\\\\\ \\\\hline 466&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "379",
+              "b_display": "87",
+              "result_display": "466",
+              "operation": "add"
+            },
+            "story_connection": "379 + 87 = 466 kg | 466 + 142 = 608 kg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "125 + 98 + 156 + 87 + 142 = 608",
+      "content": "125 + 98 + 156 + 87 + 142 = 608 kilograms",
+      "data": {
+        "expression": "125 + 98 + 156 + 87 + 142 = 608",
+        "operations": [
+          {
+            "op": "+",
+            "a": 125,
+            "b": 98,
+            "result": 223
+          },
+          {
+            "op": "+",
+            "a": 223,
+            "b": 156,
+            "result": 379
+          },
+          {
+            "op": "+",
+            "a": 379,
+            "b": 87,
+            "result": 466
+          },
+          {
+            "op": "+",
+            "a": 466,
+            "b": 142,
+            "result": 608
+          }
+        ],
+        "content_en": "125 + 98 + 156 + 87 + 142 = 608 kilograms"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A cake shop sells cakes for 5 days: 85, 92, 78, 105, 90 pieces. What is the total sales? Which day had the highest sales?",
+      "choices": [
+        "450 pieces, Thursday",
+        "450 pieces, Wednesday",
+        "440 pieces, Thursday",
+        "450 pieces, Friday"
+      ],
+      "correct_answer": "450 pieces, Thursday",
+      "explanation": "85+92+78+105+90 = 450 pieces | Thursday with 105 pieces is the highest",
+      "data": {
+        "question": "A cake shop sells cakes for 5 days: 85, 92, 78, 105, 90 pieces. What is the total sales? Which day had the highest sales?",
+        "choices": [
+          "450 pieces, Thursday",
+          "450 pieces, Wednesday",
+          "440 pieces, Thursday",
+          "450 pieces, Friday"
+        ],
+        "correct_answer": "450 pieces, Thursday",
+        "explanation": "85+92+78+105+90 = 450 pieces | Thursday with 105 pieces is the highest"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "Data: 45, 32, 67, 28. Sum and highest value?",
+      "solution_en": "45+32+67+28 = 172 | Highest value = 67"
+    }
+  ],
+  "common_mistakes": [
+    "Adding numbers in wrong columns",
+    "Forgetting to compare values to find the highest"
+  ],
+  "hints": [
+    "Look at the tallest bar in the graph = highest value.",
+    "Add step by step from left to right."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "bar chart",
+      "th": "แผนภูมิแท่ง",
+      "definition_en": "A chart that uses bars to show data"
+    },
+    {
+      "en": "sales",
+      "th": "ยอดขาย",
+      "definition_en": "The amount of goods sold"
+    },
+    {
+      "en": "maximum",
+      "th": "ค่าสูงสุด",
+      "definition_en": "The highest value in a set of data"
+    }
+  ]
+}

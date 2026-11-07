@@ -1,0 +1,226 @@
+{
+  "variant_id": "patterns_ep_002",
+  "variant_title_en": "Patterns",
+  "status": "needs_review",
+  "title_en": "Patterns",
+  "title_th": "แบบรูป",
+  "story_theme_en": "Mali walks up stairs by stepping 2 steps at a time, starting from step 1: the next steps are 3, 5, 7, ... If the staircase has 15 steps in total, which step number is step 15, and how many times does Mali need to step to reach the top?",
+  "helper_tip": "Find the difference or ratio between each pair, then use it to find the next value",
+  "hint_th": "หาผลต่างหรืออัตราส่วนของแต่ละคู่ แล้วใช้ค้นหาค่าต่อไป",
+  "think_story_en": "The pattern is odd numbers: 1, 3, 5, 7, 9, 11, 13, 15. Step number n = 2n-1. Step 15 is 2×8-1 = 15 (this is the 8th step). So Mali reaches the top in 8 steps.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mali walks up stairs by stepping 2 steps at a time, starting from step 1: the next steps are 3, 5, 7, ... If the staircase has 15 steps in total, which step number is step 15, and how many times does Mali need to step to reach the top?",
+      "data": {
+        "content_en": "Mali walks up stairs by stepping 2 steps at a time, starting from step 1: the next steps are 3, 5, 7, ... If the staircase has 15 steps in total, which step number is step 15, and how many times does Mali need to step to reach the top?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "The pattern is odd numbers: 1, 3, 5, 7, 9, 11, 13, 15. Step number n = 2n-1. Step 15 is 2×8-1 = 15 (this is the 8th step). So Mali reaches the top in 8 steps.",
+      "data": {
+        "content_en": "The pattern is odd numbers: 1, 3, 5, 7, 9, 11, 13, 15. Step number n = 2n-1. Step 15 is 2×8-1 = 15 (this is the 8th step). So Mali reaches the top in 8 steps."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "units",
+        "bars": [
+          {
+            "label": "Step 1",
+            "value": 1,
+            "display": "step 1",
+            "color": "#4ECDC4",
+            "width_pct": 20
+          },
+          {
+            "label": "Step 2",
+            "value": 3,
+            "display": "step 3",
+            "color": "#45B7D1",
+            "width_pct": 60
+          },
+          {
+            "label": "Step 3",
+            "value": 5,
+            "display": "step 5",
+            "color": "#96CEB4",
+            "width_pct": 100
+          },
+          {
+            "label": "Step 4",
+            "value": 7,
+            "display": "step 7",
+            "color": "#FFE66D",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "1 + 2 = 3",
+            "formula": {
+              "display": "1 + 2 = 3",
+              "a": 1,
+              "b": 2,
+              "result": 3,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}1&\\ +\\quad 2&\\ \\hline 3&\\\\ \\hline \\end{array}",
+              "a_display": "1",
+              "b_display": "2",
+              "result_display": "3",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 1 + 2 = 3"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "3 + 2 = 5",
+            "formula": {
+              "display": "3 + 2 = 5",
+              "a": 3,
+              "b": 2,
+              "result": 5,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}3&\\ +\\quad 2&\\ \\hline 5&\\\\ \\hline \\end{array}",
+              "a_display": "3",
+              "b_display": "2",
+              "result_display": "5",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 3 + 2 = 5"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "5 + 2 = 7",
+            "formula": {
+              "display": "5 + 2 = 7",
+              "a": 5,
+              "b": 2,
+              "result": 7,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}5&\\ +\\quad 2&\\ \\hline 7&\\\\ \\hline \\end{array}",
+              "a_display": "5",
+              "b_display": "2",
+              "result_display": "7",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 5 + 2 = 7"
+          },
+          {
+            "step": 4,
+            "label": "Step 4",
+            "expression": "7 + 2 = 9",
+            "formula": {
+              "display": "7 + 2 = 9",
+              "a": 7,
+              "b": 2,
+              "result": 9,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}7&\\ +\\quad 2&\\ \\hline 9&\\\\ \\hline \\end{array}",
+              "a_display": "7",
+              "b_display": "2",
+              "result_display": "9",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 7 + 2 = 9"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "1 + 2 = 3 | 3 + 2 = 5 | 5 + 2 = 7 | 7 + 2 = 9",
+      "content": "1 + 2 = 3 | 3 + 2 = 5 | 5 + 2 = 7 | 7 + 2 = 9",
+      "data": {
+        "expression": "1 + 2 = 3 | 3 + 2 = 5 | 5 + 2 = 7 | 7 + 2 = 9",
+        "operations": [
+          {
+            "op": "+",
+            "a": 1,
+            "b": 2,
+            "result": 3
+          },
+          {
+            "op": "+",
+            "a": 3,
+            "b": 2,
+            "result": 5
+          },
+          {
+            "op": "+",
+            "a": 5,
+            "b": 2,
+            "result": 7
+          },
+          {
+            "op": "+",
+            "a": 7,
+            "b": 2,
+            "result": 9
+          }
+        ],
+        "content_en": "1 + 2 = 3 | 3 + 2 = 5 | 5 + 2 = 7 | 7 + 2 = 9"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Pattern: 5, 11, 17, 23, ... What is the next value?",
+      "choices": [
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "correct_answer": "29",
+      "explanation": "The difference is constant at +6, so 23 + 6 = 29",
+      "data": {
+        "question": "Pattern: 5, 11, 17, 23, ... What is the next value?",
+        "choices": [
+          "27",
+          "28",
+          "29",
+          "30"
+        ],
+        "correct_answer": "29",
+        "explanation": "The difference is constant at +6, so 23 + 6 = 29"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

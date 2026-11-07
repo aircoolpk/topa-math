@@ -1,0 +1,193 @@
+{
+  "variant_id": "polygons_ep_002",
+  "variant_title_en": "Polygons",
+  "status": "needs_review",
+  "title_en": "Polygons",
+  "title_th": "รูปหลายเหลี่ยม",
+  "story_theme_en": "A regular octagon has a perimeter of 72 centimeters. How long is each side? If we make a new octagon where each side is 3 cm longer, what is the new perimeter?",
+  "helper_tip": "Side length = perimeter ÷ number of sides",
+  "hint_th": "ความยาวด้าน = ความยาวรอบรูป ÷ จำนวนด้าน",
+  "think_story_en": "Each side = 72 ÷ 8 = 9 cm. New octagon sides = 9 + 3 = 12 cm. New perimeter = 8 × 12 = 96 cm.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A regular octagon has a perimeter of 72 centimeters. How long is each side? If we make a new octagon where each side is 3 cm longer, what is the new perimeter?",
+      "data": {
+        "content_en": "A regular octagon has a perimeter of 72 centimeters. How long is each side? If we make a new octagon where each side is 3 cm longer, what is the new perimeter?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Each side = 72 ÷ 8 = 9 cm. New octagon sides = 9 + 3 = 12 cm. New perimeter = 8 × 12 = 96 cm.",
+      "data": {
+        "content_en": "Each side = 72 ÷ 8 = 9 cm. New octagon sides = 9 + 3 = 12 cm. New perimeter = 8 × 12 = 96 cm."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "centimeters",
+        "bars": [
+          {
+            "label": "Original side",
+            "value": 9,
+            "display": "9 cm",
+            "color": "#4ECDC4",
+            "width_pct": 75
+          },
+          {
+            "label": "New side",
+            "value": 12,
+            "display": "12 cm",
+            "color": "#96CEB4",
+            "width_pct": 100
+          },
+          {
+            "label": "New perimeter",
+            "value": 96,
+            "display": "96 cm",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "72 ÷ 8 = 9",
+            "formula": {
+              "display": "72 ÷ 8 = 9",
+              "a": 72,
+              "b": 8,
+              "result": 9,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}72&\\ ÷\\quad 8&\\ \\hline 9&\\\\ \\hline \\end{array}",
+              "a_display": "72",
+              "b_display": "8",
+              "result_display": "9",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 72 ÷ 8 = 9"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "9 + 3 = 12",
+            "formula": {
+              "display": "9 + 3 = 12",
+              "a": 9,
+              "b": 3,
+              "result": 12,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}9&\\ +\\quad 3&\\ \\hline 12&\\\\ \\hline \\end{array}",
+              "a_display": "9",
+              "b_display": "3",
+              "result_display": "12",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 9 + 3 = 12"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "8 × 12 = 96",
+            "formula": {
+              "display": "8 × 12 = 96",
+              "a": 8,
+              "b": 12,
+              "result": 96,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}8&\\ ×\\quad 12&\\ \\hline 96&\\\\ \\hline \\end{array}",
+              "a_display": "8",
+              "b_display": "12",
+              "result_display": "96",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 8 × 12 = 96"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "72 ÷ 8 = 9 | 9 + 3 = 12 | 8 × 12 = 96",
+      "content": "72 ÷ 8 = 9 | 9 + 3 = 12 | 8 × 12 = 96",
+      "data": {
+        "expression": "72 ÷ 8 = 9 | 9 + 3 = 12 | 8 × 12 = 96",
+        "operations": [
+          {
+            "op": "÷",
+            "a": 72,
+            "b": 8,
+            "result": 9
+          },
+          {
+            "op": "+",
+            "a": 9,
+            "b": 3,
+            "result": 12
+          },
+          {
+            "op": "×",
+            "a": 8,
+            "b": 12,
+            "result": 96
+          }
+        ],
+        "content_en": "72 ÷ 8 = 9 | 9 + 3 = 12 | 8 × 12 = 96"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A regular hexagon has a perimeter of 54 cm. How long is each side?",
+      "choices": [
+        "7 cm",
+        "8 cm",
+        "9 cm",
+        "6 cm"
+      ],
+      "correct_answer": "9 cm",
+      "explanation": "54 ÷ 6 = 9 cm",
+      "data": {
+        "question": "A regular hexagon has a perimeter of 54 cm. How long is each side?",
+        "choices": [
+          "7 cm",
+          "8 cm",
+          "9 cm",
+          "6 cm"
+        ],
+        "correct_answer": "9 cm",
+        "explanation": "54 ÷ 6 = 9 cm"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

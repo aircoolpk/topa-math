@@ -1,0 +1,179 @@
+{
+  "lesson_id": "multiplication_division_whole_numbers_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "โรงงานแพ็คกล่องอาหาร ผลิตได้ 18 กล่องต่อนาที ทำงาน 45 นาที จะได้กล่องทั้งหมดกี่กล่อง",
+      "question_text_en": "A food packaging factory produces 18 boxes per minute and works for 45 minutes. How many boxes in total?",
+      "choices": [
+        "810 กล่อง",
+        "800 กล่อง",
+        "820 กล่อง",
+        "809 กล่อง"
+      ],
+      "correct_answer": "810 กล่อง",
+      "answer": "810 กล่อง",
+      "explanation": "18 x 45 = 810 กล่อง",
+      "explanation_th": "18 × 45 = 810 กล่อง",
+      "difficulty": "easy",
+      "hint_th": "ใช้การคูณ 18x45"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "ร้านขายของซื้อเสื้อเชิ้ต 25 ตัว ตัวละ 1,280 บาท และกางเกง 18 ตัว ตัวละ 2,450 บาท รวมซื้อเท่าไร",
+      "question_text_en": "A shop buys 25 shirts at 1,280 baht each and 18 pants at 2,450 baht each. What is the total cost?",
+      "choices": [
+        "76,100 บาท",
+        "75,100 บาท",
+        "76,900 บาท",
+        "75,900 บาท"
+      ],
+      "correct_answer": "76,100 บาท",
+      "answer": "76,100 บาท",
+      "explanation": "25x1,280=32,000 | 18x2,450=44,100 | รวม=76,100 บาท",
+      "explanation_th": "25×1,280=32,000 บาท | 18×2,450=44,100 บาท | รวม=76,100 บาท",
+      "difficulty": "medium",
+      "hint_th": "คูณแยกแต่ละอย่าง แล้วบวกรวมกัน"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "ร้านขายผลไม้มีส้ม 36 ถุง ถุงละ 25 ผล รวมมีส้มกี่ผล",
+      "question_text_en": "A fruit shop has 36 bags of oranges with 25 oranges per bag. How many oranges in total?",
+      "choices": [
+        "900 ผล",
+        "910 ผล",
+        "890 ผล",
+        "950 ผล"
+      ],
+      "correct_answer": "900 ผล",
+      "answer": "900 ผล",
+      "explanation": "36 x 25 = 900 ผล",
+      "explanation_th": "36 × 25 = 900 ผล",
+      "difficulty": "easy",
+      "hint_th": "ใช้การคูณ 36x25"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "นักเรียน 240 คน จัดเป็นแถว แถวละ 30 คน จะได้กี่แถว",
+      "question_text_en": "240 students stand in rows with 30 students per row. How many rows?",
+      "choices": [
+        "8 แถว",
+        "7 แถว",
+        "9 แถว",
+        "6 แถว"
+      ],
+      "correct_answer": "8 แถว",
+      "answer": "8 แถว",
+      "explanation": "240 / 30 = 8 แถว",
+      "explanation_th": "240 ÷ 30 = 8 แถว",
+      "difficulty": "easy",
+      "hint_th": "ใช้การหาร 240/30"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "ลินซื้อปากกา 15 ด้าม ด้ามละ 35 บาท รวมเท่าไร ถ้ามีธนบัตร 1,000 บาท จะได้เงินทอนเท่าไร",
+      "question_text_en": "Lin buys 15 pens at 35 baht each. Total? If she pays with 1,000 baht, how much change?",
+      "choices": [
+        "525 บาท ทอน 475 บาท",
+        "525 บาท ทอน 575 บาท",
+        "535 บาท ทอน 465 บาท",
+        "526 บาท ทอน  บาท"
+      ],
+      "correct_answer": "525 บาท ทอน 475 บาท",
+      "answer": "525 บาท ทอน 475 บาท",
+      "explanation": "15x35=525 บาท | 1,000-525=475 บาททอน",
+      "explanation_th": "15×35=525 บาท | 1,000-525=475 บาททอน",
+      "difficulty": "easy",
+      "hint_th": "คูณก่อน แล้วลบออกจากเงินที่จ่าย"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "สวนมะม่วงมีต้นมะม่วง 45 แถว แถวละ 28 ต้น รวมมีต้นมะม่วงกี่ต้น",
+      "question_text_en": "A mango orchard has 45 rows with 28 mango trees per row. How many mango trees in total?",
+      "choices": [
+        "1,260 ต้น",
+        "1,250 ต้น",
+        "1,270 ต้น",
+        "1,160 ต้น"
+      ],
+      "correct_answer": "1,260 ต้น",
+      "answer": "1,260 ต้น",
+      "explanation": "45 x 28 = 1,260 ต้น",
+      "explanation_th": "45 × 28 = 1,260 ต้น",
+      "difficulty": "easy",
+      "hint_th": "ใช้การคูณ 45x28"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "โรงงานผลิตขวดน้ำ 12 ชั่วโมง ชั่วโมงละ 1,250 ขวด รวมผลิตได้กี่ขวด",
+      "question_text_en": "A water bottle factory operates for 12 hours and produces 1,250 bottles per hour. How many bottles in total?",
+      "choices": [
+        "15,000 ขวด",
+        "14,000 ขวด",
+        "15,500 ขวด",
+        "15,001 ขวด"
+      ],
+      "correct_answer": "15,000 ขวด",
+      "answer": "15,000 ขวด",
+      "explanation": "12 x 1,250 = 15,000 ขวด",
+      "explanation_th": "12 × 1,250 = 15,000 ขวด",
+      "difficulty": "medium",
+      "hint_th": "ใช้การคูณ 12x1250"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "จำนวนหนึ่งหารด้วย 15 ได้ 48 เศษ 5 จำนวนนั้นคือเท่าไร",
+      "question_text_en": "A number divided by 15 gives 48 with a remainder of 5. What is the number?",
+      "choices": [
+        "725",
+        "735",
+        "720",
+        "730"
+      ],
+      "correct_answer": "725",
+      "answer": "725",
+      "explanation": "48x15+5 = 720+5 = 725",
+      "explanation_th": "48×15+5 = 720+5 = 725",
+      "difficulty": "hard",
+      "hint_th": "ใช้สูตร: ตัวตั้ง = ผลหาร×ตัวหาร + เศษ"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ถ้า 24 x 125 = 3,000 แล้ว 3,000 / 24 มีค่าเท่าไร",
+      "question_text_en": "If 24 x 125 = 3,000, then what is 3,000 / 24?",
+      "choices": [
+        "125",
+        "124",
+        "126",
+        "115"
+      ],
+      "correct_answer": "125",
+      "answer": "125",
+      "explanation": "3,000 / 24 = 125 (การหารย้อนกลับ)",
+      "explanation_th": "3,000 ÷ 24 = 125",
+      "difficulty": "easy",
+      "hint_th": "ใช้ความสัมพันธ์ของการคูณและการหาร"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "โรงเรียนมีนักเรียน 1,200 คน จัดเป็นห้องเรียนห้องละ 40 คน จะได้กี่ห้อง เหลือนักเรียนกี่คน",
+      "question_text_en": "A school has 1,200 students. Each classroom has 40 students. How many classrooms? Any remainder?",
+      "choices": [
+        "30 ห้อง เหลือ 0 คน",
+        "29 ห้อง เหลือ 40 คน",
+        "30 ห้อง เหลือ 40 คน",
+        "30 ห้อง เหลือ 20 คน"
+      ],
+      "correct_answer": "30 ห้อง เหลือ 0 คน",
+      "answer": "30 ห้อง เหลือ 0 คน",
+      "explanation": "1,200/40=30 ห้อง เศษ 0",
+      "explanation_th": "1,200÷40=30 ห้อง เศษ 0",
+      "difficulty": "easy",
+      "hint_th": "ใช้การหาร 1,200/40"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

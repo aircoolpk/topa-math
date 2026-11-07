@@ -1,0 +1,179 @@
+{
+  "lesson_id": "length_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "len_ep_q001_e01",
+      "question_text": "Case 1: Lin measures a notebook at 25 cm and a pencil at 12 cm. How much longer is the notebook?",
+      "question_text_th": "สถานการณ์ที่ 1: ลินวัดสมุดได้ 25 เซนติเมตร และดินสอยาว 12 เซนติเมตร สมุดยาวกว่าดินสอกี่เซนติเมตร",
+      "choices": [
+        "13 cm",
+        "12 cm",
+        "14 cm",
+        "15 cm"
+      ],
+      "correct_answer": "13 cm",
+      "answer": "25 - 12 = 13 cm",
+      "explanation": "25 - 12 = 13 cm",
+      "explanation_th": "25 - 12 = 13 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Subtract pencil length from notebook length"
+    },
+    {
+      "question_id": "len_ep_q001_e02",
+      "question_text": "Case 2: Lin walks 200 cm to school and walks back home another 200 cm. How many meters in total?",
+      "question_text_th": "สถานการณ์ที่ 2: ลินเดินทาง 200 เซนติเมตร ไปโรงเรียน และเดินกลับบ้านอีก 200 เซนติเมตร รวมเดินทางกี่เมตร",
+      "choices": [
+        "4 meters",
+        "3 meters",
+        "5 meters",
+        "6 meters"
+      ],
+      "correct_answer": "4 meters",
+      "answer": "200+200=400 cm = 4 meters",
+      "explanation": "200+200=400 cm = 4 meters",
+      "explanation_th": "200+200=400 ซม. = 4 เมตร",
+      "difficulty": "easy",
+      "hint_th": "100 cm = 1 meter"
+    },
+    {
+      "question_id": "len_ep_q001_e03",
+      "question_text": "Case 3: 1 meter equals how many centimeters?",
+      "question_text_th": "สถานการณ์ที่ 3: 1 เมตร เท่ากับกี่เซนติเมตร",
+      "choices": [
+        "100 cm",
+        "10 cm",
+        "50 cm",
+        "200 cm"
+      ],
+      "correct_answer": "100 cm",
+      "answer": "1 meter = 100 centimeters",
+      "explanation": "1 meter = 100 centimeters",
+      "explanation_th": "1 เมตร = 100 ซม.",
+      "difficulty": "easy",
+      "hint_th": "How many cm in 1 meter"
+    },
+    {
+      "question_id": "len_ep_q001_m01",
+      "question_text": "Case 4: Lin has a rope 3 m 50 cm long and uses 1 m 25 cm. How many cm are left?",
+      "question_text_th": "สถานการณ์ที่ 4: ลินมีเชือกยาว 3 เมตร 50 เซนติเมตร ใช้ไป 1 เมตร 25 เซนติเมตร เชือกเหลือกี่เซนติเมตร",
+      "choices": [
+        "225 cm",
+        "215 cm",
+        "235 cm",
+        "200 cm"
+      ],
+      "correct_answer": "225 cm",
+      "answer": "3 m 50 cm = 350 cm, 1 m 25 cm = 125 cm → 350-125 = 225 cm",
+      "explanation": "3 m 50 cm = 350 cm, 1 m 25 cm = 125 cm → 350-125 = 225 cm",
+      "explanation_th": "350 ซม. - 125 ซม. = 225 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Convert to cm first, then subtract"
+    },
+    {
+      "question_id": "len_ep_q001_m02",
+      "question_text": "Case 5: A ribbon is 1 m 75 cm long. Lin cuts 50 cm from it. How many cm remain?",
+      "question_text_th": "สถานการณ์ที่ 5: สายวัดของมีความยาว 1 เมตร 75 เซนติเมตร ตัดแบ่งให้ลิน 50 เซนติเมตร เหลือกี่เซนติเมตร",
+      "choices": [
+        "125 cm",
+        "130 cm",
+        "120 cm",
+        "115 cm"
+      ],
+      "correct_answer": "125 cm",
+      "answer": "1 m 75 cm = 175 cm, 175 - 50 = 125 cm",
+      "explanation": "1 m 75 cm = 175 cm, 175 - 50 = 125 cm",
+      "explanation_th": "175 ซม. - 50 ซม. = 125 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Convert to cm first, then subtract"
+    },
+    {
+      "question_id": "len_ep_q001_m03",
+      "question_text": "Case 6: Lin runs 150 meters per lap. If she runs 3 laps, how many meters does she run?",
+      "question_text_th": "สถานการณ์ที่ 6: ลินวิ่งระยะทาง 150 เมตร 3 รอบ รวมวิ่งได้กี่เมตร",
+      "choices": [
+        "450 meters",
+        "300 meters",
+        "500 meters",
+        "350 meters"
+      ],
+      "correct_answer": "450 meters",
+      "answer": "150 x 3 = 450 meters",
+      "explanation": "150 x 3 = 450 meters",
+      "explanation_th": "150 x 3 = 450 เมตร",
+      "difficulty": "medium",
+      "hint_th": "Multiply distance per lap by number of laps"
+    },
+    {
+      "question_id": "len_ep_q001_m04",
+      "question_text": "Case 7: Lin buys ribbon 2 m 80 cm long and uses 1 m 40 cm. How many cm remain?",
+      "question_text_th": "สถานการณ์ที่ 7: ลินซื้อริบบิ้นยาว 2 เมตร 80 เซนติเมตร ใช้ไป 1 เมตร 40 เซนติเมตร ริบบิ้นเหลือกี่เซนติเมตร",
+      "choices": [
+        "140 cm",
+        "130 cm",
+        "150 cm",
+        "120 cm"
+      ],
+      "correct_answer": "140 cm",
+      "answer": "2 m 80 cm = 280 cm, 1 m 40 cm = 140 cm → 280-140 = 140 cm",
+      "explanation": "2 m 80 cm = 280 cm, 1 m 40 cm = 140 cm → 280-140 = 140 cm",
+      "explanation_th": "280 ซม. - 140 ซม. = 140 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Convert to cm first, then subtract"
+    },
+    {
+      "question_id": "len_ep_q001_h01",
+      "question_text": "Case 8: Lin walks from home to school 1 km 250 m, then to the library 750 m more. What is the total distance in km and m?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินเดินทางจากบ้านไปโรงเรียน 1 กิโลเมตร 250 เมตร และเดินต่อไปห้องสมุดอีก 750 เมตร รวมระยะทางกี่กิโลเมตรกี่เมตร",
+      "choices": [
+        "2 km 0 m",
+        "1 km 500 m",
+        "2 km 500 m",
+        "1 km 100 m"
+      ],
+      "correct_answer": "2 km 0 m",
+      "answer": "1 km 250 m + 750 m = 1 km 1,000 m = 2 km 0 m",
+      "explanation": "1 km 250 m + 750 m = 1 km 1,000 m = 2 km 0 m",
+      "explanation_th": "1,000 ม. = 1 กม. ดังนั้น 1+1 = 2 กม.",
+      "difficulty": "hard",
+      "hint_th": "Add meters first, then convert to km"
+    },
+    {
+      "question_id": "len_ep_q001_h02",
+      "question_text": "Case 9: Lin has cloth 5 m 60 cm long and cuts it into pieces of 80 cm each. How many pieces and how many cm left?",
+      "question_text_th": "สถานการณ์ที่ 9: ลินต้องการตัดผ้ายาว 5 เมตร 60 เซนติเมตร ให้เป็นชิ้นละ 80 เซนติเมตร จะตัดได้กี่ชิ้น และเหลือกี่เซนติเมตร",
+      "choices": [
+        "7 pieces, 0 cm left",
+        "6 pieces, 80 cm left",
+        "7 pieces, 20 cm left",
+        "6 pieces, 0 cm left"
+      ],
+      "correct_answer": "7 pieces, 0 cm left",
+      "answer": "5 m 60 cm = 560 cm divided by 80 cm = 7 pieces, remainder 0 cm",
+      "explanation": "5 m 60 cm = 560 cm divided by 80 cm = 7 pieces, remainder 0 cm",
+      "explanation_th": "560 ÷ 80 = 7 ชิ้น เหลือ 0",
+      "difficulty": "hard",
+      "hint_th": "Convert to cm first, then divide by 80"
+    },
+    {
+      "question_id": "len_ep_q001_h03",
+      "question_text": "Case 10: Lin rides her bicycle 1 km 500 m per lap around the field for 4 laps. What is the total distance in km and m?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินขี่จักรยาน 1 กิโลเมตร 500 เมตร รอบสนาม 4 รอบ รวมระยะทางกี่กิโลเมตรกี่เมตร",
+      "choices": [
+        "6 km 0 m",
+        "6 km 200 m",
+        "5 km 500 m",
+        "7 km 0 m"
+      ],
+      "correct_answer": "6 km 0 m",
+      "answer": "1 km 500 m = 1,500 m x 4 = 6,000 m = 6 km 0 m",
+      "explanation": "1 km 500 m = 1,500 m x 4 = 6,000 m = 6 km 0 m",
+      "explanation_th": "1,500 x 4 = 6,000 ม. = 6 กม.",
+      "difficulty": "hard",
+      "hint_th": "Convert to m, multiply by 4, then convert back"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

@@ -1,0 +1,179 @@
+{
+  "lesson_id": "add_within_10_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "addw10_ep_q002_e01",
+      "question_text": "Ai has 5 oranges. Mali gives Ai 3 more oranges. How many oranges does Ai have?",
+      "question_text_th": "อ้ายมีส้ม 5 ผล มะลิให้อ้ายอีก 3 ผล อ้ายมีส้มกี่ผล",
+      "choices": [
+        "8 oranges",
+        "11 oranges",
+        "6 oranges",
+        "13 oranges"
+      ],
+      "correct_answer": "8 oranges",
+      "answer": "8 oranges",
+      "explanation": "5 + 3 = 8 oranges",
+      "explanation_th": "บวกส้ม: 5 + 3 = 8 ผล",
+      "difficulty": "easy",
+      "hint_th": "Count all oranges."
+    },
+    {
+      "question_id": "addw10_ep_q002_e02",
+      "question_text": "Lin has 4 dolls. She buys 5 more dolls at the store. How many dolls does Lin have now?",
+      "question_text_th": "ลินมีตุ๊กตา 4 ตัว ซื้อเพิ่มที่ร้าน 5 ตัว ลินมีตุ๊กตากี่ตัว",
+      "choices": [
+        "9 dolls",
+        "12 dolls",
+        "7 dolls",
+        "14 dolls"
+      ],
+      "correct_answer": "9 dolls",
+      "answer": "9 dolls",
+      "explanation": "4 + 5 = 9 dolls",
+      "explanation_th": "บวกตุ๊กตา: 4 + 5 = 9 ตัว",
+      "difficulty": "easy",
+      "hint_th": "Add the new dolls."
+    },
+    {
+      "question_id": "addw10_ep_q002_e03",
+      "question_text": "Mai has 3 books. Her sister gives her 6 books. How many books does Mai have?",
+      "question_text_th": "ไมมีหนังสือ 3 เล่ม พี่สาวให้อีก 6 เล่ม ไมมีหนังสือกี่เล่ม",
+      "choices": [
+        "9 books",
+        "12 books",
+        "7 books",
+        "14 books"
+      ],
+      "correct_answer": "9 books",
+      "answer": "9 books",
+      "explanation": "3 + 6 = 9 books",
+      "explanation_th": "บวกหนังสือ: 3 + 6 = 9 เล่ม",
+      "difficulty": "easy",
+      "hint_th": "Count all books."
+    },
+    {
+      "question_id": "addw10_ep_q002_m01",
+      "question_text": "Tad has 5 balls. Book has 3 balls. How many balls do they have together?",
+      "question_text_th": "ต้นมีลูกบอล 5 ลูก บุ๊กมี 3 ลูก ทั้งสองมีลูกบอลรวมกี่ลูก",
+      "choices": [
+        "8 balls",
+        "11 balls",
+        "6 balls",
+        "13 balls"
+      ],
+      "correct_answer": "8 balls",
+      "answer": "8 balls",
+      "explanation": "5 + 3 = 8 balls",
+      "explanation_th": "บวกลูกบอล: 5 + 3 = 8 ลูก",
+      "difficulty": "medium",
+      "hint_th": "Add both groups."
+    },
+    {
+      "question_id": "addw10_ep_q002_m02",
+      "question_text": "Mali picks 4 flowers. Lin picks 5 flowers. How many flowers do they pick in total?",
+      "question_text_th": "มะลิเก็บดอกไม้ 4 ดอก ลินเก็บ 5 ดอก ทั้งสองเก็บดอกไม้รวมกี่ดอก",
+      "choices": [
+        "9 flowers",
+        "12 flowers",
+        "7 flowers",
+        "14 flowers"
+      ],
+      "correct_answer": "9 flowers",
+      "answer": "9 flowers",
+      "explanation": "4 + 5 = 9 flowers",
+      "explanation_th": "บวกดอกไม้: 4 + 5 = 9 ดอก",
+      "difficulty": "medium",
+      "hint_th": "Add both picks."
+    },
+    {
+      "question_id": "addw10_ep_q002_m03",
+      "question_text": "Chef Ai fries 6 eggs. He fries 2 more eggs later. How many eggs did Chef Ai fry?",
+      "question_text_th": "เชฟแอร์ทอดไข่ 6 ฟอง ทอดเพิ่มอีก 2 ฟอง เชฟแอร์ทอดไข่ทั้งหมดกี่ฟอง",
+      "choices": [
+        "8 eggs",
+        "11 eggs",
+        "6 eggs",
+        "13 eggs"
+      ],
+      "correct_answer": "8 eggs",
+      "answer": "8 eggs",
+      "explanation": "6 + 2 = 8 eggs",
+      "explanation_th": "บวกไข่: 6 + 2 = 8 ฟอง",
+      "difficulty": "medium",
+      "hint_th": "Add both batches."
+    },
+    {
+      "question_id": "addw10_ep_q002_m04",
+      "question_text": "Pim has 7 stickers. She receives 2 more stickers from her friend. How many stickers does Pim have?",
+      "question_text_th": "พิมมีสติกเกอร์ 7 ดวง ได้รับเพิ่มจากเพื่อน 2 ดวง พิมมีสติกเกอร์กี่ดวง",
+      "choices": [
+        "9 stickers",
+        "12 stickers",
+        "7 stickers",
+        "14 stickers"
+      ],
+      "correct_answer": "9 stickers",
+      "answer": "9 stickers",
+      "explanation": "7 + 2 = 9 stickers",
+      "explanation_th": "บวกสติกเกอร์: 7 + 2 = 9 ดวง",
+      "difficulty": "medium",
+      "hint_th": "Add the new stickers."
+    },
+    {
+      "question_id": "addw10_ep_q002_h01",
+      "question_text": "Ai has 3 marbles. He wins 4 marbles from Tad and then wins 2 more marbles from Mali. How many marbles does Ai have now?",
+      "question_text_th": "อ้ายมีลูกแก้ว 3 ลูก ชนะจากต้นได้ 4 ลูก แล้วชนะจากมะลิได้อีก 2 ลูก อ้ายมีลูกแก้วกี่ลูก",
+      "choices": [
+        "9 marbles",
+        "12 marbles",
+        "7 marbles",
+        "14 marbles"
+      ],
+      "correct_answer": "9 marbles",
+      "answer": "9 marbles",
+      "explanation": "3 + 4 + 2 = 9 marbles",
+      "explanation_th": "ชนะสองครั้ง: 3 + 4 + 2 = 9 ลูก",
+      "difficulty": "hard",
+      "hint_th": "Win from two friends."
+    },
+    {
+      "question_id": "addw10_ep_q002_h02",
+      "question_text": "A shop has 2 boxes of crayons. The shop receives 5 more boxes from the warehouse. Then it sells 3 boxes. How many boxes are left?",
+      "question_text_th": "ร้านมีกล่องสีเทียน 2 กล่อง ได้รับจากคลังเพิ่ม 5 กล่อง แล้วขายไป 3 กล่อง เหลือกี่กล่อง",
+      "choices": [
+        "4 boxes",
+        "7 boxes",
+        "2 boxes",
+        "9 boxes"
+      ],
+      "correct_answer": "4 boxes",
+      "answer": "4 boxes",
+      "explanation": "2 + 5 - 3 = 4 boxes",
+      "explanation_th": "บวกแล้วลบ: 2 + 5 - 3 = 4 กล่อง",
+      "difficulty": "hard",
+      "hint_th": "Add then subtract."
+    },
+    {
+      "question_id": "addw10_ep_q002_h03",
+      "question_text": "Lin has 1 balloon. Mali gives her 5 balloons. Lin's mother gives her 3 more balloons. How many balloons does Lin have?",
+      "question_text_th": "ลินมีลูกโปร่ง 1 ลูก มะลิให้ 5 ลูก แม่ของลินให้อีก 3 ลูก ลินมีลูกโปร่งกี่ลูก",
+      "choices": [
+        "9 balloons",
+        "12 balloons",
+        "7 balloons",
+        "14 balloons"
+      ],
+      "correct_answer": "9 balloons",
+      "answer": "9 balloons",
+      "explanation": "1 + 5 + 3 = 9 balloons",
+      "explanation_th": "บวกจากสองคน: 1 + 5 + 3 = 9 ลูก",
+      "difficulty": "hard",
+      "hint_th": "Add from two people."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

@@ -1,0 +1,133 @@
+{
+  "quiz_id": "weight_measurement_ep_q001",
+  "topic_key": "weight_measurement",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz weight_measurement_ep_q001",
+  "title_en": "Quiz weight_measurement_ep_q001",
+  "questions": [
+    {
+      "question": "1 kilogram equals how many grams?",
+      "choices": [
+        "1,000 g",
+        "100 g",
+        "10 g",
+        "10,000 g"
+      ],
+      "correct_answer": "1,000 g",
+      "explanation": "1 kg = 1,000 g",
+      "difficulty": "easy"
+    },
+    {
+      "question": "500 g + 800 g = ? kg and g",
+      "choices": [
+        "1 kg 300 g",
+        "1 kg 200 g",
+        "1 kg 400 g",
+        "800 g"
+      ],
+      "correct_answer": "1 kg 300 g",
+      "explanation": "1,300 g = 1 kg 300 g",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A mango weighs 750 g. An orange weighs 450 g. How much heavier is the mango?",
+      "choices": [
+        "300 g",
+        "250 g",
+        "350 g",
+        "200 g"
+      ],
+      "correct_answer": "300 g",
+      "explanation": "750-450=300 g",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Rice 2 kg 500 g vs Rice 3 kg. Difference?",
+      "choices": [
+        "500 g",
+        "1 kg 500 g",
+        "1 kg",
+        "1,500 g"
+      ],
+      "correct_answer": "500 g",
+      "explanation": "3,000-2,500=500 g",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Total weight 1 kg 750 g. Split into 2 equal parts. Each part?",
+      "choices": [
+        "875 g",
+        "750 g",
+        "1,750 g",
+        "877 g"
+      ],
+      "correct_answer": "875 g",
+      "explanation": "1,750/2=875 g",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Durian weighs 2 kg 400 g. Watermelon weighs 1 kg 600 g. Total weight?",
+      "choices": [
+        "4 kg",
+        "3 kg 1,000 g",
+        "3 kg",
+        "2 kg"
+      ],
+      "correct_answer": "4 kg",
+      "explanation": "2,400+1,600=4,000 g = 4 kg",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Water spinach weighs 850 g. Used 300 g. How much is left?",
+      "choices": [
+        "550 g",
+        "650 g",
+        "450 g",
+        "750 g"
+      ],
+      "correct_answer": "550 g",
+      "explanation": "850-300=550 g",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Meat weighs 1 kg 200 g. Cut 450 g used. How much is left?",
+      "choices": [
+        "750 g",
+        "850 g",
+        "650 g",
+        "950 g"
+      ],
+      "correct_answer": "750 g",
+      "explanation": "1,200-450=750 g",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Fish weighs 3 kg 500 g. Gave friend 1 kg 750 g. How much is left?",
+      "choices": [
+        "1,750 g",
+        "1,650 g",
+        "1,850 g",
+        "2,250 g"
+      ],
+      "correct_answer": "1,750 g",
+      "explanation": "3,500-1,750=1,750 g",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Sugar 2 bags, each 750 g. Total weight?",
+      "choices": [
+        "1,500 g",
+        "1,600 g",
+        "1,400 g",
+        "1,750 g"
+      ],
+      "correct_answer": "1,500 g",
+      "explanation": "750x2=1,500 g",
+      "difficulty": "easy"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

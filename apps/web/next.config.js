@@ -1,29 +1,23 @@
 /** @type {import('next').NextConfig} */
-const appEnv = process.env.NEXT_PUBLIC_APP_ENV || 'local'
-const isLocalEnv = ['local', 'dev', 'development', 'test'].includes(appEnv.toLowerCase())
-const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || (isLocalEnv ? 'http://127.0.0.1:8001' : undefined)
-const internalApiBaseUrl = process.env.INTERNAL_API_BASE_URL || apiBaseUrl
-
-if (!apiBaseUrl) {
-  throw new Error('NEXT_PUBLIC_API_BASE_URL is required when NEXT_PUBLIC_APP_ENV is staging or production')
-}
-
 const nextConfig = {
-  reactStrictMode: true,
   output: 'standalone',
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
   async rewrites() {
+    const origin = process.env.INTERNAL_API_BASE_URL || 'http://4craft-api:8001'
+    const parsed = new URL(origin)
+    if (!['http:', 'https:'].includes(parsed.protocol) || parsed.username || parsed.password || parsed.pathname !== '/' || parsed.search || parsed.hash) {
+      throw new Error('INTERNAL_API_BASE_URL must be an origin without credentials')
+    }
     return {
       beforeFiles: [
-        { source: '/:path*', has: [{ type: 'host', value: 'api.topamath.com' }], destination: `${internalApiBaseUrl}/:path*` },
-        { source: '/auth/:path*', destination: `${internalApiBaseUrl}/auth/:path*` },
-        { source: '/children/:path*', destination: `${internalApiBaseUrl}/children/:path*` },
-        { source: '/quiz-sessions/:path*', destination: `${internalApiBaseUrl}/quiz-sessions/:path*` },
-        { source: '/subjects', destination: `${internalApiBaseUrl}/subjects` },
-        { source: '/skills', destination: `${internalApiBaseUrl}/skills` },
-        { source: '/rankings', destination: `${internalApiBaseUrl}/rankings` },
-        { source: '/avatar/:path*', destination: `${internalApiBaseUrl}/avatar/:path*` },
-        { source: '/health', destination: `${internalApiBaseUrl}/health` },
+        { source: '/:path*', has: [{ type: 'host', value: 'api.topamath.com' }], destination: `${parsed.origin}/:path*` },
+        ...['/auth/:path*', '/quiz-sessions/:path*', '/subjects', '/skills', '/rankings', '/avatar/:path*', '/health'].map(source => ({ source, destination: `${parsed.origin}${source}` })),
       ],
+      afterFiles: [],
+      fallback: [],
     }
   },
 }

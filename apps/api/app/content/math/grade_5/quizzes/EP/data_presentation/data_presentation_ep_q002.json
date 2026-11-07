@@ -1,0 +1,179 @@
+{
+  "lesson_id": "data_presentation_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "dp_ep_q002_e01",
+      "question_text": "Situation 1: A bar chart shows fruit sales: Mango 40, Orange 55, Banana 30, Grape 25. Total sales?",
+      "question_text_th": "Situation 1: A bar chart shows fruit sales: Mango 40, Orange 55, Banana 30, Grape 25. Total sales?",
+      "choices": [
+        "150 fruits",
+        "150",
+        "145 fruits",
+        "155 fruits"
+      ],
+      "correct_answer": "150 fruits",
+      "answer": "150 fruits",
+      "explanation": "40 + 55 + 30 + 25 = 150 fruits",
+      "explanation_th": "40 + 55 + 30 + 25 = 150 fruits",
+      "difficulty": "easy",
+      "hint_th": "Add all values: 40+55+30+25=150"
+    },
+    {
+      "question_id": "dp_ep_q002_e02",
+      "question_text": "Situation 2: Scores: 80, 65, 90, 75. What is the average?",
+      "question_text_th": "Situation 2: Scores: 80, 65, 90, 75. What is the average?",
+      "choices": [
+        "77.5",
+        "77",
+        "78",
+        "78.50"
+      ],
+      "correct_answer": "77.5",
+      "answer": "77.5",
+      "explanation": "(80+65+90+75)/4 = 310/4 = 77.5",
+      "explanation_th": "(80+65+90+75)/4 = 310/4 = 77.5",
+      "difficulty": "easy",
+      "hint_th": "Sum divided by count: 310/4 = 77.5"
+    },
+    {
+      "question_id": "dp_ep_q002_e03",
+      "question_text": "Situation 3: Numbers: 12, 15, 18, 20, 25. What is the median?",
+      "question_text_th": "Situation 3: Numbers: 12, 15, 18, 20, 25. What is the median?",
+      "choices": [
+        "18",
+        "18.0",
+        "17.5",
+        "8"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "5 numbers: median is the middle (3rd) = 18",
+      "explanation_th": "5 numbers: median is the middle (3rd) = 18",
+      "difficulty": "easy",
+      "hint_th": "Arrange in order, median = middle value"
+    },
+    {
+      "question_id": "dp_ep_q002_m01",
+      "question_text": "Situation 4: Temperatures: 8am=23C, 12pm=30C, 4pm=33C, 8pm=26C. What is the range?",
+      "question_text_th": "Situation 4: Temperatures: 8am=23C, 12pm=30C, 4pm=33C, 8pm=26C. What is the range?",
+      "choices": [
+        "10C",
+        "10",
+        "10C (33-23)",
+        "9C"
+      ],
+      "correct_answer": "10C",
+      "answer": "10C",
+      "explanation": "Range = highest - lowest = 33 - 23 = 10C",
+      "explanation_th": "Range = highest - lowest = 33 - 23 = 10C",
+      "difficulty": "medium",
+      "hint_th": "Range = max - min = 33 - 23 = 10C"
+    },
+    {
+      "question_id": "dp_ep_q002_m02",
+      "question_text": "Situation 5: 50 students. Pie chart: Sports 30%, Music 20%, Art 25%, Science 25%. How many like Sports?",
+      "question_text_th": "Situation 5: 50 students. Pie chart: Sports 30%, Music 20%, Art 25%, Science 25%. How many like Sports?",
+      "choices": [
+        "15 students",
+        "15",
+        "14 students",
+        "16 students"
+      ],
+      "correct_answer": "15 students",
+      "answer": "15 students",
+      "explanation": "30% of 50 = 0.30 x 50 = 15 students",
+      "explanation_th": "30% of 50 = 0.30 x 50 = 15 students",
+      "difficulty": "medium",
+      "hint_th": "30% of 50 = 15 students"
+    },
+    {
+      "question_id": "dp_ep_q002_m03",
+      "question_text": "Situation 6: Numbers: 5, 7, 9, 12, 15, 18. What is the median?",
+      "question_text_th": "Situation 6: Numbers: 5, 7, 9, 12, 15, 18. What is the median?",
+      "choices": [
+        "10.5",
+        "10",
+        "11",
+        "12.50"
+      ],
+      "correct_answer": "10.5",
+      "answer": "10.5",
+      "explanation": "6 numbers: median = average of 3rd and 4th = (9+12)/2 = 10.5",
+      "explanation_th": "6 numbers: median = average of 3rd and 4th = (9+12)/2 = 10.5",
+      "difficulty": "medium",
+      "hint_th": "Median = average of two middle numbers"
+    },
+    {
+      "question_id": "dp_ep_q002_m04",
+      "question_text": "Situation 7: The mode of these numbers is 20. Find x: 10, 20, 25, 20, x, 15",
+      "question_text_th": "Situation 7: The mode of these numbers is 20. Find x: 10, 20, 25, 20, x, 15",
+      "choices": [
+        "20",
+        "10",
+        "25",
+        "15"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "20 appears twice. For 20 to be the mode, x must be 20",
+      "explanation_th": "20 appears twice. For 20 to be the mode, x must be 20",
+      "difficulty": "medium",
+      "hint_th": "For 20 to be the mode, it must appear most often. x = 20"
+    },
+    {
+      "question_id": "dp_ep_q002_h01",
+      "question_text": "Situation 8: Heights: 125, 138, 142, 148, 152, 142, 139. Find the mean and mode.",
+      "question_text_th": "Situation 8: Heights: 125, 138, 142, 148, 152, 142, 139. Find the mean and mode.",
+      "choices": [
+        "Mean 140.9 cm, Mode 142 cm",
+        "140.9 and 142",
+        "140 and 142",
+        "141 and 142"
+      ],
+      "correct_answer": "Mean 140.9 cm, Mode 142 cm",
+      "answer": "Mean 140.9 cm, Mode 142 cm",
+      "explanation": "Mean = (125+138+142+148+152+142+139)/7 = 986/7 = 140.9 cm | Mode = 142 (appears twice)",
+      "explanation_th": "Mean = (125+138+142+148+152+142+139)/7 = 986/7 = 140.9 cm | Mode = 142 (appears twice)",
+      "difficulty": "hard",
+      "hint_th": "Sum = 986, divide by 7 = 140.9. Mode = most frequent = 142"
+    },
+    {
+      "question_id": "dp_ep_q002_h02",
+      "question_text": "Situation 9: Frequency table: Score 40-49: 5, 50-59: 10, 60-69: 15, 70-79: 8, 80-89: 2. How many scored 60 or above?",
+      "question_text_th": "Situation 9: Frequency table: Score 40-49: 5, 50-59: 10, 60-69: 15, 70-79: 8, 80-89: 2. How many scored 60 or above?",
+      "choices": [
+        "25 students",
+        "25",
+        "24 students",
+        "26 students"
+      ],
+      "correct_answer": "25 students",
+      "answer": "25 students",
+      "explanation": "15 + 8 + 2 = 25 students scored 60 or above",
+      "explanation_th": "15 + 8 + 2 = 25 students scored 60 or above",
+      "difficulty": "hard",
+      "hint_th": "Add frequencies for ranges 60-69, 70-79, and 80-89: 15+8+2=25"
+    },
+    {
+      "question_id": "dp_ep_q002_h03",
+      "question_text": "Situation 10: Stem-leaf: Stem 2: 1,5,9 | Stem 3: 2,6 | Stem 4: 0,3,8. What is the median?",
+      "question_text_th": "Situation 10: Stem-leaf: Stem 2: 1,5,9 | Stem 3: 2,6 | Stem 4: 0,3,8. What is the median?",
+      "choices": [
+        "31",
+        "31.0",
+        "32",
+        "33"
+      ],
+      "correct_answer": "31",
+      "answer": "31",
+      "explanation": "All numbers: 21,25,29,32,36,40,43,48 (8 numbers) | Median = (29+32)/2 = 30.5",
+      "explanation_th": "All numbers: 21,25,29,32,36,40,43,48 (8 numbers) | Median = (29+32)/2 = 30.5",
+      "difficulty": "hard",
+      "hint_th": "8 numbers: median = average of 4th and 5th = (29+32)/2 = 30.5"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

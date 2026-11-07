@@ -1,0 +1,193 @@
+{
+  "variant_id": "fractions_ep_002",
+  "variant_title_en": "Fractions",
+  "status": "needs_review",
+  "title_en": "Fractions",
+  "title_th": "เศษส่วน",
+  "story_theme_en": "A fruit shop has oranges filling 3/4 of a box and mangosteens filling 1/2 of a box. If all the fruits are combined, how many parts of the box do they fill? Do the oranges and mangosteens together exceed 1 full box?",
+  "helper_tip": "Make denominators equal before adding by finding the LCM of the denominators",
+  "hint_th": "ต้องทำส่วนให้เท่ากันก่อนบวก โดยใช้ ค.ร.น. ของส่วน",
+  "think_story_en": "Make the denominators equal: 3/4 = 6/8 and 1/2 = 4/8. Total = 6/8 + 4/8 = 10/8 = 1 2/8 boxes. This exceeds 1 full box because 10/8 > 8/8. They exceed by 2/8 of a box.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A fruit shop has oranges filling 3/4 of a box and mangosteens filling 1/2 of a box. If all the fruits are combined, how many parts of the box do they fill? Do the oranges and mangosteens together exceed 1 full box?",
+      "data": {
+        "content_en": "A fruit shop has oranges filling 3/4 of a box and mangosteens filling 1/2 of a box. If all the fruits are combined, how many parts of the box do they fill? Do the oranges and mangosteens together exceed 1 full box?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Make the denominators equal: 3/4 = 6/8 and 1/2 = 4/8. Total = 6/8 + 4/8 = 10/8 = 1 2/8 boxes. This exceeds 1 full box because 10/8 > 8/8. They exceed by 2/8 of a box.",
+      "data": {
+        "content_en": "Make the denominators equal: 3/4 = 6/8 and 1/2 = 4/8. Total = 6/8 + 4/8 = 10/8 = 1 2/8 boxes. This exceeds 1 full box because 10/8 > 8/8. They exceed by 2/8 of a box."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "units",
+        "bars": [
+          {
+            "label": "Oranges",
+            "value": 6,
+            "display": "6/8 of box",
+            "color": "#FF6B6B",
+            "width_pct": 75
+          },
+          {
+            "label": "Mangosteens",
+            "value": 4,
+            "display": "4/8 of box",
+            "color": "#C7F464",
+            "width_pct": 50
+          },
+          {
+            "label": "Total",
+            "value": 10,
+            "display": "10/8 = 1 2/8 boxes",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "6 ÷ 8 = 3/4",
+            "formula": {
+              "display": "6 ÷ 8 = 3/4",
+              "a": 3,
+              "b": 4,
+              "result": 6,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}3&\\ ÷\\quad 4&\\ \\hline 6&\\\\ \\hline \\end{array}",
+              "a_display": "3",
+              "b_display": "4",
+              "result_display": "6",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 6 ÷ 8 = 3/4"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "4 ÷ 8 = 1/2",
+            "formula": {
+              "display": "4 ÷ 8 = 1/2",
+              "a": 1,
+              "b": 2,
+              "result": 4,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}1&\\ ÷\\quad 2&\\ \\hline 4&\\\\ \\hline \\end{array}",
+              "a_display": "1",
+              "b_display": "2",
+              "result_display": "4",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 4 ÷ 8 = 1/2"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "6 + 4 = 10",
+            "formula": {
+              "display": "6 + 4 = 10",
+              "a": 6,
+              "b": 4,
+              "result": 10,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}6&\\ +\\quad 4&\\ \\hline 10&\\\\ \\hline \\end{array}",
+              "a_display": "6",
+              "b_display": "4",
+              "result_display": "10",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 6 + 4 = 10"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6 ÷ 8 = 3/4 | 4 ÷ 8 = 1/2 | 6 + 4 = 10",
+      "content": "6 ÷ 8 = 3/4 | 4 ÷ 8 = 1/2 | 6 + 4 = 10",
+      "data": {
+        "expression": "6 ÷ 8 = 3/4 | 4 ÷ 8 = 1/2 | 6 + 4 = 10",
+        "operations": [
+          {
+            "op": "÷",
+            "a": 6,
+            "b": 8,
+            "result": "3/4"
+          },
+          {
+            "op": "÷",
+            "a": 4,
+            "b": 8,
+            "result": "1/2"
+          },
+          {
+            "op": "+",
+            "a": 6,
+            "b": 4,
+            "result": 10
+          }
+        ],
+        "content_en": "6 ÷ 8 = 3/4 | 4 ÷ 8 = 1/2 | 6 + 4 = 10"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A bottle is filled with 2/5 perfume and 1/3 oil. How many parts of the bottle are filled in total?",
+      "choices": [
+        "4/8 of bottle",
+        "5/8 of bottle",
+        "11/15 of bottle",
+        "3/8 of bottle"
+      ],
+      "correct_answer": "11/15 of bottle",
+      "explanation": "2/5 = 6/15, 1/3 = 5/15, total = 11/15",
+      "data": {
+        "question": "A bottle is filled with 2/5 perfume and 1/3 oil. How many parts of the bottle are filled in total?",
+        "choices": [
+          "4/8 of bottle",
+          "5/8 of bottle",
+          "11/15 of bottle",
+          "3/8 of bottle"
+        ],
+        "correct_answer": "11/15 of bottle",
+        "explanation": "2/5 = 6/15, 1/3 = 5/15, total = 11/15"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -1,0 +1,167 @@
+{
+  "variant_id": "triangles_ep_001",
+  "variant_title_en": "Triangles",
+  "status": "needs_review",
+  "title_en": "Triangles",
+  "title_th": "รูปสามเหลี่ยม",
+  "story_theme_en": "A triangle has two angles measuring 45 degrees and 65 degrees. What is the size of the third angle, and what type of triangle is it (acute, right, or obtuse)?",
+  "helper_tip": "The sum of angles in a triangle = 180°",
+  "hint_th": "ผลรวมมุมในรูปสามเหลี่ยม = 180°",
+  "think_story_en": "Sum of angles in a triangle = 180 degrees. Third angle = 180 - 45 - 65 = 70 degrees. All angles are less than 90 degrees, so it is an acute triangle.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A triangle has two angles measuring 45 degrees and 65 degrees. What is the size of the third angle, and what type of triangle is it (acute, right, or obtuse)?",
+      "data": {
+        "content_en": "A triangle has two angles measuring 45 degrees and 65 degrees. What is the size of the third angle, and what type of triangle is it (acute, right, or obtuse)?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Sum of angles in a triangle = 180 degrees. Third angle = 180 - 45 - 65 = 70 degrees. All angles are less than 90 degrees, so it is an acute triangle.",
+      "data": {
+        "content_en": "Sum of angles in a triangle = 180 degrees. Third angle = 180 - 45 - 65 = 70 degrees. All angles are less than 90 degrees, so it is an acute triangle."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "degrees",
+        "bars": [
+          {
+            "label": "Angle A",
+            "value": 45,
+            "display": "45°",
+            "color": "#4ECDC4",
+            "width_pct": 50
+          },
+          {
+            "label": "Angle B",
+            "value": 65,
+            "display": "65°",
+            "color": "#FF6B6B",
+            "width_pct": 72
+          },
+          {
+            "label": "Angle C",
+            "value": 70,
+            "display": "70°",
+            "color": "#96CEB4",
+            "width_pct": 78,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "180 - 45 = 135",
+            "formula": {
+              "display": "180 - 45 = 135",
+              "a": 180,
+              "b": 45,
+              "result": 135,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}180&\\ -\\quad 45&\\ \\hline 135&\\\\ \\hline \\end{array}",
+              "a_display": "180",
+              "b_display": "45",
+              "result_display": "135",
+              "operation": "subtract"
+            },
+            "story_connection": "From bar model: 180 - 45 = 135"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "135 - 65 = 70",
+            "formula": {
+              "display": "135 - 65 = 70",
+              "a": 135,
+              "b": 65,
+              "result": 70,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}135&\\ -\\quad 65&\\ \\hline 70&\\\\ \\hline \\end{array}",
+              "a_display": "135",
+              "b_display": "65",
+              "result_display": "70",
+              "operation": "subtract"
+            },
+            "story_connection": "From bar model: 135 - 65 = 70"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "180 - 45 = 135 | 135 - 65 = 70",
+      "content": "180 - 45 = 135 | 135 - 65 = 70",
+      "data": {
+        "expression": "180 - 45 = 135 | 135 - 65 = 70",
+        "operations": [
+          {
+            "op": "-",
+            "a": 180,
+            "b": 45,
+            "result": 135
+          },
+          {
+            "op": "-",
+            "a": 135,
+            "b": 65,
+            "result": 70
+          }
+        ],
+        "content_en": "180 - 45 = 135 | 135 - 65 = 70"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A triangle has angles of 55° and 80°. What is the third angle?",
+      "choices": [
+        "35°",
+        "40°",
+        "45°",
+        "50°"
+      ],
+      "correct_answer": "45°",
+      "explanation": "180 - 55 - 80 = 45°",
+      "data": {
+        "question": "A triangle has angles of 55° and 80°. What is the third angle?",
+        "choices": [
+          "35°",
+          "40°",
+          "45°",
+          "50°"
+        ],
+        "correct_answer": "45°",
+        "explanation": "180 - 55 - 80 = 45°"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -1,0 +1,235 @@
+{
+  "variant_id": "position_order_ep_001",
+  "variant_title_en": "Position and Ordinal Numbers",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Position and Ordinal Numbers",
+  "title_th": "",
+  "story_theme_en": "In a line of children, Lin is 4th from the front. Mali is 7th from the front. How many children are between Lin and Mali?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Lin is 4th. Mali is 7th. Children between: 7 - 4 - 1 = 2 children.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "In a line of children, Lin is 4th from the front. Mali is 7th from the front. How many children are between Lin and Mali?",
+      "data": {
+        "content_en": "In a line of children, Lin is 4th from the front. Mali is 7th from the front. How many children are between Lin and Mali?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Lin is 4th. Mali is 7th. Children between: 7 - 4 - 1 = 2 children.",
+      "data": {
+        "content_en": "Lin is 4th. Mali is 7th. Children between: 7 - 4 - 1 = 2 children."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "position_bar",
+      "data": {
+        "model_type": "position_bar",
+        "operation": "ordinal",
+        "unit": "children",
+        "bars": [
+          {
+            "label": "Lin position",
+            "value": 4,
+            "display": "4th",
+            "color": "#96CEB4",
+            "width_pct": 40
+          },
+          {
+            "label": "Between",
+            "value": 2,
+            "display": "2 children",
+            "color": "#A8D8EA",
+            "width_pct": 20
+          },
+          {
+            "label": "Mali position",
+            "value": 7,
+            "display": "7th",
+            "color": "#C7F464",
+            "width_pct": 70
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Subtract",
+            "expression": "7 - 4 = 3",
+            "formula": {
+              "display": "7 - 4 = 3",
+              "a": 7,
+              "b": 4,
+              "result": 3,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}7&&\\\\\\\\ - 4&&\\\\\\\\ \\\\hline 3&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "7",
+              "b_display": "4",
+              "result_display": "3",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 7 - 4 = 3"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Subtract",
+            "expression": "3 - 1 = 2",
+            "formula": {
+              "display": "3 - 1 = 2",
+              "a": 3,
+              "b": 1,
+              "result": 2,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}3&&\\\\\\\\ - 1&&\\\\\\\\ \\\\hline 2&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "3",
+              "b_display": "1",
+              "result_display": "2",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 3 - 1 = 2"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "7 - 4 - 1 = 2",
+      "content": "7 - 4 - 1 = 2",
+      "data": {
+        "expression": "7 - 4 - 1 = 2",
+        "operations": [
+          {
+            "op": "-",
+            "a": 7,
+            "b": 4,
+            "result": 3
+          },
+          {
+            "op": "-",
+            "a": 3,
+            "b": 1,
+            "result": 2
+          }
+        ],
+        "content_en": "7 - 4 - 1 = 2"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "In a line, Ai is 3rd from the front and Book is 6th from the front. How many children are between them?",
+      "choices": [
+        "2 children",
+        "7 children",
+        "-1 children",
+        "10 children"
+      ],
+      "correct_answer": "2 children",
+      "explanation": "6 - 3 - 1 = 2 children",
+      "data": {
+        "question": "In a line, Ai is 3rd from the front and Book is 6th from the front. How many children are between them?",
+        "choices": [
+          "2 children",
+          "7 children",
+          "-1 children",
+          "10 children"
+        ],
+        "correct_answer": "2 children",
+        "explanation": "6 - 3 - 1 = 2 children"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "first",
+      "th": "อันดับแรก",
+      "definition_en": "The very beginning position."
+    },
+    {
+      "en": "last",
+      "th": "อันสุดท้าย",
+      "definition_en": "The final position."
+    },
+    {
+      "en": "between",
+      "th": "ระหว่าง",
+      "definition_en": "In the middle of two positions."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "In a line of children, Lin is 4th from the front. Mali is 7th from the front. Ho...",
+      "solution_en": "7 - 4 - 1 = 2"
+    }
+  ],
+  "questions": []
+}

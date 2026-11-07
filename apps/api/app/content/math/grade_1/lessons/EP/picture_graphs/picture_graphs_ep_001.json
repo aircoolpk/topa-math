@@ -1,0 +1,235 @@
+{
+  "variant_id": "picture_graphs_ep_001",
+  "variant_title_en": "Picture Graphs",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Picture Graphs",
+  "title_th": "",
+  "story_theme_en": "A class votes for their favorite fruit. Apple gets 4 votes, Banana gets 6 votes, and Orange gets 3 votes. Which fruit gets the most votes?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Apple: 4 votes. Banana: 6 votes. Orange: 3 votes. The most is Banana with 6 votes.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A class votes for their favorite fruit. Apple gets 4 votes, Banana gets 6 votes, and Orange gets 3 votes. Which fruit gets the most votes?",
+      "data": {
+        "content_en": "A class votes for their favorite fruit. Apple gets 4 votes, Banana gets 6 votes, and Orange gets 3 votes. Which fruit gets the most votes?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Apple: 4 votes. Banana: 6 votes. Orange: 3 votes. The most is Banana with 6 votes.",
+      "data": {
+        "content_en": "Apple: 4 votes. Banana: 6 votes. Orange: 3 votes. The most is Banana with 6 votes."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "picture_graph",
+      "data": {
+        "model_type": "picture_graph",
+        "operation": "compare",
+        "unit": "votes",
+        "bars": [
+          {
+            "label": "Apple",
+            "value": 4,
+            "display": "4 votes",
+            "color": "#FF9A9E",
+            "width_pct": 30
+          },
+          {
+            "label": "Banana",
+            "value": 6,
+            "display": "6 votes",
+            "color": "#A8D8EA",
+            "width_pct": 46
+          },
+          {
+            "label": "Orange",
+            "value": 3,
+            "display": "3 votes",
+            "color": "#C7F464",
+            "width_pct": 23
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "4 + 6 = 10",
+            "formula": {
+              "display": "4 + 6 = 10",
+              "a": 4,
+              "b": 6,
+              "result": 10,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}4&&\\\\\\\\ + 6&&\\\\\\\\ \\\\hline 10&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "4",
+              "b_display": "6",
+              "result_display": "10",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 4 + 6 = 10"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add",
+            "expression": "10 + 3 = 13",
+            "formula": {
+              "display": "10 + 3 = 13",
+              "a": 10,
+              "b": 3,
+              "result": 13,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}10&&\\\\\\\\ + 3&&\\\\\\\\ \\\\hline 13&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "10",
+              "b_display": "3",
+              "result_display": "13",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 10 + 3 = 13"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "4 + 6 + 3 = 13",
+      "content": "4 + 6 + 3 = 13",
+      "data": {
+        "expression": "4 + 6 + 3 = 13",
+        "operations": [
+          {
+            "op": "+",
+            "a": 4,
+            "b": 6,
+            "result": 10
+          },
+          {
+            "op": "+",
+            "a": 10,
+            "b": 3,
+            "result": 13
+          }
+        ],
+        "content_en": "4 + 6 + 3 = 13"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "How many more bananas than oranges are there?",
+      "choices": [
+        "3 more bananas",
+        "8 more bananas",
+        "0 more bananas",
+        "11 more bananas"
+      ],
+      "correct_answer": "3 more bananas",
+      "explanation": "6 bananas - 3 oranges = 3 more bananas",
+      "data": {
+        "question": "How many more bananas than oranges are there?",
+        "choices": [
+          "3 more bananas",
+          "8 more bananas",
+          "0 more bananas",
+          "11 more bananas"
+        ],
+        "correct_answer": "3 more bananas",
+        "explanation": "6 bananas - 3 oranges = 3 more bananas"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "vote",
+      "th": "โหวต",
+      "definition_en": "A choice you make."
+    },
+    {
+      "en": "favorite",
+      "th": "ชอบมากที่สุด",
+      "definition_en": "The one you like the most."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "A class votes for their favorite fruit. Apple gets 4 votes, Banana gets 6 votes,...",
+      "solution_en": "4 + 6 + 3 = 13"
+    }
+  ],
+  "questions": []
+}

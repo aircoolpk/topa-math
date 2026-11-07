@@ -1,0 +1,181 @@
+{
+  "variant_id": "multiplication_th_001",
+  "variant_title_th": "การคูณ",
+  "variant_title_en": "Multiplication",
+  "status": "needs_review",
+  "title_th": "การคูณ",
+  "title_en": "Multiplication",
+  "story_theme_th": "อ้ายจัดโต๊ะในห้องเรียน แถวหน้ามีโต๊ะ 6 แถว แต่ละแถวมีโต๊ะ 4 ตัว อ้ายมีโต๊ะทั้งหมดกี่ตัว และถ้ามีนักเรียน 24 คน แต่ละคนนั่งโต๊ะ 1 ตัว จะมีโต๊ะเหลือกี่ตัว",
+  "helper_tip": "การคูณคือการบวกซ้ำๆ หลายครั้ง เช่น 4 + 4 + 4 + 4 + 4 + 4 = 6 x 4",
+  "think_story_th": "6 แถว x 4 ตัว = 24 ตัว, เหลือ: 24 - 24 = 0 ตัว",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "อ้ายจัดโต๊ะในห้องเรียน แถวหน้ามีโต๊ะ 6 แถว แต่ละแถวมีโต๊ะ 4 ตัว อ้ายมีโต๊ะทั้งหมดกี่ตัว และถ้ามีนักเรียน 24 คน แต่ละคนนั่งโต๊ะ 1 ตัว จะมีโต๊ะเหลือกี่ตัว",
+      "data": {
+        "content_th": "อ้ายจัดโต๊ะในห้องเรียน แถวหน้ามีโต๊ะ 6 แถว แต่ละแถวมีโต๊ะ 4 ตัว อ้ายมีโต๊ะทั้งหมดกี่ตัว และถ้ามีนักเรียน 24 คน แต่ละคนนั่งโต๊ะ 1 ตัว จะมีโต๊ะเหลือกี่ตัว"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "6 แถว x 4 ตัว = 24 ตัว, เหลือ: 24 - 24 = 0 ตัว",
+      "data": {
+        "content_th": "6 แถว x 4 ตัว = 24 ตัว, เหลือ: 24 - 24 = 0 ตัว"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "แถว 1-6",
+            "value": 24,
+            "display": "24 ตัว",
+            "color": "#4ECDC4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "เหลือ",
+            "value": 0,
+            "display": "0 ตัว",
+            "color": "#C7F464",
+            "width_pct": 0,
+            "is_remainder": true
+          }
+        ],
+        "unit": "ตัว"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: หาจำนวนโต๊ะทั้งหมด",
+            "expression": "6 x 4 = 24",
+            "a": 6,
+            "b": 4,
+            "res": 24,
+            "op": "*",
+            "formula": {
+              "display": "6 x 4 = 24",
+              "a": 6,
+              "b": 4,
+              "result": 24,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "6",
+              "b_display": "4",
+              "result_display": "24",
+              "operation": "multiply"
+            },
+            "story_connection": "6 แถว x 4 ตัว = 24 ตัว"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาโต๊ะที่เหลือ",
+            "expression": "24 - 24 = 0",
+            "a": 24,
+            "b": 24,
+            "res": 0,
+            "op": "-",
+            "formula": {
+              "display": "24 - 24 = 0",
+              "a": 24,
+              "b": 24,
+              "result": 0,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "24",
+              "b_display": "24",
+              "result_display": "0",
+              "operation": "subtract"
+            },
+            "story_connection": "24 - 24 = 0 ตัว"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "6 x 4 = 24 และ 24 - 24 = 0",
+      "content": "6 x 4 = 24 และ 24 - 24 = 0",
+      "data": {
+        "expression": "6 x 4 = 24 และ 24 - 24 = 0",
+        "content_th": "6 x 4 = 24 และ 24 - 24 = 0",
+        "operations": [
+          {
+            "op": "*",
+            "a": 6,
+            "b": 4,
+            "result": 24
+          },
+          {
+            "op": "-",
+            "a": 24,
+            "b": 24,
+            "result": 0
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ลินปลูกกล้วย 7 แถว แถวละ 8 ต้น รวมปลูกกล้วยกี่ต้น",
+      "choices": [
+        "56 ต้น",
+        "48 ต้น",
+        "64 ต้น",
+        "15 ต้น"
+      ],
+      "correct_answer": "56 ต้น",
+      "explanation": "7 x 8 = 56 ต้น",
+      "data": {
+        "question": "ลินปลูกกล้วย 7 แถว แถวละ 8 ต้น รวมปลูกกล้วยกี่ต้น",
+        "choices": [
+          "56 ต้น",
+          "48 ต้น",
+          "64 ต้น",
+          "15 ต้น"
+        ],
+        "correct_answer": "56 ต้น",
+        "explanation": "7 x 8 = 56 ต้น"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

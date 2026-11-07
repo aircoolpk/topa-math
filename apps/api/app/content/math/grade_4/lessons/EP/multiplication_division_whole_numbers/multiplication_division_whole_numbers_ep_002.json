@@ -1,0 +1,171 @@
+{
+  "variant_id": "multiplication_division_whole_numbers_ep_002",
+  "variant_title_en": "Multiplication and Division of Whole Numbers",
+  "status": "needs_review",
+  "title_en": "Multiplication and Division of Whole Numbers",
+  "story_theme_en": "A food packaging factory produces 18 boxes per minute. It works for 45 minutes. How many boxes does it produce in total? Then it puts the boxes into delivery trucks with 135 boxes per truck. How many full trucks will there be?",
+  "helper_tip": "Multiply first, then divide. Watch out for carrying when multiplying.",
+  "hint_th": "คูณก่อนหาร ระวังการทดตอนคูณ",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A food packaging factory produces 18 boxes per minute. It works for 45 minutes. How many boxes does it produce in total? Then it puts the boxes into delivery trucks with 135 boxes per truck. How many full trucks will there be?",
+      "data": {
+        "content_en": "A food packaging factory produces 18 boxes per minute. It works for 45 minutes. How many boxes does it produce in total? Then it puts the boxes into delivery trucks with 135 boxes per truck. How many full trucks will there be?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Find total boxes → 18 x 45 = total boxes | Step 2: Divide into trucks → total / 135 = number of trucks",
+      "data": {
+        "content_en": "Step 1: Find total boxes → 18 x 45 = total boxes | Step 2: Divide into trucks → total / 135 = number of trucks"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Array Model",
+      "model_type": "array_model",
+      "data": {
+        "model_type": "array_model",
+        "operation": "multiply_then_divide",
+        "rows": 18,
+        "cols": 45,
+        "total": 810,
+        "unit": "boxes"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Multiply boxes produced",
+            "expression": "18 x 45 = 810",
+            "formula": {
+              "display": "18 x 45 = 810",
+              "a": 18,
+              "b": 45,
+              "result": 810,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}18&\\\\\\\\ ×\\\\quad 45&\\\\\\\\ \\\\hline 810&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "18",
+              "b_display": "45",
+              "result_display": "810",
+              "operation": "mul"
+            },
+            "story_connection": "18 boxes/min x 45 min = 810 boxes"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Divide into delivery trucks",
+            "expression": "810 / 135 = 6 trucks remainder 0",
+            "formula": {
+              "display": "810 / 135 = 6 trucks remainder 0",
+              "a": 810,
+              "b": 135,
+              "result": 6,
+              "operation": "div"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}810&\\\\\\\\ ÷\\\\quad 135&\\\\\\\\ \\\\hline 6&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "810",
+              "b_display": "135",
+              "result_display": "6",
+              "operation": "div"
+            },
+            "story_connection": "810 / 135 = 6 trucks, remainder 0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "18 x 45 = 810 | 810 / 135 = 6 remainder 0",
+      "content": "18 x 45 = 810 boxes  |  810 / 135 = 6 trucks remainder 0",
+      "data": {
+        "expression": "18 x 45 = 810 | 810 / 135 = 6 remainder 0",
+        "operations": [
+          {
+            "op": "x",
+            "a": 18,
+            "b": 45,
+            "result": 810
+          },
+          {
+            "op": "/",
+            "a": 810,
+            "b": 135,
+            "result": 6
+          }
+        ],
+        "content_en": "18 x 45 = 810 boxes  |  810 / 135 = 6 trucks remainder 0"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Students arrange flowers in vases. 24 flowers per vase, 15 vases. How many flowers in total? If they put them in big vases with 60 flowers each, how many big vases can they fill?",
+      "choices": [
+        "360 flowers 6 vases",
+        "360 flowers 5 vases",
+        "350 flowers 6 vases",
+        "370 flowers 6 vases"
+      ],
+      "correct_answer": "360 flowers 6 vases",
+      "explanation": "24 x 15 = 360 flowers | 360 / 60 = 6 vases",
+      "data": {
+        "question": "Students arrange flowers in vases. 24 flowers per vase, 15 vases. How many flowers in total? If they put them in big vases with 60 flowers each, how many big vases can they fill?",
+        "choices": [
+          "360 flowers 6 vases",
+          "360 flowers 5 vases",
+          "350 flowers 6 vases",
+          "370 flowers 6 vases"
+        ],
+        "correct_answer": "360 flowers 6 vases",
+        "explanation": "24 x 15 = 360 flowers | 360 / 60 = 6 vases"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "A cake shop has 12 boxes with 45 cakes per box. How many cakes in total?",
+      "solution_en": "12 x 45 = 540 cakes"
+    }
+  ],
+  "common_mistakes": [
+    "Multiplying incorrectly, especially with two-digit numbers",
+    "Forgetting to carry when the product exceeds 9",
+    "Dividing incorrectly, especially with remainders"
+  ],
+  "hints": [
+    "Use long multiplication or short multiplication.",
+    "Check by dividing backwards: 810 / 18 = 45."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "product",
+      "th": "ผลคูณ",
+      "definition_en": "Result of multiplication"
+    },
+    {
+      "en": "quotient",
+      "th": "ผลหาร",
+      "definition_en": "Result of division"
+    },
+    {
+      "en": "remainder",
+      "th": "เศษ",
+      "definition_en": "Amount left over after division"
+    }
+  ]
+}

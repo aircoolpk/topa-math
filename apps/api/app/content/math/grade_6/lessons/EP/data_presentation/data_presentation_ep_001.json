@@ -1,0 +1,259 @@
+{
+  "variant_id": "data_presentation_ep_001",
+  "variant_title_en": "Data Presentation",
+  "status": "needs_review",
+  "title_en": "Data Presentation",
+  "title_th": "การนำเสนอข้อมูล",
+  "story_theme_en": "A survey of 40 students about their favorite food found: fried rice 15 students, pad thai 10 students, som tum 8 students, spicy stir-fry 7 students, and rice soup 5 students. Find the mean and median of this data.",
+  "helper_tip": "Mean = sum of data ÷ number of data items",
+  "hint_th": "ค่าเฉลี่ย = ผลรวมของข้อมูล ÷ จำนวนข้อมูล",
+  "think_story_en": "Sum = 15+10+8+7+5 = 45 (more than 40 because some chose multiple foods). Mean = 45 ÷ 5 = 9 students. Data sorted: 5, 7, 8, 10, 15 → Median = 8 students.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A survey of 40 students about their favorite food found: fried rice 15 students, pad thai 10 students, som tum 8 students, spicy stir-fry 7 students, and rice soup 5 students. Find the mean and median of this data.",
+      "data": {
+        "content_en": "A survey of 40 students about their favorite food found: fried rice 15 students, pad thai 10 students, som tum 8 students, spicy stir-fry 7 students, and rice soup 5 students. Find the mean and median of this data."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Sum = 15+10+8+7+5 = 45 (more than 40 because some chose multiple foods). Mean = 45 ÷ 5 = 9 students. Data sorted: 5, 7, 8, 10, 15 → Median = 8 students.",
+      "data": {
+        "content_en": "Sum = 15+10+8+7+5 = 45 (more than 40 because some chose multiple foods). Mean = 45 ÷ 5 = 9 students. Data sorted: 5, 7, 8, 10, 15 → Median = 8 students."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "students",
+        "bars": [
+          {
+            "label": "Fried rice",
+            "value": 15,
+            "display": "15 students",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Pad thai",
+            "value": 10,
+            "display": "10 students",
+            "color": "#45B7D1",
+            "width_pct": 67
+          },
+          {
+            "label": "Som tum",
+            "value": 8,
+            "display": "8 students",
+            "color": "#96CEB4",
+            "width_pct": 53
+          },
+          {
+            "label": "Spicy stir-fry",
+            "value": 7,
+            "display": "7 students",
+            "color": "#FFE66D",
+            "width_pct": 47
+          },
+          {
+            "label": "Rice soup",
+            "value": 5,
+            "display": "5 students",
+            "color": "#FF6B6B",
+            "width_pct": 33,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "15 + 10 = 25",
+            "formula": {
+              "display": "15 + 10 = 25",
+              "a": 15,
+              "b": 10,
+              "result": 25,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}15&\\ +\\quad 10&\\ \\hline 25&\\\\ \\hline \\end{array}",
+              "a_display": "15",
+              "b_display": "10",
+              "result_display": "25",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 15 + 10 = 25"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "25 + 8 = 33",
+            "formula": {
+              "display": "25 + 8 = 33",
+              "a": 25,
+              "b": 8,
+              "result": 33,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}25&\\ +\\quad 8&\\ \\hline 33&\\\\ \\hline \\end{array}",
+              "a_display": "25",
+              "b_display": "8",
+              "result_display": "33",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 25 + 8 = 33"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "33 + 7 = 40",
+            "formula": {
+              "display": "33 + 7 = 40",
+              "a": 33,
+              "b": 7,
+              "result": 40,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}33&\\ +\\quad 7&\\ \\hline 40&\\\\ \\hline \\end{array}",
+              "a_display": "33",
+              "b_display": "7",
+              "result_display": "40",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 33 + 7 = 40"
+          },
+          {
+            "step": 4,
+            "label": "Step 4",
+            "expression": "40 + 5 = 45",
+            "formula": {
+              "display": "40 + 5 = 45",
+              "a": 40,
+              "b": 5,
+              "result": 45,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}40&\\ +\\quad 5&\\ \\hline 45&\\\\ \\hline \\end{array}",
+              "a_display": "40",
+              "b_display": "5",
+              "result_display": "45",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 40 + 5 = 45"
+          },
+          {
+            "step": 5,
+            "label": "Step 5",
+            "expression": "45 ÷ 5 = 9",
+            "formula": {
+              "display": "45 ÷ 5 = 9",
+              "a": 45,
+              "b": 5,
+              "result": 9,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}45&\\ ÷\\quad 5&\\ \\hline 9&\\\\ \\hline \\end{array}",
+              "a_display": "45",
+              "b_display": "5",
+              "result_display": "9",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 45 ÷ 5 = 9"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "15 + 10 = 25 | 25 + 8 = 33 | 33 + 7 = 40 | 40 + 5 = 45 | 45 ÷ 5 = 9",
+      "content": "15 + 10 = 25 | 25 + 8 = 33 | 33 + 7 = 40 | 40 + 5 = 45 | 45 ÷ 5 = 9",
+      "data": {
+        "expression": "15 + 10 = 25 | 25 + 8 = 33 | 33 + 7 = 40 | 40 + 5 = 45 | 45 ÷ 5 = 9",
+        "operations": [
+          {
+            "op": "+",
+            "a": 15,
+            "b": 10,
+            "result": 25
+          },
+          {
+            "op": "+",
+            "a": 25,
+            "b": 8,
+            "result": 33
+          },
+          {
+            "op": "+",
+            "a": 33,
+            "b": 7,
+            "result": 40
+          },
+          {
+            "op": "+",
+            "a": 40,
+            "b": 5,
+            "result": 45
+          },
+          {
+            "op": "÷",
+            "a": 45,
+            "b": 5,
+            "result": 9
+          }
+        ],
+        "content_en": "15 + 10 = 25 | 25 + 8 = 33 | 33 + 7 = 40 | 40 + 5 = 45 | 45 ÷ 5 = 9"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Test scores of 5 students: 70, 85, 90, 60, 75. What is the mean score?",
+      "choices": [
+        "75 points",
+        "76 points",
+        "78 points",
+        "80 points"
+      ],
+      "correct_answer": "76 points",
+      "explanation": "(70+85+90+60+75) ÷ 5 = 380 ÷ 5 = 76 points",
+      "data": {
+        "question": "Test scores of 5 students: 70, 85, 90, 60, 75. What is the mean score?",
+        "choices": [
+          "75 points",
+          "76 points",
+          "78 points",
+          "80 points"
+        ],
+        "correct_answer": "76 points",
+        "explanation": "(70+85+90+60+75) ÷ 5 = 380 ÷ 5 = 76 points"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -1,0 +1,197 @@
+{
+  "variant_id": "time_ep_001",
+  "variant_title_en": "Time",
+  "status": "needs_review",
+  "title_en": "Time",
+  "story_theme_en": "Lin takes a train from Bangkok to Chiang Mai. The train departs at 08:45 and arrives at its destination at 15:20. How long does the journey take?",
+  "helper_tip": "Find the difference between times by subtracting. Borrow 1 hour = 60 minutes when minutes cannot subtract.",
+  "hint_th": "หาความต่างของเวลาโดยใช้การลบ ถ้านาทีลบกันไม่ได้ให้กู้ 1 ชม. = 60 นาที",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin takes a train from Bangkok to Chiang Mai. The train departs at 08:45 and arrives at its destination at 15:20. How long does the journey take?",
+      "data": {
+        "content_en": "Lin takes a train from Bangkok to Chiang Mai. The train departs at 08:45 and arrives at its destination at 15:20. How long does the journey take?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "From 08:45 to 12:00 = 3 hours 15 minutes | From 12:00 to 15:20 = 3 hours 20 minutes | Total = 6 hours 35 minutes",
+      "data": {
+        "content_en": "From 08:45 to 12:00 = 3 hours 15 minutes | From 12:00 to 15:20 = 3 hours 20 minutes | Total = 6 hours 35 minutes"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Timeline",
+      "model_type": "time_line",
+      "data": {
+        "model_type": "time_line",
+        "operation": "duration",
+        "bars": [
+          {
+            "label": "Depart from Bangkok",
+            "value": 845,
+            "display": "08:45",
+            "color": "#4ECDC4",
+            "width_pct": 30
+          },
+          {
+            "label": "Arrive at Chiang Mai",
+            "value": 1520,
+            "display": "15:20",
+            "color": "#96CEB4",
+            "width_pct": 65,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Time from 08:45 to 12:00",
+            "expression": "12:00 - 08:45 = 3 hours 15 minutes",
+            "formula": {
+              "display": "12:00 - 08:45 = 3 hours 15 minutes",
+              "a": 1200,
+              "b": 845,
+              "result": 315,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}1200&\\\\\\\\ -\\\\quad 845&\\\\\\\\ \\\\hline 315&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "1200",
+              "b_display": "845",
+              "result_display": "315",
+              "operation": "sub"
+            },
+            "story_connection": "12:00 - 08:45 = 3 hours 15 minutes"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Time from 12:00 to 15:20",
+            "expression": "15:20 - 12:00 = 3 hours 20 minutes",
+            "formula": {
+              "display": "15:20 - 12:00 = 3 hours 20 minutes",
+              "a": 1520,
+              "b": 1200,
+              "result": 320,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}1520&\\\\\\\\ -\\\\quad 1200&\\\\\\\\ \\\\hline 320&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "1520",
+              "b_display": "1200",
+              "result_display": "320",
+              "operation": "sub"
+            },
+            "story_connection": "15:20 - 12:00 = 3 hours 20 minutes"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Total travel time",
+            "expression": "3h 15min + 3h 20min = 6h 35min",
+            "formula": {
+              "display": "3h 15min + 3h 20min = 6h 35min",
+              "a": 315,
+              "b": 320,
+              "result": 635,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}315&\\\\\\\\ +\\\\quad 320&\\\\\\\\ \\\\hline 635&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "315",
+              "b_display": "320",
+              "result_display": "635",
+              "operation": "add"
+            },
+            "story_connection": "3 hours 15 minutes + 3 hours 20 minutes = 6 hours 35 minutes"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "15:20 - 08:45 = 6 hours 35 minutes",
+      "content": "15:20 - 08:45 = 6 hours 35 minutes",
+      "data": {
+        "expression": "15:20 - 08:45 = 6 hours 35 minutes",
+        "operations": [
+          {
+            "op": "-",
+            "a": 1520,
+            "b": 845,
+            "result": 635
+          }
+        ],
+        "content_en": "15:20 - 08:45 = 6 hours 35 minutes"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A bus leaves the station at 07:30 and arrives at its destination at 12:50. How long does the journey take?",
+      "choices": [
+        "5 hours 20 minutes",
+        "5 hours 10 minutes",
+        "5 hours 30 minutes",
+        "5 hours 40 minutes"
+      ],
+      "correct_answer": "5 hours 20 minutes",
+      "explanation": "12:50 - 07:30 = 5 hours 20 minutes",
+      "data": {
+        "question": "A bus leaves the station at 07:30 and arrives at its destination at 12:50. How long does the journey take?",
+        "choices": [
+          "5 hours 20 minutes",
+          "5 hours 10 minutes",
+          "5 hours 30 minutes",
+          "5 hours 40 minutes"
+        ],
+        "correct_answer": "5 hours 20 minutes",
+        "explanation": "12:50 - 07:30 = 5 hours 20 minutes"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "Watch a movie from 19:00 to 21:30. How long is the movie?",
+      "solution_en": "21:30 - 19:00 = 2 hours 30 minutes"
+    }
+  ],
+  "common_mistakes": [
+    "Subtracting without converting to total minutes first",
+    "Forgetting to borrow 1 hour = 60 minutes when minutes cannot subtract"
+  ],
+  "hints": [
+    "Convert to total minutes first: 15:20 = 15x60+20 = 920 minutes. 08:45 = 8x60+45 = 525 minutes.",
+    "920 - 525 = 395 minutes = 6 hours 35 minutes."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "hour",
+      "th": "ชั่วโมง",
+      "definition_en": "A unit of time. 1 hour = 60 minutes"
+    },
+    {
+      "en": "minute",
+      "th": "นาที",
+      "definition_en": "A unit of time. 60 minutes = 1 hour"
+    },
+    {
+      "en": "borrow",
+      "th": "กู้",
+      "definition_en": "To take from one place value to help another when subtracting"
+    }
+  ]
+}

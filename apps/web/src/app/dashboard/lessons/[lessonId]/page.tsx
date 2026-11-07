@@ -5,13 +5,13 @@ import { useRouter, useParams, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
 import { meApi, type Lesson, type VisualBlock } from '@/lib/api/me'
-import { MascotAvatar } from '@/components/topa/TopaUI'
 import { defaultMascots } from '@/lib/topa-content'
 import { stableMascotIndex } from '@/lib/mascot-registry'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 type Phase = 'loading' | 'content' | 'error'
+type ProgramType = 'TH' | 'EP'
 
 const BETA_READY_LESSON_GRADES = new Set([1, 2, 3, 4, 5, 6])
 
@@ -60,6 +60,40 @@ function getRecord(val: unknown): Record<string, unknown> {
   return val && typeof val === 'object' && !Array.isArray(val)
     ? val as Record<string, unknown>
     : {}
+}
+
+function cleanText(val: unknown): string {
+  const text = getText(val).trim()
+  if (!text || text === 'undefined' || text === 'null' || text === '[object Object]') return ''
+  if (/^\?{3,}$/.test(text)) return ''
+  return text
+}
+
+function localizedDataValue(
+  block: VisualBlock,
+  programType: ProgramType,
+  baseName: string,
+  fallbackKeys: string[] = []
+): unknown {
+  const b = block as Record<string, unknown>
+  const d = getRecord(b.data)
+  const suffix = programType === 'EP' ? 'en' : 'th'
+  const keys = [`${baseName}_${suffix}`, baseName, ...fallbackKeys]
+  for (const key of keys) {
+    const dataValue = d[key]
+    if (dataValue !== undefined && dataValue !== null && dataValue !== '') return dataValue
+    const blockValue = b[key]
+    if (blockValue !== undefined && blockValue !== null && blockValue !== '') return blockValue
+  }
+  return ''
+}
+
+function localizedContentText(block: VisualBlock, programType: ProgramType, baseName: string): string {
+  const suffix = programType === 'EP' ? 'en' : 'th'
+  const b = block as Record<string, unknown>
+  const d = getRecord(b.data)
+  const value = d[`content_${suffix}`] ?? b[`content_${suffix}`] ?? d.content ?? b.content ?? d[`${baseName}_${suffix}`] ?? b[`${baseName}_${suffix}`] ?? ''
+  return cleanText(value)
 }
 
 function getNumber(val: unknown): number | undefined {
@@ -164,11 +198,16 @@ const CORRECT_ANSWER_KEYS = [
   'correctIndex', 'correct_index', 'correctAnswer',
 ]
 
-function getMiniQuizCorrectAnswer(block: VisualBlock): string {
+function getMiniQuizCorrectAnswer(block: VisualBlock, programType: ProgramType): string {
   const b = block as Record<string, unknown>
   const d = (b.data ?? {}) as Record<string, unknown>
   const nestedContent = getRecord(d.content)
   const nestedQuestion = getArray<Record<string, unknown>>(d.questions ?? nestedContent.questions)[0] ?? {}
+
+  const localizedAnswer = localizedDataValue(block, programType, 'correct_answer')
+  if (localizedAnswer !== undefined && localizedAnswer !== null && localizedAnswer !== '') {
+    return String(localizedAnswer)
+  }
 
   // Check data first (normalized block), then root level
   for (const key of CORRECT_ANSWER_KEYS) {
@@ -191,14 +230,15 @@ function getMiniQuizCorrectAnswer(block: VisualBlock): string {
 
 // ─── Mini quiz choices extractor ──────────────────────────────────────────────
 
-function getMiniQuizChoices(block: VisualBlock): string[] {
+function getMiniQuizChoices(block: VisualBlock, programType: ProgramType): string[] {
   const b = block as Record<string, unknown>
   const d = (b.data ?? {}) as Record<string, unknown>
   const nestedContent = getRecord(d.content)
   const nestedQuestion = getArray<Record<string, unknown>>(d.questions ?? nestedContent.questions)[0] ?? {}
 
+  const localizedChoices = localizedDataValue(block, programType, 'choices')
   const raw = getArray<unknown>(
-    d.choices ??
+    (localizedChoices || undefined) ??
     d.options ??
     d.options_th ??
     nestedQuestion.choices ??
@@ -292,27 +332,9 @@ function normalizeVisualBlock(raw: RawVisualBlock): VisualBlock | null {
       } as unknown as VisualBlock
     }
 
-    // ── Handle emoji_counter / visual_thinking ─────────────────────────────
+    // Legacy "look first" blocks are intentionally hidden on the Grade 3 pilot.
     if (r.type === 'emoji_counter' || r.type === 'visual_thinking') {
       return null
-    }
-
-    if (r.type === 'emoji_counter' || r.type === 'visual_thinking') {
-      const dataRecord = innerRecord.data as Record<string, unknown> | undefined
-      const innerData = dataRecord ?? innerRecord
-      const rawItems = getArray<Record<string, unknown>>(innerData.items ?? innerData.counts ?? [])
-      return {
-        block_type: 'visual_thinking',
-        type: 'visual_thinking',
-        title_th: getText(innerData.title_th || innerData.title) || 'ใช้แผนภาพช่วยคิด',
-        content: getText(innerData.content),
-        description_th: getText(innerData.description_th || innerData.description),
-        data: innerData,
-        items: rawItems,
-        items_before: innerData.items_before,
-        items_added: innerData.items_added,
-        emoji: getText(innerData.emoji || innerData.symbol),
-      } as unknown as VisualBlock
     }
 
     // ── Default for other types ────────────────────────────────────────────
@@ -331,7 +353,9 @@ function normalizeVisualBlock(raw: RawVisualBlock): VisualBlock | null {
 
 // ─── Block 1: 🐣 Story Intro ───────────────────────────────────────────────────
 
-function BlockStoryIntro({ block }: { block: VisualBlock }) {
+function BlockStoryIntro({ block, programType }: { block: VisualBlock; programType: ProgramType }) {
+  // Story section prefers visual_blocks[type=story_intro].data.content_en/content_th before short content.
+  const story = localizedContentText(block, programType, 'story') || cleanText(block.description_th)
   return (
     <div className="card shadow-md bg-gradient-to-br from-yellow-50 via-white to-orange-50 border-l-4 border-yellow-400">
       <div className="flex items-center gap-2 mb-3">
@@ -341,7 +365,7 @@ function BlockStoryIntro({ block }: { block: VisualBlock }) {
         </h3>
       </div>
       <p className="text-gray-700 text-base leading-relaxed italic">
-        {block.content || block.description_th || block.label || ''}
+        {story}
       </p>
     </div>
   )
@@ -349,17 +373,19 @@ function BlockStoryIntro({ block }: { block: VisualBlock }) {
 
 // ─── Block 2: 👀 Visual Thinking ───────────────────────────────────────────────
 
-function BlockThinkStory({ block }: { block: VisualBlock }) {
+function BlockThinkStory({ block, programType }: { block: VisualBlock; programType: ProgramType }) {
+  // Think section prefers visual_blocks[type=think_story].data.content_en/content_th before short content.
+  const content = localizedContentText(block, programType, 'think_story') || cleanText(block.description_th)
   return (
     <div className="card shadow-md bg-sky-50 border-l-4 border-sky-400">
       <div className="flex items-center gap-2 mb-3">
-        <span className="text-2xl">?</span>
+        <span className="text-2xl">💡</span>
         <h3 className="font-bold text-sky-800 text-base">
-          {block.title_th || 'เรื่องราวชวนคิด'}
+          เรื่องราวชวนคิด
         </h3>
       </div>
       <p className="text-sky-900 text-sm leading-relaxed">
-        {getText(block.content || block.description_th || '')}
+        {content}
       </p>
     </div>
   )
@@ -514,6 +540,133 @@ function BlockVisualThinking({ block }: { block: VisualBlock }) {
 function BlockModelDiagram({ block }: { block: VisualBlock }) {
   const rawGroups = getArray<Record<string, unknown>>(block.groups ?? block.sharing_groups ?? [])
   const symbol = getText(block.symbol) || getText(block.emoji) || '🚗'
+  const data = getRecord((block as Record<string, unknown>).data)
+  const modelType = cleanText(block.model_type) || cleanText(data.model_type)
+  const bars = getArray<Record<string, unknown>>(data.bars ?? block.bars)
+
+  if (modelType === 'part_whole_bar' && bars.length > 0) {
+    // Model diagram maps from visual_blocks[type=model_diagram].data.bars and totals.
+    const unit = cleanText(data.unit)
+    const partBars = bars.filter(bar => !bar.is_total && !bar.is_remainder).slice(0, 2)
+    const totalBar = bars.find(bar => bar.is_total) ?? bars.find(bar => cleanText(bar.label) === 'รวม')
+    const remainderBar = bars.find(bar => bar.is_remainder)
+    const expenseBar = bars.find(bar => !bar.is_total && !bar.is_remainder && getNumber(bar.value) === getNumber(data.subtract_amount))
+
+    return (
+      <div className="card shadow-md bg-teal-50 border-l-4 border-teal-400">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="text-2xl">📊</span>
+          <h3 className="font-bold text-teal-800 text-base">ใช้แผนภาพช่วยคิด</h3>
+        </div>
+        <div className="space-y-4">
+          <div className="rounded-2xl bg-white p-4 shadow-sm border border-teal-100">
+            <p className="mb-3 text-sm font-extrabold text-teal-800">รวมเงินของทั้งสองคน</p>
+            <div className="flex overflow-hidden rounded-xl border border-teal-100 bg-slate-50">
+              {partBars.map((bar, index) => {
+                const width = Math.max(20, Math.min(80, getNumber(bar.width_pct) ?? 50))
+                return (
+                  <div
+                    key={index}
+                    className="px-3 py-4 text-center text-sm font-bold text-slate-800"
+                    style={{ width: `${width}%`, backgroundColor: cleanText(bar.color) || '#99f6e4' }}
+                  >
+                    <div>{cleanText(bar.label)}</div>
+                    <div className="mt-1 text-base font-black">{cleanText(bar.display) || `${getNumber(bar.value) ?? ''} ${unit}`}</div>
+                  </div>
+                )
+              })}
+            </div>
+            {totalBar && (
+              <div className="mt-3 rounded-xl bg-emerald-100 px-4 py-3 text-center font-black text-emerald-900">
+                รวมทั้งหมด = {cleanText(totalBar.display) || `${getNumber(totalBar.value) ?? ''} ${unit}`}
+              </div>
+            )}
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-3">
+            <div className="rounded-2xl bg-white px-4 py-4 text-center shadow-sm border border-teal-100">
+              <p className="text-xs font-bold text-slate-500">เงินรวม</p>
+              <p className="mt-1 text-xl font-black text-slate-900">{cleanText(totalBar?.display) || `${getNumber(data.whole) ?? ''} ${unit}`}</p>
+            </div>
+            <div className="rounded-2xl bg-white px-4 py-4 text-center shadow-sm border border-red-100">
+              <p className="text-xs font-bold text-red-500">จ่ายค่าใช้จ่าย</p>
+              <p className="mt-1 text-xl font-black text-red-700">-{cleanText(expenseBar?.display) || `${getNumber(data.subtract_amount) ?? ''} ${unit}`}</p>
+            </div>
+            <div className="rounded-2xl bg-white px-4 py-4 text-center shadow-sm border border-lime-100">
+              <p className="text-xs font-bold text-lime-700">เงินที่เหลือ</p>
+              <p className="mt-1 text-xl font-black text-lime-800">{cleanText(remainderBar?.display) || `${getNumber(data.final_remainder) ?? ''} ${unit}`}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // ── Comparison Bar Model (Singapore Math ─ Comparison Model) ─────────────────
+  // Usage: compare 2+ groups — "how many more / less", "times as many"
+  // Renders parallel bars with proportional widths to show difference clearly.
+  if (modelType === 'comparison_bar' && bars.length > 0) {
+    const unit = cleanText(data.unit)
+    const maxValue = Math.max(...bars.map(b => Math.abs(getNumber(b.value) ?? 0)))
+    const comparisonLabel = cleanText(data.comparison_label) || 'เปรียบเทียบ'
+    const comparisonType = cleanText(data.comparison_type) || 'difference' // 'difference' | 'times'
+    const comparisonResultText = comparisonType === 'times'
+      ? `${cleanText(data.bar_a_label || 'A')} = ${cleanText(data.comparison_result)} เท่าของ ${cleanText(data.bar_b_label || 'B')}`
+      : `ส่วนต่าง = ${getNumber(data.comparison_result)?.toLocaleString() ?? ''} ${unit}`
+    const relationshipText = cleanText(data.relationship)
+
+    return (
+      <div className="card shadow-md bg-blue-50 border-l-4 border-blue-400">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="text-2xl">📐</span>
+          <h3 className="font-bold text-blue-800 text-base">แผนภาพเปรียบเทียบ (Comparison Bar Model)</h3>
+        </div>
+
+        <div className="space-y-4">
+          {/* Bars section */}
+          <div className="rounded-2xl bg-white p-4 shadow-sm border border-blue-100">
+            <p className="mb-3 text-sm font-extrabold text-blue-800">{comparisonLabel}</p>
+            <div className="flex flex-col gap-3">
+              {bars.map((bar, index) => {
+                const value = getNumber(bar.value) ?? 0
+                const widthPct = maxValue > 0 ? Math.round((Math.abs(value) / maxValue) * 100) : 50
+                const isNegative = value < 0
+                return (
+                  <div key={index} className="flex items-center gap-3">
+                    <span className="text-sm font-semibold text-slate-600 w-28 shrink-0 text-right">{cleanText(bar.label)}</span>
+                    <div
+                      className="h-9 rounded-lg flex items-center justify-end px-3 shadow-sm text-white font-black text-sm"
+                      style={{
+                        width: `${widthPct}%`,
+                        backgroundColor: isNegative ? '#ef4444' : (cleanText(bar.color) || '#3b82f6'),
+                        minWidth: '2.5rem',
+                      }}
+                    >
+                      {cleanText(bar.display) || `${value.toLocaleString()} ${unit}`}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+
+          {/* Comparison result summary */}
+          {data.comparison_result !== undefined && (
+            <div className="rounded-2xl bg-blue-100 px-4 py-3 text-center font-black text-blue-900">
+              {comparisonResultText}
+            </div>
+          )}
+
+          {/* Relationship description */}
+          {relationshipText && (
+            <div className="rounded-2xl bg-white px-4 py-3 shadow-sm border border-blue-100 text-center text-sm text-slate-700">
+              {relationshipText}
+            </div>
+          )}
+        </div>
+      </div>
+    )
+  }
 
   if (rawGroups.length > 0) {
     return (
@@ -589,7 +742,6 @@ function BlockModelDiagram({ block }: { block: VisualBlock }) {
   }
 
   // Fallback: rows × cols grid
-  const data = getRecord((block as Record<string, unknown>).data)
   // block-level width/height from Shape A blocks (area_model with no data wrapper)
   const rows = firstNumber(block.rows, data.rows, data.height, (block as Record<string, unknown>).height)
   const cols = firstNumber(block.cols, data.cols, data.columns, data.width, (block as Record<string, unknown>).width)
@@ -601,13 +753,13 @@ function BlockModelDiagram({ block }: { block: VisualBlock }) {
     return (
       <div className="card shadow-md bg-teal-50 border-l-4 border-teal-400">
         <div className="flex items-center gap-2 mb-3">
-          <span className="text-2xl">ðŸŸ¦</span>
+          <span className="text-2xl">📊</span>
           <h3 className="font-bold text-teal-800 text-base">
-            {block.title_th || 'à¹ƒà¸Šà¹‰à¹à¸œà¸™à¸ à¸²à¸žà¸Šà¹ˆà¸§à¸¢à¸„à¸´à¸”'}
+            ใช้แผนภาพช่วยคิด
           </h3>
         </div>
         <p className="text-sm leading-relaxed text-teal-800">
-          {explanation || 'แผนภาพนี้ยังไม่มีข้อมูลจำนวนแถวและคอลัมน์ที่ชัดเจน'}
+          {explanation || 'ดูความสัมพันธ์ของจำนวนจากโจทย์ แล้วเขียนเป็นประโยควิธีทำในขั้นถัดไป'}
         </p>
       </div>
     )
@@ -642,24 +794,39 @@ function BlockModelDiagram({ block }: { block: VisualBlock }) {
 
 // ─── Block 4: 🔢 Number Sentence ──────────────────────────────────────────────
 
-function BlockNumberSentence({ block }: { block: VisualBlock }) {
-  const expression: string =
-    getText(block.expression) ||
-    getText(block.question_th) ||
-    getText(block.text) ||
-    getText(block.equation) ||
-    ''
+function BlockNumberSentence({ block, programType }: { block: VisualBlock; programType: ProgramType }) {
+  const data = { ...(block as Record<string, unknown>), ...getRecord((block as Record<string, unknown>).data) }
+  // Number sentence maps from visual_blocks[type=number_sentence].data.operations.
+  const operations = getArray<Record<string, unknown>>(data.operations)
+  const expression = cleanText(data[programType === 'EP' ? 'content_en' : 'content_th']) || cleanText(data.expression) || cleanText(block.content) || cleanText(block.expression)
+  const finalResult = operations.length > 0 ? operations[operations.length - 1]?.result : undefined
 
   return (
-    <div className="card shadow-md bg-slate-50 border-l-4 border-slate-400 text-center py-6">
-      <div className="flex items-center gap-2 mb-3 justify-center">
-        <span className="text-2xl">✍️</span>
+    <div className="card shadow-md bg-slate-50 border-l-4 border-slate-400 py-5">
+      <div className="flex items-center gap-2 mb-4">
+        <span className="text-2xl">✍</span>
         <h3 className="font-bold text-slate-700 text-base">
-          {block.title_th || 'เขียนเป็นประโยควิธีทำ'}
+          เขียนเป็นประโยควิธีทำ
         </h3>
       </div>
-      {expression && (
-        <p className="text-3xl font-extrabold text-slate-800 tracking-wide">{expression}</p>
+      {operations.length > 0 ? (
+        <div className="space-y-3">
+          {operations.map((operation, index) => (
+            <div key={index} className="rounded-2xl bg-white px-4 py-3 shadow-sm">
+              <p className="text-xs font-extrabold text-slate-500">Step {index + 1}</p>
+              <p className="mt-1 text-xl font-black text-slate-900">
+                {getNumber(operation.a)?.toLocaleString()} {cleanText(operation.op)} {getNumber(operation.b)?.toLocaleString()} = {getNumber(operation.result)?.toLocaleString()}
+              </p>
+            </div>
+          ))}
+          {finalResult !== undefined && (
+            <div className="rounded-2xl bg-primary-50 px-4 py-3 text-center font-black text-primary-800">
+              Final answer: {getNumber(finalResult)?.toLocaleString()} บาท
+            </div>
+          )}
+        </div>
+      ) : expression && (
+        <p className="text-xl font-extrabold leading-relaxed text-slate-800">{expression}</p>
       )}
     </div>
   )
@@ -667,37 +834,23 @@ function BlockNumberSentence({ block }: { block: VisualBlock }) {
 
 // ─── Block 5: 🎯 Mini Quiz ─────────────────────────────────────────────────────
 
-function BlockMiniQuiz({ block }: { block: VisualBlock }) {
+function BlockMiniQuiz({ block, programType }: { block: VisualBlock; programType: ProgramType }) {
   const [selected, setSelected] = useState<string | null>(null)
   const [answered, setAnswered] = useState(false)
 
   const blockData = getRecord((block as Record<string, unknown>).data)
   const blockContent = getRecord(blockData.content)
   const rawQuestions = getArray<Record<string, unknown>>(block.questions ?? blockData.questions ?? blockContent.questions)
-  const choices = getMiniQuizChoices(block)
+  const choices = getMiniQuizChoices(block, programType)
 
-  // Format A: placeholder quiz
+  // Old placeholder quizzes are hidden; the pilot expects a real practice mini quiz with choices.
   if (rawQuestions.length > 0 && choices.length === 0) {
-    const questionText = getText(rawQuestions[0])
-    return (
-      <div className="card shadow-md bg-amber-50 border-l-4 border-amber-400">
-        <div className="flex items-center gap-2 mb-4">
-          <span className="text-2xl">🎯</span>
-          <h3 className="font-bold text-amber-800 text-base">
-            {block.title_th || 'ลองทำดู'}
-          </h3>
-        </div>
-        <p className="text-gray-800 text-sm font-medium mb-4">{questionText}</p>
-        <div className="text-center py-4 text-amber-600 text-sm">
-          💡 คำถามจะปรากฏในแบบทดสอบหลังจากเรียนจบ
-        </div>
-      </div>
-    )
+    return null
   }
 
   const firstQuestion = rawQuestions[0] ?? {}
-  const questionText = getText(block.question_th) || getText(block.question) || getText(blockData.question_th) || getText(blockData.question) || getText(firstQuestion.question_th) || getText(firstQuestion.text_th) || getText(firstQuestion.question) || ''
-  const correctAnswerRaw = getMiniQuizCorrectAnswer(block)
+  const questionText = cleanText(localizedDataValue(block, programType, 'question')) || getText(firstQuestion[programType === 'EP' ? 'question_en' : 'question_th']) || getText(firstQuestion.question) || ''
+  const correctAnswerRaw = getMiniQuizCorrectAnswer(block, programType)
 
   // Resolve the actual correct choice index/text
   // If correctAnswer is a letter (A-D), map to the choice content
@@ -718,6 +871,8 @@ function BlockMiniQuiz({ block }: { block: VisualBlock }) {
   }
 
   const correctAnswerLetter = correctAnswerRaw
+  // Practice mini quiz maps from visual_blocks[type=mini_quiz].data.
+  const explanation = cleanText(localizedDataValue(block, programType, 'explanation'))
 
   const handleSelect = (choiceKey: string) => {
     if (answered) return
@@ -775,9 +930,9 @@ function BlockMiniQuiz({ block }: { block: VisualBlock }) {
               <p className="text-green-800 text-sm font-bold">
                 ✅ ถูกต้อง เก่งมาก!
               </p>
-              {(block as Record<string, unknown>).explanation_th ? (
+              {explanation ? (
                 <p className="text-green-600 text-xs mt-1">
-                  {String(getText((block as Record<string, unknown>).explanation_th))}
+                  {explanation}
                 </p>
               ) : null}
             </div>
@@ -786,9 +941,9 @@ function BlockMiniQuiz({ block }: { block: VisualBlock }) {
               <p className="text-red-800 text-sm font-bold">
                 ❌ ยังไม่ถูกนะ — คำตอบที่ถูกคือ: {correctChoiceText}
               </p>
-              {(block as Record<string, unknown>).explanation_th ? (
+              {explanation ? (
                 <p className="text-red-600 text-xs mt-1">
-                  {String(getText((block as Record<string, unknown>).explanation_th))}
+                  {explanation}
                 </p>
               ) : null}
             </div>
@@ -807,17 +962,18 @@ function BlockMiniQuiz({ block }: { block: VisualBlock }) {
 
 // ─── Block Router ─────────────────────────────────────────────────────────────
 
-function VisualBlockRenderer({ block }: { block: VisualBlock }) {
+function VisualBlockRenderer({ block, programType }: { block: VisualBlock; programType: ProgramType }) {
   const rawType = block.block_type || (block as Record<string, unknown>).type as string || 'unknown'
 
   switch (rawType) {
-    case 'story_intro':      return <BlockStoryIntro block={block} />
-    case 'think_story':      return <BlockThinkStory block={block} />
+    case 'story_intro':      return <BlockStoryIntro block={block} programType={programType} />
+    case 'think_story':      return <BlockThinkStory block={block} programType={programType} />
     case 'visual_thinking':  return null
     case 'emoji_counter':    return null
     case 'model_diagram':     return <BlockModelDiagram block={block} />
     case 'grouping_model':    return <BlockModelDiagram block={block} />
     case 'bar_model':         return <BlockModelDiagram block={block} />
+    case 'comparison_bar':    return <BlockModelDiagram block={block} />
     case 'shape_visual':     return <BlockModelDiagram block={block} />
     case 'ten_frame':         return <BlockModelDiagram block={block} />
     case 'area_model':       return <BlockModelDiagram block={block} />
@@ -828,8 +984,9 @@ function VisualBlockRenderer({ block }: { block: VisualBlock }) {
     case 'volume_visual':     return <BlockModelDiagram block={block} />
     case 'table_visual':      return <BlockModelDiagram block={block} />
     case 'count_back_strip':  return <BlockModelDiagram block={block} />
-    case 'number_sentence':   return <BlockNumberSentence block={block} />
-    case 'mini_quiz':        return <BlockMiniQuiz block={block} />
+    case 'abstract_symbol':   return null
+    case 'number_sentence':   return <BlockNumberSentence block={block} programType={programType} />
+    case 'mini_quiz':        return <BlockMiniQuiz block={block} programType={programType} />
     default:
       return (
         <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
@@ -841,21 +998,22 @@ function VisualBlockRenderer({ block }: { block: VisualBlock }) {
 
 // ─── Block sequence labels (allowed types only) ────────────────────────────────
 
-function isRenderableVisualBlock(block: VisualBlock): boolean {
+function isRenderableVisualBlock(block: VisualBlock, programType: ProgramType): boolean {
   const rawType = block.block_type || ((block as Record<string, unknown>).type as string) || 'unknown'
+  if (rawType === 'abstract_symbol') return false
   if (rawType !== 'mini_quiz') return true
   const blockData = getRecord((block as Record<string, unknown>).data)
   const blockContent = getRecord(blockData.content)
   const rawQuestions = getArray<Record<string, unknown>>(block.questions ?? blockData.questions ?? blockContent.questions)
   const firstQuestion = rawQuestions[0] ?? {}
-  const questionText = getText(block.question_th) || getText(block.question) || getText(blockData.question_th) || getText(blockData.question) || getText(firstQuestion.question_th) || getText(firstQuestion.text_th) || getText(firstQuestion.question)
-  return Boolean(questionText && getMiniQuizChoices(block).length >= 2 && getMiniQuizCorrectAnswer(block))
+  const questionText = cleanText(localizedDataValue(block, programType, 'question')) || getText(firstQuestion[programType === 'EP' ? 'question_en' : 'question_th']) || getText(firstQuestion.question)
+  return Boolean(questionText && getMiniQuizChoices(block, programType).length >= 2 && getMiniQuizCorrectAnswer(block, programType))
 }
 
 const BLOCK_LABELS: Record<string, string> = {
-  story_intro:      '🐣 เรื่องราวชวนคิด',
-  think_story:      '???????????????',
-  model_diagram:    '🟦 ใช้แผนภาพช่วยคิด',
+  story_intro:      'เรื่องราว',
+  think_story:      'เรื่องราวชวนคิด',
+  model_diagram:    'ใช้แผนภาพช่วยคิด',
   grouping_model:   '🟦 ใช้แผนภาพช่วยคิด',
   bar_model:        '🟦 ใช้แผนภาพช่วยคิด',
   shape_visual:     '🟦 ใช้แผนภาพช่วยคิด',
@@ -868,8 +1026,8 @@ const BLOCK_LABELS: Record<string, string> = {
   volume_visual:    '🟦 ใช้แผนภาพช่วยคิด',
   table_visual:     '🟦 ใช้แผนภาพช่วยคิด',
   count_back_strip: '🟦 ใช้แผนภาพช่วยคิด',
-  number_sentence:  '✍️ เขียนเป็นประโยควิธีทำ',
-  mini_quiz:        '🎯 ลองทำดู',
+  number_sentence:  'เขียนเป็นประโยควิธีทำ',
+  mini_quiz:        'ลองทำดู',
 }
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
@@ -890,8 +1048,8 @@ export default function LessonPage() {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    checkAuth().then(() => {
-      if (!localStorage.getItem('access_token')) router.push('/login')
+    checkAuth().then((authenticatedUser) => {
+      if (!authenticatedUser) router.push('/login')
     })
   }, [])
 
@@ -969,18 +1127,19 @@ export default function LessonPage() {
   const testAvailable = lesson.test_available ?? lesson.has_approved_test ?? lesson.has_test !== false
   const gradeLbl = gradeLabel(lesson.grade_level)
   const cover = getTopicIllustration(lesson.topic_code, lesson.skill_code)
-  const helperIndex = stableMascotIndex(`${lesson.lesson_id}:${lesson.topic_code || lesson.skill_code || lesson.grade_level}`)
+  const todaySeed = new Date().toISOString().slice(0, 10)
+  const helperIndex = stableMascotIndex(`${lesson.lesson_id}:${todaySeed}`)
   const helperMascot = defaultMascots[helperIndex]
-  const helperLine = lesson.topic_code?.includes('word') || lesson.skill_code?.includes('word')
+  const helperLine = cleanText(lesson.helper_tip) || (lesson.topic_code?.includes('word') || lesson.skill_code?.includes('word')
     ? 'ลองแบ่งโจทย์เป็นขั้นตอนเล็ก ๆ แล้ววงตัวเลขสำคัญก่อนนะ'
     : lesson.topic_code?.includes('geometry') || lesson.skill_code?.includes('shape')
       ? 'ข้อนี้ใช้การนึกภาพหรือวาดรูปช่วยให้เห็นความสัมพันธ์ได้ง่ายขึ้น'
-      : 'อ่านตัวอย่างให้จบก่อน แล้วลองอธิบายวิธีคิดด้วยคำของตัวเอง'
+      : 'อ่านตัวอย่างให้จบก่อน แล้วลองอธิบายวิธีคิดด้วยคำของตัวเอง')
 
   const displayBlocks = (lesson.visual_blocks ?? [])
     .map(raw => normalizeVisualBlock(raw))
     .filter((block): block is VisualBlock => block !== null)
-    .filter(isRenderableVisualBlock)
+    .filter(block => isRenderableVisualBlock(block, programType))
 
   if (!isLocked && (!BETA_READY_LESSON_GRADES.has(Number(lesson.grade_level)) || displayBlocks.length === 0)) {
     return (
@@ -1064,12 +1223,19 @@ export default function LessonPage() {
           </div>
         </div>
 
-        <div className="mb-5 rounded-2xl border border-sky-100 bg-white px-4 py-3 shadow-sm">
-          <div className="flex items-center gap-3">
-            <MascotAvatar mascot={helperMascot} index={helperIndex} size="sm" />
-            <div>
-              <p className="text-xs font-black uppercase tracking-wide text-sky-500">{helperMascot.name} helper tip</p>
-              <p className="text-sm font-bold text-slate-700">{helperLine}</p>
+        <div className="mb-5 overflow-hidden rounded-2xl border border-sky-100 bg-white shadow-sm">
+          <div className="grid items-center gap-4 p-5 sm:grid-cols-[240px_1fr] lg:grid-cols-[300px_1fr]">
+            <div className="mx-auto flex h-44 w-44 items-center justify-center bg-transparent sm:h-56 sm:w-56 lg:h-[300px] lg:w-[300px]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={helperMascot.image}
+                alt={helperMascot.name}
+                className="max-h-full max-w-full object-contain drop-shadow-lg"
+              />
+            </div>
+            <div className="text-center sm:text-left">
+              <p className="text-sm font-black text-sky-500">{helperMascot.name} แนะนำวันนี้</p>
+              <p className="mt-2 text-lg font-extrabold leading-8 text-slate-800">{helperLine}</p>
             </div>
           </div>
         </div>
@@ -1111,7 +1277,7 @@ export default function LessonPage() {
                         <span>{i + 1}.</span>
                         <span>{BLOCK_LABELS[type] ?? type}</span>
                       </div>
-                      <VisualBlockRenderer block={block} />
+                      <VisualBlockRenderer block={block} programType={programType} />
                     </div>
                   )
                 })}

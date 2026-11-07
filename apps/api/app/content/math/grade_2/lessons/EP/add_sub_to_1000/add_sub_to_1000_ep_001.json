@@ -1,0 +1,202 @@
+{
+  "variant_id": "add_sub_to_1000_ep_001",
+  "variant_title_th": "การบวกและการลบจำนวนนับไม่เกิน 1,000",
+  "variant_title_en": "Addition and Subtraction up to 1,000",
+  "status": "needs_review",
+  "title_th": "การบวกและการลบจำนวนนับไม่เกิน 1,000",
+  "title_en": "Addition and Subtraction up to 1,000",
+  "story_theme_th": "Malisa saved 450 baht. Her brother gave her 380 more baht. Her mother asked her to buy breakfast for 295 baht. How much money does Malisa have left?",
+  "helper_tip": "Add first, then subtract. Line up digits by place value. If the subtrahend is larger, borrow from the next place.",
+  "think_story_th": "Add: 450 + 380 = 830 baht, Subtract: 830 - 295 = 535 baht",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Malisa saved 450 baht. Her brother gave her 380 more baht. Her mother asked her to buy breakfast for 295 baht. How much money does Malisa have left?",
+      "data": {
+        "content_th": "Malisa saved 450 baht. Her brother gave her 380 more baht. Her mother asked her to buy breakfast for 295 baht. How much money does Malisa have left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Add: 450 + 380 = 830 baht, Subtract: 830 - 295 = 535 baht",
+      "data": {
+        "content_th": "Add: 450 + 380 = 830 baht, Subtract: 830 - 295 = 535 baht"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Saved",
+            "value": 450,
+            "display": "450 baht",
+            "color": "#4ECDC4",
+            "width_pct": 55
+          },
+          {
+            "label": "Brother gave",
+            "value": 380,
+            "display": "380 baht",
+            "color": "#45B7D1",
+            "width_pct": 46
+          },
+          {
+            "label": "Total",
+            "value": 830,
+            "display": "830 baht",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Breakfast",
+            "value": 295,
+            "display": "295 baht",
+            "color": "#FF6B6B",
+            "width_pct": 36
+          },
+          {
+            "label": "Left",
+            "value": 535,
+            "display": "535 baht",
+            "color": "#C7F464",
+            "width_pct": 64,
+            "is_remainder": true
+          }
+        ],
+        "unit": "baht"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find total money",
+            "expression": "450 + 380 = 830",
+            "a": 450,
+            "b": 380,
+            "res": 830,
+            "op": "+",
+            "formula": {
+              "display": "450 + 380 = 830",
+              "a": 450,
+              "b": 380,
+              "result": 830,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "450",
+              "b_display": "380",
+              "result_display": "830",
+              "operation": "add"
+            },
+            "story_connection": "450 + 380 = 830 baht"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find money left",
+            "expression": "830 - 295 = 535",
+            "a": 830,
+            "b": 295,
+            "res": 535,
+            "op": "-",
+            "formula": {
+              "display": "830 - 295 = 535",
+              "a": 830,
+              "b": 295,
+              "result": 535,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "830",
+              "b_display": "295",
+              "result_display": "535",
+              "operation": "subtract"
+            },
+            "story_connection": "830 - 295 = 535 baht"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "450 + 380 - 295 = 535",
+      "content": "450 + 380 - 295 = 535",
+      "data": {
+        "expression": "450 + 380 - 295 = 535",
+        "content_th": "450 + 380 - 295 = 535",
+        "operations": [
+          {
+            "op": "+",
+            "a": 450,
+            "b": 380,
+            "result": 830
+          },
+          {
+            "op": "-",
+            "a": 830,
+            "b": 295,
+            "result": 535
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A shop has 560 orange juices. They sold 270 more and drank 385. How many juices are left?",
+      "choices": [
+        "445 juices",
+        "455 juices",
+        "435 juices",
+        "465 juices"
+      ],
+      "correct_answer": "445 juices",
+      "explanation": "560 + 270 = 830, 830 - 385 = 445 juices",
+      "data": {
+        "question": "A shop has 560 orange juices. They sold 270 more and drank 385. How many juices are left?",
+        "choices": [
+          "445 juices",
+          "455 juices",
+          "435 juices",
+          "465 juices"
+        ],
+        "correct_answer": "445 juices",
+        "explanation": "560 + 270 = 830, 830 - 385 = 445 juices"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

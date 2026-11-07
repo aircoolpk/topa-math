@@ -1,0 +1,116 @@
+{
+  "variant_id": "decimals_ep_002",
+  "variant_title_en": "Decimals — Fuel in the Tank",
+  "status": "needs_review",
+  "title_en": "Decimals — Fuel in the Tank",
+  "story_theme_en": "A truck has 45.75 liters of fuel. It uses 23.50 liters, then fills up with 18.25 liters more. How much fuel is in the tank now?",
+  "helper_tip": "Line up the decimal points when adding or subtracting decimals.",
+  "hint_th": "เขียนจุดทศนิยมให้ตรงกันเมื่อบวกลบทศนิยม",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A truck has 45.75 liters of fuel. It uses 23.50 liters, then fills up with 18.25 liters more. How much fuel is in the tank now?",
+      "data": {
+        "content_en": "A truck has 45.75 liters of fuel. It uses 23.50 liters, then fills up with 18.25 liters more. How much fuel is in the tank now?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "After using: 45.75 - 23.50 = 22.25 liters | After filling: 22.25 + 18.25 = 40.50 liters",
+      "data": {
+        "content_en": "After using: 45.75 - 23.50 = 22.25 liters | After filling: 22.25 + 18.25 = 40.50 liters"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Fuel Tank Diagram",
+      "description": "Fuel Tank Diagram",
+      "model_type": "decimal_bar",
+      "data": {
+        "model_type": "decimal_bar",
+        "operation": "subtract_add",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Full tank",
+            "value": 45.75,
+            "display": "45.75 L",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Used",
+            "value": 23.5,
+            "display": "-23.50 L",
+            "color": "#FF6B6B",
+            "width_pct": 51
+          },
+          {
+            "label": "Added",
+            "value": 18.25,
+            "display": "+18.25 L",
+            "color": "#45B7D1",
+            "width_pct": 40
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "45.75 - 23.50 + 18.25 = 40.50",
+      "content": "45.75 - 23.50 + 18.25 = 40.50 liters",
+      "data": {
+        "expression": "45.75 - 23.50 + 18.25 = 40.50 liters",
+        "operations": [
+          {
+            "op": "-",
+            "a": 45.75,
+            "b": 23.5,
+            "result": 22.25
+          },
+          {
+            "op": "+",
+            "a": 22.25,
+            "b": 18.25,
+            "result": 40.5
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Sugar in a container is 15.50 kg. 7.25 kg is used, then 5.75 kg is bought. How much sugar is left?",
+      "choices": [
+        "14.00 kg",
+        "13.00 kg",
+        "14.50 kg",
+        "13.50 kg"
+      ],
+      "correct_answer": "14.00 kg",
+      "explanation": "15.50 - 7.25 + 5.75 = 14.00 kg",
+      "data": {
+        "question": "Sugar in a container is 15.50 kg. 7.25 kg is used, then 5.75 kg is bought. How much sugar is left?",
+        "choices": [
+          "14.00 kg",
+          "13.00 kg",
+          "14.50 kg",
+          "13.50 kg"
+        ],
+        "correct_answer": "14.00 kg",
+        "explanation": "15.50 - 7.25 + 5.75 = 14.00 kg"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

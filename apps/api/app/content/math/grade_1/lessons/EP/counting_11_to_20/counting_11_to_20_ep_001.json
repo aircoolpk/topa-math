@@ -1,0 +1,210 @@
+{
+  "variant_id": "counting_11_to_20_ep_001",
+  "variant_title_en": "Counting 11 to 20",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Counting 11 to 20",
+  "title_th": "",
+  "story_theme_en": "Mali puts 1 ten-rod and 3 single cubes on the table. How many cubes are there in total?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "1 ten-rod means 10. 3 single cubes. 10 + 3 = 13.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mali puts 1 ten-rod and 3 single cubes on the table. How many cubes are there in total?",
+      "data": {
+        "content_en": "Mali puts 1 ten-rod and 3 single cubes on the table. How many cubes are there in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "1 ten-rod means 10. 3 single cubes. 10 + 3 = 13.",
+      "data": {
+        "content_en": "1 ten-rod means 10. 3 single cubes. 10 + 3 = 13."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "unit": "cubes",
+        "bars": [
+          {
+            "label": "Ten-rod",
+            "value": 10,
+            "display": "10 cubes",
+            "color": "#96CEB4",
+            "width_pct": 70
+          },
+          {
+            "label": "Singles",
+            "value": 3,
+            "display": "3 cubes",
+            "color": "#A8D8EA",
+            "width_pct": 30
+          },
+          {
+            "label": "Total",
+            "value": 13,
+            "display": "13 cubes",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "10 + 3 = 13",
+            "formula": {
+              "display": "10 + 3 = 13",
+              "a": 10,
+              "b": 3,
+              "result": 13,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}10&&\\\\\\\\ + 3&&\\\\\\\\ \\\\hline 13&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "10",
+              "b_display": "3",
+              "result_display": "13",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 10 + 3 = 13"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "10 + 3 = 13",
+      "content": "10 + 3 = 13",
+      "data": {
+        "expression": "10 + 3 = 13",
+        "operations": [
+          {
+            "op": "+",
+            "a": 10,
+            "b": 3,
+            "result": 13
+          }
+        ],
+        "content_en": "10 + 3 = 13"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A fruit stall has 1 ten-bananas and 4 single bananas. How many bananas are there?",
+      "choices": [
+        "14 bananas",
+        "19 bananas",
+        "11 bananas",
+        "22 bananas"
+      ],
+      "correct_answer": "14 bananas",
+      "explanation": "10 + 4 = 14 bananas",
+      "data": {
+        "question": "A fruit stall has 1 ten-bananas and 4 single bananas. How many bananas are there?",
+        "choices": [
+          "14 bananas",
+          "19 bananas",
+          "11 bananas",
+          "22 bananas"
+        ],
+        "correct_answer": "14 bananas",
+        "explanation": "10 + 4 = 14 bananas"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "ten",
+      "th": "สิบ",
+      "definition_en": "The number 10."
+    },
+    {
+      "en": "ones",
+      "th": "หน่วย",
+      "definition_en": "Single items not in a group of ten."
+    },
+    {
+      "en": "cube",
+      "th": "ลูกบาศก์",
+      "definition_en": "A small block used for counting."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Mali puts 1 ten-rod and 3 single cubes on the table. How many cubes are there in...",
+      "solution_en": "10 + 3 = 13"
+    }
+  ],
+  "questions": []
+}

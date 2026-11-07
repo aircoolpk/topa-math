@@ -1,0 +1,133 @@
+{
+  "quiz_id": "geometry_shapes_th_q002",
+  "topic_key": "geometry_shapes",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ geometry_shapes_th_q002",
+  "title_en": "Quiz geometry_shapes_th_q002",
+  "questions": [
+    {
+      "question": "รูปยี่สิบเหลี่ยม มีกี่ด้าน",
+      "choices": [
+        "20 ด้าน",
+        "10 ด้าน",
+        "12 ด้าน",
+        "18 ด้าน"
+      ],
+      "correct_answer": "20 ด้าน",
+      "explanation": "ยี่สิบเหลี่ยม = 20 ด้าน",
+      "difficulty": "hard"
+    },
+    {
+      "question": "ลูกบาศก์ มีมุมฉากกี่มุม",
+      "choices": [
+        "8 มุม",
+        "6 มุม",
+        "4 มุม",
+        "12 มุม"
+      ],
+      "correct_answer": "8 มุม",
+      "explanation": "ลูกบาศก์มี 8 มุม",
+      "difficulty": "medium"
+    },
+    {
+      "question": "วงรี ต่างจากวงกลมอย่างไร",
+      "choices": [
+        "มี 2 แกนไม่เท่ากัน",
+        "ไม่มีเส้นรอบวง",
+        "มีมุม",
+        "มี 4 แกน"
+      ],
+      "correct_answer": "มี 2 แกนไม่เท่ากัน",
+      "explanation": "วงรียาวไม่เท่ากันในแนวตั้งและแนวนอน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "รูปสี่เหลี่ยมข้าวหลามตัด มีด้านยาวเท่ากันกี่ด้าน",
+      "choices": [
+        "4 ด้าน",
+        "ทุกด้านเท่า",
+        "2 ด้าน",
+        "ไม่เท่า"
+      ],
+      "correct_answer": "ทุกด้านเท่า",
+      "explanation": "ข้าวหลามตัดมีด้านเท่ากัน 4 ด้าน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "รูปสามเหลี่ยมหน้าจั่ว มีอะไรเท่ากัน",
+      "choices": [
+        "2 ด้านเท่า",
+        "ทุกด้านเท่า",
+        "ไม่มีด้านเท่า",
+        "3 ด้านเท่า"
+      ],
+      "correct_answer": "2 ด้านเท่า",
+      "explanation": "หน้าจั่ว = หน้าประทุนแหลม มี 2 ด้านเท่า",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ทรงกระบอก มีหน้ากี่หน้า",
+      "choices": [
+        "3 หน้า",
+        "2 หน้า",
+        "1 หน้า",
+        "4 หน้า"
+      ],
+      "correct_answer": "3 หน้า",
+      "explanation": "ทรงกระบอกมี 2 หน้าวงกลม + 1 ผิวโค้ง = 3 หน้า",
+      "difficulty": "hard"
+    },
+    {
+      "question": "รูปสามเหลี่ยมด้านเท่า มีขอบเท่ากันกี่ด้าน",
+      "choices": [
+        "3 ด้าน",
+        "2 ด้าน",
+        "ไม่เท่า",
+        "4 ด้าน"
+      ],
+      "correct_answer": "3 ด้าน",
+      "explanation": "ด้านเท่า = ทุกด้านยาวเท่ากัน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "รูประคาง มีกี่ด้าน",
+      "choices": [
+        "8 ด้าน",
+        "6 ด้าน",
+        "7 ด้าน",
+        "10 ด้าน"
+      ],
+      "correct_answer": "8 ด้าน",
+      "explanation": "ระคางมี 8 ด้าน 8 มุม",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ทรงกรวย มีฐานเป็นรูปอะไร",
+      "choices": [
+        "วงกลม",
+        "สี่เหลี่ยม",
+        "สามเหลี่ยม",
+        "รี"
+      ],
+      "correct_answer": "วงกลม",
+      "explanation": "กรวยมีฐานเป็นวงกลม",
+      "difficulty": "easy"
+    },
+    {
+      "question": "รูปสี่เหลี่ยมคางหมู มีด้านขนานกี่คู่",
+      "choices": [
+        "1 คู่",
+        "2 คู่",
+        "ไม่มี",
+        "3 คู่"
+      ],
+      "correct_answer": "1 คู่",
+      "explanation": "คางหมูมีด้านขนาน 1 คู่",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

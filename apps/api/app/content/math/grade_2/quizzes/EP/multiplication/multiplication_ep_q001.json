@@ -1,0 +1,133 @@
+{
+  "quiz_id": "multiplication_ep_q001",
+  "topic_key": "multiplication",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz multiplication_ep_q001",
+  "title_en": "Quiz multiplication_ep_q001",
+  "questions": [
+    {
+      "question": "4 x 7 = ?",
+      "choices": [
+        "28",
+        "24",
+        "32",
+        "21"
+      ],
+      "correct_answer": "28",
+      "explanation": "4x7 = 7+7+7+7 = 28",
+      "difficulty": "easy"
+    },
+    {
+      "question": "6 x 8 = ?",
+      "choices": [
+        "48",
+        "42",
+        "56",
+        "36"
+      ],
+      "correct_answer": "48",
+      "explanation": "6x8 = 48",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Lin planted banana trees in 5 rows with 9 trees in each row. How many trees?",
+      "choices": [
+        "45 trees",
+        "54 trees",
+        "36 trees",
+        "14 trees"
+      ],
+      "correct_answer": "45 trees",
+      "explanation": "5x9=45 trees",
+      "difficulty": "easy"
+    },
+    {
+      "question": "9 x 3 = ?",
+      "choices": [
+        "27",
+        "21",
+        "30",
+        "18"
+      ],
+      "correct_answer": "27",
+      "explanation": "9x3 = 9+9+9 = 27",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Malisa bought notebooks at 8 baht each. Bought 6. How much did she pay?",
+      "choices": [
+        "48 baht",
+        "14 baht",
+        "42 baht",
+        "54 baht"
+      ],
+      "correct_answer": "48 baht",
+      "explanation": "8x6=48 baht",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Ai bought cakes at 15 baht each. Bought 4. How much?",
+      "choices": [
+        "60 baht",
+        "19 baht",
+        "45 baht",
+        "75 baht"
+      ],
+      "correct_answer": "60 baht",
+      "explanation": "15x4=60 baht",
+      "difficulty": "medium"
+    },
+    {
+      "question": "7 x 6 = ?",
+      "choices": [
+        "42",
+        "36",
+        "48",
+        "49"
+      ],
+      "correct_answer": "42",
+      "explanation": "7x6 = 42",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Book threw 8 balls to 4 friends, 2 balls each. How many balls did he use?",
+      "choices": [
+        "8 balls",
+        "6 balls",
+        "10 balls",
+        "12 balls"
+      ],
+      "correct_answer": "8 balls",
+      "explanation": "4x2=8 balls",
+      "difficulty": "medium"
+    },
+    {
+      "question": "8 x 8 = ?",
+      "choices": [
+        "64",
+        "72",
+        "56",
+        "48"
+      ],
+      "correct_answer": "64",
+      "explanation": "8x8=64",
+      "difficulty": "easy"
+    },
+    {
+      "question": "7 boxes with 12 pencils each. Total pencils?",
+      "choices": [
+        "84 pencils",
+        "19 pencils",
+        "72 pencils",
+        "94 pencils"
+      ],
+      "correct_answer": "84 pencils",
+      "explanation": "7x12=84 pencils",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

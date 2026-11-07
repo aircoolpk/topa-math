@@ -1,0 +1,190 @@
+{
+  "variant_id": "fractions_ep_002",
+  "variant_title_en": "Fractions",
+  "status": "needs_review",
+  "title_en": "Fractions",
+  "story_theme_en": "A mango orchard has 3 types of fruit. Ripe mangoes are 4/9 of the orchard. Green mangoes are 2/9 of the orchard. The rest are mangosteens. How much of the orchard has mangosteens?",
+  "helper_tip": "Fractions with the same denominator: add or subtract the numerators only. The denominator stays the same.",
+  "hint_th": "เศษส่วนที่มีส่วนเท่ากัน บวกลบตัวเศษได้เลย ส่วนคงที่",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A mango orchard has 3 types of fruit. Ripe mangoes are 4/9 of the orchard. Green mangoes are 2/9 of the orchard. The rest are mangosteens. How much of the orchard has mangosteens? And what is the total amount of mangoes (ripe + green)?",
+      "data": {
+        "content_en": "A mango orchard has 3 types of fruit. Ripe mangoes are 4/9 of the orchard. Green mangoes are 2/9 of the orchard. The rest are mangosteens. How much of the orchard has mangosteens? And what is the total amount of mangoes (ripe + green)?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Total mangoes → 4/9 + 2/9 = 6/9 | Step 2: Mangosteens → 9/9 - 6/9 = 3/9",
+      "data": {
+        "content_en": "Step 1: Total mangoes → 4/9 + 2/9 = 6/9 | Step 2: Mangosteens → 9/9 - 6/9 = 3/9"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Fraction Bar",
+      "model_type": "fraction_bar",
+      "data": {
+        "model_type": "fraction_bar",
+        "operation": "add_subtract",
+        "bars": [
+          {
+            "label": "Ripe Mangoes",
+            "value": 4,
+            "display": "4/9",
+            "color": "#FFD93D",
+            "width_pct": 44
+          },
+          {
+            "label": "Green Mangoes",
+            "value": 2,
+            "display": "2/9",
+            "color": "#6BCB77",
+            "width_pct": 22
+          },
+          {
+            "label": "Mangosteens",
+            "value": 3,
+            "display": "3/9",
+            "color": "#4ECDC4",
+            "width_pct": 33,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find total mangoes",
+            "expression": "4/9 + 2/9 = 6/9",
+            "formula": {
+              "display": "4/9 + 2/9 = 6/9",
+              "a": 4,
+              "b": 2,
+              "result": 6,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}4&\\\\\\\\ +\\\\quad 2&\\\\\\\\ \\\\hline 6&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "4",
+              "b_display": "2",
+              "result_display": "6",
+              "operation": "add"
+            },
+            "story_connection": "4/9 + 2/9 = 6/9 total mangoes"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find mangosteens",
+            "expression": "9/9 - 6/9 = 3/9",
+            "formula": {
+              "display": "9/9 - 6/9 = 3/9",
+              "a": 9,
+              "b": 6,
+              "result": 3,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}9&\\\\\\\\ -\\\\quad 6&\\\\\\\\ \\\\hline 3&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "9",
+              "b_display": "6",
+              "result_display": "3",
+              "operation": "sub"
+            },
+            "story_connection": "9/9 - 6/9 = 3/9 mangosteens"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "4/9 + 2/9 = 6/9 | 9/9 - 6/9 = 3/9",
+      "content": "4/9 + 2/9 = 6/9  |  9/9 - 6/9 = 3/9",
+      "data": {
+        "expression": "4/9 + 2/9 = 6/9 | 9/9 - 6/9 = 3/9",
+        "operations": [
+          {
+            "op": "+",
+            "a": 4,
+            "b": 2,
+            "result": 6
+          },
+          {
+            "op": "-",
+            "a": 9,
+            "b": 6,
+            "result": 3
+          }
+        ],
+        "content_en": "4/9 + 2/9 = 6/9  |  9/9 - 6/9 = 3/9"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A water tank is filled with 5/7 of a tank of water. Lin uses 2/7 of the tank. How much water is left in the tank?",
+      "choices": [
+        "3/7 of the tank",
+        "2/7 of the tank",
+        "4/7 of the tank",
+        "1/7 of the tank"
+      ],
+      "correct_answer": "3/7 of the tank",
+      "explanation": "5/7 - 2/7 = 3/7 of the tank",
+      "data": {
+        "question": "A water tank is filled with 5/7 of a tank of water. Lin uses 2/7 of the tank. How much water is left in the tank?",
+        "choices": [
+          "3/7 of the tank",
+          "2/7 of the tank",
+          "4/7 of the tank",
+          "1/7 of the tank"
+        ],
+        "correct_answer": "3/7 of the tank",
+        "explanation": "5/7 - 2/7 = 3/7 of the tank"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "A garden has flowers: 5/12 + 3/12 = how many parts in total?",
+      "solution_en": "5/12 + 3/12 = 8/12 or 2/3"
+    }
+  ],
+  "common_mistakes": [
+    "Adding the denominators (e.g. 4/9 + 2/9 = 6/18 is WRONG!)",
+    "Forgetting to subtract from 1 to find the remaining fraction"
+  ],
+  "hints": [
+    "Add numerators: 4+2=6, denominator stays 9. Result: 6/9.",
+    "Find the rest: 9/9 - 6/9 = 3/9."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "fraction",
+      "th": "เศษส่วน",
+      "definition_en": "A part of a whole"
+    },
+    {
+      "en": "numerator",
+      "th": "ตัวเศษ",
+      "definition_en": "The top number showing number of parts"
+    },
+    {
+      "en": "denominator",
+      "th": "ตัวส่วน",
+      "definition_en": "The bottom number showing total equal parts"
+    }
+  ]
+}

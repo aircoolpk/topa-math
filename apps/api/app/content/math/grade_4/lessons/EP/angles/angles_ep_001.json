@@ -1,0 +1,214 @@
+{
+  "variant_id": "angles_ep_001",
+  "variant_title_en": "Angles",
+  "status": "needs_review",
+  "title_en": "Angles",
+  "story_theme_en": "Lin observes angles in everyday objects. An open book has an angle of 90 degrees (right angle). A folded paper has an angle of 45 degrees (acute angle). A picture frame has an angle of 120 degrees (obtuse angle). Tell what type each angle is. And what is the sum of all three angles?",
+  "helper_tip": "Right angle = 90 deg. Acute angle < 90 deg. Obtuse angle > 90 deg.",
+  "hint_th": "มุมฉาก = 90° มุมแหลม < 90° มุมป้าน > 90°",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin observes angles in everyday objects. An open book has an angle of 90 degrees (right angle). A folded paper has an angle of 45 degrees (acute angle). A picture frame has an angle of 120 degrees (obtuse angle). Tell what type each angle is. And what is the sum of all three angles?",
+      "data": {
+        "content_en": "Lin observes angles in everyday objects. An open book has an angle of 90 degrees (right angle). A folded paper has an angle of 45 degrees (acute angle). A picture frame has an angle of 120 degrees (obtuse angle). Tell what type each angle is. And what is the sum of all three angles?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Identify angle types → 90 deg = right angle, 45 deg = acute angle, 120 deg = obtuse angle | Step 2: Add all angles → 90 + 45 + 120 = total",
+      "data": {
+        "content_en": "Step 1: Identify angle types → 90 deg = right angle, 45 deg = acute angle, 120 deg = obtuse angle | Step 2: Add all angles → 90 + 45 + 120 = total"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Angle Model",
+      "model_type": "angle_model",
+      "data": {
+        "model_type": "angle_model",
+        "operation": "identify",
+        "bars": [
+          {
+            "label": "Right Angle",
+            "value": 90,
+            "display": "90 degrees",
+            "color": "#4ECDC4",
+            "width_pct": 75
+          },
+          {
+            "label": "Acute Angle",
+            "value": 45,
+            "display": "45 degrees",
+            "color": "#FF6B6B",
+            "width_pct": 38
+          },
+          {
+            "label": "Obtuse Angle",
+            "value": 120,
+            "display": "120 degrees",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Identify angle type",
+            "expression": "90 deg = right angle (equal to 90 deg)",
+            "formula": {
+              "display": "90 deg = right angle (equal to 90 deg)",
+              "a": 90,
+              "b": 0,
+              "result": 90,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}90&\\\\\\\\ +\\\\quad 0&\\\\\\\\ \\\\hline 90&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "90",
+              "b_display": "0",
+              "result_display": "90",
+              "operation": "add"
+            },
+            "story_connection": "90 degrees = right angle because it equals 90 degrees"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Identify angle type",
+            "expression": "45 deg = acute angle (less than 90 deg)",
+            "formula": {
+              "display": "45 deg = acute angle (less than 90 deg)",
+              "a": 45,
+              "b": 0,
+              "result": 45,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}45&\\\\\\\\ +\\\\quad 0&\\\\\\\\ \\\\hline 45&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "45",
+              "b_display": "0",
+              "result_display": "45",
+              "operation": "add"
+            },
+            "story_connection": "45 degrees = acute angle because 45 < 90"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Add all three angles",
+            "expression": "90 + 45 + 120 = 255 degrees",
+            "formula": {
+              "display": "90 + 45 + 120 = 255 degrees",
+              "a": 90,
+              "b": 45,
+              "result": 135,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}90&\\\\\\\\ +\\\\quad 45&\\\\\\\\ \\\\hline 135&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "90",
+              "b_display": "45",
+              "result_display": "135",
+              "operation": "add"
+            },
+            "story_connection": "90 + 45 + 120 = 255 degrees"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "90 deg + 45 deg + 120 deg = 255 deg",
+      "content": "90 + 45 + 120 = 255 degrees",
+      "data": {
+        "expression": "90 deg + 45 deg + 120 deg = 255 deg",
+        "operations": [
+          {
+            "op": "+",
+            "a": 90,
+            "b": 45,
+            "result": 135
+          },
+          {
+            "op": "+",
+            "a": 135,
+            "b": 120,
+            "result": 255
+          }
+        ],
+        "content_en": "90 + 45 + 120 = 255 degrees"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Which of the following are acute angles? 60 degrees, 90 degrees, 135 degrees, 45 degrees",
+      "choices": [
+        "60 and 45 are acute angles",
+        "135 is acute",
+        "90 is acute",
+        "Only 60 is acute"
+      ],
+      "correct_answer": "60 and 45 are acute angles",
+      "explanation": "Acute angles are less than 90 degrees. So 60 and 45 are acute angles.",
+      "data": {
+        "question": "Which of the following are acute angles? 60 degrees, 90 degrees, 135 degrees, 45 degrees",
+        "choices": [
+          "60 and 45 are acute angles",
+          "135 is acute",
+          "90 is acute",
+          "Only 60 is acute"
+        ],
+        "correct_answer": "60 and 45 are acute angles",
+        "explanation": "Acute angles are less than 90 degrees. So 60 and 45 are acute angles."
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "30 deg + 60 deg = how many deg? What type of angle is it?",
+      "solution_en": "30 + 60 = 90 deg = right angle"
+    }
+  ],
+  "common_mistakes": [
+    "Confusing acute and obtuse angles",
+    "Forgetting that a right angle equals 90 degrees"
+  ],
+  "hints": [
+    "Remember: acute = small (< 90), obtuse = big (> 90), right = 90 exactly."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "right angle",
+      "th": "มุมฉาก",
+      "definition_en": "An angle that is exactly 90 degrees"
+    },
+    {
+      "en": "acute angle",
+      "th": "มุมแหลม",
+      "definition_en": "An angle less than 90 degrees"
+    },
+    {
+      "en": "obtuse angle",
+      "th": "มุมป้าน",
+      "definition_en": "An angle greater than 90 degrees"
+    },
+    {
+      "en": "degree",
+      "th": "องศา",
+      "definition_en": "A unit for measuring angles"
+    }
+  ]
+}

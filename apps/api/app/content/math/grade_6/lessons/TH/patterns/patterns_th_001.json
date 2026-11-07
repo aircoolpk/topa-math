@@ -1,0 +1,200 @@
+{
+  "variant_id": "patterns_th_001",
+  "variant_title_th": "แบบรูป",
+  "variant_title_en": "Patterns",
+  "status": "needs_review",
+  "title_th": "แบบรูป",
+  "title_en": "Patterns",
+  "story_theme_th": "น้องลินสังเกตแบบรูปของลูกแก้วที่เรียงกัน: 2, 4, 8, 16, ... ถ้าแบบรูปนี้ยังดำเนินต่อไป ลูกแก้ววงที่ 8 มีกี่ลูก และลูกแก้ววงที่ 10 มีกี่ลูก",
+  "helper_tip": "สังเกตว่าผลต่างหรือผลคูณเพิ่มขึ้นเท่าเดิมหรือไม่",
+  "think_story_th": "แบบรูปนี้คูณ 2 ทุกครั้ง: 2 → 4 → 8 → 16 → 32 → 64 → 128 → 256 ลูกแก้ววงที่ 8 = 256 ลูก ลูกแก้ววงที่ 10 = 2 × 2^9 = 1,024 ลูก",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "น้องลินสังเกตแบบรูปของลูกแก้วที่เรียงกัน: 2, 4, 8, 16, ... ถ้าแบบรูปนี้ยังดำเนินต่อไป ลูกแก้ววงที่ 8 มีกี่ลูก และลูกแก้ววงที่ 10 มีกี่ลูก",
+      "data": {
+        "content_th": "น้องลินสังเกตแบบรูปของลูกแก้วที่เรียงกัน: 2, 4, 8, 16, ... ถ้าแบบรูปนี้ยังดำเนินต่อไป ลูกแก้ววงที่ 8 มีกี่ลูก และลูกแก้ววงที่ 10 มีกี่ลูก"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "แบบรูปนี้คูณ 2 ทุกครั้ง: 2 → 4 → 8 → 16 → 32 → 64 → 128 → 256 ลูกแก้ววงที่ 8 = 256 ลูก ลูกแก้ววงที่ 10 = 2 × 2^9 = 1,024 ลูก",
+      "data": {
+        "content_th": "แบบรูปนี้คูณ 2 ทุกครั้ง: 2 → 4 → 8 → 16 → 32 → 64 → 128 → 256 ลูกแก้ววงที่ 8 = 256 ลูก ลูกแก้ววงที่ 10 = 2 × 2^9 = 1,024 ลูก"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "หน่วย",
+        "bars": [
+          {
+            "label": "วงที่ 1",
+            "value": 2,
+            "display": "2 ลูก",
+            "color": "#4ECDC4",
+            "width_pct": 20
+          },
+          {
+            "label": "วงที่ 2",
+            "value": 4,
+            "display": "4 ลูก",
+            "color": "#45B7D1",
+            "width_pct": 40
+          },
+          {
+            "label": "วงที่ 3",
+            "value": 8,
+            "display": "8 ลูก",
+            "color": "#96CEB4",
+            "width_pct": 80
+          },
+          {
+            "label": "วงที่ 4",
+            "value": 16,
+            "display": "16 ลูก",
+            "color": "#FFE66D",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "2 × 2 = 4",
+            "formula": {
+              "display": "2 × 2 = 4",
+              "a": 2,
+              "b": 2,
+              "result": 4,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}2&\\ ×\\quad 2&\\ \\hline 4&\\\\ \\hline \\end{array}",
+              "a_display": "2",
+              "b_display": "2",
+              "result_display": "4",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 2 × 2 = 4"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "4 × 2 = 8",
+            "formula": {
+              "display": "4 × 2 = 8",
+              "a": 4,
+              "b": 2,
+              "result": 8,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}4&\\ ×\\quad 2&\\ \\hline 8&\\\\ \\hline \\end{array}",
+              "a_display": "4",
+              "b_display": "2",
+              "result_display": "8",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 4 × 2 = 8"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "8 × 2 = 16",
+            "formula": {
+              "display": "8 × 2 = 16",
+              "a": 8,
+              "b": 2,
+              "result": 16,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}8&\\ ×\\quad 2&\\ \\hline 16&\\\\ \\hline \\end{array}",
+              "a_display": "8",
+              "b_display": "2",
+              "result_display": "16",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 8 × 2 = 16"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "2 × 2 = 4 | 4 × 2 = 8 | 8 × 2 = 16",
+      "content": "2 × 2 = 4 | 4 × 2 = 8 | 8 × 2 = 16",
+      "data": {
+        "expression": "2 × 2 = 4 | 4 × 2 = 8 | 8 × 2 = 16",
+        "operations": [
+          {
+            "op": "×",
+            "a": 2,
+            "b": 2,
+            "result": 4
+          },
+          {
+            "op": "×",
+            "a": 4,
+            "b": 2,
+            "result": 8
+          },
+          {
+            "op": "×",
+            "a": 8,
+            "b": 2,
+            "result": 16
+          }
+        ],
+        "content_th": "2 × 2 = 4 | 4 × 2 = 8 | 8 × 2 = 16"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "แบบรูป: 3, 9, 27, 81, ... ลูกแก้ววงที่ 5 คือข้อใด",
+      "choices": [
+        "162 ลูก",
+        "243 ลูก",
+        "324 ลูก",
+        "216 ลูก"
+      ],
+      "correct_answer": "243 ลูก",
+      "explanation": "คูณ 3 ทุกครั้ง: 81 × 3 = 243",
+      "data": {
+        "question": "แบบรูป: 3, 9, 27, 81, ... ลูกแก้ววงที่ 5 คือข้อใด",
+        "choices": [
+          "162 ลูก",
+          "243 ลูก",
+          "324 ลูก",
+          "216 ลูก"
+        ],
+        "correct_answer": "243 ลูก",
+        "explanation": "คูณ 3 ทุกครั้ง: 81 × 3 = 243"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

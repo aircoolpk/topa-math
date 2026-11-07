@@ -1,0 +1,219 @@
+{
+  "variant_id": "rectangles_ep_002",
+  "variant_title_en": "Rectangles",
+  "status": "needs_review",
+  "title_en": "Rectangles",
+  "story_theme_en": "A school bulletin board is a rectangle. It is 120 cm wide and 200 cm long. What is the area of the board? What is the perimeter?",
+  "helper_tip": "Area = width x length. Perimeter = 2 x (width + length).",
+  "hint_th": "พื้นที่ = กว้าง x ยาว ความยาวรอบรูป = 2 x (กว้าง + ยาว)",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A school bulletin board is a rectangle. It is 120 cm wide and 200 cm long. What is the area of the board? If the school measures the outer edge of the board, what is the perimeter? And if a wooden frame that is exactly 640 cm long fits perfectly around the board, how much longer or shorter is the frame compared to the board's perimeter?",
+      "data": {
+        "content_en": "A school bulletin board is a rectangle. It is 120 cm wide and 200 cm long. What is the area of the board? If the school measures the outer edge of the board, what is the perimeter? And if a wooden frame that is exactly 640 cm long fits perfectly around the board, how much longer or shorter is the frame compared to the board's perimeter?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Area → 120 x 200 = 24,000 sq cm | Step 2: Perimeter → 2 x (120 + 200) = 640 cm | Step 3: Compare → 640 - 640 = 0 (perfect fit!)",
+      "data": {
+        "content_en": "Step 1: Area → 120 x 200 = 24,000 sq cm | Step 2: Perimeter → 2 x (120 + 200) = 640 cm | Step 3: Compare → 640 - 640 = 0 (perfect fit!)"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Rectangle Model",
+      "model_type": "rectangle_model",
+      "data": {
+        "model_type": "rectangle_model",
+        "operation": "area_perimeter",
+        "bars": [
+          {
+            "label": "Width",
+            "value": 120,
+            "display": "120 cm",
+            "color": "#4ECDC4",
+            "width_pct": 60
+          },
+          {
+            "label": "Length",
+            "value": 200,
+            "display": "200 cm",
+            "color": "#45B7D1",
+            "width_pct": 100
+          },
+          {
+            "label": "Area",
+            "value": 24000,
+            "display": "24,000 sq cm",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Perimeter",
+            "value": 640,
+            "display": "640 cm",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find area",
+            "expression": "120 x 200 = 24,000",
+            "formula": {
+              "display": "120 x 200 = 24,000",
+              "a": 120,
+              "b": 200,
+              "result": 24000,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}120&\\\\\\\\ ×\\\\quad 200&\\\\\\\\ \\\\hline 24000&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "120",
+              "b_display": "200",
+              "result_display": "24000",
+              "operation": "mul"
+            },
+            "story_connection": "120 x 200 = 24,000 sq cm"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find perimeter",
+            "expression": "2 x (120 + 200) = 2 x 320 = 640",
+            "formula": {
+              "display": "2 x (120 + 200) = 2 x 320 = 640",
+              "a": 2,
+              "b": 320,
+              "result": 640,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}2&\\\\\\\\ ×\\\\quad 320&\\\\\\\\ \\\\hline 640&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "2",
+              "b_display": "320",
+              "result_display": "640",
+              "operation": "mul"
+            },
+            "story_connection": "2 x (120+200) = 2 x 320 = 640 cm"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Compare with frame",
+            "expression": "640 - 640 = 0 cm (perfect fit!)",
+            "formula": {
+              "display": "640 - 640 = 0 cm (perfect fit!)",
+              "a": 640,
+              "b": 640,
+              "result": 0,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}640&\\\\\\\\ -\\\\quad 640&\\\\\\\\ \\\\hline 0&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "640",
+              "b_display": "640",
+              "result_display": "0",
+              "operation": "sub"
+            },
+            "story_connection": "640 - 640 = 0 cm. The frame fits perfectly!"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "120 x 200 = 24,000 | 2 x (120 + 200) = 640 | 640 - 640 = 0",
+      "content": "120 x 200 = 24,000 sq cm  |  2 x (120 + 200) = 640 cm  |  640 - 640 = 0 cm (perfect fit!)",
+      "data": {
+        "expression": "120 x 200 = 24,000 | 2 x (120 + 200) = 640 | 640 - 640 = 0",
+        "operations": [
+          {
+            "op": "x",
+            "a": 120,
+            "b": 200,
+            "result": 24000
+          },
+          {
+            "op": "x",
+            "a": 2,
+            "b": 320,
+            "result": 640
+          },
+          {
+            "op": "-",
+            "a": 640,
+            "b": 640,
+            "result": 0
+          }
+        ],
+        "content_en": "120 x 200 = 24,000 sq cm  |  2 x (120 + 200) = 640 cm  |  640 - 640 = 0 cm (perfect fit!)"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A grass field is a rectangle. It is 50 m wide and 85 m long. Find the area and the perimeter of the field.",
+      "choices": [
+        "4,250 sq m, 270 m",
+        "4,250 sq m, 280 m",
+        "4,150 sq m, 270 m",
+        "4,250 sq m, 260 m"
+      ],
+      "correct_answer": "4,250 sq m, 270 m",
+      "explanation": "50 x 85 = 4,250 sq m | 2 x (50 + 85) = 2 x 135 = 270 m",
+      "data": {
+        "question": "A grass field is a rectangle. It is 50 m wide and 85 m long. Find the area and the perimeter of the field.",
+        "choices": [
+          "4,250 sq m, 270 m",
+          "4,250 sq m, 280 m",
+          "4,150 sq m, 270 m",
+          "4,250 sq m, 260 m"
+        ],
+        "correct_answer": "4,250 sq m, 270 m",
+        "explanation": "50 x 85 = 4,250 sq m | 2 x (50 + 85) = 2 x 135 = 270 m"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "Rectangle 15 x 30. Find area and perimeter.",
+      "solution_en": "Area = 15 x 30 = 450 sq m | Perimeter = 2 x (15+30) = 90 m"
+    }
+  ],
+  "common_mistakes": [
+    "Multiplying all four sides to find area (wrong!)",
+    "Forgetting to multiply by 2 when finding perimeter"
+  ],
+  "hints": [
+    "Area = width x length = adjacent sides multiplied.",
+    "Perimeter = all sides added = 2 x width + 2 x length."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "area",
+      "th": "พื้นที่",
+      "definition_en": "The size of a surface in square units"
+    },
+    {
+      "en": "perimeter",
+      "th": "ความยาวรอบรูป",
+      "definition_en": "The total distance around a shape"
+    }
+  ]
+}

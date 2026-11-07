@@ -1,0 +1,218 @@
+{
+  "variant_id": "decimals_ep_002",
+  "variant_title_en": "Decimals",
+  "status": "needs_review",
+  "title_en": "Decimals",
+  "story_theme_en": "A fruit shop weighs 3 pomelos. The first pomelo weighs 2.35 kilograms. The second weighs 1.85 kilograms. The third weighs 2.50 kilograms. What is the total weight?",
+  "helper_tip": "Add or subtract decimals by aligning the decimal points. Multiply decimals by counting decimal places.",
+  "hint_th": "บวกลบทศนิยมให้ตรงจุด คูณทศนิยมให้นับตำแหน่งจุดทศนิยม",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A fruit shop weighs 3 pomelos. The first pomelo weighs 2.35 kilograms. The second weighs 1.85 kilograms. The third weighs 2.50 kilograms. What is the total weight? And if they are sold at 48.50 baht per kilogram, how much money will the shop earn?",
+      "data": {
+        "content_en": "A fruit shop weighs 3 pomelos. The first pomelo weighs 2.35 kilograms. The second weighs 1.85 kilograms. The third weighs 2.50 kilograms. What is the total weight? And if they are sold at 48.50 baht per kilogram, how much money will the shop earn?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Add weights → 2.35 + 1.85 + 2.50 = total weight | Step 2: Multiply by price → total weight x 48.50 = money earned",
+      "data": {
+        "content_en": "Step 1: Add weights → 2.35 + 1.85 + 2.50 = total weight | Step 2: Multiply by price → total weight x 48.50 = money earned"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Decimal Model",
+      "model_type": "decimal_model",
+      "data": {
+        "model_type": "decimal_model",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Pomelo 1",
+            "value": 2.35,
+            "display": "2.35 kg",
+            "color": "#FF9F43",
+            "width_pct": 70
+          },
+          {
+            "label": "Pomelo 2",
+            "value": 1.85,
+            "display": "1.85 kg",
+            "color": "#FF6B6B",
+            "width_pct": 55
+          },
+          {
+            "label": "Pomelo 3",
+            "value": 2.5,
+            "display": "2.50 kg",
+            "color": "#4ECDC4",
+            "width_pct": 75
+          },
+          {
+            "label": "Total",
+            "value": 6.7,
+            "display": "6.70 kg",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add first and second pomelo",
+            "expression": "2.35 + 1.85 = 4.20",
+            "formula": {
+              "display": "2.35 + 1.85 = 4.20",
+              "a": 2.35,
+              "b": 1.85,
+              "result": 4.2,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}2.35&\\\\\\\\ +\\\\quad 1.85&\\\\\\\\ \\\\hline 4.2&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "2.35",
+              "b_display": "1.85",
+              "result_display": "4.2",
+              "operation": "add"
+            },
+            "story_connection": "2.35 + 1.85 = 4.20 kg"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add third pomelo",
+            "expression": "4.20 + 2.50 = 6.70",
+            "formula": {
+              "display": "4.20 + 2.50 = 6.70",
+              "a": 4.2,
+              "b": 2.5,
+              "result": 6.7,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}4.2&\\\\\\\\ +\\\\quad 2.5&\\\\\\\\ \\\\hline 6.7&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "4.2",
+              "b_display": "2.5",
+              "result_display": "6.7",
+              "operation": "add"
+            },
+            "story_connection": "4.20 + 2.50 = 6.70 kg"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Multiply by price",
+            "expression": "6.70 x 48.50 = 324.95",
+            "formula": {
+              "display": "6.70 x 48.50 = 324.95",
+              "a": 6.7,
+              "b": 48.5,
+              "result": 324.95,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}6.7&\\\\\\\\ ×\\\\quad 48.5&\\\\\\\\ \\\\hline 324.95&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "6.7",
+              "b_display": "48.5",
+              "result_display": "324.95",
+              "operation": "mul"
+            },
+            "story_connection": "6.70 x 48.50 = 324.95 baht"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "2.35 + 1.85 + 2.50 = 6.70 kg | 6.70 x 48.50 = 324.95 baht",
+      "content": "2.35 + 1.85 + 2.50 = 6.70 kg  |  6.70 x 48.50 = 324.95 baht",
+      "data": {
+        "expression": "2.35 + 1.85 + 2.50 = 6.70 kg | 6.70 x 48.50 = 324.95 baht",
+        "operations": [
+          {
+            "op": "+",
+            "a": 2.35,
+            "b": 1.85,
+            "result": 4.2
+          },
+          {
+            "op": "+",
+            "a": 4.2,
+            "b": 2.5,
+            "result": 6.7
+          },
+          {
+            "op": "x",
+            "a": 6.7,
+            "b": 48.5,
+            "result": 324.95
+          }
+        ],
+        "content_en": "2.35 + 1.85 + 2.50 = 6.70 kg  |  6.70 x 48.50 = 324.95 baht"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Lin buys oil: 12.75 liters at 42.30 baht per liter. How much does she pay? If she pays with 600 baht, how much change does she get?",
+      "choices": [
+        "538.83 baht, change 61.17 baht",
+        "538.83 baht, change 62.17 baht",
+        "539.83 baht, change 60.17 baht",
+        "537.83 baht, change 62.17 baht"
+      ],
+      "correct_answer": "538.83 baht, change 61.17 baht",
+      "explanation": "12.75 x 42.30 = 538.83 baht | 600.00 - 538.83 = 61.17 baht",
+      "data": {
+        "question": "Lin buys oil: 12.75 liters at 42.30 baht per liter. How much does she pay? If she pays with 600 baht, how much change does she get?",
+        "choices": [
+          "538.83 baht, change 61.17 baht",
+          "538.83 baht, change 62.17 baht",
+          "539.83 baht, change 60.17 baht",
+          "537.83 baht, change 62.17 baht"
+        ],
+        "correct_answer": "538.83 baht, change 61.17 baht",
+        "explanation": "12.75 x 42.30 = 538.83 baht | 600.00 - 538.83 = 61.17 baht"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "1.25 + 3.75 = ?",
+      "solution_en": "1.25 + 3.75 = 5.00 or 5"
+    }
+  ],
+  "common_mistakes": [
+    "Adding or subtracting decimals without aligning the decimal points",
+    "Placing the decimal point in the wrong position after multiplying"
+  ],
+  "hints": [
+    "Write decimal points in a column: | ones . tenths hundredths |",
+    "Add right to left, carrying when the sum exceeds 9."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "decimal",
+      "th": "ทศนิยม",
+      "definition_en": "A number with a decimal point"
+    },
+    {
+      "en": "kilogram",
+      "th": "กิโลกรัม",
+      "definition_en": "A unit of weight. 1 kg = 1,000 grams"
+    }
+  ]
+}

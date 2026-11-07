@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react'
 import { apiClient } from '@/lib/api-client'
+import { buildApiUrl } from '@/lib/public-env'
 
 interface Props {
   childId: string
@@ -111,11 +112,11 @@ export function AvatarUpload({ childId, currentAvatarUrl, onUploadSuccess }: Pro
       const form = new FormData()
       form.append('file', blob, 'avatar.webp')
 
-      const apiBase = (process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8001').replace(/\/$/, '')
       const token = localStorage.getItem('access_token')
-      const res = await fetch(`${apiBase}/me/students/${childId}/avatar`, {
+      const res = await fetch(buildApiUrl(`/me/students/${childId}/avatar`), {
         method: 'POST',
         headers: token ? { Authorization: `Bearer ${token}` } : undefined,
+        credentials: 'include',
         body: form,
       })
       if (!res.ok) {

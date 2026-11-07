@@ -1,0 +1,179 @@
+{
+  "lesson_id": "decimals_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "dec_ep_q001_e01",
+      "question_text": "Situation 1: A pencil costs 12.50 baht. A rubber costs 8.25 baht. How much do both cost together?",
+      "question_text_th": "Situation 1: A pencil costs 12.50 baht. A rubber costs 8.25 baht. How much do both cost together?",
+      "choices": [
+        "20.75 baht",
+        "20.75",
+        "21.00 baht",
+        "20.00 baht"
+      ],
+      "correct_answer": "20.75 baht",
+      "answer": "20.75 baht",
+      "explanation": "12.50 + 8.25 = 20.75 baht",
+      "explanation_th": "12.50 + 8.25 = 20.75 baht",
+      "difficulty": "easy",
+      "hint_th": "Add decimals: 12.50 + 8.25 = 20.75"
+    },
+    {
+      "question_id": "dec_ep_q001_e02",
+      "question_text": "Situation 2: A bag costs 145.75 baht. You pay with a 200-baht note. How much change do you get?",
+      "question_text_th": "Situation 2: A bag costs 145.75 baht. You pay with a 200-baht note. How much change do you get?",
+      "choices": [
+        "54.25 baht",
+        "54.25",
+        "55.00 baht",
+        "54.00 baht"
+      ],
+      "correct_answer": "54.25 baht",
+      "answer": "54.25 baht",
+      "explanation": "200.00 - 145.75 = 54.25 baht",
+      "explanation_th": "200.00 - 145.75 = 54.25 baht",
+      "difficulty": "easy",
+      "hint_th": "Subtract: 200.00 - 145.75 = 54.25"
+    },
+    {
+      "question_id": "dec_ep_q001_e03",
+      "question_text": "Situation 3: 0.75 of the students are present. If there are 40 students, how many are present?",
+      "question_text_th": "Situation 3: 0.75 of the students are present. If there are 40 students, how many are present?",
+      "choices": [
+        "30 students",
+        "30",
+        "28 students",
+        "32 students"
+      ],
+      "correct_answer": "30 students",
+      "answer": "30 students",
+      "explanation": "0.75 x 40 = 30 students",
+      "explanation_th": "0.75 x 40 = 30 students",
+      "difficulty": "easy",
+      "hint_th": "0.75 = 75% = 3/4 | 3/4 x 40 = 30"
+    },
+    {
+      "question_id": "dec_ep_q001_m01",
+      "question_text": "Situation 4: A store sells 2.5 kg of rice at 22.80 baht per kg. How much does it cost?",
+      "question_text_th": "Situation 4: A store sells 2.5 kg of rice at 22.80 baht per kg. How much does it cost?",
+      "choices": [
+        "57.00 baht",
+        "57.00",
+        "56.50 baht",
+        "58.00 baht"
+      ],
+      "correct_answer": "57.00 baht",
+      "answer": "57.00 baht",
+      "explanation": "2.5 x 22.80 = 57.00 baht",
+      "explanation_th": "2.5 x 22.80 = 57.00 baht",
+      "difficulty": "medium",
+      "hint_th": "Multiply decimals: 2.5 x 22.80 = 57.00"
+    },
+    {
+      "question_id": "dec_ep_q001_m02",
+      "question_text": "Situation 5: A rope is 8.4 meters long. Another rope is 3 times as long. How long is the second rope?",
+      "question_text_th": "Situation 5: A rope is 8.4 meters long. Another rope is 3 times as long. How long is the second rope?",
+      "choices": [
+        "25.2 meters",
+        "25.2",
+        "24.0 meters",
+        "26.0 meters"
+      ],
+      "correct_answer": "25.2 meters",
+      "answer": "25.2 meters",
+      "explanation": "8.4 x 3 = 25.2 meters",
+      "explanation_th": "8.4 x 3 = 25.2 meters",
+      "difficulty": "medium",
+      "hint_th": "Multiply: 8.4 x 3 = 25.2"
+    },
+    {
+      "question_id": "dec_ep_q001_m03",
+      "question_text": "Situation 6: 3.75 kg of meat costs 187.50 baht. How much is it per kg?",
+      "question_text_th": "Situation 6: 3.75 kg of meat costs 187.50 baht. How much is it per kg?",
+      "choices": [
+        "50.00 baht/kg",
+        "50.00",
+        "48.00 baht/kg",
+        "52.00 baht/kg"
+      ],
+      "correct_answer": "50.00 baht/kg",
+      "answer": "50.00 baht/kg",
+      "explanation": "187.50 / 3.75 = 50.00 baht/kg",
+      "explanation_th": "187.50 / 3.75 = 50.00 baht/kg",
+      "difficulty": "medium",
+      "hint_th": "Divide: 187.50 ÷ 3.75 = 50.00"
+    },
+    {
+      "question_id": "dec_ep_q001_m04",
+      "question_text": "Situation 7: A ribbon is 6.8 meters long. You cut 2.45 meters from it. How much is left?",
+      "question_text_th": "Situation 7: A ribbon is 6.8 meters long. You cut 2.45 meters from it. How much is left?",
+      "choices": [
+        "4.35 meters",
+        "4.35",
+        "4.00 meters",
+        "4.50 meters"
+      ],
+      "correct_answer": "4.35 meters",
+      "answer": "4.35 meters",
+      "explanation": "6.80 - 2.45 = 4.35 meters",
+      "explanation_th": "6.80 - 2.45 = 4.35 meters",
+      "difficulty": "medium",
+      "hint_th": "Subtract: 6.80 - 2.45 = 4.35"
+    },
+    {
+      "question_id": "dec_ep_q001_h01",
+      "question_text": "Situation 8: A car travels 45.5 km per liter of gasoline. How far can it travel with 12.8 liters?",
+      "question_text_th": "Situation 8: A car travels 45.5 km per liter of gasoline. How far can it travel with 12.8 liters?",
+      "choices": [
+        "582.4 km",
+        "582.4",
+        "580 km",
+        "585 km"
+      ],
+      "correct_answer": "582.4 km",
+      "answer": "582.4 km",
+      "explanation": "45.5 x 12.8 = 582.4 km",
+      "explanation_th": "45.5 x 12.8 = 582.4 km",
+      "difficulty": "hard",
+      "hint_th": "Multiply: 45.5 x 12.8 = 582.4 km"
+    },
+    {
+      "question_id": "dec_ep_q001_h02",
+      "question_text": "Situation 9: 0.125 of a school are in Grade 5. There are 48 Grade 5 students. How many students are in the school?",
+      "question_text_th": "Situation 9: 0.125 of a school are in Grade 5. There are 48 Grade 5 students. How many students are in the school?",
+      "choices": [
+        "384 students",
+        "384",
+        "400 students",
+        "350 students"
+      ],
+      "correct_answer": "384 students",
+      "answer": "384 students",
+      "explanation": "48 / 0.125 = 384 students",
+      "explanation_th": "48 / 0.125 = 384 students",
+      "difficulty": "hard",
+      "hint_th": "Divide: 48 ÷ 0.125 = 384"
+    },
+    {
+      "question_id": "dec_ep_q001_h03",
+      "question_text": "Situation 10: Water costs 0.85 baht per liter. A factory uses 125.6 m³ (equals 125,600 liters). How much does the factory pay?",
+      "question_text_th": "Situation 10: Water costs 0.85 baht per liter. A factory uses 125.6 m³ (equals 125,600 liters). How much does the factory pay?",
+      "choices": [
+        "106,760 baht",
+        "106760",
+        "105,000 baht",
+        "107,000 baht"
+      ],
+      "correct_answer": "106,760 baht",
+      "answer": "106,760 baht",
+      "explanation": "125,600 x 0.85 = 106,760 baht",
+      "explanation_th": "125,600 x 0.85 = 106,760 baht",
+      "difficulty": "hard",
+      "hint_th": "125.6 m³ = 125,600 liters | 125,600 x 0.85 = 106,760 baht"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

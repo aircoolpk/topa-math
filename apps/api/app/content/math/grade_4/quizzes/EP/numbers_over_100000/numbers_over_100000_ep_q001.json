@@ -1,0 +1,189 @@
+{
+  "lesson_id": "numbers_over_100000_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "A fruit shop sold 45,780 kg of mangoes, 32,650 kg of oranges, and 27,050 kg of mangosteens. How many kg in total?",
+      "question_text_en": "A fruit shop sold 45,780 kg of mangoes, 32,650 kg of oranges, and 27,050 kg of mangosteens. How many kg in total?",
+      "choices": [
+        "105,480 kg",
+        "95,480 kg",
+        "105,840 kg",
+        "95,840 kg"
+      ],
+      "correct_answer": "105,480 kg",
+      "answer": "105,480 kg",
+      "explanation": "45,780+32,650+27,050=105,480 kg",
+      "explanation_th": "45,780+32,650+27,050=105,480 กิโลกรัม",
+      "difficulty": "easy",
+      "hint_th": "Add the three numbers carefully",
+      "question_text_th": "ร้านขายผลไม้ขายมะม่วง 45,780 กก. ส้ม 32,650 กก. มังคุด 27,050 กก. รวม?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "A library has books on 3 shelves: 58,340, 41,275, and 39,865 books. How many books in total?",
+      "question_text_en": "A library has books on 3 shelves: 58,340, 41,275, and 39,865 books. How many books in total?",
+      "choices": [
+        "139,480 books",
+        "129,480 books",
+        "139,840 books",
+        "138,480 books"
+      ],
+      "correct_answer": "139,480 books",
+      "answer": "139,480 books",
+      "explanation": "58,340+41,275+39,865=139,480 books",
+      "explanation_th": "58,340+41,275+39,865=139,480 เล่ม",
+      "difficulty": "easy",
+      "hint_th": "Add from right to left, carry if needed",
+      "question_text_th": "ห้องสมุดมีหนังสือ 3 ชั้น: 58,340, 41,275, 39,865 เล่ม. รวม?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "A market earned 78,450 baht, 56,780 baht, and 89,270 baht over 3 days. Total earned?",
+      "question_text_en": "A market earned 78,450 baht, 56,780 baht, and 89,270 baht over 3 days. Total earned?",
+      "choices": [
+        "224,500 baht",
+        "214,500 baht",
+        "224,050 baht",
+        "214,050 baht"
+      ],
+      "correct_answer": "224,500 baht",
+      "answer": "224,500 baht",
+      "explanation": "78,450+56,780+89,270=224,500 baht",
+      "explanation_th": "78,450+56,780+89,270=224,500 บาท",
+      "difficulty": "medium",
+      "hint_th": "Add three numbers, watch the carries",
+      "question_text_th": "ตลาดขายได้ 78,450, 56,780, 89,270 บาท 3 วัน. รวม?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "Three numbers add up to 200,000. The first two are 78,450 and 65,830. What is the third?",
+      "question_text_en": "Three numbers add up to 200,000. The first two are 78,450 and 65,830. What is the third?",
+      "choices": [
+        "55,720",
+        "65,720",
+        "55,820",
+        "45,720"
+      ],
+      "correct_answer": "55,720",
+      "answer": "55,720",
+      "explanation": "200,000-78,450-65,830=55,720",
+      "explanation_th": "200,000-78,450-65,830=55,720",
+      "difficulty": "medium",
+      "hint_th": "200,000 minus the sum of the two numbers",
+      "question_text_th": "สามจำนวนบวกกันได้ 200,000. สองจำนวนแรก 78,450 กับ 65,830. จำนวนที่สาม?"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "A company has 4 departments with 28,450, 25,380, 31,270, and 34,900 employees. Total?",
+      "question_text_en": "A company has 4 departments with 28,450, 25,380, 31,270, and 34,900 employees. Total?",
+      "choices": [
+        "120,000 people",
+        "110,000 people",
+        "119,000 people",
+        "120,100 people"
+      ],
+      "correct_answer": "120,000 people",
+      "answer": "120,000 people",
+      "explanation": "28,450+25,380+31,270+34,900=120,000",
+      "explanation_th": "28,450+25,380+31,270+34,900=120,000 คน",
+      "difficulty": "hard",
+      "hint_th": "Add all four, check your sum",
+      "question_text_th": "บริษัทมี 4 แผนก: 28,450, 25,380, 31,270, 34,900 คน. รวม?"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "Two numbers add up to 175,830. One number is 89,450. What is the other number?",
+      "question_text_en": "Two numbers add up to 175,830. One number is 89,450. What is the other number?",
+      "choices": [
+        "86,380",
+        "96,380",
+        "86,280",
+        "96,280"
+      ],
+      "correct_answer": "86,380",
+      "answer": "86,380",
+      "explanation": "175,830-89,450=86,380",
+      "explanation_th": "175,830-89,450=86,380",
+      "difficulty": "medium",
+      "hint_th": "Subtract: 175,830 minus 89,450",
+      "question_text_th": "สองจำนวนบวกได้ 175,830. จำนวนหนึ่งคือ 89,450. อีกจำนวน?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "Which number is the greatest: 234,567 | 243,657 | 254,367 | 243,756?",
+      "question_text_en": "Which number is the greatest: 234,567 | 243,657 | 254,367 | 243,756?",
+      "choices": [
+        "254,367",
+        "243,657",
+        "243,756",
+        "234,567"
+      ],
+      "correct_answer": "254,367",
+      "answer": "254,367",
+      "explanation": "Compare ten-thousands: 5>4>4>3, so 254,367 is greatest",
+      "explanation_th": "เปรียบเทียบหลักหมื่น: 5>4>4>3 ดังนั้น 254,367 มากสุด",
+      "difficulty": "hard",
+      "hint_th": "Compare digits from left to right",
+      "question_text_th": "จำนวนใดมากที่สุด: 234,567 | 243,657 | 254,367 | 243,756?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "A stadium has 178,500 spectators. If tickets cost 500 baht each, what is the total revenue?",
+      "question_text_en": "A stadium has 178,500 spectators. If tickets cost 500 baht each, what is the total revenue?",
+      "choices": [
+        "89,250,000 baht",
+        "89,000,000 baht",
+        "89,500,000 baht",
+        "178,500,000 baht"
+      ],
+      "correct_answer": "89,250,000 baht",
+      "answer": "89,250,000 baht",
+      "explanation": "178,500 x 500 = 89,250,000 baht",
+      "explanation_th": "178,500 × 500 = 89,250,000 บาท",
+      "difficulty": "medium",
+      "hint_th": "Multiply 178,500 by 500",
+      "question_text_th": "สนามกีฬามีผู้ชม 178,500 คน. บัตรใบละ 500 บาท. รวมเงิน?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "Which of the following is correct about adding numbers greater than 100,000?",
+      "question_text_en": "Which of the following is correct about adding numbers greater than 100,000?",
+      "choices": [
+        "Write digits aligned by place value",
+        "You can add without aligning place values",
+        "The sum must be greater than any addend",
+        "None are correct"
+      ],
+      "correct_answer": "Write digits aligned by place value",
+      "answer": "Write digits aligned by place value",
+      "explanation": "Always align digits by place value when adding multi-digit numbers",
+      "explanation_th": "การบวกที่ถูกต้องต้องเขียนตัวเลขเรียงหลักให้ตรงกัน",
+      "difficulty": "easy",
+      "hint_th": "Basic addition rule",
+      "question_text_th": "ข้อใดเกี่ยวกับการบวกจำนวนมากกว่า 100,000 ถูกต้อง?"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "If 67,890 + 45,670 = 113,560, then what is 113,560 - 45,670?",
+      "question_text_en": "If 67,890 + 45,670 = 113,560, then what is 113,560 - 45,670?",
+      "choices": [
+        "67,890",
+        "67,980",
+        "68,890",
+        "67,780"
+      ],
+      "correct_answer": "67,890",
+      "answer": "67,890",
+      "explanation": "113,560-45,670=67,890 (subtraction reverses addition)",
+      "explanation_th": "113,560-45,670=67,890",
+      "difficulty": "medium",
+      "hint_th": "Use the relationship between addition and subtraction",
+      "question_text_th": "ถ้า 67,890+45,670=113,560 แล้ว 113,560-45,670=?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

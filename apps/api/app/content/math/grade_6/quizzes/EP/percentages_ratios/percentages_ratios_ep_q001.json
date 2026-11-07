@@ -1,0 +1,381 @@
+{
+  "quiz_id": "percentages_ratios_ep_q001",
+  "title_th": "ร้อยละและอัตราส่วน",
+  "title_en": "Percentages and Ratios",
+  "status": "needs_review",
+  "variant_id": "percentages_ratios_ep_q001",
+  "variant_title_th": "ร้อยละและอัตราส่วน",
+  "variant_title_en": "Percentages and Ratios",
+  "questions": [
+    {
+      "question_id": "percenta_q001_m01",
+      "type": "multiple_choice",
+      "question_th": "25% ของ 200 คือเท่าไร",
+      "question_en": "25% of 200 = ?",
+      "choices_th": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "choices_en": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "correct_answer_th": "50",
+      "correct_answer_en": "50",
+      "answer_th": "50",
+      "answer_en": "50",
+      "answer": "50",
+      "explanation_th": "25% = 25/100, 25/100 × 200 = 50",
+      "explanation_en": "25% = 25/100, 25/100 × 200 = 50",
+      "difficulty": "easy",
+      "choices": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "correct_answer": "50",
+      "question_text": "25% ของ 200 คือเท่าไร",
+      "explanation": "25% = 25/100, 25/100 × 200 = 50",
+      "question_text_th": "25% ของ 200 คือเท่าไร",
+      "question_text_en": "25% of 200 = ?"
+    },
+    {
+      "question_id": "percenta_q001_m02",
+      "type": "multiple_choice",
+      "question_th": "อัตราส่วน 3:5 ถ้าสมาชิกส่วนแรกเป็น 15 ส่วนที่สองเป็นเท่าไร",
+      "question_en": "Ratio 3:5. If the first part is 15, what is the second part?",
+      "choices_th": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "choices_en": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer_th": "25",
+      "correct_answer_en": "25",
+      "answer_th": "25",
+      "answer_en": "25",
+      "answer": "25",
+      "explanation_th": "1 part = 15 ÷ 3 = 5, 5 parts = 5 × 5 = 25",
+      "explanation_en": "1 part = 15 ÷ 3 = 5, 5 parts = 5 × 5 = 25",
+      "difficulty": "medium",
+      "choices": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correct_answer": "25",
+      "question_text": "อัตราส่วน 3:5 ถ้าสมาชิกส่วนแรกเป็น 15 ส่วนที่สองเป็นเท่าไร",
+      "explanation": "1 part = 15 ÷ 3 = 5, 5 parts = 5 × 5 = 25",
+      "question_text_th": "อัตราส่วน 3:5 ถ้าสมาชิกส่วนแรกเป็น 15 ส่วนที่สองเป็นเท่าไร",
+      "question_text_en": "Ratio 3:5. If the first part is 15, what is the second part?"
+    },
+    {
+      "question_id": "percenta_q001_m03",
+      "type": "multiple_choice",
+      "question_th": "ราคา 400 บาท ลดราคา 10% ราคาใหม่เท่าไร",
+      "question_en": "An item costs 400 baht with a 10% discount. What is the new price?",
+      "choices_th": [
+        "360 baht",
+        "380 baht",
+        "390 baht",
+        "340 baht"
+      ],
+      "choices_en": [
+        "360 baht",
+        "380 baht",
+        "390 baht",
+        "340 baht"
+      ],
+      "correct_answer_th": "360 baht",
+      "correct_answer_en": "360 baht",
+      "answer_th": "360 baht",
+      "answer_en": "360 baht",
+      "answer": "360 baht",
+      "explanation_th": "Discount = 40 baht, 400 - 40 = 360 baht",
+      "explanation_en": "Discount = 40 baht, 400 - 40 = 360 baht",
+      "difficulty": "medium",
+      "choices": [
+        "360 baht",
+        "380 baht",
+        "390 baht",
+        "340 baht"
+      ],
+      "correct_answer": "360 baht",
+      "question_text": "ราคา 400 บาท ลดราคา 10% ราคาใหม่เท่าไร",
+      "explanation": "Discount = 40 baht, 400 - 40 = 360 baht",
+      "question_text_th": "ราคา 400 บาท ลดราคา 10% ราคาใหม่เท่าไร",
+      "question_text_en": "An item costs 400 baht with a 10% discount. What is the new price?"
+    },
+    {
+      "question_id": "percenta_q001_m04",
+      "type": "multiple_choice",
+      "question_th": "50% ของ 86 คือเท่าไร",
+      "question_en": "50% of 86 = ?",
+      "choices_th": [
+        "43",
+        "46",
+        "40",
+        "42"
+      ],
+      "choices_en": [
+        "43",
+        "46",
+        "40",
+        "42"
+      ],
+      "correct_answer_th": "43",
+      "correct_answer_en": "43",
+      "answer_th": "43",
+      "answer_en": "43",
+      "answer": "43",
+      "explanation_th": "50% of 86 = 86 ÷ 2 = 43",
+      "explanation_en": "50% of 86 = 86 ÷ 2 = 43",
+      "difficulty": "easy",
+      "choices": [
+        "43",
+        "46",
+        "40",
+        "42"
+      ],
+      "correct_answer": "43",
+      "question_text": "50% ของ 86 คือเท่าไร",
+      "explanation": "50% of 86 = 86 ÷ 2 = 43",
+      "question_text_th": "50% ของ 86 คือเท่าไร",
+      "question_text_en": "50% of 86 = ?"
+    },
+    {
+      "question_id": "percenta_q001_m05",
+      "type": "multiple_choice",
+      "question_th": "ถ้า 4:7 = x:21 แล้ว x คือเท่าไร",
+      "question_en": "If 4:7 = x:21, what is x?",
+      "choices_th": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "choices_en": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer_th": "12",
+      "correct_answer_en": "12",
+      "answer_th": "12",
+      "answer_en": "12",
+      "answer": "12",
+      "explanation_th": "7×3=21, so 4×3=12",
+      "explanation_en": "7×3=21, so 4×3=12",
+      "difficulty": "medium",
+      "choices": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": "12",
+      "question_text": "ถ้า 4:7 = x:21 แล้ว x คือเท่าไร",
+      "explanation": "7×3=21, so 4×3=12",
+      "question_text_th": "ถ้า 4:7 = x:21 แล้ว x คือเท่าไร",
+      "question_text_en": "If 4:7 = x:21, what is x?"
+    },
+    {
+      "question_id": "percenta_q001_m06",
+      "type": "multiple_choice",
+      "question_th": "โรงเรียนมีนักเรียน 800 คน เป็นผู้หญิง 60% มีผู้ชายกี่คน",
+      "question_en": "A school has 800 students, 60% are girls. How many are boys?",
+      "choices_th": [
+        "280",
+        "320",
+        "400",
+        "480"
+      ],
+      "choices_en": [
+        "280",
+        "320",
+        "400",
+        "480"
+      ],
+      "correct_answer_th": "320",
+      "correct_answer_en": "320",
+      "answer_th": "320",
+      "answer_en": "320",
+      "answer": "320",
+      "explanation_th": "Boys = 40% of 800 = 320",
+      "explanation_en": "Boys = 40% of 800 = 320",
+      "difficulty": "medium",
+      "choices": [
+        "280",
+        "320",
+        "400",
+        "480"
+      ],
+      "correct_answer": "320",
+      "question_text": "โรงเรียนมีนักเรียน 800 คน เป็นผู้หญิง 60% มีผู้ชายกี่คน",
+      "explanation": "Boys = 40% of 800 = 320",
+      "question_text_th": "โรงเรียนมีนักเรียน 800 คน เป็นผู้หญิง 60% มีผู้ชายกี่คน",
+      "question_text_en": "A school has 800 students, 60% are girls. How many are boys?"
+    },
+    {
+      "question_id": "percenta_q001_m07",
+      "type": "multiple_choice",
+      "question_th": "15% ของ 300 คือเท่าไร",
+      "question_en": "15% of 300 = ?",
+      "choices_th": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "choices_en": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "correct_answer_th": "45",
+      "correct_answer_en": "45",
+      "answer_th": "45",
+      "answer_en": "45",
+      "answer": "45",
+      "explanation_th": "15/100 × 300 = 45",
+      "explanation_en": "15/100 × 300 = 45",
+      "difficulty": "easy",
+      "choices": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "correct_answer": "45",
+      "question_text": "15% ของ 300 คือเท่าไร",
+      "explanation": "15/100 × 300 = 45",
+      "question_text_th": "15% ของ 300 คือเท่าไร",
+      "question_text_en": "15% of 300 = ?"
+    },
+    {
+      "question_id": "percenta_q001_m08",
+      "type": "multiple_choice",
+      "question_th": "อัตราส่วนของ A ต่อ B เป็น 5:8 ถ้า A = 25 แล้ว B = ?",
+      "question_en": "Ratio of A to B is 5:8. If A = 25, what is B?",
+      "choices_th": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "choices_en": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct_answer_th": "40",
+      "correct_answer_en": "40",
+      "answer_th": "40",
+      "answer_en": "40",
+      "answer": "40",
+      "explanation_th": "1 part = 25 ÷ 5 = 5, 8 parts = 5 × 8 = 40",
+      "explanation_en": "1 part = 25 ÷ 5 = 5, 8 parts = 5 × 8 = 40",
+      "difficulty": "medium",
+      "choices": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct_answer": "40",
+      "question_text": "อัตราส่วนของ A ต่อ B เป็น 5:8 ถ้า A = 25 แล้ว B = ?",
+      "explanation": "1 part = 25 ÷ 5 = 5, 8 parts = 5 × 8 = 40",
+      "question_text_th": "อัตราส่วนของ A ต่อ B เป็น 5:8 ถ้า A = 25 แล้ว B = ?",
+      "question_text_en": "Ratio of A to B is 5:8. If A = 25, what is B?"
+    },
+    {
+      "question_id": "percenta_q001_m09",
+      "type": "multiple_choice",
+      "question_th": "สินค้าราคา 250 บาท ลดราคา 20% จากนั้นลดอีก 10% ราคาสุดท้ายเท่าไร",
+      "question_en": "An item costs 250 baht. It is discounted by 20%, then another 10%. What is the final price?",
+      "choices_th": [
+        "175 baht",
+        "180 baht",
+        "170 baht",
+        "185 baht"
+      ],
+      "choices_en": [
+        "175 baht",
+        "180 baht",
+        "170 baht",
+        "185 baht"
+      ],
+      "correct_answer_th": "180 baht",
+      "correct_answer_en": "180 baht",
+      "answer_th": "180 baht",
+      "answer_en": "180 baht",
+      "answer": "180 baht",
+      "explanation_th": "20% off: 250×0.8=200, another 10% off: 200×0.9=180 baht",
+      "explanation_en": "20% off: 250×0.8=200, another 10% off: 200×0.9=180 baht",
+      "difficulty": "hard",
+      "choices": [
+        "175 baht",
+        "180 baht",
+        "170 baht",
+        "185 baht"
+      ],
+      "correct_answer": "180 baht",
+      "question_text": "สินค้าราคา 250 บาท ลดราคา 20% จากนั้นลดอีก 10% ราคาสุดท้ายเท่าไร",
+      "explanation": "20% off: 250×0.8=200, another 10% off: 200×0.9=180 baht",
+      "question_text_th": "สินค้าราคา 250 บาท ลดราคา 20% จากนั้นลดอีก 10% ราคาสุดท้ายเท่าไร",
+      "question_text_en": "An item costs 250 baht. It is discounted by 20%, then another 10%. What is the final price?"
+    },
+    {
+      "question_id": "percenta_q001_m10",
+      "type": "multiple_choice",
+      "question_th": "60% ของนักเรียนในห้องเป็นผู้หญิง 18 คน ห้องมีนักเรียนกี่คน",
+      "question_en": "60% of students in a class are girls. There are 18 girls. How many students are in the class?",
+      "choices_th": [
+        "25",
+        "28",
+        "30",
+        "35"
+      ],
+      "choices_en": [
+        "25",
+        "28",
+        "30",
+        "35"
+      ],
+      "correct_answer_th": "30",
+      "correct_answer_en": "30",
+      "answer_th": "30",
+      "answer_en": "30",
+      "answer": "30",
+      "explanation_th": "60% = 18, 1% = 0.3, 100% = 30 students",
+      "explanation_en": "60% = 18, 1% = 0.3, 100% = 30 students",
+      "difficulty": "hard",
+      "choices": [
+        "25",
+        "28",
+        "30",
+        "35"
+      ],
+      "correct_answer": "30",
+      "question_text": "60% ของนักเรียนในห้องเป็นผู้หญิง 18 คน ห้องมีนักเรียนกี่คน",
+      "explanation": "60% = 18, 1% = 0.3, 100% = 30 students",
+      "question_text_th": "60% ของนักเรียนในห้องเป็นผู้หญิง 18 คน ห้องมีนักเรียนกี่คน",
+      "question_text_en": "60% of students in a class are girls. There are 18 girls. How many students are in the class?"
+    }
+  ]
+}

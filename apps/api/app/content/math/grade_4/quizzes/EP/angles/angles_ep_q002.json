@@ -1,0 +1,186 @@
+{
+  "lesson_id": "angles_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "What type of angle is 60°?",
+      "question_text_en": "What type of angle is 60°?",
+      "choices": [
+        "Acute angle",
+        "Right angle",
+        "Obtuse angle",
+        "Straight angle"
+      ],
+      "correct_answer": "Acute angle",
+      "answer": "Acute angle",
+      "explanation": "60° < 90° = acute angle",
+      "explanation_th": "60° < 90° = มุมแหลม",
+      "difficulty": "easy",
+      "hint_th": "60° < 90° = acute",
+      "question_text_th": "มุม 60° เป็นมุมอะไร?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "What type of angle is 135°?",
+      "question_text_en": "What type of angle is 135°?",
+      "choices": [
+        "Obtuse angle",
+        "Acute angle",
+        "Right angle",
+        "Straight angle"
+      ],
+      "correct_answer": "Obtuse angle",
+      "answer": "Obtuse angle",
+      "explanation": "135° > 90° = obtuse angle",
+      "explanation_th": "135° > 90° = มุมป้าน",
+      "difficulty": "easy",
+      "hint_th": "135° > 90° = obtuse",
+      "question_text_th": "มุม 135° เป็นมุมอะไร?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "90° + 30° + 60° = ?",
+      "question_text_en": "90° + 30° + 60° = ?",
+      "choices": [
+        "180°",
+        "170°",
+        "190°",
+        "160°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "90+30+60=180°",
+      "explanation_th": "90+30+60=180°",
+      "difficulty": "easy",
+      "hint_th": "Add degrees like whole numbers"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "45° + 45° = ? What type of angle?",
+      "question_text_en": "45° + 45° = ? What type of angle?",
+      "choices": [
+        "90° right angle",
+        "90° acute angle",
+        "80° right angle",
+        "100° obtuse angle"
+      ],
+      "correct_answer": "90° right angle",
+      "answer": "90° right angle",
+      "explanation": "45+45=90° = right angle",
+      "explanation_th": "45+45=90° ซึ่งเป็นมุมฉากพอดี",
+      "difficulty": "easy",
+      "hint_th": "45°+45°=90° = right angle",
+      "question_text_th": "45° + 45° = ? เป็นมุมอะไร?"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "What is the size of an acute angle?",
+      "question_text_en": "What is the size of an acute angle?",
+      "choices": [
+        "Less than 90°",
+        "Exactly 90°",
+        "More than 90°",
+        "180°"
+      ],
+      "correct_answer": "Less than 90°",
+      "answer": "Less than 90°",
+      "explanation": "Acute angle < 90°",
+      "explanation_th": "มุมแหลม < 90°",
+      "difficulty": "easy",
+      "hint_th": "Acute angle < 90°",
+      "question_text_th": "มุมแหลมมีขนาดเท่าไร?"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "One angle is 120°, another is 60°. Total? Types?",
+      "question_text_en": "One angle is 120°, another is 60°. Total? Types?",
+      "choices": [
+        "180°, 120° obtuse, 60° acute",
+        "180°, both acute",
+        "180°, 120° acute, 60° obtuse",
+        "170°, 120° obtuse, 60° acute"
+      ],
+      "correct_answer": "180°, 120° obtuse, 60° acute",
+      "answer": "180°, 120° obtuse, 60° acute",
+      "explanation": "120+60=180° | 120°>90°=obtuse 60°<90°=acute",
+      "explanation_th": "120+60=180° | 120°เป็นมุมป้าน 60°เป็นมุมแหลม",
+      "difficulty": "easy",
+      "hint_th": "Add and classify each",
+      "question_text_th": "มุมหนึ่ง 120° อีกมุม 60°. รวม? เป็นมุมอะไร?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "Which is correct: A right angle = 90°?",
+      "question_text_en": "Which is correct: A right angle = 90°?",
+      "choices": [
+        "Correct",
+        "Wrong - right angle > 90°",
+        "Wrong - right angle < 90°",
+        "Wrong - right angle = 180°"
+      ],
+      "correct_answer": "Correct",
+      "answer": "Correct",
+      "explanation": "Right angle = 90° is correct",
+      "explanation_th": "มุมฉาก = 90° ถูกต้อง",
+      "difficulty": "easy",
+      "hint_th": "Right angle = 90°",
+      "question_text_th": "ข้อใดถูก: มุมฉาก = 90°?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "100° + 80° = ?",
+      "question_text_en": "100° + 80° = ?",
+      "choices": [
+        "180°",
+        "170°",
+        "190°",
+        "160°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "100+80=180°",
+      "explanation_th": "100+80=180°",
+      "difficulty": "easy",
+      "hint_th": "100+80=180°"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "45° + 45° + 90° = ?",
+      "question_text_en": "45° + 45° + 90° = ?",
+      "choices": [
+        "180°",
+        "170°",
+        "190°",
+        "160°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "45+45+90=180°",
+      "explanation_th": "45+45+90=180°",
+      "difficulty": "easy",
+      "hint_th": "45+45+90=180°"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Which is NOT an acute angle: 35°, 50°, 85°, 95°?",
+      "question_text_en": "Which is NOT an acute angle: 35°, 50°, 85°, 95°?",
+      "choices": [
+        "95°",
+        "35°",
+        "50°",
+        "85°"
+      ],
+      "correct_answer": "95°",
+      "answer": "95°",
+      "explanation": "95° > 90° not acute (obtuse)",
+      "explanation_th": "95° > 90° ไม่เป็นมุมแหลม เป็นมุมป้าน",
+      "difficulty": "easy",
+      "hint_th": "Acute < 90°, so 95° is not acute",
+      "question_text_th": "มุมใดไม่เป็นมุมแหลม: 35°, 50°, 85°, 95°?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

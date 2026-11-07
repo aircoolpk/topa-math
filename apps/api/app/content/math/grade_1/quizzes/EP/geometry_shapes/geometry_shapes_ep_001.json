@@ -1,0 +1,179 @@
+{
+  "lesson_id": "geometry_shapes_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "geo_ep_q001_e01",
+      "question_text": "Lin draws 3 squares on her paper. Each square has 4 sides. How many sides are there in total?",
+      "question_text_th": "ลินวาดสี่เหลี่ยมจัตุรัส 3 รูป แต่ละรูปมี 4 ด้าน รวมมีกี่ด้าน",
+      "choices": [
+        "12 sides",
+        "16 sides",
+        "10 sides",
+        "19 sides"
+      ],
+      "correct_answer": "12 sides",
+      "answer": "12 sides",
+      "explanation": "3 × 4 = 12 sides",
+      "explanation_th": "3 × 4 = 12 ด้าน",
+      "difficulty": "easy",
+      "hint_th": "Multiply squares by sides."
+    },
+    {
+      "question_id": "geo_ep_q001_e02",
+      "question_text": "Book has 4 circles. How many corners do the circles have in total?",
+      "question_text_th": "บุ๊กมีวงกลม 4 วง วงกลมทั้งหมดมีกี่มุม",
+      "choices": [
+        "0 corners",
+        "4 corners",
+        "5 corners",
+        "7 corners"
+      ],
+      "correct_answer": "0 corners",
+      "answer": "0 corners",
+      "explanation": "Circles have 0 corners",
+      "explanation_th": "วงกลมไม่มีมุม",
+      "difficulty": "easy",
+      "hint_th": "Circles have no corners."
+    },
+    {
+      "question_id": "geo_ep_q001_e03",
+      "question_text": "Mali draws 2 triangles. How many sides do the triangles have together?",
+      "question_text_th": "มะลิวาดสามเหลี่ยม 2 รูป สามเหลี่ยมทั้งสองมีกี่ด้าน",
+      "choices": [
+        "6 sides",
+        "10 sides",
+        "4 sides",
+        "13 sides"
+      ],
+      "correct_answer": "6 sides",
+      "answer": "6 sides",
+      "explanation": "2 × 3 = 6 sides",
+      "explanation_th": "2 × 3 = 6 ด้าน",
+      "difficulty": "easy",
+      "hint_th": "Each triangle has 3 sides."
+    },
+    {
+      "question_id": "geo_ep_q001_m01",
+      "question_text": "Lin draws 3 squares and 2 circles. How many shapes does Lin draw in total?",
+      "question_text_th": "ลินวาดสี่เหลี่ยมจัตุรัส 3 รูป และวงกลม 2 วง ลินวาดรูปร่างกี่รูป",
+      "choices": [
+        "5 shapes",
+        "9 shapes",
+        "3 shapes",
+        "12 shapes"
+      ],
+      "correct_answer": "5 shapes",
+      "answer": "5 shapes",
+      "explanation": "3 + 2 = 5 shapes",
+      "explanation_th": "3 + 2 = 5 รูป",
+      "difficulty": "medium",
+      "hint_th": "Add squares and circles."
+    },
+    {
+      "question_id": "geo_ep_q001_m02",
+      "question_text": "Book has 4 rectangles. Each rectangle has 4 corners. How many corners do the rectangles have together?",
+      "question_text_th": "บุ๊กมีสี่เหลี่ยมผืนผ้า 4 รูป แต่ละรูปมี 4 มุม สี่เหลี่ยมผืนผ้าทั้งหมดมีกี่มุม",
+      "choices": [
+        "16 corners",
+        "20 corners",
+        "14 corners",
+        "23 corners"
+      ],
+      "correct_answer": "16 corners",
+      "answer": "16 corners",
+      "explanation": "4 × 4 = 16 corners",
+      "explanation_th": "4 × 4 = 16 มุม",
+      "difficulty": "medium",
+      "hint_th": "Multiply rectangles by corners."
+    },
+    {
+      "question_id": "geo_ep_q001_m03",
+      "question_text": "Ai draws 5 triangles. How many sides do the triangles have in total?",
+      "question_text_th": "อ้ายวาดสามเหลี่ยม 5 รูป สามเหลี่ยมทั้งหมดมีกี่ด้าน",
+      "choices": [
+        "15 sides",
+        "19 sides",
+        "13 sides",
+        "22 sides"
+      ],
+      "correct_answer": "15 sides",
+      "answer": "15 sides",
+      "explanation": "5 × 3 = 15 sides",
+      "explanation_th": "5 × 3 = 15 ด้าน",
+      "difficulty": "medium",
+      "hint_th": "5 triangles × 3 sides."
+    },
+    {
+      "question_id": "geo_ep_q001_m04",
+      "question_text": "Mali has 3 squares and 4 triangles. How many sides are there in total?",
+      "question_text_th": "มะลิมีสี่เหลี่ยมจัตุรัส 3 รูป และสามเหลี่ยม 4 รูป รวมมีกี่ด้าน",
+      "choices": [
+        "28 sides",
+        "32 sides",
+        "26 sides",
+        "35 sides"
+      ],
+      "correct_answer": "28 sides",
+      "answer": "28 sides",
+      "explanation": "(3 × 4) + (4 × 3) = 12 + 12 = 28 sides",
+      "explanation_th": "(3×4)+(4×3) = 12+12 = 28 ด้าน",
+      "difficulty": "medium",
+      "hint_th": "Squares + triangles."
+    },
+    {
+      "question_id": "geo_ep_q001_h01",
+      "question_text": "Lin has 4 rectangles. Each rectangle is cut into 2 triangles. How many triangles are there now?",
+      "question_text_th": "ลินมีสี่เหลี่ยมผืนผ้า 4 รูป ตัดแต่ละรูปเป็นสามเหลี่ยม 2 รูป มีสามเหลี่ยมกี่รูป",
+      "choices": [
+        "8 triangles",
+        "12 triangles",
+        "6 triangles",
+        "15 triangles"
+      ],
+      "correct_answer": "8 triangles",
+      "answer": "8 triangles",
+      "explanation": "4 × 2 = 8 triangles",
+      "explanation_th": "4 × 2 = 8 รูป",
+      "difficulty": "hard",
+      "hint_th": "Multiply by 2."
+    },
+    {
+      "question_id": "geo_ep_q001_h02",
+      "question_text": "Book has 5 circles. He draws a line through each circle, dividing each into 2 halves. How many halves does he have?",
+      "question_text_th": "บุ๊กมีวงกลม 5 วง ลากเส้นผ่านแต่ละวงแบ่งครึ่ง เขาได้ครึ่งวงกลมกี่ครึ่ง",
+      "choices": [
+        "10 halves",
+        "14 halves",
+        "8 halves",
+        "17 halves"
+      ],
+      "correct_answer": "10 halves",
+      "answer": "10 halves",
+      "explanation": "5 × 2 = 10 halves",
+      "explanation_th": "5 × 2 = 10 ครึ่ง",
+      "difficulty": "hard",
+      "hint_th": "Multiply circles by 2."
+    },
+    {
+      "question_id": "geo_ep_q001_h03",
+      "question_text": "Lin draws 3 squares and 2 triangles. Each square has 4 sides and each triangle has 3 sides. What is the total number of sides?",
+      "question_text_th": "ลินวาดสี่เหลี่ยมจัตุรัส 3 รูป และสามเหลี่ยม 2 รูป แต่ละสี่เหลี่ยมมี 4 ด้าน แต่ละสามเหลี่ยมมี 3 ด้าน รวมมีกี่ด้าน",
+      "choices": [
+        "18 sides",
+        "22 sides",
+        "16 sides",
+        "25 sides"
+      ],
+      "correct_answer": "18 sides",
+      "answer": "18 sides",
+      "explanation": "(3 × 4) + (2 × 3) = 12 + 6 = 18 sides",
+      "explanation_th": "(3×4)+(2×3) = 12+6 = 18 ด้าน",
+      "difficulty": "hard",
+      "hint_th": "Multiply and add."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

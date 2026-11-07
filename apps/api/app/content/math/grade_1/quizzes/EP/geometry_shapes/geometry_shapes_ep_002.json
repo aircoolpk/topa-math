@@ -1,0 +1,179 @@
+{
+  "lesson_id": "geometry_shapes_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "geo_ep_q002_e01",
+      "question_text": "How many sides does a triangle have?",
+      "question_text_th": "สามเหลี่ยมมีกี่ด้าน",
+      "choices": [
+        "3 sides",
+        "7 sides",
+        "1 sides",
+        "10 sides"
+      ],
+      "correct_answer": "3 sides",
+      "answer": "3 sides",
+      "explanation": "A triangle has 3 sides",
+      "explanation_th": "สามเหลี่ยมมี 3 ด้าน",
+      "difficulty": "easy",
+      "hint_th": "Count the sides."
+    },
+    {
+      "question_id": "geo_ep_q002_e02",
+      "question_text": "Book has 5 circles. How many corners do the circles have?",
+      "question_text_th": "บุ๊กมีวงกลม 5 วง วงกลมทั้งหมดมีกี่มุม",
+      "choices": [
+        "0 corners",
+        "4 corners",
+        "5 corners",
+        "7 corners"
+      ],
+      "correct_answer": "0 corners",
+      "answer": "0 corners",
+      "explanation": "Circles have 0 corners",
+      "explanation_th": "วงกลมไม่มีมุม",
+      "difficulty": "easy",
+      "hint_th": "Circles have no corners."
+    },
+    {
+      "question_id": "geo_ep_q002_e03",
+      "question_text": "Mali draws 2 rectangles. Each rectangle has 4 corners. How many corners are there in total?",
+      "question_text_th": "มะลิวาดสี่เหลี่ยมผืนผ้า 2 รูป แต่ละรูปมี 4 มุม รวมมีกี่มุม",
+      "choices": [
+        "8 corners",
+        "12 corners",
+        "6 corners",
+        "15 corners"
+      ],
+      "correct_answer": "8 corners",
+      "answer": "8 corners",
+      "explanation": "2 × 4 = 8 corners",
+      "explanation_th": "2 × 4 = 8 มุม",
+      "difficulty": "easy",
+      "hint_th": "Multiply by 4."
+    },
+    {
+      "question_id": "geo_ep_q002_m01",
+      "question_text": "Ai draws 4 squares and 3 circles. How many shapes does Ai draw?",
+      "question_text_th": "อ้ายวาดสี่เหลี่ยมจัตุรัส 4 รูป และวงกลม 3 วง อ้ายวาดรูปร่างกี่รูป",
+      "choices": [
+        "7 shapes",
+        "11 shapes",
+        "5 shapes",
+        "14 shapes"
+      ],
+      "correct_answer": "7 shapes",
+      "answer": "7 shapes",
+      "explanation": "4 + 3 = 7 shapes",
+      "explanation_th": "4 + 3 = 7 รูป",
+      "difficulty": "medium",
+      "hint_th": "Add shapes."
+    },
+    {
+      "question_id": "geo_ep_q002_m02",
+      "question_text": "Tad has 6 triangles. How many sides do the triangles have together?",
+      "question_text_th": "ต้นมีสามเหลี่ยม 6 รูป สามเหลี่ยมทั้งหมดมีกี่ด้าน",
+      "choices": [
+        "18 sides",
+        "22 sides",
+        "16 sides",
+        "25 sides"
+      ],
+      "correct_answer": "18 sides",
+      "answer": "18 sides",
+      "explanation": "6 × 3 = 18 sides",
+      "explanation_th": "6 × 3 = 18 ด้าน",
+      "difficulty": "medium",
+      "hint_th": "6 triangles × 3 sides."
+    },
+    {
+      "question_id": "geo_ep_q002_m03",
+      "question_text": "Lin has 3 rectangles and 2 squares. How many sides are there in total?",
+      "question_text_th": "ลินมีสี่เหลี่ยมผืนผ้า 3 รูป และสี่เหลี่ยมจัตุรัส 2 รูป รวมมีกี่ด้าน",
+      "choices": [
+        "20 sides",
+        "24 sides",
+        "18 sides",
+        "27 sides"
+      ],
+      "correct_answer": "20 sides",
+      "answer": "20 sides",
+      "explanation": "(3 × 4) + (2 × 4) = 12 + 8 = 20 sides",
+      "explanation_th": "(3×4)+(2×4) = 12+8 = 20 ด้าน",
+      "difficulty": "medium",
+      "hint_th": "Both have 4 sides."
+    },
+    {
+      "question_id": "geo_ep_q002_m04",
+      "question_text": "Pim draws 2 triangles and 4 squares. How many corners are there in total?",
+      "question_text_th": "พิมวาดสามเหลี่ยม 2 รูป และสี่เหลี่ยมจัตุรัส 4 รูป รวมมีกี่มุม",
+      "choices": [
+        "18 corners",
+        "22 corners",
+        "16 corners",
+        "25 corners"
+      ],
+      "correct_answer": "18 corners",
+      "answer": "18 corners",
+      "explanation": "(2 × 3) + (4 × 4) = 6 + 16 = 18 corners",
+      "explanation_th": "(2×3)+(4×4) = 6+16 = 18 มุม",
+      "difficulty": "medium",
+      "hint_th": "Triangles + squares."
+    },
+    {
+      "question_id": "geo_ep_q002_h01",
+      "question_text": "Book has 3 rectangles. He cuts each rectangle into 2 triangles. How many triangles does he have?",
+      "question_text_th": "บุ๊กมีสี่เหลี่ยมผืนผ้า 3 รูป ตัดแต่ละรูปเป็นสามเหลี่ยม 2 รูป บุ๊กได้สามเหลี่ยมกี่รูป",
+      "choices": [
+        "6 triangles",
+        "10 triangles",
+        "4 triangles",
+        "13 triangles"
+      ],
+      "correct_answer": "6 triangles",
+      "answer": "6 triangles",
+      "explanation": "3 × 2 = 6 triangles",
+      "explanation_th": "3 × 2 = 6 รูป",
+      "difficulty": "hard",
+      "hint_th": "Multiply by 2."
+    },
+    {
+      "question_id": "geo_ep_q002_h02",
+      "question_text": "Lin has 4 circles. She draws a line through each circle, making 2 halves per circle. How many halves does she have?",
+      "question_text_th": "ลินมีวงกลม 4 วง ลากเส้นผ่านแต่ละวงแบ่งครึ่ง ได้ครึ่งวงกลมกี่ครึ่ง",
+      "choices": [
+        "8 halves",
+        "12 halves",
+        "6 halves",
+        "15 halves"
+      ],
+      "correct_answer": "8 halves",
+      "answer": "8 halves",
+      "explanation": "4 × 2 = 8 halves",
+      "explanation_th": "4 × 2 = 8 ครึ่ง",
+      "difficulty": "hard",
+      "hint_th": "Multiply circles by 2."
+    },
+    {
+      "question_id": "geo_ep_q002_h03",
+      "question_text": "Mali has 5 squares and 3 triangles. Each square has 4 sides and each triangle has 3 sides. What is the total number of sides?",
+      "question_text_th": "มะลิมีสี่เหลี่ยมจัตุรัส 5 รูป และสามเหลี่ยม 3 รูป แต่ละสี่เหลี่ยมมี 4 ด้าน แต่ละสามเหลี่ยมมี 3 ด้าน รวมมีกี่ด้าน",
+      "choices": [
+        "29 sides",
+        "33 sides",
+        "27 sides",
+        "36 sides"
+      ],
+      "correct_answer": "29 sides",
+      "answer": "29 sides",
+      "explanation": "(5 × 4) + (3 × 3) = 20 + 9 = 29 sides",
+      "explanation_th": "(5×4)+(3×3) = 20+9 = 29 ด้าน",
+      "difficulty": "hard",
+      "hint_th": "Multiply and add."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

@@ -1,0 +1,187 @@
+{
+  "variant_id": "volume_measurement_th_001",
+  "variant_title_th": "การวัดปริมาตร",
+  "variant_title_en": "Volume Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดปริมาตร",
+  "title_en": "Volume Measurement",
+  "story_theme_th": "อ้ายต้มน้ำให้เดือดในหม้อ ใส่น้ำ 2 ลิตร ต้มจนเดือดแล้วเติมน้ำเพิ่มอีก 750 มิลลิลิตร อ้ายมีน้ำในหม้อกี่มิลลิลิตร",
+  "helper_tip": "เปลี่ยนหน่วยให้เหมือนกันก่อน 1 ลิตร = 1,000 มิลลิลิตร",
+  "think_story_th": "2 ลิตร = 2,000 มล., รวม: 2,000 + 750 = 2,750 มล.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "อ้ายต้มน้ำให้เดือดในหม้อ ใส่น้ำ 2 ลิตร ต้มจนเดือดแล้วเติมน้ำเพิ่มอีก 750 มิลลิลิตร อ้ายมีน้ำในหม้อกี่มิลลิลิตร",
+      "data": {
+        "content_th": "อ้ายต้มน้ำให้เดือดในหม้อ ใส่น้ำ 2 ลิตร ต้มจนเดือดแล้วเติมน้ำเพิ่มอีก 750 มิลลิลิตร อ้ายมีน้ำในหม้อกี่มิลลิลิตร"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "2 ลิตร = 2,000 มล., รวม: 2,000 + 750 = 2,750 มล.",
+      "data": {
+        "content_th": "2 ลิตร = 2,000 มล., รวม: 2,000 + 750 = 2,750 มล."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "น้ำเริ่มต้น",
+            "value": 2000,
+            "display": "2,000 มล.",
+            "color": "#4ECDC4",
+            "width_pct": 72
+          },
+          {
+            "label": "เติมเพิ่ม",
+            "value": 750,
+            "display": "750 มล.",
+            "color": "#45B7D1",
+            "width_pct": 27
+          },
+          {
+            "label": "รวม",
+            "value": 2750,
+            "display": "2,750 มล.",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ],
+        "unit": "มล."
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: เปลี่ยนลิตรเป็นมิลลิลิตร",
+            "expression": "2 ลิตร = 2,000 มล.",
+            "a": 2,
+            "b": 1000,
+            "res": 2000,
+            "op": "*",
+            "formula": {
+              "display": "2 x 1,000 = 2,000",
+              "a": 2,
+              "b": 1000,
+              "result": 2000,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "2",
+              "b_display": "1,000",
+              "result_display": "2,000",
+              "operation": "multiply"
+            },
+            "story_connection": "2 ลิตร = 2,000 มล."
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: รวมน้ำทั้งหมด",
+            "expression": "2,000 + 750 = 2,750 มล.",
+            "a": 2000,
+            "b": 750,
+            "res": 2750,
+            "op": "+",
+            "formula": {
+              "display": "2,000 + 750 = 2,750",
+              "a": 2000,
+              "b": 750,
+              "result": 2750,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "2,000",
+              "b_display": "750",
+              "result_display": "2,750",
+              "operation": "add"
+            },
+            "story_connection": "2,000 + 750 = 2,750 มล."
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "2,000 + 750 = 2,750",
+      "content": "2,000 + 750 = 2,750",
+      "data": {
+        "expression": "2,000 + 750 = 2,750",
+        "content_th": "2,000 + 750 = 2,750",
+        "operations": [
+          {
+            "op": "*",
+            "a": 2,
+            "b": 1000,
+            "result": 2000
+          },
+          {
+            "op": "+",
+            "a": 2000,
+            "b": 750,
+            "result": 2750
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "แม่ใส่น้ำมะนาว 1 ลิตร 500 มิลลิลิตร ลูกดื่มไป 800 มิลลิลิตร เหลือน้ำมะนาวกี่มิลลิลิตร",
+      "choices": [
+        "700 มล.",
+        "600 มล.",
+        "800 มล.",
+        "500 มล."
+      ],
+      "correct_answer": "700 มล.",
+      "explanation": "1,500-800=700 มล.",
+      "data": {
+        "question": "แม่ใส่น้ำมะนาว 1 ลิตร 500 มิลลิลิตร ลูกดื่มไป 800 มิลลิลิตร เหลือน้ำมะนาวกี่มิลลิลิตร",
+        "choices": [
+          "700 มล.",
+          "600 มล.",
+          "800 มล.",
+          "500 มล."
+        ],
+        "correct_answer": "700 มล.",
+        "explanation": "1,500-800=700 มล."
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

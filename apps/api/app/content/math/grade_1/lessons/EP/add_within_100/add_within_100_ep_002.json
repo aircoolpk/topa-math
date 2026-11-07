@@ -1,0 +1,210 @@
+{
+  "variant_id": "add_within_100_ep_002",
+  "variant_title_en": "Addition within 100",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Addition within 100",
+  "title_th": "",
+  "story_theme_en": "A shop sells 47 red balls and 38 blue balls. How many balls are there in total?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "47 + 38 = 85. 85 balls.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A shop sells 47 red balls and 38 blue balls. How many balls are there in total?",
+      "data": {
+        "content_en": "A shop sells 47 red balls and 38 blue balls. How many balls are there in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "47 + 38 = 85. 85 balls.",
+      "data": {
+        "content_en": "47 + 38 = 85. 85 balls."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "unit": "balls",
+        "bars": [
+          {
+            "label": "Red balls",
+            "value": 47,
+            "display": "47 balls",
+            "color": "#96CEB4",
+            "width_pct": 55
+          },
+          {
+            "label": "Blue balls",
+            "value": 38,
+            "display": "38 balls",
+            "color": "#A8D8EA",
+            "width_pct": 44
+          },
+          {
+            "label": "Total",
+            "value": 85,
+            "display": "85 balls",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "47 + 38 = 85",
+            "formula": {
+              "display": "47 + 38 = 85",
+              "a": 47,
+              "b": 38,
+              "result": 85,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}47&&\\\\\\\\ + 38&&\\\\\\\\ \\\\hline 85&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "47",
+              "b_display": "38",
+              "result_display": "85",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 47 + 38 = 85"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "47 + 38 = 85",
+      "content": "47 + 38 = 85",
+      "data": {
+        "expression": "47 + 38 = 85",
+        "operations": [
+          {
+            "op": "+",
+            "a": 47,
+            "b": 38,
+            "result": 85
+          }
+        ],
+        "content_en": "47 + 38 = 85"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Tad has 40 marbles and Mali has 30 marbles. How many marbles together?",
+      "choices": [
+        "70 marbles",
+        "75 marbles",
+        "67 marbles",
+        "78 marbles"
+      ],
+      "correct_answer": "70 marbles",
+      "explanation": "40 + 30 = 70 marbles",
+      "data": {
+        "question": "Tad has 40 marbles and Mali has 30 marbles. How many marbles together?",
+        "choices": [
+          "70 marbles",
+          "75 marbles",
+          "67 marbles",
+          "78 marbles"
+        ],
+        "correct_answer": "70 marbles",
+        "explanation": "40 + 30 = 70 marbles"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "total",
+      "th": "รวม",
+      "definition_en": "The whole amount."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To put numbers together."
+    },
+    {
+      "en": "beads",
+      "th": "ลูกปัด",
+      "definition_en": "Small colorful items used for counting."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "A shop sells 47 red balls and 38 blue balls. How many balls are there in total?...",
+      "solution_en": "47 + 38 = 85"
+    }
+  ],
+  "questions": []
+}

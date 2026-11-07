@@ -1,0 +1,192 @@
+{
+  "variant_id": "decimals_ep_001",
+  "variant_title_en": "Decimals",
+  "status": "needs_review",
+  "title_en": "Decimals",
+  "story_theme_en": "A fabric shop sells high-quality silk fabric at 245.75 baht per meter. Lin buys 3 meters of fabric. How much does she pay in total? If she has a 1,000 baht banknote, how much change will she get?",
+  "helper_tip": "Multiply decimals like whole numbers, then place the decimal point in the correct position.",
+  "hint_th": "คูณทศนิยมเหมือนจำนวนเต็ม แล้วใส่จุดทศนิยมให้ถูกตำแหน่ง",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A fabric shop sells high-quality silk fabric at 245.75 baht per meter. Lin buys 3 meters of fabric. How much does she pay in total? If she has a 1,000 baht banknote, how much change will she get?",
+      "data": {
+        "content_en": "A fabric shop sells high-quality silk fabric at 245.75 baht per meter. Lin buys 3 meters of fabric. How much does she pay in total? If she has a 1,000 baht banknote, how much change will she get?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Multiply price per meter → 245.75 x 3 = total price | Step 2: Find change → 1,000 - total price = change",
+      "data": {
+        "content_en": "Step 1: Multiply price per meter → 245.75 x 3 = total price | Step 2: Find change → 1,000 - total price = change"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Decimal Model",
+      "model_type": "decimal_model",
+      "data": {
+        "model_type": "decimal_model",
+        "operation": "multiply",
+        "bars": [
+          {
+            "label": "Meter 1",
+            "value": 245.75,
+            "display": "245.75 baht",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Total 3 meters",
+            "value": 737.25,
+            "display": "737.25 baht",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Money paid",
+            "value": 1000,
+            "display": "1,000.00 baht",
+            "color": "#FF6B6B",
+            "width_pct": 100
+          },
+          {
+            "label": "Change",
+            "value": 262.75,
+            "display": "262.75 baht",
+            "color": "#C7F464",
+            "width_pct": 26,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Multiply fabric price",
+            "expression": "245.75 x 3 = 737.25",
+            "formula": {
+              "display": "245.75 x 3 = 737.25",
+              "a": 245.75,
+              "b": 3,
+              "result": 737.25,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}245.75&\\\\\\\\ ×\\\\quad 3&\\\\\\\\ \\\\hline 737.25&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "245.75",
+              "b_display": "3",
+              "result_display": "737.25",
+              "operation": "mul"
+            },
+            "story_connection": "245.75 x 3 = 737.25 baht"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find the change",
+            "expression": "1,000.00 - 737.25 = 262.75",
+            "formula": {
+              "display": "1,000.00 - 737.25 = 262.75",
+              "a": 1000,
+              "b": 737.25,
+              "result": 262.75,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}1000&\\\\\\\\ -\\\\quad 737.25&\\\\\\\\ \\\\hline 262.75&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "1000",
+              "b_display": "737.25",
+              "result_display": "262.75",
+              "operation": "sub"
+            },
+            "story_connection": "1,000.00 - 737.25 = 262.75 baht change"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "245.75 x 3 = 737.25 | 1,000.00 - 737.25 = 262.75",
+      "content": "245.75 x 3 = 737.25 baht  |  1,000.00 - 737.25 = 262.75 baht change",
+      "data": {
+        "expression": "245.75 x 3 = 737.25 | 1,000.00 - 737.25 = 262.75",
+        "operations": [
+          {
+            "op": "x",
+            "a": 245.75,
+            "b": 3,
+            "result": 737.25
+          },
+          {
+            "op": "-",
+            "a": 1000,
+            "b": 737.25,
+            "result": 262.75
+          }
+        ],
+        "content_en": "245.75 x 3 = 737.25 baht  |  1,000.00 - 737.25 = 262.75 baht change"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Mangoes cost 35.60 baht per kilogram. Lin buys 4 kilograms. How much does she pay? If she pays with 200 baht, how much change does she get?",
+      "choices": [
+        "142.40 baht, change 57.60 baht",
+        "142.40 baht, change 58.60 baht",
+        "143.40 baht, change 56.60 baht",
+        "141.40 baht, change 58.60 baht"
+      ],
+      "correct_answer": "142.40 baht, change 57.60 baht",
+      "explanation": "35.60 x 4 = 142.40 baht | 200.00 - 142.40 = 57.60 baht change",
+      "data": {
+        "question": "Mangoes cost 35.60 baht per kilogram. Lin buys 4 kilograms. How much does she pay? If she pays with 200 baht, how much change does she get?",
+        "choices": [
+          "142.40 baht, change 57.60 baht",
+          "142.40 baht, change 58.60 baht",
+          "143.40 baht, change 56.60 baht",
+          "141.40 baht, change 58.60 baht"
+        ],
+        "correct_answer": "142.40 baht, change 57.60 baht",
+        "explanation": "35.60 x 4 = 142.40 baht | 200.00 - 142.40 = 57.60 baht change"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "12.50 x 4 = ?",
+      "solution_en": "12.50 x 4 = 50.00 baht"
+    }
+  ],
+  "common_mistakes": [
+    "Placing the decimal point in the wrong position after multiplying",
+    "Subtracting decimals without aligning the decimal points"
+  ],
+  "hints": [
+    "Multiply 245.75 x 3 ignoring the decimal = 24575 x 3 = 73725. Place decimal: 2 decimal places = 737.25."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "decimal",
+      "th": "ทศนิยม",
+      "definition_en": "A number with a decimal point"
+    },
+    {
+      "en": "decimal point",
+      "th": "จุดทศนิยม",
+      "definition_en": "The dot that separates the whole number from the fractional part"
+    }
+  ]
+}

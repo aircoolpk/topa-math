@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ReferralCapture } from '@/components/referral/ReferralCapture'
+import { buildApiUrl, getAppBaseUrl } from '@/lib/public-env'
 
 export const dynamic = 'force-dynamic'
+export const runtime = 'edge'
 
 interface DashboardShareData {
   display_name?: string
@@ -20,15 +22,14 @@ interface DashboardShareData {
 }
 
 async function getShare(token: string): Promise<DashboardShareData | null> {
-  const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8001'
-  const res = await fetch(`${apiBase}/share/dashboard/${encodeURIComponent(token)}`, { cache: 'no-store' })
+  const res = await fetch(buildApiUrl(`/share/dashboard/${encodeURIComponent(token)}`), { cache: 'no-store' })
   if (!res.ok) return null
   const payload = await res.json()
   return payload.data as DashboardShareData
 }
 
 function appUrl() {
-  return (process.env.NEXT_PUBLIC_APP_URL || 'https://topamath.com').replace(/\/$/, '')
+  return getAppBaseUrl()
 }
 
 export async function generateMetadata({ params }: { params: { token: string } }): Promise<Metadata> {

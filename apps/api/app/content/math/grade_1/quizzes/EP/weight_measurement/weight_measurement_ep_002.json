@@ -1,0 +1,179 @@
+{
+  "lesson_id": "weight_measurement_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "wt_ep_q002_e01",
+      "question_text": "A bag of potatoes weighs 8 kg. A bag of carrots weighs 5 kg. How much heavier is the potato bag than the carrot bag?",
+      "question_text_th": "ถุงมันฝรั่งหนัก 8 กิโลกรัม ถุงแครอทหนัก 5 กิโลกรัม ถุงมันฝรั่งหนักกว่าถุงแครอทกี่กิโลกรัม",
+      "choices": [
+        "3 kg heavier",
+        "6 kg heavier",
+        "1 kg heavier",
+        "9 kg heavier"
+      ],
+      "correct_answer": "3 kg heavier",
+      "answer": "3 kg heavier",
+      "explanation": "8 - 5 = 3 kg heavier",
+      "explanation_th": "8 - 5 = 3 กก.",
+      "difficulty": "easy",
+      "hint_th": "Find the difference."
+    },
+    {
+      "question_id": "wt_ep_q002_e02",
+      "question_text": "An apple weighs 2 kg and an orange weighs 3 kg. How much do they weigh together?",
+      "question_text_th": "แอปเปิ้ลหนัก 2 กิโลกรัม ส้มหนัก 3 กิโลกรัม ทั้งสองหนักรวมกี่กิโลกรัม",
+      "choices": [
+        "5 kg",
+        "8 kg",
+        "3 kg",
+        "11 kg"
+      ],
+      "correct_answer": "5 kg",
+      "answer": "5 kg",
+      "explanation": "2 + 3 = 5 kg",
+      "explanation_th": "2 + 3 = 5 กก.",
+      "difficulty": "easy",
+      "hint_th": "Add the two."
+    },
+    {
+      "question_id": "wt_ep_q002_e03",
+      "question_text": "A large watermelon weighs 9 kg. A small watermelon weighs 4 kg. How much heavier is the large one?",
+      "question_text_th": "แตงโมใหญ่หนัก 9 กิโลกรัม แตงโมเล็กหนัก 4 กิโลกรัม ใหญ่หนักกว่าเล็กกี่กิโลกรัม",
+      "choices": [
+        "5 kg heavier",
+        "8 kg heavier",
+        "3 kg heavier",
+        "11 kg heavier"
+      ],
+      "correct_answer": "5 kg heavier",
+      "answer": "5 kg heavier",
+      "explanation": "9 - 4 = 5 kg heavier",
+      "explanation_th": "9 - 4 = 5 กก.",
+      "difficulty": "easy",
+      "hint_th": "Subtract."
+    },
+    {
+      "question_id": "wt_ep_q002_m01",
+      "question_text": "A sack of onions weighs 16 kg. A sack of garlic weighs 9 kg. How much heavier is the onion sack than the garlic sack?",
+      "question_text_th": "กระสอบหอมหัวใหญ่หนัก 16 กิโลกรัม กระสอบกระเทียมหนัก 9 กิโลกรัม หอมหัวใหญ่หนักกว่ากระเทียมกี่กิโลกรัม",
+      "choices": [
+        "7 kg heavier",
+        "10 kg heavier",
+        "5 kg heavier",
+        "13 kg heavier"
+      ],
+      "correct_answer": "7 kg heavier",
+      "answer": "7 kg heavier",
+      "explanation": "16 - 9 = 7 kg heavier",
+      "explanation_th": "16 - 9 = 7 กก.",
+      "difficulty": "medium",
+      "hint_th": "Subtract garlic from onion."
+    },
+    {
+      "question_id": "wt_ep_q002_m02",
+      "question_text": "Mali's pumpkin weighs 12 kg. Her brother's pumpkin weighs 8 kg. How much lighter is the brother's pumpkin?",
+      "question_text_th": "ฟักทองมะลิหนัก 12 กิโลกรัม ฟักทองพี่ชายหนัก 8 กิโลกรัม ฟักทองพี่เบากว่ากี่กิโลกรัม",
+      "choices": [
+        "4 kg lighter",
+        "7 kg lighter",
+        "2 kg lighter",
+        "10 kg lighter"
+      ],
+      "correct_answer": "4 kg lighter",
+      "answer": "4 kg lighter",
+      "explanation": "12 - 8 = 4 kg lighter",
+      "explanation_th": "12 - 8 = 4 กก.",
+      "difficulty": "medium",
+      "hint_th": "Find the lighter amount."
+    },
+    {
+      "question_id": "wt_ep_q002_m03",
+      "question_text": "Book's bag weighs 15 kg. He removes 6 kg of books from it. How heavy is the bag now?",
+      "question_text_th": "กระเป๋าบุ๊กหนัก 15 กิโลกรัม เอาหนังสือออก 6 กิโลกรัม กระเป๋าหนักเท่าไหร่",
+      "choices": [
+        "9 kg",
+        "12 kg",
+        "7 kg",
+        "15 kg"
+      ],
+      "correct_answer": "9 kg",
+      "answer": "9 kg",
+      "explanation": "15 - 6 = 9 kg",
+      "explanation_th": "15 - 6 = 9 กก.",
+      "difficulty": "medium",
+      "hint_th": "Remove some weight."
+    },
+    {
+      "question_id": "wt_ep_q002_m04",
+      "question_text": "Ai has two melons. One weighs 11 kg and the other weighs 7 kg. What is their total weight?",
+      "question_text_th": "อ้ายมีแตง 2 ลูก ลูกหนึ่งหนัก 11 กิโลกรัม อีกลูกหนัก 7 กิโลกรัม รวมหนักเท่าไหร่",
+      "choices": [
+        "18 kg",
+        "21 kg",
+        "16 kg",
+        "24 kg"
+      ],
+      "correct_answer": "18 kg",
+      "answer": "18 kg",
+      "explanation": "11 + 7 = 18 kg",
+      "explanation_th": "11 + 7 = 18 กก.",
+      "difficulty": "medium",
+      "hint_th": "Add both melons."
+    },
+    {
+      "question_id": "wt_ep_q002_h01",
+      "question_text": "A watermelon is 8 kg, a papaya is 5 kg, and a mango is 3 kg. Lin buys all three. What is the total weight?",
+      "question_text_th": "แตงโม 8 กิโลกรัม มะลึก 5 กิโลกรัม มะม่วง 3 กิโลกรัม ลินซื้อทั้งสาม รวมหนักเท่าไหร่",
+      "choices": [
+        "16 kg",
+        "19 kg",
+        "14 kg",
+        "22 kg"
+      ],
+      "correct_answer": "16 kg",
+      "answer": "16 kg",
+      "explanation": "8 + 5 + 3 = 16 kg",
+      "explanation_th": "8 + 5 + 3 = 16 กก.",
+      "difficulty": "hard",
+      "hint_th": "Add all three fruits."
+    },
+    {
+      "question_id": "wt_ep_q002_h02",
+      "question_text": "A bag of rice weighs 20 kg. After cooking some rice, the bag weighs 13 kg. How much rice was cooked?",
+      "question_text_th": "ข้าวสารหนัก 20 กิโลกรัม หุงข้าวไปบางส่วน เหลือ 13 กิโลกรัม หุงข้าวไปเท่าไหร่",
+      "choices": [
+        "7 kg",
+        "10 kg",
+        "5 kg",
+        "13 kg"
+      ],
+      "correct_answer": "7 kg",
+      "answer": "7 kg",
+      "explanation": "20 - 13 = 7 kg",
+      "explanation_th": "20 - 13 = 7 กก.",
+      "difficulty": "hard",
+      "hint_th": "Subtract remaining."
+    },
+    {
+      "question_id": "wt_ep_q002_h03",
+      "question_text": "Mali has a pumpkin of 14 kg. She gives 5 kg to Lin and receives 8 kg of watermelon from Lin. What is the new weight of Mali's fruits?",
+      "question_text_th": "มะลิมีฟักทอง 14 กิโลกรัม ให้ลิน 5 กิโลกรัม และรับแตงโม 8 กิโลกรัมจากลิน ผลไม้มะลิหนักเท่าไหร่ตอนนี้",
+      "choices": [
+        "17 kg",
+        "20 kg",
+        "15 kg",
+        "23 kg"
+      ],
+      "correct_answer": "17 kg",
+      "answer": "17 kg",
+      "explanation": "14 - 5 + 8 = 17 kg",
+      "explanation_th": "14 - 5 + 8 = 17 กก.",
+      "difficulty": "hard",
+      "hint_th": "Give away then receive."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

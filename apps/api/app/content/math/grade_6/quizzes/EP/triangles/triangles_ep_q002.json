@@ -1,0 +1,381 @@
+{
+  "quiz_id": "triangles_ep_q002",
+  "title_th": "รูปสามเหลี่ยม",
+  "title_en": "Triangles",
+  "status": "needs_review",
+  "variant_id": "triangles_ep_q002",
+  "variant_title_th": "รูปสามเหลี่ยม",
+  "variant_title_en": "Triangles",
+  "questions": [
+    {
+      "question_id": "triangle_q002_m01",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมหน้าจั่วมีด้านข้างยาว 6 ซม. ทั้งสองด้าน และฐาน 8 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "An isosceles triangle has two equal sides of 6 cm each and a base of 8 cm. What is its perimeter?",
+      "choices_th": [
+        "14 cm",
+        "20 cm",
+        "18 cm",
+        "22 cm"
+      ],
+      "choices_en": [
+        "14 cm",
+        "20 cm",
+        "18 cm",
+        "22 cm"
+      ],
+      "correct_answer_th": "20 cm",
+      "correct_answer_en": "20 cm",
+      "answer_th": "20 cm",
+      "answer_en": "20 cm",
+      "answer": "20 cm",
+      "explanation_th": "6+6+8=20 cm",
+      "explanation_en": "6+6+8=20 cm",
+      "difficulty": "easy",
+      "choices": [
+        "14 cm",
+        "20 cm",
+        "18 cm",
+        "22 cm"
+      ],
+      "correct_answer": "20 cm",
+      "question_text": "สามเหลี่ยมหน้าจั่วมีด้านข้างยาว 6 ซม. ทั้งสองด้าน และฐาน 8 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "6+6+8=20 cm",
+      "question_text_th": "สามเหลี่ยมหน้าจั่วมีด้านข้างยาว 6 ซม. ทั้งสองด้าน และฐาน 8 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "An isosceles triangle has two equal sides of 6 cm each and a base of 8 cm. What is its perimeter?"
+    },
+    {
+      "question_id": "triangle_q002_m02",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมมุมแหลมทุกมุมมีขนาดน้อยกว่ากี่องศา",
+      "question_en": "An acute triangle has all angles less than how many degrees?",
+      "choices_th": [
+        "> 90°",
+        "< 90°",
+        "= 90°",
+        "< 180°"
+      ],
+      "choices_en": [
+        "> 90°",
+        "< 90°",
+        "= 90°",
+        "< 180°"
+      ],
+      "correct_answer_th": "< 90°",
+      "correct_answer_en": "< 90°",
+      "answer_th": "< 90°",
+      "answer_en": "< 90°",
+      "answer": "< 90°",
+      "explanation_th": "Acute angles < 90°",
+      "explanation_en": "Acute angles < 90°",
+      "difficulty": "easy",
+      "choices": [
+        "> 90°",
+        "< 90°",
+        "= 90°",
+        "< 180°"
+      ],
+      "correct_answer": "< 90°",
+      "question_text": "สามเหลี่ยมมุมแหลมทุกมุมมีขนาดน้อยกว่ากี่องศา",
+      "explanation": "Acute angles < 90°",
+      "question_text_th": "สามเหลี่ยมมุมแหลมทุกมุมมีขนาดน้อยกว่ากี่องศา",
+      "question_text_en": "An acute triangle has all angles less than how many degrees?"
+    },
+    {
+      "question_id": "triangle_q002_m03",
+      "type": "multiple_choice",
+      "question_th": "มุมภายในของรูปสามเหลี่ยมรวมกันกี่องศา",
+      "question_en": "What is the sum of interior angles of a triangle?",
+      "choices_th": [
+        "90°",
+        "360°",
+        "180°",
+        "270°"
+      ],
+      "choices_en": [
+        "90°",
+        "360°",
+        "180°",
+        "270°"
+      ],
+      "correct_answer_th": "180°",
+      "correct_answer_en": "180°",
+      "answer_th": "180°",
+      "answer_en": "180°",
+      "answer": "180°",
+      "explanation_th": "Sum of interior angles = 180°",
+      "explanation_en": "Sum of interior angles = 180°",
+      "difficulty": "easy",
+      "choices": [
+        "90°",
+        "360°",
+        "180°",
+        "270°"
+      ],
+      "correct_answer": "180°",
+      "question_text": "มุมภายในของรูปสามเหลี่ยมรวมกันกี่องศา",
+      "explanation": "Sum of interior angles = 180°",
+      "question_text_th": "มุมภายในของรูปสามเหลี่ยมรวมกันกี่องศา",
+      "question_text_en": "What is the sum of interior angles of a triangle?"
+    },
+    {
+      "question_id": "triangle_q002_m04",
+      "type": "multiple_choice",
+      "question_th": "รูปสามเหลี่ยมมีด้าน 9, 9, 14 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "A triangle has sides 9, 9, and 14 cm. What is its perimeter?",
+      "choices_th": [
+        "27 cm",
+        "32 cm",
+        "28 cm",
+        "23 cm"
+      ],
+      "choices_en": [
+        "27 cm",
+        "32 cm",
+        "28 cm",
+        "23 cm"
+      ],
+      "correct_answer_th": "32 cm",
+      "correct_answer_en": "32 cm",
+      "answer_th": "32 cm",
+      "answer_en": "32 cm",
+      "answer": "32 cm",
+      "explanation_th": "9+9+14=32 cm",
+      "explanation_en": "9+9+14=32 cm",
+      "difficulty": "easy",
+      "choices": [
+        "27 cm",
+        "32 cm",
+        "28 cm",
+        "23 cm"
+      ],
+      "correct_answer": "32 cm",
+      "question_text": "รูปสามเหลี่ยมมีด้าน 9, 9, 14 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "9+9+14=32 cm",
+      "question_text_th": "รูปสามเหลี่ยมมีด้าน 9, 9, 14 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "A triangle has sides 9, 9, and 14 cm. What is its perimeter?"
+    },
+    {
+      "question_id": "triangle_q002_m05",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมมุมป้านมีมุม 100° และ 30° มุมที่สามกี่องศา",
+      "question_en": "An obtuse triangle has angles of 100° and 30°. What is the third angle?",
+      "choices_th": [
+        "40°",
+        "50°",
+        "60°",
+        "30°"
+      ],
+      "choices_en": [
+        "40°",
+        "50°",
+        "60°",
+        "30°"
+      ],
+      "correct_answer_th": "50°",
+      "correct_answer_en": "50°",
+      "answer_th": "50°",
+      "answer_en": "50°",
+      "answer": "50°",
+      "explanation_th": "180 - 100 - 30 = 50°",
+      "explanation_en": "180 - 100 - 30 = 50°",
+      "difficulty": "easy",
+      "choices": [
+        "40°",
+        "50°",
+        "60°",
+        "30°"
+      ],
+      "correct_answer": "50°",
+      "question_text": "สามเหลี่ยมมุมป้านมีมุม 100° และ 30° มุมที่สามกี่องศา",
+      "explanation": "180 - 100 - 30 = 50°",
+      "question_text_th": "สามเหลี่ยมมุมป้านมีมุม 100° และ 30° มุมที่สามกี่องศา",
+      "question_text_en": "An obtuse triangle has angles of 100° and 30°. What is the third angle?"
+    },
+    {
+      "question_id": "triangle_q002_m06",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมด้านเท่ารูปหนึ่งมีความยาวรอบรูป 27 ซม. แต่ละด้านยาวเท่าไร",
+      "question_en": "An equilateral triangle has a perimeter of 27 cm. How long is each side?",
+      "choices_th": [
+        "6 cm",
+        "7 cm",
+        "8 cm",
+        "9 cm"
+      ],
+      "choices_en": [
+        "6 cm",
+        "7 cm",
+        "8 cm",
+        "9 cm"
+      ],
+      "correct_answer_th": "9 cm",
+      "correct_answer_en": "9 cm",
+      "answer_th": "9 cm",
+      "answer_en": "9 cm",
+      "answer": "9 cm",
+      "explanation_th": "27 ÷ 3 = 9 cm",
+      "explanation_en": "27 ÷ 3 = 9 cm",
+      "difficulty": "easy",
+      "choices": [
+        "6 cm",
+        "7 cm",
+        "8 cm",
+        "9 cm"
+      ],
+      "correct_answer": "9 cm",
+      "question_text": "สามเหลี่ยมด้านเท่ารูปหนึ่งมีความยาวรอบรูป 27 ซม. แต่ละด้านยาวเท่าไร",
+      "explanation": "27 ÷ 3 = 9 cm",
+      "question_text_th": "สามเหลี่ยมด้านเท่ารูปหนึ่งมีความยาวรอบรูป 27 ซม. แต่ละด้านยาวเท่าไร",
+      "question_text_en": "An equilateral triangle has a perimeter of 27 cm. How long is each side?"
+    },
+    {
+      "question_id": "triangle_q002_m07",
+      "type": "multiple_choice",
+      "question_th": "รูปสามเหลี่ยมมีด้าน 6, 10, 8 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "A triangle has sides 6, 10, and 8 cm. What is its perimeter?",
+      "choices_th": [
+        "22 cm",
+        "24 cm",
+        "20 cm",
+        "18 cm"
+      ],
+      "choices_en": [
+        "22 cm",
+        "24 cm",
+        "20 cm",
+        "18 cm"
+      ],
+      "correct_answer_th": "24 cm",
+      "correct_answer_en": "24 cm",
+      "answer_th": "24 cm",
+      "answer_en": "24 cm",
+      "answer": "24 cm",
+      "explanation_th": "6+10+8=24 cm",
+      "explanation_en": "6+10+8=24 cm",
+      "difficulty": "easy",
+      "choices": [
+        "22 cm",
+        "24 cm",
+        "20 cm",
+        "18 cm"
+      ],
+      "correct_answer": "24 cm",
+      "question_text": "รูปสามเหลี่ยมมีด้าน 6, 10, 8 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "6+10+8=24 cm",
+      "question_text_th": "รูปสามเหลี่ยมมีด้าน 6, 10, 8 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "A triangle has sides 6, 10, and 8 cm. What is its perimeter?"
+    },
+    {
+      "question_id": "triangle_q002_m08",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมมุมฉากมีมุมประกอบมุมฉากเท่าไร",
+      "question_en": "A right triangle has a right angle of how many degrees?",
+      "choices_th": [
+        "30°",
+        "45°",
+        "90°",
+        "60°"
+      ],
+      "choices_en": [
+        "30°",
+        "45°",
+        "90°",
+        "60°"
+      ],
+      "correct_answer_th": "90°",
+      "correct_answer_en": "90°",
+      "answer_th": "90°",
+      "answer_en": "90°",
+      "answer": "90°",
+      "explanation_th": "Right angle = 90°",
+      "explanation_en": "Right angle = 90°",
+      "difficulty": "easy",
+      "choices": [
+        "30°",
+        "45°",
+        "90°",
+        "60°"
+      ],
+      "correct_answer": "90°",
+      "question_text": "สามเหลี่ยมมุมฉากมีมุมประกอบมุมฉากเท่าไร",
+      "explanation": "Right angle = 90°",
+      "question_text_th": "สามเหลี่ยมมุมฉากมีมุมประกอบมุมฉากเท่าไร",
+      "question_text_en": "A right triangle has a right angle of how many degrees?"
+    },
+    {
+      "question_id": "triangle_q002_m09",
+      "type": "multiple_choice",
+      "question_th": "รูปสามเหลี่ยมมีด้าน 5, 12, 13 ซม. จัดเป็นสามเหลี่ยมมุมฉากเพราะอะไร",
+      "question_en": "A triangle has sides 5, 12, 13 cm. Why is it a right triangle?",
+      "choices_th": [
+        "5²+12²=13²",
+        "5+12=13",
+        "13²-12²=5²",
+        "5×12=13"
+      ],
+      "choices_en": [
+        "5²+12²=13²",
+        "5+12=13",
+        "13²-12²=5²",
+        "5×12=13"
+      ],
+      "correct_answer_th": "5²+12²=13²",
+      "correct_answer_en": "5²+12²=13²",
+      "answer_th": "5²+12²=13²",
+      "answer_en": "5²+12²=13²",
+      "answer": "5²+12²=13²",
+      "explanation_th": "5²+12²=25+144=169=13²",
+      "explanation_en": "5²+12²=25+144=169=13²",
+      "difficulty": "hard",
+      "choices": [
+        "5²+12²=13²",
+        "5+12=13",
+        "13²-12²=5²",
+        "5×12=13"
+      ],
+      "correct_answer": "5²+12²=13²",
+      "question_text": "รูปสามเหลี่ยมมีด้าน 5, 12, 13 ซม. จัดเป็นสามเหลี่ยมมุมฉากเพราะอะไร",
+      "explanation": "5²+12²=25+144=169=13²",
+      "question_text_th": "รูปสามเหลี่ยมมีด้าน 5, 12, 13 ซม. จัดเป็นสามเหลี่ยมมุมฉากเพราะอะไร",
+      "question_text_en": "A triangle has sides 5, 12, 13 cm. Why is it a right triangle?"
+    },
+    {
+      "question_id": "triangle_q002_m10",
+      "type": "multiple_choice",
+      "question_th": "มุมยอดของสามเหลี่ยมหน้าจั่วกาง 40° แต่ละมุมที่ฐานกี่องศา",
+      "question_en": "The vertex angle of an isosceles triangle is 40°. What is each base angle?",
+      "choices_th": [
+        "70°",
+        "65°",
+        "60°",
+        "55°"
+      ],
+      "choices_en": [
+        "70°",
+        "65°",
+        "60°",
+        "55°"
+      ],
+      "correct_answer_th": "70°",
+      "correct_answer_en": "70°",
+      "answer_th": "70°",
+      "answer_en": "70°",
+      "answer": "70°",
+      "explanation_th": "Base angles = (180-40)÷2 = 70°",
+      "explanation_en": "Base angles = (180-40)÷2 = 70°",
+      "difficulty": "medium",
+      "choices": [
+        "70°",
+        "65°",
+        "60°",
+        "55°"
+      ],
+      "correct_answer": "70°",
+      "question_text": "มุมยอดของสามเหลี่ยมหน้าจั่วกาง 40° แต่ละมุมที่ฐานกี่องศา",
+      "explanation": "Base angles = (180-40)÷2 = 70°",
+      "question_text_th": "มุมยอดของสามเหลี่ยมหน้าจั่วกาง 40° แต่ละมุมที่ฐานกี่องศา",
+      "question_text_en": "The vertex angle of an isosceles triangle is 40°. What is each base angle?"
+    }
+  ]
+}

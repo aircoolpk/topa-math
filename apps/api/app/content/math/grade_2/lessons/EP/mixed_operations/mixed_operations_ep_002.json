@@ -1,0 +1,326 @@
+{
+  "variant_id": "mixed_operations_ep_002",
+  "variant_title_th": "การดำเนินการผสม - สวน",
+  "variant_title_en": "Garden Theme",
+  "status": "needs_review",
+  "title_en": "Mixed Addition and Subtraction",
+  "title_th": "การบวกและการลบผสมกัน",
+  "story_theme_en": "A garden has 38 flower pots. The gardener plants 17 new flowers in pots. Later, 9 flowers are picked by visitors. How many flower pots have flowers now?",
+  "helper_tip_en": "First add the new flower pots, then subtract the pots whose flowers were picked. Use a bar model to track the changes.",
+  "think_story_en": "Garden starts with 38 pots. Plants 17 more: 38 + 17 = 55 pots with flowers. Then 9 are picked: 55 - 9 = 46 pots still have flowers.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A garden has 38 flower pots. The gardener plants 17 new flowers in pots. Later, 9 flowers are picked by visitors. How many flower pots have flowers now?",
+      "data": {
+        "content_en": "A garden has 38 flower pots. The gardener plants 17 new flowers in pots. Later, 9 flowers are picked by visitors. How many flower pots have flowers now?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Garden starts with 38 pots. Plants 17 more: 38 + 17 = 55 pots with flowers. Then 9 are picked: 55 - 9 = 46 pots still have flowers.",
+      "data": {
+        "content_en": "Garden starts with 38 pots. Plants 17 more: 38 + 17 = 55 pots with flowers. Then 9 are picked: 55 - 9 = 46 pots still have flowers."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the part-whole relationship",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "part_a": 38,
+        "part_b": 17,
+        "whole": 55,
+        "subtract_amount": 9,
+        "final_remainder": 46,
+        "unit": "pots",
+        "bars": [
+          {
+            "label": "Original pots",
+            "value": 38,
+            "display": "38 pots",
+            "color": "#4ECDC4",
+            "width_pct": 69
+          },
+          {
+            "label": "New pots",
+            "value": 17,
+            "display": "17 pots",
+            "color": "#45B7D1",
+            "width_pct": 31
+          },
+          {
+            "label": "Total pots",
+            "value": 55,
+            "display": "55 pots",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Picked",
+            "value": 9,
+            "display": "9 pots",
+            "color": "#FF6B6B",
+            "width_pct": 16
+          },
+          {
+            "label": "Remaining",
+            "value": 46,
+            "display": "46 pots",
+            "color": "#C7F464",
+            "width_pct": 84,
+            "is_remainder": true
+          }
+        ],
+        "relationships": [
+          {
+            "from": 0,
+            "to": 2,
+            "type": "adds_to",
+            "label": "+"
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "type": "adds_to",
+            "label": "+"
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "type": "subtracts_to",
+            "label": "-"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "type": "equals_remainder",
+            "label": "="
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and calculate the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find total pots after planting",
+            "expression": "38 + 17 = 55",
+            "formula": {
+              "display": "38 + 17 = 55",
+              "a": 38,
+              "b": 17,
+              "result": 55,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}38&\\\\ +\\quad 17&\\\\ \\hline 55&\\\\ \\hline \\end{array}",
+              "a_display": "38",
+              "b_display": "17",
+              "result_display": "55",
+              "operation": "add"
+            },
+            "story_connection": "38 original pots + 17 new pots = 55 pots with flowers"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find remaining pots after picking",
+            "expression": "55 - 9 = 46",
+            "formula": {
+              "display": "55 - 9 = 46",
+              "a": 55,
+              "b": 9,
+              "result": 46,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}55&\\\\ -\\quad 9&\\\\ \\hline 46&\\\\ \\hline \\end{array}",
+              "a_display": "55",
+              "b_display": "9",
+              "result_display": "46",
+              "operation": "subtract"
+            },
+            "story_connection": "55 pots with flowers - 9 picked = 46 pots remaining"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentences",
+      "expression": "38 + 17 = 55",
+      "content": "38 + 17 = 55  |  55 - 9 = 46",
+      "data": {
+        "expression": "38 + 17 = 55",
+        "operations": [
+          {
+            "op": "+",
+            "a": 38,
+            "b": 17,
+            "result": 55
+          },
+          {
+            "op": "-",
+            "a": 55,
+            "b": 9,
+            "result": 46
+          }
+        ],
+        "content_en": "38 + 17 = 55 | 55 - 9 = 46"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A library has 42 books on Monday. They add 28 new books on Tuesday. On Wednesday, 15 books are borrowed. How many books are left?",
+      "choices": [
+        "55 books",
+        "53 books",
+        "67 books",
+        "47 books"
+      ],
+      "correct_answer": "55 books",
+      "explanation": "42 + 28 = 70, then 70 - 15 = 55 books",
+      "data": {
+        "question": "A library has 42 books on Monday. They add 28 new books on Tuesday. On Wednesday, 15 books are borrowed. How many books are left?",
+        "choices": [
+          "55 books",
+          "53 books",
+          "67 books",
+          "47 books"
+        ],
+        "correct_answer": "55 books",
+        "explanation": "42 + 28 = 70, then 70 - 15 = 55 books"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Read the word problem carefully. Identify what we start with, what is added, and what is taken away.",
+    "Draw a bar model to visualize the parts and the whole.",
+    "First add the new items to the original amount.",
+    "Then subtract the items that are removed.",
+    "Check your answer to make sure it makes sense."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Garden Flowers",
+      "question_en": "A park has 30 benches. Workers add 20 more benches. Later, 15 benches are moved to another park. How many benches are left?",
+      "solution_en": "30 + 20 = 50, then 50 - 15 = 35 benches. ✅"
+    },
+    {
+      "title_en": "Example: Mixed Operations",
+      "question_en": "A factory makes 45 toys. They make 25 more the next day. Then 30 are shipped to stores. How many are left?",
+      "solution_en": "45 + 25 = 70, then 70 - 30 = 40 toys. ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Forgetting to do operations in the correct order (the order events happen).",
+    "Making mistakes in column addition and subtraction.",
+    "Not checking if the answer makes sense in the story context."
+  ],
+  "hints_en": [
+    "Use clue words: 'plants', 'adds', 'receives' = add. 'Picked', 'borrowed', 'leaves' = subtract.",
+    "Always solve in the order the events happen.",
+    "Use a bar model to organize the information."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together"
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number"
+    },
+    {
+      "en": "total",
+      "th": "รวม",
+      "definition_en": "The complete amount after adding"
+    },
+    {
+      "en": "remaining",
+      "th": "เหลือ",
+      "definition_en": "What is left after subtracting"
+    },
+    {
+      "en": "plant",
+      "th": "ปลูก",
+      "definition_en": "To put a seed or plant in the ground"
+    },
+    {
+      "en": "pick",
+      "th": "เก็บ",
+      "definition_en": "To take something that is ready"
+    },
+    {
+      "en": "operation",
+      "th": "การดำเนินการ",
+      "definition_en": "A mathematical action like addition or subtraction"
+    },
+    {
+      "en": "mixed operations",
+      "th": "การดำเนินการผสม",
+      "definition_en": "Using both addition and subtraction together"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "45 + 23 - 18 = ?",
+      "choices": [
+        "50",
+        "48",
+        "52",
+        "46"
+      ],
+      "answer": "50",
+      "explanation": "45 + 23 = 68, then 68 - 18 = 50"
+    },
+    {
+      "q": "A bakery has 60 cakes. They bake 25 more. Then 35 are sold. How many cakes are left?",
+      "choices": [
+        "50 cakes",
+        "45 cakes",
+        "55 cakes",
+        "40 cakes"
+      ],
+      "answer": "50 cakes",
+      "explanation": "60 + 25 = 85, then 85 - 35 = 50"
+    },
+    {
+      "q": "52 + 19 - 27 = ?",
+      "choices": [
+        "44",
+        "46",
+        "42",
+        "48"
+      ],
+      "answer": "44",
+      "explanation": "52 + 19 = 71, then 71 - 27 = 44"
+    },
+    {
+      "q": "A fish tank has 34 fish. The pet store adds 26 more fish. Then 18 fish are sold. How many fish are in the tank?",
+      "choices": [
+        "42 fish",
+        "40 fish",
+        "38 fish",
+        "44 fish"
+      ],
+      "answer": "42 fish",
+      "explanation": "34 + 26 = 60, then 60 - 18 = 42"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Mixed operations problems combine addition and subtraction. Follow the order of events in the story. First add what comes in, then subtract what goes out. A bar model helps organize the information."
+}

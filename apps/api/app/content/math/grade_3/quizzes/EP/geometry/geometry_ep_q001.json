@@ -1,0 +1,179 @@
+{
+  "lesson_id": "geometry_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "geo_ep_q001_e01",
+      "question_text": "Case 1: How many sides and corners does a triangle have?",
+      "question_text_th": "สถานการณ์ที่ 1: รูปสามเหลี่ยมมีด้านกี่ด้าน และมุมกี่มุม",
+      "choices": [
+        "3 sides and 3 corners",
+        "4 sides and 4 corners",
+        "5 sides and 5 corners",
+        "3 sides and 4 corners"
+      ],
+      "correct_answer": "3 sides and 3 corners",
+      "answer": "A triangle has 3 sides and 3 corners",
+      "explanation": "A triangle has 3 sides and 3 corners",
+      "explanation_th": "รูปสามเหลี่ยมมี 3 ด้านและ 3 มุม",
+      "difficulty": "easy",
+      "hint_th": "Count the sides and corners"
+    },
+    {
+      "question_id": "geo_ep_q001_e02",
+      "question_text": "Case 2: How many sides and corners does a rectangle have?",
+      "question_text_th": "สถานการณ์ที่ 2: รูปสี่เหลี่ยมผืนผ้ามีด้านกี่ด้าน และมุมกี่มุม",
+      "choices": [
+        "4 sides and 4 corners",
+        "3 sides and 3 corners",
+        "5 sides and 5 corners",
+        "4 sides and 3 corners"
+      ],
+      "correct_answer": "4 sides and 4 corners",
+      "answer": "A rectangle has 4 sides and 4 right corners",
+      "explanation": "A rectangle has 4 sides and 4 right corners",
+      "explanation_th": "รูปสี่เหลี่ยมผืนผ้ามี 4 ด้านและ 4 มุมฉาก",
+      "difficulty": "easy",
+      "hint_th": "Count the sides and corners"
+    },
+    {
+      "question_id": "geo_ep_q001_e03",
+      "question_text": "Case 3: How many sides does a circle have? Does it have any corners?",
+      "question_text_th": "สถานการณ์ที่ 3: รูปวงกลมมีด้านกี่ด้าน และมีมุมหรือไม่",
+      "choices": [
+        "0 sides, no corners",
+        "1 side, 1 corner",
+        "2 sides, 2 corners",
+        "No sides but has corners"
+      ],
+      "correct_answer": "0 sides, no corners",
+      "answer": "A circle has 0 straight sides and no corners",
+      "explanation": "A circle has 0 straight sides and no corners",
+      "explanation_th": "วงกลมไม่มีด้านตรงและไม่มีมุม",
+      "difficulty": "easy",
+      "hint_th": "A circle is a curved line with no straight sides"
+    },
+    {
+      "question_id": "geo_ep_q001_m01",
+      "question_text": "Case 4: A regular pentagon has equal sides. Each side is 5 cm. What is its perimeter?",
+      "question_text_th": "สถานการณ์ที่ 4: รูปห้าเหลี่ยมมีด้านเท่ากันทุกด้าน แต่ละด้านยาว 5 ซม. รอบรูปยาวเท่าไร",
+      "choices": [
+        "25 cm",
+        "20 cm",
+        "30 cm",
+        "15 cm"
+      ],
+      "correct_answer": "25 cm",
+      "answer": "Perimeter = 5 sides x 5 cm = 25 cm",
+      "explanation": "Perimeter = 5 sides x 5 cm = 25 cm",
+      "explanation_th": "รอบรูป = 5 ด้าน x 5 ซม. = 25 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Perimeter = number of sides x length of each side"
+    },
+    {
+      "question_id": "geo_ep_q001_m02",
+      "question_text": "Case 5: A square has sides of 7 cm. What is its perimeter?",
+      "question_text_th": "สถานการณ์ที่ 5: สี่เหลี่ยมจัตุรัสมีด้านยาว 7 ซม. รอบรูปยาวเท่าไร",
+      "choices": [
+        "28 cm",
+        "21 cm",
+        "35 cm",
+        "14 cm"
+      ],
+      "correct_answer": "28 cm",
+      "answer": "Perimeter = 4 sides x 7 cm = 28 cm",
+      "explanation": "Perimeter = 4 sides x 7 cm = 28 cm",
+      "explanation_th": "รอบรูป = 4 ด้าน x 7 ซม. = 28 ซม.",
+      "difficulty": "medium",
+      "hint_th": "A square has 4 equal sides"
+    },
+    {
+      "question_id": "geo_ep_q001_m03",
+      "question_text": "Case 6: A rectangle is 12 cm long and 8 cm wide. What is its perimeter?",
+      "question_text_th": "สถานการณ์ที่ 6: สี่เหลี่ยมผืนผ้ากว้าง 8 ซม. ยาว 12 ซม. รอบรูปยาวเท่าไร",
+      "choices": [
+        "40 cm",
+        "20 cm",
+        "96 cm",
+        "48 cm"
+      ],
+      "correct_answer": "40 cm",
+      "answer": "Perimeter = 2x(width+length) = 2x(8+12) = 2x20 = 40 cm",
+      "explanation": "Perimeter = 2x(width+length) = 2x(8+12) = 2x20 = 40 cm",
+      "explanation_th": "รอบรูป = 2x(8+12) = 40 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Perimeter = 2(width+length)"
+    },
+    {
+      "question_id": "geo_ep_q001_m04",
+      "question_text": "Case 7: A regular hexagon has 6 equal sides, each 4 cm. What is its perimeter?",
+      "question_text_th": "สถานการณ์ที่ 7: รูปหกเหลี่ยมมีด้านเท่ากัน 6 ด้าน แต่ละด้านยาว 4 ซม. รอบรูปยาวเท่าไร",
+      "choices": [
+        "24 cm",
+        "20 cm",
+        "10 cm",
+        "18 cm"
+      ],
+      "correct_answer": "24 cm",
+      "answer": "Perimeter = 6 sides x 4 cm = 24 cm",
+      "explanation": "Perimeter = 6 sides x 4 cm = 24 cm",
+      "explanation_th": "รอบรูป = 6 ด้าน x 4 ซม. = 24 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Perimeter = number of sides x length"
+    },
+    {
+      "question_id": "geo_ep_q001_h01",
+      "question_text": "Case 8: Lin draws a rectangle 9 cm wide. The length is 3 times the width. What is the perimeter?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินวาดสี่เหลี่ยมผืนผ้ากว้าง 9 ซม. ยาว 3 เท่าของกว้าง รอบรูปยาวเท่าไร",
+      "choices": [
+        "72 cm",
+        "54 cm",
+        "36 cm",
+        "90 cm"
+      ],
+      "correct_answer": "72 cm",
+      "answer": "Width=9, length=3x9=27, perimeter=2x(9+27)=2x36=72 cm",
+      "explanation": "Width=9, length=3x9=27, perimeter=2x(9+27)=2x36=72 cm",
+      "explanation_th": "กว้าง=9, ยาว=27, รอบรูป=2x(9+27)=72 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Length=3xwidth → perimeter=2(width+length)"
+    },
+    {
+      "question_id": "geo_ep_q001_h02",
+      "question_text": "Case 9: A sports field is 45 m long and 28 m wide. If someone runs around it 2 times, how many meters?",
+      "question_text_th": "สถานการณ์ที่ 9: สนามรูปสี่เหลี่ยมผืนผ้ายาว 45 ม. กว้าง 28 ม. ถ้าวิ่งรอบสนาม 2 รอบ วิ่งได้กี่เมตร",
+      "choices": [
+        "146 m",
+        "73 m",
+        "292 m",
+        "126 m"
+      ],
+      "correct_answer": "292 m",
+      "answer": "Perimeter = 2x(45+28) = 146 m. Two laps = 146x2 = 292 m",
+      "explanation": "Perimeter = 2x(45+28) = 146 m. Two laps = 146x2 = 292 m",
+      "explanation_th": "รอบ 1 รอบ = 146 ม. 2 รอบ = 292 ม.",
+      "difficulty": "hard",
+      "hint_th": "Perimeter=2(L+W) × number of laps"
+    },
+    {
+      "question_id": "geo_ep_q001_h03",
+      "question_text": "Case 10: Lin has a rope 60 cm long and forms it into an equilateral triangle. How long is each side?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินมีเชือกยาว 60 ซม. นำไปประกอบเป็นรูปสามเหลี่ยมด้านเท่า ด้านหนึ่งยาวเท่าไร",
+      "choices": [
+        "20 cm",
+        "30 cm",
+        "15 cm",
+        "18 cm"
+      ],
+      "correct_answer": "20 cm",
+      "answer": "Perimeter = 60 cm = 3 equal sides. Each side = 60 ÷ 3 = 20 cm",
+      "explanation": "Perimeter = 60 cm = 3 equal sides. Each side = 60 ÷ 3 = 20 cm",
+      "explanation_th": "รอบรูป = 60 ซม. ÷ 3 ด้าน = 20 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Divide perimeter by number of equal sides"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

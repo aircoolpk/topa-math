@@ -1,0 +1,128 @@
+{
+  "variant_id": "parallel_lines_ep_001",
+  "variant_title_en": "Parallel Lines — Roads and Sidewalks",
+  "status": "needs_review",
+  "title_en": "Parallel Lines — Roads and Sidewalks",
+  "story_theme_en": "A main road is 12 meters wide with sidewalks on both sides, each 2.5 meters wide. The area between the two sidewalks is the road surface. How wide is the road surface? If a center divider 2 meters wide is built in the middle of the road surface, how wide is each side of the road surface?",
+  "helper_tip": "Parallel lines are lines that stay the same distance apart and never meet.",
+  "hint_th": "เส้นขนานคือเส้นที่มีระยะห่างเท่ากันตลอดและไม่ตัดกัน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A main road is 12 meters wide with sidewalks on both sides, each 2.5 meters wide. The area between the two sidewalks is the road surface. How wide is the road surface? If a center divider 2 meters wide is built in the middle of the road surface, how wide is each side of the road surface?",
+      "data": {
+        "content_en": "A main road is 12 meters wide with sidewalks on both sides, each 2.5 meters wide. The area between the two sidewalks is the road surface. How wide is the road surface? If a center divider 2 meters wide is built in the middle of the road surface, how wide is each side of the road surface?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Road surface = 12 - (2 × 2.5) = 7 meters | Each side of road surface = (7 − 2) ÷ 2 = 2.5 meters",
+      "data": {
+        "content_en": "Road surface = 12 - (2 × 2.5) = 7 meters | Each side of road surface = (7 − 2) ÷ 2 = 2.5 meters"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Parallel Lines Diagram",
+      "description": "Parallel Lines Diagram",
+      "model_type": "parallel_diagram",
+      "data": {
+        "model_type": "parallel_diagram",
+        "operation": "subtract_divide",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Left sidewalk",
+            "value": 2.5,
+            "display": "2.5 m",
+            "color": "#96CEB4",
+            "width_pct": 21
+          },
+          {
+            "label": "Road surface",
+            "value": 7,
+            "display": "7 m",
+            "color": "#45B7D1",
+            "width_pct": 58,
+            "is_total": true
+          },
+          {
+            "label": "Right sidewalk",
+            "value": 2.5,
+            "display": "2.5 m",
+            "color": "#96CEB4",
+            "width_pct": 21
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "12 - 2.5 - 2.5 = 7",
+      "content": "Road surface = 7 m | Each side after divider = (7 − 2) ÷ 2 = 2.5 m",
+      "data": {
+        "expression": "Road surface = 7 m | Each side after divider = (7 − 2) ÷ 2 = 2.5 m",
+        "operations": [
+          {
+            "op": "-",
+            "a": 12,
+            "b": 2.5,
+            "result": 9.5
+          },
+          {
+            "op": "-",
+            "a": 9.5,
+            "b": 2.5,
+            "result": 7
+          },
+          {
+            "op": "-",
+            "a": 7,
+            "b": 2,
+            "result": 5
+          },
+          {
+            "op": "÷",
+            "a": 5,
+            "b": 2,
+            "result": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A road is 20 meters wide with 2 traffic lanes, each 7 meters wide. How wide is each sidewalk?",
+      "choices": [
+        "3 meters",
+        "4 meters",
+        "2 meters",
+        "3.5 meters"
+      ],
+      "correct_answer": "3 meters",
+      "explanation": "Sidewalk = (20 - 2×7)/2 = (20-14)/2 = 6/2 = 3 m each",
+      "data": {
+        "question": "A road is 20 meters wide with 2 traffic lanes, each 7 meters wide. How wide is each sidewalk?",
+        "choices": [
+          "3 meters",
+          "4 meters",
+          "2 meters",
+          "3.5 meters"
+        ],
+        "correct_answer": "3 meters",
+        "explanation": "Sidewalk = (20 - 2×7)/2 = (20-14)/2 = 6/2 = 3 m each"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

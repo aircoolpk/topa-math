@@ -1,0 +1,189 @@
+{
+  "lesson_id": "multiplication_division_whole_numbers_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "A rose garden has 24 rows with 125 rose plants per row. How many rose plants in total?",
+      "question_text_en": "A rose garden has 24 rows with 125 rose plants per row. How many rose plants in total?",
+      "choices": [
+        "3,000 plants",
+        "2,900 plants",
+        "3,100 plants",
+        "2,800 plants"
+      ],
+      "correct_answer": "3,000 plants",
+      "answer": "3,000 plants",
+      "explanation": "24 x 125 = 3,000 plants",
+      "explanation_th": "24 × 125 = 3,000 ต้น",
+      "difficulty": "easy",
+      "hint_th": "Multiply 24 by 125",
+      "question_text_th": "สวนดอกกุหลาบมี 24 แถว แถวละ 125 ต้น. รวมกี่ต้น?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "A cake shop has 12 boxes with 45 cakes per box. How many cakes in total?",
+      "question_text_en": "A cake shop has 12 boxes with 45 cakes per box. How many cakes in total?",
+      "choices": [
+        "540 cakes",
+        "530 cakes",
+        "550 cakes",
+        "545 cakes"
+      ],
+      "correct_answer": "540 cakes",
+      "answer": "540 cakes",
+      "explanation": "12 x 45 = 540 cakes",
+      "explanation_th": "12 × 45 = 540 ชิ้น",
+      "difficulty": "easy",
+      "hint_th": "Multiply 12 by 45",
+      "question_text_th": "ร้านเค้กมี 12 กล่อง กล่องละ 45 ชิ้น. รวมกี่ชิ้น?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "240 students stand in rows with 30 students per row. How many rows?",
+      "question_text_en": "240 students stand in rows with 30 students per row. How many rows?",
+      "choices": [
+        "8 rows",
+        "7 rows",
+        "9 rows",
+        "6 rows"
+      ],
+      "correct_answer": "8 rows",
+      "answer": "8 rows",
+      "explanation": "240 / 30 = 8 rows",
+      "explanation_th": "240 ÷ 30 = 8 แถว",
+      "difficulty": "easy",
+      "hint_th": "Divide 240 by 30",
+      "question_text_th": "นักเรียน 240 คน จัดแถวละ 30 คน. ได้กี่แถว?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "If 18 x 45 = 810, then what is 810 / 18?",
+      "question_text_en": "If 18 x 45 = 810, then what is 810 / 18?",
+      "choices": [
+        "45",
+        "44",
+        "46",
+        "54"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "810 / 18 = 45 (division reverses multiplication)",
+      "explanation_th": "810 ÷ 18 = 45",
+      "difficulty": "easy",
+      "hint_th": "Use the relationship between multiplication and division",
+      "question_text_th": "ถ้า 18x45=810 แล้ว 810/18=?"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "A number multiplied by 25 equals 1,000. What is the number?",
+      "question_text_en": "A number multiplied by 25 equals 1,000. What is the number?",
+      "choices": [
+        "40",
+        "50",
+        "45",
+        "35"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "1,000 / 25 = 40",
+      "explanation_th": "1,000 ÷ 25 = 40",
+      "difficulty": "easy",
+      "hint_th": "Divide 1,000 by 25",
+      "question_text_th": "จำนวนหนึ่งคูณ 25 ได้ 1,000. จำนวนนั้นคือเท่าไร?"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "A factory produces 18 boxes per minute and works for 45 minutes. How many boxes in total?",
+      "question_text_en": "A factory produces 18 boxes per minute and works for 45 minutes. How many boxes in total?",
+      "choices": [
+        "810 boxes",
+        "800 boxes",
+        "820 boxes",
+        "812 boxes"
+      ],
+      "correct_answer": "810 boxes",
+      "answer": "810 boxes",
+      "explanation": "18 x 45 = 810 boxes",
+      "explanation_th": "18 × 45 = 810 กล่อง",
+      "difficulty": "easy",
+      "hint_th": "Multiply 18 by 45",
+      "question_text_th": "โรงงานผลิตได้ 18 กล่องต่อนาที ทำงาน 45 นาที. รวมกี่กล่อง?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "A number divided by 15 gives 48 with a remainder of 5. What is the number?",
+      "question_text_en": "A number divided by 15 gives 48 with a remainder of 5. What is the number?",
+      "choices": [
+        "725",
+        "735",
+        "720",
+        "730"
+      ],
+      "correct_answer": "725",
+      "answer": "725",
+      "explanation": "48x15+5 = 720+5 = 725",
+      "explanation_th": "48×15+5 = 720+5 = 725",
+      "difficulty": "hard",
+      "hint_th": "Use: dividend = divisor x quotient + remainder",
+      "question_text_th": "จำนวนหนึ่งหารด้วย 15 ได้ 48 เศษ 5. จำนวนนั้นคือเท่าไร?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "Mali has 48 apples. She shares them equally among 7 friends. How many per friend? Any remainder?",
+      "question_text_en": "Mali has 48 apples. She shares them equally among 7 friends. How many per friend? Any remainder?",
+      "choices": [
+        "6 apples each, remainder 6",
+        "6 apples each, remainder 0",
+        "7 apples each, remainder 0",
+        "6 apples each, remainder 7"
+      ],
+      "correct_answer": "6 apples each, remainder 6",
+      "answer": "6 apples each, remainder 6",
+      "explanation": "48/7 = 6 remainder 6 (7x6=42, 48-42=6)",
+      "explanation_th": "48÷7 = 6 คนละ 6 ผล เศษ 6 ผล (7×6=42, 48-42=6)",
+      "difficulty": "hard",
+      "hint_th": "Divide 48 by 7, find quotient and remainder",
+      "question_text_th": "มะลิมีแอปเปิ้ล 48 ผล แบ่งให้เพื่อน 7 คน คนละเท่าๆ กัน. คนละกี่ผล เหลือเศษ?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "A school has 1,200 students. Each classroom has 40 students. How many classrooms? Any remainder?",
+      "question_text_en": "A school has 1,200 students. Each classroom has 40 students. How many classrooms? Any remainder?",
+      "choices": [
+        "30 classrooms, remainder 0",
+        "29 classrooms, remainder 40",
+        "30 classrooms, remainder 40",
+        "30 classrooms, remainder 20"
+      ],
+      "correct_answer": "30 classrooms, remainder 0",
+      "answer": "30 classrooms, remainder 0",
+      "explanation": "1,200/40=30 classrooms, remainder 0",
+      "explanation_th": "1,200÷40=30 ห้อง เศษ 0",
+      "difficulty": "easy",
+      "hint_th": "Divide 1,200 by 40",
+      "question_text_th": "โรงเรียนมีนักเรียน 1,200 คน. ห้องละ 40 คน. ได้กี่ห้อง เหลือเศษ?"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Which is correct? A. 125x8=1,000 | B. 144x5=720 | C. 75x12=900 | D. All A, B, and C",
+      "question_text_en": "Which is correct? A. 125x8=1,000 | B. 144x5=720 | C. 75x12=900 | D. All A, B, and C",
+      "choices": [
+        "All A, B, and C",
+        "Only A and B",
+        "Only B and C",
+        "Only A and C"
+      ],
+      "correct_answer": "All A, B, and C",
+      "answer": "All A, B, and C",
+      "explanation": "125x8=1,000 ✓ | 144x5=720 ✓ | 75x12=900 ✓",
+      "explanation_th": "ก ถูก | ข ถูก | ค ถูก | ทุกข้อถูก",
+      "difficulty": "medium",
+      "hint_th": "Check each multiplication carefully",
+      "question_text_th": "ข้อใดถูก: ก. 125x8=1,000 | ข. 144x5=720 | ค. 75x12=900 | ง. ทุกข้อ"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

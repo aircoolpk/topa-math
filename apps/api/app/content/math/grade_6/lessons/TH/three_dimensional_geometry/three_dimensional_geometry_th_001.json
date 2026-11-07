@@ -1,0 +1,200 @@
+{
+  "variant_id": "three_dimensional_geometry_th_001",
+  "variant_title_th": "รูปเรขาคณิตสามมิติ",
+  "variant_title_en": "Three-Dimensional Geometry",
+  "status": "needs_review",
+  "title_th": "รูปเรขาคณิตสามมิติ",
+  "title_en": "Three-Dimensional Geometry",
+  "story_theme_th": "กล่องทรงสี่เหลี่ยมมิติ กว้าง 8 ซม. ยาว 12 ซม. สูง 5 ซม. บรรจุลูกบาศก์เล็กขนาด 2 ซม. ด้านละ 2 ซม. ได้กี่ลูกบาศก์",
+  "helper_tip": "ปริมาตรทรงลูกบาศก์ = ด้าน × ด้าน × ด้าน",
+  "think_story_th": "ปริมาตรกล่อง = 8 × 12 × 5 = 480 ลูกบาศก์เซนติเมตร ปริมาตรลูกบาศก์เล็ก = 2 × 2 × 2 = 8 ลูกบาศก์เซนติเมตร จำนวนลูกบาศก์ = 480 ÷ 8 = 60 ลูก",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "กล่องทรงสี่เหลี่ยมมิติ กว้าง 8 ซม. ยาว 12 ซม. สูง 5 ซม. บรรจุลูกบาศก์เล็กขนาด 2 ซม. ด้านละ 2 ซม. ได้กี่ลูกบาศก์",
+      "data": {
+        "content_th": "กล่องทรงสี่เหลี่ยมมิติ กว้าง 8 ซม. ยาว 12 ซม. สูง 5 ซม. บรรจุลูกบาศก์เล็กขนาด 2 ซม. ด้านละ 2 ซม. ได้กี่ลูกบาศก์"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "ปริมาตรกล่อง = 8 × 12 × 5 = 480 ลูกบาศก์เซนติเมตร ปริมาตรลูกบาศก์เล็ก = 2 × 2 × 2 = 8 ลูกบาศก์เซนติเมตร จำนวนลูกบาศก์ = 480 ÷ 8 = 60 ลูก",
+      "data": {
+        "content_th": "ปริมาตรกล่อง = 8 × 12 × 5 = 480 ลูกบาศก์เซนติเมตร ปริมาตรลูกบาศก์เล็ก = 2 × 2 × 2 = 8 ลูกบาศก์เซนติเมตร จำนวนลูกบาศก์ = 480 ÷ 8 = 60 ลูก"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "ลูกบาศก์เซนติเมตร",
+        "bars": [
+          {
+            "label": "กว้าง",
+            "value": 8,
+            "display": "8 ซม.",
+            "color": "#4ECDC4",
+            "width_pct": 67
+          },
+          {
+            "label": "ยาว",
+            "value": 12,
+            "display": "12 ซม.",
+            "color": "#45B7D1",
+            "width_pct": 100
+          },
+          {
+            "label": "สูง",
+            "value": 5,
+            "display": "5 ซม.",
+            "color": "#96CEB4",
+            "width_pct": 42
+          },
+          {
+            "label": "ปริมาตร",
+            "value": 480,
+            "display": "480 ลบ.ซม.",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "8 × 12 = 96",
+            "formula": {
+              "display": "8 × 12 = 96",
+              "a": 8,
+              "b": 12,
+              "result": 96,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}8&\\ ×\\quad 12&\\ \\hline 96&\\\\ \\hline \\end{array}",
+              "a_display": "8",
+              "b_display": "12",
+              "result_display": "96",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 8 × 12 = 96"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "96 × 5 = 480",
+            "formula": {
+              "display": "96 × 5 = 480",
+              "a": 96,
+              "b": 5,
+              "result": 480,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}96&\\ ×\\quad 5&\\ \\hline 480&\\\\ \\hline \\end{array}",
+              "a_display": "96",
+              "b_display": "5",
+              "result_display": "480",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 96 × 5 = 480"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "480 ÷ 8 = 60",
+            "formula": {
+              "display": "480 ÷ 8 = 60",
+              "a": 480,
+              "b": 8,
+              "result": 60,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}480&\\ ÷\\quad 8&\\ \\hline 60&\\\\ \\hline \\end{array}",
+              "a_display": "480",
+              "b_display": "8",
+              "result_display": "60",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 480 ÷ 8 = 60"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "8 × 12 = 96 | 96 × 5 = 480 | 480 ÷ 8 = 60",
+      "content": "8 × 12 = 96 | 96 × 5 = 480 | 480 ÷ 8 = 60",
+      "data": {
+        "expression": "8 × 12 = 96 | 96 × 5 = 480 | 480 ÷ 8 = 60",
+        "operations": [
+          {
+            "op": "×",
+            "a": 8,
+            "b": 12,
+            "result": 96
+          },
+          {
+            "op": "×",
+            "a": 96,
+            "b": 5,
+            "result": 480
+          },
+          {
+            "op": "÷",
+            "a": 480,
+            "b": 8,
+            "result": 60
+          }
+        ],
+        "content_th": "8 × 12 = 96 | 96 × 5 = 480 | 480 ÷ 8 = 60"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ทรงลูกบาศก์มีด้านยาว 6 ซม. ปริมาตรเท่าไร",
+      "choices": [
+        "36 ลบ.ซม.",
+        "72 ลบ.ซม.",
+        "216 ลบ.ซม.",
+        "18 ลบ.ซม."
+      ],
+      "correct_answer": "216 ลบ.ซม.",
+      "explanation": "6 × 6 × 6 = 216 ลบ.ซม.",
+      "data": {
+        "question": "ทรงลูกบาศก์มีด้านยาว 6 ซม. ปริมาตรเท่าไร",
+        "choices": [
+          "36 ลบ.ซม.",
+          "72 ลบ.ซม.",
+          "216 ลบ.ซม.",
+          "18 ลบ.ซม."
+        ],
+        "correct_answer": "216 ลบ.ซม.",
+        "explanation": "6 × 6 × 6 = 216 ลบ.ซม."
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

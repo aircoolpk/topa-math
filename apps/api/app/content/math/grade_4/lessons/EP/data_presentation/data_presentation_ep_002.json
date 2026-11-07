@@ -1,0 +1,235 @@
+{
+  "variant_id": "data_presentation_ep_002",
+  "variant_title_en": "Data Presentation",
+  "status": "needs_review",
+  "title_en": "Data Presentation",
+  "story_theme_en": "The math test scores of 5 students are as follows: Lin: 95 points, Mali: 78 points, Ai: 88 points, Book: 65 points, Air: 92 points. What is the average score of the 5 students? Who scored above the average?",
+  "helper_tip": "Average = Sum of all values / Number of items.",
+  "hint_th": "ค่าเฉลี่ย = ผลรวม / จำนวนข้อมูล",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "The math test scores of 5 students are as follows: Lin: 95 points, Mali: 78 points, Ai: 88 points, Book: 65 points, Air: 92 points. What is the average score of the 5 students? Who scored above the average?",
+      "data": {
+        "content_en": "The math test scores of 5 students are as follows: Lin: 95 points, Mali: 78 points, Ai: 88 points, Book: 65 points, Air: 92 points. What is the average score of the 5 students? Who scored above the average?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Add all scores → 95+78+88+65+92 = total | Step 2: Find average → total / 5 = average | Step 3: Compare → scores > average = Lin, Ai, Air",
+      "data": {
+        "content_en": "Step 1: Add all scores → 95+78+88+65+92 = total | Step 2: Find average → total / 5 = average | Step 3: Compare → scores > average = Lin, Ai, Air"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Chart",
+      "model_type": "bar_chart",
+      "data": {
+        "model_type": "bar_chart",
+        "operation": "average",
+        "bars": [
+          {
+            "label": "Lin",
+            "value": 95,
+            "display": "95 points",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Mali",
+            "value": 78,
+            "display": "78 points",
+            "color": "#45B7D1",
+            "width_pct": 82
+          },
+          {
+            "label": "Ai",
+            "value": 88,
+            "display": "88 points",
+            "color": "#96CEB4",
+            "width_pct": 93
+          },
+          {
+            "label": "Book",
+            "value": 65,
+            "display": "65 points",
+            "color": "#FF6B6B",
+            "width_pct": 68
+          },
+          {
+            "label": "Air",
+            "value": 92,
+            "display": "92 points",
+            "color": "#FFD93D",
+            "width_pct": 97
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add scores",
+            "expression": "95 + 78 + 88 = 261",
+            "formula": {
+              "display": "95 + 78 + 88 = 261",
+              "a": 95,
+              "b": 78,
+              "result": 173,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}95&\\\\\\\\ +\\\\quad 78&\\\\\\\\ \\\\hline 173&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "95",
+              "b_display": "78",
+              "result_display": "173",
+              "operation": "add"
+            },
+            "story_connection": "95 + 78 = 173 | 173 + 88 = 261"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add remaining scores",
+            "expression": "261 + 65 + 92 = 418",
+            "formula": {
+              "display": "261 + 65 + 92 = 418",
+              "a": 261,
+              "b": 65,
+              "result": 326,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}261&\\\\\\\\ +\\\\quad 65&\\\\\\\\ \\\\hline 326&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "261",
+              "b_display": "65",
+              "result_display": "326",
+              "operation": "add"
+            },
+            "story_connection": "261 + 65 = 326 | 326 + 92 = 418 total points"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Find the average",
+            "expression": "418 / 5 = 83.6 points",
+            "formula": {
+              "display": "418 / 5 = 83.6 points",
+              "a": 418,
+              "b": 5,
+              "result": 83.6,
+              "operation": "div"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}418&\\\\\\\\ ÷\\\\quad 5&\\\\\\\\ \\\\hline 83.6&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "418",
+              "b_display": "5",
+              "result_display": "83.6",
+              "operation": "div"
+            },
+            "story_connection": "418 / 5 = 83.6 points average"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "(95 + 78 + 88 + 65 + 92) / 5 = 83.6",
+      "content": "(95 + 78 + 88 + 65 + 92) / 5 = 83.6 points",
+      "data": {
+        "expression": "(95 + 78 + 88 + 65 + 92) / 5 = 83.6",
+        "operations": [
+          {
+            "op": "+",
+            "a": 95,
+            "b": 78,
+            "result": 173
+          },
+          {
+            "op": "+",
+            "a": 173,
+            "b": 88,
+            "result": 261
+          },
+          {
+            "op": "+",
+            "a": 261,
+            "b": 65,
+            "result": 326
+          },
+          {
+            "op": "+",
+            "a": 326,
+            "b": 92,
+            "result": 418
+          },
+          {
+            "op": "/",
+            "a": 418,
+            "b": 5,
+            "result": 83.6
+          }
+        ],
+        "content_en": "(95 + 78 + 88 + 65 + 92) / 5 = 83.6 points"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Science test scores for 4 students: 88, 75, 92, 81 points. What is the average? Who scored exactly the average?",
+      "choices": [
+        "84 points, no one scored exactly the average",
+        "84 points, 88 scored the average",
+        "83.5 points, no one scored exactly the average",
+        "84 points, 75 scored the average"
+      ],
+      "correct_answer": "84 points, no one scored exactly the average",
+      "explanation": "(88+75+92+81) / 4 = 336 / 4 = 84 points | No one scored exactly 84 points",
+      "data": {
+        "question": "Science test scores for 4 students: 88, 75, 92, 81 points. What is the average? Who scored exactly the average?",
+        "choices": [
+          "84 points, no one scored exactly the average",
+          "84 points, 88 scored the average",
+          "83.5 points, no one scored exactly the average",
+          "84 points, 75 scored the average"
+        ],
+        "correct_answer": "84 points, no one scored exactly the average",
+        "explanation": "(88+75+92+81) / 4 = 336 / 4 = 84 points | No one scored exactly 84 points"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "Scores: 80, 90, 70. What is the average?",
+      "solution_en": "(80+90+70) / 3 = 240 / 3 = 80 points"
+    }
+  ],
+  "common_mistakes": [
+    "Dividing by the wrong number (e.g. dividing by 4 instead of 5)",
+    "Adding scores incorrectly"
+  ],
+  "hints": [
+    "Average = Sum of data / Number of data items = Total / Number of students."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "average / mean",
+      "th": "ค่าเฉลี่ย",
+      "definition_en": "The sum of data divided by the number of items"
+    },
+    {
+      "en": "total / sum",
+      "th": "ผลรวม",
+      "definition_en": "The result of adding all data together"
+    }
+  ]
+}

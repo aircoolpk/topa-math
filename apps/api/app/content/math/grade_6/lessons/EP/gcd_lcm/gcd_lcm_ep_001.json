@@ -1,0 +1,187 @@
+{
+  "variant_id": "gcd_lcm_ep_001",
+  "variant_title_en": "GCD and LCM",
+  "status": "needs_review",
+  "title_en": "GCD and LCM",
+  "title_th": "ห.ร.ม. และ ค.ร.น.",
+  "story_theme_en": "Mali has 24 goldfish and 18 neon fish. She wants to put them in tanks so each tank has the same number of goldfish and the same number of neon fish, with no fish left over. How many fish should be in each tank, and how many tanks will she get?",
+  "helper_tip": "GCD is the greatest common divisor - the biggest number that divides both numbers",
+  "hint_th": "GCD คือตัวหารร่วมที่มากที่สุด",
+  "think_story_en": "We need to find the GCD of 24 and 18. The GCD is the biggest number that divides both 24 and 18. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 18: 1,2,3,6,9,18. Common factors: 1,2,3,6. The GCD is 6. So each tank has 6 fish. Goldfish tanks: 24 ÷ 6 = 4 tanks. Neon fish tanks: 18 ÷ 6 = 3 tanks.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mali has 24 goldfish and 18 neon fish. She wants to put them in tanks so each tank has the same number of goldfish and the same number of neon fish, with no fish left over. How many fish should be in each tank, and how many tanks will she get?",
+      "data": {
+        "content_en": "Mali has 24 goldfish and 18 neon fish. She wants to put them in tanks so each tank has the same number of goldfish and the same number of neon fish, with no fish left over. How many fish should be in each tank, and how many tanks will she get?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "We need to find the GCD of 24 and 18. The GCD is the biggest number that divides both 24 and 18. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 18: 1,2,3,6,9,18. Common factors: 1,2,3,6. The GCD is 6. So each tank has 6 fish. Goldfish tanks: 24 ÷ 6 = 4 tanks. Neon fish tanks: 18 ÷ 6 = 3 tanks.",
+      "data": {
+        "content_en": "We need to find the GCD of 24 and 18. The GCD is the biggest number that divides both 24 and 18. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 18: 1,2,3,6,9,18. Common factors: 1,2,3,6. The GCD is 6. So each tank has 6 fish. Goldfish tanks: 24 ÷ 6 = 4 tanks. Neon fish tanks: 18 ÷ 6 = 3 tanks."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "units",
+        "bars": [
+          {
+            "label": "Goldfish",
+            "value": 24,
+            "display": "24 fish",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Neon Fish",
+            "value": 18,
+            "display": "18 fish",
+            "color": "#45B7D1",
+            "width_pct": 75
+          },
+          {
+            "label": "GCD",
+            "value": 6,
+            "display": "6",
+            "color": "#FF6B6B",
+            "width_pct": 25,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "24 ÷ 18 = 6 (GCD = 6)",
+            "formula": {
+              "display": "24 ÷ 18 = 6 (GCD = 6)",
+              "a": 24,
+              "b": 18,
+              "result": 6,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}24&\\ ÷\\quad 18&\\ \\hline 6&\\\\ \\hline \\end{array}",
+              "a_display": "24",
+              "b_display": "18",
+              "result_display": "6",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 24 ÷ 18 = 6 (GCD = 6)"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "24 ÷ 6 = 4",
+            "formula": {
+              "display": "24 ÷ 6 = 4",
+              "a": 24,
+              "b": 6,
+              "result": 4,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}24&\\ ÷\\quad 6&\\ \\hline 4&\\\\ \\hline \\end{array}",
+              "a_display": "24",
+              "b_display": "6",
+              "result_display": "4",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 24 ÷ 6 = 4"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "18 ÷ 6 = 3",
+            "formula": {
+              "display": "18 ÷ 6 = 3",
+              "a": 18,
+              "b": 6,
+              "result": 3,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}18&\\ ÷\\quad 6&\\ \\hline 3&\\\\ \\hline \\end{array}",
+              "a_display": "18",
+              "b_display": "6",
+              "result_display": "3",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 18 ÷ 6 = 3"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "24 ÷ 18 = 6 (GCD = 6) | 24 ÷ 6 = 4 | 18 ÷ 6 = 3",
+      "content": "24 ÷ 18 = 6 (GCD = 6) | 24 ÷ 6 = 4 | 18 ÷ 6 = 3",
+      "data": {
+        "expression": "24 ÷ 18 = 6 (GCD = 6) | 24 ÷ 6 = 4 | 18 ÷ 6 = 3",
+        "operations": [
+          {
+            "op": "÷",
+            "a": 24,
+            "b": 6,
+            "result": 4
+          },
+          {
+            "op": "÷",
+            "a": 18,
+            "b": 6,
+            "result": 3
+          }
+        ],
+        "content_en": "24 ÷ 18 = 6 (GCD = 6) | 24 ÷ 6 = 4 | 18 ÷ 6 = 3"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "There are 36 red marbles and 48 green marbles. They are divided into equal piles with none left. What is the biggest possible pile size?",
+      "choices": [
+        "6 marbles",
+        "12 marbles",
+        "9 marbles",
+        "8 marbles"
+      ],
+      "correct_answer": "12 marbles",
+      "explanation": "GCD of 36 and 48 is 12",
+      "data": {
+        "question": "There are 36 red marbles and 48 green marbles. They are divided into equal piles with none left. What is the biggest possible pile size?",
+        "choices": [
+          "6 marbles",
+          "12 marbles",
+          "9 marbles",
+          "8 marbles"
+        ],
+        "correct_answer": "12 marbles",
+        "explanation": "GCD of 36 and 48 is 12"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

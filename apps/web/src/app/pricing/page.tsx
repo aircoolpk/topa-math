@@ -3,37 +3,20 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { billingApi, type BillingPrices, type BillingPlanRecord } from '@/lib/api/billing'
+import { billingApi, getCheckoutErrorMessage, getCheckoutUrl, type BillingPrices, type BillingPlanRecord } from '@/lib/api/billing'
 import { TopaBrandMark } from '@/components/brand/TopaBrand'
 
-// ─── Fallback feature lists ──────────────────────────────────────────────────
+// ─── Feature lists ────────────────────────────────────────────────────────────
+// Feature copy is now served by the backend (PLAN_CATALOG in routers/billing.py)
+// so admins can edit benefits without shipping a new frontend build.
+// If the backend returns nothing, we show an empty list — better than misleading
+// the user with stale copy that contradicts the live catalog.
 
-const DEFAULT_FREE_FEATURES: string[] = [
+const FREE_FEATURES_FALLBACK: string[] = [
   "ทดลองเรียนฟรี",
   "เรียนได้ 3 เควส",
   "ทำเทสวัดระดับได้จำกัด",
   "Avatar พื้นฐาน",
-  "เหมาะสำหรับลองใช้งาน",
-]
-
-const DEFAULT_TH_FEATURES: string[] = [
-  "คณิตศาสตร์ภาษาไทย ป.1–ป.6",
-  "บทเรียนทั้งหมด",
-  "แบบทดสอบทุกระดับชั้น",
-  "ระบบวิเคราะห์จุดอ่อน",
-  "แบบฝึกเฉพาะบุคคล",
-  "Quest รายวัน / รายสัปดาห์ / รายเดือน",
-  "XP / Level / Rank",
-  "Avatar และของตกแต่งพื้นฐาน",
-]
-
-const DEFAULT_EP_FEATURES: string[] = [
-  "ทุกอย่างใน Plus TH",
-  "โหมด English Program",
-  "โจทย์และบทเรียนคณิตเป็นภาษาอังกฤษ",
-  "คำศัพท์คณิตศาสตร์อังกฤษ",
-  "เหมาะกับเด็ก EP / Inter / สองภาษา",
-  "ปลดล็อก TH + EP",
 ]
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -54,6 +37,7 @@ function getArray<T>(val: unknown, fallback: T[]): T[] {
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface PricePlan {
+  auto_renew?: boolean
   id?: string
   plan_code: string
   name?: string
@@ -80,7 +64,7 @@ interface FreePlanCardProps {
 }
 
 function FreePlanCard({ currentPlanCode }: FreePlanCardProps) {
-  const features = DEFAULT_FREE_FEATURES
+  const features = FREE_FEATURES_FALLBACK
   const isCurrent = currentPlanCode === 'free'
 
   return (
@@ -156,9 +140,10 @@ function HeroPlanCard({
   error,
   currentPlanCode,
 }: HeroPlanCardProps) {
-  // Safe feature arrays — never call .map on undefined
-  const thFeatures = thPlan ? getArray(thPlan.features, DEFAULT_TH_FEATURES) : DEFAULT_TH_FEATURES
-  const epFeatures = epPlan ? getArray(epPlan.features, DEFAULT_EP_FEATURES) : DEFAULT_EP_FEATURES
+  // Safe feature arrays — only show what the backend returns. No stale fallback
+  // copy that contradicts the live catalog.
+  const thFeatures = thPlan?.features && thPlan.features.length > 0 ? thPlan.features : []
+  const epFeatures = epPlan?.features && epPlan.features.length > 0 ? epPlan.features : []
 
   const founderAvailable = (thPlan?.is_founder && thPlan.available !== false) ||
     (epPlan?.is_founder && epPlan.available !== false)
@@ -233,7 +218,7 @@ function HeroPlanCard({
                 <span className="text-4xl font-extrabold text-gray-900">
                   ฿{formatPrice(thPlan.price_thb)}
                 </span>
-                <span className="text-sm text-gray-400 font-medium">/เดือน</span>
+                <span className="text-sm text-gray-400 font-medium">/{thPlan.auto_renew === false ? '30 วัน' : 'เดือน'}</span>
                 {thPlan.original_price_thb && thPlan.original_price_thb > thPlan.price_thb && (
                   <span className="ml-2 text-sm text-gray-400 line-through">
                     ฿{formatPrice(thPlan.original_price_thb)}
@@ -246,7 +231,7 @@ function HeroPlanCard({
                 </p>
               )}
               <p className="text-xs text-gray-400">
-                {isYearly(thPlan.plan_code) ? 'ราคารายปี' : 'ราคารายเดือน'}
+                {thPlan.auto_renew === false ? 'ชำระครั้งเดียวสำหรับสิทธิ์ 30 วัน' : 'สมาชิกแบบต่ออายุอัตโนมัติ'}
               </p>
             </div>
 
@@ -296,8 +281,8 @@ function HeroPlanCard({
                       <span className="animate-spin text-lg">⏳</span>กำลังเปิดหน้าชำระเงิน...
                     </span>
                   ) : thPlan.is_founder
-                    ? `สมัคร Founder ฿${formatPrice(thPlan.price_thb)}/เดือน`
-                    : `สมัคร ฿${formatPrice(thPlan.price_thb)}/เดือน`}
+                    ? `สมัคร Founder ฿${formatPrice(thPlan.price_thb)}/${thPlan.auto_renew === false ? '30 วัน' : 'เดือน'}`
+                    : `สมัคร ฿${formatPrice(thPlan.price_thb)}/${thPlan.auto_renew === false ? '30 วัน' : 'เดือน'}`}
                 </button>
               )}
               {error && loading && (
@@ -352,7 +337,7 @@ function HeroPlanCard({
                 <span className="text-4xl font-extrabold text-gray-900">
                   ฿{formatPrice(epPlan.price_thb)}
                 </span>
-                <span className="text-sm text-gray-400 font-medium">/เดือน</span>
+                <span className="text-sm text-gray-400 font-medium">/{epPlan.auto_renew === false ? '30 วัน' : 'เดือน'}</span>
                 {epPlan.original_price_thb && epPlan.original_price_thb > epPlan.price_thb && (
                   <span className="ml-2 text-sm text-gray-400 line-through">
                     ฿{formatPrice(epPlan.original_price_thb)}
@@ -365,7 +350,7 @@ function HeroPlanCard({
                 </p>
               )}
               <p className="text-xs text-gray-400">
-                {isYearly(epPlan.plan_code) ? 'ราคารายปี' : 'ราคารายเดือน'}
+                {epPlan.auto_renew === false ? 'ชำระครั้งเดียวสำหรับสิทธิ์ 30 วัน' : 'สมาชิกแบบต่ออายุอัตโนมัติ'}
               </p>
             </div>
 
@@ -415,8 +400,8 @@ function HeroPlanCard({
                       <span className="animate-spin text-lg">⏳</span>กำลังเปิดหน้าชำระเงิน...
                     </span>
                   ) : epPlan.is_founder
-                    ? `สมัคร Founder ฿${formatPrice(epPlan.price_thb)}/เดือน`
-                    : `สมัคร ฿${formatPrice(epPlan.price_thb)}/เดือน`}
+                    ? `สมัคร Founder ฿${formatPrice(epPlan.price_thb)}/${epPlan.auto_renew === false ? '30 วัน' : 'เดือน'}`
+                    : `สมัคร ฿${formatPrice(epPlan.price_thb)}/${epPlan.auto_renew === false ? '30 วัน' : 'เดือน'}`}
                 </button>
               )}
               {error && loading && (
@@ -442,7 +427,7 @@ function HeroPlanCard({
       </div>
 
       {/* Yearly promo callout */}
-      <YearlyPromoSection plans={null} />
+      <p className="mt-6 text-center text-sm text-gray-500">ต่ออายุด้วยรายการชำระเงินใหม่ได้ ไม่มีการหักเงินอัตโนมัติ</p>
     </>
   )
 }
@@ -478,11 +463,6 @@ export default function PricingPage() {
 
   useEffect(() => {
     setMounted(true)
-    const token = localStorage.getItem('access_token')
-    if (!token) {
-      router.push('/login')
-      return
-    }
 
     billingApi.getPrices()
       .then((pricesData) => {
@@ -507,67 +487,9 @@ export default function PricingPage() {
     try {
       const checkoutPlanCode = selectedPlan?.checkout_plan_code ?? planCode
       const res = await billingApi.createCheckoutSession(checkoutPlanCode)
-
-      const checkoutUrl = res.checkout_url
-      if (checkoutUrl) {
-        if (process.env.NODE_ENV === 'development') {
-          console.log('[billing] create-checkout-session success', {
-            endpoint: 'POST /billing/create-checkout-session',
-            plan_code: planCode,
-            status: 200,
-            responseBody: res,
-          })
-        }
-        window.location.href = checkoutUrl
-        return
-      }
-
-      if (res.mode === 'manual_pending') {
-        setPlanSuccess(res.message || 'ส่งคำขอสมัครแพ็กเกจแล้ว กรุณารอผู้ดูแลยืนยัน')
-        setLoadingPlan(null)
-        return
-      }
-
-      if (!checkoutUrl) {
-        throw Object.assign(new Error('Missing checkout_url in response'), {
-          code: 'MISSING_CHECKOUT_URL',
-          status: null,
-          responseBody: res,
-        })
-      }
+      window.location.href = getCheckoutUrl(res)
     } catch (err: unknown) {
-      const errObj = err as Record<string, unknown>
-      const status = errObj.status as number | undefined
-      const isOffline =
-        errObj.code === 'ECONNREFUSED' ||
-        errObj.code === 'ERR_NETWORK' ||
-        errObj.code === 'ECONNABORTED' ||
-        errObj.code === 'MISSING_CHECKOUT_URL'
-      const isConflict = status === 409
-      const isUnauthorized = status === 401
-
-      if (process.env.NODE_ENV === 'development') {
-        console.error('[billing] create-checkout-session error', {
-          endpoint: 'POST /billing/create-checkout-session',
-          plan_code: planCode,
-          status: status ?? null,
-          code: errObj.code ?? null,
-          responseBody: errObj.responseBody ?? null,
-        })
-      }
-
-      if (isUnauthorized) {
-        setPlanError('กรุณาเข้าสู่ระบบก่อนสมัครแพ็กเกจ')
-        router.push('/login')
-      } else if (isConflict) {
-        setPlanError('สิทธิ์ Founder Price ครบแล้ว กรุณาเลือกแพ็กเกจราคาปกติ')
-      } else {
-        setPlanError(
-          isOffline
-            ? 'ไม่สามารถเชื่อมต่อระบบชำระเงินได้'
-            : 'ไม่สามารถเปิดหน้าชำระเงินได้ กรุณาลองใหม่'
-        )
-      }
+      setPlanError(getCheckoutErrorMessage(err))
       setLoadingPlan(null)
     }
   }
@@ -653,6 +575,13 @@ export default function PricingPage() {
           </div>
         )}
 
+        {planError && (
+          <div role="alert" className="mb-6 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-800">
+            {planError}
+          </div>
+        )}
+
+        <p className="mb-5 text-center text-sm text-gray-600">{prices?.checkout_provider === 'mpp' ? 'ชำระครั้งเดียวสำหรับสิทธิ์ 30 วัน ต่ออายุด้วยรายการชำระใหม่' : 'สมาชิก Stripe ต่ออายุอัตโนมัติ จัดการได้ในหน้าการเรียกเก็บเงิน'}</p>
         {/* Free Plan — always visible */}
         <div className="mb-6">
           <FreePlanCard currentPlanCode={currentPlanCode} />
@@ -692,7 +621,7 @@ export default function PricingPage() {
         {/* Trust badges */}
         <div className="mt-10 text-center">
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-            <span className="flex items-center gap-1.5">🔒 ชำระเงินปลอดภัยผ่าน Stripe</span>
+            <span className="flex items-center gap-1.5">🔒 {prices?.checkout_provider === 'mpp' ? 'MPP (Staging)' : 'Stripe'}</span>
             <span className="flex items-center gap-1.5">🚫 ยกเลิกได้ทุกเมื่อ</span>
             <span className="flex items-center gap-1.5">👨‍👩‍👧 เหมาะสำหรับครอบครัว</span>
           </div>

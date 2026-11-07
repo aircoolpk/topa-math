@@ -1,0 +1,179 @@
+{
+  "lesson_id": "position_order_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "pos_ep_q002_e01",
+      "question_text": "Pim is 5th in a line. Lin is right in front of Pim. What position is Lin from the front?",
+      "question_text_th": "พิมอยู่อันดับ 5 ในแถว ลินอยู่ตรงหน้าพิม ลินอยู่อันดับที่เท่าไหร่จากหน้า",
+      "choices": [
+        "4th",
+        "7th",
+        "2th",
+        "9th"
+      ],
+      "correct_answer": "4th",
+      "answer": "4th",
+      "explanation": "Lin is 4th from the front",
+      "explanation_th": "ลินอยู่อันดับ 4 จากหน้า",
+      "difficulty": "easy",
+      "hint_th": "One in front means subtract 1."
+    },
+    {
+      "question_id": "pos_ep_q002_e02",
+      "question_text": "In a race, Ai is 3rd and Mali is 6th. How many runners are between Ai and Mali?",
+      "question_text_th": "แข่ง อ้ายอยู่อันดับ 3 มะลิอยู่อันดับ 6 มีนักวิ่งกี่คนระหว่างอ้ายกับมะลิ",
+      "choices": [
+        "2 runners",
+        "5 runners",
+        "6 runners",
+        "7 runners"
+      ],
+      "correct_answer": "2 runners",
+      "answer": "2 runners",
+      "explanation": "6 - 3 - 1 = 2 runners",
+      "explanation_th": "6 - 3 - 1 = 2 คน",
+      "difficulty": "easy",
+      "hint_th": "Subtract minus 1."
+    },
+    {
+      "question_id": "pos_ep_q002_e03",
+      "question_text": "Book is 4th in a line of children. He is the last. How many children are in the line?",
+      "question_text_th": "บุ๊กอยู่อันดับ 4 ในแถว และเป็นคนสุดท้าย มีเด็กกี่คนในแถว",
+      "choices": [
+        "4 children",
+        "7 children",
+        "2 children",
+        "9 children"
+      ],
+      "correct_answer": "4 children",
+      "answer": "4 children",
+      "explanation": "Book is 4th and last, so 4 children",
+      "explanation_th": "บุ๊กอันดับ 4 และสุดท้าย = 4 คน",
+      "difficulty": "easy",
+      "hint_th": "Last position equals count."
+    },
+    {
+      "question_id": "pos_ep_q002_m01",
+      "question_text": "Lin is 2nd from the front and Mali is 8th from the front. How many children are between them?",
+      "question_text_th": "ลินอยู่อันดับ 2 มะลิอยู่อันดับ 8 จากหน้า มีเด็กกี่คนระหว่างลินและมะลิ",
+      "choices": [
+        "5 children",
+        "8 children",
+        "3 children",
+        "10 children"
+      ],
+      "correct_answer": "5 children",
+      "answer": "5 children",
+      "explanation": "8 - 2 - 1 = 5 children",
+      "explanation_th": "8 - 2 - 1 = 5 คน",
+      "difficulty": "medium",
+      "hint_th": "Subtract and minus 1."
+    },
+    {
+      "question_id": "pos_ep_q002_m02",
+      "question_text": "Tad finishes a race in 3rd place out of 10 runners. How many runners finished after Tad?",
+      "question_text_th": "ต้นวิ่งจบอันดับ 3 จากนักวิ่ง 10 คน มีนักวิ่งกี่คนวิ่งจบหลังต้น",
+      "choices": [
+        "7 runners",
+        "10 runners",
+        "5 runners",
+        "12 runners"
+      ],
+      "correct_answer": "7 runners",
+      "answer": "7 runners",
+      "explanation": "10 - 3 = 7 runners",
+      "explanation_th": "10 - 3 = 7 คน",
+      "difficulty": "medium",
+      "hint_th": "Total minus Tad's position."
+    },
+    {
+      "question_id": "pos_ep_q002_m03",
+      "question_text": "In a line of 12 children, Ai is 5th from the front. What is Ai's position from the back?",
+      "question_text_th": "แถวเด็ก 12 คน อ้ายอยู่อันดับ 5 จากหน้า อ้ายอยู่อันดับที่เท่าไหร่จากหลัง",
+      "choices": [
+        "8th",
+        "11th",
+        "6th",
+        "13th"
+      ],
+      "correct_answer": "8th",
+      "answer": "8th",
+      "explanation": "12 - 5 + 1 = 8th",
+      "explanation_th": "12 - 5 + 1 = อันดับ 8",
+      "difficulty": "medium",
+      "hint_th": "Total minus front position plus 1."
+    },
+    {
+      "question_id": "pos_ep_q002_m04",
+      "question_text": "Mali is 7th from the back of a line. The line has 10 children. What is Mali's position from the front?",
+      "question_text_th": "มะลิอยู่อันดับ 7 จากหลังของแถว แถวมีเด็ก 10 คน มะลิอยู่อันดับที่เท่าไหร่จากหน้า",
+      "choices": [
+        "4th",
+        "7th",
+        "2th",
+        "9th"
+      ],
+      "correct_answer": "4th",
+      "answer": "4th",
+      "explanation": "10 - 7 + 1 = 4th",
+      "explanation_th": "10 - 7 + 1 = อันดับ 4",
+      "difficulty": "medium",
+      "hint_th": "Total minus back plus 1."
+    },
+    {
+      "question_id": "pos_ep_q002_h01",
+      "question_text": "In a class, Mai is 5th from the front and 3rd from the back. How many students are in the class?",
+      "question_text_th": "ห้อง ไมอยู่อันดับ 5 จากหน้า และอันดับ 3 จากหลัง มีนักเรียนกี่คนในห้อง",
+      "choices": [
+        "7 students",
+        "10 students",
+        "5 students",
+        "12 students"
+      ],
+      "correct_answer": "7 students",
+      "answer": "7 students",
+      "explanation": "5 + 3 - 1 = 7 students",
+      "explanation_th": "5 + 3 - 1 = 7 คน",
+      "difficulty": "hard",
+      "hint_th": "Add and minus 1."
+    },
+    {
+      "question_id": "pos_ep_q002_h02",
+      "question_text": "Book is 4th from the front and 5th from the back. How many children are in the line?",
+      "question_text_th": "บุ๊กอยู่อันดับ 4 จากหน้า และอันดับ 5 จากหลัง มีเด็กกี่คนในแถว",
+      "choices": [
+        "8 children",
+        "11 children",
+        "6 children",
+        "13 children"
+      ],
+      "correct_answer": "8 children",
+      "answer": "8 children",
+      "explanation": "4 + 5 - 1 = 8 children",
+      "explanation_th": "4 + 5 - 1 = 8 คน",
+      "difficulty": "hard",
+      "hint_th": "Add both minus 1."
+    },
+    {
+      "question_id": "pos_ep_q002_h03",
+      "question_text": "Lin is 2nd from the front. Mali is 2nd from the back. There are 9 children in total. How many children are between Lin and Mali?",
+      "question_text_th": "ลินอยู่อันดับ 2 จากหน้า มะลิอยู่อันดับ 2 จากหลัง มีเด็กทั้งหมด 9 คน มีเด็กกี่คนระหว่างลินกับมะลิ",
+      "choices": [
+        "5 children",
+        "8 children",
+        "3 children",
+        "10 children"
+      ],
+      "correct_answer": "5 children",
+      "answer": "5 children",
+      "explanation": "9 - 2 - 2 = 5 children",
+      "explanation_th": "9 - 2 - 2 = 5 คน",
+      "difficulty": "hard",
+      "hint_th": "Subtract both positions."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

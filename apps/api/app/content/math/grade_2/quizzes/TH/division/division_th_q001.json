@@ -1,0 +1,133 @@
+{
+  "quiz_id": "division_th_q001",
+  "topic_key": "division",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ division_th_q001",
+  "title_en": "Quiz division_th_q001",
+  "questions": [
+    {
+      "question": "24 / 3 = ?",
+      "choices": [
+        "8",
+        "6",
+        "7",
+        "9"
+      ],
+      "correct_answer": "8",
+      "explanation": "24 หาร 3 ได้ 8 เพราะ 8x3=24",
+      "difficulty": "easy"
+    },
+    {
+      "question": "36 / 6 = ?",
+      "choices": [
+        "6",
+        "5",
+        "7",
+        "4"
+      ],
+      "correct_answer": "6",
+      "explanation": "36/6=6 เพราะ 6x6=36",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มีลูกช็อกโกแลต 48 ชิ้น แบ่งให้เพื่อน 6 คนเท่าๆ กัน แต่ละคนได้กี่ชิ้น",
+      "choices": [
+        "8 ชิ้น",
+        "6 ชิ้น",
+        "7 ชิ้น",
+        "9 ชิ้น"
+      ],
+      "correct_answer": "8 ชิ้น",
+      "explanation": "48/6=8 ชิ้น",
+      "difficulty": "easy"
+    },
+    {
+      "question": "42 / 7 = ?",
+      "choices": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "correct_answer": "6",
+      "explanation": "42/7=6 เพราะ 6x7=42",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ต้องการแบ่งน้ำผลไม้ 35 ลิตร ใส่ถังละ 7 ลิตร ต้องใช้ถังกี่ใบ",
+      "choices": [
+        "5 ใบ",
+        "6 ใบ",
+        "4 ใบ",
+        "7 ใบ"
+      ],
+      "correct_answer": "5 ใบ",
+      "explanation": "35/7=5 ใบ",
+      "difficulty": "easy"
+    },
+    {
+      "question": "56 / 8 = ?",
+      "choices": [
+        "7",
+        "6",
+        "8",
+        "5"
+      ],
+      "correct_answer": "7",
+      "explanation": "56/8=7 เพราะ 7x8=56",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มีดอกไม้ 45 ดอก ปักแจกันแจกันละ 9 ดอก ปักได้กี่แจกัน",
+      "choices": [
+        "5 แจกัน",
+        "6 แจกัน",
+        "4 แจกัน",
+        "7 แจกัน"
+      ],
+      "correct_answer": "5 แจกัน",
+      "explanation": "45/9=5 แจกัน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "64 / 8 = ?",
+      "choices": [
+        "8",
+        "7",
+        "9",
+        "6"
+      ],
+      "correct_answer": "8",
+      "explanation": "64/8=8 เพราะ 8x8=64",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ลินมีลูกอม 72 ลูก แบ่งให้เพื่อน 9 คนเท่าๆ กัน แต่ละคนได้กี่ลูก",
+      "choices": [
+        "8 ลูก",
+        "9 ลูก",
+        "7 ลูก",
+        "6 ลูก"
+      ],
+      "correct_answer": "8 ลูก",
+      "explanation": "72/9=8 ลูก",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มีขนม 84 ชิ้น แบ่งให้เด็ก 7 คนเท่าๆ กัน แต่ละคนได้กี่ชิ้น",
+      "choices": [
+        "12 ชิ้น",
+        "11 ชิ้น",
+        "13 ชิ้น",
+        "10 ชิ้น"
+      ],
+      "correct_answer": "12 ชิ้น",
+      "explanation": "84/7=12 ชิ้น",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

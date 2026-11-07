@@ -1,0 +1,194 @@
+{
+  "variant_id": "picture_graphs_th_001",
+  "variant_title_th": "แผนภูมิรูปภาพ",
+  "variant_title_en": "Picture Graphs",
+  "status": "needs_review",
+  "title_th": "แผนภูมิรูปภาพ",
+  "title_en": "Picture Graphs",
+  "story_theme_th": "มะลิสำรวจของชอบของเพื่อน 5 คนในห้อง ผลไม้ที่ชอบ: ส้ม 4 คน กล้วย 6 คน มะม่วง 3 คน แตงโม 5 คน รวมมะลิสำรวจได้กี่คน และผลไม้ที่ได้รับความนิยมมากที่สุดมีกี่คน",
+  "helper_tip": "การอ่านแผนภูมิรูปภาพ แต่ละรูปแทนจำนวนที่กำหนด ต้องนับรูปและคูณด้วยค่าของแต่ละรูป",
+  "think_story_th": "รวม: 4+6+3+5 = 18 คน, มากสุด: กล้วย 6 คน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "มะลิสำรวจของชอบของเพื่อน 5 คนในห้อง ผลไม้ที่ชอบ: ส้ม 4 คน กล้วย 6 คน มะม่วง 3 คน แตงโม 5 คน รวมมะลิสำรวจได้กี่คน และผลไม้ที่ได้รับความนิยมมากที่สุดมีกี่คน",
+      "data": {
+        "content_th": "มะลิสำรวจของชอบของเพื่อน 5 คนในห้อง ผลไม้ที่ชอบ: ส้ม 4 คน กล้วย 6 คน มะม่วง 3 คน แตงโม 5 คน รวมมะลิสำรวจได้กี่คน และผลไม้ที่ได้รับความนิยมมากที่สุดมีกี่คน"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "รวม: 4+6+3+5 = 18 คน, มากสุด: กล้วย 6 คน",
+      "data": {
+        "content_th": "รวม: 4+6+3+5 = 18 คน, มากสุด: กล้วย 6 คน"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "ส้ม",
+            "value": 4,
+            "display": "4 คน",
+            "color": "#FF9F43",
+            "width_pct": 67
+          },
+          {
+            "label": "กล้วย",
+            "value": 6,
+            "display": "6 คน",
+            "color": "#FECA57",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "มะม่วง",
+            "value": 3,
+            "display": "3 คน",
+            "color": "#FF6B6B",
+            "width_pct": 50
+          },
+          {
+            "label": "แตงโม",
+            "value": 5,
+            "display": "5 คน",
+            "color": "#4ECDC4",
+            "width_pct": 83
+          }
+        ],
+        "unit": "คน"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: รวมจำนวนคนที่สำรวจ",
+            "expression": "4 + 6 + 3 + 5 = 18",
+            "a": 4,
+            "b": 14,
+            "res": 18,
+            "op": "+",
+            "formula": {
+              "display": "4+6+3+5=18",
+              "a": 4,
+              "b": 14,
+              "result": 18,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "4",
+              "b_display": "14",
+              "result_display": "18",
+              "operation": "add"
+            },
+            "story_connection": "4+6+3+5=18 คน"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาค่ามากที่สุด",
+            "expression": "6 คน (กล้วย)",
+            "a": 6,
+            "b": 0,
+            "res": 6,
+            "op": "+",
+            "formula": {
+              "display": "6",
+              "a": 6,
+              "b": 0,
+              "result": 6,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "6",
+              "b_display": "0",
+              "result_display": "6",
+              "operation": "add"
+            },
+            "story_connection": "กล้วยมี 6 คน มากที่สุด"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "4 + 6 + 3 + 5 = 18 คน",
+      "content": "4 + 6 + 3 + 5 = 18 คน",
+      "data": {
+        "expression": "4 + 6 + 3 + 5 = 18 คน",
+        "content_th": "4 + 6 + 3 + 5 = 18 คน",
+        "operations": [
+          {
+            "op": "+",
+            "a": 4,
+            "b": 14,
+            "result": 18
+          },
+          {
+            "op": "+",
+            "a": 6,
+            "b": 0,
+            "result": 6
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "สำรวจสัตว์เลี้ยงที่ชอบ: หมา 5 คน แมว 3 คน ปลาทอง 4 คน นก 2 คน รวมกี่คน",
+      "choices": [
+        "14 คน",
+        "12 คน",
+        "15 คน",
+        "13 คน"
+      ],
+      "correct_answer": "14 คน",
+      "explanation": "5+3+4+2=14 คน",
+      "data": {
+        "question": "สำรวจสัตว์เลี้ยงที่ชอบ: หมา 5 คน แมว 3 คน ปลาทอง 4 คน นก 2 คน รวมกี่คน",
+        "choices": [
+          "14 คน",
+          "12 คน",
+          "15 คน",
+          "13 คน"
+        ],
+        "correct_answer": "14 คน",
+        "explanation": "5+3+4+2=14 คน"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -1,0 +1,199 @@
+{
+  "variant_id": "fractions_ep_001",
+  "variant_title_en": "Fractions",
+  "status": "needs_review",
+  "title_en": "Fractions",
+  "title_th": "เศษส่วน",
+  "story_theme_en": "Mom bought 1 pizza and divided it among her three children. Lin got 1/3 of the pizza, Mali got 1/4 of the pizza, and Book got the rest. Who got the most pizza, and how much did they get?",
+  "helper_tip": "When comparing fractions, make the denominators the same first",
+  "hint_th": "เวลาเปรียบเทียบเศษส่วน ให้ทำส่วนให้เท่ากันก่อนเสมอ",
+  "think_story_en": "Lin gets 1/3 = 4/12 of the pizza. Mali gets 1/4 = 3/12 of the pizza. Book gets 1 - 4/12 - 3/12 = 5/12 of the pizza. So Book got the most at 5/12, then Lin at 4/12, and Mali at 3/12.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mom bought 1 pizza and divided it among her three children. Lin got 1/3 of the pizza, Mali got 1/4 of the pizza, and Book got the rest. Who got the most pizza, and how much did they get?",
+      "data": {
+        "content_en": "Mom bought 1 pizza and divided it among her three children. Lin got 1/3 of the pizza, Mali got 1/4 of the pizza, and Book got the rest. Who got the most pizza, and how much did they get?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Lin gets 1/3 = 4/12 of the pizza. Mali gets 1/4 = 3/12 of the pizza. Book gets 1 - 4/12 - 3/12 = 5/12 of the pizza. So Book got the most at 5/12, then Lin at 4/12, and Mali at 3/12.",
+      "data": {
+        "content_en": "Lin gets 1/3 = 4/12 of the pizza. Mali gets 1/4 = 3/12 of the pizza. Book gets 1 - 4/12 - 3/12 = 5/12 of the pizza. So Book got the most at 5/12, then Lin at 4/12, and Mali at 3/12."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "units",
+        "bars": [
+          {
+            "label": "Lin",
+            "value": 4,
+            "display": "4/12 of pizza",
+            "color": "#4ECDC4",
+            "width_pct": 33
+          },
+          {
+            "label": "Mali",
+            "value": 3,
+            "display": "3/12 of pizza",
+            "color": "#45B7D1",
+            "width_pct": 25
+          },
+          {
+            "label": "Book",
+            "value": 5,
+            "display": "5/12 of pizza",
+            "color": "#FF6B6B",
+            "width_pct": 42,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "4 ÷ 12 = 1/3",
+            "formula": {
+              "display": "4 ÷ 12 = 1/3",
+              "a": 1,
+              "b": 3,
+              "result": 4,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}1&\\ ÷\\quad 3&\\ \\hline 4&\\\\ \\hline \\end{array}",
+              "a_display": "1",
+              "b_display": "3",
+              "result_display": "4",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 4 ÷ 12 = 1/3"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "3 ÷ 12 = 1/4",
+            "formula": {
+              "display": "3 ÷ 12 = 1/4",
+              "a": 1,
+              "b": 4,
+              "result": 3,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}1&\\ ÷\\quad 4&\\ \\hline 3&\\\\ \\hline \\end{array}",
+              "a_display": "1",
+              "b_display": "4",
+              "result_display": "3",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 3 ÷ 12 = 1/4"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "12 - 4 - 3 = 5",
+            "formula": {
+              "display": "12 - 4 - 3 = 5",
+              "a": 12,
+              "b": 12,
+              "result": 0,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}12&\\ -\\quad 12&\\ \\hline 0&\\\\ \\hline \\end{array}",
+              "a_display": "12",
+              "b_display": "12",
+              "result_display": "0",
+              "operation": "subtract"
+            },
+            "story_connection": "From bar model: 12 - 4 - 3 = 5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "4 ÷ 12 = 1/3 | 3 ÷ 12 = 1/4 | 12 - 4 - 3 = 5",
+      "content": "4 ÷ 12 = 1/3 | 3 ÷ 12 = 1/4 | 12 - 4 - 3 = 5",
+      "data": {
+        "expression": "4 ÷ 12 = 1/3 | 3 ÷ 12 = 1/4 | 12 - 4 - 3 = 5",
+        "operations": [
+          {
+            "op": "÷",
+            "a": 4,
+            "b": 12,
+            "result": "1/3"
+          },
+          {
+            "op": "÷",
+            "a": 3,
+            "b": 12,
+            "result": "1/4"
+          },
+          {
+            "op": "-",
+            "a": 12,
+            "b": 4,
+            "result": 8
+          },
+          {
+            "op": "-",
+            "a": 8,
+            "b": 3,
+            "result": 5
+          }
+        ],
+        "content_en": "4 ÷ 12 = 1/3 | 3 ÷ 12 = 1/4 | 12 - 4 - 3 = 5"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A pizza is divided equally among 5 children. How much does each child get?",
+      "choices": [
+        "1/3 of the pizza",
+        "1/4 of the pizza",
+        "1/5 of the pizza",
+        "1/6 of the pizza"
+      ],
+      "correct_answer": "1/5 of the pizza",
+      "explanation": "Dividing equally among 5 children = 1/5 of the pizza",
+      "data": {
+        "question": "A pizza is divided equally among 5 children. How much does each child get?",
+        "choices": [
+          "1/3 of the pizza",
+          "1/4 of the pizza",
+          "1/5 of the pizza",
+          "1/6 of the pizza"
+        ],
+        "correct_answer": "1/5 of the pizza",
+        "explanation": "Dividing equally among 5 children = 1/5 of the pizza"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

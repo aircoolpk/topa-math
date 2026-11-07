@@ -1,0 +1,133 @@
+{
+  "quiz_id": "volume_measurement_ep_q002",
+  "topic_key": "volume_measurement",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz volume_measurement_ep_q002",
+  "title_en": "Quiz volume_measurement_ep_q002",
+  "questions": [
+    {
+      "question": "2 liters equals how many milliliters?",
+      "choices": [
+        "2,000 mL",
+        "200 mL",
+        "20 mL",
+        "200,000 mL"
+      ],
+      "correct_answer": "2,000 mL",
+      "explanation": "2 L = 2,000 mL",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A 250-mL cup. How many cups to make 1 L?",
+      "choices": [
+        "4 cups",
+        "3 cups",
+        "5 cups",
+        "2 cups"
+      ],
+      "correct_answer": "4 cups",
+      "explanation": "1,000/250=4 cups",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Juice 750 mL mixed with water 250 mL. Total in liters?",
+      "choices": [
+        "1 L",
+        "1.5 L",
+        "0.5 L",
+        "2 L"
+      ],
+      "correct_answer": "1 L",
+      "explanation": "750+250=1,000 mL = 1 L",
+      "difficulty": "easy"
+    },
+    {
+      "question": "3 L - 1,200 mL = ? mL",
+      "choices": [
+        "1,800 mL",
+        "2,800 mL",
+        "1,200 mL",
+        "800 mL"
+      ],
+      "correct_answer": "1,800 mL",
+      "explanation": "3,000-1,200=1,800 mL",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Lemonade 1 L 250 mL and orange juice 750 mL. Total?",
+      "choices": [
+        "2 L",
+        "3 L",
+        "1 L",
+        "4 L"
+      ],
+      "correct_answer": "2 L",
+      "explanation": "1,250+750=2,000 mL = 2 L",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Add 650 mL to a bottle with 350 mL. Total?",
+      "choices": [
+        "1 L",
+        "1,000 mL",
+        "900 mL",
+        "0 L"
+      ],
+      "correct_answer": "1 L",
+      "explanation": "650+350=1,000 mL = 1 L",
+      "difficulty": "easy"
+    },
+    {
+      "question": "4 L of water. Used 2 L 500 mL. How much is left?",
+      "choices": [
+        "1,500 mL",
+        "1,000 mL",
+        "2,500 mL",
+        "1,501 mL"
+      ],
+      "correct_answer": "1,500 mL",
+      "explanation": "4,000-2,500=1,500 mL",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Tea 1 L 350 mL mixed with 650 mL sugar water. Total?",
+      "choices": [
+        "2 L",
+        "1 L",
+        "2.5 L",
+        "12 L"
+      ],
+      "correct_answer": "2 L",
+      "explanation": "1,350+650=2,000 mL = 2 L",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Honey 500 mL mixed with 500 mL water. Total?",
+      "choices": [
+        "1 L",
+        "1,100 mL",
+        "900 mL",
+        "500 mL"
+      ],
+      "correct_answer": "1 L",
+      "explanation": "500+500=1,000 mL = 1 L",
+      "difficulty": "easy"
+    },
+    {
+      "question": "2 L 750 mL of water. Used 1 L 500 mL. How much is left?",
+      "choices": [
+        "1,250 mL",
+        "1,000 mL",
+        "1,500 mL",
+        "2,250 mL"
+      ],
+      "correct_answer": "1,250 mL",
+      "explanation": "2,750-1,500=1,250 mL",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

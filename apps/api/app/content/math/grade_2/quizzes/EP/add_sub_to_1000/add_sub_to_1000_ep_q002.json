@@ -1,0 +1,133 @@
+{
+  "quiz_id": "add_sub_to_1000_ep_q002",
+  "topic_key": "add_sub_to_1000",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz add_sub_to_1000_ep_q002",
+  "title_en": "Quiz add_sub_to_1000_ep_q002",
+  "questions": [
+    {
+      "question": "450 + 370 = ?",
+      "choices": [
+        "820",
+        "720",
+        "810",
+        "830"
+      ],
+      "correct_answer": "820",
+      "explanation": "450+300=750, 750+70=820",
+      "difficulty": "easy"
+    },
+    {
+      "question": "1,000 - 480 = ?",
+      "choices": [
+        "520",
+        "420",
+        "620",
+        "580"
+      ],
+      "correct_answer": "520",
+      "explanation": "1,000-400=600, 600-80=520",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A garden has 560 mangoes. Sold 245, received 198 more. How many mangoes?",
+      "choices": [
+        "513 mangoes",
+        "503 mangoes",
+        "523 mangoes",
+        "533 mangoes"
+      ],
+      "correct_answer": "513 mangoes",
+      "explanation": "560-245=315, 315+198=513 mangoes",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Collected 620 eggs. Used 285 for hatching. How many eggs are left?",
+      "choices": [
+        "335 eggs",
+        "345 eggs",
+        "325 eggs",
+        "235 eggs"
+      ],
+      "correct_answer": "335 eggs",
+      "explanation": "620-285=335 eggs",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Lin has 380 m of fabric. Bought 245 m more. Used 195 m. How much is left?",
+      "choices": [
+        "430 m",
+        "420 m",
+        "440 m",
+        "410 m"
+      ],
+      "correct_answer": "430 m",
+      "explanation": "380+245=625, 625-195=430 m",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Rice 750 kg. Used 368 kg. Bought 250 kg more. How much rice?",
+      "choices": [
+        "632 kg",
+        "622 kg",
+        "642 kg",
+        "652 kg"
+      ],
+      "correct_answer": "632 kg",
+      "explanation": "750-368=382, 382+250=632 kg",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Bought notebooks for 135 baht and pencils for 89 baht. Had 500 baht. How much is left?",
+      "choices": [
+        "276 baht",
+        "286 baht",
+        "266 baht",
+        "296 baht"
+      ],
+      "correct_answer": "276 baht",
+      "explanation": "135+89=224, 500-224=276 baht",
+      "difficulty": "medium"
+    },
+    {
+      "question": "820 - 355 = ?",
+      "choices": [
+        "465",
+        "455",
+        "475",
+        "565"
+      ],
+      "correct_answer": "465",
+      "explanation": "820-300=520, 520-55=465",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A farmer has 980 bags of rice. Sold 465 today and 358 tomorrow. How many bags are left?",
+      "choices": [
+        "873 bags",
+        "863 bags",
+        "883 bags",
+        "853 bags"
+      ],
+      "correct_answer": "873 bags",
+      "explanation": "980-465=515, 515+358=873 bags",
+      "difficulty": "hard"
+    },
+    {
+      "question": "360 + 280 - 195 = ?",
+      "choices": [
+        "445",
+        "435",
+        "455",
+        "465"
+      ],
+      "correct_answer": "445",
+      "explanation": "360+280=640, 640-195=445",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

@@ -4,6 +4,10 @@
 !.env.example
 !.env.docker.example
 !.env.staging.example
+!.env.mpp-staging.example
+!.env.production.example
+!deploy/.env.production.release.example
+.release-backups/
 
 # Dependencies
 node_modules/
@@ -57,3 +61,17 @@ stderr.log
 # OS/editor files
 .DS_Store
 Thumbs.db
+
+# ── Phase 0 backup artifacts (never commit) ─────────────────────────────
+*.bak-phase0
+*.bak-phase0-*
+docker-compose.beta.yml.bak-*
+# Content QA backups (large, regenerable)
+apps/api/app/content/math/_content_backups/
+# Legacy/backup content folders
+apps/api/app/content/math/backup_*/
+apps/api/app/content/math/_archived_legacy_not_loaded/
+# Stray duplicate content folders (verified 100% duplicate of canonical grade_N/)
+apps/api/app/content/math/New folder/
+apps/api/app/content/math/grade_*/lessons old/
+*.bak-phase1-*

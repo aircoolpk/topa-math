@@ -1,0 +1,179 @@
+{
+  "lesson_id": "rule_of_three_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "rot_ep_q001_e01",
+      "question_text": "Situation 1: Durian costs 125 baht per kilogram. How much do 4 kilograms cost?",
+      "question_text_th": "Situation 1: Durian costs 125 baht per kilogram. How much do 4 kilograms cost?",
+      "choices": [
+        "500 baht",
+        "500",
+        "450 baht",
+        "550 baht"
+      ],
+      "correct_answer": "500 baht",
+      "answer": "500 baht",
+      "explanation": "4 x 125 = 500 baht",
+      "explanation_th": "4 x 125 = 500 baht",
+      "difficulty": "easy",
+      "hint_th": "4 x 125 = 500 baht"
+    },
+    {
+      "question_id": "rot_ep_q001_e02",
+      "question_text": "Situation 2: Eggs cost 7 baht each. How much do 12 eggs cost?",
+      "question_text_th": "Situation 2: Eggs cost 7 baht each. How much do 12 eggs cost?",
+      "choices": [
+        "84 baht",
+        "84",
+        "80 baht",
+        "88 baht"
+      ],
+      "correct_answer": "84 baht",
+      "answer": "84 baht",
+      "explanation": "12 x 7 = 84 baht",
+      "explanation_th": "12 x 7 = 84 baht",
+      "difficulty": "easy",
+      "hint_th": "12 x 7 = 84 baht"
+    },
+    {
+      "question_id": "rot_ep_q001_e03",
+      "question_text": "Situation 3: A 1-liter bottle of water costs 15 baht. How much do 6 liters cost?",
+      "question_text_th": "Situation 3: A 1-liter bottle of water costs 15 baht. How much do 6 liters cost?",
+      "choices": [
+        "90 baht",
+        "90",
+        "85 baht",
+        "95 baht"
+      ],
+      "correct_answer": "90 baht",
+      "answer": "90 baht",
+      "explanation": "6 x 15 = 90 baht",
+      "explanation_th": "6 x 15 = 90 baht",
+      "difficulty": "easy",
+      "hint_th": "6 x 15 = 90 baht"
+    },
+    {
+      "question_id": "rot_ep_q001_m01",
+      "question_text": "Situation 4: A car uses 45 liters to travel 120 km. How far with 30 liters?",
+      "question_text_th": "Situation 4: A car uses 45 liters to travel 120 km. How far with 30 liters?",
+      "choices": [
+        "80 km",
+        "80",
+        "75 km",
+        "85 km"
+      ],
+      "correct_answer": "80 km",
+      "answer": "80 km",
+      "explanation": "45 L : 120 km = 30 L : ? | ? = 30x120/45 = 80 km",
+      "explanation_th": "45 L : 120 km = 30 L : ? | ? = 30x120/45 = 80 km",
+      "difficulty": "medium",
+      "hint_th": "Ratio 45:120 = 30:? | 30x120/45 = 80 km"
+    },
+    {
+      "question_id": "rot_ep_q001_m02",
+      "question_text": "Situation 5: 3 workers finish a job in 8 days. How many days with 6 workers?",
+      "question_text_th": "Situation 5: 3 workers finish a job in 8 days. How many days with 6 workers?",
+      "choices": [
+        "4 days",
+        "4",
+        "3 days",
+        "5 days"
+      ],
+      "correct_answer": "4 days",
+      "answer": "4 days",
+      "explanation": "3 x 8 = 24 worker-days | 24 / 6 = 4 days",
+      "explanation_th": "3 x 8 = 24 worker-days | 24 / 6 = 4 days",
+      "difficulty": "medium",
+      "hint_th": "More workers = less time. 3x8=24 worker-days | 24/6=4 days"
+    },
+    {
+      "question_id": "rot_ep_q001_m03",
+      "question_text": "Situation 6: 5 meters of cloth makes 4 shirts. How many meters for 20 shirts?",
+      "question_text_th": "Situation 6: 5 meters of cloth makes 4 shirts. How many meters for 20 shirts?",
+      "choices": [
+        "25 meters",
+        "25",
+        "20 meters",
+        "30 meters"
+      ],
+      "correct_answer": "25 meters",
+      "answer": "25 meters",
+      "explanation": "5/4 x 20 = 25 meters",
+      "explanation_th": "5/4 x 20 = 25 meters",
+      "difficulty": "medium",
+      "hint_th": "5 meters : 4 shirts = ? meters : 20 shirts | 5x20/4 = 25 meters"
+    },
+    {
+      "question_id": "rot_ep_q001_m04",
+      "question_text": "Situation 7: 8 oranges cost 48 baht. How much for 20 oranges?",
+      "question_text_th": "Situation 7: 8 oranges cost 48 baht. How much for 20 oranges?",
+      "choices": [
+        "120 baht",
+        "120",
+        "115 baht",
+        "125 baht"
+      ],
+      "correct_answer": "120 baht",
+      "answer": "120 baht",
+      "explanation": "48/8 x 20 = 6 x 20 = 120 baht",
+      "explanation_th": "48/8 x 20 = 6 x 20 = 120 baht",
+      "difficulty": "medium",
+      "hint_th": "Price per orange = 48/8 = 6 baht | 6x20 = 120 baht"
+    },
+    {
+      "question_id": "rot_ep_q001_h01",
+      "question_text": "Situation 8: 6 trucks carry 120 tons in 5 days. 10 trucks carry 200 tons. How many days?",
+      "question_text_th": "Situation 8: 6 trucks carry 120 tons in 5 days. 10 trucks carry 200 tons. How many days?",
+      "choices": [
+        "5 days",
+        "5",
+        "4 days",
+        "6 days"
+      ],
+      "correct_answer": "5 days",
+      "answer": "5 days",
+      "explanation": "6x5=30 truck-days | 30/120=0.25 truck-days/ton | 200x0.25=50 truck-days | 50/10=5 days",
+      "explanation_th": "6x5=30 truck-days | 30/120=0.25 truck-days/ton | 200x0.25=50 truck-days | 50/10=5 days",
+      "difficulty": "hard",
+      "hint_th": "6x5=30 truck-days | 30/120=0.25 | 200x0.25=50 | 50/10=5 days"
+    },
+    {
+      "question_id": "rot_ep_q001_h02",
+      "question_text": "Situation 9: Worker A works 8 hours/day, finishes in 15 days. Worker B works 10 hours/day. How many days?",
+      "question_text_th": "Situation 9: Worker A works 8 hours/day, finishes in 15 days. Worker B works 10 hours/day. How many days?",
+      "choices": [
+        "12 days",
+        "12",
+        "13 days",
+        "11 days"
+      ],
+      "correct_answer": "12 days",
+      "answer": "12 days",
+      "explanation": "Total work = 8x15 = 120 hours | Days = 120/10 = 12 days",
+      "explanation_th": "Total work = 8x15 = 120 hours | Days = 120/10 = 12 days",
+      "difficulty": "hard",
+      "hint_th": "Total work = 8x15 = 120 hours | 120/10 = 12 days"
+    },
+    {
+      "question_id": "rot_ep_q001_h03",
+      "question_text": "Situation 10: 5 machines produce 200 boxes in 4 hours. 8 machines for 560 boxes. How many hours?",
+      "question_text_th": "Situation 10: 5 machines produce 200 boxes in 4 hours. 8 machines for 560 boxes. How many hours?",
+      "choices": [
+        "7 hours",
+        "7",
+        "8 hours",
+        "6 hours"
+      ],
+      "correct_answer": "7 hours",
+      "answer": "7 hours",
+      "explanation": "200/4=50 boxes/hour (5 machines) | 8 machines=80 boxes/hour | 560/80=7 hours",
+      "explanation_th": "200/4=50 boxes/hour (5 machines) | 8 machines=80 boxes/hour | 560/80=7 hours",
+      "difficulty": "hard",
+      "hint_th": "200/4=50 boxes/hour (5 machines) | 8 machines=80 boxes/hour | 560/80=7 hours"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

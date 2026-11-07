@@ -1,0 +1,127 @@
+{
+  "variant_id": "volume_capacity_ep_002",
+  "variant_title_en": "Volume and Capacity — Delivery Boxes",
+  "status": "needs_review",
+  "title_en": "Volume and Capacity — Delivery Boxes",
+  "story_theme_en": "A delivery company receives packages that are rectangular boxes 0.5 meters wide, 0.8 meters long, and 0.4 meters tall. What is the volume of one box in cubic meters? If there are 24 boxes, how much total space in cubic meters do they need? If the shipping fee is 250 baht per cubic meter, how much does it cost to ship all 24 boxes?",
+  "helper_tip": "Volume of box = Width × Length × Height. Total volume = Volume per box × Number of boxes.",
+  "hint_th": "ปริมาตรกล่อง = กว้าง × ยาว × สูง รวมปริมาตร = ปริมาตรกล่อง × จำนวน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A delivery company receives packages that are rectangular boxes 0.5 meters wide, 0.8 meters long, and 0.4 meters tall. What is the volume of one box in cubic meters? If there are 24 boxes, how much total space in cubic meters do they need? If the shipping fee is 250 baht per cubic meter, how much does it cost to ship all 24 boxes?",
+      "data": {
+        "content_en": "A delivery company receives packages that are rectangular boxes 0.5 meters wide, 0.8 meters long, and 0.4 meters tall. What is the volume of one box in cubic meters? If there are 24 boxes, how much total space in cubic meters do they need? If the shipping fee is 250 baht per cubic meter, how much does it cost to ship all 24 boxes?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Volume per box = 0.5×0.8×0.4 = 0.16 cu m | Total for 24 boxes = 0.16×24 = 3.84 cu m | Shipping cost = 3.84×250 = 960 baht",
+      "data": {
+        "content_en": "Volume per box = 0.5×0.8×0.4 = 0.16 cu m | Total for 24 boxes = 0.16×24 = 3.84 cu m | Shipping cost = 3.84×250 = 960 baht"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Box Volume Diagram",
+      "description": "Box Volume Diagram",
+      "model_type": "volume_diagram",
+      "data": {
+        "model_type": "volume_diagram",
+        "operation": "multiply",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Width 0.5 m",
+            "value": 0.5,
+            "display": "0.5 m",
+            "color": "#96CEB4",
+            "width_pct": 62
+          },
+          {
+            "label": "Length 0.8 m",
+            "value": 0.8,
+            "display": "0.8 m",
+            "color": "#45B7D1",
+            "width_pct": 100
+          },
+          {
+            "label": "Height 0.4 m",
+            "value": 0.4,
+            "display": "0.4 m",
+            "color": "#FF6B6B",
+            "width_pct": 50
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "0.5 x 0.8 x 0.4 = 0.16",
+      "content": "Volume per box = 0.16 cu m | Total 24 boxes = 3.84 cu m | Shipping = 960 baht",
+      "data": {
+        "expression": "Volume per box = 0.16 cu m | Total 24 boxes = 3.84 cu m | Shipping = 960 baht",
+        "operations": [
+          {
+            "op": "×",
+            "a": 0.5,
+            "b": 0.8,
+            "result": 0.4
+          },
+          {
+            "op": "×",
+            "a": 0.4,
+            "b": 0.4,
+            "result": 0.16
+          },
+          {
+            "op": "×",
+            "a": 0.16,
+            "b": 24,
+            "result": 3.84
+          },
+          {
+            "op": "×",
+            "a": 3.84,
+            "b": 250,
+            "result": 960
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A box is a cube with sides of 0.6 meters. What is its volume?",
+      "choices": [
+        "0.216 cu m",
+        "0.216 L",
+        "0.21 cu m",
+        "2.16 cu m"
+      ],
+      "correct_answer": "0.216 cu m",
+      "explanation": "0.6 × 0.6 × 0.6 = 0.216 cu m",
+      "data": {
+        "question": "A box is a cube with sides of 0.6 meters. What is its volume?",
+        "choices": [
+          "0.216 cu m",
+          "0.216 L",
+          "0.21 cu m",
+          "2.16 cu m"
+        ],
+        "correct_answer": "0.216 cu m",
+        "explanation": "0.6 × 0.6 × 0.6 = 0.216 cu m"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

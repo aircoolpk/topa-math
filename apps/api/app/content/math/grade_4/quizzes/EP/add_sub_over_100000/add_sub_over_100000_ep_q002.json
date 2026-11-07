@@ -1,0 +1,189 @@
+{
+  "lesson_id": "add_sub_over_100000_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "A stadium has 178,500 spectators. Ticket sales total 89,250,000 baht. What is the average ticket price?",
+      "question_text_en": "A stadium has 178,500 spectators. Ticket sales total 89,250,000 baht. What is the average ticket price?",
+      "choices": [
+        "500 baht",
+        "490 baht",
+        "510 baht",
+        "495 baht"
+      ],
+      "correct_answer": "500 baht",
+      "answer": "500 baht",
+      "explanation": "89,250,000 / 178,500 = 500 baht",
+      "explanation_th": "89,250,000 ÷ 178,500 = 500 บาท",
+      "difficulty": "medium",
+      "hint_th": "Divide total revenue by number of spectators",
+      "question_text_th": "สนามกีฬามีผู้ชม 178,500 คน. ขายบัตรได้ 89,250,000 บาท. ราคาเฉลี่ยบัตรเท่าไร?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "Mali has 250,000 baht. She buys a motorcycle for 185,500 baht. How much money does Mali have left?",
+      "question_text_en": "Mali has 250,000 baht. She buys a motorcycle for 185,500 baht. How much money does Mali have left?",
+      "choices": [
+        "64,500 baht",
+        "65,500 baht",
+        "64,000 baht",
+        "65,000 baht"
+      ],
+      "correct_answer": "64,500 baht",
+      "answer": "64,500 baht",
+      "explanation": "250,000-185,500=64,500 baht",
+      "explanation_th": "250,000-185,500=64,500 บาทที่เหลือ",
+      "difficulty": "easy",
+      "hint_th": "Subtract: 250,000 minus 185,500",
+      "question_text_th": "มะลิมี 250,000 บาท. ซื้อรถจักรยานยนต์ 185,500 บาท. เหลือเงิน?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "A company has income of 1,250,000 baht and expenses of 875,500 baht. How much money does the company have left?",
+      "question_text_en": "A company has income of 1,250,000 baht and expenses of 875,500 baht. How much money does the company have left?",
+      "choices": [
+        "374,500 baht",
+        "375,500 baht",
+        "374,000 baht",
+        "375,000 baht"
+      ],
+      "correct_answer": "374,500 baht",
+      "answer": "374,500 baht",
+      "explanation": "1,250,000-875,500=374,500 baht",
+      "explanation_th": "1,250,000-875,500=374,500 บาทที่เหลือ",
+      "difficulty": "easy",
+      "hint_th": "Income minus expenses",
+      "question_text_th": "บริษัทมีรายได้ 1,250,000 บาท ค่าใช้จ่าย 875,500 บาท. เหลือเงินเท่าไร?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "A department store sold 567,800 baht on day 1 and 489,500 baht on day 2. How much more was sold on day 1?",
+      "question_text_en": "A department store sold 567,800 baht on day 1 and 489,500 baht on day 2. How much more was sold on day 1?",
+      "choices": [
+        "78,300 baht",
+        "88,300 baht",
+        "78,200 baht",
+        "88,200 baht"
+      ],
+      "correct_answer": "78,300 baht",
+      "answer": "78,300 baht",
+      "explanation": "567,800-489,500=78,300 baht",
+      "explanation_th": "567,800-489,500=78,300 บาทที่มากกว่า",
+      "difficulty": "easy",
+      "hint_th": "Subtract: 567,800 minus 489,500",
+      "question_text_th": "ห้างขายได้ 567,800 บาทวันแรก 489,500 บาทวันที่สอง. วันแรกขายได้มากกว่ากี่บาท?"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "A shop has goods worth 350,000 baht. It sells half. How much money does it get and what is the value of remaining goods?",
+      "question_text_en": "A shop has goods worth 350,000 baht. It sells half. How much money does it get and what is the value of remaining goods?",
+      "choices": [
+        "175,000 baht, left 175,000 baht",
+        "175,000 baht, left 350,000 baht",
+        "350,000 baht, left 175,000 baht",
+        "175,000 baht, left 0 baht"
+      ],
+      "correct_answer": "175,000 baht, left 175,000 baht",
+      "answer": "175,000 baht, left 175,000 baht",
+      "explanation": "350,000/2=175,000 (sold) | 350,000-175,000=175,000 (left)",
+      "explanation_th": "350,000÷2=175,000 บาทที่ขาย | 350,000-175,000=175,000 บาทที่เหลือ",
+      "difficulty": "medium",
+      "hint_th": "Divide by 2 to find half",
+      "question_text_th": "ร้านมีสินค้า 350,000 บาท. ขายไปครึ่งหนึ่ง. ได้เงินเท่าไร เหลือมูลค่าเท่าไร?"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "If x + 45,780 = 123,450, what is x?",
+      "question_text_en": "If x + 45,780 = 123,450, what is x?",
+      "choices": [
+        "77,670",
+        "77,760",
+        "78,670",
+        "78,760"
+      ],
+      "correct_answer": "77,670",
+      "answer": "77,670",
+      "explanation": "123,450-45,780=77,670",
+      "explanation_th": "123,450-45,780=77,670",
+      "difficulty": "medium",
+      "hint_th": "Move the addend to the other side as subtrahend",
+      "question_text_th": "ถ้า x+45,780=123,450 แล้ว x=?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "A fruit shop earned 456,780 baht but the cost was 289,450 baht. What is the profit?",
+      "question_text_en": "A fruit shop earned 456,780 baht but the cost was 289,450 baht. What is the profit?",
+      "choices": [
+        "167,330 baht",
+        "167,430 baht",
+        "168,330 baht",
+        "167,329 baht"
+      ],
+      "correct_answer": "167,330 baht",
+      "answer": "167,330 baht",
+      "explanation": "456,780-289,450=167,330 baht",
+      "explanation_th": "456,780-289,450=167,330 บาทกำไร",
+      "difficulty": "medium",
+      "hint_th": "Profit = revenue minus cost",
+      "question_text_th": "ร้านขายผลไม้ได้เงิน 456,780 บาท ต้นทุน 289,450 บาท. กำไรเท่าไร?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "A shop buys goods for 125,750 baht and sells them for 189,500 baht. What is the profit?",
+      "question_text_en": "A shop buys goods for 125,750 baht and sells them for 189,500 baht. What is the profit?",
+      "choices": [
+        "63,750 baht",
+        "64,750 baht",
+        "63,850 baht",
+        "64,850 baht"
+      ],
+      "correct_answer": "63,750 baht",
+      "answer": "63,750 baht",
+      "explanation": "189,500-125,750=63,750 baht",
+      "explanation_th": "189,500-125,750=63,750 บาทกำไร",
+      "difficulty": "easy",
+      "hint_th": "Profit = selling price minus purchase price",
+      "question_text_th": "ร้านซื้อสินค้า 125,750 บาท ขายได้ 189,500 บาท. กำไรเท่าไร?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "Lin buys a book for 67,800 baht and a pencil for 2,450 baht. Total? If she pays with 80,000 baht, how much change?",
+      "question_text_en": "Lin buys a book for 67,800 baht and a pencil for 2,450 baht. Total? If she pays with 80,000 baht, how much change?",
+      "choices": [
+        "70,250 baht, change 9,750 baht",
+        "70,250 baht, change 10,750 baht",
+        "69,250 baht, change 9,750 baht",
+        "70,250 baht, change 8,750 baht"
+      ],
+      "correct_answer": "70,250 baht, change 9,750 baht",
+      "answer": "70,250 baht, change 9,750 baht",
+      "explanation": "67,800+2,450=70,250 | 80,000-70,250=9,750 change",
+      "explanation_th": "67,800+2,450=70,250 บาท | 80,000-70,250=9,750 บาททอน",
+      "difficulty": "easy",
+      "hint_th": "Add first, then subtract from 80,000",
+      "question_text_th": "ลินซื้อหนังสือ 67,800 บาท ดินสอ 2,450 บาท. รวม? จ่าย 80,000 บาท ทอนเท่าไร?"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "A company has 4 departments with 28,450, 25,380, 31,270, and 34,900 employees. Total?",
+      "question_text_en": "A company has 4 departments with 28,450, 25,380, 31,270, and 34,900 employees. Total?",
+      "choices": [
+        "120,000 people",
+        "110,000 people",
+        "119,000 people",
+        "120,100 people"
+      ],
+      "correct_answer": "120,000 people",
+      "answer": "120,000 people",
+      "explanation": "28,450+25,380+31,270+34,900=120,000",
+      "explanation_th": "28,450+25,380+31,270+34,900=120,000 คน",
+      "difficulty": "hard",
+      "hint_th": "Add all four, verify sum",
+      "question_text_th": "บริษัทมี 4 แผนก: 28,450, 25,380, 31,270, 34,900 คน. รวม?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

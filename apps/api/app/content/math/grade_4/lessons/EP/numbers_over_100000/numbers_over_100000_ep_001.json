@@ -1,0 +1,197 @@
+{
+  "variant_id": "numbers_over_100000_ep_001",
+  "variant_title_en": "Numbers Greater than 100,000",
+  "status": "needs_review",
+  "title_en": "Numbers Greater than 100,000",
+  "story_theme_en": "Lin is a young reporter at a big football stadium. She counts the fans in 3 levels. The lower level has 45,780 fans. The middle level has 32,650 fans. The upper level has 27,050 fans. How many fans are there in total?",
+  "helper_tip": "Write numbers in columns. Add right to left. Carry if the sum is more than 9.",
+  "hint_th": "แบ่งทีละหลัก บวกขวาไปซ้าย ถ้าเกิน 9 ให้ทด",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin is a young reporter at a big football stadium. She counts the fans in 3 levels. The lower level has 45,780 fans. The middle level has 32,650 fans. The upper level has 27,050 fans. How many fans are there in total?",
+      "data": {
+        "content_en": "Lin is a young reporter at a big football stadium. She counts the fans in 3 levels. The lower level has 45,780 fans. The middle level has 32,650 fans. The upper level has 27,050 fans. How many fans are there in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Add the fans from all 3 levels: 45,780 + 32,650 + 27,050 = total fans",
+      "data": {
+        "content_en": "Add the fans from all 3 levels: 45,780 + 32,650 + 27,050 = total fans"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Lower Level",
+            "value": 45780,
+            "display": "45,780 fans",
+            "color": "#4ECDC4",
+            "width_pct": 55
+          },
+          {
+            "label": "Middle Level",
+            "value": 32650,
+            "display": "32,650 fans",
+            "color": "#45B7D1",
+            "width_pct": 40
+          },
+          {
+            "label": "Upper Level",
+            "value": 27050,
+            "display": "27,050 fans",
+            "color": "#96CEB4",
+            "width_pct": 33
+          },
+          {
+            "label": "Total",
+            "value": 105480,
+            "display": "105,480 fans",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add lower and middle level",
+            "expression": "45,780 + 32,650 = 78,430",
+            "formula": {
+              "display": "45,780 + 32,650 = 78,430",
+              "a": 45780,
+              "b": 32650,
+              "result": 78430,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}45780&\\\\\\\\ +\\\\quad 32650&\\\\\\\\ \\\\hline 78430&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "45780",
+              "b_display": "32650",
+              "result_display": "78430",
+              "operation": "add"
+            },
+            "story_connection": "45,780 + 32,650 = 78,430 fans"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add upper level",
+            "expression": "78,430 + 27,050 = 105,480",
+            "formula": {
+              "display": "78,430 + 27,050 = 105,480",
+              "a": 78430,
+              "b": 27050,
+              "result": 105480,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}78430&\\\\\\\\ +\\\\quad 27050&\\\\\\\\ \\\\hline 105480&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "78430",
+              "b_display": "27050",
+              "result_display": "105480",
+              "operation": "add"
+            },
+            "story_connection": "78,430 + 27,050 = 105,480 fans"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "45,780 + 32,650 + 27,050 = 105,480",
+      "content": "45,780 + 32,650 + 27,050 = 105,480 fans",
+      "data": {
+        "expression": "45,780 + 32,650 + 27,050 = 105,480",
+        "operations": [
+          {
+            "op": "+",
+            "a": 45780,
+            "b": 32650,
+            "result": 78430
+          },
+          {
+            "op": "+",
+            "a": 78430,
+            "b": 27050,
+            "result": 105480
+          }
+        ],
+        "content_en": "45,780 + 32,650 + 27,050 = 105,480 fans"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A library has books on 3 shelves. Shelf 1 has 58,340 books. Shelf 2 has 41,275 books. Shelf 3 has 39,865 books. How many books are there in total?",
+      "choices": [
+        "129,480 books",
+        "139,480 books",
+        "129,840 books",
+        "138,480 books"
+      ],
+      "correct_answer": "139,480 books",
+      "explanation": "58,340 + 41,275 + 39,865 = 139,480 books",
+      "data": {
+        "question": "A library has books on 3 shelves. Shelf 1 has 58,340 books. Shelf 2 has 41,275 books. Shelf 3 has 39,865 books. How many books are there in total?",
+        "choices": [
+          "129,480 books",
+          "139,480 books",
+          "129,840 books",
+          "138,480 books"
+        ],
+        "correct_answer": "139,480 books",
+        "explanation": "58,340 + 41,275 + 39,865 = 139,480 books"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "A train station has 67,890 passengers. Train 1 has 45,320 passengers. Train 2 has 38,470 passengers. How many in total?",
+      "solution_en": "67,890 + 45,320 + 38,470 = 151,680 passengers"
+    }
+  ],
+  "common_mistakes": [
+    "Writing numbers in the wrong columns",
+    "Forgetting to carry when the sum is more than 9"
+  ],
+  "hints": [
+    "Draw a place value line: |ten-thousands|thousands|hundreds|tens|ones|",
+    "Add right to left. Carry when the sum is greater than 9."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "place value",
+      "th": "หลัก",
+      "definition_en": "The position of a digit in a number"
+    },
+    {
+      "en": "carry",
+      "th": "ทด",
+      "definition_en": "To move extra value to the next column when adding"
+    },
+    {
+      "en": "total",
+      "th": "ผลรวม",
+      "definition_en": "The result of adding numbers together"
+    }
+  ]
+}

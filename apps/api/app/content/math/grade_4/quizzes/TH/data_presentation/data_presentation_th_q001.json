@@ -1,0 +1,179 @@
+{
+  "lesson_id": "data_presentation_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "ข้อมูล: 45, 32, 67, 28 ผลรวมเท่าไร",
+      "question_text_en": "Data: 45, 32, 67, 28. Sum?",
+      "choices": [
+        "172",
+        "162",
+        "182",
+        "152"
+      ],
+      "correct_answer": "172",
+      "answer": "172",
+      "explanation": "45+32+67+28=172",
+      "explanation_th": "45+32+67+28=172",
+      "difficulty": "easy",
+      "hint_th": "บวกจำนวนทั้งหมด"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "ข้อมูล: 85, 92, 78, 105, 90 ผลรวมเท่าไร",
+      "question_text_en": "Data: 85, 92, 78, 105, 90. Sum?",
+      "choices": [
+        "450",
+        "440",
+        "460",
+        "435"
+      ],
+      "correct_answer": "450",
+      "answer": "450",
+      "explanation": "85+92+78+105+90=450",
+      "explanation_th": "85+92+78+105+90=450",
+      "difficulty": "easy",
+      "hint_th": "บวกจำนวนทั้งหมด"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "ข้อมูล: 80, 90, 70 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Data: 80, 90, 70. Average?",
+      "choices": [
+        "80",
+        "75",
+        "85",
+        "78"
+      ],
+      "correct_answer": "80",
+      "answer": "80",
+      "explanation": "(80+90+70)/3=240/3=80",
+      "explanation_th": "(80+90+70)÷3=240÷3=80",
+      "difficulty": "easy",
+      "hint_th": "ค่าเฉลี่ย = ผลรวม/จำนวนข้อมูล"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "คะแนนสอบ: 88, 75, 92, 81 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Scores: 88, 75, 92, 81. Average?",
+      "choices": [
+        "84",
+        "83",
+        "85",
+        "82"
+      ],
+      "correct_answer": "84",
+      "answer": "84",
+      "explanation": "(88+75+92+81)/4=336/4=84",
+      "explanation_th": "(88+75+92+81)÷4=336÷4=84",
+      "difficulty": "easy",
+      "hint_th": "(88+75+92+81)/4 = 336/4 = 84"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "ยอดขาย 5 วัน: 125, 98, 156, 87, 142 วันไหนขายได้มากที่สุด",
+      "question_text_en": "Sales: 125, 98, 156, 87, 142. Which day highest?",
+      "choices": [
+        "วันพุธ 156",
+        "วันศุกร์ 142",
+        "วันจันทร์ 125",
+        "วันอังคาร 98"
+      ],
+      "correct_answer": "วันพุธ 156",
+      "answer": "วันพุธ 156",
+      "explanation": "156 มากที่สุดในบรรดาจำนวน",
+      "explanation_th": "156 มากที่สุดในบรรดาจำนวน",
+      "difficulty": "easy",
+      "hint_th": "เปรียบเทียบหาค่ามากสุด"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "ข้อมูล: 12, 15, 18, 20, 25 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Data: 12, 15, 18, 20, 25. Average?",
+      "choices": [
+        "18",
+        "17",
+        "19",
+        "16"
+      ],
+      "correct_answer": "18",
+      "answer": "18",
+      "explanation": "(12+15+18+20+25)/5=90/5=18",
+      "explanation_th": "(12+15+18+20+25)÷5=90÷5=18",
+      "difficulty": "easy",
+      "hint_th": "ค่าเฉลี่ย = ผลรวม/5 = 90/5 = 18"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "ลิน 95 คะแนน มะลิ 78 อ้าย 88 บุ๊ก 65 แอร์ 92 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Lin 95, Mali 78, Ai 88, Book 65, Air 92. Average?",
+      "choices": [
+        "83.6 คะแนน",
+        "84.6 คะแนน",
+        "82.6 คะแนน",
+        "85.60 คะแนน"
+      ],
+      "correct_answer": "83.6 คะแนน",
+      "answer": "83.6 คะแนน",
+      "explanation": "(95+78+88+65+92)/5=418/5=83.6",
+      "explanation_th": "(95+78+88+65+92)÷5=418÷5=83.6 คะแนน",
+      "difficulty": "medium",
+      "hint_th": "(95+78+88+65+92)/5 = 418/5 = 83.6"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "ข้อมูล: 5, 10, 15, 20 ผลรวมและค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Data: 5, 10, 15, 20. Sum and average?",
+      "choices": [
+        "50 และ 12.5",
+        "50 และ 10",
+        "40 และ 12.5",
+        "50 และ 25"
+      ],
+      "correct_answer": "50 และ 12.5",
+      "answer": "50 และ 12.5",
+      "explanation": "5+10+15+20=50 | 50/4=12.5",
+      "explanation_th": "5+10+15+20=50 | 50÷4=12.5",
+      "difficulty": "easy",
+      "hint_th": "ผลรวม=50 ค่าเฉลี่ย=50/4=12.5"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ข้อใดถูก: ก.ค่าเฉลี่ย=ผลรวม/จำนวน | ข.ค่าสูงสุด=ค่าที่มากที่สุด | ค.ค่าต่ำสุด=ค่าที่น้อยที่สุด | ง.ทุกข้อถูก",
+      "question_text_en": "Which: A.Avg=Sum/Count | B.Max=highest | C.Min=lowest | D.All",
+      "choices": [
+        "ทุกข้อถูก",
+        "ก และ ข ถูก",
+        "ข และ ค ถูก",
+        "ก และ ค ถูก"
+      ],
+      "correct_answer": "ทุกข้อถูก",
+      "answer": "ทุกข้อถูก",
+      "explanation": "ก ✓ | ข ✓ | ค ✓",
+      "explanation_th": "ทุกข้อถูก",
+      "difficulty": "easy",
+      "hint_th": "ค่าเฉลี่ย=ผลรวม/จำนวน ถูก"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "นักเรียน 4 คน: 85, 90, 75, 80 ค่าเฉลี่ย? ใครเท่าค่าเฉลี่ย",
+      "question_text_en": "4 students: 85, 90, 75, 80. Avg? Who equals avg?",
+      "choices": [
+        "82.5 ไม่มีใครเท่า",
+        "82.5 มี 85 เท่า",
+        "82 ไม่มีใครเท่า",
+        "82.5 มี 80 เท่า"
+      ],
+      "correct_answer": "82.5 ไม่มีใครเท่า",
+      "answer": "82.5 ไม่มีใครเท่า",
+      "explanation": "(85+90+75+80)/4=330/4=82.5 | ไม่มีใครได้ 82.5",
+      "explanation_th": "(85+90+75+80)÷4=330÷4=82.5 | ไม่มีใครได้ 82.5 คะแนนพอดี",
+      "difficulty": "medium",
+      "hint_th": "ค่าเฉลี่ย=82.5 ไม่มีใครได้คะแนนนี้"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

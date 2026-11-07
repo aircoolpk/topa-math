@@ -1,0 +1,210 @@
+{
+  "variant_id": "counting_21_to_100_ep_002",
+  "variant_title_en": "Counting 21 to 100",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Counting 21 to 100",
+  "title_th": "",
+  "story_theme_en": "Book puts fruits in baskets. Each basket holds 10 fruits. He has 5 full baskets and 8 loose fruits. How many fruits are there?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "5 baskets × 10 = 50 fruits. 8 loose fruits. 50 + 8 = 58 fruits.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Book puts fruits in baskets. Each basket holds 10 fruits. He has 5 full baskets and 8 loose fruits. How many fruits are there?",
+      "data": {
+        "content_en": "Book puts fruits in baskets. Each basket holds 10 fruits. He has 5 full baskets and 8 loose fruits. How many fruits are there?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "5 baskets × 10 = 50 fruits. 8 loose fruits. 50 + 8 = 58 fruits.",
+      "data": {
+        "content_en": "5 baskets × 10 = 50 fruits. 8 loose fruits. 50 + 8 = 58 fruits."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "unit": "fruits",
+        "bars": [
+          {
+            "label": "Baskets",
+            "value": 50,
+            "display": "50 fruits",
+            "color": "#96CEB4",
+            "width_pct": 85
+          },
+          {
+            "label": "Loose",
+            "value": 8,
+            "display": "8 fruits",
+            "color": "#A8D8EA",
+            "width_pct": 15
+          },
+          {
+            "label": "Total",
+            "value": 58,
+            "display": "58 fruits",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "50 + 8 = 58",
+            "formula": {
+              "display": "50 + 8 = 58",
+              "a": 50,
+              "b": 8,
+              "result": 58,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}50&&\\\\\\\\ + 8&&\\\\\\\\ \\\\hline 58&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "50",
+              "b_display": "8",
+              "result_display": "58",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 50 + 8 = 58"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "50 + 8 = 58",
+      "content": "50 + 8 = 58",
+      "data": {
+        "expression": "50 + 8 = 58",
+        "operations": [
+          {
+            "op": "+",
+            "a": 50,
+            "b": 8,
+            "result": 58
+          }
+        ],
+        "content_en": "50 + 8 = 58"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Lin has 4 ten-packs and 9 single stickers. How many stickers does she have?",
+      "choices": [
+        "49 stickers",
+        "54 stickers",
+        "46 stickers",
+        "57 stickers"
+      ],
+      "correct_answer": "49 stickers",
+      "explanation": "40 + 9 = 49 stickers",
+      "data": {
+        "question": "Lin has 4 ten-packs and 9 single stickers. How many stickers does she have?",
+        "choices": [
+          "49 stickers",
+          "54 stickers",
+          "46 stickers",
+          "57 stickers"
+        ],
+        "correct_answer": "49 stickers",
+        "explanation": "40 + 9 = 49 stickers"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "basket",
+      "th": "ตะกร้า",
+      "definition_en": "A container that holds 10 items."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "total",
+      "th": "รวม",
+      "definition_en": "The whole amount."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Book puts fruits in baskets. Each basket holds 10 fruits. He has 5 full baskets ...",
+      "solution_en": "50 + 8 = 58"
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,200 @@
+{
+  "variant_id": "patterns_ep_001",
+  "variant_title_en": "Patterns",
+  "status": "needs_review",
+  "title_en": "Patterns",
+  "title_th": "แบบรูป",
+  "story_theme_en": "Lin noticed a pattern of beads arranged in circles: 2, 4, 8, 16, ... If this pattern continues, how many beads are in the 8th circle, and how many are in the 10th circle?",
+  "helper_tip": "Look at whether the difference or ratio is the same between consecutive terms",
+  "hint_th": "สังเกตว่าผลต่างหรือผลคูณเพิ่มขึ้นเท่าเดิมหรือไม่",
+  "think_story_en": "This pattern multiplies by 2 each time: 2 → 4 → 8 → 16 → 32 → 64 → 128 → 256. The 8th circle has 256 beads. The 10th circle has 2 × 2^9 = 1,024 beads.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin noticed a pattern of beads arranged in circles: 2, 4, 8, 16, ... If this pattern continues, how many beads are in the 8th circle, and how many are in the 10th circle?",
+      "data": {
+        "content_en": "Lin noticed a pattern of beads arranged in circles: 2, 4, 8, 16, ... If this pattern continues, how many beads are in the 8th circle, and how many are in the 10th circle?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "This pattern multiplies by 2 each time: 2 → 4 → 8 → 16 → 32 → 64 → 128 → 256. The 8th circle has 256 beads. The 10th circle has 2 × 2^9 = 1,024 beads.",
+      "data": {
+        "content_en": "This pattern multiplies by 2 each time: 2 → 4 → 8 → 16 → 32 → 64 → 128 → 256. The 8th circle has 256 beads. The 10th circle has 2 × 2^9 = 1,024 beads."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "units",
+        "bars": [
+          {
+            "label": "Circle 1",
+            "value": 2,
+            "display": "2 beads",
+            "color": "#4ECDC4",
+            "width_pct": 20
+          },
+          {
+            "label": "Circle 2",
+            "value": 4,
+            "display": "4 beads",
+            "color": "#45B7D1",
+            "width_pct": 40
+          },
+          {
+            "label": "Circle 3",
+            "value": 8,
+            "display": "8 beads",
+            "color": "#96CEB4",
+            "width_pct": 80
+          },
+          {
+            "label": "Circle 4",
+            "value": 16,
+            "display": "16 beads",
+            "color": "#FFE66D",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "2 × 2 = 4",
+            "formula": {
+              "display": "2 × 2 = 4",
+              "a": 2,
+              "b": 2,
+              "result": 4,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}2&\\ ×\\quad 2&\\ \\hline 4&\\\\ \\hline \\end{array}",
+              "a_display": "2",
+              "b_display": "2",
+              "result_display": "4",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 2 × 2 = 4"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "4 × 2 = 8",
+            "formula": {
+              "display": "4 × 2 = 8",
+              "a": 4,
+              "b": 2,
+              "result": 8,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}4&\\ ×\\quad 2&\\ \\hline 8&\\\\ \\hline \\end{array}",
+              "a_display": "4",
+              "b_display": "2",
+              "result_display": "8",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 4 × 2 = 8"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "8 × 2 = 16",
+            "formula": {
+              "display": "8 × 2 = 16",
+              "a": 8,
+              "b": 2,
+              "result": 16,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}8&\\ ×\\quad 2&\\ \\hline 16&\\\\ \\hline \\end{array}",
+              "a_display": "8",
+              "b_display": "2",
+              "result_display": "16",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 8 × 2 = 16"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "2 × 2 = 4 | 4 × 2 = 8 | 8 × 2 = 16",
+      "content": "2 × 2 = 4 | 4 × 2 = 8 | 8 × 2 = 16",
+      "data": {
+        "expression": "2 × 2 = 4 | 4 × 2 = 8 | 8 × 2 = 16",
+        "operations": [
+          {
+            "op": "×",
+            "a": 2,
+            "b": 2,
+            "result": 4
+          },
+          {
+            "op": "×",
+            "a": 4,
+            "b": 2,
+            "result": 8
+          },
+          {
+            "op": "×",
+            "a": 8,
+            "b": 2,
+            "result": 16
+          }
+        ],
+        "content_en": "2 × 2 = 4 | 4 × 2 = 8 | 8 × 2 = 16"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Pattern: 3, 9, 27, 81, ... What is the 5th term?",
+      "choices": [
+        "162 beads",
+        "243 beads",
+        "324 beads",
+        "216 beads"
+      ],
+      "correct_answer": "243 beads",
+      "explanation": "Multiply by 3 each time: 81 × 3 = 243",
+      "data": {
+        "question": "Pattern: 3, 9, 27, 81, ... What is the 5th term?",
+        "choices": [
+          "162 beads",
+          "243 beads",
+          "324 beads",
+          "216 beads"
+        ],
+        "correct_answer": "243 beads",
+        "explanation": "Multiply by 3 each time: 81 × 3 = 243"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

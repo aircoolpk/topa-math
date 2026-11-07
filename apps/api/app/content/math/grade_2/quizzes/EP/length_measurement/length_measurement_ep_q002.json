@@ -1,0 +1,133 @@
+{
+  "quiz_id": "length_measurement_ep_q002",
+  "topic_key": "length_measurement",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz length_measurement_ep_q002",
+  "title_en": "Quiz length_measurement_ep_q002",
+  "questions": [
+    {
+      "question": "Half a meter equals how many centimeters?",
+      "choices": [
+        "50 cm",
+        "100 cm",
+        "25 cm",
+        "75 cm"
+      ],
+      "correct_answer": "50 cm",
+      "explanation": "0.5 m = 50 cm",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A door is 2 m tall. A dog is 65 cm tall. How much taller is the door?",
+      "choices": [
+        "135 cm",
+        "125 cm",
+        "145 cm",
+        "35 cm"
+      ],
+      "correct_answer": "135 cm",
+      "explanation": "200-65=135 cm",
+      "difficulty": "medium"
+    },
+    {
+      "question": "3 sheets of paper, each 2 mm thick. Total thickness?",
+      "choices": [
+        "6 mm",
+        "5 mm",
+        "8 mm",
+        "10 mm"
+      ],
+      "correct_answer": "6 mm",
+      "explanation": "3x2=6 mm",
+      "difficulty": "easy"
+    },
+    {
+      "question": "3 m + 250 cm = ? cm",
+      "choices": [
+        "550 cm",
+        "253 cm",
+        "3,250 cm",
+        "350 cm"
+      ],
+      "correct_answer": "550 cm",
+      "explanation": "300+250=550 cm",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A tree is 4 m 80 cm tall. 1 m 95 cm was cut off. How tall now?",
+      "choices": [
+        "285 cm",
+        "295 cm",
+        "275 cm",
+        "385 cm"
+      ],
+      "correct_answer": "285 cm",
+      "explanation": "480-195=285 cm",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Fabric 6 m. Cut 2 m 50 cm to give to a friend. How much is left?",
+      "choices": [
+        "350 cm",
+        "450 cm",
+        "550 cm",
+        "250 cm"
+      ],
+      "correct_answer": "350 cm",
+      "explanation": "600-250=350 cm",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Water is 48 cm high. Add 18 cm more. Total height?",
+      "choices": [
+        "66 cm",
+        "56 cm",
+        "76 cm",
+        "30 cm"
+      ],
+      "correct_answer": "66 cm",
+      "explanation": "48+18=66 cm",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A measuring tape is 280 cm long. Used 160 cm. How much is left?",
+      "choices": [
+        "120 cm",
+        "110 cm",
+        "130 cm",
+        "220 cm"
+      ],
+      "correct_answer": "120 cm",
+      "explanation": "280-160=120 cm",
+      "difficulty": "medium"
+    },
+    {
+      "question": "3 m 45 cm + 2 m 78 cm = ?",
+      "choices": [
+        "6 m 23 cm",
+        "5 m 23 cm",
+        "6 m 13 cm",
+        "5 m 13 cm"
+      ],
+      "correct_answer": "6 m 23 cm",
+      "explanation": "345+278=623 cm = 6 m 23 cm",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A rope 500 cm long. Cut into 2 equal pieces. Each piece length?",
+      "choices": [
+        "250 cm",
+        "200 cm",
+        "300 cm",
+        "150 cm"
+      ],
+      "correct_answer": "250 cm",
+      "explanation": "500/2=250 cm",
+      "difficulty": "easy"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

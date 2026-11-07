@@ -1,0 +1,194 @@
+{
+  "variant_id": "volume_measurement_th_002",
+  "variant_title_th": "การวัดปริมาตร",
+  "variant_title_en": "Volume Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดปริมาตร",
+  "title_en": "Volume Measurement",
+  "story_theme_th": "บุ๊กต้องการผสมน้ำผลไม้ โดยใช้น้ำส้ม 350 มิลลิลิตร น้ำสัปปะะ 250 มิลลิลิตร และน้ำเปล่า 400 มิลลิลิตร บุ๊กผสมน้ำผลไม้ได้กี่ลิตรกี่มิลลิลิตร",
+  "helper_tip": "บวกปริมาตรหลายอย่างเข้าด้วยกัน แล้วเปลี่ยนมิลลิลิตรเป็นลิตร",
+  "think_story_th": "350 + 250 + 400 = 1,000 มล. = 1 ลิตร",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "บุ๊กต้องการผสมน้ำผลไม้ โดยใช้น้ำส้ม 350 มิลลิลิตร น้ำสัปปะะ 250 มิลลิลิตร และน้ำเปล่า 400 มิลลิลิตร บุ๊กผสมน้ำผลไม้ได้กี่ลิตรกี่มิลลิลิตร",
+      "data": {
+        "content_th": "บุ๊กต้องการผสมน้ำผลไม้ โดยใช้น้ำส้ม 350 มิลลิลิตร น้ำสัปปะะ 250 มิลลิลิตร และน้ำเปล่า 400 มิลลิลิตร บุ๊กผสมน้ำผลไม้ได้กี่ลิตรกี่มิลลิลิตร"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "350 + 250 + 400 = 1,000 มล. = 1 ลิตร",
+      "data": {
+        "content_th": "350 + 250 + 400 = 1,000 มล. = 1 ลิตร"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "น้ำส้ม",
+            "value": 350,
+            "display": "350 มล.",
+            "color": "#4ECDC4",
+            "width_pct": 35
+          },
+          {
+            "label": "น้ำสัปปะะ",
+            "value": 250,
+            "display": "250 มล.",
+            "color": "#45B7D1",
+            "width_pct": 25
+          },
+          {
+            "label": "น้ำเปล่า",
+            "value": 400,
+            "display": "400 มล.",
+            "color": "#96CEB4",
+            "width_pct": 40
+          },
+          {
+            "label": "รวม",
+            "value": 1000,
+            "display": "1,000 มล.",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ],
+        "unit": "มล."
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: บวกปริมาตรทั้งหมด",
+            "expression": "350 + 250 + 400 = 1,000 มล.",
+            "a": 350,
+            "b": 650,
+            "res": 1000,
+            "op": "+",
+            "formula": {
+              "display": "350+250+400=1,000",
+              "a": 350,
+              "b": 650,
+              "result": 1000,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "350",
+              "b_display": "650",
+              "result_display": "1,000",
+              "operation": "add"
+            },
+            "story_connection": "350 + 250 + 400 = 1,000 มล."
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: เปลี่ยนเป็นลิตร",
+            "expression": "1,000 มล. = 1 ลิตร",
+            "a": 1000,
+            "b": 1000,
+            "res": 1,
+            "op": "/",
+            "formula": {
+              "display": "1,000 / 1,000 = 1",
+              "a": 1000,
+              "b": 1000,
+              "result": 1,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "1,000",
+              "b_display": "1,000",
+              "result_display": "1",
+              "operation": "divide"
+            },
+            "story_connection": "1,000 มล. = 1 ลิตร"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "350 + 250 + 400 = 1,000 มล. = 1 ลิตร",
+      "content": "350 + 250 + 400 = 1,000 มล. = 1 ลิตร",
+      "data": {
+        "expression": "350 + 250 + 400 = 1,000 มล. = 1 ลิตร",
+        "content_th": "350 + 250 + 400 = 1,000 มล. = 1 ลิตร",
+        "operations": [
+          {
+            "op": "+",
+            "a": 350,
+            "b": 650,
+            "result": 1000
+          },
+          {
+            "op": "/",
+            "a": 1000,
+            "b": 1000,
+            "result": 1
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "น้ำผึ้ง 750 มิลลิลิตร ผสมน้ำ 250 มิลลิลิตร รวมกี่มิลลิลิตร",
+      "choices": [
+        "1,000 มล.",
+        "900 มล.",
+        "1,100 มล.",
+        "800 มล."
+      ],
+      "correct_answer": "1,000 มล.",
+      "explanation": "750+250=1,000 มล.",
+      "data": {
+        "question": "น้ำผึ้ง 750 มิลลิลิตร ผสมน้ำ 250 มิลลิลิตร รวมกี่มิลลิลิตร",
+        "choices": [
+          "1,000 มล.",
+          "900 มล.",
+          "1,100 มล.",
+          "800 มล."
+        ],
+        "correct_answer": "1,000 มล.",
+        "explanation": "750+250=1,000 มล."
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

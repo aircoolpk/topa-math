@@ -1,0 +1,133 @@
+{
+  "quiz_id": "mixed_operations_ep_q002",
+  "topic_key": "mixed_operations",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz mixed_operations_ep_q002",
+  "title_en": "Quiz mixed_operations_ep_q002",
+  "questions": [
+    {
+      "question": "30 + 20 - 15 x 2 = ?",
+      "choices": [
+        "20",
+        "50",
+        "10",
+        "40"
+      ],
+      "correct_answer": "20",
+      "explanation": "30+20-(15x2)=30+20-30=20 multiply first",
+      "difficulty": "hard"
+    },
+    {
+      "question": "100 / (5 + 5) = ?",
+      "choices": [
+        "10",
+        "20",
+        "5",
+        "1"
+      ],
+      "correct_answer": "10",
+      "explanation": "100/(5+5)=100/10=10",
+      "difficulty": "medium"
+    },
+    {
+      "question": "3 x (8 + 7) = ?",
+      "choices": [
+        "45",
+        "38",
+        "21",
+        "24"
+      ],
+      "correct_answer": "45",
+      "explanation": "3x15=45",
+      "difficulty": "easy"
+    },
+    {
+      "question": "14 - 6 / 2 = ?",
+      "choices": [
+        "11",
+        "4",
+        "8",
+        "17"
+      ],
+      "correct_answer": "11",
+      "explanation": "14-3=11 divide first",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Bought 5 boxes of snacks at 12 baht each. Split among 3 friends equally. Each gets?",
+      "choices": [
+        "20 baht",
+        "15 baht",
+        "25 baht",
+        "18 baht"
+      ],
+      "correct_answer": "20 baht",
+      "explanation": "5x12=60, 60/3=20 baht",
+      "difficulty": "medium"
+    },
+    {
+      "question": "(9 + 6) / 3 = ?",
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "3"
+      ],
+      "correct_answer": "5",
+      "explanation": "(9+6)/3=15/3=5",
+      "difficulty": "easy"
+    },
+    {
+      "question": "8 x 3 + 8 x 7 = ?",
+      "choices": [
+        "80",
+        "88",
+        "72",
+        "96"
+      ],
+      "correct_answer": "80",
+      "explanation": "8x3=24, 8x7=56, 24+56=80 or 8x(3+7)=8x10=80",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Has 120 cm of wire. Cut into 8-cm pieces. How many pieces and leftover?",
+      "choices": [
+        "15 pieces, 0 cm left",
+        "14 pieces, 8 cm left",
+        "13 pieces, 16 cm left",
+        "30 pieces,  cm left"
+      ],
+      "correct_answer": "15 pieces, 0 cm left",
+      "explanation": "120/8=15 pieces, 0 leftover",
+      "difficulty": "hard"
+    },
+    {
+      "question": "7 x 4 - 20 / 4 = ?",
+      "choices": [
+        "23",
+        "18",
+        "28",
+        "13"
+      ],
+      "correct_answer": "23",
+      "explanation": "7x4=28, 20/4=5, 28-5=23",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Has 5 m of fabric. Splits among 4 friends equally. Then cuts 75 cm more. How much left?",
+      "choices": [
+        "1.25 m, then 0.5 m left",
+        "2 m, then 0.25 m left",
+        "1 m, then 0.25 m left",
+        "11.25 m, then  m left"
+      ],
+      "correct_answer": "1.25 m, then 0.5 m left",
+      "explanation": "500/4=125 cm=1.25 m, 125-75=50 cm=0.5 m",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

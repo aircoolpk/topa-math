@@ -1,0 +1,133 @@
+{
+  "quiz_id": "picture_graphs_ep_q002",
+  "topic_key": "picture_graphs",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz picture_graphs_ep_q002",
+  "title_en": "Quiz picture_graphs_ep_q002",
+  "questions": [
+    {
+      "question": "Picture graph, each = 5 people. Need 45 people. How many pictures?",
+      "choices": [
+        "9 pictures",
+        "8 pictures",
+        "10 pictures",
+        "7 pictures"
+      ],
+      "correct_answer": "9 pictures",
+      "explanation": "45/5=9 pictures",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Survey: Math 6, Science 8, Thai 5, Art 3. Total?",
+      "choices": [
+        "22 people",
+        "21 people",
+        "23 people",
+        "20 people"
+      ],
+      "correct_answer": "22 people",
+      "explanation": "6+8+5+3=22 people",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Bar graph 10 boxes tall, each = 2 people = ? people",
+      "choices": [
+        "20 people",
+        "12 people",
+        "8 people",
+        "5 people"
+      ],
+      "correct_answer": "20 people",
+      "explanation": "10x2=20 people",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Picture graph, each = 4 people. Need 36 people. How many pictures?",
+      "choices": [
+        "9 pictures",
+        "8 pictures",
+        "7 pictures",
+        "10 pictures"
+      ],
+      "correct_answer": "9 pictures",
+      "explanation": "36/4=9 pictures",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Survey: Football 9, Swimming 5, Tennis 7. Total? Which is most popular?",
+      "choices": [
+        "21 people Football",
+        "19 people Football",
+        "21 people Tennis",
+        "23 people Football"
+      ],
+      "correct_answer": "21 people Football",
+      "explanation": "9+5+7=21 people, Football 9 is most",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Graph A 7 boxes, Graph B 3 boxes. Each box = 5 baht. Difference?",
+      "choices": [
+        "20 baht",
+        "35 baht",
+        "10 baht",
+        "15 baht"
+      ],
+      "correct_answer": "20 baht",
+      "explanation": "(7-3)x5=4x5=20 baht",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Picture graph, each = 3 people. 5 pictures vs 8 pictures. Difference?",
+      "choices": [
+        "9 people",
+        "6 people",
+        "12 people",
+        "15 people"
+      ],
+      "correct_answer": "9 people",
+      "explanation": "(8-5)x3=3x3=9 people",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Fruit survey: Oranges 8, Bananas 6, Mangoes 10. Mangoes more than Bananas by?",
+      "choices": [
+        "4 people",
+        "2 people",
+        "6 people",
+        "3 people"
+      ],
+      "correct_answer": "4 people",
+      "explanation": "10-6=4 people",
+      "difficulty": "easy"
+    },
+    {
+      "question": "In graph, 1 picture = 6 people. Need 48 people. How many pictures?",
+      "choices": [
+        "8 pictures",
+        "7 pictures",
+        "6 pictures",
+        "9 pictures"
+      ],
+      "correct_answer": "8 pictures",
+      "explanation": "48/6=8 pictures",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Survey: Dogs 5, Cats 7, Goldfish 4, Birds 2. Total? Which is most popular?",
+      "choices": [
+        "18 people Cats",
+        "16 people Cats",
+        "18 people Dogs",
+        "20 people Cats"
+      ],
+      "correct_answer": "18 people Cats",
+      "explanation": "5+7+4+2=18 people, Cats 7 is most",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

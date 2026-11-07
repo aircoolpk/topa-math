@@ -1,0 +1,114 @@
+{
+  "variant_id": "decimals_ep_001",
+  "variant_title_en": "Decimals — Buying Fruits",
+  "status": "needs_review",
+  "title_en": "Decimals — Buying Fruits",
+  "story_theme_en": "A fruit shop sells mangosteen at 12.75 kg at 85.50 baht per kilogram, and oranges at 8.50 kg at 42.25 baht per kilogram. How much do both cost in total? If the customer pays with 1,000 baht, how much change will they receive?",
+  "helper_tip": "When adding or subtracting decimals, line up the decimal points first.",
+  "hint_th": "บวกลบทศนิยมต้องเขียนจุดทศนิยมให้ตรงกัน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A fruit shop sells mangosteen at 12.75 kg at 85.50 baht per kilogram, and oranges at 8.50 kg at 42.25 baht per kilogram. How much do both cost in total? If the customer pays with 1,000 baht, how much change will they receive?",
+      "data": {
+        "content_en": "A fruit shop sells mangosteen at 12.75 kg at 85.50 baht per kilogram, and oranges at 8.50 kg at 42.25 baht per kilogram. How much do both cost in total? If the customer pays with 1,000 baht, how much change will they receive?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Mangosteen: 12.75 x 85.50 = 1,090.13 baht | Oranges: 8.50 x 42.25 = 359.13 baht | Total: 1,090.13 + 359.13 = 1,449.26 baht",
+      "data": {
+        "content_en": "Mangosteen: 12.75 x 85.50 = 1,090.13 baht | Oranges: 8.50 x 42.25 = 359.13 baht | Total: 1,090.13 + 359.13 = 1,449.26 baht"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Price Diagram",
+      "description": "Price Diagram",
+      "model_type": "decimal_bar",
+      "data": {
+        "model_type": "decimal_bar",
+        "operation": "multiply_add",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Mangosteen",
+            "value": 12.75,
+            "display": "12.75 kg",
+            "color": "#96CEB4",
+            "width_pct": 60
+          },
+          {
+            "label": "Oranges",
+            "value": 8.5,
+            "display": "8.50 kg",
+            "color": "#45B7D1",
+            "width_pct": 40
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "12.75 x 85.50 = 1,090.13",
+      "content": "Mangosteen: 1,090.13 baht | Oranges: 359.13 baht | Total: 1,449.26 baht",
+      "data": {
+        "expression": "Mangosteen: 1,090.13 baht | Oranges: 359.13 baht | Total: 1,449.26 baht",
+        "operations": [
+          {
+            "op": "×",
+            "a": "8.50",
+            "b": "42.25",
+            "result": "359.13"
+          },
+          {
+            "op": "×",
+            "a": "8.50",
+            "b": "42.25",
+            "result": "359.13"
+          },
+          {
+            "op": "+",
+            "a": 1090.13,
+            "b": 359.13,
+            "result": 1449.26
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Mangoes cost 56.50 baht per kilogram. You buy 5.25 kg. How much do you pay?",
+      "choices": [
+        "296.63 baht",
+        "295.63 baht",
+        "297.63 baht",
+        "296.53 baht"
+      ],
+      "correct_answer": "296.63 baht",
+      "explanation": "5.25 x 56.50 = 296.63 baht",
+      "data": {
+        "question": "Mangoes cost 56.50 baht per kilogram. You buy 5.25 kg. How much do you pay?",
+        "choices": [
+          "296.63 baht",
+          "295.63 baht",
+          "297.63 baht",
+          "296.53 baht"
+        ],
+        "correct_answer": "296.63 baht",
+        "explanation": "5.25 x 56.50 = 296.63 baht"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

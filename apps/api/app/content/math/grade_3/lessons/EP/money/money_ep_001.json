@@ -53,7 +53,35 @@
       "content": "1250+875=2125 | Extra=2125-1500=625 | Lin vs Mali: 1250-875=375 baht more",
       "data": {
         "expression": "1250+875=2125 baht",
-        "content_en": "1250+875=2125 | Extra=2125-1500=625 | Lin vs Mali: 1250-875=375 baht more"
+        "content_en": "1250+875=2125 | Extra=2125-1500=625 | Lin vs Mali: 1250-875=375 baht more",
+        "operations": [
+          {
+            "op": "+",
+            "a": 1250,
+            "b": 875,
+            "result": 2125
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract Symbols",
+      "description": "Using symbols to represent the add-then-subtract operation",
+      "operation": "add_then_subtract",
+      "data": {
+        "steps": [
+          {
+            "operation": "add",
+            "expression": "1,250 + 875 = 2,125",
+            "meaning": "Total savings of Lin and Mali"
+          },
+          {
+            "operation": "subtract",
+            "expression": "2,125 - 1,500 = 625",
+            "meaning": "Money remaining after buying the gift"
+          }
+        ]
       }
     },
     {

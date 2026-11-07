@@ -1,0 +1,223 @@
+{
+  "variant_id": "add_sub_over_100000_ep_002",
+  "variant_title_en": "Addition and Subtraction Greater than 100,000",
+  "status": "needs_review",
+  "title_en": "Addition and Subtraction Greater than 100,000",
+  "story_theme_en": "A school holds a sports day. The Red Team has 67,450 athletes. The Blue Team has 58,780 athletes. The Green Team has 73,265 athletes. How many athletes are there in total?",
+  "helper_tip": "Add all numbers first, then divide if needed. Write numbers in correct columns.",
+  "hint_th": "บวกจำนวนทั้งหมดก่อน แล้วค่อยหารถ้าต้องการ",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A school holds a sports day. The Red Team has 67,450 athletes. The Blue Team has 58,780 athletes. The Green Team has 73,265 athletes. How many athletes are there in total? If the school arranges them in rows of 500 people per row, how many full rows will there be?",
+      "data": {
+        "content_en": "A school holds a sports day. The Red Team has 67,450 athletes. The Blue Team has 58,780 athletes. The Green Team has 73,265 athletes. How many athletes are there in total? If the school arranges them in rows of 500 people per row, how many full rows will there be?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Add all 3 teams → 67,450 + 58,780 + 73,265 = total | Step 2: Divide into rows → total / 500 = number of rows",
+      "data": {
+        "content_en": "Step 1: Add all 3 teams → 67,450 + 58,780 + 73,265 = total | Step 2: Divide into rows → total / 500 = number of rows"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_divide",
+        "bars": [
+          {
+            "label": "Red Team",
+            "value": 67450,
+            "display": "67,450 athletes",
+            "color": "#FF6B6B",
+            "width_pct": 70
+          },
+          {
+            "label": "Blue Team",
+            "value": 58780,
+            "display": "58,780 athletes",
+            "color": "#45B7D1",
+            "width_pct": 61
+          },
+          {
+            "label": "Green Team",
+            "value": 73265,
+            "display": "73,265 athletes",
+            "color": "#96CEB4",
+            "width_pct": 76
+          },
+          {
+            "label": "Total",
+            "value": 199495,
+            "display": "199,495 athletes",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add Red and Blue teams",
+            "expression": "67,450 + 58,780 = 126,230",
+            "formula": {
+              "display": "67,450 + 58,780 = 126,230",
+              "a": 67450,
+              "b": 58780,
+              "result": 126230,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}67450&\\\\\\\\ +\\\\quad 58780&\\\\\\\\ \\\\hline 126230&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "67450",
+              "b_display": "58780",
+              "result_display": "126230",
+              "operation": "add"
+            },
+            "story_connection": "67,450 + 58,780 = 126,230 athletes"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add Green team",
+            "expression": "126,230 + 73,265 = 199,495",
+            "formula": {
+              "display": "126,230 + 73,265 = 199,495",
+              "a": 126230,
+              "b": 73265,
+              "result": 199495,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}126230&\\\\\\\\ +\\\\quad 73265&\\\\\\\\ \\\\hline 199495&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "126230",
+              "b_display": "73265",
+              "result_display": "199495",
+              "operation": "add"
+            },
+            "story_connection": "126,230 + 73,265 = 199,495 athletes"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Divide into rows",
+            "expression": "199,495 / 500 = 398 remainder 495 rows remainder 495",
+            "formula": {
+              "display": "199,495 / 500 = 398 remainder 495 rows remainder 495",
+              "a": 199495,
+              "b": 500,
+              "result": 398,
+              "operation": "div"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}199495&\\\\\\\\ ÷\\\\quad 500&\\\\\\\\ \\\\hline 398&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "199495",
+              "b_display": "500",
+              "result_display": "398",
+              "operation": "div"
+            },
+            "story_connection": "199,495 / 500 = 398 remainder 495 remainder 495"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "67,450 + 58,780 + 73,265 = 199,495 | 199,495 / 500 = 398 remainder 495 remainder 495",
+      "content": "67,450 + 58,780 + 73,265 = 199,495 athletes  |  199,495 / 500 = 398 remainder 495 rows remainder 495",
+      "data": {
+        "expression": "67,450 + 58,780 + 73,265 = 199,495 | 199,495 / 500 = 398 remainder 495 remainder 495",
+        "operations": [
+          {
+            "op": "+",
+            "a": 67450,
+            "b": 58780,
+            "result": 126230
+          },
+          {
+            "op": "+",
+            "a": 126230,
+            "b": 73265,
+            "result": 199495
+          },
+          {
+            "op": "/",
+            "a": "199,495",
+            "b": "500",
+            "result": "398"
+          }
+        ],
+        "content_en": "67,450 + 58,780 + 73,265 = 199,495 athletes  |  199,495 / 500 = 398 remainder 495 rows remainder 495"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A zoo has 3 types of animals. There are 28,750 goats, 19,830 horses, and 37,920 cows. How many animals are there in total?",
+      "choices": [
+        "86,500 animals",
+        "76,500 animals",
+        "85,600 animals",
+        "86,000 animals"
+      ],
+      "correct_answer": "86,500 animals",
+      "explanation": "28,750 + 19,830 + 37,920 = 86,500 animals",
+      "data": {
+        "question": "A zoo has 3 types of animals. There are 28,750 goats, 19,830 horses, and 37,920 cows. How many animals are there in total?",
+        "choices": [
+          "86,500 animals",
+          "76,500 animals",
+          "85,600 animals",
+          "86,000 animals"
+        ],
+        "correct_answer": "86,500 animals",
+        "explanation": "28,750 + 19,830 + 37,920 = 86,500 animals"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "A shop sells goods for 3 days: 45,000 + 67,500 + 38,900 baht. What is the total?",
+      "solution_en": "45,000 + 67,500 + 38,900 = 151,400 baht"
+    }
+  ],
+  "common_mistakes": [
+    "Adding numbers in wrong columns",
+    "Forgetting to carry when sum exceeds 9"
+  ],
+  "hints": [
+    "Write numbers in columns: |hundred-thousands|ten-thousands|thousands|hundreds|tens|ones|",
+    "Add right to left, carrying when needed."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "remainder",
+      "th": "เศษ",
+      "definition_en": "The amount left over after division"
+    },
+    {
+      "en": "quotient",
+      "th": "ผลหาร",
+      "definition_en": "The result of division"
+    },
+    {
+      "en": "divisor",
+      "th": "ตัวหาร",
+      "definition_en": "The number we divide by"
+    }
+  ]
+}

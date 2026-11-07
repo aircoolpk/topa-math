@@ -1,0 +1,381 @@
+{
+  "quiz_id": "circles_ep_q001",
+  "title_th": "วงกลม",
+  "title_en": "Circles",
+  "status": "needs_review",
+  "variant_id": "circles_ep_q001",
+  "variant_title_th": "วงกลม",
+  "variant_title_en": "Circles",
+  "questions": [
+    {
+      "question_id": "circles__q001_m01",
+      "type": "multiple_choice",
+      "question_th": "วงกลมมีรัศมี 7 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_en": "A circle has a radius of 7 cm. What is its circumference? (π = 22/7)",
+      "choices_th": [
+        "22 cm",
+        "44 cm",
+        "14 cm",
+        "88 cm"
+      ],
+      "choices_en": [
+        "22 cm",
+        "44 cm",
+        "14 cm",
+        "88 cm"
+      ],
+      "correct_answer_th": "44 cm",
+      "correct_answer_en": "44 cm",
+      "answer_th": "44 cm",
+      "answer_en": "44 cm",
+      "answer": "44 cm",
+      "explanation_th": "2×22/7×7=44 cm",
+      "explanation_en": "2×22/7×7=44 cm",
+      "difficulty": "easy",
+      "choices": [
+        "22 cm",
+        "44 cm",
+        "14 cm",
+        "88 cm"
+      ],
+      "correct_answer": "44 cm",
+      "question_text": "วงกลมมีรัศมี 7 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "explanation": "2×22/7×7=44 cm",
+      "question_text_th": "วงกลมมีรัศมี 7 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_text_en": "A circle has a radius of 7 cm. What is its circumference? (π = 22/7)"
+    },
+    {
+      "question_id": "circles__q001_m02",
+      "type": "multiple_choice",
+      "question_th": "วงกลมมีเส้นผ่านศูนย์กลาง 14 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_en": "A circle has a diameter of 14 cm. What is its circumference? (π = 22/7)",
+      "choices_th": [
+        "22 cm",
+        "44 cm",
+        "88 cm",
+        "66 cm"
+      ],
+      "choices_en": [
+        "22 cm",
+        "44 cm",
+        "88 cm",
+        "66 cm"
+      ],
+      "correct_answer_th": "44 cm",
+      "correct_answer_en": "44 cm",
+      "answer_th": "44 cm",
+      "answer_en": "44 cm",
+      "answer": "44 cm",
+      "explanation_th": "22/7×14=44 cm",
+      "explanation_en": "22/7×14=44 cm",
+      "difficulty": "easy",
+      "choices": [
+        "22 cm",
+        "44 cm",
+        "88 cm",
+        "66 cm"
+      ],
+      "correct_answer": "44 cm",
+      "question_text": "วงกลมมีเส้นผ่านศูนย์กลาง 14 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "explanation": "22/7×14=44 cm",
+      "question_text_th": "วงกลมมีเส้นผ่านศูนย์กลาง 14 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_text_en": "A circle has a diameter of 14 cm. What is its circumference? (π = 22/7)"
+    },
+    {
+      "question_id": "circles__q001_m03",
+      "type": "multiple_choice",
+      "question_th": "วงกลมมีรัศมี 3.5 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_en": "A circle has a radius of 3.5 cm. What is its circumference? (π = 22/7)",
+      "choices_th": [
+        "11 cm",
+        "22 cm",
+        "7 cm",
+        "14 cm"
+      ],
+      "choices_en": [
+        "11 cm",
+        "22 cm",
+        "7 cm",
+        "14 cm"
+      ],
+      "correct_answer_th": "22 cm",
+      "correct_answer_en": "22 cm",
+      "answer_th": "22 cm",
+      "answer_en": "22 cm",
+      "answer": "22 cm",
+      "explanation_th": "2×22/7×3.5=2×22×0.5=22 cm",
+      "explanation_en": "2×22/7×3.5=2×22×0.5=22 cm",
+      "difficulty": "medium",
+      "choices": [
+        "11 cm",
+        "22 cm",
+        "7 cm",
+        "14 cm"
+      ],
+      "correct_answer": "22 cm",
+      "question_text": "วงกลมมีรัศมี 3.5 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "explanation": "2×22/7×3.5=2×22×0.5=22 cm",
+      "question_text_th": "วงกลมมีรัศมี 3.5 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_text_en": "A circle has a radius of 3.5 cm. What is its circumference? (π = 22/7)"
+    },
+    {
+      "question_id": "circles__q001_m04",
+      "type": "multiple_choice",
+      "question_th": "วงกลมมีเส้นผ่านศูนย์กลาง 10 ซม. รัศมียาวเท่าไร",
+      "question_en": "A circle has a diameter of 10 cm. What is its radius?",
+      "choices_th": [
+        "20 cm",
+        "5 cm",
+        "10 cm",
+        "2.5 cm"
+      ],
+      "choices_en": [
+        "20 cm",
+        "5 cm",
+        "10 cm",
+        "2.5 cm"
+      ],
+      "correct_answer_th": "5 cm",
+      "correct_answer_en": "5 cm",
+      "answer_th": "5 cm",
+      "answer_en": "5 cm",
+      "answer": "5 cm",
+      "explanation_th": "Radius = diameter÷2 = 5 cm",
+      "explanation_en": "Radius = diameter÷2 = 5 cm",
+      "difficulty": "easy",
+      "choices": [
+        "20 cm",
+        "5 cm",
+        "10 cm",
+        "2.5 cm"
+      ],
+      "correct_answer": "5 cm",
+      "question_text": "วงกลมมีเส้นผ่านศูนย์กลาง 10 ซม. รัศมียาวเท่าไร",
+      "explanation": "Radius = diameter÷2 = 5 cm",
+      "question_text_th": "วงกลมมีเส้นผ่านศูนย์กลาง 10 ซม. รัศมียาวเท่าไร",
+      "question_text_en": "A circle has a diameter of 10 cm. What is its radius?"
+    },
+    {
+      "question_id": "circles__q001_m05",
+      "type": "multiple_choice",
+      "question_th": "ถ้าเส้นรอบวง = 44 ซม. และ π = 22/7 รัศมีเท่าไร",
+      "question_en": "Circumference = 44 cm, π = 22/7. What is the radius?",
+      "choices_th": [
+        "7 cm",
+        "14 cm",
+        "22 cm",
+        "3.5 cm"
+      ],
+      "choices_en": [
+        "7 cm",
+        "14 cm",
+        "22 cm",
+        "3.5 cm"
+      ],
+      "correct_answer_th": "7 cm",
+      "correct_answer_en": "7 cm",
+      "answer_th": "7 cm",
+      "answer_en": "7 cm",
+      "answer": "7 cm",
+      "explanation_th": "44 = 2×22/7×r → r=7 cm",
+      "explanation_en": "44 = 2×22/7×r → r=7 cm",
+      "difficulty": "medium",
+      "choices": [
+        "7 cm",
+        "14 cm",
+        "22 cm",
+        "3.5 cm"
+      ],
+      "correct_answer": "7 cm",
+      "question_text": "ถ้าเส้นรอบวง = 44 ซม. และ π = 22/7 รัศมีเท่าไร",
+      "explanation": "44 = 2×22/7×r → r=7 cm",
+      "question_text_th": "ถ้าเส้นรอบวง = 44 ซม. และ π = 22/7 รัศมีเท่าไร",
+      "question_text_en": "Circumference = 44 cm, π = 22/7. What is the radius?"
+    },
+    {
+      "question_id": "circles__q001_m06",
+      "type": "multiple_choice",
+      "question_th": "วงกลมมีรัศมี 21 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_en": "A circle has a radius of 21 cm. What is its circumference? (π = 22/7)",
+      "choices_th": [
+        "66 cm",
+        "88 cm",
+        "44 cm",
+        "132 cm"
+      ],
+      "choices_en": [
+        "66 cm",
+        "88 cm",
+        "44 cm",
+        "132 cm"
+      ],
+      "correct_answer_th": "132 cm",
+      "correct_answer_en": "132 cm",
+      "answer_th": "132 cm",
+      "answer_en": "132 cm",
+      "answer": "132 cm",
+      "explanation_th": "2×22/7×21=2×22×3=132 cm",
+      "explanation_en": "2×22/7×21=2×22×3=132 cm",
+      "difficulty": "medium",
+      "choices": [
+        "66 cm",
+        "88 cm",
+        "44 cm",
+        "132 cm"
+      ],
+      "correct_answer": "132 cm",
+      "question_text": "วงกลมมีรัศมี 21 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "explanation": "2×22/7×21=2×22×3=132 cm",
+      "question_text_th": "วงกลมมีรัศมี 21 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_text_en": "A circle has a radius of 21 cm. What is its circumference? (π = 22/7)"
+    },
+    {
+      "question_id": "circles__q001_m07",
+      "type": "multiple_choice",
+      "question_th": "ถ้าเส้นรอบวง = 66 ซม. และ π = 22/7 เส้นผ่านศูนย์กลางเท่าไร",
+      "question_en": "Circumference = 66 cm, π = 22/7. What is the diameter?",
+      "choices_th": [
+        "14 cm",
+        "21 cm",
+        "28 cm",
+        "7 cm"
+      ],
+      "choices_en": [
+        "14 cm",
+        "21 cm",
+        "28 cm",
+        "7 cm"
+      ],
+      "correct_answer_th": "21 cm",
+      "correct_answer_en": "21 cm",
+      "answer_th": "21 cm",
+      "answer_en": "21 cm",
+      "answer": "21 cm",
+      "explanation_th": "66 = 22/7×d → d=21 cm",
+      "explanation_en": "66 = 22/7×d → d=21 cm",
+      "difficulty": "medium",
+      "choices": [
+        "14 cm",
+        "21 cm",
+        "28 cm",
+        "7 cm"
+      ],
+      "correct_answer": "21 cm",
+      "question_text": "ถ้าเส้นรอบวง = 66 ซม. และ π = 22/7 เส้นผ่านศูนย์กลางเท่าไร",
+      "explanation": "66 = 22/7×d → d=21 cm",
+      "question_text_th": "ถ้าเส้นรอบวง = 66 ซม. และ π = 22/7 เส้นผ่านศูนย์กลางเท่าไร",
+      "question_text_en": "Circumference = 66 cm, π = 22/7. What is the diameter?"
+    },
+    {
+      "question_id": "circles__q001_m08",
+      "type": "multiple_choice",
+      "question_th": "วงกลมมีเส้นผ่านศูนย์กลาง 7 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_en": "A circle has a diameter of 7 cm. What is its circumference? (π = 22/7)",
+      "choices_th": [
+        "11 cm",
+        "22 cm",
+        "44 cm",
+        "7 cm"
+      ],
+      "choices_en": [
+        "11 cm",
+        "22 cm",
+        "44 cm",
+        "7 cm"
+      ],
+      "correct_answer_th": "22 cm",
+      "correct_answer_en": "22 cm",
+      "answer_th": "22 cm",
+      "answer_en": "22 cm",
+      "answer": "22 cm",
+      "explanation_th": "22/7×7=22 cm",
+      "explanation_en": "22/7×7=22 cm",
+      "difficulty": "easy",
+      "choices": [
+        "11 cm",
+        "22 cm",
+        "44 cm",
+        "7 cm"
+      ],
+      "correct_answer": "22 cm",
+      "question_text": "วงกลมมีเส้นผ่านศูนย์กลาง 7 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "explanation": "22/7×7=22 cm",
+      "question_text_th": "วงกลมมีเส้นผ่านศูนย์กลาง 7 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_text_en": "A circle has a diameter of 7 cm. What is its circumference? (π = 22/7)"
+    },
+    {
+      "question_id": "circles__q001_m09",
+      "type": "multiple_choice",
+      "question_th": "ถ้ารัศมีเป็น 2 เท่าของเดิม เส้นรอบวงจะเป็นกี่เท่า",
+      "question_en": "If the radius doubles, the circumference becomes how many times larger?",
+      "choices_th": [
+        "2 times",
+        "4 times",
+        "same",
+        "1/2"
+      ],
+      "choices_en": [
+        "2 times",
+        "4 times",
+        "same",
+        "1/2"
+      ],
+      "correct_answer_th": "2 times",
+      "correct_answer_en": "2 times",
+      "answer_th": "2 times",
+      "answer_en": "2 times",
+      "answer": "2 times",
+      "explanation_th": "Circumference is directly proportional to radius",
+      "explanation_en": "Circumference is directly proportional to radius",
+      "difficulty": "medium",
+      "choices": [
+        "2 times",
+        "4 times",
+        "same",
+        "1/2"
+      ],
+      "correct_answer": "2 times",
+      "question_text": "ถ้ารัศมีเป็น 2 เท่าของเดิม เส้นรอบวงจะเป็นกี่เท่า",
+      "explanation": "Circumference is directly proportional to radius",
+      "question_text_th": "ถ้ารัศมีเป็น 2 เท่าของเดิม เส้นรอบวงจะเป็นกี่เท่า",
+      "question_text_en": "If the radius doubles, the circumference becomes how many times larger?"
+    },
+    {
+      "question_id": "circles__q001_m10",
+      "type": "multiple_choice",
+      "question_th": "วงกลมมีรัศมี 10.5 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_en": "A circle has a radius of 10.5 cm. What is its circumference? (π = 22/7)",
+      "choices_th": [
+        "33 cm",
+        "66 cm",
+        "22 cm",
+        "44 cm"
+      ],
+      "choices_en": [
+        "33 cm",
+        "66 cm",
+        "22 cm",
+        "44 cm"
+      ],
+      "correct_answer_th": "66 cm",
+      "correct_answer_en": "66 cm",
+      "answer_th": "66 cm",
+      "answer_en": "66 cm",
+      "answer": "66 cm",
+      "explanation_th": "2×22/7×10.5=2×22×1.5=66 cm",
+      "explanation_en": "2×22/7×10.5=2×22×1.5=66 cm",
+      "difficulty": "medium",
+      "choices": [
+        "33 cm",
+        "66 cm",
+        "22 cm",
+        "44 cm"
+      ],
+      "correct_answer": "66 cm",
+      "question_text": "วงกลมมีรัศมี 10.5 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "explanation": "2×22/7×10.5=2×22×1.5=66 cm",
+      "question_text_th": "วงกลมมีรัศมี 10.5 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "question_text_en": "A circle has a radius of 10.5 cm. What is its circumference? (π = 22/7)"
+    }
+  ]
+}

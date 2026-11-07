@@ -1,0 +1,179 @@
+{
+  "lesson_id": "time_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "ลินออกจากบ้านเวลา 07:50 น. ถึงโรงเรียนเวลา 08:25 น. ใช้เวลาเดินทางกี่นาที",
+      "question_text_en": "Lin leaves home at 07:50 and arrives at school at 08:25. How many minutes does the trip take?",
+      "choices": [
+        "35 นาที",
+        "30 นาที",
+        "40 นาที",
+        "25 นาที"
+      ],
+      "correct_answer": "35 นาที",
+      "answer": "35 นาที",
+      "explanation": "08:25-07:50 = 35 นาที",
+      "explanation_th": "08:25-07:50 = 35 นาที",
+      "difficulty": "easy",
+      "hint_th": "08:25-07:50 = 35 นาที"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "ร้านเปิดเวลา 09:00 น. และปิดเวลา 21:00 น. ร้านเปิดกี่ชั่วโมง",
+      "question_text_en": "A shop opens at 09:00 and closes at 21:00. How many hours is it open?",
+      "choices": [
+        "12 ชั่วโมง",
+        "11 ชั่วโมง",
+        "13 ชั่วโมง",
+        "10 ชั่วโมง"
+      ],
+      "correct_answer": "12 ชั่วโมง",
+      "answer": "12 ชั่วโมง",
+      "explanation": "21:00-09:00 = 12 ชม.",
+      "explanation_th": "21:00-09:00 = 12 ชม.",
+      "difficulty": "easy",
+      "hint_th": "21:00-09:00 = 12 ชม."
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "คอนเสิร์ตเริ่มเวลา 19:30 น. และจบเวลา 22:15 น. คอนเสิร์ตใช้เวลากี่ชั่วโมงกี่นาที",
+      "question_text_en": "A concert starts at 19:30 and ends at 22:15. How long is the concert?",
+      "choices": [
+        "2 ชม. 45 นาที",
+        "2 ชม. 30 นาที",
+        "2 ชม. 55 นาที",
+        "3 ชม. 15 นาที"
+      ],
+      "correct_answer": "2 ชม. 45 นาที",
+      "answer": "2 ชม. 45 นาที",
+      "explanation": "22:15-19:30 = 2 ชม. 45 นาที",
+      "explanation_th": "22:15-19:30 = 2 ชม. 45 นาที",
+      "difficulty": "easy",
+      "hint_th": "22:15-19:30 = 2 ชม. 45 นาที"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "มะลินอนเวลา 21:30 น. และตื่นเวลา 06:15 น. มะลินอนกี่ชั่วโมงกี่นาที",
+      "question_text_en": "Mali sleeps at 21:30 and wakes up at 06:15. How long does Mali sleep?",
+      "choices": [
+        "8 ชม. 45 นาที",
+        "9 ชม. 15 นาที",
+        "8 ชม. 15 นาที",
+        "9 ชม. 45 นาที"
+      ],
+      "correct_answer": "8 ชม. 45 นาที",
+      "answer": "8 ชม. 45 นาที",
+      "explanation": "21:30-24:00=2ชม.30นาที + 00:00-06:15=6ชม.15นาที | รวม=8ชม.45นาที",
+      "explanation_th": "21:30-24:00=2ชม.30นาที + 00:00-06:15=6ชม.15นาที | รวม=8ชม.45นาที",
+      "difficulty": "hard",
+      "hint_th": "ข้ามเที่ยงคืน ต้องแบ่งเป็น 2 ช่วง"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "ถ้าเป็นเวลา 10:20 แล้ว 90 นาทีก่อนหน้านั้นเป็นเวลาเท่าไร",
+      "question_text_en": "If it is 10:20, what time was it 90 minutes ago?",
+      "choices": [
+        "08:50 น.",
+        "09:50 น.",
+        "09:10 น.",
+        "08:10 น."
+      ],
+      "correct_answer": "08:50 น.",
+      "answer": "08:50 น.",
+      "explanation": "90 นาที = 1 ชม. 30 นาที | 10:20 - 1 ชม. 30 นาที = 08:50",
+      "explanation_th": "90 นาที = 1 ชม. 30 นาที | 10:20-1ชม.30นาที=08:50 น.",
+      "difficulty": "medium",
+      "hint_th": "90 นาที = 1 ชม. 30 นาที ลบออก"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "ออกกำลังกาย 07:45 ถึง 09:10 ใช้เวลากี่ชั่วโมงกี่นาที",
+      "question_text_en": "Exercise from 07:45 to 09:10. How long?",
+      "choices": [
+        "1 ชม. 25 นาที",
+        "1 ชม. 35 นาที",
+        "1 ชม. 15 นาที",
+        "1 ชม. 20 นาที"
+      ],
+      "correct_answer": "1 ชม. 25 นาที",
+      "answer": "1 ชม. 25 นาที",
+      "explanation": "09:10-07:45 = 1 ชม. 25 นาที",
+      "explanation_th": "09:10-07:45 = 1 ชม. 25 นาที",
+      "difficulty": "easy",
+      "hint_th": "09:10-07:45 = 1 ชม. 25 นาที"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "1 ชั่วโมง 30 นาที บวก 45 นาที ได้เท่าไร",
+      "question_text_en": "1 hour 30 minutes plus 45 minutes equals?",
+      "choices": [
+        "2 ชม. 15 นาที",
+        "2 ชม. 05 นาที",
+        "1 ชม. 75 นาที",
+        "2 ชม. 30 นาที"
+      ],
+      "correct_answer": "2 ชม. 15 นาที",
+      "answer": "2 ชม. 15 นาที",
+      "explanation": "1ชม.30นาที+45นาที=1ชม.75นาที=2ชม.15นาที",
+      "explanation_th": "1ชม.30นาที+45นาที=1ชม.75นาที=2ชม.15นาที",
+      "difficulty": "easy",
+      "hint_th": "บวกนาทีเพิ่ม เกิน 60 ให้แปลงเป็นชั่วโมง"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "รถไฟใช้เวลาเดินทาง 4 ชม. 35 นาที ออกเวลา 13:20 น. จะถึงปลายทางเวลาเท่าไร",
+      "question_text_en": "A train journey takes 4 hours 35 minutes. It departs at 13:20. What time does it arrive?",
+      "choices": [
+        "17:55 น.",
+        "18:55 น.",
+        "17:05 น.",
+        "18:05 น."
+      ],
+      "correct_answer": "17:55 น.",
+      "answer": "17:55 น.",
+      "explanation": "13:20+4ชม.35นาที=17:55 น.",
+      "explanation_th": "13:20+4ชม.35นาที=17:55 น.",
+      "difficulty": "medium",
+      "hint_th": "13:20+4ชม.35นาที=17:55"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ลินทำการบ้านวิชาคณิตศาสตร์ 45 นาที วิชาวิทยาศาสตร์ 35 นาที วิชาภาษาไทย 50 นาที รวมใช้เวลากี่ชั่วโมงกี่นาที",
+      "question_text_en": "Lin spends 45 min on math, 35 min on science, 50 min on Thai. Total time?",
+      "choices": [
+        "2 ชม. 10 นาที",
+        "2 ชม. 05 นาที",
+        "2 ชม. 20 นาที",
+        "2 ชม. 30 นาที"
+      ],
+      "correct_answer": "2 ชม. 10 นาที",
+      "answer": "2 ชม. 10 นาที",
+      "explanation": "45+35+50=130 นาที = 2 ชม. 10 นาที",
+      "explanation_th": "45+35+50=130 นาที = 2 ชม. 10 นาที",
+      "difficulty": "easy",
+      "hint_th": "บวกนาทีทั้งหมด แปลงเป็นชั่วโมงนาที"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "ข้อใดต่อไปนี้ถูกต้อง: ก. 2 ชม. = 120 นาที | ข. 90 นาที = 1 ชม. 30 นาที | ค. 75 นาที = 1 ชม. 15 นาที | ง. 100 นาที = 1 ชม. 40 นาที",
+      "question_text_en": "Which is correct? A. 2 hours = 120 minutes | B. 90 minutes = 1 hour 30 minutes | C. 75 minutes = 1 hour 15 minutes | D. 100 minutes = 1 hour 40 minutes",
+      "choices": [
+        "ก, ข และ ค ถูก",
+        "ข และ ค ถูก",
+        "ก และ ง ถูก",
+        "ทุกข้อถูก"
+      ],
+      "correct_answer": "ก, ข และ ค ถูก",
+      "answer": "ก, ข และ ค ถูก",
+      "explanation": "ก: 2ชม.=120นาที ✓ | ข: 90นาที=1ชม.30นาที ✓ | ค: 75นาที=1ชม.15นาที ✓ | ง: 100นาที=1ชม.40นาที ✓ ทุกข้อถูก!",
+      "explanation_th": "ทุกข้อถูก: ก=120นาที ข=1ชม.30นาที ค=1ชม.15นาที ง=1ชม.40นาที",
+      "difficulty": "medium",
+      "hint_th": "ตรวจสอบแต่ละข้อ โดย 1 ชม. = 60 นาที"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

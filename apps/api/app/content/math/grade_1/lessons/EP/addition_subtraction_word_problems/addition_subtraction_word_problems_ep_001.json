@@ -1,0 +1,243 @@
+{
+  "variant_id": "addition_subtraction_word_problems_ep_001",
+  "variant_title_en": "Addition and Subtraction Word Problems",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Addition and Subtraction Word Problems",
+  "title_th": "",
+  "story_theme_en": "Mai has 45 baht. She gets 28 baht from her grandmother. Then she buys a book for 53 baht. How much money does Mai have now?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Start: 45 baht. Gets: +28 → 73 baht. Buys book: -53 → 20 baht left.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mai has 45 baht. She gets 28 baht from her grandmother. Then she buys a book for 53 baht. How much money does Mai have now?",
+      "data": {
+        "content_en": "Mai has 45 baht. She gets 28 baht from her grandmother. Then she buys a book for 53 baht. How much money does Mai have now?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Start: 45 baht. Gets: +28 → 73 baht. Buys book: -53 → 20 baht left.",
+      "data": {
+        "content_en": "Start: 45 baht. Gets: +28 → 73 baht. Buys book: -53 → 20 baht left."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "baht",
+        "bars": [
+          {
+            "label": "Start",
+            "value": 45,
+            "display": "45 baht",
+            "color": "#96CEB4",
+            "width_pct": 45
+          },
+          {
+            "label": "Get",
+            "value": 28,
+            "display": "+28 baht",
+            "color": "#A8D8EA",
+            "width_pct": 28
+          },
+          {
+            "label": "Buy book",
+            "value": 53,
+            "display": "-53 baht",
+            "color": "#FF6B6B",
+            "width_pct": 53
+          },
+          {
+            "label": "Left",
+            "value": 20,
+            "display": "20 baht",
+            "color": "#C7F464",
+            "width_pct": 20,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "45 + 28 = 73",
+            "formula": {
+              "display": "45 + 28 = 73",
+              "a": 45,
+              "b": 28,
+              "result": 73,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}45&&\\\\\\\\ + 28&&\\\\\\\\ \\\\hline 73&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "45",
+              "b_display": "28",
+              "result_display": "73",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 45 + 28 = 73"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Subtract",
+            "expression": "73 - 53 = 20",
+            "formula": {
+              "display": "73 - 53 = 20",
+              "a": 73,
+              "b": 53,
+              "result": 20,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}73&&\\\\\\\\ - 53&&\\\\\\\\ \\\\hline 20&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "73",
+              "b_display": "53",
+              "result_display": "20",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 73 - 53 = 20"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "45 + 28 - 53 = 20",
+      "content": "45 + 28 - 53 = 20",
+      "data": {
+        "expression": "45 + 28 - 53 = 20",
+        "operations": [
+          {
+            "op": "+",
+            "a": 45,
+            "b": 28,
+            "result": 73
+          },
+          {
+            "op": "-",
+            "a": 73,
+            "b": 53,
+            "result": 20
+          }
+        ],
+        "content_en": "45 + 28 - 53 = 20"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Book has 38 marbles. He wins 19 more. Then he loses 27 marbles. How many marbles does Book have now?",
+      "choices": [
+        "30 marbles",
+        "35 marbles",
+        "27 marbles",
+        "38 marbles"
+      ],
+      "correct_answer": "30 marbles",
+      "explanation": "38 + 19 - 27 = 30 marbles",
+      "data": {
+        "question": "Book has 38 marbles. He wins 19 more. Then he loses 27 marbles. How many marbles does Book have now?",
+        "choices": [
+          "30 marbles",
+          "35 marbles",
+          "27 marbles",
+          "38 marbles"
+        ],
+        "correct_answer": "30 marbles",
+        "explanation": "38 + 19 - 27 = 30 marbles"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "word problem",
+      "th": "โจทย์ปัญหา",
+      "definition_en": "A story about numbers that you solve with math."
+    },
+    {
+      "en": "money",
+      "th": "เงิน",
+      "definition_en": "Coins and bills used to buy things."
+    },
+    {
+      "en": "left",
+      "th": "เหลือ",
+      "definition_en": "What remains after spending or giving away."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Mai has 45 baht. She gets 28 baht from her grandmother. Then she buys a book for...",
+      "solution_en": "45 + 28 - 53 = 20"
+    }
+  ],
+  "questions": []
+}

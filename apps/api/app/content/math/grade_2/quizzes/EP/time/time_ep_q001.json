@@ -1,0 +1,133 @@
+{
+  "quiz_id": "time_ep_q001",
+  "topic_key": "time",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz time_ep_q001",
+  "title_en": "Quiz time_ep_q001",
+  "questions": [
+    {
+      "question": "1 hour equals how many minutes?",
+      "choices": [
+        "60 minutes",
+        "100 minutes",
+        "50 minutes",
+        "30 minutes"
+      ],
+      "correct_answer": "60 minutes",
+      "explanation": "1 hour = 60 minutes",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Now 3:45. In 30 minutes, what time?",
+      "choices": [
+        "4:15",
+        "4:00",
+        "3:75",
+        "4:30"
+      ],
+      "correct_answer": "4:15",
+      "explanation": "3:45+30=4:15",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Clock shows 9:30. In 45 minutes, what time?",
+      "choices": [
+        "10:15",
+        "10:00",
+        "9:75",
+        "10:30"
+      ],
+      "correct_answer": "10:15",
+      "explanation": "9:30+45=10:15",
+      "difficulty": "easy"
+    },
+    {
+      "question": "From 5:00 to 7:00 is how long?",
+      "choices": [
+        "2 hours",
+        "1 hour 30 minutes",
+        "2 hours 30 minutes",
+        "1 hour"
+      ],
+      "correct_answer": "2 hours",
+      "explanation": "7:00-5:00=2 hours",
+      "difficulty": "easy"
+    },
+    {
+      "question": "1 day has how many hours?",
+      "choices": [
+        "24 hours",
+        "12 hours",
+        "48 hours",
+        "36 hours"
+      ],
+      "correct_answer": "24 hours",
+      "explanation": "1 day = 24 hours",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Started homework at 15:30. Took 1 hour 45 minutes. What time finished?",
+      "choices": [
+        "17:15",
+        "16:15",
+        "17:00",
+        "16:30"
+      ],
+      "correct_answer": "17:15",
+      "explanation": "15:30+1:45=17:15",
+      "difficulty": "medium"
+    },
+    {
+      "question": "2:15 + 1:30 = ?",
+      "choices": [
+        "3:45",
+        "3:15",
+        "4:00",
+        "3:30"
+      ],
+      "correct_answer": "3:45",
+      "explanation": "2:15+1:30=3:45",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Now 8:00 AM. In 180 minutes, what time?",
+      "choices": [
+        "11:00",
+        "10:00",
+        "11:30",
+        "10:30"
+      ],
+      "correct_answer": "11:00",
+      "explanation": "180/60=3 hours, 8+3=11:00",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Movie starts 13:00 ends 15:30. How long?",
+      "choices": [
+        "2 hours 30 minutes",
+        "2 hours",
+        "3 hours 30 minutes",
+        "2 hours 15 minutes"
+      ],
+      "correct_answer": "2 hours 30 minutes",
+      "explanation": "15:30-13:00=2:30",
+      "difficulty": "medium"
+    },
+    {
+      "question": "From 7:45 to 9:15 is how long?",
+      "choices": [
+        "1 hour 30 minutes",
+        "2 hours",
+        "1 hour",
+        "1 hour 15 minutes"
+      ],
+      "correct_answer": "1 hour 30 minutes",
+      "explanation": "9:15-7:45=1:30",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

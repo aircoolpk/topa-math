@@ -488,8 +488,8 @@ export default function TestSessionPage() {
 
   // ── Auth guard ──────────────────────────────────────────────────────────────
   useEffect(() => {
-    checkAuth().then(() => {
-      if (!localStorage.getItem('access_token')) router.push('/login')
+    checkAuth().then((authenticatedUser) => {
+      if (!authenticatedUser) router.push('/login')
     })
   }, [])
 

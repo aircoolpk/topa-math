@@ -1,0 +1,179 @@
+{
+  "lesson_id": "addition_subtraction_word_problems_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "aswp_ep_q002_e01",
+      "question_text": "Pim has 54 baht. She gets 27 baht from her father. Then she buys a pencil case for 61 baht. How much money does Pim have now?",
+      "question_text_th": "พิมมีเงิน 54 บาท ได้รับจากพ่อ 27 บาท แล้วซื้อกล่องดินสอ 61 บาท พิมมีเงินเท่าไหร่ตอนนี้",
+      "choices": [
+        "20 baht",
+        "28 baht",
+        "15 baht",
+        "32 baht"
+      ],
+      "correct_answer": "20 baht",
+      "answer": "20 baht",
+      "explanation": "54 + 27 - 61 = 20 baht",
+      "explanation_th": "54 + 27 - 61 = 20 บาท",
+      "difficulty": "easy",
+      "hint_th": "Get then spend."
+    },
+    {
+      "question_id": "aswp_ep_q002_e02",
+      "question_text": "Ai has 42 stickers. He buys 38 more stickers. Then he gives 25 stickers to his friend. How many stickers does Ai have left?",
+      "question_text_th": "อ้ายมีสติกเกอร์ 42 ดวง ซื้อเพิ่ม 38 ดวง แล้วให้เพื่อน 25 ดวง อ้ายเหลือสติกเกอร์กี่ดวง",
+      "choices": [
+        "55 stickers",
+        "63 stickers",
+        "50 stickers",
+        "67 stickers"
+      ],
+      "correct_answer": "55 stickers",
+      "answer": "55 stickers",
+      "explanation": "42 + 38 - 25 = 55 stickers",
+      "explanation_th": "42 + 38 - 25 = 55 ดวง",
+      "difficulty": "easy",
+      "hint_th": "Buy then give."
+    },
+    {
+      "question_id": "aswp_ep_q002_e03",
+      "question_text": "Lin has 71 flowers. She gives 29 flowers to the school and then picks 36 more in the garden. How many flowers does Lin have now?",
+      "question_text_th": "ลินมีดอกไม้ 71 ดอก ให้โรงเรียน 29 ดอก แล้วเก็บเพิ่มจากสวน 36 ดอก ลินมีดอกไม้กี่ดอกตอนนี้",
+      "choices": [
+        "78 flowers",
+        "86 flowers",
+        "73 flowers",
+        "90 flowers"
+      ],
+      "correct_answer": "78 flowers",
+      "answer": "78 flowers",
+      "explanation": "71 - 29 + 36 = 78 flowers",
+      "explanation_th": "71 - 29 + 36 = 78 ดอก",
+      "difficulty": "easy",
+      "hint_th": "Give then pick."
+    },
+    {
+      "question_id": "aswp_ep_q002_m01",
+      "question_text": "Book has 63 marbles. He loses 24 marbles, then wins 35 marbles from Mali. How many marbles does Book have now?",
+      "question_text_th": "บุ๊กมีลูกแก้ว 63 ลูก เสีย 24 ลูก แล้วชนะจากมะลิ 35 ลูก บุ๊กมีลูกแก้วกี่ลูกตอนนี้",
+      "choices": [
+        "74 marbles",
+        "82 marbles",
+        "69 marbles",
+        "86 marbles"
+      ],
+      "correct_answer": "74 marbles",
+      "answer": "74 marbles",
+      "explanation": "63 - 24 + 35 = 74 marbles",
+      "explanation_th": "63 - 24 + 35 = 74 ลูก",
+      "difficulty": "medium",
+      "hint_th": "Lose then win."
+    },
+    {
+      "question_id": "aswp_ep_q002_m02",
+      "question_text": "Mali has 83 baht. She spends 37 baht on a book and 28 baht on a snack. How much money does Mali have left?",
+      "question_text_th": "มะลิมีเงิน 83 บาท ซื้อหนังสือ 37 บาท และขนม 28 บาท มะลิเหลือเงินเท่าไหร่",
+      "choices": [
+        "18 baht",
+        "26 baht",
+        "13 baht",
+        "30 baht"
+      ],
+      "correct_answer": "18 baht",
+      "answer": "18 baht",
+      "explanation": "83 - 37 - 28 = 18 baht",
+      "explanation_th": "83 - 37 - 28 = 18 บาท",
+      "difficulty": "medium",
+      "hint_th": "Spend twice."
+    },
+    {
+      "question_id": "aswp_ep_q002_m03",
+      "question_text": "Tad has 58 crayons. He gives 19 crayons to his sister and buys 34 new crayons. How many crayons does Tad have now?",
+      "question_text_th": "ต้นมีสีเทียน 58 ก้าน ให้พี่สาว 19 ก้าน และซื้อใหม่ 34 ก้าน ต้นมีสีเทียนกี่ก้านตอนนี้",
+      "choices": [
+        "73 crayons",
+        "81 crayons",
+        "68 crayons",
+        "85 crayons"
+      ],
+      "correct_answer": "73 crayons",
+      "answer": "73 crayons",
+      "explanation": "58 - 19 + 34 = 73 crayons",
+      "explanation_th": "58 - 19 + 34 = 73 ก้าน",
+      "difficulty": "medium",
+      "hint_th": "Give then buy."
+    },
+    {
+      "question_id": "aswp_ep_q002_m04",
+      "question_text": "Lin has 92 stickers. She sells 44 stickers and then receives 57 new stickers from her friends. How many stickers does Lin have now?",
+      "question_text_th": "ลินมีสติกเกอร์ 92 ดวง ขายไป 44 ดวง แล้วได้รับจากเพื่อน 57 ดวง ลินมีสติกเกอร์กี่ดวงตอนนี้",
+      "choices": [
+        "105 stickers",
+        "113 stickers",
+        "100 stickers",
+        "117 stickers"
+      ],
+      "correct_answer": "105 stickers",
+      "answer": "105 stickers",
+      "explanation": "92 - 44 + 57 = 105 stickers",
+      "explanation_th": "92 - 44 + 57 = 105 ดวง",
+      "difficulty": "medium",
+      "hint_th": "Sell then receive."
+    },
+    {
+      "question_id": "aswp_ep_q002_h01",
+      "question_text": "A store starts with 85 toys. It sells 32 toys on Wednesday and 28 toys on Thursday. Then it receives 50 new toys on Friday. How many toys does the store have now?",
+      "question_text_th": "ร้านเริ่มมีของเล่น 85 ชิ้น ขายพุธ 32 ชิ้น พฤหัส 28 ชิ้น ได้รับศุกร์ 50 ชิ้น ร้านมีของเล่นกี่ชิ้นตอนนี้",
+      "choices": [
+        "75 toys",
+        "83 toys",
+        "70 toys",
+        "87 toys"
+      ],
+      "correct_answer": "75 toys",
+      "answer": "75 toys",
+      "explanation": "85 - 32 - 28 + 50 = 75 toys",
+      "explanation_th": "85 - 32 - 28 + 50 = 75 ชิ้น",
+      "difficulty": "hard",
+      "hint_th": "Three operations."
+    },
+    {
+      "question_id": "aswp_ep_q002_h02",
+      "question_text": "Book has 78 marbles. He loses 22 marbles, wins 41 marbles, gives 19 to Lin, and buys 15 new ones. How many marbles does Book have now?",
+      "question_text_th": "บุ๊กมีลูกแก้ว 78 ลูก เสีย 22 ชนะ 41 ให้ลิน 19 ซื้อใหม่ 15 บุ๊กมีลูกแก้วกี่ลูกตอนนี้",
+      "choices": [
+        "93 marbles",
+        "101 marbles",
+        "88 marbles",
+        "105 marbles"
+      ],
+      "correct_answer": "93 marbles",
+      "answer": "93 marbles",
+      "explanation": "78 - 22 + 41 - 19 + 15 = 93 marbles",
+      "explanation_th": "78 - 22 + 41 - 19 + 15 = 93 ลูก",
+      "difficulty": "hard",
+      "hint_th": "Four operations."
+    },
+    {
+      "question_id": "aswp_ep_q002_h03",
+      "question_text": "Mali has 73 baht. She spends 28 baht on a notebook and 19 baht on a pen. Then she receives 60 baht from her grandmother. How much money does Mali have now?",
+      "question_text_th": "มะลิมีเงิน 73 บาท ซื้อสมุด 28 บาท และปากกา 19 บาท แล้วได้รับจากยาย 60 บาท มะลิมีเงินเท่าไหร่ตอนนี้",
+      "choices": [
+        "86 baht",
+        "94 baht",
+        "81 baht",
+        "98 baht"
+      ],
+      "correct_answer": "86 baht",
+      "answer": "86 baht",
+      "explanation": "73 - 28 - 19 + 60 = 86 baht",
+      "explanation_th": "73 - 28 - 19 + 60 = 86 บาท",
+      "difficulty": "hard",
+      "hint_th": "Spend twice then receive."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

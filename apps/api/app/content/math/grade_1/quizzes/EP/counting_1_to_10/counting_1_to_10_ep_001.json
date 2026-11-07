@@ -1,0 +1,174 @@
+{
+  "lesson_id": "counting_1_to_10_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "c1to10_ep_q001_e01",
+      "question_text": "Mai has 3 red flowers. She gets 2 more red flowers. How many red flowers does she have?",
+      "question_text_th": "ไมมีดอกไม้แดง 3 ดอก ได้รับเพิ่มอีก 2 ดอก รวมมีกี่ดอก",
+      "choices": [
+        "5 flowers",
+        "8 flowers",
+        "3 flowers",
+        "10 flowers"
+      ],
+      "correct_answer": "5 flowers",
+      "answer": "5 flowers",
+      "explanation": "3 + 2 = 5 flowers",
+      "explanation_th": "บวกดอกไม้: 3 + 2 = 5 ดอก",
+      "difficulty": "easy",
+      "hint_th": "Count the flowers."
+    },
+    {
+      "question_id": "c1to10_ep_q001_e02",
+      "question_text": "Tad has 4 stickers. He gives 1 sticker to his friend. How many stickers does Tad have left?",
+      "question_text_th": "ต้นมีสติกเกอร์ 4 ดวง ให้เพื่อน 1 ดวง เหลือสติกเกอร์กี่ดวง",
+      "choices": [
+        "3 stickers",
+        "6 stickers",
+        "1 stickers",
+        "8 stickers"
+      ],
+      "correct_answer": "3 stickers",
+      "answer": "3 stickers",
+      "explanation": "4 - 1 = 3 stickers",
+      "explanation_th": "ลบสติกเกอร์: 4 - 1 = 3 ดวง",
+      "difficulty": "easy",
+      "hint_th": "Take away 1."
+    },
+    {
+      "question_id": "c1to10_ep_q001_e03",
+      "question_text": "Lin sees 5 butterflies. Then 1 more butterfly comes. How many butterflies are there now?",
+      "question_text_th": "ลินเห็นผีเสื้อ 5 ตัว แล้วมีผีเสื้ออีก 1 ตัวบินมา รวมมีกี่ตัว",
+      "choices": [
+        "6 butterflies",
+        "9 butterflies",
+        "4 butterflies",
+        "11 butterflies"
+      ],
+      "correct_answer": "6 butterflies",
+      "answer": "6 butterflies",
+      "explanation": "5 + 1 = 6 butterflies",
+      "explanation_th": "บวกผีเสื้อ: 5 + 1 = 6 ตัว",
+      "difficulty": "easy",
+      "hint_th": "Add 1 more."
+    },
+    {
+      "question_id": "c1to10_ep_q001_m01",
+      "question_text": "Book has 6 pencils. He buys 3 more pencils at the shop. How many pencils does Book have now?",
+      "question_text_th": "บุ๊กมีดินสอ 6 แท่ง ซื้อเพิ่มอีก 3 แท่งที่ร้าน บุ๊กมีดินสอกี่แท่ง",
+      "choices": [
+        "9 pencils",
+        "12 pencils",
+        "7 pencils",
+        "14 pencils"
+      ],
+      "correct_answer": "9 pencils",
+      "answer": "9 pencils",
+      "explanation": "6 + 3 = 9 pencils",
+      "explanation_th": "บวกดินสอ: 6 + 3 = 9 แท่ง",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "c1to10_ep_q001_m02",
+      "question_text": "Mali has 7 candies. She eats 2 candies. How many candies does Mali have left?",
+      "question_text_th": "มะลิมีลูกชุบ 7 ชิ้น กินไป 2 ชิ้น เหลือลูกชุบกี่ชิ้น",
+      "choices": [
+        "5 candies",
+        "8 candies",
+        "3 candies",
+        "10 candies"
+      ],
+      "correct_answer": "5 candies",
+      "answer": "5 candies",
+      "explanation": "7 - 2 = 5 candies",
+      "explanation_th": "ลบลูกชุบ: 7 - 2 = 5 ชิ้น",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "c1to10_ep_q001_m03",
+      "question_text": "Ai has 4 apples. Mali gives Ai 3 more apples. How many apples does Ai have now?",
+      "question_text_th": "อ้ายมีแอปเปิ้ล 4 ผล มะลิให้อ้ายอีก 3 ผล อ้ายมีแอปเปิ้ลกี่ผล",
+      "choices": [
+        "7 apples",
+        "10 apples",
+        "5 apples",
+        "12 apples"
+      ],
+      "correct_answer": "7 apples",
+      "answer": "7 apples",
+      "explanation": "4 + 3 = 7 apples",
+      "explanation_th": "บวกแอปเปิ้ล: 4 + 3 = 7 ผล",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "c1to10_ep_q001_m04",
+      "question_text": "Chef Ai cooks 8 eggs. He uses 5 eggs for breakfast. How many eggs are left?",
+      "question_text_th": "เชฟแอร์ทำไข่ 8 ฟอง ใช้ทำอาหารเช้า 5 ฟอง เหลือไข่กี่ฟอง",
+      "choices": [
+        "3 eggs",
+        "6 eggs",
+        "1 eggs",
+        "8 eggs"
+      ],
+      "correct_answer": "3 eggs",
+      "answer": "3 eggs",
+      "explanation": "8 - 5 = 3 eggs",
+      "explanation_th": "ลบไข่: 8 - 5 = 3 ฟอง",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "c1to10_ep_q001_h01",
+      "question_text": "Lin has 9 stamps. She gives 4 stamps to Mali and then gets 2 stamps back from her sister. How many stamps does Lin have now?",
+      "question_text_th": "ลินมีแสตมป์ 9 ดวง ให้มะลิ 4 ดวง แล้วได้รับคืนจากพี่สาว 2 ดวง ลินมีแสตมป์กี่ดวง",
+      "choices": [
+        "7 stamps",
+        "10 stamps",
+        "5 stamps",
+        "12 stamps"
+      ],
+      "correct_answer": "7 stamps",
+      "answer": "7 stamps",
+      "explanation": "9 - 4 + 2 = 7 stamps",
+      "explanation_th": "ลบแล้วบวก: 9 - 4 + 2 = 7 ดวง",
+      "difficulty": "hard",
+      "hint_th": "Work step by step."
+    },
+    {
+      "question_id": "c1to10_ep_q001_h02",
+      "question_text": "A fruit shop has 8 mangoes. Customers buy 3 mangoes in the morning and 2 mangoes in the afternoon. How many mangoes are left?",
+      "question_text_th": "ร้านผลไม้มีมะม่วง 8 ผล ลูกค้าซื้อเช้า 3 ผล และบ่าย 2 ผล เหลือมะม่วงกี่ผล",
+      "choices": [
+        "3 mangoes",
+        "6 mangoes",
+        "1 mangoes",
+        "8 mangoes"
+      ],
+      "correct_answer": "3 mangoes",
+      "answer": "3 mangoes",
+      "explanation": "8 - 3 - 2 = 3 mangoes",
+      "explanation_th": "ลบทีละขั้น: 8 - 3 - 2 = 3 ผล",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "c1to10_ep_q001_h03",
+      "question_text": "Tad has 5 balls. He wins 4 more balls. Then he loses 3 balls. How many balls does Tad have now?",
+      "question_text_th": "ต้นมีลูกบอล 5 ลูก ชนะได้อีก 4 ลูก แล้วเสียไป 3 ลูก ต้นมีลูกบอลกี่ลูก",
+      "choices": [
+        "6 balls",
+        "9 balls",
+        "4 balls",
+        "11 balls"
+      ],
+      "correct_answer": "6 balls",
+      "answer": "6 balls",
+      "explanation": "5 + 4 - 3 = 6 balls",
+      "explanation_th": "บวกแล้วลบ: 5 + 4 - 3 = 6 ลูก",
+      "difficulty": "hard",
+      "hint_th": "Win then lose."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

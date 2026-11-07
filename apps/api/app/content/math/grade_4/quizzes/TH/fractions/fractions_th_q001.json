@@ -1,0 +1,179 @@
+{
+  "lesson_id": "fractions_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "พิซซ่าแบ่งเป็น 8 ส่วนเท่าๆ ลินกิน 3/8 มะลิกิน 2/8 รวมกินไปกี่ส่วน เหลือกี่ส่วน",
+      "question_text_en": "A pizza is cut into 8 equal slices. Lin eats 3/8 and Mali eats 2/8. How many slices did they eat? How many are left?",
+      "choices": [
+        "5/8 รวม เหลือ 3/8",
+        "5/8 รวม เหลือ 5/8",
+        "4/8 รวม เหลือ 4/8",
+        "6/8 รวม เหลือ 2/8"
+      ],
+      "correct_answer": "5/8 รวม เหลือ 3/8",
+      "answer": "5/8 รวม เหลือ 3/8",
+      "explanation": "3/8+2/8=5/8 รวม | 8/8-5/8=3/8 เหลือ",
+      "explanation_th": "3/8+2/8=5/8 รวม | 8/8-5/8=3/8 เหลือ",
+      "difficulty": "easy",
+      "hint_th": "บวกเศษ แล้วลบจาก 8/8"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "เค้กแบ่งเป็น 9 ส่วนเท่าๆ ลินกิน 4/9 มะลิกิน 2/9 รวมกินไปกี่ส่วน เหลือกี่ส่วน",
+      "question_text_en": "A cake is cut into 9 equal pieces. Lin eats 4/9 and Mali eats 2/9. How many pieces in total? How many are left?",
+      "choices": [
+        "6/9 รวม เหลือ 3/9",
+        "5/9 รวม เหลือ 4/9",
+        "7/9 รวม เหลือ 2/9",
+        "6/9 รวม เหลือ 2/9"
+      ],
+      "correct_answer": "6/9 รวม เหลือ 3/9",
+      "answer": "6/9 รวม เหลือ 3/9",
+      "explanation": "4/9+2/9=6/9 | 9/9-6/9=3/9",
+      "explanation_th": "4/9+2/9=6/9 | 9/9-6/9=3/9",
+      "difficulty": "easy",
+      "hint_th": "บวกเศษ แล้วลบจาก 9/9"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "ถังน้ำเต็ม 5/7 ของถัง ลินใช้ไป 2/7 ของถัง ถังยังเหลือน้ำกี่ส่วน",
+      "question_text_en": "A water tank is filled with 5/7 of a tank. Lin uses 2/7 of the tank. How much water is left?",
+      "choices": [
+        "3/7 ของถัง",
+        "2/7 ของถัง",
+        "4/7 ของถัง",
+        "1/7 ของถัง"
+      ],
+      "correct_answer": "3/7 ของถัง",
+      "answer": "3/7 ของถัง",
+      "explanation": "5/7-2/7=3/7",
+      "explanation_th": "5/7-2/7=3/7",
+      "difficulty": "easy",
+      "hint_th": "ลบเศษที่มีส่วนเท่ากัน"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "สวนดอกไม้มีดอกไม้ 7/12 เป็นกุหลาบ 2/12 เป็นดอกทานตะวัน เป็นดอกมะลิกี่ส่วน",
+      "question_text_en": "A garden has 7/12 flowers that are roses and 2/12 that are sunflowers. What fraction are jasmine flowers?",
+      "choices": [
+        "3/12",
+        "5/12",
+        "4/12",
+        "2/12"
+      ],
+      "correct_answer": "3/12",
+      "answer": "3/12",
+      "explanation": "7/12+2/12=9/12 | 12/12-9/12=3/12",
+      "explanation_th": "7/12+2/12=9/12 | 12/12-9/12=3/12 ดอกมะลิ",
+      "difficulty": "medium",
+      "hint_th": "บวกกุหลาบและดอกทานตะวัน แล้วลบจาก 12/12"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "ข้อใดต่อไปนี้ถูกต้อง: ก. 3/8 + 2/8 = 5/8 | ข. 4/9 + 3/9 = 7/9 | ค. 5/12 + 4/12 = 9/12 | ง. 2/7 + 3/7 = 6/7",
+      "question_text_en": "Which is correct? A. 3/8 + 2/8 = 5/8 | B. 4/9 + 3/9 = 7/9 | C. 5/12 + 4/12 = 9/12 | D. 2/7 + 3/7 = 6/7",
+      "choices": [
+        "ทุกข้อถูก",
+        "ก, ข และ ค ถูก",
+        "ข และ ค ถูก",
+        "ก และ ง ถูก"
+      ],
+      "correct_answer": "ทุกข้อถูก",
+      "answer": "ทุกข้อถูก",
+      "explanation": "ก:3/8+2/8=5/8 ✓ | ข:4/9+3/9=7/9 ✓ | ค:5/12+4/12=9/12 ✓ | ง:2/7+3/7=5/7 ✗ (ได้ 5/7 ไม่ใช่ 6/7) แก้: 2/7+3/7=5/7 ผิด!",
+      "explanation_th": "ก ถูก | ข ถูก | ค ถูก | ง: 2/7+3/7=5/7 ไม่ใช่ 6/7 ผิด!",
+      "difficulty": "hard",
+      "hint_th": "ตรวจสอบแต่ละข้อ ระวัง 2/7+3/7=5/7 ไม่ใช่ 6/7"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "พิซซ่า 5/8 + 1/8 = ?",
+      "question_text_en": "Pizza: 5/8 + 1/8 = ?",
+      "choices": [
+        "6/8",
+        "5/16",
+        "4/8",
+        "6/16"
+      ],
+      "correct_answer": "6/8",
+      "answer": "6/8",
+      "explanation": "5/8+1/8=6/8 (บวกเศษ ส่วนคงที่)",
+      "explanation_th": "5/8+1/8=6/8",
+      "difficulty": "easy",
+      "hint_th": "บวกเศษ 3+1=4 ส่วนคงที่ 8 ได้ 4/8 ผิด! 5/8+1/8=6/8"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "ส้มโอ 3/5 + 1/5 = ?",
+      "question_text_en": "3/5 + 1/5 = ?",
+      "choices": [
+        "4/5",
+        "3/25",
+        "4/10",
+        "3/5"
+      ],
+      "correct_answer": "4/5",
+      "answer": "4/5",
+      "explanation": "3/5+1/5=4/5",
+      "explanation_th": "3/5+1/5=4/5",
+      "difficulty": "easy",
+      "hint_th": "3/5+1/5=4/5"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "ถ้า 4/9 + x/9 = 7/9 แล้ว x มีค่าเท่าไร",
+      "question_text_en": "If 4/9 + x/9 = 7/9, what is x?",
+      "choices": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "correct_answer": "3",
+      "answer": "3",
+      "explanation": "4+x=7 → x=3",
+      "explanation_th": "4+x=7 → x=3",
+      "difficulty": "easy",
+      "hint_th": "4+x=7 → x=3"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ถ้า 8/8 - 5/8 = x แล้ว x มีค่าเท่าไร",
+      "question_text_en": "If 8/8 - 5/8 = x, what is x?",
+      "choices": [
+        "3/8",
+        "3/0",
+        "13/8",
+        "3/16"
+      ],
+      "correct_answer": "3/8",
+      "answer": "3/8",
+      "explanation": "8/8-5/8=3/8",
+      "explanation_th": "8/8-5/8=3/8",
+      "difficulty": "easy",
+      "hint_th": "8/8-5/8=3/8"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "นักเรียน 3/10 สอบได้เกรด A และ 4/10 สอบได้เกรด B สอบได้เกรด A หรือ B กี่ส่วน สอบไม่ได้กี่ส่วน",
+      "question_text_en": "3/10 of students get grade A and 4/10 get grade B. What fraction got A or B? What fraction did not?",
+      "choices": [
+        "7/10 ได้ A/B, 3/10 ไม่ได้",
+        "7/10 ได้ A/B, 7/10 ไม่ได้",
+        "6/10 ได้ A/B, 4/10 ไม่ได้",
+        "7/10 ได้ A/B, 4/10 ไม่ได้"
+      ],
+      "correct_answer": "7/10 ได้ A/B, 3/10 ไม่ได้",
+      "answer": "7/10 ได้ A/B, 3/10 ไม่ได้",
+      "explanation": "3/10+4/10=7/10 ได้ A/B | 10/10-7/10=3/10 ไม่ได้",
+      "explanation_th": "3/10+4/10=7/10 ได้ A/B | 10/10-7/10=3/10 ไม่ได้",
+      "difficulty": "medium",
+      "hint_th": "บวก A+B แล้วลบจาก 10/10"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

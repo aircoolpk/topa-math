@@ -1,0 +1,179 @@
+{
+  "lesson_id": "decimals_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "dec_ep_q002_e01",
+      "question_text": "Situation 1: A notebook costs 28.75 baht. A pen costs 15.50 baht. How much for both?",
+      "question_text_th": "Situation 1: A notebook costs 28.75 baht. A pen costs 15.50 baht. How much for both?",
+      "choices": [
+        "44.25 baht",
+        "44.25",
+        "44.00 baht",
+        "45.00 baht"
+      ],
+      "correct_answer": "44.25 baht",
+      "answer": "44.25 baht",
+      "explanation": "28.75 + 15.50 = 44.25 baht",
+      "explanation_th": "28.75 + 15.50 = 44.25 baht",
+      "difficulty": "easy",
+      "hint_th": "Add decimals: 28.75 + 15.50 = 44.25"
+    },
+    {
+      "question_id": "dec_ep_q002_e02",
+      "question_text": "Situation 2: A toy costs 89.90 baht. You pay with a 100-baht note. How much change?",
+      "question_text_th": "Situation 2: A toy costs 89.90 baht. You pay with a 100-baht note. How much change?",
+      "choices": [
+        "10.10 baht",
+        "10.10",
+        "10.00 baht",
+        "11.00 baht"
+      ],
+      "correct_answer": "10.10 baht",
+      "answer": "10.10 baht",
+      "explanation": "100.00 - 89.90 = 10.10 baht",
+      "explanation_th": "100.00 - 89.90 = 10.10 baht",
+      "difficulty": "easy",
+      "hint_th": "Subtract: 100.00 - 89.90 = 10.10"
+    },
+    {
+      "question_id": "dec_ep_q002_e03",
+      "question_text": "Situation 3: 0.6 of 50 books are novels. How many are novels?",
+      "question_text_th": "Situation 3: 0.6 of 50 books are novels. How many are novels?",
+      "choices": [
+        "30 books",
+        "30",
+        "28 books",
+        "32 books"
+      ],
+      "correct_answer": "30 books",
+      "answer": "30 books",
+      "explanation": "0.6 x 50 = 30 books",
+      "explanation_th": "0.6 x 50 = 30 books",
+      "difficulty": "easy",
+      "hint_th": "0.6 = 6/10 = 3/5 | 3/5 x 50 = 30"
+    },
+    {
+      "question_id": "dec_ep_q002_m01",
+      "question_text": "Situation 4: A shop sells 3.2 kg of chicken at 65.50 baht per kg. Total cost?",
+      "question_text_th": "Situation 4: A shop sells 3.2 kg of chicken at 65.50 baht per kg. Total cost?",
+      "choices": [
+        "209.60 baht",
+        "209.60",
+        "208.00 baht",
+        "210.00 baht"
+      ],
+      "correct_answer": "209.60 baht",
+      "answer": "209.60 baht",
+      "explanation": "3.2 x 65.50 = 209.60 baht",
+      "explanation_th": "3.2 x 65.50 = 209.60 baht",
+      "difficulty": "medium",
+      "hint_th": "Multiply: 3.2 x 65.50 = 209.60"
+    },
+    {
+      "question_id": "dec_ep_q002_m02",
+      "question_text": "Situation 5: A ribbon is 12.6 meters long. Another is 4 times as long. How long is the second?",
+      "question_text_th": "Situation 5: A ribbon is 12.6 meters long. Another is 4 times as long. How long is the second?",
+      "choices": [
+        "50.4 meters",
+        "50.4",
+        "48.0 meters",
+        "52.0 meters"
+      ],
+      "correct_answer": "50.4 meters",
+      "answer": "50.4 meters",
+      "explanation": "12.6 x 4 = 50.4 meters",
+      "explanation_th": "12.6 x 4 = 50.4 meters",
+      "difficulty": "medium",
+      "hint_th": "Multiply: 12.6 x 4 = 50.4"
+    },
+    {
+      "question_id": "dec_ep_q002_m03",
+      "question_text": "Situation 6: 2.5 kg of beef costs 187.50 baht. Price per kg?",
+      "question_text_th": "Situation 6: 2.5 kg of beef costs 187.50 baht. Price per kg?",
+      "choices": [
+        "75.00 baht/kg",
+        "75.00",
+        "70.00 baht/kg",
+        "80.00 baht/kg"
+      ],
+      "correct_answer": "75.00 baht/kg",
+      "answer": "75.00 baht/kg",
+      "explanation": "187.50 / 2.5 = 75.00 baht/kg",
+      "explanation_th": "187.50 / 2.5 = 75.00 baht/kg",
+      "difficulty": "medium",
+      "hint_th": "Divide: 187.50 / 2.5 = 75.00"
+    },
+    {
+      "question_id": "dec_ep_q002_m04",
+      "question_text": "Situation 7: A pipe is 9.5 meters long. You cut 3.75 meters from it. How much is left?",
+      "question_text_th": "Situation 7: A pipe is 9.5 meters long. You cut 3.75 meters from it. How much is left?",
+      "choices": [
+        "5.75 meters",
+        "5.75",
+        "5.50 meters",
+        "6.00 meters"
+      ],
+      "correct_answer": "5.75 meters",
+      "answer": "5.75 meters",
+      "explanation": "9.50 - 3.75 = 5.75 meters",
+      "explanation_th": "9.50 - 3.75 = 5.75 meters",
+      "difficulty": "medium",
+      "hint_th": "Subtract: 9.50 - 3.75 = 5.75"
+    },
+    {
+      "question_id": "dec_ep_q002_h01",
+      "question_text": "Situation 8: A car travels 52.5 km per liter. How far with 15.6 liters?",
+      "question_text_th": "Situation 8: A car travels 52.5 km per liter. How far with 15.6 liters?",
+      "choices": [
+        "819 km",
+        "819",
+        "820 km",
+        "815 km"
+      ],
+      "correct_answer": "819 km",
+      "answer": "819 km",
+      "explanation": "52.5 x 15.6 = 819 km",
+      "explanation_th": "52.5 x 15.6 = 819 km",
+      "difficulty": "hard",
+      "hint_th": "Multiply: 52.5 x 15.6 = 819 km"
+    },
+    {
+      "question_id": "dec_ep_q002_h02",
+      "question_text": "Situation 9: 0.25 of a factory are engineers. There are 60 engineers. How many workers in the factory?",
+      "question_text_th": "Situation 9: 0.25 of a factory are engineers. There are 60 engineers. How many workers in the factory?",
+      "choices": [
+        "240 workers",
+        "240",
+        "250 workers",
+        "200 workers"
+      ],
+      "correct_answer": "240 workers",
+      "answer": "240 workers",
+      "explanation": "60 / 0.25 = 240 workers",
+      "explanation_th": "60 / 0.25 = 240 workers",
+      "difficulty": "hard",
+      "hint_th": "Divide: 60 / 0.25 = 240"
+    },
+    {
+      "question_id": "dec_ep_q002_h03",
+      "question_text": "Situation 10: Electricity costs 0.92 baht per kWh. A factory uses 250.5 kWh. How much to pay?",
+      "question_text_th": "Situation 10: Electricity costs 0.92 baht per kWh. A factory uses 250.5 kWh. How much to pay?",
+      "choices": [
+        "230.46 baht",
+        "230.46",
+        "230.00 baht",
+        "231.00 baht"
+      ],
+      "correct_answer": "230.46 baht",
+      "answer": "230.46 baht",
+      "explanation": "250.5 x 0.92 = 230.46 baht",
+      "explanation_th": "250.5 x 0.92 = 230.46 baht",
+      "difficulty": "hard",
+      "hint_th": "Multiply: 250.5 x 0.92 = 230.46"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

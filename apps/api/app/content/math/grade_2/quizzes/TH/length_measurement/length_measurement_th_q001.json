@@ -1,0 +1,133 @@
+{
+  "quiz_id": "length_measurement_th_q001",
+  "topic_key": "length_measurement",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ length_measurement_th_q001",
+  "title_en": "Quiz length_measurement_th_q001",
+  "questions": [
+    {
+      "question": "1 เมตร เท่ากับกี่เซนติเมตร",
+      "choices": [
+        "10 ซม.",
+        "100 ซม.",
+        "1,000 ซม.",
+        "50 ซม."
+      ],
+      "correct_answer": "100 ซม.",
+      "explanation": "1 ม. = 100 ซม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "25 ซม. + 38 ซม. = ?",
+      "choices": [
+        "53 ซม.",
+        "63 ซม.",
+        "73 ซม.",
+        "43 ซม."
+      ],
+      "correct_answer": "63 ซม.",
+      "explanation": "25+38=63 ซม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "สมุดยาว 28 ซม. ดินสอยาว 15 ซม. สมุดยาวกว่าดินสอกี่เซนติเมตร",
+      "choices": [
+        "13 ซม.",
+        "23 ซม.",
+        "33 ซม.",
+        "43 ซม."
+      ],
+      "correct_answer": "13 ซม.",
+      "explanation": "28-15=13 ซม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "2 เมตร 75 เซนติเมตร = ? ซม.",
+      "choices": [
+        "275 ซม.",
+        "207 ซม.",
+        "2,075 ซม.",
+        "257 ซม."
+      ],
+      "correct_answer": "275 ซม.",
+      "explanation": "2 ม. = 200 ซม., 200+75=275 ซม.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "1 เมตร 50 ซม. - 75 ซม. = ?",
+      "choices": [
+        "75 ซม.",
+        "65 ซม.",
+        "85 ซม.",
+        "55 ซม."
+      ],
+      "correct_answer": "75 ซม.",
+      "explanation": "150-75=75 ซม.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ไม้บรรทัดยาว 30 ซม. ต่อกัน 4 อัน ยาวเท่าไร",
+      "choices": [
+        "120 ซม.",
+        "110 ซม.",
+        "130 ซม.",
+        "100 ซม."
+      ],
+      "correct_answer": "120 ซม.",
+      "explanation": "30x4=120 ซม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ริ้บบินยาว 45 ซม. กระดาษยาว 68 ซม. ริ้บบินสั้นกว่ากระดาษกี่เซนติเมตร",
+      "choices": [
+        "23 ซม.",
+        "33 ซม.",
+        "13 ซม.",
+        "43 ซม."
+      ],
+      "correct_answer": "23 ซม.",
+      "explanation": "68-45=23 ซม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ความสูง 1 เมตร 90 เซนติเมตร กับ 2 เมตร 10 เซนติเมตร ต่างกันเท่าไร",
+      "choices": [
+        "20 ซม.",
+        "30 ซม.",
+        "10 ซม.",
+        "40 ซม."
+      ],
+      "correct_answer": "20 ซม.",
+      "explanation": "190 ซม. กับ 210 ซม. ต่างกัน 20 ซม.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ผ้า 3 เมตร 20 ซม. ตัดใช้ไป 1 เมตร 85 ซม. เหลือผ้ากี่เซนติเมตร",
+      "choices": [
+        "135 ซม.",
+        "145 ซม.",
+        "125 ซม.",
+        "155 ซม."
+      ],
+      "correct_answer": "135 ซม.",
+      "explanation": "320-185=135 ซม.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "เชือกยาว 5 เมตร ตัดแบ่งให้เพื่อน 2 เมตร 75 ซม. เหลือเชือกกี่เซนติเมตร",
+      "choices": [
+        "225 ซม.",
+        "235 ซม.",
+        "215 ซม.",
+        "325 ซม."
+      ],
+      "correct_answer": "225 ซม.",
+      "explanation": "500-275=225 ซม.",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

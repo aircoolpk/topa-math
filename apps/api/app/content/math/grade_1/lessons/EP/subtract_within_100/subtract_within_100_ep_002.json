@@ -1,0 +1,211 @@
+{
+  "variant_id": "subtract_within_100_ep_002",
+  "variant_title_en": "Subtraction within 100",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Subtraction within 100",
+  "title_th": "",
+  "story_theme_en": "A farmer has 85 chickens. 47 chickens are sold at the market. How many chickens are left?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Chickens: 85. Sold: 47. 85 - 47 = 38 chickens left.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A farmer has 85 chickens. 47 chickens are sold at the market. How many chickens are left?",
+      "data": {
+        "content_en": "A farmer has 85 chickens. 47 chickens are sold at the market. How many chickens are left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Chickens: 85. Sold: 47. 85 - 47 = 38 chickens left.",
+      "data": {
+        "content_en": "Chickens: 85. Sold: 47. 85 - 47 = 38 chickens left."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "subtract",
+        "unit": "chickens",
+        "bars": [
+          {
+            "label": "Chickens",
+            "value": 85,
+            "display": "85 chickens",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Sold",
+            "value": 47,
+            "display": "-47",
+            "color": "#FF6B6B",
+            "width_pct": 55
+          },
+          {
+            "label": "Left",
+            "value": 38,
+            "display": "38 chickens",
+            "color": "#C7F464",
+            "width_pct": 44,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Subtract",
+            "expression": "85 - 47 = 38",
+            "formula": {
+              "display": "85 - 47 = 38",
+              "a": 85,
+              "b": 47,
+              "result": 38,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}85&&\\\\\\\\ - 47&&\\\\\\\\ \\\\hline 38&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "85",
+              "b_display": "47",
+              "result_display": "38",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 85 - 47 = 38"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "85 - 47 = 38",
+      "content": "85 - 47 = 38",
+      "data": {
+        "expression": "85 - 47 = 38",
+        "operations": [
+          {
+            "op": "-",
+            "a": 85,
+            "b": 47,
+            "result": 38
+          }
+        ],
+        "content_en": "85 - 47 = 38"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A baker has 80 cakes. He sells 40 cakes. How many cakes are left?",
+      "choices": [
+        "40 cakes",
+        "45 cakes",
+        "37 cakes",
+        "48 cakes"
+      ],
+      "correct_answer": "40 cakes",
+      "explanation": "80 - 40 = 40 cakes",
+      "data": {
+        "question": "A baker has 80 cakes. He sells 40 cakes. How many cakes are left?",
+        "choices": [
+          "40 cakes",
+          "45 cakes",
+          "37 cakes",
+          "48 cakes"
+        ],
+        "correct_answer": "40 cakes",
+        "explanation": "80 - 40 = 40 cakes"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "left",
+      "th": "เหลือ",
+      "definition_en": "What remains after taking away."
+    },
+    {
+      "en": "sell",
+      "th": "ขาย",
+      "definition_en": "To give something for money."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "A farmer has 85 chickens. 47 chickens are sold at the market. How many chickens ...",
+      "solution_en": "85 - 47 = 38"
+    }
+  ],
+  "questions": []
+}

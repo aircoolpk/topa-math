@@ -1,0 +1,133 @@
+{
+  "quiz_id": "geometry_shapes_ep_q002",
+  "topic_key": "geometry_shapes",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz geometry_shapes_ep_q002",
+  "title_en": "Quiz geometry_shapes_ep_q002",
+  "questions": [
+    {
+      "question": "An icosagon has how many sides?",
+      "choices": [
+        "20 sides",
+        "10 sides",
+        "12 sides",
+        "18 sides"
+      ],
+      "correct_answer": "20 sides",
+      "explanation": "Icosagon = 20 sides",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A cube has how many right angles?",
+      "choices": [
+        "8 corners",
+        "6 corners",
+        "4 corners",
+        "12 corners"
+      ],
+      "correct_answer": "8 corners",
+      "explanation": "A cube has 8 corners",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How is an oval different from a circle?",
+      "choices": [
+        "has 2 unequal axes",
+        "no circumference",
+        "has corners",
+        "has 4 axes"
+      ],
+      "correct_answer": "has 2 unequal axes",
+      "explanation": "An oval is elongated, not perfectly round",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A rhombus has how many equal sides?",
+      "choices": [
+        "4 equal sides",
+        "all equal",
+        "2 equal sides",
+        "no equal sides"
+      ],
+      "correct_answer": "all equal",
+      "explanation": "A rhombus has all 4 sides equal",
+      "difficulty": "medium"
+    },
+    {
+      "question": "An isosceles triangle has what equal?",
+      "choices": [
+        "2 sides equal",
+        "all sides equal",
+        "no sides equal",
+        "3 sides equal"
+      ],
+      "correct_answer": "2 sides equal",
+      "explanation": "Isosceles = two legs equal",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A cylinder has how many faces?",
+      "choices": [
+        "3 faces",
+        "2 faces",
+        "1 face",
+        "4 faces"
+      ],
+      "correct_answer": "3 faces",
+      "explanation": "A cylinder has 2 circular faces + 1 curved face = 3 faces",
+      "difficulty": "hard"
+    },
+    {
+      "question": "An equilateral triangle has how many equal sides?",
+      "choices": [
+        "3 sides",
+        "2 sides",
+        "no equal sides",
+        "4 sides"
+      ],
+      "correct_answer": "3 sides",
+      "explanation": "Equilateral = all 3 sides equal",
+      "difficulty": "easy"
+    },
+    {
+      "question": "An octagon has how many sides?",
+      "choices": [
+        "8 sides",
+        "6 sides",
+        "7 sides",
+        "10 sides"
+      ],
+      "correct_answer": "8 sides",
+      "explanation": "An octagon has 8 sides and 8 corners",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A cone has a base of what shape?",
+      "choices": [
+        "circle",
+        "square",
+        "triangle",
+        "oval"
+      ],
+      "correct_answer": "circle",
+      "explanation": "A cone has a circular base",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A trapezoid has how many pairs of parallel sides?",
+      "choices": [
+        "1 pair",
+        "2 pairs",
+        "no pairs",
+        "3 pairs"
+      ],
+      "correct_answer": "1 pair",
+      "explanation": "A trapezoid has 1 pair of parallel sides",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

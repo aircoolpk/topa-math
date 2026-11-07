@@ -1,0 +1,148 @@
+{
+  "variant_id": "data_presentation_ep_002",
+  "variant_title_en": "Data Presentation — Weekly Temperature",
+  "status": "needs_review",
+  "title_en": "Data Presentation — Weekly Temperature",
+  "story_theme_en": "The classroom temperature from Monday to Friday was: Monday 28 degrees, Tuesday 30 degrees, Wednesday 27 degrees, Thursday 32 degrees, Friday 29 degrees. What is the average temperature over the 5 days? Which day was the warmest?",
+  "helper_tip": "Average = Sum / Number of items. Find the highest and lowest by comparing numbers.",
+  "hint_th": "ค่าเฉลี่ย = ผลรวม ÷ จำนวน หาค่าสูงสุด-ต่ำสุดด้วยการเปรียบเทียบ",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "The classroom temperature from Monday to Friday was: Monday 28 degrees, Tuesday 30 degrees, Wednesday 27 degrees, Thursday 32 degrees, Friday 29 degrees. What is the average temperature over the 5 days? Which day was the warmest?",
+      "data": {
+        "content_en": "The classroom temperature from Monday to Friday was: Monday 28 degrees, Tuesday 30 degrees, Wednesday 27 degrees, Thursday 32 degrees, Friday 29 degrees. What is the average temperature over the 5 days? Which day was the warmest?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Sum = 28+30+27+32+29 = 146 degrees | Average = 146/5 = 29.2 degrees | Warmest day = Thursday at 32 degrees",
+      "data": {
+        "content_en": "Sum = 28+30+27+32+29 = 146 degrees | Average = 146/5 = 29.2 degrees | Warmest day = Thursday at 32 degrees"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Temperature Chart",
+      "description": "Temperature Chart",
+      "model_type": "line_chart",
+      "data": {
+        "model_type": "line_chart",
+        "operation": "sum_average",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Mon",
+            "value": 28,
+            "display": "28°",
+            "color": "#4ECDC4",
+            "width_pct": 87
+          },
+          {
+            "label": "Tue",
+            "value": 30,
+            "display": "30°",
+            "color": "#45B7D1",
+            "width_pct": 93
+          },
+          {
+            "label": "Wed",
+            "value": 27,
+            "display": "27°",
+            "color": "#96CEB4",
+            "width_pct": 84
+          },
+          {
+            "label": "Thu",
+            "value": 32,
+            "display": "32°",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Fri",
+            "value": 29,
+            "display": "29°",
+            "color": "#FFEAA7",
+            "width_pct": 90
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "(28+30+27+32+29)/5 = 29.2",
+      "content": "Sum = 146 degrees | Average = 146 / 5 = 29.2 degrees",
+      "data": {
+        "expression": "Sum = 146 degrees | Average = 146 / 5 = 29.2 degrees",
+        "operations": [
+          {
+            "op": "+",
+            "a": 28,
+            "b": 30,
+            "result": 58
+          },
+          {
+            "op": "+",
+            "a": 58,
+            "b": 27,
+            "result": 85
+          },
+          {
+            "op": "+",
+            "a": 85,
+            "b": 32,
+            "result": 117
+          },
+          {
+            "op": "+",
+            "a": 117,
+            "b": 29,
+            "result": 146
+          },
+          {
+            "op": "/",
+            "a": 146,
+            "b": 5,
+            "result": 29.2
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "The weights of 4 students: 42, 45, 38, 51 kilograms. What is the total weight and average weight?",
+      "choices": [
+        "176 kg and 44 kg",
+        "175 kg and 44 kg",
+        "176 kg and 43 kg",
+        "176 kg and 45 kg"
+      ],
+      "correct_answer": "176 kg and 44 kg",
+      "explanation": "Total = 42+45+38+51 = 176 kg | Average = 176/4 = 44 kg",
+      "data": {
+        "question": "The weights of 4 students: 42, 45, 38, 51 kilograms. What is the total weight and average weight?",
+        "choices": [
+          "176 kg and 44 kg",
+          "175 kg and 44 kg",
+          "176 kg and 43 kg",
+          "176 kg and 45 kg"
+        ],
+        "correct_answer": "176 kg and 44 kg",
+        "explanation": "Total = 42+45+38+51 = 176 kg | Average = 176/4 = 44 kg"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

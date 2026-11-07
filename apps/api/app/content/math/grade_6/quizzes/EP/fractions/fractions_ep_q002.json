@@ -1,0 +1,381 @@
+{
+  "quiz_id": "fractions_ep_q002",
+  "title_th": "เศษส่วน",
+  "title_en": "Fractions",
+  "status": "needs_review",
+  "variant_id": "fractions_ep_q002",
+  "variant_title_th": "เศษส่วน",
+  "variant_title_en": "Fractions",
+  "questions": [
+    {
+      "question_id": "fraction_q002_m01",
+      "type": "multiple_choice",
+      "question_th": "3/4 × 8 = ?",
+      "question_en": "3/4 × 8 = ?",
+      "choices_th": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "choices_en": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correct_answer_th": "6",
+      "correct_answer_en": "6",
+      "answer_th": "6",
+      "answer_en": "6",
+      "answer": "6",
+      "explanation_th": "3/4 × 8 = 3 × 2 = 6",
+      "explanation_en": "3/4 × 8 = 3 × 2 = 6",
+      "difficulty": "easy",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correct_answer": "6",
+      "question_text": "3/4 × 8 = ?",
+      "explanation": "3/4 × 8 = 3 × 2 = 6",
+      "question_text_th": "3/4 × 8 = ?",
+      "question_text_en": "3/4 × 8 = ?"
+    },
+    {
+      "question_id": "fraction_q002_m02",
+      "type": "multiple_choice",
+      "question_th": "5/6 ÷ 2 = ?",
+      "question_en": "5/6 ÷ 2 = ?",
+      "choices_th": [
+        "5/12",
+        "5/3",
+        "2.5/6",
+        "10/6"
+      ],
+      "choices_en": [
+        "5/12",
+        "5/3",
+        "2.5/6",
+        "10/6"
+      ],
+      "correct_answer_th": "5/12",
+      "correct_answer_en": "5/12",
+      "answer_th": "5/12",
+      "answer_en": "5/12",
+      "answer": "5/12",
+      "explanation_th": "5/6 ÷ 2 = 5/6 × 1/2 = 5/12",
+      "explanation_en": "5/6 ÷ 2 = 5/6 × 1/2 = 5/12",
+      "difficulty": "medium",
+      "choices": [
+        "5/12",
+        "5/3",
+        "2.5/6",
+        "10/6"
+      ],
+      "correct_answer": "5/12",
+      "question_text": "5/6 ÷ 2 = ?",
+      "explanation": "5/6 ÷ 2 = 5/6 × 1/2 = 5/12",
+      "question_text_th": "5/6 ÷ 2 = ?",
+      "question_text_en": "5/6 ÷ 2 = ?"
+    },
+    {
+      "question_id": "fraction_q002_m03",
+      "type": "multiple_choice",
+      "question_th": "มีน้ำ 3/4 ลิตร ลินดื่มไป 1/2 ลิตร เหลือเท่าไร",
+      "question_en": "There is 3/4 L of water. Lin drinks 1/2 L. How much is left?",
+      "choices_th": [
+        "1/4 L",
+        "1/2 L",
+        "2/3 L",
+        "3/8 L"
+      ],
+      "choices_en": [
+        "1/4 L",
+        "1/2 L",
+        "2/3 L",
+        "3/8 L"
+      ],
+      "correct_answer_th": "1/4 L",
+      "correct_answer_en": "1/4 L",
+      "answer_th": "1/4 L",
+      "answer_en": "1/4 L",
+      "answer": "1/4 L",
+      "explanation_th": "3/4 - 1/2 = 3/4 - 2/4 = 1/4 L",
+      "explanation_en": "3/4 - 1/2 = 3/4 - 2/4 = 1/4 L",
+      "difficulty": "medium",
+      "choices": [
+        "1/4 L",
+        "1/2 L",
+        "2/3 L",
+        "3/8 L"
+      ],
+      "correct_answer": "1/4 L",
+      "question_text": "มีน้ำ 3/4 ลิตร ลินดื่มไป 1/2 ลิตร เหลือเท่าไร",
+      "explanation": "3/4 - 1/2 = 3/4 - 2/4 = 1/4 L",
+      "question_text_th": "มีน้ำ 3/4 ลิตร ลินดื่มไป 1/2 ลิตร เหลือเท่าไร",
+      "question_text_en": "There is 3/4 L of water. Lin drinks 1/2 L. How much is left?"
+    },
+    {
+      "question_id": "fraction_q002_m04",
+      "type": "multiple_choice",
+      "question_th": "2/3 × 9 = ?",
+      "question_en": "2/3 × 9 = ?",
+      "choices_th": [
+        "3",
+        "6",
+        "9",
+        "18"
+      ],
+      "choices_en": [
+        "3",
+        "6",
+        "9",
+        "18"
+      ],
+      "correct_answer_th": "6",
+      "correct_answer_en": "6",
+      "answer_th": "6",
+      "answer_en": "6",
+      "answer": "6",
+      "explanation_th": "2/3 × 9 = 2 × 3 = 6",
+      "explanation_en": "2/3 × 9 = 2 × 3 = 6",
+      "difficulty": "easy",
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "18"
+      ],
+      "correct_answer": "6",
+      "question_text": "2/3 × 9 = ?",
+      "explanation": "2/3 × 9 = 2 × 3 = 6",
+      "question_text_th": "2/3 × 9 = ?",
+      "question_text_en": "2/3 × 9 = ?"
+    },
+    {
+      "question_id": "fraction_q002_m05",
+      "type": "multiple_choice",
+      "question_th": "7/8 - 1/2 = ?",
+      "question_en": "7/8 - 1/2 = ?",
+      "choices_th": [
+        "3/8",
+        "6/8",
+        "5/8",
+        "3/4"
+      ],
+      "choices_en": [
+        "3/8",
+        "6/8",
+        "5/8",
+        "3/4"
+      ],
+      "correct_answer_th": "3/8",
+      "correct_answer_en": "3/8",
+      "answer_th": "3/8",
+      "answer_en": "3/8",
+      "answer": "3/8",
+      "explanation_th": "1/2 = 4/8, 7/8 - 4/8 = 3/8",
+      "explanation_en": "1/2 = 4/8, 7/8 - 4/8 = 3/8",
+      "difficulty": "medium",
+      "choices": [
+        "3/8",
+        "6/8",
+        "5/8",
+        "3/4"
+      ],
+      "correct_answer": "3/8",
+      "question_text": "7/8 - 1/2 = ?",
+      "explanation": "1/2 = 4/8, 7/8 - 4/8 = 3/8",
+      "question_text_th": "7/8 - 1/2 = ?",
+      "question_text_en": "7/8 - 1/2 = ?"
+    },
+    {
+      "question_id": "fraction_q002_m06",
+      "type": "multiple_choice",
+      "question_th": "4/5 ÷ 2 = ?",
+      "question_en": "4/5 ÷ 2 = ?",
+      "choices_th": [
+        "4/10",
+        "2/5",
+        "8/5",
+        "4/2"
+      ],
+      "choices_en": [
+        "4/10",
+        "2/5",
+        "8/5",
+        "4/2"
+      ],
+      "correct_answer_th": "2/5",
+      "correct_answer_en": "2/5",
+      "answer_th": "2/5",
+      "answer_en": "2/5",
+      "answer": "2/5",
+      "explanation_th": "4/5 ÷ 2 = 4/5 × 1/2 = 4/10 = 2/5",
+      "explanation_en": "4/5 ÷ 2 = 4/5 × 1/2 = 4/10 = 2/5",
+      "difficulty": "medium",
+      "choices": [
+        "4/10",
+        "2/5",
+        "8/5",
+        "4/2"
+      ],
+      "correct_answer": "2/5",
+      "question_text": "4/5 ÷ 2 = ?",
+      "explanation": "4/5 ÷ 2 = 4/5 × 1/2 = 4/10 = 2/5",
+      "question_text_th": "4/5 ÷ 2 = ?",
+      "question_text_en": "4/5 ÷ 2 = ?"
+    },
+    {
+      "question_id": "fraction_q002_m07",
+      "type": "multiple_choice",
+      "question_th": "น้ำหนัก 3/5 กิโลกรัม กับน้ำหนัก 1/4 กิโลกรัม รวมกันกี่กิโลกรัม",
+      "question_en": "A weight of 3/5 kg and a weight of 1/4 kg are combined. What is the total weight?",
+      "choices_th": [
+        "17/20 kg",
+        "4/9 kg",
+        "1 kg",
+        "7/10 kg"
+      ],
+      "choices_en": [
+        "17/20 kg",
+        "4/9 kg",
+        "1 kg",
+        "7/10 kg"
+      ],
+      "correct_answer_th": "17/20 kg",
+      "correct_answer_en": "17/20 kg",
+      "answer_th": "17/20 kg",
+      "answer_en": "17/20 kg",
+      "answer": "17/20 kg",
+      "explanation_th": "3/5 = 12/20, 1/4 = 5/20, total = 17/20 kg",
+      "explanation_en": "3/5 = 12/20, 1/4 = 5/20, total = 17/20 kg",
+      "difficulty": "hard",
+      "choices": [
+        "17/20 kg",
+        "4/9 kg",
+        "1 kg",
+        "7/10 kg"
+      ],
+      "correct_answer": "17/20 kg",
+      "question_text": "น้ำหนัก 3/5 กิโลกรัม กับน้ำหนัก 1/4 กิโลกรัม รวมกันกี่กิโลกรัม",
+      "explanation": "3/5 = 12/20, 1/4 = 5/20, total = 17/20 kg",
+      "question_text_th": "น้ำหนัก 3/5 กิโลกรัม กับน้ำหนัก 1/4 กิโลกรัม รวมกันกี่กิโลกรัม",
+      "question_text_en": "A weight of 3/5 kg and a weight of 1/4 kg are combined. What is the total weight?"
+    },
+    {
+      "question_id": "fraction_q002_m08",
+      "type": "multiple_choice",
+      "question_th": "1/2 × 1/3 = ?",
+      "question_en": "1/2 × 1/3 = ?",
+      "choices_th": [
+        "1/5",
+        "1/6",
+        "2/3",
+        "1"
+      ],
+      "choices_en": [
+        "1/5",
+        "1/6",
+        "2/3",
+        "1"
+      ],
+      "correct_answer_th": "1/6",
+      "correct_answer_en": "1/6",
+      "answer_th": "1/6",
+      "answer_en": "1/6",
+      "answer": "1/6",
+      "explanation_th": "1/2 × 1/3 = 1/6",
+      "explanation_en": "1/2 × 1/3 = 1/6",
+      "difficulty": "easy",
+      "choices": [
+        "1/5",
+        "1/6",
+        "2/3",
+        "1"
+      ],
+      "correct_answer": "1/6",
+      "question_text": "1/2 × 1/3 = ?",
+      "explanation": "1/2 × 1/3 = 1/6",
+      "question_text_th": "1/2 × 1/3 = ?",
+      "question_text_en": "1/2 × 1/3 = ?"
+    },
+    {
+      "question_id": "fraction_q002_m09",
+      "type": "multiple_choice",
+      "question_th": "3/4 + 2/3 = ?",
+      "question_en": "3/4 + 2/3 = ?",
+      "choices_th": [
+        "5/7",
+        "9/12",
+        "17/12",
+        "1"
+      ],
+      "choices_en": [
+        "5/7",
+        "9/12",
+        "17/12",
+        "1"
+      ],
+      "correct_answer_th": "17/12",
+      "correct_answer_en": "17/12",
+      "answer_th": "17/12",
+      "answer_en": "17/12",
+      "answer": "17/12",
+      "explanation_th": "3/4 = 9/12, 2/3 = 8/12, total = 17/12 = 1 5/12",
+      "explanation_en": "3/4 = 9/12, 2/3 = 8/12, total = 17/12 = 1 5/12",
+      "difficulty": "hard",
+      "choices": [
+        "5/7",
+        "9/12",
+        "17/12",
+        "1"
+      ],
+      "correct_answer": "17/12",
+      "question_text": "3/4 + 2/3 = ?",
+      "explanation": "3/4 = 9/12, 2/3 = 8/12, total = 17/12 = 1 5/12",
+      "question_text_th": "3/4 + 2/3 = ?",
+      "question_text_en": "3/4 + 2/3 = ?"
+    },
+    {
+      "question_id": "fraction_q002_m10",
+      "type": "multiple_choice",
+      "question_th": "5/6 - 1/3 = ?",
+      "question_en": "5/6 - 1/3 = ?",
+      "choices_th": [
+        "1/2",
+        "3/6",
+        "1",
+        "2/3"
+      ],
+      "choices_en": [
+        "1/2",
+        "3/6",
+        "1",
+        "2/3"
+      ],
+      "correct_answer_th": "1/2",
+      "correct_answer_en": "1/2",
+      "answer_th": "1/2",
+      "answer_en": "1/2",
+      "answer": "1/2",
+      "explanation_th": "1/3 = 2/6, 5/6 - 2/6 = 3/6 = 1/2",
+      "explanation_en": "1/3 = 2/6, 5/6 - 2/6 = 3/6 = 1/2",
+      "difficulty": "easy",
+      "choices": [
+        "1/2",
+        "3/6",
+        "1",
+        "2/3"
+      ],
+      "correct_answer": "1/2",
+      "question_text": "5/6 - 1/3 = ?",
+      "explanation": "1/3 = 2/6, 5/6 - 2/6 = 3/6 = 1/2",
+      "question_text_th": "5/6 - 1/3 = ?",
+      "question_text_en": "5/6 - 1/3 = ?"
+    }
+  ]
+}

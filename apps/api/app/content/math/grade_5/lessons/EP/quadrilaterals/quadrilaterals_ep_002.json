@@ -1,0 +1,120 @@
+{
+  "variant_id": "quadrilaterals_ep_002",
+  "variant_title_en": "Quadrilaterals — Land Plot Area",
+  "status": "needs_review",
+  "title_en": "Quadrilaterals — Land Plot Area",
+  "story_theme_en": "A land plot is shaped like a trapezoid with two parallel sides of 40 meters and 25 meters, and a height of 18 meters. What is the area of the land? If the land costs 8,500 baht per square meter, how much does the whole plot cost?",
+  "helper_tip": "Area of trapezoid = (Sum of parallel sides) / 2 × Height",
+  "hint_th": "พื้นที่สี่เหลี่ยมคางหมู = (ผลบวกด้านคู่ขนาน)/2 × สูง",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A land plot is shaped like a trapezoid with two parallel sides of 40 meters and 25 meters, and a height of 18 meters. What is the area of the land? If the land costs 8,500 baht per square meter, how much does the whole plot cost?",
+      "data": {
+        "content_en": "A land plot is shaped like a trapezoid with two parallel sides of 40 meters and 25 meters, and a height of 18 meters. What is the area of the land? If the land costs 8,500 baht per square meter, how much does the whole plot cost?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Area = (40+25)/2 × 18 = 65/2 × 18 = 32.5 × 18 = 585 sq m | Cost = 585 × 8,500 = 4,972,500 baht",
+      "data": {
+        "content_en": "Area = (40+25)/2 × 18 = 65/2 × 18 = 32.5 × 18 = 585 sq m | Cost = 585 × 8,500 = 4,972,500 baht"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Trapezoid Diagram",
+      "description": "Trapezoid Diagram",
+      "model_type": "trapezoid_diagram",
+      "data": {
+        "model_type": "trapezoid_diagram",
+        "operation": "multiply_add",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Top 40 m",
+            "value": 40,
+            "display": "40 m",
+            "color": "#96CEB4",
+            "width_pct": 100
+          },
+          {
+            "label": "Bottom 25 m",
+            "value": 25,
+            "display": "25 m",
+            "color": "#45B7D1",
+            "width_pct": 62
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "(40 + 25) ÷ 2 × 18 = 32.5 × 18 = 585",
+      "content": "Area = 585 sq m | Cost = 4,972,500 baht",
+      "data": {
+        "expression": "Area = 585 sq m | Cost = 4,972,500 baht",
+        "operations": [
+          {
+            "op": "+",
+            "a": 40,
+            "b": 25,
+            "result": 65
+          },
+          {
+            "op": "÷",
+            "a": 65,
+            "b": 2,
+            "result": 32.5
+          },
+          {
+            "op": "×",
+            "a": 32.5,
+            "b": 18,
+            "result": 585
+          },
+          {
+            "op": "×",
+            "a": 585,
+            "b": 8500,
+            "result": 4972500
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A rectangle is 15 meters wide and 22 meters long. What is the area?",
+      "choices": [
+        "330 sq m",
+        "320 sq m",
+        "325 sq m",
+        "335 sq m"
+      ],
+      "correct_answer": "330 sq m",
+      "explanation": "Area = 15 × 22 = 330 sq m",
+      "data": {
+        "question": "A rectangle is 15 meters wide and 22 meters long. What is the area?",
+        "choices": [
+          "330 sq m",
+          "320 sq m",
+          "325 sq m",
+          "335 sq m"
+        ],
+        "correct_answer": "330 sq m",
+        "explanation": "Area = 15 × 22 = 330 sq m"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

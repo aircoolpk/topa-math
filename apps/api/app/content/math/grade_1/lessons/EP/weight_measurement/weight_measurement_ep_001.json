@@ -1,0 +1,216 @@
+{
+  "variant_id": "weight_measurement_ep_001",
+  "variant_title_en": "Weight Measurement",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Weight Measurement",
+  "title_th": "",
+  "story_theme_en": "A watermelon weighs 7 kg. A papaya weighs 3 kg. How much heavier is the watermelon than the papaya?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Watermelon: 7 kg. Papaya: 3 kg. Difference: 7 - 3 = 4 kg.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A watermelon weighs 7 kg. A papaya weighs 3 kg. How much heavier is the watermelon than the papaya?",
+      "data": {
+        "content_en": "A watermelon weighs 7 kg. A papaya weighs 3 kg. How much heavier is the watermelon than the papaya?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Watermelon: 7 kg. Papaya: 3 kg. Difference: 7 - 3 = 4 kg.",
+      "data": {
+        "content_en": "Watermelon: 7 kg. Papaya: 3 kg. Difference: 7 - 3 = 4 kg."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "comparison_bar",
+      "data": {
+        "model_type": "comparison_bar",
+        "operation": "compare",
+        "unit": "kg",
+        "bars": [
+          {
+            "label": "Watermelon",
+            "value": 7,
+            "display": "7 kg",
+            "color": "#96CEB4",
+            "width_pct": 70,
+            "is_total": true
+          },
+          {
+            "label": "Papaya",
+            "value": 3,
+            "display": "3 kg",
+            "color": "#A8D8EA",
+            "width_pct": 30
+          },
+          {
+            "label": "Heavier by",
+            "value": 4,
+            "display": "4 kg",
+            "color": "#C7F464",
+            "width_pct": 40,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Subtract",
+            "expression": "7 - 3 = 4",
+            "formula": {
+              "display": "7 - 3 = 4",
+              "a": 7,
+              "b": 3,
+              "result": 4,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}7&&\\\\\\\\ - 3&&\\\\\\\\ \\\\hline 4&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "7",
+              "b_display": "3",
+              "result_display": "4",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 7 - 3 = 4"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "7 - 3 = 4",
+      "content": "7 - 3 = 4",
+      "data": {
+        "expression": "7 - 3 = 4",
+        "operations": [
+          {
+            "op": "-",
+            "a": 7,
+            "b": 3,
+            "result": 4
+          }
+        ],
+        "content_en": "7 - 3 = 4"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A pumpkin weighs 10 kg. A tomato weighs 2 kg. How much heavier is the pumpkin?",
+      "choices": [
+        "8 kg",
+        "13 kg",
+        "5 kg",
+        "16 kg"
+      ],
+      "correct_answer": "8 kg",
+      "explanation": "10 - 2 = 8 kg",
+      "data": {
+        "question": "A pumpkin weighs 10 kg. A tomato weighs 2 kg. How much heavier is the pumpkin?",
+        "choices": [
+          "8 kg",
+          "13 kg",
+          "5 kg",
+          "16 kg"
+        ],
+        "correct_answer": "8 kg",
+        "explanation": "10 - 2 = 8 kg"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "weigh",
+      "th": "ชั่งน้ำหนัก",
+      "definition_en": "To measure how heavy something is."
+    },
+    {
+      "en": "heavier",
+      "th": "หนักกว่า",
+      "definition_en": "Having more weight."
+    },
+    {
+      "en": "lighter",
+      "th": "เบากว่า",
+      "definition_en": "Having less weight."
+    },
+    {
+      "en": "kilogram",
+      "th": "กิโลกรัม",
+      "definition_en": "A unit for measuring weight."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "A watermelon weighs 7 kg. A papaya weighs 3 kg. How much heavier is the watermel...",
+      "solution_en": "7 - 3 = 4"
+    }
+  ],
+  "questions": []
+}

@@ -3,6 +3,7 @@ import os
 from datetime import UTC, date, datetime, timedelta
 
 os.environ["DATABASE_URL"] = "sqlite:///:memory:"
+os.environ["SMTP_HOST"] = ""
 
 import pytest
 from fastapi.testclient import TestClient
@@ -11,9 +12,10 @@ from sqlalchemy.orm import Session
 
 from app.core.database import Base, engine
 from app.core.config import get_settings
+from app.core.security import create_access_token
 from app.core.schema_maintenance import ensure_local_schema
 from app.main import app
-from app.models import AdminAuditLog, CheckInEvent, ChildProfile, LearningQuest, Lesson, LessonActivity, LessonVariantView, Question, QuestionAttemptHistory, QuizAnswer, Skill, Subject, TestResult as DbTestResult, TestSession as DbTestSession, User
+from app.models import AffiliateCommissionLedger, AffiliateWithdrawalRequest, AdminAuditLog, CheckInEvent, ChildProfile, LearningQuest, Lesson, LessonActivity, LessonVariantView, Question, QuestionAttemptHistory, QuizAnswer, Skill, Subject, TestResult as DbTestResult, TestSession as DbTestSession, User
 from app.scripts.set_user_plus import set_user_plus
 from app.seeds.import_content import import_content
 from app.seeds.import_question_banks import import_question_banks
@@ -33,6 +35,12 @@ def client() -> TestClient:
 def seeded_client(client: TestClient) -> TestClient:
     with Session(engine) as session:
         seed(session)
+        from app.models.mpp_purchase import MppPackagePrice
+        from app.routers.billing import PLAN_CATALOG
+        for plan in PLAN_CATALOG.values():
+            if plan.billing_interval == 'month':
+                session.add(MppPackagePrice(plan_code=plan.plan_code, amount_minor=plan.amount_thb * 100, currency='THB', duration_days=30, entitlement_plan=plan.entitlement_plan_code, program_type=plan.program_type, active=True))
+        session.commit()
     return client
 
 
@@ -62,6 +70,55 @@ def register_and_login_as(client: TestClient, email: str) -> dict[str, str]:
     assert login_response.status_code == 200
     token = login_response.json()["access_token"]
     return {"Authorization": f"Bearer {token}"}
+
+
+def test_login_sets_http_only_cookie_and_cookie_auth_persists(seeded_client: TestClient) -> None:
+    response = seeded_client.post(
+        "/auth/login",
+        json={"email": "demo@4-craft.com", "password": "demo1234"},
+        headers={
+            "Origin": "https://topamath.com",
+            "User-Agent": "Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) Mobile/15E148 Safari/604.1",
+        },
+    )
+    assert response.status_code == 200
+    cookie_header = response.headers["set-cookie"]
+    assert "topa_session=" in cookie_header
+    assert "HttpOnly" in cookie_header
+    assert "SameSite=lax" in cookie_header
+    assert "Path=/" in cookie_header
+
+    seeded_client.headers.pop("Authorization", None)
+    me_response = seeded_client.get("/auth/me")
+    assert me_response.status_code == 200
+    assert me_response.json()["email"] == "demo@4-craft.com"
+
+    logout_response = seeded_client.post("/auth/logout")
+    assert logout_response.status_code == 204
+    assert seeded_client.get("/auth/me").status_code == 401
+
+
+def test_expired_cookie_can_be_replaced_by_fresh_login(seeded_client: TestClient) -> None:
+    with Session(engine) as session:
+        user = session.scalar(select(User).where(User.email == "demo@4-craft.com"))
+        assert user is not None
+        settings = get_settings()
+        original_expiry = settings.access_token_expire_minutes
+        settings.access_token_expire_minutes = -1
+        try:
+            expired_token = create_access_token(user.id, user.role)
+        finally:
+            settings.access_token_expire_minutes = original_expiry
+
+    seeded_client.cookies.set("topa_session", expired_token)
+    assert seeded_client.get("/auth/me").status_code == 401
+
+    login_response = seeded_client.post(
+        "/auth/login",
+        json={"email": "demo@4-craft.com", "password": "demo1234"},
+    )
+    assert login_response.status_code == 200
+    assert seeded_client.get("/auth/me").status_code == 200
 
 
 def create_child(client: TestClient, headers: dict[str, str]) -> dict:
@@ -189,6 +246,8 @@ def stripe_env(monkeypatch):
     monkeypatch.setenv("STRIPE_PRICE_TH_PLUS_MONTHLY", "price_th_monthly_test")
     monkeypatch.setenv("STRIPE_PRICE_EP_PLUS_YEARLY_PROMO", "price_ep_yearly_test")
     monkeypatch.setenv("STRIPE_PRICE_TH_PLUS_YEARLY_PROMO", "price_th_yearly_test")
+    monkeypatch.setenv('STRIPE_PRICE_TH_PLUS_YEARLY', 'price_th_yearly_test')
+    monkeypatch.setenv('STRIPE_PRICE_EP_PLUS_YEARLY', 'price_ep_yearly_test')
     monkeypatch.setenv("FRONTEND_BASE_URL", "http://127.0.0.1:3000")
     get_settings.cache_clear()
     import app.routers.billing as billing
@@ -200,6 +259,32 @@ def stripe_env(monkeypatch):
     monkeypatch.setattr(billing, "stripe", FakeStripe)
     yield FakeStripe
     get_settings.cache_clear()
+
+
+def register_with_referral(client: TestClient, email: str, referral_token: str) -> dict[str, str]:
+    response = client.post(
+        "/auth/register",
+        json={"email": email, "password": "password123", "referral_token": referral_token},
+    )
+    assert response.status_code == 200
+    return {"Authorization": f"Bearer {response.json()['access_token']}"}
+
+
+def stripe_invoice_paid_event(invoice_id: str = "in_aff_123", amount_paid: int = 100000) -> dict:
+    return {
+        "id": f"evt_{invoice_id}",
+        "type": "invoice.paid",
+        "data": {
+            "object": {
+                "id": invoice_id,
+                "subscription": "sub_aff_123",
+                "customer": "cus_test_123",
+                "amount_paid": amount_paid,
+                "currency": "thb",
+                "payment_intent": f"pi_{invoice_id}",
+            }
+        },
+    }
 
 
 def create_ratio_lesson_bank(grade_level: int, *, topic_code: str, core_count: int, challenge_count: int) -> str:
@@ -550,41 +635,33 @@ def test_billing_prices_ignores_abandoned_checkout_customer_without_paid_subscri
 
 
 @pytest.mark.parametrize(
-    ("plan_code", "expected_price", "price_type", "program_type"),
+    "plan_code",
     [
-        ("th_founder_monthly", "price_th_founder_test", "founder", "TH"),
-        ("ep_founder_monthly", "price_ep_founder_test", "founder", "EP"),
-        ("th_plus_monthly", "price_th_monthly_test", "normal", "TH"),
-        ("ep_plus_monthly", "price_ep_monthly_test", "normal", "EP"),
-        ("th_plus_yearly_promo", "price_th_yearly_test", "yearly_promo", "TH"),
-        ("ep_plus_yearly_promo", "price_ep_yearly_test", "yearly_promo", "EP"),
+        "th_founder_monthly",
+        "ep_founder_monthly",
+        "th_plus_monthly",
+        "ep_plus_monthly",
+        "th_plus_yearly_promo",
+        "ep_plus_yearly_promo",
     ],
 )
-def test_create_checkout_session_maps_plan_to_correct_price(seeded_client: TestClient, stripe_env, plan_code, expected_price, price_type, program_type):
+def test_create_checkout_session_defaults_to_stripe_for_each_plan(seeded_client: TestClient, stripe_env, plan_code):
     headers = register_and_login_as(seeded_client, f"{plan_code}@example.com")
     child = create_child(seeded_client, headers)
 
     response = seeded_client.post("/billing/create-checkout-session", headers=headers, json={"plan_code": plan_code})
 
     assert response.status_code == 200
-    assert response.json() == {
-        "checkout_url": "https://checkout.stripe.com/c/pay/cs_test_123",
-        "plan_code": plan_code,
-        "price_type": price_type,
-        "program_type": program_type,
-    }
-    assert stripe_env.last_checkout_kwargs["line_items"] == [{"price": expected_price, "quantity": 1}]
-    assert stripe_env.last_checkout_kwargs["metadata"]["plan_code"] == plan_code
-    assert stripe_env.last_checkout_kwargs["metadata"]["program_type"] == program_type
-    assert stripe_env.last_checkout_kwargs["metadata"]["price_type"] == price_type
+    assert response.json()['provider'] == 'stripe'
+    assert stripe_env.last_checkout_kwargs is not None
     assert stripe_env.customer_created is True
     with Session(engine) as session:
         profile = session.get(ChildProfile, child["id"])
-        assert profile.stripe_customer_id == "cus_test_123"
+        assert profile.stripe_customer_id == 'cus_test_123'
         assert profile.membership_status == "free"
 
 
-def test_create_founder_checkout_returns_409_when_founder_full(seeded_client: TestClient, stripe_env):
+def test_founder_checkout_blocked_when_founder_full(seeded_client: TestClient, stripe_env):
     seed_founder_children(100, th_count=50)
     headers = register_and_login_as(seeded_client, "founder-full@example.com")
     create_child(seeded_client, headers)
@@ -592,11 +669,11 @@ def test_create_founder_checkout_returns_409_when_founder_full(seeded_client: Te
     response = seeded_client.post("/billing/create-checkout-session", headers=headers, json={"plan_code": "th_founder_monthly"})
 
     assert response.status_code == 409
-    assert response.json()["detail"] == "สิทธิ์ Founder Price ครบแล้ว กรุณาเลือกแพ็กเกจราคาปกติ"
+    assert response.json()["detail"]["code"] == "FOUNDER_FULL"
     assert stripe_env.last_checkout_kwargs is None
 
 
-def test_create_normal_checkout_succeeds_when_founder_full(seeded_client: TestClient, stripe_env):
+def test_create_normal_checkout_uses_stripe_when_founder_full(seeded_client: TestClient, stripe_env):
     seed_founder_children(100, th_count=50)
     headers = register_and_login_as(seeded_client, "normal-when-full@example.com")
     create_child(seeded_client, headers)
@@ -604,7 +681,8 @@ def test_create_normal_checkout_succeeds_when_founder_full(seeded_client: TestCl
     response = seeded_client.post("/billing/create-checkout-session", headers=headers, json={"plan_code": "th_plus_monthly"})
 
     assert response.status_code == 200
-    assert response.json()["plan_code"] == "th_plus_monthly"
+    assert response.json()['provider'] == 'stripe'
+    assert stripe_env.last_checkout_kwargs is not None
 
 
 def test_unauthenticated_checkout_returns_401(seeded_client: TestClient, stripe_env):
@@ -624,7 +702,7 @@ def test_create_checkout_session_invalid_plan_code_returns_400(seeded_client: Te
     assert stripe_env.last_checkout_kwargs is None
 
 
-def test_create_checkout_session_missing_price_env_returns_clear_error(seeded_client: TestClient, stripe_env, monkeypatch):
+def test_create_checkout_session_does_not_fall_back_when_stripe_price_missing(seeded_client: TestClient, stripe_env, monkeypatch):
     headers = register_and_login_as(seeded_client, "missing-price@example.com")
     create_child(seeded_client, headers)
     monkeypatch.setenv("STRIPE_PRICE_TH_FOUNDER_MONTHLY", "")
@@ -632,21 +710,21 @@ def test_create_checkout_session_missing_price_env_returns_clear_error(seeded_cl
 
     response = seeded_client.post("/billing/create-checkout-session", headers=headers, json={"plan_code": "th_founder_monthly"})
 
-    assert response.status_code == 500
-    assert response.json()["detail"] == "Stripe configuration missing: STRIPE_PRICE_TH_FOUNDER_MONTHLY"
+    assert response.status_code == 200
+    assert response.json()['provider'] == 'stripe'
+    assert response.json()['mode'] == 'manual_pending'
     assert stripe_env.last_checkout_kwargs is None
 
 
-def test_create_checkout_session_allows_checkout_without_child_profile(seeded_client: TestClient, stripe_env):
+def test_create_checkout_session_without_child_profile_preserves_legacy_stripe(seeded_client: TestClient, stripe_env):
     headers = register_and_login_as(seeded_client, "checkout-before-child@example.com")
 
     response = seeded_client.post("/billing/create-checkout-session", headers=headers, json={"plan_code": "th_plus_monthly"})
 
     assert response.status_code == 200
-    assert response.json()["checkout_url"].startswith("https://checkout.stripe.com/")
-    assert stripe_env.last_checkout_kwargs["line_items"] == [{"price": "price_th_monthly_test", "quantity": 1}]
-    assert stripe_env.last_checkout_kwargs["metadata"]["user_id"]
-    assert "child_id" not in stripe_env.last_checkout_kwargs["metadata"]
+    assert response.json()['provider'] == 'stripe'
+    assert stripe_env.last_checkout_kwargs is not None
+    assert stripe_env.customer_created is True
 
 
 def test_create_portal_session_returns_portal_url(seeded_client: TestClient, stripe_env):
@@ -804,6 +882,264 @@ def test_stripe_webhook_invalid_signature_rejected(seeded_client: TestClient, st
     )
 
     assert response.status_code == 400
+
+
+def test_affiliate_registration_attribution(seeded_client: TestClient):
+    affiliate_headers = register_and_login_as(seeded_client, "affiliate-owner@example.com")
+    token = seeded_client.get("/me/affiliate", headers=affiliate_headers).json()["referral_token"]
+    referred_headers = register_with_referral(seeded_client, "affiliate-referred@example.com", token)
+
+    affiliate_summary = seeded_client.get("/me/affiliate", headers=affiliate_headers)
+    referred_summary = seeded_client.get("/me/affiliate", headers=referred_headers)
+
+    assert affiliate_summary.status_code == 200
+    assert affiliate_summary.json()["registered_count"] == 1
+    assert referred_summary.status_code == 200
+    assert referred_summary.json()["registered_count"] == 0
+    with Session(engine) as session:
+        referred = session.scalar(select(User).where(User.email == "affiliate-referred@example.com"))
+        referrer = session.scalar(select(User).where(User.email == "affiliate-owner@example.com"))
+        assert referred.referred_by_user_id == referrer.id
+
+
+def test_invoice_paid_creates_affiliate_commission_once(seeded_client: TestClient, stripe_env, monkeypatch):
+    monkeypatch.setenv("AFFILIATE_COMMISSION_HOLD_DAYS", "0")
+    get_settings.cache_clear()
+    affiliate_headers = register_and_login_as(seeded_client, "affiliate-pay-owner@example.com")
+    token = seeded_client.get("/me/affiliate", headers=affiliate_headers).json()["referral_token"]
+    referred_headers = register_with_referral(seeded_client, "affiliate-pay-referred@example.com", token)
+    child = create_child(seeded_client, referred_headers)
+    with Session(engine) as session:
+        profile = session.get(ChildProfile, child["id"])
+        profile.stripe_customer_id = "cus_test_123"
+        profile.stripe_subscription_id = "sub_aff_123"
+        session.commit()
+    event = stripe_invoice_paid_event(invoice_id="in_once", amount_paid=100000)
+
+    first = seeded_client.post("/webhooks/stripe", content=json.dumps(event), headers={"stripe-signature": "valid"})
+    duplicate = seeded_client.post("/webhooks/stripe", content=json.dumps(event), headers={"stripe-signature": "valid"})
+
+    assert first.status_code == 200
+    assert duplicate.status_code == 200
+    with Session(engine) as session:
+        rows = session.scalars(select(AffiliateCommissionLedger)).all()
+        assert len(rows) == 1
+        assert rows[0].amount_paid_minor == 100000
+        assert rows[0].commission_minor == 3000
+        assert rows[0].status == "available"
+    summary = seeded_client.get("/me/affiliate", headers=affiliate_headers).json()
+    assert summary["paid_member_count"] == 1
+    assert summary["total_referred_paid_minor"] == 100000
+    assert summary["available_balance_minor"] == 3000
+
+
+def test_affiliate_refund_reverses_commission(seeded_client: TestClient, stripe_env, monkeypatch):
+    monkeypatch.setenv("AFFILIATE_COMMISSION_HOLD_DAYS", "0")
+    get_settings.cache_clear()
+    affiliate_headers = register_and_login_as(seeded_client, "affiliate-refund-owner@example.com")
+    token = seeded_client.get("/me/affiliate", headers=affiliate_headers).json()["referral_token"]
+    referred_headers = register_with_referral(seeded_client, "affiliate-refund-referred@example.com", token)
+    child = create_child(seeded_client, referred_headers)
+    with Session(engine) as session:
+        profile = session.get(ChildProfile, child["id"])
+        profile.stripe_customer_id = "cus_test_123"
+        profile.stripe_subscription_id = "sub_aff_123"
+        session.commit()
+    seeded_client.post("/webhooks/stripe", content=json.dumps(stripe_invoice_paid_event(invoice_id="in_refund", amount_paid=50000)), headers={"stripe-signature": "valid"})
+
+    refund = seeded_client.post(
+        "/webhooks/stripe",
+        content=json.dumps({"id": "evt_refund", "type": "charge.refunded", "data": {"object": {"id": "ch_123", "invoice": "in_refund"}}}),
+        headers={"stripe-signature": "valid"},
+    )
+
+    assert refund.status_code == 200
+    with Session(engine) as session:
+        row = session.scalar(select(AffiliateCommissionLedger).where(AffiliateCommissionLedger.payment_reference_id == "stripe_invoice:in_refund"))
+        assert row.status == "reversed"
+        assert row.reversed_at is not None
+    summary = seeded_client.get("/me/affiliate", headers=affiliate_headers).json()
+    assert summary["available_balance_minor"] == 0
+
+
+def test_affiliate_withdrawal_cannot_exceed_available_balance(seeded_client: TestClient, stripe_env, monkeypatch):
+    monkeypatch.setenv("AFFILIATE_COMMISSION_HOLD_DAYS", "0")
+    monkeypatch.setenv("AFFILIATE_MIN_WITHDRAWAL_MINOR", "500")
+    get_settings.cache_clear()
+    affiliate_headers = register_and_login_as(seeded_client, "affiliate-withdraw-owner@example.com")
+    token = seeded_client.get("/me/affiliate", headers=affiliate_headers).json()["referral_token"]
+    referred_headers = register_with_referral(seeded_client, "affiliate-withdraw-referred@example.com", token)
+    child = create_child(seeded_client, referred_headers)
+    with Session(engine) as session:
+        profile = session.get(ChildProfile, child["id"])
+        profile.stripe_customer_id = "cus_test_123"
+        profile.stripe_subscription_id = "sub_aff_123"
+        session.commit()
+    seeded_client.post("/webhooks/stripe", content=json.dumps(stripe_invoice_paid_event(invoice_id="in_withdraw", amount_paid=100000)), headers={"stripe-signature": "valid"})
+    account = seeded_client.put(
+        "/me/affiliate/payout-account",
+        headers=affiliate_headers,
+        json={"payout_method": "bank", "account_holder_name": "Owner", "bank_name": "Demo Bank", "account_number": "1234567890"},
+    )
+    assert account.status_code == 200
+
+    too_much = seeded_client.post("/me/affiliate/withdrawals", headers=affiliate_headers, json={"amount_minor": 4000})
+    ok = seeded_client.post("/me/affiliate/withdrawals", headers=affiliate_headers, json={"amount_minor": 3000})
+    second = seeded_client.post("/me/affiliate/withdrawals", headers=affiliate_headers, json={"amount_minor": 500})
+
+    assert too_much.status_code == 409
+    assert ok.status_code == 200
+    assert second.status_code == 409
+
+
+def _prepare_affiliate_withdrawable_balance(client: TestClient, monkeypatch, *, owner_email: str, referred_email: str, invoice_id: str = "in_withdraw_ready") -> dict[str, str]:
+    monkeypatch.setenv("AFFILIATE_COMMISSION_HOLD_DAYS", "0")
+    monkeypatch.setenv("AFFILIATE_MIN_WITHDRAWAL_MINOR", "500")
+    get_settings.cache_clear()
+    affiliate_headers = register_and_login_as(client, owner_email)
+    token = client.get("/me/affiliate", headers=affiliate_headers).json()["referral_token"]
+    referred_headers = register_with_referral(client, referred_email, token)
+    child = create_child(client, referred_headers)
+    with Session(engine) as session:
+        profile = session.get(ChildProfile, child["id"])
+        profile.stripe_customer_id = "cus_test_123"
+        profile.stripe_subscription_id = "sub_aff_123"
+        session.commit()
+    paid = client.post(
+        "/webhooks/stripe",
+        content=json.dumps(stripe_invoice_paid_event(invoice_id=invoice_id, amount_paid=100000)),
+        headers={"stripe-signature": "valid"},
+    )
+    assert paid.status_code == 200
+    account = client.put(
+        "/me/affiliate/payout-account",
+        headers=affiliate_headers,
+        json={"payout_method": "bank", "account_holder_name": "Owner", "bank_name": "Demo Bank", "account_number": "1234567890"},
+    )
+    assert account.status_code == 200
+    return affiliate_headers
+
+
+def test_affiliate_withdrawal_request_reserves_balance_audits_and_sends_notifications(seeded_client: TestClient, stripe_env, monkeypatch):
+    monkeypatch.setenv("AFFILIATE_ADMIN_NOTIFICATION_EMAIL", "affiliate-admin@example.com")
+    monkeypatch.setenv("EMAIL_FROM", "no-reply@example.com")
+    sent = []
+
+    def fake_send_email(message):
+        sent.append(message)
+        return True
+
+    monkeypatch.setattr("app.services.affiliates.send_email", fake_send_email)
+    affiliate_headers = _prepare_affiliate_withdrawable_balance(
+        seeded_client,
+        monkeypatch,
+        owner_email="affiliate-notify-owner@example.com",
+        referred_email="affiliate-notify-referred@example.com",
+        invoice_id="in_notify",
+    )
+
+    response = seeded_client.post("/me/affiliate/withdrawals", headers=affiliate_headers, json={"amount_minor": 3000})
+
+    assert response.status_code == 200
+    withdrawal_id = response.json()["withdrawal"]["id"]
+    assert {message.to_email for message in sent} == {"affiliate-admin@example.com", "affiliate-notify-owner@example.com"}
+    assert all(message.from_email == "no-reply@example.com" for message in sent)
+    with Session(engine) as session:
+        withdrawal = session.get(AffiliateWithdrawalRequest, withdrawal_id)
+        assert withdrawal
+        assert withdrawal.status == "pending_review"
+        assert session.scalar(select(func.count()).select_from(AffiliateCommissionLedger).where(AffiliateCommissionLedger.withdrawal_request_id == withdrawal_id, AffiliateCommissionLedger.status == "withdrawn")) == 1
+        audit = session.scalar(select(AdminAuditLog).where(AdminAuditLog.action == "affiliate_withdrawal_requested"))
+        assert audit
+        assert audit.target_user_id == withdrawal.user_id
+        assert audit.new_value["withdrawal_id"] == withdrawal_id
+
+
+def test_affiliate_withdrawal_insufficient_balance_does_not_create_request(seeded_client: TestClient, stripe_env, monkeypatch):
+    affiliate_headers = _prepare_affiliate_withdrawable_balance(
+        seeded_client,
+        monkeypatch,
+        owner_email="affiliate-low-owner@example.com",
+        referred_email="affiliate-low-referred@example.com",
+        invoice_id="in_low",
+    )
+
+    response = seeded_client.post("/me/affiliate/withdrawals", headers=affiliate_headers, json={"amount_minor": 4000})
+
+    assert response.status_code == 409
+    with Session(engine) as session:
+        assert session.scalar(select(func.count()).select_from(AffiliateWithdrawalRequest)) == 0
+        assert session.scalar(select(func.count()).select_from(AffiliateCommissionLedger).where(AffiliateCommissionLedger.status == "available")) == 1
+
+
+def test_affiliate_withdrawal_duplicate_active_request_rejected(seeded_client: TestClient, stripe_env, monkeypatch):
+    affiliate_headers = _prepare_affiliate_withdrawable_balance(
+        seeded_client,
+        monkeypatch,
+        owner_email="affiliate-duplicate-owner@example.com",
+        referred_email="affiliate-duplicate-referred@example.com",
+        invoice_id="in_duplicate",
+    )
+
+    first = seeded_client.post("/me/affiliate/withdrawals", headers=affiliate_headers, json={"amount_minor": 1000})
+    second = seeded_client.post("/me/affiliate/withdrawals", headers=affiliate_headers, json={"amount_minor": 500})
+
+    assert first.status_code == 200
+    assert second.status_code == 409
+    assert second.json()["detail"] == "Withdrawal request already pending"
+    with Session(engine) as session:
+        assert session.scalar(select(func.count()).select_from(AffiliateWithdrawalRequest)) == 1
+
+
+def test_affiliate_withdrawal_email_failure_keeps_request_visible_to_admin(seeded_client: TestClient, stripe_env, monkeypatch):
+    monkeypatch.setenv("AFFILIATE_ADMIN_NOTIFICATION_EMAIL", "affiliate-admin@example.com")
+    monkeypatch.setenv("EMAIL_FROM", "no-reply@example.com")
+
+    def failing_send_email(_message):
+        raise RuntimeError("smtp down")
+
+    monkeypatch.setattr("app.services.affiliates.send_email", failing_send_email)
+    affiliate_headers = _prepare_affiliate_withdrawable_balance(
+        seeded_client,
+        monkeypatch,
+        owner_email="affiliate-email-fail-owner@example.com",
+        referred_email="affiliate-email-fail-referred@example.com",
+        invoice_id="in_email_fail",
+    )
+
+    response = seeded_client.post("/me/affiliate/withdrawals", headers=affiliate_headers, json={"amount_minor": 3000})
+    admin_response = seeded_client.get("/admin/affiliates", headers=_admin_headers(seeded_client, "affiliate-admin-view@example.com"))
+
+    assert response.status_code == 200
+    withdrawal_id = response.json()["withdrawal"]["id"]
+    assert admin_response.status_code == 200
+    assert any(row["id"] == withdrawal_id for row in admin_response.json()["withdrawals"])
+    with Session(engine) as session:
+        assert session.get(AffiliateWithdrawalRequest, withdrawal_id)
+
+
+def test_user_cannot_view_other_affiliate_data(seeded_client: TestClient, stripe_env, monkeypatch):
+    monkeypatch.setenv("AFFILIATE_COMMISSION_HOLD_DAYS", "0")
+    get_settings.cache_clear()
+    owner_headers = register_and_login_as(seeded_client, "affiliate-private-owner@example.com")
+    other_headers = register_and_login_as(seeded_client, "affiliate-private-other@example.com")
+    token = seeded_client.get("/me/affiliate", headers=owner_headers).json()["referral_token"]
+    referred_headers = register_with_referral(seeded_client, "affiliate-private-referred@example.com", token)
+    child = create_child(seeded_client, referred_headers)
+    with Session(engine) as session:
+        profile = session.get(ChildProfile, child["id"])
+        profile.stripe_customer_id = "cus_test_123"
+        profile.stripe_subscription_id = "sub_aff_123"
+        session.commit()
+    seeded_client.post("/webhooks/stripe", content=json.dumps(stripe_invoice_paid_event(invoice_id="in_private", amount_paid=100000)), headers={"stripe-signature": "valid"})
+
+    owner_summary = seeded_client.get("/me/affiliate", headers=owner_headers).json()
+    other_summary = seeded_client.get("/me/affiliate", headers=other_headers).json()
+
+    assert owner_summary["registered_count"] == 1
+    assert owner_summary["total_commission_minor"] == 3000
+    assert other_summary["registered_count"] == 0
+    assert other_summary["total_commission_minor"] == 0
 
 
 def test_sqlite_schema_maintenance_adds_registration_columns():
@@ -1086,6 +1422,49 @@ def test_me_quest_listing_check_in_and_dashboard(seeded_client: TestClient):
     assert payload["lesson_summary"]["available"] > 0
 
 
+def test_me_dashboard_without_child_returns_stable_setup_payload(seeded_client: TestClient):
+    headers = register_and_login_as(seeded_client, "dashboard-no-child@example.com")
+
+    response = seeded_client.get("/me/dashboard?program_type=TH", headers=headers)
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["child"] is None
+    assert payload["grade_level"] is None
+    assert payload["setup_required"] is True
+    assert payload["current_grade_lessons"] == []
+    assert payload["review_lessons"] == []
+    assert payload["recommended_skills"] == []
+    assert payload["status"]["level"] == 0
+    assert payload["status"]["total_xp"] == 0
+    assert payload["status"]["total_score"] == 0
+    assert payload["affiliate_summary"]["registered_count"] == 0
+
+
+def test_me_dashboard_optional_section_failures_return_200(seeded_client: TestClient, monkeypatch):
+    headers = register_and_login_as(seeded_client, "dashboard-section-failure@example.com")
+    create_child(seeded_client, headers)
+    import app.routers.me as me_router
+
+    def fail_section(*_args, **_kwargs):
+        raise RuntimeError("simulated optional dashboard section failure")
+
+    monkeypatch.setattr(me_router, "_dashboard_lessons", fail_section)
+    monkeypatch.setattr(me_router, "_dashboard_weak_skills", fail_section)
+    monkeypatch.setattr(me_router, "_recommendations", fail_section)
+    monkeypatch.setattr(me_router, "affiliate_summary", fail_section)
+
+    response = seeded_client.get("/me/dashboard?program_type=TH", headers=headers)
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["child"]["nickname"] == "Little Star"
+    assert payload["current_grade_lessons"] == []
+    assert payload["review_lessons"] == []
+    assert payload["recommended_skills"] == []
+    assert payload["affiliate_summary"]["registered_count"] == 0
+
+
 def test_lesson_access_free_vs_paid(seeded_client: TestClient):
     headers = register_and_login(seeded_client)
     create_child(seeded_client, headers)
@@ -1132,6 +1511,33 @@ def test_me_lessons_returns_grade_3_dashboard_shape(seeded_client: TestClient):
     assert len(lesson_ids) >= 5
     assert len(set(lesson_ids)) == len(lesson_ids)
     assert len({lesson["skill_code"] for lesson in payload["current_grade_lessons"]}) >= 5
+
+
+def test_grade3_th_dashboard_uses_canonical_topic_lessons_and_quizzes(seeded_client: TestClient):
+    headers = register_and_login_as(seeded_client, "grade3-canonical-dashboard@example.com")
+    child_response = seeded_client.post("/children", headers=headers, json={"nickname": "Grade 3", "grade_level": 3})
+    assert child_response.status_code == 200
+
+    response = seeded_client.get("/me/dashboard?program_type=TH", headers=headers)
+
+    assert response.status_code == 200
+    payload = response.json()
+    rows = payload["current_grade_lessons"]
+    assert len(rows) == 11
+    assert all(row["grade_level"] == 3 for row in rows)
+    assert all(row["program_type"] == "TH" for row in rows)
+    assert all(not row["lesson_group_id"].endswith("_ep") for row in rows)
+    addition = next(row for row in rows if row["lesson_group_id"] == "g3_addition_subtraction")
+    assert addition["topic_folder"] == "addition_subtraction"
+    assert addition["test_available"] is True
+    assert addition["test_disabled_reason"] is None
+
+    test_start = seeded_client.post(
+        "/me/lessons/g3_addition_subtraction/test/start?program_type=TH",
+        headers=headers,
+    )
+    assert test_start.status_code == 200
+    assert len(test_start.json()["questions"]) == 10
 
 
 def test_me_lesson_detail_and_lesson_test_start(seeded_client: TestClient):

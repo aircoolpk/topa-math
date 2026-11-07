@@ -1,0 +1,133 @@
+{
+  "quiz_id": "multiplication_th_q001",
+  "topic_key": "multiplication",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ multiplication_th_q001",
+  "title_en": "Quiz multiplication_th_q001",
+  "questions": [
+    {
+      "question": "4 x 7 = ?",
+      "choices": [
+        "28",
+        "24",
+        "32",
+        "21"
+      ],
+      "correct_answer": "28",
+      "explanation": "4x7 = 7+7+7+7 = 28",
+      "difficulty": "easy"
+    },
+    {
+      "question": "6 x 8 = ?",
+      "choices": [
+        "48",
+        "42",
+        "56",
+        "36"
+      ],
+      "correct_answer": "48",
+      "explanation": "6x8 = 6+6+6+6+6+6+6+6 = 48",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ลินปลูกกล้วย 5 แถว แถวละ 9 ต้น รวมปลูกกี่ต้น",
+      "choices": [
+        "45 ต้น",
+        "54 ต้น",
+        "36 ต้น",
+        "14 ต้น"
+      ],
+      "correct_answer": "45 ต้น",
+      "explanation": "5x9=45 ต้น",
+      "difficulty": "easy"
+    },
+    {
+      "question": "9 x 3 = ?",
+      "choices": [
+        "27",
+        "21",
+        "30",
+        "18"
+      ],
+      "correct_answer": "27",
+      "explanation": "9x3 = 9+9+9 = 27",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มะลิซื้อสมุดเล่มละ 8 บาท ซื้อ 6 เล่ม จ่ายเงินเท่าไร",
+      "choices": [
+        "48 บาท",
+        "14 บาท",
+        "42 บาท",
+        "54 บาท"
+      ],
+      "correct_answer": "48 บาท",
+      "explanation": "8x6=48 บาท",
+      "difficulty": "easy"
+    },
+    {
+      "question": "อ้ายซื้อขนมกล่องละ 15 บาท ซื้อ 4 กล่อง จ่ายเท่าไร",
+      "choices": [
+        "60 บาท",
+        "19 บาท",
+        "45 บาท",
+        "75 บาท"
+      ],
+      "correct_answer": "60 บาท",
+      "explanation": "15x4=60 บาท",
+      "difficulty": "medium"
+    },
+    {
+      "question": "7 x 6 = ?",
+      "choices": [
+        "42",
+        "36",
+        "48",
+        "49"
+      ],
+      "correct_answer": "42",
+      "explanation": "7x6 = 42",
+      "difficulty": "easy"
+    },
+    {
+      "question": "บุ๊กให้ลูกโยนลูกบอล 8 ลูก ให้เพื่อน 4 คน คนละ 2 ลูก บุ๊กใช้ลูกบอลกี่ลูก",
+      "choices": [
+        "8 ลูก",
+        "6 ลูก",
+        "10 ลูก",
+        "12 ลูก"
+      ],
+      "correct_answer": "8 ลูก",
+      "explanation": "4x2=8 ลูก",
+      "difficulty": "medium"
+    },
+    {
+      "question": "8 x 8 = ?",
+      "choices": [
+        "64",
+        "72",
+        "56",
+        "48"
+      ],
+      "correct_answer": "64",
+      "explanation": "8x8=64",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มีกล่อง 7 กล่อง กล่องละ 12 ดินสอ รวมดินสอกี่แท่ง",
+      "choices": [
+        "84 แท่ง",
+        "19 แท่ง",
+        "72 แท่ง",
+        "94 แท่ง"
+      ],
+      "correct_answer": "84 แท่ง",
+      "explanation": "7x12=84 แท่ง",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

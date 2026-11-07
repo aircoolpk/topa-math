@@ -1,0 +1,193 @@
+{
+  "variant_id": "circles_th_002",
+  "variant_title_th": "วงกลม",
+  "variant_title_en": "Circles",
+  "status": "needs_review",
+  "title_th": "วงกลม",
+  "title_en": "Circles",
+  "story_theme_th": "สวนวงเวียนมีเส้นผ่านศูนย์กลาง 28 เมตร ต้องการปลูกต้นไม้รอบสวนโดยวางต้นห่างกัน 2 เมตร ต้องใช้ต้นไม้กี่ต้น (π ≈ 22/7)",
+  "helper_tip": "เส้นรอบวง = π × เส้นผ่านศูนย์กลาง หรือ 2 × π × รัศมี",
+  "think_story_th": "เส้นรอบวง = π × เส้นผ่านศูนย์กลาง = 22/7 × 28 = 88 เมตร จำนวนต้นไม้ = 88 ÷ 2 = 44 ต้น",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "สวนวงเวียนมีเส้นผ่านศูนย์กลาง 28 เมตร ต้องการปลูกต้นไม้รอบสวนโดยวางต้นห่างกัน 2 เมตร ต้องใช้ต้นไม้กี่ต้น (π ≈ 22/7)",
+      "data": {
+        "content_th": "สวนวงเวียนมีเส้นผ่านศูนย์กลาง 28 เมตร ต้องการปลูกต้นไม้รอบสวนโดยวางต้นห่างกัน 2 เมตร ต้องใช้ต้นไม้กี่ต้น (π ≈ 22/7)"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "เส้นรอบวง = π × เส้นผ่านศูนย์กลาง = 22/7 × 28 = 88 เมตร จำนวนต้นไม้ = 88 ÷ 2 = 44 ต้น",
+      "data": {
+        "content_th": "เส้นรอบวง = π × เส้นผ่านศูนย์กลาง = 22/7 × 28 = 88 เมตร จำนวนต้นไม้ = 88 ÷ 2 = 44 ต้น"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "เมตร",
+        "bars": [
+          {
+            "label": "เส้นผ่านศูนย์กลาง",
+            "value": 28,
+            "display": "28 ม.",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "เส้นรอบวง",
+            "value": 88,
+            "display": "88 ม.",
+            "color": "#FF6B6B",
+            "width_pct": 100
+          },
+          {
+            "label": "จำนวนต้นไม้",
+            "value": 44,
+            "display": "44 ต้น",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "22 × 28 = 616",
+            "formula": {
+              "display": "22 × 28 = 616",
+              "a": 22,
+              "b": 28,
+              "result": 616,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}22&\\ ×\\quad 28&\\ \\hline 616&\\\\ \\hline \\end{array}",
+              "a_display": "22",
+              "b_display": "28",
+              "result_display": "616",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 22 × 28 = 616"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "616 ÷ 7 = 88",
+            "formula": {
+              "display": "616 ÷ 7 = 88",
+              "a": 616,
+              "b": 7,
+              "result": 88,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}616&\\ ÷\\quad 7&\\ \\hline 88&\\\\ \\hline \\end{array}",
+              "a_display": "616",
+              "b_display": "7",
+              "result_display": "88",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 616 ÷ 7 = 88"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "88 ÷ 2 = 44",
+            "formula": {
+              "display": "88 ÷ 2 = 44",
+              "a": 88,
+              "b": 2,
+              "result": 44,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}88&\\ ÷\\quad 2&\\ \\hline 44&\\\\ \\hline \\end{array}",
+              "a_display": "88",
+              "b_display": "2",
+              "result_display": "44",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 88 ÷ 2 = 44"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "22 × 28 = 616 | 616 ÷ 7 = 88 | 88 ÷ 2 = 44",
+      "content": "22 × 28 = 616 | 616 ÷ 7 = 88 | 88 ÷ 2 = 44",
+      "data": {
+        "expression": "22 × 28 = 616 | 616 ÷ 7 = 88 | 88 ÷ 2 = 44",
+        "operations": [
+          {
+            "op": "×",
+            "a": 22,
+            "b": 28,
+            "result": 616
+          },
+          {
+            "op": "÷",
+            "a": 616,
+            "b": 7,
+            "result": 88
+          },
+          {
+            "op": "÷",
+            "a": 88,
+            "b": 2,
+            "result": 44
+          }
+        ],
+        "content_th": "22 × 28 = 616 | 616 ÷ 7 = 88 | 88 ÷ 2 = 44"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "วงกลมมีเส้นผ่านศูนย์กลาง 21 ซม. เส้นรอบวงยาวเท่าไร (π ≈ 22/7)",
+      "choices": [
+        "66 ซม.",
+        "55 ซม.",
+        "77 ซม.",
+        "44 ซม."
+      ],
+      "correct_answer": "66 ซม.",
+      "explanation": "22/7 × 21 = 66 ซม.",
+      "data": {
+        "question": "วงกลมมีเส้นผ่านศูนย์กลาง 21 ซม. เส้นรอบวงยาวเท่าไร (π ≈ 22/7)",
+        "choices": [
+          "66 ซม.",
+          "55 ซม.",
+          "77 ซม.",
+          "44 ซม."
+        ],
+        "correct_answer": "66 ซม.",
+        "explanation": "22/7 × 21 = 66 ซม."
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

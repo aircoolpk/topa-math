@@ -1,0 +1,176 @@
+{
+  "variant_id": "multiplication_division_whole_numbers_ep_001",
+  "variant_title_en": "Multiplication and Division of Whole Numbers",
+  "status": "needs_review",
+  "title_en": "Multiplication and Division of Whole Numbers",
+  "story_theme_en": "Mali plants roses in her garden in rows. She plants 24 rows with 125 rose plants in each row. How many rose plants are there in total? If she gives away 600 roses to her friends, how many roses will she have left?",
+  "helper_tip": "Multiplication is repeated addition. Division is equal sharing.",
+  "hint_th": "การคูณคือการบวกซ้ำๆ ส่วนการหารคือการแบ่งเท่าๆ กัน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mali plants roses in her garden in rows. She plants 24 rows with 125 rose plants in each row. How many rose plants are there in total? If she gives away 600 roses to her friends, how many roses will she have left?",
+      "data": {
+        "content_en": "Mali plants roses in her garden in rows. She plants 24 rows with 125 rose plants in each row. How many rose plants are there in total? If she gives away 600 roses to her friends, how many roses will she have left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Multiplication: 24 rows x 125 plants/row = total roses | Subtraction: total - 600 = roses left",
+      "data": {
+        "content_en": "Multiplication: 24 rows x 125 plants/row = total roses | Subtraction: total - 600 = roses left"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Array Model",
+      "model_type": "array_model",
+      "data": {
+        "model_type": "array_model",
+        "operation": "multiply",
+        "rows": 24,
+        "cols": 125,
+        "total": 3000,
+        "unit": "plants"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Multiply rose plants",
+            "expression": "24 x 125 = 3,000",
+            "formula": {
+              "display": "24 x 125 = 3,000",
+              "a": 24,
+              "b": 125,
+              "result": 3000,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}24&\\\\\\\\ ×\\\\quad 125&\\\\\\\\ \\\\hline 3000&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "24",
+              "b_display": "125",
+              "result_display": "3000",
+              "operation": "mul"
+            },
+            "story_connection": "24 rows x 125 plants = 3,000 plants"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Subtract roses given away",
+            "expression": "3,000 - 600 = 2,400",
+            "formula": {
+              "display": "3,000 - 600 = 2,400",
+              "a": 3000,
+              "b": 600,
+              "result": 2400,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}3000&\\\\\\\\ -\\\\quad 600&\\\\\\\\ \\\\hline 2400&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "3000",
+              "b_display": "600",
+              "result_display": "2400",
+              "operation": "sub"
+            },
+            "story_connection": "3,000 - 600 = 2,400 plants left"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "24 x 125 = 3,000 | 3,000 - 600 = 2,400",
+      "content": "24 x 125 = 3,000 plants  |  3,000 - 600 = 2,400 plants",
+      "data": {
+        "expression": "24 x 125 = 3,000 | 3,000 - 600 = 2,400",
+        "operations": [
+          {
+            "op": "x",
+            "a": 24,
+            "b": 125,
+            "result": 3000
+          },
+          {
+            "op": "-",
+            "a": 3000,
+            "b": 600,
+            "result": 2400
+          }
+        ],
+        "content_en": "24 x 125 = 3,000 plants  |  3,000 - 600 = 2,400 plants"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A factory packs water bottles. It produces 35 rows with 48 bottles per row. How many bottles in total? If it sells 800 bottles, how many are left?",
+      "choices": [
+        "880 bottles",
+        "800 bottles",
+        "1,680 bottles",
+        "1,000 bottles"
+      ],
+      "correct_answer": "880 bottles",
+      "explanation": "35 x 48 = 1,680 bottles | 1,680 - 800 = 880 bottles",
+      "data": {
+        "question": "A factory packs water bottles. It produces 35 rows with 48 bottles per row. How many bottles in total? If it sells 800 bottles, how many are left?",
+        "choices": [
+          "880 bottles",
+          "800 bottles",
+          "1,680 bottles",
+          "1,000 bottles"
+        ],
+        "correct_answer": "880 bottles",
+        "explanation": "35 x 48 = 1,680 bottles | 1,680 - 800 = 880 bottles"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "A shop sells oranges. 15 rows with 48 oranges per row. How many oranges in total?",
+      "solution_en": "15 x 48 = 720 oranges"
+    }
+  ],
+  "common_mistakes": [
+    "Multiplying two-digit numbers incorrectly",
+    "Forgetting to carry when the product exceeds 9",
+    "Confusing multiplication and division"
+  ],
+  "hints": [
+    "Use long multiplication: multiply each digit from right to left.",
+    "Check by dividing backwards: 3,000 / 24 = 125."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "product",
+      "th": "ผลคูณ",
+      "definition_en": "The result of multiplication"
+    },
+    {
+      "en": "multiplicand",
+      "th": "ตัวตั้ง",
+      "definition_en": "The number being multiplied"
+    },
+    {
+      "en": "multiplier",
+      "th": "ตัวคูณ",
+      "definition_en": "The number we multiply by"
+    },
+    {
+      "en": "quotient",
+      "th": "ผลหาร",
+      "definition_en": "The result of division"
+    }
+  ]
+}

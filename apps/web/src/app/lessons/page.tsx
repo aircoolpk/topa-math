@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { BookOpen, ClipboardCheck, Clock, Languages, PlayCircle } from 'lucide-react'
 import { TopaBrandMark } from '@/components/brand/TopaBrand'
-import { meApi, type Lesson, type LessonProgram } from '@/lib/api/me'
+import { meApi, type Lesson, type LessonContentDiagnostics, type LessonProgram } from '@/lib/api/me'
 import { useAuthStore } from '@/store/auth'
 
 const DISPLAY_GRADES = [1, 2, 3, 4, 5, 6]
@@ -41,6 +41,7 @@ export default function LessonsPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [startingLessonId, setStartingLessonId] = useState<string | null>(null)
+  const [diagnostics, setDiagnostics] = useState<LessonContentDiagnostics | null>(null)
 
   useEffect(() => {
     let cancelled = false
@@ -49,8 +50,8 @@ export default function LessonsPage() {
       setLoading(true)
       setError('')
       try {
-        await checkAuth()
-        if (!localStorage.getItem('access_token')) {
+        const authenticatedUser = await checkAuth()
+        if (!authenticatedUser) {
           router.replace('/login')
           return
         }
@@ -79,6 +80,29 @@ export default function LessonsPage() {
     }
   }, [checkAuth, programType, router])
 
+  useEffect(() => {
+    let cancelled = false
+
+    async function loadDiagnostics() {
+      try {
+        const selectedPayload = await meApi.getLessonsPayload(selectedGrade, programType)
+        if (!cancelled) setDiagnostics(selectedPayload.content_diagnostics ?? null)
+      } catch (err) {
+        console.warn('[lessons] failed to load selected grade diagnostics', {
+          selected_grade: selectedGrade,
+          program_type: programType,
+          error: err,
+        })
+        if (!cancelled) setDiagnostics(null)
+      }
+    }
+
+    loadDiagnostics()
+    return () => {
+      cancelled = true
+    }
+  }, [programType, selectedGrade])
+
   const visibleLessons = useMemo(
     () =>
       lessons
@@ -99,14 +123,25 @@ export default function LessonsPage() {
     [lessons, programType],
   )
 
+  const hiddenByReview = diagnostics?.hidden_reason === 'found_files_but_needs_review'
+  const emptyTitle = hiddenByReview
+    ? 'ยังไม่มีบทเรียนที่อนุมัติแล้วสำหรับชั้นนี้'
+    : programType === 'EP'
+      ? 'EP กำลังตรวจสอบ'
+      : 'ยังไม่มีบทเรียนที่เปิดใช้งานสำหรับชั้นนี้'
+  const emptySubtitle = hiddenByReview
+    ? `พบไฟล์แล้ว ${diagnostics?.lesson_variants_found ?? 0} รายการ แต่ยังเป็น needs_review`
+    : 'ระบบจะแสดงเฉพาะบทเรียนที่อนุมัติแล้วจากแหล่ง canonical เดียวกับหน้าแอดมิน'
+
   const startTest = async (lesson: Lesson) => {
-    setStartingLessonId(lesson.lesson_id)
+    const lessonId = lesson.lesson_group_id || lesson.lesson_id
+    setStartingLessonId(lessonId)
     try {
-      const { session_id } = await meApi.startLessonTest(lesson.lesson_id, programType)
+      const { session_id } = await meApi.startLessonTest(lessonId, programType)
       router.push(`/dashboard/tests/${session_id}`)
     } catch (err) {
       console.error('[lessons] failed to start lesson test', {
-        lesson_id: lesson.lesson_id,
+        lesson_id: lessonId,
         program_type: programType,
         error: err,
       })
@@ -189,7 +224,14 @@ export default function LessonsPage() {
           </div>
         )}
 
-        {!error && visibleLessons.length === 0 && (
+        {!error && visibleLessons.length === 0 && hiddenByReview && (
+          <div className="rounded-xl border border-amber-100 bg-amber-50 px-4 py-6 text-center">
+            <p className="font-bold text-amber-800">{emptyTitle}</p>
+            <p className="text-sm text-amber-700 mt-1">{emptySubtitle}</p>
+          </div>
+        )}
+
+        {!error && visibleLessons.length === 0 && !hiddenByReview && (
           <div className="rounded-xl border border-amber-100 bg-amber-50 px-4 py-6 text-center">
             <p className="font-bold text-amber-800">
               {programType === 'EP' ? 'EP กำลังตรวจสอบ' : 'ยังไม่มีบทเรียนที่เปิดใช้งานสำหรับชั้นนี้'}
@@ -202,7 +244,9 @@ export default function LessonsPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {visibleLessons.map((lesson) => {
               const canonicalId = baseLessonId(lesson.lesson_id)
-              const testAvailable = lesson.test_available ?? lesson.has_approved_test ?? lesson.has_test ?? false
+              const cardLessonId = lesson.lesson_group_id || canonicalId
+              const testAvailable = lesson.test_available === true
+              const unavailableReason = lesson.test_unavailable_reason || 'ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้'
               const duration = lesson.estimated_minutes ?? 8
               return (
                 <article key={lesson.lesson_id} className="card border border-gray-100 hover:border-primary-200 hover:shadow-md transition-all">
@@ -241,17 +285,24 @@ export default function LessonsPage() {
                         <PlayCircle className="h-4 w-4" aria-hidden="true" />
                         เรียนต่อ
                       </button>
-                      {testAvailable && (
-                        <button
+                      <button
                           type="button"
-                          onClick={() => startTest(lesson)}
-                          disabled={startingLessonId === lesson.lesson_id}
-                          className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-accent-300 bg-accent-50 px-3 py-2.5 text-sm font-bold text-accent-700 hover:bg-accent-100 disabled:opacity-60"
+                          onClick={() => testAvailable && startTest(lesson)}
+                          disabled={!testAvailable || startingLessonId === cardLessonId}
+                          title={testAvailable ? undefined : unavailableReason}
+                          className={`flex-1 inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-sm font-bold shadow-sm transition-colors ${
+                            testAvailable
+                              ? 'bg-orange-500 text-white hover:bg-orange-600 disabled:bg-orange-300'
+                              : 'cursor-not-allowed bg-gray-100 text-gray-500'
+                          }`}
                         >
                           <ClipboardCheck className="h-4 w-4" aria-hidden="true" />
-                          {startingLessonId === lesson.lesson_id ? 'กำลังเริ่ม...' : 'ทำเทสจากบทนี้'}
+                          {startingLessonId === cardLessonId
+                            ? 'กำลังเริ่ม...'
+                            : testAvailable
+                              ? 'ทำเทสจากบทนี้'
+                              : 'ยังไม่มีเทส'}
                         </button>
-                      )}
                     </div>
                   </div>
                 </article>

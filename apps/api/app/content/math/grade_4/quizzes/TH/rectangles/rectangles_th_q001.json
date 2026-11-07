@@ -1,0 +1,179 @@
+{
+  "lesson_id": "rectangles_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 10 ยาว 20 หาพื้นที่",
+      "question_text_en": "Rectangle: w=10, l=20. Find area.",
+      "choices": [
+        "200 ตร.หน่วย",
+        "30 ตร.หน่วย",
+        "60 ตร.หน่วย",
+        "120 ตร.หน่วย"
+      ],
+      "correct_answer": "200 ตร.หน่วย",
+      "answer": "200 ตร.หน่วย",
+      "explanation": "10x20=200",
+      "explanation_th": "10×20=200 ตารางหน่วย",
+      "difficulty": "easy",
+      "hint_th": "พื้นที่ = กว้าง×ยาว"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 45 ยาว 78 หาพื้นที่และรอบรูป",
+      "question_text_en": "Rectangle: w=45, l=78. Area and perimeter?",
+      "choices": [
+        "3,510 ตร.ม. รอบ 246 ม.",
+        "3,510 ตร.ม. รอบ 123 ม.",
+        "3,500 ตร.ม. รอบ 246 ม.",
+        "3,500 ตร.ม. รอบ  ม."
+      ],
+      "correct_answer": "3,510 ตร.ม. รอบ 246 ม.",
+      "answer": "3,510 ตร.ม. รอบ 246 ม.",
+      "explanation": "45x78=3,510 | 2x(45+78)=2x123=246",
+      "explanation_th": "45×78=3,510 ตร.ม. | 2×(45+78)=2×123=246 ม.",
+      "difficulty": "medium",
+      "hint_th": "พื้นที่=45x78 รอบ=2x(45+78)"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 32 ยาว 56 หาพื้นที่และรอบรูป",
+      "question_text_en": "Rectangle: w=32, l=56. Area and perimeter?",
+      "choices": [
+        "1,792 ตร.ซม. รอบ 176 ซม.",
+        "1,782 ตร.ซม. รอบ 176 ซม.",
+        "1,792 ตร.ซม. รอบ 186 ซม.",
+        "1,792 ตร.ซม. รอบ 166 ซม."
+      ],
+      "correct_answer": "1,792 ตร.ซม. รอบ 176 ซม.",
+      "answer": "1,792 ตร.ซม. รอบ 176 ซม.",
+      "explanation": "32x56=1,792 | 2x(32+56)=2x88=176",
+      "explanation_th": "32×56=1,792 ตร.ซม. | 2×(32+56)=2×88=176 ซม.",
+      "difficulty": "medium",
+      "hint_th": "พื้นที่=32x56 รอบ=2x(32+56)"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "สนามหญ้ากว้าง 50 ยาว 85 ม. หาพื้นที่และรอบ",
+      "question_text_en": "Grass field: w=50, l=85m. Area and perimeter?",
+      "choices": [
+        "4,250 ตร.ม. รอบ 270 ม.",
+        "4,250 ตร.ม. รอบ 280 ม.",
+        "4,150 ตร.ม. รอบ 270 ม.",
+        "4,250 ตร.ม. รอบ 260 ม."
+      ],
+      "correct_answer": "4,250 ตร.ม. รอบ 270 ม.",
+      "answer": "4,250 ตร.ม. รอบ 270 ม.",
+      "explanation": "50x85=4,250 | 2x(50+85)=2x135=270",
+      "explanation_th": "50×85=4,250 ตร.ม. | 2×(50+85)=2×135=270 ม.",
+      "difficulty": "medium",
+      "hint_th": "พื้นที่=50x85 รอบ=2x(50+85)"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "สี่เหลี่ยมจัตุรัสด้านละ 15 หาพื้นที่และรอบรูป",
+      "question_text_en": "Square: side=15. Area and perimeter?",
+      "choices": [
+        "225 ตร.หน่วย รอบ 60 หน่วย",
+        "200 ตร.หน่วย รอบ 60 หน่วย",
+        "225 ตร.หน่วย รอบ 55 หน่วย",
+        "225 ตร.หน่วย รอบ 50 หน่วย"
+      ],
+      "correct_answer": "225 ตร.หน่วย รอบ 60 หน่วย",
+      "answer": "225 ตร.หน่วย รอบ 60 หน่วย",
+      "explanation": "15x15=225 | 4x15=60",
+      "explanation_th": "15×15=225 ตร.หน่วย | 4×15=60 หน่วย",
+      "difficulty": "easy",
+      "hint_th": "พื้นที่=ด้านxด้าน รอบ=4xด้าน"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "กระดานกว้าง 120 ยาว 200 หาพื้นที่และรอบรูป",
+      "question_text_en": "Board: w=120, l=200. Area and perimeter?",
+      "choices": [
+        "24,000 ตร.ซม. รอบ 640 ซม.",
+        "24,000 ตร.ซม. รอบ 320 ซม.",
+        "24,000 ตร.ซม. รอบ 630 ซม.",
+        "24,000 ตร.ซม. รอบ 650 ซม."
+      ],
+      "correct_answer": "24,000 ตร.ซม. รอบ 640 ซม.",
+      "answer": "24,000 ตร.ซม. รอบ 640 ซม.",
+      "explanation": "120x200=24,000 | 2x(120+200)=2x320=640",
+      "explanation_th": "120×200=24,000 ตร.ซม. | 2×(120+200)=2×320=640 ซม.",
+      "difficulty": "easy",
+      "hint_th": "พื้นที่=120x200 รอบ=2x(120+200)"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "สี่เหลี่ยมผืนผ้าพื้นที่ 48 ตร.ซม. กว้าง 6 ซม. ยาว?",
+      "question_text_en": "Rectangle area 48 sq cm, w=6 cm. Length?",
+      "choices": [
+        "8 ซม.",
+        "7 ซม.",
+        "9 ซม.",
+        "6 ซม."
+      ],
+      "correct_answer": "8 ซม.",
+      "answer": "8 ซม.",
+      "explanation": "48/6=8 ซม.",
+      "explanation_th": "48÷6=8 ซม.",
+      "difficulty": "easy",
+      "hint_th": "ยาว = พื้นที่/กว้าง"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "สี่เหลี่ยมผืนผ้ารอบ 30 ซม. กว้าง 5 ซม. ยาว?",
+      "question_text_en": "Rect perimeter 30 cm, w=5 cm. Length?",
+      "choices": [
+        "10 ซม.",
+        "8 ซม.",
+        "12 ซม.",
+        "9 ซม."
+      ],
+      "correct_answer": "10 ซม.",
+      "answer": "10 ซม.",
+      "explanation": "2x(5+ยาว)=30 | 5+ยาว=15 | ยาว=10 ซม.",
+      "explanation_th": "2×(5+ยาว)=30 → 5+ยาว=15 → ยาว=10 ซม.",
+      "difficulty": "medium",
+      "hint_th": "รอบ=2x(กว้าง+ยาว) → แก้สมการ"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ข้อใดถูก: ก.พื้นที่=กxย | ข.รอบ=ก+ย | ค.จัตุรัสพื้นที่=ดx4 | ง.ผืนผ้ารอบ=2x(ก+ย)",
+      "question_text_en": "Which: A.Area=wxl | B.Perim=w+l | C.Square area=sidex4 | D.Rect perim=2x(w+l)",
+      "choices": [
+        "ก และ ง ถูก",
+        "ก, ข และ ค ถูก",
+        "ข และ ง ถูก",
+        "ก และ ค ถูก"
+      ],
+      "correct_answer": "ก และ ง ถูก",
+      "answer": "ก และ ง ถูก",
+      "explanation": "ก ✓ | ข ✗ (ต้องคูณ 2) | ค ✗ (ต้องคูณด้านxด้าน) | ง ✓",
+      "explanation_th": "ก ถูก | ข ผิด (ต้องคูณ 2) | ค ผิด (ต้องคูณด้านxด้าน) | ง ถูก",
+      "difficulty": "hard",
+      "hint_th": "จำสูตรพื้นที่และรอบรูป"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "สี่เหลี่ยมผืนผ้ากว้าง 15 ยาว 25 ม. รอบรูปเท่าไร",
+      "question_text_en": "Rectangle w=15, l=25m. Perimeter?",
+      "choices": [
+        "80 ม.",
+        "40 ม.",
+        "70 ม.",
+        "50 ม."
+      ],
+      "correct_answer": "80 ม.",
+      "answer": "80 ม.",
+      "explanation": "2x(15+25)=2x40=80 ม.",
+      "explanation_th": "2×(15+25)=2×40=80 ม.",
+      "difficulty": "easy",
+      "hint_th": "2x(15+25)=80 ม."
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

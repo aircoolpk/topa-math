@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
-import { rankingsApi, type RankingsResponse } from '@/lib/api/rankings'
+import { rankingsApi, type RankingsResponse, type RankingEntry } from '@/lib/api/rankings'
 import { childrenApi, type ChildOut } from '@/lib/api/children'
 
 export default function RankingsPage() {
@@ -13,14 +13,13 @@ export default function RankingsPage() {
   const router = useRouter()
   const { checkAuth } = useAuthStore()
   const [scope, setScope] = useState<'country' | 'province'>('country')
-  const [timeFilter, setTimeFilter] = useState<'weekly' | 'monthly' | 'all'>('all')
   const [data, setData] = useState<RankingsResponse | null>(null)
   const [child, setChild] = useState<ChildOut | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    checkAuth().then(() => {
-      if (!localStorage.getItem('access_token')) router.push('/login')
+    checkAuth().then((authenticatedUser) => {
+      if (!authenticatedUser) router.push('/login')
     })
   }, [])
 
@@ -32,11 +31,12 @@ export default function RankingsPage() {
   useEffect(() => {
     if (!child) return
     setLoading(true)
-    rankingsApi.get(
-      child.grade_level,
-      scope,
-      scope === 'province' ? child.province || undefined : undefined
-    )
+    rankingsApi
+      .get(
+        child.grade_level,
+        scope,
+        scope === 'province' ? { province: child.province || undefined } : {},
+      )
       .then(setData)
       .catch(() => setData(null))
       .finally(() => setLoading(false))
@@ -46,7 +46,8 @@ export default function RankingsPage() {
   const nearbyEntries = data?.child_own_rank
     ? (data.entries || []).filter(
         (e) =>
-          Math.abs(e.rank - data.child_own_rank!.rank) <= 5 && e.rank !== data.child_own_rank!.rank
+          Math.abs(e.rank_position - data.child_own_rank!.rank_position) <= 5 &&
+          e.rank_position !== data.child_own_rank!.rank_position,
       )
     : []
 
@@ -69,7 +70,7 @@ export default function RankingsPage() {
         {/* Scope Tabs */}
         <div className="flex gap-2 mb-4">
           {[
-            { key: 'country', label: '🇹🇭 ทั้งประเทศ', sub: 'ประเทศ' },
+            { key: 'country', label: '🇹� ทั้งประเทศ', sub: 'ประเ�ศ' },
             { key: 'province', label: '📍 จังหวัด', sub: child?.province || '' },
           ].map((tab) => (
             <button
@@ -89,35 +90,10 @@ export default function RankingsPage() {
           ))}
         </div>
 
-        {/* Time filter */}
-        <div className="flex gap-2 mb-6">
-          {[
-            { key: 'all', label: 'ทั้งหมด' },
-            { key: 'monthly', label: 'เดือนนี้' },
-            { key: 'weekly', label: 'สัปดาห์นี้' },
-          ].map((f) => (
-            <button
-              key={f.key}
-              onClick={() => setTimeFilter(f.key as 'weekly' | 'monthly' | 'all')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-                timeFilter === f.key
-                  ? 'bg-secondary-100 text-secondary-700 border border-secondary-300'
-                  : 'bg-gray-50 text-gray-500 border border-gray-200 hover:bg-gray-100'
-              }`}
-            >
-              {f.label}
-            </button>
-          ))}
-        </div>
-
         {/* Grade + scope info */}
         <div className="flex items-center justify-between mb-4">
           <p className="text-sm text-gray-500">
             ชั้น ป. {child?.grade_level} · {scope === 'country' ? 'ทั้งประเทศ' : `จังหวัด${child?.province ? ` ${child.province}` : ''}`}
-          </p>
-          {/* MOCK: improvement rank */}
-          <p className="text-xs text-green-600 font-semibold bg-green-50 px-2 py-0.5 rounded-lg">
-            ⚡ พัฒนาเร็วที่สุด
           </p>
         </div>
 
@@ -140,10 +116,7 @@ export default function RankingsPage() {
                       {data.entries[1].nickname.charAt(0)}
                     </div>
                     <p className="text-xs font-bold text-gray-600 mt-1 truncate">{data.entries[1].nickname}</p>
-                    <div className="text-xs text-gray-400">🥈 #{data.entries[1].rank}</div>
-                    <div className="mt-1 bg-gray-200 rounded-full h-2 w-full overflow-hidden">
-                      <div className="h-full bg-gray-400 rounded-full" style={{ width: `${(data.entries[1].total_xp / (data.entries[0]?.total_xp || 1)) * 100}%` }} />
-                    </div>
+                    <div className="text-xs text-gray-400">🥈 #{data.entries[1].rank_position}</div>
                   </div>
                   {/* 1st */}
                   <div className="text-center flex-1">
@@ -151,10 +124,7 @@ export default function RankingsPage() {
                       {data.entries[0].nickname.charAt(0)}
                     </div>
                     <p className="text-sm font-bold text-amber-800 mt-1">{data.entries[0].nickname}</p>
-                    <div className="text-xs text-amber-600">🥇 #{data.entries[0].rank}</div>
-                    <div className="mt-1 bg-amber-200 rounded-full h-2.5 w-full overflow-hidden">
-                      <div className="h-full bg-amber-400 rounded-full" style={{ width: '100%' }} />
-                    </div>
+                    <div className="text-xs text-amber-600">🥇 #{data.entries[0].rank_position}</div>
                   </div>
                   {/* 3rd */}
                   <div className="text-center flex-1">
@@ -162,10 +132,7 @@ export default function RankingsPage() {
                       {data.entries[2].nickname.charAt(0)}
                     </div>
                     <p className="text-xs font-bold text-orange-700 mt-1 truncate">{data.entries[2].nickname}</p>
-                    <div className="text-xs text-orange-400">🥉 #{data.entries[2].rank}</div>
-                    <div className="mt-1 bg-orange-200 rounded-full h-2 w-full overflow-hidden">
-                      <div className="h-full bg-orange-400 rounded-full" style={{ width: `${(data.entries[2].total_xp / (data.entries[0]?.total_xp || 1)) * 100}%` }} />
-                    </div>
+                    <div className="text-xs text-orange-400">🥉 #{data.entries[2].rank_position}</div>
                   </div>
                 </div>
               </div>
@@ -177,15 +144,14 @@ export default function RankingsPage() {
                 <h3 className="section-title mb-3 text-green-700">🎯 ใกล้เคียงกับคุณ</h3>
                 <div className="space-y-2">
                   {nearbyEntries.slice(0, 5).map((entry) => (
-                    <div key={`nearby-${entry.rank}`} className="flex items-center gap-3 p-2 bg-white rounded-xl">
+                    <div key={`nearby-${entry.child_profile_id}`} className="flex items-center gap-3 p-2 bg-white rounded-xl">
                       <div className="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center text-sm font-bold text-secondary-700">
-                        #{entry.rank}
+                        #{entry.rank_position}
                       </div>
                       <div className="flex-1">
                         <p className="text-sm font-semibold text-gray-800">{entry.nickname}</p>
-                        <p className="text-xs text-gray-400">เลเวล {entry.current_level} · {entry.total_xp.toLocaleString()} XP</p>
+                        <p className="text-xs text-gray-400">เลเวล {entry.current_level} · {entry.mastery_points.toLocaleString()} คะแนน</p>
                       </div>
-                      <div className="text-xs text-green-600 font-bold">⚡ +15%</div>
                     </div>
                   ))}
                 </div>
@@ -196,21 +162,21 @@ export default function RankingsPage() {
             <h3 className="section-title mb-3">📊 อันดับทั้งหมด</h3>
             {data.entries.map((entry) => (
               <div
-                key={entry.rank}
+                key={entry.child_profile_id}
                 className={`card flex items-center gap-4 transition-all ${
-                  entry.child_id === childId
+                  entry.child_profile_id === childId
                     ? 'border-primary-400 bg-primary-50 shadow-md ring-2 ring-primary-300'
                     : ''
                 }`}
               >
                 {/* Rank */}
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 ${
-                  entry.rank === 1 ? 'bg-amber-100 text-amber-700 border-2 border-amber-300' :
-                  entry.rank === 2 ? 'bg-gray-100 text-gray-600 border-2 border-gray-300' :
-                  entry.rank === 3 ? 'bg-orange-100 text-orange-700 border-2 border-orange-300' :
+                  entry.rank_position === 1 ? 'bg-amber-100 text-amber-700 border-2 border-amber-300' :
+                  entry.rank_position === 2 ? 'bg-gray-100 text-gray-600 border-2 border-gray-300' :
+                  entry.rank_position === 3 ? 'bg-orange-100 text-orange-700 border-2 border-orange-300' :
                   'bg-gray-50 text-gray-500 border-2 border-gray-200'
                 }`}>
-                  {entry.rank <= 3 ? ['🥇', '🥈', '🥉'][entry.rank - 1] : `#${entry.rank}`}
+                  {entry.rank_position <= 3 ? ['🥇', '🥈', '🥉'][entry.rank_position - 1] : `#${entry.rank_position}`}
                 </div>
 
                 {/* Avatar circle */}
@@ -222,17 +188,19 @@ export default function RankingsPage() {
                 <div className="flex-1 min-w-0">
                   <p className="font-semibold text-gray-900 truncate">
                     {entry.nickname}
-                    {entry.child_id === childId && (
+                    {entry.child_profile_id === childId && (
                       <span className="ml-1.5 text-xs bg-primary-100 text-primary-700 px-1.5 py-0.5 rounded-full font-normal">คุณ</span>
                     )}
                   </p>
-                  <p className="text-xs text-gray-400">เลเวล {entry.current_level}</p>
+                  <p className="text-xs text-gray-400">
+                    {entry.province || 'ไม่ระบุจังหวัด'} · เลเวล {entry.current_level}
+                  </p>
                 </div>
 
-                {/* XP */}
+                {/* Score */}
                 <div className="text-right flex-shrink-0">
-                  <p className="font-bold text-primary-600">{entry.total_xp.toLocaleString()}</p>
-                  <p className="text-xs text-gray-400">XP</p>
+                  <p className="font-bold text-primary-600">{entry.mastery_points.toLocaleString()}</p>
+                  <p className="text-xs text-gray-400">คะแนน</p>
                 </div>
               </div>
             ))}
@@ -241,9 +209,9 @@ export default function RankingsPage() {
             {data.child_own_rank && (
               <div className="mt-4 p-4 bg-gradient-to-r from-primary-100 to-accent-100 border-2 border-primary-300 rounded-2xl text-center shadow-md">
                 <p className="text-sm text-primary-700 font-medium">
-                  🏆 อันดับของคุณ: <span className="font-extrabold text-primary-900">#{data.child_own_rank.rank}</span>
+                  🏆 อันดับของคุณ: <span className="font-extrabold text-primary-900">#{data.child_own_rank.rank_position}</span>
                   {' · '}
-                  {data.child_own_rank.total_xp.toLocaleString()} XP
+                  {data.child_own_rank.mastery_points.toLocaleString()} คะแนน
                   {' · '}
                   เลเวล {data.child_own_rank.current_level}
                 </p>
@@ -255,7 +223,7 @@ export default function RankingsPage() {
           <div className="card py-16 text-center">
             <div className="text-6xl mb-3">🏆</div>
             <h3 className="section-title mb-2">ยังไม่มีอันดับ</h3>
-            <p className="text-gray-500 mb-4">เป็นคนแรกที่ทำควิซในระดับนี้!</p>
+            <p className="text-gray-500 mb-4">เป็นคนแรกที่ทำควิ�ในระดับนี้!</p>
             <Link href={`/children/${childId}/quiz/new`} className="btn-primary inline-block">
               เริ่มทำควิซแรก →
             </Link>
@@ -265,7 +233,7 @@ export default function RankingsPage() {
         {/* Motivation note */}
         <div className="mt-6 text-center">
           <p className="text-xs text-gray-400">
-            💪 ทำควิซสม่ำเสมอ อันดับจะดีขึ้นเรื่อยๆ! อย่ายอมแพ้นะ
+            💪 ทำควิซสม่ำเสมอ อันดับจะดีขึ้นเรื่อยๆ! อย่า�อมแพ้นะ
           </p>
         </div>
       </main>

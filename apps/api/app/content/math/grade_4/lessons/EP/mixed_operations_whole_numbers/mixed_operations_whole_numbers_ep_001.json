@@ -1,0 +1,233 @@
+{
+  "variant_id": "mixed_operations_whole_numbers_ep_001",
+  "variant_title_en": "Mixed Operations of Whole Numbers",
+  "status": "needs_review",
+  "title_en": "Mixed Operations of Whole Numbers",
+  "story_theme_en": "A school receives a budget of 250,000 baht. It buys 12 computers at 15,750 baht each. It buys books for 85,000 baht. It buys furniture for 45,500 baht. What is the total spending? How much money is left or short?",
+  "helper_tip": "Multiply before adding or subtracting. Do the steps one at a time.",
+  "hint_th": "คูณก่อนบวกลบ ทำทีละขั้นตอน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A school receives a budget of 250,000 baht. It buys 12 computers at 15,750 baht each. It buys books for 85,000 baht. It buys furniture for 45,500 baht. What is the total spending? How much money is left or short?",
+      "data": {
+        "content_en": "A school receives a budget of 250,000 baht. It buys 12 computers at 15,750 baht each. It buys books for 85,000 baht. It buys furniture for 45,500 baht. What is the total spending? How much money is left or short?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Multiply computers → 12 x 15,750 = computer cost | Step 2: Add all spending | Step 3: Subtract from budget",
+      "data": {
+        "content_en": "Step 1: Multiply computers → 12 x 15,750 = computer cost | Step 2: Add all spending | Step 3: Subtract from budget"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "mixed",
+        "bars": [
+          {
+            "label": "Computers",
+            "value": 189000,
+            "display": "189,000 baht",
+            "color": "#4ECDC4",
+            "width_pct": 75
+          },
+          {
+            "label": "Books",
+            "value": 85000,
+            "display": "85,000 baht",
+            "color": "#45B7D1",
+            "width_pct": 34
+          },
+          {
+            "label": "Furniture",
+            "value": 45500,
+            "display": "45,500 baht",
+            "color": "#96CEB4",
+            "width_pct": 18
+          },
+          {
+            "label": "Total Spending",
+            "value": 319500,
+            "display": "319,500 baht",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Short",
+            "value": -69500,
+            "display": "Short 69,500 baht",
+            "color": "#C7F464",
+            "width_pct": 0,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Multiply computers",
+            "expression": "12 x 15,750 = 189,000",
+            "formula": {
+              "display": "12 x 15,750 = 189,000",
+              "a": 12,
+              "b": 15750,
+              "result": 189000,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}12&\\\\\\\\ ×\\\\quad 15750&\\\\\\\\ \\\\hline 189000&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "12",
+              "b_display": "15750",
+              "result_display": "189000",
+              "operation": "mul"
+            },
+            "story_connection": "12 computers x 15,750 = 189,000 baht"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add all spending",
+            "expression": "189,000 + 12 × 15,750 = 189,000 | 189,000 + 85,000 + 45,500 = 319,500",
+            "formula": {
+              "display": "189,000 + 12 × 15,750 = 189,000 | 189,000 + 85,000 + 45,500 = 319,500",
+              "a": 189000,
+              "b": 85000,
+              "result": 319500,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}189000&\\\\\\\\ +\\\\quad 85000&\\\\\\\\ \\\\hline 319500&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "189000",
+              "b_display": "85000",
+              "result_display": "319500",
+              "operation": "add"
+            },
+            "story_connection": "189,000 + 12 × 15,750 = 189,000 | 189,000 + 85,000 + 45,500 = 319,500 baht"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Subtract from budget",
+            "expression": "250,000 - 319,500 = short 69,500",
+            "formula": {
+              "display": "250,000 - 319,500 = short 69,500",
+              "a": 250000,
+              "b": 319500,
+              "result": -69500,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}250000&\\\\\\\\ -\\\\quad 319500&\\\\\\\\ \\\\hline -69500&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "250000",
+              "b_display": "319500",
+              "result_display": "-69500",
+              "operation": "sub"
+            },
+            "story_connection": "250,000 - 319,500 = short 69,500 baht"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "(12 x 15,750) + 12 × 15,750 = 189,000 | 189,000 + 85,000 + 45,500 = 319,500 | 250,000 - 319,500 = short 69,500",
+      "content": "(12 x 15,750) + 12 × 15,750 = 189,000 | 189,000 + 85,000 + 45,500 = 319,500 baht  |  250,000 - 319,500 = short 69,500 baht",
+      "data": {
+        "expression": "(12 x 15,750) + 12 × 15,750 = 189,000 | 189,000 + 85,000 + 45,500 = 319,500 | 250,000 - 319,500 = short 69,500",
+        "operations": [
+          {
+            "op": "x",
+            "a": 12,
+            "b": 15750,
+            "result": 189000
+          },
+          {
+            "op": "+",
+            "a": 189000,
+            "b": 85000,
+            "result": 274000
+          },
+          {
+            "op": "+",
+            "a": 274000,
+            "b": 45500,
+            "result": 319500
+          },
+          {
+            "op": "-",
+            "a": 250000,
+            "b": 319500,
+            "result": -69500
+          }
+        ],
+        "content_en": "(12 x 15,750) + 12 × 15,750 = 189,000 | 189,000 + 85,000 + 45,500 = 319,500 baht  |  250,000 - 319,500 = short 69,500 baht"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A clothing shop buys 25 shirts at 1,280 baht each and 18 pants at 2,450 baht each. What is the total cost? If the shop has 80,000 baht, how much more does it need?",
+      "choices": [
+        "65,900 baht",
+        "64,900 baht",
+        "66,900 baht",
+        "63,900 baht"
+      ],
+      "correct_answer": "64,900 baht",
+      "explanation": "25 x 1,280 = 32,000 | 18 x 2,450 = 44,100 | Total 76,100 | 80,000 - 76,100 = short 3,900 baht",
+      "data": {
+        "question": "A clothing shop buys 25 shirts at 1,280 baht each and 18 pants at 2,450 baht each. What is the total cost? If the shop has 80,000 baht, how much more does it need?",
+        "choices": [
+          "65,900 baht",
+          "64,900 baht",
+          "66,900 baht",
+          "63,900 baht"
+        ],
+        "correct_answer": "64,900 baht",
+        "explanation": "25 x 1,280 = 32,000 | 18 x 2,450 = 44,100 | Total 76,100 | 80,000 - 76,100 = short 3,900 baht"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "3 x 4 + 5 = ?",
+      "solution_en": "3 x 4 = 12 + 5 = 17"
+    }
+  ],
+  "common_mistakes": [
+    "Adding or subtracting before multiplying (wrong order)",
+    "Multiplying incorrectly",
+    "Adding spending incorrectly"
+  ],
+  "hints": [
+    "Multiply and divide BEFORE adding and subtracting, unless there are parentheses.",
+    "Parentheses, Multiply/Divide, Add/Subtract from left to right."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "order of operations",
+      "th": "ลำดับการคำนวณ",
+      "definition_en": "The correct sequence for doing math operations"
+    },
+    {
+      "en": "budget",
+      "th": "งบประมาณ",
+      "definition_en": "Money set aside for spending"
+    }
+  ]
+}

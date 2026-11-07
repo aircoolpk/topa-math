@@ -1,0 +1,217 @@
+{
+  "variant_id": "time_ep_001",
+  "variant_title_th": "เวลา",
+  "variant_title_en": "Time",
+  "status": "needs_review",
+  "title_th": "เวลา",
+  "title_en": "Time",
+  "story_theme_th": "Lin wakes up at 6 o'clock in the morning. She walks to school taking 45 minutes. What time does she arrive at school? She stays at school for 4 hours and then walks home taking 30 minutes. What time does Lin get home?",
+  "helper_tip": "When adding time, add hours first, then minutes. If minutes exceed 60, convert to hours.",
+  "think_story_th": "Arrive school: 6:00 + 45 min = 6:45, Leave school: 6:45 + 4 hr = 10:45, Arrive home: 10:45 + 30 min = 11:15",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin wakes up at 6 o'clock in the morning. She walks to school taking 45 minutes. What time does she arrive at school? She stays at school for 4 hours and then walks home taking 30 minutes. What time does Lin get home?",
+      "data": {
+        "content_th": "Lin wakes up at 6 o'clock in the morning. She walks to school taking 45 minutes. What time does she arrive at school? She stays at school for 4 hours and then walks home taking 30 minutes. What time does Lin get home?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Arrive school: 6:00 + 45 min = 6:45, Leave school: 6:45 + 4 hr = 10:45, Arrive home: 10:45 + 30 min = 11:15",
+      "data": {
+        "content_th": "Arrive school: 6:00 + 45 min = 6:45, Leave school: 6:45 + 4 hr = 10:45, Arrive home: 10:45 + 30 min = 11:15"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Wake up 06:00",
+            "value": 6,
+            "display": "06:00",
+            "color": "#4ECDC4",
+            "width_pct": 50
+          },
+          {
+            "label": "At school 06:45",
+            "value": 645,
+            "display": "06:45",
+            "color": "#45B7D1",
+            "width_pct": 56
+          },
+          {
+            "label": "At home 11:15",
+            "value": 1115,
+            "display": "11:15",
+            "color": "#C7F464",
+            "width_pct": 93,
+            "is_total": true
+          }
+        ],
+        "unit": ""
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Arrive at school",
+            "expression": "6:00 + 45 min = 6:45",
+            "a": 6,
+            "b": 45,
+            "res": 645,
+            "op": "+",
+            "formula": {
+              "display": "6:00 + 45 min = 6:45",
+              "a": 6,
+              "b": 45,
+              "result": 645,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "6:00",
+              "b_display": "0:45",
+              "result_display": "6:45",
+              "operation": "add"
+            },
+            "story_connection": "6:00 + 45 min = 6:45"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Time to leave school",
+            "expression": "6:45 + 4 hr = 10:45",
+            "a": 645,
+            "b": 400,
+            "res": 1045,
+            "op": "+",
+            "formula": {
+              "display": "6:45 + 4 hr = 10:45",
+              "a": 645,
+              "b": 400,
+              "result": 1045,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "6:45",
+              "b_display": "4:00",
+              "result_display": "10:45",
+              "operation": "add"
+            },
+            "story_connection": "6:45 + 4 hr = 10:45"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Arrive at home",
+            "expression": "10:45 + 30 min = 11:15",
+            "a": 1045,
+            "b": 30,
+            "res": 1115,
+            "op": "+",
+            "formula": {
+              "display": "10:45 + 30 min = 11:15",
+              "a": 1045,
+              "b": 30,
+              "result": 1115,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "10:45",
+              "b_display": "0:30",
+              "result_display": "11:15",
+              "operation": "add"
+            },
+            "story_connection": "10:45 + 30 min = 11:15"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "6:00+45min=6:45, 6:45+4hr=10:45, 10:45+30min=11:15",
+      "content": "6:00+45min=6:45, 6:45+4hr=10:45, 10:45+30min=11:15",
+      "data": {
+        "expression": "6:00+45min=6:45, 6:45+4hr=10:45, 10:45+30min=11:15",
+        "content_th": "6:00+45min=6:45, 6:45+4hr=10:45, 10:45+30min=11:15",
+        "operations": [
+          {
+            "op": "+",
+            "a": 6,
+            "b": 45,
+            "result": 645
+          },
+          {
+            "op": "+",
+            "a": 645,
+            "b": 400,
+            "result": 1045
+          },
+          {
+            "op": "+",
+            "a": 1045,
+            "b": 30,
+            "result": 1115
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Ai starts homework at 15:30. He spends 1 hour 45 minutes on it. What time does Ai finish homework?",
+      "choices": [
+        "17:15",
+        "16:15",
+        "17:00",
+        "16:30"
+      ],
+      "correct_answer": "17:15",
+      "explanation": "15:30+1:45=17:15",
+      "data": {
+        "question": "Ai starts homework at 15:30. He spends 1 hour 45 minutes on it. What time does Ai finish homework?",
+        "choices": [
+          "17:15",
+          "16:15",
+          "17:00",
+          "16:30"
+        ],
+        "correct_answer": "17:15",
+        "explanation": "15:30+1:45=17:15"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

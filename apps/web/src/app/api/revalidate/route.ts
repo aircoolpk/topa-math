@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { revalidatePath } from 'next/cache'
 
 export const dynamic = 'force-dynamic'
+export const runtime = 'edge'
 
 export async function POST(request: NextRequest) {
   try {

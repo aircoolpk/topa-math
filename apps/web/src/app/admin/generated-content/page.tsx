@@ -15,9 +15,8 @@ export default function AdminGeneratedContentPage() {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    checkAuth().then(async () => {
-      const token = localStorage.getItem('access_token')
-      if (!token) { router.push('/login'); return }
+    checkAuth().then(async (authenticatedUser) => {
+      if (!authenticatedUser) { router.push('/login'); return }
       try {
         const data = await adminApi.generatedContent()
         setJobs(data)

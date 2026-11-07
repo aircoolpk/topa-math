@@ -5,14 +5,19 @@ from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from pydantic import BaseModel
-from sqlalchemy import func, or_, select
+from sqlalchemy import and_, func, or_, select
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
 from app.core.database import get_db
 from app.models import ChildProfile, User
 from app.routers.deps import current_user
+from app.services.affiliates import create_commission_for_payment, reverse_commission_for_payment
 from app.services.referrals import award_paid_referral_if_needed
+from app.services import mpp_checkout
+from app.models.mpp_purchase import MppPackagePrice, MppPurchaseOrder
+from app.models.checkout_reservation import CheckoutReservation
+from app.services.checkout_policy import default_gateway, require_mpp_access
 
 try:
     import stripe
@@ -40,10 +45,36 @@ class BillingPlan:
     billing_interval: str
     price_type: str
     amount_thb: int
+    features: tuple[str, ...] = ()
 
     @property
     def entitlement_plan_code(self) -> str:
         return "ep_plus" if self.program_type == "EP" else "th_plus"
+
+
+# Feature lists are the single source of truth for TH / EP benefits shown on
+# the pricing & billing pages. They were previously hardcoded as DEFAULT_*_FEATURES
+# in the frontend; centralising them here lets the admin adjust copy without
+# shipping new frontend builds.
+
+TH_PLAN_FEATURES: tuple[str, ...] = (
+    "ปลดล็อกบทเรียนคณิต ป.1-ป.6 ทั้งหมด",
+    "แบบทดสอบทุกระดับชั้น ไม่จำกัด",
+    "ระบบ AI วิเคราะห์จุดอ่อน",
+    "แบบฝึกเฉพาะบุคคล",
+    "Quest รายวัน / สัปดาห์ / เดือน",
+    "XP / Level / Rank ทั่วประเทศ",
+    "Avatar และของตกแต่งพื้นฐาน",
+)
+
+EP_PLAN_FEATURES: tuple[str, ...] = (
+    "ทุกอย่างในแพ็กเกจ TH",
+    "โหมด English Program (EP)",
+    "โจทย์และบทเรียนคณิตเป็นภาษาอังกฤษ",
+    "คำศัพท์คณิตศาสตร์ภาษาอังกฤษ",
+    "เหมาะกับเด็ก EP / Inter / สองภาษา",
+    "ปลดล็อกทั้ง TH และ EP ในบัญชีเดียว",
+)
 
 
 PLAN_CATALOG: dict[str, BillingPlan] = {
@@ -56,6 +87,7 @@ PLAN_CATALOG: dict[str, BillingPlan] = {
         billing_interval="month",
         price_type="founder",
         amount_thb=199,
+        features=TH_PLAN_FEATURES,
     ),
     "ep_founder_monthly": BillingPlan(
         plan_code="ep_founder_monthly",
@@ -66,6 +98,7 @@ PLAN_CATALOG: dict[str, BillingPlan] = {
         billing_interval="month",
         price_type="founder",
         amount_thb=399,
+        features=EP_PLAN_FEATURES,
     ),
     "th_plus_monthly": BillingPlan(
         plan_code="th_plus_monthly",
@@ -76,6 +109,7 @@ PLAN_CATALOG: dict[str, BillingPlan] = {
         billing_interval="month",
         price_type="normal",
         amount_thb=299,
+        features=TH_PLAN_FEATURES,
     ),
     "ep_plus_monthly": BillingPlan(
         plan_code="ep_plus_monthly",
@@ -86,6 +120,7 @@ PLAN_CATALOG: dict[str, BillingPlan] = {
         billing_interval="month",
         price_type="normal",
         amount_thb=599,
+        features=EP_PLAN_FEATURES,
     ),
     "th_plus_yearly_promo": BillingPlan(
         plan_code="th_plus_yearly_promo",
@@ -96,6 +131,7 @@ PLAN_CATALOG: dict[str, BillingPlan] = {
         billing_interval="year",
         price_type="yearly_promo",
         amount_thb=2990,
+        features=TH_PLAN_FEATURES,
     ),
     "ep_plus_yearly_promo": BillingPlan(
         plan_code="ep_plus_yearly_promo",
@@ -106,6 +142,7 @@ PLAN_CATALOG: dict[str, BillingPlan] = {
         billing_interval="year",
         price_type="yearly_promo",
         amount_thb=5990,
+        features=EP_PLAN_FEATURES,
     ),
 }
 
@@ -209,7 +246,7 @@ def get_founder_used_count(db: Session) -> int:
             .select_from(ChildProfile)
             .where(
                 ChildProfile.active_price_code.in_(FOUNDER_PLAN_CODES),
-                ChildProfile.subscription_status.in_(FOUNDER_COUNT_SUBSCRIPTION_STATUSES),
+                or_(and_(or_(ChildProfile.membership_provider.is_(None), ChildProfile.membership_provider != 'mpp'), ChildProfile.subscription_status.in_(FOUNDER_COUNT_SUBSCRIPTION_STATUSES)), and_(ChildProfile.membership_provider == 'mpp', ChildProfile.mpp_access_ends_at > datetime.now(UTC))),
                 ChildProfile.membership_status.in_(FOUNDER_COUNT_MEMBERSHIP_STATUSES),
             )
         )
@@ -225,10 +262,11 @@ def _founder_limit() -> int:
 def _founder_slots(db: Session) -> dict:
     limit = _founder_limit()
     used = get_founder_used_count(db)
+    reserved = int(db.scalar(select(func.count()).select_from(MppPurchaseOrder).where(MppPurchaseOrder.plan_code.in_(FOUNDER_PLAN_CODES), MppPurchaseOrder.status == 'PENDING')) or 0)
     return {
         "founder_limit": limit,
         "founder_used": used,
-        "founder_slots_remaining": max(0, limit - used),
+        "founder_slots_remaining": max(0, limit - used - reserved),
         "founder_shared_pool": True,
     }
 
@@ -254,6 +292,10 @@ def _id(value: Any) -> str | None:
     if isinstance(value, str):
         return value
     return _stripe_get(value, "id")
+
+
+def _invoice_payment_reference(invoice_id: str | None) -> str | None:
+    return f"stripe_invoice:{invoice_id}" if invoice_id else None
 
 
 def _plan_from_price_id(price_id: str | None) -> BillingPlan | None:
@@ -282,6 +324,11 @@ def _find_child_for_event(db: Session, *, user_id: str | None = None, customer_i
 
 
 def _apply_paid_plan(child: ChildProfile, plan: BillingPlan) -> None:
+    if child.membership_provider == 'mpp':
+        from app.services.foundation import is_paid
+        if is_paid(child):
+            return
+        child.membership_provider = 'stripe'
     child.membership_status = "plus"
     child.plan_code = plan.entitlement_plan_code
     child.active_price_code = plan.plan_code
@@ -292,6 +339,8 @@ def _apply_paid_plan(child: ChildProfile, plan: BillingPlan) -> None:
 
 
 def _clear_paid_access(child: ChildProfile) -> None:
+    if child.membership_provider == 'mpp':
+        return
     child.membership_status = "free"
     child.plan_code = "free"
     child.active_price_code = None
@@ -325,6 +374,10 @@ def _apply_subscription_state(child: ChildProfile, subscription: Any, *, plan: B
 
 
 def _status_payload(child: ChildProfile) -> dict:
+    if child.membership_provider == 'mpp':
+        from app.services.foundation import is_paid
+        paid = is_paid(child)
+        return {'provider': 'mpp', 'auto_renew': False, 'membership_status': 'plus' if paid else 'free', 'plan_code': child.plan_code if paid else 'free', 'plan': 'plus' if paid else 'free', 'is_paid': paid, 'active_price_code': child.active_price_code, 'price_type': child.price_type, 'program_type': child.billing_program_type, 'subscription_status': 'active' if paid else 'expired', 'subscription_id': None, 'current_period_end': child.mpp_access_ends_at.isoformat() if child.mpp_access_ends_at else None, 'cancel_at_period_end': False}
     membership_status = child.membership_status or "free"
     subscription_status = child.subscription_status or "none"
     is_paid = membership_status in {"paid", "plus"} and subscription_status in {
@@ -367,41 +420,56 @@ def billing_prices(db: Session = Depends(get_db)) -> dict:
         for plan in PLAN_CATALOG.values()
         if is_founder_plan(plan) or not founder_only
     ]
-    return {
+    result = {
         "plans": [
             free_plan,
             *[
             (
-                {
-                    "plan_code": plan.plan_code,
-                    "display_name": plan.display_name,
-                    "program_type": plan.program_type,
-                    "price_thb": plan.amount_thb,
-                    "billing_interval": plan.billing_interval,
-                    "price_type": plan.price_type,
-                    "product_id": plan.product_id,
-                    "stripe_price_id": getattr(settings, plan.price_env, None),
-                    "available": founder["founder_slots_remaining"] > 0,
-                    **founder,
-                    "note_th": "\u0e08\u0e33\u0e01\u0e31\u0e14\u0e23\u0e27\u0e21 100 \u0e2a\u0e34\u0e17\u0e18\u0e34\u0e4c\u0e41\u0e23\u0e01",
-                }
-                if is_founder_plan(plan)
-                else {
-                    "plan_code": plan.plan_code,
-                    "display_name": plan.display_name,
-                    "program_type": plan.program_type,
-                    "price_thb": plan.amount_thb,
-                    "billing_interval": plan.billing_interval,
-                    "price_type": plan.price_type,
-                    "product_id": plan.product_id,
-                    "stripe_price_id": getattr(settings, plan.price_env, None),
-                    "available": True,
-                }
-            )
+                            {
+                                "plan_code": plan.plan_code,
+                                "display_name": plan.display_name,
+                                "program_type": plan.program_type,
+                                "price_thb": plan.amount_thb,
+                                "billing_interval": plan.billing_interval,
+                                "price_type": plan.price_type,
+                                "product_id": plan.product_id,
+                                "stripe_price_id": getattr(settings, plan.price_env, None),
+                                "available": founder["founder_slots_remaining"] > 0,
+                                **founder,
+                                "note_th": "\u0e08\u0e33\u0e01\u0e31\u0e14\u0e23\u0e27\u0e21 100 \u0e2a\u0e34\u0e17\u0e18\u0b34\u0e4c\u0e41\u0e23\u0e01",
+                                "features": list(plan.features),
+                            }
+                            if is_founder_plan(plan)
+                            else {
+                                "plan_code": plan.plan_code,
+                                "display_name": plan.display_name,
+                                "program_type": plan.program_type,
+                                "price_thb": plan.amount_thb,
+                                "billing_interval": plan.billing_interval,
+                                "price_type": plan.price_type,
+                                "product_id": plan.product_id,
+                                "stripe_price_id": getattr(settings, plan.price_env, None),
+                                "available": True,
+                                "features": list(plan.features),
+                            }
+                        )
             for plan in visible_plans
             ],
         ]
     }
+    for item in result['plans']:
+        if item['plan_code'] == 'free':
+            continue
+        if default_gateway() == 'stripe':
+            item['auto_renew'] = True
+            continue
+        price = db.get(MppPackagePrice, item['plan_code'])
+        item['price_minor'] = price.amount_minor if price else None
+        item['duration_days'] = price.duration_days if price else None
+        item['auto_renew'] = False
+        item['available'] = bool(item.get('available', True) and price and price.active)
+    result['checkout_provider'] = default_gateway()
+    return result
 
 
 def _dev_plan_payload(plan: BillingPlan) -> dict:
@@ -421,7 +489,7 @@ def _dev_plan_payload(plan: BillingPlan) -> dict:
             if plan.program_type == "EP"
             else "บทเรียนภาษาไทย ป.1-ป.6"
         ),
-        "features": (
+        "features": list(plan.features) if plan.features else (
             [
                 "บทเรียนภาษาอังกฤษง่าย",
                 "มีคำแปลไทย",
@@ -550,17 +618,66 @@ def billing_plans(db: Session = Depends(get_db)) -> dict:
     return {"plans": plans, **founder, "source": "backend"}
 
 
-@router.post("/billing/create-checkout-session")
-def create_checkout_session(payload: CheckoutSessionIn, db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
-    logger.info("Stripe checkout endpoint called plan_code=%s", payload.plan_code)
+@router.post("/billing/mpp/checkout")
+def create_mpp_checkout(payload: CheckoutSessionIn, db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
     plan = PLAN_CATALOG.get(payload.plan_code)
     if not plan:
         raise HTTPException(status_code=400, detail="Invalid plan_code")
-    if is_founder_plan(plan) and _founder_slots(db)["founder_slots_remaining"] <= 0:
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail="\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e4c Founder Price \u0e04\u0e23\u0e1a\u0e41\u0e25\u0e49\u0e27 \u0e01\u0e23\u0e38\u0e13\u0e32\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e41\u0e1e\u0e47\u0e01\u0e40\u0e01\u0e08\u0e23\u0e32\u0e04\u0e32\u0e1b\u0e01\u0e15\u0e34",
-        )
+    order = mpp_checkout.new_or_pending_order(db, user, plan.plan_code)
+    return mpp_checkout.view(mpp_checkout.submit_order(db, user, order.id))
+
+
+@router.post('/billing/create-checkout-session')
+def create_checkout_session(payload: CheckoutSessionIn, db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
+    if payload.plan_code not in PLAN_CATALOG:
+        raise HTTPException(400, 'Invalid plan_code')
+    db.scalar(select(User).where(User.id == user.id).with_for_update())
+    pending = db.scalar(select(MppPurchaseOrder).where(MppPurchaseOrder.user_id == user.id, MppPurchaseOrder.status == 'PENDING'))
+    if pending:
+        if pending.plan_code != payload.plan_code:
+            raise HTTPException(409, {'code': 'CHECKOUT_PROVIDER_LOCKED', 'provider': 'mpp'})
+        result = mpp_checkout.view(pending)
+        if not result['checkout_url']:
+            raise HTTPException(409, {'code': 'CHECKOUT_RECONCILIATION_REQUIRED', 'provider': 'mpp', 'order_id': pending.id})
+        return result
+    reservation = db.scalar(select(CheckoutReservation).where(CheckoutReservation.user_id == user.id, CheckoutReservation.status == 'PENDING'))
+    if reservation:
+        if reservation.plan_code != payload.plan_code or not reservation.checkout_url:
+            raise HTTPException(409, {'code': 'CHECKOUT_RECONCILIATION_REQUIRED', 'provider': reservation.provider})
+        return {'provider': reservation.provider, 'order_id': reservation.id, 'checkout_url': reservation.checkout_url}
+    if default_gateway() == 'mpp':
+        require_mpp_access(user)
+        return create_mpp_checkout(payload, db, user)
+    child = _optional_profile(db, user)
+    if child:
+        mpp_checkout.reject_live_stripe(child)
+        if child.membership_provider == 'mpp' and mpp_checkout.utc(child.mpp_access_ends_at) and mpp_checkout.utc(child.mpp_access_ends_at) > datetime.now(UTC):
+            raise HTTPException(409, {'code': 'EXISTING_MPP_MEMBERSHIP'})
+    if is_founder_plan(PLAN_CATALOG[payload.plan_code]) and _founder_slots(db)['founder_slots_remaining'] <= 0:
+        raise HTTPException(409, {'code': 'FOUNDER_FULL'})
+    reservation = CheckoutReservation(user_id=user.id, provider='stripe', plan_code=payload.plan_code)
+    db.add(reservation)
+    db.commit()
+    result = _legacy_stripe_checkout_session(payload, db, user, idempotency_key=reservation.id)
+    reservation.external_id = result.get('session_id')
+    reservation.checkout_url = result.get('checkout_url')
+    db.commit()
+    return {'provider': 'stripe', 'order_id': reservation.id, **result}
+
+
+@router.get('/billing/checkouts/{reservation_id}')
+def checkout_reservation_status(reservation_id: str, db: Session = Depends(get_db), user: User = Depends(current_user)):
+    row = db.scalar(select(CheckoutReservation).where(CheckoutReservation.id == reservation_id, CheckoutReservation.user_id == user.id))
+    if not row:
+        raise HTTPException(404, 'Checkout not found')
+    return {'order_id': row.id, 'provider': row.provider, 'status': row.status}
+
+
+def _legacy_stripe_checkout_session(payload: CheckoutSessionIn, db: Session, user: User, *, idempotency_key: str | None = None) -> dict:
+    """Legacy subscription purchase; gateway choice is enforced by the caller."""
+    plan = PLAN_CATALOG.get(payload.plan_code)
+    if not plan:
+        raise HTTPException(status_code=400, detail="Invalid plan_code")
     child = _optional_profile(db, user)
     checkout_ready, missing_reason = _stripe_checkout_ready(plan)
     if not checkout_ready:
@@ -575,6 +692,7 @@ def create_checkout_session(payload: CheckoutSessionIn, db: Session = Depends(ge
     if not customer_id:
         try:
             customer = stripe_client.Customer.create(
+                idempotency_key=('customer-' + idempotency_key) if idempotency_key else None,
                 email=user.email,
                 metadata={"user_id": user.id, **({"child_id": child.id} if child else {})},
             )
@@ -588,6 +706,7 @@ def create_checkout_session(payload: CheckoutSessionIn, db: Session = Depends(ge
 
     try:
         session = stripe_client.checkout.Session.create(
+            idempotency_key=idempotency_key,
             mode="subscription",
             customer=customer_id,
             line_items=[{"price": price_id, "quantity": 1}],
@@ -595,6 +714,7 @@ def create_checkout_session(payload: CheckoutSessionIn, db: Session = Depends(ge
             cancel_url=f"{frontend_base_url}/pricing?canceled=1",
             client_reference_id=user.id,
             metadata={
+                'topa_checkout_reservation_id': idempotency_key,
                 "user_id": user.id,
                 **({"child_id": child.id} if child else {}),
                 "plan_code": plan.plan_code,
@@ -608,6 +728,7 @@ def create_checkout_session(payload: CheckoutSessionIn, db: Session = Depends(ge
         return _manual_pending_checkout(db, user, child, plan, reason=exc.__class__.__name__)
     logger.info("Stripe checkout session created plan_code=%s session_id=%s", plan.plan_code, _id(session))
     return {
+        'session_id': _id(session),
         "checkout_url": _stripe_get(session, "url"),
         "plan_code": plan.plan_code,
         "price_type": plan.price_type,
@@ -648,7 +769,18 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)) -> dic
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid Stripe signature") from exc
 
     event_type = _stripe_get(event, "type")
+    event_id = _id(event)
     data_object = _stripe_get(_stripe_get(event, "data", {}), "object", {})
+    if event_type in {'checkout.session.completed', 'checkout.session.expired'}:
+        metadata = _stripe_get(data_object, 'metadata', {}) or {}
+        reservation_id = _stripe_get(metadata, 'topa_checkout_reservation_id')
+        if reservation_id:
+            db.scalar(select(User).where(User.id == _stripe_get(metadata, 'user_id')).with_for_update())
+            reservation = db.get(CheckoutReservation, reservation_id)
+            if reservation and reservation.provider == 'stripe' and reservation.user_id == _stripe_get(metadata, 'user_id') and reservation.external_id in {None, _id(data_object)}:
+                if (event_type == 'checkout.session.expired' and reservation.status == 'PENDING') or (event_type == 'checkout.session.completed' and _id(_stripe_get(data_object, 'subscription'))):
+                    reservation.external_id = _id(data_object)
+                    reservation.status = 'EXPIRED' if event_type.endswith('.expired') else 'COMPLETED'
 
     if event_type == "checkout.session.completed":
         metadata = _stripe_get(data_object, "metadata", {}) or {}
@@ -689,6 +821,7 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)) -> dic
             child.canceled_at = datetime.now(UTC)
 
     elif event_type == "invoice.paid":
+        invoice_id = _id(data_object)
         subscription_id = _id(_stripe_get(data_object, "subscription"))
         customer_id = _id(_stripe_get(data_object, "customer"))
         child = _find_child_for_event(db, customer_id=customer_id, subscription_id=subscription_id)
@@ -697,6 +830,20 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)) -> dic
             _apply_subscription_state(child, subscription)
             if child.subscription_status in PAID_SUBSCRIPTION_STATUSES:
                 award_paid_referral_if_needed(db, child.parent_user_id, reference_id=subscription_id)
+                create_commission_for_payment(
+                    db,
+                    referred_user_id=child.parent_user_id,
+                    payment_reference_id=_invoice_payment_reference(invoice_id),
+                    amount_paid_minor=_stripe_get(data_object, "amount_paid"),
+                    currency=_stripe_get(data_object, "currency", "THB"),
+                    source_event_id=event_id,
+                    metadata={
+                        "stripe_invoice_id": invoice_id,
+                        "stripe_subscription_id": subscription_id,
+                        "stripe_customer_id": customer_id,
+                        "stripe_payment_intent": _id(_stripe_get(data_object, "payment_intent")),
+                    },
+                )
 
     elif event_type == "invoice.payment_failed":
         subscription_id = _id(_stripe_get(data_object, "subscription"))
@@ -704,6 +851,15 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)) -> dic
         child = _find_child_for_event(db, customer_id=customer_id, subscription_id=subscription_id)
         if child:
             child.subscription_status = "past_due"
+
+    elif event_type in {"charge.refunded", "charge.dispute.created"}:
+        invoice_id = _id(_stripe_get(data_object, "invoice"))
+        reverse_commission_for_payment(
+            db,
+            payment_reference_id=_invoice_payment_reference(invoice_id),
+            reason="refund" if event_type == "charge.refunded" else "chargeback",
+            source_event_id=event_id,
+        )
 
     db.commit()
     return {"received": True}

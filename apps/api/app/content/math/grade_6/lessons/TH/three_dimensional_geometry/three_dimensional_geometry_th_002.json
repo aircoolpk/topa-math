@@ -1,0 +1,252 @@
+{
+  "variant_id": "three_dimensional_geometry_th_002",
+  "variant_title_th": "รูปเรขาคณิตสามมิติ",
+  "variant_title_en": "Three-Dimensional Geometry",
+  "status": "needs_review",
+  "title_th": "รูปเรขาคณิตสามมิติ",
+  "title_en": "Three-Dimensional Geometry",
+  "story_theme_th": "ถังน้ำทรงกระบอกมีรัศมี 7 เซนติเมตร สูง 20 เซนติเมตร บรรจุน้ำได้กี่ลูกบาศก์เซนติเมตร (π ≈ 22/7)",
+  "helper_tip": "ปริมาตรทรงกระบอก = π × รัศมี² × สูง",
+  "think_story_th": "พื้นที่ฐาน = π × รัศมี² = 22/7 × 7 × 7 = 154 ตารางเซนติเมตร ปริมาตร = พื้นที่ฐาน × สูง = 154 × 20 = 3,080 ลูกบาศก์เซนติเมตร",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "ถังน้ำทรงกระบอกมีรัศมี 7 เซนติเมตร สูง 20 เซนติเมตร บรรจุน้ำได้กี่ลูกบาศก์เซนติเมตร (π ≈ 22/7)",
+      "data": {
+        "content_th": "ถังน้ำทรงกระบอกมีรัศมี 7 เซนติเมตร สูง 20 เซนติเมตร บรรจุน้ำได้กี่ลูกบาศก์เซนติเมตร (π ≈ 22/7)"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "พื้นที่ฐาน = π × รัศมี² = 22/7 × 7 × 7 = 154 ตารางเซนติเมตร ปริมาตร = พื้นที่ฐาน × สูง = 154 × 20 = 3,080 ลูกบาศก์เซนติเมตร",
+      "data": {
+        "content_th": "พื้นที่ฐาน = π × รัศมี² = 22/7 × 7 × 7 = 154 ตารางเซนติเมตร ปริมาตร = พื้นที่ฐาน × สูง = 154 × 20 = 3,080 ลูกบาศก์เซนติเมตร"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "ลูกบาศก์เซนติเมตร",
+        "bars": [
+          {
+            "label": "รัศมี",
+            "value": 7,
+            "display": "7 ซม.",
+            "color": "#4ECDC4",
+            "width_pct": 35
+          },
+          {
+            "label": "สูง",
+            "value": 20,
+            "display": "20 ซม.",
+            "color": "#45B7D1",
+            "width_pct": 100
+          },
+          {
+            "label": "พื้นที่ฐาน",
+            "value": 154,
+            "display": "154 ตร.ซม.",
+            "color": "#96CEB4",
+            "width_pct": 77
+          },
+          {
+            "label": "ปริมาตร",
+            "value": 3080,
+            "display": "3,080 ลบ.ซม.",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "7 × 7 = 49",
+            "formula": {
+              "display": "7 × 7 = 49",
+              "a": 7,
+              "b": 7,
+              "result": 49,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}7&\\ ×\\quad 7&\\ \\hline 49&\\\\ \\hline \\end{array}",
+              "a_display": "7",
+              "b_display": "7",
+              "result_display": "49",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 7 × 7 = 49"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "22 × 49 = 1078",
+            "formula": {
+              "display": "22 × 49 = 1078",
+              "a": 22,
+              "b": 49,
+              "result": 1078,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}22&\\ ×\\quad 49&\\ \\hline 1078&\\\\ \\hline \\end{array}",
+              "a_display": "22",
+              "b_display": "49",
+              "result_display": "1078",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 22 × 49 = 1078"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "1078 ÷ 7 = 154",
+            "formula": {
+              "display": "1078 ÷ 7 = 154",
+              "a": 1078,
+              "b": 7,
+              "result": 7706,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}1078&\\ ÷\\quad 7&\\ \\hline 7706&\\\\ \\hline \\end{array}",
+              "a_display": "1078",
+              "b_display": "7",
+              "result_display": "7706",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 1078 ÷ 7 = 154"
+          },
+          {
+            "step": 4,
+            "label": "ขั้นตอนที่ 4",
+            "expression": "22 × 7 = 154",
+            "formula": {
+              "display": "22 × 7 = 154",
+              "a": 22,
+              "b": 7,
+              "result": 154,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}22&\\ ×\\quad 7&\\ \\hline 154&\\\\ \\hline \\end{array}",
+              "a_display": "22",
+              "b_display": "7",
+              "result_display": "154",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 22 × 7 = 154"
+          },
+          {
+            "step": 5,
+            "label": "ขั้นตอนที่ 5",
+            "expression": "154 × 20 = 3080",
+            "formula": {
+              "display": "154 × 20 = 3080",
+              "a": 154,
+              "b": 20,
+              "result": 3080,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}154&\\ ×\\quad 20&\\ \\hline 3080&\\\\ \\hline \\end{array}",
+              "a_display": "154",
+              "b_display": "20",
+              "result_display": "3080",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 154 × 20 = 3080"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "7 × 7 = 49 | 22 × 49 = 1078 | 1078 ÷ 7 = 154 | 22 × 7 = 154 | 154 × 20 = 3080",
+      "content": "7 × 7 = 49 | 22 × 49 = 1078 | 1078 ÷ 7 = 154 | 22 × 7 = 154 | 154 × 20 = 3080",
+      "data": {
+        "expression": "7 × 7 = 49 | 22 × 49 = 1078 | 1078 ÷ 7 = 154 | 22 × 7 = 154 | 154 × 20 = 3080",
+        "operations": [
+          {
+            "op": "×",
+            "a": 7,
+            "b": 7,
+            "result": 49
+          },
+          {
+            "op": "×",
+            "a": 22,
+            "b": 49,
+            "result": 1078
+          },
+          {
+            "op": "÷",
+            "a": 1078,
+            "b": 7,
+            "result": 154
+          },
+          {
+            "op": "×",
+            "a": 22,
+            "b": 7,
+            "result": 154
+          },
+          {
+            "op": "×",
+            "a": 154,
+            "b": 20,
+            "result": 3080
+          }
+        ],
+        "content_th": "7 × 7 = 49 | 22 × 49 = 1078 | 1078 ÷ 7 = 154 | 22 × 7 = 154 | 154 × 20 = 3080"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ทรงกระบอกมีรัศมี 5 ซม. สูง 10 ซม. ปริมาตรเท่าไร (π ≈ 3.14)",
+      "choices": [
+        "314 ลบ.ซม.",
+        "157 ลบ.ซม.",
+        "785 ลบ.ซม.",
+        "628 ลบ.ซม."
+      ],
+      "correct_answer": "785 ลบ.ซม.",
+      "explanation": "3.14 × 5 × 5 × 10 = 785 ลบ.ซม.",
+      "data": {
+        "question": "ทรงกระบอกมีรัศมี 5 ซม. สูง 10 ซม. ปริมาตรเท่าไร (π ≈ 3.14)",
+        "choices": [
+          "314 ลบ.ซม.",
+          "157 ลบ.ซม.",
+          "785 ลบ.ซม.",
+          "628 ลบ.ซม."
+        ],
+        "correct_answer": "785 ลบ.ซม.",
+        "explanation": "3.14 × 5 × 5 × 10 = 785 ลบ.ซม."
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -437,17 +437,14 @@ export default function ChildDashboardPage() {
 
   // Auth check
   useEffect(() => {
-    checkAuth().then(() => {
-      if (!localStorage.getItem('access_token')) router.push('/login')
+    checkAuth().then((authenticatedUser) => {
+      if (!authenticatedUser) router.push('/login')
     })
   }, [])
 
   // Fetch child profile
   useEffect(() => {
     if (!childId) return
-    const token = localStorage.getItem('access_token')
-    if (!token) return
-
     childrenApi.get(childId)
       .then(setChild)
       .catch(() => {

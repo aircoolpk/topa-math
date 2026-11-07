@@ -1,0 +1,243 @@
+{
+  "variant_id": "addition_subtraction_word_problems_ep_002",
+  "variant_title_en": "Addition and Subtraction Word Problems",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Addition and Subtraction Word Problems",
+  "title_th": "",
+  "story_theme_en": "Lin has 62 stickers. She gives 18 stickers to Mali. Then she gets 25 stickers from her brother. How many stickers does Lin have now?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Start: 62. Gives: -18 → 44. Gets: +25 → 69 stickers.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin has 62 stickers. She gives 18 stickers to Mali. Then she gets 25 stickers from her brother. How many stickers does Lin have now?",
+      "data": {
+        "content_en": "Lin has 62 stickers. She gives 18 stickers to Mali. Then she gets 25 stickers from her brother. How many stickers does Lin have now?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Start: 62. Gives: -18 → 44. Gets: +25 → 69 stickers.",
+      "data": {
+        "content_en": "Start: 62. Gives: -18 → 44. Gets: +25 → 69 stickers."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "stickers",
+        "bars": [
+          {
+            "label": "Start",
+            "value": 62,
+            "display": "62 stickers",
+            "color": "#96CEB4",
+            "width_pct": 62
+          },
+          {
+            "label": "Give away",
+            "value": 18,
+            "display": "-18",
+            "color": "#FF6B6B",
+            "width_pct": 18
+          },
+          {
+            "label": "Get",
+            "value": 25,
+            "display": "+25",
+            "color": "#A8D8EA",
+            "width_pct": 25
+          },
+          {
+            "label": "Total",
+            "value": 69,
+            "display": "69 stickers",
+            "color": "#C7F464",
+            "width_pct": 69,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Subtract",
+            "expression": "62 - 18 = 44",
+            "formula": {
+              "display": "62 - 18 = 44",
+              "a": 62,
+              "b": 18,
+              "result": 44,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}62&&\\\\\\\\ - 18&&\\\\\\\\ \\\\hline 44&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "62",
+              "b_display": "18",
+              "result_display": "44",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 62 - 18 = 44"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add",
+            "expression": "44 + 25 = 69",
+            "formula": {
+              "display": "44 + 25 = 69",
+              "a": 44,
+              "b": 25,
+              "result": 69,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}44&&\\\\\\\\ + 25&&\\\\\\\\ \\\\hline 69&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "44",
+              "b_display": "25",
+              "result_display": "69",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 44 + 25 = 69"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "62 - 18 + 25 = 69",
+      "content": "62 - 18 + 25 = 69",
+      "data": {
+        "expression": "62 - 18 + 25 = 69",
+        "operations": [
+          {
+            "op": "-",
+            "a": 62,
+            "b": 18,
+            "result": 44
+          },
+          {
+            "op": "+",
+            "a": 44,
+            "b": 25,
+            "result": 69
+          }
+        ],
+        "content_en": "62 - 18 + 25 = 69"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Mali has 57 balloons. She pops 24 balloons. Then she gets 31 more balloons. How many balloons does she have?",
+      "choices": [
+        "64 balloons",
+        "69 balloons",
+        "61 balloons",
+        "72 balloons"
+      ],
+      "correct_answer": "64 balloons",
+      "explanation": "57 - 24 + 31 = 64 balloons",
+      "data": {
+        "question": "Mali has 57 balloons. She pops 24 balloons. Then she gets 31 more balloons. How many balloons does she have?",
+        "choices": [
+          "64 balloons",
+          "69 balloons",
+          "61 balloons",
+          "72 balloons"
+        ],
+        "correct_answer": "64 balloons",
+        "explanation": "57 - 24 + 31 = 64 balloons"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "word problem",
+      "th": "โจทย์ปัญหา",
+      "definition_en": "A story about numbers that you solve with math."
+    },
+    {
+      "en": "money",
+      "th": "เงิน",
+      "definition_en": "Coins and bills used to buy things."
+    },
+    {
+      "en": "left",
+      "th": "เหลือ",
+      "definition_en": "What remains after spending or giving away."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Lin has 62 stickers. She gives 18 stickers to Mali. Then she gets 25 stickers fr...",
+      "solution_en": "62 - 18 + 25 = 69"
+    }
+  ],
+  "questions": []
+}

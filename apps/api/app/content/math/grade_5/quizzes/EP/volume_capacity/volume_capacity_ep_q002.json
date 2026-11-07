@@ -1,0 +1,179 @@
+{
+  "lesson_id": "volume_capacity_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "vc_ep_q002_e01",
+      "question_text": "Situation 1: Box 6 cm wide, 10 cm long, 3 cm tall. Volume?",
+      "question_text_th": "Situation 1: Box 6 cm wide, 10 cm long, 3 cm tall. Volume?",
+      "choices": [
+        "180 cu cm",
+        "180",
+        "200 cu cm",
+        "170 cu cm"
+      ],
+      "correct_answer": "180 cu cm",
+      "answer": "180 cu cm",
+      "explanation": "Volume = 6 x 10 x 3 = 180 cu cm",
+      "explanation_th": "Volume = 6 x 10 x 3 = 180 cu cm",
+      "difficulty": "easy",
+      "hint_th": "Volume = width x length x height"
+    },
+    {
+      "question_id": "vc_ep_q002.e02",
+      "question_text": "Situation 2: Cubic crate sides of 0.5 m. Volume?",
+      "question_text_th": "Situation 2: Cubic crate sides of 0.5 m. Volume?",
+      "choices": [
+        "0.125 cu m",
+        "0.125",
+        "0.25 cu m",
+        "0.1 cu m"
+      ],
+      "correct_answer": "0.125 cu m",
+      "answer": "0.125 cu m",
+      "explanation": "Volume = 0.5^3 = 0.125 cu m",
+      "explanation_th": "Volume = 0.5^3 = 0.125 cu m",
+      "difficulty": "easy",
+      "hint_th": "Volume = side cubed"
+    },
+    {
+      "question_id": "vc_ep_q002.e03",
+      "question_text": "Situation 3: Cubic bin sides of 2 m. Volume?",
+      "question_text_th": "Situation 3: Cubic bin sides of 2 m. Volume?",
+      "choices": [
+        "8 cu m",
+        "8",
+        "6 cu m",
+        "10 cu m"
+      ],
+      "correct_answer": "8 cu m",
+      "answer": "8 cu m",
+      "explanation": "Volume = 2^3 = 8 cu m",
+      "explanation_th": "Volume = 2^3 = 8 cu m",
+      "difficulty": "easy",
+      "hint_th": "Volume = side cubed = 2^3 = 8"
+    },
+    {
+      "question_id": "vc_ep_q002.m01",
+      "question_text": "Situation 4: Pool 12m by 30m by 3m deep. Volume?",
+      "question_text_th": "Situation 4: Pool 12m by 30m by 3m deep. Volume?",
+      "choices": [
+        "1080 cu m",
+        "1080",
+        "1000 cu m",
+        "1200 cu m"
+      ],
+      "correct_answer": "1080 cu m",
+      "answer": "1080 cu m",
+      "explanation": "Volume = 12 x 30 x 3 = 1,080 cu m",
+      "explanation_th": "Volume = 12 x 30 x 3 = 1,080 cu m",
+      "difficulty": "medium",
+      "hint_th": "Volume = width x length x depth"
+    },
+    {
+      "question_id": "vc_ep_q002.m02",
+      "question_text": "Situation 5: Cubic box volume 27 cu cm. Side length?",
+      "question_text_th": "Situation 5: Cubic box volume 27 cu cm. Side length?",
+      "choices": [
+        "3 cm",
+        "3",
+        "4 cm",
+        "2 cm"
+      ],
+      "correct_answer": "3 cm",
+      "answer": "3 cm",
+      "explanation": "Side = cube root of 27 = 3 cm",
+      "explanation_th": "Side = cube root of 27 = 3 cm",
+      "difficulty": "medium",
+      "hint_th": "Side = cube root of volume"
+    },
+    {
+      "question_id": "vc_ep_q002.m03",
+      "question_text": "Situation 6: Cylinder diameter 4 m, height 5 m. Volume? (pi = 3.14)",
+      "question_text_th": "Situation 6: Cylinder diameter 4 m, height 5 m. Volume? (pi = 3.14)",
+      "choices": [
+        "62.8 cu m",
+        "62.8",
+        "60 cu m",
+        "65 cu m"
+      ],
+      "correct_answer": "62.8 cu m",
+      "answer": "62.8 cu m",
+      "explanation": "r = 2 m | Volume = 3.14 x 2^2 x 5 = 3.14 x 4 x 5 = 62.8 cu m",
+      "explanation_th": "r = 2 m | Volume = 3.14 x 2^2 x 5 = 3.14 x 4 x 5 = 62.8 cu m",
+      "difficulty": "medium",
+      "hint_th": "Volume of cylinder = pi x r^2 x h"
+    },
+    {
+      "question_id": "vc_ep_q002.m04",
+      "question_text": "Situation 7: Fridge 0.8m by 1.2m by 1.5m. Volume?",
+      "question_text_th": "Situation 7: Fridge 0.8m by 1.2m by 1.5m. Volume?",
+      "choices": [
+        "1.44 cu m",
+        "1.44",
+        "1.5 cu m",
+        "1.2 cu m"
+      ],
+      "correct_answer": "1.44 cu m",
+      "answer": "1.44 cu m",
+      "explanation": "Volume = 0.8 x 1.2 x 1.5 = 1.44 cu m",
+      "explanation_th": "Volume = 0.8 x 1.2 x 1.5 = 1.44 cu m",
+      "difficulty": "medium",
+      "hint_th": "Volume = width x length x height"
+    },
+    {
+      "question_id": "vc_ep_q002.h01",
+      "question_text": "Situation 8: Pool 15m by 30m. After removing 450,000 L, water drops how many meters?",
+      "question_text_th": "Situation 8: Pool 15m by 30m. After removing 450,000 L, water drops how many meters?",
+      "choices": [
+        "1.0 m",
+        "1.0",
+        "1.5 m",
+        "0.8 m"
+      ],
+      "correct_answer": "1.0 m",
+      "answer": "1.0 m",
+      "explanation": "450,000 L = 450 cu m | Area = 15x30=450 sq m | Drop = 450/450 = 1 m",
+      "explanation_th": "450,000 L = 450 cu m | Area = 15x30=450 sq m | Drop = 450/450 = 1 m",
+      "difficulty": "hard",
+      "hint_th": "450,000 L = 450 cu m. Drop = volume / area"
+    },
+    {
+      "question_id": "vc_ep_q002.h02",
+      "question_text": "Situation 9: Cubic pond holds 343 cu m. Using 5,000-L buckets. How many to fill?",
+      "question_text_th": "Situation 9: Cubic pond holds 343 cu m. Using 5,000-L buckets. How many to fill?",
+      "choices": [
+        "68.6 buckets",
+        "68.6",
+        "69 buckets",
+        "70 buckets"
+      ],
+      "correct_answer": "68.6 buckets",
+      "answer": "68.6 buckets",
+      "explanation": "343 cu m = 343,000 L | 343,000 / 5,000 = 68.6 buckets",
+      "explanation_th": "343 cu m = 343,000 L | 343,000 / 5,000 = 68.6 buckets",
+      "difficulty": "hard",
+      "hint_th": "343 cu m = 343,000 L | 343,000 / 5,000 = 68.6 buckets"
+    },
+    {
+      "question_id": "vc_ep_q002.h03",
+      "question_text": "Situation 10: Cylinder diameter 6 m, height 4 m. How many liters? (pi = 3.14)",
+      "question_text_th": "Situation 10: Cylinder diameter 6 m, height 4 m. How many liters? (pi = 3.14)",
+      "choices": [
+        "113,040 L",
+        "113040",
+        "110,000 L",
+        "115,000 L"
+      ],
+      "correct_answer": "113,040 L",
+      "answer": "113,040 L",
+      "explanation": "r=3m | Volume=3.14x9x4=113.04 cu m=113,040 L",
+      "explanation_th": "r=3m | Volume=3.14x9x4=113.04 cu m=113,040 L",
+      "difficulty": "hard",
+      "hint_th": "Volume = pi x r^2 x h. Multiply by 1,000 to convert to liters."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

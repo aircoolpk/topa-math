@@ -1,0 +1,179 @@
+{
+  "lesson_id": "multiplication_division_whole_numbers_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "สวนดอกกุหลาบปลูกดอกไม้ 24 แถว แถวละ 125 ต้น รวมมีดอกไม้กี่ต้น",
+      "question_text_en": "A rose garden has 24 rows with 125 rose plants per row. How many rose plants in total?",
+      "choices": [
+        "3,000 ต้น",
+        "2,900 ต้น",
+        "3,100 ต้น",
+        "2,800 ต้น"
+      ],
+      "correct_answer": "3,000 ต้น",
+      "answer": "3,000 ต้น",
+      "explanation": "24 x 125 = 3,000 ต้น",
+      "explanation_th": "24 × 125 = 3,000 ต้น",
+      "difficulty": "easy",
+      "hint_th": "ใช้การคูณ 24x125"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "โรงงานบรรจุน้ำขวด ผลิตน้ำ 35 แถว ละ 48 ขวด รวมกี่ขวด ถ้าส่งขายไป 800 ขวด จะเหลือกี่ขวด",
+      "question_text_en": "A water bottling factory produces 35 rows with 48 bottles per row. Total? If 800 bottles are sold, how many are left?",
+      "choices": [
+        "1,680 ขวด เหลือ 880 ขวด",
+        "1,680 ขวด เหลือ 800 ขวด",
+        "1,780 ขวด เหลือ 880 ขวด",
+        "1,680 ขวด เหลือ 980 ขวด"
+      ],
+      "correct_answer": "1,680 ขวด เหลือ 880 ขวด",
+      "answer": "1,680 ขวด เหลือ 880 ขวด",
+      "explanation": "35x48=1,680 | 1,680-800=880 ขวด",
+      "explanation_th": "35×48=1,680 ขวด | 1,680-800=880 ขวดที่เหลือ",
+      "difficulty": "medium",
+      "hint_th": "คูณก่อน แล้วลบ"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "นักเรียนจัดดอกไม้ในแจกัน แถวละ 24 ดอก มี 15 แถว รวมกี่ดอก ถ้าใส่แจกันใหญ่ละ 60 ดอก จะใส่ได้กี่แจกัน",
+      "question_text_en": "Students arrange flowers: 24 flowers per row, 15 rows. Total? If big vases hold 60 flowers each, how many vases?",
+      "choices": [
+        "360 ดอก 6 แจกัน",
+        "360 ดอก 5 แจกัน",
+        "350 ดอก 6 แจกัน",
+        "370 ดอก 6 แจกัน"
+      ],
+      "correct_answer": "360 ดอก 6 แจกัน",
+      "answer": "360 ดอก 6 แจกัน",
+      "explanation": "24x15=360 ดอก | 360/60=6 แจกัน",
+      "explanation_th": "24×15=360 ดอก | 360÷60=6 แจกัน",
+      "difficulty": "medium",
+      "hint_th": "คูณก่อน แล้วหาร"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "ร้านขายขนมเค้ก 12 กล่อง กล่องละ 45 ชิ้น รวมกี่ชิ้น",
+      "question_text_en": "A cake shop has 12 boxes with 45 cakes per box. How many cakes in total?",
+      "choices": [
+        "540 ชิ้น",
+        "530 ชิ้น",
+        "550 ชิ้น",
+        "545 ชิ้น"
+      ],
+      "correct_answer": "540 ชิ้น",
+      "answer": "540 ชิ้น",
+      "explanation": "12 x 45 = 540 ชิ้น",
+      "explanation_th": "12 × 45 = 540 ชิ้น",
+      "difficulty": "easy",
+      "hint_th": "ใช้การคูณ 12x45"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "ขายส้ม 15 แถว ละ 48 ผล รวมกี่ผล",
+      "question_text_en": "Oranges are arranged in 15 rows with 48 oranges per row. How many oranges in total?",
+      "choices": [
+        "720 ผล",
+        "710 ผล",
+        "730 ผล",
+        "725 ผล"
+      ],
+      "correct_answer": "720 ผล",
+      "answer": "720 ผล",
+      "explanation": "15 x 48 = 720 ผล",
+      "explanation_th": "15 × 48 = 720 ผล",
+      "difficulty": "easy",
+      "hint_th": "ใช้การคูณ 15x48"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "โรงงานผลิตขนมปัง อบขนมปัง 25 ชั้น ชั้นละ 48 ก้อน รวมกี่ก้อน แบ่งใส่ถุง ถุงละ 60 ก้อน จะได้กี่ถุง เหลือเศษกี่ก้อน",
+      "question_text_en": "A bakery bakes bread in 25 layers with 48 loaves per layer. Total? Put in bags of 60. How many bags?",
+      "choices": [
+        "1,200 ก้อน 20 ถุง เศษ 0",
+        "1,200 ก้อน 18 ถุง เศษ 40",
+        "1,200 ก้อน 19 ถุง เศษ 40",
+        "1,180 ก้อน 19 ถุง เศษ 40"
+      ],
+      "correct_answer": "1,200 ก้อน 20 ถุง เศษ 0",
+      "answer": "1,200 ก้อน 20 ถุง เศษ 0",
+      "explanation": "25x48=1,200 ก้อน | 1,200/60=20 ถุง เศษ 0",
+      "explanation_th": "25×48=1,200 ก้อน | 1,200÷60=20 ถุง เศษ 0",
+      "difficulty": "medium",
+      "hint_th": "คูณก่อน แล้วหาร"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "มะลิมีลูกแอปเปิ้ล 48 ผล แบ่งให้เพื่อน 7 คน คนละเท่าๆ กัน จะแบ่งได้คนละกี่ผล เหลือเศษกี่ผล",
+      "question_text_en": "Mali has 48 apples. She shares them equally among 7 friends. How many per friend? Any remainder?",
+      "choices": [
+        "คนละ 6 ผล เหลือ 6 ผล",
+        "คนละ 6 ผล เหลือ 7 ผล",
+        "คนละ 7 ผล เหลือ 0 ผล",
+        "คนละ 6 ผล เหลือ 0 ผล"
+      ],
+      "correct_answer": "คนละ 6 ผล เหลือ 6 ผล",
+      "answer": "คนละ 6 ผล เหลือ 6 ผล",
+      "explanation": "48/7 = 6 คนละ 6 ผล เหลือ 6 ผล (แต่ 7x6=42 48-42=6 ผล ถูก)",
+      "explanation_th": "48÷7=6 คนละ 6 ผล เหลือ 6 ผล",
+      "difficulty": "hard",
+      "hint_th": "หาร 48 ด้วย 7 จะได้ผลหาร 6 เศษ 6"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "ถ้า 18 x 45 = 810 แล้ว 810 / 18 มีค่าเท่าไร",
+      "question_text_en": "If 18 x 45 = 810, then what is 810 / 18?",
+      "choices": [
+        "45",
+        "44",
+        "46",
+        "54"
+      ],
+      "correct_answer": "45",
+      "answer": "45",
+      "explanation": "810 / 18 = 45 (การหารย้อนกลับจากการคูณ)",
+      "explanation_th": "810 ÷ 18 = 45",
+      "difficulty": "easy",
+      "hint_th": "ใช้ความสัมพันธ์ของการคูณและการหาร"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "จำนวนหนึ่งคูณ 25 ได้ 1,000 จำนวนนั้นคือเท่าไร",
+      "question_text_en": "A number multiplied by 25 equals 1,000. What is the number?",
+      "choices": [
+        "40",
+        "50",
+        "45",
+        "35"
+      ],
+      "correct_answer": "40",
+      "answer": "40",
+      "explanation": "1,000 / 25 = 40",
+      "explanation_th": "1,000 ÷ 25 = 40",
+      "difficulty": "easy",
+      "hint_th": "ใช้การหาร 1,000/25"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "ข้อใดต่อไปนี้ถูกต้อง: ก. 125 x 8 = 1,000 | ข. 144 x 5 = 720 | ค. 75 x 12 = 900 | ง. 36 x 25 = 900",
+      "question_text_en": "Which is correct? A. 125 x 8 = 1,000 | B. 144 x 5 = 720 | C. 75 x 12 = 900 | D. 36 x 25 = 900",
+      "choices": [
+        "ก, ข และ ค ถูก",
+        "ข และ ค ถูก",
+        "ก และ ง ถูก",
+        "ทุกข้อถูก"
+      ],
+      "correct_answer": "ก, ข และ ค ถูก",
+      "answer": "ก, ข และ ค ถูก",
+      "explanation": "ก: 125x8=1,000 ✓ | ข: 144x5=720 ✓ | ค: 75x12=900 ✓ | ง: 36x25=900 ✓ ทุกข้อถูก!",
+      "explanation_th": "ทุกข้อถูก: ก=1,000 ข=720 ค=900 ง=900",
+      "difficulty": "medium",
+      "hint_th": "ตรวจสอบแต่ละข้อโดยการคูณ"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

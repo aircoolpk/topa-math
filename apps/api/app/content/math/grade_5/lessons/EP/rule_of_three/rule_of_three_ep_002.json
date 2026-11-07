@@ -1,0 +1,128 @@
+{
+  "variant_id": "rule_of_three_ep_002",
+  "variant_title_en": "Rule of Three — Distance and Time",
+  "status": "needs_review",
+  "title_en": "Rule of Three — Distance and Time",
+  "story_theme_en": "A car can travel 120 kilometers on a full tank of 45 liters. If you travel 240 kilometers, how much fuel do you need? If you have 30 liters of fuel, how far can you travel?",
+  "helper_tip": "The ratio of distance to fuel is constant: 120/45 = 8/3 km per liter.",
+  "hint_th": "อัตราส่วนคงที่: ระยะทาง/น้ำมัน = 120/45 กิโลเมตรต่อลิตร",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A car can travel 120 kilometers on a full tank of 45 liters. If you travel 240 kilometers, how much fuel do you need? If you have 30 liters of fuel, how far can you travel?",
+      "data": {
+        "content_en": "A car can travel 120 kilometers on a full tank of 45 liters. If you travel 240 kilometers, how much fuel do you need? If you have 30 liters of fuel, how far can you travel?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Ratio = 120/45 = 8/3 km/L | Fuel needed = 240 ÷ (8/3) = 90 liters | Distance = 30 × 8/3 = 80 km",
+      "data": {
+        "content_en": "Ratio = 120/45 = 8/3 km/L | Fuel needed = 240 ÷ (8/3) = 90 liters | Distance = 30 × 8/3 = 80 km"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Ratio Table",
+      "description": "Ratio Table",
+      "model_type": "ratio_table",
+      "data": {
+        "model_type": "ratio_table",
+        "operation": "multiply_divide",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "45 L",
+            "value": 120,
+            "display": "120 km",
+            "color": "#96CEB4",
+            "width_pct": 60
+          },
+          {
+            "label": "90 L",
+            "value": 240,
+            "display": "240 km",
+            "color": "#45B7D1",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "30 L",
+            "value": 80,
+            "display": "80 km",
+            "color": "#FF6B6B",
+            "width_pct": 40
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "240 x 45 / 120 = 90",
+      "content": "Fuel needed = 90 L | With 30 L, can travel = 80 km",
+      "data": {
+        "expression": "Fuel needed = 90 L | With 30 L, can travel = 80 km",
+        "operations": [
+          {
+            "op": "×",
+            "a": 240,
+            "b": 45,
+            "result": 10800
+          },
+          {
+            "op": "÷",
+            "a": 10800,
+            "b": 120,
+            "result": 90
+          },
+          {
+            "op": "×",
+            "a": 30,
+            "b": 120,
+            "result": 3600
+          },
+          {
+            "op": "÷",
+            "a": 3600,
+            "b": 45,
+            "result": 80
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A motorcycle can run 45 km per liter of fuel. With 3 liters of fuel, how far can it run?",
+      "choices": [
+        "135 km",
+        "130 km",
+        "140 km",
+        "125 km"
+      ],
+      "correct_answer": "135 km",
+      "explanation": "45 × 3 = 135 km",
+      "data": {
+        "question": "A motorcycle can run 45 km per liter of fuel. With 3 liters of fuel, how far can it run?",
+        "choices": [
+          "135 km",
+          "130 km",
+          "140 km",
+          "125 km"
+        ],
+        "correct_answer": "135 km",
+        "explanation": "45 × 3 = 135 km"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

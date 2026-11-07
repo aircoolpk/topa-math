@@ -1,0 +1,179 @@
+{
+  "lesson_id": "time_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "รถไฟออกจากกรุงเทพฯ เวลา 08:45 น. และถึงเชียงใหม่เวลา 15:20 น. การเดินทางใช้เวลากี่ชั่วโมงกี่นาที",
+      "question_text_en": "A train departs Bangkok at 08:45 and arrives in Chiang Mai at 15:20. How long is the journey?",
+      "choices": [
+        "6 ชม. 35 นาที",
+        "6 ชม. 25 นาที",
+        "6 ชม. 45 นาที",
+        "7 ชม. 35 นาที"
+      ],
+      "correct_answer": "6 ชม. 35 นาที",
+      "answer": "6 ชม. 35 นาที",
+      "explanation": "15:20-08:45 = 6 ชม. 35 นาที",
+      "explanation_th": "15:20-08:45 = 6 ชม. 35 นาที",
+      "difficulty": "medium",
+      "hint_th": "แปลงเป็นนาที: 920-525=395นาที=6ชม.35นาที"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "รถบัสออกจากสถานีเวลา 07:30 น. และถึงที่หมายเวลา 12:50 น. การเดินทางใช้เวลากี่ชั่วโมงกี่นาที",
+      "question_text_en": "A bus leaves a station at 07:30 and arrives at its destination at 12:50. How long does the journey take?",
+      "choices": [
+        "5 ชม. 20 นาที",
+        "5 ชม. 10 นาที",
+        "5 ชม. 30 นาที",
+        "5 ชม. 40 นาที"
+      ],
+      "correct_answer": "5 ชม. 20 นาที",
+      "answer": "5 ชม. 20 นาที",
+      "explanation": "12:50-07:30 = 5 ชม. 20 นาที",
+      "explanation_th": "12:50-07:30 = 5 ชม. 20 นาที",
+      "difficulty": "easy",
+      "hint_th": "แปลงเป็นนาที: 770-450=320นาที=5ชม.20นาที"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "ดูหนัง 19:00 ถึง 21:30 ใช้เวลากี่ชั่วโมงกี่นาที",
+      "question_text_en": "Watching a movie from 19:00 to 21:30. How long?",
+      "choices": [
+        "2 ชม. 30 นาที",
+        "2 ชม. 20 นาที",
+        "2 ชม. 15 นาที",
+        "2 ชม. 45 นาที"
+      ],
+      "correct_answer": "2 ชม. 30 นาที",
+      "answer": "2 ชม. 30 นาที",
+      "explanation": "21:30-19:00 = 2 ชม. 30 นาที",
+      "explanation_th": "21:30-19:00 = 2 ชม. 30 นาที",
+      "difficulty": "easy",
+      "hint_th": "21:30-19:00 = 2:30 = 2 ชม. 30 นาที"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "ลินเริ่มทำการบ้านเวลา 16:45 น. ทำเสร็จเวลา 18:20 น. ลินทำการบ้านกี่ชั่วโมงกี่นาที",
+      "question_text_en": "Lin starts homework at 16:45 and finishes at 18:20. How long does Lin spend on homework?",
+      "choices": [
+        "1 ชม. 35 นาที",
+        "2 ชม. 25 นาที",
+        "1 ชม. 25 นาที",
+        "1 ชม. 45 นาที"
+      ],
+      "correct_answer": "1 ชม. 35 นาที",
+      "answer": "1 ชม. 35 นาที",
+      "explanation": "18:20-16:45 = 1 ชม. 35 นาที",
+      "explanation_th": "18:20-16:45 = 1 ชม. 35 นาที",
+      "difficulty": "easy",
+      "hint_th": "แปลงเป็นนาที: 1,100-1,005=95นาที=1ชม.35นาที"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "มะลิดูรายการโทรทัศน์เริ่มเวลา 19:30 น. ดูจนถึง 21:15 น. มีโฆษณา 25 นาที มะลิดูรายการจริงๆ กี่ชั่วโมงกี่นาที",
+      "question_text_en": "Mali watches TV from 19:30 to 21:15 with 25 minutes of ads. How long does Mali actually watch?",
+      "choices": [
+        "1 ชม. 20 นาที",
+        "1 ชม. 30 นาที",
+        "1 ชม. 10 นาที",
+        "1 ชม. 45 นาที"
+      ],
+      "correct_answer": "1 ชม. 20 นาที",
+      "answer": "1 ชม. 20 นาที",
+      "explanation": "21:15-19:30=1ชม.45นาที | 1ชม.45นาที-25นาที=1ชม.20นาที",
+      "explanation_th": "21:15-19:30=1ชม.45นาที | 1ชม.45นาที-25นาที=1ชม.20นาที",
+      "difficulty": "medium",
+      "hint_th": "หาเวลาดูทั้งหมดก่อน แล้วหักโฆษณา"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "เครื่องบินออกเวลา 09:15 น. และถึงเวลา 13:45 น. ใช้เวลาบินกี่ชั่วโมงกี่นาที",
+      "question_text_en": "A plane departs at 09:15 and arrives at 13:45. How long is the flight?",
+      "choices": [
+        "4 ชม. 30 นาที",
+        "4 ชม. 15 นาที",
+        "4 ชม. 20 นาที",
+        "4 ชม. 45 นาที"
+      ],
+      "correct_answer": "4 ชม. 30 นาที",
+      "answer": "4 ชม. 30 นาที",
+      "explanation": "13:45-09:15 = 4 ชม. 30 นาที",
+      "explanation_th": "13:45-09:15 = 4 ชม. 30 นาที",
+      "difficulty": "easy",
+      "hint_th": "13:45-09:15 = 4:30 = 4 ชม. 30 นาที"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "ถ้าเป็นเวลา 14:35 แล้ว 180 นาทีต่อมาจะเป็นเวลาเท่าไร",
+      "question_text_en": "If it is 14:35, what time will it be 180 minutes later?",
+      "choices": [
+        "17:35 น.",
+        "17:05 น.",
+        "18:35 น.",
+        "16:35 น."
+      ],
+      "correct_answer": "17:35 น.",
+      "answer": "17:35 น.",
+      "explanation": "180 นาที = 3 ชม. | 14:35 + 3 ชม. = 17:35",
+      "explanation_th": "180 นาที = 3 ชม. | 14:35+3ชม.=17:35 น.",
+      "difficulty": "medium",
+      "hint_th": "แปลง 180 นาที = 3 ชม. แล้วบวกเพิ่ม"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "นักเรียนเข้าเรียนเวลา 08:00 น. เลิกเรียนเวลา 15:30 น. พักเที่ยง 1 ชม. 15 นาที เข้าเรียนจริงกี่ชั่วโมงกี่นาที",
+      "question_text_en": "A student starts school at 08:00 and ends at 15:30. Lunch break is 1 hour 15 minutes. How long is actual class time?",
+      "choices": [
+        "6 ชม. 15 นาที",
+        "7 ชม. 30 นาที",
+        "6 ชม. 30 นาที",
+        "5 ชม. 15 นาที"
+      ],
+      "correct_answer": "6 ชม. 15 นาที",
+      "answer": "6 ชม. 15 นาที",
+      "explanation": "15:30-08:00=7ชม.30นาที | 7ชม.30นาที-1ชม.15นาที=6ชม.15นาที",
+      "explanation_th": "15:30-08:00=7ชม.30นาที | 7ชม.30นาที-1ชม.15นาที=6ชม.15นาที",
+      "difficulty": "hard",
+      "hint_th": "หาเวลาเรียนทั้งหมดก่อน แล้วหักพักเที่ยง"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ข้อใดถูกต้องเกี่ยวกับการหาเวลาจาก 14:20 ถึง 16:50",
+      "question_text_en": "Which is correct about finding the time from 14:20 to 16:50?",
+      "choices": [
+        "16:50 - 14:20 = 2 ชม. 30 นาที",
+        "16:50 - 14:20 = 2 ชม. 20 นาที",
+        "16:50 - 14:20 = 3 ชม. 10 นาที",
+        "16:50 - 14:20 = 2 ชม. 40 นาที"
+      ],
+      "correct_answer": "16:50 - 14:20 = 2 ชม. 30 นาที",
+      "answer": "16:50 - 14:20 = 2 ชม. 30 นาที",
+      "explanation": "16:50-14:20 = 2:30 = 2 ชม. 30 นาที",
+      "explanation_th": "16:50-14:20 = 2 ชม. 30 นาที",
+      "difficulty": "easy",
+      "hint_th": "16:50-14:20 = 2:30"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "1 ชั่วโมง 45 นาที มีกี่นาที",
+      "question_text_en": "How many minutes are in 1 hour and 45 minutes?",
+      "choices": [
+        "105 นาที",
+        "100 นาที",
+        "115 นาที",
+        "95 นาที"
+      ],
+      "correct_answer": "105 นาที",
+      "answer": "105 นาที",
+      "explanation": "1 ชม. = 60 นาที | 60+45 = 105 นาที",
+      "explanation_th": "1 ชม. = 60 นาที | 60+45 = 105 นาที",
+      "difficulty": "easy",
+      "hint_th": "1 ชม. = 60 นาที บวกเพิ่ม"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

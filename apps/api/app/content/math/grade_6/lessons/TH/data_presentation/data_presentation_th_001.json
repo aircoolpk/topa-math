@@ -1,0 +1,259 @@
+{
+  "variant_id": "data_presentation_th_001",
+  "variant_title_th": "การนำเสนอข้อมูล",
+  "variant_title_en": "Data Presentation",
+  "status": "needs_review",
+  "title_th": "การนำเสนอข้อมูล",
+  "title_en": "Data Presentation",
+  "story_theme_th": "สำรวจอาหารที่นักเรียน 40 คนชอบในห้อง ผลคือ ข้าวผัด 15 คน ผัดไท 10 คน ส้มตำ 8 คน ผัดพริกแห้ง 7 คน และข้าวต้ม 5 คน จงหาค่าเฉลี่ยและมัธยฐานของข้อมูลนี้",
+  "helper_tip": "ค่าเฉลี่ย = ผลรวมของข้อมูล ÷ จำนวนข้อมูล",
+  "think_story_th": "ผลรวม = 15+10+8+7+5 = 45 คน (มากกว่า 40 เพราะอาจมีเลือกหลายอย่าง) ค่าเฉลี่ย = 45 ÷ 5 = 9 คน ข้อมูลเรียง: 5, 7, 8, 10, 15 → มัธยฐาน = 8 คน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "สำรวจอาหารที่นักเรียน 40 คนชอบในห้อง ผลคือ ข้าวผัด 15 คน ผัดไท 10 คน ส้มตำ 8 คน ผัดพริกแห้ง 7 คน และข้าวต้ม 5 คน จงหาค่าเฉลี่ยและมัธยฐานของข้อมูลนี้",
+      "data": {
+        "content_th": "สำรวจอาหารที่นักเรียน 40 คนชอบในห้อง ผลคือ ข้าวผัด 15 คน ผัดไท 10 คน ส้มตำ 8 คน ผัดพริกแห้ง 7 คน และข้าวต้ม 5 คน จงหาค่าเฉลี่ยและมัธยฐานของข้อมูลนี้"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "ผลรวม = 15+10+8+7+5 = 45 คน (มากกว่า 40 เพราะอาจมีเลือกหลายอย่าง) ค่าเฉลี่ย = 45 ÷ 5 = 9 คน ข้อมูลเรียง: 5, 7, 8, 10, 15 → มัธยฐาน = 8 คน",
+      "data": {
+        "content_th": "ผลรวม = 15+10+8+7+5 = 45 คน (มากกว่า 40 เพราะอาจมีเลือกหลายอย่าง) ค่าเฉลี่ย = 45 ÷ 5 = 9 คน ข้อมูลเรียง: 5, 7, 8, 10, 15 → มัธยฐาน = 8 คน"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "คน",
+        "bars": [
+          {
+            "label": "ข้าวผัด",
+            "value": 15,
+            "display": "15 คน",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "ผัดไท",
+            "value": 10,
+            "display": "10 คน",
+            "color": "#45B7D1",
+            "width_pct": 67
+          },
+          {
+            "label": "ส้มตำ",
+            "value": 8,
+            "display": "8 คน",
+            "color": "#96CEB4",
+            "width_pct": 53
+          },
+          {
+            "label": "ผัดพริก",
+            "value": 7,
+            "display": "7 คน",
+            "color": "#FFE66D",
+            "width_pct": 47
+          },
+          {
+            "label": "ข้าวต้ม",
+            "value": 5,
+            "display": "5 คน",
+            "color": "#FF6B6B",
+            "width_pct": 33,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "15 + 10 = 25",
+            "formula": {
+              "display": "15 + 10 = 25",
+              "a": 15,
+              "b": 10,
+              "result": 25,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}15&\\ +\\quad 10&\\ \\hline 25&\\\\ \\hline \\end{array}",
+              "a_display": "15",
+              "b_display": "10",
+              "result_display": "25",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 15 + 10 = 25"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "25 + 8 = 33",
+            "formula": {
+              "display": "25 + 8 = 33",
+              "a": 25,
+              "b": 8,
+              "result": 33,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}25&\\ +\\quad 8&\\ \\hline 33&\\\\ \\hline \\end{array}",
+              "a_display": "25",
+              "b_display": "8",
+              "result_display": "33",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 25 + 8 = 33"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "33 + 7 = 40",
+            "formula": {
+              "display": "33 + 7 = 40",
+              "a": 33,
+              "b": 7,
+              "result": 40,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}33&\\ +\\quad 7&\\ \\hline 40&\\\\ \\hline \\end{array}",
+              "a_display": "33",
+              "b_display": "7",
+              "result_display": "40",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 33 + 7 = 40"
+          },
+          {
+            "step": 4,
+            "label": "ขั้นตอนที่ 4",
+            "expression": "40 + 5 = 45",
+            "formula": {
+              "display": "40 + 5 = 45",
+              "a": 40,
+              "b": 5,
+              "result": 45,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}40&\\ +\\quad 5&\\ \\hline 45&\\\\ \\hline \\end{array}",
+              "a_display": "40",
+              "b_display": "5",
+              "result_display": "45",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 40 + 5 = 45"
+          },
+          {
+            "step": 5,
+            "label": "ขั้นตอนที่ 5",
+            "expression": "45 ÷ 5 = 9",
+            "formula": {
+              "display": "45 ÷ 5 = 9",
+              "a": 45,
+              "b": 5,
+              "result": 9,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}45&\\ ÷\\quad 5&\\ \\hline 9&\\\\ \\hline \\end{array}",
+              "a_display": "45",
+              "b_display": "5",
+              "result_display": "9",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 45 ÷ 5 = 9"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "15 + 10 = 25 | 25 + 8 = 33 | 33 + 7 = 40 | 40 + 5 = 45 | 45 ÷ 5 = 9",
+      "content": "15 + 10 = 25 | 25 + 8 = 33 | 33 + 7 = 40 | 40 + 5 = 45 | 45 ÷ 5 = 9",
+      "data": {
+        "expression": "15 + 10 = 25 | 25 + 8 = 33 | 33 + 7 = 40 | 40 + 5 = 45 | 45 ÷ 5 = 9",
+        "operations": [
+          {
+            "op": "+",
+            "a": 15,
+            "b": 10,
+            "result": 25
+          },
+          {
+            "op": "+",
+            "a": 25,
+            "b": 8,
+            "result": 33
+          },
+          {
+            "op": "+",
+            "a": 33,
+            "b": 7,
+            "result": 40
+          },
+          {
+            "op": "+",
+            "a": 40,
+            "b": 5,
+            "result": 45
+          },
+          {
+            "op": "÷",
+            "a": 45,
+            "b": 5,
+            "result": 9
+          }
+        ],
+        "content_th": "15 + 10 = 25 | 25 + 8 = 33 | 33 + 7 = 40 | 40 + 5 = 45 | 45 ÷ 5 = 9"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "คะแนนสอบของนักเรียน 5 คน: 70, 85, 90, 60, 75 ค่าเฉลี่ยเท่าไร",
+      "choices": [
+        "75 คะแนน",
+        "76 คะแนน",
+        "78 คะแนน",
+        "80 คะแนน"
+      ],
+      "correct_answer": "76 คะแนน",
+      "explanation": "(70+85+90+60+75) ÷ 5 = 380 ÷ 5 = 76 คะแนน",
+      "data": {
+        "question": "คะแนนสอบของนักเรียน 5 คน: 70, 85, 90, 60, 75 ค่าเฉลี่ยเท่าไร",
+        "choices": [
+          "75 คะแนน",
+          "76 คะแนน",
+          "78 คะแนน",
+          "80 คะแนน"
+        ],
+        "correct_answer": "76 คะแนน",
+        "explanation": "(70+85+90+60+75) ÷ 5 = 380 ÷ 5 = 76 คะแนน"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

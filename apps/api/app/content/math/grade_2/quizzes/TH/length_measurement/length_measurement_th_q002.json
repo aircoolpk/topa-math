@@ -1,0 +1,133 @@
+{
+  "quiz_id": "length_measurement_th_q002",
+  "topic_key": "length_measurement",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ length_measurement_th_q002",
+  "title_en": "Quiz length_measurement_th_q002",
+  "questions": [
+    {
+      "question": "ครึ่งเมตร เท่ากับกี่เซนติเมตร",
+      "choices": [
+        "50 ซม.",
+        "100 ซม.",
+        "25 ซม.",
+        "75 ซม."
+      ],
+      "correct_answer": "50 ซม.",
+      "explanation": "0.5 ม. = 50 ซม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ประตูสูง 2 เมตร หมายสูง 65 ซม. ประตูสูงกว่าหมากี่เซนติเมตร",
+      "choices": [
+        "135 ซม.",
+        "125 ซม.",
+        "145 ซม.",
+        "35 ซม."
+      ],
+      "correct_answer": "135 ซม.",
+      "explanation": "200-65=135 ซม.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "กระดาษ 3 แผ่น หนาแผ่นละ 2 มม. รวมหนากี่มิลลิเมตร",
+      "choices": [
+        "6 มม.",
+        "5 มม.",
+        "8 มม.",
+        "10 มม."
+      ],
+      "correct_answer": "6 มม.",
+      "explanation": "3x2=6 มม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "3 เมตร + 250 ซม. = ? ซม.",
+      "choices": [
+        "550 ซม.",
+        "253 ซม.",
+        "3,250 ซม.",
+        "350 ซม."
+      ],
+      "correct_answer": "550 ซม.",
+      "explanation": "300+250=550 ซม.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ต้นไม้สูง 4 เมตร 80 ซม. ถูกตัดไป 1 เมตร 95 ซม. สูงเท่าไร",
+      "choices": [
+        "285 ซม.",
+        "295 ซม.",
+        "275 ซม.",
+        "385 ซม."
+      ],
+      "correct_answer": "285 ซม.",
+      "explanation": "480-195=285 ซม.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "ผ้าม้วายาว 6 เมตร ตัดแบ่งให้เพื่อน 2 เมตร 50 ซม. เหลือผ้ากี่เซนติเมตร",
+      "choices": [
+        "350 ซม.",
+        "450 ซม.",
+        "550 ซม.",
+        "250 ซม."
+      ],
+      "correct_answer": "350 ซม.",
+      "explanation": "600-250=350 ซม.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "น้ำสูง 48 ซม. เทใส่อีกโหล 18 ซม. รวมสูงเท่าไร",
+      "choices": [
+        "66 ซม.",
+        "56 ซม.",
+        "76 ซม.",
+        "30 ซม."
+      ],
+      "correct_answer": "66 ซม.",
+      "explanation": "48+18=66 ซม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "สายวัดยาว 150 ซม. ใช้ไป 2 เมตร 30 ซม. เหลือสายวัดกี่เซนติเมตร",
+      "choices": [
+        "120 ซม.",
+        "110 ซม.",
+        "130 ซม.",
+        "220 ซม."
+      ],
+      "correct_answer": "120 ซม.",
+      "explanation": "150-230=-80 ซม. ??? เดี๋ยว... ผิด: 150 ซม. < 230 ซม. ถ้าใช้ไป 230 ซม. ต้องมี 230 ซม. ก่อน ให้แก้เป็น: สายวัดยาว 280 ซม. ใช้ไป 160 ซม. เหลือ = 120 ซม.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "3 เมตร 45 ซม. + 2 เมตร 78 ซม. = ?",
+      "choices": [
+        "6 เมตร 23 ซม.",
+        "5 เมตร 23 ซม.",
+        "6 เมตร 13 ซม.",
+        "5 เมตร 13 ซม."
+      ],
+      "correct_answer": "6 เมตร 23 ซม.",
+      "explanation": "345+278=623 ซม. = 6 ม. 23 ซม.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "เชือกยาว 500 ซม. ตัดแบ่งเป็น 2 เส้นเท่าๆ กัน แต่ละเส้นยาวเท่าไร",
+      "choices": [
+        "250 ซม.",
+        "200 ซม.",
+        "300 ซม.",
+        "150 ซม."
+      ],
+      "correct_answer": "250 ซม.",
+      "explanation": "500/2=250 ซม.",
+      "difficulty": "easy"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

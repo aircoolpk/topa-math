@@ -1,0 +1,381 @@
+{
+  "quiz_id": "gcd_lcm_ep_q002",
+  "title_th": "ห.ร.ม. และ ค.ร.น.",
+  "title_en": "GCD and LCM",
+  "status": "needs_review",
+  "variant_id": "gcd_lcm_ep_q002",
+  "variant_title_th": "ห.ร.ม. และ ค.ร.น.",
+  "variant_title_en": "GCD and LCM",
+  "questions": [
+    {
+      "question_id": "gcd_lcm__q002_m01",
+      "type": "multiple_choice",
+      "question_th": "ค.ร.น. ของ 9 และ 12 คือเท่าไร",
+      "question_en": "What is the LCM of 9 and 12?",
+      "choices_th": [
+        "18",
+        "24",
+        "36",
+        "48"
+      ],
+      "choices_en": [
+        "18",
+        "24",
+        "36",
+        "48"
+      ],
+      "correct_answer_th": "36",
+      "correct_answer_en": "36",
+      "answer_th": "36",
+      "answer_en": "36",
+      "answer": "36",
+      "explanation_th": "9×4=36, 12×3=36",
+      "explanation_en": "9×4=36, 12×3=36",
+      "difficulty": "easy",
+      "choices": [
+        "18",
+        "24",
+        "36",
+        "48"
+      ],
+      "correct_answer": "36",
+      "question_text": "ค.ร.น. ของ 9 และ 12 คือเท่าไร",
+      "explanation": "9×4=36, 12×3=36",
+      "question_text_th": "ค.ร.น. ของ 9 และ 12 คือเท่าไร",
+      "question_text_en": "What is the LCM of 9 and 12?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m02",
+      "type": "multiple_choice",
+      "question_th": "ห.ร.ม. ของ 20 และ 30 คือเท่าไร",
+      "question_en": "What is the GCD of 20 and 30?",
+      "choices_th": [
+        "2",
+        "5",
+        "10",
+        "15"
+      ],
+      "choices_en": [
+        "2",
+        "5",
+        "10",
+        "15"
+      ],
+      "correct_answer_th": "10",
+      "correct_answer_en": "10",
+      "answer_th": "10",
+      "answer_en": "10",
+      "answer": "10",
+      "explanation_th": "The GCD of 20 and 30 is 10",
+      "explanation_en": "The GCD of 20 and 30 is 10",
+      "difficulty": "easy",
+      "choices": [
+        "2",
+        "5",
+        "10",
+        "15"
+      ],
+      "correct_answer": "10",
+      "question_text": "ห.ร.ม. ของ 20 และ 30 คือเท่าไร",
+      "explanation": "The GCD of 20 and 30 is 10",
+      "question_text_th": "ห.ร.ม. ของ 20 และ 30 คือเท่าไร",
+      "question_text_en": "What is the GCD of 20 and 30?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m03",
+      "type": "multiple_choice",
+      "question_th": "ผ้า 2 ผืน ยาว 15 เมตร และ 25 เมตร ตัดเป็นผ้าย่อยเท่าๆ กันโดยยาวที่สุด จะตัดได้กี่ผืน",
+      "question_en": "Two pieces of fabric are 15 m and 25 m long. They are cut into equal pieces as long as possible. How many pieces can be made?",
+      "choices_th": [
+        "3",
+        "5",
+        "8",
+        "10"
+      ],
+      "choices_en": [
+        "3",
+        "5",
+        "8",
+        "10"
+      ],
+      "correct_answer_th": "8",
+      "correct_answer_en": "8",
+      "answer_th": "8",
+      "answer_en": "8",
+      "answer": "8",
+      "explanation_th": "GCD = 5 m, total 15+25=40 m, 40÷5=8 pieces",
+      "explanation_en": "GCD = 5 m, total 15+25=40 m, 40÷5=8 pieces",
+      "difficulty": "hard",
+      "choices": [
+        "3",
+        "5",
+        "8",
+        "10"
+      ],
+      "correct_answer": "8",
+      "question_text": "ผ้า 2 ผืน ยาว 15 เมตร และ 25 เมตร ตัดเป็นผ้าย่อยเท่าๆ กันโดยยาวที่สุด จะตัดได้กี่ผืน",
+      "explanation": "GCD = 5 m, total 15+25=40 m, 40÷5=8 pieces",
+      "question_text_th": "ผ้า 2 ผืน ยาว 15 เมตร และ 25 เมตร ตัดเป็นผ้าย่อยเท่าๆ กันโดยยาวที่สุด จะตัดได้กี่ผืน",
+      "question_text_en": "Two pieces of fabric are 15 m and 25 m long. They are cut into equal pieces as long as possible. How many pieces can be made?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m04",
+      "type": "multiple_choice",
+      "question_th": "กระดาษ A4 กว้าง 21 ซม. และ B4 กว้าง 28 ซม. พับครึ่งให้กว้างเท่ากันโดยกว้างที่สุด กว้างเท่าไร",
+      "question_en": "A4 paper is 21 cm wide and B4 paper is 28 cm wide. They are folded to have equal width. What is the largest possible equal width?",
+      "choices_th": [
+        "3 cm",
+        "5 cm",
+        "7 cm",
+        "14 cm"
+      ],
+      "choices_en": [
+        "3 cm",
+        "5 cm",
+        "7 cm",
+        "14 cm"
+      ],
+      "correct_answer_th": "7 cm",
+      "correct_answer_en": "7 cm",
+      "answer_th": "7 cm",
+      "answer_en": "7 cm",
+      "answer": "7 cm",
+      "explanation_th": "GCD of 21 and 28 is 7 cm",
+      "explanation_en": "GCD of 21 and 28 is 7 cm",
+      "difficulty": "medium",
+      "choices": [
+        "3 cm",
+        "5 cm",
+        "7 cm",
+        "14 cm"
+      ],
+      "correct_answer": "7 cm",
+      "question_text": "กระดาษ A4 กว้าง 21 ซม. และ B4 กว้าง 28 ซม. พับครึ่งให้กว้างเท่ากันโดยกว้างที่สุด กว้างเท่าไร",
+      "explanation": "GCD of 21 and 28 is 7 cm",
+      "question_text_th": "กระดาษ A4 กว้าง 21 ซม. และ B4 กว้าง 28 ซม. พับครึ่งให้กว้างเท่ากันโดยกว้างที่สุด กว้างเท่าไร",
+      "question_text_en": "A4 paper is 21 cm wide and B4 paper is 28 cm wide. They are folded to have equal width. What is the largest possible equal width?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m05",
+      "type": "multiple_choice",
+      "question_th": "แบ่งนักเรียน 24 คน และครู 8 คน เป็นกลุ่มเท่าๆ กัน กลุ่มใหญ่ที่สุดมีกี่คน",
+      "question_en": "24 students and 8 teachers are divided into equal groups. What is the largest possible group size?",
+      "choices_th": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "choices_en": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct_answer_th": "8",
+      "correct_answer_en": "8",
+      "answer_th": "8",
+      "answer_en": "8",
+      "answer": "8",
+      "explanation_th": "GCD of 24 and 8 is 8",
+      "explanation_en": "GCD of 24 and 8 is 8",
+      "difficulty": "medium",
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct_answer": "8",
+      "question_text": "แบ่งนักเรียน 24 คน และครู 8 คน เป็นกลุ่มเท่าๆ กัน กลุ่มใหญ่ที่สุดมีกี่คน",
+      "explanation": "GCD of 24 and 8 is 8",
+      "question_text_th": "แบ่งนักเรียน 24 คน และครู 8 คน เป็นกลุ่มเท่าๆ กัน กลุ่มใหญ่ที่สุดมีกี่คน",
+      "question_text_en": "24 students and 8 teachers are divided into equal groups. What is the largest possible group size?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m06",
+      "type": "multiple_choice",
+      "question_th": "ค.ร.น. ของ 6, 15 และ 21 คือเท่าไร",
+      "question_en": "What is the LCM of 6, 15, and 21?",
+      "choices_th": [
+        "30",
+        "42",
+        "105",
+        "210"
+      ],
+      "choices_en": [
+        "30",
+        "42",
+        "105",
+        "210"
+      ],
+      "correct_answer_th": "210",
+      "correct_answer_en": "210",
+      "answer_th": "210",
+      "answer_en": "210",
+      "answer": "210",
+      "explanation_th": "6×35=210, 15×14=210, 21×10=210",
+      "explanation_en": "6×35=210, 15×14=210, 21×10=210",
+      "difficulty": "hard",
+      "choices": [
+        "30",
+        "42",
+        "105",
+        "210"
+      ],
+      "correct_answer": "210",
+      "question_text": "ค.ร.น. ของ 6, 15 และ 21 คือเท่าไร",
+      "explanation": "6×35=210, 15×14=210, 21×10=210",
+      "question_text_th": "ค.ร.น. ของ 6, 15 และ 21 คือเท่าไร",
+      "question_text_en": "What is the LCM of 6, 15, and 21?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m07",
+      "type": "multiple_choice",
+      "question_th": "ปลา 18 ตัว และกุ้ง 24 ตัว แบ่งเป็นตู้เท่าๆ กันโดยไม่ให้เหลือ ตู้ใหญ่ที่สุดมีกี่ตัว",
+      "question_en": "18 fish and 24 shrimp are placed in identical tanks with none left. What is the largest possible tank size?",
+      "choices_th": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "choices_en": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "correct_answer_th": "6",
+      "correct_answer_en": "6",
+      "answer_th": "6",
+      "answer_en": "6",
+      "answer": "6",
+      "explanation_th": "GCD of 18 and 24 is 6",
+      "explanation_en": "GCD of 18 and 24 is 6",
+      "difficulty": "easy",
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "correct_answer": "6",
+      "question_text": "ปลา 18 ตัว และกุ้ง 24 ตัว แบ่งเป็นตู้เท่าๆ กันโดยไม่ให้เหลือ ตู้ใหญ่ที่สุดมีกี่ตัว",
+      "explanation": "GCD of 18 and 24 is 6",
+      "question_text_th": "ปลา 18 ตัว และกุ้ง 24 ตัว แบ่งเป็นตู้เท่าๆ กันโดยไม่ให้เหลือ ตู้ใหญ่ที่สุดมีกี่ตัว",
+      "question_text_en": "18 fish and 24 shrimp are placed in identical tanks with none left. What is the largest possible tank size?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m08",
+      "type": "multiple_choice",
+      "question_th": "ไม้ 2 อัน ยาว 30 ซม. และ 45 ซม. ตัดเป็นท่อนเท่าๆ กันยาวที่สุด ท่อนละกี่เซนติเมตร",
+      "question_en": "Two sticks are 30 cm and 45 cm long. They are cut into equal sticks as long as possible. How long is each piece?",
+      "choices_th": [
+        "5 cm",
+        "10 cm",
+        "15 cm",
+        "30 cm"
+      ],
+      "choices_en": [
+        "5 cm",
+        "10 cm",
+        "15 cm",
+        "30 cm"
+      ],
+      "correct_answer_th": "15 cm",
+      "correct_answer_en": "15 cm",
+      "answer_th": "15 cm",
+      "answer_en": "15 cm",
+      "answer": "15 cm",
+      "explanation_th": "GCD of 30 and 45 is 15 cm",
+      "explanation_en": "GCD of 30 and 45 is 15 cm",
+      "difficulty": "medium",
+      "choices": [
+        "5 cm",
+        "10 cm",
+        "15 cm",
+        "30 cm"
+      ],
+      "correct_answer": "15 cm",
+      "question_text": "ไม้ 2 อัน ยาว 30 ซม. และ 45 ซม. ตัดเป็นท่อนเท่าๆ กันยาวที่สุด ท่อนละกี่เซนติเมตร",
+      "explanation": "GCD of 30 and 45 is 15 cm",
+      "question_text_th": "ไม้ 2 อัน ยาว 30 ซม. และ 45 ซม. ตัดเป็นท่อนเท่าๆ กันยาวที่สุด ท่อนละกี่เซนติเมตร",
+      "question_text_en": "Two sticks are 30 cm and 45 cm long. They are cut into equal sticks as long as possible. How long is each piece?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m09",
+      "type": "multiple_choice",
+      "question_th": "รถบัสวิ่งทุก 12 นาที และรถไฟวิ่งทุก 18 นาที ถ้าเริ่มพร้อมกัน เวลาใดจะพบกันอีกครั้ง",
+      "question_en": "A bus comes every 12 minutes and a train every 18 minutes. If they start together, when will they meet again?",
+      "choices_th": [
+        "24 min",
+        "36 min",
+        "48 min",
+        "54 min"
+      ],
+      "choices_en": [
+        "24 min",
+        "36 min",
+        "48 min",
+        "54 min"
+      ],
+      "correct_answer_th": "36 min",
+      "correct_answer_en": "36 min",
+      "answer_th": "36 min",
+      "answer_en": "36 min",
+      "answer": "36 min",
+      "explanation_th": "LCM of 12 and 18 is 36 minutes",
+      "explanation_en": "LCM of 12 and 18 is 36 minutes",
+      "difficulty": "hard",
+      "choices": [
+        "24 min",
+        "36 min",
+        "48 min",
+        "54 min"
+      ],
+      "correct_answer": "36 min",
+      "question_text": "รถบัสวิ่งทุก 12 นาที และรถไฟวิ่งทุก 18 นาที ถ้าเริ่มพร้อมกัน เวลาใดจะพบกันอีกครั้ง",
+      "explanation": "LCM of 12 and 18 is 36 minutes",
+      "question_text_th": "รถบัสวิ่งทุก 12 นาที และรถไฟวิ่งทุก 18 นาที ถ้าเริ่มพร้อมกัน เวลาใดจะพบกันอีกครั้ง",
+      "question_text_en": "A bus comes every 12 minutes and a train every 18 minutes. If they start together, when will they meet again?"
+    },
+    {
+      "question_id": "gcd_lcm__q002_m10",
+      "type": "multiple_choice",
+      "question_th": "ห.ร.ม. ของ 27 และ 45 คือเท่าไร",
+      "question_en": "What is the GCD of 27 and 45?",
+      "choices_th": [
+        "3",
+        "5",
+        "9",
+        "15"
+      ],
+      "choices_en": [
+        "3",
+        "5",
+        "9",
+        "15"
+      ],
+      "correct_answer_th": "9",
+      "correct_answer_en": "9",
+      "answer_th": "9",
+      "answer_en": "9",
+      "answer": "9",
+      "explanation_th": "The GCD of 27 and 45 is 9",
+      "explanation_en": "The GCD of 27 and 45 is 9",
+      "difficulty": "easy",
+      "choices": [
+        "3",
+        "5",
+        "9",
+        "15"
+      ],
+      "correct_answer": "9",
+      "question_text": "ห.ร.ม. ของ 27 และ 45 คือเท่าไร",
+      "explanation": "The GCD of 27 and 45 is 9",
+      "question_text_th": "ห.ร.ม. ของ 27 และ 45 คือเท่าไร",
+      "question_text_en": "What is the GCD of 27 and 45?"
+    }
+  ]
+}

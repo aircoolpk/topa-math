@@ -64,7 +64,47 @@
       "content": "07:30 + 45 + 25 + 20 = 90 minutes = 1 hour 30 minutes",
       "data": {
         "expression": "07:30 + 45 min + 25 min + 20 min = 09:00",
-        "content_en": "07:30 + 45 + 25 + 20 = 90 minutes = 1 hour 30 minutes"
+        "content_en": "07:30 + 45 + 25 + 20 = 90 minutes = 1 hour 30 minutes",
+        "operations": [
+          {
+            "op": "+",
+            "a": 30,
+            "b": 45,
+            "result": 75
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract Symbol — Time Add",
+      "operation": "add",
+      "data": {
+        "timeline": "07:00+45+25+20=08:30",
+        "description_en": "Timeline showing 07:00 + 45 minutes + 25 minutes + 20 minutes = 08:30",
+        "steps": [
+          {
+            "time": "07:00",
+            "action": "start",
+            "duration": 0
+          },
+          {
+            "time": "07:45",
+            "action": "add 45 min",
+            "duration": 45
+          },
+          {
+            "time": "08:10",
+            "action": "add 25 min",
+            "duration": 25
+          },
+          {
+            "time": "08:30",
+            "action": "add 20 min",
+            "duration": 20
+          }
+        ],
+        "total_duration_min": 90
       }
     },
     {

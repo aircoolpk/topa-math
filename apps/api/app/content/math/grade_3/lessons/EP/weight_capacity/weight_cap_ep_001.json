@@ -51,7 +51,37 @@
         "b": 320,
         "result": 530,
         "unit": "g",
-        "content_en": "850-320=530 g | 850 g = 0.850 kg"
+        "content_en": "850-320=530 g | 850 g = 0.850 kg",
+        "operations": [
+          {
+            "op": "-",
+            "a": 850,
+            "b": 320,
+            "result": 530
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract Symbols",
+      "content": "850 - 320 = 530 g → 850 g = 0.850 kg",
+      "data": {
+        "operation": "subtract and convert",
+        "subtract_step": {
+          "expression": "850 - 320 = 530",
+          "a": 850,
+          "b": 320,
+          "result": 530,
+          "unit": "g"
+        },
+        "convert_step": {
+          "from_value": 850,
+          "from_unit": "g",
+          "to_value": 0.85,
+          "to_unit": "kg",
+          "conversion_factor": 1000
+        }
       }
     },
     {

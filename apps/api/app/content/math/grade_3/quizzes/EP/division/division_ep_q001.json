@@ -1,0 +1,179 @@
+{
+  "lesson_id": "division_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "div_ep_q001_e01",
+      "question_text": "Case 1: Lin has 12 meatballs and shares them equally among 3 friends. How many meatballs does each friend get?",
+      "question_text_th": "สถานการณ์ที่ 1: ลินมีลูกชิ้น 12 ลูก แบ่งให้เพื่อน 3 คนเท่าๆ กัน แต่ละคนได้กี่ลูก",
+      "choices": [
+        "4 meatballs",
+        "3 meatballs",
+        "5 meatballs",
+        "6 meatballs"
+      ],
+      "correct_answer": "4 meatballs",
+      "answer": "12 divided by 3 = 4 meatballs",
+      "explanation": "12 divided by 3 = 4 meatballs",
+      "explanation_th": "12 ÷ 3 = 4 ลูก",
+      "difficulty": "easy",
+      "hint_th": "Divide meatballs by number of friends"
+    },
+    {
+      "question_id": "div_ep_q001_e02",
+      "question_text": "Case 2: A teacher has 18 pencils and shares them equally among 6 students. How many pencils does each student get?",
+      "question_text_th": "สถานการณ์ที่ 2: ครูมีดินสอ 18 แท่ง แบ่งให้นักเรียน 6 คนเท่าๆ กัน แต่ละคนได้กี่แท่ง",
+      "choices": [
+        "3 pencils",
+        "4 pencils",
+        "2 pencils",
+        "5 pencils"
+      ],
+      "correct_answer": "3 pencils",
+      "answer": "18 divided by 6 = 3 pencils",
+      "explanation": "18 divided by 6 = 3 pencils",
+      "explanation_th": "18 ÷ 6 = 3 แท่ง",
+      "difficulty": "easy",
+      "hint_th": "Divide pencils by number of students"
+    },
+    {
+      "question_id": "div_ep_q001_e03",
+      "question_text": "Case 3: Lin has 15 meters of cloth and cuts it into 5 equal pieces. How long is each piece?",
+      "question_text_th": "สถานการณ์ที่ 3: ผ้า 15 เมตร ตัดแบ่งเป็น 5 ชิ้นเท่าๆ กัน แต่ละชิ้นยาวกี่เมตร",
+      "choices": [
+        "3 meters",
+        "4 meters",
+        "2 meters",
+        "5 meters"
+      ],
+      "correct_answer": "3 meters",
+      "answer": "15 divided by 5 = 3 meters",
+      "explanation": "15 divided by 5 = 3 meters",
+      "explanation_th": "15 ÷ 5 = 3 เมตร",
+      "difficulty": "easy",
+      "hint_th": "Divide cloth length by number of pieces"
+    },
+    {
+      "question_id": "div_ep_q001_m01",
+      "question_text": "Case 4: Lin has 56 baht and buys notebooks at 8 baht each. How many notebooks can she buy?",
+      "question_text_th": "สถานการณ์ที่ 4: ลินมีเงิน 56 บาท ซื้อสมุดเล่มละ 8 บาท ซื้อสมุดได้กี่เล่ม",
+      "choices": [
+        "7 notebooks",
+        "6 notebooks",
+        "8 notebooks",
+        "5 notebooks"
+      ],
+      "correct_answer": "7 notebooks",
+      "answer": "56 divided by 8 = 7 notebooks",
+      "explanation": "56 divided by 8 = 7 notebooks",
+      "explanation_th": "56 ÷ 8 = 7 เล่ม",
+      "difficulty": "medium",
+      "hint_th": "Divide money by price per notebook"
+    },
+    {
+      "question_id": "div_ep_q001_m02",
+      "question_text": "Case 5: Mum has 45 candies and shares them equally among 5 children. How many does each child get and how many are left?",
+      "question_text_th": "สถานการณ์ที่ 5: มัมบะมีขนม 45 ชิ้น แบ่งให้เด็ก 5 คนเท่าๆ กัน แต่ละคนได้กี่ชิ้น และเหลือกี่ชิ้น",
+      "choices": [
+        "9 each, 0 left",
+        "8 each, 1 left",
+        "9 each, 1 left",
+        "10 each, 0 left"
+      ],
+      "correct_answer": "9 each, 0 left",
+      "answer": "45 divided by 5 = 9, remainder 0",
+      "explanation": "45 divided by 5 = 9, remainder 0",
+      "explanation_th": "45 ÷ 5 = 9 ชิ้น, เหลือ 0",
+      "difficulty": "medium",
+      "hint_th": "45 divided by 5 = 9, no remainder"
+    },
+    {
+      "question_id": "div_ep_q001_m03",
+      "question_text": "Case 6: A mango orchard collects 72 mangoes and puts them in boxes with 8 mangoes each. How many boxes are needed?",
+      "question_text_th": "สถานการณ์ที่ 6: สวนมะม่วงเก็บมะม่วงได้ 72 ผล แบ่งใส่ลังละ 8 ผล ต้องใช้ลังกี่ใบ",
+      "choices": [
+        "9 boxes",
+        "8 boxes",
+        "10 boxes",
+        "7 boxes"
+      ],
+      "correct_answer": "9 boxes",
+      "answer": "72 divided by 8 = 9 boxes",
+      "explanation": "72 divided by 8 = 9 boxes",
+      "explanation_th": "72 ÷ 8 = 9 ใบ",
+      "difficulty": "medium",
+      "hint_th": "Divide mangoes by mangoes per box"
+    },
+    {
+      "question_id": "div_ep_q001_m04",
+      "question_text": "Case 7: Lin has a rope 63 meters long and cuts it into pieces of 7 meters each. How many pieces does she get?",
+      "question_text_th": "สถานการณ์ที่ 7: ลินมีเชือกยาว 63 เมตร ตัดแบ่งเป็นชิ้นละ 7 เมตร จะได้กี่ชิ้น",
+      "choices": [
+        "9 pieces",
+        "8 pieces",
+        "7 pieces",
+        "10 pieces"
+      ],
+      "correct_answer": "9 pieces",
+      "answer": "63 divided by 7 = 9 pieces",
+      "explanation": "63 divided by 7 = 9 pieces",
+      "explanation_th": "63 ÷ 7 = 9 ชิ้น",
+      "difficulty": "medium",
+      "hint_th": "Divide rope length by length per piece"
+    },
+    {
+      "question_id": "div_ep_q001_h01",
+      "question_text": "Case 8: Lin has 85 baht and buys pens at 9 baht each. How many pens can she buy and how much money is left?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินมีเงิน 85 บาท ซื้อปากกาด้ามละ 9 บาท ซื้อได้กี่ด้าม และเหลือเงินกี่บาท",
+      "choices": [
+        "9 pens, 4 baht left",
+        "9 pens, 5 baht left",
+        "10 pens, 0 baht left",
+        "8 pens, 4 baht left"
+      ],
+      "correct_answer": "9 pens, 4 baht left",
+      "answer": "85 divided by 9 = 9 remainder 4 (9x9=81, 85-81=4)",
+      "explanation": "85 divided by 9 = 9 remainder 4 (9x9=81, 85-81=4)",
+      "explanation_th": "85 ÷ 9 = 9 เศษ 4 บาท",
+      "difficulty": "hard",
+      "hint_th": "85 ÷ 9 = 9 remainder 4"
+    },
+    {
+      "question_id": "div_ep_q001_h02",
+      "question_text": "Case 9: A factory produces 96 items and puts 6 items in each box. How many boxes are there? And if they give them to 8 shops equally, how many boxes per shop?",
+      "question_text_th": "สถานการณ์ที่ 9: โรงงานผลิตของได้ 96 ชิ้น บรรจุกล่องละ 6 ชิ้น จะได้กี่กล่อง และถ้าแจกจ่ายให้ร้านค้า 8 ร้านเท่าๆ กัน ร้านละกี่กล่อง",
+      "choices": [
+        "16 boxes, 2 per shop",
+        "15 boxes, 2 per shop",
+        "16 boxes, 3 per shop",
+        "14 boxes, 2 per shop"
+      ],
+      "correct_answer": "16 boxes, 2 per shop",
+      "answer": "Boxes: 96÷6=16, Per shop: 16÷8=2",
+      "explanation": "Boxes: 96÷6=16, Per shop: 16÷8=2",
+      "explanation_th": "กล่อง 16 ใบ, แจก 8 ร้าน ร้านละ 2 ใบ",
+      "difficulty": "hard",
+      "hint_th": "Find boxes first, then divide by 8"
+    },
+    {
+      "question_id": "div_ep_q001_h03",
+      "question_text": "Case 10: Lin has 100 baht and buys books at 12 baht each. How many books can she buy and how much money is left?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินมีเงิน 100 บาท ซื้อหนังสือเล่มละ 12 บาท ซื้อได้กี่เล่ม และเหลือเงินกี่บาท",
+      "choices": [
+        "8 books, 4 baht left",
+        "8 books, 5 baht left",
+        "9 books, 0 baht left",
+        "7 books, 4 baht left"
+      ],
+      "correct_answer": "8 books, 4 baht left",
+      "answer": "100 divided by 12 = 8 remainder 4 (8x12=96, 100-96=4)",
+      "explanation": "100 divided by 12 = 8 remainder 4 (8x12=96, 100-96=4)",
+      "explanation_th": "100 ÷ 12 = 8 เศษ 4 บาท",
+      "difficulty": "hard",
+      "hint_th": "100 ÷ 12 = 8 remainder 4"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

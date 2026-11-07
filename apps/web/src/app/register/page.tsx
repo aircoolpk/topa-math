@@ -4,10 +4,11 @@ import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Camera, Check, ImagePlus, Trash2, Upload } from 'lucide-react'
-import { TopaMascot } from '@/components/brand/TopaBrand'
+import { TopaLogo } from '@/components/brand/TopaBrand'
 import { ReferralCapture } from '@/components/referral/ReferralCapture'
 import { getStoredReferralToken } from '@/lib/referral'
 import { apiClient } from '@/lib/api-client'
+import { buildApiUrl } from '@/lib/public-env'
 import { useAuthStore } from '@/store/auth'
 import type { ChildOut } from '@/lib/api/children'
 
@@ -154,11 +155,11 @@ export default function RegisterPage() {
     try {
       const form = new FormData()
       form.append('file', photoFile)
-      const apiBase = (process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8001').replace(/\/$/, '')
       const token = localStorage.getItem('access_token')
-      const res = await fetch(`${apiBase}/me/students/${childId}/avatar`, {
+      const res = await fetch(buildApiUrl(`/me/students/${childId}/avatar`), {
         method: 'POST',
         headers: token ? { Authorization: `Bearer ${token}` } : undefined,
+        credentials: 'include',
         body: form,
       })
       if (!res.ok) {
@@ -235,8 +236,7 @@ export default function RegisterPage() {
         <div className="mx-auto w-full max-w-3xl">
           <div className="mb-4 text-center">
             <Link href="/" className="inline-flex items-center gap-2">
-              <TopaMascot size="md" />
-              <span className="text-2xl font-extrabold text-gray-900">TOPA Math</span>
+              <TopaLogo size="lg" />
             </Link>
           </div>
 

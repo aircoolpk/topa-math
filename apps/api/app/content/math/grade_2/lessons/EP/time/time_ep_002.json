@@ -1,0 +1,195 @@
+{
+  "variant_id": "time_ep_002",
+  "variant_title_th": "เวลา",
+  "variant_title_en": "Time",
+  "status": "needs_review",
+  "title_th": "เวลา",
+  "title_en": "Time",
+  "story_theme_th": "A shop opens at 8 o'clock in the morning and closes at 5 o'clock in the afternoon. How many hours is the shop open? If the shop takes a 1-hour lunch break, how many hours does the shop actually work?",
+  "helper_tip": "Finding elapsed time = Closing time - Opening time. Use subtraction of time.",
+  "think_story_th": "Open: 8:00 to 17:00 = 9 hours, Minus break: 9 - 1 = 8 hours",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A shop opens at 8 o'clock in the morning and closes at 5 o'clock in the afternoon. How many hours is the shop open? If the shop takes a 1-hour lunch break, how many hours does the shop actually work?",
+      "data": {
+        "content_th": "A shop opens at 8 o'clock in the morning and closes at 5 o'clock in the afternoon. How many hours is the shop open? If the shop takes a 1-hour lunch break, how many hours does the shop actually work?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Open: 8:00 to 17:00 = 9 hours, Minus break: 9 - 1 = 8 hours",
+      "data": {
+        "content_th": "Open: 8:00 to 17:00 = 9 hours, Minus break: 9 - 1 = 8 hours"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Open 08:00",
+            "value": 8,
+            "display": "08:00",
+            "color": "#4ECDC4",
+            "width_pct": 47
+          },
+          {
+            "label": "Close 17:00",
+            "value": 17,
+            "display": "17:00",
+            "color": "#45B7D1",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Break",
+            "value": 1,
+            "display": "1 hour",
+            "color": "#FF6B6B",
+            "width_pct": 6
+          },
+          {
+            "label": "Working time",
+            "value": 8,
+            "display": "8 hours",
+            "color": "#C7F464",
+            "width_pct": 47,
+            "is_result": true
+          }
+        ],
+        "unit": "hours"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find total open time",
+            "expression": "17:00 - 8:00 = 9 hours",
+            "a": 17,
+            "b": 8,
+            "res": 9,
+            "op": "-",
+            "formula": {
+              "display": "17 - 8 = 9",
+              "a": 17,
+              "b": 8,
+              "result": 9,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "17:00",
+              "b_display": "8:00",
+              "result_display": "9 hours",
+              "operation": "subtract"
+            },
+            "story_connection": "17:00 - 8:00 = 9 hours"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find actual working time",
+            "expression": "9 - 1 = 8 hours",
+            "a": 9,
+            "b": 1,
+            "res": 8,
+            "op": "-",
+            "formula": {
+              "display": "9 - 1 = 8",
+              "a": 9,
+              "b": 1,
+              "result": 8,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "9",
+              "b_display": "1",
+              "result_display": "8",
+              "operation": "subtract"
+            },
+            "story_connection": "9 - 1 = 8 hours"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "17 - 8 = 9 and 9 - 1 = 8",
+      "content": "17 - 8 = 9 and 9 - 1 = 8",
+      "data": {
+        "expression": "17 - 8 = 9 and 9 - 1 = 8",
+        "content_th": "17 - 8 = 9 and 9 - 1 = 8",
+        "operations": [
+          {
+            "op": "-",
+            "a": 17,
+            "b": 8,
+            "result": 9
+          },
+          {
+            "op": "-",
+            "a": 9,
+            "b": 1,
+            "result": 8
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A movie starts at 13:00 and ends at 15:30. How long is the movie?",
+      "choices": [
+        "2 hr 30 min",
+        "3 hr 30 min",
+        "2 hr 15 min",
+        "3 hr"
+      ],
+      "correct_answer": "2 hr 30 min",
+      "explanation": "15:30 - 13:00 = 2 hr 30 min",
+      "data": {
+        "question": "A movie starts at 13:00 and ends at 15:30. How long is the movie?",
+        "choices": [
+          "2 hr 30 min",
+          "3 hr 30 min",
+          "2 hr 15 min",
+          "3 hr"
+        ],
+        "correct_answer": "2 hr 30 min",
+        "explanation": "15:30 - 13:00 = 2 hr 30 min"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

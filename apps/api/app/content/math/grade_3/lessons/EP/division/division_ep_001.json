@@ -41,17 +41,136 @@
       }
     },
     {
+      "type": "model_diagram",
+      "title": "Bar Model — Part-Whole",
+      "description": "Part-Whole Bar Model: 30 cookies shared into 6 boxes = 5 per box",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "divide",
+        "whole": 30,
+        "num_groups": 6,
+        "items_per_group": 5,
+        "unit": "cookies",
+        "bars": [
+          {
+            "label": "Total Cookies",
+            "value": 30,
+            "display": "30 cookies",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "6 Boxes",
+            "value": 6,
+            "display": "6 boxes",
+            "color": "#4ECDC4",
+            "width_pct": 50
+          },
+          {
+            "label": "Per Box",
+            "value": 5,
+            "display": "5 cookies/box",
+            "color": "#45B7D1",
+            "width_pct": 50
+          }
+        ]
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model — Comparison",
+      "description": "Comparison Bar Model: Total cookies vs Cookies per box",
+      "model_type": "comparison_bar",
+      "data": {
+        "model_type": "comparison_bar",
+        "comparison_label": "Comparison: Total vs Per box",
+        "comparison_type": "difference",
+        "unit": "cookies",
+        "bars": [
+          {
+            "label": "Total Cookies",
+            "value": 30,
+            "display": "30 cookies",
+            "color": "#96CEB4",
+            "width_pct": 100
+          },
+          {
+            "label": "Per Box",
+            "value": 5,
+            "display": "5 cookies",
+            "color": "#45B7D1",
+            "width_pct": 17
+          }
+        ],
+        "comparison_result": "25",
+        "relationship": "30 cookies divided into 6 boxes with 5 per box → 30 ÷ 6 = 5"
+      }
+    },
+    {
       "type": "number_sentence",
       "title": "Number Sentence",
       "expression": "30/6=5 boxes",
-      "content": "30/6=5 | 30 divided by 6 = 5",
+      "content": "30/6=5 | 30 divided by 30 ÷ 6 = 5",
       "data": {
         "expression": "30/6=5 boxes",
         "dividend": 30,
         "divisor": 6,
         "quotient": 5,
         "unit": "boxes",
-        "content_en": "30/6=5 | 30 divided by 6 = 5"
+        "content_en": "30/6=5 | 30 divided by 30 ÷ 6 = 5",
+        "operations": [
+          {
+            "op": "/",
+            "a": 30,
+            "b": 6,
+            "result": 5
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turn Pictures into Math Symbols)",
+      "description": "When students see the equal sharing picture, they write it as a division number sentence.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Write the division number sentence",
+            "expression": "30 ÷ 6 = 5",
+            "formula": {
+              "display": "30 ÷ 30 ÷ 6 = 5 boxes",
+              "dividend": 30,
+              "divisor": 6,
+              "quotient": 5,
+              "operation": "division"
+            },
+            "column_calculation": {
+              "display": "30 ÷ 30 ÷ 6 = 5",
+              "operation": "division"
+            },
+            "story_connection": "From the bar model: 30 cookies shared into 6 boxes → 5 cookies per box"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Check using multiplication",
+            "expression": "5 × 6 = 30",
+            "formula": {
+              "display": "5 × 6 = 30 ✓",
+              "dividend": 30,
+              "divisor": 6,
+              "quotient": 5,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "5 × 6 = 30 ✓",
+              "operation": "multiply"
+            },
+            "story_connection": "Check: 5 cookies × 6 boxes = 30 cookies total"
+          }
+        ]
       }
     },
     {

@@ -1,0 +1,215 @@
+{
+  "variant_id": "geometry_shapes_ep_001",
+  "variant_title_en": "Geometry Shapes",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Geometry Shapes",
+  "title_th": "",
+  "story_theme_en": "Lin draws 3 squares and 2 circles on a paper. How many shapes does Lin draw in total?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Squares: 3. Circles: 2. Total: 3 + 2 = 5 shapes.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin draws 3 squares and 2 circles on a paper. How many shapes does Lin draw in total?",
+      "data": {
+        "content_en": "Lin draws 3 squares and 2 circles on a paper. How many shapes does Lin draw in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Squares: 3. Circles: 2. Total: 3 + 2 = 5 shapes.",
+      "data": {
+        "content_en": "Squares: 3. Circles: 2. Total: 3 + 2 = 5 shapes."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "shape_count",
+      "data": {
+        "model_type": "shape_count",
+        "operation": "add",
+        "unit": "shapes",
+        "bars": [
+          {
+            "label": "Squares",
+            "value": 3,
+            "display": "3 squares",
+            "color": "#96CEB4",
+            "width_pct": 60
+          },
+          {
+            "label": "Circles",
+            "value": 2,
+            "display": "2 circles",
+            "color": "#A8D8EA",
+            "width_pct": 40
+          },
+          {
+            "label": "Total",
+            "value": 5,
+            "display": "5 shapes",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "3 + 2 = 5",
+            "formula": {
+              "display": "3 + 2 = 5",
+              "a": 3,
+              "b": 2,
+              "result": 5,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}3&&\\\\\\\\ + 2&&\\\\\\\\ \\\\hline 5&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "3",
+              "b_display": "2",
+              "result_display": "5",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 3 + 2 = 5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "3 + 2 = 5",
+      "content": "3 + 2 = 5",
+      "data": {
+        "expression": "3 + 2 = 5",
+        "operations": [
+          {
+            "op": "+",
+            "a": 3,
+            "b": 2,
+            "result": 5
+          }
+        ],
+        "content_en": "3 + 2 = 5"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Mali draws 4 triangles and 3 rectangles. How many shapes does she draw?",
+      "choices": [
+        "7 shapes",
+        "12 shapes",
+        "4 shapes",
+        "15 shapes"
+      ],
+      "correct_answer": "7 shapes",
+      "explanation": "4 + 3 = 7 shapes",
+      "data": {
+        "question": "Mali draws 4 triangles and 3 rectangles. How many shapes does she draw?",
+        "choices": [
+          "7 shapes",
+          "12 shapes",
+          "4 shapes",
+          "15 shapes"
+        ],
+        "correct_answer": "7 shapes",
+        "explanation": "4 + 3 = 7 shapes"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "square",
+      "th": "สี่เหลี่ยมจัตุรัส",
+      "definition_en": "A shape with 4 equal sides."
+    },
+    {
+      "en": "circle",
+      "th": "วงกลม",
+      "definition_en": "A round shape with no corners."
+    },
+    {
+      "en": "triangle",
+      "th": "สามเหลี่ยม",
+      "definition_en": "A shape with 3 sides."
+    },
+    {
+      "en": "rectangle",
+      "th": "สี่เหลี่ยมผืนผ้า",
+      "definition_en": "A shape with 4 sides and 4 right angles."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Lin draws 3 squares and 2 circles on a paper. How many shapes does Lin draw in t...",
+      "solution_en": "3 + 2 = 5"
+    }
+  ],
+  "questions": []
+}

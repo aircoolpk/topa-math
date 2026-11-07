@@ -1,0 +1,194 @@
+{
+  "variant_id": "volume_measurement_ep_002",
+  "variant_title_th": "การวัดปริมาตร",
+  "variant_title_en": "Volume Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดปริมาตร",
+  "title_en": "Volume Measurement",
+  "story_theme_th": "Book wants to mix fruit juice using 350 milliliters of orange juice, 250 milliliters of watermelon juice, and 400 milliliters of water. How many liters and milliliters of fruit juice can Book make?",
+  "helper_tip": "Add up the volumes and then convert milliliters to liters.",
+  "think_story_th": "350 + 250 + 400 = 1,000 mL = 1 liter",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Book wants to mix fruit juice using 350 milliliters of orange juice, 250 milliliters of watermelon juice, and 400 milliliters of water. How many liters and milliliters of fruit juice can Book make?",
+      "data": {
+        "content_th": "Book wants to mix fruit juice using 350 milliliters of orange juice, 250 milliliters of watermelon juice, and 400 milliliters of water. How many liters and milliliters of fruit juice can Book make?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "350 + 250 + 400 = 1,000 mL = 1 liter",
+      "data": {
+        "content_th": "350 + 250 + 400 = 1,000 mL = 1 liter"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Orange juice",
+            "value": 350,
+            "display": "350 mL",
+            "color": "#4ECDC4",
+            "width_pct": 35
+          },
+          {
+            "label": "Watermelon",
+            "value": 250,
+            "display": "250 mL",
+            "color": "#45B7D1",
+            "width_pct": 25
+          },
+          {
+            "label": "Water",
+            "value": 400,
+            "display": "400 mL",
+            "color": "#96CEB4",
+            "width_pct": 40
+          },
+          {
+            "label": "Total",
+            "value": 1000,
+            "display": "1,000 mL",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ],
+        "unit": "mL"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add all volumes",
+            "expression": "350 + 250 + 400 = 1,000 mL",
+            "a": 350,
+            "b": 650,
+            "res": 1000,
+            "op": "+",
+            "formula": {
+              "display": "350+250+400=1,000",
+              "a": 350,
+              "b": 650,
+              "result": 1000,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "350",
+              "b_display": "650",
+              "result_display": "1,000",
+              "operation": "add"
+            },
+            "story_connection": "350 + 250 + 400 = 1,000 mL"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Convert to liters",
+            "expression": "1,000 mL = 1 liter",
+            "a": 1000,
+            "b": 1000,
+            "res": 1,
+            "op": "/",
+            "formula": {
+              "display": "1,000 / 1,000 = 1",
+              "a": 1000,
+              "b": 1000,
+              "result": 1,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "1,000",
+              "b_display": "1,000",
+              "result_display": "1",
+              "operation": "divide"
+            },
+            "story_connection": "1,000 mL = 1 liter"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "350 + 250 + 400 = 1,000 mL = 1 liter",
+      "content": "350 + 250 + 400 = 1,000 mL = 1 liter",
+      "data": {
+        "expression": "350 + 250 + 400 = 1,000 mL = 1 liter",
+        "content_th": "350 + 250 + 400 = 1,000 mL = 1 liter",
+        "operations": [
+          {
+            "op": "+",
+            "a": 350,
+            "b": 650,
+            "result": 1000
+          },
+          {
+            "op": "/",
+            "a": 1000,
+            "b": 1000,
+            "result": 1
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Honey is 750 milliliters. Mixed with 250 milliliters of water. What is the total volume?",
+      "choices": [
+        "1,000 mL",
+        "900 mL",
+        "1,100 mL",
+        "800 mL"
+      ],
+      "correct_answer": "1,000 mL",
+      "explanation": "750+250=1,000 mL",
+      "data": {
+        "question": "Honey is 750 milliliters. Mixed with 250 milliliters of water. What is the total volume?",
+        "choices": [
+          "1,000 mL",
+          "900 mL",
+          "1,100 mL",
+          "800 mL"
+        ],
+        "correct_answer": "1,000 mL",
+        "explanation": "750+250=1,000 mL"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -1,0 +1,188 @@
+{
+  "variant_id": "length_measurement_ep_001",
+  "variant_title_th": "การวัดความยาว",
+  "variant_title_en": "Length Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดความยาว",
+  "title_en": "Length Measurement",
+  "story_theme_th": "Ai measured a pencil against a ruler. The pencil is 18 centimeters long. The notebook is 25 centimeters long. How much longer is the notebook than the pencil? And if Ai puts 4 pencils in a row, how long will they be?",
+  "helper_tip": "Use a ruler or measuring tape for length. Units are centimeters (cm) or meters (m).",
+  "think_story_th": "Difference: 25 - 18 = 7 cm, 4 pencils: 18 x 4 = 72 cm",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Ai measured a pencil against a ruler. The pencil is 18 centimeters long. The notebook is 25 centimeters long. How much longer is the notebook than the pencil? And if Ai puts 4 pencils in a row, how long will they be?",
+      "data": {
+        "content_th": "Ai measured a pencil against a ruler. The pencil is 18 centimeters long. The notebook is 25 centimeters long. How much longer is the notebook than the pencil? And if Ai puts 4 pencils in a row, how long will they be?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Difference: 25 - 18 = 7 cm, 4 pencils: 18 x 4 = 72 cm",
+      "data": {
+        "content_th": "Difference: 25 - 18 = 7 cm, 4 pencils: 18 x 4 = 72 cm"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Pencil",
+            "value": 18,
+            "display": "18 cm",
+            "color": "#4ECDC4",
+            "width_pct": 72
+          },
+          {
+            "label": "Notebook",
+            "value": 25,
+            "display": "25 cm",
+            "color": "#45B7D1",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Difference",
+            "value": 7,
+            "display": "7 cm",
+            "color": "#C7F464",
+            "width_pct": 28,
+            "is_remainder": true
+          }
+        ],
+        "unit": "cm"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find the difference",
+            "expression": "25 - 18 = 7",
+            "a": 25,
+            "b": 18,
+            "res": 7,
+            "op": "-",
+            "formula": {
+              "display": "25 - 18 = 7",
+              "a": 25,
+              "b": 18,
+              "result": 7,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "25",
+              "b_display": "18",
+              "result_display": "7",
+              "operation": "subtract"
+            },
+            "story_connection": "25 - 18 = 7 cm"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find length of 4 pencils",
+            "expression": "18 x 4 = 72",
+            "a": 18,
+            "b": 4,
+            "res": 72,
+            "op": "*",
+            "formula": {
+              "display": "18 x 4 = 72",
+              "a": 18,
+              "b": 4,
+              "result": 72,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "18",
+              "b_display": "4",
+              "result_display": "72",
+              "operation": "multiply"
+            },
+            "story_connection": "18 x 4 = 72 cm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "25 - 18 = 7 and 18 x 4 = 72",
+      "content": "25 - 18 = 7 and 18 x 4 = 72",
+      "data": {
+        "expression": "25 - 18 = 7 and 18 x 4 = 72",
+        "content_th": "25 - 18 = 7 and 18 x 4 = 72",
+        "operations": [
+          {
+            "op": "-",
+            "a": 25,
+            "b": 18,
+            "result": 7
+          },
+          {
+            "op": "*",
+            "a": 18,
+            "b": 4,
+            "result": 72
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A ribbon is 35 centimeters long. A paper is 48 centimeters long. How much shorter is the ribbon?",
+      "choices": [
+        "13 cm",
+        "23 cm",
+        "33 cm",
+        "43 cm"
+      ],
+      "correct_answer": "13 cm",
+      "explanation": "48 - 35 = 13 cm",
+      "data": {
+        "question": "A ribbon is 35 centimeters long. A paper is 48 centimeters long. How much shorter is the ribbon?",
+        "choices": [
+          "13 cm",
+          "23 cm",
+          "33 cm",
+          "43 cm"
+        ],
+        "correct_answer": "13 cm",
+        "explanation": "48 - 35 = 13 cm"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

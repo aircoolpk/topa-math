@@ -1,0 +1,133 @@
+{
+  "quiz_id": "length_measurement_ep_q001",
+  "topic_key": "length_measurement",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz length_measurement_ep_q001",
+  "title_en": "Quiz length_measurement_ep_q001",
+  "questions": [
+    {
+      "question": "1 meter equals how many centimeters?",
+      "choices": [
+        "100 cm",
+        "10 cm",
+        "1,000 cm",
+        "50 cm"
+      ],
+      "correct_answer": "100 cm",
+      "explanation": "1 m = 100 cm",
+      "difficulty": "easy"
+    },
+    {
+      "question": "25 cm + 38 cm = ?",
+      "choices": [
+        "63 cm",
+        "53 cm",
+        "73 cm",
+        "43 cm"
+      ],
+      "correct_answer": "63 cm",
+      "explanation": "25+38=63 cm",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A notebook is 28 cm long. A pencil is 15 cm long. How much longer is the notebook?",
+      "choices": [
+        "13 cm",
+        "23 cm",
+        "33 cm",
+        "43 cm"
+      ],
+      "correct_answer": "13 cm",
+      "explanation": "28-15=13 cm",
+      "difficulty": "easy"
+    },
+    {
+      "question": "2 meters 75 centimeters = ? cm",
+      "choices": [
+        "275 cm",
+        "207 cm",
+        "2,075 cm",
+        "257 cm"
+      ],
+      "correct_answer": "275 cm",
+      "explanation": "2 m = 200 cm, 200+75=275 cm",
+      "difficulty": "medium"
+    },
+    {
+      "question": "1 m 50 cm - 75 cm = ?",
+      "choices": [
+        "75 cm",
+        "65 cm",
+        "85 cm",
+        "55 cm"
+      ],
+      "correct_answer": "75 cm",
+      "explanation": "150-75=75 cm",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A ruler is 30 cm long. Put 4 together. How long?",
+      "choices": [
+        "120 cm",
+        "110 cm",
+        "130 cm",
+        "100 cm"
+      ],
+      "correct_answer": "120 cm",
+      "explanation": "30x4=120 cm",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A ribbon is 45 cm. A paper is 68 cm. How much shorter is the ribbon?",
+      "choices": [
+        "23 cm",
+        "33 cm",
+        "13 cm",
+        "43 cm"
+      ],
+      "correct_answer": "23 cm",
+      "explanation": "68-45=23 cm",
+      "difficulty": "easy"
+    },
+    {
+      "question": "1 m 90 cm and 2 m 10 cm differ by how much?",
+      "choices": [
+        "20 cm",
+        "30 cm",
+        "10 cm",
+        "40 cm"
+      ],
+      "correct_answer": "20 cm",
+      "explanation": "190 cm and 210 cm differ by 20 cm",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Fabric 3 m 20 cm. Cut 1 m 85 cm. How much is left?",
+      "choices": [
+        "135 cm",
+        "145 cm",
+        "125 cm",
+        "155 cm"
+      ],
+      "correct_answer": "135 cm",
+      "explanation": "320-185=135 cm",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A rope is 5 m. Cut 2 m 75 cm. How much is left?",
+      "choices": [
+        "225 cm",
+        "235 cm",
+        "215 cm",
+        "325 cm"
+      ],
+      "correct_answer": "225 cm",
+      "explanation": "500-275=225 cm",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

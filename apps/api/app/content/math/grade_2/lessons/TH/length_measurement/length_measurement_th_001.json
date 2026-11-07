@@ -1,0 +1,188 @@
+{
+  "variant_id": "length_measurement_th_001",
+  "variant_title_th": "การวัดความยาว",
+  "variant_title_en": "Length Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดความยาว",
+  "title_en": "Length Measurement",
+  "story_theme_th": "อ้ายวัดความยาวดินสอเทียบกับไม้บรรทัด ดินสอยาว 18 เซนติเมตร สมุดยาว 25 เซนติเมตร สมุดยาวกว่าดินสอกี่เซนติเมตร และถ้าเอาดินสอวางต่อกัน 4 เส้น จะยาวเท่าไร",
+  "helper_tip": "การวัดความยาวใช้ไม้บรรทัดหรือสายวัด หน่วยที่ใช้เป็นเซนติเมตร (ซม.) หรือเมตร (ม.)",
+  "think_story_th": "สมุดยาวกว่าดินสอ: 25 - 18 = 7 ซม., ดินสอ 4 เส้น: 18 x 4 = 72 ซม.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "อ้ายวัดความยาวดินสอเทียบกับไม้บรรทัด ดินสอยาว 18 เซนติเมตร สมุดยาว 25 เซนติเมตร สมุดยาวกว่าดินสอกี่เซนติเมตร และถ้าเอาดินสอวางต่อกัน 4 เส้น จะยาวเท่าไร",
+      "data": {
+        "content_th": "อ้ายวัดความยาวดินสอเทียบกับไม้บรรทัด ดินสอยาว 18 เซนติเมตร สมุดยาว 25 เซนติเมตร สมุดยาวกว่าดินสอกี่เซนติเมตร และถ้าเอาดินสอวางต่อกัน 4 เส้น จะยาวเท่าไร"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "สมุดยาวกว่าดินสอ: 25 - 18 = 7 ซม., ดินสอ 4 เส้น: 18 x 4 = 72 ซม.",
+      "data": {
+        "content_th": "สมุดยาวกว่าดินสอ: 25 - 18 = 7 ซม., ดินสอ 4 เส้น: 18 x 4 = 72 ซม."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "ดินสอ",
+            "value": 18,
+            "display": "18 ซม.",
+            "color": "#4ECDC4",
+            "width_pct": 72
+          },
+          {
+            "label": "สมุด",
+            "value": 25,
+            "display": "25 ซม.",
+            "color": "#45B7D1",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "ส่วนต่าง",
+            "value": 7,
+            "display": "7 ซม.",
+            "color": "#C7F464",
+            "width_pct": 28,
+            "is_remainder": true
+          }
+        ],
+        "unit": "ซม."
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: หาความต่าง",
+            "expression": "25 - 18 = 7",
+            "a": 25,
+            "b": 18,
+            "res": 7,
+            "op": "-",
+            "formula": {
+              "display": "25 - 18 = 7",
+              "a": 25,
+              "b": 18,
+              "result": 7,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "25",
+              "b_display": "18",
+              "result_display": "7",
+              "operation": "subtract"
+            },
+            "story_connection": "25 - 18 = 7 ซม."
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาความยาว 4 เส้น",
+            "expression": "18 x 4 = 72",
+            "a": 18,
+            "b": 4,
+            "res": 72,
+            "op": "*",
+            "formula": {
+              "display": "18 x 4 = 72",
+              "a": 18,
+              "b": 4,
+              "result": 72,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "18",
+              "b_display": "4",
+              "result_display": "72",
+              "operation": "multiply"
+            },
+            "story_connection": "18 x 4 = 72 ซม."
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "25 - 18 = 7 และ 18 x 4 = 72",
+      "content": "25 - 18 = 7 และ 18 x 4 = 72",
+      "data": {
+        "expression": "25 - 18 = 7 และ 18 x 4 = 72",
+        "content_th": "25 - 18 = 7 และ 18 x 4 = 72",
+        "operations": [
+          {
+            "op": "-",
+            "a": 25,
+            "b": 18,
+            "result": 7
+          },
+          {
+            "op": "*",
+            "a": 18,
+            "b": 4,
+            "result": 72
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ริ้บบินยาว 35 เซนติเมตร กระดาษยาว 48 เซนติเมตร ริ้บบินสั้นกว่ากระดาษกี่เซนติเมตร",
+      "choices": [
+        "13 ซม.",
+        "23 ซม.",
+        "33 ซม.",
+        "43 ซม."
+      ],
+      "correct_answer": "13 ซม.",
+      "explanation": "48 - 35 = 13 ซม.",
+      "data": {
+        "question": "ริ้บบินยาว 35 เซนติเมตร กระดาษยาว 48 เซนติเมตร ริ้บบินสั้นกว่ากระดาษกี่เซนติเมตร",
+        "choices": [
+          "13 ซม.",
+          "23 ซม.",
+          "33 ซม.",
+          "43 ซม."
+        ],
+        "correct_answer": "13 ซม.",
+        "explanation": "48 - 35 = 13 ซม."
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

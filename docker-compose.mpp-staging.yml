@@ -1,0 +1,67 @@
+name: topa-mpp-staging
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: topa_mpp_staging
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${MPP_STAGING_DB_PASSWORD:?staging DB password required}
+    volumes:
+      - mpp-staging-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres -d topa_mpp_staging']
+      interval: 5s
+      retries: 12
+  api:
+    image: topamath-mpp-staging-api:local
+    build:
+      context: ./apps/api
+    environment:
+      ENVIRONMENT: mpp_staging
+      DATABASE_URL: postgresql+psycopg://postgres:${MPP_STAGING_DB_PASSWORD}@db:5432/topa_mpp_staging
+      JWT_SECRET: ${MPP_STAGING_JWT_SECRET:?staging JWT secret required}
+      CORS_ORIGINS: http://localhost:3004,http://127.0.0.1:3004
+      FRONTEND_BASE_URL: http://localhost:3004
+      BACKEND_BASE_URL: http://localhost:8004
+      AUTH_COOKIE_SECURE: 'false'
+      SMTP_HOST: ''
+      MPP_API_BASE_URL: ${MPP_API_BASE_URL:-https://staging-api.mmerchant.cc/api/v1}
+      MPP_PAYMENT_BASE_URL: ${MPP_PAYMENT_BASE_URL:-https://staging-pay.mmerchant.cc}
+      MPP_PROJECT_API_KEY: ${MPP_PROJECT_API_KEY:-}
+      MPP_WEBHOOK_SIGNING_SECRET: ${MPP_WEBHOOK_SIGNING_SECRET:-}
+      MPP_EXPECTED_MERCHANT_NAME: ${MPP_EXPECTED_MERCHANT_NAME:-}
+      MPP_EXPECTED_PROJECT_NAME: ${MPP_EXPECTED_PROJECT_NAME:-}
+      MPP_AMOUNT_UNIT: ${MPP_AMOUNT_UNIT:-}
+      PAYMENT_GATEWAY_DEFAULT: ${PAYMENT_GATEWAY_DEFAULT:-stripe}
+      MPP_CHECKOUT_ENABLED: ${MPP_CHECKOUT_ENABLED:-false}
+      MPP_CHECKOUT_TEST_USER_IDS: ${MPP_CHECKOUT_TEST_USER_IDS:-}
+    ports:
+      - '127.0.0.1:8004:8001'
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD-SHELL', 'python -c "import urllib.request; urllib.request.urlopen(\"http://127.0.0.1:8001/health\", timeout=3)"']
+      interval: 10s
+      retries: 12
+  web:
+    image: topamath-mpp-staging-web:local
+    build:
+      context: ./apps/web
+      args:
+        NEXT_PUBLIC_APP_ENV: local
+        NEXT_PUBLIC_API_BASE_URL: http://localhost:8004
+        NEXT_PUBLIC_APP_URL: http://localhost:3004
+        INTERNAL_API_BASE_URL: http://api:8001
+    environment:
+      NEXT_PUBLIC_APP_ENV: local
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8004
+      NEXT_PUBLIC_APP_URL: http://localhost:3004
+      INTERNAL_API_BASE_URL: http://api:8001
+    ports:
+      - '127.0.0.1:3004:3000'
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  mpp-staging-data:

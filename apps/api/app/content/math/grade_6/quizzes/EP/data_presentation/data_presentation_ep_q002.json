@@ -1,0 +1,381 @@
+{
+  "quiz_id": "data_presentation_ep_q002",
+  "title_th": "การนำเสนอข้อมูล",
+  "title_en": "Data Presentation",
+  "status": "needs_review",
+  "variant_id": "data_presentation_ep_q002",
+  "variant_title_th": "การนำเสนอข้อมูล",
+  "variant_title_en": "Data Presentation",
+  "questions": [
+    {
+      "question_id": "data_pre_q002_m01",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 4, 6, 8, 10, 12 ค่าเฉลี่ยเท่าไร",
+      "question_en": "Data: 4, 6, 8, 10, 12. What is the mean?",
+      "choices_th": [
+        "7",
+        "8",
+        "8.5",
+        "7.5"
+      ],
+      "choices_en": [
+        "7",
+        "8",
+        "8.5",
+        "7.5"
+      ],
+      "correct_answer_th": "8",
+      "correct_answer_en": "8",
+      "answer_th": "8",
+      "answer_en": "8",
+      "answer": "8",
+      "explanation_th": "(4+6+8+10+12)÷5=40÷5=8",
+      "explanation_en": "(4+6+8+10+12)÷5=40÷5=8",
+      "difficulty": "easy",
+      "choices": [
+        "7",
+        "8",
+        "8.5",
+        "7.5"
+      ],
+      "correct_answer": "8",
+      "question_text": "ข้อมูล: 4, 6, 8, 10, 12 ค่าเฉลี่ยเท่าไร",
+      "explanation": "(4+6+8+10+12)÷5=40÷5=8",
+      "question_text_th": "ข้อมูล: 4, 6, 8, 10, 12 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Data: 4, 6, 8, 10, 12. What is the mean?"
+    },
+    {
+      "question_id": "data_pre_q002_m02",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 11, 13, 15, 17, 19 ค่าเฉลี่ยเท่าไร",
+      "question_en": "Data: 11, 13, 15, 17, 19. What is the mean?",
+      "choices_th": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "choices_en": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct_answer_th": "15",
+      "correct_answer_en": "15",
+      "answer_th": "15",
+      "answer_en": "15",
+      "answer": "15",
+      "explanation_th": "(11+13+15+17+19)÷5=75÷5=15",
+      "explanation_en": "(11+13+15+17+19)÷5=75÷5=15",
+      "difficulty": "easy",
+      "choices": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct_answer": "15",
+      "question_text": "ข้อมูล: 11, 13, 15, 17, 19 ค่าเฉลี่ยเท่าไร",
+      "explanation": "(11+13+15+17+19)÷5=75÷5=15",
+      "question_text_th": "ข้อมูล: 11, 13, 15, 17, 19 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Data: 11, 13, 15, 17, 19. What is the mean?"
+    },
+    {
+      "question_id": "data_pre_q002_m03",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 2, 4, 6, 8, 10, 12 มัธยฐานเท่าไร",
+      "question_en": "Data: 2, 4, 6, 8, 10, 12. What is the median?",
+      "choices_th": [
+        "6",
+        "7",
+        "6.5",
+        "7.5"
+      ],
+      "choices_en": [
+        "6",
+        "7",
+        "6.5",
+        "7.5"
+      ],
+      "correct_answer_th": "7",
+      "correct_answer_en": "7",
+      "answer_th": "7",
+      "answer_en": "7",
+      "answer": "7",
+      "explanation_th": "Median = (6+8)÷2=7",
+      "explanation_en": "Median = (6+8)÷2=7",
+      "difficulty": "easy",
+      "choices": [
+        "6",
+        "7",
+        "6.5",
+        "7.5"
+      ],
+      "correct_answer": "7",
+      "question_text": "ข้อมูล: 2, 4, 6, 8, 10, 12 มัธยฐานเท่าไร",
+      "explanation": "Median = (6+8)÷2=7",
+      "question_text_th": "ข้อมูล: 2, 4, 6, 8, 10, 12 มัธยฐานเท่าไร",
+      "question_text_en": "Data: 2, 4, 6, 8, 10, 12. What is the median?"
+    },
+    {
+      "question_id": "data_pre_q002_m04",
+      "type": "multiple_choice",
+      "question_th": "น้ำหนัก 5 คน: 40, 45, 50, 55, 60 กก. ค่าเฉลี่ยเท่าไร",
+      "question_en": "Weights of 5 people: 40, 45, 50, 55, 60 kg. What is the mean weight?",
+      "choices_th": [
+        "48 kg",
+        "50 kg",
+        "52 kg",
+        "45 kg"
+      ],
+      "choices_en": [
+        "48 kg",
+        "50 kg",
+        "52 kg",
+        "45 kg"
+      ],
+      "correct_answer_th": "50 kg",
+      "correct_answer_en": "50 kg",
+      "answer_th": "50 kg",
+      "answer_en": "50 kg",
+      "answer": "50 kg",
+      "explanation_th": "(40+45+50+55+60)÷5=250÷5=50 kg",
+      "explanation_en": "(40+45+50+55+60)÷5=250÷5=50 kg",
+      "difficulty": "easy",
+      "choices": [
+        "48 kg",
+        "50 kg",
+        "52 kg",
+        "45 kg"
+      ],
+      "correct_answer": "50 kg",
+      "question_text": "น้ำหนัก 5 คน: 40, 45, 50, 55, 60 กก. ค่าเฉลี่ยเท่าไร",
+      "explanation": "(40+45+50+55+60)÷5=250÷5=50 kg",
+      "question_text_th": "น้ำหนัก 5 คน: 40, 45, 50, 55, 60 กก. ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Weights of 5 people: 40, 45, 50, 55, 60 kg. What is the mean weight?"
+    },
+    {
+      "question_id": "data_pre_q002_m05",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 22, 24, 26, 28, 30, 32, 34 มัธยฐานเท่าไร",
+      "question_en": "Data: 22, 24, 26, 28, 30, 32, 34. What is the median?",
+      "choices_th": [
+        "26",
+        "28",
+        "27",
+        "29"
+      ],
+      "choices_en": [
+        "26",
+        "28",
+        "27",
+        "29"
+      ],
+      "correct_answer_th": "28",
+      "correct_answer_en": "28",
+      "answer_th": "28",
+      "answer_en": "28",
+      "answer": "28",
+      "explanation_th": "Median = middle value = 28",
+      "explanation_en": "Median = middle value = 28",
+      "difficulty": "easy",
+      "choices": [
+        "26",
+        "28",
+        "27",
+        "29"
+      ],
+      "correct_answer": "28",
+      "question_text": "ข้อมูล: 22, 24, 26, 28, 30, 32, 34 มัธยฐานเท่าไร",
+      "explanation": "Median = middle value = 28",
+      "question_text_th": "ข้อมูล: 22, 24, 26, 28, 30, 32, 34 มัธยฐานเท่าไร",
+      "question_text_en": "Data: 22, 24, 26, 28, 30, 32, 34. What is the median?"
+    },
+    {
+      "question_id": "data_pre_q002_m06",
+      "type": "multiple_choice",
+      "question_th": "คะแนน: 60, 70, 80, 90, 100 ค่าเฉลี่ยเท่าไร",
+      "question_en": "Scores: 60, 70, 80, 90, 100. What is the mean?",
+      "choices_th": [
+        "70",
+        "75",
+        "80",
+        "85"
+      ],
+      "choices_en": [
+        "70",
+        "75",
+        "80",
+        "85"
+      ],
+      "correct_answer_th": "80",
+      "correct_answer_en": "80",
+      "answer_th": "80",
+      "answer_en": "80",
+      "answer": "80",
+      "explanation_th": "(60+70+80+90+100)÷5=400÷5=80",
+      "explanation_en": "(60+70+80+90+100)÷5=400÷5=80",
+      "difficulty": "easy",
+      "choices": [
+        "70",
+        "75",
+        "80",
+        "85"
+      ],
+      "correct_answer": "80",
+      "question_text": "คะแนน: 60, 70, 80, 90, 100 ค่าเฉลี่ยเท่าไร",
+      "explanation": "(60+70+80+90+100)÷5=400÷5=80",
+      "question_text_th": "คะแนน: 60, 70, 80, 90, 100 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Scores: 60, 70, 80, 90, 100. What is the mean?"
+    },
+    {
+      "question_id": "data_pre_q002_m07",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 3, 5, 7, 9, 11, 13, 15 มัธยฐานเท่าไร",
+      "question_en": "Data: 3, 5, 7, 9, 11, 13, 15. What is the median?",
+      "choices_th": [
+        "7",
+        "9",
+        "8",
+        "9.5"
+      ],
+      "choices_en": [
+        "7",
+        "9",
+        "8",
+        "9.5"
+      ],
+      "correct_answer_th": "9",
+      "correct_answer_en": "9",
+      "answer_th": "9",
+      "answer_en": "9",
+      "answer": "9",
+      "explanation_th": "Median = middle value = 9",
+      "explanation_en": "Median = middle value = 9",
+      "difficulty": "easy",
+      "choices": [
+        "7",
+        "9",
+        "8",
+        "9.5"
+      ],
+      "correct_answer": "9",
+      "question_text": "ข้อมูล: 3, 5, 7, 9, 11, 13, 15 มัธยฐานเท่าไร",
+      "explanation": "Median = middle value = 9",
+      "question_text_th": "ข้อมูล: 3, 5, 7, 9, 11, 13, 15 มัธยฐานเท่าไร",
+      "question_text_en": "Data: 3, 5, 7, 9, 11, 13, 15. What is the median?"
+    },
+    {
+      "question_id": "data_pre_q002_m08",
+      "type": "multiple_choice",
+      "question_th": "ยอดขาย 4 วัน: 80, 90, 110, 120 บาท ค่าเฉลี่ยเท่าไร",
+      "question_en": "Sales for 4 days: 80, 90, 110, 120 baht. What is the mean daily sales?",
+      "choices_th": [
+        "95 baht",
+        "100 baht",
+        "105 baht",
+        "90 baht"
+      ],
+      "choices_en": [
+        "95 baht",
+        "100 baht",
+        "105 baht",
+        "90 baht"
+      ],
+      "correct_answer_th": "100 baht",
+      "correct_answer_en": "100 baht",
+      "answer_th": "100 baht",
+      "answer_en": "100 baht",
+      "answer": "100 baht",
+      "explanation_th": "(80+90+110+120)÷4=400÷4=100 baht",
+      "explanation_en": "(80+90+110+120)÷4=400÷4=100 baht",
+      "difficulty": "easy",
+      "choices": [
+        "95 baht",
+        "100 baht",
+        "105 baht",
+        "90 baht"
+      ],
+      "correct_answer": "100 baht",
+      "question_text": "ยอดขาย 4 วัน: 80, 90, 110, 120 บาท ค่าเฉลี่ยเท่าไร",
+      "explanation": "(80+90+110+120)÷4=400÷4=100 baht",
+      "question_text_th": "ยอดขาย 4 วัน: 80, 90, 110, 120 บาท ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Sales for 4 days: 80, 90, 110, 120 baht. What is the mean daily sales?"
+    },
+    {
+      "question_id": "data_pre_q002_m09",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 5, 10, 15, 20, 25 ค่าเฉลี่ยเท่าไร",
+      "question_en": "Data: 5, 10, 15, 20, 25. What is the mean?",
+      "choices_th": [
+        "12",
+        "14",
+        "15",
+        "13"
+      ],
+      "choices_en": [
+        "12",
+        "14",
+        "15",
+        "13"
+      ],
+      "correct_answer_th": "15",
+      "correct_answer_en": "15",
+      "answer_th": "15",
+      "answer_en": "15",
+      "answer": "15",
+      "explanation_th": "(5+10+15+20+25)÷5=75÷5=15",
+      "explanation_en": "(5+10+15+20+25)÷5=75÷5=15",
+      "difficulty": "easy",
+      "choices": [
+        "12",
+        "14",
+        "15",
+        "13"
+      ],
+      "correct_answer": "15",
+      "question_text": "ข้อมูล: 5, 10, 15, 20, 25 ค่าเฉลี่ยเท่าไร",
+      "explanation": "(5+10+15+20+25)÷5=75÷5=15",
+      "question_text_th": "ข้อมูล: 5, 10, 15, 20, 25 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "Data: 5, 10, 15, 20, 25. What is the mean?"
+    },
+    {
+      "question_id": "data_pre_q002_m10",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 7, 9, 11, 13, 15, 17 มัธยฐานเท่าไร",
+      "question_en": "Data: 7, 9, 11, 13, 15, 17. What is the median?",
+      "choices_th": [
+        "11",
+        "12",
+        "13",
+        "11.5"
+      ],
+      "choices_en": [
+        "11",
+        "12",
+        "13",
+        "11.5"
+      ],
+      "correct_answer_th": "12",
+      "correct_answer_en": "12",
+      "answer_th": "12",
+      "answer_en": "12",
+      "answer": "12",
+      "explanation_th": "Median = (11+13)÷2=12",
+      "explanation_en": "Median = (11+13)÷2=12",
+      "difficulty": "easy",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "11.5"
+      ],
+      "correct_answer": "12",
+      "question_text": "ข้อมูล: 7, 9, 11, 13, 15, 17 มัธยฐานเท่าไร",
+      "explanation": "Median = (11+13)÷2=12",
+      "question_text_th": "ข้อมูล: 7, 9, 11, 13, 15, 17 มัธยฐานเท่าไร",
+      "question_text_en": "Data: 7, 9, 11, 13, 15, 17. What is the median?"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "lesson_id": "geometry_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "geo_ep_q002_e01",
+      "question_text": "Case 1: How many sides does an oval have? Does it have corners?",
+      "question_text_th": "สถานการณ์ที่ 1: รูปวงรีมีด้านกี่ด้าน และมีมุมหรือไม่",
+      "choices": [
+        "1 curved side, no corners",
+        "0 sides",
+        "2 curved sides",
+        "1 straight side, 1 corner"
+      ],
+      "correct_answer": "1 curved side, no corners",
+      "answer": "An oval has 1 curved side and no corners",
+      "explanation": "An oval has 1 curved side and no corners",
+      "explanation_th": "รูปวงรีมีด้านโค้ง 1 เส้นและไม่มีมุม",
+      "difficulty": "easy",
+      "hint_th": "An oval is one continuous curved line"
+    },
+    {
+      "question_id": "geo_ep_q002_e02",
+      "question_text": "Case 2: How many equal sides does a rhombus have?",
+      "question_text_th": "สถานการณ์ที่ 2: รูปสี่เหลี่ยมข้าวหลามตัดมีด้านเท่ากันกี่ด้าน",
+      "choices": [
+        "4 sides",
+        "3 sides",
+        "5 sides",
+        "6 sides"
+      ],
+      "correct_answer": "4 sides",
+      "answer": "A rhombus has 4 equal sides",
+      "explanation": "A rhombus has 4 equal sides",
+      "explanation_th": "สี่เหลี่ยมข้าวหลามตัดมีด้านเท่ากัน 4 ด้าน",
+      "difficulty": "easy",
+      "hint_th": "A rhombus has 4 equal sides"
+    },
+    {
+      "question_id": "geo_ep_q002_e03",
+      "question_text": "Case 3: How many sides does an ellipse have?",
+      "question_text_th": "สถานการณ์ที่ 3: รูปรี (วงรี) มีด้านกี่ด้าน",
+      "choices": [
+        "1 curved side",
+        "0 sides",
+        "2 curved sides",
+        "4 sides"
+      ],
+      "correct_answer": "1 curved side",
+      "answer": "An ellipse has 1 curved side (continuous)",
+      "explanation": "An ellipse has 1 curved side (continuous)",
+      "explanation_th": "รูปรีมีด้านโค้ง 1 เส้น",
+      "difficulty": "easy",
+      "hint_th": "An ellipse is one continuous curved line"
+    },
+    {
+      "question_id": "geo_ep_q002_m01",
+      "question_text": "Case 4: A regular octagon has equal sides. Each side is 6 cm. What is its perimeter?",
+      "question_text_th": "สถานการณ์ที่ 4: รูปแปดเหลี่ยมมีด้านเท่ากัน แต่ละด้านยาว 6 ซม. รอบรูปยาวเท่าไร",
+      "choices": [
+        "48 cm",
+        "42 cm",
+        "54 cm",
+        "36 cm"
+      ],
+      "correct_answer": "48 cm",
+      "answer": "Perimeter = 8 sides x 6 cm = 48 cm",
+      "explanation": "Perimeter = 8 sides x 6 cm = 48 cm",
+      "explanation_th": "รอบรูป = 8 ด้าน x 6 ซม. = 48 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Octagon = 8 sides"
+    },
+    {
+      "question_id": "geo_ep_q002_m02",
+      "question_text": "Case 5: A rectangle is 14 cm long and 5 cm wide. What is its perimeter?",
+      "question_text_th": "สถานการณ์ที่ 5: สี่เหลี่ยมผืนผ้ากว้าง 5 ซม. ยาว 14 ซม. รอบรูปยาวเท่าไร",
+      "choices": [
+        "38 cm",
+        "19 cm",
+        "70 cm",
+        "28 cm"
+      ],
+      "correct_answer": "38 cm",
+      "answer": "Perimeter = 2x(width+length) = 2x(5+14) = 38 cm",
+      "explanation": "Perimeter = 2x(width+length) = 2x(5+14) = 38 cm",
+      "explanation_th": "รอบรูป = 2x(5+14) = 38 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Perimeter = 2(width+length)"
+    },
+    {
+      "question_id": "geo_ep_q002_m03",
+      "question_text": "Case 6: An equilateral triangle has sides of 9 cm each. What is its perimeter?",
+      "question_text_th": "สถานการณ์ที่ 6: รูปสามเหลี่ยมด้านเท่าแต่ละด้านยาว 9 ซม. รอบรูปยาวเท่าไร",
+      "choices": [
+        "27 cm",
+        "18 cm",
+        "36 cm",
+        "12 cm"
+      ],
+      "correct_answer": "27 cm",
+      "answer": "Perimeter = 3 sides x 9 cm = 27 cm",
+      "explanation": "Perimeter = 3 sides x 9 cm = 27 cm",
+      "explanation_th": "รอบรูป = 3 ด้าน x 9 ซม. = 27 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Equilateral triangle = 3 equal sides"
+    },
+    {
+      "question_id": "geo_ep_q002_m04",
+      "question_text": "Case 7: Two squares with side 12 cm are placed side by side sharing one side. What is the total perimeter?",
+      "question_text_th": "สถานการณ์ที่ 7: สี่เหลี่ยมจัตุรัส 2 รูปด้าน 12 ซม. วางต่อกันด้านหนึ่งติดกัน รอบรูปรวมยาวเท่าไร",
+      "choices": [
+        "72 cm",
+        "60 cm",
+        "84 cm",
+        "96 cm"
+      ],
+      "correct_answer": "72 cm",
+      "answer": "Each square perimeter=48 cm. Two squares=96 cm minus shared side 2x12=24 cm → 96-24=72 cm",
+      "explanation": "Each square perimeter=48 cm. Two squares=96 cm minus shared side 2x12=24 cm → 96-24=72 cm",
+      "explanation_th": "รอบรวม = 72 ซม. (ลบด้านที่ติดกัน 2 ด้าน)",
+      "difficulty": "medium",
+      "hint_th": "Total perimeter = 2xperimeter_one - shared side"
+    },
+    {
+      "question_id": "geo_ep_q002_h01",
+      "question_text": "Case 8: Lin has a rope 56 cm long and forms it into a square. How long is each side?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินมีเชือกยาว 56 ซม. นำไปประกอบเป็นรูปสี่เหลี่ยมจัตุรัส ด้านหนึ่งยาวเท่าไร",
+      "choices": [
+        "14 cm",
+        "7 cm",
+        "28 cm",
+        "16 cm"
+      ],
+      "correct_answer": "14 cm",
+      "answer": "Perimeter = 56 cm = 4 sides. Each side = 56 ÷ 4 = 14 cm",
+      "explanation": "Perimeter = 56 cm = 4 sides. Each side = 56 ÷ 4 = 14 cm",
+      "explanation_th": "รอบรูป = 56 ซม. ÷ 4 ด้าน = 14 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Divide perimeter by 4 equal sides"
+    },
+    {
+      "question_id": "geo_ep_q002_h02",
+      "question_text": "Case 9: A sports field is 80 m long and 45 m wide. If someone runs around it 3 times, how many meters?",
+      "question_text_th": "สถานการณ์ที่ 9: สนามรูปสี่เหลี่ยมผืนผ้ายาว 80 ม. กว้าง 45 ม. ถ้าวิ่งรอบสนาม 3 รอบ วิ่งได้กี่เมตร",
+      "choices": [
+        "750 m",
+        "250 m",
+        "500 m",
+        "375 m"
+      ],
+      "correct_answer": "750 m",
+      "answer": "Perimeter = 2x(80+45) = 250 m. 3 laps = 250x3 = 750 m",
+      "explanation": "Perimeter = 2x(80+45) = 250 m. 3 laps = 250x3 = 750 m",
+      "explanation_th": "รอบ 1 รอบ = 250 ม. 3 รอบ = 750 ม.",
+      "difficulty": "hard",
+      "hint_th": "Perimeter=2(L+W) × laps"
+    },
+    {
+      "question_id": "geo_ep_q002_h03",
+      "question_text": "Case 10: Lin uses a 72 cm rope to make an equilateral triangle and has a square with sides of 12 cm. Which shape has longer sides and by how much?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินใช้เชือก 72 ซม. ทำเป็นรูปสามเหลี่ยมด้านเท่า และมีสี่เหลี่ยมจัตุรัสด้าน 12 ซม. ด้านใดยาวกว่าและต่างกันเท่าไร",
+      "choices": [
+        "Triangle is longer by 12 cm",
+        "Square is longer by 12 cm",
+        "Triangle is longer by 6 cm",
+        "They are equal"
+      ],
+      "correct_answer": "Triangle is longer by 12 cm",
+      "answer": "Triangle side = 72÷3 = 24 cm. Square side = 12 cm. Triangle is longer by 24-12 = 12 cm",
+      "explanation": "Triangle side = 72÷3 = 24 cm. Square side = 12 cm. Triangle is longer by 24-12 = 12 cm",
+      "explanation_th": "สามเหลี่ยมด้าน = 24 ซม., สี่เหลี่ยมด้าน = 12 ซม., ต่างกัน 12 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Find triangle side first, then compare with square side"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

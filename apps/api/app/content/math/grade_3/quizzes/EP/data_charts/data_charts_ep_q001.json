@@ -1,0 +1,179 @@
+{
+  "lesson_id": "data_charts_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "data_ep_q001_e01",
+      "question_text": "Case 1: In a pictograph, 1 picture = 5 students. Strawberries have 2 pictures. How many students like strawberries?",
+      "question_text_th": "สถานการณ์ที่ 1: แผนภูมิรูปภาพ 1 รูป = 5 คน สตรอว์เบอร์รีมี 2 รูป มีคนชอบสตรอว์เบอร์รีกี่คน",
+      "choices": [
+        "10 students",
+        "7 students",
+        "5 students",
+        "15 students"
+      ],
+      "correct_answer": "10 students",
+      "answer": "2 pictures x 5 students = 10 students",
+      "explanation": "2 pictures x 5 students = 10 students",
+      "explanation_th": "2 รูป x 5 คน = 10 คน",
+      "difficulty": "easy",
+      "hint_th": "Multiply pictures by 5"
+    },
+    {
+      "question_id": "data_ep_q001_e02",
+      "question_text": "Case 2: A bar chart shows test scores: Lin 80 points, Mali 95 points. Who scored higher?",
+      "question_text_th": "สถานการณ์ที่ 2: แผนภูมิแท่งแสดงคะแนนสอบ: ลิน 80 คะแนน มะลิ 95 คะแนน ใครได้คะแนนมากกว่า",
+      "choices": [
+        "Mali",
+        "Lin",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "correct_answer": "Mali",
+      "answer": "95 > 80 so Mali scored higher",
+      "explanation": "95 > 80 so Mali scored higher",
+      "explanation_th": "95 > 80 ดังนั้นมะลิได้คะแนนมากกว่า",
+      "difficulty": "easy",
+      "hint_th": "Compare the two numbers"
+    },
+    {
+      "question_id": "data_ep_q001_e03",
+      "question_text": "Case 3: Pictograph, 1 picture = 10 people. Grapes have 3 pictures, Oranges have 5 pictures. Total people?",
+      "question_text_th": "สถานการณ์ที่ 3: แผนภูมิรูปภาพ 1 รูป = 10 คน องุ่นมี 3 รูป และส้มมี 5 รูป รวมกี่คน",
+      "choices": [
+        "80 people",
+        "50 people",
+        "70 people",
+        "30 people"
+      ],
+      "correct_answer": "80 people",
+      "answer": "Grapes: 3x10=30, Oranges: 5x10=50, Total = 80",
+      "explanation": "Grapes: 3x10=30, Oranges: 5x10=50, Total = 80",
+      "explanation_th": "องุ่น 3x10=30 + ส้ม 5x10=50 = 80 คน",
+      "difficulty": "easy",
+      "hint_th": "Multiply each then add"
+    },
+    {
+      "question_id": "data_ep_q001_m01",
+      "question_text": "Case 4: Pictograph, 1 picture = 8 students. Oranges=4, Bananas=6, Strawberries=3. Total?",
+      "question_text_th": "สถานการณ์ที่ 4: แผนภูมิรูปภาพ 1 รูป = 8 คน ส้มมี 4 รูป กล้วยมี 6 รูป สตรอเบอร์รีมี 3 รูป รวมกี่คน",
+      "choices": [
+        "104 students",
+        "96 students",
+        "88 students",
+        "112 students"
+      ],
+      "correct_answer": "104 students",
+      "answer": "Oranges 4x8=32 + Bananas 6x8=48 + Strawberries 3x8=24 = 104",
+      "explanation": "Oranges 4x8=32 + Bananas 6x8=48 + Strawberries 3x8=24 = 104",
+      "explanation_th": "ส้ม 4x8=32 + กล้วย 6x8=48 + สตรอ 3x8=24 = 104 คน",
+      "difficulty": "medium",
+      "hint_th": "Multiply each then add all three"
+    },
+    {
+      "question_id": "data_ep_q001_m02",
+      "question_text": "Case 5: Bar chart shows monthly sales: Jan 40 items, Feb 55 items, Mar 35 items. Total 3-month sales?",
+      "question_text_th": "สถานการณ์ที่ 5: แผนภูมิแท่งแสดงยอดขายรายเดือน: ม.ค. 40 ชิ้น, ก.พ. 55 ชิ้น, มี.ค. 35 ชิ้น ยอดขายรวม 3 เดือน",
+      "choices": [
+        "130 items",
+        "120 items",
+        "140 items",
+        "135 items"
+      ],
+      "correct_answer": "130 items",
+      "answer": "40 + 55 + 35 = 130 items",
+      "explanation": "40 + 55 + 35 = 130 items",
+      "explanation_th": "40 + 55 + 35 = 130 ชิ้น",
+      "difficulty": "medium",
+      "hint_th": "Add three months"
+    },
+    {
+      "question_id": "data_ep_q001_m03",
+      "question_text": "Case 6: Pictograph, 1 picture = 5 people. Oranges=6, Bananas=4, Grapes=5, Mangoes=3. Which fruit has exactly 20 people?",
+      "question_text_th": "สถานการณ์ที่ 6: แผนภูมิรูปภาพ 1 รูป = 5 คน มีผลไม้ 4 ชนิด: ส้ม 6 รูป, กล้วย 4 รูป, องุ่น 5 รูป, มะม่วง 3 รูป ผลไม้ชนิดใดได้ 20 คน",
+      "choices": [
+        "Bananas",
+        "Oranges",
+        "Grapes",
+        "Mangoes"
+      ],
+      "correct_answer": "Bananas",
+      "answer": "Oranges: 6x5=30, Bananas: 4x5=20 ← 20, Grapes: 5x5=25, Mangoes: 3x5=15 → Bananas have 20",
+      "explanation": "Oranges: 6x5=30, Bananas: 4x5=20 ← 20, Grapes: 5x5=25, Mangoes: 3x5=15 → Bananas have 20",
+      "explanation_th": "ส้ม=30, กล้วย=20, องุ่น=25, มะม่วง=15 → กล้วยได้ 20 คน",
+      "difficulty": "medium",
+      "hint_th": "Multiply each fruit by 5"
+    },
+    {
+      "question_id": "data_ep_q001_m04",
+      "question_text": "Case 7: Bar chart shows temperature: Mon 28°C, Tue 31°C, Wed 26°C, Thu 33°C. Which day was hottest?",
+      "question_text_th": "สถานการณ์ที่ 7: แผนภูมิแท่งแสดงอุณหภูมิ: จันทร์ 28°C, อังคาร 31°C, พุธ 26°C, พฤหัส 33°C วันใดร้อนที่สุด",
+      "choices": [
+        "Thursday",
+        "Tuesday",
+        "Monday",
+        "All equal"
+      ],
+      "correct_answer": "Thursday",
+      "answer": "33°C is the highest temperature → Thursday is hottest",
+      "explanation": "33°C is the highest temperature → Thursday is hottest",
+      "explanation_th": "33°C เป็นค่าสูงสุด → พฤหัสบดีร้อนที่สุด",
+      "difficulty": "medium",
+      "hint_th": "Find the highest value"
+    },
+    {
+      "question_id": "data_ep_q001_h01",
+      "question_text": "Case 8: Pictograph, 1 picture = 5 people. Oranges=7, Bananas=5, Grapes=6 pictures. If one person is chosen randomly, what is the probability they like oranges?",
+      "question_text_th": "สถานการณ์ที่ 8: แผนภูมิรูปภาพ 1 รูป = 5 คน ส้ม=7, กล้วย=5, องุ่น=6 รูป ความน่าจะเป็นที่ชอบส้ม",
+      "choices": [
+        "7/18 or 35/90",
+        "7/20",
+        "35/100",
+        "5/18"
+      ],
+      "correct_answer": "7/18 or 35/90",
+      "answer": "Oranges=7x5=35, Bananas=5x5=25, Grapes=6x5=30, Total=90 → P=35/90=7/18",
+      "explanation": "Oranges=7x5=35, Bananas=5x5=25, Grapes=6x5=30, Total=90 → P=35/90=7/18",
+      "explanation_th": "ส้ม=35, กล้วย=25, องุ่น=30, รวม=90 → 35/90=7/18",
+      "difficulty": "hard",
+      "hint_th": "Count total people first then find ratio"
+    },
+    {
+      "question_id": "data_ep_q001_h02",
+      "question_text": "Case 9: Bar chart shows students liking sports: Football 45, Swimming 30, Basketball 25, Table tennis 20. Total students?",
+      "question_text_th": "สถานการณ์ที่ 9: แผนภูมิแท่งแสดงจำนวนนักเรียนที่ชอบกีฬา: ฟุตบอล 45, ว่ายน้ำ 30, บาสเกตบอล 25, เทเบิลเทนนิส 20 คน รวมนักเรียนที่ชอบกีฬาทั้งหมด",
+      "choices": [
+        "120 students",
+        "100 students",
+        "110 students",
+        "130 students"
+      ],
+      "correct_answer": "120 students",
+      "answer": "45 + 30 + 25 + 20 = 120 students",
+      "explanation": "45 + 30 + 25 + 20 = 120 students",
+      "explanation_th": "45 + 30 + 25 + 20 = 120 คน",
+      "difficulty": "hard",
+      "hint_th": "Add all sports categories"
+    },
+    {
+      "question_id": "data_ep_q001_h03",
+      "question_text": "Case 10: Pictograph, 1 picture = 10 points. Team A=6, B=8, C=5, D=7 pictures. Which team scored most and how many points?",
+      "question_text_th": "สถานการณ์ที่ 10: แผนภูมิรูปภาพ 1 รูป = 10 คะแนน ทีม A=6, B=8, C=5, D=7 รูป ทีมใดได้คะแนนมากที่สุด",
+      "choices": [
+        "Team B with 80 points",
+        "Team A with 70 points",
+        "Team D with 80 points",
+        "Team C with 50 points"
+      ],
+      "correct_answer": "Team B with 80 points",
+      "answer": "A=6x10=60, B=8x10=80, C=5x10=50, D=7x10=70 → B is highest with 80 points",
+      "explanation": "A=6x10=60, B=8x10=80, C=5x10=50, D=7x10=70 → B is highest with 80 points",
+      "explanation_th": "A=60, B=80, C=50, D=70 → B มากที่สุด 80 คะแนน",
+      "difficulty": "hard",
+      "hint_th": "Multiply each team then compare"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

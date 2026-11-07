@@ -1,0 +1,381 @@
+{
+  "quiz_id": "decimals_ep_q001",
+  "title_th": "ทศนิยม",
+  "title_en": "Decimals",
+  "status": "needs_review",
+  "variant_id": "decimals_ep_q001",
+  "variant_title_th": "ทศนิยม",
+  "variant_title_en": "Decimals",
+  "questions": [
+    {
+      "question_id": "decimals_q001_m01",
+      "type": "multiple_choice",
+      "question_th": "12.3 + 4.5 = ?",
+      "question_en": "12.3 + 4.5 = ?",
+      "choices_th": [
+        "16.8",
+        "15.8",
+        "17.8",
+        "16.3"
+      ],
+      "choices_en": [
+        "16.8",
+        "15.8",
+        "17.8",
+        "16.3"
+      ],
+      "correct_answer_th": "16.8",
+      "correct_answer_en": "16.8",
+      "answer_th": "16.8",
+      "answer_en": "16.8",
+      "answer": "16.8",
+      "explanation_th": "12.3 + 4.5 = 16.8",
+      "explanation_en": "12.3 + 4.5 = 16.8",
+      "difficulty": "easy",
+      "choices": [
+        "16.8",
+        "15.8",
+        "17.8",
+        "16.3"
+      ],
+      "correct_answer": "16.8",
+      "question_text": "12.3 + 4.5 = ?",
+      "explanation": "12.3 + 4.5 = 16.8",
+      "question_text_th": "12.3 + 4.5 = ?",
+      "question_text_en": "12.3 + 4.5 = ?"
+    },
+    {
+      "question_id": "decimals_q001_m02",
+      "type": "multiple_choice",
+      "question_th": "15.75 - 8.25 = ?",
+      "question_en": "15.75 - 8.25 = ?",
+      "choices_th": [
+        "7.00",
+        "7.50",
+        "6.50",
+        "7.25"
+      ],
+      "choices_en": [
+        "7.00",
+        "7.50",
+        "6.50",
+        "7.25"
+      ],
+      "correct_answer_th": "7.50",
+      "correct_answer_en": "7.50",
+      "answer_th": "7.50",
+      "answer_en": "7.50",
+      "answer": "7.50",
+      "explanation_th": "15.75 - 8.25 = 7.50",
+      "explanation_en": "15.75 - 8.25 = 7.50",
+      "difficulty": "easy",
+      "choices": [
+        "7.00",
+        "7.50",
+        "6.50",
+        "7.25"
+      ],
+      "correct_answer": "7.50",
+      "question_text": "15.75 - 8.25 = ?",
+      "explanation": "15.75 - 8.25 = 7.50",
+      "question_text_th": "15.75 - 8.25 = ?",
+      "question_text_en": "15.75 - 8.25 = ?"
+    },
+    {
+      "question_id": "decimals_q001_m03",
+      "type": "multiple_choice",
+      "question_th": "3.2 × 4 = ?",
+      "question_en": "3.2 × 4 = ?",
+      "choices_th": [
+        "12.8",
+        "12",
+        "12.2",
+        "9.2"
+      ],
+      "choices_en": [
+        "12.8",
+        "12",
+        "12.2",
+        "9.2"
+      ],
+      "correct_answer_th": "12.8",
+      "correct_answer_en": "12.8",
+      "answer_th": "12.8",
+      "answer_en": "12.8",
+      "answer": "12.8",
+      "explanation_th": "3.2 × 4 = 12.8",
+      "explanation_en": "3.2 × 4 = 12.8",
+      "difficulty": "easy",
+      "choices": [
+        "12.8",
+        "12",
+        "12.2",
+        "9.2"
+      ],
+      "correct_answer": "12.8",
+      "question_text": "3.2 × 4 = ?",
+      "explanation": "3.2 × 4 = 12.8",
+      "question_text_th": "3.2 × 4 = ?",
+      "question_text_en": "3.2 × 4 = ?"
+    },
+    {
+      "question_id": "decimals_q001_m04",
+      "type": "multiple_choice",
+      "question_th": "25.6 ÷ 8 = ?",
+      "question_en": "25.6 ÷ 8 = ?",
+      "choices_th": [
+        "3.2",
+        "3.0",
+        "4.0",
+        "2.8"
+      ],
+      "choices_en": [
+        "3.2",
+        "3.0",
+        "4.0",
+        "2.8"
+      ],
+      "correct_answer_th": "3.2",
+      "correct_answer_en": "3.2",
+      "answer_th": "3.2",
+      "answer_en": "3.2",
+      "answer": "3.2",
+      "explanation_th": "25.6 ÷ 8 = 3.2",
+      "explanation_en": "25.6 ÷ 8 = 3.2",
+      "difficulty": "easy",
+      "choices": [
+        "3.2",
+        "3.0",
+        "4.0",
+        "2.8"
+      ],
+      "correct_answer": "3.2",
+      "question_text": "25.6 ÷ 8 = ?",
+      "explanation": "25.6 ÷ 8 = 3.2",
+      "question_text_th": "25.6 ÷ 8 = ?",
+      "question_text_en": "25.6 ÷ 8 = ?"
+    },
+    {
+      "question_id": "decimals_q001_m05",
+      "type": "multiple_choice",
+      "question_th": "7.45 + 2.55 = ?",
+      "question_en": "7.45 + 2.55 = ?",
+      "choices_th": [
+        "9.00",
+        "10.00",
+        "10.10",
+        "9.90"
+      ],
+      "choices_en": [
+        "9.00",
+        "10.00",
+        "10.10",
+        "9.90"
+      ],
+      "correct_answer_th": "10.00",
+      "correct_answer_en": "10.00",
+      "answer_th": "10.00",
+      "answer_en": "10.00",
+      "answer": "10.00",
+      "explanation_th": "7.45 + 2.55 = 10.00",
+      "explanation_en": "7.45 + 2.55 = 10.00",
+      "difficulty": "medium",
+      "choices": [
+        "9.00",
+        "10.00",
+        "10.10",
+        "9.90"
+      ],
+      "correct_answer": "10.00",
+      "question_text": "7.45 + 2.55 = ?",
+      "explanation": "7.45 + 2.55 = 10.00",
+      "question_text_th": "7.45 + 2.55 = ?",
+      "question_text_en": "7.45 + 2.55 = ?"
+    },
+    {
+      "question_id": "decimals_q001_m06",
+      "type": "multiple_choice",
+      "question_th": "ของราคา 85.50 บาท ลดราคา 15.25 บาท ราคาใหม่เท่าไร",
+      "question_en": "An item costs 85.50 baht with a discount of 15.25 baht. What is the new price?",
+      "choices_th": [
+        "69.75 baht",
+        "70.00 baht",
+        "70.25 baht",
+        "70.75 baht"
+      ],
+      "choices_en": [
+        "69.75 baht",
+        "70.00 baht",
+        "70.25 baht",
+        "70.75 baht"
+      ],
+      "correct_answer_th": "70.25 baht",
+      "correct_answer_en": "70.25 baht",
+      "answer_th": "70.25 baht",
+      "answer_en": "70.25 baht",
+      "answer": "70.25 baht",
+      "explanation_th": "85.50 - 15.25 = 70.25 baht",
+      "explanation_en": "85.50 - 15.25 = 70.25 baht",
+      "difficulty": "medium",
+      "choices": [
+        "69.75 baht",
+        "70.00 baht",
+        "70.25 baht",
+        "70.75 baht"
+      ],
+      "correct_answer": "70.25 baht",
+      "question_text": "ของราคา 85.50 บาท ลดราคา 15.25 บาท ราคาใหม่เท่าไร",
+      "explanation": "85.50 - 15.25 = 70.25 baht",
+      "question_text_th": "ของราคา 85.50 บาท ลดราคา 15.25 บาท ราคาใหม่เท่าไร",
+      "question_text_en": "An item costs 85.50 baht with a discount of 15.25 baht. What is the new price?"
+    },
+    {
+      "question_id": "decimals_q001_m07",
+      "type": "multiple_choice",
+      "question_th": "0.25 × 0.4 = ?",
+      "question_en": "0.25 × 0.4 = ?",
+      "choices_th": [
+        "0.1",
+        "0.01",
+        "1.0",
+        "0.65"
+      ],
+      "choices_en": [
+        "0.1",
+        "0.01",
+        "1.0",
+        "0.65"
+      ],
+      "correct_answer_th": "0.1",
+      "correct_answer_en": "0.1",
+      "answer_th": "0.1",
+      "answer_en": "0.1",
+      "answer": "0.1",
+      "explanation_th": "0.25 × 0.4 = 0.10 = 0.1",
+      "explanation_en": "0.25 × 0.4 = 0.10 = 0.1",
+      "difficulty": "medium",
+      "choices": [
+        "0.1",
+        "0.01",
+        "1.0",
+        "0.65"
+      ],
+      "correct_answer": "0.1",
+      "question_text": "0.25 × 0.4 = ?",
+      "explanation": "0.25 × 0.4 = 0.10 = 0.1",
+      "question_text_th": "0.25 × 0.4 = ?",
+      "question_text_en": "0.25 × 0.4 = ?"
+    },
+    {
+      "question_id": "decimals_q001_m08",
+      "type": "multiple_choice",
+      "question_th": "18.36 ÷ 6 = ?",
+      "question_en": "18.36 ÷ 6 = ?",
+      "choices_th": [
+        "3.06",
+        "3.6",
+        "3.16",
+        "3.0"
+      ],
+      "choices_en": [
+        "3.06",
+        "3.6",
+        "3.16",
+        "3.0"
+      ],
+      "correct_answer_th": "3.06",
+      "correct_answer_en": "3.06",
+      "answer_th": "3.06",
+      "answer_en": "3.06",
+      "answer": "3.06",
+      "explanation_th": "18.36 ÷ 6 = 3.06",
+      "explanation_en": "18.36 ÷ 6 = 3.06",
+      "difficulty": "medium",
+      "choices": [
+        "3.06",
+        "3.6",
+        "3.16",
+        "3.0"
+      ],
+      "correct_answer": "3.06",
+      "question_text": "18.36 ÷ 6 = ?",
+      "explanation": "18.36 ÷ 6 = 3.06",
+      "question_text_th": "18.36 ÷ 6 = ?",
+      "question_text_en": "18.36 ÷ 6 = ?"
+    },
+    {
+      "question_id": "decimals_q001_m09",
+      "type": "multiple_choice",
+      "question_th": "56.7 - 28.9 = ?",
+      "question_en": "56.7 - 28.9 = ?",
+      "choices_th": [
+        "27.8",
+        "28.8",
+        "27.2",
+        "28.2"
+      ],
+      "choices_en": [
+        "27.8",
+        "28.8",
+        "27.2",
+        "28.2"
+      ],
+      "correct_answer_th": "27.8",
+      "correct_answer_en": "27.8",
+      "answer_th": "27.8",
+      "answer_en": "27.8",
+      "answer": "27.8",
+      "explanation_th": "56.7 - 28.9 = 27.8",
+      "explanation_en": "56.7 - 28.9 = 27.8",
+      "difficulty": "hard",
+      "choices": [
+        "27.8",
+        "28.8",
+        "27.2",
+        "28.2"
+      ],
+      "correct_answer": "27.8",
+      "question_text": "56.7 - 28.9 = ?",
+      "explanation": "56.7 - 28.9 = 27.8",
+      "question_text_th": "56.7 - 28.9 = ?",
+      "question_text_en": "56.7 - 28.9 = ?"
+    },
+    {
+      "question_id": "decimals_q001_m10",
+      "type": "multiple_choice",
+      "question_th": "4.5 × 2.2 = ?",
+      "question_en": "4.5 × 2.2 = ?",
+      "choices_th": [
+        "9.0",
+        "9.9",
+        "10.0",
+        "8.9"
+      ],
+      "choices_en": [
+        "9.0",
+        "9.9",
+        "10.0",
+        "8.9"
+      ],
+      "correct_answer_th": "9.9",
+      "correct_answer_en": "9.9",
+      "answer_th": "9.9",
+      "answer_en": "9.9",
+      "answer": "9.9",
+      "explanation_th": "4.5 × 2.2 = 9.90",
+      "explanation_en": "4.5 × 2.2 = 9.90",
+      "difficulty": "hard",
+      "choices": [
+        "9.0",
+        "9.9",
+        "10.0",
+        "8.9"
+      ],
+      "correct_answer": "9.9",
+      "question_text": "4.5 × 2.2 = ?",
+      "explanation": "4.5 × 2.2 = 9.90",
+      "question_text_th": "4.5 × 2.2 = ?",
+      "question_text_en": "4.5 × 2.2 = ?"
+    }
+  ]
+}

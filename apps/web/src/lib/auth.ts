@@ -58,4 +58,8 @@ export const authApi = {
     const res = await apiClient.get('/auth/me')
     return res.data as AuthUser
   },
+
+  async logout() {
+    await apiClient.post('/auth/logout', undefined, { skipAuthRedirect: true })
+  },
 }

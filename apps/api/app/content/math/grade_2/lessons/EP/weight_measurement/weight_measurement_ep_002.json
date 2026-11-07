@@ -1,0 +1,188 @@
+{
+  "variant_id": "weight_measurement_ep_002",
+  "variant_title_th": "การวัดน้ำหนัก",
+  "variant_title_en": "Weight Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดน้ำหนัก",
+  "title_en": "Weight Measurement",
+  "story_theme_th": "A fruit shop has 5 durians. Each durian weighs 3 kilograms. What is the total weight of the durians? If the shop sells 7 kilograms, how many kilograms are left?",
+  "helper_tip": "Multiply weight: multiply number of durians by weight per durian. Subtract weight sold from total weight.",
+  "think_story_th": "Total: 5 x 3 = 15 kg, Left: 15 - 7 = 8 kg",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A fruit shop has 5 durians. Each durian weighs 3 kilograms. What is the total weight of the durians? If the shop sells 7 kilograms, how many kilograms are left?",
+      "data": {
+        "content_th": "A fruit shop has 5 durians. Each durian weighs 3 kilograms. What is the total weight of the durians? If the shop sells 7 kilograms, how many kilograms are left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Total: 5 x 3 = 15 kg, Left: 15 - 7 = 8 kg",
+      "data": {
+        "content_th": "Total: 5 x 3 = 15 kg, Left: 15 - 7 = 8 kg"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "5 Durians",
+            "value": 15,
+            "display": "15 kg",
+            "color": "#4ECDC4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Sold",
+            "value": 7,
+            "display": "7 kg",
+            "color": "#FF6B6B",
+            "width_pct": 47
+          },
+          {
+            "label": "Left",
+            "value": 8,
+            "display": "8 kg",
+            "color": "#C7F464",
+            "width_pct": 53,
+            "is_remainder": true
+          }
+        ],
+        "unit": "kg"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find total weight",
+            "expression": "5 x 3 = 15",
+            "a": 5,
+            "b": 3,
+            "res": 15,
+            "op": "*",
+            "formula": {
+              "display": "5 x 3 = 15",
+              "a": 5,
+              "b": 3,
+              "result": 15,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "5",
+              "b_display": "3",
+              "result_display": "15",
+              "operation": "multiply"
+            },
+            "story_connection": "5 durians x 3 kg = 15 kg"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find weight left",
+            "expression": "15 - 7 = 8",
+            "a": 15,
+            "b": 7,
+            "res": 8,
+            "op": "-",
+            "formula": {
+              "display": "15 - 7 = 8",
+              "a": 15,
+              "b": 7,
+              "result": 8,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "15",
+              "b_display": "7",
+              "result_display": "8",
+              "operation": "subtract"
+            },
+            "story_connection": "15 - 7 = 8 kg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5 x 3 = 15 and 15 - 7 = 8",
+      "content": "5 x 3 = 15 and 15 - 7 = 8",
+      "data": {
+        "expression": "5 x 3 = 15 and 15 - 7 = 8",
+        "content_th": "5 x 3 = 15 and 15 - 7 = 8",
+        "operations": [
+          {
+            "op": "*",
+            "a": 5,
+            "b": 3,
+            "result": 15
+          },
+          {
+            "op": "-",
+            "a": 15,
+            "b": 7,
+            "result": 8
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Mangoes: 4 fruits, each weighs 2 kilograms. What is the total weight? If 5 kg are sold, how much is left?",
+      "choices": [
+        "3 kg",
+        "8 kg",
+        "13 kg",
+        "5 kg"
+      ],
+      "correct_answer": "3 kg",
+      "explanation": "4x2=8, 8-5=3 kg",
+      "data": {
+        "question": "Mangoes: 4 fruits, each weighs 2 kilograms. What is the total weight? If 5 kg are sold, how much is left?",
+        "choices": [
+          "3 kg",
+          "8 kg",
+          "13 kg",
+          "5 kg"
+        ],
+        "correct_answer": "3 kg",
+        "explanation": "4x2=8, 8-5=3 kg"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

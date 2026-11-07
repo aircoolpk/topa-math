@@ -1,0 +1,371 @@
+{
+  "quiz_id": "patterns_TH_q001",
+  "title_th": "แบบรูป",
+  "title_en": "Patterns",
+  "status": "needs_review",
+  "variant_id": "patterns_TH_q001",
+  "variant_title_th": "แบบรูป",
+  "variant_title_en": "Patterns",
+  "questions": [
+    {
+      "question_id": "patterns_q001_m01",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 2, 6, 10, 14, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 2, 6, 10, 14, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "choices_en": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct_answer_th": "18",
+      "correct_answer_en": "18",
+      "answer_th": "18",
+      "answer": "18",
+      "explanation_th": "ผลต่างคงที่ +4 ดังนั้น 14+4=18",
+      "explanation_en": "ผลต่างคงที่ +4 ดังนั้น 14+4=18",
+      "difficulty": "easy",
+      "choices": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct_answer": "18",
+      "question_text": "แบบรูป: 2, 6, 10, 14, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "ผลต่างคงที่ +4 ดังนั้น 14+4=18",
+      "question_text_th": "แบบรูป: 2, 6, 10, 14, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 2, 6, 10, 14, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m02",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 3, 6, 12, 24, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 3, 6, 12, 24, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "36",
+        "48",
+        "30",
+        "42"
+      ],
+      "choices_en": [
+        "36",
+        "48",
+        "30",
+        "42"
+      ],
+      "correct_answer_th": "48",
+      "correct_answer_en": "48",
+      "answer_th": "48",
+      "answer": "48",
+      "explanation_th": "คูณ 2 ทุกครั้ง: 24×2=48",
+      "explanation_en": "คูณ 2 ทุกครั้ง: 24×2=48",
+      "difficulty": "easy",
+      "choices": [
+        "36",
+        "48",
+        "30",
+        "42"
+      ],
+      "correct_answer": "48",
+      "question_text": "แบบรูป: 3, 6, 12, 24, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "คูณ 2 ทุกครั้ง: 24×2=48",
+      "question_text_th": "แบบรูป: 3, 6, 12, 24, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 3, 6, 12, 24, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m03",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 1, 4, 9, 16, 25, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 1, 4, 9, 16, 25, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "30",
+        "36",
+        "32",
+        "35"
+      ],
+      "choices_en": [
+        "30",
+        "36",
+        "32",
+        "35"
+      ],
+      "correct_answer_th": "36",
+      "correct_answer_en": "36",
+      "answer_th": "36",
+      "answer": "36",
+      "explanation_th": "เป็นเลขยกกำลังสอง: 1²,2²,3²,4²,5²,6²=36",
+      "explanation_en": "เป็นเลขยกกำลังสอง: 1²,2²,3²,4²,5²,6²=36",
+      "difficulty": "medium",
+      "choices": [
+        "30",
+        "36",
+        "32",
+        "35"
+      ],
+      "correct_answer": "36",
+      "question_text": "แบบรูป: 1, 4, 9, 16, 25, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "เป็นเลขยกกำลังสอง: 1²,2²,3²,4²,5²,6²=36",
+      "question_text_th": "แบบรูป: 1, 4, 9, 16, 25, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 1, 4, 9, 16, 25, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m04",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 5, 10, 20, 40, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 5, 10, 20, 40, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "choices_en": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "correct_answer_th": "80",
+      "correct_answer_en": "80",
+      "answer_th": "80",
+      "answer": "80",
+      "explanation_th": "คูณ 2 ทุกครั้ง: 40×2=80",
+      "explanation_en": "คูณ 2 ทุกครั้ง: 40×2=80",
+      "difficulty": "easy",
+      "choices": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "correct_answer": "80",
+      "question_text": "แบบรูป: 5, 10, 20, 40, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "คูณ 2 ทุกครั้ง: 40×2=80",
+      "question_text_th": "แบบรูป: 5, 10, 20, 40, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 5, 10, 20, 40, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m05",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 1, 1, 2, 3, 5, 8, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 1, 1, 2, 3, 5, 8, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "choices_en": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct_answer_th": "13",
+      "correct_answer_en": "13",
+      "answer_th": "13",
+      "answer": "13",
+      "explanation_th": "ฟิโบนักชี: 8+5=13",
+      "explanation_en": "ฟิโบนักชี: 8+5=13",
+      "difficulty": "medium",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct_answer": "13",
+      "question_text": "แบบรูป: 1, 1, 2, 3, 5, 8, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "ฟิโบนักชี: 8+5=13",
+      "question_text_th": "แบบรูป: 1, 1, 2, 3, 5, 8, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 1, 1, 2, 3, 5, 8, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m06",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 100, 90, 81, 73, 66, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 100, 90, 81, 73, 66, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "58",
+        "60",
+        "59",
+        "61"
+      ],
+      "choices_en": [
+        "58",
+        "60",
+        "59",
+        "61"
+      ],
+      "correct_answer_th": "60",
+      "correct_answer_en": "60",
+      "answer_th": "60",
+      "answer": "60",
+      "explanation_th": "ผลต่างลดลง: -10,-9,-8,-7,-6 → 66-6=60",
+      "explanation_en": "ผลต่างลดลง: -10,-9,-8,-7,-6 → 66-6=60",
+      "difficulty": "hard",
+      "choices": [
+        "58",
+        "60",
+        "59",
+        "61"
+      ],
+      "correct_answer": "60",
+      "question_text": "แบบรูป: 100, 90, 81, 73, 66, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "ผลต่างลดลง: -10,-9,-8,-7,-6 → 66-6=60",
+      "question_text_th": "แบบรูป: 100, 90, 81, 73, 66, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 100, 90, 81, 73, 66, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m07",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 7, 14, 28, 56, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 7, 14, 28, 56, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "98",
+        "112",
+        "84",
+        "70"
+      ],
+      "choices_en": [
+        "98",
+        "112",
+        "84",
+        "70"
+      ],
+      "correct_answer_th": "112",
+      "correct_answer_en": "112",
+      "answer_th": "112",
+      "answer": "112",
+      "explanation_th": "คูณ 2 ทุกครั้ง: 56×2=112",
+      "explanation_en": "คูณ 2 ทุกครั้ง: 56×2=112",
+      "difficulty": "easy",
+      "choices": [
+        "98",
+        "112",
+        "84",
+        "70"
+      ],
+      "correct_answer": "112",
+      "question_text": "แบบรูป: 7, 14, 28, 56, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "คูณ 2 ทุกครั้ง: 56×2=112",
+      "question_text_th": "แบบรูป: 7, 14, 28, 56, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 7, 14, 28, 56, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m08",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 2, 5, 11, 23, 47, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 2, 5, 11, 23, 47, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "95",
+        "94",
+        "93",
+        "96"
+      ],
+      "choices_en": [
+        "95",
+        "94",
+        "93",
+        "96"
+      ],
+      "correct_answer_th": "95",
+      "correct_answer_en": "95",
+      "answer_th": "95",
+      "answer": "95",
+      "explanation_th": "×2+1 ทุกครั้ง: 47×2+1=95",
+      "explanation_en": "×2+1 ทุกครั้ง: 47×2+1=95",
+      "difficulty": "hard",
+      "choices": [
+        "95",
+        "94",
+        "93",
+        "96"
+      ],
+      "correct_answer": "95",
+      "question_text": "แบบรูป: 2, 5, 11, 23, 47, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "×2+1 ทุกครั้ง: 47×2+1=95",
+      "question_text_th": "แบบรูป: 2, 5, 11, 23, 47, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 2, 5, 11, 23, 47, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m09",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 3, 8, 15, 24, 35, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 3, 8, 15, 24, 35, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "45",
+        "46",
+        "48",
+        "50"
+      ],
+      "choices_en": [
+        "45",
+        "46",
+        "48",
+        "50"
+      ],
+      "correct_answer_th": "48",
+      "correct_answer_en": "48",
+      "answer_th": "48",
+      "answer": "48",
+      "explanation_th": "ผลต่างเพิ่มขึ้น 2 ทุกครั้ง: +5,+7,+9,+11,+13 → 35+13=48",
+      "explanation_en": "ผลต่างเพิ่มขึ้น 2 ทุกครั้ง: +5,+7,+9,+11,+13 → 35+13=48",
+      "difficulty": "hard",
+      "choices": [
+        "45",
+        "46",
+        "48",
+        "50"
+      ],
+      "correct_answer": "48",
+      "question_text": "แบบรูป: 3, 8, 15, 24, 35, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "ผลต่างเพิ่มขึ้น 2 ทุกครั้ง: +5,+7,+9,+11,+13 → 35+13=48",
+      "question_text_th": "แบบรูป: 3, 8, 15, 24, 35, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 3, 8, 15, 24, 35, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q001_m10",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 1, 3, 7, 15, 31, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 1, 3, 7, 15, 31, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "47",
+        "63",
+        "55",
+        "61"
+      ],
+      "choices_en": [
+        "47",
+        "63",
+        "55",
+        "61"
+      ],
+      "correct_answer_th": "63",
+      "correct_answer_en": "63",
+      "answer_th": "63",
+      "answer": "63",
+      "explanation_th": "×2+1 ทุกครั้ง: 31×2+1=63",
+      "explanation_en": "×2+1 ทุกครั้ง: 31×2+1=63",
+      "difficulty": "medium",
+      "choices": [
+        "47",
+        "63",
+        "55",
+        "61"
+      ],
+      "correct_answer": "63",
+      "question_text": "แบบรูป: 1, 3, 7, 15, 31, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "×2+1 ทุกครั้ง: 31×2+1=63",
+      "question_text_th": "แบบรูป: 1, 3, 7, 15, 31, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 1, 3, 7, 15, 31, ... ค่าต่อไปคือเท่าไร"
+    }
+  ]
+}

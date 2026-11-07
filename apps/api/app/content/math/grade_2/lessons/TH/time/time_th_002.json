@@ -1,0 +1,195 @@
+{
+  "variant_id": "time_th_002",
+  "variant_title_th": "เวลา",
+  "variant_title_en": "Time",
+  "status": "needs_review",
+  "title_th": "เวลา",
+  "title_en": "Time",
+  "story_theme_th": "ร้านขายของเปิดตอน 8 โมงเช้า ปิดตอน 5 โมงเย็น ร้านเปิดกี่ชั่วโมง ถ้าพักเที่ยง 1 ชั่วโมง ร้านเปิดทำการจริงกี่ชั่วโมง",
+  "helper_tip": "การหาเวลาที่ผ่านไป = เวลาปิด - เวลาเปิด ใช้การลบเวลา",
+  "think_story_th": "เปิด: 8:00 ถึง 17:00 = 9 ชม., หักพัก: 9 - 1 = 8 ชม.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "ร้านขายของเปิดตอน 8 โมงเช้า ปิดตอน 5 โมงเย็น ร้านเปิดกี่ชั่วโมง ถ้าพักเที่ยง 1 ชั่วโมง ร้านเปิดทำการจริงกี่ชั่วโมง",
+      "data": {
+        "content_th": "ร้านขายของเปิดตอน 8 โมงเช้า ปิดตอน 5 โมงเย็น ร้านเปิดกี่ชั่วโมง ถ้าพักเที่ยง 1 ชั่วโมง ร้านเปิดทำการจริงกี่ชั่วโมง"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "เปิด: 8:00 ถึง 17:00 = 9 ชม., หักพัก: 9 - 1 = 8 ชม.",
+      "data": {
+        "content_th": "เปิด: 8:00 ถึง 17:00 = 9 ชม., หักพัก: 9 - 1 = 8 ชม."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "เปิด 08:00",
+            "value": 8,
+            "display": "08:00 น.",
+            "color": "#4ECDC4",
+            "width_pct": 47
+          },
+          {
+            "label": "ปิด 17:00",
+            "value": 17,
+            "display": "17:00 น.",
+            "color": "#45B7D1",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "พัก",
+            "value": 1,
+            "display": "1 ชม.",
+            "color": "#FF6B6B",
+            "width_pct": 6
+          },
+          {
+            "label": "ทำการจริง",
+            "value": 8,
+            "display": "8 ชม.",
+            "color": "#C7F464",
+            "width_pct": 47,
+            "is_result": true
+          }
+        ],
+        "unit": "ชม."
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: หาเวลาที่เปิดทั้งหมด",
+            "expression": "17:00 - 8:00 = 9 ชม.",
+            "a": 17,
+            "b": 8,
+            "res": 9,
+            "op": "-",
+            "formula": {
+              "display": "17 - 8 = 9",
+              "a": 17,
+              "b": 8,
+              "result": 9,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "17:00",
+              "b_display": "8:00",
+              "result_display": "9 ชม.",
+              "operation": "subtract"
+            },
+            "story_connection": "17:00 - 8:00 = 9 ชม."
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาเวลาทำการจริง",
+            "expression": "9 - 1 = 8 ชม.",
+            "a": 9,
+            "b": 1,
+            "res": 8,
+            "op": "-",
+            "formula": {
+              "display": "9 - 1 = 8",
+              "a": 9,
+              "b": 1,
+              "result": 8,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "9",
+              "b_display": "1",
+              "result_display": "8",
+              "operation": "subtract"
+            },
+            "story_connection": "9 - 1 = 8 ชม."
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "17 - 8 = 9 และ 9 - 1 = 8",
+      "content": "17 - 8 = 9 และ 9 - 1 = 8",
+      "data": {
+        "expression": "17 - 8 = 9 และ 9 - 1 = 8",
+        "content_th": "17 - 8 = 9 และ 9 - 1 = 8",
+        "operations": [
+          {
+            "op": "-",
+            "a": 17,
+            "b": 8,
+            "result": 9
+          },
+          {
+            "op": "-",
+            "a": 9,
+            "b": 1,
+            "result": 8
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "โรงหนังเริ่มฉายตอน 13:00 น. จบตอน 15:30 น. ฉายนานกี่ชั่วโมงกี่นาที",
+      "choices": [
+        "2 ชม. 30 นาที",
+        "3 ชม. 30 นาที",
+        "2 ชม. 15 นาที",
+        "3 ชม."
+      ],
+      "correct_answer": "2 ชม. 30 นาที",
+      "explanation": "15:30 - 13:00 = 2 ชม. 30 นาที",
+      "data": {
+        "question": "โรงหนังเริ่มฉายตอน 13:00 น. จบตอน 15:30 น. ฉายนานกี่ชั่วโมงกี่นาที",
+        "choices": [
+          "2 ชม. 30 นาที",
+          "3 ชม. 30 นาที",
+          "2 ชม. 15 นาที",
+          "3 ชม."
+        ],
+        "correct_answer": "2 ชม. 30 นาที",
+        "explanation": "15:30 - 13:00 = 2 ชม. 30 นาที"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

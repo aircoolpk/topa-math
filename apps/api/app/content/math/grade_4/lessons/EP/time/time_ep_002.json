@@ -1,0 +1,193 @@
+{
+  "variant_id": "time_ep_002",
+  "variant_title_en": "Time",
+  "status": "needs_review",
+  "title_en": "Time",
+  "story_theme_en": "Mali watches a TV program starting at 19:30 and ending at 21:15. During the show, there are advertisements lasting 25 minutes in total. How long does Mali actually watch the program?",
+  "helper_tip": "Convert times to total minutes first, then subtract to find the difference.",
+  "hint_th": "แปลงเวลาเป็นนาทีทั้งหมดก่อน แล้วค่อยลบ",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mali watches a TV program starting at 19:30 and ending at 21:15. During the show, there are advertisements lasting 25 minutes in total. How long does Mali actually watch the program? And if a new program starts immediately after at 21:15, what time does the new program start?",
+      "data": {
+        "content_en": "Mali watches a TV program starting at 19:30 and ending at 21:15. During the show, there are advertisements lasting 25 minutes in total. How long does Mali actually watch the program? And if a new program starts immediately after at 21:15, what time does the new program start?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Find total watch time → 21:15 - 19:30 = 1 hour 45 minutes | Step 2: Subtract ads → 1h 45min - 25min = actual watching time",
+      "data": {
+        "content_en": "Step 1: Find total watch time → 21:15 - 19:30 = 1 hour 45 minutes | Step 2: Subtract ads → 1h 45min - 25min = actual watching time"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Timeline",
+      "model_type": "time_line",
+      "data": {
+        "model_type": "time_line",
+        "operation": "duration",
+        "bars": [
+          {
+            "label": "Start watching",
+            "value": 1930,
+            "display": "19:30",
+            "color": "#4ECDC4",
+            "width_pct": 55
+          },
+          {
+            "label": "Total time",
+            "value": 105,
+            "display": "1h 45min",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Advertisements",
+            "value": 25,
+            "display": "25 minutes",
+            "color": "#FF6B6B",
+            "width_pct": 24
+          },
+          {
+            "label": "Actual watching",
+            "value": 80,
+            "display": "1h 20min",
+            "color": "#C7F464",
+            "width_pct": 76,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find total watch time",
+            "expression": "21:15 - 19:30 = 1h 45min",
+            "formula": {
+              "display": "21:15 - 19:30 = 1h 45min",
+              "a": 2115,
+              "b": 1930,
+              "result": 105,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}2115&\\\\\\\\ -\\\\quad 1930&\\\\\\\\ \\\\hline 105&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "2115",
+              "b_display": "1930",
+              "result_display": "105",
+              "operation": "sub"
+            },
+            "story_connection": "21:15 - 19:30 = 1 hour 45 minutes"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Subtract ad time",
+            "expression": "1h 45min - 25min = 1h 20min",
+            "formula": {
+              "display": "1h 45min - 25min = 1h 20min",
+              "a": 105,
+              "b": 25,
+              "result": 80,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}105&\\\\\\\\ -\\\\quad 25&\\\\\\\\ \\\\hline 80&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "105",
+              "b_display": "25",
+              "result_display": "80",
+              "operation": "sub"
+            },
+            "story_connection": "1 hour 45 minutes - 25 minutes = 1 hour 20 minutes"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "21:15 - 19:30 = 1h 45min | 1h 45min - 25min = 1h 20min",
+      "content": "21:15 - 19:30 = 1 hour 45 minutes  |  1 hour 45 minutes - 25 minutes = 1 hour 20 minutes of actual program",
+      "data": {
+        "expression": "21:15 - 19:30 = 1h 45min | 1h 45min - 25min = 1h 20min",
+        "operations": [
+          {
+            "op": "-",
+            "a": 2115,
+            "b": 1930,
+            "result": 105
+          },
+          {
+            "op": "-",
+            "a": 105,
+            "b": 25,
+            "result": 80
+          }
+        ],
+        "content_en": "21:15 - 19:30 = 1 hour 45 minutes  |  1 hour 45 minutes - 25 minutes = 1 hour 20 minutes of actual program"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Lin starts homework at 16:45 and finishes at 18:20. How long does Lin spend on homework?",
+      "choices": [
+        "1 hour 35 minutes",
+        "2 hours 25 minutes",
+        "1 hour 25 minutes",
+        "1 hour 45 minutes"
+      ],
+      "correct_answer": "1 hour 35 minutes",
+      "explanation": "18:20 - 16:45 = 1 hour 35 minutes",
+      "data": {
+        "question": "Lin starts homework at 16:45 and finishes at 18:20. How long does Lin spend on homework?",
+        "choices": [
+          "1 hour 35 minutes",
+          "2 hours 25 minutes",
+          "1 hour 25 minutes",
+          "1 hour 45 minutes"
+        ],
+        "correct_answer": "1 hour 35 minutes",
+        "explanation": "18:20 - 16:45 = 1 hour 35 minutes"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "Exercise from 07:45 to 09:10. How long?",
+      "solution_en": "09:10 - 07:45 = 1 hour 25 minutes"
+    }
+  ],
+  "common_mistakes": [
+    "Converting time incorrectly because not converting to total minutes first",
+    "Forgetting that 1 hour = 60 minutes"
+  ],
+  "hints": [
+    "Convert to minutes: 19:30 = 19x60+30 = 1,170 minutes. 21:15 = 21x60+15 = 1,275 minutes.",
+    "1,275 - 1,170 = 105 minutes = 1 hour 45 minutes."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "hour",
+      "th": "ชั่วโมง",
+      "definition_en": "A unit of time. 1 hour = 60 minutes"
+    },
+    {
+      "en": "minute",
+      "th": "นาที",
+      "definition_en": "A unit of time. 60 minutes = 1 hour"
+    }
+  ]
+}

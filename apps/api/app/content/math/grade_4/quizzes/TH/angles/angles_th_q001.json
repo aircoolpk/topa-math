@@ -1,0 +1,179 @@
+{
+  "lesson_id": "angles_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "มุมใดต่อไปนี้เป็นมุมฉาก",
+      "question_text_en": "Which is a right angle?",
+      "choices": [
+        "90 องศา",
+        "45 องศา",
+        "120 องศา",
+        "60 องศา"
+      ],
+      "correct_answer": "90 องศา",
+      "answer": "90 องศา",
+      "explanation": "มุมฉาก = 90 องศา",
+      "explanation_th": "มุมฉาก = 90 องศา",
+      "difficulty": "easy",
+      "hint_th": "มุมฉาก = 90°"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "มุมใดเป็นมุมแหลม: 45°, 90°, 135°, 180°",
+      "question_text_en": "Which is acute? 45°, 90°, 135°, 180°",
+      "choices": [
+        "45°",
+        "90°",
+        "135°",
+        "180°"
+      ],
+      "correct_answer": "45°",
+      "answer": "45°",
+      "explanation": "มุมแหลม < 90° ดังนั้น 45°",
+      "explanation_th": "มุมแหลม < 90° ดังนั้น 45°",
+      "difficulty": "easy",
+      "hint_th": "มุมแหลม < 90°"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "มุมใดเป็นมุมป้าน: 30°, 85°, 120°, 90°",
+      "question_text_en": "Which is obtuse? 30°, 85°, 120°, 90°",
+      "choices": [
+        "120°",
+        "30°",
+        "85°",
+        "90°"
+      ],
+      "correct_answer": "120°",
+      "answer": "120°",
+      "explanation": "มุมป้าน > 90° ดังนั้น 120°",
+      "explanation_th": "มุมป้าน > 90° ดังนั้น 120°",
+      "difficulty": "easy",
+      "hint_th": "มุมป้าน > 90°"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "90° + 45° + 120° = ?",
+      "question_text_en": "90° + 45° + 120° = ?",
+      "choices": [
+        "255°",
+        "245°",
+        "265°",
+        "235°"
+      ],
+      "correct_answer": "255°",
+      "answer": "255°",
+      "explanation": "90+45+120=255°",
+      "explanation_th": "90+45+120=255°",
+      "difficulty": "easy",
+      "hint_th": "บวกองศาเหมือนจำนวนเต็ม"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "มุมสามเหลี่ยมรวมกี่องศา",
+      "question_text_en": "How many degrees do triangle angles add up to?",
+      "choices": [
+        "180°",
+        "360°",
+        "90°",
+        "270°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "มุมสามเหลี่ยมรวม = 180°",
+      "explanation_th": "มุมสามเหลี่ยมรวม = 180°",
+      "difficulty": "easy",
+      "hint_th": "มุมสามเหลี่ยม = 180°"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "มุม 30°, 60°, 90° รวมกี่องศา เป็นมุมอะไรบ้าง",
+      "question_text_en": "Angles 30°, 60°, 90°: total and types?",
+      "choices": [
+        "180° แหลม แหลม ฉาก",
+        "180° แหลม แหลม ป้าน",
+        "170° แหลม แหลม ฉาก",
+        "180° ทั้งหมดแหลม"
+      ],
+      "correct_answer": "180° แหลม แหลม ฉาก",
+      "answer": "180° แหลม แหลม ฉาก",
+      "explanation": "30+60+90=180° | 30°<90°แหลม 60°<90°แหลม 90°=ฉาก",
+      "explanation_th": "30+60+90=180° | 30°แหลม 60°แหลม 90°ฉาก",
+      "difficulty": "medium",
+      "hint_th": "บวกและจำแนกมุม"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "ข้อใดถูก: มุมแหลม < 90° | มุมฉาก > 90° | มุมป้าน < 90° | มุมตรง = 180°",
+      "question_text_en": "Which: Acute < 90° | Right > 90° | Obtuse < 90° | Straight = 180°",
+      "choices": [
+        "แหลม<90° และ ตรง=180°",
+        "ฉาก>90°",
+        "ป้าน<90°",
+        "ทุกข้อ"
+      ],
+      "correct_answer": "แหลม<90° และ ตรง=180°",
+      "answer": "แหลม<90° และ ตรง=180°",
+      "explanation": "แหลม<90° ✓ | ตรง=180° ✓",
+      "explanation_th": "มุมแหลม < 90° ถูก | มุมตรง = 180° ถูก",
+      "difficulty": "easy",
+      "hint_th": "จำนิยามมุมแต่ละชนิด"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "มุม 75° + 65° + 40° = ?",
+      "question_text_en": "Angles 75° + 65° + 40° = ?",
+      "choices": [
+        "180°",
+        "170°",
+        "190°",
+        "175°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "75+65+40=180°",
+      "explanation_th": "75+65+40=180°",
+      "difficulty": "easy",
+      "hint_th": "75+65+40=180°"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "มุมใดใกล้มุมฉายที่สุด: 30°, 60°, 75°, 85°",
+      "question_text_en": "Which closest to 90°: 30°, 60°, 75°, 85°?",
+      "choices": [
+        "85°",
+        "75°",
+        "60°",
+        "30°"
+      ],
+      "correct_answer": "85°",
+      "answer": "85°",
+      "explanation": "85° ต่างจาก 90° = 5° (น้อยที่สุด)",
+      "explanation_th": "85° ต่างจาก 90° = 5° ซึ่งน้อยที่สุด ใกล้มุมฉากที่สุด",
+      "difficulty": "hard",
+      "hint_th": "หาความต่างจาก 90°"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "สามเหลี่ยม: 55°, 70°, 55° รวม? มุมใดไม่แหลม",
+      "question_text_en": "Triangle: 55°, 70°, 55°. Total? Which not acute?",
+      "choices": [
+        "180° มุม 70° ไม่แหลม",
+        "180° ทุกมุมแหลม",
+        "170° มุม 70° ไม่แหลม",
+        "180° มุม 55° ไม่แหลม"
+      ],
+      "correct_answer": "180° มุม 70° ไม่แหลม",
+      "answer": "180° มุม 70° ไม่แหลม",
+      "explanation": "55+70+55=180° | 70°>90° ไม่เป็นมุมแหลม (เป็นมุมป้าน)",
+      "explanation_th": "55+70+55=180° | 70°>90° ไม่เป็นมุมแหลม เป็นมุมป้าน",
+      "difficulty": "hard",
+      "hint_th": "55+70+55=180° แต่ 70°>90° เป็นมุมป้าน"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

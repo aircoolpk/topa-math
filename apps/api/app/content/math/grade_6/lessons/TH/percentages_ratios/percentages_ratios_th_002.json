@@ -1,0 +1,193 @@
+{
+  "variant_id": "percentages_ratios_th_002",
+  "variant_title_th": "ร้อยละและอัตราส่วน",
+  "variant_title_en": "Percentages and Ratios",
+  "status": "needs_review",
+  "title_th": "ร้อยละและอัตราส่วน",
+  "title_en": "Percentages and Ratios",
+  "story_theme_th": "อัตราส่วนของจำนวนนักเรียนชายต่อนักเรียนหญิงในห้องคือ 3:5 ถ้ามีนักเรียนชาย 18 คน ห้องนี้มีนักเรียนทั้งหมดกี่คน",
+  "helper_tip": "หาค่า 1 ส่วนก่อน แล้วคูณด้วยจำนวนส่วนที่ต้องการ",
+  "think_story_th": "อัตราส่วน 3:5 หมายความว่านักเรียนชาย 3 ส่วน = 18 คน ดังนั้น 1 ส่วน = 18 ÷ 3 = 6 คน นักเรียนหญิง 5 ส่วน = 5 × 6 = 30 คน รวมทั้งหมด = 18 + 30 = 48 คน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "อัตราส่วนของจำนวนนักเรียนชายต่อนักเรียนหญิงในห้องคือ 3:5 ถ้ามีนักเรียนชาย 18 คน ห้องนี้มีนักเรียนทั้งหมดกี่คน",
+      "data": {
+        "content_th": "อัตราส่วนของจำนวนนักเรียนชายต่อนักเรียนหญิงในห้องคือ 3:5 ถ้ามีนักเรียนชาย 18 คน ห้องนี้มีนักเรียนทั้งหมดกี่คน"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "อัตราส่วน 3:5 หมายความว่านักเรียนชาย 3 ส่วน = 18 คน ดังนั้น 1 ส่วน = 18 ÷ 3 = 6 คน นักเรียนหญิง 5 ส่วน = 5 × 6 = 30 คน รวมทั้งหมด = 18 + 30 = 48 คน",
+      "data": {
+        "content_th": "อัตราส่วน 3:5 หมายความว่านักเรียนชาย 3 ส่วน = 18 คน ดังนั้น 1 ส่วน = 18 ÷ 3 = 6 คน นักเรียนหญิง 5 ส่วน = 5 × 6 = 30 คน รวมทั้งหมด = 18 + 30 = 48 คน"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "คน",
+        "bars": [
+          {
+            "label": "นักเรียนชาย (3 ส่วน)",
+            "value": 18,
+            "display": "18 คน",
+            "color": "#4ECDC4",
+            "width_pct": 60
+          },
+          {
+            "label": "นักเรียนหญิง (5 ส่วน)",
+            "value": 30,
+            "display": "30 คน",
+            "color": "#FF6B6B",
+            "width_pct": 100
+          },
+          {
+            "label": "รวม (8 ส่วน)",
+            "value": 48,
+            "display": "48 คน",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "18 ÷ 3 = 6",
+            "formula": {
+              "display": "18 ÷ 3 = 6",
+              "a": 18,
+              "b": 3,
+              "result": 6,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}18&\\ ÷\\quad 3&\\ \\hline 6&\\\\ \\hline \\end{array}",
+              "a_display": "18",
+              "b_display": "3",
+              "result_display": "6",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 18 ÷ 3 = 6"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "6 × 5 = 30",
+            "formula": {
+              "display": "6 × 5 = 30",
+              "a": 6,
+              "b": 5,
+              "result": 30,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}6&\\ ×\\quad 5&\\ \\hline 30&\\\\ \\hline \\end{array}",
+              "a_display": "6",
+              "b_display": "5",
+              "result_display": "30",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 6 × 5 = 30"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "18 + 30 = 48",
+            "formula": {
+              "display": "18 + 30 = 48",
+              "a": 18,
+              "b": 30,
+              "result": 48,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}18&\\ +\\quad 30&\\ \\hline 48&\\\\ \\hline \\end{array}",
+              "a_display": "18",
+              "b_display": "30",
+              "result_display": "48",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 18 + 30 = 48"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "18 ÷ 3 = 6 | 6 × 5 = 30 | 18 + 30 = 48",
+      "content": "18 ÷ 3 = 6 | 6 × 5 = 30 | 18 + 30 = 48",
+      "data": {
+        "expression": "18 ÷ 3 = 6 | 6 × 5 = 30 | 18 + 30 = 48",
+        "operations": [
+          {
+            "op": "÷",
+            "a": 18,
+            "b": 3,
+            "result": 6
+          },
+          {
+            "op": "×",
+            "a": 6,
+            "b": 5,
+            "result": 30
+          },
+          {
+            "op": "+",
+            "a": 18,
+            "b": 30,
+            "result": 48
+          }
+        ],
+        "content_th": "18 ÷ 3 = 6 | 6 × 5 = 30 | 18 + 30 = 48"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "อัตราส่วนแป้งต่อน้ำในสูตรเค้กคือ 2:7 ถ้าใช้แป้ง 200 กรัม ต้องใช้น้ำกี่กรัม",
+      "choices": [
+        "600 กรัม",
+        "700 กรัม",
+        "500 กรัม",
+        "800 กรัม"
+      ],
+      "correct_answer": "700 กรัม",
+      "explanation": "1 ส่วน = 200 ÷ 2 = 100 กรัม, น้ำ = 7 × 100 = 700 กรัม",
+      "data": {
+        "question": "อัตราส่วนแป้งต่อน้ำในสูตรเค้กคือ 2:7 ถ้าใช้แป้ง 200 กรัม ต้องใช้น้ำกี่กรัม",
+        "choices": [
+          "600 กรัม",
+          "700 กรัม",
+          "500 กรัม",
+          "800 กรัม"
+        ],
+        "correct_answer": "700 กรัม",
+        "explanation": "1 ส่วน = 200 ÷ 2 = 100 กรัม, น้ำ = 7 × 100 = 700 กรัม"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

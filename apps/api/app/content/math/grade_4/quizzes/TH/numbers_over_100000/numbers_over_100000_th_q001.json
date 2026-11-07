@@ -1,0 +1,179 @@
+{
+  "lesson_id": "numbers_over_100000_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "ร้านขายผลไม้ขายมะม่วงได้ 45,780 กิโลกรัม ขายส้มได้ 32,650 กิโลกรัม ขายมังคุดได้ 27,050 กิโลกรัม รวมขายผลไม้ได้กี่กิโลกรัม",
+      "question_text_en": "A fruit shop sold 45,780 kg of mangoes, 32,650 kg of oranges, and 27,050 kg of mangosteens. How many kg of fruit were sold in total?",
+      "choices": [
+        "95,480 กก.",
+        "105,480 กก.",
+        "95,840 กก.",
+        "105,840 กก."
+      ],
+      "correct_answer": "105,480 กก.",
+      "answer": "105,480 กก.",
+      "explanation": "45,780 + 32,650 + 27,050 = 105,480 กก.",
+      "explanation_th": "45,780 + 32,650 + 27,050 = 105,480 กิโลกรัม",
+      "difficulty": "easy",
+      "hint_th": "เขียนตัวเลขเรียงหลักให้ตรงกัน แล้วบวกทีละขั้น"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "สถานีรถไฟมีผู้โดยสาร 67,890 คน ขบวนที่ 1 มี 45,320 คน ขบวนที่ 2 มี 38,470 คน รวมผู้โดยสารทั้งหมดกี่คน",
+      "question_text_en": "A train station has 67,890 passengers. Train 1 has 45,320 passengers. Train 2 has 38,470 passengers. How many passengers are there in total?",
+      "choices": [
+        "151,680 คน",
+        "141,680 คน",
+        "151,780 คน",
+        "141,780 คน"
+      ],
+      "correct_answer": "151,680 คน",
+      "answer": "151,680 คน",
+      "explanation": "67,890 + 45,320 + 38,470 = 151,680 คน",
+      "explanation_th": "67,890 + 45,320 + 38,470 = 151,680 คน",
+      "difficulty": "easy",
+      "hint_th": "บวกจำนวนสามจำนวนโดยเขียนเรียงหลักให้ตรง"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "ห้องสมุดมีหนังสือ 3 ชั้น ชั้นที่ 1 มี 58,340 เล่ม ชั้นที่ 2 มี 41,275 เล่ม ชั้นที่ 3 มี 39,865 เล่ม รวมมีหนังสือกี่เล่ม",
+      "question_text_en": "A library has books on 3 shelves. Shelf 1 has 58,340 books. Shelf 2 has 41,275 books. Shelf 3 has 39,865 books. How many books are there in total?",
+      "choices": [
+        "129,480 เล่ม",
+        "139,480 เล่ม",
+        "129,840 เล่ม",
+        "138,480 เล่ม"
+      ],
+      "correct_answer": "139,480 เล่ม",
+      "answer": "139,480 เล่ม",
+      "explanation": "58,340 + 41,275 + 39,865 = 139,480 เล่ม",
+      "explanation_th": "58,340 + 41,275 + 39,865 = 139,480 เล่ม",
+      "difficulty": "easy",
+      "hint_th": "บวกทีละขั้นจากขวาไปซ้าย ถ้าเกิน 9 ให้ทด"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "ตลาดขายผักได้รายได้ 3 วัน วันละ 78,450 บาท 56,780 บาท และ 89,270 บาท รวมได้เงินเท่าไร",
+      "question_text_en": "A market earned 78,450 baht, 56,780 baht, and 89,270 baht over 3 days. How much was earned in total?",
+      "choices": [
+        "214,500 บาท",
+        "224,500 บาท",
+        "214,050 บาท",
+        "224,050 บาท"
+      ],
+      "correct_answer": "224,500 บาท",
+      "answer": "224,500 บาท",
+      "explanation": "78,450 + 56,780 + 89,270 = 224,500 บาท",
+      "explanation_th": "78,450 + 56,780 + 89,270 = 224,500 บาท",
+      "difficulty": "medium",
+      "hint_th": "บวกจำนวนสามจำนวน ระวังการทด"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "โรงแรมมีแขก 3 ชั้น ชั้นละ 28,350 คน 35,470 คน และ 42,680 คน รวมแขกทั้งหมดกี่คน",
+      "question_text_en": "A hotel has guests on 3 floors: 28,350, 35,470, and 42,680 guests. How many guests are there in total?",
+      "choices": [
+        "106,500 คน",
+        "96,500 คน",
+        "106,050 คน",
+        "96,050 คน"
+      ],
+      "correct_answer": "106,500 คน",
+      "answer": "106,500 คน",
+      "explanation": "28,350 + 35,470 + 42,680 = 106,500 คน",
+      "explanation_th": "28,350 + 35,470 + 42,680 = 106,500 คน",
+      "difficulty": "medium",
+      "hint_th": "เขียนเรียงหลักให้ตรง บวกจากขวาไปซ้าย"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "ร้านค้าขายสินค้า 4 วัน ได้เงิน 52,300 + 68,750 + 47,150 + 81,400 บาท รวมได้เท่าไร",
+      "question_text_en": "A shop earned 52,300 + 68,750 + 47,150 + 81,400 baht over 4 days. What is the total?",
+      "choices": [
+        "239,600 บาท",
+        "249,600 บาท",
+        "229,600 บาท",
+        "259,600 บาท"
+      ],
+      "correct_answer": "249,600 บาท",
+      "answer": "249,600 บาท",
+      "explanation": "52,300 + 68,750 + 47,150 + 81,400 = 249,600 บาท",
+      "explanation_th": "52,300 + 68,750 + 47,150 + 81,400 = 249,600 บาท",
+      "difficulty": "medium",
+      "hint_th": "บวกจำนวนสี่จำนวน ระวังทดทีละหลัก"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "จำนวนในข้อใดต่อไปนี้มากที่สุด: 234,567 | 243,657 | 254,367 | 243,756",
+      "question_text_en": "Which of the following numbers is the greatest? 234,567 | 243,657 | 254,367 | 243,756",
+      "choices": [
+        "254,367",
+        "243,657",
+        "243,756",
+        "234,567"
+      ],
+      "correct_answer": "254,367",
+      "answer": "254,367",
+      "explanation": "เปรียบเทียบหลักแสน: 2=2=2=2 หลักหมื่น: 5>4>4>3 ดังนั้น 254,367 มากสุด",
+      "explanation_th": "เปรียบเทียบทีละหลักจากซ้ายไปขวา หลักที่มีค่าต่างกันก่อนคือหลักหมื่น 5>4>4>3",
+      "difficulty": "hard",
+      "hint_th": "เปรียบเทียบจำนวนทีละหลักจากซ้ายไปขวา หลักแสนเท่ากัน ให้ดูหลักหมื่น"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "นักเรียน 3 ห้องมีนักเรียน 45,280 คน 38,490 คน 41,735 คน รวมนักเรียนทั้งหมดกี่คน และมากกว่า 100,000 อยู่เท่าไร",
+      "question_text_en": "3 classrooms have 45,280, 38,490, and 41,735 students. How many students in total and how much more than 100,000?",
+      "choices": [
+        "125,505 คน, ขาด 25,495 คน",
+        "125,505 คน, เกิน 25,505 คน",
+        "135,505 คน, ขาด 25,495 คน",
+        "125,505 คน, ขาด 35,495 คน"
+      ],
+      "correct_answer": "125,505 คน, ขาด 25,495 คน",
+      "answer": "125,505 คน, ขาด 25,495 คน",
+      "explanation": "45,280+38,490+41,735=125,505 คน | 125,505-100,000=ขาด25,495",
+      "explanation_th": "125,280+38,490+41,735=125,505 คน | 100,000-125,505=ขาด25,495 คน",
+      "difficulty": "hard",
+      "hint_th": "บวกก่อน แล้วค่อยลบออกจาก 100,000"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับการบวกจำนวนที่มากกว่า 100,000",
+      "question_text_en": "Which of the following is correct about adding numbers greater than 100,000?",
+      "choices": [
+        "ต้องเขียนตัวเลขเรียงหลักให้ตรงกัน",
+        "สามารถบวกโดยไม่ต้องเขียนเรียงหลักได้",
+        "ผลบวกจะต้องมากกว่าผลบวกของจำนวนใดๆ ที่น้อยกว่า",
+        "ไม่มีข้อถูก"
+      ],
+      "correct_answer": "ต้องเขียนตัวเลขเรียงหลักให้ตรงกัน",
+      "answer": "ต้องเขียนตัวเลขเรียงหลักให้ตรงกัน",
+      "explanation": "การบวกที่ถูกต้องต้องเขียนตัวเลขเรียงหลักให้ตรงกัน ไม่งั้นจะบวกผิด",
+      "explanation_th": "การบวกจำนวนมากๆ ต้องเขียนเรียงหลักให้ตรงเสมอ",
+      "difficulty": "easy",
+      "hint_th": "พื้นฐานการบวกจำนวนหลายหลัก"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "จำนวนสองจำนวนบวกกันได้ 175,830 โดยจำนวนหนึ่งคือ 89,450 อีกจำนวนหนึ่งคือเท่าไร",
+      "question_text_en": "Two numbers add up to 175,830. One number is 89,450. What is the other number?",
+      "choices": [
+        "86,380",
+        "96,380",
+        "86,280",
+        "96,280"
+      ],
+      "correct_answer": "86,380",
+      "answer": "86,380",
+      "explanation": "175,830 - 89,450 = 86,380",
+      "explanation_th": "175,830 - 89,450 = 86,380",
+      "difficulty": "medium",
+      "hint_th": "ใช้การลบ นำผลบวกลบด้วยจำนวนที่ทราบ"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

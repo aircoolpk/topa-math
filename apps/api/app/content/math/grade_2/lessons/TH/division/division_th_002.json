@@ -1,0 +1,188 @@
+{
+  "variant_id": "division_th_002",
+  "variant_title_th": "การหาร",
+  "variant_title_en": "Division",
+  "status": "needs_review",
+  "title_th": "การหาร",
+  "title_en": "Division",
+  "story_theme_th": "อ้ายมีดินสอ 72 แท่ง ต้องการใส่กล่อง กล่องละ 9 แท่ง อ้ายต้องใช้กล่องกี่ใบ และถ้ามีกล่อง 8 ใบ จะใส่ดินสอได้กี่แท่ง",
+  "helper_tip": "การหารมีสองแบบ หาจำนวนกล่อง = จำนวนสิ่งของ หาร จำนวนต่อกล่อง หรือ หาจำนวนสิ่งของ = จำนวนกล่อง x จำนวนต่อกล่อง",
+  "think_story_th": "72 / 9 = 8 ใบ, 8 x 9 = 72 แท่ง",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "อ้ายมีดินสอ 72 แท่ง ต้องการใส่กล่อง กล่องละ 9 แท่ง อ้ายต้องใช้กล่องกี่ใบ และถ้ามีกล่อง 8 ใบ จะใส่ดินสอได้กี่แท่ง",
+      "data": {
+        "content_th": "อ้ายมีดินสอ 72 แท่ง ต้องการใส่กล่อง กล่องละ 9 แท่ง อ้ายต้องใช้กล่องกี่ใบ และถ้ามีกล่อง 8 ใบ จะใส่ดินสอได้กี่แท่ง"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "72 / 9 = 8 ใบ, 8 x 9 = 72 แท่ง",
+      "data": {
+        "content_th": "72 / 9 = 8 ใบ, 8 x 9 = 72 แท่ง"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "ดินสอรวม",
+            "value": 72,
+            "display": "72 แท่ง",
+            "color": "#4ECDC4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "กล่องละ",
+            "value": 9,
+            "display": "9 แท่ง",
+            "color": "#45B7D1",
+            "width_pct": 13
+          },
+          {
+            "label": "จำนวนกล่อง",
+            "value": 8,
+            "display": "8 ใบ",
+            "color": "#C7F464",
+            "width_pct": 11,
+            "is_result": true
+          }
+        ],
+        "unit": "แท่ง"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: หาจำนวนกล่อง",
+            "expression": "72 / 9 = 8",
+            "a": 72,
+            "b": 9,
+            "res": 8,
+            "op": "/",
+            "formula": {
+              "display": "72 / 9 = 8",
+              "a": 72,
+              "b": 9,
+              "result": 8,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "72",
+              "b_display": "9",
+              "result_display": "8",
+              "operation": "divide"
+            },
+            "story_connection": "72 / 9 = 8 ใบ"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: ตรวจคำตอบ",
+            "expression": "8 x 9 = 72",
+            "a": 8,
+            "b": 9,
+            "res": 72,
+            "op": "*",
+            "formula": {
+              "display": "8 x 9 = 72",
+              "a": 8,
+              "b": 9,
+              "result": 72,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "8",
+              "b_display": "9",
+              "result_display": "72",
+              "operation": "multiply"
+            },
+            "story_connection": "8 x 9 = 72 ถูกต้อง"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "72 / 9 = 8 และ 8 x 9 = 72",
+      "content": "72 / 9 = 8 และ 8 x 9 = 72",
+      "data": {
+        "expression": "72 / 9 = 8 และ 8 x 9 = 72",
+        "content_th": "72 / 9 = 8 และ 8 x 9 = 72",
+        "operations": [
+          {
+            "op": "/",
+            "a": 72,
+            "b": 9,
+            "result": 8
+          },
+          {
+            "op": "*",
+            "a": 8,
+            "b": 9,
+            "result": 72
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ขนมคุกกี้ 56 ชิ้น ใส่ถุง ถุงละ 7 ชิ้น ต้องใช้ถุงกี่ใบ",
+      "choices": [
+        "8 ใบ",
+        "7 ใบ",
+        "9 ใบ",
+        "6 ใบ"
+      ],
+      "correct_answer": "8 ใบ",
+      "explanation": "56 / 7 = 8 ใบ",
+      "data": {
+        "question": "ขนมคุกกี้ 56 ชิ้น ใส่ถุง ถุงละ 7 ชิ้น ต้องใช้ถุงกี่ใบ",
+        "choices": [
+          "8 ใบ",
+          "7 ใบ",
+          "9 ใบ",
+          "6 ใบ"
+        ],
+        "correct_answer": "8 ใบ",
+        "explanation": "56 / 7 = 8 ใบ"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

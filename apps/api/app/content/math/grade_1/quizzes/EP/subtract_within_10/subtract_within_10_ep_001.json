@@ -1,0 +1,179 @@
+{
+  "lesson_id": "subtract_within_10_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "subw10_ep_q001_e01",
+      "question_text": "Lin has 8 eggs. She uses 3 eggs to make cake. How many eggs does Lin have left?",
+      "question_text_th": "ลินมีไข่ 8 ฟอง ใช้ทำเค้ก 3 ฟอง ลินเหลือไข่กี่ฟอง",
+      "choices": [
+        "5 eggs",
+        "8 eggs",
+        "3 eggs",
+        "9 eggs"
+      ],
+      "correct_answer": "5 eggs",
+      "answer": "5 eggs",
+      "explanation": "8 - 3 = 5 eggs",
+      "explanation_th": "ลบไข่: 8 - 3 = 5 ฟอง",
+      "difficulty": "easy",
+      "hint_th": "Take away 3."
+    },
+    {
+      "question_id": "subw10_ep_q001_e02",
+      "question_text": "Book has 9 stickers. He gives 4 stickers to his friend. How many stickers does Book have left?",
+      "question_text_th": "บุ๊กมีสติกเกอร์ 9 ดวง ให้เพื่อน 4 ดวง บุ๊กเหลือสติกเกอร์กี่ดวง",
+      "choices": [
+        "5 stickers",
+        "8 stickers",
+        "3 stickers",
+        "9 stickers"
+      ],
+      "correct_answer": "5 stickers",
+      "answer": "5 stickers",
+      "explanation": "9 - 4 = 5 stickers",
+      "explanation_th": "ลบสติกเกอร์: 9 - 4 = 5 ดวง",
+      "difficulty": "easy",
+      "hint_th": "Give away 4."
+    },
+    {
+      "question_id": "subw10_ep_q001_e03",
+      "question_text": "Mai has 7 apples. She eats 2 apples. How many apples does Mai have left?",
+      "question_text_th": "ไมมีแอปเปิ้ล 7 ผล กินไป 2 ผล ไมเหลือแอปเปิ้ลกี่ผล",
+      "choices": [
+        "5 apples",
+        "8 apples",
+        "3 apples",
+        "9 apples"
+      ],
+      "correct_answer": "5 apples",
+      "answer": "5 apples",
+      "explanation": "7 - 2 = 5 apples",
+      "explanation_th": "ลบแอปเปิ้ล: 7 - 2 = 5 ผล",
+      "difficulty": "easy",
+      "hint_th": "Eat 2 apples."
+    },
+    {
+      "question_id": "subw10_ep_q001_m01",
+      "question_text": "Ai has 10 pencils. He loses 4 pencils in his bag. How many pencils does Ai have now?",
+      "question_text_th": "อ้ายมีดินสอ 10 แท่ง ทำหายในกระเป๋า 4 แท่ง อ้ายเหลือดินสอกี่แท่ง",
+      "choices": [
+        "6 pencils",
+        "9 pencils",
+        "4 pencils",
+        "10 pencils"
+      ],
+      "correct_answer": "6 pencils",
+      "answer": "6 pencils",
+      "explanation": "10 - 4 = 6 pencils",
+      "explanation_th": "ลบดินสอ: 10 - 4 = 6 แท่ง",
+      "difficulty": "medium",
+      "hint_th": "Subtract the lost ones."
+    },
+    {
+      "question_id": "subw10_ep_q001_m02",
+      "question_text": "Mali has 9 flowers. She gives 5 flowers to her teacher. How many flowers does Mali have left?",
+      "question_text_th": "มะลิมีดอกไม้ 9 ดอก ให้คุณครู 5 ดอก มะลิเหลือดอกไม้กี่ดอก",
+      "choices": [
+        "4 flowers",
+        "7 flowers",
+        "2 flowers",
+        "8 flowers"
+      ],
+      "correct_answer": "4 flowers",
+      "answer": "4 flowers",
+      "explanation": "9 - 5 = 4 flowers",
+      "explanation_th": "ลบดอกไม้: 9 - 5 = 4 ดอก",
+      "difficulty": "medium",
+      "hint_th": "Give to teacher."
+    },
+    {
+      "question_id": "subw10_ep_q001_m03",
+      "question_text": "Tad has 8 marbles. He wins 2 marbles from Book. How many marbles does Tad have now?",
+      "question_text_th": "ต้นมีลูกแก้ว 8 ลูก ชนะจากบุ๊กได้ 2 ลูก ต้นมีลูกแก้วกี่ลูก",
+      "choices": [
+        "10 marbles",
+        "13 marbles",
+        "8 marbles",
+        "14 marbles"
+      ],
+      "correct_answer": "10 marbles",
+      "answer": "10 marbles",
+      "explanation": "8 + 2 = 10 marbles",
+      "explanation_th": "บวกลูกแก้ว: 8 + 2 = 10 ลูก",
+      "difficulty": "medium",
+      "hint_th": "This is addition."
+    },
+    {
+      "question_id": "subw10_ep_q001_m04",
+      "question_text": "Chef Ai fries 7 eggs. He uses 3 eggs for breakfast. How many eggs are left?",
+      "question_text_th": "เชฟแอร์ทอดไข่ 7 ฟอง ใช้เช้า 3 ฟอง เหลือไข่กี่ฟอง",
+      "choices": [
+        "4 eggs",
+        "7 eggs",
+        "2 eggs",
+        "8 eggs"
+      ],
+      "correct_answer": "4 eggs",
+      "answer": "4 eggs",
+      "explanation": "7 - 3 = 4 eggs",
+      "explanation_th": "ลบไข่: 7 - 3 = 4 ฟอง",
+      "difficulty": "medium",
+      "hint_th": "Use for breakfast."
+    },
+    {
+      "question_id": "subw10_ep_q001_h01",
+      "question_text": "Lin has 9 candies. She gives 3 candies to Mali and 2 candies to Ai. How many candies does Lin have left?",
+      "question_text_th": "ลินมีลูกชุบ 9 ชิ้น ให้มะลิ 3 ชิ้น และให้อ้าย 2 ชิ้น ลินเหลือลูกชุบกี่ชิ้น",
+      "choices": [
+        "4 candies",
+        "7 candies",
+        "2 candies",
+        "8 candies"
+      ],
+      "correct_answer": "4 candies",
+      "answer": "4 candies",
+      "explanation": "9 - 3 - 2 = 4 candies",
+      "explanation_th": "ลบทีละขั้น: 9 - 3 - 2 = 4 ชิ้น",
+      "difficulty": "hard",
+      "hint_th": "Give to two friends."
+    },
+    {
+      "question_id": "subw10_ep_q001_h02",
+      "question_text": "A fruit stall has 8 mangoes. A customer buys 3 mangoes and another buys 2 mangoes. How many mangoes are left?",
+      "question_text_th": "แผงผลไม้มีมะม่วง 8 ผล ลูกค้าคนหนึ่งซื้อ 3 ผล อีกคนซื้อ 2 ผล เหลือมะม่วงกี่ผล",
+      "choices": [
+        "3 mangoes",
+        "6 mangoes",
+        "1 mangoes",
+        "7 mangoes"
+      ],
+      "correct_answer": "3 mangoes",
+      "answer": "3 mangoes",
+      "explanation": "8 - 3 - 2 = 3 mangoes",
+      "explanation_th": "ลบทีละคน: 8 - 3 - 2 = 3 ผล",
+      "difficulty": "hard",
+      "hint_th": "Two customers."
+    },
+    {
+      "question_id": "subw10_ep_q001_h03",
+      "question_text": "Book has 7 books. He gives 2 books to the library and then buys 4 new books. How many books does Book have now?",
+      "question_text_th": "บุ๊กมีหนังสือ 7 เล่ม ให้ห้องสมุด 2 เล่ม แล้วซื้อหนังสือใหม่ 4 เล่ม บุ๊กมีหนังสือกี่เล่ม",
+      "choices": [
+        "9 books",
+        "12 books",
+        "7 books",
+        "13 books"
+      ],
+      "correct_answer": "9 books",
+      "answer": "9 books",
+      "explanation": "7 - 2 + 4 = 9 books",
+      "explanation_th": "ลบแล้วบวก: 7 - 2 + 4 = 9 เล่ม",
+      "difficulty": "hard",
+      "hint_th": "Give away then buy."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

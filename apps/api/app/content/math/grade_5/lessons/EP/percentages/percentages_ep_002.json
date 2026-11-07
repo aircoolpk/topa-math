@@ -1,0 +1,122 @@
+{
+  "variant_id": "percentages_ep_002",
+  "variant_title_en": "Percentages — Bank Savings",
+  "status": "needs_review",
+  "title_en": "Percentages — Bank Savings",
+  "story_theme_en": "Father deposits 50,000 baht in a bank at 3% interest per year. How much interest does he earn after 1 year? What is the total amount? If he keeps it for another 6 months (interest is calculated at half the yearly rate), how much more interest does he earn?",
+  "helper_tip": "Interest = Principal × Rate × Time (in years)",
+  "hint_th": "ดอกเบี้ย = เงินต้น × อัตราดอกเบี้ย × เวลา(ปี)",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Father deposits 50,000 baht in a bank at 3% interest per year. How much interest does he earn after 1 year? What is the total amount? If he keeps it for another 6 months (interest is calculated at half the yearly rate), how much more interest does he earn?",
+      "data": {
+        "content_en": "Father deposits 50,000 baht in a bank at 3% interest per year. How much interest does he earn after 1 year? What is the total amount? If he keeps it for another 6 months (interest is calculated at half the yearly rate), how much more interest does he earn?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Interest for 1 year = 50,000 × 3/100 × 1 = 1,500 baht | Total = 51,500 baht | Interest for 6 months = 1,500 × 6/12 = 750 baht",
+      "data": {
+        "content_en": "Interest for 1 year = 50,000 × 3/100 × 1 = 1,500 baht | Total = 51,500 baht | Interest for 6 months = 1,500 × 6/12 = 750 baht"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Interest Diagram",
+      "description": "Interest Diagram",
+      "model_type": "percentage_bar",
+      "data": {
+        "model_type": "percentage_bar",
+        "operation": "multiply",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Principal",
+            "value": 50000,
+            "display": "50,000 baht",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Interest 1 yr",
+            "value": 1500,
+            "display": "+1,500 baht",
+            "color": "#45B7D1",
+            "width_pct": 3
+          },
+          {
+            "label": "Interest 6 mo",
+            "value": 750,
+            "display": "+750 baht",
+            "color": "#FFEAA7",
+            "width_pct": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "50000 x 3/100 = 1500",
+      "content": "Interest 1 year = 1,500 baht | Total = 51,500 baht | Extra interest = 750 baht",
+      "data": {
+        "expression": "Interest 1 year = 1,500 baht | Total = 51,500 baht | Extra interest = 750 baht",
+        "operations": [
+          {
+            "op": "×",
+            "a": 50000,
+            "b": 0.03,
+            "result": 1500
+          },
+          {
+            "op": "+",
+            "a": 50000,
+            "b": 1500,
+            "result": 51500
+          },
+          {
+            "op": "×",
+            "a": 1500,
+            "b": 0.5,
+            "result": 750
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "You deposit 20,000 baht at 4% interest per year. How much interest for 1.5 years?",
+      "choices": [
+        "1,200 baht",
+        "1,000 baht",
+        "800 baht",
+        "1,400 baht"
+      ],
+      "correct_answer": "1,200 baht",
+      "explanation": "20,000 × 4/100 × 1.5 = 1,200 baht",
+      "data": {
+        "question": "You deposit 20,000 baht at 4% interest per year. How much interest for 1.5 years?",
+        "choices": [
+          "1,200 baht",
+          "1,000 baht",
+          "800 baht",
+          "1,400 baht"
+        ],
+        "correct_answer": "1,200 baht",
+        "explanation": "20,000 × 4/100 × 1.5 = 1,200 baht"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

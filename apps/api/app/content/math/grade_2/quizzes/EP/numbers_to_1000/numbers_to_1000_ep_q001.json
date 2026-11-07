@@ -1,0 +1,133 @@
+{
+  "quiz_id": "numbers_to_1000_ep_q001",
+  "topic_key": "numbers_to_1000",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz numbers_to_1000_ep_q001",
+  "title_en": "Quiz numbers_to_1000_ep_q001",
+  "questions": [
+    {
+      "question": "250 + 130 = ?",
+      "choices": [
+        "380",
+        "370",
+        "390",
+        "480"
+      ],
+      "correct_answer": "380",
+      "explanation": "250+130=380",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which number is the greatest? 425, 542, 245, 524",
+      "choices": [
+        "542",
+        "425",
+        "245",
+        "524"
+      ],
+      "correct_answer": "542",
+      "explanation": "542 has the largest hundreds digit (5)",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Six hundred twelve is written as",
+      "choices": [
+        "612",
+        "606",
+        "621",
+        "620"
+      ],
+      "correct_answer": "612",
+      "explanation": "6 hundreds + 1 ten + 2 ones = 612",
+      "difficulty": "easy"
+    },
+    {
+      "question": "400 + 50 + 8 = ?",
+      "choices": [
+        "458",
+        "485",
+        "548",
+        "408"
+      ],
+      "correct_answer": "458",
+      "explanation": "400+50+8 = 458",
+      "difficulty": "easy"
+    },
+    {
+      "question": "In the number 738, the tens digit is",
+      "choices": [
+        "3",
+        "7",
+        "8",
+        "738"
+      ],
+      "correct_answer": "3",
+      "explanation": "7=hundreds, 3=tens, 8=ones",
+      "difficulty": "easy"
+    },
+    {
+      "question": "920 - 400 = ?",
+      "choices": [
+        "520",
+        "420",
+        "530",
+        "620"
+      ],
+      "correct_answer": "520",
+      "explanation": "920-400=520",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A shop has 245 oranges and gets 178 more. How many oranges are there?",
+      "choices": [
+        "423 oranges",
+        "413 oranges",
+        "433 oranges",
+        "323 oranges"
+      ],
+      "correct_answer": "423 oranges",
+      "explanation": "245+178=423 oranges",
+      "difficulty": "medium"
+    },
+    {
+      "question": "1,000 - 350 = ?",
+      "choices": [
+        "650",
+        "750",
+        "550",
+        "600"
+      ],
+      "correct_answer": "650",
+      "explanation": "1,000-350=650",
+      "difficulty": "medium"
+    },
+    {
+      "question": "The number with 6 hundreds, 3 tens, 9 ones is",
+      "choices": [
+        "639",
+        "693",
+        "936",
+        "369"
+      ],
+      "correct_answer": "639",
+      "explanation": "6x100+3x10+9 = 639",
+      "difficulty": "medium"
+    },
+    {
+      "question": "256 + 347 = ?",
+      "choices": [
+        "603",
+        "593",
+        "613",
+        "583"
+      ],
+      "correct_answer": "603",
+      "explanation": "256+300=556, 556+47=603",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

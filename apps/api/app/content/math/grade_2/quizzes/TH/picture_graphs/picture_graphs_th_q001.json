@@ -1,0 +1,133 @@
+{
+  "quiz_id": "picture_graphs_th_q001",
+  "topic_key": "picture_graphs",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ picture_graphs_th_q001",
+  "title_en": "Quiz picture_graphs_th_q001",
+  "questions": [
+    {
+      "question": "แผนภูมิรูปภาพ แต่ละรูปแทน 2 คน มีรูป 7 รูป หมายถึงกี่คน",
+      "choices": [
+        "14 คน",
+        "7 คน",
+        "9 คน",
+        "21 คน"
+      ],
+      "correct_answer": "14 คน",
+      "explanation": "7x2=14 คน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "กราฟแท่งสูง 5 ช่อง ช่องละ 5 คน หมายถึงกี่คน",
+      "choices": [
+        "25 คน",
+        "10 คน",
+        "15 คน",
+        "20 คน"
+      ],
+      "correct_answer": "25 คน",
+      "explanation": "5x5=25 คน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "แผนภูมิรูปภาพ แต่ละรูปแทน 5 คน มีรูป 4 รูป ของอีกชนิดมีรูป 8 รูป ต่างกันเท่าไร",
+      "choices": [
+        "20 คน",
+        "15 คน",
+        "25 คน",
+        "10 คน"
+      ],
+      "correct_answer": "20 คน",
+      "explanation": "8x5=40, 4x5=20, 40-20=20 คน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "สำรวจสัตว์เลี้ยง หมา 8 คน แมว 5 คน ปลาทอง 3 คน รวมกี่คน",
+      "choices": [
+        "16 คน",
+        "15 คน",
+        "14 คน",
+        "13 คน"
+      ],
+      "correct_answer": "16 คน",
+      "explanation": "8+5+3=16 คน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "กราฟแท่ง A สูง 6 ช่อง กราฟแท่ง B สูง 4 ช่อง ช่องละ 3 คน ต่างกันกี่คน",
+      "choices": [
+        "6 คน",
+        "10 คน",
+        "18 คน",
+        "2 คน"
+      ],
+      "correct_answer": "6 คน",
+      "explanation": "(6-4)x3=2x3=6 คน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "แผนภูมิรูปภาพแสดงผลไม้ที่ชอบ: ส้ม 5 รูป กล้วย 7 รูป มะม่วง 3 รูป รูปละ 2 คน รวมกี่คน",
+      "choices": [
+        "30 คน",
+        "25 คน",
+        "20 คน",
+        "35 คน"
+      ],
+      "correct_answer": "30 คน",
+      "explanation": "(5+7+3)x2=15x2=30 คน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ในกราฟ 1 รูป = 4 คน ต้องการแสดง 32 คน ต้องวาดรูปกี่รูป",
+      "choices": [
+        "8 รูป",
+        "7 รูป",
+        "6 รูป",
+        "9 รูป"
+      ],
+      "correct_answer": "8 รูป",
+      "explanation": "32/4=8 รูป",
+      "difficulty": "easy"
+    },
+    {
+      "question": "สำรวจของชอบ ของ A ได้ 20 คน ของ B ได้ 15 คน ของ C ได้ 25 คน ของใดได้คะแนนน้อยที่สุด",
+      "choices": [
+        "B",
+        "A",
+        "C",
+        "B (อีกทางหนึ่ง)"
+      ],
+      "correct_answer": "B",
+      "explanation": "15 คน น้อยที่สุด",
+      "difficulty": "easy"
+    },
+    {
+      "question": "กราฟแท่งสูง 8 ช่อง ช่องละ 5 บาท รวมเท่าไร",
+      "choices": [
+        "40 บาท",
+        "13 บาท",
+        "45 บาท",
+        "35 บาท"
+      ],
+      "correct_answer": "40 บาท",
+      "explanation": "8x5=40 บาท",
+      "difficulty": "easy"
+    },
+    {
+      "question": "แผนภูมิรูปภาพ แต่ละรูปแทน 3 คน มี 6 รูป กับอีกชนิดมี 9 รูป ต่างกันกี่คน",
+      "choices": [
+        "9 คน",
+        "6 คน",
+        "18 คน",
+        "27 คน"
+      ],
+      "correct_answer": "9 คน",
+      "explanation": "(9-6)x3=3x3=9 คน",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

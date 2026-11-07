@@ -1,0 +1,371 @@
+{
+  "quiz_id": "data_presentation_TH_q002",
+  "title_th": "การนำเสนอข้อมูล",
+  "title_en": "Data Presentation",
+  "status": "needs_review",
+  "variant_id": "data_presentation_TH_q002",
+  "variant_title_th": "การนำเสนอข้อมูล",
+  "variant_title_en": "Data Presentation",
+  "questions": [
+    {
+      "question_id": "data_pre_q002_m01",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 4, 6, 8, 10, 12 ค่าเฉลี่ยเท่าไร",
+      "question_en": "ข้อมูล: 4, 6, 8, 10, 12 ค่าเฉลี่ยเท่าไร",
+      "choices_th": [
+        "7",
+        "8",
+        "8.5",
+        "7.5"
+      ],
+      "choices_en": [
+        "7",
+        "8",
+        "8.5",
+        "7.5"
+      ],
+      "correct_answer_th": "8",
+      "correct_answer_en": "8",
+      "answer_th": "8",
+      "answer": "8",
+      "explanation_th": "(4+6+8+10+12)÷5=40÷5=8",
+      "explanation_en": "(4+6+8+10+12)÷5=40÷5=8",
+      "difficulty": "easy",
+      "choices": [
+        "7",
+        "8",
+        "8.5",
+        "7.5"
+      ],
+      "correct_answer": "8",
+      "question_text": "ข้อมูล: 4, 6, 8, 10, 12 ค่าเฉลี่ยเท่าไร",
+      "explanation": "(4+6+8+10+12)÷5=40÷5=8",
+      "question_text_th": "ข้อมูล: 4, 6, 8, 10, 12 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "ข้อมูล: 4, 6, 8, 10, 12 ค่าเฉลี่ยเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m02",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 11, 13, 15, 17, 19 ค่าเฉลี่ยเท่าไร",
+      "question_en": "ข้อมูล: 11, 13, 15, 17, 19 ค่าเฉลี่ยเท่าไร",
+      "choices_th": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "choices_en": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct_answer_th": "15",
+      "correct_answer_en": "15",
+      "answer_th": "15",
+      "answer": "15",
+      "explanation_th": "(11+13+15+17+19)÷5=75÷5=15",
+      "explanation_en": "(11+13+15+17+19)÷5=75÷5=15",
+      "difficulty": "easy",
+      "choices": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct_answer": "15",
+      "question_text": "ข้อมูล: 11, 13, 15, 17, 19 ค่าเฉลี่ยเท่าไร",
+      "explanation": "(11+13+15+17+19)÷5=75÷5=15",
+      "question_text_th": "ข้อมูล: 11, 13, 15, 17, 19 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "ข้อมูล: 11, 13, 15, 17, 19 ค่าเฉลี่ยเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m03",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 2, 4, 6, 8, 10, 12 มัธยฐานเท่าไร",
+      "question_en": "ข้อมูล: 2, 4, 6, 8, 10, 12 มัธยฐานเท่าไร",
+      "choices_th": [
+        "6",
+        "7",
+        "6.5",
+        "7.5"
+      ],
+      "choices_en": [
+        "6",
+        "7",
+        "6.5",
+        "7.5"
+      ],
+      "correct_answer_th": "7",
+      "correct_answer_en": "7",
+      "answer_th": "7",
+      "answer": "7",
+      "explanation_th": "มัธยฐาน = (6+8)÷2=7",
+      "explanation_en": "มัธยฐาน = (6+8)÷2=7",
+      "difficulty": "easy",
+      "choices": [
+        "6",
+        "7",
+        "6.5",
+        "7.5"
+      ],
+      "correct_answer": "7",
+      "question_text": "ข้อมูล: 2, 4, 6, 8, 10, 12 มัธยฐานเท่าไร",
+      "explanation": "มัธยฐาน = (6+8)÷2=7",
+      "question_text_th": "ข้อมูล: 2, 4, 6, 8, 10, 12 มัธยฐานเท่าไร",
+      "question_text_en": "ข้อมูล: 2, 4, 6, 8, 10, 12 มัธยฐานเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m04",
+      "type": "multiple_choice",
+      "question_th": "น้ำหนัก 5 คน: 40, 45, 50, 55, 60 กก. ค่าเฉลี่ยเท่าไร",
+      "question_en": "น้ำหนัก 5 คน: 40, 45, 50, 55, 60 กก. ค่าเฉลี่ยเท่าไร",
+      "choices_th": [
+        "48 กก.",
+        "50 กก.",
+        "52 กก.",
+        "45 กก."
+      ],
+      "choices_en": [
+        "48 กก.",
+        "50 กก.",
+        "52 กก.",
+        "45 กก."
+      ],
+      "correct_answer_th": "50 กก.",
+      "correct_answer_en": "50 กก.",
+      "answer_th": "50 กก.",
+      "answer": "50 กก.",
+      "explanation_th": "(40+45+50+55+60)÷5=250÷5=50 กก.",
+      "explanation_en": "(40+45+50+55+60)÷5=250÷5=50 กก.",
+      "difficulty": "easy",
+      "choices": [
+        "48 กก.",
+        "50 กก.",
+        "52 กก.",
+        "45 กก."
+      ],
+      "correct_answer": "50 กก.",
+      "question_text": "น้ำหนัก 5 คน: 40, 45, 50, 55, 60 กก. ค่าเฉลี่ยเท่าไร",
+      "explanation": "(40+45+50+55+60)÷5=250÷5=50 กก.",
+      "question_text_th": "น้ำหนัก 5 คน: 40, 45, 50, 55, 60 กก. ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "น้ำหนัก 5 คน: 40, 45, 50, 55, 60 กก. ค่าเฉลี่ยเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m05",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 22, 24, 26, 28, 30, 32, 34 มัธยฐานเท่าไร",
+      "question_en": "ข้อมูล: 22, 24, 26, 28, 30, 32, 34 มัธยฐานเท่าไร",
+      "choices_th": [
+        "26",
+        "28",
+        "27",
+        "29"
+      ],
+      "choices_en": [
+        "26",
+        "28",
+        "27",
+        "29"
+      ],
+      "correct_answer_th": "28",
+      "correct_answer_en": "28",
+      "answer_th": "28",
+      "answer": "28",
+      "explanation_th": "มัธยฐาน = ค่ากลาง = 28",
+      "explanation_en": "มัธยฐาน = ค่ากลาง = 28",
+      "difficulty": "easy",
+      "choices": [
+        "26",
+        "28",
+        "27",
+        "29"
+      ],
+      "correct_answer": "28",
+      "question_text": "ข้อมูล: 22, 24, 26, 28, 30, 32, 34 มัธยฐานเท่าไร",
+      "explanation": "มัธยฐาน = ค่ากลาง = 28",
+      "question_text_th": "ข้อมูล: 22, 24, 26, 28, 30, 32, 34 มัธยฐานเท่าไร",
+      "question_text_en": "ข้อมูล: 22, 24, 26, 28, 30, 32, 34 มัธยฐานเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m06",
+      "type": "multiple_choice",
+      "question_th": "คะแนน: 60, 70, 80, 90, 100 ค่าเฉลี่ยเท่าไร",
+      "question_en": "คะแนน: 60, 70, 80, 90, 100 ค่าเฉลี่ยเท่าไร",
+      "choices_th": [
+        "70",
+        "75",
+        "80",
+        "85"
+      ],
+      "choices_en": [
+        "70",
+        "75",
+        "80",
+        "85"
+      ],
+      "correct_answer_th": "80",
+      "correct_answer_en": "80",
+      "answer_th": "80",
+      "answer": "80",
+      "explanation_th": "(60+70+80+90+100)÷5=400÷5=80",
+      "explanation_en": "(60+70+80+90+100)÷5=400÷5=80",
+      "difficulty": "easy",
+      "choices": [
+        "70",
+        "75",
+        "80",
+        "85"
+      ],
+      "correct_answer": "80",
+      "question_text": "คะแนน: 60, 70, 80, 90, 100 ค่าเฉลี่ยเท่าไร",
+      "explanation": "(60+70+80+90+100)÷5=400÷5=80",
+      "question_text_th": "คะแนน: 60, 70, 80, 90, 100 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "คะแนน: 60, 70, 80, 90, 100 ค่าเฉลี่ยเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m07",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 3, 5, 7, 9, 11, 13, 15 มัธยฐานเท่าไร",
+      "question_en": "ข้อมูล: 3, 5, 7, 9, 11, 13, 15 มัธยฐานเท่าไร",
+      "choices_th": [
+        "7",
+        "9",
+        "8",
+        "9.5"
+      ],
+      "choices_en": [
+        "7",
+        "9",
+        "8",
+        "9.5"
+      ],
+      "correct_answer_th": "9",
+      "correct_answer_en": "9",
+      "answer_th": "9",
+      "answer": "9",
+      "explanation_th": "มัธยฐาน = ค่ากลาง = 9",
+      "explanation_en": "มัธยฐาน = ค่ากลาง = 9",
+      "difficulty": "easy",
+      "choices": [
+        "7",
+        "9",
+        "8",
+        "9.5"
+      ],
+      "correct_answer": "9",
+      "question_text": "ข้อมูล: 3, 5, 7, 9, 11, 13, 15 มัธยฐานเท่าไร",
+      "explanation": "มัธยฐาน = ค่ากลาง = 9",
+      "question_text_th": "ข้อมูล: 3, 5, 7, 9, 11, 13, 15 มัธยฐานเท่าไร",
+      "question_text_en": "ข้อมูล: 3, 5, 7, 9, 11, 13, 15 มัธยฐานเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m08",
+      "type": "multiple_choice",
+      "question_th": "ยอดขาย 4 วัน: 80, 90, 110, 120 บาท ค่าเฉลี่ยเท่าไร",
+      "question_en": "ยอดขาย 4 วัน: 80, 90, 110, 120 บาท ค่าเฉลี่ยเท่าไร",
+      "choices_th": [
+        "95 บาท",
+        "100 บาท",
+        "105 บาท",
+        "90 บาท"
+      ],
+      "choices_en": [
+        "95 บาท",
+        "100 บาท",
+        "105 บาท",
+        "90 บาท"
+      ],
+      "correct_answer_th": "100 บาท",
+      "correct_answer_en": "100 บาท",
+      "answer_th": "100 บาท",
+      "answer": "100 บาท",
+      "explanation_th": "(80+90+110+120)÷4=400÷4=100 บาท",
+      "explanation_en": "(80+90+110+120)÷4=400÷4=100 บาท",
+      "difficulty": "easy",
+      "choices": [
+        "95 บาท",
+        "100 บาท",
+        "105 บาท",
+        "90 บาท"
+      ],
+      "correct_answer": "100 บาท",
+      "question_text": "ยอดขาย 4 วัน: 80, 90, 110, 120 บาท ค่าเฉลี่ยเท่าไร",
+      "explanation": "(80+90+110+120)÷4=400÷4=100 บาท",
+      "question_text_th": "ยอดขาย 4 วัน: 80, 90, 110, 120 บาท ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "ยอดขาย 4 วัน: 80, 90, 110, 120 บาท ค่าเฉลี่ยเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m09",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 5, 10, 15, 20, 25 ค่าเฉลี่ยเท่าไร",
+      "question_en": "ข้อมูล: 5, 10, 15, 20, 25 ค่าเฉลี่ยเท่าไร",
+      "choices_th": [
+        "12",
+        "14",
+        "15",
+        "13"
+      ],
+      "choices_en": [
+        "12",
+        "14",
+        "15",
+        "13"
+      ],
+      "correct_answer_th": "15",
+      "correct_answer_en": "15",
+      "answer_th": "15",
+      "answer": "15",
+      "explanation_th": "(5+10+15+20+25)÷5=75÷5=15",
+      "explanation_en": "(5+10+15+20+25)÷5=75÷5=15",
+      "difficulty": "easy",
+      "choices": [
+        "12",
+        "14",
+        "15",
+        "13"
+      ],
+      "correct_answer": "15",
+      "question_text": "ข้อมูล: 5, 10, 15, 20, 25 ค่าเฉลี่ยเท่าไร",
+      "explanation": "(5+10+15+20+25)÷5=75÷5=15",
+      "question_text_th": "ข้อมูล: 5, 10, 15, 20, 25 ค่าเฉลี่ยเท่าไร",
+      "question_text_en": "ข้อมูล: 5, 10, 15, 20, 25 ค่าเฉลี่ยเท่าไร"
+    },
+    {
+      "question_id": "data_pre_q002_m10",
+      "type": "multiple_choice",
+      "question_th": "ข้อมูล: 7, 9, 11, 13, 15, 17 มัธยฐานเท่าไร",
+      "question_en": "ข้อมูล: 7, 9, 11, 13, 15, 17 มัธยฐานเท่าไร",
+      "choices_th": [
+        "11",
+        "12",
+        "13",
+        "11.5"
+      ],
+      "choices_en": [
+        "11",
+        "12",
+        "13",
+        "11.5"
+      ],
+      "correct_answer_th": "12",
+      "correct_answer_en": "12",
+      "answer_th": "12",
+      "answer": "12",
+      "explanation_th": "มัธยฐาน = (11+13)÷2=12",
+      "explanation_en": "มัธยฐาน = (11+13)÷2=12",
+      "difficulty": "easy",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "11.5"
+      ],
+      "correct_answer": "12",
+      "question_text": "ข้อมูล: 7, 9, 11, 13, 15, 17 มัธยฐานเท่าไร",
+      "explanation": "มัธยฐาน = (11+13)÷2=12",
+      "question_text_th": "ข้อมูล: 7, 9, 11, 13, 15, 17 มัธยฐานเท่าไร",
+      "question_text_en": "ข้อมูล: 7, 9, 11, 13, 15, 17 มัธยฐานเท่าไร"
+    }
+  ]
+}

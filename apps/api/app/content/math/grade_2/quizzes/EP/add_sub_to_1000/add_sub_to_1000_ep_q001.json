@@ -1,0 +1,133 @@
+{
+  "quiz_id": "add_sub_to_1000_ep_q001",
+  "topic_key": "add_sub_to_1000",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz add_sub_to_1000_ep_q001",
+  "title_en": "Quiz add_sub_to_1000_ep_q001",
+  "questions": [
+    {
+      "question": "350 + 280 = ?",
+      "choices": [
+        "630",
+        "620",
+        "730",
+        "530"
+      ],
+      "correct_answer": "630",
+      "explanation": "350+200=550, 550+80=630",
+      "difficulty": "easy"
+    },
+    {
+      "question": "900 - 450 = ?",
+      "choices": [
+        "450",
+        "550",
+        "350",
+        "400"
+      ],
+      "correct_answer": "450",
+      "explanation": "900-400=500, 500-50=450",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Ai has 520 baht. He buys something for 185 baht. How much is left?",
+      "choices": [
+        "335 baht",
+        "345 baht",
+        "325 baht",
+        "245 baht"
+      ],
+      "correct_answer": "335 baht",
+      "explanation": "520-185=335 baht",
+      "difficulty": "medium"
+    },
+    {
+      "question": "248 + 376 = ?",
+      "choices": [
+        "624",
+        "614",
+        "714",
+        "604"
+      ],
+      "correct_answer": "624",
+      "explanation": "248+300=548, 548+76=624",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Lin has 450 meters of cloth. She sells 230 meters. How much is left?",
+      "choices": [
+        "220 m",
+        "210 m",
+        "230 m",
+        "120 m"
+      ],
+      "correct_answer": "220 m",
+      "explanation": "450-230=220 m",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Malisa harvested 385 kg of mangoes. She sold 269 kg. How much is left?",
+      "choices": [
+        "116 kg",
+        "126 kg",
+        "106 kg",
+        "216 kg"
+      ],
+      "correct_answer": "116 kg",
+      "explanation": "385-269=116 kg",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Book has 620 stamps. He gave 245 to his friend. He received 178 more. How many stamps does he have?",
+      "choices": [
+        "553 stamps",
+        "543 stamps",
+        "563 stamps",
+        "533 stamps"
+      ],
+      "correct_answer": "553 stamps",
+      "explanation": "620-245=375, 375+178=553 stamps",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A factory produced 780 breads. Sold 350, then made 295 more. How many breads?",
+      "choices": [
+        "725 breads",
+        "715 breads",
+        "735 breads",
+        "705 breads"
+      ],
+      "correct_answer": "725 breads",
+      "explanation": "780-350=430, 430+295=725 breads",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A fruit shop has 450 kg of durians. Sold 280 kg, then received 195 kg more. How much is left?",
+      "choices": [
+        "365 kg",
+        "355 kg",
+        "345 kg",
+        "375 kg"
+      ],
+      "correct_answer": "365 kg",
+      "explanation": "450-280=170, 170+195=365 kg",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Paid 850 baht and got 235 baht change. What was the price?",
+      "choices": [
+        "615 baht",
+        "605 baht",
+        "625 baht",
+        "595 baht"
+      ],
+      "correct_answer": "615 baht",
+      "explanation": "850-235=615 baht",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

@@ -1,0 +1,133 @@
+{
+  "quiz_id": "picture_graphs_ep_q001",
+  "topic_key": "picture_graphs",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz picture_graphs_ep_q001",
+  "title_en": "Quiz picture_graphs_ep_q001",
+  "questions": [
+    {
+      "question": "Picture graph: each picture = 2 people, 7 pictures = ? people",
+      "choices": [
+        "14 people",
+        "7 people",
+        "9 people",
+        "21 people"
+      ],
+      "correct_answer": "14 people",
+      "explanation": "7x2=14 people",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Bar graph 5 boxes tall, each box = 5 people = ? people",
+      "choices": [
+        "25 people",
+        "10 people",
+        "15 people",
+        "20 people"
+      ],
+      "correct_answer": "25 people",
+      "explanation": "5x5=25 people",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Picture graph: each picture = 5 people. One has 4 pictures, another has 8 pictures. Difference?",
+      "choices": [
+        "20 people",
+        "15 people",
+        "25 people",
+        "10 people"
+      ],
+      "correct_answer": "20 people",
+      "explanation": "8x5=40, 4x5=20, 40-20=20 people",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Survey: Dogs 8, Cats 5, Goldfish 3. Total?",
+      "choices": [
+        "16 people",
+        "15 people",
+        "14 people",
+        "13 people"
+      ],
+      "correct_answer": "16 people",
+      "explanation": "8+5+3=16 people",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Graph A is 6 boxes, Graph B is 4 boxes. Each box = 3 people. Difference?",
+      "choices": [
+        "6 people",
+        "10 people",
+        "18 people",
+        "2 people"
+      ],
+      "correct_answer": "6 people",
+      "explanation": "(6-4)x3=2x3=6 people",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Fruit survey: Oranges 5 pictures, Bananas 7, Mangoes 3. Each = 2 people. Total?",
+      "choices": [
+        "30 people",
+        "25 people",
+        "20 people",
+        "35 people"
+      ],
+      "correct_answer": "30 people",
+      "explanation": "(5+7+3)x2=15x2=30 people",
+      "difficulty": "medium"
+    },
+    {
+      "question": "In graph, 1 picture = 4 people. Need to show 32 people. How many pictures?",
+      "choices": [
+        "8 pictures",
+        "7 pictures",
+        "6 pictures",
+        "9 pictures"
+      ],
+      "correct_answer": "8 pictures",
+      "explanation": "32/4=8 pictures",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Survey: A got 20 votes, B got 15, C got 25. Which got the fewest?",
+      "choices": [
+        "B",
+        "A",
+        "C",
+        "B (อีกทางหนึ่ง)"
+      ],
+      "correct_answer": "B",
+      "explanation": "15 votes is the fewest",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Bar graph 8 boxes tall, each box = 5 baht = ? baht",
+      "choices": [
+        "40 baht",
+        "13 baht",
+        "45 baht",
+        "35 baht"
+      ],
+      "correct_answer": "40 baht",
+      "explanation": "8x5=40 baht",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Picture graph, each = 3 people. 6 pictures vs 9 pictures. Difference?",
+      "choices": [
+        "9 people",
+        "6 people",
+        "18 people",
+        "27 people"
+      ],
+      "correct_answer": "9 people",
+      "explanation": "(9-6)x3=3x3=9 people",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

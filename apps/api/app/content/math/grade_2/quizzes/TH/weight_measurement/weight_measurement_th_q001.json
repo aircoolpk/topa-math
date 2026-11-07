@@ -1,0 +1,133 @@
+{
+  "quiz_id": "weight_measurement_th_q001",
+  "topic_key": "weight_measurement",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ weight_measurement_th_q001",
+  "title_en": "Quiz weight_measurement_th_q001",
+  "questions": [
+    {
+      "question": "1 กิโลกรัม เท่ากับกี่กรัม",
+      "choices": [
+        "100 ก.",
+        "1,000 ก.",
+        "10 ก.",
+        "10,000 ก."
+      ],
+      "correct_answer": "1,000 ก.",
+      "explanation": "1 กก. = 1,000 ก.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "500 กรัม + 800 กรัม = ? กิโลกรัมกี่กรัม",
+      "choices": [
+        "1 กก. 300 ก.",
+        "1 กก. 200 ก.",
+        "1 กก. 400 ก.",
+        "800 ก."
+      ],
+      "correct_answer": "1 กก. 300 ก.",
+      "explanation": "1,300 ก. = 1 กก. 300 ก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "มะม่วงหนัก 750 กรัม ส้มหนัก 450 กรัม มะม่วงหนักกว่าส้มกี่กรัม",
+      "choices": [
+        "300 ก.",
+        "250 ก.",
+        "350 ก.",
+        "200 ก."
+      ],
+      "correct_answer": "300 ก.",
+      "explanation": "750-450=300 ก.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ข้าวสาร 2 กิโลกรัม 500 กรัม กับ ข้าวสาร 3 กิโลกรัม ต่างกันเท่าไร",
+      "choices": [
+        "500 ก.",
+        "1 กก. 500 ก.",
+        "1 ก.",
+        "1,500 ก."
+      ],
+      "correct_answer": "500 ก.",
+      "explanation": "3,000-2,500=500 ก.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "น้ำหนักรวม 1 กิโลกรัม 750 กรัม แบ่งเป็น 2 ส่วนเท่าๆ กัน แต่ละส่วนหนักเท่าไร",
+      "choices": [
+        "875 ก.",
+        "750 ก.",
+        "1,750 ก.",
+        "874 ก."
+      ],
+      "correct_answer": "875 ก.",
+      "explanation": "1,750/2=875 ก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ทุเรียนหนัก 2 กิโลกรัม 400 กรัม มังคุดหนัก 1 กิโลกรัม 600 กรัม รวมหนักเท่าไร",
+      "choices": [
+        "3 กก. 1,000 ก.",
+        "4 กก.",
+        "3 กก.",
+        "8 กก."
+      ],
+      "correct_answer": "4 กก.",
+      "explanation": "2,400+1,600=4,000 ก. = 4 กก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ผักบุ้งหนัก 850 กรัม ต้มไป 300 กรัม เหลือผักบุ้งกี่กรัม",
+      "choices": [
+        "550 ก.",
+        "650 ก.",
+        "450 ก.",
+        "750 ก."
+      ],
+      "correct_answer": "550 ก.",
+      "explanation": "850-300=550 ก.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "เนื้อหนัก 1 กิโลกรัม 200 กรัม หั่นใช้ไป 450 กรัม เหลือเนื้อกี่กรัม",
+      "choices": [
+        "750 ก.",
+        "850 ก.",
+        "650 ก.",
+        "950 ก."
+      ],
+      "correct_answer": "750 ก.",
+      "explanation": "1,200-450=750 ก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ปลาหนัก 3 กิโลกรัม 500 กรัม แบ่งให้เพื่อน 1 กิโลกรัม 750 กรัม เหลือปลากี่กรัม",
+      "choices": [
+        "1,750 ก.",
+        "1,650 ก.",
+        "1,850 ก.",
+        "2,250 ก."
+      ],
+      "correct_answer": "1,750 ก.",
+      "explanation": "3,500-1,750=1,750 ก.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "น้ำตาล 2 ถุง หนักถุงละ 750 กรัม รวมหนักเท่าไร",
+      "choices": [
+        "1,500 ก.",
+        "1,600 ก.",
+        "1,400 ก.",
+        "1,750 ก."
+      ],
+      "correct_answer": "1,500 ก.",
+      "explanation": "750x2=1,500 ก.",
+      "difficulty": "easy"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

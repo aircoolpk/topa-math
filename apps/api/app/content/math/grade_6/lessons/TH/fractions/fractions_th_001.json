@@ -1,0 +1,199 @@
+{
+  "variant_id": "fractions_th_001",
+  "variant_title_th": "เศษส่วน",
+  "variant_title_en": "Fractions",
+  "status": "needs_review",
+  "title_th": "เศษส่วน",
+  "title_en": "Fractions",
+  "story_theme_th": "แม่ซื้อพิซซ่ามา 1 ถาด แบ่งให้ลูกสามคน โดยลินได้ 1/3 ของพิซซ่า มะลิได้ 1/4 ของพิซซ่า และบุ๊กได้เศษที่เหลือ คนที่ได้พิซซ่ามากที่สุดคือคนใด และได้เท่าไร",
+  "helper_tip": "เวลาเปรียบเทียบเศษส่วน ให้ทำส่วนให้เท่ากันก่อนเสมอ",
+  "think_story_th": "ลินได้ 1/3 = 4/12 มะลิได้ 1/4 = 3/12 บุ๊กได้ 1 - 4/12 - 3/12 = 5/12 ดังนั้นบุ๊กได้มากที่สุดคือ 5/12 รองลงมาคือลิน 4/12 และมะลิ 3/12",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "แม่ซื้อพิซซ่ามา 1 ถาด แบ่งให้ลูกสามคน โดยลินได้ 1/3 ของพิซซ่า มะลิได้ 1/4 ของพิซซ่า และบุ๊กได้เศษที่เหลือ คนที่ได้พิซซ่ามากที่สุดคือคนใด และได้เท่าไร",
+      "data": {
+        "content_th": "แม่ซื้อพิซซ่ามา 1 ถาด แบ่งให้ลูกสามคน โดยลินได้ 1/3 ของพิซซ่า มะลิได้ 1/4 ของพิซซ่า และบุ๊กได้เศษที่เหลือ คนที่ได้พิซซ่ามากที่สุดคือคนใด และได้เท่าไร"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "ลินได้ 1/3 = 4/12 มะลิได้ 1/4 = 3/12 บุ๊กได้ 1 - 4/12 - 3/12 = 5/12 ดังนั้นบุ๊กได้มากที่สุดคือ 5/12 รองลงมาคือลิน 4/12 และมะลิ 3/12",
+      "data": {
+        "content_th": "ลินได้ 1/3 = 4/12 มะลิได้ 1/4 = 3/12 บุ๊กได้ 1 - 4/12 - 3/12 = 5/12 ดังนั้นบุ๊กได้มากที่สุดคือ 5/12 รองลงมาคือลิน 4/12 และมะลิ 3/12"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "หน่วย",
+        "bars": [
+          {
+            "label": "ลิน",
+            "value": 4,
+            "display": "4/12 ของถาด",
+            "color": "#4ECDC4",
+            "width_pct": 33
+          },
+          {
+            "label": "มะลิ",
+            "value": 3,
+            "display": "3/12 ของถาด",
+            "color": "#45B7D1",
+            "width_pct": 25
+          },
+          {
+            "label": "บุ๊ก",
+            "value": 5,
+            "display": "5/12 ของถาด",
+            "color": "#FF6B6B",
+            "width_pct": 42,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "4 ÷ 12 = 1/3",
+            "formula": {
+              "display": "4 ÷ 12 = 1/3",
+              "a": 1,
+              "b": 3,
+              "result": 4,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}1&\\ ÷\\quad 3&\\ \\hline 4&\\\\ \\hline \\end{array}",
+              "a_display": "1",
+              "b_display": "3",
+              "result_display": "4",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 4 ÷ 12 = 1/3"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "3 ÷ 12 = 1/4",
+            "formula": {
+              "display": "3 ÷ 12 = 1/4",
+              "a": 1,
+              "b": 4,
+              "result": 3,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}1&\\ ÷\\quad 4&\\ \\hline 3&\\\\ \\hline \\end{array}",
+              "a_display": "1",
+              "b_display": "4",
+              "result_display": "3",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 3 ÷ 12 = 1/4"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "12 - 4 - 3 = 5",
+            "formula": {
+              "display": "12 - 4 - 3 = 5",
+              "a": 12,
+              "b": 12,
+              "result": 0,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}12&\\ -\\quad 12&\\ \\hline 0&\\\\ \\hline \\end{array}",
+              "a_display": "12",
+              "b_display": "12",
+              "result_display": "0",
+              "operation": "subtract"
+            },
+            "story_connection": "จากบาร์โมเดล: 12 - 4 - 3 = 5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "4 ÷ 12 = 1/3 | 3 ÷ 12 = 1/4 | 12 - 4 - 3 = 5",
+      "content": "4 ÷ 12 = 1/3 | 3 ÷ 12 = 1/4 | 12 - 4 - 3 = 5",
+      "data": {
+        "expression": "4 ÷ 12 = 1/3 | 3 ÷ 12 = 1/4 | 12 - 4 - 3 = 5",
+        "operations": [
+          {
+            "op": "÷",
+            "a": 4,
+            "b": 12,
+            "result": "1/3"
+          },
+          {
+            "op": "÷",
+            "a": 3,
+            "b": 12,
+            "result": "1/4"
+          },
+          {
+            "op": "-",
+            "a": 12,
+            "b": 4,
+            "result": 8
+          },
+          {
+            "op": "-",
+            "a": 8,
+            "b": 3,
+            "result": 5
+          }
+        ],
+        "content_th": "4 ÷ 12 = 1/3 | 3 ÷ 12 = 1/4 | 12 - 4 - 3 = 5"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "พิซซ่า 1 ถาด แบ่งให้เด็ก 5 คน คนละเท่าๆ กัน คนหนึ่งได้เท่าไร",
+      "choices": [
+        "1/3 ของถาด",
+        "1/4 ของถาด",
+        "1/5 ของถาด",
+        "1/6 ของถาด"
+      ],
+      "correct_answer": "1/5 ของถาด",
+      "explanation": "แบ่งเท่าๆ กัน 5 คน = 1/5 ของถาด",
+      "data": {
+        "question": "พิซซ่า 1 ถาด แบ่งให้เด็ก 5 คน คนละเท่าๆ กัน คนหนึ่งได้เท่าไร",
+        "choices": [
+          "1/3 ของถาด",
+          "1/4 ของถาด",
+          "1/5 ของถาด",
+          "1/6 ของถาด"
+        ],
+        "correct_answer": "1/5 ของถาด",
+        "explanation": "แบ่งเท่าๆ กัน 5 คน = 1/5 ของถาด"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

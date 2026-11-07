@@ -1,0 +1,128 @@
+{
+  "variant_id": "parallel_lines_ep_002",
+  "variant_title_en": "Parallel Lines — Bridge Railings",
+  "status": "needs_review",
+  "title_en": "Parallel Lines — Bridge Railings",
+  "story_theme_en": "A bridge is 150 meters long with railings on both sides, each 150 meters long. The two railings are parallel. If the distance between the two railings is 4 meters, how wide is the bridge? If you paint both railings with 2 coats, how many square meters of railing need painting per side?",
+  "helper_tip": "Area of railing = Length × Width. For both sides, total area = 2 × Length × Width.",
+  "hint_th": "พื้นที่ราว = ความยาว × ความกว้าง",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A bridge is 150 meters long with railings on both sides, each 150 meters long. The two railings are parallel. If the distance between the two railings is 4 meters, how wide is the bridge? If you paint both railings with 2 coats, how many square meters of railing need painting per side?",
+      "data": {
+        "content_en": "A bridge is 150 meters long with railings on both sides, each 150 meters long. The two railings are parallel. If the distance between the two railings is 4 meters, how wide is the bridge? If you paint both railings with 2 coats, how many square meters of railing need painting per side?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Bridge width = left railing 4 m + gap 4 m + right railing 4 m = 12 m | Area per side railing = 150 × 0.5 = 75 sq m | For 2 coats = 75 × 2 = 150 sq m per side",
+      "data": {
+        "content_en": "Bridge width = left railing 4 m + gap 4 m + right railing 4 m = 12 m | Area per side railing = 150 × 0.5 = 75 sq m | For 2 coats = 75 × 2 = 150 sq m per side"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Parallel Lines Diagram",
+      "description": "Parallel Lines Diagram",
+      "model_type": "parallel_diagram",
+      "data": {
+        "model_type": "parallel_diagram",
+        "operation": "add_multiply",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Left railing",
+            "value": 4,
+            "display": "4 m",
+            "color": "#96CEB4",
+            "width_pct": 33
+          },
+          {
+            "label": "Walking gap",
+            "value": 4,
+            "display": "4 m",
+            "color": "#45B7D1",
+            "width_pct": 33,
+            "is_total": true
+          },
+          {
+            "label": "Right railing",
+            "value": 4,
+            "display": "4 m",
+            "color": "#96CEB4",
+            "width_pct": 33
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "4 + 4 + 4 = 12",
+      "content": "Bridge width = 12 m | Area to paint per side = 150 sq m for 2 coats",
+      "data": {
+        "expression": "Bridge width = 12 m | Area to paint per side = 150 sq m for 2 coats",
+        "operations": [
+          {
+            "op": "+",
+            "a": 4,
+            "b": 4,
+            "result": 8
+          },
+          {
+            "op": "+",
+            "a": 8,
+            "b": 4,
+            "result": 12
+          },
+          {
+            "op": "×",
+            "a": 150,
+            "b": 0.5,
+            "result": 75
+          },
+          {
+            "op": "×",
+            "a": 75,
+            "b": 2,
+            "result": 150
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A bridge railing is 80 meters long and 0.6 meters wide. Painting 3 coats. How many square meters to paint?",
+      "choices": [
+        "144 sq m",
+        "48 sq m",
+        "240 sq m",
+        "192 sq m"
+      ],
+      "correct_answer": "144 sq m",
+      "explanation": "Area = 80 × 0.6 = 48 sq m | 3 coats = 48 × 3 = 144 sq m",
+      "data": {
+        "question": "A bridge railing is 80 meters long and 0.6 meters wide. Painting 3 coats. How many square meters to paint?",
+        "choices": [
+          "144 sq m",
+          "48 sq m",
+          "240 sq m",
+          "192 sq m"
+        ],
+        "correct_answer": "144 sq m",
+        "explanation": "Area = 80 × 0.6 = 48 sq m | 3 coats = 48 × 3 = 144 sq m"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

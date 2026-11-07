@@ -1,0 +1,252 @@
+{
+  "variant_id": "three_dimensional_geometry_ep_002",
+  "variant_title_en": "Three-Dimensional Geometry",
+  "status": "needs_review",
+  "title_en": "Three-Dimensional Geometry",
+  "title_th": "รูปเรขาคณิตสามมิติ",
+  "story_theme_en": "A cylindrical water tank has a radius of 7 centimeters and a height of 20 centimeters. How many cubic centimeters of water can it hold? (π ≈ 22/7)",
+  "helper_tip": "Volume of cylinder = π × radius² × height",
+  "hint_th": "ปริมาตรทรงกระบอก = π × รัศมี² × สูง",
+  "think_story_en": "Base area = π × radius² = 22/7 × 7 × 7 = 154 square centimeters. Volume = base area × height = 154 × 20 = 3,080 cubic centimeters.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A cylindrical water tank has a radius of 7 centimeters and a height of 20 centimeters. How many cubic centimeters of water can it hold? (π ≈ 22/7)",
+      "data": {
+        "content_en": "A cylindrical water tank has a radius of 7 centimeters and a height of 20 centimeters. How many cubic centimeters of water can it hold? (π ≈ 22/7)"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Base area = π × radius² = 22/7 × 7 × 7 = 154 square centimeters. Volume = base area × height = 154 × 20 = 3,080 cubic centimeters.",
+      "data": {
+        "content_en": "Base area = π × radius² = 22/7 × 7 × 7 = 154 square centimeters. Volume = base area × height = 154 × 20 = 3,080 cubic centimeters."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "cubic centimeters",
+        "bars": [
+          {
+            "label": "Radius",
+            "value": 7,
+            "display": "7 cm",
+            "color": "#4ECDC4",
+            "width_pct": 35
+          },
+          {
+            "label": "Height",
+            "value": 20,
+            "display": "20 cm",
+            "color": "#45B7D1",
+            "width_pct": 100
+          },
+          {
+            "label": "Base area",
+            "value": 154,
+            "display": "154 sq cm",
+            "color": "#96CEB4",
+            "width_pct": 77
+          },
+          {
+            "label": "Volume",
+            "value": 3080,
+            "display": "3,080 cu cm",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "7 × 7 = 49",
+            "formula": {
+              "display": "7 × 7 = 49",
+              "a": 7,
+              "b": 7,
+              "result": 49,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}7&\\ ×\\quad 7&\\ \\hline 49&\\\\ \\hline \\end{array}",
+              "a_display": "7",
+              "b_display": "7",
+              "result_display": "49",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 7 × 7 = 49"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "22 × 49 = 1078",
+            "formula": {
+              "display": "22 × 49 = 1078",
+              "a": 22,
+              "b": 49,
+              "result": 1078,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}22&\\ ×\\quad 49&\\ \\hline 1078&\\\\ \\hline \\end{array}",
+              "a_display": "22",
+              "b_display": "49",
+              "result_display": "1078",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 22 × 49 = 1078"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "1078 ÷ 7 = 154",
+            "formula": {
+              "display": "1078 ÷ 7 = 154",
+              "a": 1078,
+              "b": 7,
+              "result": 7706,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}1078&\\ ÷\\quad 7&\\ \\hline 7706&\\\\ \\hline \\end{array}",
+              "a_display": "1078",
+              "b_display": "7",
+              "result_display": "7706",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 1078 ÷ 7 = 154"
+          },
+          {
+            "step": 4,
+            "label": "Step 4",
+            "expression": "22 × 7 = 154",
+            "formula": {
+              "display": "22 × 7 = 154",
+              "a": 22,
+              "b": 7,
+              "result": 154,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}22&\\ ×\\quad 7&\\ \\hline 154&\\\\ \\hline \\end{array}",
+              "a_display": "22",
+              "b_display": "7",
+              "result_display": "154",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 22 × 7 = 154"
+          },
+          {
+            "step": 5,
+            "label": "Step 5",
+            "expression": "154 × 20 = 3080",
+            "formula": {
+              "display": "154 × 20 = 3080",
+              "a": 154,
+              "b": 20,
+              "result": 3080,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}154&\\ ×\\quad 20&\\ \\hline 3080&\\\\ \\hline \\end{array}",
+              "a_display": "154",
+              "b_display": "20",
+              "result_display": "3080",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 154 × 20 = 3080"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "7 × 7 = 49 | 22 × 49 = 1078 | 1078 ÷ 7 = 154 | 22 × 7 = 154 | 154 × 20 = 3080",
+      "content": "7 × 7 = 49 | 22 × 49 = 1078 | 1078 ÷ 7 = 154 | 22 × 7 = 154 | 154 × 20 = 3080",
+      "data": {
+        "expression": "7 × 7 = 49 | 22 × 49 = 1078 | 1078 ÷ 7 = 154 | 22 × 7 = 154 | 154 × 20 = 3080",
+        "operations": [
+          {
+            "op": "×",
+            "a": 7,
+            "b": 7,
+            "result": 49
+          },
+          {
+            "op": "×",
+            "a": 22,
+            "b": 49,
+            "result": 1078
+          },
+          {
+            "op": "÷",
+            "a": 1078,
+            "b": 7,
+            "result": 154
+          },
+          {
+            "op": "×",
+            "a": 22,
+            "b": 7,
+            "result": 154
+          },
+          {
+            "op": "×",
+            "a": 154,
+            "b": 20,
+            "result": 3080
+          }
+        ],
+        "content_en": "7 × 7 = 49 | 22 × 49 = 1078 | 1078 ÷ 7 = 154 | 22 × 7 = 154 | 154 × 20 = 3080"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A cylinder has a radius of 5 cm and a height of 10 cm. What is its volume? (π ≈ 3.14)",
+      "choices": [
+        "314 cu cm",
+        "157 cu cm",
+        "785 cu cm",
+        "628 cu cm"
+      ],
+      "correct_answer": "785 cu cm",
+      "explanation": "3.14 × 5 × 5 × 10 = 785 cu cm",
+      "data": {
+        "question": "A cylinder has a radius of 5 cm and a height of 10 cm. What is its volume? (π ≈ 3.14)",
+        "choices": [
+          "314 cu cm",
+          "157 cu cm",
+          "785 cu cm",
+          "628 cu cm"
+        ],
+        "correct_answer": "785 cu cm",
+        "explanation": "3.14 × 5 × 5 × 10 = 785 cu cm"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

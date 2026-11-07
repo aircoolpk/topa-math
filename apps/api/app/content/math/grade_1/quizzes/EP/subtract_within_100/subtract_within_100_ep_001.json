@@ -1,0 +1,179 @@
+{
+  "lesson_id": "subtract_within_100_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "sw100_ep_q001_e01",
+      "question_text": "Lin has 78 stamps. She gives 35 stamps to her friend. How many stamps does Lin have left?",
+      "question_text_th": "ลินมีแสตมป์ 78 ดวง ให้เพื่อน 35 ดวง ลินเหลือแสตมป์กี่ดวง",
+      "choices": [
+        "43 stamps",
+        "51 stamps",
+        "38 stamps",
+        "55 stamps"
+      ],
+      "correct_answer": "43 stamps",
+      "answer": "43 stamps",
+      "explanation": "78 - 35 = 43 stamps",
+      "explanation_th": "78 - 35 = 43 ดวง",
+      "difficulty": "easy",
+      "hint_th": "Subtract stamps."
+    },
+    {
+      "question_id": "sw100_ep_q001_e02",
+      "question_text": "Book has 95 pencils. He sells 42 pencils. How many pencils does Book have left?",
+      "question_text_th": "บุ๊กมีดินสอ 95 แท่ง ขายไป 42 แท่ง บุ๊กเหลือดินสอกี่แท่ง",
+      "choices": [
+        "53 pencils",
+        "61 pencils",
+        "48 pencils",
+        "65 pencils"
+      ],
+      "correct_answer": "53 pencils",
+      "answer": "53 pencils",
+      "explanation": "95 - 42 = 53 pencils",
+      "explanation_th": "95 - 42 = 53 แท่ง",
+      "difficulty": "easy",
+      "hint_th": "Subtract sold pencils."
+    },
+    {
+      "question_id": "sw100_ep_q001_e03",
+      "question_text": "Mali has 64 flowers. She puts 23 flowers in a vase. How many flowers does Mali have left?",
+      "question_text_th": "มะลิมีดอกไม้ 64 ดอก ใส่แจกัน 23 ดอก มะลิเหลือดอกไม้กี่ดอก",
+      "choices": [
+        "41 flowers",
+        "49 flowers",
+        "36 flowers",
+        "53 flowers"
+      ],
+      "correct_answer": "41 flowers",
+      "answer": "41 flowers",
+      "explanation": "64 - 23 = 41 flowers",
+      "explanation_th": "64 - 23 = 41 ดอก",
+      "difficulty": "easy",
+      "hint_th": "Subtract flowers in vase."
+    },
+    {
+      "question_id": "sw100_ep_q001_m01",
+      "question_text": "Ai has 87 marbles. He loses 38 marbles. How many marbles does Ai have now?",
+      "question_text_th": "อ้ายมีลูกแก้ว 87 ลูก เสียไป 38 ลูก อ้ายเหลือลูกแก้วกี่ลูก",
+      "choices": [
+        "49 marbles",
+        "57 marbles",
+        "44 marbles",
+        "61 marbles"
+      ],
+      "correct_answer": "49 marbles",
+      "answer": "49 marbles",
+      "explanation": "87 - 38 = 49 marbles",
+      "explanation_th": "87 - 38 = 49 ลูก",
+      "difficulty": "medium",
+      "hint_th": "Subtract lost marbles."
+    },
+    {
+      "question_id": "sw100_ep_q001_m02",
+      "question_text": "A farmer has 91 chickens. He sells 47 chickens at the market. How many chickens are left?",
+      "question_text_th": "เกษตรกรมีไก่ 91 ตัว ขายที่ตลาด 47 ตัว เหลือไก่กี่ตัว",
+      "choices": [
+        "44 chickens",
+        "52 chickens",
+        "39 chickens",
+        "56 chickens"
+      ],
+      "correct_answer": "44 chickens",
+      "answer": "44 chickens",
+      "explanation": "91 - 47 = 44 chickens",
+      "explanation_th": "91 - 47 = 44 ตัว",
+      "difficulty": "medium",
+      "hint_th": "Subtract sold chickens."
+    },
+    {
+      "question_id": "sw100_ep_q001_m03",
+      "question_text": "Lin has 73 stickers. She gives 28 stickers to her classmates. How many stickers does Lin have left?",
+      "question_text_th": "ลินมีสติกเกอร์ 73 ดวง ให้เพื่อนในชั้น 28 ดวง ลินเหลือสติกเกอร์กี่ดวง",
+      "choices": [
+        "45 stickers",
+        "53 stickers",
+        "40 stickers",
+        "57 stickers"
+      ],
+      "correct_answer": "45 stickers",
+      "answer": "45 stickers",
+      "explanation": "73 - 28 = 45 stickers",
+      "explanation_th": "73 - 28 = 45 ดวง",
+      "difficulty": "medium",
+      "hint_th": "Subtract given stickers."
+    },
+    {
+      "question_id": "sw100_ep_q001_m04",
+      "question_text": "Tad has 85 beads. He uses 39 beads to make a necklace. How many beads does Tad have left?",
+      "question_text_th": "ต้นมีลูกปัด 85 ลูก ใช้ทำสร้อย 39 ลูก ต้นเหลือลูกปัดกี่ลูก",
+      "choices": [
+        "46 beads",
+        "54 beads",
+        "41 beads",
+        "58 beads"
+      ],
+      "correct_answer": "46 beads",
+      "answer": "46 beads",
+      "explanation": "85 - 39 = 46 beads",
+      "explanation_th": "85 - 39 = 46 ลูก",
+      "difficulty": "medium",
+      "hint_th": "Subtract used beads."
+    },
+    {
+      "question_id": "sw100_ep_q001_h01",
+      "question_text": "A shop has 96 toys. It sells 38 toys in the morning and 29 toys in the afternoon. How many toys are left?",
+      "question_text_th": "ร้านมีของเล่น 96 ชิ้น ขายเช้า 38 ชิ้น บ่าย 29 ชิ้น เหลือของเล่นกี่ชิ้น",
+      "choices": [
+        "29 toys",
+        "37 toys",
+        "24 toys",
+        "41 toys"
+      ],
+      "correct_answer": "29 toys",
+      "answer": "29 toys",
+      "explanation": "96 - 38 - 29 = 29 toys",
+      "explanation_th": "96 - 38 - 29 = 29 ชิ้น",
+      "difficulty": "hard",
+      "hint_th": "Subtract in two sessions."
+    },
+    {
+      "question_id": "sw100_ep_q001_h02",
+      "question_text": "Lin has 84 flowers. She gives 35 flowers to Mali and 25 flowers to Ai. How many flowers does Lin have left?",
+      "question_text_th": "ลินมีดอกไม้ 84 ดอก ให้มะลิ 35 ดอก และให้อ้าย 25 ดอก ลินเหลือดอกไม้กี่ดอก",
+      "choices": [
+        "24 flowers",
+        "32 flowers",
+        "19 flowers",
+        "36 flowers"
+      ],
+      "correct_answer": "24 flowers",
+      "answer": "24 flowers",
+      "explanation": "84 - 35 - 25 = 24 flowers",
+      "explanation_th": "84 - 35 - 25 = 24 ดอก",
+      "difficulty": "hard",
+      "hint_th": "Give to two people."
+    },
+    {
+      "question_id": "sw100_ep_q001_h03",
+      "question_text": "Book has 100 stamps. He gives 42 stamps to Lin, sells 35 stamps, and receives 20 new stamps. How many stamps does Book have now?",
+      "question_text_th": "บุ๊กมีแสตมป์ 100 ดวง ให้ลิน 42 ดวง ขาย 35 ดวง ได้รับใหม่ 20 ดวง บุ๊กมีแสตมป์กี่ดวง",
+      "choices": [
+        "43 stamps",
+        "51 stamps",
+        "38 stamps",
+        "55 stamps"
+      ],
+      "correct_answer": "43 stamps",
+      "answer": "43 stamps",
+      "explanation": "100 - 42 - 35 + 20 = 43 stamps",
+      "explanation_th": "100 - 42 - 35 + 20 = 43 ดวง",
+      "difficulty": "hard",
+      "hint_th": "Three operations."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

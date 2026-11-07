@@ -1,0 +1,218 @@
+{
+  "variant_id": "multiplication_ep_002",
+  "variant_title_th": "การคูณ",
+  "variant_title_en": "Multiplication",
+  "status": "needs_review",
+  "title_th": "การคูณ",
+  "title_en": "Multiplication",
+  "story_theme_th": "Malisa bought notebooks at 14 baht each. She bought 5 notebooks. She got a total discount of 12 baht. How much did Malisa pay? And if she has 100 baht, how much money is left?",
+  "helper_tip": "Multiply first, then subtract. Remember the order of operations: 2 x 3 + 4 = 10 but 2 x (3 + 4) = 14",
+  "think_story_th": "Total: 14 x 5 = 70 baht, After discount: 70 - 12 = 58 baht, Left: 100 - 58 = 42 baht",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Malisa bought notebooks at 14 baht each. She bought 5 notebooks. She got a total discount of 12 baht. How much did Malisa pay? And if she has 100 baht, how much money is left?",
+      "data": {
+        "content_th": "Malisa bought notebooks at 14 baht each. She bought 5 notebooks. She got a total discount of 12 baht. How much did Malisa pay? And if she has 100 baht, how much money is left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Total: 14 x 5 = 70 baht, After discount: 70 - 12 = 58 baht, Left: 100 - 58 = 42 baht",
+      "data": {
+        "content_th": "Total: 14 x 5 = 70 baht, After discount: 70 - 12 = 58 baht, Left: 100 - 58 = 42 baht"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "5 Notebooks",
+            "value": 70,
+            "display": "70 baht",
+            "color": "#4ECDC4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Discount",
+            "value": 12,
+            "display": "12 baht",
+            "color": "#FF6B6B",
+            "width_pct": 17
+          },
+          {
+            "label": "Actually paid",
+            "value": 58,
+            "display": "58 baht",
+            "color": "#C7F464",
+            "width_pct": 83,
+            "is_remainder": true
+          }
+        ],
+        "unit": "baht"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find total cost of notebooks",
+            "expression": "14 x 5 = 70",
+            "a": 14,
+            "b": 5,
+            "res": 70,
+            "op": "*",
+            "formula": {
+              "display": "14 x 5 = 70",
+              "a": 14,
+              "b": 5,
+              "result": 70,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "14",
+              "b_display": "5",
+              "result_display": "70",
+              "operation": "multiply"
+            },
+            "story_connection": "14 x 5 = 70 baht"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find amount to pay",
+            "expression": "70 - 12 = 58",
+            "a": 70,
+            "b": 12,
+            "res": 58,
+            "op": "-",
+            "formula": {
+              "display": "70 - 12 = 58",
+              "a": 70,
+              "b": 12,
+              "result": 58,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "70",
+              "b_display": "12",
+              "result_display": "58",
+              "operation": "subtract"
+            },
+            "story_connection": "70 - 12 = 58 baht"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Find money left",
+            "expression": "100 - 58 = 42",
+            "a": 100,
+            "b": 58,
+            "res": 42,
+            "op": "-",
+            "formula": {
+              "display": "100 - 58 = 42",
+              "a": 100,
+              "b": 58,
+              "result": 42,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "100",
+              "b_display": "58",
+              "result_display": "42",
+              "operation": "subtract"
+            },
+            "story_connection": "100 - 58 = 42 baht"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "14 x 5 = 70 and 70 - 12 = 58 and 100 - 58 = 42",
+      "content": "14 x 5 = 70 and 70 - 12 = 58 and 100 - 58 = 42",
+      "data": {
+        "expression": "14 x 5 = 70 and 70 - 12 = 58 and 100 - 58 = 42",
+        "content_th": "14 x 5 = 70 and 70 - 12 = 58 and 100 - 58 = 42",
+        "operations": [
+          {
+            "op": "*",
+            "a": 14,
+            "b": 5,
+            "result": 70
+          },
+          {
+            "op": "-",
+            "a": 70,
+            "b": 12,
+            "result": 58
+          },
+          {
+            "op": "-",
+            "a": 100,
+            "b": 58,
+            "result": 42
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A cake box has 9 pieces. Ai bought 5 boxes. How many cake pieces are there in total?",
+      "choices": [
+        "45 pieces",
+        "54 pieces",
+        "36 pieces",
+        "14 pieces"
+      ],
+      "correct_answer": "45 pieces",
+      "explanation": "9 x 5 = 45 pieces",
+      "data": {
+        "question": "A cake box has 9 pieces. Ai bought 5 boxes. How many cake pieces are there in total?",
+        "choices": [
+          "45 pieces",
+          "54 pieces",
+          "36 pieces",
+          "14 pieces"
+        ],
+        "correct_answer": "45 pieces",
+        "explanation": "9 x 5 = 45 pieces"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

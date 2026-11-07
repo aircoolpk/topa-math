@@ -1,0 +1,133 @@
+{
+  "quiz_id": "add_sub_to_1000_th_q002",
+  "topic_key": "add_sub_to_1000",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ add_sub_to_1000_th_q002",
+  "title_en": "Quiz add_sub_to_1000_th_q002",
+  "questions": [
+    {
+      "question": "450 + 370 = ?",
+      "choices": [
+        "820",
+        "720",
+        "810",
+        "830"
+      ],
+      "correct_answer": "820",
+      "explanation": "450+300=750, 750+70=820",
+      "difficulty": "easy"
+    },
+    {
+      "question": "1,000 - 480 = ?",
+      "choices": [
+        "520",
+        "420",
+        "620",
+        "580"
+      ],
+      "correct_answer": "520",
+      "explanation": "1,000-400=600, 600-80=520",
+      "difficulty": "easy"
+    },
+    {
+      "question": "สวนมีมะม่วง 560 ผล ขายไป 245 ผล ได้เพิ่มอีก 198 ผล มีมะม่วงกี่ผล",
+      "choices": [
+        "513 ผล",
+        "503 ผล",
+        "523 ผล",
+        "512 ผล"
+      ],
+      "correct_answer": "513 ผล",
+      "explanation": "560-245=315, 315+198=513 ผล",
+      "difficulty": "hard"
+    },
+    {
+      "question": "เก็บไข่ได้ 620 ฟอง เอาไปฟัก 285 ฟอง เหลือไข่กี่ฟอง",
+      "choices": [
+        "335 ฟอง",
+        "345 ฟอง",
+        "325 ฟอง",
+        "235 ฟอง"
+      ],
+      "correct_answer": "335 ฟอง",
+      "explanation": "620-285=335 ฟอง",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ลินมีผ้า 380 เมตร ซื้อเพิ่ม 245 เมตร ตัดผ้าใช้ไป 195 เมตร เหลือผ้ากี่เมตร",
+      "choices": [
+        "430 เมตร",
+        "420 เมตร",
+        "440 เมตร",
+        "410 เมตร"
+      ],
+      "correct_answer": "430 เมตร",
+      "explanation": "380+245=625, 625-195=430 เมตร",
+      "difficulty": "hard"
+    },
+    {
+      "question": "ข้าวสาร 750 กิโลกรัม ใช้ไป 368 กิโลกรัม ได้ซื้อเพิ่ม 250 กิโลกรัม มีข้าวสารกี่กิโลกรัม",
+      "choices": [
+        "632 กก.",
+        "622 กก.",
+        "642 กก.",
+        "652 กก."
+      ],
+      "correct_answer": "632 กก.",
+      "explanation": "750-368=382, 382+250=632 กก.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "ซื้อสมุด 135 บาท ซื้อดินสอ 89 บาท มีเงิน 500 บาท เหลือเงินกี่บาท",
+      "choices": [
+        "276 บาท",
+        "286 บาท",
+        "266 บาท",
+        "296 บาท"
+      ],
+      "correct_answer": "276 บาท",
+      "explanation": "135+89=224, 500-224=276 บาท",
+      "difficulty": "medium"
+    },
+    {
+      "question": "820 - 355 = ?",
+      "choices": [
+        "465",
+        "455",
+        "475",
+        "565"
+      ],
+      "correct_answer": "465",
+      "explanation": "820-300=520, 520-55=465",
+      "difficulty": "medium"
+    },
+    {
+      "question": "พ่อค้ามีข้าว 980 ถุง ขายวันนี้ 465 ถุง พรุ่งนี้ขายได้อีก 358 ถุง มีข้าวเหลือกี่ถุง",
+      "choices": [
+        "873 ถุง",
+        "863 ถุง",
+        "883 ถุง",
+        "871 ถุง"
+      ],
+      "correct_answer": "873 ถุง",
+      "explanation": "980-465=515, 515+358=873 ถุง",
+      "difficulty": "hard"
+    },
+    {
+      "question": "360 + 280 - 195 = ?",
+      "choices": [
+        "445",
+        "435",
+        "455",
+        "465"
+      ],
+      "correct_answer": "445",
+      "explanation": "360+280=640, 640-195=445",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

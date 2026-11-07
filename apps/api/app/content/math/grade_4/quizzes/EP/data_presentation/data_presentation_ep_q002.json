@@ -1,0 +1,189 @@
+{
+  "lesson_id": "data_presentation_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "Data: 10, 20, 30, 40. Sum and average?",
+      "question_text_en": "Data: 10, 20, 30, 40. Sum and average?",
+      "choices": [
+        "100 and 25",
+        "100 and 20",
+        "90 and 25",
+        "100 and 22.5"
+      ],
+      "correct_answer": "100 and 25",
+      "answer": "100 and 25",
+      "explanation": "10+20+30+40=100 | 100/4=25",
+      "explanation_th": "10+20+30+40=100 | 100÷4=25",
+      "difficulty": "easy",
+      "hint_th": "Sum=100, Average=100/4=25",
+      "question_text_th": "ข้อมูล: 10, 20, 30, 40. ผลรวมและค่าเฉลี่ยเท่าไร?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "Temperature 5 days: 28, 30, 27, 32, 29 degrees. Average?",
+      "question_text_en": "Temperature 5 days: 28, 30, 27, 32, 29 degrees. Average?",
+      "choices": [
+        "29.2 degrees",
+        "30 degrees",
+        "28 degrees",
+        "29.5 degrees"
+      ],
+      "correct_answer": "29.2 degrees",
+      "answer": "29.2 degrees",
+      "explanation": "(28+30+27+32+29)/5=146/5=29.2",
+      "explanation_th": "(28+30+27+32+29)÷5=146÷5=29.2 องศา",
+      "difficulty": "medium",
+      "hint_th": "(28+30+27+32+29)/5 = 146/5 = 29.2",
+      "question_text_th": "อุณหภูมิ 5 วัน: 28, 30, 27, 32, 29 องศา. ค่าเฉลี่ยเท่าไร?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "Data: 50, 60, 70, 80. Max and min?",
+      "question_text_en": "Data: 50, 60, 70, 80. Max and min?",
+      "choices": [
+        "80 and 50",
+        "70 and 50",
+        "80 and 60",
+        "90 and 40"
+      ],
+      "correct_answer": "80 and 50",
+      "answer": "80 and 50",
+      "explanation": "Maximum=80, Minimum=50",
+      "explanation_th": "ค่าสูงสุด=80 ค่าต่ำสุด=50",
+      "difficulty": "easy",
+      "hint_th": "Compare to find max and min",
+      "question_text_th": "ข้อมูล: 50, 60, 70, 80. ค่าสูงสุดและค่าต่ำสุดเท่าไร?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "4 items: 25, 35, 45, 55 baht. Average price?",
+      "question_text_en": "4 items: 25, 35, 45, 55 baht. Average price?",
+      "choices": [
+        "40 baht",
+        "38 baht",
+        "42 baht",
+        "50 baht"
+      ],
+      "correct_answer": "40 baht",
+      "answer": "40 baht",
+      "explanation": "(25+35+45+55)/4=160/4=40",
+      "explanation_th": "(25+35+45+55)÷4=160÷4=40 บาท",
+      "difficulty": "easy",
+      "hint_th": "(25+35+45+55)/4 = 160/4 = 40",
+      "question_text_th": "สินค้า 4 ชิ้น: 25, 35, 45, 55 บาท. ราคาเฉลี่ยเท่าไร?"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "Weight 6 people: 45, 50, 55, 60, 65, 70 kg. Average?",
+      "question_text_en": "Weight 6 people: 45, 50, 55, 60, 65, 70 kg. Average?",
+      "choices": [
+        "57.5 kg",
+        "55 kg",
+        "60 kg",
+        "58.50 kg"
+      ],
+      "correct_answer": "57.5 kg",
+      "answer": "57.5 kg",
+      "explanation": "(45+50+55+60+65+70)/6=345/6=57.5",
+      "explanation_th": "(45+50+55+60+65+70)÷6=345÷6=57.5 กก.",
+      "difficulty": "medium",
+      "hint_th": "(45+50+55+60+65+70)/6 = 345/6 = 57.5",
+      "question_text_th": "น้ำหนัก 6 คน: 45, 50, 55, 60, 65, 70 กก. ค่าเฉลี่ยเท่าไร?"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "Sales 4 days: 200, 300, 250, 350 baht. Average?",
+      "question_text_en": "Sales 4 days: 200, 300, 250, 350 baht. Average?",
+      "choices": [
+        "275 baht",
+        "270 baht",
+        "280 baht",
+        "277 baht"
+      ],
+      "correct_answer": "275 baht",
+      "answer": "275 baht",
+      "explanation": "(200+300+250+350)/4=1100/4=275",
+      "explanation_th": "(200+300+250+350)÷4=1100÷4=275 บาท",
+      "difficulty": "easy",
+      "hint_th": "(200+300+250+350)/4 = 1100/4 = 275",
+      "question_text_th": "ยอดขาย 4 วัน: 200, 300, 250, 350 บาท. ค่าเฉลี่ยเท่าไร?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "Data: 15, 25, 35, 45. Average?",
+      "question_text_en": "Data: 15, 25, 35, 45. Average?",
+      "choices": [
+        "30",
+        "28",
+        "32",
+        "60"
+      ],
+      "correct_answer": "30",
+      "answer": "30",
+      "explanation": "(15+25+35+45)/4=120/4=30",
+      "explanation_th": "(15+25+35+45)÷4=120÷4=30",
+      "difficulty": "easy",
+      "hint_th": "(15+25+35+45)/4 = 120/4 = 30",
+      "question_text_th": "ข้อมูล: 15, 25, 35, 45. ค่าเฉลี่ยเท่าไร?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "Height 5 people: 140, 145, 150, 155, 160 cm. Average?",
+      "question_text_en": "Height 5 people: 140, 145, 150, 155, 160 cm. Average?",
+      "choices": [
+        "150 cm",
+        "148 cm",
+        "152 cm",
+        "300 cm"
+      ],
+      "correct_answer": "150 cm",
+      "answer": "150 cm",
+      "explanation": "(140+145+150+155+160)/5=750/5=150",
+      "explanation_th": "(140+145+150+155+160)÷5=750÷5=150 ซม.",
+      "difficulty": "easy",
+      "hint_th": "(140+145+150+155+160)/5 = 750/5 = 150",
+      "question_text_th": "ความสูง 5 คน: 140, 145, 150, 155, 160 ซม. ค่าเฉลี่ยเท่าไร?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "Which: Average = Sum / Number of data?",
+      "question_text_en": "Which: Average = Sum / Number of data?",
+      "choices": [
+        "Correct",
+        "Wrong - should be Sum x Count",
+        "Wrong - should be Max + Min",
+        "Wrong - should be Max - Min"
+      ],
+      "correct_answer": "Correct",
+      "answer": "Correct",
+      "explanation": "Average = Sum / Number of data is correct",
+      "explanation_th": "ค่าเฉลี่ย = ผลรวม ÷ จำนวนข้อมูล ถูกต้อง",
+      "difficulty": "easy",
+      "hint_th": "Average = Sum / Count",
+      "question_text_th": "ข้อใด: ค่าเฉลี่ย = ผลรวม / จำนวนข้อมูล?"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Data: 22, 33, 44, 55, 66. Sum?",
+      "question_text_en": "Data: 22, 33, 44, 55, 66. Sum?",
+      "choices": [
+        "220",
+        "210",
+        "230",
+        "200"
+      ],
+      "correct_answer": "220",
+      "answer": "220",
+      "explanation": "22+33+44+55+66=220",
+      "explanation_th": "22+33+44+55+66=220",
+      "difficulty": "easy",
+      "hint_th": "Add all numbers",
+      "question_text_th": "ข้อมูล: 22, 33, 44, 55, 66. ผลรวมเท่าไร?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

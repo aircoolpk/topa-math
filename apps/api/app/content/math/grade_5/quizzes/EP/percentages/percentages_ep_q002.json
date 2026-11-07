@@ -1,0 +1,179 @@
+{
+  "lesson_id": "percentages_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "pct_ep_q002_e01",
+      "question_text": "Situation 1: A bag costs 750 baht with 20% discount. How much is the discount?",
+      "question_text_th": "Situation 1: A bag costs 750 baht with 20% discount. How much is the discount?",
+      "choices": [
+        "150 baht",
+        "150",
+        "140 baht",
+        "160 baht"
+      ],
+      "correct_answer": "150 baht",
+      "answer": "150 baht",
+      "explanation": "750 x 20/100 = 150 baht",
+      "explanation_th": "750 x 20/100 = 150 baht",
+      "difficulty": "easy",
+      "hint_th": "750 x 20% = 750 x 0.20 = 150 baht"
+    },
+    {
+      "question_id": "pct_ep_q002_e02",
+      "question_text": "Situation 2: A watch costs 2,000 baht. 15% off. New price?",
+      "question_text_th": "Situation 2: A watch costs 2,000 baht. 15% off. New price?",
+      "choices": [
+        "1,700 baht",
+        "1700",
+        "1,680 baht",
+        "1,720 baht"
+      ],
+      "correct_answer": "1,700 baht",
+      "answer": "1,700 baht",
+      "explanation": "2000 x 15% = 300 baht off | 2000 - 300 = 1,700 baht",
+      "explanation_th": "2000 x 15% = 300 baht off | 2000 - 300 = 1,700 baht",
+      "difficulty": "easy",
+      "hint_th": "2000 x 15% = 300 off | 2000 - 300 = 1700"
+    },
+    {
+      "question_id": "pct_ep_q002_e03",
+      "question_text": "Situation 3: Deposit 25,000 baht at 4% per year. Interest?",
+      "question_text_th": "Situation 3: Deposit 25,000 baht at 4% per year. Interest?",
+      "choices": [
+        "1,000 baht",
+        "1000",
+        "1,200 baht",
+        "900 baht"
+      ],
+      "correct_answer": "1,000 baht",
+      "answer": "1,000 baht",
+      "explanation": "25,000 x 4/100 = 1,000 baht",
+      "explanation_th": "25,000 x 4/100 = 1,000 baht",
+      "difficulty": "easy",
+      "hint_th": "25,000 x 4% = 25,000 x 0.04 = 1,000 baht"
+    },
+    {
+      "question_id": "pct_ep_q002_m01",
+      "question_text": "Situation 4: Shoes 1,200 baht. 30% off, then 10% member discount. Final price?",
+      "question_text_th": "Situation 4: Shoes 1,200 baht. 30% off, then 10% member discount. Final price?",
+      "choices": [
+        "756 baht",
+        "756",
+        "750 baht",
+        "760 baht"
+      ],
+      "correct_answer": "756 baht",
+      "answer": "756 baht",
+      "explanation": "1200x30%=360 off -> 840 | 840x10%=84 off -> 840-84=756 baht",
+      "explanation_th": "1200x30%=360 off -> 840 | 840x10%=84 off -> 840-84=756 baht",
+      "difficulty": "medium",
+      "hint_th": "1200-360=840 | 840-84=756 baht"
+    },
+    {
+      "question_id": "pct_ep_q002_m02",
+      "question_text": "Situation 5: Deposit 100,000 baht at 2.5% per year for 18 months. Interest?",
+      "question_text_th": "Situation 5: Deposit 100,000 baht at 2.5% per year for 18 months. Interest?",
+      "choices": [
+        "3,750 baht",
+        "3750",
+        "3,500 baht",
+        "4,000 baht"
+      ],
+      "correct_answer": "3,750 baht",
+      "answer": "3,750 baht",
+      "explanation": "100000 x 2.5/100 x 1.5 = 100000 x 0.0375 = 3,750 baht",
+      "explanation_th": "100000 x 2.5/100 x 1.5 = 100000 x 0.0375 = 3,750 baht",
+      "difficulty": "medium",
+      "hint_th": "100000 x 0.025 x 1.5 = 3,750 baht"
+    },
+    {
+      "question_id": "pct_ep_q002_m03",
+      "question_text": "Situation 6: Item costs 560 baht. Wants 15% profit. Selling price?",
+      "question_text_th": "Situation 6: Item costs 560 baht. Wants 15% profit. Selling price?",
+      "choices": [
+        "644 baht",
+        "644",
+        "640 baht",
+        "645 baht"
+      ],
+      "correct_answer": "644 baht",
+      "answer": "644 baht",
+      "explanation": "560 x 15% = 84 baht profit | 560 + 84 = 644 baht",
+      "explanation_th": "560 x 15% = 84 baht profit | 560 + 84 = 644 baht",
+      "difficulty": "medium",
+      "hint_th": "Profit = 560 x 15% = 84 | Selling = 560 + 84 = 644"
+    },
+    {
+      "question_id": "pct_ep_q002_m04",
+      "question_text": "Situation 7: Shirt 950 baht. 25% off, then 7% VAT added. Final price?",
+      "question_text_th": "Situation 7: Shirt 950 baht. 25% off, then 7% VAT added. Final price?",
+      "choices": [
+        "762.38 baht",
+        "762.38",
+        "760 baht",
+        "758 baht"
+      ],
+      "correct_answer": "762.38 baht",
+      "answer": "762.38 baht",
+      "explanation": "950x25%=237.50 off -> 712.50 | VAT = 712.50x7%=49.88 | 712.50+49.88=762.38 baht",
+      "explanation_th": "950x25%=237.50 off -> 712.50 | VAT = 712.50x7%=49.88 | 712.50+49.88=762.38 baht",
+      "difficulty": "medium",
+      "hint_th": "950-237.50=712.50 | VAT=49.88 | Total=762.38"
+    },
+    {
+      "question_id": "pct_ep_q002_h01",
+      "question_text": "Situation 8: Item 1,200 baht. 15% off, then 10% off new price. Final price?",
+      "question_text_th": "Situation 8: Item 1,200 baht. 15% off, then 10% off new price. Final price?",
+      "choices": [
+        "918 baht",
+        "918",
+        "920 baht",
+        "915 baht"
+      ],
+      "correct_answer": "918 baht",
+      "answer": "918 baht",
+      "explanation": "1200x15%=180 off -> 1020 | 1020x10%=102 off -> 1020-102=918 baht",
+      "explanation_th": "1200x15%=180 off -> 1020 | 1020x10%=102 off -> 1020-102=918 baht",
+      "difficulty": "hard",
+      "hint_th": "1200-180=1020 | 1020-102=918 baht"
+    },
+    {
+      "question_id": "pct_ep_q002_h02",
+      "question_text": "Situation 9: Goods 3,500 baht. Sold at 30% profit but 5% discount on selling price. Net profit?",
+      "question_text_th": "Situation 9: Goods 3,500 baht. Sold at 30% profit but 5% discount on selling price. Net profit?",
+      "choices": [
+        "822.50 baht",
+        "822.50",
+        "825 baht",
+        "820 baht"
+      ],
+      "correct_answer": "822.50 baht",
+      "answer": "822.50 baht",
+      "explanation": "Selling = 4550 | Discount = 4550x5% = 227.50 | Net profit = 4550-3500-227.50 = 822.50 baht",
+      "explanation_th": "Selling = 4550 | Discount = 4550x5% = 227.50 | Net profit = 4550-3500-227.50 = 822.50 baht",
+      "difficulty": "hard",
+      "hint_th": "Selling=4550 | Discount=227.50 | Net profit=4550-3500-227.50=822.50"
+    },
+    {
+      "question_id": "pct_ep_q002_h03",
+      "question_text": "Situation 10: Salary 35,000 baht. Tax 10%, but tax reduction 20% of the tax. Net tax paid?",
+      "question_text_th": "Situation 10: Salary 35,000 baht. Tax 10%, but tax reduction 20% of the tax. Net tax paid?",
+      "choices": [
+        "2,800 baht",
+        "2800",
+        "2,850 baht",
+        "2,750 baht"
+      ],
+      "correct_answer": "2,800 baht",
+      "answer": "2,800 baht",
+      "explanation": "Tax = 35000x10% = 3500 | Reduction = 3500x20% = 700 | Net tax = 3500-700 = 2800 baht",
+      "explanation_th": "Tax = 35000x10% = 3500 | Reduction = 3500x20% = 700 | Net tax = 3500-700 = 2800 baht",
+      "difficulty": "hard",
+      "hint_th": "Tax = 3,500 | Reduction = 700 | Net = 2,800 baht"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

@@ -1,0 +1,128 @@
+{
+  "variant_id": "percentages_ep_001",
+  "variant_title_en": "Percentages — Discount in a Mall",
+  "status": "needs_review",
+  "title_en": "Percentages — Discount in a Mall",
+  "story_theme_en": "A shirt costs 850 baht. The mall gives a 25% discount. How much do you pay? How much is the discount in baht? If you have a membership card that gives an additional 10% off the discounted price, how much do you pay?",
+  "helper_tip": "Discount amount = (discount% / 100) × original price. Final price = original price - discount.",
+  "hint_th": "ส่วนลด = (ร้อยละ/100) × ราคาเต็ม ราคาหลังลด = ราคาเต็ม - ส่วนลด",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A shirt costs 850 baht. The mall gives a 25% discount. How much do you pay? How much is the discount in baht? If you have a membership card that gives an additional 10% off the discounted price, how much do you pay?",
+      "data": {
+        "content_en": "A shirt costs 850 baht. The mall gives a 25% discount. How much do you pay? How much is the discount in baht? If you have a membership card that gives an additional 10% off the discounted price, how much do you pay?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Discount 25% of 850 = 212.50 baht | Price after discount = 637.50 baht | Extra 10% off = 63.75 baht | Final price = 573.75 baht",
+      "data": {
+        "content_en": "Discount 25% of 850 = 212.50 baht | Price after discount = 637.50 baht | Extra 10% off = 63.75 baht | Final price = 573.75 baht"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Percentage Diagram",
+      "description": "Percentage Diagram",
+      "model_type": "percentage_bar",
+      "data": {
+        "model_type": "percentage_bar",
+        "operation": "subtract_multiply",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Original price",
+            "value": 850,
+            "display": "850 baht",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "25% discount",
+            "value": 212.5,
+            "display": "-212.50 baht",
+            "color": "#FF6B6B",
+            "width_pct": 25
+          },
+          {
+            "label": "After discount",
+            "value": 637.5,
+            "display": "637.50 baht",
+            "color": "#45B7D1",
+            "width_pct": 75
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "850 - 212.50 - 63.75 = 573.75",
+      "content": "After 25% off = 637.50 baht | Extra 10% off = 63.75 baht | Final = 573.75 baht",
+      "data": {
+        "expression": "After 25% off = 637.50 baht | Extra 10% off = 63.75 baht | Final = 573.75 baht",
+        "operations": [
+          {
+            "op": "×",
+            "a": 850,
+            "b": 0.25,
+            "result": 212.5
+          },
+          {
+            "op": "-",
+            "a": 850,
+            "b": 212.5,
+            "result": 637.5
+          },
+          {
+            "op": "×",
+            "a": 637.5,
+            "b": 0.1,
+            "result": 63.75
+          },
+          {
+            "op": "-",
+            "a": 637.5,
+            "b": 63.75,
+            "result": 573.75
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A bag costs 600 baht with a 15% discount. How much do you pay?",
+      "choices": [
+        "510 baht",
+        "520 baht",
+        "500 baht",
+        "505 baht"
+      ],
+      "correct_answer": "510 baht",
+      "explanation": "600 × 15/100 = 90 baht | 600 - 90 = 510 baht",
+      "data": {
+        "question": "A bag costs 600 baht with a 15% discount. How much do you pay?",
+        "choices": [
+          "510 baht",
+          "520 baht",
+          "500 baht",
+          "505 baht"
+        ],
+        "correct_answer": "510 baht",
+        "explanation": "600 × 15/100 = 90 baht | 600 - 90 = 510 baht"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

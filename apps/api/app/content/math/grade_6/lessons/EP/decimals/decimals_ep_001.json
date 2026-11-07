@@ -1,0 +1,167 @@
+{
+  "variant_id": "decimals_ep_001",
+  "variant_title_en": "Decimals",
+  "status": "needs_review",
+  "title_en": "Decimals",
+  "title_th": "ทศนิยม",
+  "story_theme_en": "A shop discounts a T-shirt from 125.50 baht by 23.75 baht, and discounts pants from 89.25 baht by 15.50 baht. What is the new price of each item after the discount?",
+  "helper_tip": "When subtracting decimals, make sure the decimal points line up",
+  "hint_th": "เวลาลบทศนิยม ให้ตรวจสอบว่าจุดทศนิยมเรียงกันหรือไม่",
+  "think_story_en": "T-shirt: 125.50 - 23.75 = 101.75 baht. Pants: 89.25 - 15.50 = 73.75 baht. Check: 101.75 + 23.75 = 125.50 and 73.75 + 15.50 = 89.25. Correct!",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A shop discounts a T-shirt from 125.50 baht by 23.75 baht, and discounts pants from 89.25 baht by 15.50 baht. What is the new price of each item after the discount?",
+      "data": {
+        "content_en": "A shop discounts a T-shirt from 125.50 baht by 23.75 baht, and discounts pants from 89.25 baht by 15.50 baht. What is the new price of each item after the discount?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "T-shirt: 125.50 - 23.75 = 101.75 baht. Pants: 89.25 - 15.50 = 73.75 baht. Check: 101.75 + 23.75 = 125.50 and 73.75 + 15.50 = 89.25. Correct!",
+      "data": {
+        "content_en": "T-shirt: 125.50 - 23.75 = 101.75 baht. Pants: 89.25 - 15.50 = 73.75 baht. Check: 101.75 + 23.75 = 125.50 and 73.75 + 15.50 = 89.25. Correct!"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "baht",
+        "bars": [
+          {
+            "label": "T-shirt",
+            "value": 125.5,
+            "display": "125.50 baht",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Discount",
+            "value": 23.75,
+            "display": "-23.75 baht",
+            "color": "#FF6B6B",
+            "width_pct": 19
+          },
+          {
+            "label": "New Price",
+            "value": 101.75,
+            "display": "101.75 baht",
+            "color": "#96CEB4",
+            "width_pct": 81,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "125.5 - 23.75 = 101.75",
+            "formula": {
+              "display": "125.5 - 23.75 = 101.75",
+              "a": 125.5,
+              "b": 23.75,
+              "result": 101.75,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}125.5&\\ -\\quad 23.75&\\ \\hline 101.75&\\\\ \\hline \\end{array}",
+              "a_display": "125.5",
+              "b_display": "23.75",
+              "result_display": "101.75",
+              "operation": "subtract"
+            },
+            "story_connection": "From bar model: 125.5 - 23.75 = 101.75"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "89.25 - 15.5 = 73.75",
+            "formula": {
+              "display": "89.25 - 15.5 = 73.75",
+              "a": 89.25,
+              "b": 15.5,
+              "result": 73.75,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}89.25&\\ -\\quad 15.5&\\ \\hline 73.75&\\\\ \\hline \\end{array}",
+              "a_display": "89.25",
+              "b_display": "15.5",
+              "result_display": "73.75",
+              "operation": "subtract"
+            },
+            "story_connection": "From bar model: 89.25 - 15.5 = 73.75"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "125.5 - 23.75 = 101.75 | 89.25 - 15.5 = 73.75",
+      "content": "125.5 - 23.75 = 101.75 | 89.25 - 15.5 = 73.75",
+      "data": {
+        "expression": "125.5 - 23.75 = 101.75 | 89.25 - 15.5 = 73.75",
+        "operations": [
+          {
+            "op": "-",
+            "a": 125.5,
+            "b": 23.75,
+            "result": 101.75
+          },
+          {
+            "op": "-",
+            "a": 89.25,
+            "b": 15.5,
+            "result": 73.75
+          }
+        ],
+        "content_en": "125.5 - 23.75 = 101.75 | 89.25 - 15.5 = 73.75"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A book costs 87.25 baht with a discount of 12.50 baht. What is the final price?",
+      "choices": [
+        "74.75 baht",
+        "75.25 baht",
+        "74.25 baht",
+        "73.75 baht"
+      ],
+      "correct_answer": "74.75 baht",
+      "explanation": "87.25 - 12.50 = 74.75 baht",
+      "data": {
+        "question": "A book costs 87.25 baht with a discount of 12.50 baht. What is the final price?",
+        "choices": [
+          "74.75 baht",
+          "75.25 baht",
+          "74.25 baht",
+          "73.75 baht"
+        ],
+        "correct_answer": "74.75 baht",
+        "explanation": "87.25 - 12.50 = 74.75 baht"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

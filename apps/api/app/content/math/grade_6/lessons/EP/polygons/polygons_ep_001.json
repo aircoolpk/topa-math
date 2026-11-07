@@ -1,0 +1,186 @@
+{
+  "variant_id": "polygons_ep_001",
+  "variant_title_en": "Polygons",
+  "status": "needs_review",
+  "title_en": "Polygons",
+  "title_th": "รูปหลายเหลี่ยม",
+  "story_theme_en": "A regular pentagon has sides of 8 centimeters each. A regular hexagon has sides of 6 centimeters each. Which shape has a greater perimeter, and by how much?",
+  "helper_tip": "Perimeter = number of sides × side length for regular polygons",
+  "hint_th": "ความยาวรอบรูป = จำนวนด้าน × ความยาวด้าน สำหรับรูปด้านเท่า",
+  "think_story_en": "Pentagon: 5 × 8 = 40 cm. Hexagon: 6 × 6 = 36 cm. The pentagon has a greater perimeter by 40 - 36 = 4 cm.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A regular pentagon has sides of 8 centimeters each. A regular hexagon has sides of 6 centimeters each. Which shape has a greater perimeter, and by how much?",
+      "data": {
+        "content_en": "A regular pentagon has sides of 8 centimeters each. A regular hexagon has sides of 6 centimeters each. Which shape has a greater perimeter, and by how much?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Pentagon: 5 × 8 = 40 cm. Hexagon: 6 × 6 = 36 cm. The pentagon has a greater perimeter by 40 - 36 = 4 cm.",
+      "data": {
+        "content_en": "Pentagon: 5 × 8 = 40 cm. Hexagon: 6 × 6 = 36 cm. The pentagon has a greater perimeter by 40 - 36 = 4 cm."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "centimeters",
+        "bars": [
+          {
+            "label": "Pentagon (5 sides)",
+            "value": 40,
+            "display": "40 cm",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Hexagon (6 sides)",
+            "value": 36,
+            "display": "36 cm",
+            "color": "#FF6B6B",
+            "width_pct": 90,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "5 × 8 = 40",
+            "formula": {
+              "display": "5 × 8 = 40",
+              "a": 5,
+              "b": 8,
+              "result": 40,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}5&\\ ×\\quad 8&\\ \\hline 40&\\\\ \\hline \\end{array}",
+              "a_display": "5",
+              "b_display": "8",
+              "result_display": "40",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 5 × 8 = 40"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "6 × 6 = 36",
+            "formula": {
+              "display": "6 × 6 = 36",
+              "a": 6,
+              "b": 6,
+              "result": 36,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}6&\\ ×\\quad 6&\\ \\hline 36&\\\\ \\hline \\end{array}",
+              "a_display": "6",
+              "b_display": "6",
+              "result_display": "36",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 6 × 6 = 36"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "40 - 36 = 4",
+            "formula": {
+              "display": "40 - 36 = 4",
+              "a": 40,
+              "b": 36,
+              "result": 4,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}40&\\ -\\quad 36&\\ \\hline 4&\\\\ \\hline \\end{array}",
+              "a_display": "40",
+              "b_display": "36",
+              "result_display": "4",
+              "operation": "subtract"
+            },
+            "story_connection": "From bar model: 40 - 36 = 4"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5 × 8 = 40 | 6 × 6 = 36 | 40 - 36 = 4",
+      "content": "5 × 8 = 40 | 6 × 6 = 36 | 40 - 36 = 4",
+      "data": {
+        "expression": "5 × 8 = 40 | 6 × 6 = 36 | 40 - 36 = 4",
+        "operations": [
+          {
+            "op": "×",
+            "a": 5,
+            "b": 8,
+            "result": 40
+          },
+          {
+            "op": "×",
+            "a": 6,
+            "b": 6,
+            "result": 36
+          },
+          {
+            "op": "-",
+            "a": 40,
+            "b": 36,
+            "result": 4
+          }
+        ],
+        "content_en": "5 × 8 = 40 | 6 × 6 = 36 | 40 - 36 = 4"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A rectangle is 5 cm wide and 12 cm long. What is its perimeter?",
+      "choices": [
+        "34 cm",
+        "17 cm",
+        "28 cm",
+        "24 cm"
+      ],
+      "correct_answer": "34 cm",
+      "explanation": "2 × (5 + 12) = 2 × 17 = 34 cm",
+      "data": {
+        "question": "A rectangle is 5 cm wide and 12 cm long. What is its perimeter?",
+        "choices": [
+          "34 cm",
+          "17 cm",
+          "28 cm",
+          "24 cm"
+        ],
+        "correct_answer": "34 cm",
+        "explanation": "2 × (5 + 12) = 2 × 17 = 34 cm"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

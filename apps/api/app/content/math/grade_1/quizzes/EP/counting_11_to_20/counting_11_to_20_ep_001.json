@@ -1,0 +1,179 @@
+{
+  "lesson_id": "counting_11_to_20_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "c11to20_ep_q001_e01",
+      "question_text": "Lin has 1 ten-rod and 3 single cubes. How many cubes does Lin have in total?",
+      "question_text_th": "ลินมีแท่งสิบ 1 แท่ง และลูกเต๋าหน่วย 3 ลูก ลินมีลูกเต๋าทั้งหมดกี่ลูก",
+      "choices": [
+        "13 cubes",
+        "18 cubes",
+        "10 cubes",
+        "20 cubes"
+      ],
+      "correct_answer": "13 cubes",
+      "answer": "13 cubes",
+      "explanation": "10 + 3 = 13 cubes",
+      "explanation_th": "10 + 3 = 13 ลูก",
+      "difficulty": "easy",
+      "hint_th": "1 ten-rod = 10."
+    },
+    {
+      "question_id": "c11to20_ep_q001_e02",
+      "question_text": "Book has 1 ten-rod and 5 single pencils. How many pencils does Book have?",
+      "question_text_th": "บุ๊กมีแท่งสิบ 1 แท่ง และดินสอหน่วย 5 แท่ง บุ๊กมีดินสอกี่แท่ง",
+      "choices": [
+        "15 pencils",
+        "20 pencils",
+        "12 pencils",
+        "22 pencils"
+      ],
+      "correct_answer": "15 pencils",
+      "answer": "15 pencils",
+      "explanation": "10 + 5 = 15 pencils",
+      "explanation_th": "10 + 5 = 15 แท่ง",
+      "difficulty": "easy",
+      "hint_th": "Count tens and ones."
+    },
+    {
+      "question_id": "c11to20_ep_q001_e03",
+      "question_text": "Mali has 1 ten-banana and 2 single bananas. How many bananas does Mali have?",
+      "question_text_th": "มะลิมีกล้วยสิบ 1 หวี และกล้วยเดี่ยว 2 หวี มะลิมีกล้วยกี่หวี",
+      "choices": [
+        "12 bananas",
+        "17 bananas",
+        "9 bananas",
+        "19 bananas"
+      ],
+      "correct_answer": "12 bananas",
+      "answer": "12 bananas",
+      "explanation": "10 + 2 = 12 bananas",
+      "explanation_th": "10 + 2 = 12 หวี",
+      "difficulty": "easy",
+      "hint_th": "1 ten = 10."
+    },
+    {
+      "question_id": "c11to20_ep_q001_m01",
+      "question_text": "Ai has 1 ten-rod and 8 single blocks. His friend gives him 1 more single block. How many blocks does Ai have now?",
+      "question_text_th": "อ้ายมีแท่งสิบ 1 แท่ง และบล็อกหน่วย 8 ชิ้น เพื่อนให้บล็อกเพิ่มอีก 1 ชิ้น อ้ายมีบล็อกกี่ชิ้น",
+      "choices": [
+        "19 blocks",
+        "24 blocks",
+        "16 blocks",
+        "26 blocks"
+      ],
+      "correct_answer": "19 blocks",
+      "answer": "19 blocks",
+      "explanation": "10 + 8 + 1 = 19 blocks",
+      "explanation_th": "10 + 8 + 1 = 19 ชิ้น",
+      "difficulty": "medium",
+      "hint_th": "Add the ones."
+    },
+    {
+      "question_id": "c11to20_ep_q001_m02",
+      "question_text": "Mai has 14 crayons in her box. She takes out 4 crayons to use. How many crayons are still in the box?",
+      "question_text_th": "ไมมีสีเทียน 14 ก้านในกล่อง นำออกมาใช้ 4 ก้าน ในกล่องเหลือสีเทียนกี่ก้าน",
+      "choices": [
+        "10 crayons",
+        "15 crayons",
+        "7 crayons",
+        "17 crayons"
+      ],
+      "correct_answer": "10 crayons",
+      "answer": "10 crayons",
+      "explanation": "14 - 4 = 10 crayons",
+      "explanation_th": "ลบสีเทียน: 14 - 4 = 10 ก้าน",
+      "difficulty": "medium",
+      "hint_th": "Subtract the ones taken."
+    },
+    {
+      "question_id": "c11to20_ep_q001_m03",
+      "question_text": "Tad has 1 ten-star and 6 single stars. How many stars does Tad have in total?",
+      "question_text_th": "ต้นมีดาวสิบ 1 ดวง และดาวเดี่ยว 6 ดวง ต้นมีดาวทั้งหมดกี่ดวง",
+      "choices": [
+        "16 stars",
+        "21 stars",
+        "13 stars",
+        "23 stars"
+      ],
+      "correct_answer": "16 stars",
+      "answer": "16 stars",
+      "explanation": "10 + 6 = 16 stars",
+      "explanation_th": "10 + 6 = 16 ดวง",
+      "difficulty": "medium",
+      "hint_th": "Add tens and ones."
+    },
+    {
+      "question_id": "c11to20_ep_q001_m04",
+      "question_text": "Lin has 17 stickers. She loses 7 stickers. How many stickers does Lin have left?",
+      "question_text_th": "ลินมีสติกเกอร์ 17 ดวง ทำหายไป 7 ดวง ลินเหลือสติกเกอร์กี่ดวง",
+      "choices": [
+        "10 stickers",
+        "15 stickers",
+        "7 stickers",
+        "17 stickers"
+      ],
+      "correct_answer": "10 stickers",
+      "answer": "10 stickers",
+      "explanation": "17 - 7 = 10 stickers",
+      "explanation_th": "ลบสติกเกอร์: 17 - 7 = 10 ดวง",
+      "difficulty": "medium",
+      "hint_th": "Subtract 7."
+    },
+    {
+      "question_id": "c11to20_ep_q001_h01",
+      "question_text": "A fruit stall has 15 mangoes. The stall sells 8 mangoes in the morning and 5 mangoes in the afternoon. How many mangoes are left?",
+      "question_text_th": "แผงผลไม้มีมะม่วง 15 ผล ขายเช้า 8 ผล บ่าย 5 ผล เหลือมะม่วงกี่ผล",
+      "choices": [
+        "2 mangoes",
+        "7 mangoes",
+        "8 mangoes",
+        "9 mangoes"
+      ],
+      "correct_answer": "2 mangoes",
+      "answer": "2 mangoes",
+      "explanation": "15 - 8 - 5 = 2 mangoes",
+      "explanation_th": "ลบทีละขั้น: 15 - 8 - 5 = 2 ผล",
+      "difficulty": "hard",
+      "hint_th": "Sell in two sessions."
+    },
+    {
+      "question_id": "c11to20_ep_q001_h02",
+      "question_text": "Book has 12 pencils. He gives 5 pencils to Mai and then buys 6 new pencils. How many pencils does Book have now?",
+      "question_text_th": "บุ๊กมีดินสอ 12 แท่ง ให้ไม 5 แท่ง แล้วซื้อใหม่ 6 แท่ง บุ๊กมีดินสอกี่แท่ง",
+      "choices": [
+        "13 pencils",
+        "18 pencils",
+        "10 pencils",
+        "20 pencils"
+      ],
+      "correct_answer": "13 pencils",
+      "answer": "13 pencils",
+      "explanation": "12 - 5 + 6 = 13 pencils",
+      "explanation_th": "ลบแล้วบวก: 12 - 5 + 6 = 13 แท่ง",
+      "difficulty": "hard",
+      "hint_th": "Give away then buy."
+    },
+    {
+      "question_id": "c11to20_ep_q001_h03",
+      "question_text": "Mali has 11 flowers. She puts 4 flowers in a vase and 3 flowers in a basket. How many flowers does Mali have left?",
+      "question_text_th": "มะลิมีดอกไม้ 11 ดอก ใส่แจกัน 4 ดอก และใส่ตะกร้า 3 ดอก มะลิเหลือดอกไม้กี่ดอก",
+      "choices": [
+        "4 flowers",
+        "9 flowers",
+        "1 flowers",
+        "11 flowers"
+      ],
+      "correct_answer": "4 flowers",
+      "answer": "4 flowers",
+      "explanation": "11 - 4 - 3 = 4 flowers",
+      "explanation_th": "ลบทีละขั้น: 11 - 4 - 3 = 4 ดอก",
+      "difficulty": "hard",
+      "hint_th": "Put in two containers."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

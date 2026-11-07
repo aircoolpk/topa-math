@@ -1,0 +1,381 @@
+{
+  "quiz_id": "polygons_ep_q001",
+  "title_th": "รูปหลายเหลี่ยม",
+  "title_en": "Polygons",
+  "status": "needs_review",
+  "variant_id": "polygons_ep_q001",
+  "variant_title_th": "รูปหลายเหลี่ยม",
+  "variant_title_en": "Polygons",
+  "questions": [
+    {
+      "question_id": "polygons_q001_m01",
+      "type": "multiple_choice",
+      "question_th": "รูปห้าเหลี่ยมด้านเท่ามีด้านยาว 6 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "A regular pentagon has sides of 6 cm each. What is its perimeter?",
+      "choices_th": [
+        "24 cm",
+        "30 cm",
+        "36 cm",
+        "18 cm"
+      ],
+      "choices_en": [
+        "24 cm",
+        "30 cm",
+        "36 cm",
+        "18 cm"
+      ],
+      "correct_answer_th": "30 cm",
+      "correct_answer_en": "30 cm",
+      "answer_th": "30 cm",
+      "answer_en": "30 cm",
+      "answer": "30 cm",
+      "explanation_th": "5×6=30 cm",
+      "explanation_en": "5×6=30 cm",
+      "difficulty": "easy",
+      "choices": [
+        "24 cm",
+        "30 cm",
+        "36 cm",
+        "18 cm"
+      ],
+      "correct_answer": "30 cm",
+      "question_text": "รูปห้าเหลี่ยมด้านเท่ามีด้านยาว 6 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "5×6=30 cm",
+      "question_text_th": "รูปห้าเหลี่ยมด้านเท่ามีด้านยาว 6 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "A regular pentagon has sides of 6 cm each. What is its perimeter?"
+    },
+    {
+      "question_id": "polygons_q001_m02",
+      "type": "multiple_choice",
+      "question_th": "รูปหกเหลี่ยมด้านเท่ามีกี่ด้าน",
+      "question_en": "How many sides does a hexagon have?",
+      "choices_th": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "choices_en": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer_th": "6",
+      "correct_answer_en": "6",
+      "answer_th": "6",
+      "answer_en": "6",
+      "answer": "6",
+      "explanation_th": "Hexagon has 6 sides",
+      "explanation_en": "Hexagon has 6 sides",
+      "difficulty": "easy",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer": "6",
+      "question_text": "รูปหกเหลี่ยมด้านเท่ามีกี่ด้าน",
+      "explanation": "Hexagon has 6 sides",
+      "question_text_th": "รูปหกเหลี่ยมด้านเท่ามีกี่ด้าน",
+      "question_text_en": "How many sides does a hexagon have?"
+    },
+    {
+      "question_id": "polygons_q001_m03",
+      "type": "multiple_choice",
+      "question_th": "รูปสี่เหลี่ยมผืนผ้ากว้าง 8 ซม. ยาว 12 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "A rectangle is 8 cm wide and 12 cm long. What is its perimeter?",
+      "choices_th": [
+        "20 cm",
+        "28 cm",
+        "40 cm",
+        "36 cm"
+      ],
+      "choices_en": [
+        "20 cm",
+        "28 cm",
+        "40 cm",
+        "36 cm"
+      ],
+      "correct_answer_th": "40 cm",
+      "correct_answer_en": "40 cm",
+      "answer_th": "40 cm",
+      "answer_en": "40 cm",
+      "answer": "40 cm",
+      "explanation_th": "2×(8+12)=2×20=40 cm",
+      "explanation_en": "2×(8+12)=2×20=40 cm",
+      "difficulty": "easy",
+      "choices": [
+        "20 cm",
+        "28 cm",
+        "40 cm",
+        "36 cm"
+      ],
+      "correct_answer": "40 cm",
+      "question_text": "รูปสี่เหลี่ยมผืนผ้ากว้าง 8 ซม. ยาว 12 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "2×(8+12)=2×20=40 cm",
+      "question_text_th": "รูปสี่เหลี่ยมผืนผ้ากว้าง 8 ซม. ยาว 12 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "A rectangle is 8 cm wide and 12 cm long. What is its perimeter?"
+    },
+    {
+      "question_id": "polygons_q001_m04",
+      "type": "multiple_choice",
+      "question_th": "รูปแปดเหลี่ยมด้านเท่ามีความยาวรอบรูป 48 ซม. แต่ละด้านยาวเท่าไร",
+      "question_en": "A regular octagon has a perimeter of 48 cm. How long is each side?",
+      "choices_th": [
+        "5 cm",
+        "6 cm",
+        "7 cm",
+        "8 cm"
+      ],
+      "choices_en": [
+        "5 cm",
+        "6 cm",
+        "7 cm",
+        "8 cm"
+      ],
+      "correct_answer_th": "6 cm",
+      "correct_answer_en": "6 cm",
+      "answer_th": "6 cm",
+      "answer_en": "6 cm",
+      "answer": "6 cm",
+      "explanation_th": "48÷8=6 cm",
+      "explanation_en": "48÷8=6 cm",
+      "difficulty": "easy",
+      "choices": [
+        "5 cm",
+        "6 cm",
+        "7 cm",
+        "8 cm"
+      ],
+      "correct_answer": "6 cm",
+      "question_text": "รูปแปดเหลี่ยมด้านเท่ามีความยาวรอบรูป 48 ซม. แต่ละด้านยาวเท่าไร",
+      "explanation": "48÷8=6 cm",
+      "question_text_th": "รูปแปดเหลี่ยมด้านเท่ามีความยาวรอบรูป 48 ซม. แต่ละด้านยาวเท่าไร",
+      "question_text_en": "A regular octagon has a perimeter of 48 cm. How long is each side?"
+    },
+    {
+      "question_id": "polygons_q001_m05",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมด้านเท่ามีด้านยาว 9 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "An equilateral triangle has sides of 9 cm each. What is its perimeter?",
+      "choices_th": [
+        "27 cm",
+        "18 cm",
+        "36 cm",
+        "24 cm"
+      ],
+      "choices_en": [
+        "27 cm",
+        "18 cm",
+        "36 cm",
+        "24 cm"
+      ],
+      "correct_answer_th": "27 cm",
+      "correct_answer_en": "27 cm",
+      "answer_th": "27 cm",
+      "answer_en": "27 cm",
+      "answer": "27 cm",
+      "explanation_th": "3×9=27 cm",
+      "explanation_en": "3×9=27 cm",
+      "difficulty": "easy",
+      "choices": [
+        "27 cm",
+        "18 cm",
+        "36 cm",
+        "24 cm"
+      ],
+      "correct_answer": "27 cm",
+      "question_text": "สามเหลี่ยมด้านเท่ามีด้านยาว 9 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "3×9=27 cm",
+      "question_text_th": "สามเหลี่ยมด้านเท่ามีด้านยาว 9 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "An equilateral triangle has sides of 9 cm each. What is its perimeter?"
+    },
+    {
+      "question_id": "polygons_q001_m06",
+      "type": "multiple_choice",
+      "question_th": "รูปเจ็ดเหลี่ยมด้านเท่ามีกี่ด้าน",
+      "question_en": "How many sides does a heptagon have?",
+      "choices_th": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "choices_en": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct_answer_th": "7",
+      "correct_answer_en": "7",
+      "answer_th": "7",
+      "answer_en": "7",
+      "answer": "7",
+      "explanation_th": "Heptagon has 7 sides",
+      "explanation_en": "Heptagon has 7 sides",
+      "difficulty": "easy",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct_answer": "7",
+      "question_text": "รูปเจ็ดเหลี่ยมด้านเท่ามีกี่ด้าน",
+      "explanation": "Heptagon has 7 sides",
+      "question_text_th": "รูปเจ็ดเหลี่ยมด้านเท่ามีกี่ด้าน",
+      "question_text_en": "How many sides does a heptagon have?"
+    },
+    {
+      "question_id": "polygons_q001_m07",
+      "type": "multiple_choice",
+      "question_th": "รูปสี่เหลี่ยมจัตุรัสมีด้านยาว 7 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "A square has sides of 7 cm. What is its perimeter?",
+      "choices_th": [
+        "14 cm",
+        "21 cm",
+        "28 cm",
+        "49 cm"
+      ],
+      "choices_en": [
+        "14 cm",
+        "21 cm",
+        "28 cm",
+        "49 cm"
+      ],
+      "correct_answer_th": "28 cm",
+      "correct_answer_en": "28 cm",
+      "answer_th": "28 cm",
+      "answer_en": "28 cm",
+      "answer": "28 cm",
+      "explanation_th": "4×7=28 cm",
+      "explanation_en": "4×7=28 cm",
+      "difficulty": "easy",
+      "choices": [
+        "14 cm",
+        "21 cm",
+        "28 cm",
+        "49 cm"
+      ],
+      "correct_answer": "28 cm",
+      "question_text": "รูปสี่เหลี่ยมจัตุรัสมีด้านยาว 7 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "4×7=28 cm",
+      "question_text_th": "รูปสี่เหลี่ยมจัตุรัสมีด้านยาว 7 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "A square has sides of 7 cm. What is its perimeter?"
+    },
+    {
+      "question_id": "polygons_q001_m08",
+      "type": "multiple_choice",
+      "question_th": "รูปสี่เหลี่ยมผืนผ้ากว้าง 5 ซม. ยาว 15 ซม. ความยาวรอบรูปเท่าไร",
+      "question_en": "A rectangle is 5 cm wide and 15 cm long. What is its perimeter?",
+      "choices_th": [
+        "20 cm",
+        "30 cm",
+        "40 cm",
+        "25 cm"
+      ],
+      "choices_en": [
+        "20 cm",
+        "30 cm",
+        "40 cm",
+        "25 cm"
+      ],
+      "correct_answer_th": "40 cm",
+      "correct_answer_en": "40 cm",
+      "answer_th": "40 cm",
+      "answer_en": "40 cm",
+      "answer": "40 cm",
+      "explanation_th": "2×(5+15)=2×20=40 cm",
+      "explanation_en": "2×(5+15)=2×20=40 cm",
+      "difficulty": "easy",
+      "choices": [
+        "20 cm",
+        "30 cm",
+        "40 cm",
+        "25 cm"
+      ],
+      "correct_answer": "40 cm",
+      "question_text": "รูปสี่เหลี่ยมผืนผ้ากว้าง 5 ซม. ยาว 15 ซม. ความยาวรอบรูปเท่าไร",
+      "explanation": "2×(5+15)=2×20=40 cm",
+      "question_text_th": "รูปสี่เหลี่ยมผืนผ้ากว้าง 5 ซม. ยาว 15 ซม. ความยาวรอบรูปเท่าไร",
+      "question_text_en": "A rectangle is 5 cm wide and 15 cm long. What is its perimeter?"
+    },
+    {
+      "question_id": "polygons_q001_m09",
+      "type": "multiple_choice",
+      "question_th": "รูปห้าเหลี่ยมด้านเท่ามีความยาวรอบรูป 50 ซม. แต่ละด้านยาวเท่าไร",
+      "question_en": "A regular pentagon has a perimeter of 50 cm. How long is each side?",
+      "choices_th": [
+        "8 cm",
+        "10 cm",
+        "12 cm",
+        "14 cm"
+      ],
+      "choices_en": [
+        "8 cm",
+        "10 cm",
+        "12 cm",
+        "14 cm"
+      ],
+      "correct_answer_th": "10 cm",
+      "correct_answer_en": "10 cm",
+      "answer_th": "10 cm",
+      "answer_en": "10 cm",
+      "answer": "10 cm",
+      "explanation_th": "50÷5=10 cm",
+      "explanation_en": "50÷5=10 cm",
+      "difficulty": "easy",
+      "choices": [
+        "8 cm",
+        "10 cm",
+        "12 cm",
+        "14 cm"
+      ],
+      "correct_answer": "10 cm",
+      "question_text": "รูปห้าเหลี่ยมด้านเท่ามีความยาวรอบรูป 50 ซม. แต่ละด้านยาวเท่าไร",
+      "explanation": "50÷5=10 cm",
+      "question_text_th": "รูปห้าเหลี่ยมด้านเท่ามีความยาวรอบรูป 50 ซม. แต่ละด้านยาวเท่าไร",
+      "question_text_en": "A regular pentagon has a perimeter of 50 cm. How long is each side?"
+    },
+    {
+      "question_id": "polygons_q001_m10",
+      "type": "multiple_choice",
+      "question_th": "สามเหลี่ยมด้านเท่ารูปหนึ่งมีความยาวรอบรูป 33.9 ซม. แต่ละด้านยาวเท่าไร",
+      "question_en": "An equilateral triangle has a perimeter of 33.9 cm. How long is each side?",
+      "choices_th": [
+        "11.3 cm",
+        "10.3 cm",
+        "11 cm",
+        "11.5 cm"
+      ],
+      "choices_en": [
+        "11.3 cm",
+        "10.3 cm",
+        "11 cm",
+        "11.5 cm"
+      ],
+      "correct_answer_th": "11.3 cm",
+      "correct_answer_en": "11.3 cm",
+      "answer_th": "11.3 cm",
+      "answer_en": "11.3 cm",
+      "answer": "11.3 cm",
+      "explanation_th": "33.9÷3=11.3 cm",
+      "explanation_en": "33.9÷3=11.3 cm",
+      "difficulty": "hard",
+      "choices": [
+        "11.3 cm",
+        "10.3 cm",
+        "11 cm",
+        "11.5 cm"
+      ],
+      "correct_answer": "11.3 cm",
+      "question_text": "สามเหลี่ยมด้านเท่ารูปหนึ่งมีความยาวรอบรูป 33.9 ซม. แต่ละด้านยาวเท่าไร",
+      "explanation": "33.9÷3=11.3 cm",
+      "question_text_th": "สามเหลี่ยมด้านเท่ารูปหนึ่งมีความยาวรอบรูป 33.9 ซม. แต่ละด้านยาวเท่าไร",
+      "question_text_en": "An equilateral triangle has a perimeter of 33.9 cm. How long is each side?"
+    }
+  ]
+}

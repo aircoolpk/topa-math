@@ -1,0 +1,189 @@
+{
+  "lesson_id": "multiplication_division_whole_numbers_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "A fruit shop has 36 bags of oranges with 25 oranges per bag. How many oranges in total?",
+      "question_text_en": "A fruit shop has 36 bags of oranges with 25 oranges per bag. How many oranges in total?",
+      "choices": [
+        "900 oranges",
+        "910 oranges",
+        "890 oranges",
+        "950 oranges"
+      ],
+      "correct_answer": "900 oranges",
+      "answer": "900 oranges",
+      "explanation": "36 x 25 = 900 oranges",
+      "explanation_th": "36 × 25 = 900 ผล",
+      "difficulty": "easy",
+      "hint_th": "Multiply 36 by 25",
+      "question_text_th": "ร้านขายผลไม้มีส้ม 36 ถุง ถุงละ 25 ผล. รวมกี่ผล?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "Lin buys 15 pens at 35 baht each. Total? If she pays with 1,000 baht, how much change?",
+      "question_text_en": "Lin buys 15 pens at 35 baht each. Total? If she pays with 1,000 baht, how much change?",
+      "choices": [
+        "525 baht, change 475 baht",
+        "525 baht, change 575 baht",
+        "535 baht, change 465 baht",
+        "523 baht, change  baht"
+      ],
+      "correct_answer": "525 baht, change 475 baht",
+      "answer": "525 baht, change 475 baht",
+      "explanation": "15x35=525 | 1,000-525=475 change",
+      "explanation_th": "15×35=525 บาท | 1,000-525=475 บาททอน",
+      "difficulty": "easy",
+      "hint_th": "Multiply first, then subtract",
+      "question_text_th": "ลินซื้อปากกา 15 ด้าม ด้ามละ 35 บาท. รวมเท่าไร? จ่าย 1,000 บาท ทอนเท่าไร?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "A mango orchard has 45 rows with 28 mango trees per row. How many mango trees in total?",
+      "question_text_en": "A mango orchard has 45 rows with 28 mango trees per row. How many mango trees in total?",
+      "choices": [
+        "1,260 trees",
+        "1,250 trees",
+        "1,270 trees",
+        "1,160 trees"
+      ],
+      "correct_answer": "1,260 trees",
+      "answer": "1,260 trees",
+      "explanation": "45 x 28 = 1,260 trees",
+      "explanation_th": "45 × 28 = 1,260 ต้น",
+      "difficulty": "easy",
+      "hint_th": "Multiply 45 by 28",
+      "question_text_th": "สวนมะม่วงมี 45 แถว แถวละ 28 ต้น. รวมกี่ต้น?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "If 24 x 125 = 3,000, then what is 3,000 / 24?",
+      "question_text_en": "If 24 x 125 = 3,000, then what is 3,000 / 24?",
+      "choices": [
+        "125",
+        "124",
+        "126",
+        "115"
+      ],
+      "correct_answer": "125",
+      "answer": "125",
+      "explanation": "3,000 / 24 = 125 (division reverses multiplication)",
+      "explanation_th": "3,000 ÷ 24 = 125",
+      "difficulty": "easy",
+      "hint_th": "Use the relationship between multiplication and division",
+      "question_text_th": "ถ้า 24x125=3,000 แล้ว 3,000/24=?"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "A bakery bakes bread in 25 layers with 48 loaves per layer. Total? Put in bags of 60. How many bags?",
+      "question_text_en": "A bakery bakes bread in 25 layers with 48 loaves per layer. Total? Put in bags of 60. How many bags?",
+      "choices": [
+        "1,200 loaves, 20 bags, remainder 0",
+        "1,200 loaves, 18 bags, remainder 40",
+        "1,200 loaves, 19 bags, remainder 40",
+        "1,180 loaves, 19 bags, remainder 40"
+      ],
+      "correct_answer": "1,200 loaves, 20 bags, remainder 0",
+      "answer": "1,200 loaves, 20 bags, remainder 0",
+      "explanation": "25x48=1,200 | 1,200/60=20 bags, remainder 0",
+      "explanation_th": "25×48=1,200 ก้อน | 1,200÷60=20 ถุง เศษ 0",
+      "difficulty": "medium",
+      "hint_th": "Multiply first, then divide by 60",
+      "question_text_th": "โรงงานอบขนมปัง 25 ชั้น ชั้นละ 48 ก้อน. รวมกี่ก้อน? แบ่งถุงละ 60 ก้อน ได้กี่ถุง?"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "A water bottle factory operates for 12 hours and produces 1,250 bottles per hour. How many bottles in total?",
+      "question_text_en": "A water bottle factory operates for 12 hours and produces 1,250 bottles per hour. How many bottles in total?",
+      "choices": [
+        "15,000 bottles",
+        "14,000 bottles",
+        "15,500 bottles",
+        "15,002 bottles"
+      ],
+      "correct_answer": "15,000 bottles",
+      "answer": "15,000 bottles",
+      "explanation": "12 x 1,250 = 15,000 bottles",
+      "explanation_th": "12 × 1,250 = 15,000 ขวด",
+      "difficulty": "medium",
+      "hint_th": "Multiply 12 by 1,250",
+      "question_text_th": "โรงงานทำขวดน้ำทำงาน 12 ชม. ชม.ละ 1,250 ขวด. รวมกี่ขวด?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "Students arrange flowers: 24 flowers per row, 15 rows. Total? Big vases hold 60 flowers each. How many vases?",
+      "question_text_en": "Students arrange flowers: 24 flowers per row, 15 rows. Total? Big vases hold 60 flowers each. How many vases?",
+      "choices": [
+        "360 flowers, 6 vases",
+        "360 flowers, 5 vases",
+        "350 flowers, 6 vases",
+        "370 flowers, 6 vases"
+      ],
+      "correct_answer": "360 flowers, 6 vases",
+      "answer": "360 flowers, 6 vases",
+      "explanation": "24x15=360 flowers | 360/60=6 vases",
+      "explanation_th": "24×15=360 ดอก | 360÷60=6 แจกัน",
+      "difficulty": "medium",
+      "hint_th": "Multiply first, then divide",
+      "question_text_th": "นักเรียนจัดดอกไม้ 24 ดอกต่อแถว 15 แถว. รวมกี่ดอก? แจกันใหญ่ใส่ได้ 60 ดอก. ใช้กี่ใบ?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "Oranges are arranged in 15 rows with 48 oranges per row. How many oranges in total?",
+      "question_text_en": "Oranges are arranged in 15 rows with 48 oranges per row. How many oranges in total?",
+      "choices": [
+        "720 oranges",
+        "710 oranges",
+        "730 oranges",
+        "725 oranges"
+      ],
+      "correct_answer": "720 oranges",
+      "answer": "720 oranges",
+      "explanation": "15 x 48 = 720 oranges",
+      "explanation_th": "15 × 48 = 720 ผล",
+      "difficulty": "easy",
+      "hint_th": "Multiply 15 by 48",
+      "question_text_th": "ส้มจัดเป็น 15 แถว แถวละ 48 ผล. รวมกี่ผล?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "A number multiplied by 8 and then add 15 equals 95. What is the number?",
+      "question_text_en": "A number multiplied by 8 and then add 15 equals 95. What is the number?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "12"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "8x + 15 = 95 → 8x = 80 → x = 10",
+      "explanation_th": "8x+15=95 → 8x=80 → x=10",
+      "difficulty": "hard",
+      "hint_th": "Solve: 8x+15=95 → 8x=80 → x=10",
+      "question_text_th": "จำนวนหนึ่งคูณ 8 แล้วบวก 15 ได้ 95. จำนวนนั้นคือเท่าไร?"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "A shop buys 25 shirts at 1,280 baht each and 18 pants at 2,450 baht each. What is the total cost?",
+      "question_text_en": "A shop buys 25 shirts at 1,280 baht each and 18 pants at 2,450 baht each. What is the total cost?",
+      "choices": [
+        "76,100 baht",
+        "75,100 baht",
+        "76,900 baht",
+        "75,900 baht"
+      ],
+      "correct_answer": "76,100 baht",
+      "answer": "76,100 baht",
+      "explanation": "25x1,280=32,000 | 18x2,450=44,100 | total=76,100 baht",
+      "explanation_th": "25×1,280=32,000 บาท | 18×2,450=44,100 บาท | รวม=76,100 บาท",
+      "difficulty": "medium",
+      "hint_th": "Multiply separately, then add",
+      "question_text_th": "ร้านซื้อเสื้อ 25 ตัว ตัวละ 1,280 บาท และกางเกง 18 ตัว ตัวละ 2,450 บาท. รวมเท่าไร?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

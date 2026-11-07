@@ -1,0 +1,371 @@
+{
+  "quiz_id": "patterns_TH_q002",
+  "title_th": "แบบรูป",
+  "title_en": "Patterns",
+  "status": "needs_review",
+  "variant_id": "patterns_TH_q002",
+  "variant_title_th": "แบบรูป",
+  "variant_title_en": "Patterns",
+  "questions": [
+    {
+      "question_id": "patterns_q002_m01",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 4, 8, 16, 32, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 4, 8, 16, 32, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "48",
+        "56",
+        "64",
+        "40"
+      ],
+      "choices_en": [
+        "48",
+        "56",
+        "64",
+        "40"
+      ],
+      "correct_answer_th": "64",
+      "correct_answer_en": "64",
+      "answer_th": "64",
+      "answer": "64",
+      "explanation_th": "คูณ 2 ทุกครั้ง: 32×2=64",
+      "explanation_en": "คูณ 2 ทุกครั้ง: 32×2=64",
+      "difficulty": "easy",
+      "choices": [
+        "48",
+        "56",
+        "64",
+        "40"
+      ],
+      "correct_answer": "64",
+      "question_text": "แบบรูป: 4, 8, 16, 32, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "คูณ 2 ทุกครั้ง: 32×2=64",
+      "question_text_th": "แบบรูป: 4, 8, 16, 32, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 4, 8, 16, 32, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m02",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 1, 4, 7, 10, 13, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 1, 4, 7, 10, 13, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "choices_en": [
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "correct_answer_th": "16",
+      "correct_answer_en": "16",
+      "answer_th": "16",
+      "answer": "16",
+      "explanation_th": "ผลต่างคงที่ +3 ดังนั้น 13+3=16",
+      "explanation_en": "ผลต่างคงที่ +3 ดังนั้น 13+3=16",
+      "difficulty": "easy",
+      "choices": [
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "correct_answer": "16",
+      "question_text": "แบบรูป: 1, 4, 7, 10, 13, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "ผลต่างคงที่ +3 ดังนั้น 13+3=16",
+      "question_text_th": "แบบรูป: 1, 4, 7, 10, 13, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 1, 4, 7, 10, 13, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m03",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 2, 6, 18, 54, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 2, 6, 18, 54, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "108",
+        "162",
+        "216",
+        "81"
+      ],
+      "choices_en": [
+        "108",
+        "162",
+        "216",
+        "81"
+      ],
+      "correct_answer_th": "162",
+      "correct_answer_en": "162",
+      "answer_th": "162",
+      "answer": "162",
+      "explanation_th": "คูณ 3 ทุกครั้ง: 54×3=162",
+      "explanation_en": "คูณ 3 ทุกครั้ง: 54×3=162",
+      "difficulty": "medium",
+      "choices": [
+        "108",
+        "162",
+        "216",
+        "81"
+      ],
+      "correct_answer": "162",
+      "question_text": "แบบรูป: 2, 6, 18, 54, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "คูณ 3 ทุกครั้ง: 54×3=162",
+      "question_text_th": "แบบรูป: 2, 6, 18, 54, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 2, 6, 18, 54, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m04",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 5, 11, 19, 29, 41, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 5, 11, 19, 29, 41, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "53",
+        "55",
+        "57",
+        "51"
+      ],
+      "choices_en": [
+        "53",
+        "55",
+        "57",
+        "51"
+      ],
+      "correct_answer_th": "55",
+      "correct_answer_en": "55",
+      "answer_th": "55",
+      "answer": "55",
+      "explanation_th": "ผลต่างเพิ่มขึ้น 2 ทุกครั้ง: +6,+8,+10,+12,+14 → 41+14=55",
+      "explanation_en": "ผลต่างเพิ่มขึ้น 2 ทุกครั้ง: +6,+8,+10,+12,+14 → 41+14=55",
+      "difficulty": "hard",
+      "choices": [
+        "53",
+        "55",
+        "57",
+        "51"
+      ],
+      "correct_answer": "55",
+      "question_text": "แบบรูป: 5, 11, 19, 29, 41, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "ผลต่างเพิ่มขึ้น 2 ทุกครั้ง: +6,+8,+10,+12,+14 → 41+14=55",
+      "question_text_th": "แบบรูป: 5, 11, 19, 29, 41, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 5, 11, 19, 29, 41, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m05",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 1, 8, 27, 64, 125, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 1, 8, 27, 64, 125, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "196",
+        "216",
+        "225",
+        "169"
+      ],
+      "choices_en": [
+        "196",
+        "216",
+        "225",
+        "169"
+      ],
+      "correct_answer_th": "216",
+      "correct_answer_en": "216",
+      "answer_th": "216",
+      "answer": "216",
+      "explanation_th": "เลขยกกำลังสาม: 1³,2³,3³,4³,5³,6³=216",
+      "explanation_en": "เลขยกกำลังสาม: 1³,2³,3³,4³,5³,6³=216",
+      "difficulty": "medium",
+      "choices": [
+        "196",
+        "216",
+        "225",
+        "169"
+      ],
+      "correct_answer": "216",
+      "question_text": "แบบรูป: 1, 8, 27, 64, 125, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "เลขยกกำลังสาม: 1³,2³,3³,4³,5³,6³=216",
+      "question_text_th": "แบบรูป: 1, 8, 27, 64, 125, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 1, 8, 27, 64, 125, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m06",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 9, 18, 27, 36, 45, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 9, 18, 27, 36, 45, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "choices_en": [
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "correct_answer_th": "54",
+      "correct_answer_en": "54",
+      "answer_th": "54",
+      "answer": "54",
+      "explanation_th": "บวก 9 ทุกครั้ง: 45+9=54 หรือ 9×6=54",
+      "explanation_en": "บวก 9 ทุกครั้ง: 45+9=54 หรือ 9×6=54",
+      "difficulty": "easy",
+      "choices": [
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "correct_answer": "54",
+      "question_text": "แบบรูป: 9, 18, 27, 36, 45, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "บวก 9 ทุกครั้ง: 45+9=54 หรือ 9×6=54",
+      "question_text_th": "แบบรูป: 9, 18, 27, 36, 45, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 9, 18, 27, 36, 45, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m07",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 3, 9, 27, 81, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 3, 9, 27, 81, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "162",
+        "243",
+        "108",
+        "324"
+      ],
+      "choices_en": [
+        "162",
+        "243",
+        "108",
+        "324"
+      ],
+      "correct_answer_th": "243",
+      "correct_answer_en": "243",
+      "answer_th": "243",
+      "answer": "243",
+      "explanation_th": "คูณ 3 ทุกครั้ง: 81×3=243",
+      "explanation_en": "คูณ 3 ทุกครั้ง: 81×3=243",
+      "difficulty": "easy",
+      "choices": [
+        "162",
+        "243",
+        "108",
+        "324"
+      ],
+      "correct_answer": "243",
+      "question_text": "แบบรูป: 3, 9, 27, 81, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "คูณ 3 ทุกครั้ง: 81×3=243",
+      "question_text_th": "แบบรูป: 3, 9, 27, 81, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 3, 9, 27, 81, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m08",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 2, 5, 10, 17, 26, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 2, 5, 10, 17, 26, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "35",
+        "36",
+        "37",
+        "38"
+      ],
+      "choices_en": [
+        "35",
+        "36",
+        "37",
+        "38"
+      ],
+      "correct_answer_th": "37",
+      "correct_answer_en": "37",
+      "answer_th": "37",
+      "answer": "37",
+      "explanation_th": "+3,+5,+7,+9,+11 → 26+11=37",
+      "explanation_en": "+3,+5,+7,+9,+11 → 26+11=37",
+      "difficulty": "hard",
+      "choices": [
+        "35",
+        "36",
+        "37",
+        "38"
+      ],
+      "correct_answer": "37",
+      "question_text": "แบบรูป: 2, 5, 10, 17, 26, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "+3,+5,+7,+9,+11 → 26+11=37",
+      "question_text_th": "แบบรูป: 2, 5, 10, 17, 26, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 2, 5, 10, 17, 26, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m09",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 1, 2, 4, 7, 11, 16, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 1, 2, 4, 7, 11, 16, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "choices_en": [
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "correct_answer_th": "22",
+      "correct_answer_en": "22",
+      "answer_th": "22",
+      "answer": "22",
+      "explanation_th": "ผลต่างเพิ่มขึ้น 1 ทุกครั้ง: +1,+2,+3,+4,+5,+6 → 16+6=22",
+      "explanation_en": "ผลต่างเพิ่มขึ้น 1 ทุกครั้ง: +1,+2,+3,+4,+5,+6 → 16+6=22",
+      "difficulty": "hard",
+      "choices": [
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "correct_answer": "22",
+      "question_text": "แบบรูป: 1, 2, 4, 7, 11, 16, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "ผลต่างเพิ่มขึ้น 1 ทุกครั้ง: +1,+2,+3,+4,+5,+6 → 16+6=22",
+      "question_text_th": "แบบรูป: 1, 2, 4, 7, 11, 16, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 1, 2, 4, 7, 11, 16, ... ค่าต่อไปคือเท่าไร"
+    },
+    {
+      "question_id": "patterns_q002_m10",
+      "type": "multiple_choice",
+      "question_th": "แบบรูป: 6, 11, 21, 36, 56, ... ค่าต่อไปคือเท่าไร",
+      "question_en": "แบบรูป: 6, 11, 21, 36, 56, ... ค่าต่อไปคือเท่าไร",
+      "choices_th": [
+        "81",
+        "76",
+        "71",
+        "86"
+      ],
+      "choices_en": [
+        "81",
+        "76",
+        "71",
+        "86"
+      ],
+      "correct_answer_th": "81",
+      "correct_answer_en": "81",
+      "answer_th": "81",
+      "answer": "81",
+      "explanation_th": "ผลต่าง: +5,+10,+15,+20,+25 → 56+25=81",
+      "explanation_en": "ผลต่าง: +5,+10,+15,+20,+25 → 56+25=81",
+      "difficulty": "hard",
+      "choices": [
+        "81",
+        "76",
+        "71",
+        "86"
+      ],
+      "correct_answer": "81",
+      "question_text": "แบบรูป: 6, 11, 21, 36, 56, ... ค่าต่อไปคือเท่าไร",
+      "explanation": "ผลต่าง: +5,+10,+15,+20,+25 → 56+25=81",
+      "question_text_th": "แบบรูป: 6, 11, 21, 36, 56, ... ค่าต่อไปคือเท่าไร",
+      "question_text_en": "แบบรูป: 6, 11, 21, 36, 56, ... ค่าต่อไปคือเท่าไร"
+    }
+  ]
+}

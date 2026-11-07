@@ -1,0 +1,133 @@
+{
+  "quiz_id": "multiplication_th_q002",
+  "topic_key": "multiplication",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ multiplication_th_q002",
+  "title_en": "Quiz multiplication_th_q002",
+  "questions": [
+    {
+      "question": "12 x 4 = ?",
+      "choices": [
+        "48",
+        "36",
+        "44",
+        "24"
+      ],
+      "correct_answer": "48",
+      "explanation": "12x4=48 หรือ 10x4=40, 2x4=8, 40+8=48",
+      "difficulty": "easy"
+    },
+    {
+      "question": "5 x 13 = ?",
+      "choices": [
+        "65",
+        "55",
+        "75",
+        "45"
+      ],
+      "correct_answer": "65",
+      "explanation": "5x13=5x10+5x3=50+15=65",
+      "difficulty": "medium"
+    },
+    {
+      "question": "อ้ายซื้อปากกาเฉลี่ยดินสอ 9 บาท ซื้อ 6 ด้าม จ่ายเท่าไร",
+      "choices": [
+        "54 บาท",
+        "15 บาท",
+        "63 บาท",
+        "42 บาท"
+      ],
+      "correct_answer": "54 บาท",
+      "explanation": "9x6=54 บาท",
+      "difficulty": "easy"
+    },
+    {
+      "question": "14 x 3 = ?",
+      "choices": [
+        "42",
+        "32",
+        "52",
+        "44"
+      ],
+      "correct_answer": "42",
+      "explanation": "14x3=14+14+14=42",
+      "difficulty": "easy"
+    },
+    {
+      "question": "3 x 25 = ?",
+      "choices": [
+        "75",
+        "65",
+        "85",
+        "55"
+      ],
+      "correct_answer": "75",
+      "explanation": "3x25=75 หรือ 3x20=60, 3x5=15, 60+15=75",
+      "difficulty": "medium"
+    },
+    {
+      "question": "มีนักเรียน 8 แถว แถวละ 7 คน รวมนักเรียนกี่คน",
+      "choices": [
+        "56 คน",
+        "15 คน",
+        "63 คน",
+        "48 คน"
+      ],
+      "correct_answer": "56 คน",
+      "explanation": "8x7=56 คน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ลินซื้อสมุด 5 เล่ม เล่มละ 18 บาท จ่ายเท่าไร",
+      "choices": [
+        "90 บาท",
+        "23 บาท",
+        "13 บาท",
+        "95 บาท"
+      ],
+      "correct_answer": "90 บาท",
+      "explanation": "5x18=90 บาท",
+      "difficulty": "medium"
+    },
+    {
+      "question": "7 x 11 = ?",
+      "choices": [
+        "77",
+        "71",
+        "88",
+        "66"
+      ],
+      "correct_answer": "77",
+      "explanation": "7x11=77",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ถังใบใหญ่บรรจุน้ำได้ 16 ลิตร ถังเล็กบรรจุได้ 8 ลิตร ถังใหญ่บรรจุได้มากกว่าถังเล็กกี่ลิตร",
+      "choices": [
+        "8 ล.",
+        "24 ล.",
+        "16 ล.",
+        "2 ล."
+      ],
+      "correct_answer": "8 ล.",
+      "explanation": "16-8=8 ล.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "บุ๊กสะสมแสตมป์ 9 แถว แถวละ 11 ดวง รวมกี่ดวง",
+      "choices": [
+        "99 ดวง",
+        "20 ดวง",
+        "90 ดวง",
+        "109 ดวง"
+      ],
+      "correct_answer": "99 ดวง",
+      "explanation": "9x11=99 ดวง",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

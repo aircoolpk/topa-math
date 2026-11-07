@@ -1,0 +1,133 @@
+{
+  "quiz_id": "picture_graphs_th_q002",
+  "topic_key": "picture_graphs",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ picture_graphs_th_q002",
+  "title_en": "Quiz picture_graphs_th_q002",
+  "questions": [
+    {
+      "question": "แผนภูมิรูปภาพ รูปละ 5 คน ต้องวาดกี่รูปถ้าต้องการแสดง 45 คน",
+      "choices": [
+        "9 รูป",
+        "8 รูป",
+        "10 รูป",
+        "7 รูป"
+      ],
+      "correct_answer": "9 รูป",
+      "explanation": "45/5=9 รูป",
+      "difficulty": "easy"
+    },
+    {
+      "question": "สำรวจวิชาที่ชอบ คณิต 6 คน วิทย์ 8 คน ไทย 5 คน ศิลปะ 3 คน รวมกี่คน",
+      "choices": [
+        "22 คน",
+        "21 คน",
+        "23 คน",
+        "20 คน"
+      ],
+      "correct_answer": "22 คน",
+      "explanation": "6+8+5+3=22 คน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "กราฟแท่งสูง 10 ช่อง ช่องละ 2 คน หมายถึงกี่คน",
+      "choices": [
+        "20 คน",
+        "12 คน",
+        "8 คน",
+        "5 คน"
+      ],
+      "correct_answer": "20 คน",
+      "explanation": "10x2=20 คน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "แผนภูมิรูปภาพ รูปละ 4 คน ต้องการแสดง 36 คน ต้องวาดรูปกี่รูป",
+      "choices": [
+        "9 รูป",
+        "8 รูป",
+        "7 รูป",
+        "10 รูป"
+      ],
+      "correct_answer": "9 รูป",
+      "explanation": "36/4=9 รูป",
+      "difficulty": "easy"
+    },
+    {
+      "question": "สำรวจกีฬาที่ชอบ: ฟุตบอล 9 คน ว่ายน้ำ 5 คน เทนนิส 7 คน รวมกี่คน กีฬาไหนมากสุด",
+      "choices": [
+        "21 คน ฟุตบอล",
+        "19 คน ฟุตบอล",
+        "21 คน เทนนิส",
+        "20 คน ฟุตบอล"
+      ],
+      "correct_answer": "21 คน ฟุตบอล",
+      "explanation": "9+5+7=21 คน, ฟุตบอล 9 คนมากสุด",
+      "difficulty": "easy"
+    },
+    {
+      "question": "กราฟแท่ง A สูง 7 ช่อง กราฟแท่ง B สูง 3 ช่อง ช่องละ 5 บาท ต่างกันเท่าไร",
+      "choices": [
+        "20 บาท",
+        "35 บาท",
+        "10 บาท",
+        "15 บาท"
+      ],
+      "correct_answer": "20 บาท",
+      "explanation": "(7-3)x5=4x5=20 บาท",
+      "difficulty": "medium"
+    },
+    {
+      "question": "แผนภูมิรูปภาพ รูปละ 3 คน มีรูป 5 รูป กับอีกชนิดมีรูป 8 รูป ต่างกันเท่าไร",
+      "choices": [
+        "9 คน",
+        "6 คน",
+        "12 คน",
+        "15 คน"
+      ],
+      "correct_answer": "9 คน",
+      "explanation": "(8-5)x3=3x3=9 คน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "สำรวจผลไม้ที่ชอบ ส้ม 8 คน กล้วย 6 คน มะม่วง 10 คน มะม่วงมากกว่ากล้วยกี่คน",
+      "choices": [
+        "4 คน",
+        "2 คน",
+        "6 คน",
+        "3 คน"
+      ],
+      "correct_answer": "4 คน",
+      "explanation": "10-6=4 คน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ในกราฟ 1 รูป = 6 คน ต้องการแสดง 48 คน ต้องวาดรูปกี่รูป",
+      "choices": [
+        "8 รูป",
+        "7 รูป",
+        "6 รูป",
+        "9 รูป"
+      ],
+      "correct_answer": "8 รูป",
+      "explanation": "48/6=8 รูป",
+      "difficulty": "easy"
+    },
+    {
+      "question": "สำรวจสัตว์เลี้ยง หมา 5 คน แมว 7 คน ปลาทอง 4 คน นก 2 คน รวมกี่คน และสัตว์ใดได้คะแนนมากสุด",
+      "choices": [
+        "18 คน แมว",
+        "16 คน แมว",
+        "18 คน หมา",
+        "8 คน แมว"
+      ],
+      "correct_answer": "18 คน แมว",
+      "explanation": "5+7+4+2=18 คน, แมว 7 คนมากสุด",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

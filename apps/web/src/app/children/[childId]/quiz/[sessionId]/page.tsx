@@ -41,8 +41,8 @@ export default function QuizPage() {
   const startTime = useRef(Date.now())
 
   useEffect(() => {
-    checkAuth().then(() => {
-      if (!localStorage.getItem('access_token')) router.push('/login')
+    checkAuth().then((authenticatedUser) => {
+      if (!authenticatedUser) router.push('/login')
     })
   }, [])
 

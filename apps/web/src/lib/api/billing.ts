@@ -1,10 +1,12 @@
 import { apiClient } from '@/lib/api-client'
+import { isAxiosError } from 'axios'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 export type BillingPlan = 'free' | 'plus' | 'th_founder' | 'ep_founder' | 'th_plus' | 'ep_plus'
 
 export interface BillingPrices {
+  checkout_provider?: 'stripe' | 'mpp'
   plans: BillingPlanRecord[]
   // Founder pool info
   founder_limit?: number
@@ -25,6 +27,9 @@ export interface BillingPlanRecord {
   price_monthly?: number | null
   currency?: string
   price_thb?: number
+  price_minor?: number | null
+  duration_days?: number | null
+  auto_renew?: boolean
   original_price_thb?: number  // shown as "normal price" when founder
   interval?: 'monthly' | 'yearly' | 'month' | 'year' | 'none'
   billing_interval?: 'monthly' | 'yearly' | 'month' | 'year' | 'none'
@@ -45,6 +50,8 @@ export interface BillingPlanRecord {
 }
 
 export interface BillingStatus {
+  provider?: 'mpp' | 'stripe'
+  auto_renew?: boolean
   plan: BillingPlan
   is_paid: boolean
   plan_code: string | null
@@ -60,6 +67,8 @@ export interface BillingStatus {
 }
 
 export interface CheckoutSessionResponse {
+  order_id?: string
+  provider?: 'mpp' | 'stripe'
   checkout_url?: string
   mode?: 'stripe_checkout' | 'manual_pending' | string
   status?: string
@@ -77,6 +86,50 @@ export interface CheckoutSessionResponse {
     status: string
     created_at: string
   }
+}
+
+export interface MppOrderSummary {
+  order_id: string
+  plan_code: string
+  status: string
+  amount_minor: number
+  currency: string
+}
+
+export function getMppCheckoutUrl(response: CheckoutSessionResponse): string {
+  if (response.provider !== 'mpp' || !response.checkout_url) throw new Error('MPP checkout unavailable')
+  const url = new URL(response.checkout_url)
+  if (url.origin !== 'https://staging-pay.mmerchant.cc' || url.username || url.password) throw new Error('Unexpected payment host')
+  return url.href
+}
+
+export function getCheckoutUrl(response: CheckoutSessionResponse): string {
+  if (response.provider === 'mpp') return getMppCheckoutUrl(response)
+  if (response.provider !== 'stripe' || !response.checkout_url) throw new Error('Checkout unavailable')
+  const url = new URL(response.checkout_url)
+  if (url.origin !== 'https://checkout.stripe.com' || url.username || url.password) throw new Error('Unexpected payment host')
+  return url.href
+}
+
+export function getCheckoutErrorMessage(error: unknown): string {
+  if (isAxiosError(error)) {
+    const status = error.response?.status
+    const detail = error.response?.data?.detail
+    if (detail?.code === 'MPP_CHECKOUT_DISABLED') return 'ยังไม่เปิดใช้งาน MPP สำหรับรายการใหม่'
+    if (detail?.code === 'MPP_CHECKOUT_ACCOUNT_NOT_AUTHORIZED') return 'บัญชีนี้ยังไม่ได้รับสิทธิ์ทดสอบการชำระผ่าน MPP'
+    if (['CHECKOUT_PROVIDER_LOCKED', 'CHECKOUT_RECONCILIATION_REQUIRED'].includes(detail?.code)) return 'มีรายการชำระเงินเดิมที่ต้องตรวจสอบ กรุณาอย่าสร้างรายการข้ามระบบชำระเงิน'
+    if (detail?.code === 'EXISTING_MPP_MEMBERSHIP') return 'บัญชีนี้มีสิทธิ์ MPP อยู่แล้ว กรุณาต่ออายุผ่านรายการ MPP เพื่อป้องกันชำระซ้ำ'
+    if (detail?.code === 'EXISTING_STRIPE_SUBSCRIPTION') return 'บัญชีนี้มีสมาชิกที่เรียกเก็บเงินผ่าน Stripe อยู่แล้ว กรุณาจัดการสมาชิกเดิมก่อนเพื่อป้องกันชำระซ้ำ'
+    if (detail?.code === 'PAYMENT_ALREADY_PENDING') return 'มีรายการชำระเงินที่รอยืนยันอยู่ กรุณาตรวจสอบรายการเดิมก่อน'
+    if (detail?.code === 'PAYMENT_SESSION_EXPIRED') return 'หน้าชำระเงินหมดอายุแล้ว กรุณาตรวจสอบสถานะรายการก่อนชำระใหม่'
+    if (detail?.code === 'MPP_PACKAGE_UNAVAILABLE') return 'แพ็กเกจนี้ยังไม่เปิดชำระผ่าน MPP'
+    if (detail?.code === 'MPP_CONTRACT_UNAVAILABLE') return 'ยังไม่สามารถตรวจสอบข้อมูลระบบชำระเงินได้ กรุณาลองรายการเดิมอีกครั้งภายหลัง'
+    if (status === 503 && detail?.code === 'MPP_CHECKOUT_BLOCKED') return 'ระบบชำระเงิน MPP ยังไม่พร้อมใช้งาน กรุณาติดต่อผู้ดูแลหรือลองใหม่ภายหลัง'
+    if (status === 401) return 'กรุณาเข้าสู่ระบบก่อนสมัครแพ็กเกจ'
+    if (status === 409) return 'สิทธิ์ Founder Price ครบแล้ว กรุณาเลือกแพ็กเกจราคาปกติ'
+    if (!error.response) return 'ไม่สามารถเชื่อมต่อระบบชำระเงินได้ กรุณาลองใหม่'
+  }
+  return 'ไม่สามารถเปิดหน้าชำระเงินได้ กรุณาลองใหม่'
 }
 
 // ─── API ─────────────────────────────────────────────────────────────────────
@@ -283,6 +336,9 @@ export const DEV_FALLBACK_BILLING_PRICES: BillingPrices = {
 }
 
 export const billingApi = {
+  async getMppOrders(): Promise<MppOrderSummary[]> {
+    return (await apiClient.get('/billing/mpp/orders')).data as MppOrderSummary[]
+  },
   /**
    * Fetch available plans with prices.
    * GET /billing/prices
@@ -291,7 +347,8 @@ export const billingApi = {
   async getPrices(): Promise<BillingPrices> {
     try {
       const res = await apiClient.get('/billing/prices')
-      return res.data as BillingPrices
+      const data = res.data as BillingPrices
+      return { ...data, plans: data.plans.map((plan) => ({ ...plan, price_thb: typeof plan.price_minor === 'number' ? plan.price_minor / 100 : plan.price_thb })) }
     } catch {
       if (process.env.NODE_ENV === 'development') {
         console.warn('Failed to load billing plans from API, using dev fallback plans')
@@ -306,13 +363,18 @@ export const billingApi = {
   },
 
   /**
-   * Create a Stripe Checkout session for a selected plan.
-   * POST /billing/create-checkout-session
+   * Request MPP checkout for a selected plan.
+   * POST /billing/mpp/checkout
    * Payload: { plan_code: string }
-   * Response: { checkout_url: string } or manual pending payment details
+   * Unverified configuration/confirmation contract returns HTTP 503.
    */
   async createCheckoutSession(planCode: string): Promise<CheckoutSessionResponse> {
-    const res = await apiClient.post('/billing/create-checkout-session', { plan_code: planCode })
+    const res = await apiClient.post('/billing/create-checkout-session', { plan_code: planCode }, { timeout: 30000 })
+    return res.data as CheckoutSessionResponse
+  },
+
+  async createMppCheckout(planCode: string): Promise<CheckoutSessionResponse> {
+    const res = await apiClient.post('/billing/mpp/checkout', { plan_code: planCode }, { timeout: 30000 })
     return res.data as CheckoutSessionResponse
   },
 

@@ -1,0 +1,189 @@
+{
+  "lesson_id": "numbers_over_100000_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "A zoo has 28,750 goats, 19,830 horses, and 37,920 cows. How many animals in total?",
+      "question_text_en": "A zoo has 28,750 goats, 19,830 horses, and 37,920 cows. How many animals in total?",
+      "choices": [
+        "86,500 animals",
+        "76,500 animals",
+        "85,600 animals",
+        "86,000 animals"
+      ],
+      "correct_answer": "86,500 animals",
+      "answer": "86,500 animals",
+      "explanation": "28,750+19,830+37,920=86,500 animals",
+      "explanation_th": "28,750+19,830+37,920=86,500 ตัว",
+      "difficulty": "easy",
+      "hint_th": "Add three numbers carefully",
+      "question_text_th": "สวนสัตว์มีแพะ 28,750 ตัว ม้า 19,830 ตัว วัว 37,920 ตัว. รวม?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "A department store had 58,340, 67,280, and 71,875 customers over 3 days. Total customers?",
+      "question_text_en": "A department store had 58,340, 67,280, and 71,875 customers over 3 days. Total customers?",
+      "choices": [
+        "197,495 customers",
+        "187,495 customers",
+        "197,945 customers",
+        "187,945 customers"
+      ],
+      "correct_answer": "197,495 customers",
+      "answer": "197,495 customers",
+      "explanation": "58,340+67,280+71,875=197,495 customers",
+      "explanation_th": "58,340+67,280+71,875=197,495 คน",
+      "difficulty": "medium",
+      "hint_th": "Add three numbers, carry carefully",
+      "question_text_th": "ห้างมีลูกค้า 58,340, 67,280, 71,875 คน 3 วัน. รวม?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "A company has income of 1,250,000 baht and expenses of 875,500 baht. How much money is left?",
+      "question_text_en": "A company has income of 1,250,000 baht and expenses of 875,500 baht. How much money is left?",
+      "choices": [
+        "374,500 baht",
+        "375,500 baht",
+        "374,000 baht",
+        "375,000 baht"
+      ],
+      "correct_answer": "374,500 baht",
+      "answer": "374,500 baht",
+      "explanation": "1,250,000-875,500=374,500 baht",
+      "explanation_th": "1,250,000-875,500=374,500 บาท",
+      "difficulty": "easy",
+      "hint_th": "Subtract expenses from income",
+      "question_text_th": "บริษัทมีรายได้ 1,250,000 บาท ค่าใช้จ่าย 875,500 บาท. เหลือเงิน?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "Which is correct: A. 28,450+71,550=100,000 | B. 38,920+61,080=100,000 | C. Both A and B",
+      "question_text_en": "Which is correct: A. 28,450+71,550=100,000 | B. 38,920+61,080=100,000 | C. Both A and B",
+      "choices": [
+        "Both A and B",
+        "Only A",
+        "Only B",
+        "Neither A nor B"
+      ],
+      "correct_answer": "Both A and B",
+      "answer": "Both A and B",
+      "explanation": "28,450+71,550=100,000 ✓ | 38,920+61,080=100,000 ✓",
+      "explanation_th": "ก ถูก | ข ถูก | ทั้งคู่ถูก",
+      "difficulty": "medium",
+      "hint_th": "Check each addition carefully",
+      "question_text_th": "ข้อใดถูก: ก. 28,450+71,550=100,000 | ข. 38,920+61,080=100,000 | ค. ทั้ง ก และ ข"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "Lin has 500,000 baht. She buys 15 computers at 25,600 baht each. How much money left?",
+      "question_text_en": "Lin has 500,000 baht. She buys 15 computers at 25,600 baht each. How much money left?",
+      "choices": [
+        "116,000 baht",
+        "115,000 baht",
+        "116,500 baht",
+        "115,500 baht"
+      ],
+      "correct_answer": "116,000 baht",
+      "answer": "116,000 baht",
+      "explanation": "15x25,600=384,000 | 500,000-384,000=116,000",
+      "explanation_th": "15×25,600=384,000 | 500,000-384,000=116,000 บาท",
+      "difficulty": "medium",
+      "hint_th": "Multiply first, then subtract",
+      "question_text_th": "ลินมี 500,000 บาท. ซื้อคอมพิวเตอร์ 15 เครื่อง เครื่องละ 25,600 บาท. เหลือ?"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "A fruit shop earned 456,780 baht but the cost was 289,450 baht. What is the profit?",
+      "question_text_en": "A fruit shop earned 456,780 baht but the cost was 289,450 baht. What is the profit?",
+      "choices": [
+        "167,330 baht",
+        "167,430 baht",
+        "168,330 baht",
+        "167,340 baht"
+      ],
+      "correct_answer": "167,330 baht",
+      "answer": "167,330 baht",
+      "explanation": "456,780-289,450=167,330 baht",
+      "explanation_th": "456,780-289,450=167,330 บาท",
+      "difficulty": "medium",
+      "hint_th": "Profit = revenue minus cost",
+      "question_text_th": "ร้านขายผลไม้ได้เงิน 456,780 บาท ต้นทุน 289,450 บาท. กำไร?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "Which number is the smallest: 456,780 | 465,870 | 458,670 | 467,580?",
+      "question_text_en": "Which number is the smallest: 456,780 | 465,870 | 458,670 | 467,580?",
+      "choices": [
+        "456,780",
+        "458,670",
+        "465,870",
+        "467,580"
+      ],
+      "correct_answer": "456,780",
+      "answer": "456,780",
+      "explanation": "Compare ten-thousands: 5<6<6<6, so 456,780 is smallest",
+      "explanation_th": "456,780 มีหลักหมื่น = 5 ซึ่งน้อยที่สุด",
+      "difficulty": "hard",
+      "hint_th": "Compare from left to right",
+      "question_text_th": "จำนวนใดน้อยที่สุด: 456,780 | 465,870 | 458,670 | 467,580?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "A shop buys goods for 125,750 baht and sells them for 189,500 baht. What is the profit?",
+      "question_text_en": "A shop buys goods for 125,750 baht and sells them for 189,500 baht. What is the profit?",
+      "choices": [
+        "63,750 baht",
+        "64,750 baht",
+        "63,850 baht",
+        "64,850 baht"
+      ],
+      "correct_answer": "63,750 baht",
+      "answer": "63,750 baht",
+      "explanation": "189,500-125,750=63,750 baht",
+      "explanation_th": "189,500-125,750=63,750 บาทกำไร",
+      "difficulty": "easy",
+      "hint_th": "Profit = selling price minus cost",
+      "question_text_th": "ร้านซื้อสินค้า 125,750 บาท ขายได้ 189,500 บาท. กำไร?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "If x + 45,780 = 123,450, what is x?",
+      "question_text_en": "If x + 45,780 = 123,450, what is x?",
+      "choices": [
+        "77,670",
+        "77,760",
+        "78,670",
+        "78,760"
+      ],
+      "correct_answer": "77,670",
+      "answer": "77,670",
+      "explanation": "123,450-45,780=77,670",
+      "explanation_th": "123,450-45,780=77,670",
+      "difficulty": "medium",
+      "hint_th": "Move the addend to the other side as subtrahend",
+      "question_text_th": "ถ้า x+45,780=123,450 แล้ว x=?"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Shop A has goods worth 567,800 baht. Shop B has 489,500 baht. Combined, do they exceed or fall short of 1,000,000 baht?",
+      "question_text_en": "Shop A has goods worth 567,800 baht. Shop B has 489,500 baht. Combined, do they exceed or fall short of 1,000,000 baht?",
+      "choices": [
+        "Excess of 57,300 baht",
+        "Short of 57,300 baht",
+        "Excess of 57,700 baht",
+        "Short of 57,700 baht"
+      ],
+      "correct_answer": "Excess of 57,300 baht",
+      "answer": "Excess of 57,300 baht",
+      "explanation": "567,800+489,500=1,057,300 | 1,057,300-1,000,000=57,300 excess",
+      "explanation_th": "567,800+489,500=1,057,300 ซึ่งเกิน 1,000,000 อยู่ 57,300 บาท",
+      "difficulty": "hard",
+      "hint_th": "Add both shops, then compare with 1,000,000",
+      "question_text_th": "ร้าน A มีสินค้า 567,800 บาท ร้าน B มี 489,500 บาท. รวมเกินหรือขาด 1,000,000?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

@@ -12,20 +12,31 @@ from app.core.config import get_settings
 from app.core.database import get_db
 from app.models import AIGenerationJob, AdminAuditLog, ChildProfile, CoinLedger, Lesson, LessonActivity, Question, Skill, Subject, TestResult, TestSession, User
 from app.routers.deps import require_admin
+from app.services.affiliates import admin_affiliate_dashboard, update_withdrawal_status, withdrawal_payload
 from app.services.referrals import admin_referral_rows, award_paid_referral_if_needed
 from app.services.content_quality import content_quality_report
 from app.services.lesson_content import (
     CONTENT_ROOT,
+    GRADE_TOPIC_ORDER,
     active_content_roots,
+    discover_topic_folders,
     find_lesson_file,
+    GRADE3_GROUP_TO_TOPIC,
+    GRADE3_TOPIC_ORDER,
+    grade3_topic_from_lesson_group,
+    topic_from_lesson_group,
+    grade_from_lesson_group,
     list_canonical_lessons,
     list_canonical_tests,
+    list_grade3_quiz_variants,
+    list_topic_quiz_variants,
     list_lessons as list_content_lessons,
     list_questions as list_content_questions,
     normalize_lesson_visual_blocks,
     path_is_active_content,
     qa_summary as content_qa_summary,
     save_lesson,
+    update_topic_lesson_variant_status,
     validate_all_questions,
     validate_lesson_content,
     validate_question_payload,
@@ -83,6 +94,10 @@ class AdminLessonPatch(BaseModel):
 
 class AdminRolePatch(BaseModel):
     role: str
+    admin_note: str | None = None
+
+
+class AdminAffiliateWithdrawalPatch(BaseModel):
     admin_note: str | None = None
 
 
@@ -242,6 +257,49 @@ def _session_payload(session: TestSession, child: ChildProfile | None = None, us
         "started_at": session.started_at,
         "finished_at": session.completed_at,
     }
+
+
+def _admin_topic_quiz_pairing_rows(grade: int, program: str, lesson_id: str | None = None) -> list[dict[str, Any]]:
+    requested_program = "EP" if str(program or "").upper() == "EP" else "TH"
+    topics = discover_topic_folders(grade, "quizzes", requested_program)
+    if lesson_id:
+        topic_grade = grade_from_lesson_group(lesson_id)
+        topic = topic_from_lesson_group(lesson_id) if topic_grade == grade else None
+        topics = [topic] if topic else []
+    rows: list[dict[str, Any]] = []
+    for topic_folder in topics:
+        if not topic_folder:
+            continue
+        lesson_group_id = f"g{grade}_{topic_folder}"
+        variants = list_topic_quiz_variants(grade, topic_folder, requested_program, approved_only=False)
+        visible_variants = list_topic_quiz_variants(grade, topic_folder, requested_program, approved_only=True)
+        source_folder = CONTENT_ROOT / f"grade_{grade}" / "quizzes" / requested_program / topic_folder
+        rows.append(
+            {
+                "lesson_id": lesson_group_id,
+                "lesson_group_id": lesson_group_id,
+                "paired_lesson_group_id": lesson_group_id,
+                "grade_level": grade,
+                "program": requested_program,
+                "program_type": requested_program,
+                "language": requested_program,
+                "topic_folder": topic_folder,
+                "source_folder": str(source_folder),
+                "quiz_files": [path.name for path, _payload in variants],
+                "quiz_variant_count": len(variants),
+                "approved_valid_count": len(visible_variants),
+                "approved_quiz_count": len(visible_variants),
+                "test_available": bool(visible_variants),
+                "backup_loaded": False,
+                "legacy_loaded": False,
+                "student_loader": f"grade_{grade}/quizzes/{{program}}/{{topic_folder}}",
+            }
+        )
+    return rows
+
+
+def _admin_grade3_quiz_pairing_rows(program: str, lesson_id: str | None = None) -> list[dict[str, Any]]:
+    return _admin_topic_quiz_pairing_rows(3, program, lesson_id)
 
 
 def _legacy_plan_code(plan_type: str, program_type: str) -> str:
@@ -599,12 +657,27 @@ def content_quality(_admin=Depends(require_admin)):
 
 @router.get("/content/lessons")
 def content_lessons(
+    grade: int | None = Query(default=None),
     grade_level: int | None = Query(default=None),
+    level: int | None = Query(default=None),
+    class_level: int | None = Query(default=None),
     program_type: str | None = Query(default=None),
+    language: str | None = Query(default=None),
+    status: str | None = Query(default=None),
+    topic: str | None = Query(default=None),
     search: str | None = Query(default=None),
     _admin: User = Depends(require_admin),
 ):
-    return {"items": list_content_lessons(grade_level=grade_level, program_type=program_type, search=search)}
+    requested_grade = grade_level or grade or level or class_level
+    requested_program = program_type or language
+    if requested_program == "THP":
+        requested_program = "TH"
+    items = list_content_lessons(grade_level=requested_grade, program_type=requested_program, search=search)
+    if status:
+        items = [item for item in items if str(item.get("status") or item.get("validation_status") or "").lower() == status.lower()]
+    if topic:
+        items = [item for item in items if str(item.get("topic_code") or item.get("topic_folder") or "") == topic]
+    return {"items": items}
 
 
 @router.get("/content/lessons/{lesson_id}")
@@ -1077,6 +1150,41 @@ def referrals(db: Session = Depends(get_db), _admin: User = Depends(require_admi
     return admin_referral_rows(db)
 
 
+@router.get("/affiliates")
+def affiliates(db: Session = Depends(get_db), _admin: User = Depends(require_admin)) -> dict:
+    payload = admin_affiliate_dashboard(db)
+    db.commit()
+    return payload
+
+
+@router.post("/affiliates/withdrawals/{withdrawal_id}/approve")
+def approve_affiliate_withdrawal(withdrawal_id: str, payload: AdminAffiliateWithdrawalPatch | None = None, db: Session = Depends(get_db), admin: User = Depends(require_admin)) -> dict:
+    row = update_withdrawal_status(db, withdrawal_id, status_value="approved", admin=admin, admin_note=payload.admin_note if payload else None)
+    db.commit()
+    return {"ok": True, "withdrawal": withdrawal_payload(row)}
+
+
+@router.post("/affiliates/withdrawals/{withdrawal_id}/processing")
+def process_affiliate_withdrawal(withdrawal_id: str, payload: AdminAffiliateWithdrawalPatch | None = None, db: Session = Depends(get_db), admin: User = Depends(require_admin)) -> dict:
+    row = update_withdrawal_status(db, withdrawal_id, status_value="processing", admin=admin, admin_note=payload.admin_note if payload else None)
+    db.commit()
+    return {"ok": True, "withdrawal": withdrawal_payload(row)}
+
+
+@router.post("/affiliates/withdrawals/{withdrawal_id}/paid")
+def mark_affiliate_withdrawal_paid(withdrawal_id: str, payload: AdminAffiliateWithdrawalPatch | None = None, db: Session = Depends(get_db), admin: User = Depends(require_admin)) -> dict:
+    row = update_withdrawal_status(db, withdrawal_id, status_value="paid", admin=admin, admin_note=payload.admin_note if payload else None)
+    db.commit()
+    return {"ok": True, "withdrawal": withdrawal_payload(row)}
+
+
+@router.post("/affiliates/withdrawals/{withdrawal_id}/reject")
+def reject_affiliate_withdrawal(withdrawal_id: str, payload: AdminAffiliateWithdrawalPatch | None = None, db: Session = Depends(get_db), admin: User = Depends(require_admin)) -> dict:
+    row = update_withdrawal_status(db, withdrawal_id, status_value="rejected", admin=admin, admin_note=payload.admin_note if payload else None)
+    db.commit()
+    return {"ok": True, "withdrawal": withdrawal_payload(row)}
+
+
 @router.post("/referrals/ledger/{ledger_id}/approve")
 def approve_referral_coins(ledger_id: str, db: Session = Depends(get_db), _admin: User = Depends(require_admin)) -> dict:
     ledger = db.get(CoinLedger, ledger_id)
@@ -1315,6 +1423,12 @@ def tests(
     requested_grade = grade_level or grade
     requested_program = str(program_type or language or "TH").upper()
     canonical_program = "EP" if requested_program == "EP" else "TH"
+    if requested_grade and discover_topic_folders(int(requested_grade), "quizzes", canonical_program):
+        rows = _admin_topic_quiz_pairing_rows(int(requested_grade), canonical_program, lesson_id or lesson)
+        if status:
+            wanted_available = status.lower() in {"approved", "valid", "available", "true"}
+            rows = [row for row in rows if bool(row.get("test_available")) == wanted_available]
+        return {"tests": rows[offset : offset + limit], "total": len(rows), "limit": limit, "offset": offset}
     rows = list_canonical_tests(
         canonical_program,
         grade=requested_grade,
@@ -1518,19 +1632,25 @@ def admin_validate_lesson_alias(lesson_id: str, _admin: User = Depends(require_a
 @router.post("/lessons/{lesson_id}/approve")
 def admin_approve_lesson_alias(
     lesson_id: str,
-    reviewer_note: str | None = Body(default=None),
+    payload: dict[str, Any] | None = Body(default=None),
+    language: str | None = Query(default=None),
     _admin: User = Depends(require_admin),
 ):
-    return admin_approve_lesson(lesson_id=lesson_id, reviewer_note=reviewer_note, _admin=_admin)
+    reviewer_note = payload.get("reviewer_note") if isinstance(payload, dict) else None
+    requested_language = language or (payload.get("language") if isinstance(payload, dict) else None)
+    return admin_approve_lesson(lesson_id=lesson_id, reviewer_note=reviewer_note, language=requested_language, _admin=_admin)
 
 
 @router.post("/lessons/{lesson_id}/reject")
 def admin_reject_lesson_alias(
     lesson_id: str,
-    reviewer_note: str | None = Body(default=None),
+    payload: dict[str, Any] | None = Body(default=None),
+    language: str | None = Query(default=None),
     _admin: User = Depends(require_admin),
 ):
-    return admin_reject_lesson(lesson_id=lesson_id, reviewer_note=reviewer_note, _admin=_admin)
+    reviewer_note = payload.get("reviewer_note") if isinstance(payload, dict) else None
+    requested_language = language or (payload.get("language") if isinstance(payload, dict) else None)
+    return admin_reject_lesson(lesson_id=lesson_id, reviewer_note=reviewer_note, language=requested_language, _admin=_admin)
 
 
 @router.get("/system/health")
@@ -1905,26 +2025,48 @@ def admin_patch_content_lesson(
 def admin_approve_lesson(
     lesson_id: str,
     reviewer_note: str | None = Body(default=None),
+    language: str | None = Query(default=None),
     _admin: User = Depends(require_admin),
 ):
     """Mark a lesson as approved."""
     approved_by = _admin.email or str(_admin.id)
     note = reviewer_note or ""
     updated = update_lesson_status(lesson_id, "approved", reviewer_note=note, approved_by=approved_by)
-    return {"lesson_id": lesson_id, "status": "approved", "approved_by": updated.get("approved_by"), "approved_at": updated.get("approved_at")}
+    topic_updated = update_topic_lesson_variant_status(
+        lesson_id,
+        "approved",
+        program_type=language,
+        reviewer_note=note,
+        approved_by=approved_by,
+    )
+    return {
+        "lesson_id": lesson_id,
+        "status": "approved",
+        "approved_by": updated.get("approved_by"),
+        "approved_at": updated.get("approved_at"),
+        "topic_variant_status_keys": topic_updated,
+    }
 
 
 @router.post("/content/lessons/{lesson_id}/reject")
 def admin_reject_lesson(
     lesson_id: str,
     reviewer_note: str | None = Body(default=None),
+    language: str | None = Query(default=None),
     _admin: User = Depends(require_admin),
 ):
     """Mark a lesson as rejected."""
     approved_by = _admin.email or str(_admin.id)
     note = reviewer_note or ""
     updated = update_lesson_status(lesson_id, "rejected", reviewer_note=note, approved_by=approved_by)
-    return {"lesson_id": lesson_id, "status": "rejected"}
+    topic_updated = update_topic_lesson_variant_status(
+        lesson_id,
+        "rejected",
+        program_type=language,
+        reviewer_note=note,
+        approved_by=approved_by,
+    )
+    return {"lesson_id": lesson_id, "status": "rejected", "topic_variant_status_keys": topic_updated}
 
 
 @router.post("/content/lessons/{lesson_id}/validate")
@@ -1953,6 +2095,9 @@ def admin_content_tests(
     """List all tracked tests with their status metadata."""
     requested_grade = grade_level or grade or level or class_level
     if language in {"TH", "THP", "EP"}:
+        if requested_grade and discover_topic_folders(int(requested_grade), "quizzes", "EP" if language == "EP" else "TH"):
+            items = _admin_topic_quiz_pairing_rows(int(requested_grade), "EP" if language == "EP" else "TH", lesson_id)
+            return {"tests": items, "total": len(items)}
         items = list_canonical_tests("EP" if language == "EP" else "TH", grade=requested_grade, lesson_id=lesson_id, approved_only=False)
         if status:
             items = [item for item in items if str(item.get("status") or "").lower() == status.lower()]

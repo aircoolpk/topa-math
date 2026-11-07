@@ -1,0 +1,266 @@
+{
+  "variant_id": "geometry_shapes_ep_001",
+  "variant_title_th": "รูปทรง - โรงเรียน",
+  "variant_title_en": "School Theme",
+  "status": "needs_review",
+  "title_en": "2D Shapes",
+  "title_th": "รูปทรงสองมิติ",
+  "story_theme_en": "A school has shape signs around the building. There are 3 triangles, 4 rectangles, and 2 circles. How many shape signs are there in total?",
+  "helper_tip_en": "Count the sides and corners of each shape to identify it. A triangle has 3 sides, a rectangle has 4 sides, and a circle has no sides.",
+  "think_story_en": "Triangles: 3 shapes. Rectangles: 4 shapes. Circles: 2 shapes. Total: 3 + 4 + 2 = 9 shapes.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A school has shape signs around the building. There are 3 triangles, 4 rectangles, and 2 circles. How many shape signs are there in total?",
+      "data": {
+        "content_en": "A school has shape signs around the building. There are 3 triangles, 4 rectangles, and 2 circles. How many shape signs are there in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Triangles: 3 shapes. Rectangles: 4 shapes. Circles: 2 shapes. Total: 3 + 4 + 2 = 9 shapes.",
+      "data": {
+        "content_en": "Triangles: 3 shapes. Rectangles: 4 shapes. Circles: 2 shapes. Total: 3 + 4 + 2 = 9 shapes."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Shape Model",
+      "description": "A shape diagram showing the different shapes",
+      "model_type": "shape_visual",
+      "data": {
+        "model_type": "shape_visual",
+        "operation": "add",
+        "shapes": [
+          {
+            "shape": "triangle",
+            "color": "#FF6B6B",
+            "label": "Triangle",
+            "count": 3
+          },
+          {
+            "shape": "rectangle",
+            "color": "#4ECDC4",
+            "label": "Rectangle",
+            "count": 4
+          },
+          {
+            "shape": "circle",
+            "color": "#45B7D1",
+            "label": "Circle",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add triangles and rectangles",
+            "expression": "3 + 4 = 7",
+            "formula": {
+              "display": "3 + 4 = 7",
+              "a": 3,
+              "b": 4,
+              "result": 7,
+              "operation": "add"
+            },
+            "story_connection": "3 triangles + 4 rectangles = 7 shapes"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add circles",
+            "expression": "7 + 2 = 9",
+            "formula": {
+              "display": "7 + 2 = 9",
+              "a": 7,
+              "b": 2,
+              "result": 9,
+              "operation": "add"
+            },
+            "story_connection": "7 shapes + 2 circles = 9 shapes in total"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "3 + 4 + 2 = 9",
+      "content": "3 + 4 + 2 = 9",
+      "data": {
+        "expression": "3 + 4 + 2 = 9",
+        "operations": [
+          {
+            "op": "+",
+            "a": 3,
+            "b": 4,
+            "result": 7
+          },
+          {
+            "op": "+",
+            "a": 7,
+            "b": 2,
+            "result": 9
+          }
+        ],
+        "content_en": "3 + 4 + 2 = 9"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "How many more rectangles than triangles are there?",
+      "choices": [
+        "1 more rectangle",
+        "7 more rectangles",
+        "2 more rectangles",
+        "0 more rectangles"
+      ],
+      "correct_answer": "1 more rectangle",
+      "explanation": "4 rectangles - 3 triangles = 1 more rectangle",
+      "data": {
+        "question": "How many more rectangles than triangles are there?",
+        "choices": [
+          "1 more rectangle",
+          "7 more rectangles",
+          "2 more rectangles",
+          "0 more rectangles"
+        ],
+        "correct_answer": "1 more rectangle",
+        "explanation": "4 rectangles - 3 triangles = 1 more rectangle"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "A triangle has 3 sides and 3 corners.",
+    "A rectangle has 4 sides and 4 corners. A square is a rectangle with all sides equal.",
+    "A circle is round with no sides and no corners.",
+    "An oval (ellipse) is like a stretched circle - it rolls differently in different directions.",
+    "Count the sides and corners to identify each shape."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Counting Sides of a Triangle",
+      "question_en": "How many sides does a triangle have?",
+      "solution_en": "A triangle has 3 sides and 3 corners. ✅"
+    },
+    {
+      "title_en": "Example: Comparing Square and Rectangle",
+      "question_en": "What is the difference between a square and a rectangle?",
+      "solution_en": "A square has all sides equal. A rectangle has opposite sides equal. ✅"
+    },
+    {
+      "title_en": "Example: Circle vs Oval",
+      "question_en": "What is the difference between a circle and an oval?",
+      "solution_en": "A circle is perfectly round and rolls the same in all directions. An oval is elongated and rolls differently. ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Calling an oval a circle because they both look round.",
+    "Not telling apart a square and a rectangle.",
+    "Counting the wrong number of corners, e.g., counting 4 corners for a triangle."
+  ],
+  "hints_en": [
+    "Count the sides and corners of each shape to identify it.",
+    "Circle vs Oval: If it rolls the same in all directions, it is a circle. If not, it is an oval.",
+    "Square: all sides equal. Rectangle: opposite sides equal."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "triangle",
+      "th": "สามเหลี่ยม",
+      "definition_en": "A shape with 3 sides and 3 corners"
+    },
+    {
+      "en": "rectangle",
+      "th": "สี่เหลี่ยมผืนผ้า",
+      "definition_en": "A shape with 4 sides and 4 corners, opposite sides equal"
+    },
+    {
+      "en": "square",
+      "th": "สี่เหลี่ยมจัตุรัส",
+      "definition_en": "A rectangle with all 4 sides equal"
+    },
+    {
+      "en": "circle",
+      "th": "วงกลม",
+      "definition_en": "A perfectly round shape with no sides or corners"
+    },
+    {
+      "en": "oval",
+      "th": "วงรี",
+      "definition_en": "An elongated circle shape that is longer in one direction"
+    },
+    {
+      "en": "side",
+      "th": "ด้าน",
+      "definition_en": "A straight line that forms part of a shape's edge"
+    },
+    {
+      "en": "corner",
+      "th": "มุม",
+      "definition_en": "The point where two sides meet"
+    },
+    {
+      "en": "perimeter",
+      "th": "เส้นรอบรูป",
+      "definition_en": "The distance around the outside of a shape"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "How many sides does a triangle have?",
+      "choices": [
+        "2 sides",
+        "3 sides",
+        "4 sides",
+        "5 sides"
+      ],
+      "answer": "3 sides",
+      "explanation": "A triangle has 3 sides."
+    },
+    {
+      "q": "Which shape has 4 equal sides?",
+      "choices": [
+        "Rectangle",
+        "Triangle",
+        "Square",
+        "Circle"
+      ],
+      "answer": "Square",
+      "explanation": "A square has 4 equal sides."
+    },
+    {
+      "q": "What is the difference between a circle and an oval?",
+      "choices": [
+        "A circle has corners",
+        "An oval is perfectly round",
+        "A circle rolls the same in all directions",
+        "They are the same shape"
+      ],
+      "answer": "A circle rolls the same in all directions",
+      "explanation": "A circle is perfectly round. An oval is elongated."
+    },
+    {
+      "q": "A shape has 4 sides with opposite sides equal. What is it?",
+      "choices": [
+        "Triangle",
+        "Square",
+        "Rectangle",
+        "Circle"
+      ],
+      "answer": "Rectangle",
+      "explanation": "A rectangle has 4 sides with opposite sides equal."
+    }
+  ],
+  "questions": [],
+  "explanation_en": "2D shapes are flat shapes. Triangles have 3 sides, rectangles have 4 sides, circles are round with no sides, and ovals are elongated circles. Count the sides and corners to identify each shape."
+}

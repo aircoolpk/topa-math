@@ -1,0 +1,180 @@
+{
+  "lesson_id": "mixed_operations_whole_numbers_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "3 x 4 + 5 = ?",
+      "question_text_en": "3 x 4 + 5 = ?",
+      "choices": [
+        "17",
+        "12",
+        "19",
+        "22"
+      ],
+      "correct_answer": "17",
+      "answer": "17",
+      "explanation": "3x4=12+5=17",
+      "explanation_th": "3×4=12+5=17",
+      "difficulty": "easy",
+      "hint_th": "Multiply before adding"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "8 x 12 + 5 x 20 = ?",
+      "question_text_en": "8 x 12 + 5 x 20 = ?",
+      "choices": [
+        "196",
+        "216",
+        "186",
+        "206"
+      ],
+      "correct_answer": "196",
+      "answer": "196",
+      "explanation": "8x12=96 | 5x20=100 | 96+100=196",
+      "explanation_th": "8×12=96 | 5×20=100 | 96+100=196",
+      "difficulty": "medium",
+      "hint_th": "Multiply first, then add"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "25 + 15 x 4 = ?",
+      "question_text_en": "25 + 15 x 4 = ?",
+      "choices": [
+        "85",
+        "160",
+        "75",
+        "65"
+      ],
+      "correct_answer": "85",
+      "answer": "85",
+      "explanation": "15x4=60+25=85",
+      "explanation_th": "15×4=60+25=85",
+      "difficulty": "easy",
+      "hint_th": "Multiply before adding"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "100 - 25 x 3 = ?",
+      "question_text_en": "100 - 25 x 3 = ?",
+      "choices": [
+        "25",
+        "75",
+        "225",
+        "50"
+      ],
+      "correct_answer": "25",
+      "answer": "25",
+      "explanation": "25x3=75 | 100-75=25",
+      "explanation_th": "25×3=75 | 100-75=25",
+      "difficulty": "easy",
+      "hint_th": "Multiply before subtracting"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "6 x 7 + 6 x 3 = ?",
+      "question_text_en": "6 x 7 + 6 x 3 = ?",
+      "choices": [
+        "60",
+        "54",
+        "126",
+        "66"
+      ],
+      "correct_answer": "60",
+      "answer": "60",
+      "explanation": "6x7=42 | 6x3=18 | 42+18=60 or 6x(7+3)=6x10=60",
+      "explanation_th": "6×7=42 | 6×3=18 | 42+18=60 หรือ 6×(7+3)=6×10=60",
+      "difficulty": "medium",
+      "hint_th": "Use distributive property or multiply separately then add"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "(20 + 35) x 2 = ?",
+      "question_text_en": "(20 + 35) x 2 = ?",
+      "choices": [
+        "110",
+        "70",
+        "55",
+        "90"
+      ],
+      "correct_answer": "110",
+      "answer": "110",
+      "explanation": "20+35=55 | 55x2=110",
+      "explanation_th": "20+35=55 | 55×2=110",
+      "difficulty": "easy",
+      "hint_th": "Do parentheses first, then multiply"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "48 / 6 + 12 = ?",
+      "question_text_en": "48 / 6 + 12 = ?",
+      "choices": [
+        "20",
+        "8",
+        "16",
+        "24"
+      ],
+      "correct_answer": "20",
+      "answer": "20",
+      "explanation": "48/6=8+12=20",
+      "explanation_th": "48÷6=8+12=20",
+      "difficulty": "easy",
+      "hint_th": "Divide before adding"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "100 / (25 - 5) = ?",
+      "question_text_en": "100 / (25 - 5) = ?",
+      "choices": [
+        "5",
+        "20",
+        "4",
+        "25"
+      ],
+      "correct_answer": "5",
+      "answer": "5",
+      "explanation": "25-5=20 | 100/20=5",
+      "explanation_th": "25-5=20 | 100÷20=5",
+      "difficulty": "medium",
+      "hint_th": "Parentheses first, then divide"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "15 + 25 x 2 - 10 = ?",
+      "question_text_en": "15 + 25 x 2 - 10 = ?",
+      "choices": [
+        "55",
+        "65",
+        "45",
+        "60"
+      ],
+      "correct_answer": "55",
+      "answer": "55",
+      "explanation": "25x2=50 | 15+50-10=55",
+      "explanation_th": "25×2=50 | 15+50-10=55",
+      "difficulty": "medium",
+      "hint_th": "Multiply first, then left to right"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "A number multiplied by 8 and then add 15 equals 95. What is the number?",
+      "question_text_en": "A number multiplied by 8 and then add 15 equals 95. What is the number?",
+      "choices": [
+        "10",
+        "11",
+        "9",
+        "12"
+      ],
+      "correct_answer": "10",
+      "answer": "10",
+      "explanation": "8x + 15 = 95 → 8x = 80 → x = 10",
+      "explanation_th": "8x+15=95 → 8x=80 → x=10",
+      "difficulty": "hard",
+      "hint_th": "Solve the equation: 8x+15=95",
+      "question_text_th": "จำนวนหนึ่งคูณ 8 แล้วบวก 15 ได้ 95. จำนวนนั้นคือเท่าไร?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

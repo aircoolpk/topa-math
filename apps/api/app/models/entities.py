@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from uuid import uuid4
 
-from sqlalchemy import Boolean, Date, DateTime, ForeignKey, Integer, Numeric, String, Text, func
+from sqlalchemy import Boolean, Date, DateTime, ForeignKey, Integer, Numeric, String, Text, UniqueConstraint, func
 from sqlalchemy.dialects.postgresql import ARRAY, JSONB, UUID
 from sqlalchemy.ext.mutable import MutableDict, MutableList
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -60,6 +60,8 @@ class ChildProfile(Base, TimestampMixin):
     avatar_config: Mapped[dict] = mapped_column(JsonDict, default=dict)
     program_type: Mapped[str] = mapped_column(String(10), default="THP")
     membership_status: Mapped[str] = mapped_column(String(20), default="free")
+    membership_provider: Mapped[str | None] = mapped_column(String(20))
+    mpp_access_ends_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     stripe_customer_id: Mapped[str | None] = mapped_column(String(255), index=True)
     stripe_subscription_id: Mapped[str | None] = mapped_column(String(255), index=True)
     subscription_status: Mapped[str] = mapped_column(String(40), default="none")
@@ -362,6 +364,57 @@ class CoinLedger(Base):
     activated_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     note: Mapped[str | None] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+
+class AffiliatePayoutAccount(Base, TimestampMixin):
+    __tablename__ = "affiliate_payout_accounts"
+
+    id: Mapped[str] = uuid_pk()
+    user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), unique=True, index=True)
+    payout_method: Mapped[str] = mapped_column(String(20))
+    account_holder_name: Mapped[str] = mapped_column(String(160))
+    bank_name: Mapped[str | None] = mapped_column(String(120))
+    account_last4: Mapped[str | None] = mapped_column(String(8))
+    promptpay_last4: Mapped[str | None] = mapped_column(String(8))
+    payout_details: Mapped[dict] = mapped_column(JsonDict, default=dict)
+
+
+class AffiliateWithdrawalRequest(Base):
+    __tablename__ = "affiliate_withdrawal_requests"
+
+    id: Mapped[str] = uuid_pk()
+    user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
+    payout_account_id: Mapped[str] = mapped_column(ForeignKey("affiliate_payout_accounts.id"), index=True)
+    amount_minor: Mapped[int] = mapped_column(Integer)
+    currency: Mapped[str] = mapped_column(String(3), default="THB")
+    status: Mapped[str] = mapped_column(String(30), default="pending_review", index=True)
+    reviewed_by_admin_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), index=True)
+    admin_note: Mapped[str | None] = mapped_column(Text)
+    requested_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+    paid_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+
+class AffiliateCommissionLedger(Base):
+    __tablename__ = "affiliate_commission_ledger"
+    __table_args__ = (UniqueConstraint("payment_reference_id", name="uq_affiliate_commission_payment_reference"),)
+
+    id: Mapped[str] = uuid_pk()
+    affiliate_user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
+    referred_user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
+    payment_reference_id: Mapped[str] = mapped_column(String(160), index=True)
+    source_event_id: Mapped[str | None] = mapped_column(String(160), index=True)
+    amount_paid_minor: Mapped[int] = mapped_column(Integer)
+    commission_minor: Mapped[int] = mapped_column(Integer)
+    currency: Mapped[str] = mapped_column(String(3), default="THB")
+    rate_bps: Mapped[int] = mapped_column(Integer)
+    status: Mapped[str] = mapped_column(String(20), default="pending", index=True)
+    available_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), index=True)
+    reversed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    withdrawal_request_id: Mapped[str | None] = mapped_column(ForeignKey("affiliate_withdrawal_requests.id", ondelete="SET NULL"), index=True)
+    metadata_json: Mapped[dict] = mapped_column("metadata", JsonDict, default=dict)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
 
 
 class QuestionAttemptHistory(Base):

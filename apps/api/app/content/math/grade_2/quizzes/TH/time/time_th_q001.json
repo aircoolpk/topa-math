@@ -1,0 +1,133 @@
+{
+  "quiz_id": "time_th_q001",
+  "topic_key": "time",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ time_th_q001",
+  "title_en": "Quiz time_th_q001",
+  "questions": [
+    {
+      "question": "1 ชั่วโมง เท่ากับกี่นาที",
+      "choices": [
+        "60 นาที",
+        "100 นาที",
+        "50 นาที",
+        "30 นาที"
+      ],
+      "correct_answer": "60 นาที",
+      "explanation": "1 ชม. = 60 นาที",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ตอนนี้เป็นเวลา 3 โมง 45 นาที อีก 30 นาทีจะเป็นเวลาเท่าไร",
+      "choices": [
+        "4 โมง 15 นาที",
+        "4 โมง",
+        "3 โมง 75 นาที",
+        "4 โมง 30 นาที"
+      ],
+      "correct_answer": "4 โมง 15 นาที",
+      "explanation": "3:45+30=4:15",
+      "difficulty": "easy"
+    },
+    {
+      "question": "นาฬิกาบอกเวลา 9:30 อีก 45 นาทีจะเป็นเท่าไร",
+      "choices": [
+        "10:15",
+        "10:00",
+        "9:75",
+        "10:30"
+      ],
+      "correct_answer": "10:15",
+      "explanation": "9:30+45=10:15",
+      "difficulty": "easy"
+    },
+    {
+      "question": "5:00 ครึ่งทางถึง 7:00 จะใช้เวลาเท่าไร",
+      "choices": [
+        "1 ชม. 30 นาที",
+        "2 ชม.",
+        "1 ชม.",
+        "2 ชม. 30 นาที"
+      ],
+      "correct_answer": "1 ชม. 30 นาที",
+      "explanation": "7:00-5:00=2:00 ครึ่ง = 1 ชม.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "1 วัน มีกี่ชั่วโมง",
+      "choices": [
+        "24 ชม.",
+        "12 ชม.",
+        "48 ชม.",
+        "36 ชม."
+      ],
+      "correct_answer": "24 ชม.",
+      "explanation": "1 วัน = 24 ชม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "เริ่มทำการบ้าน 15:30 ใช้เวลา 1 ชม. 45 นาที เสร็จกี่โมง",
+      "choices": [
+        "17:15",
+        "16:15",
+        "17:00",
+        "16:30"
+      ],
+      "correct_answer": "17:15",
+      "explanation": "15:30+1:45=17:15",
+      "difficulty": "medium"
+    },
+    {
+      "question": "2:15 + 1:30 = ?",
+      "choices": [
+        "3:45",
+        "3:15",
+        "4:00",
+        "3:30"
+      ],
+      "correct_answer": "3:45",
+      "explanation": "2:15+1:30=3:45",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ตอนนี้ 8 โมงเช้า อีก 180 นาทีจะเป็นเวลาเท่าไร",
+      "choices": [
+        "11 โมง",
+        "10 โมง",
+        "11 โมง 30 นาที",
+        "10 โมง 30 นาที"
+      ],
+      "correct_answer": "11 โมง",
+      "explanation": "180/60=3 ชม., 8+3=11 โมง",
+      "difficulty": "medium"
+    },
+    {
+      "question": "โรงหนังเริ่มฉาย 13:00 จบ 15:30 ฉายนานเท่าไร",
+      "choices": [
+        "2 ชม. 30 นาที",
+        "2 ชม.",
+        "3 ชม. 30 นาที",
+        "2 ชม. 15 นาที"
+      ],
+      "correct_answer": "2 ชม. 30 นาที",
+      "explanation": "15:30-13:00=2:30",
+      "difficulty": "medium"
+    },
+    {
+      "question": "7:45 ถึง 9:15 ใช้เวลาเท่าไร",
+      "choices": [
+        "1 ชม. 30 นาที",
+        "2 ชม.",
+        "1 ชม.",
+        "1 ชม. 15 นาที"
+      ],
+      "correct_answer": "1 ชม. 30 นาที",
+      "explanation": "9:15-7:45=1:30",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

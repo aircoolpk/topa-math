@@ -1,0 +1,193 @@
+{
+  "variant_id": "percentages_ratios_th_001",
+  "variant_title_th": "ร้อยละและอัตราส่วน",
+  "variant_title_en": "Percentages and Ratios",
+  "status": "needs_review",
+  "title_th": "ร้อยละและอัตราส่วน",
+  "title_en": "Percentages and Ratios",
+  "story_theme_th": "ร้านขายเสื้อลดราคา 25% จากราคา 200 บาท ราคาใหม่เท่าไร และถ้าซื้อเสื้อ 4 ตัวจะจ่ายเงินทั้งหมดกี่บาท",
+  "helper_tip": "ร้อยละ 25 = 25/100 = 1/4 ของราคา",
+  "think_story_th": "ส่วนลด 25% ของ 200 = 25/100 × 200 = 50 บาท ราคาใหม่ = 200 - 50 = 150 บาท ซื้อ 4 ตัว = 150 × 4 = 600 บาท",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "ร้านขายเสื้อลดราคา 25% จากราคา 200 บาท ราคาใหม่เท่าไร และถ้าซื้อเสื้อ 4 ตัวจะจ่ายเงินทั้งหมดกี่บาท",
+      "data": {
+        "content_th": "ร้านขายเสื้อลดราคา 25% จากราคา 200 บาท ราคาใหม่เท่าไร และถ้าซื้อเสื้อ 4 ตัวจะจ่ายเงินทั้งหมดกี่บาท"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "ส่วนลด 25% ของ 200 = 25/100 × 200 = 50 บาท ราคาใหม่ = 200 - 50 = 150 บาท ซื้อ 4 ตัว = 150 × 4 = 600 บาท",
+      "data": {
+        "content_th": "ส่วนลด 25% ของ 200 = 25/100 × 200 = 50 บาท ราคาใหม่ = 200 - 50 = 150 บาท ซื้อ 4 ตัว = 150 × 4 = 600 บาท"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "บาท",
+        "bars": [
+          {
+            "label": "ราคาเดิม",
+            "value": 200,
+            "display": "200 บาท",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "ส่วนลด 25%",
+            "value": 50,
+            "display": "50 บาท",
+            "color": "#FF6B6B",
+            "width_pct": 25
+          },
+          {
+            "label": "ราคาใหม่",
+            "value": 150,
+            "display": "150 บาท",
+            "color": "#96CEB4",
+            "width_pct": 75,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "25/100 × 200 = 50",
+            "formula": {
+              "display": "25/100 × 200 = 50",
+              "a": 25,
+              "b": 100,
+              "result": 50,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}25&\\ ÷\\quad 100&\\ \\hline 50&\\\\ \\hline \\end{array}",
+              "a_display": "25",
+              "b_display": "100",
+              "result_display": "50",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 25/100 × 200 = 50"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "200 - 50 = 150",
+            "formula": {
+              "display": "200 - 50 = 150",
+              "a": 200,
+              "b": 50,
+              "result": 150,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}200&\\ -\\quad 50&\\ \\hline 150&\\\\ \\hline \\end{array}",
+              "a_display": "200",
+              "b_display": "50",
+              "result_display": "150",
+              "operation": "subtract"
+            },
+            "story_connection": "จากบาร์โมเดล: 200 - 50 = 150"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "150 × 4 = 600",
+            "formula": {
+              "display": "150 × 4 = 600",
+              "a": 150,
+              "b": 4,
+              "result": 600,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}150&\\ ×\\quad 4&\\ \\hline 600&\\\\ \\hline \\end{array}",
+              "a_display": "150",
+              "b_display": "4",
+              "result_display": "600",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 150 × 4 = 600"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "25/100 × 200 = 50 | 200 - 50 = 150 | 150 × 4 = 600",
+      "content": "25/100 × 200 = 50 | 200 - 50 = 150 | 150 × 4 = 600",
+      "data": {
+        "expression": "25/100 × 200 = 50 | 200 - 50 = 150 | 150 × 4 = 600",
+        "operations": [
+          {
+            "op": "×",
+            "a": 0.25,
+            "b": 200,
+            "result": 50
+          },
+          {
+            "op": "-",
+            "a": 200,
+            "b": 50,
+            "result": 150
+          },
+          {
+            "op": "×",
+            "a": 150,
+            "b": 4,
+            "result": 600
+          }
+        ],
+        "content_th": "25/100 × 200 = 50 | 200 - 50 = 150 | 150 × 4 = 600"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "สินค้าราคา 80 บาท ลดราคา 15% ราคาใหม่เท่าไร",
+      "choices": [
+        "68 บาท",
+        "65 บาท",
+        "70 บาท",
+        "72 บาท"
+      ],
+      "correct_answer": "68 บาท",
+      "explanation": "ส่วนลด 15% ของ 80 = 12 บาท, ราคาใหม่ = 80 - 12 = 68 บาท",
+      "data": {
+        "question": "สินค้าราคา 80 บาท ลดราคา 15% ราคาใหม่เท่าไร",
+        "choices": [
+          "68 บาท",
+          "65 บาท",
+          "70 บาท",
+          "72 บาท"
+        ],
+        "correct_answer": "68 บาท",
+        "explanation": "ส่วนลด 15% ของ 80 = 12 บาท, ราคาใหม่ = 80 - 12 = 68 บาท"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -1,0 +1,133 @@
+{
+  "quiz_id": "volume_measurement_ep_q001",
+  "topic_key": "volume_measurement",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz volume_measurement_ep_q001",
+  "title_en": "Quiz volume_measurement_ep_q001",
+  "questions": [
+    {
+      "question": "1 liter equals how many milliliters?",
+      "choices": [
+        "1,000 mL",
+        "100 mL",
+        "10 mL",
+        "100,000 mL"
+      ],
+      "correct_answer": "1,000 mL",
+      "explanation": "1 L = 1,000 mL",
+      "difficulty": "easy"
+    },
+    {
+      "question": "500 mL + 700 mL = ? L and mL",
+      "choices": [
+        "1 L 200 mL",
+        "1 L 100 mL",
+        "1 L 300 mL",
+        "1.2 L"
+      ],
+      "correct_answer": "1 L 200 mL",
+      "explanation": "1,200 mL = 1 L 200 mL",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A 2-L bottle full of water. Drank 750 mL. How much is left?",
+      "choices": [
+        "1,250 mL",
+        "1,500 mL",
+        "1,750 mL",
+        "1,000 mL"
+      ],
+      "correct_answer": "1,250 mL",
+      "explanation": "2,000-750=1,250 mL",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Orange juice 1 L 500 mL vs Water 2 L. Difference?",
+      "choices": [
+        "500 mL",
+        "1 L",
+        "1.5 L",
+        "2 L"
+      ],
+      "correct_answer": "500 mL",
+      "explanation": "2,000-1,500=500 mL",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Mix juice 350 + 250 + 400 = ? mL",
+      "choices": [
+        "1,000 mL",
+        "900 mL",
+        "1,100 mL",
+        "800 mL"
+      ],
+      "correct_answer": "1,000 mL",
+      "explanation": "350+250+400=1,000 mL",
+      "difficulty": "easy"
+    },
+    {
+      "question": "2 L 500 mL - 1 L 200 mL = ?",
+      "choices": [
+        "1 L 300 mL",
+        "1 L 200 mL",
+        "1 L 500 mL",
+        "3 L 700 mL"
+      ],
+      "correct_answer": "1 L 300 mL",
+      "explanation": "2,500-1,200=1,300 mL",
+      "difficulty": "medium"
+    },
+    {
+      "question": "3 L of water. Used 1 L 750 mL. How much is left?",
+      "choices": [
+        "1,250 mL",
+        "1,500 mL",
+        "2,250 mL",
+        "1,750 mL"
+      ],
+      "correct_answer": "1,250 mL",
+      "explanation": "3,000-1,750=1,250 mL",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Honey 800 mL mixed with 200 mL water. Total?",
+      "choices": [
+        "1 L",
+        "900 mL",
+        "1,100 mL",
+        "600 mL"
+      ],
+      "correct_answer": "1 L",
+      "explanation": "800+200=1,000 mL = 1 L",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Half a liter equals how many milliliters?",
+      "choices": [
+        "500 mL",
+        "250 mL",
+        "750 mL",
+        "1,000 mL"
+      ],
+      "correct_answer": "500 mL",
+      "explanation": "0.5 L = 500 mL",
+      "difficulty": "easy"
+    },
+    {
+      "question": "1 L 400 mL and 1 L 600 mL. Total?",
+      "choices": [
+        "3 L",
+        "2 L",
+        "3.0 L",
+        "13 L"
+      ],
+      "correct_answer": "3 L",
+      "explanation": "1,400+1,600=3,000 mL = 3 L",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

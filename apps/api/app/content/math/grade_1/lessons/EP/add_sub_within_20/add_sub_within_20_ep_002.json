@@ -1,0 +1,243 @@
+{
+  "variant_id": "add_sub_within_20_ep_002",
+  "variant_title_en": "Addition and Subtraction within 20",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Addition and Subtraction within 20",
+  "title_th": "",
+  "story_theme_en": "Lin has 7 stickers. Mali gives her 6 stickers. Now Lin gives 4 stickers to her friend. How many stickers does Lin have now?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Start: 7. Gets: +6 → 13. Gives away: -4 → 9.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin has 7 stickers. Mali gives her 6 stickers. Now Lin gives 4 stickers to her friend. How many stickers does Lin have now?",
+      "data": {
+        "content_en": "Lin has 7 stickers. Mali gives her 6 stickers. Now Lin gives 4 stickers to her friend. How many stickers does Lin have now?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Start: 7. Gets: +6 → 13. Gives away: -4 → 9.",
+      "data": {
+        "content_en": "Start: 7. Gets: +6 → 13. Gives away: -4 → 9."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "stickers",
+        "bars": [
+          {
+            "label": "Start",
+            "value": 7,
+            "display": "7 stickers",
+            "color": "#96CEB4",
+            "width_pct": 50
+          },
+          {
+            "label": "Get",
+            "value": 6,
+            "display": "+6",
+            "color": "#A8D8EA",
+            "width_pct": 30
+          },
+          {
+            "label": "Give/Lose",
+            "value": 4,
+            "display": "-4",
+            "color": "#FF6B6B",
+            "width_pct": 15
+          },
+          {
+            "label": "Left",
+            "value": 9,
+            "display": "9 stickers",
+            "color": "#C7F464",
+            "width_pct": 65,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "7 + 6 = 13",
+            "formula": {
+              "display": "7 + 6 = 13",
+              "a": 7,
+              "b": 6,
+              "result": 13,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}7&&\\\\\\\\ + 6&&\\\\\\\\ \\\\hline 13&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "7",
+              "b_display": "6",
+              "result_display": "13",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 7 + 6 = 13"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Subtract",
+            "expression": "13 - 4 = 9",
+            "formula": {
+              "display": "13 - 4 = 9",
+              "a": 13,
+              "b": 4,
+              "result": 9,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}13&&\\\\\\\\ - 4&&\\\\\\\\ \\\\hline 9&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "13",
+              "b_display": "4",
+              "result_display": "9",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 13 - 4 = 9"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "7 + 6 - 4 = 9",
+      "content": "7 + 6 - 4 = 9",
+      "data": {
+        "expression": "7 + 6 - 4 = 9",
+        "operations": [
+          {
+            "op": "+",
+            "a": 7,
+            "b": 6,
+            "result": 13
+          },
+          {
+            "op": "-",
+            "a": 13,
+            "b": 4,
+            "result": 9
+          }
+        ],
+        "content_en": "7 + 6 - 4 = 9"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Book has 9 balls. He gets 7 more. Then he loses 4 balls. How many does he have?",
+      "choices": [
+        "12 balls",
+        "17 balls",
+        "9 balls",
+        "20 balls"
+      ],
+      "correct_answer": "12 balls",
+      "explanation": "9 + 7 - 4 = 12 balls",
+      "data": {
+        "question": "Book has 9 balls. He gets 7 more. Then he loses 4 balls. How many does he have?",
+        "choices": [
+          "12 balls",
+          "17 balls",
+          "9 balls",
+          "20 balls"
+        ],
+        "correct_answer": "12 balls",
+        "explanation": "9 + 7 - 4 = 12 balls"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "win",
+      "th": "ชนะ",
+      "definition_en": "To get more after a game."
+    },
+    {
+      "en": "lose",
+      "th": "แพ้/เสีย",
+      "definition_en": "To have fewer after giving away."
+    },
+    {
+      "en": "marble",
+      "th": "ลูกแก้ว",
+      "definition_en": "A small ball used in a game."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Lin has 7 stickers. Mali gives her 6 stickers. Now Lin gives 4 stickers to her f...",
+      "solution_en": "7 + 6 - 4 = 9"
+    }
+  ],
+  "questions": []
+}

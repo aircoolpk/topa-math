@@ -1,0 +1,179 @@
+{
+  "lesson_id": "add_within_10_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "addw10_ep_q001_e01",
+      "question_text": "Lin has 3 red pencils and 4 blue pencils. How many pencils does Lin have in total?",
+      "question_text_th": "ลินมีดินสอแดง 3 แท่ง และดินสอน้ำเงิน 4 แท่ง ลินมีดินสอทั้งหมดกี่แท่ง",
+      "choices": [
+        "7 pencils",
+        "10 pencils",
+        "5 pencils",
+        "12 pencils"
+      ],
+      "correct_answer": "7 pencils",
+      "answer": "7 pencils",
+      "explanation": "3 + 4 = 7 pencils",
+      "explanation_th": "บวกดินสอ: 3 + 4 = 7 แท่ง",
+      "difficulty": "easy",
+      "hint_th": "Add both groups."
+    },
+    {
+      "question_id": "addw10_ep_q001_e02",
+      "question_text": "Book has 2 apples. Mali gives Book 5 more apples. How many apples does Book have now?",
+      "question_text_th": "บุ๊กมีแอปเปิ้ล 2 ผล มะลิให้บุ๊กอีก 5 ผล บุ๊กมีแอปเปิ้ลกี่ผล",
+      "choices": [
+        "7 apples",
+        "10 apples",
+        "5 apples",
+        "12 apples"
+      ],
+      "correct_answer": "7 apples",
+      "answer": "7 apples",
+      "explanation": "2 + 5 = 7 apples",
+      "explanation_th": "บวกแอปเปิ้ล: 2 + 5 = 7 ผล",
+      "difficulty": "easy",
+      "hint_th": "Count all apples."
+    },
+    {
+      "question_id": "addw10_ep_q001_e03",
+      "question_text": "Mai puts 1 flower in a vase and then puts 6 more flowers. How many flowers are in the vase?",
+      "question_text_th": "ไมใส่ดอกไม้ 1 ดอกในแจกัน แล้วใส่เพิ่มอีก 6 ดอก ในแจกันมีดอกไม้กี่ดอก",
+      "choices": [
+        "7 flowers",
+        "10 flowers",
+        "5 flowers",
+        "12 flowers"
+      ],
+      "correct_answer": "7 flowers",
+      "answer": "7 flowers",
+      "explanation": "1 + 6 = 7 flowers",
+      "explanation_th": "บวกดอกไม้: 1 + 6 = 7 ดอก",
+      "difficulty": "easy",
+      "hint_th": "Add more flowers."
+    },
+    {
+      "question_id": "addw10_ep_q001_m01",
+      "question_text": "Ai has 4 stickers. His friend gives him 3 stickers. Then Ai buys 2 more stickers. How many stickers does Ai have now?",
+      "question_text_th": "อ้ายมีสติกเกอร์ 4 ดวง เพื่อนให้ 3 ดวง แล้วอ้ายซื้อเพิ่ม 2 ดวง อ้ายมีสติกเกอร์กี่ดวง",
+      "choices": [
+        "9 stickers",
+        "12 stickers",
+        "7 stickers",
+        "14 stickers"
+      ],
+      "correct_answer": "9 stickers",
+      "answer": "9 stickers",
+      "explanation": "4 + 3 + 2 = 9 stickers",
+      "explanation_th": "บวกทั้งหมด: 4 + 3 + 2 = 9 ดวง",
+      "difficulty": "medium",
+      "hint_th": "Add step by step."
+    },
+    {
+      "question_id": "addw10_ep_q001_m02",
+      "question_text": "Chef Ai cooks 5 eggs in the morning and 3 eggs in the afternoon. How many eggs does Chef Ai cook in total?",
+      "question_text_th": "เชฟแอร์ทำไข่ 5 ฟองตอนเช้า และ 3 ฟองตอนบ่าย เชฟแอร์ทำไข่ทั้งหมดกี่ฟอง",
+      "choices": [
+        "8 eggs",
+        "11 eggs",
+        "6 eggs",
+        "13 eggs"
+      ],
+      "correct_answer": "8 eggs",
+      "answer": "8 eggs",
+      "explanation": "5 + 3 = 8 eggs",
+      "explanation_th": "บวกไข่: 5 + 3 = 8 ฟอง",
+      "difficulty": "medium",
+      "hint_th": "Add morning and afternoon."
+    },
+    {
+      "question_id": "addw10_ep_q001_m03",
+      "question_text": "Tad has 6 marbles. He wins 2 marbles from Book. How many marbles does Tad have now?",
+      "question_text_th": "ต้นมีลูกแก้ว 6 ลูก ชนะจากบุ๊กได้อีก 2 ลูก ต้นมีลูกแก้วกี่ลูก",
+      "choices": [
+        "8 marbles",
+        "11 marbles",
+        "6 marbles",
+        "13 marbles"
+      ],
+      "correct_answer": "8 marbles",
+      "answer": "8 marbles",
+      "explanation": "6 + 2 = 8 marbles",
+      "explanation_th": "บวกลูกแก้ว: 6 + 2 = 8 ลูก",
+      "difficulty": "medium",
+      "hint_th": "Add the winnings."
+    },
+    {
+      "question_id": "addw10_ep_q001_m04",
+      "question_text": "Lin has 4 candies. Mali gives her 5 candies. How many candies does Lin have?",
+      "question_text_th": "ลินมีลูกชุบ 4 ชิ้น มะลิให้อีก 5 ชิ้น ลินมีลูกชุบกี่ชิ้น",
+      "choices": [
+        "9 candies",
+        "12 candies",
+        "7 candies",
+        "14 candies"
+      ],
+      "correct_answer": "9 candies",
+      "answer": "9 candies",
+      "explanation": "4 + 5 = 9 candies",
+      "explanation_th": "บวกลูกชุบ: 4 + 5 = 9 ชิ้น",
+      "difficulty": "medium",
+      "hint_th": "Count all candies."
+    },
+    {
+      "question_id": "addw10_ep_q001_h01",
+      "question_text": "Pim has 3 flowers. She gets 4 flowers from Mai and 2 flowers from Lin. How many flowers does Pim have now?",
+      "question_text_th": "พิมมีดอกไม้ 3 ดอก ได้รับจากไม 4 ดอก และจากลิน 2 ดอก พิมมีดอกไม้กี่ดอก",
+      "choices": [
+        "9 flowers",
+        "12 flowers",
+        "7 flowers",
+        "14 flowers"
+      ],
+      "correct_answer": "9 flowers",
+      "answer": "9 flowers",
+      "explanation": "3 + 4 + 2 = 9 flowers",
+      "explanation_th": "บวกทั้งหมด: 3 + 4 + 2 = 9 ดอก",
+      "difficulty": "hard",
+      "hint_th": "Add from all friends."
+    },
+    {
+      "question_id": "addw10_ep_q001_h02",
+      "question_text": "A fruit stall has 4 mangoes. A customer buys 3 mangoes. Then the stall gets 5 more mangoes from the farm. How many mangoes does the stall have now?",
+      "question_text_th": "แผงผลไม้มีมะม่วง 4 ผล ลูกค้าซื้อไป 3 ผล แล้วได้รับจากสวนเพิ่มอีก 5 ผล แผงมีมะม่วงกี่ผล",
+      "choices": [
+        "6 mangoes",
+        "9 mangoes",
+        "4 mangoes",
+        "11 mangoes"
+      ],
+      "correct_answer": "6 mangoes",
+      "answer": "6 mangoes",
+      "explanation": "4 - 3 + 5 = 6 mangoes",
+      "explanation_th": "ลบแล้วบวก: 4 - 3 + 5 = 6 ผล",
+      "difficulty": "hard",
+      "hint_th": "Sell then add."
+    },
+    {
+      "question_id": "addw10_ep_q001_h03",
+      "question_text": "Book has 2 pencils. He gets 3 pencils from his mother and 4 pencils from his teacher. How many pencils does Book have?",
+      "question_text_th": "บุ๊กมีดินสอ 2 แท่ง ได้รับจากแม่ 3 แท่ง และจากคุณครู 4 แท่ง บุ๊กมีดินสอกี่แท่ง",
+      "choices": [
+        "9 pencils",
+        "12 pencils",
+        "7 pencils",
+        "14 pencils"
+      ],
+      "correct_answer": "9 pencils",
+      "answer": "9 pencils",
+      "explanation": "2 + 3 + 4 = 9 pencils",
+      "explanation_th": "บวกทั้งหมด: 2 + 3 + 4 = 9 แท่ง",
+      "difficulty": "hard",
+      "hint_th": "Add from two people."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

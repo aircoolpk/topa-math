@@ -1,0 +1,235 @@
+{
+  "variant_id": "picture_graphs_ep_002",
+  "variant_title_en": "Picture Graphs",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Picture Graphs",
+  "title_th": "",
+  "story_theme_en": "Students vote for their favorite pet. Dog gets 5 votes, Cat gets 3 votes, and Bird gets 7 votes. Which pet gets the fewest votes?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Dog: 5 votes. Cat: 3 votes. Bird: 7 votes. The fewest is Cat with 3 votes.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Students vote for their favorite pet. Dog gets 5 votes, Cat gets 3 votes, and Bird gets 7 votes. Which pet gets the fewest votes?",
+      "data": {
+        "content_en": "Students vote for their favorite pet. Dog gets 5 votes, Cat gets 3 votes, and Bird gets 7 votes. Which pet gets the fewest votes?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Dog: 5 votes. Cat: 3 votes. Bird: 7 votes. The fewest is Cat with 3 votes.",
+      "data": {
+        "content_en": "Dog: 5 votes. Cat: 3 votes. Bird: 7 votes. The fewest is Cat with 3 votes."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "picture_graph",
+      "data": {
+        "model_type": "picture_graph",
+        "operation": "compare",
+        "unit": "votes",
+        "bars": [
+          {
+            "label": "Dog",
+            "value": 5,
+            "display": "5 votes",
+            "color": "#FF9A9E",
+            "width_pct": 33
+          },
+          {
+            "label": "Cat",
+            "value": 3,
+            "display": "3 votes",
+            "color": "#A8D8EA",
+            "width_pct": 20
+          },
+          {
+            "label": "Bird",
+            "value": 7,
+            "display": "7 votes",
+            "color": "#C7F464",
+            "width_pct": 46
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "5 + 3 = 8",
+            "formula": {
+              "display": "5 + 3 = 8",
+              "a": 5,
+              "b": 3,
+              "result": 8,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}5&&\\\\\\\\ + 3&&\\\\\\\\ \\\\hline 8&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "5",
+              "b_display": "3",
+              "result_display": "8",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 5 + 3 = 8"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add",
+            "expression": "8 + 7 = 15",
+            "formula": {
+              "display": "8 + 7 = 15",
+              "a": 8,
+              "b": 7,
+              "result": 15,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}8&&\\\\\\\\ + 7&&\\\\\\\\ \\\\hline 15&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "8",
+              "b_display": "7",
+              "result_display": "15",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 8 + 7 = 15"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5 + 3 + 7 = 15",
+      "content": "5 + 3 + 7 = 15",
+      "data": {
+        "expression": "5 + 3 + 7 = 15",
+        "operations": [
+          {
+            "op": "+",
+            "a": 5,
+            "b": 3,
+            "result": 8
+          },
+          {
+            "op": "+",
+            "a": 8,
+            "b": 7,
+            "result": 15
+          }
+        ],
+        "content_en": "5 + 3 + 7 = 15"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "How many more birds than cats are there?",
+      "choices": [
+        "4 more birds",
+        "9 more birds",
+        "1 more birds",
+        "12 more birds"
+      ],
+      "correct_answer": "4 more birds",
+      "explanation": "7 birds - 3 cats = 4 more birds",
+      "data": {
+        "question": "How many more birds than cats are there?",
+        "choices": [
+          "4 more birds",
+          "9 more birds",
+          "1 more birds",
+          "12 more birds"
+        ],
+        "correct_answer": "4 more birds",
+        "explanation": "7 birds - 3 cats = 4 more birds"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "vote",
+      "th": "โหวต",
+      "definition_en": "A choice you make."
+    },
+    {
+      "en": "favorite",
+      "th": "ชอบมากที่สุด",
+      "definition_en": "The one you like the most."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Students vote for their favorite pet. Dog gets 5 votes, Cat gets 3 votes, and Bi...",
+      "solution_en": "5 + 3 + 7 = 15"
+    }
+  ],
+  "questions": []
+}

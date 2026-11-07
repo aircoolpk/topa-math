@@ -263,6 +263,53 @@ export interface AdminReferralResponse {
   }
 }
 
+export interface AdminAffiliateResponse {
+  affiliates: Array<{
+    user_id: string
+    email_masked?: string | null
+    registered_count: number
+    paid_member_count: number
+    total_referred_paid_minor: number
+    total_commission_minor: number
+    pending_balance_minor: number
+    available_balance_minor: number
+    withdrawn_balance_minor: number
+  }>
+  withdrawals: Array<{
+    id: string
+    user_id: string
+    email_masked?: string | null
+    amount_minor: number
+    currency: string
+    status: 'pending_review' | 'approved' | 'processing' | 'paid' | 'rejected'
+    admin_note?: string | null
+    requested_at?: string | null
+    paid_at?: string | null
+    payout_account?: {
+      payout_method: string
+      account_holder_name: string
+      bank_name?: string | null
+      account_masked?: string | null
+      promptpay_masked?: string | null
+    } | null
+  }>
+  recent_commissions: Array<{
+    id: string
+    affiliate_email_masked?: string | null
+    referred_email_masked?: string | null
+    amount_paid_minor: number
+    commission_minor: number
+    status: string
+    created_at?: string | null
+  }>
+  summary: {
+    registered: number
+    paid_members: number
+    total_commission_minor: number
+    available_balance_minor: number
+  }
+}
+
 export interface AdminLessonRow {
   lesson_id: string
   db_lesson_id?: string | null
@@ -719,6 +766,16 @@ export const adminApi = {
   async referrals() {
     const res = await apiClient.get('/admin/referrals')
     return res.data as AdminReferralResponse
+  },
+
+  async affiliates() {
+    const res = await apiClient.get('/admin/affiliates')
+    return res.data as AdminAffiliateResponse
+  },
+
+  async updateAffiliateWithdrawal(withdrawalId: string, action: 'approve' | 'processing' | 'paid' | 'reject', adminNote?: string) {
+    const res = await apiClient.post(`/admin/affiliates/withdrawals/${withdrawalId}/${action}`, { admin_note: adminNote })
+    return res.data as { ok: boolean }
   },
 
   async approveReferralCoins(ledgerId: string) {

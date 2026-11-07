@@ -6,6 +6,9 @@ from sqlalchemy import engine_from_config, pool
 from app.core.config import get_settings
 from app.core.database import Base
 from app.models import entities  # noqa: F401
+from app.models import payment_integration  # noqa: F401
+from app.models import mpp_purchase  # noqa: F401
+from app.models import checkout_reservation  # noqa: F401
 
 config = context.config
 config.set_main_option("sqlalchemy.url", get_settings().database_url)

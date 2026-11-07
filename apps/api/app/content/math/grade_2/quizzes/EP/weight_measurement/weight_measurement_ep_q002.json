@@ -1,0 +1,133 @@
+{
+  "quiz_id": "weight_measurement_ep_q002",
+  "topic_key": "weight_measurement",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz weight_measurement_ep_q002",
+  "title_en": "Quiz weight_measurement_ep_q002",
+  "questions": [
+    {
+      "question": "Half a kilogram equals how many grams?",
+      "choices": [
+        "500 g",
+        "100 g",
+        "1,000 g",
+        "250 g"
+      ],
+      "correct_answer": "500 g",
+      "explanation": "0.5 kg = 500 g",
+      "difficulty": "easy"
+    },
+    {
+      "question": "3 kg - 1,200 g = ?",
+      "choices": [
+        "1,800 g",
+        "1,200 g",
+        "2,800 g",
+        "800 g"
+      ],
+      "correct_answer": "1,800 g",
+      "explanation": "3,000-1,200=1,800 g",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Meat 1 kg 350 g. Chicken 950 g. Total weight?",
+      "choices": [
+        "2 kg 300 g",
+        "2 kg 200 g",
+        "2 kg 400 g",
+        "3 kg  g"
+      ],
+      "correct_answer": "2 kg 300 g",
+      "explanation": "1,350+950=2,300 g = 2 kg 300 g",
+      "difficulty": "medium"
+    },
+    {
+      "question": "4 bottles of juice, each 250 g. Total weight?",
+      "choices": [
+        "1,000 g",
+        "800 g",
+        "1,200 g",
+        "1,500 g"
+      ],
+      "correct_answer": "1,000 g",
+      "explanation": "250x4=1,000 g",
+      "difficulty": "easy"
+    },
+    {
+      "question": "5 mangoes, each 400 g. Total weight?",
+      "choices": [
+        "2 kg",
+        "1,500 g",
+        "3 kg",
+        "4 kg"
+      ],
+      "correct_answer": "2 kg",
+      "explanation": "5x400=2,000 g = 2 kg",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Paddy rice 5 kg. Milled, lost 1 kg 200 g. How much is left?",
+      "choices": [
+        "3 kg 800 g",
+        "3 kg 200 g",
+        "4 kg 800 g",
+        "4 kg 200 g"
+      ],
+      "correct_answer": "3 kg 800 g",
+      "explanation": "5,000-1,200=3,800 g = 3 kg 800 g",
+      "difficulty": "medium"
+    },
+    {
+      "question": "3 fish weigh 800 g, 900 g, and 750 g. Total?",
+      "choices": [
+        "2,450 g",
+        "2,350 g",
+        "2,550 g",
+        "2,150 g"
+      ],
+      "correct_answer": "2,450 g",
+      "explanation": "800+900+750=2,450 g",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A stone weighs 2 kg 300 g. How much more to reach 4 kg?",
+      "choices": [
+        "1 kg 700 g",
+        "1 kg 300 g",
+        "2 kg",
+        "2 kg  g"
+      ],
+      "correct_answer": "1 kg 700 g",
+      "explanation": "4,000-2,300=1,700 g = 1 kg 700 g",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A bee weighs 85 g. An ant weighs 15 g. How much heavier is the bee?",
+      "choices": [
+        "70 g",
+        "60 g",
+        "80 g",
+        "100 g"
+      ],
+      "correct_answer": "70 g",
+      "explanation": "85-15=70 g",
+      "difficulty": "easy"
+    },
+    {
+      "question": "8 oranges weigh 1 kg 600 g total. Each orange weighs?",
+      "choices": [
+        "200 g",
+        "180 g",
+        "220 g",
+        "150 g"
+      ],
+      "correct_answer": "200 g",
+      "explanation": "1,600/8=200 g",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

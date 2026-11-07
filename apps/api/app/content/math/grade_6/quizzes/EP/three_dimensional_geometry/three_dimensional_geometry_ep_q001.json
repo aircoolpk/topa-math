@@ -1,0 +1,381 @@
+{
+  "quiz_id": "three_dimensional_geometry_ep_q001",
+  "title_th": "รูปเรขาคณิตสามมิติ",
+  "title_en": "Three-Dimensional Geometry",
+  "status": "needs_review",
+  "variant_id": "three_dimensional_geometry_ep_q001",
+  "variant_title_th": "รูปเรขาคณิตสามมิติ",
+  "variant_title_en": "Three-Dimensional Geometry",
+  "questions": [
+    {
+      "question_id": "three_di_q001_m01",
+      "type": "multiple_choice",
+      "question_th": "กล่องทรงสี่เหลี่ยม กว้าง 3 ซม. ยาว 4 ซม. สูง 5 ซม. ปริมาตรเท่าไร",
+      "question_en": "A rectangular box is 3 cm wide, 4 cm long, and 5 cm tall. What is its volume?",
+      "choices_th": [
+        "12 cu cm",
+        "23 cu cm",
+        "47 cu cm",
+        "60 cu cm"
+      ],
+      "choices_en": [
+        "12 cu cm",
+        "23 cu cm",
+        "47 cu cm",
+        "60 cu cm"
+      ],
+      "correct_answer_th": "60 cu cm",
+      "correct_answer_en": "60 cu cm",
+      "answer_th": "60 cu cm",
+      "answer_en": "60 cu cm",
+      "answer": "60 cu cm",
+      "explanation_th": "3×4×5=60 cu cm",
+      "explanation_en": "3×4×5=60 cu cm",
+      "difficulty": "easy",
+      "choices": [
+        "12 cu cm",
+        "23 cu cm",
+        "47 cu cm",
+        "60 cu cm"
+      ],
+      "correct_answer": "60 cu cm",
+      "question_text": "กล่องทรงสี่เหลี่ยม กว้าง 3 ซม. ยาว 4 ซม. สูง 5 ซม. ปริมาตรเท่าไร",
+      "explanation": "3×4×5=60 cu cm",
+      "question_text_th": "กล่องทรงสี่เหลี่ยม กว้าง 3 ซม. ยาว 4 ซม. สูง 5 ซม. ปริมาตรเท่าไร",
+      "question_text_en": "A rectangular box is 3 cm wide, 4 cm long, and 5 cm tall. What is its volume?"
+    },
+    {
+      "question_id": "three_di_q001_m02",
+      "type": "multiple_choice",
+      "question_th": "ทรงลูกบาศก์มีด้านยาว 6 ซม. ปริมาตรเท่าไร",
+      "question_en": "A cube has sides of 6 cm. What is its volume?",
+      "choices_th": [
+        "36 cu cm",
+        "72 cu cm",
+        "216 cu cm",
+        "18 cu cm"
+      ],
+      "choices_en": [
+        "36 cu cm",
+        "72 cu cm",
+        "216 cu cm",
+        "18 cu cm"
+      ],
+      "correct_answer_th": "216 cu cm",
+      "correct_answer_en": "216 cu cm",
+      "answer_th": "216 cu cm",
+      "answer_en": "216 cu cm",
+      "answer": "216 cu cm",
+      "explanation_th": "6×6×6=216 cu cm",
+      "explanation_en": "6×6×6=216 cu cm",
+      "difficulty": "easy",
+      "choices": [
+        "36 cu cm",
+        "72 cu cm",
+        "216 cu cm",
+        "18 cu cm"
+      ],
+      "correct_answer": "216 cu cm",
+      "question_text": "ทรงลูกบาศก์มีด้านยาว 6 ซม. ปริมาตรเท่าไร",
+      "explanation": "6×6×6=216 cu cm",
+      "question_text_th": "ทรงลูกบาศก์มีด้านยาว 6 ซม. ปริมาตรเท่าไร",
+      "question_text_en": "A cube has sides of 6 cm. What is its volume?"
+    },
+    {
+      "question_id": "three_di_q001_m03",
+      "type": "multiple_choice",
+      "question_th": "ทรงกระบอกมีรัศมี 7 ซม. สูง 10 ซม. ปริมาตรเท่าไร (π = 22/7)",
+      "question_en": "A cylinder has a radius of 7 cm and a height of 10 cm. What is its volume? (π = 22/7)",
+      "choices_th": [
+        "1,540 cu cm",
+        "154 cu cm",
+        "770 cu cm",
+        "220 cu cm"
+      ],
+      "choices_en": [
+        "1,540 cu cm",
+        "154 cu cm",
+        "770 cu cm",
+        "220 cu cm"
+      ],
+      "correct_answer_th": "1,540 cu cm",
+      "correct_answer_en": "1,540 cu cm",
+      "answer_th": "1,540 cu cm",
+      "answer_en": "1,540 cu cm",
+      "answer": "1,540 cu cm",
+      "explanation_th": "22/7×7×7×10=1,540 cu cm",
+      "explanation_en": "22/7×7×7×10=1,540 cu cm",
+      "difficulty": "medium",
+      "choices": [
+        "1,540 cu cm",
+        "154 cu cm",
+        "770 cu cm",
+        "220 cu cm"
+      ],
+      "correct_answer": "1,540 cu cm",
+      "question_text": "ทรงกระบอกมีรัศมี 7 ซม. สูง 10 ซม. ปริมาตรเท่าไร (π = 22/7)",
+      "explanation": "22/7×7×7×10=1,540 cu cm",
+      "question_text_th": "ทรงกระบอกมีรัศมี 7 ซม. สูง 10 ซม. ปริมาตรเท่าไร (π = 22/7)",
+      "question_text_en": "A cylinder has a radius of 7 cm and a height of 10 cm. What is its volume? (π = 22/7)"
+    },
+    {
+      "question_id": "three_di_q001_m04",
+      "type": "multiple_choice",
+      "question_th": "กล่องทรงสี่เหลี่ยมมีปริมาตร 48 ลบ.ซม. กว้าง 4 ซม. ยาว 3 ซม. สูงเท่าไร",
+      "question_en": "A rectangular box has a volume of 48 cu cm. It is 4 cm wide and 3 cm long. How tall is it?",
+      "choices_th": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "6 cm"
+      ],
+      "choices_en": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "6 cm"
+      ],
+      "correct_answer_th": "4 cm",
+      "correct_answer_en": "4 cm",
+      "answer_th": "4 cm",
+      "answer_en": "4 cm",
+      "answer": "4 cm",
+      "explanation_th": "48÷(4×3)=48÷12=4 cm",
+      "explanation_en": "48÷(4×3)=48÷12=4 cm",
+      "difficulty": "medium",
+      "choices": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "6 cm"
+      ],
+      "correct_answer": "4 cm",
+      "question_text": "กล่องทรงสี่เหลี่ยมมีปริมาตร 48 ลบ.ซม. กว้าง 4 ซม. ยาว 3 ซม. สูงเท่าไร",
+      "explanation": "48÷(4×3)=48÷12=4 cm",
+      "question_text_th": "กล่องทรงสี่เหลี่ยมมีปริมาตร 48 ลบ.ซม. กว้าง 4 ซม. ยาว 3 ซม. สูงเท่าไร",
+      "question_text_en": "A rectangular box has a volume of 48 cu cm. It is 4 cm wide and 3 cm long. How tall is it?"
+    },
+    {
+      "question_id": "three_di_q001_m05",
+      "type": "multiple_choice",
+      "question_th": "ทรงกระบอกมีเส้นผ่านศูนย์กลาง 14 ซม. สูง 5 ซม. ปริมาตรเท่าไร (π = 22/7)",
+      "question_en": "A cylinder has a diameter of 14 cm and a height of 5 cm. What is its volume? (π = 22/7)",
+      "choices_th": [
+        "770 cu cm",
+        "385 cu cm",
+        "1,540 cu cm",
+        "220 cu cm"
+      ],
+      "choices_en": [
+        "770 cu cm",
+        "385 cu cm",
+        "1,540 cu cm",
+        "220 cu cm"
+      ],
+      "correct_answer_th": "770 cu cm",
+      "correct_answer_en": "770 cu cm",
+      "answer_th": "770 cu cm",
+      "answer_en": "770 cu cm",
+      "answer": "770 cu cm",
+      "explanation_th": "22/7×7×7×5=770 cu cm",
+      "explanation_en": "22/7×7×7×5=770 cu cm",
+      "difficulty": "medium",
+      "choices": [
+        "770 cu cm",
+        "385 cu cm",
+        "1,540 cu cm",
+        "220 cu cm"
+      ],
+      "correct_answer": "770 cu cm",
+      "question_text": "ทรงกระบอกมีเส้นผ่านศูนย์กลาง 14 ซม. สูง 5 ซม. ปริมาตรเท่าไร (π = 22/7)",
+      "explanation": "22/7×7×7×5=770 cu cm",
+      "question_text_th": "ทรงกระบอกมีเส้นผ่านศูนย์กลาง 14 ซม. สูง 5 ซม. ปริมาตรเท่าไร (π = 22/7)",
+      "question_text_en": "A cylinder has a diameter of 14 cm and a height of 5 cm. What is its volume? (π = 22/7)"
+    },
+    {
+      "question_id": "three_di_q001_m06",
+      "type": "multiple_choice",
+      "question_th": "ทรงลูกบาศก์มีด้านยาว 10 ซม. ปริมาตรเท่าไร",
+      "question_en": "A cube has sides of 10 cm. What is its volume?",
+      "choices_th": [
+        "100 cu cm",
+        "1,000 cu cm",
+        "10,000 cu cm",
+        "300 cu cm"
+      ],
+      "choices_en": [
+        "100 cu cm",
+        "1,000 cu cm",
+        "10,000 cu cm",
+        "300 cu cm"
+      ],
+      "correct_answer_th": "1,000 cu cm",
+      "correct_answer_en": "1,000 cu cm",
+      "answer_th": "1,000 cu cm",
+      "answer_en": "1,000 cu cm",
+      "answer": "1,000 cu cm",
+      "explanation_th": "10×10×10=1,000 cu cm",
+      "explanation_en": "10×10×10=1,000 cu cm",
+      "difficulty": "easy",
+      "choices": [
+        "100 cu cm",
+        "1,000 cu cm",
+        "10,000 cu cm",
+        "300 cu cm"
+      ],
+      "correct_answer": "1,000 cu cm",
+      "question_text": "ทรงลูกบาศก์มีด้านยาว 10 ซม. ปริมาตรเท่าไร",
+      "explanation": "10×10×10=1,000 cu cm",
+      "question_text_th": "ทรงลูกบาศก์มีด้านยาว 10 ซม. ปริมาตรเท่าไร",
+      "question_text_en": "A cube has sides of 10 cm. What is its volume?"
+    },
+    {
+      "question_id": "three_di_q001_m07",
+      "type": "multiple_choice",
+      "question_th": "กล่องทรงสี่เหลี่ยม กว้าง 5 ซม. ยาว 8 ซม. สูง 4 ซม. พื้นที่ผิวทั้งหมดเท่าไร",
+      "question_en": "A rectangular box is 5 cm wide, 8 cm long, and 4 cm tall. What is its total surface area?",
+      "choices_th": [
+        "80 sq cm",
+        "184 sq cm",
+        "120 sq cm",
+        "104 sq cm"
+      ],
+      "choices_en": [
+        "80 sq cm",
+        "184 sq cm",
+        "120 sq cm",
+        "104 sq cm"
+      ],
+      "correct_answer_th": "184 sq cm",
+      "correct_answer_en": "184 sq cm",
+      "answer_th": "184 sq cm",
+      "answer_en": "184 sq cm",
+      "answer": "184 sq cm",
+      "explanation_th": "2×(5×8+8×4+5×4)=2×(40+32+20)=184 sq cm",
+      "explanation_en": "2×(5×8+8×4+5×4)=2×(40+32+20)=184 sq cm",
+      "difficulty": "hard",
+      "choices": [
+        "80 sq cm",
+        "184 sq cm",
+        "120 sq cm",
+        "104 sq cm"
+      ],
+      "correct_answer": "184 sq cm",
+      "question_text": "กล่องทรงสี่เหลี่ยม กว้าง 5 ซม. ยาว 8 ซม. สูง 4 ซม. พื้นที่ผิวทั้งหมดเท่าไร",
+      "explanation": "2×(5×8+8×4+5×4)=2×(40+32+20)=184 sq cm",
+      "question_text_th": "กล่องทรงสี่เหลี่ยม กว้าง 5 ซม. ยาว 8 ซม. สูง 4 ซม. พื้นที่ผิวทั้งหมดเท่าไร",
+      "question_text_en": "A rectangular box is 5 cm wide, 8 cm long, and 4 cm tall. What is its total surface area?"
+    },
+    {
+      "question_id": "three_di_q001_m08",
+      "type": "multiple_choice",
+      "question_th": "ทรงกระบอกมีรัศมี 10 ซม. สูง 7 ซม. ปริมาตรเท่าไร (π = 3.14)",
+      "question_en": "A cylinder has a radius of 10 cm and a height of 7 cm. What is its volume? (π = 3.14)",
+      "choices_th": [
+        "314 cu cm",
+        "2,198 cu cm",
+        "220 cu cm",
+        "1,540 cu cm"
+      ],
+      "choices_en": [
+        "314 cu cm",
+        "2,198 cu cm",
+        "220 cu cm",
+        "1,540 cu cm"
+      ],
+      "correct_answer_th": "2,198 cu cm",
+      "correct_answer_en": "2,198 cu cm",
+      "answer_th": "2,198 cu cm",
+      "answer_en": "2,198 cu cm",
+      "answer": "2,198 cu cm",
+      "explanation_th": "3.14×10×10×7=2,198 cu cm",
+      "explanation_en": "3.14×10×10×7=2,198 cu cm",
+      "difficulty": "hard",
+      "choices": [
+        "314 cu cm",
+        "2,198 cu cm",
+        "220 cu cm",
+        "1,540 cu cm"
+      ],
+      "correct_answer": "2,198 cu cm",
+      "question_text": "ทรงกระบอกมีรัศมี 10 ซม. สูง 7 ซม. ปริมาตรเท่าไร (π = 3.14)",
+      "explanation": "3.14×10×10×7=2,198 cu cm",
+      "question_text_th": "ทรงกระบอกมีรัศมี 10 ซม. สูง 7 ซม. ปริมาตรเท่าไร (π = 3.14)",
+      "question_text_en": "A cylinder has a radius of 10 cm and a height of 7 cm. What is its volume? (π = 3.14)"
+    },
+    {
+      "question_id": "three_di_q001_m09",
+      "type": "multiple_choice",
+      "question_th": "กล่องทรงสี่เหลี่ยมมีปริมาตร 120 ลบ.ซม. กว้าง 5 ซม. สูง 4 ซม. ยาวเท่าไร",
+      "question_en": "A rectangular box has a volume of 120 cu cm. It is 5 cm wide and 4 cm tall. How long is it?",
+      "choices_th": [
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "8 cm"
+      ],
+      "choices_en": [
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "8 cm"
+      ],
+      "correct_answer_th": "6 cm",
+      "correct_answer_en": "6 cm",
+      "answer_th": "6 cm",
+      "answer_en": "6 cm",
+      "answer": "6 cm",
+      "explanation_th": "120÷(5×4)=120÷20=6 cm",
+      "explanation_en": "120÷(5×4)=120÷20=6 cm",
+      "difficulty": "medium",
+      "choices": [
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "8 cm"
+      ],
+      "correct_answer": "6 cm",
+      "question_text": "กล่องทรงสี่เหลี่ยมมีปริมาตร 120 ลบ.ซม. กว้าง 5 ซม. สูง 4 ซม. ยาวเท่าไร",
+      "explanation": "120÷(5×4)=120÷20=6 cm",
+      "question_text_th": "กล่องทรงสี่เหลี่ยมมีปริมาตร 120 ลบ.ซม. กว้าง 5 ซม. สูง 4 ซม. ยาวเท่าไร",
+      "question_text_en": "A rectangular box has a volume of 120 cu cm. It is 5 cm wide and 4 cm tall. How long is it?"
+    },
+    {
+      "question_id": "three_di_q001_m10",
+      "type": "multiple_choice",
+      "question_th": "ทรงลูกบาศก์มีปริมาตร 125 ลบ.ซม. แต่ละด้านยาวเท่าไร",
+      "question_en": "A cube has a volume of 125 cu cm. How long is each side?",
+      "choices_th": [
+        "5 cm",
+        "10 cm",
+        "15 cm",
+        "25 cm"
+      ],
+      "choices_en": [
+        "5 cm",
+        "10 cm",
+        "15 cm",
+        "25 cm"
+      ],
+      "correct_answer_th": "5 cm",
+      "correct_answer_en": "5 cm",
+      "answer_th": "5 cm",
+      "answer_en": "5 cm",
+      "answer": "5 cm",
+      "explanation_th": "³√125=5 cm",
+      "explanation_en": "³√125=5 cm",
+      "difficulty": "hard",
+      "choices": [
+        "5 cm",
+        "10 cm",
+        "15 cm",
+        "25 cm"
+      ],
+      "correct_answer": "5 cm",
+      "question_text": "ทรงลูกบาศก์มีปริมาตร 125 ลบ.ซม. แต่ละด้านยาวเท่าไร",
+      "explanation": "³√125=5 cm",
+      "question_text_th": "ทรงลูกบาศก์มีปริมาตร 125 ลบ.ซม. แต่ละด้านยาวเท่าไร",
+      "question_text_en": "A cube has a volume of 125 cu cm. How long is each side?"
+    }
+  ]
+}

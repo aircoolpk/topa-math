@@ -1,0 +1,266 @@
+{
+  "variant_id": "geometry_shapes_ep_002",
+  "variant_title_th": "รูปทรง - ผลไม้",
+  "variant_title_en": "Fruits Theme",
+  "status": "needs_review",
+  "title_en": "2D Shapes",
+  "title_th": "รูปทรงสองมิติ",
+  "story_theme_en": "A fruit stand has fruits shaped like different 2D shapes. A pear looks like an oval, an orange looks like a circle, and a mango slice looks like a triangle. How many fruits are there in total?",
+  "helper_tip_en": "Look at the shape of each fruit to identify it. A pear is an oval, an orange is a circle, and a triangle fruit slice has 3 sides.",
+  "think_story_en": "Ovals (pears): 1. Circles (oranges): 2. Triangles (mango slices): 1. Total: 1 + 2 + 1 = 4 fruits.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A fruit stand has fruits shaped like different 2D shapes. A pear looks like an oval, an orange looks like a circle, and a mango slice looks like a triangle. How many fruits are there in total?",
+      "data": {
+        "content_en": "A fruit stand has fruits shaped like different 2D shapes. A pear looks like an oval, an orange looks like a circle, and a mango slice looks like a triangle. How many fruits are there in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Ovals (pears): 1. Circles (oranges): 2. Triangles (mango slices): 1. Total: 1 + 2 + 1 = 4 fruits.",
+      "data": {
+        "content_en": "Ovals (pears): 1. Circles (oranges): 2. Triangles (mango slices): 1. Total: 1 + 2 + 1 = 4 fruits."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Shape Model",
+      "description": "A shape diagram showing fruits as shapes",
+      "model_type": "shape_visual",
+      "data": {
+        "model_type": "shape_visual",
+        "operation": "add",
+        "shapes": [
+          {
+            "shape": "ellipse",
+            "color": "#96CEB4",
+            "label": "Oval (Pear)",
+            "count": 1
+          },
+          {
+            "shape": "circle",
+            "color": "#45B7D1",
+            "label": "Circle (Orange)",
+            "count": 2
+          },
+          {
+            "shape": "triangle",
+            "color": "#FF6B6B",
+            "label": "Triangle (Mango)",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add ovals and circles",
+            "expression": "1 + 2 = 3",
+            "formula": {
+              "display": "1 + 2 = 3",
+              "a": 1,
+              "b": 2,
+              "result": 3,
+              "operation": "add"
+            },
+            "story_connection": "1 oval + 2 circles = 3 fruits"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add triangles",
+            "expression": "3 + 1 = 4",
+            "formula": {
+              "display": "3 + 1 = 4",
+              "a": 3,
+              "b": 1,
+              "result": 4,
+              "operation": "add"
+            },
+            "story_connection": "3 fruits + 1 triangle = 4 fruits total"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "1 + 2 + 1 = 4",
+      "content": "1 + 2 + 1 = 4",
+      "data": {
+        "expression": "1 + 2 + 1 = 4",
+        "operations": [
+          {
+            "op": "+",
+            "a": 1,
+            "b": 2,
+            "result": 3
+          },
+          {
+            "op": "+",
+            "a": 3,
+            "b": 1,
+            "result": 4
+          }
+        ],
+        "content_en": "1 + 2 + 1 = 4"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "How many more circles than triangles are there?",
+      "choices": [
+        "3 more circles",
+        "1 more circle",
+        "0 more circles",
+        "2 more circles"
+      ],
+      "correct_answer": "1 more circle",
+      "explanation": "2 circles - 1 triangle = 1 more circle",
+      "data": {
+        "question": "How many more circles than triangles are there?",
+        "choices": [
+          "3 more circles",
+          "1 more circle",
+          "0 more circles",
+          "2 more circles"
+        ],
+        "correct_answer": "1 more circle",
+        "explanation": "2 circles - 1 triangle = 1 more circle"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "A triangle has 3 sides and 3 corners.",
+    "A rectangle has 4 sides and 4 corners.",
+    "A circle is perfectly round with no sides and no corners.",
+    "An oval (ellipse) looks like a stretched circle - it is longer in one direction.",
+    "Many fruits and objects around us have these 2D shapes."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Identifying an Oval",
+      "question_en": "A pear looks like which shape?",
+      "solution_en": "A pear looks like an oval (ellipse). ✅"
+    },
+    {
+      "title_en": "Example: Comparing Shapes",
+      "question_en": "What shape is a plate?",
+      "solution_en": "A plate is usually a circle. ✅"
+    },
+    {
+      "title_en": "Example: Counting Sides",
+      "question_en": "How many sides does a rectangle have?",
+      "solution_en": "A rectangle has 4 sides. ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Confusing ovals with circles.",
+    "Forgetting that a square is a type of rectangle.",
+    "Not counting corners correctly."
+  ],
+  "hints_en": [
+    "Roll the shape: if it rolls the same everywhere, it is a circle. If it wobbles, it is an oval.",
+    "Count the sides: 3 sides = triangle, 4 sides = rectangle or square.",
+    "A square has 4 equal sides. A rectangle has opposite sides equal."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "triangle",
+      "th": "สามเหลี่ยม",
+      "definition_en": "A shape with 3 sides and 3 corners"
+    },
+    {
+      "en": "rectangle",
+      "th": "สี่เหลี่ยมผืนผ้า",
+      "definition_en": "A shape with 4 sides and 4 corners, opposite sides equal"
+    },
+    {
+      "en": "square",
+      "th": "สี่เหลี่ยมจัตุรัส",
+      "definition_en": "A rectangle with all 4 sides equal"
+    },
+    {
+      "en": "circle",
+      "th": "วงกลม",
+      "definition_en": "A perfectly round shape with no sides or corners"
+    },
+    {
+      "en": "oval",
+      "th": "วงรี",
+      "definition_en": "An elongated circle shape, longer in one direction"
+    },
+    {
+      "en": "side",
+      "th": "ด้าน",
+      "definition_en": "A straight line forming part of a shape's edge"
+    },
+    {
+      "en": "corner",
+      "th": "มุม",
+      "definition_en": "The point where two sides meet"
+    },
+    {
+      "en": "perimeter",
+      "th": "เส้นรอบรูป",
+      "definition_en": "The total distance around the outside of a shape"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "Which fruit looks like an oval?",
+      "choices": [
+        "Orange",
+        "Pear",
+        "Apple",
+        "Mango slice"
+      ],
+      "answer": "Pear",
+      "explanation": "A pear has an oval shape."
+    },
+    {
+      "q": "How many corners does a triangle have?",
+      "choices": [
+        "2 corners",
+        "3 corners",
+        "4 corners",
+        "1 corner"
+      ],
+      "answer": "3 corners",
+      "explanation": "A triangle has 3 corners."
+    },
+    {
+      "q": "What shape is a sheet of paper?",
+      "choices": [
+        "Triangle",
+        "Circle",
+        "Rectangle",
+        "Oval"
+      ],
+      "answer": "Rectangle",
+      "explanation": "A sheet of paper is typically a rectangle."
+    },
+    {
+      "q": "Which shape has no corners?",
+      "choices": [
+        "Triangle",
+        "Rectangle",
+        "Square",
+        "Circle"
+      ],
+      "answer": "Circle",
+      "explanation": "A circle has no corners."
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Many everyday objects and fruits have 2D shapes. A pear is an oval, an orange is a circle, and a triangular fruit slice is a triangle. Counting these shapes helps us practice addition."
+}

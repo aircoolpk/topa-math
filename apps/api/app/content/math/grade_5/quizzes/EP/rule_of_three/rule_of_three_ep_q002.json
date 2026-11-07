@@ -1,0 +1,179 @@
+{
+  "lesson_id": "rule_of_three_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "rot_ep_q002_e01",
+      "question_text": "Situation 1: Mangosteens cost 85 baht per kg. How much for 6 kg?",
+      "question_text_th": "Situation 1: Mangosteens cost 85 baht per kg. How much for 6 kg?",
+      "choices": [
+        "510 baht",
+        "510",
+        "500 baht",
+        "520 baht"
+      ],
+      "correct_answer": "510 baht",
+      "answer": "510 baht",
+      "explanation": "6 x 85 = 510 baht",
+      "explanation_th": "6 x 85 = 510 baht",
+      "difficulty": "easy",
+      "hint_th": "6 x 85 = 510 baht"
+    },
+    {
+      "question_id": "rot_ep_q002_e02",
+      "question_text": "Situation 2: Soy sauce costs 45 baht per bottle. 4 bottles cost?",
+      "question_text_th": "Situation 2: Soy sauce costs 45 baht per bottle. 4 bottles cost?",
+      "choices": [
+        "180 baht",
+        "180",
+        "175 baht",
+        "185 baht"
+      ],
+      "correct_answer": "180 baht",
+      "answer": "180 baht",
+      "explanation": "4 x 45 = 180 baht",
+      "explanation_th": "4 x 45 = 180 baht",
+      "difficulty": "easy",
+      "hint_th": "4 x 45 = 180 baht"
+    },
+    {
+      "question_id": "rot_ep_q002_e03",
+      "question_text": "Situation 3: A car travels 15 km per liter. With 8 liters, how far?",
+      "question_text_th": "Situation 3: A car travels 15 km per liter. With 8 liters, how far?",
+      "choices": [
+        "120 km",
+        "120",
+        "115 km",
+        "125 km"
+      ],
+      "correct_answer": "120 km",
+      "answer": "120 km",
+      "explanation": "15 x 8 = 120 km",
+      "explanation_th": "15 x 8 = 120 km",
+      "difficulty": "easy",
+      "hint_th": "15 x 8 = 120 km"
+    },
+    {
+      "question_id": "rot_ep_q002_m01",
+      "question_text": "Situation 4: 4 workers finish in 12 days. How long with 6 workers?",
+      "question_text_th": "Situation 4: 4 workers finish in 12 days. How long with 6 workers?",
+      "choices": [
+        "8 days",
+        "8",
+        "6 days",
+        "9 days"
+      ],
+      "correct_answer": "8 days",
+      "answer": "8 days",
+      "explanation": "4 x 12 = 48 worker-days | 48 / 6 = 8 days",
+      "explanation_th": "4 x 12 = 48 worker-days | 48 / 6 = 8 days",
+      "difficulty": "medium",
+      "hint_th": "More workers = less time. 4x12=48 | 48/6=8 days"
+    },
+    {
+      "question_id": "rot_ep_q002_m02",
+      "question_text": "Situation 5: 3 fish cost 150 baht. How much for 15 fish?",
+      "question_text_th": "Situation 5: 3 fish cost 150 baht. How much for 15 fish?",
+      "choices": [
+        "750 baht",
+        "750",
+        "700 baht",
+        "800 baht"
+      ],
+      "correct_answer": "750 baht",
+      "answer": "750 baht",
+      "explanation": "150/3 x 15 = 50 x 15 = 750 baht",
+      "explanation_th": "150/3 x 15 = 50 x 15 = 750 baht",
+      "difficulty": "medium",
+      "hint_th": "Price per fish = 150/3 = 50 | 50x15 = 750"
+    },
+    {
+      "question_id": "rot_ep_q002_m03",
+      "question_text": "Situation 6: 4 meters of fabric makes 5 shirts. How many meters for 30 shirts?",
+      "question_text_th": "Situation 6: 4 meters of fabric makes 5 shirts. How many meters for 30 shirts?",
+      "choices": [
+        "24 meters",
+        "24",
+        "20 meters",
+        "30 meters"
+      ],
+      "correct_answer": "24 meters",
+      "answer": "24 meters",
+      "explanation": "4/5 x 30 = 24 meters",
+      "explanation_th": "4/5 x 30 = 24 meters",
+      "difficulty": "medium",
+      "hint_th": "4 meters : 5 shirts = ? meters : 30 shirts | 4x30/5 = 24 meters"
+    },
+    {
+      "question_id": "rot_ep_q002_m04",
+      "question_text": "Situation 7: 5 oranges cost 35 baht. How much for 25 oranges?",
+      "question_text_th": "Situation 7: 5 oranges cost 35 baht. How much for 25 oranges?",
+      "choices": [
+        "175 baht",
+        "175",
+        "170 baht",
+        "180 baht"
+      ],
+      "correct_answer": "175 baht",
+      "answer": "175 baht",
+      "explanation": "35/5 x 25 = 7 x 25 = 175 baht",
+      "explanation_th": "35/5 x 25 = 7 x 25 = 175 baht",
+      "difficulty": "medium",
+      "hint_th": "Price per orange = 35/5 = 7 baht | 7x25 = 175"
+    },
+    {
+      "question_id": "rot_ep_q002_h01",
+      "question_text": "Situation 8: 8 workers build 12 houses in 20 days. 10 workers build 15 houses. How many days?",
+      "question_text_th": "Situation 8: 8 workers build 12 houses in 20 days. 10 workers build 15 houses. How many days?",
+      "choices": [
+        "20 days",
+        "20",
+        "18 days",
+        "22 days"
+      ],
+      "correct_answer": "20 days",
+      "answer": "20 days",
+      "explanation": "8x20=160 worker-days | 160/12=13.33 per house | 15x13.33=200 | 200/10=20 days",
+      "explanation_th": "8x20=160 worker-days | 160/12=13.33 per house | 15x13.33=200 | 200/10=20 days",
+      "difficulty": "hard",
+      "hint_th": "8x20=160 worker-days | 160/12=13.33 | 15x13.33=200 | 200/10=20 days"
+    },
+    {
+      "question_id": "rot_ep_q002_h02",
+      "question_text": "Situation 9: 3 trucks transport 90 tons in 6 days. 5 trucks transport 150 tons. Days?",
+      "question_text_th": "Situation 9: 3 trucks transport 90 tons in 6 days. 5 trucks transport 150 tons. Days?",
+      "choices": [
+        "6 days",
+        "6",
+        "5 days",
+        "7 days"
+      ],
+      "correct_answer": "6 days",
+      "answer": "6 days",
+      "explanation": "3x6=18 truck-days | 18/90=0.2 truck-days/ton | 150x0.2=30 | 30/5=6 days",
+      "explanation_th": "3x6=18 truck-days | 18/90=0.2 truck-days/ton | 150x0.2=30 | 30/5=6 days",
+      "difficulty": "hard",
+      "hint_th": "3x6=18 truck-days | 18/90=0.2 | 150x0.2=30 | 30/5=6 days"
+    },
+    {
+      "question_id": "rot_ep_q002_h03",
+      "question_text": "Situation 10: Factory with 4 machines produces 800 bottles in 3 hours. 6 machines produce 1,200 bottles. Hours?",
+      "question_text_th": "Situation 10: Factory with 4 machines produces 800 bottles in 3 hours. 6 machines produce 1,200 bottles. Hours?",
+      "choices": [
+        "3 hours",
+        "3",
+        "4 hours",
+        "2.5 hours"
+      ],
+      "correct_answer": "3 hours",
+      "answer": "3 hours",
+      "explanation": "4 machines -> 800/3=266.67 bottles/hour | 6 machines -> 400 bottles/hour | 1200/400=3 hours",
+      "explanation_th": "4 machines -> 800/3=266.67 bottles/hour | 6 machines -> 400 bottles/hour | 1200/400=3 hours",
+      "difficulty": "hard",
+      "hint_th": "800/3=266.67 per hour (4 machines) | 6 machines=400/hour | 1200/400=3 hours"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

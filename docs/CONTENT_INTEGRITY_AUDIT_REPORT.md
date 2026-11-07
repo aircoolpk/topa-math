@@ -7,11 +7,11 @@
 - Status metadata: apps/api/app/content/math/_content_status/lessons.json and tests.json
 
 ## Summary
-- Total lessons: 101
-- Complete lessons: 101
+- Total lessons: 0
+- Complete lessons: 0
 - Broken lessons: 0
 - Total test files: 98
-- Matched test files: 87
+- Matched test files: 0
 - Missing test files: 0
 - Broken test files: 0
 - EP missing base lessons: 0

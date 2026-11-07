@@ -4,6 +4,7 @@ import random
 import uuid
 from datetime import UTC, date, datetime, time, timedelta
 from pathlib import Path
+from time import perf_counter
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -48,6 +49,7 @@ from app.schemas.api import (
     TestSubmitIn,
 )
 from app.services.answers import answer_match_details, is_answer_correct
+from app.services.affiliates import affiliate_summary
 from app.services.content_quality import lesson_program_type, validate_lesson_payload
 from app.services.content_status import get_test_status, is_lesson_approved, is_test_approved, load_tests_status
 from app.services.foundation import can_access_program, is_ep_plus, is_paid, recommended_foundation_grade, remaining_free_tests
@@ -56,12 +58,19 @@ from app.services.lesson_content import (
     find_lesson_file,
     get_canonical_lesson,
     get_canonical_test_bank,
+    grade3_variant_source_hash,
+    grade_from_lesson_group,
     has_approved_test as canonical_has_approved_test,
     lesson_program_alias,
+    list_topic_lesson_variants,
+    list_topic_quiz_variants,
     list_canonical_lessons,
     list_questions as list_content_questions,
     normalize_lesson_visual_blocks,
     program_alias,
+    topic_folder_diagnostics,
+    topic_from_lesson_group,
+    topic_quiz_questions_from_variant,
 )
 from app.services.mastery import AnswerResult, calculate_mastery_score, infer_mistake_type, mastery_level
 from app.services.rank_titles import rank_title_for_score
@@ -82,6 +91,34 @@ THAILAND_TZ = ZoneInfo("Asia/Bangkok")
 RATIO_POLICY = "80_core_20_challenge"
 logger = logging.getLogger(__name__)
 BETA_READY_GRADES = {1, 2, 3, 4, 5, 6}
+
+
+def _empty_affiliate_summary() -> dict:
+    return {
+        "referral_token": "",
+        "referral_url": "",
+        "registered_count": 0,
+        "paid_member_count": 0,
+        "total_referred_paid_minor": 0,
+        "total_commission_minor": 0,
+        "pending_balance_minor": 0,
+        "available_balance_minor": 0,
+        "withdrawn_balance_minor": 0,
+        "min_withdrawal_minor": 0,
+        "payout_account": None,
+        "registrations": [],
+        "commissions": [],
+        "withdrawals": [],
+    }
+
+
+def _dashboard_section(db: Session, user: User, name: str, default: Any, loader: Any) -> Any:
+    try:
+        return loader()
+    except Exception:
+        db.rollback()
+        logger.exception("dashboard_section_failed user_id=%s section=%s", user.id, name)
+        return default
 
 
 def _profile(db: Session, user: User) -> ChildProfile:
@@ -388,7 +425,7 @@ def _json_lesson_filter_reason(payload: dict, child: ChildProfile, expected_prog
         return "incomplete_visual_blocks"
     if payload_status not in {"approved", "published"}:
         return f"payload_status={payload_status}"
-    if not payload.get("is_grade3_topic_folder_group") and not is_lesson_approved(lesson_id):
+    if not payload.get("is_topic_folder_group") and not is_lesson_approved(lesson_id):
         return "sidecar_not_approved_or_missing"
     return None
 
@@ -557,7 +594,7 @@ def _select_lesson_variant(db: Session, child: ChildProfile, lesson_id: str, pay
     candidates = [variant_id for variant_id in variant_ids if variant_id not in current_seen]
     if len(candidates) > 1 and last_variant_id in candidates:
         candidates = [variant_id for variant_id in candidates if variant_id != last_variant_id]
-    selected_id = candidates[0] if candidates else variant_ids[0]
+    selected_id = random.choice(candidates) if candidates else variant_ids[0]
     if selected_id == last_variant_id and len(variant_ids) > 1:
         selected_id = next((variant_id for variant_id in variant_ids if variant_id != last_variant_id), selected_id)
     variant = dict(variant_by_id[selected_id])
@@ -574,6 +611,117 @@ def _select_lesson_variant(db: Session, child: ChildProfile, lesson_id: str, pay
             )
         )
     return variant
+
+
+def _select_grade3_lesson_file_variant(db: Session, child: ChildProfile, lesson_group_id: str, program_type: str, *, record_view: bool = True) -> dict | None:
+    grade_level = grade_from_lesson_group(lesson_group_id)
+    topic_folder = topic_from_lesson_group(lesson_group_id)
+    if not grade_level or not topic_folder:
+        return None
+    variants = list_topic_lesson_variants(grade_level, topic_folder, program_type, approved_only=True)
+    if not variants:
+        return None
+    scoped_lesson_id = f"{program_alias(program_type)}:{lesson_group_id}"
+    variant_ids = [str(payload.get("selected_variant_id") or payload.get("variant_id") or path.stem) for path, payload in variants]
+    views = db.scalars(
+        select(LessonVariantView)
+        .where(LessonVariantView.child_id == child.id, LessonVariantView.lesson_id == scoped_lesson_id)
+        .order_by(LessonVariantView.viewed_at, LessonVariantView.id)
+    ).all()
+    current_cycle = max((view.cycle_number or 1 for view in views), default=1)
+    current_seen = {view.variant_id for view in views if (view.cycle_number or 1) == current_cycle}
+    last_variant_id = views[-1].variant_id if views else None
+    if current_seen >= set(variant_ids):
+        current_cycle += 1
+        current_seen = set()
+    candidates = [variant_id for variant_id in variant_ids if variant_id not in current_seen]
+    if len(candidates) > 1 and last_variant_id in candidates:
+        candidates = [variant_id for variant_id in candidates if variant_id != last_variant_id]
+    selected_id = random.choice(candidates) if candidates else variant_ids[0]
+    selected = next(((path, payload) for path, payload in variants if str(payload.get("selected_variant_id") or payload.get("variant_id") or path.stem) == selected_id), variants[0])
+    path, payload = selected
+    selected_payload = dict(payload)
+    selected_payload["selected_variant_id"] = selected_id
+    selected_payload["variant_cycle_number"] = current_cycle
+    selected_payload["source_path_hash"] = selected_payload.get("source_path_hash") or grade3_variant_source_hash(path)
+    if record_view:
+        db.add(
+            LessonVariantView(
+                child_id=child.id,
+                lesson_id=scoped_lesson_id,
+                variant_id=selected_id,
+                cycle_number=current_cycle,
+                viewed_at=datetime.now(UTC),
+            )
+        )
+    logger.warning(
+        "topic_lesson_variant_selected child_id=%s grade=%s lesson_group_id=%s program_type=%s topic_folder=%s selected_variant_id=%s source_hash=%s",
+        child.id,
+        grade_level,
+        lesson_group_id,
+        program_alias(program_type),
+        topic_folder,
+        selected_id,
+        selected_payload.get("source_path_hash"),
+    )
+    return selected_payload
+
+
+def _select_grade3_quiz_file_variant(db: Session, child: ChildProfile, lesson_group_id: str, program_type: str) -> dict | None:
+    grade_level = grade_from_lesson_group(lesson_group_id)
+    topic_folder = topic_from_lesson_group(lesson_group_id)
+    if not grade_level or not topic_folder:
+        return None
+    variants = list_topic_quiz_variants(grade_level, topic_folder, program_type, approved_only=True)
+    if not variants:
+        return None
+    variant_ids = [str(payload.get("quiz_variant_id") or payload.get("variant_id") or path.stem) for path, payload in variants]
+    sessions = db.scalars(
+        select(TestSession)
+        .where(TestSession.child_profile_id == child.id, TestSession.quiz_id == lesson_group_id)
+        .order_by(TestSession.started_at, TestSession.id)
+    ).all()
+    matching = []
+    for session in sessions:
+        metadata = session.metadata_json or {}
+        if (
+            int(metadata.get("grade_level") or 0) == grade_level
+            and metadata.get("lesson_group_id") == lesson_group_id
+            and metadata.get("topic_folder") == topic_folder
+            and program_alias(metadata.get("program_type")) == program_alias(program_type)
+            and metadata.get("quiz_variant_id") in variant_ids
+        ):
+            matching.append(session)
+    current_cycle = max((int((session.metadata_json or {}).get("quiz_variant_cycle") or 1) for session in matching), default=1)
+    current_seen = {
+        str((session.metadata_json or {}).get("quiz_variant_id"))
+        for session in matching
+        if int((session.metadata_json or {}).get("quiz_variant_cycle") or 1) == current_cycle
+    }
+    last_variant_id = str((matching[-1].metadata_json or {}).get("quiz_variant_id")) if matching else None
+    if current_seen >= set(variant_ids):
+        current_cycle += 1
+        current_seen = set()
+    candidates = [variant_id for variant_id in variant_ids if variant_id not in current_seen]
+    if len(candidates) > 1 and last_variant_id in candidates:
+        candidates = [variant_id for variant_id in candidates if variant_id != last_variant_id]
+    selected_id = candidates[0] if candidates else variant_ids[0]
+    path, payload = next(((path, payload) for path, payload in variants if str(payload.get("quiz_variant_id") or payload.get("variant_id") or path.stem) == selected_id), variants[0])
+    selected_payload = dict(payload)
+    selected_payload["quiz_variant_id"] = selected_id
+    selected_payload["quiz_variant_cycle"] = current_cycle
+    selected_payload["source_path_hash"] = selected_payload.get("source_path_hash") or grade3_variant_source_hash(path)
+    logger.warning(
+        "topic_quiz_variant_selected child_id=%s grade=%s lesson_group_id=%s program_type=%s topic_folder=%s quiz_variant_id=%s source_hash=%s",
+        child.id,
+        grade_level,
+        lesson_group_id,
+        program_alias(program_type),
+        topic_folder,
+        selected_id,
+        selected_payload.get("source_path_hash"),
+    )
+    return selected_payload
 
 
 def _all_json_lessons() -> list[dict]:
@@ -609,15 +757,19 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
     return {
         "lesson_id": lesson_id,
         "id": lesson_id,
+        "lesson_group_id": payload.get("lesson_group_id") or lesson_id,
+        "topic_folder": payload.get("topic_folder"),
         "title_th": payload.get("title_th") or lesson_id,
         "title_en": payload.get("title_en"),
         "program_type": lesson_program_alias(payload),
         "description_th": description,
+        "description": description,
         "title": payload.get("title_th") or lesson_id,
         "grade_level": grade_level,
         "topic_code": payload.get("topic_code") or lesson_id,
         "skill_code": payload.get("skill_code") or payload.get("topic_code") or lesson_id,
         "estimated_minutes": int(payload.get("estimated_minutes") or 5),
+        "duration": int(payload.get("estimated_minutes") or 5),
         "is_free": is_free,
         "is_locked": is_locked,
         "lock_reason": "สมาชิกฟรีเรียนได้เฉพาะบทเรียนแรก" if is_locked else None,
@@ -625,6 +777,7 @@ def _json_lesson_item(payload: dict, child: ChildProfile, current_index: int | N
         "has_approved_test": has_approved_test,
         "test_available": has_test and has_approved_test,
         "test_unavailable_reason": None if has_test and has_approved_test else (payload.get("test_unavailable_reason") or "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้"),
+        "test_disabled_reason": None if has_test and has_approved_test else (payload.get("test_unavailable_reason") or "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้"),
         "language_available": lesson_program_alias(payload),
         "ep_available": bool(payload.get("ep_available")) if "ep_available" in payload else bool(find_lesson_file(_base_lesson_id(lesson_id), "EP")),
         "is_review": is_review,
@@ -649,12 +802,33 @@ def _json_lesson_sections(
     section_grades = sorted(section_grades)
     payloads: list[dict] = []
     child_program = program_alias(program_type_override) if program_type_override else _child_lesson_track(child)
-    for item in list_canonical_lessons(child_program, include_admin_status=False):
+    canonical_items: list[dict] = []
+    for section_grade in section_grades:
+        canonical_items.extend(list_canonical_lessons(child_program, grade=section_grade, include_admin_status=False))
+    for item in canonical_items:
         if int(item.get("grade_level") or 0) not in section_grades:
             continue
-        if item.get("is_grade3_topic_folder_group"):
-            found = get_canonical_lesson(str(item.get("lesson_id")), child_program)
-            payload = dict(found[1]) if found else None
+        if item.get("is_topic_folder_group"):
+            lesson_id = str(item.get("lesson_group_id") or item.get("lesson_id") or item.get("id"))
+            payload = {
+                "_skip_visibility_filter": True,
+                "lesson_id": lesson_id,
+                "id": lesson_id,
+                "lesson_group_id": item.get("lesson_group_id") or lesson_id,
+                "topic_folder": item.get("topic_folder"),
+                "grade_level": item.get("grade_level"),
+                "topic_code": item.get("topic_code") or item.get("base_lesson_id") or lesson_id,
+                "skill_code": item.get("skill_code") or item.get("topic_code") or lesson_id,
+                "title_th": item.get("title_th") or item.get("title") or lesson_id,
+                "title_en": item.get("title_en"),
+                "program_type": child_program,
+                "estimated_minutes": item.get("estimated_minutes") or 8,
+                "has_approved_test": bool(item.get("has_approved_test")),
+                "test_available": bool(item.get("test_available") if "test_available" in item else item.get("has_approved_test")),
+                "test_unavailable_reason": item.get("test_unavailable_reason"),
+                "ep_available": child_program == "EP",
+                "is_topic_folder_group": True,
+            }
         else:
             source_path = item.get("source_path")
             try:
@@ -673,7 +847,7 @@ def _json_lesson_sections(
         payload["ep_available"] = child_program == "EP"
         payloads.append(payload)
     for payload in payloads:
-        reason = _json_lesson_filter_reason(payload, child, expected_program=child_program)
+        reason = None if payload.get("_skip_visibility_filter") else _json_lesson_filter_reason(payload, child, expected_program=child_program)
         if reason:
             filtered_counts[reason] = filtered_counts.get(reason, 0) + 1
             continue
@@ -717,16 +891,185 @@ def _with_variant_payload(base: dict, variant: dict | None) -> dict:
     variant = variant or {}
     base.update(
         {
-            "selected_variant_id": variant.get("selected_variant_id") or variant.get("variant_id"),
-            "variant_title_th": variant.get("variant_title_th") or "",
-            "story_theme_th": variant.get("story_theme_th") or "",
+            "selected_variant_id": variant.get("selected_variant_id") or variant.get("variant_id") or base.get("selected_variant_id"),
+            "variant_title_th": variant.get("variant_title_th") or base.get("variant_title_th") or "",
+            "story_theme_th": variant.get("story_theme_th") or base.get("story_theme_th") or "",
             "helper_tip": variant.get("helper_tip") or base.get("helper_tip") or "",
-            "visual_blocks": normalize_visual_blocks(variant.get("visual_blocks")),
+            "visual_blocks": normalize_visual_blocks(variant.get("visual_blocks") or base.get("visual_blocks")),
         }
     )
     if variant.get("variant_cycle_number") is not None:
         base["variant_cycle_number"] = variant["variant_cycle_number"]
     return base
+
+
+def _visual_block_type(block: Any) -> str:
+    if not isinstance(block, dict):
+        return ""
+    return str(block.get("block_type") or block.get("type") or "").strip()
+
+
+def _visual_block_data(block: dict) -> dict:
+    data = block.get("data")
+    return data if isinstance(data, dict) else {}
+
+
+def _visual_block_text(block: dict, *keys: str) -> str:
+    data = _visual_block_data(block)
+    for key in keys:
+        value = block.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+        nested = data.get(key)
+        if isinstance(nested, str) and nested.strip():
+            return nested.strip()
+    content = data.get("content")
+    if isinstance(content, dict):
+        for key in keys:
+            value = content.get(key)
+            if isinstance(value, str) and value.strip():
+                return value.strip()
+    return ""
+
+
+def _localized_visual_block_text(block: dict, program_type: str, base_name: str, *fallback_keys: str) -> str:
+    data = _visual_block_data(block)
+    suffix = "en" if program_type == "EP" else "th"
+    localized_keys = [f"content_{suffix}", f"{base_name}_{suffix}", f"text_{suffix}", "content", base_name]
+    for key in [*localized_keys, *fallback_keys]:
+        nested = data.get(key)
+        if isinstance(nested, str) and nested.strip():
+            return nested.strip()
+        value = block.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    content = data.get("content")
+    if isinstance(content, dict):
+        for key in [*localized_keys, *fallback_keys]:
+            value = content.get(key)
+            if isinstance(value, str) and value.strip():
+                return value.strip()
+    return ""
+
+
+def _extract_lesson_sections(payload: dict, blocks: list[dict]) -> dict:
+    # Grade 3 pilot maps canonical visual_blocks into explicit student page sections.
+    program_type = lesson_program_alias(payload)
+    by_type: dict[str, dict] = {}
+    for block in blocks:
+        if isinstance(block, dict):
+            by_type.setdefault(_visual_block_type(block), block)
+
+    story_block = by_type.get("story_intro") or {}
+    think_block = by_type.get("think_story") or {}
+    model_block = by_type.get("model_diagram") or {}
+    sentence_block = by_type.get("number_sentence") or {}
+    practice_block = by_type.get("mini_quiz") or {}
+
+    return {
+        "lesson_group_id": payload.get("lesson_group_id") or payload.get("lesson_id") or payload.get("id"),
+        "topic_folder": payload.get("topic_folder"),
+        "selected_variant_id": payload.get("selected_variant_id") or payload.get("variant_id"),
+        "title": (payload.get("title_en") if program_type == "EP" else payload.get("title_th")) or payload.get("title") or "",
+        "subtitle": (payload.get("variant_title_en") if program_type == "EP" else payload.get("variant_title_th")) or payload.get("title_en") or "",
+        "icon": payload.get("icon") or "+-",
+        "helper_tip": (payload.get("helper_tip_en") if program_type == "EP" else payload.get("helper_tip")) or "",
+        "story": _localized_visual_block_text(story_block, program_type, "story")
+        or (payload.get("story_theme_en") if program_type == "EP" else payload.get("story_theme_th"))
+        or "",
+        "think_story": _localized_visual_block_text(think_block, program_type, "think_story")
+        or (payload.get("think_story_en") if program_type == "EP" else payload.get("think_story_th"))
+        or "",
+        "model_diagram": model_block or None,
+        "number_sentence": sentence_block or None,
+        "practice": practice_block or None,
+    }
+
+
+def _normalized_number_sentence(block: dict | None, program_type: str) -> dict:
+    data = _visual_block_data(block or {})
+    data.setdefault("unit", "baht" if program_type == "EP" else "บาท")
+    operations = data.get("operations")
+    steps = []
+    if isinstance(operations, list):
+        for index, operation in enumerate(operations, start=1):
+            if not isinstance(operation, dict):
+                continue
+            steps.append(
+                {
+                    "step": index,
+                    "operation": operation.get("op"),
+                    "a": operation.get("a"),
+                    "b": operation.get("b"),
+                    "result": operation.get("result"),
+                    "expression": f"{operation.get('a'):,} {operation.get('op')} {operation.get('b'):,} = {operation.get('result'):,}"
+                    if all(isinstance(operation.get(key), int | float) for key in ("a", "b", "result"))
+                    else "",
+                }
+            )
+    final_answer = steps[-1]["result"] if steps else None
+    return {
+        "steps": steps,
+        "final_answer": final_answer,
+        "unit": data.get("unit") or "บาท",
+        "expression": data.get("content_en" if program_type == "EP" else "content_th")
+        or data.get("expression")
+        or _visual_block_text(block or {}, "content", "expression"),
+    }
+
+
+def _localized_value(block: dict, data: dict, program_type: str, base_name: str) -> Any:
+    suffix = "en" if program_type == "EP" else "th"
+    for key in (f"{base_name}_{suffix}", base_name):
+        value = data.get(key)
+        if value not in (None, ""):
+            return value
+        value = block.get(key)
+        if value not in (None, ""):
+            return value
+    return ""
+
+
+def _normalized_practice(block: dict | None, program_type: str) -> dict:
+    block = block or {}
+    data = _visual_block_data(block)
+    return {
+        "question": _localized_value(block, data, program_type, "question"),
+        "choices": _localized_value(block, data, program_type, "choices") or [],
+        "correct_answer": _localized_value(block, data, program_type, "correct_answer"),
+        "explanation": _localized_value(block, data, program_type, "explanation"),
+    }
+
+
+def _build_lesson_view_model(payload: dict, sections: dict, *, has_approved_test: bool) -> dict:
+    """Stable Grade 3 pilot view-model; old fields stay for dashboard/test compatibility."""
+    lesson_group_id = sections.get("lesson_group_id")
+    program_type = lesson_program_alias(payload)
+    return {
+        "lesson_group_id": lesson_group_id,
+        "selected_variant_id": sections.get("selected_variant_id"),
+        "grade_level": int(payload.get("grade_level") or 0),
+        "program_type": program_type,
+        "topic_folder": sections.get("topic_folder"),
+        "title": sections.get("title"),
+        "subtitle": sections.get("subtitle"),
+        "icon": sections.get("icon"),
+        "mascot_helper": {
+            "mascot_id": None,
+            "mascot_name": None,
+            "image_src": None,
+            "title": None,
+            "tip": sections.get("helper_tip") or "",
+        },
+        "story_label": sections.get("subtitle") or sections.get("title") or lesson_group_id,
+        "story": sections.get("story") or "",
+        "think_story": sections.get("think_story") or "",
+        "model_diagram": sections.get("model_diagram"),
+        "number_sentence": _normalized_number_sentence(sections.get("number_sentence"), program_type),
+        "practice": _normalized_practice(sections.get("practice"), program_type),
+        "test_available": has_approved_test,
+        "test_unavailable_reason": None if has_approved_test else payload.get("test_unavailable_reason"),
+    }
 
 
 def _json_lesson_content_payload(payload: dict, item: dict, variant: dict | None = None) -> dict:
@@ -735,7 +1078,8 @@ def _json_lesson_content_payload(payload: dict, item: dict, variant: dict | None
     has_approved_test = bool(payload.get("has_approved_test"))
     if "has_approved_test" not in payload:
         has_approved_test = canonical_has_approved_test(lesson_id, lesson_program_alias(payload))
-    return _with_variant_payload({
+    normalized_blocks = normalize_visual_blocks((variant or {}).get("visual_blocks") or payload.get("visual_blocks"))
+    base = {
         "lesson_id": lesson_id,
         "id": lesson_id,
         "grade_level": int(payload.get("grade_level") or item["grade_level"]),
@@ -764,7 +1108,14 @@ def _json_lesson_content_payload(payload: dict, item: dict, variant: dict | None
         "skill_code": payload.get("skill_code") or item["skill_code"],
         "is_locked": item["is_locked"],
         "lock_reason": item["lock_reason"],
-    }, variant)
+    }
+    sections = _extract_lesson_sections(payload, normalized_blocks)
+    base.update(sections)
+    # The pilot renderer reads legacy fields today; this view model documents the cleaner target contract.
+    base["lesson_view_model"] = _build_lesson_view_model(payload, sections, has_approved_test=has_approved_test)
+    response = _with_variant_payload(base, variant)
+    response["visual_blocks"] = normalized_blocks
+    return response
 
 
 def _json_lesson_detail_item(payload: dict, child: ChildProfile) -> dict:
@@ -1518,13 +1869,13 @@ def _choices_list(value: Any) -> list[str]:
     return []
 
 
-def _ensure_lesson_content_questions(db: Session, lesson: Lesson, skill: Skill, lesson_id: str) -> list[Question]:
+def _ensure_lesson_content_questions(db: Session, lesson: Lesson, skill: Skill, lesson_id: str, rows_override: list[dict] | None = None) -> list[Question]:
     content = lesson.content or {}
     topic_code = str(content.get("topic_code") or lesson_id)
     skill_code = str(content.get("skill_code") or skill.code)
     content_program = lesson_program_alias(content)
-    rows = get_canonical_test_bank(lesson_id, content_program)
-    if not rows:
+    rows = rows_override if rows_override is not None else get_canonical_test_bank(lesson_id, content_program)
+    if not rows and rows_override is None:
         rows = _content_question_rows_for_lesson({"lesson_id": lesson_id, "grade_level": skill.grade_level}, approved_only=True)
     materialized: list[Question] = []
     seen_question_ids: set[str] = set()
@@ -1534,7 +1885,7 @@ def _ensure_lesson_content_questions(db: Session, lesson: Lesson, skill: Skill, 
             continue
         seen_question_ids.add(question_id)
         status = get_test_status(question_id)
-        if str(status.get("status") or "").lower() != "approved":
+        if not row.get("quiz_variant_id") and str(status.get("status") or "").lower() != "approved":
             continue
         choices = _choices_list(row.get("choices"))
         question_text = str(
@@ -1553,6 +1904,9 @@ def _ensure_lesson_content_questions(db: Session, lesson: Lesson, skill: Skill, 
             "lesson_public_id": lesson_id,
             "topic_code": topic_code,
             "skill_code": skill_code,
+            "quiz_variant_id": row.get("quiz_variant_id"),
+            "source_path_hash": row.get("source_path_hash"),
+            "source_filename": row.get("source_filename"),
             "source_lesson_id": lesson_id,
             "question_type": row.get("question_type") or "core",
             "routine_level": row.get("routine_level") or "routine",
@@ -2405,6 +2759,7 @@ def lessons(
     db: Session = Depends(get_db),
     user: User = Depends(current_user),
 ) -> dict:
+    started = perf_counter()
     child = _profile(db, user)
     requested_grade = grade_level or grade or level or class_level
     requested_program = _normalize_requested_program(program_type)
@@ -2426,6 +2781,7 @@ def lessons(
     ] if requested_grade is None else sections["review_lessons"]
     primary_rows = sections["current_grade_lessons"]
     remaining = remaining_free_tests(child) if not is_paid(child) else 999999
+    diagnostics = topic_folder_diagnostics(requested_grade, requested_program) if requested_grade is not None else None
     return {
         **_program_payload(user, child, requested_program),
         "current_grade": child.grade_level,
@@ -2438,6 +2794,7 @@ def lessons(
         "locked_lessons": sections["locked_lessons"],
         "future_lessons": sections.get("future_lessons", []),
         "lessons": sections.get("all_lessons") or review_rows + primary_rows,
+        "content_diagnostics": diagnostics,
     }
 
 
@@ -2454,13 +2811,23 @@ def lesson_detail(
 
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     if json_payload:
+        if json_payload.get("is_topic_folder_group"):
+            selected_payload = _select_grade3_lesson_file_variant(
+                db,
+                child,
+                str(json_payload.get("lesson_group_id") or json_payload.get("lesson_id") or lesson_id),
+                requested_program,
+            )
+            if not selected_payload:
+                raise HTTPException(status_code=404, detail="Lesson variant not available")
+            json_payload = selected_payload
         program_matches_request = lesson_program_alias(json_payload) == requested_program
         lesson_public_id = str(json_payload.get("lesson_id") or json_payload.get("id") or lesson_id)
-        if not program_matches_request or (not json_payload.get("is_grade3_topic_folder_group") and not is_lesson_approved(lesson_public_id)):
+        if not program_matches_request or (not json_payload.get("is_topic_folder_group") and not is_lesson_approved(lesson_public_id)):
             raise HTTPException(status_code=404, detail="Lesson not found")
         item = _json_lesson_detail_item(json_payload, child)
         public_id = lesson_public_id
-        variant = _select_lesson_variant(db, child, f"{requested_program}:{public_id}", json_payload, record_view=True)
+        variant = None if json_payload.get("is_topic_folder_group") else _select_lesson_variant(db, child, f"{requested_program}:{public_id}", json_payload, record_view=True)
         db.commit()
         response = _json_lesson_content_payload(json_payload, item, variant)
         response["program_type"] = requested_program
@@ -2480,6 +2847,8 @@ def lesson_detail(
     requested_program = _normalize_requested_program(program_type)
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
+    selected_grade3_quiz: dict | None = None
+    selected_grade3_quiz_rows: list[dict] | None = None
     if json_payload:
         if not _json_lesson_visible_for_child(json_payload, child):
             raise HTTPException(status_code=404, detail="Lesson not found")
@@ -2608,10 +2977,32 @@ def start_lesson(
     requested_program = _normalize_requested_program(program_type)
     _require_program_access(user, child, requested_program)
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
+    if json_payload and json_payload.get("is_topic_folder_group"):
+        selected_payload = _select_grade3_lesson_file_variant(
+            db,
+            child,
+            str(json_payload.get("lesson_group_id") or json_payload.get("lesson_id") or lesson_id),
+            requested_program,
+        )
+        if not selected_payload:
+            raise HTTPException(status_code=404, detail="Lesson variant not available")
+        json_payload = selected_payload
     canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
-    if json_payload and (lesson_program_alias(json_payload) != requested_program or (not json_payload.get("is_grade3_topic_folder_group") and not is_lesson_approved(canonical_lesson_id))):
+    if json_payload and (lesson_program_alias(json_payload) != requested_program or (not json_payload.get("is_topic_folder_group") and not is_lesson_approved(canonical_lesson_id))):
         logger.warning("lesson_start_hidden lesson_id=%s canonical_lesson_id=%s requested_program=%s child_program=%s", lesson_id, canonical_lesson_id, requested_program, child.program_type)
         raise HTTPException(status_code=404, detail="Lesson not found")
+    if False and json_payload and json_payload.get("is_topic_folder_group"):
+        selected_grade3_quiz = _select_grade3_quiz_file_variant(db, child, canonical_lesson_id, requested_program)
+        if not selected_grade3_quiz:
+            raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้", "lesson_id": lesson_id})
+        selected_grade3_quiz_rows = topic_quiz_questions_from_variant(
+            int(selected_grade3_quiz.get("grade_level") or grade_from_lesson_group(canonical_lesson_id) or 0),
+            str(selected_grade3_quiz.get("topic_folder")),
+            requested_program,
+            str(selected_grade3_quiz.get("quiz_variant_id")),
+        )
+        if len(selected_grade3_quiz_rows) < 5:
+            raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "Approved quiz variant has too few questions", "lesson_id": canonical_lesson_id})
     lesson = _ensure_json_lesson_in_db(db, json_payload) if json_payload else _lesson_by_public_id(db, canonical_lesson_id)
     if not lesson:
         raise HTTPException(status_code=404, detail="Lesson not found")
@@ -2653,7 +3044,7 @@ def start_lesson(
             )
         )
     apply_quest_progress(db, child, "lesson_start")
-    variant = _select_lesson_variant(db, child, activity_lesson_id, lesson.content or json_payload or {}, record_view=True)
+    variant = None if json_payload and json_payload.get("is_topic_folder_group") else _select_lesson_variant(db, child, activity_lesson_id, lesson.content or json_payload or {}, record_view=True)
     db.commit()
     return {"lesson": item, "content": _with_variant_payload(dict(lesson.content or {}), variant)}
 
@@ -2677,9 +3068,11 @@ def start_lesson_test(
         raise HTTPException(status_code=403, detail="ใช้สิทธิ์เทสฟรีครบแล้ว กรุณาอัปเกรดเพื่อทำเทสเพิ่มเติม")
     json_payload = _load_canonical_json_lesson(lesson_id, requested_program)
     canonical_lesson_id = str((json_payload or {}).get("lesson_id") or (json_payload or {}).get("id") or lesson_id)
-    if json_payload and (lesson_program_alias(json_payload) != requested_program or (not json_payload.get("is_grade3_topic_folder_group") and not is_lesson_approved(canonical_lesson_id))):
+    if json_payload and (lesson_program_alias(json_payload) != requested_program or (not json_payload.get("is_topic_folder_group") and not is_lesson_approved(canonical_lesson_id))):
         logger.warning("lesson_test_start_hidden lesson_id=%s canonical_lesson_id=%s requested_program=%s child_program=%s", lesson_id, canonical_lesson_id, requested_program, child.program_type)
         raise HTTPException(status_code=404, detail={"code": "INVALID_LESSON_ID", "message": "Lesson not found", "lesson_id": lesson_id})
+    selected_grade3_quiz: dict | None = None
+    selected_grade3_quiz_rows: list[dict] | None = None
     if json_payload and not canonical_has_approved_test(canonical_lesson_id, requested_program):
         logger.warning("lesson_test_start_no_canonical_bank lesson_id=%s canonical_lesson_id=%s program=%s", lesson_id, canonical_lesson_id, requested_program)
         raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "ยังไม่มีแบบทดสอบสำหรับบทเรียนนี้", "lesson_id": lesson_id})
@@ -2692,6 +3085,18 @@ def start_lesson_test(
     if not canonical_has_approved_test(canonical_lesson_id, requested_program):
         logger.warning("lesson_test_start_unapproved_bank lesson_id=%s quiz_id=%s program=%s", canonical_lesson_id, quiz_id, requested_program)
         raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "ยังไม่มีแบบทดสอบสำหรับบทเรียนนี้", "lesson_id": lesson_id})
+    if json_payload and json_payload.get("is_topic_folder_group"):
+        selected_grade3_quiz = _select_grade3_quiz_file_variant(db, child, canonical_lesson_id, requested_program)
+        if not selected_grade3_quiz:
+            raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้", "lesson_id": lesson_id})
+        selected_grade3_quiz_rows = topic_quiz_questions_from_variant(
+            int(selected_grade3_quiz.get("grade_level") or grade_from_lesson_group(canonical_lesson_id) or 0),
+            str(selected_grade3_quiz.get("topic_folder")),
+            requested_program,
+            str(selected_grade3_quiz.get("quiz_variant_id")),
+        )
+        if len(selected_grade3_quiz_rows) < 5:
+            raise HTTPException(status_code=404, detail={"code": "NO_QUESTIONS_FOR_LESSON", "message": "Approved quiz variant has too few questions", "lesson_id": canonical_lesson_id})
     try:
         item = _lesson_access_item(db, child, canonical_lesson_id)
     except HTTPException:
@@ -2703,7 +3108,7 @@ def start_lesson_test(
     skill = db.get(Skill, lesson.skill_id)
     grade_level = skill.grade_level if skill else child.grade_level
     if skill:
-        direct_questions = _ensure_lesson_content_questions(db, lesson, skill, canonical_lesson_id)
+        direct_questions = _ensure_lesson_content_questions(db, lesson, skill, canonical_lesson_id, rows_override=selected_grade3_quiz_rows)
         if len(direct_questions) >= 5:
             questions, rotation_metadata = _select_rotating_ratio_questions(
                 db,
@@ -2743,10 +3148,24 @@ def start_lesson_test(
         "program_type": requested_program,
         "lesson_public_id": canonical_lesson_id,
     }
+    if selected_grade3_quiz:
+        rotation_metadata.update(
+            {
+                "grade_level": 3,
+                "lesson_group_id": canonical_lesson_id,
+                "topic_folder": selected_grade3_quiz.get("topic_folder"),
+                "quiz_variant_id": selected_grade3_quiz.get("quiz_variant_id"),
+                "quiz_variant_cycle": selected_grade3_quiz.get("quiz_variant_cycle"),
+                "source_path_hash": selected_grade3_quiz.get("source_path_hash"),
+                "source_filename": selected_grade3_quiz.get("source_filename"),
+                "backup_loaded": False,
+                "legacy_loaded": False,
+            }
+        )
     session = TestSession(
         child_profile_id=child.id,
         lesson_id=lesson.id,
-        quiz_id=(lesson.content or {}).get("quiz_id") or lesson.id,
+        quiz_id=canonical_lesson_id if selected_grade3_quiz else ((lesson.content or {}).get("quiz_id") or lesson.id),
         question_ids=[question.id for question in questions],
         timer_seconds=900,
         metadata_json=rotation_metadata,
@@ -3060,27 +3479,106 @@ def dashboard(
     db: Session = Depends(get_db),
     user: User = Depends(current_user),
 ) -> dict:
-    child = _profile(db, user)
+    started = perf_counter()
     requested_program = _normalize_requested_program(program_type)
+    affiliate = _dashboard_section(db, user, "affiliate_summary", _empty_affiliate_summary(), lambda: affiliate_summary(db, user))
+    child = db.scalar(select(ChildProfile).where(ChildProfile.parent_user_id == user.id))
+    if not child:
+        elapsed_ms = int((perf_counter() - started) * 1000)
+        logger.info(
+            "dashboard_response user_id=%s child_id=none program=%s elapsed_ms=%s setup_required=true",
+            user.id,
+            requested_program,
+            elapsed_ms,
+        )
+        return {
+            "active_program": requested_program,
+            "can_access_ep": False,
+            "available_programs": ["TH"],
+            "program_type": requested_program,
+            "child": None,
+            "grade_level": None,
+            "status": {
+                "level": 0,
+                "total_xp": 0,
+                "total_score": 0,
+                "coins": 0,
+                "days_active": 0,
+                "rank_title": "",
+                "test_attempts_used": 0,
+                "free_test_limit": 0,
+                "remaining_free_tests": 0,
+            },
+            "foundation_test": None,
+            "test_levels": [],
+            "available_test_levels": [],
+            "daily_quests": [],
+            "weekly_quests": [],
+            "monthly_quests": [],
+            "lessons": [],
+            "current_grade_lessons": [],
+            "review_lessons": [],
+            "recommended_skills": [],
+            "recommendations": [],
+            "weak_skills": [],
+            "lesson_sections": {
+                "free_lessons": [],
+                "locked_lessons": [],
+                "current_grade_lessons": [],
+                "review_lessons": [],
+                "future_lessons": [],
+                "all_lessons": [],
+            },
+            "content_diagnostics": None,
+            "quests": {"daily": [], "weekly": [], "monthly": []},
+            "profile": None,
+            "level": 0,
+            "days_active": 0,
+            "total_score": 0,
+            "rank_title": "",
+            "avatar": {"avatar_gender": None, "avatar_config": {}, "student_photo_url": None},
+            "rank_summary": {"total_score": 0, "rank_title": "", "grade_level": None},
+            "lesson_summary": {"available": 0, "locked": 0, "completed": 0},
+            "quest_summary": {"daily": 0, "weekly": 0, "monthly": 0, "completed": 0},
+            "affiliate_summary": affiliate,
+            "setup_required": True,
+        }
+
     _require_program_access(user, child, requested_program)
-    stats_row = get_or_create_stats(db, child)
-    refresh_rank(child)
-    daily = _fixed_quests(db, child, "daily")
-    weekly = _fixed_quests(db, child, "weekly")
-    monthly = _fixed_quests(db, child, "monthly")
-    lesson_sections = _dashboard_lessons(db, child, program_type_override=requested_program)
-    current_grade_lessons = lesson_sections["current_grade_lessons"]
-    previous_grade = max(1, int(child.grade_level or 1) - 1)
+    _dashboard_section(db, user, "rank", None, lambda: refresh_rank(child))
+    stats_row = _dashboard_section(db, user, "stats", None, lambda: get_or_create_stats(db, child))
+    daily = _dashboard_section(db, user, "daily_quests", [], lambda: _fixed_quests(db, child, "daily"))
+    weekly = _dashboard_section(db, user, "weekly_quests", [], lambda: _fixed_quests(db, child, "weekly"))
+    monthly = _dashboard_section(db, user, "monthly_quests", [], lambda: _fixed_quests(db, child, "monthly"))
+    empty_lesson_sections = {
+        "free_lessons": [],
+        "locked_lessons": [],
+        "current_grade_lessons": [],
+        "review_lessons": [],
+        "future_lessons": [],
+        "all_lessons": [],
+    }
+    has_grade = child.grade_level is not None
+    lesson_sections = _dashboard_section(
+        db,
+        user,
+        "lessons",
+        empty_lesson_sections,
+        lambda: _dashboard_lessons(db, child, program_type_override=requested_program),
+    ) if has_grade else empty_lesson_sections
+    current_grade_lessons = list(lesson_sections.get("current_grade_lessons") or [])
+    previous_grade = max(1, int(child.grade_level) - 1) if has_grade else None
     review_lessons = [
-        item for item in lesson_sections["review_lessons"]
-        if int(item.get("grade_level") or 0) == previous_grade
+        item for item in (lesson_sections.get("review_lessons") or [])
+        if previous_grade is not None and int(item.get("grade_level") or 0) == previous_grade
     ][:6]
     lesson_items = current_grade_lessons
     daily_payload = daily
     weekly_payload = weekly
     monthly_payload = monthly
-    test_levels = _test_level_items(child)
+    test_levels = _dashboard_section(db, user, "test_levels", [], lambda: _test_level_items(child)) if has_grade else []
     child_out = child_to_out(child).model_dump()
+    child_out["grade_level"] = child.grade_level
     child_summary = {
         "id": child.id,
         "first_name": child.first_name,
@@ -3099,35 +3597,86 @@ def dashboard(
         "student_photo_path": child.student_photo_path,
         "avatar_gender": child.avatar_gender,
         "avatar_config": child.avatar_config or {},
-        "total_xp": child.total_xp,
-        "current_level": child.current_level,
+        "total_xp": child.total_xp or 0,
+        "current_level": child.current_level or 0,
         "streak_count": child.streak_count or 0,
-        "total_score": child.total_score,
-        "days_active": child.days_active,
-        "rank_title": child.current_rank_title,
-        "coins": child.coins,
+        "total_score": child.total_score or 0,
+        "days_active": child.days_active or 0,
+        "rank_title": child.current_rank_title or "",
+        "coins": child.coins or 0,
         "membership": child.membership_status or "free",
         "free_test_attempts_remaining": remaining_free_tests(child) if not is_paid(child) else 999999,
         "free_test_attempts_limit": child.free_test_limit or 5,
     }
     remaining = remaining_free_tests(child) if not is_paid(child) else 999999
-    weak_skills = _dashboard_weak_skills(db, child, current_grade_lessons, review_lessons)
+    weak_skills = _dashboard_section(
+        db,
+        user,
+        "recommended_skills",
+        [],
+        lambda: _dashboard_weak_skills(db, child, current_grade_lessons, review_lessons),
+    ) if has_grade else []
+    recommendations = _dashboard_section(db, user, "recommendations", [], lambda: _recommendations(db, child)) if has_grade else []
     program_meta = _program_payload(user, child, requested_program)
+    diagnostics = _dashboard_section(
+        db,
+        user,
+        "content_diagnostics",
+        None,
+        lambda: topic_folder_diagnostics(int(child.grade_level), requested_program),
+    ) if has_grade else None
+    review_diagnostics = _dashboard_section(
+        db,
+        user,
+        "review_content_diagnostics",
+        None,
+        lambda: topic_folder_diagnostics(max(1, int(child.grade_level) - 1), requested_program),
+    ) if has_grade and int(child.grade_level) > 1 else None
+    logger.warning(
+        "dashboard_lesson_visibility child_id=%s child_grade=%s program=%s current_discovered=%s current_approved=%s review_discovered=%s review_approved=%s quiz_available=%s current_hidden_reason=%s review_hidden_reason=%s",
+        child.id,
+        child.grade_level,
+        requested_program,
+        int((diagnostics or {}).get("topic_folders_found") or 0),
+        int((diagnostics or {}).get("student_visible_count") or 0),
+        int((review_diagnostics or {}).get("topic_folders_found") or 0),
+        int((review_diagnostics or {}).get("student_visible_count") or 0),
+        sum(1 for item in current_grade_lessons + review_lessons if item.get("test_available") is True),
+        (diagnostics or {}).get("hidden_reason"),
+        (review_diagnostics or {}).get("hidden_reason"),
+    )
+    elapsed_ms = int((perf_counter() - started) * 1000)
+    log_method = logger.warning if elapsed_ms > 2000 else logger.info
+    log_method(
+        "dashboard_response user_id=%s child_id=%s program=%s elapsed_ms=%s lessons=%s current_lessons=%s review_lessons=%s daily=%s weekly=%s monthly=%s weak_skills=%s",
+        user.id,
+        child.id,
+        requested_program,
+        elapsed_ms,
+        len(lesson_items),
+        len(current_grade_lessons),
+        len(review_lessons),
+        len(daily_payload),
+        len(weekly_payload),
+        len(monthly_payload),
+        len(weak_skills),
+    )
     return {
         **program_meta,
         "child": child_summary,
+        "grade_level": child.grade_level,
         "status": {
-            "level": child.current_level,
-            "total_xp": child.total_xp,
-            "total_score": child.total_score,
-            "coins": child.coins,
-            "days_active": child.days_active,
-            "rank_title": child.current_rank_title,
+            "level": child.current_level or 0,
+            "total_xp": child.total_xp or 0,
+            "total_score": child.total_score or 0,
+            "coins": child.coins or 0,
+            "days_active": child.days_active or 0,
+            "rank_title": child.current_rank_title or "",
             "test_attempts_used": child.test_attempts_used or 0,
             "free_test_limit": child.free_test_limit or 5,
             "remaining_free_tests": remaining,
         },
-        "foundation_test": _foundation_test(child),
+        "foundation_test": _dashboard_section(db, user, "foundation_test", None, lambda: _foundation_test(child)) if has_grade else None,
         "test_levels": test_levels,
         "available_test_levels": test_levels,
         "daily_quests": daily_payload,
@@ -3137,18 +3686,21 @@ def dashboard(
         "current_grade_lessons": current_grade_lessons,
         "review_lessons": review_lessons,
         "lesson_sections": lesson_sections,
+        "content_diagnostics": diagnostics,
+        "review_content_diagnostics": review_diagnostics,
         "quests": {
             "daily": daily_payload,
             "weekly": weekly_payload,
             "monthly": monthly_payload,
         },
-        "recommendations": _recommendations(db, child),
+        "recommendations": recommendations,
+        "recommended_skills": weak_skills,
         "weak_skills": weak_skills,
         "profile": child_out,
-        "level": child.current_level,
-        "days_active": child.days_active,
-        "total_score": child.total_score,
-        "rank_title": child.current_rank_title,
+        "level": child.current_level or 0,
+        "days_active": child.days_active or 0,
+        "total_score": child.total_score or 0,
+        "rank_title": child.current_rank_title or "",
         "program_type": requested_program,
         "avatar": {
             "avatar_gender": child.avatar_gender,
@@ -3156,21 +3708,23 @@ def dashboard(
             "student_photo_url": child.student_photo_url,
         },
         "rank_summary": {
-            "total_score": child.total_score,
-            "rank_title": child.current_rank_title,
+            "total_score": child.total_score or 0,
+            "rank_title": child.current_rank_title or "",
             "grade_level": child.grade_level,
         },
         "lesson_summary": {
             "available": len([lesson for lesson in lesson_items if not lesson["is_locked"]]),
             "locked": len([lesson for lesson in lesson_items if lesson["is_locked"]]),
-            "completed": stats_row.lessons_completed,
+            "completed": stats_row.lessons_completed if stats_row else 0,
         },
         "quest_summary": {
             "daily": len(daily),
             "weekly": len(weekly),
             "monthly": len(monthly),
-            "completed": stats_row.quests_completed,
+            "completed": stats_row.quests_completed if stats_row else 0,
         },
+        "affiliate_summary": affiliate,
+        "setup_required": child.grade_level is None,
     }
 
 

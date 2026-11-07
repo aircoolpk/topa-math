@@ -1,0 +1,217 @@
+{
+  "variant_id": "length_measurement_th_002",
+  "variant_title_th": "การวัดความยาว",
+  "variant_title_en": "Length Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดความยาว",
+  "title_en": "Length Measurement",
+  "story_theme_th": "ลินวัดความสูงของต้นไม้ในสวน ต้นมะม่วงสูง 3 เมตร ต้นมะลิสูง 2 เมตร 50 เซนติเมตร ต้นมะม่วงสูงกว่าต้นมะลิกี่เซนติเมตร และรวมความสูงทั้งสองต้นเท่าไร",
+  "helper_tip": "เปลี่ยนหน่วยให้เหมือนกันก่อนบวกหรือลบ 1 เมตร = 100 เซนติเมตร",
+  "think_story_th": "มะม่วง 3 ม. = 300 ซม., มะลิ 2 ม. 50 ซม. = 250 ซม., ส่วนต่าง: 50 ซม., รวม: 550 ซม.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "ลินวัดความสูงของต้นไม้ในสวน ต้นมะม่วงสูง 3 เมตร ต้นมะลิสูง 2 เมตร 50 เซนติเมตร ต้นมะม่วงสูงกว่าต้นมะลิกี่เซนติเมตร และรวมความสูงทั้งสองต้นเท่าไร",
+      "data": {
+        "content_th": "ลินวัดความสูงของต้นไม้ในสวน ต้นมะม่วงสูง 3 เมตร ต้นมะลิสูง 2 เมตร 50 เซนติเมตร ต้นมะม่วงสูงกว่าต้นมะลิกี่เซนติเมตร และรวมความสูงทั้งสองต้นเท่าไร"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "มะม่วง 3 ม. = 300 ซม., มะลิ 2 ม. 50 ซม. = 250 ซม., ส่วนต่าง: 50 ซม., รวม: 550 ซม.",
+      "data": {
+        "content_th": "มะม่วง 3 ม. = 300 ซม., มะลิ 2 ม. 50 ซม. = 250 ซม., ส่วนต่าง: 50 ซม., รวม: 550 ซม."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "มะม่วง",
+            "value": 300,
+            "display": "300 ซม.",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "มะลิ",
+            "value": 250,
+            "display": "250 ซม.",
+            "color": "#45B7D1",
+            "width_pct": 83
+          },
+          {
+            "label": "ส่วนต่าง",
+            "value": 50,
+            "display": "50 ซม.",
+            "color": "#C7F464",
+            "width_pct": 17,
+            "is_remainder": true
+          }
+        ],
+        "unit": "ซม."
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: เปลี่ยนเป็นเซนติเมตร",
+            "expression": "3 ม. = 300 ซม.",
+            "a": 3,
+            "b": 100,
+            "res": 300,
+            "op": "*",
+            "formula": {
+              "display": "3 x 100 = 300",
+              "a": 3,
+              "b": 100,
+              "result": 300,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "3",
+              "b_display": "100",
+              "result_display": "300",
+              "operation": "multiply"
+            },
+            "story_connection": "3 ม. = 300 ซม."
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาส่วนต่าง",
+            "expression": "300 - 250 = 50",
+            "a": 300,
+            "b": 250,
+            "res": 50,
+            "op": "-",
+            "formula": {
+              "display": "300 - 250 = 50",
+              "a": 300,
+              "b": 250,
+              "result": 50,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "300",
+              "b_display": "250",
+              "result_display": "50",
+              "operation": "subtract"
+            },
+            "story_connection": "300 - 250 = 50 ซม."
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3: หาความสูงรวม",
+            "expression": "300 + 250 = 550 ซม.",
+            "a": 300,
+            "b": 250,
+            "res": 550,
+            "op": "+",
+            "formula": {
+              "display": "300 + 250 = 550",
+              "a": 300,
+              "b": 250,
+              "result": 550,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "300",
+              "b_display": "250",
+              "result_display": "550",
+              "operation": "add"
+            },
+            "story_connection": "300 + 250 = 550 ซม."
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "300 - 250 = 50 และ 300 + 250 = 550",
+      "content": "300 - 250 = 50 และ 300 + 250 = 550",
+      "data": {
+        "expression": "300 - 250 = 50 และ 300 + 250 = 550",
+        "content_th": "300 - 250 = 50 และ 300 + 250 = 550",
+        "operations": [
+          {
+            "op": "*",
+            "a": 3,
+            "b": 100,
+            "result": 300
+          },
+          {
+            "op": "-",
+            "a": 300,
+            "b": 250,
+            "result": 50
+          },
+          {
+            "op": "+",
+            "a": 300,
+            "b": 250,
+            "result": 550
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ประตูบ้านสูง 2 เมตร 80 เซนติเมตร หมายสูง 1 เมตร 20 เซนติเมตร ประตูสูงกว่าหมากี่เซนติเมตร",
+      "choices": [
+        "160 ซม.",
+        "60 ซม.",
+        "150 ซม.",
+        "170 ซม."
+      ],
+      "correct_answer": "160 ซม.",
+      "explanation": "280 - 120 = 160 ซม.",
+      "data": {
+        "question": "ประตูบ้านสูง 2 เมตร 80 เซนติเมตร หมายสูง 1 เมตร 20 เซนติเมตร ประตูสูงกว่าหมากี่เซนติเมตร",
+        "choices": [
+          "160 ซม.",
+          "60 ซม.",
+          "150 ซม.",
+          "170 ซม."
+        ],
+        "correct_answer": "160 ซม.",
+        "explanation": "280 - 120 = 160 ซม."
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

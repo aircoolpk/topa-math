@@ -1,0 +1,181 @@
+{
+  "lesson_id": "decimals_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "245.75 x 3 = ?",
+      "question_text_en": "245.75 x 3 = ?",
+      "choices": [
+        "737.25",
+        "736.25",
+        "738.25",
+        "737.75"
+      ],
+      "correct_answer": "737.25",
+      "answer": "737.25",
+      "explanation": "245.75x3=737.25",
+      "explanation_th": "245.75×3=737.25",
+      "difficulty": "easy",
+      "hint_th": "Multiply as whole numbers, decimal point 2 places"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "12.75 x 4 = ?",
+      "question_text_en": "12.75 x 4 = ?",
+      "choices": [
+        "51.00",
+        "50.00",
+        "51.75",
+        "52.00"
+      ],
+      "correct_answer": "51.00",
+      "answer": "51.00",
+      "explanation": "12.75x4=51.00",
+      "explanation_th": "12.75×4=51.00",
+      "difficulty": "easy",
+      "hint_th": "12.75x4=51.00"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "2.35 + 1.85 + 2.50 = ?",
+      "question_text_en": "2.35 + 1.85 + 2.50 = ?",
+      "choices": [
+        "6.70",
+        "6.60",
+        "6.80",
+        "6.90"
+      ],
+      "correct_answer": "6.70",
+      "answer": "6.70",
+      "explanation": "2.35+1.85+2.50=6.70",
+      "explanation_th": "2.35+1.85+2.50=6.70",
+      "difficulty": "easy",
+      "hint_th": "Add decimals, align decimal points"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "35.60 x 4 = ?",
+      "question_text_en": "35.60 x 4 = ?",
+      "choices": [
+        "142.40",
+        "142.80",
+        "143.40",
+        "141.40"
+      ],
+      "correct_answer": "142.40",
+      "answer": "142.40",
+      "explanation": "35.60x4=142.40",
+      "explanation_th": "35.60×4=142.40",
+      "difficulty": "easy",
+      "hint_th": "35.60x4=142.40"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "1.25 + 3.75 = ?",
+      "question_text_en": "1.25 + 3.75 = ?",
+      "choices": [
+        "5.00",
+        "4.00",
+        "5.50",
+        "4.50"
+      ],
+      "correct_answer": "5.00",
+      "answer": "5.00",
+      "explanation": "1.25+3.75=5.00",
+      "explanation_th": "1.25+3.75=5.00",
+      "difficulty": "easy",
+      "hint_th": "1.25+3.75=5.00"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "Buy oil: 12.75 liters at 42.30 baht per liter. Total? Change from 600 baht?",
+      "question_text_en": "Buy oil: 12.75 liters at 42.30 baht per liter. Total? Change from 600 baht?",
+      "choices": [
+        "538.83 baht, change 61.17 baht",
+        "538.83 baht, change 62.17 baht",
+        "539.83 baht, change 60.17 baht",
+        "538.83 baht, short 61.17 baht"
+      ],
+      "correct_answer": "538.83 baht, change 61.17 baht",
+      "answer": "538.83 baht, change 61.17 baht",
+      "explanation": "12.75x42.30=538.83 | 600-538.83=61.17 change",
+      "explanation_th": "12.75×42.30=538.83 บาท | 600-538.83=61.17 บาททอน",
+      "difficulty": "medium",
+      "hint_th": "Multiply decimals first, then subtract",
+      "question_text_th": "ซื้อน้ำมัน 12.75 ลิตร ลิตรละ 42.30 บาท. รวมเท่าไร? จ่าย 600 บาท ทอนเท่าไร?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "200.00 - 142.40 = ?",
+      "question_text_en": "200.00 - 142.40 = ?",
+      "choices": [
+        "57.60",
+        "58.60",
+        "57.00",
+        "58.00"
+      ],
+      "correct_answer": "57.60",
+      "answer": "57.60",
+      "explanation": "200.00-142.40=57.60",
+      "explanation_th": "200.00-142.40=57.60",
+      "difficulty": "easy",
+      "hint_th": "Subtract decimals, align decimal points"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "48.50 x 6 = ?",
+      "question_text_en": "48.50 x 6 = ?",
+      "choices": [
+        "291.00",
+        "290.00",
+        "291.50",
+        "290.50"
+      ],
+      "correct_answer": "291.00",
+      "answer": "291.00",
+      "explanation": "48.50x6=291.00",
+      "explanation_th": "48.50×6=291.00",
+      "difficulty": "easy",
+      "hint_th": "48.50x6=291.00"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "3.75 + 4.25 - 2.50 = ?",
+      "question_text_en": "3.75 + 4.25 - 2.50 = ?",
+      "choices": [
+        "5.50",
+        "5.00",
+        "6.00",
+        "4.50"
+      ],
+      "correct_answer": "5.50",
+      "answer": "5.50",
+      "explanation": "3.75+4.25=8.00 | 8.00-2.50=5.50",
+      "explanation_th": "3.75+4.25-2.50=5.50",
+      "difficulty": "medium",
+      "hint_th": "Add first, then subtract"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Which is correct? A. 1.25+2.75=4.00 | B. 5.50-3.25=2.25 | C. 2.40x3=7.20 | D. All",
+      "question_text_en": "Which is correct? A. 1.25+2.75=4.00 | B. 5.50-3.25=2.25 | C. 2.40x3=7.20 | D. All",
+      "choices": [
+        "All A, B, and C",
+        "Only A and B",
+        "Only B and C",
+        "A and C only"
+      ],
+      "correct_answer": "All A, B, and C",
+      "answer": "All A, B, and C",
+      "explanation": "1.25+2.75=4.00 ✓ | 5.50-3.25=2.25 ✓ | 2.40x3=7.20 ✓",
+      "explanation_th": "ก ถูก | ข ถูก | ค ถูก | ทุกข้อถูก",
+      "difficulty": "hard",
+      "hint_th": "Check each calculation carefully",
+      "question_text_th": "ข้อใดถูก: ก. 1.25+2.75=4.00 | ข. 5.50-3.25=2.25 | ค. 2.40x3=7.20 | ง. ทุกข้อ"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

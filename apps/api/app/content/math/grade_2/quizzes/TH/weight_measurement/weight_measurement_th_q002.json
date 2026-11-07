@@ -1,0 +1,133 @@
+{
+  "quiz_id": "weight_measurement_th_q002",
+  "topic_key": "weight_measurement",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ weight_measurement_th_q002",
+  "title_en": "Quiz weight_measurement_th_q002",
+  "questions": [
+    {
+      "question": "ครึ่งกิโลกรัม เท่ากับกี่กรัม",
+      "choices": [
+        "500 ก.",
+        "100 ก.",
+        "1,000 ก.",
+        "250 ก."
+      ],
+      "correct_answer": "500 ก.",
+      "explanation": "0.5 กก. = 500 ก.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "3 กิโลกรัม - 1,200 กรัม = ?",
+      "choices": [
+        "1,800 ก.",
+        "1,200 ก.",
+        "2,800 ก.",
+        "800 ก."
+      ],
+      "correct_answer": "1,800 ก.",
+      "explanation": "3,000-1,200=1,800 ก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "เนื้อหนัก 1 กิโลกรัม 350 กรัม ไก่หนัก 950 กรัม รวมหนักเท่าไร",
+      "choices": [
+        "2 กก. 300 ก.",
+        "2 กก. 400 ก.",
+        "1 กก. 300 ก.",
+        "0 กก.  ก."
+      ],
+      "correct_answer": "2 กก. 300 ก.",
+      "explanation": "1,350+950=2,300 ก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "น้ำผลไม้ 4 ขวด หนักขวดละ 250 กรัม รวมหนักเท่าไร",
+      "choices": [
+        "1,000 ก.",
+        "800 ก.",
+        "1,200 ก.",
+        "1,500 ก."
+      ],
+      "correct_answer": "1,000 ก.",
+      "explanation": "250x4=1,000 ก.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มะม่วง 5 ลูก หนักลูกละ 400 กรัม รวมหนักเท่าไร",
+      "choices": [
+        "2 กก.",
+        "1,500 ก.",
+        "3 กก.",
+        "4 กก."
+      ],
+      "correct_answer": "2 กก.",
+      "explanation": "5x400=2,000 ก. = 2 กก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ข้าวเปลือก 5 กิโลกรัม สีเป็นข้าวสารเสียหนัก 1 กิโลกรัม 200 กรัม ข้าวสารหนักเท่าไร",
+      "choices": [
+        "3 กก. 800 ก.",
+        "3 กก. 200 ก.",
+        "4 กก. 800 ก.",
+        "4 กก. 200 ก."
+      ],
+      "correct_answer": "3 กก. 800 ก.",
+      "explanation": "5,000-1,200=3,800 ก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ปลา 3 ตัว หนัก 800 กรัม 900 กรัม และ 750 กรัม รวมหนักเท่าไร",
+      "choices": [
+        "2,450 ก.",
+        "2,350 ก.",
+        "2,550 ก.",
+        "2,150 ก."
+      ],
+      "correct_answer": "2,450 ก.",
+      "explanation": "800+900+750=2,450 ก.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "น้ำหนักหิน 2 กิโลกรัม 300 กรัม ต้องเติมน้ำหนักอีกเท่าไรถึงจะได้ 4 กิโลกรัม",
+      "choices": [
+        "1 กก. 700 ก.",
+        "1 กก. 300 ก.",
+        "2 กก.",
+        "3 กก.  ก."
+      ],
+      "correct_answer": "1 กก. 700 ก.",
+      "explanation": "4,000-2,300=1,700 ก.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "ผึ้งหนัก 85 กรัม มดหนัก 15 กรัม ผึ้งหนักกว่ามดกี่กรัม",
+      "choices": [
+        "70 ก.",
+        "60 ก.",
+        "80 ก.",
+        "100 ก."
+      ],
+      "correct_answer": "70 ก.",
+      "explanation": "85-15=70 ก.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ส้ม 8 ลูก หนักรวม 1 กิโลกรัม 600 กรัม ส้มลูกหนักเฉลี่ยกี่กรัม",
+      "choices": [
+        "200 ก.",
+        "180 ก.",
+        "220 ก.",
+        "150 ก."
+      ],
+      "correct_answer": "200 ก.",
+      "explanation": "1,600/8=200 ก.",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

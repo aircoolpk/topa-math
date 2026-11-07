@@ -1,0 +1,120 @@
+{
+  "variant_id": "quadrilaterals_ep_001",
+  "variant_title_en": "Quadrilaterals — Vegetable Garden",
+  "status": "needs_review",
+  "title_en": "Quadrilaterals — Vegetable Garden",
+  "story_theme_en": "A vegetable garden is a rectangle 18 meters wide and 25 meters long. What is the area of the garden? If the rental fee is 45 baht per square meter per year, how much is the annual rent? What is the perimeter of the garden?",
+  "helper_tip": "Area of rectangle = Width × Length. Perimeter = 2 × (Width + Length)",
+  "hint_th": "พื้นที่สี่เหลี่ยมผืนผ้า = กว้าง × ยาว รอบรูป = 2 × (กว้าง + ยาว)",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A vegetable garden is a rectangle 18 meters wide and 25 meters long. What is the area of the garden? If the rental fee is 45 baht per square meter per year, how much is the annual rent? What is the perimeter of the garden?",
+      "data": {
+        "content_en": "A vegetable garden is a rectangle 18 meters wide and 25 meters long. What is the area of the garden? If the rental fee is 45 baht per square meter per year, how much is the annual rent? What is the perimeter of the garden?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Area = 18 × 25 = 450 sq m | Annual rent = 450 × 45 = 20,250 baht/year | Perimeter = 2 × (18+25) = 86 meters",
+      "data": {
+        "content_en": "Area = 18 × 25 = 450 sq m | Annual rent = 450 × 45 = 20,250 baht/year | Perimeter = 2 × (18+25) = 86 meters"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Rectangle Diagram",
+      "description": "Rectangle Diagram",
+      "model_type": "rectangle_diagram",
+      "data": {
+        "model_type": "rectangle_diagram",
+        "operation": "multiply_add",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Width 18 m",
+            "value": 18,
+            "display": "18 m",
+            "color": "#96CEB4",
+            "width_pct": 72
+          },
+          {
+            "label": "Length 25 m",
+            "value": 25,
+            "display": "25 m",
+            "color": "#45B7D1",
+            "width_pct": 100
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "18 x 25 = 450",
+      "content": "Area = 450 sq m | Rent = 20,250 baht/year | Perimeter = 86 m",
+      "data": {
+        "expression": "Area = 450 sq m | Rent = 20,250 baht/year | Perimeter = 86 m",
+        "operations": [
+          {
+            "op": "×",
+            "a": 18,
+            "b": 25,
+            "result": 450
+          },
+          {
+            "op": "×",
+            "a": 450,
+            "b": 45,
+            "result": 20250
+          },
+          {
+            "op": "+",
+            "a": 18,
+            "b": 25,
+            "result": 43
+          },
+          {
+            "op": "×",
+            "a": 2,
+            "b": 43,
+            "result": 86
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A square has sides of 12 meters. What is the area and perimeter?",
+      "choices": [
+        "144 sq m and 48 m",
+        "144 sq m and 36 m",
+        "120 sq m and 48 m",
+        "144 sq m and 44 m"
+      ],
+      "correct_answer": "144 sq m and 48 m",
+      "explanation": "Area = 12×12 = 144 sq m | Perimeter = 4×12 = 48 m",
+      "data": {
+        "question": "A square has sides of 12 meters. What is the area and perimeter?",
+        "choices": [
+          "144 sq m and 48 m",
+          "144 sq m and 36 m",
+          "120 sq m and 48 m",
+          "144 sq m and 44 m"
+        ],
+        "correct_answer": "144 sq m and 48 m",
+        "explanation": "Area = 12×12 = 144 sq m | Perimeter = 4×12 = 48 m"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

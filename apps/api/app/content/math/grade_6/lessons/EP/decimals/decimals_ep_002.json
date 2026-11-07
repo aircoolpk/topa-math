@@ -1,0 +1,174 @@
+{
+  "variant_id": "decimals_ep_002",
+  "variant_title_en": "Decimals",
+  "status": "needs_review",
+  "title_en": "Decimals",
+  "title_th": "ทศนิยม",
+  "story_theme_en": "Three packages weigh 12.35 kilograms, 8.75 kilograms, and 15.80 kilograms. What is the total weight of all three packages?",
+  "helper_tip": "When adding decimals, line up the decimal points",
+  "hint_th": "เวลาบวกทศนิยม ให้เรียงจุดทศนิยมให้ตรงกัน",
+  "think_story_en": "Total weight = 12.35 + 8.75 + 15.80. First: 12.35 + 8.75 = 21.10, then add 15.80 = 36.90 kilograms. Check: 36.90 - 15.80 = 21.10, 21.10 - 8.75 = 12.35. Correct!",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Three packages weigh 12.35 kilograms, 8.75 kilograms, and 15.80 kilograms. What is the total weight of all three packages?",
+      "data": {
+        "content_en": "Three packages weigh 12.35 kilograms, 8.75 kilograms, and 15.80 kilograms. What is the total weight of all three packages?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Total weight = 12.35 + 8.75 + 15.80. First: 12.35 + 8.75 = 21.10, then add 15.80 = 36.90 kilograms. Check: 36.90 - 15.80 = 21.10, 21.10 - 8.75 = 12.35. Correct!",
+      "data": {
+        "content_en": "Total weight = 12.35 + 8.75 + 15.80. First: 12.35 + 8.75 = 21.10, then add 15.80 = 36.90 kilograms. Check: 36.90 - 15.80 = 21.10, 21.10 - 8.75 = 12.35. Correct!"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "kilograms",
+        "bars": [
+          {
+            "label": "Package 1",
+            "value": 12.35,
+            "display": "12.35 kg",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Package 2",
+            "value": 8.75,
+            "display": "8.75 kg",
+            "color": "#45B7D1",
+            "width_pct": 71
+          },
+          {
+            "label": "Package 3",
+            "value": 15.8,
+            "display": "15.80 kg",
+            "color": "#96CEB4",
+            "width_pct": 100
+          },
+          {
+            "label": "Total",
+            "value": 36.9,
+            "display": "36.90 kg",
+            "color": "#FFE66D",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "12.35 + 8.75 = 21.1",
+            "formula": {
+              "display": "12.35 + 8.75 = 21.1",
+              "a": 12.35,
+              "b": 8.75,
+              "result": 21.1,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}12.35&\\ +\\quad 8.75&\\ \\hline 21.1&\\\\ \\hline \\end{array}",
+              "a_display": "12.35",
+              "b_display": "8.75",
+              "result_display": "21.1",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 12.35 + 8.75 = 21.1"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "21.1 + 15.8 = 36.9",
+            "formula": {
+              "display": "21.1 + 15.8 = 36.9",
+              "a": 21.1,
+              "b": 15.8,
+              "result": 36.9,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}21.1&\\ +\\quad 15.8&\\ \\hline 36.9&\\\\ \\hline \\end{array}",
+              "a_display": "21.1",
+              "b_display": "15.8",
+              "result_display": "36.9",
+              "operation": "add"
+            },
+            "story_connection": "From bar model: 21.1 + 15.8 = 36.9"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "12.35 + 8.75 = 21.1 | 21.1 + 15.8 = 36.9",
+      "content": "12.35 + 8.75 = 21.1 | 21.1 + 15.8 = 36.9",
+      "data": {
+        "expression": "12.35 + 8.75 = 21.1 | 21.1 + 15.8 = 36.9",
+        "operations": [
+          {
+            "op": "+",
+            "a": 12.35,
+            "b": 8.75,
+            "result": 21.1
+          },
+          {
+            "op": "+",
+            "a": 21.1,
+            "b": 15.8,
+            "result": 36.9
+          }
+        ],
+        "content_en": "12.35 + 8.75 = 21.1 | 21.1 + 15.8 = 36.9"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "The heights of three friends are 1.45 m, 1.38 m, and 1.52 m. What is their total height?",
+      "choices": [
+        "4.25 m",
+        "4.35 m",
+        "4.45 m",
+        "4.55 m"
+      ],
+      "correct_answer": "4.35 m",
+      "explanation": "1.45 + 1.38 + 1.52 = 4.35 m",
+      "data": {
+        "question": "The heights of three friends are 1.45 m, 1.38 m, and 1.52 m. What is their total height?",
+        "choices": [
+          "4.25 m",
+          "4.35 m",
+          "4.45 m",
+          "4.55 m"
+        ],
+        "correct_answer": "4.35 m",
+        "explanation": "1.45 + 1.38 + 1.52 = 4.35 m"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

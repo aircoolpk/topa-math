@@ -1,0 +1,218 @@
+{
+  "variant_id": "weight_measurement_th_001",
+  "variant_title_th": "การวัดน้ำหนัก",
+  "variant_title_en": "Weight Measurement",
+  "status": "needs_review",
+  "title_th": "การวัดน้ำหนัก",
+  "title_en": "Weight Measurement",
+  "story_theme_th": "แม่ซื้อมังคุด 750 กรัม ทุเรียน 1 กิโลกรัม 200 กรัม มังคุดเบากว่าทุเรียนกี่กรัม และรวมน้ำหนักทั้งหมดกี่กิโลกรัม",
+  "helper_tip": "เปลี่ยนหน่วยให้เหมือนกันก่อน 1 กิโลกรัม = 1,000 กรัม",
+  "think_story_th": "ทุเรียน = 1,200 กรัม, มังคุดเบากว่า: 1,200 - 750 = 450 กรัม, รวม: 750 + 1,200 = 1,950 กรัม",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "แม่ซื้อมังคุด 750 กรัม ทุเรียน 1 กิโลกรัม 200 กรัม มังคุดเบากว่าทุเรียนกี่กรัม และรวมน้ำหนักทั้งหมดกี่กิโลกรัม",
+      "data": {
+        "content_th": "แม่ซื้อมังคุด 750 กรัม ทุเรียน 1 กิโลกรัม 200 กรัม มังคุดเบากว่าทุเรียนกี่กรัม และรวมน้ำหนักทั้งหมดกี่กิโลกรัม"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "ทุเรียน = 1,200 กรัม, มังคุดเบากว่า: 1,200 - 750 = 450 กรัม, รวม: 750 + 1,200 = 1,950 กรัม",
+      "data": {
+        "content_th": "ทุเรียน = 1,200 กรัม, มังคุดเบากว่า: 1,200 - 750 = 450 กรัม, รวม: 750 + 1,200 = 1,950 กรัม"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "มังคุด",
+            "value": 750,
+            "display": "750 ก.",
+            "color": "#4ECDC4",
+            "width_pct": 62
+          },
+          {
+            "label": "ทุเรียน",
+            "value": 1200,
+            "display": "1,200 ก.",
+            "color": "#45B7D1",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "ส่วนต่าง",
+            "value": 450,
+            "display": "450 ก.",
+            "color": "#C7F464",
+            "width_pct": 38,
+            "is_remainder": true
+          }
+        ],
+        "unit": "กรัม"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: เปลี่ยนเป็นกรัม",
+            "expression": "1 กก. 200 ก. = 1,200 ก.",
+            "a": 1,
+            "b": 1200,
+            "res": 1200,
+            "op": "+",
+            "formula": {
+              "display": "1x1000+200=1,200",
+              "a": 1,
+              "b": 1200,
+              "result": 1200,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "1,000",
+              "b_display": "200",
+              "result_display": "1,200",
+              "operation": "add"
+            },
+            "story_connection": "1 กก. = 1,000 ก. + 200 ก. = 1,200 ก."
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาส่วนต่าง",
+            "expression": "1,200 - 750 = 450",
+            "a": 1200,
+            "b": 750,
+            "res": 450,
+            "op": "-",
+            "formula": {
+              "display": "1,200 - 750 = 450",
+              "a": 1200,
+              "b": 750,
+              "result": 450,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "1,200",
+              "b_display": "750",
+              "result_display": "450",
+              "operation": "subtract"
+            },
+            "story_connection": "1,200 - 750 = 450 กรัม"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3: หาน้ำหนักรวม",
+            "expression": "750 + 1,200 = 1,950 ก.",
+            "a": 750,
+            "b": 1200,
+            "res": 1950,
+            "op": "+",
+            "formula": {
+              "display": "750 + 1,200 = 1,950",
+              "a": 750,
+              "b": 1200,
+              "result": 1950,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "750",
+              "b_display": "1,200",
+              "result_display": "1,950",
+              "operation": "add"
+            },
+            "story_connection": "750 + 1,200 = 1,950 ก."
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "1,200 - 750 = 450 และ 750 + 1,200 = 1,950",
+      "content": "1,200 - 750 = 450 และ 750 + 1,200 = 1,950",
+      "data": {
+        "expression": "1,200 - 750 = 450 และ 750 + 1,200 = 1,950",
+        "content_th": "1,200 - 750 = 450 และ 750 + 1,200 = 1,950",
+        "operations": [
+          {
+            "op": "+",
+            "a": 1,
+            "b": 1200,
+            "result": 1200
+          },
+          {
+            "op": "-",
+            "a": 1200,
+            "b": 750,
+            "result": 450
+          },
+          {
+            "op": "+",
+            "a": 750,
+            "b": 1200,
+            "result": 1950
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ส้มหนัก 680 กรัม มะม่วงหนัก 920 กรัม มะม่วงหนักกว่าส้มกี่กรัม",
+      "choices": [
+        "240 ก.",
+        "140 ก.",
+        "340 ก.",
+        "440 ก."
+      ],
+      "correct_answer": "240 ก.",
+      "explanation": "920 - 680 = 240 ก.",
+      "data": {
+        "question": "ส้มหนัก 680 กรัม มะม่วงหนัก 920 กรัม มะม่วงหนักกว่าส้มกี่กรัม",
+        "choices": [
+          "240 ก.",
+          "140 ก.",
+          "340 ก.",
+          "440 ก."
+        ],
+        "correct_answer": "240 ก.",
+        "explanation": "920 - 680 = 240 ก."
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

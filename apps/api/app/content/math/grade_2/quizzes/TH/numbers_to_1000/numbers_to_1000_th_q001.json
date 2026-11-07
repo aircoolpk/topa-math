@@ -1,0 +1,133 @@
+{
+  "quiz_id": "numbers_to_1000_th_q001",
+  "topic_key": "numbers_to_1000",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ numbers_to_1000_th_q001",
+  "title_en": "Quiz numbers_to_1000_th_q001",
+  "questions": [
+    {
+      "question": "250 + 130 = ?",
+      "choices": [
+        "370",
+        "380",
+        "390",
+        "480"
+      ],
+      "correct_answer": "380",
+      "explanation": "250+130=380 หลักร้อยบวกร้อย หลักสิบบวกสิบ",
+      "difficulty": "easy"
+    },
+    {
+      "question": "จำนวนใดมากที่สุด 425, 542, 245, 524",
+      "choices": [
+        "425",
+        "542",
+        "245",
+        "524"
+      ],
+      "correct_answer": "542",
+      "explanation": "542 เป็นจำนวนที่มากที่สุดเพราะหลักร้อย 5 > 4,2",
+      "difficulty": "easy"
+    },
+    {
+      "question": "หกร้อยสิบสอง เขียนเป็นตัวเลขได้",
+      "choices": [
+        "606",
+        "612",
+        "621",
+        "620"
+      ],
+      "correct_answer": "612",
+      "explanation": "หกร้อย = 600, สิบสอง = 12, รวม = 612",
+      "difficulty": "easy"
+    },
+    {
+      "question": "400 + 50 + 8 = ?",
+      "choices": [
+        "458",
+        "485",
+        "548",
+        "408"
+      ],
+      "correct_answer": "458",
+      "explanation": "400+50+8 = 458",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ในเลข 738 หลักสิบคือตัวเลขใด",
+      "choices": [
+        "7",
+        "3",
+        "8",
+        "738"
+      ],
+      "correct_answer": "3",
+      "explanation": "7=หลักร้อย, 3=หลักสิบ, 8=หลักหน่วย",
+      "difficulty": "easy"
+    },
+    {
+      "question": "920 - 400 = ?",
+      "choices": [
+        "520",
+        "420",
+        "530",
+        "620"
+      ],
+      "correct_answer": "520",
+      "explanation": "920-400=520 ลบหลักร้อยได้เลย",
+      "difficulty": "medium"
+    },
+    {
+      "question": "มีส้ม 245 ผล ได้เพิ่มอีก 178 ผล รวมเป็นเท่าไร",
+      "choices": [
+        "413 ผล",
+        "423 ผล",
+        "433 ผล",
+        "323 ผล"
+      ],
+      "correct_answer": "423 ผล",
+      "explanation": "245+178=423 ผล",
+      "difficulty": "medium"
+    },
+    {
+      "question": "1,000 - 350 = ?",
+      "choices": [
+        "650",
+        "750",
+        "550",
+        "600"
+      ],
+      "correct_answer": "650",
+      "explanation": "1,000-350=650 ต้องกู้จากหลักพัน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "จำนวนที่มี 6 หลักร้อย 3 หลักสิบ 9 หลักหน่วย คือจำนวนใด",
+      "choices": [
+        "639",
+        "693",
+        "936",
+        "369"
+      ],
+      "correct_answer": "639",
+      "explanation": "6x100+3x10+9x1 = 639",
+      "difficulty": "medium"
+    },
+    {
+      "question": "256 + 347 = ?",
+      "choices": [
+        "593",
+        "603",
+        "613",
+        "603 หรือ 613"
+      ],
+      "correct_answer": "603",
+      "explanation": "256+300=556, 556+47=603",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

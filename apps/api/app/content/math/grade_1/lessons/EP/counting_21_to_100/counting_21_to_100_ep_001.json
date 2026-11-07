@@ -1,0 +1,210 @@
+{
+  "variant_id": "counting_21_to_100_ep_001",
+  "variant_title_en": "Counting 21 to 100",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Counting 21 to 100",
+  "title_th": "",
+  "story_theme_en": "Mali counts her crayons. She has 3 full ten-boxes and 5 single crayons. How many crayons does she have?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "3 ten-boxes = 30. 5 single crayons. 30 + 5 = 35.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mali counts her crayons. She has 3 full ten-boxes and 5 single crayons. How many crayons does she have?",
+      "data": {
+        "content_en": "Mali counts her crayons. She has 3 full ten-boxes and 5 single crayons. How many crayons does she have?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "3 ten-boxes = 30. 5 single crayons. 30 + 5 = 35.",
+      "data": {
+        "content_en": "3 ten-boxes = 30. 5 single crayons. 30 + 5 = 35."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "unit": "crayons",
+        "bars": [
+          {
+            "label": "Ten-boxes",
+            "value": 30,
+            "display": "30 crayons",
+            "color": "#96CEB4",
+            "width_pct": 85
+          },
+          {
+            "label": "Singles",
+            "value": 5,
+            "display": "5 crayons",
+            "color": "#A8D8EA",
+            "width_pct": 15
+          },
+          {
+            "label": "Total",
+            "value": 35,
+            "display": "35 crayons",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add",
+            "expression": "30 + 5 = 35",
+            "formula": {
+              "display": "30 + 5 = 35",
+              "a": 30,
+              "b": 5,
+              "result": 35,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}30&&\\\\\\\\ + 5&&\\\\\\\\ \\\\hline 35&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "30",
+              "b_display": "5",
+              "result_display": "35",
+              "operation": "add"
+            },
+            "story_connection": "From the story: 30 + 5 = 35"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "30 + 5 = 35",
+      "content": "30 + 5 = 35",
+      "data": {
+        "expression": "30 + 5 = 35",
+        "operations": [
+          {
+            "op": "+",
+            "a": 30,
+            "b": 5,
+            "result": 35
+          }
+        ],
+        "content_en": "30 + 5 = 35"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Tad has 4 ten-boxes and 4 single pencils. How many pencils does he have?",
+      "choices": [
+        "44 pencils",
+        "49 pencils",
+        "41 pencils",
+        "52 pencils"
+      ],
+      "correct_answer": "44 pencils",
+      "explanation": "40 + 4 = 44 pencils",
+      "data": {
+        "question": "Tad has 4 ten-boxes and 4 single pencils. How many pencils does he have?",
+        "choices": [
+          "44 pencils",
+          "49 pencils",
+          "41 pencils",
+          "52 pencils"
+        ],
+        "correct_answer": "44 pencils",
+        "explanation": "40 + 4 = 44 pencils"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "basket",
+      "th": "ตะกร้า",
+      "definition_en": "A container that holds 10 items."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "total",
+      "th": "รวม",
+      "definition_en": "The whole amount."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Mali counts her crayons. She has 3 full ten-boxes and 5 single crayons. How many...",
+      "solution_en": "30 + 5 = 35"
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,158 @@
+{
+  "variant_id": "division_th_001",
+  "variant_title_th": "การหาร",
+  "variant_title_en": "Division",
+  "status": "needs_review",
+  "title_th": "การหาร",
+  "title_en": "Division",
+  "story_theme_th": "ลินมีลูกช็อกโกแลต 48 ชิ้น ต้องการแบ่งให้เพื่อน 6 คนอย่างเท่าๆ กัน แต่ละคนจะได้ลูกช็อกโกแลตกี่ชิ้น",
+  "helper_tip": "การหารแบ่งสิ่งของออกเป็นส่วนเท่าๆ กัน จำนวนที่แบ่ง = จำนวนทั้งหมด หาร จำนวนคน",
+  "think_story_th": "48 / 6 = 8 ชิ้น/คน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "ลินมีลูกช็อกโกแลต 48 ชิ้น ต้องการแบ่งให้เพื่อน 6 คนอย่างเท่าๆ กัน แต่ละคนจะได้ลูกช็อกโกแลตกี่ชิ้น",
+      "data": {
+        "content_th": "ลินมีลูกช็อกโกแลต 48 ชิ้น ต้องการแบ่งให้เพื่อน 6 คนอย่างเท่าๆ กัน แต่ละคนจะได้ลูกช็อกโกแลตกี่ชิ้น"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "48 / 6 = 8 ชิ้น/คน",
+      "data": {
+        "content_th": "48 / 6 = 8 ชิ้น/คน"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "รวม 48 ชิ้น",
+            "value": 48,
+            "display": "48 ชิ้น",
+            "color": "#4ECDC4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "แบ่ง 6 คน",
+            "value": 6,
+            "display": "6 คน",
+            "color": "#45B7D1",
+            "width_pct": 13
+          },
+          {
+            "label": "แต่ละคน",
+            "value": 8,
+            "display": "8 ชิ้น",
+            "color": "#C7F464",
+            "width_pct": 17,
+            "is_result": true
+          }
+        ],
+        "unit": "ชิ้น"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: หาจำนวนต่อคน",
+            "expression": "48 / 6 = 8",
+            "a": 48,
+            "b": 6,
+            "res": 8,
+            "op": "/",
+            "formula": {
+              "display": "48 / 6 = 8",
+              "a": 48,
+              "b": 6,
+              "result": 8,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "48",
+              "b_display": "6",
+              "result_display": "8",
+              "operation": "divide"
+            },
+            "story_connection": "48 / 6 = 8 ชิ้น/คน"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "48 / 6 = 8",
+      "content": "48 / 6 = 8",
+      "data": {
+        "expression": "48 / 6 = 8",
+        "content_th": "48 / 6 = 8",
+        "operations": [
+          {
+            "op": "/",
+            "a": 48,
+            "b": 6,
+            "result": 8
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "มะลิมีลูกอม 36 ลูก แบ่งให้เพื่อน 4 คนเท่าๆ กัน แต่ละคนได้กี่ลูก",
+      "choices": [
+        "8 ลูก",
+        "9 ลูก",
+        "6 ลูก",
+        "7 ลูก"
+      ],
+      "correct_answer": "9 ลูก",
+      "explanation": "36 / 4 = 9 ลูก",
+      "data": {
+        "question": "มะลิมีลูกอม 36 ลูก แบ่งให้เพื่อน 4 คนเท่าๆ กัน แต่ละคนได้กี่ลูก",
+        "choices": [
+          "8 ลูก",
+          "9 ลูก",
+          "6 ลูก",
+          "7 ลูก"
+        ],
+        "correct_answer": "9 ลูก",
+        "explanation": "36 / 4 = 9 ลูก"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

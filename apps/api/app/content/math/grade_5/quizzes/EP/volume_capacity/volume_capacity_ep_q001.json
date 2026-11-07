@@ -1,0 +1,179 @@
+{
+  "lesson_id": "volume_capacity_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "vc_ep_q001_e01",
+      "question_text": "Situation 1: A box is 5 cm wide, 8 cm long, and 4 cm tall. What is its volume?",
+      "question_text_th": "Situation 1: A box is 5 cm wide, 8 cm long, and 4 cm tall. What is its volume?",
+      "choices": [
+        "160 cu cm",
+        "160",
+        "140 cu cm",
+        "150 cu cm"
+      ],
+      "correct_answer": "160 cu cm",
+      "answer": "160 cu cm",
+      "explanation": "Volume = width x length x height = 5 x 8 x 4 = 160 cu cm",
+      "explanation_th": "Volume = width x length x height = 5 x 8 x 4 = 160 cu cm",
+      "difficulty": "easy",
+      "hint_th": "Volume = width x length x height"
+    },
+    {
+      "question_id": "vc_ep_q001_e02",
+      "question_text": "Situation 2: A cubic water tank has sides of 10 m. What is its capacity?",
+      "question_text_th": "Situation 2: A cubic water tank has sides of 10 m. What is its capacity?",
+      "choices": [
+        "1,000 cu m",
+        "1000",
+        "1,200 cu m",
+        "900 cu m"
+      ],
+      "correct_answer": "1,000 cu m",
+      "answer": "1,000 cu m",
+      "explanation": "Volume = side^3 = 10^3 = 1,000 cu m",
+      "explanation_th": "Volume = side^3 = 10^3 = 1,000 cu m",
+      "difficulty": "easy",
+      "hint_th": "Volume of cube = side cubed"
+    },
+    {
+      "question_id": "vc_ep_q001_e03",
+      "question_text": "Situation 3: A cubic pond has sides of 3 m. How much water can it hold?",
+      "question_text_th": "Situation 3: A cubic pond has sides of 3 m. How much water can it hold?",
+      "choices": [
+        "27 cu m",
+        "27",
+        "30 cu m",
+        "25 cu m"
+      ],
+      "correct_answer": "27 cu m",
+      "answer": "27 cu m",
+      "explanation": "Volume = 3^3 = 27 cu m",
+      "explanation_th": "Volume = 3^3 = 27 cu m",
+      "difficulty": "easy",
+      "hint_th": "Volume = side^3 = 3^3 = 27 cu m"
+    },
+    {
+      "question_id": "vc_ep_q001.m01",
+      "question_text": "Situation 4: A swimming pool is 8 m wide, 20 m long, and 2 m deep. What is its volume?",
+      "question_text_th": "Situation 4: A swimming pool is 8 m wide, 20 m long, and 2 m deep. What is its volume?",
+      "choices": [
+        "320 cu m",
+        "320",
+        "300 cu m",
+        "350 cu m"
+      ],
+      "correct_answer": "320 cu m",
+      "answer": "320 cu m",
+      "explanation": "Volume = 8 x 20 x 2 = 320 cu m",
+      "explanation_th": "Volume = 8 x 20 x 2 = 320 cu m",
+      "difficulty": "medium",
+      "hint_th": "Volume = width x length x depth"
+    },
+    {
+      "question_id": "vc_ep_q001.m02",
+      "question_text": "Situation 5: A cubic box has volume 125 cu cm. What is the length of each side?",
+      "question_text_th": "Situation 5: A cubic box has volume 125 cu cm. What is the length of each side?",
+      "choices": [
+        "5 cm",
+        "5",
+        "6 cm",
+        "4 cm"
+      ],
+      "correct_answer": "5 cm",
+      "answer": "5 cm",
+      "explanation": "Side = cube root of 125 = 5 cm",
+      "explanation_th": "Side = cube root of 125 = 5 cm",
+      "difficulty": "medium",
+      "hint_th": "Side = cube root of volume"
+    },
+    {
+      "question_id": "vc_ep_q001.m03",
+      "question_text": "Situation 6: A cylindrical tank has diameter 2 m and height 3 m. What is its volume? (pi = 3.14)",
+      "question_text_th": "Situation 6: A cylindrical tank has diameter 2 m and height 3 m. What is its volume? (pi = 3.14)",
+      "choices": [
+        "9.42 cu m",
+        "9.42",
+        "10 cu m",
+        "9 cu m"
+      ],
+      "correct_answer": "9.42 cu m",
+      "answer": "9.42 cu m",
+      "explanation": "r = 1 m | Volume = pi x r^2 x h = 3.14 x 1^2 x 3 = 9.42 cu m",
+      "explanation_th": "r = 1 m | Volume = pi x r^2 x h = 3.14 x 1^2 x 3 = 9.42 cu m",
+      "difficulty": "medium",
+      "hint_th": "Volume of cylinder = pi x r^2 x h"
+    },
+    {
+      "question_id": "vc_ep_q001.m04",
+      "question_text": "Situation 7: A freezer is 1 m wide, 1.5 m long, and 0.8 m tall. What is its volume?",
+      "question_text_th": "Situation 7: A freezer is 1 m wide, 1.5 m long, and 0.8 m tall. What is its volume?",
+      "choices": [
+        "1.2 cu m",
+        "1.2",
+        "1.5 cu m",
+        "1.0 cu m"
+      ],
+      "correct_answer": "1.2 cu m",
+      "answer": "1.2 cu m",
+      "explanation": "Volume = 1 x 1.5 x 0.8 = 1.2 cu m",
+      "explanation_th": "Volume = 1 x 1.5 x 0.8 = 1.2 cu m",
+      "difficulty": "medium",
+      "hint_th": "Volume = width x length x height"
+    },
+    {
+      "question_id": "vc_ep_q001_h01",
+      "question_text": "Situation 8: A pool is 10 m by 25 m. When 200,000 liters are removed, how much does the water level drop?",
+      "question_text_th": "Situation 8: A pool is 10 m by 25 m. When 200,000 liters are removed, how much does the water level drop?",
+      "choices": [
+        "0.8 m",
+        "0.8",
+        "1.0 m",
+        "0.6 m"
+      ],
+      "correct_answer": "0.8 m",
+      "answer": "0.8 m",
+      "explanation": "200,000 L = 200 cu m | Area = 10 x 25 = 250 sq m | Drop = 200 / 250 = 0.8 m",
+      "explanation_th": "200,000 L = 200 cu m | Area = 10 x 25 = 250 sq m | Drop = 200 / 250 = 0.8 m",
+      "difficulty": "hard",
+      "hint_th": "200,000 L = 200 cu m. Drop = volume / area"
+    },
+    {
+      "question_id": "vc_ep_q001_h02",
+      "question_text": "Situation 9: A cubic pond holds 512 cu m of water. Using an 8,000-liter bucket, how many buckets to fill it?",
+      "question_text_th": "Situation 9: A cubic pond holds 512 cu m of water. Using an 8,000-liter bucket, how many buckets to fill it?",
+      "choices": [
+        "64 buckets",
+        "64",
+        "65 buckets",
+        "60 buckets"
+      ],
+      "correct_answer": "64 buckets",
+      "answer": "64 buckets",
+      "explanation": "512 cu m = 512,000 L | 512,000 / 8,000 = 64 buckets",
+      "explanation_th": "512 cu m = 512,000 L | 512,000 / 8,000 = 64 buckets",
+      "difficulty": "hard",
+      "hint_th": "512 cu m = 512,000 L | 512,000 / 8,000 = 64 buckets"
+    },
+    {
+      "question_id": "vc_ep_q001_h03",
+      "question_text": "Situation 10: A cylindrical tank has diameter 4 m and height 5 m. How much water in liters can it hold? (pi = 3.14)",
+      "question_text_th": "Situation 10: A cylindrical tank has diameter 4 m and height 5 m. How much water in liters can it hold? (pi = 3.14)",
+      "choices": [
+        "62,800 liters",
+        "62800",
+        "60,000 liters",
+        "65,000 liters"
+      ],
+      "correct_answer": "62,800 liters",
+      "answer": "62,800 liters",
+      "explanation": "r = 2 m | Volume = 3.14 x 2^2 x 5 = 62.8 cu m = 62,800 L",
+      "explanation_th": "r = 2 m | Volume = 3.14 x 2^2 x 5 = 62.8 cu m = 62,800 L",
+      "difficulty": "hard",
+      "hint_th": "Volume = pi x r^2 x h. Multiply by 1,000 to convert to liters."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

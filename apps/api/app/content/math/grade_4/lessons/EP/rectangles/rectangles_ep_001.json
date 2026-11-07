@@ -1,0 +1,198 @@
+{
+  "variant_id": "rectangles_ep_001",
+  "variant_title_en": "Rectangles",
+  "status": "needs_review",
+  "title_en": "Rectangles",
+  "story_theme_en": "Lin's mango orchard is a rectangle. It is 45 meters wide and 78 meters long. What is the area of the orchard? If Lin wants to put a fence around the orchard, how long does the fence need to be (this is the perimeter)?",
+  "helper_tip": "Area of rectangle = width x length. Perimeter = 2 x (width + length).",
+  "hint_th": "พื้นที่สี่เหลี่ยม = กว้าง x ยาว ความยาวรอบรูป = 2 x (กว้าง + ยาว)",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin's mango orchard is a rectangle. It is 45 meters wide and 78 meters long. What is the area of the orchard? If Lin wants to put a fence around the orchard, how long does the fence need to be (this is the perimeter)?",
+      "data": {
+        "content_en": "Lin's mango orchard is a rectangle. It is 45 meters wide and 78 meters long. What is the area of the orchard? If Lin wants to put a fence around the orchard, how long does the fence need to be (this is the perimeter)?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Find area → width x length = 45 x 78 | Step 2: Find perimeter → 2 x (width + length) = 2 x (45 + 78)",
+      "data": {
+        "content_en": "Step 1: Find area → width x length = 45 x 78 | Step 2: Find perimeter → 2 x (width + length) = 2 x (45 + 78)"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Rectangle Model",
+      "model_type": "rectangle_model",
+      "data": {
+        "model_type": "rectangle_model",
+        "operation": "area_perimeter",
+        "bars": [
+          {
+            "label": "Width",
+            "value": 45,
+            "display": "45 m",
+            "color": "#4ECDC4",
+            "width_pct": 58
+          },
+          {
+            "label": "Length",
+            "value": 78,
+            "display": "78 m",
+            "color": "#45B7D1",
+            "width_pct": 100
+          },
+          {
+            "label": "Area",
+            "value": 3510,
+            "display": "3,510 sq m",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Perimeter",
+            "value": 246,
+            "display": "246 m",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find area",
+            "expression": "45 x 78 = 3,510",
+            "formula": {
+              "display": "45 x 78 = 3,510",
+              "a": 45,
+              "b": 78,
+              "result": 3510,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}45&\\\\\\\\ ×\\\\quad 78&\\\\\\\\ \\\\hline 3510&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "45",
+              "b_display": "78",
+              "result_display": "3510",
+              "operation": "mul"
+            },
+            "story_connection": "Width x Length = 45 x 78 = 3,510 sq m"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find perimeter",
+            "expression": "2 x (45 + 78) = 2 x 123 = 246",
+            "formula": {
+              "display": "2 x (45 + 78) = 2 x 123 = 246",
+              "a": 2,
+              "b": 123,
+              "result": 246,
+              "operation": "mul"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}2&\\\\\\\\ ×\\\\quad 123&\\\\\\\\ \\\\hline 246&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "2",
+              "b_display": "123",
+              "result_display": "246",
+              "operation": "mul"
+            },
+            "story_connection": "2 x (45 + 78) = 2 x 123 = 246 m"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "45 x 78 = 3,510 | 2 x (45 + 78) = 246",
+      "content": "45 x 78 = 3,510 sq m  |  2 x (45 + 78) = 246 m",
+      "data": {
+        "expression": "45 x 78 = 3,510 | 2 x (45 + 78) = 246",
+        "operations": [
+          {
+            "op": "x",
+            "a": 45,
+            "b": 78,
+            "result": 3510
+          },
+          {
+            "op": "x",
+            "a": 2,
+            "b": 123,
+            "result": 246
+          }
+        ],
+        "content_en": "45 x 78 = 3,510 sq m  |  2 x (45 + 78) = 246 m"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A rectangle is 32 cm wide and 56 cm long. What is its area and what is its perimeter?",
+      "choices": [
+        "1,792 sq cm, 176 cm",
+        "1,782 sq cm, 176 cm",
+        "1,792 sq cm, 186 cm",
+        "1,792 sq cm, 166 cm"
+      ],
+      "correct_answer": "1,792 sq cm, 176 cm",
+      "explanation": "32 x 56 = 1,792 sq cm | 2 x (32 + 56) = 2 x 88 = 176 cm",
+      "data": {
+        "question": "A rectangle is 32 cm wide and 56 cm long. What is its area and what is its perimeter?",
+        "choices": [
+          "1,792 sq cm, 176 cm",
+          "1,782 sq cm, 176 cm",
+          "1,792 sq cm, 186 cm",
+          "1,792 sq cm, 166 cm"
+        ],
+        "correct_answer": "1,792 sq cm, 176 cm",
+        "explanation": "32 x 56 = 1,792 sq cm | 2 x (32 + 56) = 2 x 88 = 176 cm"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "Rectangle: width 10, length 20. Find area and perimeter.",
+      "solution_en": "Area = 10 x 20 = 200 sq m | Perimeter = 2 x (10+20) = 60 m"
+    }
+  ],
+  "common_mistakes": [
+    "Multiplying all four sides together for area (wrong!)",
+    "Forgetting to multiply by 2 when finding perimeter"
+  ],
+  "hints": [
+    "Area = width x length = two adjacent sides multiplied.",
+    "Perimeter = all sides added together = 2 x width + 2 x length."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "area",
+      "th": "พื้นที่",
+      "definition_en": "The size of a surface measured in square units"
+    },
+    {
+      "en": "perimeter",
+      "th": "ความยาวรอบรูป",
+      "definition_en": "The total distance around a shape"
+    },
+    {
+      "en": "square metre",
+      "th": "ตารางเมตร",
+      "definition_en": "A unit of area measurement"
+    }
+  ]
+}

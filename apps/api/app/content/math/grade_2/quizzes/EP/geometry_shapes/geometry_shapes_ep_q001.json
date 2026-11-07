@@ -1,0 +1,133 @@
+{
+  "quiz_id": "geometry_shapes_ep_q001",
+  "topic_key": "geometry_shapes",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz geometry_shapes_ep_q001",
+  "title_en": "Quiz geometry_shapes_ep_q001",
+  "questions": [
+    {
+      "question": "A square has how many sides?",
+      "choices": [
+        "4 sides",
+        "3 sides",
+        "5 sides",
+        "6 sides"
+      ],
+      "correct_answer": "4 sides",
+      "explanation": "A square has 4 sides and 4 corners",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A triangle has how many corners?",
+      "choices": [
+        "3 corners",
+        "4 corners",
+        "5 corners",
+        "6 corners"
+      ],
+      "correct_answer": "3 corners",
+      "explanation": "A triangle has 3 corners and 3 sides",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A circle has",
+      "choices": [
+        "no corners",
+        "3 corners",
+        "4 corners",
+        "many corners"
+      ],
+      "correct_answer": "no corners",
+      "explanation": "A circle has no corners and no sides",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A square, all sides are",
+      "choices": [
+        "equal in length",
+        "different lengths",
+        "2 equal sides",
+        "not equal"
+      ],
+      "correct_answer": "equal in length",
+      "explanation": "A square has all 4 sides equal",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A rectangle has how many pairs of equal sides?",
+      "choices": [
+        "2 pairs (4 sides)",
+        "1 pair (2 sides)",
+        "all sides equal",
+        "no equal sides"
+      ],
+      "correct_answer": "2 pairs (4 sides)",
+      "explanation": "A rectangle has 2 pairs of opposite equal sides",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A sphere has how many faces?",
+      "choices": [
+        "1 face",
+        "2 faces",
+        "6 faces",
+        "no face"
+      ],
+      "correct_answer": "1 face",
+      "explanation": "A sphere has 1 curved face",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A cube has how many edges?",
+      "choices": [
+        "12 edges",
+        "8 edges",
+        "6 edges",
+        "4 edges"
+      ],
+      "correct_answer": "12 edges",
+      "explanation": "A cube has 12 edges",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A pentagon has how many sides?",
+      "choices": [
+        "5 sides",
+        "6 sides",
+        "4 sides",
+        "7 sides"
+      ],
+      "correct_answer": "5 sides",
+      "explanation": "A pentagon has 5 sides and 5 corners",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A rectangular prism has faces of what shape?",
+      "choices": [
+        "rectangles",
+        "triangles",
+        "circles",
+        "various shapes"
+      ],
+      "correct_answer": "rectangles",
+      "explanation": "A prism has rectangular faces",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A hexagon has how many sides?",
+      "choices": [
+        "6 sides",
+        "5 sides",
+        "7 sides",
+        "8 sides"
+      ],
+      "correct_answer": "6 sides",
+      "explanation": "A hexagon has 6 sides and 6 corners",
+      "difficulty": "easy"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

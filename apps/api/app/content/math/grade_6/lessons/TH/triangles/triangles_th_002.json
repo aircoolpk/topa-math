@@ -1,0 +1,167 @@
+{
+  "variant_id": "triangles_th_002",
+  "variant_title_th": "รูปสามเหลี่ยม",
+  "variant_title_en": "Triangles",
+  "status": "needs_review",
+  "title_th": "รูปสามเหลี่ยม",
+  "title_en": "Triangles",
+  "story_theme_th": "รูปสามเหลี่ยมหน้าจั่วมีฐานยาว 12 เซนติเมตร และด้านข้างยาวด้านละ 10 เซนติเมตร ถ้าวัดความยาวรอบรูปสามเหลี่ยม จะได้กี่เซนติเมตร",
+  "helper_tip": "สามเหลี่ยมหน้าจั่วมีด้านข้างเท่ากัน สามเหลี่ยมด้านเท่าทุกด้านเท่ากัน",
+  "think_story_th": "รูปสามเหลี่ยมหน้าจั่วมีด้านข้างยาวเท่ากัน 2 ด้าน ด้านละ 10 ซม. ฐาน 12 ซม. ความยาวรอบรูป = 10 + 10 + 12 = 32 เซนติเมตร",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "รูปสามเหลี่ยมหน้าจั่วมีฐานยาว 12 เซนติเมตร และด้านข้างยาวด้านละ 10 เซนติเมตร ถ้าวัดความยาวรอบรูปสามเหลี่ยม จะได้กี่เซนติเมตร",
+      "data": {
+        "content_th": "รูปสามเหลี่ยมหน้าจั่วมีฐานยาว 12 เซนติเมตร และด้านข้างยาวด้านละ 10 เซนติเมตร ถ้าวัดความยาวรอบรูปสามเหลี่ยม จะได้กี่เซนติเมตร"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "รูปสามเหลี่ยมหน้าจั่วมีด้านข้างยาวเท่ากัน 2 ด้าน ด้านละ 10 ซม. ฐาน 12 ซม. ความยาวรอบรูป = 10 + 10 + 12 = 32 เซนติเมตร",
+      "data": {
+        "content_th": "รูปสามเหลี่ยมหน้าจั่วมีด้านข้างยาวเท่ากัน 2 ด้าน ด้านละ 10 ซม. ฐาน 12 ซม. ความยาวรอบรูป = 10 + 10 + 12 = 32 เซนติเมตร"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "เซนติเมตร",
+        "bars": [
+          {
+            "label": "ด้านข้างซ้าย",
+            "value": 10,
+            "display": "10 ซม.",
+            "color": "#4ECDC4",
+            "width_pct": 83
+          },
+          {
+            "label": "ด้านข้างขวา",
+            "value": 10,
+            "display": "10 ซม.",
+            "color": "#45B7D1",
+            "width_pct": 83
+          },
+          {
+            "label": "ฐาน",
+            "value": 12,
+            "display": "12 ซม.",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "10 + 10 = 20",
+            "formula": {
+              "display": "10 + 10 = 20",
+              "a": 10,
+              "b": 10,
+              "result": 20,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}10&\\ +\\quad 10&\\ \\hline 20&\\\\ \\hline \\end{array}",
+              "a_display": "10",
+              "b_display": "10",
+              "result_display": "20",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 10 + 10 = 20"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "20 + 12 = 32",
+            "formula": {
+              "display": "20 + 12 = 32",
+              "a": 20,
+              "b": 12,
+              "result": 32,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}20&\\ +\\quad 12&\\ \\hline 32&\\\\ \\hline \\end{array}",
+              "a_display": "20",
+              "b_display": "12",
+              "result_display": "32",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 20 + 12 = 32"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "10 + 10 = 20 | 20 + 12 = 32",
+      "content": "10 + 10 = 20 | 20 + 12 = 32",
+      "data": {
+        "expression": "10 + 10 = 20 | 20 + 12 = 32",
+        "operations": [
+          {
+            "op": "+",
+            "a": 10,
+            "b": 10,
+            "result": 20
+          },
+          {
+            "op": "+",
+            "a": 20,
+            "b": 12,
+            "result": 32
+          }
+        ],
+        "content_th": "10 + 10 = 20 | 20 + 12 = 32"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "สามเหลี่ยมด้านเท่ามีด้านยาว 9 ซม. ทั้งสามด้าน ความยาวรอบรูปเท่าไร",
+      "choices": [
+        "27 ซม.",
+        "24 ซม.",
+        "30 ซม.",
+        "21 ซม."
+      ],
+      "correct_answer": "27 ซม.",
+      "explanation": "9 + 9 + 9 = 27 ซม.",
+      "data": {
+        "question": "สามเหลี่ยมด้านเท่ามีด้านยาว 9 ซม. ทั้งสามด้าน ความยาวรอบรูปเท่าไร",
+        "choices": [
+          "27 ซม.",
+          "24 ซม.",
+          "30 ซม.",
+          "21 ซม."
+        ],
+        "correct_answer": "27 ซม.",
+        "explanation": "9 + 9 + 9 = 27 ซม."
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

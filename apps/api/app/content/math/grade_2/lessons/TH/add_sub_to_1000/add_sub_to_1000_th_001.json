@@ -1,0 +1,202 @@
+{
+  "variant_id": "add_sub_to_1000_th_001",
+  "variant_title_th": "การบวกและการลบจำนวนนับไม่เกิน 1,000",
+  "variant_title_en": "Addition and Subtraction up to 1,000",
+  "status": "needs_review",
+  "title_th": "การบวกและการลบจำนวนนับไม่เกิน 1,000",
+  "title_en": "Addition and Subtraction up to 1,000",
+  "story_theme_th": "มะลิเก็บเงินได้ 450 บาท พี่ชายให้เพิ่มอีก 380 บาท แม่ให้ไปซื้อข้าวเช้า 295 บาท มะลิเหลือเงินกี่บาท",
+  "helper_tip": "บวกก่อนแล้วค่อยลบ เขียนตัวเลขเรียงหลักให้ตรงกัน ถ้าตัวลบมากกว่าตัวถูกลบ ต้องกู้จากหลักข้างเคียง",
+  "think_story_th": "บวก: 450 + 380 = 830 บาท, ลบ: 830 - 295 = 535 บาท",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "มะลิเก็บเงินได้ 450 บาท พี่ชายให้เพิ่มอีก 380 บาท แม่ให้ไปซื้อข้าวเช้า 295 บาท มะลิเหลือเงินกี่บาท",
+      "data": {
+        "content_th": "มะลิเก็บเงินได้ 450 บาท พี่ชายให้เพิ่มอีก 380 บาท แม่ให้ไปซื้อข้าวเช้า 295 บาท มะลิเหลือเงินกี่บาท"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "บวก: 450 + 380 = 830 บาท, ลบ: 830 - 295 = 535 บาท",
+      "data": {
+        "content_th": "บวก: 450 + 380 = 830 บาท, ลบ: 830 - 295 = 535 บาท"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภาพ",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "มะลิเก็บ",
+            "value": 450,
+            "display": "450 บาท",
+            "color": "#4ECDC4",
+            "width_pct": 55
+          },
+          {
+            "label": "พี่ให้",
+            "value": 380,
+            "display": "380 บาท",
+            "color": "#45B7D1",
+            "width_pct": 46
+          },
+          {
+            "label": "รวม",
+            "value": 830,
+            "display": "830 บาท",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "ซื้อข้าว",
+            "value": 295,
+            "display": "295 บาท",
+            "color": "#FF6B6B",
+            "width_pct": 36
+          },
+          {
+            "label": "เหลือ",
+            "value": 535,
+            "display": "535 บาท",
+            "color": "#C7F464",
+            "width_pct": 64,
+            "is_remainder": true
+          }
+        ],
+        "unit": "บาท"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1: หาเงินรวม",
+            "expression": "450 + 380 = 830",
+            "a": 450,
+            "b": 380,
+            "res": 830,
+            "op": "+",
+            "formula": {
+              "display": "450 + 380 = 830",
+              "a": 450,
+              "b": 380,
+              "result": 830,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "450",
+              "b_display": "380",
+              "result_display": "830",
+              "operation": "add"
+            },
+            "story_connection": "450 + 380 = 830 บาท"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2: หาเงินที่เหลือ",
+            "expression": "830 - 295 = 535",
+            "a": 830,
+            "b": 295,
+            "res": 535,
+            "op": "-",
+            "formula": {
+              "display": "830 - 295 = 535",
+              "a": 830,
+              "b": 295,
+              "result": 535,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "830",
+              "b_display": "295",
+              "result_display": "535",
+              "operation": "subtract"
+            },
+            "story_connection": "830 - 295 = 535 บาท"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "450 + 380 - 295 = 535",
+      "content": "450 + 380 - 295 = 535",
+      "data": {
+        "expression": "450 + 380 - 295 = 535",
+        "content_th": "450 + 380 - 295 = 535",
+        "operations": [
+          {
+            "op": "+",
+            "a": 450,
+            "b": 380,
+            "result": 830
+          },
+          {
+            "op": "-",
+            "a": 830,
+            "b": 295,
+            "result": 535
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ร้านมีน้ำส้ม 560 ขวด ขายเพิ่มอีก 270 ขวด และดื่มไป 385 ขวด เหลือน้ำส้มกี่ขวด",
+      "choices": [
+        "445 ขวด",
+        "455 ขวด",
+        "435 ขวด",
+        "465 ขวด"
+      ],
+      "correct_answer": "445 ขวด",
+      "explanation": "560 + 270 = 830, 830 - 385 = 445 ขวด",
+      "data": {
+        "question": "ร้านมีน้ำส้ม 560 ขวด ขายเพิ่มอีก 270 ขวด และดื่มไป 385 ขวด เหลือน้ำส้มกี่ขวด",
+        "choices": [
+          "445 ขวด",
+          "455 ขวด",
+          "435 ขวด",
+          "465 ขวด"
+        ],
+        "correct_answer": "445 ขวด",
+        "explanation": "560 + 270 = 830, 830 - 385 = 445 ขวด"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "ดูโจทย์และหาตัวเลขที่ต้องการ",
+    "วาดแผนภาพช่วยคิด",
+    "เขียนประโยคตัวเลข",
+    "คำนวณคำตอบ",
+    "ตรวจคำตอบ"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "อ่านโจทย์ผิด",
+    "คำนวณผิด",
+    "สลับบวกลบผิด"
+  ],
+  "hints": [
+    "อ่านโจทย์ให้ดี",
+    "วาดรูปช่วย",
+    "ตรวจคำตอบด้วยวิธีกลับ"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

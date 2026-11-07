@@ -1,0 +1,179 @@
+{
+  "lesson_id": "angles_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "มุม 60° เป็นมุมอะไร",
+      "question_text_en": "What type is 60°?",
+      "choices": [
+        "มุมแหลม",
+        "มุมฉาก",
+        "มุมป้าน",
+        "มุมตรง"
+      ],
+      "correct_answer": "มุมแหลม",
+      "answer": "มุมแหลม",
+      "explanation": "60° < 90° = มุมแหลม",
+      "explanation_th": "60° < 90° = มุมแหลม",
+      "difficulty": "easy",
+      "hint_th": "60° < 90° = มุมแหลม"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "มุม 135° เป็นมุมอะไร",
+      "question_text_en": "What type is 135°?",
+      "choices": [
+        "มุมป้าน",
+        "มุมแหลม",
+        "มุมฉาก",
+        "มุมตรง"
+      ],
+      "correct_answer": "มุมป้าน",
+      "answer": "มุมป้าน",
+      "explanation": "135° > 90° = มุมป้าน",
+      "explanation_th": "135° > 90° = มุมป้าน",
+      "difficulty": "easy",
+      "hint_th": "135° > 90° = มุมป้าน"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "มุม 90° + 30° + 60° = ?",
+      "question_text_en": "90° + 30° + 60° = ?",
+      "choices": [
+        "180°",
+        "170°",
+        "190°",
+        "160°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "90+30+60=180°",
+      "explanation_th": "90+30+60=180°",
+      "difficulty": "easy",
+      "hint_th": "บวกองศาเหมือนจำนวนเต็ม"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "มุม 45° + 45° = ? เป็นมุมอะไร",
+      "question_text_en": "45° + 45° = ? What type?",
+      "choices": [
+        "90° มุมฉาก",
+        "90° มุมแหลม",
+        "80° มุมฉาก",
+        "100° มุมป้าน"
+      ],
+      "correct_answer": "90° มุมฉาก",
+      "answer": "90° มุมฉาก",
+      "explanation": "45+45=90° = มุมฉาก",
+      "explanation_th": "45+45=90° ซึ่งเป็นมุมฉากพอดี",
+      "difficulty": "easy",
+      "hint_th": "45°+45°=90° มุมฉาก"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "มุมแหลมมีขนาดเท่าไร",
+      "question_text_en": "What size is an acute angle?",
+      "choices": [
+        "น้อยกว่า 90°",
+        "เท่ากับ 90°",
+        "มากกว่า 90°",
+        "180°"
+      ],
+      "correct_answer": "น้อยกว่า 90°",
+      "answer": "น้อยกว่า 90°",
+      "explanation": "มุมแหลม < 90°",
+      "explanation_th": "มุมแหลม < 90°",
+      "difficulty": "easy",
+      "hint_th": "มุมแหลม < 90°"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "มุม 120° + 60° = ? เป็นมุมอะไรบ้าง",
+      "question_text_en": "120° + 60° = ? Types?",
+      "choices": [
+        "180° ป้าน แหลม",
+        "180° แหลม แหลม",
+        "180° ฉาก แหลม",
+        "170° ป้าน แหลม"
+      ],
+      "correct_answer": "180° ป้าน แหลม",
+      "answer": "180° ป้าน แหลม",
+      "explanation": "120+60=180° | 120°>90°ป้าน 60°<90°แหลม",
+      "explanation_th": "120+60=180° | 120°เป็นมุมป้าน 60°เป็นมุมแหลม",
+      "difficulty": "easy",
+      "hint_th": "บวกและจำแนกมุม"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "ข้อใดถูก: มุมฉาก = 90°",
+      "question_text_en": "Which: Right angle = 90°?",
+      "choices": [
+        "ถูกต้อง",
+        "ผิด มุมฉาก > 90°",
+        "ผิด มุมฉาก < 90°",
+        "ผิด มุมฉาก = 180°"
+      ],
+      "correct_answer": "ถูกต้อง",
+      "answer": "ถูกต้อง",
+      "explanation": "มุมฉาก = 90° ถูกต้อง",
+      "explanation_th": "มุมฉาก = 90° ถูกต้อง",
+      "difficulty": "easy",
+      "hint_th": "มุมฉาก = 90°"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "มุม 100° + 80° = ?",
+      "question_text_en": "100° + 80° = ?",
+      "choices": [
+        "180°",
+        "170°",
+        "190°",
+        "160°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "100+80=180°",
+      "explanation_th": "100+80=180°",
+      "difficulty": "easy",
+      "hint_th": "100+80=180°"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "มุม 45° + 45° + 90° = ?",
+      "question_text_en": "45° + 45° + 90° = ?",
+      "choices": [
+        "180°",
+        "170°",
+        "190°",
+        "160°"
+      ],
+      "correct_answer": "180°",
+      "answer": "180°",
+      "explanation": "45+45+90=180°",
+      "explanation_th": "45+45+90=180°",
+      "difficulty": "easy",
+      "hint_th": "45+45+90=180°"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "มุมใดไม่เป็นมุมแหลม: 35°, 50°, 85°, 95°",
+      "question_text_en": "Which NOT acute: 35°, 50°, 85°, 95°?",
+      "choices": [
+        "95°",
+        "35°",
+        "50°",
+        "85°"
+      ],
+      "correct_answer": "95°",
+      "answer": "95°",
+      "explanation": "95° > 90° ไม่เป็นมุมแหลม (เป็นมุมป้าน)",
+      "explanation_th": "95° > 90° ไม่เป็นมุมแหลม เป็นมุมป้าน",
+      "difficulty": "easy",
+      "hint_th": "มุมแหลม < 90° ดังนั้น 95° ไม่เป็น"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

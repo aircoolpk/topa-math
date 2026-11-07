@@ -78,6 +78,43 @@
       }
     },
     {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turn Pictures into Math Symbols)",
+      "description": "Classify 2D shapes by their attributes.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Classify by number of sides",
+            "expression": "3 sides → Triangle | 4 sides → Quadrilateral | 0 sides → Circle/Oval",
+            "formula": {
+              "display": "Triangle = 3 sides | Rectangle = 4 sides | Circle = 0 sides",
+              "operation": "classify"
+            },
+            "column_calculation": {
+              "display": "Sides → Shape Name",
+              "operation": "classify"
+            },
+            "story_connection": "From the bar model: triangle has 3 sides, rectangle has 4 sides, circle has 0 sides"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Check for right angles",
+            "expression": "Square: 4 right angles | Rectangle: 4 right angles | Triangle: 0 right angles",
+            "formula": {
+              "display": "Square → 4 right angles | Triangle → 0 right angles",
+              "operation": "classify"
+            },
+            "column_calculation": {
+              "display": "Right angle → Shape",
+              "operation": "classify"
+            },
+            "story_connection": "From the bar model: square and rectangle have 4 right angles, triangle has none"
+          }
+        ]
+      }
+    },
+    {
       "type": "number_sentence",
       "title": "Shape Properties",
       "expression": "Triangle: 3 sides + 3 corners",

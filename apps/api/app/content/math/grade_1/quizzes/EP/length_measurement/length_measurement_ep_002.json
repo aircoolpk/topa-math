@@ -1,0 +1,179 @@
+{
+  "lesson_id": "length_measurement_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "len_ep_q002_e01",
+      "question_text": "A yellow ribbon is 8 cm long. A pink ribbon is 5 cm long. How much longer is the yellow ribbon?",
+      "question_text_th": "ริบบิ้นเหลืองยาว 8 เซนติเมตร ริบบิ้นชมพูยาว 5 เซนติเมตร ริบบิ้นเหลืองยาวกว่ากี่เซนติเมตร",
+      "choices": [
+        "3 cm longer",
+        "8 cm longer",
+        "10 cm longer",
+        "11 cm longer"
+      ],
+      "correct_answer": "3 cm longer",
+      "answer": "3 cm longer",
+      "explanation": "8 - 5 = 3 cm longer",
+      "explanation_th": "8 - 5 = 3 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Subtract."
+    },
+    {
+      "question_id": "len_ep_q002_e02",
+      "question_text": "A green leaf is 12 cm long. A small leaf is 4 cm long. How much longer is the green leaf?",
+      "question_text_th": "ใบไม้สีเขียวยาว 12 เซนติเมตร ใบเล็กยาว 4 เซนติเมตร ใบสีเขียวยาวกว่ากี่เซนติเมตร",
+      "choices": [
+        "8 cm longer",
+        "13 cm longer",
+        "5 cm longer",
+        "16 cm longer"
+      ],
+      "correct_answer": "8 cm longer",
+      "answer": "8 cm longer",
+      "explanation": "12 - 4 = 8 cm longer",
+      "explanation_th": "12 - 4 = 8 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Subtract."
+    },
+    {
+      "question_id": "len_ep_q002_e03",
+      "question_text": "Book's paper is 20 cm long. He folds 6 cm. How long is the paper now?",
+      "question_text_th": "กระดาษบุ๊กยาว 20 เซนติเมตร พับเข้า 6 เซนติเมตร กระดาษตอนนี้ยาวเท่าไหร่",
+      "choices": [
+        "14 cm",
+        "19 cm",
+        "11 cm",
+        "22 cm"
+      ],
+      "correct_answer": "14 cm",
+      "answer": "14 cm",
+      "explanation": "20 - 6 = 14 cm",
+      "explanation_th": "20 - 6 = 14 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Subtract folded part."
+    },
+    {
+      "question_id": "len_ep_q002_m01",
+      "question_text": "A red rope is 28 cm long. A blue rope is 15 cm long. How much longer is the red rope?",
+      "question_text_th": "เชือกสีแดงยาว 28 เซนติเมตร เชือกสีน้ำเงินยาว 15 เซนติเมตร เชือกแดงยาวกว่ากี่เซนติเมตร",
+      "choices": [
+        "13 cm longer",
+        "18 cm longer",
+        "10 cm longer",
+        "21 cm longer"
+      ],
+      "correct_answer": "13 cm longer",
+      "answer": "13 cm longer",
+      "explanation": "28 - 15 = 13 cm longer",
+      "explanation_th": "28 - 15 = 13 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Subtract."
+    },
+    {
+      "question_id": "len_ep_q002_m02",
+      "question_text": "Lin's ribbon is 35 cm. She cuts 12 cm to wrap a gift. How long is the remaining ribbon?",
+      "question_text_th": "ริบบิ้นลินยาว 35 เซนติเมตร ตัด 12 เซนติเมตร ทำของขวัญ เหลือริบบิ้นยาวเท่าไหร่",
+      "choices": [
+        "23 cm",
+        "28 cm",
+        "20 cm",
+        "31 cm"
+      ],
+      "correct_answer": "23 cm",
+      "answer": "23 cm",
+      "explanation": "35 - 12 = 23 cm",
+      "explanation_th": "35 - 12 = 23 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Subtract cut part."
+    },
+    {
+      "question_id": "len_ep_q002_m03",
+      "question_text": "A big stick is 40 cm. A small stick is 18 cm. How much shorter is the small stick?",
+      "question_text_th": "ไม้ใหญ่ยาว 40 เซนติเมตร ไม้เล็กยาว 18 เซนติเมตร ไม้เล็กสั้นกว่าไม้ใหญ่กี่เซนติเมตร",
+      "choices": [
+        "22 cm shorter",
+        "27 cm shorter",
+        "19 cm shorter",
+        "30 cm shorter"
+      ],
+      "correct_answer": "22 cm shorter",
+      "answer": "22 cm shorter",
+      "explanation": "40 - 18 = 22 cm shorter",
+      "explanation_th": "40 - 18 = 22 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Subtract."
+    },
+    {
+      "question_id": "len_ep_q002_m04",
+      "question_text": "Mali's rope is 30 cm. She adds 10 cm more rope to it. How long is the rope now?",
+      "question_text_th": "เชือกมะลิยาว 30 เซนติเมตร ต่อเชือกเพิ่มอีก 10 เซนติเมตร เชือกตอนนี้ยาวเท่าไหร่",
+      "choices": [
+        "40 cm",
+        "45 cm",
+        "37 cm",
+        "48 cm"
+      ],
+      "correct_answer": "40 cm",
+      "answer": "40 cm",
+      "explanation": "30 + 10 = 40 cm",
+      "explanation_th": "30 + 10 = 40 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Add more rope."
+    },
+    {
+      "question_id": "len_ep_q002_h01",
+      "question_text": "A green paper is 50 cm long. A red paper is 20 cm long. Lin cuts 15 cm from the green paper. How long is the green paper now?",
+      "question_text_th": "กระดาษสีเขียวยาว 50 เซนติเมตร กระดาษสีแดงยาว 20 เซนติเมตร ลินตัดกระดาษเขียวออก 15 เซนติเมตร กระดาษเขียวตอนนี้ยาวเท่าไหร่",
+      "choices": [
+        "35 cm",
+        "40 cm",
+        "32 cm",
+        "43 cm"
+      ],
+      "correct_answer": "35 cm",
+      "answer": "35 cm",
+      "explanation": "50 - 15 = 35 cm",
+      "explanation_th": "50 - 15 = 35 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Subtract cut."
+    },
+    {
+      "question_id": "len_ep_q002_h02",
+      "question_text": "Book's ribbon is 60 cm. He cuts 20 cm off and then adds 15 cm of new ribbon. How long is Book's ribbon now?",
+      "question_text_th": "ริบบิ้นบุ๊กยาว 60 เซนติเมตร ตัดออก 20 เซนติเมตร แล้วต่อริบบิ้นใหม่อีก 15 เซนติเมตร บุ๊กมีริบบิ้นยาวเท่าไหร่ตอนนี้",
+      "choices": [
+        "55 cm",
+        "60 cm",
+        "52 cm",
+        "63 cm"
+      ],
+      "correct_answer": "55 cm",
+      "answer": "55 cm",
+      "explanation": "60 - 20 + 15 = 55 cm",
+      "explanation_th": "60 - 20 + 15 = 55 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Cut then add."
+    },
+    {
+      "question_id": "len_ep_q002_h03",
+      "question_text": "A blue stick is 45 cm. A red stick is 22 cm. Lin cuts 10 cm from the blue stick and 7 cm from the red stick. What is the total length of both sticks now?",
+      "question_text_th": "ไม้สีน้ำเงินยาว 45 เซนติเมตร ไม้สีแดงยาว 22 เซนติเมตร ลินตัดไม้สีน้ำเงิน 10 ซม และไม้สีแดง 7 ซม รวมยาวเท่าไหร่ตอนนี้",
+      "choices": [
+        "50 cm",
+        "55 cm",
+        "47 cm",
+        "58 cm"
+      ],
+      "correct_answer": "50 cm",
+      "answer": "50 cm",
+      "explanation": "(45-10) + (22-7) = 35 + 15 = 50 cm",
+      "explanation_th": "(45-10)+(22-7) = 35+15 = 50 ซม.",
+      "difficulty": "hard",
+      "hint_th": "Cut both then add."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

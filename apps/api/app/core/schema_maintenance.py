@@ -230,6 +230,111 @@ REFERRAL_TABLES = {
     ],
 }
 
+AFFILIATE_TABLES = {
+    "sqlite": [
+        """
+        CREATE TABLE IF NOT EXISTS affiliate_payout_accounts (
+            id VARCHAR(36) PRIMARY KEY,
+            user_id VARCHAR(36) UNIQUE,
+            payout_method VARCHAR(20),
+            account_holder_name VARCHAR(160),
+            bank_name VARCHAR(120),
+            account_last4 VARCHAR(8),
+            promptpay_last4 VARCHAR(8),
+            payout_details JSON DEFAULT '{}',
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        """,
+        """
+        CREATE TABLE IF NOT EXISTS affiliate_withdrawal_requests (
+            id VARCHAR(36) PRIMARY KEY,
+            user_id VARCHAR(36),
+            payout_account_id VARCHAR(36),
+            amount_minor INTEGER,
+            currency VARCHAR(3) DEFAULT 'THB',
+            status VARCHAR(30) DEFAULT 'pending_review',
+            reviewed_by_admin_id VARCHAR(36),
+            admin_note TEXT,
+            requested_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            paid_at DATETIME
+        )
+        """,
+        """
+        CREATE TABLE IF NOT EXISTS affiliate_commission_ledger (
+            id VARCHAR(36) PRIMARY KEY,
+            affiliate_user_id VARCHAR(36),
+            referred_user_id VARCHAR(36),
+            payment_reference_id VARCHAR(160) UNIQUE,
+            source_event_id VARCHAR(160),
+            amount_paid_minor INTEGER,
+            commission_minor INTEGER,
+            currency VARCHAR(3) DEFAULT 'THB',
+            rate_bps INTEGER,
+            status VARCHAR(20) DEFAULT 'pending',
+            available_at DATETIME,
+            reversed_at DATETIME,
+            withdrawal_request_id VARCHAR(36),
+            metadata JSON DEFAULT '{}',
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        """,
+    ],
+    "postgresql": [
+        """
+        CREATE TABLE IF NOT EXISTS affiliate_payout_accounts (
+            id VARCHAR(36) PRIMARY KEY,
+            user_id VARCHAR(36) UNIQUE REFERENCES users(id) ON DELETE CASCADE,
+            payout_method VARCHAR(20),
+            account_holder_name VARCHAR(160),
+            bank_name VARCHAR(120),
+            account_last4 VARCHAR(8),
+            promptpay_last4 VARCHAR(8),
+            payout_details JSONB DEFAULT '{}',
+            created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+        )
+        """,
+        """
+        CREATE TABLE IF NOT EXISTS affiliate_withdrawal_requests (
+            id VARCHAR(36) PRIMARY KEY,
+            user_id VARCHAR(36) REFERENCES users(id) ON DELETE CASCADE,
+            payout_account_id VARCHAR(36) REFERENCES affiliate_payout_accounts(id),
+            amount_minor INTEGER,
+            currency VARCHAR(3) DEFAULT 'THB',
+            status VARCHAR(30) DEFAULT 'pending_review',
+            reviewed_by_admin_id VARCHAR(36) REFERENCES users(id) ON DELETE SET NULL,
+            admin_note TEXT,
+            requested_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+            paid_at TIMESTAMP WITH TIME ZONE
+        )
+        """,
+        """
+        CREATE TABLE IF NOT EXISTS affiliate_commission_ledger (
+            id VARCHAR(36) PRIMARY KEY,
+            affiliate_user_id VARCHAR(36) REFERENCES users(id) ON DELETE CASCADE,
+            referred_user_id VARCHAR(36) REFERENCES users(id) ON DELETE CASCADE,
+            payment_reference_id VARCHAR(160) UNIQUE,
+            source_event_id VARCHAR(160),
+            amount_paid_minor INTEGER,
+            commission_minor INTEGER,
+            currency VARCHAR(3) DEFAULT 'THB',
+            rate_bps INTEGER,
+            status VARCHAR(20) DEFAULT 'pending',
+            available_at TIMESTAMP WITH TIME ZONE,
+            reversed_at TIMESTAMP WITH TIME ZONE,
+            withdrawal_request_id VARCHAR(36) REFERENCES affiliate_withdrawal_requests(id) ON DELETE SET NULL,
+            metadata JSONB DEFAULT '{}',
+            created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+        )
+        """,
+    ],
+}
+
 
 def ensure_local_schema(engine: Engine) -> None:
     inspector = inspect(engine)
@@ -286,6 +391,12 @@ def ensure_local_schema(engine: Engine) -> None:
         if "public_shares" not in table_names:
             connection.execute(text(PUBLIC_SHARES_TABLES.get(dialect, PUBLIC_SHARES_TABLES["sqlite"])))
         for table_name, create_table_sql in zip(("referral_events", "coin_ledger"), REFERRAL_TABLES.get(dialect, REFERRAL_TABLES["sqlite"])):
+            if table_name not in table_names:
+                connection.execute(text(create_table_sql))
+        for table_name, create_table_sql in zip(
+            ("affiliate_payout_accounts", "affiliate_withdrawal_requests", "affiliate_commission_ledger"),
+            AFFILIATE_TABLES.get(dialect, AFFILIATE_TABLES["sqlite"]),
+        ):
             if table_name not in table_names:
                 connection.execute(text(create_table_sql))
         for table_name, missing_columns in missing_by_table.items():

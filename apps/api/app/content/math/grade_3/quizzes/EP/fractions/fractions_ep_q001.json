@@ -1,0 +1,179 @@
+{
+  "lesson_id": "fractions_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "frac_ep_q001_e01",
+      "question_text": "Case 1: Lin has 8 pieces of pizza and eats 1/8 of the pizza. How many pieces does Lin eat?",
+      "question_text_th": "สถานการณ์ที่ 1: ลินมีพิซซ่า 8 ชิ้น ลินกินไป 1/8 ของพิซซ่า ลินกินไปกี่ชิ้น",
+      "choices": [
+        "1 piece",
+        "2 pieces",
+        "8 pieces",
+        "4 pieces"
+      ],
+      "correct_answer": "1 piece",
+      "answer": "1/8 x 8 = 1 piece",
+      "explanation": "1/8 x 8 = 1 piece",
+      "explanation_th": "1/8 x 8 = 1 ชิ้น",
+      "difficulty": "easy",
+      "hint_th": "Multiply fraction by total number"
+    },
+    {
+      "question_id": "frac_ep_q001_e02",
+      "question_text": "Case 2: Mother has 12 pieces of cake and gives Lin 1/4 of all the cake. How many pieces does Lin get?",
+      "question_text_th": "สถานการณ์ที่ 2: แม่มีขนมเค้ก 12 ชิ้น ให้ลิน 1/4 ของขนมเค้กทั้งหมด ลินได้ขนมกี่ชิ้น",
+      "choices": [
+        "3 pieces",
+        "4 pieces",
+        "6 pieces",
+        "2 pieces"
+      ],
+      "correct_answer": "3 pieces",
+      "answer": "1/4 x 12 = 3 pieces",
+      "explanation": "1/4 x 12 = 3 pieces",
+      "explanation_th": "1/4 x 12 = 3 ชิ้น",
+      "difficulty": "easy",
+      "hint_th": "Multiply fraction by total number"
+    },
+    {
+      "question_id": "frac_ep_q001_e03",
+      "question_text": "Case 3: Lin has 20 meatballs and gives 1/5 of them to a friend. How many meatballs does the friend get?",
+      "question_text_th": "สถานการณ์ที่ 3: ลินมีลูกชิ้น 20 ลูก แบ่งให้เพื่อน 1/5 ของลูกชิ้นทั้งหมด เพื่อนได้ลูกชิ้นกี่ลูก",
+      "choices": [
+        "4 meatballs",
+        "5 meatballs",
+        "10 meatballs",
+        "2 meatballs"
+      ],
+      "correct_answer": "4 meatballs",
+      "answer": "1/5 x 20 = 4 meatballs",
+      "explanation": "1/5 x 20 = 4 meatballs",
+      "explanation_th": "1/5 x 20 = 4 ลูก",
+      "difficulty": "easy",
+      "hint_th": "Multiply fraction by total number"
+    },
+    {
+      "question_id": "frac_ep_q001_m01",
+      "question_text": "Case 4: Lin has 24 notebooks and gives 3/8 of them to a friend. How many notebooks does Lin give?",
+      "question_text_th": "สถานการณ์ที่ 4: ลินมีสมุด 24 เล่ม ให้เพื่อนไป 3/8 ของสมุดทั้งหมด ลินให้สมุดไปกี่เล่ม",
+      "choices": [
+        "9 notebooks",
+        "8 notebooks",
+        "6 notebooks",
+        "12 notebooks"
+      ],
+      "correct_answer": "9 notebooks",
+      "answer": "3/8 x 24 = 9 notebooks",
+      "explanation": "3/8 x 24 = 9 notebooks",
+      "explanation_th": "3/8 x 24 = 9 เล่ม",
+      "difficulty": "medium",
+      "hint_th": "Multiply fraction by total number"
+    },
+    {
+      "question_id": "frac_ep_q001_m02",
+      "question_text": "Case 5: Mother buys 15 fruits and gives Lin 2/5 of all the fruits. How many fruits does Lin get?",
+      "question_text_th": "สถานการณ์ที่ 5: แม่ซื้อผลไม้ 15 ผล ให้ลิน 2/5 ของผลไม้ทั้งหมด ลินได้ผลไม้กี่ผล",
+      "choices": [
+        "6 fruits",
+        "5 fruits",
+        "10 fruits",
+        "3 fruits"
+      ],
+      "correct_answer": "6 fruits",
+      "answer": "2/5 x 15 = 6 fruits",
+      "explanation": "2/5 x 15 = 6 fruits",
+      "explanation_th": "2/5 x 15 = 6 ผล",
+      "difficulty": "medium",
+      "hint_th": "Multiply fraction by total number"
+    },
+    {
+      "question_id": "frac_ep_q001_m03",
+      "question_text": "Case 6: Lin has 40 baht and uses 2/5 of all the money. How much does Lin spend?",
+      "question_text_th": "สถานการณ์ที่ 6: ลินมีเงิน 40 บาท ใช้ไป 2/5 ของเงินทั้งหมด ลินใช้ไปกี่บาท",
+      "choices": [
+        "16 baht",
+        "15 baht",
+        "20 baht",
+        "10 baht"
+      ],
+      "correct_answer": "16 baht",
+      "answer": "2/5 x 40 = 16 baht",
+      "explanation": "2/5 x 40 = 16 baht",
+      "explanation_th": "2/5 x 40 = 16 บาท",
+      "difficulty": "medium",
+      "hint_th": "Multiply fraction by total number"
+    },
+    {
+      "question_id": "frac_ep_q001_m04",
+      "question_text": "Case 7: A mango orchard has 18 mango trees and harvests 2/3 of all the trees. How many trees are harvested?",
+      "question_text_th": "สถานการณ์ที่ 7: สวนมะม่วงมีต้นมะม่วง 18 ต้น เก็บเกี่ยวไป 2/3 ของต้นมะม่วงทั้งหมด เก็บเกี่ยวได้กี่ต้น",
+      "choices": [
+        "12 trees",
+        "9 trees",
+        "6 trees",
+        "15 trees"
+      ],
+      "correct_answer": "12 trees",
+      "answer": "2/3 x 18 = 12 trees",
+      "explanation": "2/3 x 18 = 12 trees",
+      "explanation_th": "2/3 x 18 = 12 ต้น",
+      "difficulty": "medium",
+      "hint_th": "Multiply fraction by total number"
+    },
+    {
+      "question_id": "frac_ep_q001_h01",
+      "question_text": "Case 8: Lin has 2 liters of fruit juice and gives 3/4 to a friend and another 1/4 to her mother. How much juice is left?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินมีน้ำผลไม้ 2 ลิตร แบ่งให้เพื่อน 3/4 ของน้ำผลไม้ทั้งหมด แล้วแบ่งให้แม่อีก 1/4 ของน้ำผลไม้ทั้งหมด ลินเหลือน้ำผลไม้กี่ลิตร",
+      "choices": [
+        "0 liters",
+        "1/2 liter",
+        "1 liter",
+        "3/4 liter"
+      ],
+      "correct_answer": "0 liters",
+      "answer": "Friend 3/4 + mother 1/4 = 4/4 = all juice used → 0 liters left",
+      "explanation": "Friend 3/4 + mother 1/4 = 4/4 = all juice used → 0 liters left",
+      "explanation_th": "3/4 + 1/4 = 4/4 = 1 หมด → เหลือ 0",
+      "difficulty": "hard",
+      "hint_th": "Gave away more than 1 whole → 0 left"
+    },
+    {
+      "question_id": "frac_ep_q001_h02",
+      "question_text": "Case 9: Lin has 30 candies and gives 2/5 to a friend and 1/3 to her mother. How many in total are given away and how many are left?",
+      "question_text_th": "สถานการณ์ที่ 9: ลินมีขนม 30 ชิ้น แบ่งให้เพื่อน 2/5 และแม่ 1/3 ของขนมทั้งหมด รวมแบ่งไปกี่ชิ้น และเหลือกี่ชิ้น",
+      "choices": [
+        "22 given, 8 left",
+        "20 given, 10 left",
+        "24 given, 6 left",
+        "18 given, 12 left"
+      ],
+      "correct_answer": "22 given, 8 left",
+      "answer": "Friend: 2/5x30=12, Mother: 1/3x30=10, Total: 12+10=22, Left: 30-22=8",
+      "explanation": "Friend: 2/5x30=12, Mother: 1/3x30=10, Total: 12+10=22, Left: 30-22=8",
+      "explanation_th": "เพื่อน 12 + แม่ 10 = 22 ชิ้น, เหลือ 8 ชิ้น",
+      "difficulty": "hard",
+      "hint_th": "Find each share, add, then subtract from 30"
+    },
+    {
+      "question_id": "frac_ep_q001_h03",
+      "question_text": "Case 10: Lin has 120 baht and uses 1/3 then uses another 1/4 of the total money. How much money is left?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินมีเงิน 120 บาท ใช้ไป 1/3 แล้วใช้ไปอีก 1/4 ของเงินทั้งหมด ลินเหลือเงินกี่บาท",
+      "choices": [
+        "50 baht",
+        "40 baht",
+        "60 baht",
+        "30 baht"
+      ],
+      "correct_answer": "50 baht",
+      "answer": "First: 1/3x120=40, Second: 1/4x120=30, Total used: 40+30=70, Left: 120-70=50 baht",
+      "explanation": "First: 1/3x120=40, Second: 1/4x120=30, Total used: 40+30=70, Left: 120-70=50 baht",
+      "explanation_th": "1/3 ของ 120 = 40, 1/4 ของ 120 = 30, รวม 70, เหลือ 50 บาท",
+      "difficulty": "hard",
+      "hint_th": "Used twice from full amount, then subtract"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

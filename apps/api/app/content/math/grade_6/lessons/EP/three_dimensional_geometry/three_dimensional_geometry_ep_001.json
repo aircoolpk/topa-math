@@ -1,0 +1,200 @@
+{
+  "variant_id": "three_dimensional_geometry_ep_001",
+  "variant_title_en": "Three-Dimensional Geometry",
+  "status": "needs_review",
+  "title_en": "Three-Dimensional Geometry",
+  "title_th": "รูปเรขาคณิตสามมิติ",
+  "story_theme_en": "A rectangular box is 8 cm wide, 12 cm long, and 5 cm tall. It is filled with small cubes that are 2 cm on each side. How many small cubes fit inside the box?",
+  "helper_tip": "Volume of a cube = side × side × side",
+  "hint_th": "ปริมาตรทรงลูกบาศก์ = ด้าน × ด้าน × ด้าน",
+  "think_story_en": "Volume of box = 8 × 12 × 5 = 480 cubic centimeters. Volume of one small cube = 2 × 2 × 2 = 8 cubic centimeters. Number of cubes = 480 ÷ 8 = 60 cubes.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A rectangular box is 8 cm wide, 12 cm long, and 5 cm tall. It is filled with small cubes that are 2 cm on each side. How many small cubes fit inside the box?",
+      "data": {
+        "content_en": "A rectangular box is 8 cm wide, 12 cm long, and 5 cm tall. It is filled with small cubes that are 2 cm on each side. How many small cubes fit inside the box?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Volume of box = 8 × 12 × 5 = 480 cubic centimeters. Volume of one small cube = 2 × 2 × 2 = 8 cubic centimeters. Number of cubes = 480 ÷ 8 = 60 cubes.",
+      "data": {
+        "content_en": "Volume of box = 8 × 12 × 5 = 480 cubic centimeters. Volume of one small cube = 2 × 2 × 2 = 8 cubic centimeters. Number of cubes = 480 ÷ 8 = 60 cubes."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "cubic centimeters",
+        "bars": [
+          {
+            "label": "Width",
+            "value": 8,
+            "display": "8 cm",
+            "color": "#4ECDC4",
+            "width_pct": 67
+          },
+          {
+            "label": "Length",
+            "value": 12,
+            "display": "12 cm",
+            "color": "#45B7D1",
+            "width_pct": 100
+          },
+          {
+            "label": "Height",
+            "value": 5,
+            "display": "5 cm",
+            "color": "#96CEB4",
+            "width_pct": 42
+          },
+          {
+            "label": "Volume",
+            "value": 480,
+            "display": "480 cu cm",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "8 × 12 = 96",
+            "formula": {
+              "display": "8 × 12 = 96",
+              "a": 8,
+              "b": 12,
+              "result": 96,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}8&\\ ×\\quad 12&\\ \\hline 96&\\\\ \\hline \\end{array}",
+              "a_display": "8",
+              "b_display": "12",
+              "result_display": "96",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 8 × 12 = 96"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "96 × 5 = 480",
+            "formula": {
+              "display": "96 × 5 = 480",
+              "a": 96,
+              "b": 5,
+              "result": 480,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}96&\\ ×\\quad 5&\\ \\hline 480&\\\\ \\hline \\end{array}",
+              "a_display": "96",
+              "b_display": "5",
+              "result_display": "480",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 96 × 5 = 480"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "480 ÷ 8 = 60",
+            "formula": {
+              "display": "480 ÷ 8 = 60",
+              "a": 480,
+              "b": 8,
+              "result": 60,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}480&\\ ÷\\quad 8&\\ \\hline 60&\\\\ \\hline \\end{array}",
+              "a_display": "480",
+              "b_display": "8",
+              "result_display": "60",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 480 ÷ 8 = 60"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "8 × 12 = 96 | 96 × 5 = 480 | 480 ÷ 8 = 60",
+      "content": "8 × 12 = 96 | 96 × 5 = 480 | 480 ÷ 8 = 60",
+      "data": {
+        "expression": "8 × 12 = 96 | 96 × 5 = 480 | 480 ÷ 8 = 60",
+        "operations": [
+          {
+            "op": "×",
+            "a": 8,
+            "b": 12,
+            "result": 96
+          },
+          {
+            "op": "×",
+            "a": 96,
+            "b": 5,
+            "result": 480
+          },
+          {
+            "op": "÷",
+            "a": 480,
+            "b": 8,
+            "result": 60
+          }
+        ],
+        "content_en": "8 × 12 = 96 | 96 × 5 = 480 | 480 ÷ 8 = 60"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A cube has sides of 6 cm. What is its volume?",
+      "choices": [
+        "36 cu cm",
+        "72 cu cm",
+        "216 cu cm",
+        "18 cu cm"
+      ],
+      "correct_answer": "216 cu cm",
+      "explanation": "6 × 6 × 6 = 216 cu cm",
+      "data": {
+        "question": "A cube has sides of 6 cm. What is its volume?",
+        "choices": [
+          "36 cu cm",
+          "72 cu cm",
+          "216 cu cm",
+          "18 cu cm"
+        ],
+        "correct_answer": "216 cu cm",
+        "explanation": "6 × 6 × 6 = 216 cu cm"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

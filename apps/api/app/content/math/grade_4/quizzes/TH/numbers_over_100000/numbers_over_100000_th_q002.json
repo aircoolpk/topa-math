@@ -1,0 +1,179 @@
+{
+  "lesson_id": "numbers_over_100000_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "สวนสัตว์มีสัตว์ 3 ประเภท แพะ 28,750 ตัว ม้า 19,830 ตัว และวัว 37,920 ตัว รวมสัตว์ทั้งหมดกี่ตัว",
+      "question_text_en": "A zoo has 3 types of animals: 28,750 goats, 19,830 horses, and 37,920 cows. How many animals in total?",
+      "choices": [
+        "86,500 ตัว",
+        "76,500 ตัว",
+        "85,600 ตัว",
+        "86,000 ตัว"
+      ],
+      "correct_answer": "86,500 ตัว",
+      "answer": "86,500 ตัว",
+      "explanation": "28,750 + 19,830 + 37,920 = 86,500 ตัว",
+      "explanation_th": "28,750 + 19,830 + 37,920 = 86,500 ตัว",
+      "difficulty": "easy",
+      "hint_th": "บวกสามจำนวน ระวังการทด"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "โรงงานผลิตสินค้า 3 เครื่อง ผลิตได้ 45,600 ชิ้น 38,750 ชิ้น และ 52,150 ชิ้น รวมได้กี่ชิ้น",
+      "question_text_en": "A factory with 3 machines produces 45,600, 38,750, and 52,150 items. How many items in total?",
+      "choices": [
+        "136,500 ชิ้น",
+        "126,500 ชิ้น",
+        "136,050 ชิ้น",
+        "126,050 ชิ้น"
+      ],
+      "correct_answer": "136,500 ชิ้น",
+      "answer": "136,500 ชิ้น",
+      "explanation": "45,600 + 38,750 + 52,150 = 136,500 ชิ้น",
+      "explanation_th": "45,600 + 38,750 + 52,150 = 136,500 ชิ้น",
+      "difficulty": "easy",
+      "hint_th": "บวกจำนวนสามจำนวน"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "ห้างสรรพสินค้ามีลูกค้า 3 วัน วันละ 58,340 คน 67,280 คน และ 71,875 คน รวมลูกค้ากี่คน",
+      "question_text_en": "A department store had 58,340, 67,280, and 71,875 customers over 3 days. How many customers in total?",
+      "choices": [
+        "197,495 คน",
+        "187,495 คน",
+        "197,945 คน",
+        "187,945 คน"
+      ],
+      "correct_answer": "197,495 คน",
+      "answer": "197,495 คน",
+      "explanation": "58,340 + 67,280 + 71,875 = 197,495 คน",
+      "explanation_th": "58,340 + 67,280 + 71,875 = 197,495 คน",
+      "difficulty": "medium",
+      "hint_th": "บวกจำนวนสามจำนวน ระวังทดหลายหลัก"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "ร้านขายเสื้อผ้าขายเสื้อได้ 35,750 ตัว กางเกงได้ 28,650 ตัว และผ้าถุงได้ 19,480 ตัว รวมขายได้กี่ตัว",
+      "question_text_en": "A clothing shop sold 35,750 shirts, 28,650 pants, and 19,480 skirts. How many items in total?",
+      "choices": [
+        "83,880 ตัว",
+        "73,880 ตัว",
+        "83,980 ตัว",
+        "73,980 ตัว"
+      ],
+      "correct_answer": "83,880 ตัว",
+      "answer": "83,880 ตัว",
+      "explanation": "35,750 + 28,650 + 19,480 = 83,880 ตัว",
+      "explanation_th": "35,750 + 28,650 + 19,480 = 83,880 ตัว",
+      "difficulty": "medium",
+      "hint_th": "บวกสามจำนวน ตรวจสอบการทด"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "จำนวนสามจำนวนบวกกันได้ 200,000 โดยสองจำนวนแรกคือ 78,450 และ 65,830 จงหาจำนวนที่สาม",
+      "question_text_en": "Three numbers add up to 200,000. The first two are 78,450 and 65,830. What is the third number?",
+      "choices": [
+        "55,720",
+        "65,720",
+        "55,820",
+        "45,720"
+      ],
+      "correct_answer": "55,720",
+      "answer": "55,720",
+      "explanation": "200,000 - 78,450 - 65,830 = 55,720",
+      "explanation_th": "200,000 - 78,450 - 65,830 = 55,720",
+      "difficulty": "medium",
+      "hint_th": "200,000 - (78,450+65,830) = จำนวนที่สาม"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "บริษัทมีพนักงาน 4 แผนก แผนกละ 28,450 25,380 31,270 และ 34,900 คน รวมพนักงานทั้งหมดกี่คน",
+      "question_text_en": "A company has 4 departments with 28,450, 25,380, 31,270, and 34,900 employees. How many employees in total?",
+      "choices": [
+        "120,000 คน",
+        "110,000 คน",
+        "119,000 คน",
+        "120,100 คน"
+      ],
+      "correct_answer": "120,000 คน",
+      "answer": "120,000 คน",
+      "explanation": "28,450+25,380+31,270+34,900=120,000 คน",
+      "explanation_th": "28,450+25,380+31,270+34,900=120,000 คน",
+      "difficulty": "hard",
+      "hint_th": "บวกสี่จำนวน ตรวจสอบผลรวม"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "ข้อใดต่อไปนี้ถูกต้อง: ก. 45,678 + 32,109 = 77,787 | ข. 56,780 + 43,210 = 99,990 | ค. 28,450 + 71,550 = 100,000 | ง. 38,920 + 61,080 = 100,000",
+      "question_text_en": "Which is correct? A. 45,678 + 32,109 = 77,787 | B. 56,780 + 43,210 = 99,990 | C. 28,450 + 71,550 = 100,000 | D. 38,920 + 61,080 = 100,000",
+      "choices": [
+        "ข และ ค ถูก",
+        "ค และ ง ถูก",
+        "ก และ ข ถูก",
+        "ข, ค และ ง ถูก"
+      ],
+      "correct_answer": "ค และ ง ถูก",
+      "answer": "ค และ ง ถูก",
+      "explanation": "ค: 28,450+71,550=100,000 ✓ ง: 38,920+61,080=100,000 ✓ ข: 56,780+43,210=99,990 ✗",
+      "explanation_th": "ค: 28,450+71,550=100,000 ถูก | ง: 38,920+61,080=100,000 ถูก | ข: ได้ 99,990 ไม่ถูก",
+      "difficulty": "hard",
+      "hint_th": "ตรวจสอบโดยการบวกแต่ละข้อ"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "ถ้า 67,890 + 45,670 = 113,560 แล้ว 113,560 - 45,670 มีค่าเท่าไร",
+      "question_text_en": "If 67,890 + 45,670 = 113,560, then what is 113,560 - 45,670?",
+      "choices": [
+        "67,890",
+        "67,980",
+        "68,890",
+        "67,780"
+      ],
+      "correct_answer": "67,890",
+      "answer": "67,890",
+      "explanation": "113,560 - 45,670 = 67,890 (การลบกลับจากการบวก)",
+      "explanation_th": "113,560 - 45,670 = 67,890",
+      "difficulty": "medium",
+      "hint_th": "ใช้ความสัมพันธ์ของการบวกและการลบ"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ค่าประกอบด้วยจำนวนนับสามจำนวน สองจำนวนแรกบวกกันได้ 78,450 จำนวนที่สามคือ 56,780 ค่าประกอบมีค่าเท่าไร",
+      "question_text_en": "The mean of three numbers is being calculated. The sum of the first two numbers is 78,450. The third number is 56,780. What is the sum of all three numbers?",
+      "choices": [
+        "125,230",
+        "135,230",
+        "125,330",
+        "135,330"
+      ],
+      "correct_answer": "135,230",
+      "answer": "135,230",
+      "explanation": "78,450 + 56,780 = 135,230",
+      "explanation_th": "78,450 + 56,780 = 135,230",
+      "difficulty": "easy",
+      "hint_th": "บวกสองจำนวนที่ทราบเข้าด้วยกัน"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "จำนวนในข้อใดต่อไปนี้น้อยที่สุด: 456,780 | 465,870 | 458,670 | 467,580",
+      "question_text_en": "Which of the following is the smallest? 456,780 | 465,870 | 458,670 | 467,580",
+      "choices": [
+        "456,780",
+        "458,670",
+        "465,870",
+        "467,580"
+      ],
+      "correct_answer": "456,780",
+      "answer": "456,780",
+      "explanation": "เปรียบเทียบหลักแสน: 4=4=4=4 หลักหมื่น: 5<6<6<6 ดังนั้น 456,780 น้อยสุด",
+      "explanation_th": "เปรียบเทียบทีละหลัก 456,780 มีหลักหมื่น = 5 ซึ่งน้อยที่สุดในบรรดาจำนวนที่มีหลักแสน = 4",
+      "difficulty": "hard",
+      "hint_th": "เปรียบเทียบหลักหมื่นก่อน ค่าที่น้อยกว่าคือค่าที่น้อยที่สุด"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

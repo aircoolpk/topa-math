@@ -1,0 +1,133 @@
+{
+  "quiz_id": "time_th_q002",
+  "topic_key": "time",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ time_th_q002",
+  "title_en": "Quiz time_th_q002",
+  "questions": [
+    {
+      "question": "ครึ่งชั่วโมง เท่ากับกี่นาที",
+      "choices": [
+        "30 นาที",
+        "60 นาที",
+        "15 นาที",
+        "45 นาที"
+      ],
+      "correct_answer": "30 นาที",
+      "explanation": "0.5 ชม. = 30 นาที",
+      "difficulty": "easy"
+    },
+    {
+      "question": "10:00 ถึง 14:00 ใช้เวลาเท่าไร",
+      "choices": [
+        "4 ชม.",
+        "3 ชม.",
+        "5 ชม.",
+        "6 ชม."
+      ],
+      "correct_answer": "4 ชม.",
+      "explanation": "14-10=4 ชม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "นัดพบเพื่อน 14:30 มาสาย 25 นาที มาถึงเวลาเท่าไร",
+      "choices": [
+        "14:55",
+        "15:00",
+        "14:05",
+        "15:55"
+      ],
+      "correct_answer": "14:55",
+      "explanation": "14:30+25=14:55",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ออกจากบ้าน 7:00 ไปถึงโรงเรียน 7:45 ใช้เวลาเท่าไร",
+      "choices": [
+        "45 นาที",
+        "30 นาที",
+        "60 นาที",
+        "15 นาที"
+      ],
+      "correct_answer": "45 นาที",
+      "explanation": "7:45-7:00=45 นาที",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ดูหนัง 2 ชม. 30 นาที เริ่ม 18:00 เสร็จกี่โมง",
+      "choices": [
+        "20:30",
+        "20:00",
+        "21:00",
+        "19:30"
+      ],
+      "correct_answer": "20:30",
+      "explanation": "18:00+2:30=20:30",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ร้านเปิด 9:00 ปิด 18:00 เปิดทำการกี่ชั่วโมง",
+      "choices": [
+        "9 ชม.",
+        "8 ชม.",
+        "10 ชม.",
+        "7 ชม."
+      ],
+      "correct_answer": "9 ชม.",
+      "explanation": "18-9=9 ชม.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "8:15 + 45 นาที = ?",
+      "choices": [
+        "9:00",
+        "9:15",
+        "8:60",
+        "9:30"
+      ],
+      "correct_answer": "9:00",
+      "explanation": "8:15+45=9:00",
+      "difficulty": "medium"
+    },
+    {
+      "question": "13:00 กับ 16:30 ต่างกันเท่าไร",
+      "choices": [
+        "3 ชม. 30 นาที",
+        "3 ชม.",
+        "4 ชม.",
+        "3 ชม. 15 นาที"
+      ],
+      "correct_answer": "3 ชม. 30 นาที",
+      "explanation": "16:30-13:00=3:30",
+      "difficulty": "medium"
+    },
+    {
+      "question": "นาฬิกาถูกเร็ว 12 นาที บอกเวลา 9:48 ความจริงเป็นเวลาเท่าไร",
+      "choices": [
+        "9:36",
+        "9:00",
+        "9:48",
+        "9:12"
+      ],
+      "correct_answer": "9:36",
+      "explanation": "9:48-12=9:36",
+      "difficulty": "medium"
+    },
+    {
+      "question": "แข่งวิ่งเริ่ม 10:45 แข่งนาน 55 นาที เสร็จกี่โมง",
+      "choices": [
+        "11:40",
+        "11:45",
+        "11:30",
+        "12:00"
+      ],
+      "correct_answer": "11:40",
+      "explanation": "10:45+55=11:40",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

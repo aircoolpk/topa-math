@@ -5,7 +5,7 @@ from datetime import UTC, datetime, timedelta
 from urllib.parse import quote
 
 from fastapi import APIRouter, Depends, HTTPException, Request
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -13,6 +13,7 @@ from app.core.config import get_settings
 from app.core.database import get_db
 from app.models import ChildProfile, Lesson, PublicShare, TestResult, TestSession, User
 from app.routers.deps import current_user
+from app.services.affiliates import affiliate_summary, request_withdrawal, send_withdrawal_notifications, upsert_payout_account, withdrawal_payload
 from app.services.rank_titles import rank_title_for_score
 from app.services.referrals import ensure_referral_token, record_referral_event, visitor_hash
 
@@ -27,6 +28,18 @@ class TestResultShareIn(BaseModel):
 class ReferralClickIn(BaseModel):
     referral_token: str
     share_token: str | None = None
+
+
+class AffiliatePayoutAccountIn(BaseModel):
+    payout_method: str
+    account_holder_name: str = Field(min_length=1, max_length=160)
+    bank_name: str | None = None
+    account_number: str | None = None
+    promptpay_value: str | None = None
+
+
+class AffiliateWithdrawalIn(BaseModel):
+    amount_minor: int = Field(gt=0)
 
 
 def _frontend_base_url() -> str:
@@ -148,6 +161,37 @@ def my_referral(db: Session = Depends(get_db), user: User = Depends(current_user
     summary = referral_summary(db, user)
     db.commit()
     return summary
+
+
+@router.get("/me/affiliate")
+def my_affiliate(db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
+    summary = affiliate_summary(db, user)
+    db.commit()
+    return summary
+
+
+@router.put("/me/affiliate/payout-account")
+def save_affiliate_payout_account(payload: AffiliatePayoutAccountIn, db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
+    account = upsert_payout_account(
+        db,
+        user,
+        payout_method=payload.payout_method,
+        account_holder_name=payload.account_holder_name,
+        bank_name=payload.bank_name,
+        account_number=payload.account_number,
+        promptpay_value=payload.promptpay_value,
+    )
+    db.commit()
+    return {"ok": True, "payout_account_id": account.id}
+
+
+@router.post("/me/affiliate/withdrawals")
+def create_affiliate_withdrawal(payload: AffiliateWithdrawalIn, db: Session = Depends(get_db), user: User = Depends(current_user)) -> dict:
+    withdrawal = request_withdrawal(db, user, payload.amount_minor)
+    db.commit()
+    db.refresh(withdrawal)
+    send_withdrawal_notifications(user, withdrawal)
+    return {"ok": True, "withdrawal": withdrawal_payload(withdrawal)}
 
 
 @router.post("/referrals/click")

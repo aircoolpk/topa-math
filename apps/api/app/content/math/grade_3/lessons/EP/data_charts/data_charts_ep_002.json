@@ -1,0 +1,198 @@
+{
+  "variant_id": "data_charts_ep_002",
+  "variant_title_th": "การอ่านแผนภูมิแท่ง",
+  "variant_title_en": "Reading Bar Charts",
+  "status": "needs_review",
+  "title_en": "Data — Reading Bar Charts",
+  "story_theme_en": "The teacher surveyed favorite subjects among 30 students. Results: Math 8 students, Science 10 students, English 7 students, and Art 5 students. The teacher made a bar chart to show clearly how popular each subject is.",
+  "helper_tip_en": "Have students look at the height of each bar and read the value from the Y-axis.",
+  "think_story_en": "Science 10 students, highest | Art 5 students, lowest | Math+Science = 8+10 = 18 students | Science more than English = 10-7 = 3 students",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Teacher surveys favorite subjects.",
+      "data": {
+        "content_en": "The teacher surveyed favorite subjects among 30 students. Results: Math 8 students, Science 10 students, English 7 students, and Art 5 students. The teacher made a bar chart to show clearly how popular each subject is."
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Science 10 students, highest | Art 5 students, lowest | Math+Science = 8+10 = 18 students | Science more than English = 10-7 = 3 students",
+      "data": {
+        "content_en": "Science 10 students, highest | Art 5 students, lowest | Math+Science = 8+10 = 18 students | Science more than English = 10-7 = 3 students"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Chart",
+      "description": "A bar chart showing favorite subjects. Read values from bar heights.",
+      "model_type": "bar_chart",
+      "data": {
+        "chart_title": "Favorite Subjects of 30 Students",
+        "unit": "students",
+        "categories": [
+          {
+            "label": "Math",
+            "value": 8
+          },
+          {
+            "label": "Science",
+            "value": 10
+          },
+          {
+            "label": "English",
+            "value": 7
+          },
+          {
+            "label": "Art",
+            "value": 5
+          }
+        ],
+        "total_value": 30
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Reading Bar Charts",
+      "description": "Taller bar means greater value. Bar height is measured from the Y-axis.",
+      "data": {
+        "operation": "read_bar_height",
+        "scale": "1 grid line on Y-axis = 1 student",
+        "readings": [
+          {
+            "category": "Math",
+            "bar_height": 8,
+            "value": 8
+          },
+          {
+            "category": "Science",
+            "bar_height": 10,
+            "value": 10
+          },
+          {
+            "category": "English",
+            "bar_height": 7,
+            "value": 7
+          },
+          {
+            "category": "Art",
+            "bar_height": 5,
+            "value": 5
+          }
+        ],
+        "highest": "Science 10 students",
+        "lowest": "Art 5 students"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "8+10+7+5=30",
+      "content": "8+10+7+5=30 students | Science most popular: 10 | Art least popular: 5",
+      "data": {
+        "expression": "8+10+7+5=30",
+        "content_en": "8+10+7+5=30 students | Science most popular: 10 | Art least popular: 5",
+        "operations": [
+          {
+            "op": "+",
+            "a": 8.0,
+            "b": 10,
+            "result": 18
+          },
+          {
+            "op": "+",
+            "a": 18.0,
+            "b": 7,
+            "result": 25
+          },
+          {
+            "op": "+",
+            "a": 25.0,
+            "b": 5,
+            "result": 30
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "From the bar chart, which subject is most popular?",
+      "choices": [
+        "Math, 8",
+        "Science, 10",
+        "English, 7",
+        "Art, 5"
+      ],
+      "correct_answer": "Science, 10",
+      "explanation": "The Science bar is the tallest, showing 10 students like it the most.",
+      "data": {
+        "question": "From the bar chart, which subject is most popular?",
+        "choices": [
+          "Math, 8",
+          "Science, 10",
+          "English, 7",
+          "Art, 5"
+        ],
+        "correct_answer": "Science, 10",
+        "explanation": "The Science bar is the tallest, showing 10 students like it the most."
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "Look at the category labels on the X-axis to see what each bar represents.",
+    "Read the numbers on the Y-axis to understand the scale (how much each grid line is worth).",
+    "Read the height of each bar by finding where the bar reaches on the Y-axis.",
+    "Compare bar heights: taller bar = greater value.",
+    "Find the highest value (tallest bar) and lowest value (shortest bar), then add all bars to check the total."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Reading a Bar Chart",
+      "question_en": "If a bar for oranges reaches 8 on the Y-axis and the scale is 1 grid = 1 orange, how many oranges are there?",
+      "solution_en": "8 oranges"
+    }
+  ],
+  "common_mistakes_en": [
+    "Forgetting to check the Y-axis scale first.",
+    "Reading the bar height incorrectly and getting the wrong number.",
+    "Mixing up the X-axis (categories) and Y-axis (values)."
+  ],
+  "hints_en": [
+    "Always read the Y-axis scale first: how much does each grid line represent?",
+    "Look at the height of each bar and read the number on the Y-axis where it reaches.",
+    "Compare bar heights to find the greatest and least values.",
+    "Check your work by adding all bar values to see if they match the total."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "bar chart",
+      "th": "แผนภูมิแท่ง",
+      "definition_en": "A chart that uses bars to represent data"
+    },
+    {
+      "en": "X-axis",
+      "th": "แกน X",
+      "definition_en": "The horizontal axis showing categories"
+    },
+    {
+      "en": "Y-axis",
+      "th": "แกน Y",
+      "definition_en": "The vertical axis showing values"
+    },
+    {
+      "en": "scale",
+      "th": "มาตราส่วน",
+      "definition_en": "The value each grid line represents on the axis"
+    },
+    {
+      "en": "bar height",
+      "th": "ความสูงของแท่ง",
+      "definition_en": "The vertical length of a bar on the chart"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "A bar chart uses bars to represent data. The height or length of each bar shows the value. Always check the Y-axis scale first, then read each bar's height to find its value. Compare bars to find the greatest, least, and total."
+}

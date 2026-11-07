@@ -33,8 +33,8 @@ export default function AvatarPage() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    checkAuth().then(() => {
-      if (!localStorage.getItem('access_token')) router.push('/login')
+    checkAuth().then((authenticatedUser) => {
+      if (!authenticatedUser) router.push('/login')
     })
   }, [])
 
@@ -56,7 +56,6 @@ export default function AvatarPage() {
     setSaving(true)
     try {
       await avatarApi.updateAvatar(childId, config)
-      localStorage.setItem('mock_avatar_gender', config.gender || 'girl')
       setSaved(true)
       setTimeout(() => setSaved(false), 3000)
     } catch {

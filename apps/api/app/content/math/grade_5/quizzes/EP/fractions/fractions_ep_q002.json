@@ -1,0 +1,179 @@
+{
+  "lesson_id": "fractions_ep",
+  "grade_level": 5,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "frac_ep_q002_e01",
+      "question_text": "Situation 1: A pie is cut into 8 equal slices. Dad eats 3 slices. What fraction is left?",
+      "question_text_th": "Situation 1: A pie is cut into 8 equal slices. Dad eats 3 slices. What fraction is left?",
+      "choices": [
+        "5/8",
+        "5/8 of the pie",
+        "3/8",
+        "6/8"
+      ],
+      "correct_answer": "5/8",
+      "answer": "5/8",
+      "explanation": "8/8 - 3/8 = 5/8 of the pie",
+      "explanation_th": "8/8 - 3/8 = 5/8 of the pie",
+      "difficulty": "easy",
+      "hint_th": "Subtract from whole: 1 - 3/8 = 5/8"
+    },
+    {
+      "question_id": "frac_ep_q002_e02",
+      "question_text": "Situation 2: Ken has 7/12 of a chocolate bar. He gives 2/12 to his sister. What fraction does he have?",
+      "question_text_th": "Situation 2: Ken has 7/12 of a chocolate bar. He gives 2/12 to his sister. What fraction does he have?",
+      "choices": [
+        "5/12",
+        "5/12 of the bar",
+        "4/12",
+        "6/12"
+      ],
+      "correct_answer": "5/12",
+      "answer": "5/12",
+      "explanation": "7/12 - 2/12 = 5/12 of the bar",
+      "explanation_th": "7/12 - 2/12 = 5/12 of the bar",
+      "difficulty": "easy",
+      "hint_th": "Subtract with same denominator: 7/12 - 2/12 = 5/12"
+    },
+    {
+      "question_id": "frac_ep_q002_e03",
+      "question_text": "Situation 3: A ribbon is 3/4 meter long. You cut 1/4 meter from it. How long is the remaining ribbon?",
+      "question_text_th": "Situation 3: A ribbon is 3/4 meter long. You cut 1/4 meter from it. How long is the remaining ribbon?",
+      "choices": [
+        "1/2 meter",
+        "1/2 m",
+        "1/4 meter",
+        "2/4 meter"
+      ],
+      "correct_answer": "1/2 meter",
+      "answer": "1/2 meter",
+      "explanation": "3/4 - 1/4 = 2/4 = 1/2 meter",
+      "explanation_th": "3/4 - 1/4 = 2/4 = 1/2 meter",
+      "difficulty": "easy",
+      "hint_th": "3/4 - 1/4 = 2/4 = 1/2"
+    },
+    {
+      "question_id": "frac_ep_q002_m01",
+      "question_text": "Situation 4: A jug contains 3/5 of a liter of juice. You drink 1/3 of it. How much did you drink?",
+      "question_text_th": "Situation 4: A jug contains 3/5 of a liter of juice. You drink 1/3 of it. How much did you drink?",
+      "choices": [
+        "1/5 liter",
+        "1/5 L",
+        "2/5 liter",
+        "1/3 liter"
+      ],
+      "correct_answer": "1/5 liter",
+      "answer": "1/5 liter",
+      "explanation": "3/5 x 1/3 = 3/15 = 1/5 liter",
+      "explanation_th": "3/5 x 1/3 = 3/15 = 1/5 liter",
+      "difficulty": "medium",
+      "hint_th": "Multiply fractions: 3/5 x 1/3 = 3/15 = 1/5"
+    },
+    {
+      "question_id": "frac_ep_q002_m02",
+      "question_text": "Situation 5: A piece of wood is 7/10 meter long. You cut off 1/5 meter. How long is the remaining wood?",
+      "question_text_th": "Situation 5: A piece of wood is 7/10 meter long. You cut off 1/5 meter. How long is the remaining wood?",
+      "choices": [
+        "1/2 meter",
+        "1/2 m",
+        "3/5 meter",
+        "2/5 meter"
+      ],
+      "correct_answer": "1/2 meter",
+      "answer": "1/2 meter",
+      "explanation": "7/10 - 1/5 = 7/10 - 2/10 = 5/10 = 1/2 meter",
+      "explanation_th": "7/10 - 1/5 = 7/10 - 2/10 = 5/10 = 1/2 meter",
+      "difficulty": "medium",
+      "hint_th": "Find common denominator: 1/5 = 2/10"
+    },
+    {
+      "question_id": "frac_ep_q002_m03",
+      "question_text": "Situation 6: Mom buys 4 1/3 kg of fish and 2 1/2 kg of vegetables. How much in total?",
+      "question_text_th": "Situation 6: Mom buys 4 1/3 kg of fish and 2 1/2 kg of vegetables. How much in total?",
+      "choices": [
+        "6 5/6 kg",
+        "6 5/6",
+        "6 1/2 kg",
+        "7 kg"
+      ],
+      "correct_answer": "6 5/6 kg",
+      "answer": "6 5/6 kg",
+      "explanation": "4 1/3 + 2 1/2 = 4 2/6 + 2 3/6 = 6 5/6 kg",
+      "explanation_th": "4 1/3 + 2 1/2 = 4 2/6 + 2 3/6 = 6 5/6 kg",
+      "difficulty": "medium",
+      "hint_th": "Convert: 1/3=2/6, 1/2=3/6. Add: 4 2/6 + 2 3/6 = 6 5/6"
+    },
+    {
+      "question_id": "frac_ep_q002_m04",
+      "question_text": "Situation 7: A recipe needs 2/3 cup of sugar. You have a 1/3 cup measure. How many scoops?",
+      "question_text_th": "Situation 7: A recipe needs 2/3 cup of sugar. You have a 1/3 cup measure. How many scoops?",
+      "choices": [
+        "2 scoops",
+        "2",
+        "3 scoops",
+        "1 scoop"
+      ],
+      "correct_answer": "2 scoops",
+      "answer": "2 scoops",
+      "explanation": "2/3 ÷ 1/3 = 2 scoops",
+      "explanation_th": "2/3 ÷ 1/3 = 2 scoops",
+      "difficulty": "medium",
+      "hint_th": "Divide fractions: 2/3 ÷ 1/3 = 2"
+    },
+    {
+      "question_id": "frac_ep_q002_h01",
+      "question_text": "Situation 8: A tank is 3/7 full. After adding 20 liters, it becomes 5/7 full. What is the full capacity?",
+      "question_text_th": "Situation 8: A tank is 3/7 full. After adding 20 liters, it becomes 5/7 full. What is the full capacity?",
+      "choices": [
+        "70 liters",
+        "70",
+        "65 liters",
+        "75 liters"
+      ],
+      "correct_answer": "70 liters",
+      "answer": "70 liters",
+      "explanation": "5/7 - 3/7 = 2/7 (this equals 20 liters) | 1/7 = 10 | tank = 10 x 7 = 70 liters",
+      "explanation_th": "5/7 - 3/7 = 2/7 (this equals 20 liters) | 1/7 = 10 | tank = 10 x 7 = 70 liters",
+      "difficulty": "hard",
+      "hint_th": "Difference 2/7 = 20 liters, so 1/7 = 10 liters, total = 70 liters"
+    },
+    {
+      "question_id": "frac_ep_q002_h02",
+      "question_text": "Situation 9: 3/5 of students are boys. 1/4 of the boys wear caps. What fraction of all students are boys with caps?",
+      "question_text_th": "Situation 9: 3/5 of students are boys. 1/4 of the boys wear caps. What fraction of all students are boys with caps?",
+      "choices": [
+        "3/20",
+        "3/20 of all students",
+        "3/5",
+        "1/4"
+      ],
+      "correct_answer": "3/20",
+      "answer": "3/20",
+      "explanation": "3/5 x 1/4 = 3/20 of all students",
+      "explanation_th": "3/5 x 1/4 = 3/20 of all students",
+      "difficulty": "hard",
+      "hint_th": "Multiply: 3/5 x 1/4 = 3/20"
+    },
+    {
+      "question_id": "frac_ep_q002_h03",
+      "question_text": "Situation 10: Dad spends 1/4 of salary on rent and 1/5 on car. He saves the rest, which is 8,800 baht. What is his total salary?",
+      "question_text_th": "Situation 10: Dad spends 1/4 of salary on rent and 1/5 on car. He saves the rest, which is 8,800 baht. What is his total salary?",
+      "choices": [
+        "16,000 baht",
+        "16000",
+        "15,000 baht",
+        "17,000 baht"
+      ],
+      "correct_answer": "16,000 baht",
+      "answer": "16,000 baht",
+      "explanation": "1/4 + 1/5 = 5/20 + 4/20 = 9/20 | Saved = 11/20 = 8800 | 1/20 = 800 | Total = 800 x 20 = 16000 baht",
+      "explanation_th": "1/4 + 1/5 = 5/20 + 4/20 = 9/20 | Saved = 11/20 = 8800 | 1/20 = 800 | Total = 800 x 20 = 16000 baht",
+      "difficulty": "hard",
+      "hint_th": "1 - 9/20 = 11/20 (saved) | 11/20 = 8800 | 1/20 = 800 | Total = 16000"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

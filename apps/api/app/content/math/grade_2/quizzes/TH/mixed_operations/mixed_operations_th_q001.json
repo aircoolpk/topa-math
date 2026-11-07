@@ -1,0 +1,133 @@
+{
+  "quiz_id": "mixed_operations_th_q001",
+  "topic_key": "mixed_operations",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ mixed_operations_th_q001",
+  "title_en": "Quiz mixed_operations_th_q001",
+  "questions": [
+    {
+      "question": "25 + 15 x 2 = ?",
+      "choices": [
+        "80",
+        "55",
+        "70",
+        "40"
+      ],
+      "correct_answer": "55",
+      "explanation": "25+(15x2)=25+30=55 คูณก่อนบวก",
+      "difficulty": "medium"
+    },
+    {
+      "question": "(10 + 5) x 3 = ?",
+      "choices": [
+        "45",
+        "25",
+        "35",
+        "30"
+      ],
+      "correct_answer": "45",
+      "explanation": "(10+5)x3=15x3=45 วงเล็บก่อน",
+      "difficulty": "easy"
+    },
+    {
+      "question": "100 - 20 x 3 = ?",
+      "choices": [
+        "40",
+        "240",
+        "60",
+        "20"
+      ],
+      "correct_answer": "40",
+      "explanation": "100-(20x3)=100-60=40",
+      "difficulty": "medium"
+    },
+    {
+      "question": "8 x 4 + 8 x 6 = ?",
+      "choices": [
+        "80",
+        "88",
+        "72",
+        "96"
+      ],
+      "correct_answer": "80",
+      "explanation": "8x4=32, 8x6=48, 32+48=80 หรือ 8x(4+6)=8x10=80",
+      "difficulty": "medium"
+    },
+    {
+      "question": "60 / (12 - 6) = ?",
+      "choices": [
+        "10",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct_answer": "10",
+      "explanation": "60/(12-6)=60/6=10 วงเล็บก่อน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "มีเงิน 100 บาท ซื้อปากกา 2 ด้าม ด้ามละ 15 บาท ซื้อยางลบ 3 ดอก ดอกละ 10 บาท เหลือเงินเท่าไร",
+      "choices": [
+        "35 บาท",
+        "25 บาท",
+        "45 บาท",
+        "55 บาท"
+      ],
+      "correct_answer": "35 บาท",
+      "explanation": "100-(30+30)=40 บาท เดี๋ยว... 2x15=30, 3x10=30, รวม 60, 100-60=40 บาท",
+      "difficulty": "hard"
+    },
+    {
+      "question": "12 / 3 + 5 x 2 = ?",
+      "choices": [
+        "14",
+        "34",
+        "24",
+        "18"
+      ],
+      "correct_answer": "14",
+      "explanation": "12/3=4, 5x2=10, 4+10=14",
+      "difficulty": "medium"
+    },
+    {
+      "question": "4 x 5 + 3 x 6 = ?",
+      "choices": [
+        "38",
+        "54",
+        "48",
+        "42"
+      ],
+      "correct_answer": "38",
+      "explanation": "4x5=20, 3x6=18, 20+18=38",
+      "difficulty": "medium"
+    },
+    {
+      "question": "(15 - 10) x 7 = ?",
+      "choices": [
+        "35",
+        "25",
+        "45",
+        "15"
+      ],
+      "correct_answer": "35",
+      "explanation": "(15-10)x7=5x7=35",
+      "difficulty": "easy"
+    },
+    {
+      "question": "50 / 5 - 4 x 2 = ?",
+      "choices": [
+        "2",
+        "18",
+        "14",
+        "22"
+      ],
+      "correct_answer": "2",
+      "explanation": "50/5=10, 4x2=8, 10-8=2",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

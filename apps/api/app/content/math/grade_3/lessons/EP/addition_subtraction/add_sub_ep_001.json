@@ -37,7 +37,121 @@
         "whole": 69000,
         "subtract_amount": 34200,
         "final_remainder": 34800,
-        "unit": "baht"
+        "unit": "baht",
+        "bars": [
+          {
+            "label": "Lin",
+            "value": 45200,
+            "display": "45,200 baht",
+            "color": "#4ECDC4",
+            "width_pct": 65
+          },
+          {
+            "label": "Mali",
+            "value": 23800,
+            "display": "23,800 baht",
+            "color": "#45B7D1",
+            "width_pct": 35
+          },
+          {
+            "label": "Total",
+            "value": 69000,
+            "display": "69,000 baht",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Science Camp",
+            "value": 34200,
+            "display": "34,200 baht",
+            "color": "#FF6B6B",
+            "width_pct": 50
+          },
+          {
+            "label": "Money Left",
+            "value": 34800,
+            "display": "34,800 baht",
+            "color": "#C7F464",
+            "width_pct": 50,
+            "is_remainder": true
+          }
+        ],
+        "relationships": [
+          {
+            "from": 0,
+            "to": 2,
+            "type": "adds_to",
+            "label": "+"
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "type": "adds_to",
+            "label": "+"
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "type": "subtracts_to",
+            "label": "-"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "type": "equals_remainder",
+            "label": "="
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "When children see the relationship from the bar model, they write it as math symbols and calculate the abstract answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find the total money Lin and Mali have",
+            "expression": "45,200 + 23,800 = 69,000",
+            "formula": {
+              "display": "45,200 + 23,800 = 69,000",
+              "a": 45200,
+              "b": 23800,
+              "result": 69000,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}45,200&\\\\ +\\quad 23,800&\\\\ \\hline 69,000&\\\\ \\hline \\end{array}",
+              "a_display": "45,200",
+              "b_display": "23,800",
+              "result_display": "69,000",
+              "operation": "add"
+            },
+            "story_connection": "From the bar model: Lin 45,200 + Mali 23,800 = Total 69,000 baht"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find the money left after paying for the science camp",
+            "expression": "69,000 - 34,200 = 34,800",
+            "formula": {
+              "display": "69,000 - 34,200 = 34,800",
+              "a": 69000,
+              "b": 34200,
+              "result": 34800,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}69,000&\\\\ -\\quad 34,200&\\\\ \\hline 34,800&\\\\ \\hline \\end{array}",
+              "a_display": "69,000",
+              "b_display": "34,200",
+              "result_display": "34,800",
+              "operation": "subtract"
+            },
+            "story_connection": "From the bar model: Total money 69,000 - Camp cost 34,200 = Money left 34,800 baht"
+          }
+        ]
       }
     },
     {

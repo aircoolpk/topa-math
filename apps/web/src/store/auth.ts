@@ -11,7 +11,31 @@ interface AuthState {
   login: (email: string, password: string) => Promise<AuthUser>
   register: (email: string, password: string, referralToken?: string | null) => Promise<void>
   logout: () => void
-  checkAuth: () => Promise<void>
+  checkAuth: () => Promise<AuthUser | null>
+}
+
+function readStoredToken(): string | null {
+  try {
+    return localStorage.getItem('access_token')
+  } catch {
+    return null
+  }
+}
+
+function writeStoredToken(token: string): void {
+  try {
+    localStorage.setItem('access_token', token)
+  } catch {
+    // HttpOnly cookie is the primary mobile-safe session.
+  }
+}
+
+function removeStoredToken(): void {
+  try {
+    localStorage.removeItem('access_token')
+  } catch {
+    // Storage can be unavailable in Safari private mode.
+  }
 }
 
 export const useAuthStore = create<AuthState>()(
@@ -25,7 +49,7 @@ export const useAuthStore = create<AuthState>()(
         set({ isLoading: true })
         try {
           const data = await authApi.login(email, password)
-          localStorage.setItem('access_token', data.access_token)
+          writeStoredToken(data.access_token)
           const user = await authApi.me()
           set({ token: data.access_token, user, isLoading: false })
           return user
@@ -39,7 +63,7 @@ export const useAuthStore = create<AuthState>()(
         set({ isLoading: true })
         try {
           const data = await authApi.register(email, password, referralToken)
-          localStorage.setItem('access_token', data.access_token)
+          writeStoredToken(data.access_token)
           const user = await authApi.me()
           set({ token: data.access_token, user, isLoading: false })
         } catch (err) {
@@ -49,16 +73,17 @@ export const useAuthStore = create<AuthState>()(
       },
 
       logout: () => {
-        localStorage.removeItem('access_token')
+        removeStoredToken()
+        void authApi.logout().catch(() => undefined)
         set({ token: null, user: null })
       },
 
       checkAuth: async () => {
-        const token = localStorage.getItem('access_token')
-        if (!token) return
+        const token = readStoredToken()
         try {
           const user = await authApi.me()
           set({ token, user })
+          return user
         } catch (err) {
           // Network / server errors: keep the stored token — backend may be temporarily unavailable
           // Only remove token on explicit HTTP 401 (invalid/expired credential)
@@ -66,10 +91,11 @@ export const useAuthStore = create<AuthState>()(
             ? (err as { response?: { status?: number } }).response?.status
             : null
           if (status === 401) {
-            localStorage.removeItem('access_token')
+            removeStoredToken()
             set({ token: null, user: null })
           }
           // For network errors / backend down, leave token intact so user can still use the app
+          return null
         }
       },
     }),

@@ -1,0 +1,133 @@
+{
+  "quiz_id": "time_ep_q002",
+  "topic_key": "time",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz time_ep_q002",
+  "title_en": "Quiz time_ep_q002",
+  "questions": [
+    {
+      "question": "Half an hour equals how many minutes?",
+      "choices": [
+        "30 minutes",
+        "60 minutes",
+        "15 minutes",
+        "45 minutes"
+      ],
+      "correct_answer": "30 minutes",
+      "explanation": "0.5 hour = 30 minutes",
+      "difficulty": "easy"
+    },
+    {
+      "question": "10:00 to 14:00 is how long?",
+      "choices": [
+        "4 hours",
+        "3 hours",
+        "5 hours",
+        "6 hours"
+      ],
+      "correct_answer": "4 hours",
+      "explanation": "14-10=4 hours",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Meeting at 14:30. Late by 25 minutes. Arrived at?",
+      "choices": [
+        "14:55",
+        "15:00",
+        "14:05",
+        "15:55"
+      ],
+      "correct_answer": "14:55",
+      "explanation": "14:30+25=14:55",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Left home 7:00. Arrived school 7:45. How long?",
+      "choices": [
+        "45 minutes",
+        "30 minutes",
+        "60 minutes",
+        "15 minutes"
+      ],
+      "correct_answer": "45 minutes",
+      "explanation": "7:45-7:00=45 minutes",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Watched a 2 hr 30 min movie starting at 18:00. What time did it end?",
+      "choices": [
+        "20:30",
+        "20:00",
+        "21:00",
+        "19:30"
+      ],
+      "correct_answer": "20:30",
+      "explanation": "18:00+2:30=20:30",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Shop opens 9:00 closes 18:00. How many hours open?",
+      "choices": [
+        "9 hours",
+        "8 hours",
+        "10 hours",
+        "7 hours"
+      ],
+      "correct_answer": "9 hours",
+      "explanation": "18-9=9 hours",
+      "difficulty": "easy"
+    },
+    {
+      "question": "8:15 + 45 minutes = ?",
+      "choices": [
+        "9:00",
+        "9:15",
+        "8:60",
+        "9:30"
+      ],
+      "correct_answer": "9:00",
+      "explanation": "8:15+45=9:00",
+      "difficulty": "medium"
+    },
+    {
+      "question": "13:00 and 16:30 differ by how much?",
+      "choices": [
+        "3 hours 30 minutes",
+        "3 hours",
+        "4 hours",
+        "3 hours 15 minutes"
+      ],
+      "correct_answer": "3 hours 30 minutes",
+      "explanation": "16:30-13:00=3:30",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Clock is fast by 12 minutes. Shows 9:48. What is the real time?",
+      "choices": [
+        "9:36",
+        "9:00",
+        "9:48",
+        "9:12"
+      ],
+      "correct_answer": "9:36",
+      "explanation": "9:48-12=9:36",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Race starts 10:45, lasts 55 minutes. What time does it end?",
+      "choices": [
+        "11:40",
+        "11:45",
+        "11:30",
+        "12:00"
+      ],
+      "correct_answer": "11:40",
+      "explanation": "10:45+55=11:40",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

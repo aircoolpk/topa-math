@@ -1,0 +1,198 @@
+{
+  "variant_id": "fractions_ep_001",
+  "variant_title_en": "Fractions",
+  "status": "needs_review",
+  "title_en": "Fractions",
+  "story_theme_en": "Lin and Mali order a pizza together. Lin eats 3/8 of the whole pizza. Mali eats 2/8 of the pizza. How much of the pizza did they eat together? How much of the pizza is left?",
+  "helper_tip": "Fractions with the same denominator can be added or subtracted. Add or subtract the numerators only.",
+  "hint_th": "เศษส่วนที่มีส่วนเท่ากัน บวกลบตัวเศษได้เลย ส่วนคงที่",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin and Mali order a pizza together. Lin eats 3/8 of the whole pizza. Mali eats 2/8 of the pizza. How much of the pizza did they eat together? How much of the pizza is left?",
+      "data": {
+        "content_en": "Lin and Mali order a pizza together. Lin eats 3/8 of the whole pizza. Mali eats 2/8 of the pizza. How much of the pizza did they eat together? How much of the pizza is left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Add what they ate → 3/8 + 2/8 = 5/8 | Step 2: Find what is left → 8/8 - 5/8 = 3/8",
+      "data": {
+        "content_en": "Step 1: Add what they ate → 3/8 + 2/8 = 5/8 | Step 2: Find what is left → 8/8 - 5/8 = 3/8"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Fraction Bar",
+      "model_type": "fraction_bar",
+      "data": {
+        "model_type": "fraction_bar",
+        "operation": "add_subtract",
+        "bars": [
+          {
+            "label": "Lin eats",
+            "value": 3,
+            "display": "3/8",
+            "color": "#4ECDC4",
+            "width_pct": 38
+          },
+          {
+            "label": "Mali eats",
+            "value": 2,
+            "display": "2/8",
+            "color": "#45B7D1",
+            "width_pct": 25
+          },
+          {
+            "label": "Total eaten",
+            "value": 5,
+            "display": "5/8",
+            "color": "#96CEB4",
+            "width_pct": 63,
+            "is_total": true
+          },
+          {
+            "label": "Left",
+            "value": 3,
+            "display": "3/8",
+            "color": "#C7F464",
+            "width_pct": 38,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add the fractions eaten",
+            "expression": "3/8 + 2/8 = 5/8",
+            "formula": {
+              "display": "3/8 + 2/8 = 5/8",
+              "a": 3,
+              "b": 2,
+              "result": 5,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}3&\\\\\\\\ +\\\\quad 2&\\\\\\\\ \\\\hline 5&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "3",
+              "b_display": "2",
+              "result_display": "5",
+              "operation": "add"
+            },
+            "story_connection": "3/8 + 2/8 = 5/8 (add the numerators, denominator stays the same)"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find the remaining fraction",
+            "expression": "8/8 - 5/8 = 3/8",
+            "formula": {
+              "display": "8/8 - 5/8 = 3/8",
+              "a": 8,
+              "b": 5,
+              "result": 3,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}8&\\\\\\\\ -\\\\quad 5&\\\\\\\\ \\\\hline 3&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "8",
+              "b_display": "5",
+              "result_display": "3",
+              "operation": "sub"
+            },
+            "story_connection": "8/8 - 5/8 = 3/8 (subtract the numerators, denominator stays the same)"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "3/8 + 2/8 = 5/8 | 8/8 - 5/8 = 3/8",
+      "content": "3/8 + 2/8 = 5/8  |  8/8 - 5/8 = 3/8",
+      "data": {
+        "expression": "3/8 + 2/8 = 5/8 | 8/8 - 5/8 = 3/8",
+        "operations": [
+          {
+            "op": "+",
+            "a": 3,
+            "b": 2,
+            "result": 5
+          },
+          {
+            "op": "-",
+            "a": 8,
+            "b": 5,
+            "result": 3
+          }
+        ],
+        "content_en": "3/8 + 2/8 = 5/8  |  8/8 - 5/8 = 3/8"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A cake is cut into 9 equal pieces. Lin eats 4/9 of the cake. Mali eats 2/9 of the cake. How much do they eat in total? How much is left?",
+      "choices": [
+        "6/9 total, 3/9 left",
+        "5/9 total, 4/9 left",
+        "7/9 total, 2/9 left",
+        "6/9 total, 2/9 left"
+      ],
+      "correct_answer": "6/9 total, 3/9 left",
+      "explanation": "4/9 + 2/9 = 6/9 | 9/9 - 6/9 = 3/9",
+      "data": {
+        "question": "A cake is cut into 9 equal pieces. Lin eats 4/9 of the cake. Mali eats 2/9 of the cake. How much do they eat in total? How much is left?",
+        "choices": [
+          "6/9 total, 3/9 left",
+          "5/9 total, 4/9 left",
+          "7/9 total, 2/9 left",
+          "6/9 total, 2/9 left"
+        ],
+        "correct_answer": "6/9 total, 3/9 left",
+        "explanation": "4/9 + 2/9 = 6/9 | 9/9 - 6/9 = 3/9"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "Pizza: 5/8 + 1/8 = ?",
+      "solution_en": "5/8 + 1/8 = 6/8 or 3/4"
+    }
+  ],
+  "common_mistakes": [
+    "Adding the denominators (e.g. 3/8 + 2/8 = 5/16 is WRONG!)",
+    "Forgetting that denominators must be the same to add or subtract"
+  ],
+  "hints": [
+    "Fractions that can be added or subtracted must have equal denominators.",
+    "Add numerators: 3+2=5, denominator stays 8. Result: 5/8."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "fraction",
+      "th": "เศษส่วน",
+      "definition_en": "A part of a whole"
+    },
+    {
+      "en": "numerator",
+      "th": "ตัวเศษ",
+      "definition_en": "The top number of a fraction showing the number of parts"
+    },
+    {
+      "en": "denominator",
+      "th": "ตัวส่วน",
+      "definition_en": "The bottom number of a fraction showing total parts"
+    }
+  ]
+}

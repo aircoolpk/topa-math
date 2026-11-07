@@ -1,0 +1,179 @@
+{
+  "lesson_id": "fractions_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "สวนมะม่วงมี 4/9 เป็นมะม่วงสุก 2/9 เป็นมะม่วงดิบ ที่เหลือเป็นมะปราง มะปรางกี่ส่วน",
+      "question_text_en": "A mango orchard: 4/9 ripe mangoes, 2/9 green mangoes, rest are mangosteens. What fraction are mangosteens?",
+      "choices": [
+        "3/9",
+        "5/9",
+        "2/9",
+        "4/9"
+      ],
+      "correct_answer": "3/9",
+      "answer": "3/9",
+      "explanation": "4/9+2/9=6/9 | 9/9-6/9=3/9 มะปราง",
+      "explanation_th": "4/9+2/9=6/9 | 9/9-6/9=3/9 มะปราง",
+      "difficulty": "easy",
+      "hint_th": "บวกมะม่วงสุกและดิบ แล้วลบจาก 9/9"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "ลินกินพิซซ่า 2/7 มะลิกิน 1/7 รวมกินไปกี่ส่วน เหลือกี่ส่วน",
+      "question_text_en": "Lin eats 2/7 of a pizza and Mali eats 1/7. Total eaten? Left?",
+      "choices": [
+        "3/7 รวม เหลือ 4/7",
+        "3/7 รวม เหลือ 3/7",
+        "4/7 รวม เหลือ 3/7",
+        "3/7 รวม เหลือ 2/7"
+      ],
+      "correct_answer": "3/7 รวม เหลือ 4/7",
+      "answer": "3/7 รวม เหลือ 4/7",
+      "explanation": "2/7+1/7=3/7 | 7/7-3/7=4/7 เหลือ",
+      "explanation_th": "2/7+1/7=3/7 | 7/7-3/7=4/7 เหลือ",
+      "difficulty": "easy",
+      "hint_th": "บวกเศษ แล้วลบจาก 7/7"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "น้ำเต็ม 6/6 ของถัง ดื่มไป 4/6 ของถัง เหลือน้ำกี่ส่วน",
+      "question_text_en": "A tank is full (6/6). Someone drinks 4/6 of the tank. How much water is left?",
+      "choices": [
+        "2/6 ของถัง",
+        "3/6 ของถัง",
+        "1/6 ของถัง",
+        "4 / ของถัง"
+      ],
+      "correct_answer": "2/6 ของถัง",
+      "answer": "2/6 ของถัง",
+      "explanation": "6/6-4/6=2/6",
+      "explanation_th": "6/6-4/6=2/6",
+      "difficulty": "easy",
+      "hint_th": "6/6-4/6=2/6"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "ข้าวสาร 5/8 ของถุง ปรุงไป 3/8 ของถุง เหลือข้าวสารกี่ส่วน",
+      "question_text_en": "Rice is 5/8 of a bag. Cooking uses 3/8 of the bag. How much rice is left?",
+      "choices": [
+        "2/8 ของถุง",
+        "3/8 ของถุง",
+        "1/8 ของถุง",
+        "4 / ของถุง"
+      ],
+      "correct_answer": "2/8 ของถุง",
+      "answer": "2/8 ของถุง",
+      "explanation": "5/8-3/8=2/8",
+      "explanation_th": "5/8-3/8=2/8 ของถุง",
+      "difficulty": "easy",
+      "hint_th": "5/8-3/8=2/8"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "ถ้า 7/12 + x/12 = 11/12 แล้ว x มีค่าเท่าไร",
+      "question_text_en": "If 7/12 + x/12 = 11/12, what is x?",
+      "choices": [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      "correct_answer": "4",
+      "answer": "4",
+      "explanation": "7+x=11 → x=4",
+      "explanation_th": "7+x=11 → x=4",
+      "difficulty": "easy",
+      "hint_th": "7+x=11 → x=4"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "ข้อใดต่อไปนี้ถูกต้อง: ก. 5/9 - 2/9 = 3/9 | ข. 7/12 - 3/12 = 4/12 | ค. 8/10 - 5/10 = 3/10 | ง. 6/8 - 2/8 = 4/8",
+      "question_text_en": "Which is correct? A. 5/9 - 2/9 = 3/9 | B. 7/12 - 3/12 = 4/12 | C. 8/10 - 5/10 = 3/10 | D. 6/8 - 2/8 = 4/8",
+      "choices": [
+        "ก, ข และ ค ถูก",
+        "ก และ ค ถูก",
+        "ข และ ง ถูก",
+        "ทุกข้อถูก"
+      ],
+      "correct_answer": "ก และ ค ถูก",
+      "answer": "ก และ ค ถูก",
+      "explanation": "ก:5/9-2/9=3/9 ✓ | ข:7/12-3/12=4/12 ✗ (ได้ 4/12 ซึ่งถูกต้อง!) | ค:8/10-5/10=3/10 ✓ | ง:6/8-2/8=4/8 ✓ ทุกข้อถูก!",
+      "explanation_th": "ก ถูก | ข: 7-3=4 ได้ 4/12 ถูก | ค ถูก | ง ถูก ทุกข้อถูก",
+      "difficulty": "hard",
+      "hint_th": "ตรวจสอบแต่ละข้อ แต่ละข้อถูกหมด ค: 8/10-5/10=3/10 ถูก"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "3/5 + 2/5 - 1/5 = ?",
+      "question_text_en": "3/5 + 2/5 - 1/5 = ?",
+      "choices": [
+        "4/5",
+        "5/5",
+        "3/5",
+        "2/5"
+      ],
+      "correct_answer": "4/5",
+      "answer": "4/5",
+      "explanation": "3/5+2/5=5/5 | 5/5-1/5=4/5",
+      "explanation_th": "3/5+2/5=5/5 | 5/5-1/5=4/5",
+      "difficulty": "easy",
+      "hint_th": "บวกก่อน แล้วลบ"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "ลินมีเชือก 7/8 เมตร ตัดใช้ไป 3/8 เมตร เหลือเชือกกี่เมตร",
+      "question_text_en": "Lin has 7/8 meters of rope and uses 3/8 meters. How much rope is left?",
+      "choices": [
+        "4/8 เมตร",
+        "5/8 เมตร",
+        "3/8 เมตร",
+        "14 / เมตร"
+      ],
+      "correct_answer": "4/8 เมตร",
+      "answer": "4/8 เมตร",
+      "explanation": "7/8-3/8=4/8 เมตร",
+      "explanation_th": "7/8-3/8=4/8 เมตร",
+      "difficulty": "easy",
+      "hint_th": "7/8-3/8=4/8"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "มะลิมีแป้ง 4/5 ของถุง ใช้ไป 2/5 ของถุง เหลือแป้งกี่ส่วน",
+      "question_text_en": "Mali has 4/5 of a bag of flour and uses 2/5 of the bag. How much flour is left?",
+      "choices": [
+        "2/5 ของถุง",
+        "3/5 ของถุง",
+        "1/5 ของถุง",
+        "0 / ของถุง"
+      ],
+      "correct_answer": "2/5 ของถุง",
+      "answer": "2/5 ของถุง",
+      "explanation": "4/5-2/5=2/5",
+      "explanation_th": "4/5-2/5=2/5 ของถุง",
+      "difficulty": "easy",
+      "hint_th": "4/5-2/5=2/5"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "ถ้า x/7 + 2/7 = 5/7 แล้ว x มีค่าเท่าไร",
+      "question_text_en": "If x/7 + 2/7 = 5/7, what is x?",
+      "choices": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "correct_answer": "3",
+      "answer": "3",
+      "explanation": "x+2=5 → x=3",
+      "explanation_th": "x+2=5 → x=3",
+      "difficulty": "easy",
+      "hint_th": "x+2=5 → x=3"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

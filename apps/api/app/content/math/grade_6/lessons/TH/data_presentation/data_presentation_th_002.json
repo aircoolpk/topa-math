@@ -1,0 +1,259 @@
+{
+  "variant_id": "data_presentation_th_002",
+  "variant_title_th": "การนำเสนอข้อมูล",
+  "variant_title_en": "Data Presentation",
+  "status": "needs_review",
+  "title_th": "การนำเสนอข้อมูล",
+  "title_en": "Data Presentation",
+  "story_theme_th": "ร้านขายขนมเค้ก 5 วัน ขายได้วันละ 120, 95, 140, 80, 115 ชิ้น ตามลำดับ วันใดขายได้มากที่สุด วันใดขายได้น้อยที่สุด และขายเฉลี่ยวันละกี่ชิ้น",
+  "helper_tip": "ค่าสูงสุดคือค่ามากที่สุด ค่าต่ำสุดคือค่าน้อยที่สุด ค่าเฉลี่ยคือผลรวม÷จำนวน",
+  "think_story_th": "วันพุธขายได้มากสุด 140 ชิ้น วันพฤหัสขายได้น้อยสุด 80 ชิ้น ผลรวม = 120+95+140+80+115 = 550 ชิ้น ค่าเฉลี่ย = 550 ÷ 5 = 110 ชิ้นต่อวัน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "ร้านขายขนมเค้ก 5 วัน ขายได้วันละ 120, 95, 140, 80, 115 ชิ้น ตามลำดับ วันใดขายได้มากที่สุด วันใดขายได้น้อยที่สุด และขายเฉลี่ยวันละกี่ชิ้น",
+      "data": {
+        "content_th": "ร้านขายขนมเค้ก 5 วัน ขายได้วันละ 120, 95, 140, 80, 115 ชิ้น ตามลำดับ วันใดขายได้มากที่สุด วันใดขายได้น้อยที่สุด และขายเฉลี่ยวันละกี่ชิ้น"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "วันพุธขายได้มากสุด 140 ชิ้น วันพฤหัสขายได้น้อยสุด 80 ชิ้น ผลรวม = 120+95+140+80+115 = 550 ชิ้น ค่าเฉลี่ย = 550 ÷ 5 = 110 ชิ้นต่อวัน",
+      "data": {
+        "content_th": "วันพุธขายได้มากสุด 140 ชิ้น วันพฤหัสขายได้น้อยสุด 80 ชิ้น ผลรวม = 120+95+140+80+115 = 550 ชิ้น ค่าเฉลี่ย = 550 ÷ 5 = 110 ชิ้นต่อวัน"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "ชิ้น",
+        "bars": [
+          {
+            "label": "จันทร์",
+            "value": 120,
+            "display": "120 ชิ้น",
+            "color": "#4ECDC4",
+            "width_pct": 86
+          },
+          {
+            "label": "อังคาร",
+            "value": 95,
+            "display": "95 ชิ้น",
+            "color": "#45B7D1",
+            "width_pct": 68
+          },
+          {
+            "label": "พุธ",
+            "value": 140,
+            "display": "140 ชิ้น",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "พฤหัส",
+            "value": 80,
+            "display": "80 ชิ้น",
+            "color": "#FFE66D",
+            "width_pct": 57
+          },
+          {
+            "label": "ศุกร์",
+            "value": 115,
+            "display": "115 ชิ้น",
+            "color": "#FF6B6B",
+            "width_pct": 82
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "120 + 95 = 215",
+            "formula": {
+              "display": "120 + 95 = 215",
+              "a": 120,
+              "b": 95,
+              "result": 215,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}120&\\ +\\quad 95&\\ \\hline 215&\\\\ \\hline \\end{array}",
+              "a_display": "120",
+              "b_display": "95",
+              "result_display": "215",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 120 + 95 = 215"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "215 + 140 = 355",
+            "formula": {
+              "display": "215 + 140 = 355",
+              "a": 215,
+              "b": 140,
+              "result": 355,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}215&\\ +\\quad 140&\\ \\hline 355&\\\\ \\hline \\end{array}",
+              "a_display": "215",
+              "b_display": "140",
+              "result_display": "355",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 215 + 140 = 355"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "355 + 80 = 435",
+            "formula": {
+              "display": "355 + 80 = 435",
+              "a": 355,
+              "b": 80,
+              "result": 435,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}355&\\ +\\quad 80&\\ \\hline 435&\\\\ \\hline \\end{array}",
+              "a_display": "355",
+              "b_display": "80",
+              "result_display": "435",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 355 + 80 = 435"
+          },
+          {
+            "step": 4,
+            "label": "ขั้นตอนที่ 4",
+            "expression": "435 + 115 = 550",
+            "formula": {
+              "display": "435 + 115 = 550",
+              "a": 435,
+              "b": 115,
+              "result": 550,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}435&\\ +\\quad 115&\\ \\hline 550&\\\\ \\hline \\end{array}",
+              "a_display": "435",
+              "b_display": "115",
+              "result_display": "550",
+              "operation": "add"
+            },
+            "story_connection": "จากบาร์โมเดล: 435 + 115 = 550"
+          },
+          {
+            "step": 5,
+            "label": "ขั้นตอนที่ 5",
+            "expression": "550 ÷ 5 = 110",
+            "formula": {
+              "display": "550 ÷ 5 = 110",
+              "a": 550,
+              "b": 5,
+              "result": 110,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}550&\\ ÷\\quad 5&\\ \\hline 110&\\\\ \\hline \\end{array}",
+              "a_display": "550",
+              "b_display": "5",
+              "result_display": "110",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 550 ÷ 5 = 110"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "120 + 95 = 215 | 215 + 140 = 355 | 355 + 80 = 435 | 435 + 115 = 550 | 550 ÷ 5 = 110",
+      "content": "120 + 95 = 215 | 215 + 140 = 355 | 355 + 80 = 435 | 435 + 115 = 550 | 550 ÷ 5 = 110",
+      "data": {
+        "expression": "120 + 95 = 215 | 215 + 140 = 355 | 355 + 80 = 435 | 435 + 115 = 550 | 550 ÷ 5 = 110",
+        "operations": [
+          {
+            "op": "+",
+            "a": 120,
+            "b": 95,
+            "result": 215
+          },
+          {
+            "op": "+",
+            "a": 215,
+            "b": 140,
+            "result": 355
+          },
+          {
+            "op": "+",
+            "a": 355,
+            "b": 80,
+            "result": 435
+          },
+          {
+            "op": "+",
+            "a": 435,
+            "b": 115,
+            "result": 550
+          },
+          {
+            "op": "÷",
+            "a": 550,
+            "b": 5,
+            "result": 110
+          }
+        ],
+        "content_th": "120 + 95 = 215 | 215 + 140 = 355 | 355 + 80 = 435 | 435 + 115 = 550 | 550 ÷ 5 = 110"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "ยอดขาย 4 วัน: 200, 180, 220, 160 บาท ค่าเฉลี่ยเท่าไร",
+      "choices": [
+        "190 บาท",
+        "195 บาท",
+        "185 บาท",
+        "200 บาท"
+      ],
+      "correct_answer": "190 บาท",
+      "explanation": "(200+180+220+160) ÷ 4 = 760 ÷ 4 = 190 บาท",
+      "data": {
+        "question": "ยอดขาย 4 วัน: 200, 180, 220, 160 บาท ค่าเฉลี่ยเท่าไร",
+        "choices": [
+          "190 บาท",
+          "195 บาท",
+          "185 บาท",
+          "200 บาท"
+        ],
+        "correct_answer": "190 บาท",
+        "explanation": "(200+180+220+160) ÷ 4 = 760 ÷ 4 = 190 บาท"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

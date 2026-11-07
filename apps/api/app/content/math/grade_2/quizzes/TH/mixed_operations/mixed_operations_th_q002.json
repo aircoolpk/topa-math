@@ -1,0 +1,133 @@
+{
+  "quiz_id": "mixed_operations_th_q002",
+  "topic_key": "mixed_operations",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ mixed_operations_th_q002",
+  "title_en": "Quiz mixed_operations_th_q002",
+  "questions": [
+    {
+      "question": "30 + 20 - 15 x 2 = ?",
+      "choices": [
+        "20",
+        "50",
+        "10",
+        "40"
+      ],
+      "correct_answer": "20",
+      "explanation": "30+20-(15x2)=30+20-30=20 คูณก่อน",
+      "difficulty": "hard"
+    },
+    {
+      "question": "100 / (5 + 5) = ?",
+      "choices": [
+        "10",
+        "20",
+        "5",
+        "1"
+      ],
+      "correct_answer": "10",
+      "explanation": "100/(5+5)=100/10=10",
+      "difficulty": "medium"
+    },
+    {
+      "question": "3 x (8 + 7) = ?",
+      "choices": [
+        "45",
+        "38",
+        "21",
+        "24"
+      ],
+      "correct_answer": "45",
+      "explanation": "3x15=45",
+      "difficulty": "easy"
+    },
+    {
+      "question": "14 - 6 / 2 = ?",
+      "choices": [
+        "11",
+        "4",
+        "8",
+        "17"
+      ],
+      "correct_answer": "11",
+      "explanation": "14-3=11 หารก่อน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "ซื้อขนม 5 กล่อง กล่องละ 12 บาท แบ่งเพื่อน 3 คนเท่าๆ กัน แต่ละคนได้กี่บาท",
+      "choices": [
+        "20 บาท",
+        "15 บาท",
+        "25 บาท",
+        "18 บาท"
+      ],
+      "correct_answer": "20 บาท",
+      "explanation": "5x12=60, 60/3=20 บาท",
+      "difficulty": "medium"
+    },
+    {
+      "question": "(9 + 6) / 3 = ?",
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "3"
+      ],
+      "correct_answer": "5",
+      "explanation": "(9+6)/3=15/3=5",
+      "difficulty": "easy"
+    },
+    {
+      "question": "8 x 3 + 8 x 7 = ?",
+      "choices": [
+        "80",
+        "88",
+        "72",
+        "96"
+      ],
+      "correct_answer": "80",
+      "explanation": "8x3=24, 8x7=56, 24+56=80 หรือ 8x(3+7)=8x10=80",
+      "difficulty": "medium"
+    },
+    {
+      "question": "มีลวด 120 เซนติเมตร ตัดเป็นชิ้นยาว 8 ซม. ได้กี่ชิ้น แล้วเหลือเท่าไร",
+      "choices": [
+        "15 ชิ้น เหลือ 0 ซม.",
+        "14 ชิ้น เหลือ 8 ซม.",
+        "13 ชิ้น เหลือ 16 ซม.",
+        "14 ชิ้น เหลือ  ซม."
+      ],
+      "correct_answer": "15 ชิ้น เหลือ 0 ซม.",
+      "explanation": "120/8=15 ชิ้น เหลือ 0",
+      "difficulty": "hard"
+    },
+    {
+      "question": "7 x 4 - 20 / 4 = ?",
+      "choices": [
+        "23",
+        "18",
+        "28",
+        "13"
+      ],
+      "correct_answer": "23",
+      "explanation": "7x4=28, 20/4=5, 28-5=23",
+      "difficulty": "hard"
+    },
+    {
+      "question": "มีผ้า 5 เมตร ตัดแบ่งเพื่อน 4 คน คนละเท่าไร แล้วตัดเพิ่มอีก 75 ซม. เหลือเท่าไร",
+      "choices": [
+        "1.25 ม. เหลือ 0.5 ม.",
+        "2 ม. เหลือ 0.25 ม.",
+        "1 ม. เหลือ 0.25 ม.",
+        "2.50 ม. เหลือ  ม."
+      ],
+      "correct_answer": "1.25 ม. เหลือ 0.5 ม.",
+      "explanation": "500/4=125 ซม.=1.25 ม., 125-75=50 ซม.=0.5 ม.",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

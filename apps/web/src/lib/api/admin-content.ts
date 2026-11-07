@@ -104,6 +104,9 @@ export interface AdminLessonRow {
   variant_count?: number
   approved_variant_count?: number
   variant_files?: string[]
+  selected_variant_id?: string
+  variant_status?: string
+  section_completeness?: Record<string, boolean>
   file_structure?: string
 }
 
@@ -198,16 +201,18 @@ export async function updateAdminLesson(
 }
 
 /** POST /admin/content/lessons/{lesson_id}/approve */
-export async function approveLesson(lessonId: string, note?: string): Promise<void> {
+export async function approveLesson(lessonId: string, note?: string, language?: string): Promise<void> {
   await apiClient.post(`/admin/lessons/${lessonId}/approve`, {
     reviewer_note: note,
+    language,
   })
 }
 
 /** POST /admin/content/lessons/{lesson_id}/reject */
-export async function rejectLesson(lessonId: string, note: string): Promise<void> {
+export async function rejectLesson(lessonId: string, note: string, language?: string): Promise<void> {
   await apiClient.post(`/admin/lessons/${lessonId}/reject`, {
     reviewer_note: note,
+    language,
   })
 }
 

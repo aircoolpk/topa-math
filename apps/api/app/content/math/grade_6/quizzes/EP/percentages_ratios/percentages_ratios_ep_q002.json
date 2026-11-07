@@ -1,0 +1,381 @@
+{
+  "quiz_id": "percentages_ratios_ep_q002",
+  "title_th": "ร้อยละและอัตราส่วน",
+  "title_en": "Percentages and Ratios",
+  "status": "needs_review",
+  "variant_id": "percentages_ratios_ep_q002",
+  "variant_title_th": "ร้อยละและอัตราส่วน",
+  "variant_title_en": "Percentages and Ratios",
+  "questions": [
+    {
+      "question_id": "percenta_q002_m01",
+      "type": "multiple_choice",
+      "question_th": "75% ของ 80 คือเท่าไร",
+      "question_en": "75% of 80 = ?",
+      "choices_th": [
+        "55",
+        "60",
+        "65",
+        "70"
+      ],
+      "choices_en": [
+        "55",
+        "60",
+        "65",
+        "70"
+      ],
+      "correct_answer_th": "60",
+      "correct_answer_en": "60",
+      "answer_th": "60",
+      "answer_en": "60",
+      "answer": "60",
+      "explanation_th": "75/100 × 80 = 60",
+      "explanation_en": "75/100 × 80 = 60",
+      "difficulty": "easy",
+      "choices": [
+        "55",
+        "60",
+        "65",
+        "70"
+      ],
+      "correct_answer": "60",
+      "question_text": "75% ของ 80 คือเท่าไร",
+      "explanation": "75/100 × 80 = 60",
+      "question_text_th": "75% ของ 80 คือเท่าไร",
+      "question_text_en": "75% of 80 = ?"
+    },
+    {
+      "question_id": "percenta_q002_m02",
+      "type": "multiple_choice",
+      "question_th": "อัตราส่วน 2:3 ถ้าผลรวมเป็น 45 ส่วนที่น้อยกว่าเท่าไร",
+      "question_en": "Ratio 2:3. If the sum is 45, what is the smaller part?",
+      "choices_th": [
+        "18",
+        "20",
+        "15",
+        "12"
+      ],
+      "choices_en": [
+        "18",
+        "20",
+        "15",
+        "12"
+      ],
+      "correct_answer_th": "18",
+      "correct_answer_en": "18",
+      "answer_th": "18",
+      "answer_en": "18",
+      "answer": "18",
+      "explanation_th": "5 parts = 45, 1 part = 9, 2 parts = 18",
+      "explanation_en": "5 parts = 45, 1 part = 9, 2 parts = 18",
+      "difficulty": "medium",
+      "choices": [
+        "18",
+        "20",
+        "15",
+        "12"
+      ],
+      "correct_answer": "18",
+      "question_text": "อัตราส่วน 2:3 ถ้าผลรวมเป็น 45 ส่วนที่น้อยกว่าเท่าไร",
+      "explanation": "5 parts = 45, 1 part = 9, 2 parts = 18",
+      "question_text_th": "อัตราส่วน 2:3 ถ้าผลรวมเป็น 45 ส่วนที่น้อยกว่าเท่าไร",
+      "question_text_en": "Ratio 2:3. If the sum is 45, what is the smaller part?"
+    },
+    {
+      "question_id": "percenta_q002_m03",
+      "type": "multiple_choice",
+      "question_th": "ราคา 150 บาท เพิ่มขึ้น 20% ราคาใหม่เท่าไร",
+      "question_en": "An item costs 150 baht. The price increases by 20%. What is the new price?",
+      "choices_th": [
+        "170 baht",
+        "175 baht",
+        "180 baht",
+        "165 baht"
+      ],
+      "choices_en": [
+        "170 baht",
+        "175 baht",
+        "180 baht",
+        "165 baht"
+      ],
+      "correct_answer_th": "180 baht",
+      "correct_answer_en": "180 baht",
+      "answer_th": "180 baht",
+      "answer_en": "180 baht",
+      "answer": "180 baht",
+      "explanation_th": "150 × 1.2 = 180 baht",
+      "explanation_en": "150 × 1.2 = 180 baht",
+      "difficulty": "medium",
+      "choices": [
+        "170 baht",
+        "175 baht",
+        "180 baht",
+        "165 baht"
+      ],
+      "correct_answer": "180 baht",
+      "question_text": "ราคา 150 บาท เพิ่มขึ้น 20% ราคาใหม่เท่าไร",
+      "explanation": "150 × 1.2 = 180 baht",
+      "question_text_th": "ราคา 150 บาท เพิ่มขึ้น 20% ราคาใหม่เท่าไร",
+      "question_text_en": "An item costs 150 baht. The price increases by 20%. What is the new price?"
+    },
+    {
+      "question_id": "percenta_q002_m04",
+      "type": "multiple_choice",
+      "question_th": "8% ของ 500 คือเท่าไร",
+      "question_en": "8% of 500 = ?",
+      "choices_th": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "choices_en": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct_answer_th": "40",
+      "correct_answer_en": "40",
+      "answer_th": "40",
+      "answer_en": "40",
+      "answer": "40",
+      "explanation_th": "8/100 × 500 = 40",
+      "explanation_en": "8/100 × 500 = 40",
+      "difficulty": "easy",
+      "choices": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct_answer": "40",
+      "question_text": "8% ของ 500 คือเท่าไร",
+      "explanation": "8/100 × 500 = 40",
+      "question_text_th": "8% ของ 500 คือเท่าไร",
+      "question_text_en": "8% of 500 = ?"
+    },
+    {
+      "question_id": "percenta_q002_m05",
+      "type": "multiple_choice",
+      "question_th": "ถ้า 3:7 = 18:x แล้ว x คือเท่าไร",
+      "question_en": "If 3:7 = 18:x, what is x?",
+      "choices_th": [
+        "36",
+        "42",
+        "48",
+        "54"
+      ],
+      "choices_en": [
+        "36",
+        "42",
+        "48",
+        "54"
+      ],
+      "correct_answer_th": "42",
+      "correct_answer_en": "42",
+      "answer_th": "42",
+      "answer_en": "42",
+      "answer": "42",
+      "explanation_th": "3×6=18, so 7×6=42",
+      "explanation_en": "3×6=18, so 7×6=42",
+      "difficulty": "medium",
+      "choices": [
+        "36",
+        "42",
+        "48",
+        "54"
+      ],
+      "correct_answer": "42",
+      "question_text": "ถ้า 3:7 = 18:x แล้ว x คือเท่าไร",
+      "explanation": "3×6=18, so 7×6=42",
+      "question_text_th": "ถ้า 3:7 = 18:x แล้ว x คือเท่าไร",
+      "question_text_en": "If 3:7 = 18:x, what is x?"
+    },
+    {
+      "question_id": "percenta_q002_m06",
+      "type": "multiple_choice",
+      "question_th": "สินค้าราคา 500 บาท ลดราคา 30% ราคาใหม่เท่าไร",
+      "question_en": "An item costs 500 baht with a 30% discount. What is the new price?",
+      "choices_th": [
+        "350 baht",
+        "380 baht",
+        "370 baht",
+        "340 baht"
+      ],
+      "choices_en": [
+        "350 baht",
+        "380 baht",
+        "370 baht",
+        "340 baht"
+      ],
+      "correct_answer_th": "350 baht",
+      "correct_answer_en": "350 baht",
+      "answer_th": "350 baht",
+      "answer_en": "350 baht",
+      "answer": "350 baht",
+      "explanation_th": "Discount = 150 baht, 500 - 150 = 350 baht",
+      "explanation_en": "Discount = 150 baht, 500 - 150 = 350 baht",
+      "difficulty": "easy",
+      "choices": [
+        "350 baht",
+        "380 baht",
+        "370 baht",
+        "340 baht"
+      ],
+      "correct_answer": "350 baht",
+      "question_text": "สินค้าราคา 500 บาท ลดราคา 30% ราคาใหม่เท่าไร",
+      "explanation": "Discount = 150 baht, 500 - 150 = 350 baht",
+      "question_text_th": "สินค้าราคา 500 บาท ลดราคา 30% ราคาใหม่เท่าไร",
+      "question_text_en": "An item costs 500 baht with a 30% discount. What is the new price?"
+    },
+    {
+      "question_id": "percenta_q002_m07",
+      "type": "multiple_choice",
+      "question_th": "อัตราส่วนผู้ชายต่อผู้หญิงในห้องเป็น 4:5 ถ้ามีผู้หญิง 30 คน มีผู้ชายกี่คน",
+      "question_en": "The ratio of boys to girls in a class is 4:5. If there are 30 girls, how many boys are there?",
+      "choices_th": [
+        "20",
+        "24",
+        "28",
+        "32"
+      ],
+      "choices_en": [
+        "20",
+        "24",
+        "28",
+        "32"
+      ],
+      "correct_answer_th": "24",
+      "correct_answer_en": "24",
+      "answer_th": "24",
+      "answer_en": "24",
+      "answer": "24",
+      "explanation_th": "1 part = 30 ÷ 5 = 6, boys = 4 × 6 = 24",
+      "explanation_en": "1 part = 30 ÷ 5 = 6, boys = 4 × 6 = 24",
+      "difficulty": "medium",
+      "choices": [
+        "20",
+        "24",
+        "28",
+        "32"
+      ],
+      "correct_answer": "24",
+      "question_text": "อัตราส่วนผู้ชายต่อผู้หญิงในห้องเป็น 4:5 ถ้ามีผู้หญิง 30 คน มีผู้ชายกี่คน",
+      "explanation": "1 part = 30 ÷ 5 = 6, boys = 4 × 6 = 24",
+      "question_text_th": "อัตราส่วนผู้ชายต่อผู้หญิงในห้องเป็น 4:5 ถ้ามีผู้หญิง 30 คน มีผู้ชายกี่คน",
+      "question_text_en": "The ratio of boys to girls in a class is 4:5. If there are 30 girls, how many boys are there?"
+    },
+    {
+      "question_id": "percenta_q002_m08",
+      "type": "multiple_choice",
+      "question_th": "12% ของ 250 คือเท่าไร",
+      "question_en": "12% of 250 = ?",
+      "choices_th": [
+        "25",
+        "28",
+        "30",
+        "32"
+      ],
+      "choices_en": [
+        "25",
+        "28",
+        "30",
+        "32"
+      ],
+      "correct_answer_th": "30",
+      "correct_answer_en": "30",
+      "answer_th": "30",
+      "answer_en": "30",
+      "answer": "30",
+      "explanation_th": "12/100 × 250 = 30",
+      "explanation_en": "12/100 × 250 = 30",
+      "difficulty": "easy",
+      "choices": [
+        "25",
+        "28",
+        "30",
+        "32"
+      ],
+      "correct_answer": "30",
+      "question_text": "12% ของ 250 คือเท่าไร",
+      "explanation": "12/100 × 250 = 30",
+      "question_text_th": "12% ของ 250 คือเท่าไร",
+      "question_text_en": "12% of 250 = ?"
+    },
+    {
+      "question_id": "percenta_q002_m09",
+      "type": "multiple_choice",
+      "question_th": "เงินฝาก 2,000 บาท ได้ดอกเบี้ย 5% ต่อปี ได้ดอกเบี้ยกี่บาทต่อปี",
+      "question_en": "2,000 baht is deposited at 5% interest per year. How much interest is earned per year?",
+      "choices_th": [
+        "80 baht",
+        "90 baht",
+        "100 baht",
+        "110 baht"
+      ],
+      "choices_en": [
+        "80 baht",
+        "90 baht",
+        "100 baht",
+        "110 baht"
+      ],
+      "correct_answer_th": "100 baht",
+      "correct_answer_en": "100 baht",
+      "answer_th": "100 baht",
+      "answer_en": "100 baht",
+      "answer": "100 baht",
+      "explanation_th": "5/100 × 2,000 = 100 baht",
+      "explanation_en": "5/100 × 2,000 = 100 baht",
+      "difficulty": "medium",
+      "choices": [
+        "80 baht",
+        "90 baht",
+        "100 baht",
+        "110 baht"
+      ],
+      "correct_answer": "100 baht",
+      "question_text": "เงินฝาก 2,000 บาท ได้ดอกเบี้ย 5% ต่อปี ได้ดอกเบี้ยกี่บาทต่อปี",
+      "explanation": "5/100 × 2,000 = 100 baht",
+      "question_text_th": "เงินฝาก 2,000 บาท ได้ดอกเบี้ย 5% ต่อปี ได้ดอกเบี้ยกี่บาทต่อปี",
+      "question_text_en": "2,000 baht is deposited at 5% interest per year. How much interest is earned per year?"
+    },
+    {
+      "question_id": "percenta_q002_m10",
+      "type": "multiple_choice",
+      "question_th": "ราคาเดิม 800 บาท ลดราคา 15% แล้วเพิ่มราคา 15% ราคาสุดท้ายเท่าไร",
+      "question_en": "An item originally costs 800 baht. It is discounted by 15% then increased by 15%. What is the final price?",
+      "choices_th": [
+        "680 baht",
+        "782 baht",
+        "800 baht",
+        "720 baht"
+      ],
+      "choices_en": [
+        "680 baht",
+        "782 baht",
+        "800 baht",
+        "720 baht"
+      ],
+      "correct_answer_th": "782 baht",
+      "correct_answer_en": "782 baht",
+      "answer_th": "782 baht",
+      "answer_en": "782 baht",
+      "answer": "782 baht",
+      "explanation_th": "15% off: 800×0.85=680, 15% on: 680×1.15=782 baht",
+      "explanation_en": "15% off: 800×0.85=680, 15% on: 680×1.15=782 baht",
+      "difficulty": "hard",
+      "choices": [
+        "680 baht",
+        "782 baht",
+        "800 baht",
+        "720 baht"
+      ],
+      "correct_answer": "782 baht",
+      "question_text": "ราคาเดิม 800 บาท ลดราคา 15% แล้วเพิ่มราคา 15% ราคาสุดท้ายเท่าไร",
+      "explanation": "15% off: 800×0.85=680, 15% on: 680×1.15=782 baht",
+      "question_text_th": "ราคาเดิม 800 บาท ลดราคา 15% แล้วเพิ่มราคา 15% ราคาสุดท้ายเท่าไร",
+      "question_text_en": "An item originally costs 800 baht. It is discounted by 15% then increased by 15%. What is the final price?"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "lesson_id": "add_sub_within_20_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "as20_ep_q002_e01",
+      "question_text": "Pim has 7 apples. She buys 8 more apples at the market. How many apples does Pim have now?",
+      "question_text_th": "พิมมีแอปเปิ้ล 7 ผล ซื้อเพิ่มที่ตลาด 8 ผล พิมมีแอปเปิ้ลกี่ผล",
+      "choices": [
+        "15 apples",
+        "19 apples",
+        "12 apples",
+        "21 apples"
+      ],
+      "correct_answer": "15 apples",
+      "answer": "15 apples",
+      "explanation": "7 + 8 = 15 apples",
+      "explanation_th": "บวกแอปเปิ้ล: 7 + 8 = 15 ผล",
+      "difficulty": "easy",
+      "hint_th": "Add at market."
+    },
+    {
+      "question_id": "as20_ep_q002_e02",
+      "question_text": "Ai has 16 balloons. 1 balloon flies away. How many balloons does Ai have left?",
+      "question_text_th": "อ้ายมีลูกโปร่ง 16 ลูก ลูกโปร่งลอยหนีไป 1 ลูก อ้ายเหลือลูกโปร่งกี่ลูก",
+      "choices": [
+        "15 balloons",
+        "19 balloons",
+        "12 balloons",
+        "21 balloons"
+      ],
+      "correct_answer": "15 balloons",
+      "answer": "15 balloons",
+      "explanation": "16 - 1 = 15 balloons",
+      "explanation_th": "ลบลูกโปร่ง: 16 - 1 = 15 ลูก",
+      "difficulty": "easy",
+      "hint_th": "One flies away."
+    },
+    {
+      "question_id": "as20_ep_q002_e03",
+      "question_text": "Lin has 11 flowers. She picks 6 more flowers in the garden. How many flowers does Lin have now?",
+      "question_text_th": "ลินมีดอกไม้ 11 ดอก เก็บเพิ่มจากสวนได้ 6 ดอก ลินมีดอกไม้กี่ดอก",
+      "choices": [
+        "17 flowers",
+        "21 flowers",
+        "14 flowers",
+        "23 flowers"
+      ],
+      "correct_answer": "17 flowers",
+      "answer": "17 flowers",
+      "explanation": "11 + 6 = 17 flowers",
+      "explanation_th": "บวกดอกไม้: 11 + 6 = 17 ดอก",
+      "difficulty": "easy",
+      "hint_th": "Pick more."
+    },
+    {
+      "question_id": "as20_ep_q002_m01",
+      "question_text": "Mai has 14 crayons. She uses 8 crayons for her drawing. Her teacher gives her 5 new crayons. How many crayons does Mai have now?",
+      "question_text_th": "ไมมีสีเทียน 14 ก้าน ใช้วาดรูป 8 ก้าน คุณครูให้สีใหม่ 5 ก้าน ไมมีสีเทียนกี่ก้าน",
+      "choices": [
+        "11 crayons",
+        "15 crayons",
+        "8 crayons",
+        "17 crayons"
+      ],
+      "correct_answer": "11 crayons",
+      "answer": "11 crayons",
+      "explanation": "14 - 8 + 5 = 11 crayons",
+      "explanation_th": "ลบแล้วบวก: 14 - 8 + 5 = 11 ก้าน",
+      "difficulty": "medium",
+      "hint_th": "Use then receive."
+    },
+    {
+      "question_id": "as20_ep_q002_m02",
+      "question_text": "Tad has 13 marbles. He loses 7 marbles and then wins 9 marbles from Book. How many marbles does Tad have now?",
+      "question_text_th": "ต้นมีลูกแก้ว 13 ลูก เสียไป 7 ลูก แล้วชนะจากบุ๊กได้ 9 ลูก ต้นมีลูกแก้วกี่ลูก",
+      "choices": [
+        "15 marbles",
+        "19 marbles",
+        "12 marbles",
+        "21 marbles"
+      ],
+      "correct_answer": "15 marbles",
+      "answer": "15 marbles",
+      "explanation": "13 - 7 + 9 = 15 marbles",
+      "explanation_th": "ลบแล้วชนะ: 13 - 7 + 9 = 15 ลูก",
+      "difficulty": "medium",
+      "hint_th": "Lose then win."
+    },
+    {
+      "question_id": "as20_ep_q002_m03",
+      "question_text": "Book has 19 stickers. He gives 9 stickers to Mali. How many stickers does Book have left?",
+      "question_text_th": "บุ๊กมีสติกเกอร์ 19 ดวง ให้มะลิ 9 ดวง บุ๊กเหลือสติกเกอร์กี่ดวง",
+      "choices": [
+        "10 stickers",
+        "14 stickers",
+        "7 stickers",
+        "16 stickers"
+      ],
+      "correct_answer": "10 stickers",
+      "answer": "10 stickers",
+      "explanation": "19 - 9 = 10 stickers",
+      "explanation_th": "ลบสติกเกอร์: 19 - 9 = 10 ดวง",
+      "difficulty": "medium",
+      "hint_th": "Subtract 9."
+    },
+    {
+      "question_id": "as20_ep_q002_m04",
+      "question_text": "Mali has 12 dolls. She receives 7 more dolls from her aunt. How many dolls does Mali have now?",
+      "question_text_th": "มะลิมีตุ๊กตา 12 ตัว ได้รับจากป้า 7 ตัว มะลิมีตุ๊กตากี่ตัว",
+      "choices": [
+        "19 dolls",
+        "23 dolls",
+        "16 dolls",
+        "25 dolls"
+      ],
+      "correct_answer": "19 dolls",
+      "answer": "19 dolls",
+      "explanation": "12 + 7 = 19 dolls",
+      "explanation_th": "บวกตุ๊กตา: 12 + 7 = 19 ตัว",
+      "difficulty": "medium",
+      "hint_th": "Receive from aunt."
+    },
+    {
+      "question_id": "as20_ep_q002_h01",
+      "question_text": "Lin has 11 pencils. She buys 6 pencils and gives 8 pencils to her classmates. How many pencils does Lin have left?",
+      "question_text_th": "ลินมีดินสอ 11 แท่ง ซื้อ 6 แท่ง แล้วให้เพื่อนในชั้น 8 แท่ง ลินเหลือดินสอกี่แท่ง",
+      "choices": [
+        "9 pencils",
+        "13 pencils",
+        "6 pencils",
+        "15 pencils"
+      ],
+      "correct_answer": "9 pencils",
+      "answer": "9 pencils",
+      "explanation": "11 + 6 - 8 = 9 pencils",
+      "explanation_th": "บวกแล้วลบ: 11 + 6 - 8 = 9 แท่ง",
+      "difficulty": "hard",
+      "hint_th": "Buy then give."
+    },
+    {
+      "question_id": "as20_ep_q002_h02",
+      "question_text": "A shop has 18 boxes of crayons. A school buys 9 boxes and another buys 6 boxes. How many boxes does the shop have left?",
+      "question_text_th": "ร้านมีกล่องสีเทียน 18 กล่อง โรงเรียนซื้อ 9 กล่อง อีกโรงเรียนซื้อ 6 กล่อง เหลือกี่กล่อง",
+      "choices": [
+        "3 boxes",
+        "7 boxes",
+        "8 boxes",
+        "9 boxes"
+      ],
+      "correct_answer": "3 boxes",
+      "answer": "3 boxes",
+      "explanation": "18 - 9 - 6 = 3 boxes",
+      "explanation_th": "ลบทีละโรงเรียน: 18 - 9 - 6 = 3 กล่อง",
+      "difficulty": "hard",
+      "hint_th": "Two schools."
+    },
+    {
+      "question_id": "as20_ep_q002_h03",
+      "question_text": "Ai has 14 books. He gives 5 books to the library and receives 9 new books from his mother. Then he buys 4 more books. How many books does Ai have now?",
+      "question_text_th": "อ้ายมีหนังสือ 14 เล่ม ให้ห้องสมุด 5 เล่ม ได้รับจากแม่ 9 เล่ม แล้วซื้อเพิ่ม 4 เล่ม อ้ายมีหนังสือกี่เล่ม",
+      "choices": [
+        "22 books",
+        "26 books",
+        "19 books",
+        "28 books"
+      ],
+      "correct_answer": "22 books",
+      "answer": "22 books",
+      "explanation": "14 - 5 + 9 + 4 = 22 books",
+      "explanation_th": "ลบบวกบวก: 14 - 5 + 9 + 4 = 22 เล่ม",
+      "difficulty": "hard",
+      "hint_th": "Three steps."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

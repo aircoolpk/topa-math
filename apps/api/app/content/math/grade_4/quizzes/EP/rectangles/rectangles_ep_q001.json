@@ -1,0 +1,189 @@
+{
+  "lesson_id": "rectangles_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "Rectangle: width 10, length 20. Find area.",
+      "question_text_en": "Rectangle: width 10, length 20. Find area.",
+      "choices": [
+        "200 sq units",
+        "30 sq units",
+        "60 sq units",
+        "120 sq units"
+      ],
+      "correct_answer": "200 sq units",
+      "answer": "200 sq units",
+      "explanation": "10x20=200",
+      "explanation_th": "10×20=200 ตารางหน่วย",
+      "difficulty": "easy",
+      "hint_th": "Area = width x length",
+      "question_text_th": "สี่เหลี่ยมผืนผ้ากว้าง 10 ยาว 20. หาพื้นที่."
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "Rectangle: width 45, length 78. Area and perimeter?",
+      "question_text_en": "Rectangle: width 45, length 78. Area and perimeter?",
+      "choices": [
+        "3,510 sq m, perimeter 246 m",
+        "3,510 sq m, perimeter 123 m",
+        "3,500 sq m, perimeter 246 m",
+        "3,510 sq m, perimeter 236 m"
+      ],
+      "correct_answer": "3,510 sq m, perimeter 246 m",
+      "answer": "3,510 sq m, perimeter 246 m",
+      "explanation": "45x78=3,510 | 2x(45+78)=2x123=246",
+      "explanation_th": "45×78=3,510 ตร.ม. | 2×(45+78)=2×123=246 ม.",
+      "difficulty": "medium",
+      "hint_th": "Area=45x78, Perimeter=2x(45+78)",
+      "question_text_th": "สี่เหลี่ยมผืนผ้ากว้าง 45 ยาว 78. พื้นที่และรอบรูป?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "Rectangle: width 32, length 56. Area and perimeter?",
+      "question_text_en": "Rectangle: width 32, length 56. Area and perimeter?",
+      "choices": [
+        "1,792 sq cm, perimeter 176 cm",
+        "1,782 sq cm, perimeter 176 cm",
+        "1,792 sq cm, perimeter 186 cm",
+        "1,792 sq cm, perimeter 166 cm"
+      ],
+      "correct_answer": "1,792 sq cm, perimeter 176 cm",
+      "answer": "1,792 sq cm, perimeter 176 cm",
+      "explanation": "32x56=1,792 | 2x(32+56)=2x88=176",
+      "explanation_th": "32×56=1,792 ตร.ซม. | 2×(32+56)=2×88=176 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Area=32x56, Perimeter=2x(32+56)",
+      "question_text_th": "สี่เหลี่ยมผืนผ้ากว้าง 32 ยาว 56. พื้นที่และรอบรูป?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "Square: side 15. Area and perimeter?",
+      "question_text_en": "Square: side 15. Area and perimeter?",
+      "choices": [
+        "225 sq units, perimeter 60 units",
+        "200 sq units, perimeter 60 units",
+        "225 sq units, perimeter 55 units",
+        "225 sq units, perimeter 50 units"
+      ],
+      "correct_answer": "225 sq units, perimeter 60 units",
+      "answer": "225 sq units, perimeter 60 units",
+      "explanation": "15x15=225 | 4x15=60",
+      "explanation_th": "15×15=225 ตร.หน่วย | 4×15=60 หน่วย",
+      "difficulty": "easy",
+      "hint_th": "Area=sidexside, Perimeter=4xside",
+      "question_text_th": "สี่เหลี่ยมจัตุรัสด้านละ 15. พื้นที่และรอบรูป?"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "Rectangle area 48 sq cm, width 6 cm. Length?",
+      "question_text_en": "Rectangle area 48 sq cm, width 6 cm. Length?",
+      "choices": [
+        "8 cm",
+        "7 cm",
+        "9 cm",
+        "6 cm"
+      ],
+      "correct_answer": "8 cm",
+      "answer": "8 cm",
+      "explanation": "48/6=8 cm",
+      "explanation_th": "48÷6=8 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Length = Area / Width",
+      "question_text_th": "สี่เหลี่ยมผืนผ้าพื้นที่ 48 ตร.ซม. กว้าง 6 ซม. ยาว?"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "Rectangle perimeter 30 cm, width 5 cm. Length?",
+      "question_text_en": "Rectangle perimeter 30 cm, width 5 cm. Length?",
+      "choices": [
+        "10 cm",
+        "8 cm",
+        "12 cm",
+        "9 cm"
+      ],
+      "correct_answer": "10 cm",
+      "answer": "10 cm",
+      "explanation": "2x(5+length)=30 | 5+length=15 | length=10 cm",
+      "explanation_th": "2×(5+ยาว)=30 → 5+ยาว=15 → ยาว=10 ซม.",
+      "difficulty": "medium",
+      "hint_th": "Perimeter=2x(width+length), solve equation",
+      "question_text_th": "สี่เหลี่ยมผืนผ้ารอบ 30 ซม. กว้าง 5 ซม. ยาว?"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "Square area 144 sq cm. Side length?",
+      "question_text_en": "Square area 144 sq cm. Side length?",
+      "choices": [
+        "12 cm",
+        "11 cm",
+        "13 cm",
+        "10 cm"
+      ],
+      "correct_answer": "12 cm",
+      "answer": "12 cm",
+      "explanation": "√144=12 cm",
+      "explanation_th": "√144=12 ซม.",
+      "difficulty": "easy",
+      "hint_th": "Side = √Area = √144 = 12",
+      "question_text_th": "สี่เหลี่ยมจัตุรัสพื้นที่ 144 ตร.ซม. ด้านละ?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "Rectangle: width 8, length 12. Area and perimeter?",
+      "question_text_en": "Rectangle: width 8, length 12. Area and perimeter?",
+      "choices": [
+        "96 sq units, perimeter 40 units",
+        "96 sq units, perimeter 20 units",
+        "80 sq units, perimeter 40 units",
+        "96 sq units, perimeter 35 units"
+      ],
+      "correct_answer": "96 sq units, perimeter 40 units",
+      "answer": "96 sq units, perimeter 40 units",
+      "explanation": "8x12=96 | 2x(8+12)=2x20=40",
+      "explanation_th": "8×12=96 ตร.หน่วย | 2×(8+12)=2×20=40 หน่วย",
+      "difficulty": "easy",
+      "hint_th": "Area=8x12, Perimeter=2x(8+12)",
+      "question_text_th": "สี่เหลี่ยมผืนผ้ากว้าง 8 ยาว 12. พื้นที่และรอบรูป?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "Which is correct: A. Area=width×length | B. Perimeter=width+length | C. Both",
+      "question_text_en": "Which is correct: A. Area=width×length | B. Perimeter=width+length | C. Both",
+      "choices": [
+        "A only",
+        "B only",
+        "C (both A and B)",
+        "Neither"
+      ],
+      "correct_answer": "A only",
+      "answer": "A only",
+      "explanation": "A is correct (area=wl) | B is wrong (perimeter needs x2)",
+      "explanation_th": "ก ถูก | ข ผิด (รอบต้องคูณ 2)",
+      "difficulty": "hard",
+      "hint_th": "Perimeter = 2x(width+length)",
+      "question_text_th": "ข้อใดถูก: ก.พื้นที่=ก×ย | ข.รอบ=ก+ย | ค.ทั้งสอง"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Rectangle: width 15, length 25 m. Perimeter?",
+      "question_text_en": "Rectangle: width 15, length 25 m. Perimeter?",
+      "choices": [
+        "80 m",
+        "40 m",
+        "70 m",
+        "50 m"
+      ],
+      "correct_answer": "80 m",
+      "answer": "80 m",
+      "explanation": "2x(15+25)=2x40=80 m",
+      "explanation_th": "2×(15+25)=2×40=80 ม.",
+      "difficulty": "easy",
+      "hint_th": "2x(15+25)=80 m",
+      "question_text_th": "สี่เหลี่ยมผืนผ้ากว้าง 15 ยาว 25 ม. รอบรูปเท่าไร?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

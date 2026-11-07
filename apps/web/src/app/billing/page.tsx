@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { billingApi, type BillingStatus, type BillingPrices, type BillingPlanRecord } from '@/lib/api/billing'
+import { billingApi, getCheckoutErrorMessage, getCheckoutUrl, type MppOrderSummary, type BillingStatus, type BillingPrices, type BillingPlanRecord } from '@/lib/api/billing'
 import { TopaBrandMark, TopaMascot } from '@/components/brand/TopaBrand'
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -60,6 +60,7 @@ function subscriptionStatusColor(status: string | null): string {
 // ─── Types ─────────────────────────────────────────────────────────────────────
 
 interface DisplayPlan {
+  auto_renew?: boolean
   id?: string
   plan_code: string
   name?: string
@@ -90,27 +91,16 @@ interface DisplayPlan {
   tag?: string  // e.g. "Founder Price", "Yearly Promo", "รายเดือน"
 }
 
-const DEFAULT_TH_FEATURES = [
-  'ปลดล็อกบทเรียนคณิต ป.1-ป.6',
-  'ปลดล็อกเทสทุกระดับชั้น',
-  'ไม่จำกัด 5 เทสฟรี',
-  'ติดตามพัฒนาการรายวัน',
-]
-
-const DEFAULT_EP_FEATURES = [
-  'ปลดล็อก EP และ TH ทั้งหมด',
-  'ปลดล็อกเทสทุกระดับชั้น',
-  'ไม่จำกัด 5 เทสฟรี',
-  'เนื้อหาเสริมสำหรับ English Program',
-]
+// Feature copy is served by the backend (PLAN_CATALOG in routers/billing.py).
+// We no longer hardcode benefit lists here — if the backend returns nothing,
+// show an empty list (better than misleading copy that contradicts the catalog).
 
 const getPlanFeatures = (plan: Partial<DisplayPlan> | BillingPlanRecord | null | undefined): string[] => {
   const normalizeFeature = (feature: string) =>
     feature === 'Singapore Math diagrams' ? 'แผนภาพแบบ Singapore Math' : feature
-  if (Array.isArray(plan?.features)) return plan.features.map(normalizeFeature)
-  if (Array.isArray(plan?.benefits)) return plan.benefits.map(normalizeFeature)
-  const programType = String(plan?.program_type ?? plan?.plan_code ?? '').toUpperCase()
-  return programType.includes('EP') ? DEFAULT_EP_FEATURES : DEFAULT_TH_FEATURES
+  if (Array.isArray(plan?.features) && plan.features.length > 0) return plan.features.map(normalizeFeature)
+  if (Array.isArray(plan?.benefits) && plan.benefits.length > 0) return plan.benefits.map(normalizeFeature)
+  return []
 }
 
 const getPlanCode = (plan: Partial<DisplayPlan> | BillingPlanRecord | null | undefined): string => {
@@ -251,7 +241,7 @@ function PlanCard({ plan, isCurrentPlan, onSubscribe, loading, error, errorPlan 
         <div className="mb-1">
           <span className="text-3xl font-extrabold text-gray-900">฿{formatPrice(planPrice)}</span>
           <span className="text-xs text-gray-400 font-medium ml-1">
-            /{isFree ? 'ฟรี' : isYearly ? 'ปี' : 'เดือน'}
+            /{isFree ? 'ฟรี' : isYearly ? 'ปี' : plan.auto_renew === false ? '30 วัน' : 'เดือน'}
           </span>
         </div>
         {plan.original_price_thb && plan.original_price_thb > planPrice && (
@@ -260,7 +250,7 @@ function PlanCard({ plan, isCurrentPlan, onSubscribe, loading, error, errorPlan 
           </p>
         )}
         <p className="text-xs text-gray-400 mb-4">
-          {isYearly ? 'ราคารายปี' : 'ราคารายเดือน'}
+          {isYearly ? 'ราคารายปี' : plan.auto_renew === false ? 'ชำระครั้งเดียวสำหรับสิทธิ์ 30 วัน' : 'สมาชิกแบบต่ออายุอัตโนมัติ'}
         </p>
 
         {/* Features */}
@@ -288,7 +278,7 @@ function PlanCard({ plan, isCurrentPlan, onSubscribe, loading, error, errorPlan 
             </button>
           ) : plan.available === false ? (
             <div className="w-full py-2.5 text-center rounded-xl bg-gray-100 text-gray-400 font-bold text-xs">
-              ❌ Founder Price เต็มแล้ว
+              แพ็กเกจนี้ยังไม่เปิดชำระเงิน
             </div>
           ) : (
             <>
@@ -304,7 +294,7 @@ function PlanCard({ plan, isCurrentPlan, onSubscribe, loading, error, errorPlan 
                 ) : 'เลือกแพ็กเกจ'}
               </button>
               {error && errorPlan === planCode && (
-                <p className="text-xs text-red-600 mt-1.5 text-center">{error}</p>
+                <p role="alert" className="text-xs text-red-600 mt-1.5 text-center">{error}</p>
               )}
             </>
           )}
@@ -512,14 +502,11 @@ export default function BillingPage() {
   const [subscribeSuccess, setSubscribeSuccess] = useState<string | null>(null)
   const [portalLoading, setPortalLoading] = useState(false)
   const [portalError, setPortalError] = useState<string | null>(null)
+  const [mppOrders, setMppOrders] = useState<MppOrderSummary[]>([])
 
   useEffect(() => {
     setMounted(true)
-    const token = localStorage.getItem('access_token')
-    if (!token) {
-      router.push('/login')
-      return
-    }
+    billingApi.getMppOrders().then(setMppOrders).catch(() => undefined)
 
     // Load billing status
     billingApi.getStatus()
@@ -538,8 +525,6 @@ export default function BillingPage() {
       .finally(() => setLoadingPrices(false))
   }, [router])
 
-  // Detect if Stripe is unconfigured (backend returned plans without stripe_price_id)
-  const stripeNotConfigured = (prices?.plans ?? []).every((p) => !p.stripe_price_id)
   const isDevMode = process.env.NODE_ENV === 'development'
 
   const handleSubscribe = async (planCode: string) => {
@@ -556,29 +541,13 @@ export default function BillingPage() {
     setSubscribeSuccess(null)
     try {
       const checkoutPlanCode = selectedPlan?.checkout_plan_code ?? planCode
-      const res = await billingApi.createCheckoutSession(checkoutPlanCode)
-      const checkoutUrl = res.checkout_url
-      if (checkoutUrl) {
-        window.location.href = checkoutUrl
-        return
-      }
-      if (res.mode === 'manual_pending') {
-        setSubscribeSuccess(res.message || 'ส่งคำขอสมัครแพ็กเกจแล้ว กรุณารอผู้ดูแลยืนยัน')
-        setSubscribeLoading(null)
-        return
-      }
-      throw new Error('Missing checkout_url')
+      const res = billingStatus?.provider === 'mpp'
+        ? await billingApi.createMppCheckout(checkoutPlanCode)
+        : await billingApi.createCheckoutSession(checkoutPlanCode)
+      window.location.href = getCheckoutUrl(res)
     } catch (err: unknown) {
-      const errObj = err as Record<string, unknown>
-      const isOffline =
-        errObj.code === 'ECONNREFUSED' ||
-        errObj.code === 'ERR_NETWORK' ||
-        errObj.code === 'ECONNABORTED'
-      setSubscribeError(
-        isOffline
-          ? 'ไม่สามารถเชื่อมต่อระบบชำระเงินได้'
-          : 'ไม่สามารถเปิดหน้าชำระเงินได้ กรุณาลองใหม่'
-      )
+      setSubscribeError(getCheckoutErrorMessage(err))
+      billingApi.getMppOrders().then(setMppOrders).catch(() => undefined)
       setSubscribeErrorPlan(planCode)
       setSubscribeLoading(null)
     }
@@ -696,18 +665,16 @@ export default function BillingPage() {
               cardError={portalError}
             />
 
+            <p className="mb-5 text-sm text-gray-600">{prices?.checkout_provider === 'mpp' ? 'MPP ชำระครั้งเดียว 30 วัน ไม่มีการหักเงินอัตโนมัติ' : 'Stripe ต่ออายุอัตโนมัติ จัดการสมาชิกได้ผ่าน Customer Portal'}</p>
+            {billingStatus?.provider === 'mpp' && billingStatus.active_price_code && <button className="mb-5 rounded-lg border border-sky-300 px-4 py-2 text-sm font-bold text-sky-800 disabled:opacity-40" disabled={!!subscribeLoading} onClick={() => handleSubscribe(billingStatus.active_price_code!)}>ต่ออายุสิทธิ์อีก 30 วัน</button>}
+            {mppOrders.length > 0 && <section className="mb-6 border-y border-gray-200 py-4"><h2 className="mb-3 font-bold">ประวัติชำระเงิน MPP</h2><ul className="divide-y divide-gray-100">{mppOrders.map((order) => <li key={order.order_id} className="flex flex-wrap items-center justify-between gap-2 py-3 text-sm"><span>{order.plan_code} · {(order.amount_minor / 100).toLocaleString('th-TH')} บาท · {order.status}</span><Link className="font-semibold text-sky-700" href={`/billing/payments/${order.order_id}`}>ตรวจสอบรายการ</Link></li>)}</ul></section>}
             {subscribeSuccess && (
               <div className="mb-6 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-semibold text-green-800">
                 {subscribeSuccess}
               </div>
             )}
 
-            {stripeNotConfigured && (
-              <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
-                ⚠️ ระบบชำระเงินออนไลน์ยังไม่ได้ตั้งค่า ตอนนี้สามารถส่งคำขอสมัครแพ็กเกจให้ผู้ดูแลยืนยันแบบ manual ได้
-              </div>
-            )}
-            {prices?.using_dev_fallback && !stripeNotConfigured && process.env.NODE_ENV === 'development' && (
+            {prices?.using_dev_fallback && process.env.NODE_ENV === 'development' && (
               <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
                 ใช้ข้อมูลแพ็กเกจชั่วคราวสำหรับ dev
               </div>
@@ -735,7 +702,7 @@ export default function BillingPage() {
             {(freePlans.length > 0 || thPlans.length > 0 || epPlans.length > 0 || familyPlans.length > 0) && (
               <div className="mb-6">
                 <h3 className="text-base font-extrabold text-gray-900 mb-4 flex items-center gap-2">
-                  <span>📋</span> แพ็กเกจรายเดือน
+                  <span>📋</span> แพ็กเกจสมาชิก
                 </h3>
                 <div className="grid md:grid-cols-2 gap-5">
                   {freePlans.map(plan => (
@@ -822,7 +789,7 @@ export default function BillingPage() {
             {/* ── Trust badges ── */}
             <div className="mt-8 text-center">
               <div className="flex flex-wrap justify-center gap-5 text-xs text-gray-500">
-                <span className="flex items-center gap-1.5">🔒 ชำระเงินปลอดภัยผ่าน Stripe</span>
+                <span className="flex items-center gap-1.5">🔒 {prices?.checkout_provider === 'mpp' ? 'MPP (Staging)' : 'Stripe'}</span>
                 <span className="flex items-center gap-1.5">🚫 ยกเลิกได้ทุกเมื่อ</span>
                 <span className="flex items-center gap-1.5">👨‍👩‍👧 เหมาะสำหรับครอบครัว</span>
               </div>

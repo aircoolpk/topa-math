@@ -1,0 +1,185 @@
+{
+  "lesson_id": "fractions_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "A pizza is cut into 8 equal slices. Lin eats 3/8 and Mali eats 2/8. How many slices did they eat? How many are left?",
+      "question_text_en": "A pizza is cut into 8 equal slices. Lin eats 3/8 and Mali eats 2/8. How many slices did they eat? How many are left?",
+      "choices": [
+        "5/8 eaten, 3/8 left",
+        "5/8 eaten, 5/8 left",
+        "4/8 eaten, 4/8 left",
+        "6/8 eaten, 2/8 left"
+      ],
+      "correct_answer": "5/8 eaten, 3/8 left",
+      "answer": "5/8 eaten, 3/8 left",
+      "explanation": "3/8+2/8=5/8 eaten | 8/8-5/8=3/8 left",
+      "explanation_th": "3/8+2/8=5/8 รวม | 8/8-5/8=3/8 เหลือ",
+      "difficulty": "easy",
+      "hint_th": "Add numerators, same denominator",
+      "question_text_th": "พิซซ่าแบ่ง 8 ส่วน ลินกิน 3/8 มะลิกิน 2/8. กินไปกี่ส่วน เหลือกี่ส่วน?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "A cake is cut into 9 equal pieces. Lin eats 4/9 and Mali eats 2/9. Total eaten? Left?",
+      "question_text_en": "A cake is cut into 9 equal pieces. Lin eats 4/9 and Mali eats 2/9. Total eaten? Left?",
+      "choices": [
+        "6/9 eaten, 3/9 left",
+        "5/9 eaten, 4/9 left",
+        "7/9 eaten, 2/9 left",
+        "6/9 eaten, 2/9 left"
+      ],
+      "correct_answer": "6/9 eaten, 3/9 left",
+      "answer": "6/9 eaten, 3/9 left",
+      "explanation": "4/9+2/9=6/9 | 9/9-6/9=3/9 left",
+      "explanation_th": "4/9+2/9=6/9 รวม | 9/9-6/9=3/9 เหลือ",
+      "difficulty": "easy",
+      "hint_th": "Add numerators, subtract from whole",
+      "question_text_th": "เค้กแบ่ง 9 ส่วน ลินกิน 4/9 มะลิกิน 2/9. รวมกินกี่ส่วน เหลือกี่ส่วน?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "A water tank is filled with 5/7 of a tank. Lin uses 2/7 of the tank. How much water is left?",
+      "question_text_en": "A water tank is filled with 5/7 of a tank. Lin uses 2/7 of the tank. How much water is left?",
+      "choices": [
+        "3/7 of the tank",
+        "2/7 of the tank",
+        "4/7 of the tank",
+        "1/7 of the tank"
+      ],
+      "correct_answer": "3/7 of the tank",
+      "answer": "3/7 of the tank",
+      "explanation": "5/7-2/7=3/7",
+      "explanation_th": "5/7-2/7=3/7 ของถัง",
+      "difficulty": "easy",
+      "hint_th": "Subtract numerators, same denominator",
+      "question_text_th": "ถังน้ำเต็ม 5/7 ของถัง ลินใช้ไป 2/7 ของถัง. เหลือน้ำกี่ส่วน?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "A garden has 7/12 flowers that are roses and 2/12 that are sunflowers. What fraction are jasmine flowers?",
+      "question_text_en": "A garden has 7/12 flowers that are roses and 2/12 that are sunflowers. What fraction are jasmine flowers?",
+      "choices": [
+        "3/12",
+        "5/12",
+        "4/12",
+        "2/12"
+      ],
+      "correct_answer": "3/12",
+      "answer": "3/12",
+      "explanation": "7/12+2/12=9/12 | 12/12-9/12=3/12",
+      "explanation_th": "7/12+2/12=9/12 | 12/12-9/12=3/12 ดอกมะลิ",
+      "difficulty": "medium",
+      "hint_th": "Add roses and sunflowers, subtract from whole",
+      "question_text_th": "สวนมีกุหลาบ 7/12 ดอกทานตะวัน 2/12. เป็นดอกมะลิกี่ส่วน?"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "3/8 + 1/8 = ?",
+      "question_text_en": "3/8 + 1/8 = ?",
+      "choices": [
+        "4/8",
+        "4/16",
+        "3/8",
+        "14 /"
+      ],
+      "correct_answer": "4/8",
+      "answer": "4/8",
+      "explanation": "3/8+1/8=4/8 (add numerators, keep denominator)",
+      "explanation_th": "3/8+1/8=4/8",
+      "difficulty": "easy",
+      "hint_th": "Add numerators, keep denominator"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "4/9 + x/9 = 7/9. What is x?",
+      "question_text_en": "4/9 + x/9 = 7/9. x=?",
+      "choices": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "correct_answer": "3",
+      "answer": "3",
+      "explanation": "4+x=7 → x=3",
+      "explanation_th": "4+x=7 → x=3",
+      "difficulty": "easy",
+      "hint_th": "4+x=7 → x=3"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "8/8 - 5/8 = x. What is x?",
+      "question_text_en": "8/8 - 5/8 = x. x=?",
+      "choices": [
+        "3/8",
+        "3/0",
+        "13/8",
+        "3/16"
+      ],
+      "correct_answer": "3/8",
+      "answer": "3/8",
+      "explanation": "8/8-5/8=3/8",
+      "explanation_th": "8/8-5/8=3/8",
+      "difficulty": "easy",
+      "hint_th": "Subtract numerators, keep denominator"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "3/10 of students get grade A and 4/10 get grade B. What fraction got A or B? What fraction did not?",
+      "question_text_en": "3/10 of students get grade A and 4/10 get grade B. What fraction got A or B? What fraction did not?",
+      "choices": [
+        "7/10 got A/B, 3/10 did not",
+        "7/10 got A/B, 7/10 did not",
+        "6/10 got A/B, 4/10 did not",
+        "7/10 got A/B, 4/10 did not"
+      ],
+      "correct_answer": "7/10 got A/B, 3/10 did not",
+      "answer": "7/10 got A/B, 3/10 did not",
+      "explanation": "3/10+4/10=7/10 A/B | 10/10-7/10=3/10 did not",
+      "explanation_th": "3/10+4/10=7/10 ได้ A/B | 10/10-7/10=3/10 ไม่ได้",
+      "difficulty": "medium",
+      "hint_th": "Add A and B, subtract from whole",
+      "question_text_th": "นักเรียน 3/10 ได้ A และ 4/10 ได้ B. ได้ A หรือ B กี่ส่วน? ไม่ได้กี่ส่วน?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "3/5 + 2/5 - 1/5 = ?",
+      "question_text_en": "3/5 + 2/5 - 1/5 = ?",
+      "choices": [
+        "4/5",
+        "5/5",
+        "3/5",
+        "2/5"
+      ],
+      "correct_answer": "4/5",
+      "answer": "4/5",
+      "explanation": "3/5+2/5=5/5 | 5/5-1/5=4/5",
+      "explanation_th": "3/5+2/5=5/5 | 5/5-1/5=4/5",
+      "difficulty": "easy",
+      "hint_th": "Add first, then subtract"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "A mango orchard: 4/9 ripe, 2/9 green, rest are mangosteens. What fraction are mangosteens?",
+      "question_text_en": "A mango orchard: 4/9 ripe, 2/9 green, rest are mangosteens. What fraction are mangosteens?",
+      "choices": [
+        "3/9",
+        "5/9",
+        "2/9",
+        "4/9"
+      ],
+      "correct_answer": "3/9",
+      "answer": "3/9",
+      "explanation": "4/9+2/9=6/9 | 9/9-6/9=3/9 mangosteens",
+      "explanation_th": "4/9+2/9=6/9 | 9/9-6/9=3/9 มะปราง",
+      "difficulty": "easy",
+      "hint_th": "Add ripe and green, subtract from whole",
+      "question_text_th": "สวนมะม่วง: 4/9 สุก 2/9 ดิบ ที่เหลือเป็นมะปราง. มะปรางกี่ส่วน?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

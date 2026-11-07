@@ -4,7 +4,26 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/auth'
-import { TopaMascot } from '@/components/brand/TopaBrand'
+import { TopaLogo } from '@/components/brand/TopaBrand'
+
+function loginErrorMessage(err: unknown): string {
+  const axiosErr = err as {
+    code?: string
+    message?: string
+    response?: { status?: number; data?: { detail?: string } }
+  }
+  const status = axiosErr.response?.status
+  const detail = axiosErr.response?.data?.detail
+  if (status === 401) return 'อีเมลหรือรหัสผ่านไม่ถูกต้อง'
+  if (status === 403) return detail === 'Account is disabled'
+    ? 'บัญชีนี้ถูกระงับการใช้งาน กรุณาติดต่อผู้ดูแลระบบ'
+    : (detail || 'บัญชีนี้ยังไม่สามารถเข้าสู่ระบบได้')
+  if (axiosErr.code === 'ECONNABORTED') return 'เซิร์ฟเวอร์ตอบช้าเกินไป กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองใหม่'
+  if (!axiosErr.response) {
+    return 'ติดต่อเซิร์ฟเวอร์เข้าสู่ระบบไม่ได้ กรุณาตรวจสอบอินเทอร์เน็ต หรือปิดโหมด Private แล้วลองใหม่'
+  }
+  return detail || 'เข้าสู่ระบบไม่สำเร็จ กรุณาลองใหม่'
+}
 
 export default function LoginPage() {
   const router = useRouter()
@@ -21,8 +40,7 @@ export default function LoginPage() {
       const isAdmin = user.role === 'owner' || user.role === 'admin'
       window.location.href = isAdmin ? '/admin/dashboard' : '/dashboard'
     } catch (err: unknown) {
-      const axiosErr = err as { response?: { data?: { detail?: string } } }
-      setError(axiosErr.response?.data?.detail || 'เข้าสู่ระบบไม่สำเร็จ กรุณาลองใหม่')
+      setError(loginErrorMessage(err))
     }
   }
 
@@ -40,9 +58,8 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2">
-            <TopaMascot size="md" />
+            <TopaLogo size="lg" />
           </Link>
-          <h1 className="text-3xl font-extrabold text-gray-900 mt-3">TOPA Math</h1>
           <p className="text-gray-500 mt-1">เรียนเลขให้สนุก เข้าใจง่าย มั่นใจทุกโจทย์</p>
         </div>
 

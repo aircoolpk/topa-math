@@ -41,6 +41,35 @@
       }
     },
     {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turn Pictures into Math Symbols)",
+      "description": "When students see the length bar model, they write it as a subtraction number sentence.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Write the subtraction number sentence",
+            "expression": "120 - 35 = 85",
+            "formula": {
+              "display": "120 - 35 = 85 meters",
+              "a": 120,
+              "b": 35,
+              "result": 85,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}120&\\\\ -\\quad 35&\\\\ \\hline 85&\\\\ \\hline \\end{array}",
+              "a_display": "120",
+              "b_display": "35",
+              "result_display": "85",
+              "operation": "subtract"
+            },
+            "story_connection": "From the bar model: 120 meters total minus 35 meters = 85 meters remaining"
+          }
+        ]
+      }
+    },
+    {
       "type": "number_sentence",
       "title": "Number Sentence",
       "expression": "120-35=85 m",
@@ -51,7 +80,15 @@
         "b": 35,
         "result": 85,
         "unit": "m",
-        "content_en": "120-35=85 m"
+        "content_en": "120-35=85 m",
+        "operations": [
+          {
+            "op": "-",
+            "a": 120,
+            "b": 35,
+            "result": 85
+          }
+        ]
       }
     },
     {

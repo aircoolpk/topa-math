@@ -1,0 +1,116 @@
+{
+  "variant_id": "rule_of_three_ep_001",
+  "variant_title_en": "Rule of Three — Buying Fruits",
+  "status": "needs_review",
+  "title_en": "Rule of Three — Buying Fruits",
+  "story_theme_en": "Durian costs 125 baht per kilogram. If you buy 4 kilograms, how much do you pay? If you have 1,000 baht, how many kilograms of durian can you buy?",
+  "helper_tip": "Rule of Three: if 1 unit costs X baht, then N units cost N × X.",
+  "hint_th": "ถ้าสินค้า 1 หน่วย ราคา X บาท สินค้า N หน่วย ราคา = N × X",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Durian costs 125 baht per kilogram. If you buy 4 kilograms, how much do you pay? If you have 1,000 baht, how many kilograms of durian can you buy?",
+      "data": {
+        "content_en": "Durian costs 125 baht per kilogram. If you buy 4 kilograms, how much do you pay? If you have 1,000 baht, how many kilograms of durian can you buy?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Cost of 4 kg = 4 × 125 = 500 baht | With 1,000 baht, can buy = 1,000 ÷ 125 = 8 kilograms",
+      "data": {
+        "content_en": "Cost of 4 kg = 4 × 125 = 500 baht | With 1,000 baht, can buy = 1,000 ÷ 125 = 8 kilograms"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Ratio Table",
+      "description": "Ratio Table",
+      "model_type": "ratio_table",
+      "data": {
+        "model_type": "ratio_table",
+        "operation": "multiply_divide",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "1 kg",
+            "value": 125,
+            "display": "125 baht",
+            "color": "#96CEB4",
+            "width_pct": 16
+          },
+          {
+            "label": "4 kg",
+            "value": 500,
+            "display": "500 baht",
+            "color": "#45B7D1",
+            "width_pct": 62,
+            "is_total": true
+          },
+          {
+            "label": "8 kg",
+            "value": 1000,
+            "display": "1,000 baht",
+            "color": "#FF6B6B",
+            "width_pct": 100
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "4 x 125 = 500",
+      "content": "4 × 125 = 500 baht | 1,000 ÷ 125 = 8 kg",
+      "data": {
+        "expression": "4 × 125 = 500 baht | 1,000 ÷ 125 = 8 kg",
+        "operations": [
+          {
+            "op": "×",
+            "a": 4,
+            "b": 125,
+            "result": 500
+          },
+          {
+            "op": "÷",
+            "a": 1000,
+            "b": 125,
+            "result": 8
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Eggs cost 7 baht each. You buy 12 eggs. How much do you pay?",
+      "choices": [
+        "84 baht",
+        "80 baht",
+        "88 baht",
+        "76 baht"
+      ],
+      "correct_answer": "84 baht",
+      "explanation": "12 × 7 = 84 baht",
+      "data": {
+        "question": "Eggs cost 7 baht each. You buy 12 eggs. How much do you pay?",
+        "choices": [
+          "84 baht",
+          "80 baht",
+          "88 baht",
+          "76 baht"
+        ],
+        "correct_answer": "84 baht",
+        "explanation": "12 × 7 = 84 baht"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

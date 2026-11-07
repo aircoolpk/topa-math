@@ -1,0 +1,127 @@
+{
+  "variant_id": "volume_capacity_ep_001",
+  "variant_title_en": "Volume and Capacity — Swimming Pool",
+  "status": "needs_review",
+  "title_en": "Volume and Capacity — Swimming Pool",
+  "story_theme_en": "A swimming pool is a rectangle 12 meters wide, 25 meters long, and 2 meters deep (uniform depth). How many cubic meters of water can the pool hold? How many liters is that (1 cubic meter = 1,000 liters)? If water flows from a tap at 50 liters per second, how long does it take to fill the pool?",
+  "helper_tip": "Volume = Width × Length × Height",
+  "hint_th": "ปริมาตร = กว้าง × ยาว × สูง",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A swimming pool is a rectangle 12 meters wide, 25 meters long, and 2 meters deep (uniform depth). How many cubic meters of water can the pool hold? How many liters is that (1 cubic meter = 1,000 liters)? If water flows from a tap at 50 liters per second, how long does it take to fill the pool?",
+      "data": {
+        "content_en": "A swimming pool is a rectangle 12 meters wide, 25 meters long, and 2 meters deep (uniform depth). How many cubic meters of water can the pool hold? How many liters is that (1 cubic meter = 1,000 liters)? If water flows from a tap at 50 liters per second, how long does it take to fill the pool?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Volume = 12×25×2 = 600 cu m = 600,000 liters | Time = 600,000 ÷ 50 = 12,000 seconds = 200 minutes = 3 hours 20 minutes",
+      "data": {
+        "content_en": "Volume = 12×25×2 = 600 cu m = 600,000 liters | Time = 600,000 ÷ 50 = 12,000 seconds = 200 minutes = 3 hours 20 minutes"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Volume Diagram",
+      "description": "Volume Diagram",
+      "model_type": "volume_diagram",
+      "data": {
+        "model_type": "volume_diagram",
+        "operation": "multiply_divide",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Width 12 m",
+            "value": 12,
+            "display": "12 m",
+            "color": "#96CEB4",
+            "width_pct": 48
+          },
+          {
+            "label": "Length 25 m",
+            "value": 25,
+            "display": "25 m",
+            "color": "#45B7D1",
+            "width_pct": 100
+          },
+          {
+            "label": "Depth 2 m",
+            "value": 2,
+            "display": "2 m",
+            "color": "#FF6B6B",
+            "width_pct": 8
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "12 x 25 x 2 = 600",
+      "content": "Volume = 600 cu m = 600,000 L | Fill time = 200 minutes",
+      "data": {
+        "expression": "Volume = 600 cu m = 600,000 L | Fill time = 200 minutes",
+        "operations": [
+          {
+            "op": "×",
+            "a": 12,
+            "b": 25,
+            "result": 300
+          },
+          {
+            "op": "×",
+            "a": 300,
+            "b": 2,
+            "result": 600
+          },
+          {
+            "op": "×",
+            "a": 600,
+            "b": 1000,
+            "result": 600000
+          },
+          {
+            "op": "÷",
+            "a": 600000,
+            "b": 50,
+            "result": 12000
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A water tank is a cube with sides of 1 meter. How many liters can it hold?",
+      "choices": [
+        "1,000 liters",
+        "100 liters",
+        "10,000 liters",
+        "1 liter"
+      ],
+      "correct_answer": "1,000 liters",
+      "explanation": "Volume = 1×1×1 = 1 cu m = 1,000 liters",
+      "data": {
+        "question": "A water tank is a cube with sides of 1 meter. How many liters can it hold?",
+        "choices": [
+          "1,000 liters",
+          "100 liters",
+          "10,000 liters",
+          "1 liter"
+        ],
+        "correct_answer": "1,000 liters",
+        "explanation": "Volume = 1×1×1 = 1 cu m = 1,000 liters"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og'
+import { buildApiUrl } from '@/lib/public-env'
 
 export const runtime = 'edge'
 export const alt = 'TOPA Math test result share card'
@@ -15,8 +16,7 @@ interface TestResultShareData {
 }
 
 async function getShare(token: string): Promise<TestResultShareData | null> {
-  const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8001'
-  const res = await fetch(`${apiBase}/share/test-result/${encodeURIComponent(token)}`, { cache: 'no-store' })
+  const res = await fetch(buildApiUrl(`/share/test-result/${encodeURIComponent(token)}`), { cache: 'no-store' })
   if (!res.ok) return null
   const payload = await res.json()
   return payload.data as TestResultShareData

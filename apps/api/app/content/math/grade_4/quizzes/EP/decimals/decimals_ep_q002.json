@@ -1,0 +1,181 @@
+{
+  "lesson_id": "decimals_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "125.50 x 2 = ?",
+      "question_text_en": "125.50 x 2 = ?",
+      "choices": [
+        "251.00",
+        "250.00",
+        "251.50",
+        "252.00"
+      ],
+      "correct_answer": "251.00",
+      "answer": "251.00",
+      "explanation": "125.50x2=251.00",
+      "explanation_th": "125.50×2=251.00",
+      "difficulty": "easy",
+      "hint_th": "125.50x2=251.00"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "8.25 + 1.75 = ?",
+      "question_text_en": "8.25 + 1.75 = ?",
+      "choices": [
+        "10.00",
+        "9.00",
+        "10.50",
+        "9.50"
+      ],
+      "correct_answer": "10.00",
+      "answer": "10.00",
+      "explanation": "8.25+1.75=10.00",
+      "explanation_th": "8.25+1.75=10.00",
+      "difficulty": "easy",
+      "hint_th": "8.25+1.75=10.00"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "Fabric costs 245.75 baht per meter. Buy 3m. Pay 1000 baht. How much change?",
+      "question_text_en": "Fabric costs 245.75 baht per meter. Buy 3m. Pay 1000 baht. How much change?",
+      "choices": [
+        "262.75 baht",
+        "261.75 baht",
+        "263.75 baht",
+        "262.25 baht"
+      ],
+      "correct_answer": "262.75 baht",
+      "answer": "262.75 baht",
+      "explanation": "245.75x3=737.25 | 1000-737.25=262.75",
+      "explanation_th": "245.75×3=737.25 | 1000-737.25=262.75 บาททอน",
+      "difficulty": "medium",
+      "hint_th": "Multiply first, then subtract",
+      "question_text_th": "ผ้าเมตรละ 245.75 บาท ซื้อ 3 เมตร จ่าย 1000 บาท ทอนเท่าไร?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "15.30 x 5 = ?",
+      "question_text_en": "15.30 x 5 = ?",
+      "choices": [
+        "76.50",
+        "75.50",
+        "77.50",
+        "76.00"
+      ],
+      "correct_answer": "76.50",
+      "answer": "76.50",
+      "explanation": "15.30x5=76.50",
+      "explanation_th": "15.30×5=76.50",
+      "difficulty": "easy",
+      "hint_th": "15.30x5=76.50"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "100.00 - 75.50 = ?",
+      "question_text_en": "100.00 - 75.50 = ?",
+      "choices": [
+        "24.50",
+        "25.50",
+        "24.00",
+        "25.00"
+      ],
+      "correct_answer": "24.50",
+      "answer": "24.50",
+      "explanation": "100.00-75.50=24.50",
+      "explanation_th": "100.00-75.50=24.50",
+      "difficulty": "easy",
+      "hint_th": "100-75.50=24.50"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "4.50 x 6 + 3.50 x 4 = ?",
+      "question_text_en": "4.50 x 6 + 3.50 x 4 = ?",
+      "choices": [
+        "41.00",
+        "44.00",
+        "42.00",
+        "45.00"
+      ],
+      "correct_answer": "41.00",
+      "answer": "41.00",
+      "explanation": "4.50x6=27.00 | 3.50x4=14.00 | 27+14=41.00",
+      "explanation_th": "4.50×6=27.00 | 3.50×4=14.00 | 27+14=41.00",
+      "difficulty": "medium",
+      "hint_th": "Multiply first, then add"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "9.99 + 0.01 = ?",
+      "question_text_en": "9.99 + 0.01 = ?",
+      "choices": [
+        "10.00",
+        "9.00",
+        "10.99",
+        "11.00"
+      ],
+      "correct_answer": "10.00",
+      "answer": "10.00",
+      "explanation": "9.99+0.01=10.00",
+      "explanation_th": "9.99+0.01=10.00",
+      "difficulty": "easy",
+      "hint_th": "9.99+0.01=10.00"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "6.25 x 8 = ?",
+      "question_text_en": "6.25 x 8 = ?",
+      "choices": [
+        "50.00",
+        "49.00",
+        "51.00",
+        "50.50"
+      ],
+      "correct_answer": "50.00",
+      "answer": "50.00",
+      "explanation": "6.25x8=50.00",
+      "explanation_th": "6.25×8=50.00",
+      "difficulty": "easy",
+      "hint_th": "6.25x8=50.00"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "3.60 / 6 = ?",
+      "question_text_en": "3.60 / 6 = ?",
+      "choices": [
+        "0.60",
+        "0.50",
+        "0.70",
+        "0.55"
+      ],
+      "correct_answer": "0.60",
+      "answer": "0.60",
+      "explanation": "3.60/6=0.60",
+      "explanation_th": "3.60÷6=0.60",
+      "difficulty": "easy",
+      "hint_th": "3.60/6=0.60"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "If 2.5 x x = 15.0, what is x?",
+      "question_text_en": "If 2.5 x x = 15.0, what is x?",
+      "choices": [
+        "6.0",
+        "5.0",
+        "7.0",
+        "4.0"
+      ],
+      "correct_answer": "6.0",
+      "answer": "6.0",
+      "explanation": "15.0/2.5=6.0",
+      "explanation_th": "15.0÷2.5=6.0",
+      "difficulty": "easy",
+      "hint_th": "15/2.5=6",
+      "question_text_th": "ถ้า 2.5 x x = 15.0 แล้ว x=?"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

@@ -1,0 +1,211 @@
+{
+  "variant_id": "subtract_within_10_ep_002",
+  "variant_title_en": "Subtraction within 10",
+  "variant_title_th": "",
+  "status": "needs_review",
+  "title_en": "Subtraction within 10",
+  "title_th": "",
+  "story_theme_en": "Chef Ai has 9 eggs to make cakes. He uses 4 eggs for the first cake. How many eggs are left?",
+  "helper_tip_en": "Read the story carefully. Find the numbers and the question. Then use addition or subtraction to solve it.",
+  "think_story_en": "Eggs: 9. Eggs used: 4. 9 - 4 = 5 eggs left.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Chef Ai has 9 eggs to make cakes. He uses 4 eggs for the first cake. How many eggs are left?",
+      "data": {
+        "content_en": "Chef Ai has 9 eggs to make cakes. He uses 4 eggs for the first cake. How many eggs are left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Eggs: 9. Eggs used: 4. 9 - 4 = 5 eggs left.",
+      "data": {
+        "content_en": "Eggs: 9. Eggs used: 4. 9 - 4 = 5 eggs left."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the math",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "subtract",
+        "unit": "eggs",
+        "bars": [
+          {
+            "label": "Eggs",
+            "value": 9,
+            "display": "9 eggs",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Used",
+            "value": 4,
+            "display": "-4 eggs",
+            "color": "#FF6B6B",
+            "width_pct": 44
+          },
+          {
+            "label": "Left",
+            "value": 5,
+            "display": "5 eggs left",
+            "color": "#C7F464",
+            "width_pct": 55,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "We write the story as math symbols and find the answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Subtract",
+            "expression": "9 - 4 = 5",
+            "formula": {
+              "display": "9 - 4 = 5",
+              "a": 9,
+              "b": 4,
+              "result": 5,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}9&&\\\\\\\\ - 4&&\\\\\\\\ \\\\hline 5&&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "9",
+              "b_display": "4",
+              "result_display": "5",
+              "operation": "subtract"
+            },
+            "story_connection": "From the story: 9 - 4 = 5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "9 - 4 = 5",
+      "content": "9 - 4 = 5",
+      "data": {
+        "expression": "9 - 4 = 5",
+        "operations": [
+          {
+            "op": "-",
+            "a": 9,
+            "b": 4,
+            "result": 5
+          }
+        ],
+        "content_en": "9 - 4 = 5"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "Pim has 10 stickers. She gives away 4 stickers. How many stickers does she have left?",
+      "choices": [
+        "6 stickers",
+        "11 stickers",
+        "3 stickers",
+        "14 stickers"
+      ],
+      "correct_answer": "6 stickers",
+      "explanation": "10 - 4 = 6 stickers",
+      "data": {
+        "question": "Pim has 10 stickers. She gives away 4 stickers. How many stickers does she have left?",
+        "choices": [
+          "6 stickers",
+          "11 stickers",
+          "3 stickers",
+          "14 stickers"
+        ],
+        "correct_answer": "6 stickers",
+        "explanation": "10 - 4 = 6 stickers"
+      }
+    }
+  ],
+  "key_vocabulary": [
+    {
+      "en": "number",
+      "th": "ตัวเลข",
+      "definition_en": "A number tells us how many or how much."
+    },
+    {
+      "en": "add",
+      "th": "บวก",
+      "definition_en": "To combine numbers together."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "count",
+      "th": "นับ",
+      "definition_en": "To say numbers in order."
+    },
+    {
+      "en": "compare",
+      "th": "เปรียบเทียบ",
+      "definition_en": "To look at two things to see which is bigger or smaller."
+    },
+    {
+      "en": "graph",
+      "th": "กราฟ",
+      "definition_en": "A picture that shows information."
+    },
+    {
+      "en": "subtract",
+      "th": "ลบ",
+      "definition_en": "To take away from a number."
+    },
+    {
+      "en": "left",
+      "th": "เหลือ",
+      "definition_en": "What remains after taking away."
+    },
+    {
+      "en": "egg",
+      "th": "ไข่",
+      "definition_en": "A food item used in baking."
+    }
+  ],
+  "explanation_en": "In this lesson we learned to solve word problems using math.",
+  "explanation_steps_en": [
+    "Read the story carefully.",
+    "Find the important numbers.",
+    "Understand what the question asks.",
+    "Draw a bar model to help you see the problem.",
+    "Write the number sentence.",
+    "Calculate the answer.",
+    "Check your answer."
+  ],
+  "common_mistakes_en": [
+    "Reading the question too fast and answering the wrong thing.",
+    "Adding when you should subtract, or the other way around.",
+    "Forgetting to carry or borrow in column math."
+  ],
+  "hints_en": [
+    "Underline the numbers in the story.",
+    "Circle the question - what are you trying to find?",
+    "Draw the bar model before you calculate."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example",
+      "question_en": "Chef Ai has 9 eggs to make cakes. He uses 4 eggs for the first cake. How many eg...",
+      "solution_en": "9 - 4 = 5"
+    }
+  ],
+  "questions": []
+}

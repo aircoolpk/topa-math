@@ -1,0 +1,179 @@
+{
+  "lesson_id": "add_sub_within_20_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "as20_ep_q001_e01",
+      "question_text": "Lin has 8 marbles. She wins 5 more marbles in a game. How many marbles does Lin have now?",
+      "question_text_th": "ลินมีลูกแก้ว 8 ลูก ชนะเกมได้อีก 5 ลูก ลินมีลูกแก้วกี่ลูก",
+      "choices": [
+        "13 marbles",
+        "17 marbles",
+        "10 marbles",
+        "19 marbles"
+      ],
+      "correct_answer": "13 marbles",
+      "answer": "13 marbles",
+      "explanation": "8 + 5 = 13 marbles",
+      "explanation_th": "บวกลูกแก้ว: 8 + 5 = 13 ลูก",
+      "difficulty": "easy",
+      "hint_th": "Add the winnings."
+    },
+    {
+      "question_id": "as20_ep_q001_e02",
+      "question_text": "Book has 14 stickers. He gives 6 stickers to his friend. How many stickers does Book have left?",
+      "question_text_th": "บุ๊กมีสติกเกอร์ 14 ดวง ให้เพื่อน 6 ดวง บุ๊กเหลือสติกเกอร์กี่ดวง",
+      "choices": [
+        "8 stickers",
+        "12 stickers",
+        "5 stickers",
+        "14 stickers"
+      ],
+      "correct_answer": "8 stickers",
+      "answer": "8 stickers",
+      "explanation": "14 - 6 = 8 stickers",
+      "explanation_th": "ลบสติกเกอร์: 14 - 6 = 8 ดวง",
+      "difficulty": "easy",
+      "hint_th": "Give away 6."
+    },
+    {
+      "question_id": "as20_ep_q001_e03",
+      "question_text": "Mai has 9 pencils. She buys 7 more pencils. How many pencils does Mai have now?",
+      "question_text_th": "ไมมีดินสอ 9 แท่ง ซื้อเพิ่มอีก 7 แท่ง ไมมีดินสอกี่แท่ง",
+      "choices": [
+        "16 pencils",
+        "20 pencils",
+        "13 pencils",
+        "22 pencils"
+      ],
+      "correct_answer": "16 pencils",
+      "answer": "16 pencils",
+      "explanation": "9 + 7 = 16 pencils",
+      "explanation_th": "บวกดินสอ: 9 + 7 = 16 แท่ง",
+      "difficulty": "easy",
+      "hint_th": "Add 7 more."
+    },
+    {
+      "question_id": "as20_ep_q001_m01",
+      "question_text": "Ai has 12 candies. He eats 5 candies. Then his mother gives him 8 candies. How many candies does Ai have now?",
+      "question_text_th": "อ้ายมีลูกชุบ 12 ชิ้น กินไป 5 ชิ้น แม่ให้อีก 8 ชิ้น อ้ายมีลูกชุบกี่ชิ้น",
+      "choices": [
+        "15 candies",
+        "19 candies",
+        "12 candies",
+        "21 candies"
+      ],
+      "correct_answer": "15 candies",
+      "answer": "15 candies",
+      "explanation": "12 - 5 + 8 = 15 candies",
+      "explanation_th": "ลบแล้วบวก: 12 - 5 + 8 = 15 ชิ้น",
+      "difficulty": "medium",
+      "hint_th": "Eat then get more."
+    },
+    {
+      "question_id": "as20_ep_q001_m02",
+      "question_text": "Mali has 15 flowers. She gives 7 flowers to her teacher and 4 flowers to her friend. How many flowers does Mali have left?",
+      "question_text_th": "มะลิมีดอกไม้ 15 ดอก ให้คุณครู 7 ดอก และให้เพื่อน 4 ดอก มะลิเหลือดอกไม้กี่ดอก",
+      "choices": [
+        "4 flowers",
+        "8 flowers",
+        "1 flowers",
+        "10 flowers"
+      ],
+      "correct_answer": "4 flowers",
+      "answer": "4 flowers",
+      "explanation": "15 - 7 - 4 = 4 flowers",
+      "explanation_th": "ลบทีละขั้น: 15 - 7 - 4 = 4 ดอก",
+      "difficulty": "medium",
+      "hint_th": "Give to two people."
+    },
+    {
+      "question_id": "as20_ep_q001_m03",
+      "question_text": "Tad has 11 marbles. He wins 6 marbles from Book. How many marbles does Tad have now?",
+      "question_text_th": "ต้นมีลูกแก้ว 11 ลูก ชนะจากบุ๊กได้ 6 ลูก ต้นมีลูกแก้วกี่ลูก",
+      "choices": [
+        "17 marbles",
+        "21 marbles",
+        "14 marbles",
+        "23 marbles"
+      ],
+      "correct_answer": "17 marbles",
+      "answer": "17 marbles",
+      "explanation": "11 + 6 = 17 marbles",
+      "explanation_th": "บวกลูกแก้ว: 11 + 6 = 17 ลูก",
+      "difficulty": "medium",
+      "hint_th": "Add the winnings."
+    },
+    {
+      "question_id": "as20_ep_q001_m04",
+      "question_text": "Chef Ai fries 18 eggs. He uses 9 eggs for a cake. How many eggs are left?",
+      "question_text_th": "เชฟแอร์ทอดไข่ 18 ฟอง ใช้ทำเค้ก 9 ฟอง เหลือไข่กี่ฟอง",
+      "choices": [
+        "9 eggs",
+        "13 eggs",
+        "6 eggs",
+        "15 eggs"
+      ],
+      "correct_answer": "9 eggs",
+      "answer": "9 eggs",
+      "explanation": "18 - 9 = 9 eggs",
+      "explanation_th": "ลบไข่: 18 - 9 = 9 ฟอง",
+      "difficulty": "medium",
+      "hint_th": "Subtract 9."
+    },
+    {
+      "question_id": "as20_ep_q001_h01",
+      "question_text": "Lin has 13 stickers. She gives 5 stickers to Mali and then gets 9 stickers from her brother. How many stickers does Lin have now?",
+      "question_text_th": "ลินมีสติกเกอร์ 13 ดวง ให้มะลิ 5 ดวง แล้วได้รับจากพี่ชาย 9 ดวง ลินมีสติกเกอร์กี่ดวง",
+      "choices": [
+        "17 stickers",
+        "21 stickers",
+        "14 stickers",
+        "23 stickers"
+      ],
+      "correct_answer": "17 stickers",
+      "answer": "17 stickers",
+      "explanation": "13 - 5 + 9 = 17 stickers",
+      "explanation_th": "ลบแล้วบวก: 13 - 5 + 9 = 17 ดวง",
+      "difficulty": "hard",
+      "hint_th": "Give then receive."
+    },
+    {
+      "question_id": "as20_ep_q001_h02",
+      "question_text": "A fruit stall has 16 mangoes. A customer buys 7 mangoes and another buys 5 mangoes. How many mangoes are left?",
+      "question_text_th": "แผงผลไม้มีมะม่วง 16 ผล ลูกค้าคนหนึ่งซื้อ 7 ผล อีกคนซื้อ 5 ผล เหลือมะม่วงกี่ผล",
+      "choices": [
+        "4 mangoes",
+        "8 mangoes",
+        "1 mangoes",
+        "10 mangoes"
+      ],
+      "correct_answer": "4 mangoes",
+      "answer": "4 mangoes",
+      "explanation": "16 - 7 - 5 = 4 mangoes",
+      "explanation_th": "ลบทีละคน: 16 - 7 - 5 = 4 ผล",
+      "difficulty": "hard",
+      "hint_th": "Two customers."
+    },
+    {
+      "question_id": "as20_ep_q001_h03",
+      "question_text": "Book has 15 pencils. He loses 6 pencils, then buys 8 new pencils, and gives 3 pencils to his friend. How many pencils does Book have now?",
+      "question_text_th": "บุ๊กมีดินสอ 15 แท่ง ทำหาย 6 แท่ง ซื้อใหม่ 8 แท่ง แล้วให้เพื่อน 3 แท่ง บุ๊กมีดินสอกี่แท่ง",
+      "choices": [
+        "14 pencils",
+        "18 pencils",
+        "11 pencils",
+        "20 pencils"
+      ],
+      "correct_answer": "14 pencils",
+      "answer": "14 pencils",
+      "explanation": "15 - 6 + 8 - 3 = 14 pencils",
+      "explanation_th": "ลบบวกลบ: 15 - 6 + 8 - 3 = 14 แท่ง",
+      "difficulty": "hard",
+      "hint_th": "Three steps."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

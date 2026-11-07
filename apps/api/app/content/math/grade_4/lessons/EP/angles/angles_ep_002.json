@@ -1,0 +1,222 @@
+{
+  "variant_id": "angles_ep_002",
+  "variant_title_en": "Angles",
+  "status": "needs_review",
+  "title_en": "Angles",
+  "story_theme_en": "Mali draws three angles on paper. Angle A is 75 degrees. Angle B is 65 degrees. Angle C is 40 degrees. What is the sum of all three angles? Which angles are acute?",
+  "helper_tip": "Acute angle < 90. Right angle = 90. Obtuse angle > 90. You can add angles like whole numbers.",
+  "hint_th": "มุมแหลม < 90° มุมฉาก = 90° มุมป้าน > 90° บวกมุมเหมือนจำนวนเต็ม",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mali draws three angles on paper. Angle A is 75 degrees. Angle B is 65 degrees. Angle C is 40 degrees. What is the sum of all three angles? Which angles are acute? Which angle is closest to a right angle?",
+      "data": {
+        "content_en": "Mali draws three angles on paper. Angle A is 75 degrees. Angle B is 65 degrees. Angle C is 40 degrees. What is the sum of all three angles? Which angles are acute? Which angle is closest to a right angle?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Step 1: Add angles → 75 + 65 + 40 = total | Step 2: Check acute → all three < 90 = all are acute | Step 3: Compare to 90 → 75 is closest to 90 (difference 15)",
+      "data": {
+        "content_en": "Step 1: Add angles → 75 + 65 + 40 = total | Step 2: Check acute → all three < 90 = all are acute | Step 3: Compare to 90 → 75 is closest to 90 (difference 15)"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Angle Model",
+      "model_type": "angle_model",
+      "data": {
+        "model_type": "angle_model",
+        "operation": "compare",
+        "bars": [
+          {
+            "label": "Angle A",
+            "value": 75,
+            "display": "75 deg (acute)",
+            "color": "#4ECDC4",
+            "width_pct": 63
+          },
+          {
+            "label": "Angle B",
+            "value": 65,
+            "display": "65 deg (acute)",
+            "color": "#45B7D1",
+            "width_pct": 54
+          },
+          {
+            "label": "Angle C",
+            "value": 40,
+            "display": "40 deg (acute)",
+            "color": "#96CEB4",
+            "width_pct": 33
+          },
+          {
+            "label": "Total",
+            "value": 180,
+            "display": "180 deg",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add all three angles",
+            "expression": "75 + 65 = 140",
+            "formula": {
+              "display": "75 + 65 = 140",
+              "a": 75,
+              "b": 65,
+              "result": 140,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}75&\\\\\\\\ +\\\\quad 65&\\\\\\\\ \\\\hline 140&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "75",
+              "b_display": "65",
+              "result_display": "140",
+              "operation": "add"
+            },
+            "story_connection": "75 + 65 = 140 degrees"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add angle C",
+            "expression": "140 + 40 = 180",
+            "formula": {
+              "display": "140 + 40 = 180",
+              "a": 140,
+              "b": 40,
+              "result": 180,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}140&\\\\\\\\ +\\\\quad 40&\\\\\\\\ \\\\hline 180&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "140",
+              "b_display": "40",
+              "result_display": "180",
+              "operation": "add"
+            },
+            "story_connection": "140 + 40 = 180 degrees total"
+          },
+          {
+            "step": 3,
+            "label": "Step 3: Find angle closest to 90",
+            "expression": "75 is 15 from 90 | 65 is 25 from 90 | 40 is 50 from 90",
+            "formula": {
+              "display": "75 is 15 from 90 | 65 is 25 from 90 | 40 is 50 from 90",
+              "a": 75,
+              "b": 90,
+              "result": 15,
+              "operation": "sub"
+            },
+            "column_calculation": {
+              "display": "\\\\begin{array}{rl}75&\\\\\\\\ -\\\\quad 90&\\\\\\\\ \\\\hline 15&\\\\\\\\ \\\\hline \\\\end{array}",
+              "a_display": "75",
+              "b_display": "90",
+              "result_display": "15",
+              "operation": "sub"
+            },
+            "story_connection": "Angle A at 75 degrees is closest to 90 degrees. Difference = 15 degrees"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "75 + 65 + 40 = 180",
+      "content": "75 + 65 + 40 = 180 degrees",
+      "data": {
+        "expression": "75 + 65 + 40 = 180",
+        "operations": [
+          {
+            "op": "+",
+            "a": 75,
+            "b": 65,
+            "result": 140
+          },
+          {
+            "op": "+",
+            "a": 140,
+            "b": 40,
+            "result": 180
+          }
+        ],
+        "content_en": "75 + 65 + 40 = 180 degrees"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A triangle has angles of 55, 70, and 55 degrees. What is the sum? Which angles are acute?",
+      "choices": [
+        "180 deg, all are acute",
+        "170 deg, 70 is not acute",
+        "185 deg, all are acute",
+        "180 deg, 70 is not acute"
+      ],
+      "correct_answer": "180 deg, all are acute",
+      "explanation": "55 + 70 + 55 = 180 | All angles < 90 so all are acute angles",
+      "data": {
+        "question": "A triangle has angles of 55, 70, and 55 degrees. What is the sum? Which angles are acute?",
+        "choices": [
+          "180 deg, all are acute",
+          "170 deg, 70 is not acute",
+          "185 deg, all are acute",
+          "180 deg, 70 is not acute"
+        ],
+        "correct_answer": "180 deg, all are acute",
+        "explanation": "55 + 70 + 55 = 180 | All angles < 90 so all are acute angles"
+      }
+    }
+  ],
+  "questions": [],
+  "explanation_en": "",
+  "worked_examples": [
+    {
+      "title_en": "Example",
+      "question_en": "Angles 30, 60, 90 degrees. Sum and types?",
+      "solution_en": "30 + 60 + 90 = 180 deg. The 90 deg is a right angle."
+    }
+  ],
+  "common_mistakes": [
+    "Forgetting that acute angles are less than 90 degrees",
+    "Adding angles incorrectly because of carrying"
+  ],
+  "hints": [
+    "Acute angle = greater than 0 but less than 90 degrees.",
+    "75 is |90 - 75| = 15 degrees away from 90, which is the smallest difference."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "right angle",
+      "th": "มุมฉาก",
+      "definition_en": "An angle of exactly 90 degrees"
+    },
+    {
+      "en": "acute angle",
+      "th": "มุมแหลม",
+      "definition_en": "An angle less than 90 degrees"
+    },
+    {
+      "en": "obtuse angle",
+      "th": "มุมป้าน",
+      "definition_en": "An angle greater than 90 degrees"
+    },
+    {
+      "en": "degree",
+      "th": "องศา",
+      "definition_en": "A unit for measuring angles"
+    }
+  ]
+}

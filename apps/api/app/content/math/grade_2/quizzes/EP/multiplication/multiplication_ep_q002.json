@@ -1,0 +1,133 @@
+{
+  "quiz_id": "multiplication_ep_q002",
+  "topic_key": "multiplication",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "Quiz multiplication_ep_q002",
+  "title_en": "Quiz multiplication_ep_q002",
+  "questions": [
+    {
+      "question": "12 x 4 = ?",
+      "choices": [
+        "48",
+        "36",
+        "44",
+        "24"
+      ],
+      "correct_answer": "48",
+      "explanation": "12x4=48",
+      "difficulty": "easy"
+    },
+    {
+      "question": "5 x 13 = ?",
+      "choices": [
+        "65",
+        "55",
+        "75",
+        "45"
+      ],
+      "correct_answer": "65",
+      "explanation": "5x13=5x10+5x3=50+15=65",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Ai bought pencils at 9 baht each. Bought 6. How much?",
+      "choices": [
+        "54 baht",
+        "15 baht",
+        "63 baht",
+        "42 baht"
+      ],
+      "correct_answer": "54 baht",
+      "explanation": "9x6=54 baht",
+      "difficulty": "easy"
+    },
+    {
+      "question": "14 x 3 = ?",
+      "choices": [
+        "42",
+        "32",
+        "52",
+        "44"
+      ],
+      "correct_answer": "42",
+      "explanation": "14x3=14+14+14=42",
+      "difficulty": "easy"
+    },
+    {
+      "question": "3 x 25 = ?",
+      "choices": [
+        "75",
+        "65",
+        "85",
+        "55"
+      ],
+      "correct_answer": "75",
+      "explanation": "3x25=75",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Students in 8 rows with 7 students each. Total?",
+      "choices": [
+        "56 students",
+        "15 students",
+        "63 students",
+        "48 students"
+      ],
+      "correct_answer": "56 students",
+      "explanation": "8x7=56 students",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Lin bought 5 notebooks at 18 baht each. How much?",
+      "choices": [
+        "90 baht",
+        "23 baht",
+        "13 baht",
+        "95 baht"
+      ],
+      "correct_answer": "90 baht",
+      "explanation": "5x18=90 baht",
+      "difficulty": "medium"
+    },
+    {
+      "question": "7 x 11 = ?",
+      "choices": [
+        "77",
+        "71",
+        "88",
+        "66"
+      ],
+      "correct_answer": "77",
+      "explanation": "7x11=77",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A big bucket holds 16 L. A small bucket holds 8 L. How much more does the big bucket hold?",
+      "choices": [
+        "8 L",
+        "24 L",
+        "16 L",
+        "2 L"
+      ],
+      "correct_answer": "8 L",
+      "explanation": "16-8=8 L",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Book collects stamps in 9 rows with 11 stamps each. Total?",
+      "choices": [
+        "99 stamps",
+        "20 stamps",
+        "90 stamps",
+        "109 stamps"
+      ],
+      "correct_answer": "99 stamps",
+      "explanation": "9x11=99 stamps",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

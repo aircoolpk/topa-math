@@ -84,12 +84,12 @@ export function MascotAvatar({ mascot, index = 0, size = 'md' }: { mascot?: Pick
   const fallbackSrc = mascotFallbackSvg({ color, accent: registryMascot.accent, initial: registryMascot.initial })
   const src = !broken && (mascot?.image || registryMascot.image) ? (mascot?.image || registryMascot.image) : fallbackSrc
   return (
-    <div className={`${dim} overflow-hidden rounded-full border-4 border-white bg-white shadow-lg`}>
+    <div className={`${dim} flex shrink-0 items-center justify-center bg-transparent`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}
         alt={mascot?.name || registryMascot.name || 'TOPA mascot'}
-        className="h-full w-full object-contain"
+        className="max-h-full max-w-full object-contain drop-shadow-sm"
         onError={() => setBroken(true)}
       />
     </div>

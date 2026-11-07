@@ -1,0 +1,186 @@
+{
+  "variant_id": "circles_th_001",
+  "variant_title_th": "วงกลม",
+  "variant_title_en": "Circles",
+  "status": "needs_review",
+  "title_th": "วงกลม",
+  "title_en": "Circles",
+  "story_theme_th": "ล้อรถจักรยานมีรัศมี 35 เซนติเมตร ถ้าล้อหมุนครบ 1 รอบ ล้อจะเคลื่อนที่ได้ระยะทางเท่าไร (ใช้ π ≈ 22/7)",
+  "helper_tip": "เส้นรอบวง = 2 × π × รัศมี",
+  "think_story_th": "เส้นรอบวง = 2 × π × รัศมี = 2 × 22/7 × 35 = 2 × 22 × 5 = 220 ซม. = 2.2 เมตร ล้อหมุน 1 รอบได้ระยะทาง 220 ซม.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "ล้อรถจักรยานมีรัศมี 35 เซนติเมตร ถ้าล้อหมุนครบ 1 รอบ ล้อจะเคลื่อนที่ได้ระยะทางเท่าไร (ใช้ π ≈ 22/7)",
+      "data": {
+        "content_th": "ล้อรถจักรยานมีรัศมี 35 เซนติเมตร ถ้าล้อหมุนครบ 1 รอบ ล้อจะเคลื่อนที่ได้ระยะทางเท่าไร (ใช้ π ≈ 22/7)"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "เส้นรอบวง = 2 × π × รัศมี = 2 × 22/7 × 35 = 2 × 22 × 5 = 220 ซม. = 2.2 เมตร ล้อหมุน 1 รอบได้ระยะทาง 220 ซม.",
+      "data": {
+        "content_th": "เส้นรอบวง = 2 × π × รัศมี = 2 × 22/7 × 35 = 2 × 22 × 5 = 220 ซม. = 2.2 เมตร ล้อหมุน 1 รอบได้ระยะทาง 220 ซม."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "เซนติเมตร",
+        "bars": [
+          {
+            "label": "รัศมี",
+            "value": 35,
+            "display": "35 ซม.",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "เส้นรอบวง",
+            "value": 220,
+            "display": "220 ซม.",
+            "color": "#FF6B6B",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "2 × 22 = 44",
+            "formula": {
+              "display": "2 × 22 = 44",
+              "a": 2,
+              "b": 22,
+              "result": 44,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}2&\\ ×\\quad 22&\\ \\hline 44&\\\\ \\hline \\end{array}",
+              "a_display": "2",
+              "b_display": "22",
+              "result_display": "44",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 2 × 22 = 44"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "35 ÷ 7 = 5",
+            "formula": {
+              "display": "35 ÷ 7 = 5",
+              "a": 7,
+              "b": 35,
+              "result": 5,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}7&\\ ÷\\quad 35&\\ \\hline 5&\\\\ \\hline \\end{array}",
+              "a_display": "7",
+              "b_display": "35",
+              "result_display": "5",
+              "operation": "divide"
+            },
+            "story_connection": "จากบาร์โมเดล: 35 ÷ 7 = 5"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "44 × 5 = 220",
+            "formula": {
+              "display": "44 × 5 = 220",
+              "a": 44,
+              "b": 5,
+              "result": 220,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}44&\\ ×\\quad 5&\\ \\hline 220&\\\\ \\hline \\end{array}",
+              "a_display": "44",
+              "b_display": "5",
+              "result_display": "220",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 44 × 5 = 220"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "2 × 22 = 44 | 35 ÷ 7 = 5 | 44 × 5 = 220",
+      "content": "2 × 22 = 44 | 35 ÷ 7 = 5 | 44 × 5 = 220",
+      "data": {
+        "expression": "2 × 22 = 44 | 35 ÷ 7 = 5 | 44 × 5 = 220",
+        "operations": [
+          {
+            "op": "×",
+            "a": 2,
+            "b": 22,
+            "result": 44
+          },
+          {
+            "op": "÷",
+            "a": 35,
+            "b": 7,
+            "result": 5
+          },
+          {
+            "op": "×",
+            "a": 44,
+            "b": 5,
+            "result": 220
+          }
+        ],
+        "content_th": "2 × 22 = 44 | 35 ÷ 7 = 5 | 44 × 5 = 220"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "วงกลมมีรัศมี 14 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+      "choices": [
+        "88 ซม.",
+        "66 ซม.",
+        "44 ซม.",
+        "110 ซม."
+      ],
+      "correct_answer": "88 ซม.",
+      "explanation": "2 × 22/7 × 14 = 88 ซม.",
+      "data": {
+        "question": "วงกลมมีรัศมี 14 ซม. เส้นรอบวงยาวเท่าไร (π = 22/7)",
+        "choices": [
+          "88 ซม.",
+          "66 ซม.",
+          "44 ซม.",
+          "110 ซม."
+        ],
+        "correct_answer": "88 ซม.",
+        "explanation": "2 × 22/7 × 14 = 88 ซม."
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

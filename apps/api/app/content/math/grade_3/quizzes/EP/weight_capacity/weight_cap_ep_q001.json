@@ -1,0 +1,179 @@
+{
+  "lesson_id": "weight_capacity_ep",
+  "grade_level": 3,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "wc_ep_q001_e01",
+      "question_text": "Case 1: Lin buys mangoes weighing 500 g and oranges weighing 300 g. What is the total weight?",
+      "question_text_th": "สถานการณ์ที่ 1: ลินซื้อมะม่วงหนัก 500 กรัม และส้มหนัก 300 กรัม รวมหนักกี่กรัม",
+      "choices": [
+        "800 g",
+        "700 g",
+        "750 g",
+        "850 g"
+      ],
+      "correct_answer": "800 g",
+      "answer": "500 + 300 = 800 g",
+      "explanation": "500 + 300 = 800 g",
+      "explanation_th": "500 + 300 = 800 กรัม",
+      "difficulty": "easy",
+      "hint_th": "Add the two weights"
+    },
+    {
+      "question_id": "wc_ep_q001_e02",
+      "question_text": "Case 2: 1 kilogram equals how many grams?",
+      "question_text_th": "สถานการณ์ที่ 2: 1 กิโลกรัม เท่ากับกี่กรัม",
+      "choices": [
+        "1,000 g",
+        "100 g",
+        "500 g",
+        "10,000 g"
+      ],
+      "correct_answer": "1,000 g",
+      "answer": "1 kg = 1,000 g",
+      "explanation": "1 kg = 1,000 g",
+      "explanation_th": "1 กก. = 1,000 กรัม",
+      "difficulty": "easy",
+      "hint_th": "How many grams in 1 kilogram"
+    },
+    {
+      "question_id": "wc_ep_q001_e03",
+      "question_text": "Case 3: Lin drinks 250 ml of water, then drinks another 250 ml. How many liters in total?",
+      "question_text_th": "สถานการณ์ที่ 3: ลินหิวน้ำ ดื่มน้ำ 250 มิลลิลิตร แล้วดื่มเพิ่มอีก 250 มิลลิลิตร รวมดื่มน้ำกี่ลิตร",
+      "choices": [
+        "0.5 liters",
+        "1 liter",
+        "0.25 liters",
+        "2 liters"
+      ],
+      "correct_answer": "0.5 liters",
+      "answer": "250+250=500 ml = 0.5 liters",
+      "explanation": "250+250=500 ml = 0.5 liters",
+      "explanation_th": "500 มล. = 0.5 ลิตร",
+      "difficulty": "easy",
+      "hint_th": "1,000 ml = 1 liter"
+    },
+    {
+      "question_id": "wc_ep_q001_m01",
+      "question_text": "Case 4: Lin buys flour 1 kg 500 g and uses 600 g. How many grams are left?",
+      "question_text_th": "สถานการณ์ที่ 4: ลินซื้อแป้ง 1 กิโลกรัม 500 กรัม ใช้ไป 600 กรัม แป้งเหลือกี่กรัม",
+      "choices": [
+        "900 g",
+        "850 g",
+        "950 g",
+        "800 g"
+      ],
+      "correct_answer": "900 g",
+      "answer": "1 kg 500 g = 1,500 g, 1,500-600 = 900 g",
+      "explanation": "1 kg 500 g = 1,500 g, 1,500-600 = 900 g",
+      "explanation_th": "1,500 - 600 = 900 กรัม",
+      "difficulty": "medium",
+      "hint_th": "Convert to grams first, then subtract"
+    },
+    {
+      "question_id": "wc_ep_q001_m02",
+      "question_text": "Case 5: Lin buys cooking oil 1,500 ml and vinegar 500 ml. What is the total in liters?",
+      "question_text_th": "สถานการณ์ที่ 5: ลินซื้อน้ำมันพืช 1,500 มิลลิลิตร และน้ำส้มสายชู 500 มิลลิลิตร รวมน้ำมันและน้ำส้มกี่ลิตร",
+      "choices": [
+        "2 liters",
+        "2.5 liters",
+        "1.5 liters",
+        "3 liters"
+      ],
+      "correct_answer": "2 liters",
+      "answer": "1,500+500=2,000 ml = 2 liters",
+      "explanation": "1,500+500=2,000 ml = 2 liters",
+      "explanation_th": "2,000 มล. = 2 ลิตร",
+      "difficulty": "medium",
+      "hint_th": "Add ml, then convert to liters"
+    },
+    {
+      "question_id": "wc_ep_q001_m03",
+      "question_text": "Case 6: Lin buys meat 2 kg 250 g and gives 750 g to a friend. How many grams are left?",
+      "question_text_th": "สถานการณ์ที่ 6: ลินซื้อเนื้อหนัก 2 กิโลกรัม 250 กรัม แบ่งให้เพื่อน 750 กรัม เนื้อเหลือกี่กรัม",
+      "choices": [
+        "1,500 g",
+        "1,250 g",
+        "1,750 g",
+        "1,000 g"
+      ],
+      "correct_answer": "1,500 g",
+      "answer": "2 kg 250 g = 2,250 g, 2,250-750 = 1,500 g",
+      "explanation": "2 kg 250 g = 2,250 g, 2,250-750 = 1,500 g",
+      "explanation_th": "2,250 - 750 = 1,500 กรัม",
+      "difficulty": "medium",
+      "hint_th": "Convert to grams first, then subtract"
+    },
+    {
+      "question_id": "wc_ep_q001_m04",
+      "question_text": "Case 7: Lin makes fruit drink using 800 ml of water and 200 ml of orange juice. What is the total in liters and ml?",
+      "question_text_th": "สถานการณ์ที่ 7: ลินทำน้ำผลไม้โดยใช้น้ำ 800 มิลลิลิตร และน้ำส้ม 200 มิลลิลิตร รวมปริมาณกี่ลิตรกี่มิลลิลิตร",
+      "choices": [
+        "1 L 0 ml",
+        "0 L 1,000 ml",
+        "1 L 200 ml",
+        "0 L 800 ml"
+      ],
+      "correct_answer": "1 L 0 ml",
+      "answer": "800+200=1,000 ml = 1 L 0 ml",
+      "explanation": "800+200=1,000 ml = 1 L 0 ml",
+      "explanation_th": "1,000 มล. = 1 ลิตร",
+      "difficulty": "medium",
+      "hint_th": "Add ml, then convert to liters"
+    },
+    {
+      "question_id": "wc_ep_q001_h01",
+      "question_text": "Case 8: Lin buys 3 bottles of fruit juice, each 1 L 500 ml. What is the total in liters and ml?",
+      "question_text_th": "สถานการณ์ที่ 8: ลินซื้อน้ำผลไม้ 3 ขวด ขวดละ 1 ลิตร 500 มิลลิลิตร รวมน้ำผลไม้กี่ลิตรกี่มิลลิลิตร",
+      "choices": [
+        "4 L 500 ml",
+        "3 L 500 ml",
+        "5 L 0 ml",
+        "4 L 0 ml"
+      ],
+      "correct_answer": "4 L 500 ml",
+      "answer": "1 L 500 ml = 1,500 ml x 3 = 4,500 ml = 4 L 500 ml",
+      "explanation": "1 L 500 ml = 1,500 ml x 3 = 4,500 ml = 4 L 500 ml",
+      "explanation_th": "1,500 x 3 = 4,500 มล. = 4 ล. 500 มล.",
+      "difficulty": "hard",
+      "hint_th": "Convert to ml, multiply by 3, then convert back"
+    },
+    {
+      "question_id": "wc_ep_q001_h02",
+      "question_text": "Case 9: Lin buys sugar 2 kg 750 g and gives 1 kg 250 g to a friend. How many grams are left?",
+      "question_text_th": "สถานการณ์ที่ 9: ลินซื้อน้ำตาลหนัก 2 กิโลกรัม 750 กรัม แบ่งให้เพื่อน 1 กิโลกรัม 250 กรัม น้ำตาลเหลือกี่กรัม",
+      "choices": [
+        "1,500 g",
+        "1,250 g",
+        "1,750 g",
+        "2,000 g"
+      ],
+      "correct_answer": "1,500 g",
+      "answer": "2 kg 750 g = 2,750 g, 1 kg 250 g = 1,250 g, 2,750-1,250 = 1,500 g",
+      "explanation": "2 kg 750 g = 2,750 g, 1 kg 250 g = 1,250 g, 2,750-1,250 = 1,500 g",
+      "explanation_th": "2,750 - 1,250 = 1,500 กรัม",
+      "difficulty": "hard",
+      "hint_th": "Convert to grams first, then subtract"
+    },
+    {
+      "question_id": "wc_ep_q001_h03",
+      "question_text": "Case 10: Lin has 5 L 200 ml of water and uses 2 L 750 ml twice. How much water is left in liters and ml?",
+      "question_text_th": "สถานการณ์ที่ 10: ลินมีน้ำ 5 ลิตร 200 มิลลิลิตร ใช้ไป 2 ลิตร 750 มิลลิลิตร สองครั้ง น้ำเหลือกี่ลิตรกี่มิลลิลิตร",
+      "choices": [
+        "0 L 0 ml",
+        "0 L 300 ml",
+        "1 L 0 ml",
+        "0 L 700 ml"
+      ],
+      "correct_answer": "0 L 0 ml",
+      "answer": "Total water: 5,200 ml, Used 2 times: 2,750x2=5,500 ml > 5,200 ml → 0 ml left",
+      "explanation": "Total water: 5,200 ml, Used 2 times: 2,750x2=5,500 ml > 5,200 ml → 0 ml left",
+      "explanation_th": "ใช้ไป 5,500 มล. > มี 5,200 มล. → เหลือ 0",
+      "difficulty": "hard",
+      "hint_th": "Used more than available → 0 left"
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}

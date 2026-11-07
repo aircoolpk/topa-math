@@ -1,18 +1,19 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { BarChart3, BookOpen, Camera, Flame, GraduationCap, LineChart, Lock, Share2, Sparkles, Star, Target, Trophy } from 'lucide-react'
+import { BarChart3, BookOpen, Camera, GraduationCap, LineChart, Lock, Share2, Sparkles, Star, Target, Trophy } from 'lucide-react'
 import { useAuthStore } from '@/store/auth'
 import { meApi, type DashboardData, type Lesson, type LessonProgram, type Quest, type TestLevel } from '@/lib/api/me'
 import { MascotAvatar, SectionHeader, TopaButton, TopaCard } from '@/components/topa/TopaUI'
+import { TopaLogo } from '@/components/brand/TopaBrand'
 import { defaultMascots } from '@/lib/topa-content'
 import { PhotoAvatar } from '@/components/avatar/PhotoAvatar'
 import { AvatarUpload } from '@/components/avatar/AvatarUpload'
 
-function Stat({ label, value, icon }: { label: string; value: string | number; icon: React.ReactNode }) {
-  return (
+function Stat({ label, value, icon, href }: { label: string; value: string | number; icon: React.ReactNode; href?: string }) {
+  const content = (
     <TopaCard className="p-5">
       <div className="flex items-center justify-between">
         <div>
@@ -23,6 +24,7 @@ function Stat({ label, value, icon }: { label: string; value: string | number; i
       </div>
     </TopaCard>
   )
+  return href ? <Link href={href}>{content}</Link> : content
 }
 
 function QuestCard({ quest }: { quest: Quest }) {
@@ -45,14 +47,15 @@ function QuestCard({ quest }: { quest: Quest }) {
 
 function LessonCard({ lesson, onStart, onTest }: { lesson: Lesson; onStart: (lesson: Lesson) => void; onTest: (lesson: Lesson) => void }) {
   const locked = lesson.status === 'locked' || lesson.is_locked
-  const hasTest = lesson.test_available ?? lesson.has_approved_test ?? lesson.has_test !== false
+  const hasTest = lesson.test_available === true
+  const unavailableReason = lesson.test_disabled_reason || lesson.test_unavailable_reason || 'ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้'
   return (
     <TopaCard className={`p-5 ${locked ? 'opacity-70' : ''}`}>
       <div className="flex items-start justify-between gap-3">
         <div>
           <span className="rounded-full bg-sky-50 px-3 py-1 text-xs font-black text-sky-700">ป.{lesson.grade_level}</span>
           <h3 className="mt-3 font-black text-slate-950">{lesson.title_th || lesson.title || lesson.lesson_id}</h3>
-          <p className="mt-1 text-sm text-slate-500">{lesson.topic_code || lesson.skill_code || 'TOPA Math'} · {lesson.estimated_minutes || 10} นาที</p>
+          <p className="mt-1 text-sm text-slate-500">{lesson.description || lesson.description_th || lesson.topic_code || lesson.skill_code || 'TOPA Math'} · {lesson.duration || lesson.estimated_minutes || 10} นาที</p>
         </div>
         <BookOpen className="h-5 w-5 text-amber-500" />
       </div>
@@ -65,8 +68,8 @@ function LessonCard({ lesson, onStart, onTest }: { lesson: Lesson; onStart: (les
             <button
               onClick={() => hasTest && onTest(lesson)}
               disabled={!hasTest}
-              title={hasTest ? 'ทำเทสจากบทนี้' : 'ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้'}
-              className={`flex-1 rounded-xl px-3 py-2 text-sm font-black ${hasTest ? 'bg-amber-100 text-amber-700 hover:bg-amber-200' : 'cursor-not-allowed bg-slate-100 text-slate-400'}`}
+              title={hasTest ? 'ทำเทสจากบทนี้' : unavailableReason}
+              className={`flex-1 rounded-xl px-3 py-2 text-sm font-black ${hasTest ? 'bg-orange-500 text-white hover:bg-orange-600' : 'cursor-not-allowed bg-slate-100 text-slate-400'}`}
             >
               {hasTest ? 'ทำเทสจากบทนี้' : 'ยังไม่มีเทส'}
             </button>
@@ -122,31 +125,105 @@ function ProgramSwitch({
 export default function DashboardPage() {
   const router = useRouter()
   const { checkAuth } = useAuthStore()
+  const dashboardAbortRef = useRef<AbortController | null>(null)
+  const dashboardRequestSeq = useRef(0)
   const [dashboard, setDashboard] = useState<DashboardData | null>(null)
   const [error, setError] = useState('')
+  const [retryHint, setRetryHint] = useState('')
   const [programMessage, setProgramMessage] = useState('')
   const [loading, setLoading] = useState(true)
   const [testLoading, setTestLoading] = useState('')
   const [activeProgram, setActiveProgram] = useState<LessonProgram>('TH')
+  const [affiliateRegisteredCount, setAffiliateRegisteredCount] = useState(0)
+  const [rankSummary, setRankSummary] = useState<{ total_score: number; rank_title: string; rank_position?: number | null; total_in_grade?: number | null } | null>(null)
 
-  const loadDashboard = async (program: LessonProgram) => {
+  const loadAffiliateSummary = useCallback(async () => {
+    try {
+      const data = await meApi.getAffiliateSummary()
+      setAffiliateRegisteredCount(data.registered_count || 0)
+    } catch {
+      setAffiliateRegisteredCount(0)
+    }
+  }, [])
+
+  const loadRankSummary = useCallback(async () => {
+    try {
+      const data = await meApi.getRankSummary()
+      setRankSummary({
+        total_score: data.total_score || 0,
+        rank_title: data.rank_title || '',
+        rank_position: data.rank_position ?? null,
+        total_in_grade: data.total_in_grade ?? null,
+      })
+    } catch {
+      // No child profile yet — keep summary null
+      setRankSummary(null)
+    }
+  }, [])
+
+  const redirectToLogin = useCallback(() => {
+    router.replace(`/login?next=${encodeURIComponent('/dashboard')}`)
+  }, [router])
+
+  const loadDashboard = useCallback(async (program: LessonProgram, signal?: AbortSignal) => {
     setProgramMessage('')
-    const data = await meApi.getDashboard(program)
+    const data = await meApi.getDashboard(program, { signal, requestLabel: `dashboard:${program}`, timeout: 30000 })
     setDashboard(data)
+    setAffiliateRegisteredCount(data.affiliate_summary?.registered_count || 0)
     setActiveProgram((data.active_program || program) === 'EP' ? 'EP' : 'TH')
-  }
+  }, [loadRankSummary])
 
-  useEffect(() => {
-    checkAuth().then(() => {
-      if (!localStorage.getItem('access_token')) {
-        router.replace('/login')
+  const loadDashboardSafely = useCallback(async (program: LessonProgram = 'TH') => {
+    dashboardAbortRef.current?.abort()
+    const controller = new AbortController()
+    dashboardAbortRef.current = controller
+    const requestId = dashboardRequestSeq.current + 1
+    dashboardRequestSeq.current = requestId
+    setLoading(true)
+    setError('')
+    setRetryHint('')
+    try {
+      const authenticatedUser = await checkAuth()
+      if (!authenticatedUser) {
+        redirectToLogin()
         return
       }
-      loadDashboard('TH')
-        .catch(() => setError('โหลดแดชบอร์ดไม่สำเร็จ กรุณาลองใหม่อีกครั้ง'))
-        .finally(() => setLoading(false))
-    })
-  }, [checkAuth, router])
+      await loadDashboard(program, controller.signal)
+      if (requestId === dashboardRequestSeq.current) {
+        loadAffiliateSummary()
+      }
+    } catch (err: unknown) {
+      const e = err as { code?: string; name?: string; response?: { status?: number } }
+      if (controller.signal.aborted || e?.code === 'ERR_CANCELED' || e?.name === 'CanceledError') return
+      if (e?.response?.status === 401) {
+        redirectToLogin()
+        return
+      }
+      if (e?.code === 'ECONNABORTED') {
+        setRetryHint('ใช้เวลานานกว่าปกติ กรุณาลองโหลดใหม่')
+      }
+      setError('โหลดแดชบอร์ดไม่สำเร็จ กรุณาลองใหม่อีกครั้ง')
+    } finally {
+      if (requestId === dashboardRequestSeq.current) {
+        setLoading(false)
+      }
+    }
+  }, [checkAuth, loadAffiliateSummary, loadDashboard, redirectToLogin])
+
+  useEffect(() => {
+    loadDashboardSafely('TH')
+      .catch(() => setError('โหลดแดชบอร์ดไม่สำเร็จ กรุณาลองใหม่อีกครั้ง'))
+      .finally(() => setLoading(false))
+  }, [loadDashboardSafely])
+
+  useEffect(() => {
+    if (dashboard) loadAffiliateSummary()
+    if (dashboard) loadRankSummary()
+  }, [dashboard, loadAffiliateSummary, loadRankSummary])
+
+  useEffect(() => {
+    return () => dashboardAbortRef.current?.abort()
+  }, [])
 
   const child = dashboard?.child
   const quests = useMemo(() => [...(dashboard?.daily_quests || []), ...(dashboard?.weekly_quests || []), ...(dashboard?.monthly_quests || [])].slice(0, 6), [dashboard])
@@ -165,14 +242,16 @@ export default function DashboardPage() {
   const testLevel = dashboard?.test_levels?.find((level: TestLevel) => level.status !== 'locked')
 
   const startLesson = async (lesson: Lesson) => {
-    await meApi.startLesson(lesson.lesson_id, activeProgram).catch(() => null)
-    router.push(`/dashboard/lessons/${lesson.lesson_id}?program_type=${activeProgram}`)
+    const lessonGroupId = lesson.lesson_group_id || lesson.lesson_id
+    await meApi.startLesson(lessonGroupId, activeProgram).catch(() => null)
+    router.push(`/dashboard/lessons/${lessonGroupId}?program_type=${activeProgram}`)
   }
 
   const startTest = async (lesson: Lesson) => {
-    setTestLoading(lesson.lesson_id)
+    const lessonId = lesson.lesson_group_id || lesson.lesson_id
+    setTestLoading(lessonId)
     try {
-      const result = await meApi.startLessonTest(lesson.lesson_id, activeProgram)
+      const result = await meApi.startLessonTest(lessonId, activeProgram)
       router.push(`/dashboard/tests/${result.session_id}`)
     } finally {
       setTestLoading('')
@@ -193,12 +272,18 @@ export default function DashboardPage() {
     }
     setLoading(true)
     try {
-      await loadDashboard(program)
+      dashboardAbortRef.current?.abort()
+      const controller = new AbortController()
+      dashboardAbortRef.current = controller
+      await loadDashboard(program, controller.signal)
+      loadAffiliateSummary()
     } catch (err: unknown) {
       const e = err as { response?: { status?: number; data?: { detail?: { message?: string } } } }
       if (program === 'EP' && e?.response?.status === 403) {
         setActiveProgram('TH')
         setProgramMessage(e.response.data?.detail?.message || 'แพ็กเกจ EP ยังไม่ได้เปิดใช้งาน')
+      } else if (e?.response?.status === 401) {
+        redirectToLogin()
       } else {
         setError('โหลดแดชบอร์ดไม่สำเร็จ กรุณาลองใหม่อีกครั้ง')
       }
@@ -216,20 +301,49 @@ export default function DashboardPage() {
 
   if (loading) return <main className="min-h-screen bg-sky-50 p-8 text-slate-500">กำลังโหลดแดชบอร์ด...</main>
 
+  if (dashboard && !child) {
+    return (
+      <div className="min-h-screen bg-[#f7fbff]">
+        <header className="border-b border-sky-100 bg-white/90">
+          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+            <Link href="/" aria-label="TOPA Math homepage"><TopaLogo size="sm" /></Link>
+            <Link href="/register" className="rounded-xl bg-sky-500 px-4 py-2 text-sm font-black text-white">สร้างโปรไฟล์นักเรียน</Link>
+          </div>
+        </header>
+        <main className="mx-auto max-w-3xl px-4 py-16">
+          <TopaCard className="p-8 text-center">
+            <GraduationCap className="mx-auto h-12 w-12 text-sky-500" />
+            <h1 className="mt-4 text-2xl font-black text-slate-950">ยังไม่มีข้อมูลนักเรียน กรุณาสร้างโปรไฟล์นักเรียน</h1>
+            <p className="mt-3 text-slate-600">ยังไม่ระบุระดับชั้น ระบบจะแสดงบทเรียนและคำแนะนำหลังตั้งค่าโปรไฟล์เรียบร้อย</p>
+            <TopaButton href="/register" className="mt-6">เริ่มสร้างโปรไฟล์นักเรียน</TopaButton>
+          </TopaCard>
+        </main>
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen bg-[#f7fbff]">
       <header className="border-b border-sky-100 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
-          <Link href="/" className="text-xl font-black text-slate-950">TOPA Math</Link>
+          <Link href="/" aria-label="TOPA Math homepage"><TopaLogo size="sm" /></Link>
           <div className="flex items-center gap-3">
-            <Link href="/children" className="hidden rounded-xl px-3 py-2 text-sm font-bold text-slate-600 hover:bg-sky-50 sm:block">นักเรียน</Link>
+            <Link href={child?.id ? `/children/${child.id}` : '/register'} prefetch={false} className="hidden rounded-xl px-3 py-2 text-sm font-bold text-slate-600 hover:bg-sky-50 sm:block">นักเรียน</Link>
             <Link href="/pricing" className="rounded-xl bg-amber-100 px-3 py-2 text-sm font-black text-amber-700">แผนสมาชิก</Link>
           </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-8">
-        {error && <div className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{error}</div>}
+        {error && (
+          <div className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
+            <div>{error}</div>
+            {retryHint && <div className="mt-1 text-red-600">{retryHint}</div>}
+            <button type="button" onClick={() => loadDashboardSafely(activeProgram)} className="mt-3 rounded-lg bg-red-600 px-3 py-2 text-xs font-black text-white hover:bg-red-700">
+              โหลดใหม่
+            </button>
+          </div>
+        )}
         {programMessage && <div className="mb-5 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-black text-amber-800">{programMessage}</div>}
 
         <section className="mb-8 grid gap-6 lg:grid-cols-[1fr_360px]">
@@ -239,7 +353,7 @@ export default function DashboardPage() {
                 <div>
                   <p className="font-bold text-white/80">ยินดีต้อนรับกลับมา</p>
                   <h1 className="mt-2 text-4xl font-black">สวัสดี {child?.nickname || 'นักเรียน TOPA'}</h1>
-                  <p className="mt-3 text-white/90">ป.{child?.grade_level || '-'} · {child?.membership || 'free'} plan · {child?.rank_title || 'TOPA Learner'}</p>
+                  <p className="mt-3 text-white/90">{child?.grade_level ? `ป.${child.grade_level}` : 'ยังไม่ระบุระดับชั้น'} · {child?.membership || 'free'} plan · {child?.rank_title || 'TOPA Learner'}</p>
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   <PhotoAvatar
@@ -292,7 +406,7 @@ export default function DashboardPage() {
           <Stat label="คะแนนรวม" value={(child?.total_score || 0).toLocaleString('th-TH')} icon={<Trophy />} />
           <Stat label="บทเรียนจบ" value={lessons.filter((lesson) => lesson.status === 'completed').length} icon={<BookOpen />} />
           <Stat label="เทสที่ทำ" value={dashboard?.test_levels?.filter((level) => level.status === 'completed').length || 0} icon={<GraduationCap />} />
-          <Stat label="Streak" value={child?.streak_count || 0} icon={<Flame />} />
+          <Stat label="Affiliate" value={affiliateRegisteredCount.toLocaleString('th-TH')} icon={<Share2 />} href="/dashboard/affiliate" />
         </section>
 
         <section className="mb-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -325,10 +439,22 @@ export default function DashboardPage() {
             <div className="mt-5 rounded-3xl bg-sky-50 p-5">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-bold text-slate-500">อันดับปัจจุบัน</span>
-                <span className="text-3xl font-black text-sky-600">#{Math.max(1, 120 - (child?.current_level || 1) * 4)}</span>
+                <span className="text-3xl font-black text-sky-600">
+                  {rankSummary?.rank_position ? `#${rankSummary.rank_position}` : '—'}
+                </span>
               </div>
+              <p className="mt-2 text-xs font-semibold text-slate-500">
+                {rankSummary?.rank_title || (child?.total_score ? `${child.total_score.toLocaleString('th-TH')} คะแนน` : 'ยังไม่มีคะแนนสะสม')}
+              </p>
               <div className="mt-4 h-3 rounded-full bg-white">
-                <div className="h-full w-2/3 rounded-full bg-gradient-to-r from-sky-400 to-amber-400" />
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-sky-400 to-amber-400"
+                  style={{
+                    width: rankSummary?.rank_position && rankSummary?.total_in_grade
+                      ? `${Math.min(100, Math.max(0, 100 - ((rankSummary.rank_position / rankSummary.total_in_grade) * 100)))}%`
+                      : '0%',
+                  }}
+                />
               </div>
             </div>
             <TopaButton href="/#ranking" variant="secondary" className="mt-5 w-full">ดูอันดับหน้าแรก</TopaButton>
@@ -336,12 +462,12 @@ export default function DashboardPage() {
         </section>
 
         <section className="mb-10">
-          <SectionHeader align="left" title={`บทเรียนหลัก ป.${child?.grade_level || '-'}`} subtitle="แสดงบทเรียนระดับชั้นปัจจุบันเป็นเส้นทางหลัก และยังเคารพ approved-content gating จาก backend" />
+          <SectionHeader align="left" title={child?.grade_level ? `บทเรียนหลัก ป.${child.grade_level}` : 'บทเรียนหลัก · ยังไม่ระบุระดับชั้น'} subtitle="แสดงบทเรียนระดับชั้นปัจจุบันเป็นเส้นทางหลัก และยังเคารพ approved-content gating จาก backend" />
           {lessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{lessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} onStart={startLesson} onTest={testLoading ? () => null : startTest} />)}</div> : <EmptyState text="ยังไม่มีบทเรียนที่เปิดให้เรียนตอนนี้" />}
         </section>
 
         <section className="mb-10">
-          <SectionHeader align="left" title={`ทบทวนพื้นฐาน ป.${child?.grade_level ? Math.max(1, child.grade_level - 1) : '-'}`} subtitle="บททบทวนจากระดับก่อนหน้า ช่วยปิดช่องว่างก่อนเรียนเรื่องใหม่" />
+          <SectionHeader align="left" title={child?.grade_level ? `ทบทวนพื้นฐาน ป.${Math.max(1, child.grade_level - 1)}` : 'ทบทวนพื้นฐาน · ยังไม่ระบุระดับชั้น'} subtitle="บททบทวนจากระดับก่อนหน้า ช่วยปิดช่องว่างก่อนเรียนเรื่องใหม่" />
           {reviewLessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">{reviewLessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} onStart={startLesson} onTest={testLoading ? () => null : startTest} />)}</div> : <EmptyState text="ยังไม่มีบททบทวนจากระดับก่อนหน้าที่เปิดให้เรียนตอนนี้" />}
         </section>
 

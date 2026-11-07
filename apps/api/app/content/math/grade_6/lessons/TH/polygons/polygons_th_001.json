@@ -1,0 +1,186 @@
+{
+  "variant_id": "polygons_th_001",
+  "variant_title_th": "รูปหลายเหลี่ยม",
+  "variant_title_en": "Polygons",
+  "status": "needs_review",
+  "title_th": "รูปหลายเหลี่ยม",
+  "title_en": "Polygons",
+  "story_theme_th": "รูปห้าเหลี่ยมด้านเท่ามีด้านยาวด้านละ 8 เซนติเมตร รูปหกเหลี่ยมด้านเท่ามีด้านยาวด้านละ 6 เซนติเมตร รูปใดมีความยาวรอบรูปมากกว่า และมากกว่าเท่าไร",
+  "helper_tip": "ความยาวรอบรูป = จำนวนด้าน × ความยาวด้าน สำหรับรูปด้านเท่า",
+  "think_story_th": "รูปห้าเหลี่ยม: 5 × 8 = 40 ซม. รูปหกเหลี่ยม: 6 × 6 = 36 ซม. รูปห้าเหลี่ยมมีความยาวรอบรูปมากกว่า 40 - 36 = 4 ซม.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "เรื่องราว",
+      "content": "รูปห้าเหลี่ยมด้านเท่ามีด้านยาวด้านละ 8 เซนติเมตร รูปหกเหลี่ยมด้านเท่ามีด้านยาวด้านละ 6 เซนติเมตร รูปใดมีความยาวรอบรูปมากกว่า และมากกว่าเท่าไร",
+      "data": {
+        "content_th": "รูปห้าเหลี่ยมด้านเท่ามีด้านยาวด้านละ 8 เซนติเมตร รูปหกเหลี่ยมด้านเท่ามีด้านยาวด้านละ 6 เซนติเมตร รูปใดมีความยาวรอบรูปมากกว่า และมากกว่าเท่าไร"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "คิดทบทวน",
+      "content": "รูปห้าเหลี่ยม: 5 × 8 = 40 ซม. รูปหกเหลี่ยม: 6 × 6 = 36 ซม. รูปห้าเหลี่ยมมีความยาวรอบรูปมากกว่า 40 - 36 = 4 ซม.",
+      "data": {
+        "content_th": "รูปห้าเหลี่ยม: 5 × 8 = 40 ซม. รูปหกเหลี่ยม: 6 × 6 = 36 ซม. รูปห้าเหลี่ยมมีความยาวรอบรูปมากกว่า 40 - 36 = 4 ซม."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "แผนภูมิแท่ง (Bar Model)",
+      "description": "แสดงแบบจำลองส่วน-ความทั้งหมด",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "เซนติเมตร",
+        "bars": [
+          {
+            "label": "ห้าเหลี่ยม (5 ด้าน)",
+            "value": 40,
+            "display": "40 ซม.",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "หกเหลี่ยม (6 ด้าน)",
+            "value": 36,
+            "display": "36 ซม.",
+            "color": "#FF6B6B",
+            "width_pct": 90,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "ขั้น Abstract (แปลงภาพเป็นสัญลักษณ์คณิตศาสตร์)",
+      "description": "เมื่อเด็กเห็นภาพความสัมพันธ์จากบาร์โมเดลแล้ว จึงนำมาเขียนเป็นประโยคสัญลักษณ์และคำนวณหาคำตอบเชิงนามธรรม",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "ขั้นตอนที่ 1",
+            "expression": "5 × 8 = 40",
+            "formula": {
+              "display": "5 × 8 = 40",
+              "a": 5,
+              "b": 8,
+              "result": 40,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}5&\\ ×\\quad 8&\\ \\hline 40&\\\\ \\hline \\end{array}",
+              "a_display": "5",
+              "b_display": "8",
+              "result_display": "40",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 5 × 8 = 40"
+          },
+          {
+            "step": 2,
+            "label": "ขั้นตอนที่ 2",
+            "expression": "6 × 6 = 36",
+            "formula": {
+              "display": "6 × 6 = 36",
+              "a": 6,
+              "b": 6,
+              "result": 36,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}6&\\ ×\\quad 6&\\ \\hline 36&\\\\ \\hline \\end{array}",
+              "a_display": "6",
+              "b_display": "6",
+              "result_display": "36",
+              "operation": "multiply"
+            },
+            "story_connection": "จากบาร์โมเดล: 6 × 6 = 36"
+          },
+          {
+            "step": 3,
+            "label": "ขั้นตอนที่ 3",
+            "expression": "40 - 36 = 4",
+            "formula": {
+              "display": "40 - 36 = 4",
+              "a": 40,
+              "b": 36,
+              "result": 4,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}40&\\ -\\quad 36&\\ \\hline 4&\\\\ \\hline \\end{array}",
+              "a_display": "40",
+              "b_display": "36",
+              "result_display": "4",
+              "operation": "subtract"
+            },
+            "story_connection": "จากบาร์โมเดล: 40 - 36 = 4"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "ประโยคตัวเลข",
+      "expression": "5 × 8 = 40 | 6 × 6 = 36 | 40 - 36 = 4",
+      "content": "5 × 8 = 40 | 6 × 6 = 36 | 40 - 36 = 4",
+      "data": {
+        "expression": "5 × 8 = 40 | 6 × 6 = 36 | 40 - 36 = 4",
+        "operations": [
+          {
+            "op": "×",
+            "a": 5,
+            "b": 8,
+            "result": 40
+          },
+          {
+            "op": "×",
+            "a": 6,
+            "b": 6,
+            "result": 36
+          },
+          {
+            "op": "-",
+            "a": 40,
+            "b": 36,
+            "result": 4
+          }
+        ],
+        "content_th": "5 × 8 = 40 | 6 × 6 = 36 | 40 - 36 = 4"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "ลองทำดู",
+      "question": "รูปสี่เหลี่ยมผืนผ้ากว้าง 5 ซม. ยาว 12 ซม. ความยาวรอบรูปเท่าไร",
+      "choices": [
+        "34 ซม.",
+        "17 ซม.",
+        "28 ซม.",
+        "24 ซม."
+      ],
+      "correct_answer": "34 ซม.",
+      "explanation": "2 × (5 + 12) = 2 × 17 = 34 ซม.",
+      "data": {
+        "question": "รูปสี่เหลี่ยมผืนผ้ากว้าง 5 ซม. ยาว 12 ซม. ความยาวรอบรูปเท่าไร",
+        "choices": [
+          "34 ซม.",
+          "17 ซม.",
+          "28 ซม.",
+          "24 ซม."
+        ],
+        "correct_answer": "34 ซม.",
+        "explanation": "2 × (5 + 12) = 2 × 17 = 34 ซม."
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

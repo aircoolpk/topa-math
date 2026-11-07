@@ -1,0 +1,184 @@
+{
+  "lesson_id": "fractions_ep",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "Lin eats 2/7 of a pizza and Mali eats 1/7. Total eaten? Left?",
+      "question_text_en": "Lin eats 2/7 of a pizza and Mali eats 1/7. Total eaten? Left?",
+      "choices": [
+        "3/7 eaten, 4/7 left",
+        "3/7 eaten, 3/7 left",
+        "4/7 eaten, 3/7 left",
+        "3/7 eaten, 2/7 left"
+      ],
+      "correct_answer": "3/7 eaten, 4/7 left",
+      "answer": "3/7 eaten, 4/7 left",
+      "explanation": "2/7+1/7=3/7 | 7/7-3/7=4/7 left",
+      "explanation_th": "2/7+1/7=3/7 รวม | 7/7-3/7=4/7 เหลือ",
+      "difficulty": "easy",
+      "hint_th": "Add numerators, subtract from whole",
+      "question_text_th": "ลินกินพิซซ่า 2/7 มะลิกิน 1/7. รวมกินกี่ส่วน เหลือกี่ส่วน?"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "A tank is full (6/6). Someone drinks 4/6 of the tank. How much water is left?",
+      "question_text_en": "A tank is full (6/6). Someone drinks 4/6 of the tank. How much water is left?",
+      "choices": [
+        "2/6 of the tank",
+        "3/6 of the tank",
+        "1/6 of the tank",
+        "12 / of the tank"
+      ],
+      "correct_answer": "2/6 of the tank",
+      "answer": "2/6 of the tank",
+      "explanation": "6/6-4/6=2/6",
+      "explanation_th": "6/6-4/6=2/6 ของถัง",
+      "difficulty": "easy",
+      "hint_th": "Subtract numerators, same denominator",
+      "question_text_th": "ถังเต็ม 6/6 ดื่มไป 4/6 ของถัง. เหลือน้ำกี่ส่วน?"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "Rice is 5/8 of a bag. Cooking uses 3/8 of the bag. How much rice is left?",
+      "question_text_en": "Rice is 5/8 of a bag. Cooking uses 3/8 of the bag. How much rice is left?",
+      "choices": [
+        "2/8 of the bag",
+        "3/8 of the bag",
+        "1/8 of the bag",
+        "1 / of the bag"
+      ],
+      "correct_answer": "2/8 of the bag",
+      "answer": "2/8 of the bag",
+      "explanation": "5/8-3/8=2/8",
+      "explanation_th": "5/8-3/8=2/8 ของถุง",
+      "difficulty": "easy",
+      "hint_th": "5/8-3/8=2/8",
+      "question_text_th": "ข้าวสาร 5/8 ของถุง ปรุงไป 3/8 ของถุง. เหลือข้าวกี่ส่วน?"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "7/12 + x/12 = 11/12. What is x?",
+      "question_text_en": "7/12 + x/12 = 11/12. x=?",
+      "choices": [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      "correct_answer": "4",
+      "answer": "4",
+      "explanation": "7+x=11 → x=4",
+      "explanation_th": "7+x=11 → x=4",
+      "difficulty": "easy",
+      "hint_th": "7+x=11 → x=4"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "5/9 - 2/9 = ?",
+      "question_text_en": "5/9 - 2/9 = ?",
+      "choices": [
+        "3/9",
+        "7/9",
+        "3/0",
+        "3/18"
+      ],
+      "correct_answer": "3/9",
+      "answer": "3/9",
+      "explanation": "5/9-2/9=3/9",
+      "explanation_th": "5/9-2/9=3/9",
+      "difficulty": "easy",
+      "hint_th": "Subtract numerators, keep denominator"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "3/5 + 2/5 = ?",
+      "question_text_en": "3/5 + 2/5 = ?",
+      "choices": [
+        "5/5",
+        "5/10",
+        "1/5",
+        "15 /"
+      ],
+      "correct_answer": "5/5",
+      "answer": "5/5",
+      "explanation": "3/5+2/5=5/5 = 1",
+      "explanation_th": "3/5+2/5=5/5 = 1",
+      "difficulty": "easy",
+      "hint_th": "Add numerators: 3+2=5, keep denominator 5"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "Lin has 7/8 meters of rope and uses 3/8 meters. How much rope is left?",
+      "question_text_en": "Lin has 7/8 meters of rope and uses 3/8 meters. How much rope is left?",
+      "choices": [
+        "4/8 meters",
+        "5/8 meters",
+        "3/8 meters",
+        "3 / meters"
+      ],
+      "correct_answer": "4/8 meters",
+      "answer": "4/8 meters",
+      "explanation": "7/8-3/8=4/8 meters",
+      "explanation_th": "7/8-3/8=4/8 เมตร",
+      "difficulty": "easy",
+      "hint_th": "7/8-3/8=4/8",
+      "question_text_th": "ลินมีเชือก 7/8 เมตร ใช้ไป 3/8 เมตร. เหลือเชือกกี่เมตร?"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "Mali has 4/5 of a bag of flour and uses 2/5 of the bag. How much flour is left?",
+      "question_text_en": "Mali has 4/5 of a bag of flour and uses 2/5 of the bag. How much flour is left?",
+      "choices": [
+        "2/5 of the bag",
+        "3/5 of the bag",
+        "1/5 of the bag",
+        "12 / of the bag"
+      ],
+      "correct_answer": "2/5 of the bag",
+      "answer": "2/5 of the bag",
+      "explanation": "4/5-2/5=2/5",
+      "explanation_th": "4/5-2/5=2/5 ของถุง",
+      "difficulty": "easy",
+      "hint_th": "4/5-2/5=2/5",
+      "question_text_th": "มะลิมีแป้ง 4/5 ของถุง ใช้ไป 2/5 ของถุง. เหลือแป้งกี่ส่วน?"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "x/7 + 2/7 = 5/7. What is x?",
+      "question_text_en": "x/7 + 2/7 = 5/7. x=?",
+      "choices": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "correct_answer": "3",
+      "answer": "3",
+      "explanation": "x+2=5 → x=3",
+      "explanation_th": "x+2=5 → x=3",
+      "difficulty": "easy",
+      "hint_th": "x+2=5 → x=3"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "7/9 - 3/9 = ?",
+      "question_text_en": "7/9 - 3/9 = ?",
+      "choices": [
+        "4/9",
+        "4/0",
+        "10/9",
+        "4/18"
+      ],
+      "correct_answer": "4/9",
+      "answer": "4/9",
+      "explanation": "7/9-3/9=4/9",
+      "explanation_th": "7/9-3/9=4/9",
+      "difficulty": "easy",
+      "hint_th": "Subtract numerators, keep denominator"
+    }
+  ],
+  "program_type": "TOPA_EP",
+  "status": "needs_review"
+}

@@ -1,0 +1,179 @@
+{
+  "lesson_id": "add_sub_over_100000_th",
+  "grade_level": "grade_4",
+  "program": "TOPA_Math",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question_text": "สนามกีฬามีผู้ชม 178,500 คน ขายบัตรได้เงิน 89,250,000 บาท ถ้าต้งราคาบัตรเฉลี่ย 500 บาท ต่อคน ราคาบัตรถูกหรือแพงกว่าเฉลี่ย",
+      "question_text_en": "A stadium has 178,500 spectators. Ticket sales total 89,250,000 baht. If the average ticket price is 500 baht per person, is the ticket cheap or expensive?",
+      "choices": [
+        "ถูกกว่าเฉลี่ย",
+        "แพงกว่าเฉลี่ย",
+        "เท่ากับเฉลี่ยพอดี",
+        "ไม่สามารถระบุได้"
+      ],
+      "correct_answer": "แพงกว่าเฉลี่ย",
+      "answer": "แพงกว่าเฉลี่ย",
+      "explanation": "178,500 x 500 = 89,250,000 พอดี หมายความว่าบัตรเฉลี่ย 500 บาท ตรวจ: 89,250,000/178,500 = 500 บาท ดังนั้นเท่ากับเฉลี่ยพอดี!",
+      "explanation_th": "178,500×500 = 89,250,000 พอดี ดังนั้นเท่ากับเฉลี่ยพอดี ไม่ใช่แพงหรือถูก",
+      "difficulty": "hard",
+      "hint_th": "หารเงินรวมด้วยจำนวนคน = ราคาเฉลี่ยต่อคน"
+    },
+    {
+      "question_id": "Q02",
+      "question_text": "ร้านขายของซื้อสินค้าราคา 125,750 บาท ขายได้เงิน 189,500 บาท ร้านได้กำไรเท่าไร",
+      "question_text_en": "A shop buys goods for 125,750 baht and sells them for 189,500 baht. What is the profit?",
+      "choices": [
+        "63,750 บาท",
+        "64,750 บาท",
+        "63,850 บาท",
+        "64,850 บาท"
+      ],
+      "correct_answer": "63,750 บาท",
+      "answer": "63,750 บาท",
+      "explanation": "189,500 - 125,750 = 63,750 บาท",
+      "explanation_th": "189,500 - 125,750 = 63,750 บาทกำไร",
+      "difficulty": "easy",
+      "hint_th": "กำไร = ราคาขาย - ต้นทุน"
+    },
+    {
+      "question_id": "Q03",
+      "question_text": "ลินมีเงิน 500,000 บาท ซื้อคอมพิวเตอร์ 15 เครื่อง เครื่องละ 25,600 บาท จะเหลือเงินเท่าไร",
+      "question_text_en": "Lin has 500,000 baht. She buys 15 computers at 25,600 baht each. How much money does Lin have left?",
+      "choices": [
+        "116,000 บาท",
+        "115,000 บาท",
+        "116,500 บาท",
+        "115,500 บาท"
+      ],
+      "correct_answer": "116,000 บาท",
+      "answer": "116,000 บาท",
+      "explanation": "15x25,600=384,000 | 500,000-384,000=116,000 บาท",
+      "explanation_th": "15×25,600=384,000 บาท | 500,000-384,000=116,000 บาทที่เหลือ",
+      "difficulty": "medium",
+      "hint_th": "คูณก่อน แล้วลบออกจากเงินที่มี"
+    },
+    {
+      "question_id": "Q04",
+      "question_text": "โรงแรมมีแขก 3 ห้อง ค่าห้องพัก 45,000 28,500 และ 36,750 บาท รวมค่าห้องพักเท่าไร ถ้าจ่ายเงินไป 120,000 บาท จะได้เงินทอนเท่าไร",
+      "question_text_en": "A hotel has 3 rooms costing 45,000, 28,500, and 36,750 baht. Total? If paying with 120,000 baht, how much change?",
+      "choices": [
+        "110,250 บาท ทอน 9,750 บาท",
+        "110,250 บาท ทอน 10,750 บาท",
+        "109,250 บาท ทอน 10,750 บาท",
+        "110,250 บาท ขาด 9,750 บาท"
+      ],
+      "correct_answer": "110,250 บาท ทอน 9,750 บาท",
+      "answer": "110,250 บาท ทอน 9,750 บาท",
+      "explanation": "45,000+28,500+36,750=110,250 | 120,000-110,250=9,750 ทอน",
+      "explanation_th": "45,000+28,500+36,750=110,250 บาท | 120,000-110,250=9,750 บาททอน",
+      "difficulty": "medium",
+      "hint_th": "บวกสามจำนวนก่อน แล้วลบออกจากเงินที่จ่าย"
+    },
+    {
+      "question_id": "Q05",
+      "question_text": "บริษัทมีรายได้ 1,250,000 บาท ค่าใช้จ่าย 875,500 บาท บริษัทเหลือเงินเท่าไร",
+      "question_text_en": "A company has income of 1,250,000 baht and expenses of 875,500 baht. How much money does the company have left?",
+      "choices": [
+        "374,500 บาท",
+        "375,500 บาท",
+        "374,000 บาท",
+        "375,000 บาท"
+      ],
+      "correct_answer": "374,500 บาท",
+      "answer": "374,500 บาท",
+      "explanation": "1,250,000 - 875,500 = 374,500 บาท",
+      "explanation_th": "1,250,000 - 875,500 = 374,500 บาทที่เหลือ",
+      "difficulty": "easy",
+      "hint_th": "รายได้ - ค่าใช้จ่าย = เงินที่เหลือ"
+    },
+    {
+      "question_id": "Q06",
+      "question_text": "ห้างสรรพสินค้าขายสินค้าวันแรกได้ 567,800 บาท วันที่สองได้ 489,500 บาท วันแรกขายได้มากกว่าวันที่สองกี่บาท",
+      "question_text_en": "A department store sold 567,800 baht on the first day and 489,500 baht on the second day. How much more was sold on the first day?",
+      "choices": [
+        "78,300 บาท",
+        "88,300 บาท",
+        "78,200 บาท",
+        "88,200 บาท"
+      ],
+      "correct_answer": "78,300 บาท",
+      "answer": "78,300 บาท",
+      "explanation": "567,800 - 489,500 = 78,300 บาท",
+      "explanation_th": "567,800 - 489,500 = 78,300 บาทที่มากกว่า",
+      "difficulty": "easy",
+      "hint_th": "ลบหาความต่างระหว่างสองวัน"
+    },
+    {
+      "question_id": "Q07",
+      "question_text": "ร้านค้ามีสินค้า 350,000 บาท ขายไปครึ่งหนึ่งได้เงินเท่าไร และเหลือสินค้ามูลค่าเท่าไร",
+      "question_text_en": "A shop has goods worth 350,000 baht. It sells half. How much money does it get and what is the value of remaining goods?",
+      "choices": [
+        "175,000 บาท, เหลือ 175,000 บาท",
+        "175,000 บาท, เหลือ 350,000 บาท",
+        "350,000 บาท, เหลือ 175,000 บาท",
+        "175,000 บาท, เหลือ 0 บาท"
+      ],
+      "correct_answer": "175,000 บาท, เหลือ 175,000 บาท",
+      "answer": "175,000 บาท, เหลือ 175,000 บาท",
+      "explanation": "350,000/2=175,000 บาท (ขาย) | 350,000-175,000=175,000 บาท (เหลือ)",
+      "explanation_th": "350,000÷2=175,000 บาทที่ขาย | 350,000-175,000=175,000 บาทที่เหลือ",
+      "difficulty": "medium",
+      "hint_th": "หารสองเพื่อหาครึ่งหนึ่ง ครึ่งหนึ่งที่ขายได้เงินเท่ากับครึ่งหนึ่งของมูลค่า"
+    },
+    {
+      "question_id": "Q08",
+      "question_text": "มะลิมีเงิน 250,000 บาท ซื้อรถจักรยานยนต์ราคา 185,500 บาท จะเหลือเงินเท่าไร",
+      "question_text_en": "Mali has 250,000 baht. She buys a motorcycle for 185,500 baht. How much money does Mali have left?",
+      "choices": [
+        "64,500 บาท",
+        "65,500 บาท",
+        "64,000 บาท",
+        "65,000 บาท"
+      ],
+      "correct_answer": "64,500 บาท",
+      "answer": "64,500 บาท",
+      "explanation": "250,000 - 185,500 = 64,500 บาท",
+      "explanation_th": "250,000 - 185,500 = 64,500 บาทที่เหลือ",
+      "difficulty": "easy",
+      "hint_th": "นำราคารถจักรยานยนต์ลบออกจากเงินที่มี"
+    },
+    {
+      "question_id": "Q09",
+      "question_text": "ถ้า x + 45,780 = 123,450 แล้ว x มีค่าเท่าไร",
+      "question_text_en": "If x + 45,780 = 123,450, what is the value of x?",
+      "choices": [
+        "77,670",
+        "77,760",
+        "78,670",
+        "78,760"
+      ],
+      "correct_answer": "77,670",
+      "answer": "77,670",
+      "explanation": "123,450 - 45,780 = 77,670",
+      "explanation_th": "123,450 - 45,780 = 77,670",
+      "difficulty": "medium",
+      "hint_th": "ย้ายจำนวนที่บวกไปลบอีกฝั่ง"
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "ร้าน A มีสินค้า 567,800 บาท ร้าน B มีสินค้า 489,500 บาท ร้าน A และ B รวมกันมีสินค้ามากกว่า 1,000,000 บาท อยู่เท่าไร หรือน้อยกว่า",
+      "question_text_en": "Shop A has goods worth 567,800 baht. Shop B has goods worth 489,500 baht. By how much does their total exceed or fall short of 1,000,000 baht?",
+      "choices": [
+        "ขาด 57,300 บาท",
+        "เกิน 57,300 บาท",
+        "ขาด 57,700 บาท",
+        "เกิน 57,700 บาท"
+      ],
+      "correct_answer": "ขาด 57,300 บาท",
+      "answer": "ขาด 57,300 บาท",
+      "explanation": "567,800+489,500=1,057,300 | 1,057,300-1,000,000=57,300 เกิน",
+      "explanation_th": "567,800+489,500=1,057,300 ซึ่งเกิน 1,000,000 อยู่ 57,300 บาท",
+      "difficulty": "hard",
+      "hint_th": "บวกสองร้านก่อน แล้วเปรียบเทียบกับ 1,000,000"
+    }
+  ],
+  "program_type": "TOPA",
+  "status": "needs_review"
+}

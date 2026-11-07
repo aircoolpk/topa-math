@@ -1,0 +1,124 @@
+{
+  "variant_id": "fractions_ep_002",
+  "variant_title_en": "Fractions — Fish Sauce in a Bottle",
+  "status": "needs_review",
+  "title_en": "Fractions — Fish Sauce in a Bottle",
+  "story_theme_en": "Mom has 1 bottle of fish sauce. She poured out 3/5 of the bottle for cooking. She used 2/5 of the bottle. How much fish sauce is left as a fraction of the full bottle? If the full bottle holds 500 milliliters, how much is left in milliliters?",
+  "helper_tip": "When adding or subtracting fractions, make the denominators equal first.",
+  "hint_th": "บวกลบเศษส่วนต้องทำส่วนให้เท่ากัน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mom has 1 bottle of fish sauce. She poured out 3/5 of the bottle for cooking. She used 2/5 of the bottle. How much fish sauce is left as a fraction of the full bottle? If the full bottle holds 500 milliliters, how much is left in milliliters?",
+      "data": {
+        "content_en": "Mom has 1 bottle of fish sauce. She poured out 3/5 of the bottle for cooking. She used 2/5 of the bottle. How much fish sauce is left as a fraction of the full bottle? If the full bottle holds 500 milliliters, how much is left in milliliters?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Fish sauce left = 5/5 - 3/5 - 2/5 = 0/5 = 0 of the bottle. Volume left = 500 x 0/5 = 0 mL. The bottle is empty.",
+      "data": {
+        "content_en": "Fish sauce left = 5/5 - 3/5 - 2/5 = 0/5 = 0 of the bottle. Volume left = 500 x 0/5 = 0 mL. The bottle is empty."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Fraction Diagram",
+      "description": "Fraction Diagram",
+      "model_type": "fraction_bar",
+      "data": {
+        "model_type": "fraction_bar",
+        "operation": "subtract",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Full bottle",
+            "value": 5,
+            "display": "5/5",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Poured out",
+            "value": 3,
+            "display": "3/5",
+            "color": "#FF6B6B",
+            "width_pct": 60
+          },
+          {
+            "label": "Used",
+            "value": 2,
+            "display": "2/5",
+            "color": "#FFEAA7",
+            "width_pct": 40
+          },
+          {
+            "label": "Left",
+            "value": 0,
+            "display": "0/5",
+            "color": "#C7F464",
+            "width_pct": 0,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "5/5 - 3/5 - 2/5 = 0/5",
+      "content": "5/5 - 3/5 - 2/5 = 0/5 = 0",
+      "data": {
+        "expression": "5/5 - 3/5 - 2/5 = 0/5 = 0",
+        "operations": [
+          {
+            "op": "-",
+            "a": "5/5",
+            "b": "3/5",
+            "result": "2/5"
+          },
+          {
+            "op": "-",
+            "a": "2/5",
+            "b": "2/5",
+            "result": "0/5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "There is 1 orange. You give a friend 2/6 of the orange, then give another friend 1/6. How much of the orange is left?",
+      "choices": [
+        "3/6 of the orange",
+        "3/6 of the parts",
+        "1/6 of the orange",
+        "1/6 of the parts"
+      ],
+      "correct_answer": "3/6 of the orange",
+      "explanation": "6/6 - 2/6 - 1/6 = 3/6 of the orange",
+      "data": {
+        "question": "There is 1 orange. You give a friend 2/6 of the orange, then give another friend 1/6. How much of the orange is left?",
+        "choices": [
+          "3/6 of the orange",
+          "3/6 of the parts",
+          "1/6 of the orange",
+          "1/6 of the parts"
+        ],
+        "correct_answer": "3/6 of the orange",
+        "explanation": "6/6 - 2/6 - 1/6 = 3/6 of the orange"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

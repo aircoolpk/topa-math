@@ -1,0 +1,111 @@
+{
+  "variant_id": "fractions_ep_001",
+  "variant_title_en": "Fractions — Sharing Pizza",
+  "status": "needs_review",
+  "title_en": "Fractions — Sharing Pizza",
+  "story_theme_en": "Mark bought 1 pizza. It was cut into 4 equal pieces. Mark ate 3 pieces and gave 1 piece to his friend Lin. How many pieces does Mark have left? How many parts of the whole pizza does Lin have?",
+  "helper_tip": "When adding or subtracting fractions, make sure the denominators are the same first.",
+  "hint_th": "แบ่งเท่าๆ กัน ต้องทำส่วนให้เท่ากันก่อน",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Mark bought 1 pizza. It was cut into 4 equal pieces. Mark ate 3 pieces and gave 1 piece to his friend Lin. How many pieces does Mark have left? How many parts of the whole pizza does Lin have?",
+      "data": {
+        "content_en": "Mark bought 1 pizza. It was cut into 4 equal pieces. Mark ate 3 pieces and gave 1 piece to his friend Lin. How many pieces does Mark have left? How many parts of the whole pizza does Lin have?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "1 whole pizza = 4/4 pieces. Mark ate 3/4. Left = 4/4 - 3/4 = 1/4 piece. Lin got 1/4 of the whole pizza.",
+      "data": {
+        "content_en": "1 whole pizza = 4/4 pieces. Mark ate 3/4. Left = 4/4 - 3/4 = 1/4 piece. Lin got 1/4 of the whole pizza."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Fraction Diagram",
+      "description": "Fraction Diagram",
+      "model_type": "fraction_bar",
+      "data": {
+        "model_type": "fraction_bar",
+        "operation": "subtract",
+        "unit": "items",
+        "bars": [
+          {
+            "label": "Whole pizza",
+            "value": 4,
+            "display": "4/4",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Eaten",
+            "value": 3,
+            "display": "3/4",
+            "color": "#FF6B6B",
+            "width_pct": 75
+          },
+          {
+            "label": "Left",
+            "value": 1,
+            "display": "1/4",
+            "color": "#C7F464",
+            "width_pct": 25,
+            "is_remainder": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "4/4 - 3/4 = 1/4",
+      "content": "4/4 - 3/4 = 1/4",
+      "data": {
+        "expression": "4/4 - 3/4 = 1/4",
+        "operations": [
+          {
+            "op": "-",
+            "a": "4/4",
+            "b": "3/4",
+            "result": "1/4"
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Mom cut a cake into 8 equal parts. Her child ate 3 parts and dad ate 2 parts. How many parts are left?",
+      "choices": [
+        "3/8 of the cake",
+        "5/8 of the cake",
+        "3 parts",
+        "5 parts"
+      ],
+      "correct_answer": "3/8 of the cake",
+      "explanation": "8/8 - 3/8 - 2/8 = 3/8 of the cake",
+      "data": {
+        "question": "Mom cut a cake into 8 equal parts. Her child ate 3 parts and dad ate 2 parts. How many parts are left?",
+        "choices": [
+          "3/8 of the cake",
+          "5/8 of the cake",
+          "3 parts",
+          "5 parts"
+        ],
+        "correct_answer": "3/8 of the cake",
+        "explanation": "8/8 - 3/8 - 2/8 = 3/8 of the cake"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

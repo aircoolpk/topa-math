@@ -1,0 +1,133 @@
+{
+  "quiz_id": "division_th_q002",
+  "topic_key": "division",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ division_th_q002",
+  "title_en": "Quiz division_th_q002",
+  "questions": [
+    {
+      "question": "81 / 9 = ?",
+      "choices": [
+        "9",
+        "8",
+        "7",
+        "6"
+      ],
+      "correct_answer": "9",
+      "explanation": "81/9=9 เพราะ 9x9=81",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มีสมุด 96 เล่ม แบ่งให้เด็ก 8 คนเท่าๆ กัน แต่ละคนได้กี่เล่ม",
+      "choices": [
+        "12 เล่ม",
+        "10 เล่ม",
+        "14 เล่ม",
+        "11 เล่ม"
+      ],
+      "correct_answer": "12 เล่ม",
+      "explanation": "96/8=12 เล่ม",
+      "difficulty": "medium"
+    },
+    {
+      "question": "72 / 9 = ?",
+      "choices": [
+        "8",
+        "7",
+        "9",
+        "6"
+      ],
+      "correct_answer": "8",
+      "explanation": "72/9=8 เพราะ 8x9=72",
+      "difficulty": "easy"
+    },
+    {
+      "question": "ต้องการเทน้ำ 63 ลิตร ใส่ถังละ 7 ลิตร ต้องใช้ถังกี่ใบ",
+      "choices": [
+        "9 ใบ",
+        "8 ใบ",
+        "10 ใบ",
+        "7 ใบ"
+      ],
+      "correct_answer": "9 ใบ",
+      "explanation": "63/7=9 ใบ",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มีลูกบอล 48 ลูก ใส่กล่องกล่องละ 6 ลูก ต้องใช้กี่กล่อง",
+      "choices": [
+        "8 กล่อง",
+        "7 กล่อง",
+        "9 กล่อง",
+        "6 กล่อง"
+      ],
+      "correct_answer": "8 กล่อง",
+      "explanation": "48/6=8 กล่อง",
+      "difficulty": "easy"
+    },
+    {
+      "question": "90 / 10 = ?",
+      "choices": [
+        "9",
+        "8",
+        "10",
+        "7"
+      ],
+      "correct_answer": "9",
+      "explanation": "90/10=9",
+      "difficulty": "easy"
+    },
+    {
+      "question": "อ้ายมีเงิน 84 บาท ซื้อดินสอดินสอละ 7 บาท ซื้อได้กี่แท่ง",
+      "choices": [
+        "12 แท่ง",
+        "11 แท่ง",
+        "13 แท่ง",
+        "10 แท่ง"
+      ],
+      "correct_answer": "12 แท่ง",
+      "explanation": "84/7=12 แท่ง",
+      "difficulty": "medium"
+    },
+    {
+      "question": "63 / 7 = ?",
+      "choices": [
+        "9",
+        "8",
+        "7",
+        "6"
+      ],
+      "correct_answer": "9",
+      "explanation": "63/7=9 เพราะ 9x7=63",
+      "difficulty": "easy"
+    },
+    {
+      "question": "มีนักเรียน 96 คน จัดแถวแถวละ 8 คน จะได้กี่แถว",
+      "choices": [
+        "12 แถว",
+        "11 แถว",
+        "13 แถว",
+        "10 แถว"
+      ],
+      "correct_answer": "12 แถว",
+      "explanation": "96/8=12 แถว",
+      "difficulty": "medium"
+    },
+    {
+      "question": "มีผ้า 75 เมตร ตัดผ้าคนละ 5 เมตร จะตัดให้เพื่อนได้กี่คน",
+      "choices": [
+        "15 คน",
+        "14 คน",
+        "13 คน",
+        "16 คน"
+      ],
+      "correct_answer": "15 คน",
+      "explanation": "75/5=15 คน",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

@@ -1,0 +1,49 @@
+# Prepared only. Never run against production without release approval.
+name: 4craft-beta
+services:
+  4craft-api:
+    image: ${TOPA_API_RELEASE_IMAGE:?immutable reviewed API image required}
+    container_name: 4craft-api
+    restart: unless-stopped
+    env_file:
+      - ../.env.production.release
+    environment:
+      ENVIRONMENT: production
+      PAYMENT_GATEWAY_DEFAULT: ${PAYMENT_GATEWAY_DEFAULT:-stripe}
+      MPP_CHECKOUT_ENABLED: ${MPP_CHECKOUT_ENABLED:-false}
+      RELEASE_REVISION: ${TOPA_RELEASE_REVISION:?approved release revision required}
+    ports:
+      - '8001:8001'
+    volumes:
+      - ../apps/api/app/content/math:/app/app/content/math
+      - ../apps/api/app/content/site:/app/app/content/site
+      - ../storage/uploads:/app/storage/uploads
+    healthcheck:
+      test: ['CMD-SHELL', 'python -c "import urllib.request; urllib.request.urlopen(\"http://127.0.0.1:8001/health/ready\", timeout=3)"']
+      interval: 15s
+      timeout: 5s
+      retries: 10
+    networks: [existing]
+  4craft-web:
+    image: ${TOPA_WEB_RELEASE_IMAGE:?immutable reviewed Web image required}
+    container_name: 4craft-web
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      NEXT_PUBLIC_APP_ENV: production
+      NEXT_PUBLIC_API_BASE_URL: https://api.topamath.com
+      NEXT_PUBLIC_APP_URL: https://topamath.com
+      INTERNAL_API_BASE_URL: http://4craft-api:8001
+      RELEASE_REVISION: ${TOPA_RELEASE_REVISION:?approved release revision required}
+    ports:
+      - '3000:3000'
+    healthcheck:
+      test: ['CMD', 'node', '-e', 'fetch("http://127.0.0.1:3000/login").then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))']
+      interval: 15s
+      timeout: 5s
+      retries: 10
+    networks: [existing]
+networks:
+  existing:
+    external: true
+    name: 4craft-beta_default

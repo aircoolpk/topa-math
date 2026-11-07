@@ -1,0 +1,194 @@
+{
+  "variant_id": "numbers_to_1000_ep_001",
+  "variant_title_th": "จำนวนนับไม่เกิน 1000 และ 0",
+  "variant_title_en": "Numbers up to 1,000 and 0",
+  "status": "needs_review",
+  "title_th": "จำนวนนับไม่เกิน 1000 และ 0",
+  "title_en": "Numbers up to 1,000 and 0",
+  "story_theme_th": "Lin helps her mother sell vegetables at the market every morning. Today Lin counted the vegetables for sale. She found 352 bunches of water spinach, 284 eggplants, and 163 cilantro bunches. How many vegetables does Lin have in total?",
+  "helper_tip": "Count numbers by place value: hundreds, tens, ones. If a digit exceeds 9, carry over to the next place.",
+  "think_story_th": "Water spinach: 352, Eggplants: 284, Cilantro: 163. Total = 352 + 284 + 163 = 799 vegetables",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lin helps her mother sell vegetables at the market every morning. Today Lin counted the vegetables for sale. She found 352 bunches of water spinach, 284 eggplants, and 163 cilantro bunches. How many vegetables does Lin have in total?",
+      "data": {
+        "content_th": "Lin helps her mother sell vegetables at the market every morning. Today Lin counted the vegetables for sale. She found 352 bunches of water spinach, 284 eggplants, and 163 cilantro bunches. How many vegetables does Lin have in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Water spinach: 352, Eggplants: 284, Cilantro: 163. Total = 352 + 284 + 163 = 799 vegetables",
+      "data": {
+        "content_th": "Water spinach: 352, Eggplants: 284, Cilantro: 163. Total = 352 + 284 + 163 = 799 vegetables"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Water Spinach",
+            "value": 352,
+            "display": "352 bunches",
+            "color": "#4ECDC4",
+            "width_pct": 50
+          },
+          {
+            "label": "Eggplant",
+            "value": 284,
+            "display": "284 eggplants",
+            "color": "#45B7D1",
+            "width_pct": 40
+          },
+          {
+            "label": "Cilantro",
+            "value": 163,
+            "display": "163 bunches",
+            "color": "#96CEB4",
+            "width_pct": 23
+          },
+          {
+            "label": "Total",
+            "value": 799,
+            "display": "799 items",
+            "color": "#C7F464",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ],
+        "unit": "bunches"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Add water spinach and eggplant",
+            "expression": "352 + 284 = 636",
+            "a": 352,
+            "b": 284,
+            "res": 636,
+            "op": "+",
+            "formula": {
+              "display": "352 + 284 = 636",
+              "a": 352,
+              "b": 284,
+              "result": 636,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "352",
+              "b_display": "284",
+              "result_display": "636",
+              "operation": "add"
+            },
+            "story_connection": "352 + 284 = 636 vegetables"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Add cilantro",
+            "expression": "636 + 163 = 799",
+            "a": 636,
+            "b": 163,
+            "res": 799,
+            "op": "+",
+            "formula": {
+              "display": "636 + 163 = 799",
+              "a": 636,
+              "b": 163,
+              "result": 799,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "636",
+              "b_display": "163",
+              "result_display": "799",
+              "operation": "add"
+            },
+            "story_connection": "636 + 163 = 799 vegetables"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "352 + 284 + 163 = 799",
+      "content": "352 + 284 + 163 = 799",
+      "data": {
+        "expression": "352 + 284 + 163 = 799",
+        "content_th": "352 + 284 + 163 = 799",
+        "operations": [
+          {
+            "op": "+",
+            "a": 352,
+            "b": 284,
+            "result": 636
+          },
+          {
+            "op": "+",
+            "a": 636,
+            "b": 163,
+            "result": 799
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "A market has 245 chicken eggs and 318 duck eggs. How many eggs are there in total?",
+      "choices": [
+        "563 eggs",
+        "553 eggs",
+        "573 eggs",
+        "543 eggs"
+      ],
+      "correct_answer": "563 eggs",
+      "explanation": "245 + 318 = 563 eggs",
+      "data": {
+        "question": "A market has 245 chicken eggs and 318 duck eggs. How many eggs are there in total?",
+        "choices": [
+          "563 eggs",
+          "553 eggs",
+          "573 eggs",
+          "543 eggs"
+        ],
+        "correct_answer": "563 eggs",
+        "explanation": "245 + 318 = 563 eggs"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

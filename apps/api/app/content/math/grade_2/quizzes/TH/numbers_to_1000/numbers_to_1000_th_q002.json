@@ -1,0 +1,133 @@
+{
+  "quiz_id": "numbers_to_1000_th_q002",
+  "topic_key": "numbers_to_1000",
+  "variant": "variant_2",
+  "status": "needs_review",
+  "title_th": "แบบทดสอบ numbers_to_1000_th_q002",
+  "title_en": "Quiz numbers_to_1000_th_q002",
+  "questions": [
+    {
+      "question": "สามร้อยห้าสิบเอ็ด เขียนเป็นตัวเลขได้",
+      "choices": [
+        "351",
+        "315",
+        "531",
+        "513"
+      ],
+      "correct_answer": "351",
+      "explanation": "สามร้อย=300, ห้าสิบ=50, หนึ่ง=1, รวม=351",
+      "difficulty": "easy"
+    },
+    {
+      "question": "เลขใดต่อไปนี้น้อยที่สุด 890, 980, 809, 908",
+      "choices": [
+        "890",
+        "980",
+        "809",
+        "908"
+      ],
+      "correct_answer": "809",
+      "explanation": "809 น้อยที่สุดเพราะหลักร้อย 8 แต่เลขอื่นเป็น 9",
+      "difficulty": "easy"
+    },
+    {
+      "question": "567 - 234 = ?",
+      "choices": [
+        "333",
+        "323",
+        "433",
+        "343"
+      ],
+      "correct_answer": "333",
+      "explanation": "567-234=333 ลบทีละหลัก",
+      "difficulty": "easy"
+    },
+    {
+      "question": "200 + 600 = ?",
+      "choices": [
+        "800",
+        "700",
+        "900",
+        "600"
+      ],
+      "correct_answer": "800",
+      "explanation": "2+6=8 ดังนั้น 200+600=800",
+      "difficulty": "easy"
+    },
+    {
+      "question": "หลักหน่วยของ 482 คือ",
+      "choices": [
+        "2",
+        "4",
+        "8",
+        "482"
+      ],
+      "correct_answer": "2",
+      "explanation": "4=หลักร้อย, 8=หลักสิบ, 2=หลักหน่วย",
+      "difficulty": "easy"
+    },
+    {
+      "question": "385 + 429 = ?",
+      "choices": [
+        "814",
+        "804",
+        "714",
+        "816"
+      ],
+      "correct_answer": "814",
+      "explanation": "385+400=785, 785+29=814",
+      "difficulty": "medium"
+    },
+    {
+      "question": "โรงเรียนมีนักเรียน 456 คน มาสาย 37 คน มาไม่สายกี่คน",
+      "choices": [
+        "419 คน",
+        "429 คน",
+        "389 คน",
+        "493 คน"
+      ],
+      "correct_answer": "419 คน",
+      "explanation": "456-37=419 คน",
+      "difficulty": "medium"
+    },
+    {
+      "question": "700 - 265 = ?",
+      "choices": [
+        "435",
+        "445",
+        "535",
+        "545"
+      ],
+      "correct_answer": "435",
+      "explanation": "700-200=500, 500-65=435",
+      "difficulty": "medium"
+    },
+    {
+      "question": "จำนวนสามจำนวนเรียงกัน จำนวนแรก 234 จำนวนสุดท้ายคือ",
+      "choices": [
+        "236",
+        "237",
+        "235",
+        "233"
+      ],
+      "correct_answer": "236",
+      "explanation": "234, 235, 236 เพิ่มขึ้นทีละ 1",
+      "difficulty": "medium"
+    },
+    {
+      "question": "876 - 498 = ?",
+      "choices": [
+        "378",
+        "388",
+        "368",
+        "478"
+      ],
+      "correct_answer": "378",
+      "explanation": "876-400=476, 476-98=378 หรือ 876-500=376, 376+2=378",
+      "difficulty": "hard"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

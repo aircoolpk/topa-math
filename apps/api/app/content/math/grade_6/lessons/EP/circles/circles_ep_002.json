@@ -1,0 +1,193 @@
+{
+  "variant_id": "circles_ep_002",
+  "variant_title_en": "Circles",
+  "status": "needs_review",
+  "title_en": "Circles",
+  "title_th": "วงกลม",
+  "story_theme_en": "A circular garden has a diameter of 28 meters. Trees are planted around the garden with 2 meters between each tree. How many trees are needed? (π ≈ 22/7)",
+  "helper_tip": "Circumference = π × diameter or 2 × π × radius",
+  "hint_th": "เส้นรอบวง = π × เส้นผ่านศูนย์กลาง หรือ 2 × π × รัศมี",
+  "think_story_en": "Circumference = π × diameter = 22/7 × 28 = 88 meters. Number of trees = 88 ÷ 2 = 44 trees.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "A circular garden has a diameter of 28 meters. Trees are planted around the garden with 2 meters between each tree. How many trees are needed? (π ≈ 22/7)",
+      "data": {
+        "content_en": "A circular garden has a diameter of 28 meters. Trees are planted around the garden with 2 meters between each tree. How many trees are needed? (π ≈ 22/7)"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Circumference = π × diameter = 22/7 × 28 = 88 meters. Number of trees = 88 ÷ 2 = 44 trees.",
+      "data": {
+        "content_en": "Circumference = π × diameter = 22/7 × 28 = 88 meters. Number of trees = 88 ÷ 2 = 44 trees."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "Showing the model for the problem",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "unit": "meters",
+        "bars": [
+          {
+            "label": "Diameter",
+            "value": 28,
+            "display": "28 m",
+            "color": "#4ECDC4",
+            "width_pct": 100
+          },
+          {
+            "label": "Circumference",
+            "value": 88,
+            "display": "88 m",
+            "color": "#FF6B6B",
+            "width_pct": 100
+          },
+          {
+            "label": "Number of trees",
+            "value": 44,
+            "display": "44 trees",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Turning Pictures into Math Symbols)",
+      "description": "After seeing the bar model, we write the number sentence and find the answer",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1",
+            "expression": "22 × 28 = 616",
+            "formula": {
+              "display": "22 × 28 = 616",
+              "a": 22,
+              "b": 28,
+              "result": 616,
+              "operation": "multiply"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}22&\\ ×\\quad 28&\\ \\hline 616&\\\\ \\hline \\end{array}",
+              "a_display": "22",
+              "b_display": "28",
+              "result_display": "616",
+              "operation": "multiply"
+            },
+            "story_connection": "From bar model: 22 × 28 = 616"
+          },
+          {
+            "step": 2,
+            "label": "Step 2",
+            "expression": "616 ÷ 7 = 88",
+            "formula": {
+              "display": "616 ÷ 7 = 88",
+              "a": 616,
+              "b": 7,
+              "result": 88,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}616&\\ ÷\\quad 7&\\ \\hline 88&\\\\ \\hline \\end{array}",
+              "a_display": "616",
+              "b_display": "7",
+              "result_display": "88",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 616 ÷ 7 = 88"
+          },
+          {
+            "step": 3,
+            "label": "Step 3",
+            "expression": "88 ÷ 2 = 44",
+            "formula": {
+              "display": "88 ÷ 2 = 44",
+              "a": 88,
+              "b": 2,
+              "result": 44,
+              "operation": "divide"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}88&\\ ÷\\quad 2&\\ \\hline 44&\\\\ \\hline \\end{array}",
+              "a_display": "88",
+              "b_display": "2",
+              "result_display": "44",
+              "operation": "divide"
+            },
+            "story_connection": "From bar model: 88 ÷ 2 = 44"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "22 × 28 = 616 | 616 ÷ 7 = 88 | 88 ÷ 2 = 44",
+      "content": "22 × 28 = 616 | 616 ÷ 7 = 88 | 88 ÷ 2 = 44",
+      "data": {
+        "expression": "22 × 28 = 616 | 616 ÷ 7 = 88 | 88 ÷ 2 = 44",
+        "operations": [
+          {
+            "op": "×",
+            "a": 22,
+            "b": 28,
+            "result": 616
+          },
+          {
+            "op": "÷",
+            "a": 616,
+            "b": 7,
+            "result": 88
+          },
+          {
+            "op": "÷",
+            "a": 88,
+            "b": 2,
+            "result": 44
+          }
+        ],
+        "content_en": "22 × 28 = 616 | 616 ÷ 7 = 88 | 88 ÷ 2 = 44"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A circle has a diameter of 21 cm. What is its circumference? (π ≈ 22/7)",
+      "choices": [
+        "66 cm",
+        "55 cm",
+        "77 cm",
+        "44 cm"
+      ],
+      "correct_answer": "66 cm",
+      "explanation": "22/7 × 21 = 66 cm",
+      "data": {
+        "question": "A circle has a diameter of 21 cm. What is its circumference? (π ≈ 22/7)",
+        "choices": [
+          "66 cm",
+          "55 cm",
+          "77 cm",
+          "44 cm"
+        ],
+        "correct_answer": "66 cm",
+        "explanation": "22/7 × 21 = 66 cm"
+      }
+    }
+  ],
+  "explanation_steps": [],
+  "worked_examples": [],
+  "common_mistakes": [],
+  "hints": [],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

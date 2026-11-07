@@ -1,0 +1,397 @@
+{
+  "variant_id": "add_sub_ep_002",
+  "variant_title_th": "การบวกและการลบจำนวนไม่เกิน 100,000 (ตอนที่ 2)",
+  "variant_title_en": "Addition and Subtraction Up to 100,000 (Part 2)",
+  "status": "needs_review",
+  "title_en": "Addition and Subtraction Up to 100,000 (Part 2)",
+  "story_theme_en": "Lily and Book are saving money for a camping trip. Lily saved 28,400 baht and Book saved 36,200 baht. They want to know how much they have together. If they buy a tent for 24,800 baht, how much money will they have left?",
+  "helper_tip_en": "When adding multi-digit numbers, line up digits in their correct columns first. Then add from right to left. If the result is greater than 9, carry to the next column.",
+  "think_story_en": "Addition: Lily has 28,400 + Book has 36,200 = Together 64,600 baht. Subtraction: They have 64,600 minus tent cost 24,800 = They have 39,800 baht left.",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Lily and Book are saving money for a camping trip. Lily saved 28,400 baht and Book saved 36,200 baht. They want to know how much they have together. If they buy a tent for 24,800 baht, how much money will they have left?",
+      "data": {
+        "content_en": "Lily and Book are saving money for a camping trip. Lily saved 28,400 baht and Book saved 36,200 baht. They want to know how much they have together. If they buy a tent for 24,800 baht, how much money will they have left?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think About It",
+      "content": "Addition: 28,400 + 36,200 = 64,600 | Subtraction: 64,600 - 24,800 = 39,800",
+      "data": {
+        "content_en": "Addition: Lily has 28,400 + Book has 36,200 = Together 64,600 baht. Subtraction: They have 64,600 minus tent cost 24,800 = They have 39,800 baht left."
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Bar Model",
+      "description": "A bar model showing the part-whole relationship for addition and subtraction",
+      "model_type": "part_whole_bar",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add_then_subtract",
+        "part_a": 28400,
+        "part_b": 36200,
+        "whole": 64600,
+        "subtract_amount": 24800,
+        "final_remainder": 39800,
+        "unit": "baht",
+        "bars": [
+          {
+            "label": "Lily",
+            "value": 28400,
+            "display": "28,400 baht",
+            "color": "#FF9A9E",
+            "width_pct": 44
+          },
+          {
+            "label": "Book",
+            "value": 36200,
+            "display": "36,200 baht",
+            "color": "#A8D8EA",
+            "width_pct": 56
+          },
+          {
+            "label": "Total",
+            "value": 64600,
+            "display": "64,600 baht",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Tent Cost",
+            "value": 24800,
+            "display": "24,800 baht",
+            "color": "#FF6B6B",
+            "width_pct": 38
+          },
+          {
+            "label": "Money Left",
+            "value": 39800,
+            "display": "39,800 baht",
+            "color": "#C7F464",
+            "width_pct": 62,
+            "is_remainder": true
+          }
+        ],
+        "relationships": [
+          {
+            "from": 0,
+            "to": 2,
+            "type": "adds_to",
+            "label": "+"
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "type": "adds_to",
+            "label": "+"
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "type": "subtracts_to",
+            "label": "-"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "type": "equals_remainder",
+            "label": "="
+          }
+        ]
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract (Converting Pictures to Math Symbols)",
+      "description": "When children see the relationship from the bar model, they write it as math symbols and calculate the abstract answer.",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find the total money Lily and Book have",
+            "expression": "28,400 + 36,200 = 64,600",
+            "formula": {
+              "display": "28,400 + 36,200 = 64,600",
+              "a": 28400,
+              "b": 36200,
+              "result": 64600,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}28,400&\\\\ +\\quad 36,200&\\\\ \\hline 64,600&\\\\ \\hline \\end{array}",
+              "a_display": "28,400",
+              "b_display": "36,200",
+              "result_display": "64,600",
+              "operation": "add"
+            },
+            "story_connection": "From the bar model: Lily 28,400 + Book 36,200 = Total 64,600 baht"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find the money left after buying the tent",
+            "expression": "64,600 - 24,800 = 39,800",
+            "formula": {
+              "display": "64,600 - 24,800 = 39,800",
+              "a": 64600,
+              "b": 24800,
+              "result": 39800,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\begin{array}{rl}64,600&\\\\ -\\quad 24,800&\\\\ \\hline 39,800&\\\\ \\hline \\end{array}",
+              "a_display": "64,600",
+              "b_display": "24,800",
+              "result_display": "39,800",
+              "operation": "subtract"
+            },
+            "story_connection": "From the bar model: Total money 64,600 - Tent cost 24,800 = Money left 39,800 baht"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentences",
+      "expression": "28,400 + 36,200 = 64,600",
+      "content": "28,400 + 36,200 = 64,600  |  64,600 - 24,800 = 39,800",
+      "data": {
+        "expression": "Work inside parentheses first: (28,400 + 36,200) - 24,800 = 64,600 - 24,800 = 39,800",
+        "operations": [
+          {
+            "op": "+",
+            "a": 28400,
+            "b": 36200,
+            "result": 64600
+          },
+          {
+            "op": "-",
+            "a": 64600,
+            "b": 24800,
+            "result": 39800
+          }
+        ],
+        "content_en": "28,400 + 36,200 = 64,600 | 64,600 - 24,800 = 39,800"
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It!",
+      "question": "A mango farm harvested 37,500 mangoes. They sold 18,600 mangoes. How many mangoes are left?",
+      "choices": [
+        "18,900 mangoes",
+        "18,800 mangoes",
+        "19,000 mangoes",
+        "18,700 mangoes"
+      ],
+      "correct_answer": "18,900 mangoes",
+      "explanation": "37,500 - 18,600 = 18,900 mangoes",
+      "data": {
+        "question": "A mango farm harvested 37,500 mangoes. They sold 18,600 mangoes. How many mangoes are left?",
+        "choices": [
+          "18,900 mangoes",
+          "18,800 mangoes",
+          "19,000 mangoes",
+          "18,700 mangoes"
+        ],
+        "correct_answer": "18,900 mangoes",
+        "explanation": "37,500 - 18,600 = 18,900 mangoes"
+      }
+    }
+  ],
+  "explanation_steps_en": [
+    "When adding or subtracting numbers up to 100,000, always line up digits in their correct columns first.",
+    "Draw a column divider line so ones line up with ones, tens with tens, and so on.",
+    "Add or subtract one column at a time from right to left: ones → tens → hundreds → thousands → ten-thousands.",
+    "When adding, if the result is greater than 9, carry the extra digit to the next column.",
+    "When subtracting, if the bottom digit is larger than the top digit, borrow from the next column.",
+    "Check your answer by doing the opposite operation: addition check with subtraction, subtraction check with addition."
+  ],
+  "worked_examples_en": [
+    {
+      "title_en": "Example: Addition",
+      "question_en": "Ai has 32,700 baht and receives 25,600 baht more. How much does Ai have in total?",
+      "solution_en": "32,700 + 25,600 = 58,300 baht ✅"
+    },
+    {
+      "title_en": "Example: Subtraction",
+      "question_en": "There were 72,800 students. 41,500 left. How many students are left?",
+      "solution_en": "72,800 - 41,500 = 31,300 students ✅"
+    }
+  ],
+  "common_mistakes_en": [
+    "Writing digits in the wrong columns, especially with numbers that have different numbers of digits.",
+    "Forgetting to carry when addition exceeds 9, or forgetting to borrow when the bottom digit is larger.",
+    "Confusing addition and subtraction in multi-step word problems."
+  ],
+  "hints_en": [
+    "Draw a column divider line before you start: |Ten-thousands|Thousands|Hundreds|Tens|Ones|",
+    "Work from right to left. If you get more than 9, carry to the next column.",
+    "Check your answer by doing the opposite operation."
+  ],
+  "key_vocabulary": [
+    {
+      "en": "addition",
+      "th": "การบวก",
+      "definition_en": "Combining numbers together using the + sign"
+    },
+    {
+      "en": "subtraction",
+      "th": "การลบ",
+      "definition_en": "Taking away an amount using the - sign"
+    },
+    {
+      "en": "sum",
+      "th": "ผลรวม",
+      "definition_en": "The answer to an addition problem"
+    },
+    {
+      "en": "difference",
+      "th": "ผลต่าง",
+      "definition_en": "The answer to a subtraction problem"
+    },
+    {
+      "en": "carry",
+      "th": "ทด",
+      "definition_en": "When addition exceeds 9, carrying the extra digit to the next column"
+    },
+    {
+      "en": "borrow",
+      "th": "กู้",
+      "definition_en": "When subtracting, borrowing from the next column"
+    },
+    {
+      "en": "column",
+      "th": "หลัก",
+      "definition_en": "A vertical position in a number representing a place value"
+    },
+    {
+      "en": "remain",
+      "th": "เหลือ",
+      "definition_en": "What is left after subtracting"
+    },
+    {
+      "en": "total",
+      "th": "รวม",
+      "definition_en": "The complete amount after adding"
+    }
+  ],
+  "test_bank_en": [
+    {
+      "q": "43,200 + 29,700 = ?",
+      "choices": [
+        "72,800",
+        "72,900",
+        "72,700",
+        "73,800"
+      ],
+      "answer": "72,900",
+      "explanation": "43,200 + 29,700 = 72,900"
+    },
+    {
+      "q": "81,400 - 35,800 = ?",
+      "choices": [
+        "45,500",
+        "45,600",
+        "45,700",
+        "44,600"
+      ],
+      "answer": "45,600",
+      "explanation": "81,400 - 35,800 = 45,600"
+    },
+    {
+      "q": "Pim has 36,500 baht and Nam has 28,900 baht. How much do they have together?",
+      "choices": [
+        "65,300 baht",
+        "65,400 baht",
+        "64,400 baht",
+        "65,500 baht"
+      ],
+      "answer": "65,400 baht",
+      "explanation": "36,500 + 28,900 = 65,400 baht"
+    },
+    {
+      "q": "A rice field produced 58,600 kg of rice. 24,700 kg were sold. How much rice is left?",
+      "choices": [
+        "33,900 kg",
+        "33,800 kg",
+        "34,000 kg",
+        "33,700 kg"
+      ],
+      "answer": "33,900 kg",
+      "explanation": "58,600 - 24,700 = 33,900 kg"
+    },
+    {
+      "q": "A water tank has 75,000 liters of water. 38,500 liters are used. How much water remains?",
+      "choices": [
+        "36,400 L",
+        "36,500 L",
+        "36,600 L",
+        "36,300 L"
+      ],
+      "answer": "36,500 L",
+      "explanation": "75,000 - 38,500 = 36,500 L"
+    },
+    {
+      "q": "A theater has 92,700 seats. 47,300 seats are taken. How many seats are empty?",
+      "choices": [
+        "45,300",
+        "45,400",
+        "45,500",
+        "45,200"
+      ],
+      "answer": "45,400",
+      "explanation": "92,700 - 47,300 = 45,400"
+    },
+    {
+      "q": "Tai saved 41,800 baht and Moo saved 33,700 baht. How much did they save together?",
+      "choices": [
+        "75,400 baht",
+        "75,500 baht",
+        "75,300 baht",
+        "74,500 baht"
+      ],
+      "answer": "75,500 baht",
+      "explanation": "41,800 + 33,700 = 75,500 baht"
+    },
+    {
+      "q": "A bus has 86,400 passengers. 39,200 get off at the first stop and 28,900 get off at the second stop. How many are still on the bus?",
+      "choices": [
+        "18,300",
+        "18,200",
+        "18,400",
+        "18,100"
+      ],
+      "answer": "18,300",
+      "explanation": "86,400 - 39,200 - 28,900 = 18,300"
+    },
+    {
+      "q": "A festival sold 54,300 tickets on the first day and 38,900 tickets on the second day. How many tickets in total?",
+      "choices": [
+        "93,200",
+        "93,100",
+        "93,300",
+        "93,000"
+      ],
+      "answer": "93,200",
+      "explanation": "54,300 + 38,900 = 93,200"
+    },
+    {
+      "q": "A farmer harvested 67,800 kg of corn. After selling some, 29,400 kg remained. How much corn was sold?",
+      "choices": [
+        "38,300 kg",
+        "38,400 kg",
+        "38,500 kg",
+        "38,200 kg"
+      ],
+      "answer": "38,400 kg",
+      "explanation": "67,800 - 29,400 = 38,400 kg"
+    }
+  ],
+  "questions": [],
+  "explanation_en": "Addition and subtraction up to 100,000 follow the same column method as smaller numbers. Always align digits by place value, work right to left, and remember to carry or borrow when needed. Check by reversing the operation."
+}

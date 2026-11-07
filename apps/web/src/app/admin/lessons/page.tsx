@@ -55,17 +55,17 @@ export default function AdminLessonsPage() {
     setMessage(result.errors?.length ? `Validate: ${result.errors.length} errors` : 'Validate ผ่าน')
   }
 
-  async function runApprove(id: string) {
+  async function runApprove(id: string, lang: string) {
     if (!window.confirm(`Approve ${id}?`)) return
-    await approveLesson(id)
+    await approveLesson(id, undefined, lang)
     setMessage(`Approved ${id}`)
     await load()
   }
 
-  async function runReject(id: string) {
+  async function runReject(id: string, lang: string) {
     const note = window.prompt('เหตุผลที่ไม่ผ่าน')
     if (!note) return
-    await rejectLesson(id, note)
+    await rejectLesson(id, note, lang)
     setMessage(`Rejected ${id}`)
     await load()
   }
@@ -107,6 +107,9 @@ export default function AdminLessonsPage() {
                       <p className="font-bold text-gray-900">{lesson.title || lesson.title_th || lesson.lesson_id}</p>
                       <p className="font-mono text-xs text-gray-400">{lesson.lesson_id}</p>
                       <p className="text-xs text-gray-500">{lesson.topic_folder || lesson.topic || '-'} | {lesson.status} | variants: {lesson.approved_variant_count ?? lesson.variant_count ?? '-'} / {lesson.variant_count ?? '-'} | approved tests: {lesson.approved_test_count ?? 0}</p>
+                      {lesson.selected_variant_id ? <p className="mt-1 text-[11px] text-gray-500">variant: {lesson.selected_variant_id} | approval: {lesson.variant_status || lesson.status}</p> : null}
+                      {lesson.section_completeness ? <SectionCompleteness value={lesson.section_completeness} /> : null}
+                      {lesson.source_path && <p className="mt-1 font-mono text-[11px] text-gray-400">source file: {lesson.source_path}</p>}
                       {lesson.source_folder && <p className="mt-1 font-mono text-[11px] text-gray-400">{lesson.source_folder}</p>}
                       {lesson.variant_files?.length ? <p className="mt-1 text-[11px] text-gray-500">files: {lesson.variant_files.join(', ')}</p> : null}
                     </div>
@@ -114,8 +117,8 @@ export default function AdminLessonsPage() {
                       <Link className={buttonClass} href={`/dashboard/lessons/${lesson.lesson_id}`}>preview</Link>
                       <Link className={buttonClass} href={`/admin/lessons/${lesson.lesson_id}?lang=${lang.toLowerCase()}`}>แก้ไข</Link>
                       <button className={buttonClass} onClick={() => runValidate(lesson.lesson_id)}>ตรวจสอบ</button>
-                      <button className={buttonClass} onClick={() => runApprove(lesson.lesson_id)}>อนุมัติ</button>
-                      <button className={buttonClass} onClick={() => runReject(lesson.lesson_id)}>ไม่ผ่าน</button>
+                      <button className={buttonClass} onClick={() => runApprove(lesson.lesson_id, lang)}>อนุมัติ</button>
+                      <button className={buttonClass} onClick={() => runReject(lesson.lesson_id, lang)}>ไม่ผ่าน</button>
                     </div>
                   </div>
                 ))}
@@ -134,4 +137,25 @@ const buttonClass = 'rounded-md border border-gray-200 px-3 py-1.5 text-xs font-
 
 function Banner({ tone, children }: { tone: 'success' | 'error'; children: React.ReactNode }) {
   return <div className={`rounded-lg px-4 py-3 text-sm font-semibold ${tone === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'}`}>{children}</div>
+}
+
+function SectionCompleteness({ value }: { value: Record<string, boolean> }) {
+  const labels: Record<string, string> = {
+    header: 'header',
+    mascot_helper: 'mascot',
+    story: 'story',
+    think_story: 'think',
+    model_diagram: 'model',
+    number_sentence: 'sentence',
+    practice: 'practice',
+  }
+  return (
+    <div className="mt-2 flex flex-wrap gap-1">
+      {Object.entries(labels).map(([key, label]) => (
+        <span key={key} className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${value[key] ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'}`}>
+          {value[key] ? 'ok' : 'missing'} {label}
+        </span>
+      ))}
+    </div>
+  )
 }

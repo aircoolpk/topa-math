@@ -1,0 +1,133 @@
+{
+  "quiz_id": "division_ep_q001",
+  "topic_key": "division",
+  "variant": "variant_1",
+  "status": "needs_review",
+  "title_th": "Quiz division_ep_q001",
+  "title_en": "Quiz division_ep_q001",
+  "questions": [
+    {
+      "question": "24 / 3 = ?",
+      "choices": [
+        "8",
+        "6",
+        "7",
+        "9"
+      ],
+      "correct_answer": "8",
+      "explanation": "24 divided by 3 = 8 because 8x3=24",
+      "difficulty": "easy"
+    },
+    {
+      "question": "36 / 6 = ?",
+      "choices": [
+        "6",
+        "5",
+        "7",
+        "4"
+      ],
+      "correct_answer": "6",
+      "explanation": "36/6=6 because 6x6=36",
+      "difficulty": "easy"
+    },
+    {
+      "question": "48 chocolates shared equally among 6 friends. Each gets?",
+      "choices": [
+        "8 pieces",
+        "6 pieces",
+        "7 pieces",
+        "9 pieces"
+      ],
+      "correct_answer": "8 pieces",
+      "explanation": "48/6=8 pieces",
+      "difficulty": "easy"
+    },
+    {
+      "question": "42 / 7 = ?",
+      "choices": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "correct_answer": "6",
+      "explanation": "42/7=6 because 6x7=42",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Divide 35 L of juice into 7-L containers. How many containers?",
+      "choices": [
+        "5 containers",
+        "6 containers",
+        "4 containers",
+        "7 containers"
+      ],
+      "correct_answer": "5 containers",
+      "explanation": "35/7=5 containers",
+      "difficulty": "easy"
+    },
+    {
+      "question": "56 / 8 = ?",
+      "choices": [
+        "7",
+        "6",
+        "8",
+        "5"
+      ],
+      "correct_answer": "7",
+      "explanation": "56/8=7 because 7x8=56",
+      "difficulty": "easy"
+    },
+    {
+      "question": "45 flowers put in vases with 9 flowers each. How many vases?",
+      "choices": [
+        "5 vases",
+        "6 vases",
+        "4 vases",
+        "7 vases"
+      ],
+      "correct_answer": "5 vases",
+      "explanation": "45/9=5 vases",
+      "difficulty": "medium"
+    },
+    {
+      "question": "64 / 8 = ?",
+      "choices": [
+        "8",
+        "7",
+        "9",
+        "6"
+      ],
+      "correct_answer": "8",
+      "explanation": "64/8=8 because 8x8=64",
+      "difficulty": "easy"
+    },
+    {
+      "question": "72 candies shared among 9 friends. Each gets?",
+      "choices": [
+        "8 candies",
+        "9 candies",
+        "7 candies",
+        "6 candies"
+      ],
+      "correct_answer": "8 candies",
+      "explanation": "72/9=8 candies",
+      "difficulty": "easy"
+    },
+    {
+      "question": "84 cakes shared among 7 children. Each gets?",
+      "choices": [
+        "12 cakes",
+        "11 cakes",
+        "13 cakes",
+        "10 cakes"
+      ],
+      "correct_answer": "12 cakes",
+      "explanation": "84/7=12 cakes",
+      "difficulty": "medium"
+    }
+  ],
+  "total_questions": 10,
+  "time_limit_minutes": null,
+  "passing_score": 70
+}

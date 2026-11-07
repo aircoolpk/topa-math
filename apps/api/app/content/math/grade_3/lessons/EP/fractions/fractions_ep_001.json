@@ -47,7 +47,15 @@
       "content": "1/4 + 1/4 = 2/4 of the cake | Cake divided into 4 equal parts",
       "data": {
         "expression": "1/4 + 1/4 = 2/4 of the cake",
-        "content_en": "1/4 + 1/4 = 2/4 of the cake | Cake divided into 4 equal parts"
+        "content_en": "1/4 + 1/4 = 2/4 of the cake | Cake divided into 4 equal parts",
+        "operations": [
+          {
+            "op": "/",
+            "a": 1,
+            "b": 4,
+            "result": 0.25
+          }
+        ]
       }
     },
     {
@@ -72,6 +80,16 @@
         ],
         "correct_answer": "2/6",
         "explanation": "Divided into 6, ate 2 slices = 2/6 of the pizza"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract Symbol",
+      "operation": "fractions",
+      "data": {
+        "expression": "2/4 = 1/2",
+        "concept": "equivalent fractions",
+        "description": "The fraction 2/4 simplifies to 1/2 by dividing both numerator and denominator by 2"
       }
     }
   ],

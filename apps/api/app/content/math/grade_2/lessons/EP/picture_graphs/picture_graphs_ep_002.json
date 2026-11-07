@@ -1,0 +1,194 @@
+{
+  "variant_id": "picture_graphs_ep_002",
+  "variant_title_th": "แผนภูมิรูปภาพ",
+  "variant_title_en": "Picture Graphs",
+  "status": "needs_review",
+  "title_th": "แผนภูมิรูปภาพ",
+  "title_en": "Picture Graphs",
+  "story_theme_th": "Ai surveyed which subjects his friends like best. Math 7 people, Science 5 people, Thai 8 people, Art 3 people. Ai wants to know: what is the difference between the most liked and least liked subject? And how many people are there in total?",
+  "helper_tip": "Comparing numbers from a picture graph. Find the difference using subtraction.",
+  "think_story_th": "Most liked: Thai 8 people, Least liked: Art 3 people, Difference: 8-3=5 people, Total: 7+5+8+3 = 23 people",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "Story",
+      "content": "Ai surveyed which subjects his friends like best. Math 7 people, Science 5 people, Thai 8 people, Art 3 people. Ai wants to know: what is the difference between the most liked and least liked subject? And how many people are there in total?",
+      "data": {
+        "content_th": "Ai surveyed which subjects his friends like best. Math 7 people, Science 5 people, Thai 8 people, Art 3 people. Ai wants to know: what is the difference between the most liked and least liked subject? And how many people are there in total?"
+      }
+    },
+    {
+      "type": "think_story",
+      "title": "Think",
+      "content": "Most liked: Thai 8 people, Least liked: Art 3 people, Difference: 8-3=5 people, Total: 7+5+8+3 = 23 people",
+      "data": {
+        "content_th": "Most liked: Thai 8 people, Least liked: Art 3 people, Difference: 8-3=5 people, Total: 7+5+8+3 = 23 people"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "Model",
+      "data": {
+        "model_type": "part_whole_bar",
+        "operation": "add",
+        "bars": [
+          {
+            "label": "Math",
+            "value": 7,
+            "display": "7 people",
+            "color": "#4ECDC4",
+            "width_pct": 88
+          },
+          {
+            "label": "Science",
+            "value": 5,
+            "display": "5 people",
+            "color": "#45B7D1",
+            "width_pct": 63
+          },
+          {
+            "label": "Thai",
+            "value": 8,
+            "display": "8 people",
+            "color": "#96CEB4",
+            "width_pct": 100,
+            "is_total": true
+          },
+          {
+            "label": "Art",
+            "value": 3,
+            "display": "3 people",
+            "color": "#FF6B6B",
+            "width_pct": 38
+          }
+        ],
+        "unit": "people"
+      }
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "Abstract",
+      "data": {
+        "steps": [
+          {
+            "step": 1,
+            "label": "Step 1: Find the difference",
+            "expression": "8 - 3 = 5",
+            "a": 8,
+            "b": 3,
+            "res": 5,
+            "op": "-",
+            "formula": {
+              "display": "8 - 3 = 5",
+              "a": 8,
+              "b": 3,
+              "result": 5,
+              "operation": "subtract"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "8",
+              "b_display": "3",
+              "result_display": "5",
+              "operation": "subtract"
+            },
+            "story_connection": "8 - 3 = 5 people"
+          },
+          {
+            "step": 2,
+            "label": "Step 2: Find total number",
+            "expression": "7 + 5 + 8 + 3 = 23",
+            "a": 7,
+            "b": 16,
+            "res": 23,
+            "op": "+",
+            "formula": {
+              "display": "7+5+8+3=23",
+              "a": 7,
+              "b": 16,
+              "result": 23,
+              "operation": "add"
+            },
+            "column_calculation": {
+              "display": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "a_display": "7",
+              "b_display": "16",
+              "result_display": "23",
+              "operation": "add"
+            },
+            "story_connection": "7+5+8+3=23 people"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "Number Sentence",
+      "expression": "8 - 3 = 5 and 7 + 5 + 8 + 3 = 23",
+      "content": "8 - 3 = 5 and 7 + 5 + 8 + 3 = 23",
+      "data": {
+        "expression": "8 - 3 = 5 and 7 + 5 + 8 + 3 = 23",
+        "content_th": "8 - 3 = 5 and 7 + 5 + 8 + 3 = 23",
+        "operations": [
+          {
+            "op": "-",
+            "a": 8,
+            "b": 3,
+            "result": 5
+          },
+          {
+            "op": "+",
+            "a": 7,
+            "b": 16,
+            "result": 23
+          }
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "Try It",
+      "question": "Survey favorite sports: Football 9, Swimming 4, Tennis 6. Total? Which is most popular?",
+      "choices": [
+        "19 people Football",
+        "18 people Football",
+        "20 people Swimming",
+        "17 people Tennis"
+      ],
+      "correct_answer": "19 people Football",
+      "explanation": "9+4+6=19 people Football is most popular",
+      "data": {
+        "question": "Survey favorite sports: Football 9, Swimming 4, Tennis 6. Total? Which is most popular?",
+        "choices": [
+          "19 people Football",
+          "18 people Football",
+          "20 people Swimming",
+          "17 people Tennis"
+        ],
+        "correct_answer": "19 people Football",
+        "explanation": "9+4+6=19 people Football is most popular"
+      }
+    }
+  ],
+  "explanation_steps": [
+    "Read the problem carefully",
+    "Draw a model to help",
+    "Write a number sentence",
+    "Calculate the answer",
+    "Check your answer"
+  ],
+  "worked_examples": [],
+  "common_mistakes": [
+    "Misread the problem",
+    "Made a calculation error",
+    "Mixed up addition and subtraction"
+  ],
+  "hints": [
+    "Read carefully",
+    "Draw a picture",
+    "Check your answer another way"
+  ],
+  "key_vocabulary": [],
+  "questions": [],
+  "explanation_en": ""
+}

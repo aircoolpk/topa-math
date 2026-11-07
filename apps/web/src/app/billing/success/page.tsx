@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { billingApi, type BillingStatus } from '@/lib/api/billing'
-import { TopaMascot } from '@/components/brand/TopaBrand'
+import { TopaLogo } from '@/components/brand/TopaBrand'
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -66,7 +66,7 @@ export default function BillingSuccessPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2">
-            <TopaMascot size="md" />
+            <TopaLogo size="lg" />
           </Link>
         </div>
 
@@ -93,7 +93,7 @@ export default function BillingSuccessPage() {
           {verifyState === 'checking' && (
             <>
               <h2 className="text-xl font-extrabold text-gray-900 mb-2">
-                ชำระเงินสำเร็จ
+                กำลังตรวจสอบการชำระเงิน
               </h2>
               <p className="text-gray-500 text-sm mb-4">
                 กำลังตรวจสอบสถานะสมาชิก...
@@ -151,7 +151,7 @@ export default function BillingSuccessPage() {
               </h2>
               <p className="text-gray-500 text-sm mb-4">
                 การชำระเงินของคุณกำลังดำเนินการ<br />
-                ระบบจะอัปเดตสถานะสมาชิกภายใน 1–2 นาที
+                ระบบจะอัปเดตสิทธิ์เมื่อได้รับการยืนยันการชำระเงินที่ตรวจสอบแล้ว
               </p>
               <p className="text-xs text-gray-400 mb-6">
                 หากรอนานเกินไป กรุณาติดต่อ support@topamath.com

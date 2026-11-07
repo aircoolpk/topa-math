@@ -1,23 +1,42 @@
 import axios from 'axios'
+import { getApiBaseUrl } from './public-env'
 
-const appEnv = process.env.NEXT_PUBLIC_APP_ENV || 'local'
-const isLocalEnv = ['local', 'dev', 'development', 'test'].includes(appEnv.toLowerCase())
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || (isLocalEnv ? 'http://127.0.0.1:8001' : undefined)
-
-if (!BASE_URL) {
-  throw new Error('NEXT_PUBLIC_API_BASE_URL is required when NEXT_PUBLIC_APP_ENV is staging or production')
+declare module 'axios' {
+  export interface AxiosRequestConfig {
+    skipAuthRedirect?: boolean
+    requestLabel?: string
+  }
 }
+
+const BASE_URL = getApiBaseUrl()
 
 export const apiClient = axios.create({
   baseURL: BASE_URL,
   headers: { 'Content-Type': 'application/json' },
-  withCredentials: false,
+  withCredentials: true,
+  timeout: 15000,
 })
+
+function readStoredToken(): string | null {
+  try {
+    return window.localStorage.getItem('access_token')
+  } catch {
+    return null
+  }
+}
+
+function removeStoredToken(): void {
+  try {
+    window.localStorage.removeItem('access_token')
+  } catch {
+    // Cookie auth remains available when Safari/private mode blocks storage.
+  }
+}
 
 // Attach JWT token to every request
 apiClient.interceptors.request.use((config) => {
   if (typeof window === 'undefined') return config
-  const token = localStorage.getItem('access_token')
+  const token = readStoredToken()
   if (token) {
     config.headers.Authorization = `Bearer ${token}`
   }
@@ -29,8 +48,21 @@ apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401 && typeof window !== 'undefined') {
-      localStorage.removeItem('access_token')
-      window.location.href = '/login'
+      if (error.config?.skipAuthRedirect) {
+        return Promise.reject(error)
+      }
+      removeStoredToken()
+      window.dispatchEvent(new CustomEvent('topa-auth-unauthorized', {
+        detail: {
+          url: error.config?.url,
+          requestLabel: error.config?.requestLabel,
+          status: 401,
+        },
+      }))
+      if (!window.location.pathname.startsWith('/login')) {
+        const next = `${window.location.pathname}${window.location.search}`
+        window.location.href = `/login?next=${encodeURIComponent(next)}`
+      }
     }
     return Promise.reject(error)
   }

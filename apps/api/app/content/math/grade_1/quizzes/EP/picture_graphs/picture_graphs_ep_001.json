@@ -1,0 +1,179 @@
+{
+  "lesson_id": "picture_graphs_ep",
+  "grade_level": 1,
+  "program": "EP",
+  "questions": [
+    {
+      "question_id": "pg_ep_q001_e01",
+      "question_text": "A class votes for their favorite fruit. Apple gets 4 votes, Banana gets 6 votes, and Orange gets 3 votes. How many votes does Banana get?",
+      "question_text_th": "ห้องเรียนโหวตผลไม้ที่ชอบ ส้มได้ 4 โหวต กล้วยได้ 6 โหวต ส้มเขียวได้ 3 โหวต กล้วยได้กี่โหวต",
+      "choices": [
+        "6 votes",
+        "10 votes",
+        "4 votes",
+        "11 votes"
+      ],
+      "correct_answer": "6 votes",
+      "answer": "6 votes",
+      "explanation": "Banana got 6 votes",
+      "explanation_th": "กล้วยได้ 6 โหวต",
+      "difficulty": "easy",
+      "hint_th": "Read the graph."
+    },
+    {
+      "question_id": "pg_ep_q001_e02",
+      "question_text": "Look at the picture graph: Dog has 5 votes, Cat has 3 votes, Bird has 7 votes. Which animal gets the most votes?",
+      "question_text_th": "ดูกราฟภาพ: หมาได้ 5 โหวต แมวได้ 3 โหวต นกได้ 7 โหวต สัตว์ตัวไหนได้โหวตมากที่สุด",
+      "choices": [
+        "Bird",
+        "11 (Bird)",
+        "5 (Bird)",
+        "12 (Bird)"
+      ],
+      "correct_answer": "Bird",
+      "answer": "Bird",
+      "explanation": "Bird with 7 votes",
+      "explanation_th": "นก 7 โหวต",
+      "difficulty": "easy",
+      "hint_th": "Find the biggest number."
+    },
+    {
+      "question_id": "pg_ep_q001_e03",
+      "question_text": "A picture graph shows: Red balls: 4, Blue balls: 8, Green balls: 2. How many red and green balls are there together?",
+      "question_text_th": "กราฟภาพแสดง: ลูกบอลแดง 4 ลูก น้ำเงิน 8 ลูก เขียว 2 ลูก ลูกบอลแดงและเขียวรวมกี่ลูก",
+      "choices": [
+        "6 balls",
+        "10 balls",
+        "4 balls",
+        "11 balls"
+      ],
+      "correct_answer": "6 balls",
+      "answer": "6 balls",
+      "explanation": "4 + 2 = 6 balls",
+      "explanation_th": "4 + 2 = 6 ลูก",
+      "difficulty": "easy",
+      "hint_th": "Add red and green."
+    },
+    {
+      "question_id": "pg_ep_q001_m01",
+      "question_text": "A class graph shows: Apple 5 votes, Banana 9 votes, Orange 4 votes, Mango 6 votes. How many more votes does Banana have than Orange?",
+      "question_text_th": "กราฟห้อง: ส้ม 5 โหวต กล้วย 9 โหวต ส้มเขียว 4 โหวต มะม่วง 6 โหวต กล้วยได้โหวตมากกว่าส้มเขียวกี่โหวต",
+      "choices": [
+        "5 more votes",
+        "9 more votes",
+        "3 more votes",
+        "10 more votes"
+      ],
+      "correct_answer": "5 more votes",
+      "answer": "5 more votes",
+      "explanation": "9 - 4 = 5 more votes",
+      "explanation_th": "9 - 4 = 5 โหวต",
+      "difficulty": "medium",
+      "hint_th": "Subtract Banana minus Orange."
+    },
+    {
+      "question_id": "pg_ep_q001_m02",
+      "question_text": "Students vote for favorite drink. Milk: 8 votes, Juice: 5 votes, Water: 7 votes, Tea: 4 votes. How many students voted in total?",
+      "question_text_th": "นักเรียนโหวตเครื่องดื่มที่ชอบ นม 8 โหวต น้ำผลไม้ 5 โหวต น้ำ 7 โหวต ชา 4 โหวต มีนักเรียนโหวตทั้งหมดกี่คน",
+      "choices": [
+        "24 students",
+        "28 students",
+        "22 students",
+        "29 students"
+      ],
+      "correct_answer": "24 students",
+      "answer": "24 students",
+      "explanation": "8 + 5 + 7 + 4 = 24 students",
+      "explanation_th": "บวกทั้งหมด: 8 + 5 + 7 + 4 = 24 คน",
+      "difficulty": "medium",
+      "hint_th": "Add all four."
+    },
+    {
+      "question_id": "pg_ep_q001_m03",
+      "question_text": "A graph shows favorite colors: Red 6, Blue 9, Yellow 3, Green 6. How many more votes does Blue have than Yellow?",
+      "question_text_th": "กราฟสีที่ชอบ: แดง 6 น้ำเงิน 9 เหลือง 3 เขียว 6 น้ำเงินได้โหวตมากกว่าเหลืองกี่โหวต",
+      "choices": [
+        "6 more votes",
+        "10 more votes",
+        "4 more votes",
+        "11 more votes"
+      ],
+      "correct_answer": "6 more votes",
+      "answer": "6 more votes",
+      "explanation": "9 - 3 = 6 more votes",
+      "explanation_th": "9 - 3 = 6 โหวต",
+      "difficulty": "medium",
+      "hint_th": "Blue minus Yellow."
+    },
+    {
+      "question_id": "pg_ep_q001_m04",
+      "question_text": "Look at the graph: Book A has 7 readers, Book B has 4 readers, Book C has 9 readers. How many readers do Book A and Book B have together?",
+      "question_text_th": "กราฟ: หนังสือ A มีผู้อ่าน 7 คน B มี 4 คน C มี 9 คน หนังสือ A และ B มีผู้อ่านรวมกี่คน",
+      "choices": [
+        "11 readers",
+        "15 readers",
+        "9 readers",
+        "16 readers"
+      ],
+      "correct_answer": "11 readers",
+      "answer": "11 readers",
+      "explanation": "7 + 4 = 11 readers",
+      "explanation_th": "7 + 4 = 11 คน",
+      "difficulty": "medium",
+      "hint_th": "Add Book A and Book B."
+    },
+    {
+      "question_id": "pg_ep_q001_h01",
+      "question_text": "A graph shows: Red flowers: 8, Pink flowers: 5, White flowers: 9, Yellow flowers: 4. If each flower symbol means 2 real flowers, how many real red and white flowers are there?",
+      "question_text_th": "กราฟ: ดอกไม้แดง 8 ช่อ ชมพู 5 ช่อ ขาว 9 ช่อ เหลือง 4 ช่อ ถ้าแต่ละช่อแทนดอกไม้จริง 2 ดอก มีดอกไม้แดงและขาวจริงกี่ดอก",
+      "choices": [
+        "34 real flowers",
+        "38 real flowers",
+        "32 real flowers",
+        "39 real flowers"
+      ],
+      "correct_answer": "34 real flowers",
+      "answer": "34 real flowers",
+      "explanation": "(8 + 9) × 2 = 34 real flowers",
+      "explanation_th": "(8 + 9) × 2 = 34 ดอก",
+      "difficulty": "hard",
+      "hint_th": "Multiply by 2."
+    },
+    {
+      "question_id": "pg_ep_q001_h02",
+      "question_text": "A class graph: Mango 7 votes, Banana 5 votes, Apple 9 votes, Grape 3 votes. If each vote represents 2 students, how many students voted for Mango or Apple?",
+      "question_text_th": "กราฟ: มะม่วง 7 กล้วย 5 แอปเปิ้ล 9 องุ่น 3 ถ้าแต่ละโหวตแทนนักเรียน 2 คน มีนักเรียนโหวตมะม่วงหรือแอปเปิ้ลกี่คน",
+      "choices": [
+        "32 students",
+        "36 students",
+        "30 students",
+        "37 students"
+      ],
+      "correct_answer": "32 students",
+      "answer": "32 students",
+      "explanation": "(7 + 9) × 2 = 32 students",
+      "explanation_th": "(7 + 9) × 2 = 32 คน",
+      "difficulty": "hard",
+      "hint_th": "Add then multiply."
+    },
+    {
+      "question_id": "pg_ep_q001_h03",
+      "question_text": "A survey shows: Bus: 6 students, Car: 9 students, Bicycle: 4 students, Walk: 5 students. How many fewer students ride in a car than walk or take a bus?",
+      "question_text_th": "สำรวจ: รถบัส 6 นักเรียน รถยนต์ 9 นักเรียน จักรยาน 4 นักเรียน เดิน 5 นักเรียน มีนักเรียนนั่งรถยนต์น้อยกว่าเดินหรือนั่งบัสกี่คน",
+      "choices": [
+        "2 fewer students",
+        "6 fewer students",
+        "4 fewer students",
+        "7 fewer students"
+      ],
+      "correct_answer": "2 fewer students",
+      "answer": "2 fewer students",
+      "explanation": "Walk + Bus = 6 + 5 = 11 students. Car = 9 students. 11 - 9 = 2. So 2 more students walk or take a bus than ride in a car.",
+      "explanation_th": "เดิน + บัส = 6 + 5 = 11 คน รถยนต์ = 9 คน 11 - 9 = 2 มีนักเรียนเดินหรือนั่งบัสมากกว่านั่งรถยนต์ 2 คน",
+      "difficulty": "hard",
+      "hint_th": "Compare two groups."
+    }
+  ],
+  "program_type": "EP",
+  "status": "needs_review"
+}
