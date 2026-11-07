@@ -338,11 +338,24 @@ function normalizeVisualBlock(raw: RawVisualBlock): VisualBlock | null {
     }
 
     // ── Default for other types ────────────────────────────────────────────
+    // The API flattens `data` onto the block, so `...innerRecord` is the
+    // primary source. The root-level fields are kept as fallbacks: a
+    // model_diagram that carries its groups at the root would otherwise lose
+    // them here and render as an empty section.
+    const rootGroups = getArray<Record<string, unknown>>(rawObj.groups ?? rawObj.sharing_groups ?? [])
     return {
       block_type: r.type ?? 'unknown',
-      title_th: getText(innerRecord.title_th) || getText(innerRecord.title),
+      title_th: getText(innerRecord.title_th) || getText(innerRecord.title) || getText(rawObj.title_th) || getText(rawObj.title),
       content: getText(innerRecord.content) || getText(innerRecord.text_th),
-      description_th: getText(innerRecord.description_th),
+      description_th: getText(innerRecord.description_th) || getText(rawObj.description_th) || getText(rawObj.description),
+      ...(rootGroups.length > 0 ? { groups: rootGroups } : {}),
+      ...(getText(rawObj.model_type) ? { model_type: getText(rawObj.model_type) } : {}),
+      ...(getText(rawObj.symbol) ? { symbol: getText(rawObj.symbol) } : {}),
+      ...(getText(rawObj.emoji) ? { emoji: getText(rawObj.emoji) } : {}),
+      ...(rawObj.rows !== undefined ? { rows: rawObj.rows } : {}),
+      ...(rawObj.cols !== undefined ? { cols: rawObj.cols } : {}),
+      ...(rawObj.total !== undefined ? { total: rawObj.total } : {}),
+      ...(getText(rawObj.unit) ? { unit: getText(rawObj.unit) } : {}),
       ...innerRecord,
     } as VisualBlock
   }
@@ -535,14 +548,226 @@ function BlockVisualThinking({ block }: { block: VisualBlock }) {
   )
 }
 
+// ─── Block 3b: 🥧 Fraction Pie Model ────────────────────────────────────────
+//
+// visual_blocks[type=model_diagram].data with model_type=fraction_pie_model.
+// Draws a circle split into `num_parts` equal sectors, fills the first
+// `shaded_parts` sectors with `shaded_color`, and shows numerator/denominator
+// plus the unit name (e.g. "2/4" + "2 ส่วน จาก 4 ส่วนของเค้ก").
+
+const PIE_VIEWBOX = 200
+const PIE_CENTER = 100
+const PIE_RADIUS = 88
+// Upper bound for a drawable pie (one sector per degree). Anything beyond this
+// is treated as corrupt data rather than attempting a huge SVG.
+const PIE_MAX_PARTS = 360
+
+type PieSector = { path: string; shaded: boolean; index: number }
+
+/** Build the SVG sector paths for a circle split into `numParts` equal slices. */
+function buildPieSectors(numParts: number, shadedParts: number): PieSector[] {
+  const step = 360 / numParts
+  const sectors: PieSector[] = []
+
+  for (let i = 0; i < numParts; i++) {
+    const startAngle = -90 + i * step
+    const endAngle = startAngle + step
+    const startRad = (startAngle * Math.PI) / 180
+    const endRad = (endAngle * Math.PI) / 180
+    const x1 = PIE_CENTER + PIE_RADIUS * Math.cos(startRad)
+    const y1 = PIE_CENTER + PIE_RADIUS * Math.sin(startRad)
+    const x2 = PIE_CENTER + PIE_RADIUS * Math.cos(endRad)
+    const y2 = PIE_CENTER + PIE_RADIUS * Math.sin(endRad)
+    // A slice wider than a half circle needs the large-arc flag.
+    const largeArc = step > 180 ? 1 : 0
+
+    sectors.push({
+      path: `M ${PIE_CENTER} ${PIE_CENTER} L ${x1.toFixed(3)} ${y1.toFixed(3)} A ${PIE_RADIUS} ${PIE_RADIUS} 0 ${largeArc} 1 ${x2.toFixed(3)} ${y2.toFixed(3)} Z`,
+      shaded: i < shadedParts,
+      index: i,
+    })
+  }
+
+  return sectors
+}
+
+/** Return the first value that cleans to a non-empty string. */
+function firstText(...values: unknown[]): string {
+  for (const value of values) {
+    const text = cleanText(value)
+    if (text) return text
+  }
+  return ''
+}
+
+function BlockFractionPieModel({ block, programType }: { block: VisualBlock; programType: ProgramType }) {
+  const blockRec = block as Record<string, unknown>
+  const data = getRecord(blockRec.data)
+
+  // The API flattens `data` onto the block, so read from both places.
+  const numParts = getNumber(data.num_parts ?? blockRec.num_parts)
+  const shadedParts = getNumber(data.shaded_parts ?? blockRec.shaded_parts)
+  const whole = getNumber(data.whole ?? blockRec.whole)
+
+  const unitName = firstText(
+    programType === 'EP' ? data.unit_name_en : data.unit_name_th,
+    data.unit_name,
+    blockRec.unit_name,
+    blockRec.unit,
+  )
+
+  const rawColor = firstText(data.shaded_color, blockRec.shaded_color)
+  const shadedColor = /^#[0-9a-fA-F]{3,8}$/.test(rawColor) ? rawColor : '#FF9999'
+  const unshadedColor = '#F1F5F9'
+
+  const description = programType === 'EP'
+    ? firstText(data.description_en, data.description, blockRec.description_en, blockRec.description)
+    : firstText(data.description_th, data.description, blockRec.description_th, blockRec.description)
+
+  const title = firstText(
+    programType === 'EP' ? data.title_en : data.title_th,
+    data.title,
+    blockRec.title_th,
+    blockRec.title,
+  ) || (programType === 'EP' ? 'Fraction Pie Model' : 'แบบจำลองเศษส่วน')
+
+  const isValid =
+    numParts !== undefined &&
+    Number.isFinite(numParts) &&
+    numParts >= 1 &&
+    numParts <= PIE_MAX_PARTS &&
+    shadedParts !== undefined &&
+    Number.isFinite(shadedParts) &&
+    shadedParts >= 0 &&
+    shadedParts <= numParts
+
+  // ── Safe fallback: incomplete data ──────────────────────────────────────
+  if (!isValid) {
+    return (
+      <div className="card shadow-md bg-amber-50 border-l-4 border-amber-400">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-2xl">🥧</span>
+          <h3 className="font-bold text-amber-800 text-base">{title}</h3>
+        </div>
+        <p className="text-sm leading-relaxed text-amber-800">
+          {programType === 'EP'
+            ? 'The fraction model data is incomplete, so the pie cannot be drawn yet.'
+            : 'ข้อมูลแบบจำลองเศษส่วนยังไม่ครบ (ต้องมีจำนวนส่วนและจำนวนส่วนที่ลงสี) จึงยังวาดภาพวงกลมไม่ได้'}
+        </p>
+        {description && <p className="mt-2 text-xs text-slate-600">{description}</p>}
+      </div>
+    )
+  }
+
+  const parts = Math.floor(numParts as number)
+  const shaded = Math.floor(shadedParts as number)
+  const numerator = getNumber(data.numerator ?? blockRec.numerator) ?? shaded
+  const denominator = getNumber(data.denominator ?? blockRec.denominator) ?? parts
+  const sectors = parts === 1 ? [] : buildPieSectors(parts, shaded)
+
+  const unitSuffix = unitName ? (programType === 'EP' ? ` the ${unitName}` : unitName) : ''
+  const summaryText = unitName
+    ? (programType === 'EP'
+        ? `${shaded} of ${parts} parts of${unitSuffix}`
+        : `${shaded} ส่วน จาก ${parts} ส่วนของ${unitSuffix}`)
+    : (programType === 'EP'
+        ? `${shaded} of ${parts} parts`
+        : `${shaded} ส่วน จาก ${parts} ส่วน`)
+
+  const shadedLabel = programType === 'EP' ? 'Shaded' : 'ลงสีแล้ว'
+  const unshadedLabel = programType === 'EP' ? 'Not shaded' : 'ยังไม่ลงสี'
+
+  return (
+    <div className="card shadow-md bg-orange-50 border-l-4 border-orange-400">
+      <div className="flex items-center gap-2 mb-4">
+        <span className="text-2xl">🥧</span>
+        <h3 className="font-bold text-orange-800 text-base">{title}</h3>
+      </div>
+
+      <div className="flex flex-col items-center gap-4">
+        {/* Pie chart — scales with the container so it never overflows on mobile */}
+        <div className="w-full max-w-[240px]">
+          <svg
+            viewBox={`0 0 ${PIE_VIEWBOX} ${PIE_VIEWBOX}`}
+            className="w-full h-auto"
+            role="img"
+            aria-label={programType === 'EP' ? `${numerator}/${denominator} of ${unitName || 'the whole'}` : `เศษส่วน ${numerator}/${denominator} ของ${unitName || 'ทั้งหมด'}`}
+          >
+            {parts === 1 ? (
+              <circle
+                cx={PIE_CENTER}
+                cy={PIE_CENTER}
+                r={PIE_RADIUS}
+                fill={shaded > 0 ? shadedColor : unshadedColor}
+                stroke="#FFFFFF"
+                strokeWidth={3}
+              />
+            ) : (
+              sectors.map(sector => (
+                <path
+                  key={sector.index}
+                  d={sector.path}
+                  fill={sector.shaded ? shadedColor : unshadedColor}
+                  stroke="#FFFFFF"
+                  strokeWidth={2.5}
+                  strokeLinejoin="round"
+                />
+              ))
+            )}
+          </svg>
+        </div>
+
+        {/* Fraction + unit label */}
+        <div className="text-center">
+          <p className="text-3xl font-black leading-none text-orange-800">
+            {numerator}/{denominator}
+          </p>
+          <p className="mt-2 text-sm font-bold text-slate-700">
+            {summaryText}
+          </p>
+          {whole !== undefined && whole > 1 && unitName && (
+            <p className="mt-1 text-xs text-slate-500">
+              {programType === 'EP' ? `Total: ${whole} ${unitName}` : `ทั้งหมด ${whole} ${unitName}`}
+            </p>
+          )}
+        </div>
+
+        {/* Legend */}
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-semibold text-slate-600">
+          <span className="inline-flex items-center gap-1.5">
+            <span className="inline-block h-3 w-3 rounded-sm" style={{ backgroundColor: shadedColor }} />
+            {shadedLabel} ({shaded})
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <span className="inline-block h-3 w-3 rounded-sm border border-slate-300" style={{ backgroundColor: unshadedColor }} />
+            {unshadedLabel} ({Math.max(parts - shaded, 0)})
+          </span>
+        </div>
+
+        {description && (
+          <p className="text-center text-sm leading-relaxed text-orange-900">
+            {description}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}
+
 // ─── Block 3: 🟦 Model Diagram ────────────────────────────────────────────────
 
-function BlockModelDiagram({ block }: { block: VisualBlock }) {
+function BlockModelDiagram({ block, programType }: { block: VisualBlock; programType: ProgramType }) {
   const rawGroups = getArray<Record<string, unknown>>(block.groups ?? block.sharing_groups ?? [])
   const symbol = getText(block.symbol) || getText(block.emoji) || '🚗'
   const data = getRecord((block as Record<string, unknown>).data)
   const modelType = cleanText(block.model_type) || cleanText(data.model_type)
   const bars = getArray<Record<string, unknown>>(data.bars ?? block.bars)
+
+  // ── Fraction Pie Model ────────────────────────────────────────────────────
+  // Circle split into num_parts equal slices, first shaded_parts filled.
+  if (modelType === 'fraction_pie_model') {
+    return <BlockFractionPieModel block={block} programType={programType} />
+  }
 
   if (modelType === 'part_whole_bar' && bars.length > 0) {
     // Model diagram maps from visual_blocks[type=model_diagram].data.bars and totals.
@@ -970,20 +1195,20 @@ function VisualBlockRenderer({ block, programType }: { block: VisualBlock; progr
     case 'think_story':      return <BlockThinkStory block={block} programType={programType} />
     case 'visual_thinking':  return null
     case 'emoji_counter':    return null
-    case 'model_diagram':     return <BlockModelDiagram block={block} />
-    case 'grouping_model':    return <BlockModelDiagram block={block} />
-    case 'bar_model':         return <BlockModelDiagram block={block} />
-    case 'comparison_bar':    return <BlockModelDiagram block={block} />
-    case 'shape_visual':     return <BlockModelDiagram block={block} />
-    case 'ten_frame':         return <BlockModelDiagram block={block} />
-    case 'area_model':       return <BlockModelDiagram block={block} />
-    case 'fraction_visual':   return <BlockModelDiagram block={block} />
-    case 'place_value_chart': return <BlockModelDiagram block={block} />
-    case 'array_model':      return <BlockModelDiagram block={block} />
-    case 'graph_visual':     return <BlockModelDiagram block={block} />
-    case 'volume_visual':     return <BlockModelDiagram block={block} />
-    case 'table_visual':      return <BlockModelDiagram block={block} />
-    case 'count_back_strip':  return <BlockModelDiagram block={block} />
+    case 'model_diagram':     return <BlockModelDiagram block={block} programType={programType} />
+    case 'grouping_model':    return <BlockModelDiagram block={block} programType={programType} />
+    case 'bar_model':         return <BlockModelDiagram block={block} programType={programType} />
+    case 'comparison_bar':    return <BlockModelDiagram block={block} programType={programType} />
+    case 'shape_visual':     return <BlockModelDiagram block={block} programType={programType} />
+    case 'ten_frame':         return <BlockModelDiagram block={block} programType={programType} />
+    case 'area_model':       return <BlockModelDiagram block={block} programType={programType} />
+    case 'fraction_visual':   return <BlockModelDiagram block={block} programType={programType} />
+    case 'place_value_chart': return <BlockModelDiagram block={block} programType={programType} />
+    case 'array_model':      return <BlockModelDiagram block={block} programType={programType} />
+    case 'graph_visual':     return <BlockModelDiagram block={block} programType={programType} />
+    case 'volume_visual':     return <BlockModelDiagram block={block} programType={programType} />
+    case 'table_visual':      return <BlockModelDiagram block={block} programType={programType} />
+    case 'count_back_strip':  return <BlockModelDiagram block={block} programType={programType} />
     case 'abstract_symbol':   return null
     case 'number_sentence':   return <BlockNumberSentence block={block} programType={programType} />
     case 'mini_quiz':        return <BlockMiniQuiz block={block} programType={programType} />

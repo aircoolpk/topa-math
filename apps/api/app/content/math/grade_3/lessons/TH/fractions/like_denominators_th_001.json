@@ -22,39 +22,30 @@
     },
     {
       "type": "model_diagram",
-      "title": "🖼️ แถบ Bar Model: ตัวส่วนเท่ากัน",
-      "description": "แถบพิซซ่าทั้งถาดแบ่งเป็น 8 ส่วนเท่ากัน น้องกิน 3 ส่วน (3/8) เพื่อนกิน 2 ส่วน (2/8) รวมกันได้ 5 ส่วน (5/8)",
-      "model_type": "bar_model",
+      "title": "🥧 แบบจำลองเศษส่วน: พิซซ่า 8 ส่วน",
+      "description": "วงกลมแบ่งเป็น 8 ส่วนเท่ากัน น้องกิน 3 ส่วน (3/8) เพื่อนกิน 2 ส่วน (2/8) รวมกันได้ 5 ส่วน (5/8)",
+      "model_type": "fraction_pie_model",
       "data": {
-        "model_type": "bar_model",
-        "unit": "ส่วน",
-        "total": 8
+        "model_type": "fraction_pie_model",
+        "whole": 1,
+        "num_parts": 8,
+        "shaded_parts": 5,
+        "numerator": 5,
+        "denominator": 8,
+        "unit_name": "พิซซ่า",
+        "unit_name_th": "พิซซ่า",
+        "unit_name_en": "the pizza",
+        "shaded_color": "#93C5FD"
       },
-      "title_th": "🖼️ แถบ Bar Model: ตัวส่วนเท่ากัน",
-      "description_th": "พิซซ่าทั้งถาดแบ่งเป็น 8 ส่วนเท่ากัน น้องกิน 3 ส่วน (3/8) เพื่อนกิน 2 ส่วน (2/8) รวมกันได้ 5 ส่วน (5/8)",
-      "groups": [
-        {
-          "label_th": "ก่อนกิน 8/8",
-          "items": "🟦🟦🟦🟦🟦🟦🟦🟦"
-        },
-        {
-          "label_th": "น้องกิน 3/8",
-          "items": "🟦🟦🟦⬜⬜⬜⬜⬜"
-        },
-        {
-          "label_th": "เพื่อนกิน 2/8",
-          "items": "🟦🟦⬜⬜⬜⬜⬜⬜"
-        },
-        {
-          "label_th": "รวมกัน 5/8",
-          "items": "🟦🟦🟦🟦🟦⬜⬜⬜"
-        }
-      ]
+      "title_th": "🥧 แบบจำลองเศษส่วน: พิซซ่า 8 ส่วน",
+      "description_th": "วงกลมแบ่งเป็น 8 ส่วนเท่ากัน น้องกิน 3 ส่วน (3/8) เพื่อนกิน 2 ส่วน (2/8) รวมกันได้ 5 ส่วน (5/8)",
+      "title_en": "🥧 Fraction model: a pizza cut into 8 parts",
+      "description_en": "A circle split into 8 equal parts. The child ate 3 parts (3/8) and a friend ate 2 more (2/8), making 5 parts (5/8) altogether."
     },
     {
       "type": "model_diagram",
-      "title": "📊 แบบจำลองเศษส่วน (วงกลม)",
-      "description": "วงกลมแบ่งเป็น 8 ส่วนเท่ากัน ลงสี 3 ส่วนแรก (น้อง) และอีก 2 ส่วน (เพื่อน) รวมเป็น 5 ส่วนจาก 8",
+      "title": "📊 แถบ Bar Model: การลบ",
+      "description": "แถบแสดงพิซซ่า 8 ส่วน: มีอยู่ 7/8 กินไป 2/8 เหลือ 5/8",
       "model_type": "bar_model",
       "data": {
         "model_type": "bar_model",
@@ -62,7 +53,7 @@
         "total": 8
       },
       "title_th": "📊 แถบ Bar Model: การลบ",
-      "description_th": "น้องมีพิซซ่า 7/8 กินไป 2/8 เหลือ 5/8 — ตัวส่วนเท่ากัน (8 = 8) จึงลบเฉพาะตัวเศษ",
+      "description_th": "แถบแสดงพิซซ่า 8 ส่วน: มีอยู่ 7/8 กินไป 2/8 เหลือ 5/8",
       "groups": [
         {
           "label_th": "มีอยู่ 7/8",
@@ -76,7 +67,9 @@
           "label_th": "เหลือ 5/8",
           "items": "🟦🟦🟦🟦🟦⬜⬜⬜"
         }
-      ]
+      ],
+      "title_en": "📊 Bar Model: Subtraction",
+      "description_en": "A bar showing a pizza split into 8 parts: 7/8 to start, 2/8 eaten, 5/8 left."
     },
     {
       "type": "abstract_symbol",
