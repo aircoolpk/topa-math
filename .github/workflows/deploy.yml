@@ -1,0 +1,75 @@
+name: Deploy Frontend to Cloudflare Workers
+
+# Topa Math — Frontend deploy (Next.js 14 → OpenNext → Cloudflare Workers).
+#
+# Triggered on push to main / manual dispatch.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN   — Cloudflare API token with Workers Scripts:Edit
+#   CLOUDFLARE_ACCOUNT_ID  — Cloudflare account id
+#
+# Optional repository variables (Settings → Secrets and variables → Actions →
+# Variables): NEXT_PUBLIC_API_BASE_URL, NEXT_PUBLIC_APP_URL,
+# NEXT_PUBLIC_APP_ENV, INTERNAL_API_BASE_URL. Each has a production default in
+# wrangler.toml, so the deploy works even when no variable is configured.
+#
+# The frontend lives at the repository ROOT (it was moved out of apps/web so
+# that Cloudflare Workers Builds, which reads wrangler.toml from the root, can
+# build it). The API (apps/api-ts) is deployed separately once it is ready.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-web-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-web:
+    name: Deploy Frontend (Workers)
+    runs-on: ubuntu-latest
+    # The secrets and variables for this project are registered on the
+    # "Production" repository environment, so the job must declare it —
+    # without this, `secrets.CLOUDFLARE_API_TOKEN` resolves to an empty string.
+    environment: production
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npm run lint
+
+      - name: Build (Next.js + OpenNext → Workers bundle)
+        # Same command Cloudflare Workers Builds runs, so a green CI run means
+        # the Cloudflare build will succeed too.
+        run: npm run cf:build
+        env:
+          NEXT_PUBLIC_API_BASE_URL: ${{ vars.NEXT_PUBLIC_API_BASE_URL || 'https://api.topamath.com' }}
+          NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL || 'https://topamath.com' }}
+          NEXT_PUBLIC_APP_ENV: ${{ vars.NEXT_PUBLIC_APP_ENV || 'production' }}
+          INTERNAL_API_BASE_URL: ${{ vars.INTERNAL_API_BASE_URL || 'https://api.topamath.com' }}
+
+      - name: Verify Workers bundle was produced
+        run: test -f .open-next/worker.js || { echo "::error::.open-next/worker.js was not produced"; exit 1; }
+
+      - name: Deploy to Cloudflare Workers
+        if: github.event_name != 'pull_request'
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
