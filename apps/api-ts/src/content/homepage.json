@@ -1,0 +1,295 @@
+{
+  "hero": {
+    "headline": "เรียนเลขให้สนุก\nเก่งขึ้นทุกวันกับ TOPA Math",
+    "subheadline": "สำหรับน้อง ๆ ป.1-ป.6 ด้วย AI วิเคราะห์จุดอ่อน\nเกมสนุก เควสท้าทาย และอันดับทั่วไทย\nเสริมความมั่นใจ เก่งเลขได้จริงในทุกวัน!",
+    "primary_cta_text": "ทดลองใช้ฟรี 3 เควส",
+    "primary_cta_link": "/register",
+    "secondary_cta_text": "ดูอันดับท็อปไทย",
+    "secondary_cta_link": "#ranking",
+    "mascot_group_image": "/brand/topa/homepage-hero-cover-transparent.png",
+    "stats": [
+      {
+        "label": "นักเรียนที่สมัคร",
+        "value": "91 คน",
+        "detail": "ข้อมูลจากระบบจริง"
+      },
+      {
+        "label": "ความแม่นยำเฉลี่ย",
+        "value": "51.0%",
+        "detail": "จาก 245 ข้อที่ตอบไปแล้ว"
+      },
+      {
+        "label": "จบบทเรียนแล้ว",
+        "value": "0 คน",
+        "detail": "คิดเป็น 0.0% ของผู้สมัครทั้งหมด"
+      },
+      {
+        "label": "ระดับเฉลี่ย",
+        "value": "Lv. 1",
+        "detail": "เฉลี่ยจากผู้เรียนที่มีสถิติ"
+      },
+      {
+        "label": "XP สะสม",
+        "value": "2,300 XP",
+        "detail": "รวมจากทุกแบบฝึก"
+      }
+    ]
+  },
+  "features": {
+    "title": "เรียนสนุก เก่งขึ้นทุกวัน",
+    "subtitle": "TOPA Math รวม AI แบบฝึก เควส และอันดับทั่วไทยสำหรับเด็กประถม",
+    "cards": [
+      {
+        "title": "AI วิเคราะห์จุดอ่อน",
+        "subtitle": "",
+        "description": "รู้จุดที่ต้องพัฒนา และแนะนำบทฝึกให้ตรงจุด",
+        "icon": "Target",
+        "image": "/brand/topa/mascot-topa-feature.png",
+        "order": 1,
+        "enabled": true
+      },
+      {
+        "title": "แบบฝึกหลากหลาย",
+        "subtitle": "",
+        "description": "ฝึกตามระดับความเข้าใจ เล่นซ้ำได้เร็วกว่า",
+        "icon": "BookOpen",
+        "image": "/brand/topa/mascot-pip-feature.png",
+        "order": 2,
+        "enabled": true
+      },
+      {
+        "title": "เควส XP + Level",
+        "subtitle": "",
+        "description": "เก็บคะแนน ไต่เลเวล และเห็นความคืบหน้าทุกวัน",
+        "icon": "Zap",
+        "image": "/brand/topa/mascot-riko-feature.png",
+        "order": 3,
+        "enabled": true
+      },
+      {
+        "title": "Ranking ทั่วประเทศ",
+        "subtitle": "",
+        "description": "จัดอันดับรายจังหวัด/เขต กระตุ้นให้ตั้งใจฝึกมากขึ้น",
+        "icon": "Trophy",
+        "image": "/brand/topa/mascot-olli-feature.png",
+        "order": 4,
+        "enabled": true
+      }
+    ]
+  },
+  "ranking": {
+    "title": "TOPA Ranking",
+    "subtitle": "จัดอันดับเก่งเลขทั่วไทย",
+    "description": "คะแนนจัดอันดับคำนวณจากจำนวนข้อสอบที่ทำ + คะแนนที่ทำได้",
+    "promo_text": "แข่งขันสนุก\nกระตุ้นให้เด็ก\nอยากฝึกทุกวัน",
+    "promo_image": "/brand/topa/ranking-promo-action.png",
+    "rows": [
+      {
+        "rank": 1,
+        "child_name": "แอร์",
+        "province": "กทม",
+        "tests_completed": 14,
+        "total_score": 1880,
+        "avg_speed": "-",
+        "mascot": "topa"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "รีวิวจากเด็กที่ใช้งานจริง",
+    "subtitle": "มั่นใจขึ้น สนุกกับการเรียน และเก่งเลขได้จริง!",
+    "cards": [],
+    "_no_data_notice": "ยังไม่มีรีวิวจากผู้ใช้จริงในระบบ — จะเปิดใช้เมื่อมีข้อมูลจากฐานข้อมูล"
+  },
+  "mascots": {
+    "title": "เพื่อนช่วยเรียนของ TOPA",
+    "subtitle": "",
+    "cards": [
+      {
+        "key": "topa",
+        "name": "TOPA",
+        "role": "เพื่อนคู่คิด พลังบวกเต็มร้อย!",
+        "english_role": "Motivator",
+        "description_th": "ชวนเริ่มฝึกอย่างมั่นใจ",
+        "image": "/brand/topa/mascot-topa-feature.png",
+        "order": 1,
+        "enabled": true
+      },
+      {
+        "key": "bunny",
+        "name": "BUNNY",
+        "role": "เพื่อนกระต่ายไว ช่วยพาวิเคราะห์โจทย์",
+        "english_role": "Speed Coach",
+        "description_th": "ช่วยฝึกความคล่องแคล่ว",
+        "image": "/brand/topa/mascot-pip-feature.png",
+        "order": 2,
+        "enabled": true
+      },
+      {
+        "key": "panda",
+        "name": "PANDA",
+        "role": "เพื่อนใจเย็น ชวนแก้โจทย์อย่างเป็นขั้นตอน",
+        "english_role": "Step Coach",
+        "description_th": "ช่วยคิดทีละขั้น",
+        "image": "/brand/topa/mascot-riko-feature.png",
+        "order": 3,
+        "enabled": true
+      },
+      {
+        "key": "owly",
+        "name": "OWLY",
+        "role": "ที่ปรึกษาแสนฉลาด รักการอ่านและคิด",
+        "english_role": "Wise Guide",
+        "description_th": "ช่วยอ่านโจทย์อย่างเข้าใจ",
+        "image": "/brand/topa/mascot-olli-feature.png",
+        "order": 4,
+        "enabled": true
+      },
+      {
+        "key": "beary",
+        "name": "BEARY",
+        "role": "เพื่อนหมีใจดี ใจเย็น ช่วยแนะนำ",
+        "english_role": "Kind Coach",
+        "description_th": "ให้กำลังใจเวลาโจทย์ยาก",
+        "image": "/brand/topa/mascot-timo-transparent.png",
+        "order": 5,
+        "enabled": true
+      }
+    ]
+  },
+  "curriculum": {
+    "title": "จัดเต็มหลักสูตร ป.1-ป.6",
+    "subtitle": "",
+    "cards": [
+      {
+        "grade": "ป.1",
+        "title": "พื้นฐานแน่น",
+        "description": "คณิตสนุก เข้าใจง่าย",
+        "status": "active",
+        "button_text": "เริ่มเรียนเลย",
+        "order": 1,
+        "enabled": true
+      },
+      {
+        "grade": "ป.2",
+        "title": "ฝึกคิดเป็นระบบ",
+        "description": "แก้โจทย์ได้มั่นใจ",
+        "status": "active",
+        "button_text": "เริ่มเรียนเลย",
+        "order": 2,
+        "enabled": true
+      },
+      {
+        "grade": "ป.3",
+        "title": "ต่อยอดความเข้าใจ",
+        "description": "โจทย์ซับซ้อนขึ้น",
+        "status": "active",
+        "button_text": "เริ่มเรียนเลย",
+        "order": 3,
+        "enabled": true
+      },
+      {
+        "grade": "ป.4",
+        "title": "คิดเป็นระบบ",
+        "description": "แก้โจทย์หลายขั้นตอน",
+        "status": "active",
+        "button_text": "เริ่มเรียนเลย",
+        "order": 4,
+        "enabled": true
+      },
+      {
+        "grade": "ป.5",
+        "title": "วิเคราะห์แม่นยำ",
+        "description": "ประยุกต์ใช้ได้มากขึ้น",
+        "status": "active",
+        "button_text": "เริ่มเรียนเลย",
+        "order": 5,
+        "enabled": true
+      },
+      {
+        "grade": "ป.6",
+        "title": "เตรียมพร้อมขั้นสูง",
+        "description": "มั่นใจก่อนต่อยอด",
+        "status": "active",
+        "button_text": "เริ่มเรียนเลย",
+        "order": 6,
+        "enabled": true
+      }
+    ]
+  },
+  "parent_trust": {
+    "title": "ผู้ปกครองวางใจได้",
+    "subtitle": "",
+    "cards": [
+      {
+        "title": "ปลอดภัยสำหรับเด็ก",
+        "description": "เนื้อหาสร้างสรรค์ ไม่มีสื่อไม่เหมาะสม ข้อมูลปลอดภัยตามมาตรฐานสากล",
+        "icon": "ShieldCheck",
+        "order": 1,
+        "enabled": true
+      },
+      {
+        "title": "ติดตามพัฒนาได้",
+        "description": "ดูรายงานผลการเรียน ส่งเสริมสนับสนุนลูกได้อย่างเหมาะสม",
+        "icon": "BarChart3",
+        "order": 2,
+        "enabled": true
+      },
+      {
+        "title": "ไม่มีโฆษณาในบทเรียน",
+        "description": "เรียนลื่นไหล ไม่มีโฆษณามากวนใจ ให้โฟกัสการเรียนรู้ได้เต็มที่",
+        "icon": "CheckCircle2",
+        "order": 3,
+        "enabled": true
+      }
+    ]
+  },
+  "cta_banner": {
+    "headline": "เริ่มให้ลูกเก่งเลขอย่างมั่นใจวันนี้",
+    "subheadline": "ทดลองฟรี 3 เควส ไม่ต้องใช้บัตรเครดิต",
+    "button_text": "ทดลองใช้ฟรี",
+    "button_link": "/register",
+    "mascot_image": "/brand/topa/mascot-topa-transparent.png"
+  },
+  "footer": {
+    "brand_text": "เรียนเลขให้สนุก เก่งขึ้นทุกวันกับ TOPA Math",
+    "columns": [
+      {
+        "title": "เมนูหลัก",
+        "links": [
+          "หลักสูตร",
+          "อันดับ",
+          "รีวิว",
+          "สำหรับผู้ปกครอง",
+          "ราคา"
+        ]
+      },
+      {
+        "title": "เกี่ยวกับเรา",
+        "links": [
+          "เกี่ยวกับ TOPA Math",
+          "นโยบาย",
+          "เงื่อนไข",
+          "คำถามที่พบบ่อย"
+        ]
+      },
+      {
+        "title": "ติดต่อ",
+        "links": [
+          "support [at] topamath.co.th",
+          "โทร. 02-123-4567",
+          "จันทร์-ศุกร์ 09:00-18:00"
+        ]
+      },
+      {
+        "title": "ติดตามเรา",
+        "links": [
+          "Facebook",
+          "Instagram",
+          "YouTube",
+          "TikTok"
+        ]
+      }
+    ]
+  }
+}

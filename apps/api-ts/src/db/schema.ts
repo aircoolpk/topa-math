@@ -390,6 +390,28 @@ export const coinLedger = pgTable(
   ],
 )
 
+/* ───────────────────────────── public shares ───────────────────────────── */
+
+export const publicShares = pgTable(
+  'public_shares',
+  {
+    id: id(),
+    token: varchar('token', { length: 80 }).notNull(),
+    shareType: varchar('share_type', { length: 40 }).notNull(),
+    createdByUserId: varchar('created_by_user_id', { length: 36 }),
+    data: jsonb('data').$type<Record<string, unknown>>().notNull(),
+    expiresAt: timestamp('expires_at', { withTimezone: true }),
+    revokedAt: timestamp('revoked_at', { withTimezone: true }),
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+  },
+  (table) => [
+    index('ix_public_shares_token').on(table.token),
+    index('ix_public_shares_share_type').on(table.shareType),
+    index('ix_public_shares_created_by_user_id').on(table.createdByUserId),
+  ],
+)
+
 /* ─────────────────────────────── avatars ─────────────────────────────── */
 
 export const avatarItems = pgTable('avatar_items', {
@@ -442,6 +464,304 @@ export const skillsRelations = relations(skills, ({ one, many }) => ({
   subject: one(subjects, { fields: [skills.subjectId], references: [subjects.id] }),
   lessons: many(lessons),
 }))
+
+/* ───────────────────── questions / quizzes / attempts ───────────────────── */
+
+export const questions = pgTable(
+  'questions',
+  {
+    id: id(),
+    skillId: varchar('skill_id', { length: 36 }).notNull(),
+    gradeLevel: integer('grade_level').notNull(),
+    questionType: varchar('question_type', { length: 40 }).notNull(),
+    difficulty: varchar('difficulty', { length: 20 }).notNull(),
+    questionText: text('question_text').notNull(),
+    choices: jsonb('choices').$type<string[] | null>(),
+    correctAnswer: text('correct_answer').notNull(),
+    explanation: text('explanation'),
+    hint: text('hint'),
+    source: varchar('source', { length: 20 }).notNull(),
+    status: varchar('status', { length: 20 }).notNull(),
+    metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull(),
+    createdAt: createdAt(),
+  },
+  (table) => [index('ix_questions_skill_id').on(table.skillId)],
+)
+
+export const quizSessions = pgTable(
+  'quiz_sessions',
+  {
+    id: id(),
+    childProfileId: varchar('child_profile_id', { length: 36 }).notNull(),
+    subjectId: varchar('subject_id', { length: 36 }).notNull(),
+    mode: varchar('mode', { length: 40 }).notNull(),
+    startedAt: timestamp('started_at', { withTimezone: true }).defaultNow().notNull(),
+    completedAt: timestamp('completed_at', { withTimezone: true }),
+    totalQuestions: integer('total_questions').notNull(),
+    correctCount: integer('correct_count').notNull(),
+    totalXpEarned: integer('total_xp_earned').notNull(),
+    metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull(),
+  },
+  (table) => [index('ix_quiz_sessions_child_profile_id').on(table.childProfileId)],
+)
+
+export const quizAnswers = pgTable(
+  'quiz_answers',
+  {
+    id: id(),
+    quizSessionId: varchar('quiz_session_id', { length: 36 }).notNull(),
+    childProfileId: varchar('child_profile_id', { length: 36 }).notNull(),
+    questionId: varchar('question_id', { length: 36 }).notNull(),
+    skillId: varchar('skill_id', { length: 36 }).notNull(),
+    selectedAnswer: text('selected_answer'),
+    selectedAnswerRaw: text('selected_answer_raw'),
+    selectedAnswerNormalized: text('selected_answer_normalized'),
+    correctAnswerNormalized: text('correct_answer_normalized'),
+    isCorrect: boolean('is_correct').notNull(),
+    responseTimeMs: integer('response_time_ms'),
+    hintUsed: boolean('hint_used').notNull(),
+    attemptCount: integer('attempt_count').notNull(),
+    mistakeType: varchar('mistake_type', { length: 80 }),
+    createdAt: createdAt(),
+  },
+  (table) => [
+    index('ix_quiz_answers_quiz_session_id').on(table.quizSessionId),
+    index('ix_quiz_answers_child_profile_id').on(table.childProfileId),
+  ],
+)
+
+export const questionAttemptHistory = pgTable(
+  'question_attempt_history',
+  {
+    id: id(),
+    childId: varchar('child_id', { length: 36 }).notNull(),
+    questionId: varchar('question_id', { length: 36 }).notNull(),
+    lessonId: varchar('lesson_id', { length: 120 }),
+    gradeLevel: integer('grade_level').notNull(),
+    topicCode: varchar('topic_code', { length: 120 }),
+    skillCode: varchar('skill_code', { length: 120 }),
+    questionType: varchar('question_type', { length: 20 }).notNull(),
+    rotationScope: varchar('rotation_scope', { length: 40 }).notNull(),
+    rotationKey: varchar('rotation_key', { length: 160 }).notNull(),
+    cycleNumber: integer('cycle_number').notNull(),
+    firstSeenAt: timestamp('first_seen_at', { withTimezone: true }).defaultNow().notNull(),
+    lastAttemptedAt: timestamp('last_attempted_at', { withTimezone: true }).defaultNow().notNull(),
+    attemptCount: integer('attempt_count').notNull(),
+    lastIsCorrect: boolean('last_is_correct'),
+  },
+  (table) => [index('ix_question_attempt_history_child_id').on(table.childId)],
+)
+
+/* ─────────────────────── lesson access / variants ─────────────────────── */
+
+export const lessonAccess = pgTable(
+  'lesson_access',
+  {
+    id: id(),
+    childProfileId: varchar('child_profile_id', { length: 36 }).notNull(),
+    lessonId: varchar('lesson_id', { length: 36 }).notNull(),
+    accessType: varchar('access_type', { length: 20 }).notNull(),
+    isLocked: boolean('is_locked').notNull(),
+    completedAt: timestamp('completed_at', { withTimezone: true }),
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+  },
+  (table) => [index('ix_lesson_access_child_profile_id').on(table.childProfileId)],
+)
+
+export const lessonVariantViews = pgTable(
+  'lesson_variant_views',
+  {
+    id: id(),
+    childId: varchar('child_id', { length: 36 }).notNull(),
+    lessonId: varchar('lesson_id', { length: 120 }).notNull(),
+    variantId: varchar('variant_id', { length: 80 }).notNull(),
+    cycleNumber: integer('cycle_number').notNull(),
+    viewedAt: timestamp('viewed_at', { withTimezone: true }).defaultNow().notNull(),
+  },
+  (table) => [index('ix_lesson_variant_views_child_id').on(table.childId)],
+)
+
+/* ───────────────────────── quest templates ───────────────────────── */
+
+export const questTemplates = pgTable(
+  'quest_templates',
+  {
+    id: id(),
+    questId: varchar('quest_id', { length: 120 }).notNull(),
+    gradeLevel: integer('grade_level').notNull(),
+    skillCode: varchar('skill_code', { length: 80 }),
+    title: varchar('title', { length: 180 }).notNull(),
+    description: text('description'),
+    questType: varchar('quest_type', { length: 40 }).notNull(),
+    recurrenceType: varchar('recurrence_type', { length: 20 }).notNull(),
+    xpReward: integer('xp_reward').notNull(),
+    coinReward: integer('coin_reward').notNull(),
+    estimatedMinutes: integer('estimated_minutes'),
+    status: varchar('status', { length: 20 }).notNull(),
+    lessonId: varchar('lesson_id', { length: 36 }),
+    quizId: varchar('quiz_id', { length: 120 }),
+    metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull(),
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+  },
+  (table) => [index('ix_quest_templates_quest_id').on(table.questId)],
+)
+
+export const recurringQuestTemplates = pgTable(
+  'recurring_quest_templates',
+  {
+    id: id(),
+    questId: varchar('quest_id', { length: 120 }).notNull(),
+    recurrenceType: varchar('recurrence_type', { length: 20 }).notNull(),
+    gradeLevel: integer('grade_level').notNull(),
+    skillCode: varchar('skill_code', { length: 80 }),
+    title: varchar('title', { length: 180 }).notNull(),
+    description: text('description'),
+    questType: varchar('quest_type', { length: 40 }).notNull(),
+    xpReward: integer('xp_reward').notNull(),
+    coinReward: integer('coin_reward').notNull(),
+    estimatedMinutes: integer('estimated_minutes'),
+    status: varchar('status', { length: 20 }).notNull(),
+    lessonId: varchar('lesson_id', { length: 36 }),
+    quizId: varchar('quiz_id', { length: 120 }),
+    metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull(),
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+  },
+  (table) => [index('ix_recurring_quest_templates_quest_id').on(table.questId)],
+)
+
+export const childRecurringQuests = pgTable(
+  'child_recurring_quests',
+  {
+    id: id(),
+    childProfileId: varchar('child_profile_id', { length: 36 }).notNull(),
+    recurringQuestTemplateId: varchar('recurring_quest_template_id', { length: 36 }).notNull(),
+    recurrenceType: varchar('recurrence_type', { length: 20 }).notNull(),
+    periodKey: varchar('period_key', { length: 40 }).notNull(),
+    status: varchar('status', { length: 20 }).notNull(),
+    startedAt: timestamp('started_at', { withTimezone: true }),
+    completedAt: timestamp('completed_at', { withTimezone: true }),
+    xpAwarded: integer('xp_awarded').notNull(),
+    coinAwarded: integer('coin_awarded').notNull(),
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+  },
+  (table) => [index('ix_child_recurring_quests_child_profile_id').on(table.childProfileId)],
+)
+
+/* ───────────────────────── rank snapshots ───────────────────────── */
+
+export const rankSnapshots = pgTable(
+  'rank_snapshots',
+  {
+    id: id(),
+    childProfileId: varchar('child_profile_id', { length: 36 }).notNull(),
+    subjectId: varchar('subject_id', { length: 36 }).notNull(),
+    gradeLevel: integer('grade_level').notNull(),
+    province: varchar('province', { length: 120 }),
+    rankScope: varchar('rank_scope', { length: 20 }).notNull(),
+    periodType: varchar('period_type', { length: 20 }).notNull(),
+    periodStart: date('period_start'),
+    periodEnd: date('period_end'),
+    masteryPoints: numeric('mastery_points', { precision: 8, scale: 2 }).notNull(),
+    speedPoints: numeric('speed_points', { precision: 8, scale: 2 }).notNull(),
+    improvementPoints: numeric('improvement_points', { precision: 8, scale: 2 }).notNull(),
+    rankScore: numeric('rank_score', { precision: 8, scale: 2 }).notNull(),
+    rankPosition: integer('rank_position'),
+    createdAt: createdAt(),
+  },
+  (table) => [index('ix_rank_snapshots_child_profile_id').on(table.childProfileId)],
+)
+
+/* ───────────────────── admin / affiliate / ai ───────────────────── */
+
+export const adminAuditLogs = pgTable('admin_audit_logs', {
+  id: id(),
+  action: varchar('action', { length: 80 }).notNull(),
+  targetUserId: varchar('target_user_id', { length: 36 }),
+  oldValue: jsonb('old_value').$type<Record<string, unknown> | null>(),
+  newValue: jsonb('new_value').$type<Record<string, unknown> | null>(),
+  changedByAdminId: varchar('changed_by_admin_id', { length: 36 }),
+  note: text('note'),
+  createdAt: createdAt(),
+})
+
+export const aiGenerationJobs = pgTable(
+  'ai_generation_jobs',
+  {
+    id: id(),
+    childProfileId: varchar('child_profile_id', { length: 36 }).notNull(),
+    skillId: varchar('skill_id', { length: 36 }).notNull(),
+    jobType: varchar('job_type', { length: 80 }).notNull(),
+    inputPayload: jsonb('input_payload').$type<Record<string, unknown>>().notNull(),
+    outputPayload: jsonb('output_payload').$type<Record<string, unknown> | null>(),
+    status: varchar('status', { length: 20 }).notNull(),
+    errorMessage: text('error_message'),
+    createdAt: createdAt(),
+    completedAt: timestamp('completed_at', { withTimezone: true }),
+  },
+  (table) => [index('ix_ai_generation_jobs_child_profile_id').on(table.childProfileId)],
+)
+
+export const affiliateCommissionLedger = pgTable(
+  'affiliate_commission_ledger',
+  {
+    id: id(),
+    affiliateUserId: varchar('affiliate_user_id', { length: 36 }).notNull(),
+    referredUserId: varchar('referred_user_id', { length: 36 }).notNull(),
+    paymentReferenceId: varchar('payment_reference_id', { length: 160 }).notNull(),
+    sourceEventId: varchar('source_event_id', { length: 160 }).notNull(),
+    amountPaidMinor: integer('amount_paid_minor').notNull(),
+    commissionMinor: integer('commission_minor').notNull(),
+    currency: varchar('currency', { length: 3 }).notNull(),
+    rateBps: integer('rate_bps').notNull(),
+    status: varchar('status', { length: 20 }).notNull(),
+    availableAt: timestamp('available_at', { withTimezone: true }),
+    reversedAt: timestamp('reversed_at', { withTimezone: true }),
+    withdrawalRequestId: varchar('withdrawal_request_id', { length: 36 }),
+    metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull(),
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+  },
+  (table) => [index('ix_affiliate_commission_ledger_affiliate_user_id').on(table.affiliateUserId)],
+)
+
+export const affiliatePayoutAccounts = pgTable(
+  'affiliate_payout_accounts',
+  {
+    id: id(),
+    userId: varchar('user_id', { length: 36 }).notNull(),
+    payoutMethod: varchar('payout_method', { length: 20 }).notNull(),
+    accountHolderName: varchar('account_holder_name', { length: 160 }).notNull(),
+    bankName: varchar('bank_name', { length: 120 }),
+    accountLast4: varchar('account_last4', { length: 8 }),
+    promptpayLast4: varchar('promptpay_last4', { length: 8 }),
+    payoutDetails: jsonb('payout_details').$type<Record<string, unknown>>().notNull(),
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+  },
+  (table) => [index('ix_affiliate_payout_accounts_user_id').on(table.userId)],
+)
+
+export const affiliateWithdrawalRequests = pgTable(
+  'affiliate_withdrawal_requests',
+  {
+    id: id(),
+    userId: varchar('user_id', { length: 36 }).notNull(),
+    payoutAccountId: varchar('payout_account_id', { length: 36 }).notNull(),
+    amountMinor: integer('amount_minor').notNull(),
+    currency: varchar('currency', { length: 3 }).notNull(),
+    status: varchar('status', { length: 30 }).notNull(),
+    reviewedByAdminId: varchar('reviewed_by_admin_id', { length: 36 }),
+    adminNote: text('admin_note'),
+    requestedAt: timestamp('requested_at', { withTimezone: true }).defaultNow().notNull(),
+    updatedAt: updatedAt(),
+    paidAt: timestamp('paid_at', { withTimezone: true }),
+  },
+  (table) => [index('ix_affiliate_withdrawal_requests_user_id').on(table.userId)],
+)
 
 export type User = typeof users.$inferSelect
 export type NewUser = typeof users.$inferInsert

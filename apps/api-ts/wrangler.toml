@@ -10,20 +10,32 @@ compatibility_date = "2025-04-01"
 enabled = true
 
 [vars]
-ENVIRONMENT = "local"
+# Production defaults. Local development overrides these through .dev.vars
+# (which Wrangler loads on top of wrangler.toml and takes precedence locally).
+#
+# ENVIRONMENT=production makes the API reject the beta-only visibility
+# fallbacks that the legacy FastAPI service used while the content was still
+# awaiting review.
+ENVIRONMENT = "production"
 # Comma-separated list of allowed browser origins (credentials are sent, so
 # wildcards are not allowed — same rule as the FastAPI CORS middleware).
-CORS_ORIGINS = "http://localhost:3000,http://127.0.0.1:3000"
+CORS_ORIGINS = "https://topamath.com,https://www.topamath.com"
 # Auth cookie behaviour (matches the Python settings names).
 AUTH_COOKIE_NAME = "access_token"
-AUTH_COOKIE_SECURE = "false"
+AUTH_COOKIE_SECURE = "true"
 AUTH_COOKIE_SAMESITE = "lax"
 AUTH_COOKIE_PATH = "/"
 ACCESS_TOKEN_EXPIRE_MINUTES = "1440"
-# PBKDF2-SHA256 iteration count for NEW password hashes.
-# Cloudflare Workers production caps PBKDF2 at 100,000 iterations — do not
-# raise this above 100,000 or sign-up/login will fail at runtime.
-PASSWORD_HASH_ITERATIONS = "100000"
+# Password hashing runs in Postgres (apps/api-ts/scripts/pbkdf2.sql), not in
+# the Worker: the Workers Free plan allows only 10 ms of CPU per request and
+# a 200,000-round PBKDF2 costs ~86 ms of CPU even via native WebCrypto
+# (measured in workerd). Database time is not charged against the Worker's
+# CPU budget.
+#
+# The iteration count is fixed at 200,000 in SQL, matching the legacy FastAPI
+# service (app/core/security.py), so password hashes stay interchangeable
+# between the two APIs. There is deliberately no PASSWORD_HASH_ITERATIONS
+# variable.
 
 # Secrets (set with `wrangler secret put <NAME>`):
 #   DATABASE_URL        — Neon pooled connection string
