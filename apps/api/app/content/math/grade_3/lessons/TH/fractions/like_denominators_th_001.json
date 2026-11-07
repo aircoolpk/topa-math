@@ -1,0 +1,297 @@
+{
+  "variant_id": "like_denominators_th_001",
+  "variant_title_th": "การบวกและการลบเศษส่วนที่มีตัวส่วนเท่ากัน",
+  "variant_title_en": "Adding and Subtracting Fractions with Like Denominators",
+  "status": "needs_review",
+  "title_th": "การบวกและการลบเศษส่วนที่มีตัวส่วนเท่ากัน",
+  "title_en": "Adding and Subtracting Fractions with Like Denominators",
+  "story_theme_th": "พี่สอนหั่นพิซซ่าให้น้องอยู่ 1 ถาด ขนาดเท่ากัน แล้วหั่นออกมาเป็น 8 ชิ้นเท่าๆ กัน น้องกินไป 3 ชิ้น เพื่อนกินไปอีก 2 ชิ้น คำถามคือทั้งคู่กินไปรวมกันกี่ส่วน และเหลือพิซซ่าเท่าไร",
+  "helper_tip": "ตัวส่วนเท่ากันแปลว่าแต่ละชิ้นเท่ากันหมด จึงเอามาบวกหรือลบกันได้เลย ให้ดูที่ตัวส่วน (เลขล่าง) ก่อน ถ้าข้างล่างเหมือนกัน ให้บวกหรือลบเฉพาะตัวเศษ (เลขบน) แล้วคงตัวส่วนไว้เหมือนเดิม",
+  "think_story_th": "หั่นพิซซ่า 8 ชิ้นเท่ากัน = ทั้งหมด 8/8 · น้องกิน 3 ชิ้น = 3/8 · เพื่อนกิน 2 ชิ้น = 2/8 · ตัวส่วนเท่ากัน (8 = 8) จึงบวกเฉพาะตัวเศษ 3 + 2 = 5 → 5/8",
+  "visual_blocks": [
+    {
+      "type": "story_intro",
+      "title": "🍕 เรื่องของพิซซ่าถาดหนึ่ง",
+      "content": "พี่สอนหั่นพิซซ่าให้น้องอยู่ 1 ถาด ขนาดเท่ากัน แล้วหั่นออกมาเป็น 8 ชิ้นเท่าๆ กัน ทุกชิ้นเท่ากันหมดเลยนะ น้องกินไป 3 ชิ้น แล้วเพื่อนกินไปอีก 2 ชิ้น ทั้งคู่กินไปรวมกันกี่ส่วนของพิซซ่าทั้งถาด และเหลือพิซซ่ากี่ชิ้น?",
+      "data": {
+        "content_th": "พี่สอนหั่นพิซซ่าให้น้องอยู่ 1 ถาด ขนาดเท่ากัน แล้วหั่นออกมาเป็น 8 ชิ้นเท่าๆ กัน ทุกชิ้นเท่ากันหมดเลยนะ น้องกินไป 3 ชิ้น แล้วเพื่อนกินไปอีก 2 ชิ้น ทั้งคู่กินไปรวมกันกี่ส่วนของพิซซ่าทั้งถาด และเหลือพิซซ่ากี่ชิ้น?",
+        "content_en": "Teacher slices one pizza into 8 equal slices. The child eats 3 slices and a friend eats 2 more. Altogether, how many eighths of the pizza did they eat, and how many slices are left?",
+        "unit_name": "พิซซ่า",
+        "emoji": "🍕"
+      }
+    },
+    {
+      "type": "model_diagram",
+      "title": "🖼️ แถบ Bar Model: ตัวส่วนเท่ากัน",
+      "description": "แถบพิซซ่าทั้งถาดแบ่งเป็น 8 ส่วนเท่ากัน น้องกิน 3 ส่วน (3/8) เพื่อนกิน 2 ส่วน (2/8) รวมกันได้ 5 ส่วน (5/8)",
+      "model_type": "bar_model",
+      "data": {
+        "model_type": "bar_model",
+        "unit": "ส่วน",
+        "total": 8
+      },
+      "title_th": "🖼️ แถบ Bar Model: ตัวส่วนเท่ากัน",
+      "description_th": "พิซซ่าทั้งถาดแบ่งเป็น 8 ส่วนเท่ากัน น้องกิน 3 ส่วน (3/8) เพื่อนกิน 2 ส่วน (2/8) รวมกันได้ 5 ส่วน (5/8)",
+      "groups": [
+        {
+          "label_th": "ก่อนกิน 8/8",
+          "items": "🟦🟦🟦🟦🟦🟦🟦🟦"
+        },
+        {
+          "label_th": "น้องกิน 3/8",
+          "items": "🟦🟦🟦⬜⬜⬜⬜⬜"
+        },
+        {
+          "label_th": "เพื่อนกิน 2/8",
+          "items": "🟦🟦⬜⬜⬜⬜⬜⬜"
+        },
+        {
+          "label_th": "รวมกัน 5/8",
+          "items": "🟦🟦🟦🟦🟦⬜⬜⬜"
+        }
+      ]
+    },
+    {
+      "type": "model_diagram",
+      "title": "📊 แบบจำลองเศษส่วน (วงกลม)",
+      "description": "วงกลมแบ่งเป็น 8 ส่วนเท่ากัน ลงสี 3 ส่วนแรก (น้อง) และอีก 2 ส่วน (เพื่อน) รวมเป็น 5 ส่วนจาก 8",
+      "model_type": "bar_model",
+      "data": {
+        "model_type": "bar_model",
+        "unit": "ส่วน",
+        "total": 8
+      },
+      "title_th": "📊 แถบ Bar Model: การลบ",
+      "description_th": "น้องมีพิซซ่า 7/8 กินไป 2/8 เหลือ 5/8 — ตัวส่วนเท่ากัน (8 = 8) จึงลบเฉพาะตัวเศษ",
+      "groups": [
+        {
+          "label_th": "มีอยู่ 7/8",
+          "items": "🟦🟦🟦🟦🟦🟦🟦⬜"
+        },
+        {
+          "label_th": "กินไป 2/8",
+          "items": "🟦🟦⬜⬜⬜⬜⬜⬜"
+        },
+        {
+          "label_th": "เหลือ 5/8",
+          "items": "🟦🟦🟦🟦🟦⬜⬜⬜"
+        }
+      ]
+    },
+    {
+      "type": "abstract_symbol",
+      "title": "➕ กฎ: ตัวส่วนเท่ากัน",
+      "content": "ตัวส่วนเท่ากัน → คงตัวส่วนไว้เหมือนเดิม แล้วบวกหรือลบเฉพาะตัวเศษ",
+      "data": {
+        "content_th": "ตัวส่วนเท่ากัน → คงตัวส่วนไว้เหมือนเดิม แล้วบวกหรือลบเฉพาะตัวเศษ",
+        "content_en": "When the denominators are the same, keep the denominator unchanged and add or subtract only the numerators.",
+        "formula_th": "a/c + b/c = (a + b)/c",
+        "formula_en": "a/c + b/c = (a + b)/c"
+      }
+    },
+    {
+      "type": "number_sentence",
+      "title": "🔢 สัญลักษณ์ของการบวกและการลบ",
+      "description": "ตัวอย่างการบวกและการลบเศษส่วนที่มีตัวส่วนเท่ากัน",
+      "data": {
+        "content_th": "3/8 + 2/8 = 5/8",
+        "content_en": "3/8 + 2/8 = 5/8",
+        "expression": "3/8 + 2/8 = 5/8",
+        "explanation_th": "ตัวส่วนเท่ากัน (8 = 8) จึงบวกเฉพาะตัวเศษ 3 + 2 = 5 แล้วคงตัวส่วน 8 ไว้",
+        "explanation_en": "The denominators are the same (8 = 8), so add only the numerators: 3 + 2 = 5, keeping the 8.",
+        "steps_th": [
+          "ขั้นที่ 1: 3/8 + 2/8",
+          "ขั้นที่ 2: ตัวส่วนเท่ากัน (8 = 8) → เอามาบวกกันได้เลย",
+          "ขั้นที่ 3: 3 + 2 = 5 (บวกเฉพาะตัวเศษ)",
+          "ขั้นที่ 4: คงตัวส่วน 8 ไว้ → 5/8"
+        ]
+      }
+    },
+    {
+      "type": "mini_quiz",
+      "title": "💡 ลองคิดดูสิ",
+      "description": "คุณแม่หั่นขนมปังไปตามร้านเบเกอรี่ 10 ชิ้นเท่ากัน พี่สอนกินไป 3 ชิ้น และน้องกินไป 5 ชิ้น ทั้งคู่กินไปรวมกันกี่ส่วนของขนมปังทั้งสิบชิ้น?",
+      "data": {
+        "question_th": "คุณแม่หั่นขนมปังไปตามร้านเบเกอรี่ 10 ชิ้นเท่ากัน พี่สอนกินไป 3 ชิ้น และน้องกินไป 5 ชิ้น ทั้งคู่กินไปรวมกันกี่ส่วนของขนมปังทั้งสิบชิ้น?",
+        "question_en": "A baker cuts 10 equal slices of bread. The teacher eats 3 slices and the child eats 5 slices. Altogether, how many tenths of the bread did they eat?",
+        "choices_th": [
+          "8/10",
+          "5/10",
+          "10/8",
+          "2/10"
+        ],
+        "choices_en": [
+          "8/10",
+          "5/10",
+          "10/8",
+          "2/10"
+        ],
+        "correctAnswer": "8/10",
+        "explanation_th": "ตัวส่วนเท่ากัน (10 = 10) จึงบวกเฉพาะตัวเศษ 3 + 5 = 8 ได้ 8/10 ของขนมปังทั้งสิบชิ้น",
+        "explanation_en": "The denominators are the same (10 = 10), so add only the numerators: 3 + 5 = 8, giving 8/10 of the bread."
+      }
+    }
+  ],
+  "explanation_steps": [
+    "📖 ของจริง: พิซซ่าทั้งถาดถูกหั่นเป็น 8 ชิ้นเท่าๆ กัน พิซซ่า 1 ชิ้นจึงเท่ากับ 1/8 ของทั้งถาด",
+    "🔤 สัญลักษณ์: ตัวเศษ (เลขบน) บอกว่าเอากี่ส่วน ส่วนตัวส่วน (เลขล่าง) บอกว่าถูกแบ่งเป็นกี่ส่วนเท่าๆ กัน",
+    "🖼️ แถบ Bar Model: ขีดแถบทั้งแถว = เต็ม 8 ส่วน = 8/8 เมื่อกินไป 3 ส่วน แถวจะเหลือช่องว่าง 5 ช่อง",
+    "🔑 กุญแจสำคัญ: เมื่อตัวส่วนเท่ากัน (เช่น 8 กับ 8) ขนาดของแต่ละส่วนก็เท่ากัน จึงเอามาบวกหรือลบกันได้เลยโดยไม่ต้องแปลงอะไร",
+    "➕ การบวก: คงตัวส่วนไว้ แล้วบวกเฉพาะตัวเศษ — 3/8 + 2/8 = (3+2)/8 = 5/8",
+    "➖ การลบ: คงตัวส่วนไว้ แล้วลบเฉพาะตัวเศษ — 7/8 − 2/8 = (7−2)/8 = 5/8",
+    "⚠️ ข้อผิดที่พบบ่อย: 3/8 + 2/8 = 5/16 หรือ 7/8 − 2/8 = 5/16 ผิดเพราะเอาตัวส่วนมาบวกหรือลบกันด้วย — ตัวส่วนต้องเหมือนเดิมเสมอ"
+  ],
+  "worked_examples": [
+    {
+      "title_th": "ตัวอย่างที่ 1 — การบวกเศษส่วน",
+      "question_th": "น้องกินพิซซ่าไป 3/8 ของถาด แล้วเพื่อนกินไปอีก 2/8 ถาดนี้กินไปรวมกันกี่ส่วน?",
+      "solution_th": "3/8 + 2/8 = 5/8 เพราะตัวส่วนเท่ากัน (8 = 8) จึงบวกเฉพาะตัวเศษ 3 + 2 = 5 แล้วคงตัวส่วน 8 ไว้",
+      "title_en": "Example 1 — Adding fractions",
+      "question_en": "The child ate 3/8 of a pizza and a friend ate another 2/8. How many eighths did they eat altogether?",
+      "solution_en": "3/8 + 2/8 = 5/8. The denominators are the same (8 = 8), so add only the numerators: 3 + 2 = 5, keeping the 8."
+    },
+    {
+      "title_th": "ตัวอย่างที่ 2 — การลบเศษส่วน",
+      "question_th": "น้องมีพิซซ่า 7/8 ของถาด แล้วกินไป 2/8 เหลือพิซซ่ากี่ส่วน?",
+      "solution_th": "7/8 − 2/8 = 5/8 เพราะตัวส่วนเท่ากัน (8 = 8) จึงลบเฉพาะตัวเศษ 7 − 2 = 5 แล้วคงตัวส่วน 8 ไว้",
+      "title_en": "Example 2 — Subtracting fractions",
+      "question_en": "The child had 7/8 of a pizza and ate 2/8. How many eighths are left?",
+      "solution_en": "7/8 − 2/8 = 5/8. The denominators are the same (8 = 8), so subtract only the numerators: 7 − 2 = 5, keeping the 8."
+    },
+    {
+      "title_th": "ตัวอย่างที่ 3 — โจทย์ประยุกต์",
+      "question_th": "คุณแม่หั่นขนมปังไปตามร้านเบเกอรี่ 10 ชิ้นเท่ากัน พี่สอนกินไป 3 ชิ้น และน้องกินไป 5 ชิ้น ทั้งคู่กินไปรวมกันกี่ส่วน และเหลือขนมปังกี่ชิ้น?",
+      "solution_th": "พี่สอนกิน 3/10 น้องกิน 5/10 ตัวส่วนเท่ากัน (10 = 10) จึงบวกเฉพาะตัวเศษ 3 + 5 = 8 ได้ 8/10 ส่วน และเหลือ 10/10 − 8/10 = 2/10 ส่วน (คือขนมปัง 2 ชิ้น)",
+      "title_en": "Example 3 — Word problem",
+      "question_en": "A baker cuts 10 equal slices of bread. The teacher eats 3 slices and the child eats 5 slices. Altogether how many tenths, and how many slices are left?",
+      "solution_en": "The teacher ate 3/10 and the child ate 5/10. The denominators are the same (10 = 10), so add only the numerators: 3 + 5 = 8, giving 8/10. Left: 10/10 − 8/10 = 2/10 (2 slices)."
+    }
+  ],
+  "common_mistakes": [
+    "❌ 3/8 + 2/8 = 5/16 — เอาตัวส่วนมาบวกกันด้วย ตัวส่วนต้องคงเดิมเสมอ",
+    "❌ 7/8 − 2/8 = 5/16 — ข้อผิดเดียวกัน คือลบตัวส่วนไปด้วย",
+    "❌ สลับตัวเศษกับตัวส่วน เช่นเขียน 8/3 แทน 3/8",
+    "❌ บวกเศษส่วนที่ตัวส่วนไม่เท่ากันตรงๆ เช่น 1/2 + 1/3 (ยังไม่ใช่หัวข้อของบทนี้ ต้องแปลงก่อน)",
+    "❌ ลืมตรวจว่าของที่หั่นมามีขนาดเท่ากันหรือไม่ ถ้าไม่เท่ากันห้ามเอามาบวกกัน"
+  ],
+  "hints": [
+    "💡 ดูที่ตัวส่วน (เลขล่าง) ก่อนเสมอ ถ้าข้างล่างเหมือนกันก็บวกหรือลบข้างบนได้เลย",
+    "💡 วาดแถบช่วยได้ ขีดแถบทั้งแถวแทนทั้งหมด แล้วลากช่องที่กินไป",
+    "💡 ถ้าสับสน ให้กลับไปนับชิ้นจริงจากตัวอย่างพิซซ่า 8 ชิ้น จะเห็นชัดขึ้น"
+  ],
+  "key_vocabulary": [
+    {
+      "th": "เศษส่วน",
+      "en": "fraction",
+      "definition_th": "ส่วนหนึ่งของของทั้งหมด มีตัวเศษ (บน) และตัวส่วน (ล่าง)",
+      "definition_en": "A part of a whole, with a numerator on top and a denominator below."
+    },
+    {
+      "th": "ตัวส่วน",
+      "en": "denominator",
+      "definition_th": "เลขล่าง บอกว่าของทั้งหมดถูกแบ่งเป็นกี่ส่วนเท่าๆ กัน",
+      "definition_en": "The bottom number, telling how many equal parts the whole is divided into."
+    },
+    {
+      "th": "ตัวเศษ",
+      "en": "numerator",
+      "definition_th": "เลขบน บอกว่าเอากี่ส่วน",
+      "definition_en": "The top number, telling how many parts are taken."
+    },
+    {
+      "th": "ตัวส่วนเท่ากัน",
+      "en": "like denominators",
+      "definition_th": "เศษส่วนที่มีตัวส่วนเหมือนกัน จึงบวกหรือลบกันได้เลย",
+      "definition_en": "Fractions with the same denominator, which can be added or subtracted directly."
+    },
+    {
+      "th": "แถบ Bar Model",
+      "en": "bar model",
+      "definition_th": "แถบที่แบ่งเป็นส่วนเท่าๆ ใช้แสดงว่าตัวส่วนเท่ากันแล้วนำมาบวกลบกันได้",
+      "definition_en": "A bar split into equal parts, showing why like denominators can be combined directly."
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "like_denominators_th_001_q1",
+      "question_th": "น้องกินพิซซ่าไป 3/8 ของถาด แล้วเพื่อนกินไปอีก 2/8 ถาดนี้กินไปรวมกันกี่ส่วน?",
+      "question_en": "The child ate 3/8 of a pizza and a friend ate another 2/8. How many eighths did they eat altogether?",
+      "choices": [
+        "5/8",
+        "5/16",
+        "6/8",
+        "11/8"
+      ],
+      "correct_index": 0,
+      "explanation_th": "ตัวส่วนเท่ากัน (8 = 8) จึงบวกเฉพาะตัวเศษ 3 + 2 = 5 คงตัวส่วน 8 ไว้ ได้ 5/8",
+      "explanation_en": "The denominators are the same (8 = 8), so add only the numerators: 3 + 2 = 5, keeping the 8. Answer: 5/8.",
+      "skill_tag": "fraction_addition_like_denominators",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "like_denominators_th_001_q2",
+      "question_th": "น้องมีพิซซ่า 7/8 ของถาด แล้วกินไป 2/8 เหลือพิซซ่ากี่ส่วน?",
+      "question_en": "The child had 7/8 of a pizza and ate 2/8. How many eighths are left?",
+      "choices": [
+        "5/8",
+        "5/16",
+        "9/8",
+        "6/8"
+      ],
+      "correct_index": 0,
+      "explanation_th": "ตัวส่วนเท่ากัน (8 = 8) จึงลบเฉพาะตัวเศษ 7 − 2 = 5 คงตัวส่วน 8 ไว้ ได้ 5/8",
+      "explanation_en": "The denominators are the same (8 = 8), so subtract only the numerators: 7 − 2 = 5, keeping the 8. Answer: 5/8.",
+      "skill_tag": "fraction_subtraction_like_denominators",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "like_denominators_th_001_q3",
+      "question_th": "คุณแม่หั่นขนมปังไปตามร้านเบเกอรี่ 10 ชิ้นเท่ากัน พี่สอนกินไป 3 ชิ้น และน้องกินไป 5 ชิ้น ทั้งคู่กินไปรวมกันกี่ส่วนของขนมปังทั้งสิบชิ้น?",
+      "question_en": "A baker cuts 10 equal slices of bread. The teacher eats 3 slices and the child eats 5 slices. Altogether, how many tenths of the bread did they eat?",
+      "choices": [
+        "8/10",
+        "5/10",
+        "10/8",
+        "2/10"
+      ],
+      "correct_index": 0,
+      "explanation_th": "พี่สอนกิน 3/10 น้องกิน 5/10 ตัวส่วนเท่ากัน (10 = 10) จึงบวกเฉพาะตัวเศษ 3 + 5 = 8 ได้ 8/10 ส่วน",
+      "explanation_en": "The teacher ate 3/10 and the child ate 5/10. The denominators are the same (10 = 10), so add only the numerators: 3 + 5 = 8, giving 8/10.",
+      "skill_tag": "fraction_addition_like_denominators",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "like_denominators_th_001_q4",
+      "question_th": "ขนมปัง 1 ถาดถูกหั่นเป็น 6 ชิ้นเท่ากัน น้องกินไป 1 ชิ้น แล้วพี่สอนกินไปอีก 4 ชิ้น เหลือขนมปังกี่ชิ้น?",
+      "question_en": "A loaf of bread is cut into 6 equal slices. The child eats 1 slice and the teacher eats 4 more. How many slices are left?",
+      "choices": [
+        "1/6",
+        "2/6",
+        "5/6",
+        "3/6"
+      ],
+      "correct_index": 0,
+      "explanation_th": "กินไปรวม 1/6 + 4/6 = 5/6 ของขนมปัง จึงเหลือ 6/6 − 5/6 = 1/6 ส่วน คือขนมปัง 1 ชิ้น",
+      "explanation_en": "Eaten: 1/6 + 4/6 = 5/6. Left: 6/6 − 5/6 = 1/6, which is 1 slice.",
+      "skill_tag": "fraction_subtraction_like_denominators",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "like_denominators_th_001_q5",
+      "question_th": "ข้อใดเป็นวิธีบวกเศษส่วนที่ตัวส่วนเท่ากันที่ถูกต้อง?",
+      "question_en": "Which is the correct way to add fractions with like denominators?",
+      "choices": [
+        "บวกเฉพาะตัวเศษ แล้วคงตัวส่วนไว้เหมือนเดิม",
+        "บวกทั้งตัวเศษและตัวส่วน",
+        "คูณตัวเศษกับตัวส่วนของอีกตัว",
+        "เอาตัวส่วนมาบวกกันแล้วหารด้วย 2"
+      ],
+      "correct_index": 0,
+      "explanation_th": "เมื่อตัวส่วนเท่ากัน แต่ละส่วนมีขนาดเท่ากัน จึงนำมาบวกหรือลบกันได้เลยโดยคงตัวส่วนไว้ แล้วคำนวณเฉพาะตัวเศษ",
+      "explanation_en": "With like denominators each part is the same size, so keep the denominator and combine only the numerators.",
+      "skill_tag": "fraction_concept_like_denominators",
+      "difficulty": "easy"
+    }
+  ],
+  "explanation_en": "In this lesson we learned to add and subtract fractions that have the same denominator. Because the parts are equal in size, we only change the numerators and keep the denominator unchanged."
+}
