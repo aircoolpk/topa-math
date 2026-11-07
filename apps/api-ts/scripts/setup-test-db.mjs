@@ -65,17 +65,26 @@ await admin.connect()
 
 // Provision the role. ALTER ROLE keeps the password in sync with the
 // configured value so a stale role cannot lock the setup out.
+//
+// When the requested role is the superuser we are already connected as, the
+// password is left alone — changing it would invalidate the admin connection
+// string that the tests use.
+const currentUser = await admin.query('SELECT current_user AS u')
 const escapedPassword = ROLE_PASSWORD.replace(/'/g, "''")
-await admin.query(
-  `DO $$ BEGIN
-     IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = '${ROLE}') THEN
-       CREATE ROLE ${ROLE} LOGIN PASSWORD '${escapedPassword}';
-     ELSE
-       ALTER ROLE ${ROLE} WITH LOGIN PASSWORD '${escapedPassword}';
-     END IF;
-   END $$;`,
-)
-console.log(`role ${ROLE} ready`)
+if (currentUser.rows[0].u === ROLE) {
+  console.log(`role ${ROLE} is the current superuser — leaving its password unchanged`)
+} else {
+  await admin.query(
+    `DO $$ BEGIN
+       IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = '${ROLE}') THEN
+         CREATE ROLE ${ROLE} LOGIN PASSWORD '${escapedPassword}';
+       ELSE
+         ALTER ROLE ${ROLE} WITH LOGIN PASSWORD '${escapedPassword}';
+       END IF;
+     END $$;`,
+  )
+  console.log(`role ${ROLE} ready`)
+}
 
 const existing = await admin.query('SELECT 1 FROM pg_database WHERE datname = $1', [DB_NAME])
 if (existing.rowCount === 0) {
