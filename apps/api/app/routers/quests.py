@@ -185,6 +185,8 @@ def rank_summary(child_id: str, db: Session = Depends(get_db), user: User = Depe
         "level": level,
         "xp_into_level": xp_into_level,
         "xp_to_next_rank": xp_to_next_level,
+        "xp_needed_for_next_level": xp_to_next_level,
+        "xp_remaining_to_next_level": max(0, xp_to_next_level - xp_into_level),
         "average_accuracy": float(child.average_test_accuracy or 0) if child.total_tests_completed else None,
         "average_speed_seconds": round(float(child.average_test_speed or 0) / 1000, 2) if child.total_tests_completed else None,
     }

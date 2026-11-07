@@ -1,3 +1,36 @@
 name = "topa-math"
-main = "src/index.js"
-compatibility_date = "2024-01-01"
+main = ".open-next/worker.js"
+compatibility_date = "2024-11-06"
+compatibility_flags = ["nodejs_compat"]
+
+# Build output produced by `npm run cf:build` (opennextjs-cloudflare build).
+[build]
+command = "npm run cf:build"
+
+# Static assets emitted by OpenNext (public/ + .next/static) are served by the
+# Workers assets runtime instead of being bundled into the Worker script.
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# ---------------------------------------------------------------------------
+# Build-time + runtime variables.
+#
+# NEXT_PUBLIC_* values are inlined into the bundle at build time, so they must
+# be present when Cloudflare Workers Builds runs `npm run cf:build`.
+# Secrets (Stripe secret key, Neon DATABASE_URL, …) belong in the Cloudflare
+# dashboard (Workers → Settings → Variables and Secrets), NOT in this file.
+# ---------------------------------------------------------------------------
+[vars]
+NEXT_PUBLIC_API_BASE_URL = "https://api.topamath.com"
+NEXT_PUBLIC_APP_URL = "https://topamath.com"
+NEXT_PUBLIC_APP_ENV = "production"
+# Origin the Worker proxies API routes to (server-side only).
+# The FastAPI backend currently runs in Docker behind a Cloudflare Tunnel and
+# is reachable at this public hostname. When the API is ported to Workers
+# (apps/api-ts), this stays the same hostname and only the origin changes.
+INTERNAL_API_BASE_URL = "https://api.topamath.com"
+
+# Observability
+[observability]
+enabled = true

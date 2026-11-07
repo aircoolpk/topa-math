@@ -1,0 +1,36 @@
+name = "topa-math-api"
+main = "src/index.ts"
+compatibility_date = "2025-04-01"
+
+# Cloudflare Workers Free plan: 100,000 requests/day for the whole account.
+# Keep this API as small as possible and let the Next.js frontend serve static
+# assets directly from the Workers assets runtime (see ../../wrangler.toml).
+
+[observability]
+enabled = true
+
+[vars]
+ENVIRONMENT = "local"
+# Comma-separated list of allowed browser origins (credentials are sent, so
+# wildcards are not allowed — same rule as the FastAPI CORS middleware).
+CORS_ORIGINS = "http://localhost:3000,http://127.0.0.1:3000"
+# Auth cookie behaviour (matches the Python settings names).
+AUTH_COOKIE_NAME = "access_token"
+AUTH_COOKIE_SECURE = "false"
+AUTH_COOKIE_SAMESITE = "lax"
+AUTH_COOKIE_PATH = "/"
+ACCESS_TOKEN_EXPIRE_MINUTES = "1440"
+# PBKDF2-SHA256 iteration count for NEW password hashes.
+# Cloudflare Workers production caps PBKDF2 at 100,000 iterations — do not
+# raise this above 100,000 or sign-up/login will fail at runtime.
+PASSWORD_HASH_ITERATIONS = "100000"
+
+# Secrets (set with `wrangler secret put <NAME>`):
+#   DATABASE_URL        — Neon pooled connection string
+#   JWT_SECRET          — HS256 secret shared with the legacy FastAPI service
+#
+# Optional R2 binding for the site CMS content (see src/lib/content.ts).
+# Uncomment and create the bucket to enable live CMS updates:
+# [[r2_buckets]]
+# binding = "CONTENT_BUCKET"
+# bucket_name = "topa-math-content"

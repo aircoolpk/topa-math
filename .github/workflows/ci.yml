@@ -1,0 +1,80 @@
+name: CI — Build Check
+
+# Topa Math — CI only (NO deploy here).
+#
+# Deployment is handled by Cloudflare Workers Builds, which is bound to this
+# repo (aircoolpk/topa-math) on branch `main` and runs automatically on every
+# push. This workflow only verifies the build so a broken push shows up as a
+# red check instead of a failed production deploy.
+#
+# The build command lives in wrangler.toml ([build] command) so Cloudflare and
+# CI run the exact same pipeline.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Type check + OpenNext build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Verify lockfile is committed
+        # `npm ci` fails hard when package-lock.json is missing from the repo.
+        # It existed on disk but was never committed (not in .gitignore either),
+        # so this guard turns a confusing npm error into an actionable message.
+        run: |
+          if [ ! -f package-lock.json ]; then
+            echo "::error::package-lock.json is missing from the repository. Run 'npm install' locally and commit the lockfile — 'npm ci' requires it."
+            exit 1
+          fi
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npm run lint
+
+      - name: Build (Next.js)
+        run: npm run build
+        env:
+          NEXT_PUBLIC_API_BASE_URL: https://api.topamath.com
+          NEXT_PUBLIC_APP_URL: https://topamath.com
+          NEXT_PUBLIC_APP_ENV: production
+          # next.config.js builds the API rewrites from this origin. Without it
+          # the bundle falls back to http://127.0.0.1:8001, which does not
+          # resolve inside the Workers runtime.
+          INTERNAL_API_BASE_URL: https://api.topamath.com
+          # Must match JWT_SECRET on the API side, otherwise the session cookie
+          # issued by the API cannot be verified by the Worker.
+          NEXT_PUBLIC_JWT_SECRET: ${{ secrets.NEXT_PUBLIC_JWT_SECRET }}
+
+      - name: Build (OpenNext → Workers bundle)
+        run: npm run cf:build
+        env:
+          NEXT_PUBLIC_API_BASE_URL: https://api.topamath.com
+          NEXT_PUBLIC_APP_URL: https://topamath.com
+          NEXT_PUBLIC_APP_ENV: production
+          INTERNAL_API_BASE_URL: https://api.topamath.com
+          NEXT_PUBLIC_JWT_SECRET: ${{ secrets.NEXT_PUBLIC_JWT_SECRET }}
+
+      - name: Verify Workers bundle was produced
+        run: |
+          test -f .open-next/worker.js || { echo "::error::.open-next/worker.js was not produced"; exit 1; }
+          echo "Worker bundle OK:"
+          ls -la .open-next/worker.js

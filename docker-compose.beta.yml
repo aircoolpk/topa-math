@@ -82,14 +82,15 @@ services:
     ports:
       - "${API_HOST:-127.0.0.1}:${API_PORT:-8001}:8001"
     volumes:
-      # Docker Desktop on Windows resolves a relative bind source to /mnt/c/<...>,
-      # but the WSL2 backend does not mount /mnt/c -> the container got an empty
-      # tmpfs instead of the real files (site/homepage.json missing -> HTTP 500).
-      # Windows-native absolute paths are resolved correctly by Docker Desktop.
-      # Content is ALSO baked into the image (see apps/api/Dockerfile) so the
-      # image stays self-contained for Cloudflare Containers / CI.
-      - "${TOPA_PROJECT_ROOT:-C:/web-app/4-craft.com}/apps/api/app/content/math:/app/app/content/math"
-      - "${TOPA_PROJECT_ROOT:-C:/web-app/4-craft.com}/apps/api/app/content/site:/app/app/content/site"
+      # Content (apps/api/app/content/{math,site}) is deliberately NOT bind-mounted.
+      # Docker Desktop on Windows mounts C: through a FUSE layer that is ~500x
+      # slower than the image layer (35s vs 0.05s to resolve 200 files) and
+      # returns inconsistent results — list_canonical_lessons() timed out at
+      # 902s and /me/dashboard hung behind it. The content is baked into the
+      # image instead (see apps/api/Dockerfile, which asserts the layout at
+      # build time), so the container reads it from the fast image layer.
+      # Only storage/uploads stays bind-mounted: the API must write there and
+      # the host must see those files.
       - "${TOPA_PROJECT_ROOT:-C:/web-app/4-craft.com}/storage/uploads:/app/storage/uploads"
     depends_on:
       4craft-postgres:

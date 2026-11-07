@@ -19,6 +19,8 @@ CHILD_PROFILE_COLUMNS = {
     "avatar_config": "JSON DEFAULT '{}'",
     "program_type": "VARCHAR(10) DEFAULT 'THP'",
     "membership_status": "VARCHAR(20) DEFAULT 'free'",
+    "membership_provider": "VARCHAR(20)",
+    "mpp_access_ends_at": "TIMESTAMP WITH TIME ZONE",
     "stripe_customer_id": "VARCHAR(255)",
     "stripe_subscription_id": "VARCHAR(255)",
     "subscription_status": "VARCHAR(40) DEFAULT 'none'",

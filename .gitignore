@@ -13,6 +13,12 @@
 node_modules/
 **/node_modules/
 
+# Lockfile must be committed — `npm ci` (CI + Cloudflare Workers Builds)
+# fails without it. This repo's root package-lock.json existed on disk but was
+# never added to the index, which broke every CI run.
+!package-lock.json
+!*/package-lock.json
+
 # Next.js build output
 .next/
 **/.next/
@@ -75,3 +81,14 @@ apps/api/app/content/math/_archived_legacy_not_loaded/
 apps/api/app/content/math/New folder/
 apps/api/app/content/math/grade_*/lessons old/
 *.bak-phase1-*
+
+# QA session artifacts (contain auth tokens)
+.qa/
+
+# Cloudflare Workers local secrets (wrangler dev)
+.dev.vars
+
+# OpenNext / Cloudflare Workers build output
+.open-next/
+.open-next
+.wrangler/

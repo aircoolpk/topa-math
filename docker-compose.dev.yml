@@ -71,8 +71,8 @@ services:
 
   4craft-web:
     build:
-      context: ./apps/web
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: apps/web/Dockerfile
       target: deps
     container_name: 4craft-web
     restart: unless-stopped
@@ -85,7 +85,7 @@ services:
     ports:
       - "${WEB_PORT:-3000}:3000"
     volumes:
-      - ./apps/web:/app
+      - ./:/app
       - 4craft-web-node-modules:/app/node_modules
     depends_on:
       4craft-api:

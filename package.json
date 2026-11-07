@@ -1,15 +1,43 @@
 {
-  "name": "4-craft.com",
+  "name": "topa-math",
   "version": "1.0.0",
-  "description": "MVP backend-first scaffold for a Thai elementary math adaptive learning platform.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "private": true,
+  "description": "Topa Math — แพลตฟอร์มเรียนคณิตศาสตร์ออนไลน์ ป.1-ป.6 (หลักสูตรไทย + English Program) บน Cloudflare Workers",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "lint": "tsc --noEmit",
+    "cf:build": "next build && opennextjs-cloudflare build --skipNextBuild",
+    "cf:preview": "npm run cf:build && wrangler dev",
+    "cf:deploy": "npm run cf:build && wrangler deploy",
+    "cf:deploy:dry": "npm run cf:build && wrangler deploy --dry-run"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "axios": "^1.7.2",
+    "clsx": "^2.1.1",
+    "jose": "^5.6.3",
+    "lucide-react": "^0.400.0",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.4",
+    "tailwind-merge": "^2.4.0",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261104.1",
+    "@opennextjs/cloudflare": "1.14.4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5",
+    "wrangler": "^4.49.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
 }

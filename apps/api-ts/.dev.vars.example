@@ -1,0 +1,18 @@
+# Copy to `.dev.vars` and fill in. `.dev.vars` is gitignored.
+
+# Neon Postgres pooled connection string (https://neon.tech → Connection Details)
+DATABASE_URL="postgresql://user:password@ep-xxx.region.aws.neon.tech/neondb?sslmode=require"
+
+# HS256 signing secret. MUST match the legacy FastAPI service when both APIs
+# run side by side, otherwise existing sessions are rejected.
+JWT_SECRET="change-me-in-production"
+
+# Optional overrides
+# ENVIRONMENT="local"
+# CORS_ORIGINS="http://localhost:3000"
+# AUTH_COOKIE_NAME="access_token"
+# AUTH_COOKIE_SECURE="false"
+# AUTH_COOKIE_SAMESITE="lax"
+# AUTH_COOKIE_DOMAIN="example.com"
+# ACCESS_TOKEN_EXPIRE_MINUTES="1440"
+# PASSWORD_HASH_ITERATIONS="100000"

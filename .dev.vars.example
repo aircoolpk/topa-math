@@ -1,0 +1,17 @@
+# ─── Local development variables for Cloudflare Workers (wrangler dev) ──────
+# Copy to `.dev.vars` and adjust. `.dev.vars` is gitignored.
+
+# Public API base URL the browser calls. Must be reachable from the browser.
+NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8001
+
+# Origin the Worker proxies API routes to (server-side only).
+INTERNAL_API_BASE_URL=http://127.0.0.1:8001
+
+# Public app URL.
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# App environment: local | beta | production
+NEXT_PUBLIC_APP_ENV=local
+
+# Stripe publishable key (test mode is fine for local).
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_placeholder
