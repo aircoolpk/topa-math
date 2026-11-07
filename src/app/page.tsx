@@ -182,6 +182,11 @@ function RankingTable({
           </span>
         </div>
       ))}
+      {rows.length === 0 && (
+        <p className="border-b border-slate-100 px-5 py-8 text-center text-sm font-semibold text-slate-500">
+          ยังไม่มีข้อมูลอันดับจากนักเรียนจริงในขณะนี้ — ข้อมูลจะแสดงอัตโนมัติเมื่อมีการทำแบบฝึก
+        </p>
+      )}
       <Link href={link} className="flex items-center justify-center gap-2 bg-blue-50/40 px-4 py-3.5 text-sm font-black text-blue-600 hover:text-blue-700">
         ดูอันดับทั้งหมด <ArrowRight className="h-4 w-4" />
       </Link>
@@ -218,6 +223,17 @@ export default function HomePage() {
     secondary_cta_link: cleanText(cms?.hero?.secondary_cta_link, fallbackHomepageConfig.hero.secondary_cta_link),
     mascot_group_image: assetOrFallback(cms?.hero?.mascot_group_image, fallbackHomepageConfig.hero.mascot_group_image),
   }
+
+  // Hero stats come from the CMS (which is generated from the database by
+  // scripts/sync-homepage-content-from-db.py). The hard-coded fallback is
+  // only used before the CMS request resolves.
+  const heroStats: Array<{ label: string; value: string; detail?: string }> = (
+    cms?.hero?.stats && cms.hero.stats.length > 0
+      ? cms.hero.stats
+      : cms
+        ? []
+        : fallbackHomepageConfig.hero.stats
+  ).slice(0, 3)
   const rankingIntro = {
     title: cleanText(cms?.ranking?.title, fallbackHomepageConfig.ranking.title),
     subtitle: cleanText(cms?.ranking?.subtitle, fallbackHomepageConfig.ranking.subtitle || 'จัดอันดับเก่งเลขทั่วไทย'),
@@ -239,9 +255,14 @@ export default function HomePage() {
 
   // Live ranking rows (CMS → fallback). Both sources use TopaRankingRow schema;
   // CMS may include an extra `image` field, which we forward as-is.
+  // The fallback only applies when the CMS has not loaded yet (cms === null).
+  // Once the CMS responds with an empty ranking, that is the real state and we
+  // must not resurrect the placeholder table.
   const liveProvinceRows = (cms?.ranking?.rows && cms.ranking.rows.length > 0
     ? cms.ranking.rows
-    : fallbackHomepageConfig.ranking.rows
+    : cms
+      ? []
+      : fallbackHomepageConfig.ranking.rows
   )
   const liveDistrictRows = liveProvinceRows
 
@@ -293,6 +314,10 @@ export default function HomePage() {
     .filter((review) => review.enabled !== false)
     .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
     .map((review, index) => {
+      // Fallback values are only used to fill a missing field of a REAL review.
+      // When the CMS has no reviews at all we render an empty state instead of
+      // falling back to the placeholder testimonials, which would publish
+      // invented quotes.
       const fallback = fallbackHomepageConfig.reviews.cards[index % fallbackHomepageConfig.reviews.cards.length] || fallbackHomepageConfig.reviews.cards[0]
       return {
         name: cleanText(review.name, fallback.name),
@@ -303,14 +328,9 @@ export default function HomePage() {
         image_path: assetOrFallback(review.image_path || review.image, fallback.image_path),
       }
     })
-  const visibleReviews = reviewCards.length ? reviewCards : fallbackHomepageConfig.reviews.cards.map((r) => ({
-    name: r.name,
-    grade_label: r.grade_label,
-    province: r.province,
-    quote: r.quote,
-    rating: r.rating,
-    image_path: r.image_path,
-  }))
+  // No fabricated testimonials: if the database has no review rows the section
+  // is hidden entirely (see `visibleReviews.length` check in the JSX below).
+  const visibleReviews = reviewCards
 
   return (
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
@@ -388,21 +408,21 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-7 grid max-w-[650px] grid-cols-1 gap-4 sm:grid-cols-3">
-              <div className="rounded-xl border border-blue-100 bg-white px-5 py-3.5 shadow-[0_10px_22px_rgba(24,97,199,0.08)]">
-                <Users className="mb-1 h-6 w-6 text-amber-500" />
-                <p className="text-xs font-bold text-slate-500">นักเรียน</p>
-                <p className="text-lg font-black text-blue-700">1,200+ คน</p>
-              </div>
-              <div className="rounded-xl border border-blue-100 bg-white px-5 py-3.5 shadow-[0_10px_22px_rgba(24,97,199,0.08)]">
-                <Star className="mb-1 h-6 w-6 fill-amber-400 text-amber-400" />
-                <p className="text-xs font-bold text-slate-500">คะแนนเฉลี่ย</p>
-                <p className="text-lg font-black text-blue-700">4.8/5</p>
-              </div>
-              <div className="rounded-xl border border-blue-100 bg-white px-5 py-3.5 shadow-[0_10px_22px_rgba(24,97,199,0.08)]">
-                <Target className="mb-1 h-6 w-6 text-blue-600" />
-                <p className="text-xs font-bold text-slate-500">ระดับความสำเร็จ</p>
-                <p className="text-lg font-black text-blue-700">ยอดเยี่ยม</p>
-              </div>
+              {heroStats.map((stat, index) => {
+                const StatIcon = [Users, Star, Target][index % 3]
+                const iconClass = [
+                  'text-amber-500',
+                  'fill-amber-400 text-amber-400',
+                  'text-blue-600',
+                ][index % 3]
+                return (
+                  <div key={`${stat.label}-${index}`} className="rounded-xl border border-blue-100 bg-white px-5 py-3.5 shadow-[0_10px_22px_rgba(24,97,199,0.08)]">
+                    <StatIcon className={`mb-1 h-6 w-6 ${iconClass}`} />
+                    <p className="text-xs font-bold text-slate-500">{stat.label}</p>
+                    <p className="text-lg font-black text-blue-700">{stat.value}</p>
+                  </div>
+                )
+              })}
             </div>
           </div>
           <div className="relative flex min-h-[340px] items-center justify-center lg:min-h-[430px]">
@@ -466,6 +486,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {visibleReviews.length > 0 && (
       <section id="reviews" className="mx-auto max-w-[1480px] px-6 py-5 lg:px-8">
         <div className="mb-6 text-left">
           <h2 className="text-5xl font-black text-[#0B63D8]">รีวิวจากเด็กที่ใช้งานจริง</h2>
@@ -499,6 +520,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      )}
 
       <section className="mx-auto max-w-[1480px] px-6 py-5 lg:px-8">
         <div className="relative overflow-hidden rounded-[24px] border border-[#B7DDFB] bg-[linear-gradient(90deg,#EAF7FF_0%,#F8FCFF_48%,#EAF7FF_100%)] px-5 pb-4 pt-1 shadow-[0_10px_30px_rgba(37,99,235,0.10)] sm:px-8">
