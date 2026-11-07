@@ -54,7 +54,29 @@ const nextConfig = {
     return {
       beforeFiles: [
         { source: '/:path*', has: [{ type: 'host', value: 'api.topamath.com' }], destination: `${parsed.origin}/:path*` },
-        ...['/auth/:path*', '/quiz-sessions/:path*', '/subjects', '/skills', '/rankings', '/avatar/:path*', '/health'].map(source => ({ source, destination: `${parsed.origin}${source}` })),
+        // Every API prefix the Next.js app calls must be proxied to the
+        // FastAPI backend. Without this the Worker answers those paths with
+        // the Next.js 404 page instead of JSON, and the client silently falls
+        // back to its built-in placeholder data.
+        //
+        // Keep this list in sync with the paths under src/lib/api/*.ts and the
+        // apiClient calls in src/app/**.
+        ...[
+          '/admin/:path*',
+          '/auth/:path*',
+          '/avatar/:path*',
+          '/billing/:path*',
+          '/children/:path*',
+          '/health/:path*',
+          '/me/:path*',
+          '/quiz-sessions/:path*',
+          '/rankings/:path*',
+          '/referrals/:path*',
+          '/site/:path*',
+          '/skills/:path*',
+          '/subjects/:path*',
+          '/webhooks/:path*',
+        ].map(source => ({ source, destination: `${parsed.origin}${source}` })),
       ],
       afterFiles: [],
       fallback: [],
