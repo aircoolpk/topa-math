@@ -29,6 +29,32 @@
 -- service stored it: `secrets.token_hex(16)` produced a 32-character hex
 -- string and the service hashed the UTF-8 bytes of that string (not the
 -- decoded bytes).
+
+-- Drop any previous revision of these helpers *before* recreating them.
+--
+-- `CREATE OR REPLACE` refuses to rename an existing function's input
+-- parameters ("cannot change name of input parameter"), so a helper left over
+-- from an older revision of this file aborted the whole install. Because the
+-- install runs as one multi-statement query, that single failure rolled back
+-- every statement — leaving the database with a mix of old and new helpers,
+-- which only surfaced later as a 500 from /auth/register.
+--
+-- Dropping by name (not by signature) also clears any overloads an older
+-- revision may have left behind.
+DO $$
+DECLARE
+  helper record;
+BEGIN
+  FOR helper IN
+    SELECT oid::regprocedure AS signature
+    FROM pg_proc
+    WHERE proname LIKE 'topa\_%'
+  LOOP
+    EXECUTE 'DROP FUNCTION ' || helper.signature || ' CASCADE';
+  END LOOP;
+END;
+$$;
+
 CREATE OR REPLACE FUNCTION topa_pbkdf2_sha256(p_password text, p_salt_hex text, p_iterations int)
 RETURNS bytea
 LANGUAGE plpgsql IMMUTABLE STRICT AS $$

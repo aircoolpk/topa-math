@@ -58,9 +58,29 @@ beforeAll(async () => {
   await client.connect()
 
   // Install the password helpers the login path relies on.
+  //
+  // `scripts/pbkdf2.sql` is a multi-statement script, so it runs as one
+  // transaction: a single failing statement rolls back the whole install and
+  // leaves the database without the helpers. That failure used to surface
+  // much later as `TypeError: Cannot read properties of undefined (reading
+  // 'split')` on the registration response, so the install is verified here.
   const pbkdf2Sql = readFileSync(join(PACKAGE_ROOT, 'scripts', 'pbkdf2.sql'), 'utf-8')
   await client.query('CREATE EXTENSION IF NOT EXISTS pgcrypto')
   await client.query(pbkdf2Sql)
+
+  // Registration hashes with topa_hash_password and login verifies with
+  // topa_verify_password. If the two disagree — or either is missing — the
+  // registration endpoint answers 500 and the suite dies with a cryptic
+  // error. Check the round trip now so the cause is obvious.
+  const helpers = await client.query<{ ok: boolean }>(
+    `SELECT topa_verify_password('helper-probe', topa_hash_password('helper-probe')) AS ok`,
+  )
+  if (helpers.rows[0]?.ok !== true) {
+    throw new Error(
+      'The password helpers in the test database are missing or inconsistent. ' +
+        'Run "node scripts/setup-test-db.mjs" to reinstall them.',
+    )
+  }
 
   sql = createTestSql(client)
   app = createApp({ sql })
@@ -79,7 +99,15 @@ beforeAll(async () => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: userEmail, password: userPassword }),
   })
-  const body = (await registered.json()) as { access_token: string }
+  const body = (await registered.json()) as { access_token?: string; detail?: unknown }
+  if (!body.access_token) {
+    // Without this guard a failed registration surfaced as
+    // `Cannot read properties of undefined (reading 'split')` several lines
+    // below, which says nothing about the actual cause.
+    throw new Error(
+      `Registration failed with HTTP ${registered.status}: ${JSON.stringify(body.detail ?? body)}`,
+    )
+  }
   const payload = JSON.parse(Buffer.from(body.access_token.split('.')[1] as string, 'base64url').toString()) as {
     sub: string
   }

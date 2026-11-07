@@ -11,26 +11,59 @@
  * Usage: node scripts/setup-test-db.mjs
  *
  * Environment:
- *   TEST_ADMIN_DATABASE_URL — superuser connection string
+ *   TEST_ADMIN_DATABASE_URL — superuser connection string (CI sets this)
  *   TEST_DB_ROLE            — role that owns the schema (default: topa_test)
  *   TEST_DB_PASSWORD        — password for that role
  *   TEST_DB_NAME            — database name (default: topa_test)
+ *
+ * When TEST_ADMIN_DATABASE_URL is not set the superuser credentials are read
+ * from the repository's `.env.docker` — that is the file the local Docker
+ * Postgres container is actually started with, so the setup script connects
+ * with the same password the container expects. Without this fallback the
+ * script fails with `password authentication failed for user "postgres"`.
  */
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { Client } from 'pg'
 
 const PACKAGE_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+const REPO_ROOT = join(PACKAGE_ROOT, '..', '..')
 
 /**
- * Superuser connection string. The local Docker Postgres uses the password
- * from .env.docker; CI sets TEST_ADMIN_DATABASE_URL explicitly.
+ * Read a `KEY=VALUE` pair out of a dotenv-style file.
+ *
+ * @param file path of the file to read.
+ * @param key the variable name.
  */
-const ADMIN_URL =
-  process.env.TEST_ADMIN_DATABASE_URL ??
-  'postgresql://postgres:postgres@127.0.0.1:5432/postgres'
+function readEnvValue(file, key) {
+  if (!existsSync(file)) return ''
+  const match = readFileSync(file, 'utf-8').match(new RegExp(`^${key}=(.*)$`, 'm'))
+  return match ? match[1].trim() : ''
+}
+
+/**
+ * Build the superuser connection string for the local Docker Postgres.
+ *
+ * The container's password comes from `.env.docker` (`POSTGRES_PASSWORD`),
+ * so that file is the only reliable source for it. Falls back to the stock
+ * `postgres`/`postgres` pair the CI service container uses.
+ */
+function localAdminUrl() {
+  const user = readEnvValue(join(REPO_ROOT, '.env.docker'), 'POSTGRES_USER') || 'postgres'
+  const password = readEnvValue(join(REPO_ROOT, '.env.docker'), 'POSTGRES_PASSWORD') || 'postgres'
+  const port = readEnvValue(join(REPO_ROOT, '.env.docker'), 'POSTGRES_PORT') || '5432'
+  return `postgresql://${encodeURIComponent(user)}:${encodeURIComponent(password)}@127.0.0.1:${port}/postgres`
+}
+
+/**
+ * Superuser connection string.
+ *
+ * CI sets TEST_ADMIN_DATABASE_URL explicitly; locally the credentials come
+ * from `.env.docker`.
+ */
+const ADMIN_URL = process.env.TEST_ADMIN_DATABASE_URL ?? localAdminUrl()
 
 /**
  * Role that owns the test schema. CI provisions Postgres with the `postgres`
@@ -50,6 +83,15 @@ for (const [label, value] of [['TEST_DB_ROLE', ROLE], ['TEST_DB_NAME', DB_NAME]]
   if (!/^[A-Za-z_][A-Za-z0-9_]*$/.test(value)) {
     throw new Error(`${label} must be a plain SQL identifier, got: ${value}`)
   }
+}
+
+// This script drops and recreates the `public` schema, which is only ever
+// correct for a throwaway test database. Refuse to touch anything else.
+if (!/test/i.test(DB_NAME) && process.env.ALLOW_SCHEMA_RESET !== '1') {
+  throw new Error(
+    `Refusing to reset the schema of "${DB_NAME}" — the name does not look like a test database. ` +
+      'Set TEST_DB_NAME to a *_test database, or ALLOW_SCHEMA_RESET=1 if this really is a throwaway.',
+  )
 }
 
 /** Find the generated Drizzle migration file. */
@@ -120,6 +162,19 @@ console.log(`applied ${applied} statements from ${migrationFile}`)
 await client.query('CREATE EXTENSION IF NOT EXISTS pgcrypto')
 await client.query(readFileSync(join(PACKAGE_ROOT, 'scripts', 'pbkdf2.sql'), 'utf-8'))
 console.log('installed pgcrypto + password helpers')
+
+// Verify the helpers agree with each other. Registration hashes with
+// `topa_hash_password` and login verifies with `topa_verify_password`, so a
+// mismatch between the two only shows up as a 500 from /auth/register — very
+// hard to trace back to the database.
+const probe = await client.query(
+  `SELECT topa_verify_password('setup-probe', topa_hash_password('setup-probe')) AS ok`,
+)
+if (probe.rows[0]?.ok !== true) {
+  console.error('\nThe password helpers do not agree with each other — the test suite would fail.')
+  process.exit(1)
+}
+console.log('password helpers verified (hash + verify round trip)')
 
 const { rows } = await client.query(
   "SELECT count(*)::int AS n FROM information_schema.tables WHERE table_schema = 'public'",
