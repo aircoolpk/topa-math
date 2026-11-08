@@ -60,7 +60,7 @@ jobs:
 
           echo "using build id: ${BUILD_ID:-none}"
 
-          for path in "builds/${BUILD_ID}" "builds/${BUILD_ID}/logs" "workers/builds/${BUILD_ID}" "workers/builds/${BUILD_ID}/logs" "workers/scripts/topa-math/builds" "workers/scripts/topa-math/builds/${BUILD_ID}" "workers/services/topa-math/builds" "workers/services/topa-math/builds/${BUILD_ID}" "workers/services/view/topa-math/production/builds/${BUILD_ID}" "workers/builds/${BUILD_ID}/deployment"; do
+          for path in "builds/builds/${BUILD_ID}" "builds/builds/${BUILD_ID}/logs" "builds/builds/latest?script_ids=topa-math" "builds/workers/topa-math/builds" "builds/triggers" "builds/tokens" "workers/services/topa-math/builds"; do
             echo ""
             echo "=================== GET /accounts/.../${path} ==================="
             safe=$(echo "${path}" | tr '/' '_')
