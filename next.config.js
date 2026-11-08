@@ -1,5 +1,25 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ *
+ * The public values are inlined into the bundle at build time. A build that
+ * runs on a machine without them — Cloudflare Workers Builds, for example,
+ * where `.env.production` is not present because it is git-ignored — would
+ * otherwise abort with "NEXT_PUBLIC_API_BASE_URL is required". These defaults
+ * describe the deployed site, and any environment variable still wins, so a
+ * local `.env.local` can point the app somewhere else.
+ */
+const DEFAULT_PUBLIC_ENV = {
+  NEXT_PUBLIC_API_BASE_URL: 'https://api.topamath.com',
+  NEXT_PUBLIC_APP_URL: 'https://topamath.com',
+  NEXT_PUBLIC_APP_ENV: 'production',
+}
+
 const nextConfig = {
+  env: {
+    NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL || DEFAULT_PUBLIC_ENV.NEXT_PUBLIC_API_BASE_URL,
+    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || DEFAULT_PUBLIC_ENV.NEXT_PUBLIC_APP_URL,
+    NEXT_PUBLIC_APP_ENV: process.env.NEXT_PUBLIC_APP_ENV || DEFAULT_PUBLIC_ENV.NEXT_PUBLIC_APP_ENV,
+  },
   // NOTE: `output: 'standalone'` is REQUIRED by OpenNext/Cloudflare Workers.
   //
   // OpenNext's `createAssets` step reads the HTML pages from
