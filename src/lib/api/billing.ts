@@ -353,11 +353,13 @@ export const billingApi = {
       if (process.env.NODE_ENV === 'development') {
         console.warn('Failed to load billing plans from API, using dev fallback plans')
       }
+      // Every plan in the fallback carries the same plan_code and price as the
+      // backend catalogue. Filtering the monthly plans out of this list left the
+      // pricing cards empty whenever the API was unavailable, so the whole
+      // fallback is used as is.
       return {
         ...DEV_FALLBACK_BILLING_PRICES,
-        plans: DEV_FALLBACK_BILLING_PRICES.plans.filter((plan) =>
-          ['free', 'th_founder_monthly', 'ep_founder_monthly'].includes(plan.plan_code)
-        ),
+        plans: DEV_FALLBACK_BILLING_PRICES.plans.map((plan) => ({ ...plan })),
       }
     }
   },

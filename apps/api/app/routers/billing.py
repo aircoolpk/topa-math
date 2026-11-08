@@ -6,6 +6,7 @@ from typing import Any
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from pydantic import BaseModel
 from sqlalchemy import and_, func, or_, select
+from sqlalchemy.exc import ProgrammingError
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
@@ -262,7 +263,14 @@ def _founder_limit() -> int:
 def _founder_slots(db: Session) -> dict:
     limit = _founder_limit()
     used = get_founder_used_count(db)
-    reserved = int(db.scalar(select(func.count()).select_from(MppPurchaseOrder).where(MppPurchaseOrder.plan_code.in_(FOUNDER_PLAN_CODES), MppPurchaseOrder.status == 'PENDING')) or 0)
+    # The MPP tables are optional: they only exist once the MPP migration has been
+    # applied to a database. A missing table must not take the whole pricing page
+    # down, so the reserved count falls back to zero when it is not there.
+    try:
+        reserved = int(db.scalar(select(func.count()).select_from(MppPurchaseOrder).where(MppPurchaseOrder.plan_code.in_(FOUNDER_PLAN_CODES), MppPurchaseOrder.status == 'PENDING')) or 0)
+    except ProgrammingError:
+        db.rollback()
+        reserved = 0
     return {
         "founder_limit": limit,
         "founder_used": used,

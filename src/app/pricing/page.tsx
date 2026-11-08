@@ -581,6 +581,12 @@ export default function PricingPage() {
           </div>
         )}
 
+        {prices?.using_dev_fallback && (
+          <div role="status" className="mb-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+            ⚠️ โหลดราคาจากเซิร์ฟเวอร์ไม่สำเร็จ กำลังแสดงราคาจากแคตตาล็อกของระบบ — หากสมัครสมาชิกไม่ได้ กรุณาลองใหม่อีกครั้ง
+          </div>
+        )}
+
         <p className="mb-5 text-center text-sm text-gray-600">{prices?.checkout_provider === 'mpp' ? 'ชำระครั้งเดียวสำหรับสิทธิ์ 30 วัน ต่ออายุด้วยรายการชำระใหม่' : 'สมาชิก Stripe ต่ออายุอัตโนมัติ จัดการได้ในหน้าการเรียกเก็บเงิน'}</p>
         {/* Free Plan — always visible */}
         <div className="mb-6">
