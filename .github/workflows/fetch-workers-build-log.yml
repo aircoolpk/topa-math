@@ -1,0 +1,70 @@
+name: Fetch Workers Builds log
+
+# Temporary diagnostic: Cloudflare Workers Builds keeps its build log in the
+# Cloudflare dashboard, which is behind an interactive bot challenge. This
+# workflow asks the Cloudflare API for the same log using the API token the
+# deploy workflow already uses, and prints it in the Actions log.
+#
+# Token-shaped strings are redacted before anything is printed.
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_id:
+        description: 'Workers Builds ID (optional - defaults to the latest build)'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Fetch build log from the Cloudflare API
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          BUILD_ID: ${{ inputs.build_id }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${CF_ACCOUNT:-}" ]; then
+            echo "CLOUDFLARE_ACCOUNT_ID is not set on this environment." >&2
+            exit 1
+          fi
+
+          redact() {
+            sed -E \
+              -e 's/(Bearer )[A-Za-z0-9._~+\/-]{16,}/\1[REDACTED]/g' \
+              -e 's/\beyJ[A-Za-z0-9._-]{16,}\b/[REDACTED_JWT]/g' \
+              -e 's/([A-Za-z0-9_-]{40,})/[REDACTED_LONG]/g'
+          }
+
+          base="https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}"
+
+          if [ -z "${BUILD_ID:-}" ]; then
+            echo "=== resolving the latest build ==="
+            BUILD_ID=$(curl -sS -H "Authorization: Bearer ${CF_TOKEN}" \
+              "${base}/workers/builds?per_page=1" \
+              | python3 -c 'import json,sys; d=json.load(sys.stdin); items=d.get("result") or []; print(items[0].get("id","") if isinstance(items,list) and items else "")' \
+              2>/dev/null || true)
+            echo "latest build id: ${BUILD_ID:-<none>}"
+          fi
+
+          for path in \
+            "builds/${BUILD_ID}" \
+            "builds/${BUILD_ID}/logs" \
+            "workers/builds/${BUILD_ID}" \
+            "workers/builds/${BUILD_ID}/logs" \
+            "workers/scripts/topa-math/builds" \
+          ; do
+            echo ""
+            echo "=================== GET /accounts/.../${path} ==================="
+            curl -sS -H "Authorization: Bearer ${CF_TOKEN}" "${base}/${path}" \
+              | head -c 6000 \
+              | redact
+            echo ""
+          done
