@@ -74,6 +74,30 @@ jobs:
           done
 
           echo ""
+          echo "=================== service build records ==================="
+          for svc in "workers/services/topa-math/builds" "workers/services/topa-math/builds/${BUILD_ID}"; do
+            echo ""
+            echo "----- GET /accounts/.../${svc} -----"
+            safe2=$(echo "${svc}" | tr '/' '_')
+            code=$(curl -sS --compressed -o "${tmp}/${safe2}.json" -w '%{http_code}' -H "Authorization: Bearer ${CF_TOKEN}" "${base}/${svc}" || true)
+            echo "HTTP ${code}  ($(wc -c < "${tmp}/${safe2}.json" 2>/dev/null || echo 0) bytes)"
+            head -c 12000 "${tmp}/${safe2}.json" | redact
+            echo ""
+          done
+
+          echo ""
+          echo "=================== documented workers_builds endpoints ==================="
+          for ep in "builds/builds/latest?script_ids=topa-math" "builds/workers/topa-math/builds" "builds/workers/topamath/builds" "builds/triggers" "builds/tokens"; do
+            echo ""
+            echo "----- GET /accounts/.../${ep} -----"
+            safe3=$(echo "${ep}" | tr '/?&=' '____')
+            code=$(curl -sS --compressed -o "${tmp}/${safe3}.json" -w '%{http_code}' -H "Authorization: Bearer ${CF_TOKEN}" "${base}/${ep}" || true)
+            echo "HTTP ${code}  ($(wc -c < "${tmp}/${safe3}.json" 2>/dev/null || echo 0) bytes)"
+            head -c 6000 "${tmp}/${safe3}.json" | redact
+            echo ""
+          done
+
+          echo ""
           echo "=================== build history structure ==================="
           history="${tmp}/workers_scripts_topa-math_builds.out"
           if [ -s "${history}" ]; then
