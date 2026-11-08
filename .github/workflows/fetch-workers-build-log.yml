@@ -68,10 +68,36 @@ jobs:
             size=$(wc -c < "${tmp}/${safe}.out" 2>/dev/null || echo 0)
             echo "HTTP ${code}  (${size} bytes)"
             if [ "${code}" != "404" ]; then
-              head -c 8000 "${tmp}/${safe}.out" | redact
+              head -c 2000 "${tmp}/${safe}.out" | redact
               echo ""
             fi
           done
+
+          echo ""
+          echo "=================== build history structure ==================="
+          history="${tmp}/workers_scripts_topa-math_builds.out"
+          if [ -s "${history}" ]; then
+            echo "-- top level --"
+            jq -r 'type' "${history}" 2>/dev/null | head -3
+            jq -r 'if type=="object" then (keys|join(", ")) else "array len=" + (length|tostring) end' "${history}" 2>/dev/null | head -5
+            echo "-- first entry keys --"
+            jq -r 'if type=="array" then .[0]|keys|join(", ") else (.result // .) | if type=="array" then .[0]|keys|join(", ") else keys|join(", ") end end' "${history}" 2>/dev/null | head -8
+          fi
+
+          echo ""
+          echo "=================== log for build ${BUILD_ID} ==================="
+          jq -r --arg id "${BUILD_ID}" '
+            (if type=="array" then . else (.result // .) end)
+            | (if type=="array" then . else (.builds // .items // []) end)
+            | (map(select((.build_uuid // .id // "") == $id)) | first)
+            | if . == null then "build not found in history"
+              else "outcome: " + ((.build_outcome // .status // "?" | tostring)),
+                   "--- log lines ---",
+                   ((.build_outcome.logs // .logs // .build_log // .log // []) | tostring | .[0:6000]),
+                   "--- trigger ---",
+                   ((.build_trigger_metadata // {}) | tostring | .[0:1500])
+              end
+          ' "${history}" 2>&1 | redact | head -120
 
           echo ""
           echo "=== done ==="
