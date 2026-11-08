@@ -47,23 +47,30 @@ jobs:
           tmp=$(mktemp -d)
 
           if [ -z "${BUILD_ID:-}" ]; then
-            echo "=== resolving the latest build ==="
-            code=$(curl -sS --compressed -o "${tmp}/latest.json" -w '%{http_code}' -H "Authorization: Bearer ${CF_TOKEN}" "${base}/workers/builds?per_page=5" || true)
-            echo "GET /workers/builds -> HTTP ${code}"
-            head -c 3000 "${tmp}/latest.json" | redact
-            echo ""
-            BUILD_ID=$(grep -o '"id":"[0-9a-f-]\{36\}"' "${tmp}/latest.json" | head -1 | sed -E 's/.*"id":"([^"]+)".*/\1/')
-            echo "latest build id: ${BUILD_ID:-none}"
+            echo "=== listing builds ==="
+            for lp in "workers/builds" "builds"; do
+              code=$(curl -sS --compressed -o "${tmp}/list.json" -w '%{http_code}' -H "Authorization: Bearer ${CF_TOKEN}" "${base}/${lp}?per_page=5" || true)
+              echo "GET /${lp} -> HTTP ${code}"
+              head -c 2000 "${tmp}/list.json" | redact
+              echo ""
+            done
+            BUILD_ID=$(grep -o '"id":"[0-9a-f-]\{36\}"' "${tmp}/list.json" | head -1 | sed -E 's/.*"id":"([^"]+)".*/\1/' || true)
+            echo "resolved build id: ${BUILD_ID:-none}"
           fi
 
-          for path in "builds/${BUILD_ID}" "builds/${BUILD_ID}/logs" "workers/builds/${BUILD_ID}" "workers/builds/${BUILD_ID}/logs" "workers/scripts/topa-math/builds"; do
+          echo "using build id: ${BUILD_ID:-none}"
+
+          for path in "builds/${BUILD_ID}" "builds/${BUILD_ID}/logs" "workers/builds/${BUILD_ID}" "workers/builds/${BUILD_ID}/logs" "workers/scripts/topa-math/builds" "workers/scripts/topa-math/builds/${BUILD_ID}" "workers/services/topa-math/builds" "workers/services/topa-math/builds/${BUILD_ID}" "workers/services/view/topa-math/production/builds/${BUILD_ID}" "workers/builds/${BUILD_ID}/deployment"; do
             echo ""
             echo "=================== GET /accounts/.../${path} ==================="
             safe=$(echo "${path}" | tr '/' '_')
             code=$(curl -sS --compressed -o "${tmp}/${safe}.out" -w '%{http_code}' -H "Authorization: Bearer ${CF_TOKEN}" "${base}/${path}" || true)
-            echo "HTTP ${code}  ($(wc -c < "${tmp}/${safe}.out" 2>/dev/null || echo 0) bytes)"
-            head -c 8000 "${tmp}/${safe}.out" | redact
-            echo ""
+            size=$(wc -c < "${tmp}/${safe}.out" 2>/dev/null || echo 0)
+            echo "HTTP ${code}  (${size} bytes)"
+            if [ "${code}" != "404" ]; then
+              head -c 8000 "${tmp}/${safe}.out" | redact
+              echo ""
+            fi
           done
 
           echo ""
