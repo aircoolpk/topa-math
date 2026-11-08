@@ -396,7 +396,11 @@ export const billingApi = {
    * Response: BillingStatus
    */
   async getStatus(): Promise<BillingStatus> {
-    const res = await apiClient.get('/billing/status')
+    // The pricing page asks for this only to mark the plan the visitor is on.
+    // A visitor who is not signed in gets a 401 here, and the shared response
+    // interceptor would send them to the login page instead of the prices they
+    // came for.
+    const res = await apiClient.get('/billing/status', { skipAuthRedirect: true })
     return res.data as BillingStatus
   },
 }

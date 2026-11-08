@@ -50,6 +50,10 @@ interface PricePlan {
   features?: string[]
   is_founder: boolean
   is_promo: boolean
+  price_type?: string
+  founder_limit?: number
+  founder_used?: number
+  founder_slots_remaining?: number
   available?: boolean
   is_available?: boolean
   stripe_price_id?: string | null
@@ -497,7 +501,13 @@ export default function PricingPage() {
   if (!mounted) return null
 
   // Derive TH and EP monthly plans — never crash on missing plans
-  const allPlans = (prices?.plans ?? []) as PricePlan[]
+  // The API marks a founder plan with price_type, while the built-in fallback
+  // sets the flag directly. Accept either so the founder presentation — the
+  // crown, the founder price and the shared slot counter — always shows.
+  const allPlans = ((prices?.plans ?? []) as PricePlan[]).map((plan) => ({
+    ...plan,
+    is_founder: plan.is_founder ?? plan.price_type === 'founder',
+  }))
 
   if (process.env.NODE_ENV !== 'production') {
     // Warn about any expected plan codes that are missing from API
@@ -604,8 +614,8 @@ export default function PricingPage() {
           <HeroPlanCard
             thPlan={thPlan}
             epPlan={epPlan}
-            founderSlotsRemaining={prices.founder_slots_remaining ?? null}
-            founderLimit={prices.founder_limit ?? null}
+            founderSlotsRemaining={prices.founder_slots_remaining ?? thPlan?.founder_slots_remaining ?? epPlan?.founder_slots_remaining ?? null}
+            founderLimit={prices.founder_limit ?? thPlan?.founder_limit ?? epPlan?.founder_limit ?? null}
             onSubscribe={handleSubscribe}
             loading={loadingPlan}
             error={planError}
