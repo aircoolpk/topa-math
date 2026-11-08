@@ -14,7 +14,8 @@ This script rewrites the data-driven parts of
   * hero.stats[2]   — share of students who completed at least one lesson
   * hero.stats[3]   — average level/XP across students with stats
   * hero.stats[4]   — total XP earned
-  * ranking.rows    — TOPA Ranking built from `student_stats`
+  * ranking.rows    — TOPA Ranking built from `student_stats`, including
+                       the student's own photo when one was uploaded
 
 The marketing copy (headline, features, curriculum, parent_trust, …) is left
 untouched. Reviews are NOT generated: there is no `testimonials` table, so any
@@ -190,7 +191,8 @@ def build_ranking_rows() -> list[dict[str, Any]]:
                ss.tests_completed,
                ss.lessons_completed,
                ss.perfect_tests,
-               ss.quests_completed
+               ss.quests_completed,
+               cp.student_photo_url
         FROM student_stats ss
         JOIN child_profiles cp ON cp.id = ss.child_profile_id
         WHERE ss.tests_completed > 0 OR ss.lessons_completed > 0
@@ -215,17 +217,21 @@ def build_ranking_rows() -> list[dict[str, Any]]:
         # every perfect test gives a bonus.
         total_score = tests * 100 + perfect * 50 + lessons * 20
 
-        ranking.append(
-            {
-                "rank": index + 1,
-                "child_name": nickname,
-                "province": province,
-                "tests_completed": tests,
-                "total_score": total_score,
-                "avg_speed": "-",
-                "mascot": MASCOTS[index % len(MASCOTS)],
-            }
-        )
+        photo_url = (row[6] or "").strip()
+
+        entry: dict[str, Any] = {
+            "rank": index + 1,
+            "child_name": nickname,
+            "province": province,
+            "tests_completed": tests,
+            "total_score": total_score,
+            "avg_speed": "-",
+        }
+        if photo_url:
+            # The student's own photo. The frontend resolves this path against
+            # the API origin, because the files are served by the API.
+            entry["image"] = photo_url
+        ranking.append(entry)
     return ranking
 
 
@@ -269,7 +275,10 @@ def build_public_ranking_rows() -> list[dict[str, Any]]:
 
     for index, row in enumerate(public_rows):
         row["rank"] = index + 1
-        row["mascot"] = MASCOTS[index % len(MASCOTS)]
+        # A mascot is only a stand-in. When the student uploaded a photo, the
+        # row keeps it and no mascot is assigned.
+        if not row.get("image"):
+            row["mascot"] = MASCOTS[index % len(MASCOTS)]
     return public_rows
 
 

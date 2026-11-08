@@ -102,6 +102,22 @@ function assetOrFallback(value: string | undefined, fallback: string) {
   return value
 }
 
+/**
+ * Resolve an asset path that the API serves.
+ *
+ * Student photos live under /storage/avatars and are served by the API, not by
+ * this app's public/ folder, so a relative path has to be pointed at the API
+ * origin. Absolute URLs and data URLs are used as they are.
+ */
+function resolveApiAssetUrl(value: string | undefined): string | null {
+  if (!value || typeof value !== 'string') return null
+  if (value.includes('..') || value.includes('\\')) return null
+  if (/^https?:\/\//i.test(value) || value.startsWith('data:image/')) return value
+  const baseUrl = (process.env.NEXT_PUBLIC_API_BASE_URL || '').replace(/\/$/, '')
+  const path = value.startsWith('/') ? value : `/${value}`
+  return `${baseUrl}${path}`
+}
+
 function TopaImage({
   src,
   fallback,
@@ -159,7 +175,9 @@ function RankingTable({
         <span className="text-right">จำนวนข้อสอบ</span>
         <span className="text-right">คะแนนรวม</span>
       </div>
-      {rows.map((row) => (
+      {rows.map((row) => {
+        const studentPhotoUrl = resolveApiAssetUrl(row.image)
+        return (
         <div
           key={`${title}-${row.rank}`}
           className="grid grid-cols-[64px_1fr_104px_104px] items-center gap-2 border-b border-slate-100 px-5 py-4 text-base last:border-b-0 max-sm:grid-cols-[48px_1fr_70px_76px]"
@@ -167,7 +185,7 @@ function RankingTable({
           <Medal rank={row.rank} />
           <div className="flex items-center gap-2 font-bold text-slate-800">
             <TopaImage
-              src={row.image ? assetOrFallback(row.image, resolveMascotImage(row.mascot)) : resolveMascotImage(row.mascot)}
+              src={studentPhotoUrl ?? resolveMascotImage(row.mascot)}
               fallback={resolveMascotImage(row.mascot)}
               alt=""
               className="h-9 w-9 object-contain"
@@ -181,7 +199,8 @@ function RankingTable({
             {(row.total_score ?? Number(row.score ?? 0)).toLocaleString('th-TH')}
           </span>
         </div>
-      ))}
+        )
+      })}
       {rows.length === 0 && (
         <p className="border-b border-slate-100 px-5 py-8 text-center text-sm font-semibold text-slate-500">
           ยังไม่มีข้อมูลอันดับจากนักเรียนจริงในขณะนี้ — ข้อมูลจะแสดงอัตโนมัติเมื่อมีการทำแบบฝึก
