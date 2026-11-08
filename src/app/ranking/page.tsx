@@ -4,6 +4,7 @@ import { Suspense, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { rankingsApi, type RankingsResponse, type RankingEntry } from '@/lib/api/rankings'
+import { resolveApiAssetUrl } from '@/lib/utils'
 import { useAuthStore } from '@/store/auth'
 
 const SCOPES = [
@@ -282,14 +283,19 @@ function PodiumColumn({
       : color === 'gray'
       ? 'from-gray-200 to-gray-400 text-gray-600'
       : 'from-orange-200 to-orange-400 text-orange-700'
+  const podiumPhoto = resolveApiAssetUrl(entry.student_photo_url)
   const progress =
     topXp > 0 ? Math.min(100, Math.round(((entry.mastery_points || 0) / topXp) * 100)) : 0
   const barColor = color === 'amber' ? 'bg-amber-400' : color === 'gray' ? 'bg-gray-400' : 'bg-orange-400'
   const barBg = color === 'amber' ? 'bg-amber-200' : color === 'gray' ? 'bg-gray-200' : 'bg-orange-200'
   return (
     <div className="text-center flex-1">
-      <div className={`${size} rounded-full bg-gradient-to-br ${colorClasses} flex items-center justify-center font-black text-white mx-auto shadow border-4 border-white`}>
-        {entry.nickname.charAt(0)}
+      <div className={`${size} rounded-full bg-gradient-to-br ${colorClasses} flex items-center justify-center font-black text-white mx-auto shadow border-4 border-white overflow-hidden`}>
+        {podiumPhoto ? (
+          <img src={podiumPhoto} alt={entry.nickname} className="h-full w-full object-cover" />
+        ) : (
+          entry.nickname.charAt(0)
+        )}
       </div>
       <p className="text-xs font-bold mt-1 truncate">{entry.nickname}</p>
       <div className={`text-xs mt-0.5`}>

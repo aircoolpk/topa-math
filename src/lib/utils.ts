@@ -87,3 +87,19 @@ export function masteryLabel(level: string): string {
   }
   return map[level] || level
 }
+
+/**
+ * Resolve an asset path that the API serves.
+ *
+ * Student photos live under /storage/avatars and are served by the API,
+ * not by the app's public/ folder, so a relative path has to be pointed
+ * at the API origin. Absolute URLs and data URLs are used as they are.
+ */
+export function resolveApiAssetUrl(value: string | null | undefined): string | null {
+  if (!value || typeof value !== 'string') return null
+  if (value.includes('..') || value.includes('\\')) return null
+  if (/^https?:\/\//i.test(value) || value.startsWith('data:image/')) return value
+  const baseUrl = (process.env.NEXT_PUBLIC_API_BASE_URL || '').replace(/\/$/, '')
+  const path = value.startsWith('/') ? value : `/${value}`
+  return `${baseUrl}${path}`
+}
