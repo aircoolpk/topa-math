@@ -12,7 +12,7 @@
  *     needs `topa_verify_password` to verify the legacy 200,000-iteration
  *     hashes.
  *  3. Copy the data from the source database, table by table, in foreign-key
- *     order, using `COPY ... FROM STDIN` through `pg-copy-streams` (the
+ *     order, using the binary COPY protocol through `pg-copy-streams` (the
  *     fastest way to move a few megabytes of rows).
  *
  * Usage:
@@ -25,10 +25,13 @@
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { Writable } from 'node:stream'
 
 import { Client } from 'pg'
-import { from as copyFrom } from 'pg-copy-streams'
+// `COPY ... TO STDOUT` streams the rows from the server and needs the
+// copy-to helper. `COPY ... FROM STDIN` feeds the rows to the server and
+// needs the copy-from helper. pg calls handleCopyData on server to client
+// copy data, which only the copy-to helper implements.
+import { from as copyFrom, to as copyTo } from 'pg-copy-streams'
 
 const PACKAGE_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -210,21 +213,12 @@ try {
     // The target table must be empty for COPY to append cleanly.
     await target.query(`TRUNCATE TABLE "${table}" CASCADE`)
 
-    const stream = source.query(copyFrom(`COPY "${table}" TO STDOUT WITH (FORMAT binary)`))
-    await target.query(
-      `COPY "${table}" FROM STDIN WITH (FORMAT binary)`,
-      ((client: { query: (chunk: Buffer) => Promise<unknown> }) => {
-        const writable = new Writable({
-          write(chunk: Buffer, _encoding, callback) {
-            client
-              .query(chunk)
-              .then(() => callback())
-              .catch((error: unknown) => callback(error as Error))
-          },
-        })
-        stream.pipe(writable)
-      }) as never,
-    )
+    // Read the rows out of the source and feed them into the target with the
+    // binary COPY protocol.
+    const stream = source.query(copyTo(`COPY "${table}" TO STDOUT WITH (FORMAT binary)`))
+    const ingest = target.query(copyFrom(`COPY "${table}" FROM STDIN WITH (FORMAT binary)`))
+    stream.pipe(ingest)
+    await ingest
 
     const copied = await countRows(target, table)
     console.log(`copied ${table}: ${copied}/${count} ${copied === count ? 'ok' : 'MISMATCH'}`)
