@@ -1390,6 +1390,14 @@ export default function LessonPage() {
             <span>กลับแดชบอร์ด</span>
           </Link>
 
+          {/* Master architecture preview - the new lesson and practice view */}
+          <Link
+            href={`/dashboard/lessons/${lessonId}/master`}
+            className="flex items-center gap-1.5 rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-xs font-bold text-violet-700 hover:bg-violet-100"
+          >
+            <span>หน้าบทเรียนรูปแบบใหม่</span>
+          </Link>
+
           {/* Program switch */}
           <div className="flex items-center gap-2">
             <span className="text-xs font-bold bg-primary-100 text-primary-700 px-3 py-1 rounded-full">
