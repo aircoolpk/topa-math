@@ -53,27 +53,40 @@ jobs:
       - name: Build the Worker bundle
         run: npm run build
 
+      - name: Set the Worker secrets
+        # The Worker reads its configuration from its own secrets, not from
+        # the repository environment. Setting them here keeps the values out
+        # of wrangler.toml and out of every developer's machine.
+        run: |
+          printf '%s' "$DATABASE_URL" | npx wrangler secret put DATABASE_URL
+          printf '%s' "$JWT_SECRET" | npx wrangler secret put JWT_SECRET
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Deploy to Cloudflare Workers
-        run: npx wrangler deploy
+        # The deploy output contains the workers.dev URL of the worker, which
+        # the verification step below uses.
+        run: |
+          npx wrangler deploy 2>&1 | tee deploy.log
+          url=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' deploy.log | head -1)
+          if [ -z "$url" ]; then
+            echo "::error::could not read the worker URL from the deploy output"
+            exit 1
+          fi
+          echo "DEPLOYED_URL=$url" >> "$GITHUB_ENV"
+          echo "deployed to $url"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
       - name: Verify the deployed Worker reaches Neon
         # The Worker only answers /health/ready with 200 when it can query
-        # the database, so this proves the secret was wired through. The
-        # workers.dev subdomain is read from the Cloudflare API instead of
-        # being hard coded.
+        # the database, so this proves the secret was wired through.
         run: |
-          subdomain=$(curl -s --max-time 20 \
-            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" \
-            | sed -n 's/.*"subdomain":"\([^"]*\)".*/\1/p')
-          if [ -z "$subdomain" ]; then
-            echo "::error::could not read the workers.dev subdomain"
-            exit 1
-          fi
-          url="https://topa-math-api.${subdomain}.workers.dev/health/ready"
+          url="${DEPLOYED_URL}/health/ready"
           echo "checking $url"
           for attempt in 1 2 3 4 5 6 7 8 9 10; do
             code=$(curl -s -o /tmp/ready.json -w '%{http_code}' --max-time 20 "$url" || true)
@@ -87,6 +100,3 @@ jobs:
           echo "::error::the Worker did not become ready (last http code: ${code:-none})"
           cat /tmp/ready.json || true
           exit 1
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
