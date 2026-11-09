@@ -88,6 +88,18 @@ const TABLES = [
   'test_results',
   'test_sessions',
   'xp_events',
+
+  // The merchant platform tables, in foreign key order. They are not part
+  // of the Drizzle models yet, but the FastAPI owns them and the cutover
+  // needs them present in Neon.
+  'mpp_package_prices',
+  'mpp_purchase_orders',
+  'mpp_purchase_events',
+  'billing_checkout_reservations',
+  'mpp_test_transactions',
+  'mpp_test_webhook_events',
+  'site_announcements',
+
   'admin_audit_logs',
   'affiliate_commission_ledger',
   'affiliate_payout_accounts',
@@ -188,6 +200,34 @@ try {
     ).rows.map((row) => row.tablename),
   )
 
+/**
+ * The columns to copy, in the order the source stores them.
+ *
+ * The binary COPY format is positional: the field at position N of the
+ * stream lands in the column at position N of the target. The Drizzle
+ * schema does not declare the columns in the same order as the legacy
+ * SQLAlchemy models (created_at and updated_at sit at the end there), so
+ * the copy names the columns explicitly on both sides. Only the columns
+ * that exist in both databases are copied.
+ */
+async function copyColumns(
+  source: { query: (text: string) => Promise<{ rows: Array<Record<string, unknown>> }> },
+  target: { query: (text: string) => Promise<{ rows: Array<Record<string, unknown>> }> },
+  table: string,
+): Promise<string[]> {
+  const query = `
+    SELECT column_name FROM information_schema.columns
+    WHERE table_schema = 'public' AND table_name = $1
+    ORDER BY ordinal_position
+  `
+  const sourceColumns = (await source.query(query, [table])).rows.map((row) =>
+    String(row.column_name),
+  )
+  const targetColumns = new Set(
+    (await target.query(query, [table])).rows.map((row) => String(row.column_name)),
+  )
+  return sourceColumns.filter((name) => targetColumns.has(name))
+}
   const skipped: string[] = []
 
   for (const table of TABLES) {
@@ -213,10 +253,23 @@ try {
     // The target table must be empty for COPY to append cleanly.
     await target.query(`TRUNCATE TABLE "${table}" CASCADE`)
 
+    // Name the columns explicitly: the binary COPY format is positional and
+    // the two schemas do not order their columns the same way.
+    const columns = await copyColumns(source, target, table)
+    if (columns.length === 0) {
+      console.log(`skip ${table} (no shared columns)`)
+      continue
+    }
+    const columnList = columns.map((name) => `"${name}"`).join(', ')
+
     // Read the rows out of the source and feed them into the target with the
     // binary COPY protocol.
-    const stream = source.query(copyTo(`COPY "${table}" TO STDOUT WITH (FORMAT binary)`))
-    const ingest = target.query(copyFrom(`COPY "${table}" FROM STDIN WITH (FORMAT binary)`))
+    const stream = source.query(
+      copyTo(`COPY "${table}" (${columnList}) TO STDOUT WITH (FORMAT binary)`),
+    )
+    const ingest = target.query(
+      copyFrom(`COPY "${table}" (${columnList}) FROM STDIN WITH (FORMAT binary)`),
+    )
     stream.pipe(ingest)
     await ingest
 

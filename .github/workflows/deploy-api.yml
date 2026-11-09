@@ -1,0 +1,92 @@
+name: Deploy API Worker to Cloudflare
+
+# Topa Math — API Worker deploy (Hono + Drizzle → Cloudflare Workers).
+#
+# The Worker talks to Neon Postgres. It is deployed under its own worker name
+# (topa-math-api, see apps/api-ts/wrangler.toml) so it can be verified
+# against the production database without touching the api.topamath.com
+# route, which still points at the legacy FastAPI service.
+#
+# Required secrets on the "Production" repository environment:
+#   CLOUDFLARE_API_TOKEN   — Cloudflare API token with Workers Scripts:Edit
+#   CLOUDFLARE_ACCOUNT_ID  — Cloudflare account id
+#   DATABASE_URL           — Neon pooled connection string
+#   JWT_SECRET             — HS256 secret shared with the legacy FastAPI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/api-ts/**'
+      - '.github/workflows/deploy-api.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-api-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-api:
+    name: Deploy API Worker (Workers)
+    runs-on: ubuntu-latest
+    # The Cloudflare and Neon secrets live on the Production environment, so
+    # the job has to declare it or the secrets resolve to an empty string.
+    environment: production
+    defaults:
+      run:
+        working-directory: apps/api-ts
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: apps/api-ts/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Build the Worker bundle
+        run: npm run build
+
+      - name: Deploy to Cloudflare Workers
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Verify the deployed Worker reaches Neon
+        # The Worker only answers /health/ready with 200 when it can query
+        # the database, so this proves the secret was wired through. The
+        # workers.dev subdomain is read from the Cloudflare API instead of
+        # being hard coded.
+        run: |
+          subdomain=$(curl -s --max-time 20 \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" \
+            | sed -n 's/.*"subdomain":"\([^"]*\)".*/\1/p')
+          if [ -z "$subdomain" ]; then
+            echo "::error::could not read the workers.dev subdomain"
+            exit 1
+          fi
+          url="https://topa-math-api.${subdomain}.workers.dev/health/ready"
+          echo "checking $url"
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            code=$(curl -s -o /tmp/ready.json -w '%{http_code}' --max-time 20 "$url" || true)
+            if [ "$code" = "200" ]; then
+              echo "ready: $(cat /tmp/ready.json)"
+              exit 0
+            fi
+            echo "attempt $attempt: http $code, retrying in 10s"
+            sleep 10
+          done
+          echo "::error::the Worker did not become ready (last http code: ${code:-none})"
+          cat /tmp/ready.json || true
+          exit 1
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

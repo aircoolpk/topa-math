@@ -9,8 +9,18 @@ depends_on = None
 
 
 def upgrade():
-    op.add_column('child_profiles', sa.Column('membership_provider', sa.String(20)))
-    op.add_column('child_profiles', sa.Column('mpp_access_ends_at', sa.DateTime(timezone=True)))
+    # if_not_exists keeps this migration usable on a database whose schema was
+    # created from the Drizzle models, where these columns already exist.
+    op.add_column(
+        'child_profiles',
+        sa.Column('membership_provider', sa.String(20)),
+        if_not_exists=True,
+    )
+    op.add_column(
+        'child_profiles',
+        sa.Column('mpp_access_ends_at', sa.DateTime(timezone=True)),
+        if_not_exists=True,
+    )
     prices = op.create_table('mpp_package_prices', sa.Column('plan_code', sa.String(80), primary_key=True), sa.Column('amount_minor', sa.Integer(), nullable=False), sa.Column('currency', sa.String(3), nullable=False), sa.Column('duration_days', sa.Integer(), nullable=False), sa.Column('entitlement_plan', sa.String(40), nullable=False), sa.Column('program_type', sa.String(3), nullable=False), sa.Column('active', sa.Boolean(), nullable=False))
     op.bulk_insert(prices, [{'plan_code': code, 'amount_minor': amount, 'currency': 'THB', 'duration_days': 30, 'entitlement_plan': entitlement, 'program_type': program, 'active': True} for code, amount, entitlement, program in [('th_founder_monthly', 19900, 'th_plus', 'TH'), ('ep_founder_monthly', 39900, 'ep_plus', 'EP'), ('th_plus_monthly', 29900, 'th_plus', 'TH'), ('ep_plus_monthly', 59900, 'ep_plus', 'EP')]])
     op.create_table('mpp_purchase_orders',
