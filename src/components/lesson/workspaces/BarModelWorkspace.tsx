@@ -208,13 +208,15 @@ export function BarModelWorkspace(props: WorkspaceProps) {
               ))}
 
               {/* Difference Bracket */}
-              {showBrackets && differenceValue !== undefined && barPartsA > barPartsB && (
-                <div className="ml-2 px-3 py-1.5 rounded-xl bg-rose-500/20 border border-rose-400/60 text-rose-300 text-xs font-extrabold flex items-center gap-1.5">
-                  <span>
-                    ◄ ผลต่าง (Difference) {barPartsA - barPartsB} ส่วน = {differenceValue} ซม. ►
-                  </span>
-                </div>
-              )}
+              {showBrackets && differenceValue ? (
+                barPartsA > barPartsB && (
+                  <div className="ml-2 px-3 py-1.5 rounded-xl bg-rose-500/20 border border-rose-400/60 text-rose-300 text-xs font-extrabold flex items-center gap-1.5">
+                    <span>
+                      ◄ ผลต่าง (Difference) {barPartsA - barPartsB} ส่วน = {differenceValue} ซม. ►
+                    </span>
+                  </div>
+                )
+              ) : null}
             </div>
           </div>
         </div>
