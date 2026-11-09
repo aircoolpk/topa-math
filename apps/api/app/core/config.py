@@ -1,5 +1,6 @@
 from functools import lru_cache
 
+from pydantic import AliasChoices, Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -21,7 +22,14 @@ class Settings(BaseSettings):
     # Neon recommends the pooled endpoint for request traffic and the
     # direct endpoint for migrations, because a transaction pooler can
     # break session level DDL. Falls back to database_url when unset.
-    database_url_direct: str | None = None
+    # Neon exports it as DATABASE_URL_UNPOOLED.
+    database_url_direct: str | None = Field(
+        default=None,
+        validation_alias=AliasChoices(
+            'DATABASE_URL_DIRECT',
+            'DATABASE_URL_UNPOOLED',
+        ),
+    )
     jwt_secret: str = "change-me-in-production"
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60 * 24
@@ -68,6 +76,22 @@ class Settings(BaseSettings):
     smtp_username: str | None = None
     smtp_password: str | None = None
     smtp_use_tls: bool = True
+
+    @field_validator("database_url", mode="after")
+    @classmethod
+    def _normalise_sqlalchemy_dialect(cls, value: str) -> str:
+        # Neon and most hosted Postgres providers hand out a plain
+        # `postgresql://` URL. SQLAlchemy would then reach for psycopg2,
+        # which is not installed - this service uses psycopg 3. Adding the
+        # explicit driver keeps the supplied URL usable as it is.
+        value = value.strip()
+        # The Neon CLI writes quoted values into .env files, and a value that
+        # arrives from the process environment keeps those quotes.
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in ("\'", '"'):
+            value = value[1:-1].strip()
+        if value.startswith("postgresql://"):
+            return value.replace("postgresql://", "postgresql+psycopg://", 1)
+        return value
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
