@@ -13,7 +13,7 @@ import { ProblemZone } from './ProblemZone'
 import { ScratchpadCanvas } from './ScratchpadCanvas'
 import { StepByStepModal } from './StepByStepModal'
 import { VocabDrawer } from './VocabDrawer'
-import { getThemeForGrade } from './theme'
+import { getLessonTheme, tierForGrade } from './theme'
 import type { FeedbackState, InputMode, LangMode, LessonMode, LessonProblem } from './types'
 
 export interface LessonMasterViewProps {
@@ -41,7 +41,7 @@ export function LessonMasterView({
   initialStars = 120,
   initialGems = 15,
 }: LessonMasterViewProps) {
-  const theme = useMemo(() => getThemeForGrade(grade), [grade])
+
 
   const [currentProblemIndex, setCurrentProblemIndex] = useState(0)
   const [lessonMode, setLessonMode] = useState<LessonMode>('practice')
@@ -73,6 +73,10 @@ export function LessonMasterView({
   const problemsLength = problems.length
   const safeIndex = problemsLength > 0 ? currentProblemIndex % problemsLength : 0
   const currentProblem = problems[safeIndex]
+  const theme = useMemo(
+    () => getLessonTheme(currentProblem?.tier ?? tierForGrade(grade)),
+    [currentProblem?.tier, grade],
+  )
 
   // Reset the per-problem state whenever the learner moves on.
   useEffect(() => {
