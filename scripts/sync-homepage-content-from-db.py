@@ -196,9 +196,10 @@ def build_ranking_rows() -> list[dict[str, Any]]:
         FROM student_stats ss
         JOIN child_profiles cp ON cp.id = ss.child_profile_id
         WHERE ss.tests_completed > 0 OR ss.lessons_completed > 0
-        ORDER BY ss.tests_completed DESC,
-                 ss.perfect_tests DESC,
-                 ss.lessons_completed DESC,
+        -- Ordered by the same score the row publishes, so the "คะแนนสูงสุด"
+        -- card really leads with the highest scorer.
+        ORDER BY (ss.tests_completed * 100 + ss.perfect_tests * 50 + ss.lessons_completed * 20) DESC,
+                 ss.tests_completed DESC,
                  cp.nickname ASC
         LIMIT 10
         """

@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
+
+import Link from 'next/link'
 import { Save, ShieldCheck, RotateCcw, Archive } from 'lucide-react'
 import { adminApi } from '@/lib/api/admin'
 import { fallbackHomepageConfig, type HomepageConfig } from '@/lib/topa-content'
@@ -10,6 +12,7 @@ const sectionLabels: Record<keyof HomepageConfig, string> = {
   features: 'Feature cards',
   ranking: 'Ranking preview',
   reviews: 'Reviews',
+  announcements: 'Announcements (สาวสาร/ฝากประกาศ)',
   mascots: 'Mascots',
   curriculum: 'Curriculum',
   parent_trust: 'Parent trust',
@@ -152,11 +155,19 @@ export default function AdminHomepagePage() {
         <div className="grid gap-6 lg:grid-cols-[280px_1fr]">
           <aside className="rounded-2xl border border-gray-200 bg-white p-3 shadow-sm">
             <div className="grid gap-1">
-              {(Object.keys(sectionLabels) as Array<keyof HomepageConfig>).map((key) => (
+              {(Object.keys(sectionLabels) as Array<keyof HomepageConfig>)
+                .filter((key) => key !== 'announcements')
+                .map((key) => (
                 <button key={key} onClick={() => setActive(key)} className={`rounded-xl px-3 py-2 text-left text-sm font-bold ${active === key ? 'bg-sky-100 text-sky-700' : 'text-gray-600 hover:bg-gray-50'}`}>
                   {sectionLabels[key]}
                 </button>
-              ))}
+                ))}
+              <Link
+                href="/admin/announcements"
+                className="rounded-xl px-3 py-2 text-left text-sm font-bold text-sky-700 hover:bg-sky-50"
+              >
+                สาวสาร &amp; ฝากประกาศ (ฐานข้อมูล)
+              </Link>
             </div>
             <div className="mt-6 border-t border-gray-100 pt-4">
               <p className="mb-2 text-xs font-black uppercase tracking-wide text-gray-400">Backups</p>

@@ -16,6 +16,16 @@ export type TopaFeatureCard = {
   image?: string
 }
 
+export type TopaAnnouncement = {
+  id?: string
+  title: string
+  body: string
+  link_url?: string
+  published_at?: string
+  published?: boolean
+  sort_order?: number
+}
+
 export type TopaRankingRow = {
   rank: number
   child_name: string
@@ -99,6 +109,11 @@ export type HomepageConfig = {
     title: string
     subtitle?: string
     cards: TopaReviewCard[]
+  }
+  announcements: {
+    title: string
+    subtitle?: string
+    items: TopaAnnouncement[]
   }
   mascots: {
     title: string
@@ -193,21 +208,19 @@ export const fallbackHomepageConfig: HomepageConfig = {
     description: 'ดูอันดับนักเรียนตัวอย่างจากทั่วไทย เลือกระดับชั้นและจังหวัดได้',
     promo_text: 'แข่งขันสนุก\nกระตุ้นให้เด็ก\nอยากฝึกทุกวัน',
     promo_image: '/brand/topa/ranking-promo-action.png',
-    rows: [
-      { rank: 1, child_name: 'น้องดาว', province: 'กรุงเทพมหานคร', tests_completed: 126, total_score: 9850, avg_speed: '18 วิ/ข้อ', mascot: 'topa' },
-      { rank: 2, child_name: 'มินิคุง', province: 'เชียงใหม่', tests_completed: 118, total_score: 9420, avg_speed: '21 วิ/ข้อ', mascot: 'oll' },
-      { rank: 3, child_name: 'น้องอิ่ม', province: 'สงขลา', tests_completed: 107, total_score: 9180, avg_speed: '22 วิ/ข้อ', mascot: 'memo' },
-      { rank: 4, child_name: 'ภูมิ', province: 'ขอนแก่น', tests_completed: 99, total_score: 8890, avg_speed: '24 วิ/ข้อ', mascot: 'pip' },
-    ],
+    // No demo rows on purpose. The home page is prerendered, so anything here
+    // would be baked into the static HTML and shown as if it were real.
+    rows: [],
   },
   reviews: {
     title: 'รีวิวจากรุ่นพี่',
-    cards: [
-      { name: 'น้องมีน', grade_label: 'ป.3', province: 'กรุงเทพฯ', quote: 'สนุกจนลืมเลขว่ายากครับ ได้คะแนนแนะนำบททุกวัน ตอนนี้กล้าทำโจทย์เองและมั่นใจมากครับ!', image_path: '/brand/topa/reviews/review-child-1.png', rating: 5, enabled: true, order: 1 },
-      { name: 'น้องข้าวหอม', grade_label: 'ป.2', province: 'เชียงใหม่', quote: 'ก่อนหนูไม่ค่อยชอบเลขเลย แต่พอมาเรียนกับ TOPA สนุกมาก มีเพื่อนในนั้นด้วย อยากฝึกทุกวันเลยค่ะ', image_path: '/brand/topa/reviews/review-child-2.png', rating: 5, enabled: true, order: 2 },
-      { name: 'น้องไทเกอร์', grade_label: 'ป.5', province: 'ขอนแก่น', quote: 'แบบฝึกตรงจุดจริงครับ ทำให้เข้าใจง่ายขึ้นมาก ชอบที่มีคะแนนเก็บตลอด คุณครูชมเลยครับ', image_path: '/brand/topa/reviews/review-child-3.png', rating: 5, enabled: true, order: 3 },
-      { name: 'น้องพิมพ์', grade_label: 'ป.4', province: 'สงขลา', quote: 'มีอันดับให้แข่งกับเพื่อน ทำให้หนูตั้งใจเรียนทุกวัน TOPA ทำให้หนูรักเลขไปแล้วค่ะ!', image_path: '/brand/topa/reviews/review-child-4.png', rating: 5, enabled: true, order: 4 },
-    ],
+    // Real testimonials only - the database is the source of truth.
+    cards: [],
+  },
+  announcements: {
+    title: 'สาวสาร & ฝากประกาศ',
+    subtitle: 'ข่าวสารและประกาศล่าสุดจากทีมงาน TOPA Math',
+    items: [],
   },
   mascots: { title: 'เพื่อนช่วยเรียนของ TOPA', cards: defaultMascots },
   curriculum: {

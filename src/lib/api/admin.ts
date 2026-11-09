@@ -674,6 +674,25 @@ export interface AdminContentLesson {
   [key: string]: unknown
 }
 
+export interface AdminAnnouncement {
+  id: string
+  title: string
+  body: string
+  link_url: string | null
+  published: boolean
+  sort_order: number
+  published_at: string | null
+  created_at?: string
+  updated_at?: string
+}
+
+export interface AdminAnnouncementInput {
+  title: string
+  body?: string
+  link_url?: string | null
+  published?: boolean
+  sort_order?: number
+}
 export const adminApi = {
   errorMessage(error: unknown, fallback = 'โหลดข้อมูลไม่สำเร็จ') {
     const err = error as AxiosError<{ detail?: unknown; message?: unknown }>
@@ -729,6 +748,26 @@ export const adminApi = {
   async restoreHomepage(backupName: string) {
     const res = await apiClient.post('/admin/homepage/restore', { backup_name: backupName })
     return res.data as { restored: boolean; config: HomepageConfig }
+  },
+
+  async announcements() {
+    const res = await apiClient.get('/admin/site/announcements')
+    return res.data as { items: AdminAnnouncement[] }
+  },
+
+  async createAnnouncement(payload: AdminAnnouncementInput) {
+    const res = await apiClient.post('/admin/site/announcements', payload)
+    return res.data as { item: AdminAnnouncement }
+  },
+
+  async updateAnnouncement(id: string, payload: Partial<AdminAnnouncementInput>) {
+    const res = await apiClient.patch(`/admin/site/announcements/${id}`, payload)
+    return res.data as { item: AdminAnnouncement }
+  },
+
+  async deleteAnnouncement(id: string) {
+    const res = await apiClient.delete(`/admin/site/announcements/${id}`)
+    return res.data as { deleted: boolean }
   },
 
   async metrics() {

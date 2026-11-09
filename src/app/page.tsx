@@ -12,6 +12,7 @@ import {
   Lock,
   Mail,
   MapPin,
+  Megaphone,
   Menu,
   Music2,
   PlayCircle,
@@ -133,6 +134,7 @@ function RankingTable({
   title,
   rows,
   link,
+  nameHeader = 'นักเรียน',
 }: {
   title: string
   rows: Array<{
@@ -148,6 +150,7 @@ function RankingTable({
     image?: string
   }>
   link: string
+  nameHeader?: string
 }) {
   return (
     <div className="overflow-hidden rounded-[24px] border border-blue-100 bg-white shadow-[0_14px_30px_rgba(24,97,199,0.09)]">
@@ -156,7 +159,7 @@ function RankingTable({
       </div>
       <div className="grid grid-cols-[64px_1fr_104px_104px] gap-2 border-b border-slate-100 bg-slate-50/70 px-5 py-3.5 text-xs font-bold text-slate-500 max-sm:grid-cols-[48px_1fr_70px_76px]">
         <span>อันดับ</span>
-        <span>จังหวัด/เขต</span>
+        <span>{nameHeader}</span>
         <span className="text-right">จำนวนข้อสอบ</span>
         <span className="text-right">คะแนนรวม</span>
       </div>
@@ -194,6 +197,77 @@ function RankingTable({
       <Link href={link} className="flex items-center justify-center gap-2 bg-blue-50/40 px-4 py-3.5 text-sm font-black text-blue-600 hover:text-blue-700">
         ดูอันดับทั้งหมด <ArrowRight className="h-4 w-4" />
       </Link>
+    </div>
+  )
+}
+
+function AnnouncementsCard({
+  title,
+  subtitle,
+  items,
+}: {
+  title: string
+  subtitle?: string
+  items: Array<{
+    id?: string
+    title: string
+    body: string
+    link_url?: string
+    published_at?: string
+  }>
+}) {
+  return (
+    <div className="flex flex-col overflow-hidden rounded-[24px] border border-blue-100 bg-white shadow-[0_14px_30px_rgba(24,97,199,0.09)]">
+      <div className="bg-gradient-to-r from-[#0B63D8] to-[#7657E8] px-5 py-4 text-center text-xl font-black text-white">
+        {title}
+      </div>
+      {subtitle ? (
+        <p className="px-5 pt-4 text-center text-xs font-semibold text-slate-500">{subtitle}</p>
+      ) : null}
+      {items.length === 0 ? (
+        <p className="flex-1 px-5 py-8 text-center text-sm font-semibold text-slate-500">
+          ยังไม่มีประกาศใหม่ - ทีมงานจะเพิ่มข่าวสารและกิจกรรมให้ทราบที่นี่
+        </p>
+      ) : (
+        <ul className="flex-1 divide-y divide-slate-100">
+          {items.map((item, index) => (
+            <li key={item.id || `${item.title}-${index}`} className="px-5 py-4">
+              <div className="flex items-start gap-3">
+                <span className="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-blue-100 text-blue-600">
+                  <Megaphone className="h-3.5 w-3.5" />
+                </span>
+                <div className="min-w-0">
+                  <p className="text-sm font-black text-slate-800">{item.title}</p>
+                  {item.body ? (
+                    <p className="mt-1 whitespace-pre-line text-xs font-medium leading-relaxed text-slate-500">
+                      {item.body}
+                    </p>
+                  ) : null}
+                  <div className="mt-1.5 flex flex-wrap items-center gap-2">
+                    {item.published_at ? (
+                      <span className="text-[11px] font-bold text-slate-400">
+                        {new Date(item.published_at).toLocaleDateString('th-TH', {
+                          day: 'numeric',
+                          month: 'short',
+                          year: '2-digit',
+                        })}
+                      </span>
+                    ) : null}
+                    {item.link_url ? (
+                      <a
+                        href={item.link_url}
+                        className="text-[11px] font-black text-blue-600 underline-offset-2 hover:underline"
+                      >
+                        ดูรายละเอียด
+                      </a>
+                    ) : null}
+                  </div>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
@@ -268,7 +342,23 @@ export default function HomePage() {
       ? []
       : fallbackHomepageConfig.ranking.rows
   )
-  const liveDistrictRows = liveProvinceRows
+  // The card shows the highest scores, so the rows are ordered by score and
+  // the rank is recomputed from that order.
+  const topScoreRows = [...liveProvinceRows]
+    .sort((a, b) => (b.total_score ?? 0) - (a.total_score ?? 0))
+    .slice(0, 5)
+    .map((row, index) => ({ ...row, rank: index + 1 }))
+
+  // Announcements come from the API (the database is the source of truth).
+  const liveAnnouncements = cms?.announcements?.items ?? []
+  const announcementsTitle = cleanText(
+    cms?.announcements?.title,
+    fallbackHomepageConfig.announcements.title,
+  )
+  const announcementsSubtitle = cleanText(
+    cms?.announcements?.subtitle,
+    fallbackHomepageConfig.announcements.subtitle ?? '',
+  )
 
   // Live mascot friends (CMS → fallback)
   const liveFriends = (cms?.mascots?.cards && cms.mascots.cards.length > 0
@@ -484,8 +574,17 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <RankingTable title="อันดับรายจังหวัด" rows={liveProvinceRows} link="/ranking?scope=province" />
-            <RankingTable title="อันดับรายเขต" rows={liveDistrictRows} link="/ranking?scope=district" />
+            <RankingTable
+              title="คะแนนสูงสุด"
+              nameHeader="นักเรียน"
+              rows={topScoreRows}
+              link="/ranking"
+            />
+            <AnnouncementsCard
+              title={announcementsTitle}
+              subtitle={announcementsSubtitle}
+              items={liveAnnouncements}
+            />
           </div>
         </div>
       </section>

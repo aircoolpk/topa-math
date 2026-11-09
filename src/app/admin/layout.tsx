@@ -14,6 +14,7 @@ const navItems = [
   ['/admin/tests', 'แบบทดสอบ'],
   ['/admin/qa', 'Content QA'],
   ['/admin/homepage', 'หน้าแรก'],
+  ['/admin/announcements', 'ประกาศ'],
   ['/admin/system', 'ระบบ'],
   ['/admin/subscriptions', 'สมาชิก'],
   ['/admin/affiliates', 'Affiliate'],
