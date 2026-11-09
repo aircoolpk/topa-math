@@ -225,6 +225,7 @@ export function LessonMasterView({
           onToggleVocab={() => setVocabDrawerOpen((prev) => !prev)}
           hintOpen={hintDrawerOpen}
           onToggleHint={() => setHintDrawerOpen((prev) => !prev)}
+          hintLevel={hintLevel}
         />
 
         {hintDrawerOpen && (

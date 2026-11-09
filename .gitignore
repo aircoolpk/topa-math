@@ -92,3 +92,5 @@ apps/api/app/content/math/grade_*/lessons old/
 .open-next/
 .open-next
 .wrangler/
+# Neon agent skills lock (the skills themselves live in the ignored .hermes/)
+skills-lock.json

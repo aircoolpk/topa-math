@@ -12,7 +12,11 @@ from app.models import checkout_reservation  # noqa: F401
 from app.models import site_announcement  # noqa: F401
 
 config = context.config
-config.set_main_option("sqlalchemy.url", get_settings().database_url)
+# Migrations must not run through a transaction pooler, so the direct
+# (non-pooled) connection string is preferred when one is configured.
+_settings = get_settings()
+_migration_url = _settings.database_url_direct or _settings.database_url
+config.set_main_option("sqlalchemy.url", _migration_url.replace("%", "%%"))
 
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
@@ -22,7 +26,7 @@ target_metadata = Base.metadata
 
 def run_migrations_offline() -> None:
     context.configure(
-        url=get_settings().database_url,
+        url=_migration_url,
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},

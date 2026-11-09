@@ -17,6 +17,11 @@ class Settings(BaseSettings):
     app_name: str = "4-craft Adaptive Learning API"
     environment: str = "local"
     database_url: str = "sqlite:///./adaptive_learning.db"
+    # Direct (non-pooled) connection string, used for schema migrations.
+    # Neon recommends the pooled endpoint for request traffic and the
+    # direct endpoint for migrations, because a transaction pooler can
+    # break session level DDL. Falls back to database_url when unset.
+    database_url_direct: str | None = None
     jwt_secret: str = "change-me-in-production"
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60 * 24

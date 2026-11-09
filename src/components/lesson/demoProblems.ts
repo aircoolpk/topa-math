@@ -641,7 +641,264 @@ export const DEMO_PROBLEMS: LessonProblem[] = [
         "actionLabelEN": "Solve This Problem 🚀"
       }
     ]
-  }
+  },
+  
+    {
+      "id": "p5",
+      "tier": "lower",
+      "workspaceType": "fraction",
+      "gradeLabelTH": "ป.1–ป.3 (ประถมต้น)",
+      "gradeLabelEN": "Grades 1–3 (Lower Primary)",
+      "topicTH": "เศษส่วน (Fractions)",
+      "topicEN": "Fractions (Equal Parts)",
+      "questionEN": [
+        {
+          "text": "Mali shares a pizza into "
+        },
+        {
+          "text": "4",
+          "highlight": true
+        },
+        {
+          "text": " equal pieces. She eats "
+        },
+        {
+          "text": "1",
+          "highlight": true
+        },
+        {
+          "text": " piece. Which fraction did she eat? Tap "
+        },
+        {
+          "term": "equal_parts",
+          "display": "equal parts"
+        },
+        {
+          "text": " to learn more."
+        }
+      ],
+      "questionTH": [
+        {
+          "text": "มะลิแบ่งพิซซ่าเป็น "
+        },
+        {
+          "text": "4",
+          "highlight": true
+        },
+        {
+          "text": " ชิ้นที่เท่ากัน แล้วกินไป "
+        },
+        {
+          "text": "1",
+          "highlight": true
+        },
+        {
+          "text": " ชิ้น เธอกินไปกี่ส่วน แตะที่ "
+        },
+        {
+          "term": "equal_parts",
+          "display": "ส่วนที่เท่ากัน"
+        },
+        {
+          "text": " เพื่อดูคำอธิบาย"
+        }
+      ],
+      "rawTTS_EN": "Mali shares a pizza into 4 equal pieces. She eats 1 piece. Which fraction did she eat?",
+      "rawTTS_TH": "มะลิแบ่งพิซซ่าเป็น 4 ชิ้นที่เท่ากัน แล้วกินไป 1 ชิ้น เธอกินไปกี่ส่วน",
+      "choices": [
+        "1/4",
+        "1/2",
+        "2/4",
+        "4/1"
+      ],
+      "correctAnswer": "1/4",
+      "fractionConfig": {
+        "numerator": 1,
+        "denominator": 4,
+        "shadedParts": 1,
+        "targetNumerator": 1,
+        "targetDenominator": 4
+      },
+      "hint1TH": "ลองดูวงกลมที่ถูกแบ่งไว้ด้านบน — นับว่ามีกี่ส่วน แล้วดูว่ามะลิกินไปกี่ส่วน",
+      "hint1EN": "Look at the circle split above - count the pieces, then count how many Mali ate.",
+      "hint2TH": "มีทั้งหมด 4 ส่วน กินไป 1 ส่วน เขียนเป็นเศษ 1 ส่วนจาก 4 ส่วน",
+      "hint2EN": "There are 4 pieces and she ate 1, so that is 1 part out of 4.",
+      "nudgeTH": "ใกล้แล้ว! ลองนับชิ้นที่ถูกแบ่งทั้งหมด แล้วดูว่ามะลิกินไปกี่ชิ้น",
+      "nudgeEN": "Almost there! Count all the pieces, then count how many Mali ate.",
+      "steps": [
+        {
+          "titleTH": "ขั้นที่ 1: นับส่วนทั้งหมด",
+          "titleEN": "Step 1: Count every piece",
+          "descTH": "พิซซ่าถูกแบ่งเป็น 4 ส่วนที่เท่ากัน",
+          "descEN": "The pizza is split into 4 equal pieces",
+          "visual": "4 equal pieces"
+        },
+        {
+          "titleTH": "ขั้นที่ 2: นับส่วนที่กินไป",
+          "titleEN": "Step 2: Count the eaten pieces",
+          "descTH": "มะลิกินไป 1 ชิ้น จึงระบายไว้ 1 ส่วน",
+          "descEN": "Mali ate 1 piece, so 1 part is shaded",
+          "visual": "1 of 4 shaded"
+        },
+        {
+          "titleTH": "ขั้นที่ 3: เขียนเป็นเศษส่วน",
+          "titleEN": "Step 3: Write the fraction",
+          "descTH": "1 ส่วน จากทั้งหมด 4 ส่วน เขียนเป็น 1/4",
+          "descEN": "1 part out of 4 is written as 1/4",
+          "visual": "1/4"
+        }
+      ],
+      "conceptMicroSteps": [
+        {
+          "titleTH": "สเต็ป 1/3: รู้จักส่วนที่เท่ากัน",
+          "titleEN": "Micro-Step 1/3: Meet equal parts",
+          "bodyTH": "เวลาเราหั่นขนมหรือพิซซ่า เราจะหั่นให้ทุกชิ้นมีขนาดเท่ากัน นั่นเรียกว่า ส่วนที่เท่ากัน",
+          "bodyEN": "When we cut a cake or a pizza we make every piece the same size - those are equal parts.",
+          "actionLabelTH": "กดเพื่อดูว่าส่วนที่เท่ากันหน้าตาเป็นยังไง ✨",
+          "actionLabelEN": "Tap to see equal parts up close",
+          "emoji": "🧩"
+        },
+        {
+          "titleTH": "สเต็ป 2/3: นับส่วนที่กินไป",
+          "titleEN": "Micro-Step 2/3: Count the eaten parts",
+          "bodyTH": "ถ้าพิซซ่ามี 4 ส่วน และกินไป 1 ส่วน เราจะเขียนว่า 1 ส่วนจาก 4 ส่วน",
+          "bodyEN": "If the pizza has 4 parts and you eat 1, we write one part out of four.",
+          "actionLabelTH": "กดเพื่อลองนับชิ้นที่กินไป ⚡",
+          "actionLabelEN": "Tap to count the eaten pieces",
+          "emoji": "⚡"
+        },
+        {
+          "titleTH": "สเต็ป 3/3: เขียนเป็นเศษส่วน",
+          "titleEN": "Micro-Step 3/3: Write the fraction",
+          "bodyTH": "เศษส่วนเขียนว่า ตัวเศขบน = ส่วนที่ได้ ตัวเศขล่าง = ส่วนทั้งหมด เช่น 1/4",
+          "bodyEN": "A fraction has the parts you got on top and all the parts underneath, like 1/4.",
+          "actionLabelTH": "กดเพื่อดูวิธีเขียนเศษส่วน 🏆",
+          "actionLabelEN": "Tap to see how to write it",
+          "emoji": "🏆"
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "tier": "upper",
+      "workspaceType": "clock",
+      "gradeLabelTH": "ป.4–ป.6 (ประถมปลาย)",
+      "gradeLabelEN": "Grades 4–6 (Upper Primary)",
+      "topicTH": "เวลา (Time)",
+      "topicEN": "Telling Time",
+      "questionEN": [
+        {
+          "text": "The lesson starts at "
+        },
+        {
+          "text": "3:00",
+          "highlight": true
+        },
+        {
+          "text": ". It takes half an hour. At what time does it end? Use the "
+        },
+        {
+          "term": "difference",
+          "display": "difference"
+        },
+        {
+          "text": " between the two times."
+        }
+      ],
+      "questionTH": [
+        {
+          "text": "เริ่มเรียนเวลา "
+        },
+        {
+          "text": "3:00",
+          "highlight": true
+        },
+        {
+          "text": " ใช้เวลาอีกครึ่งชั่วโมง แล้วจะเลิกเวลาไหน ใช้ "
+        },
+        {
+          "term": "difference",
+          "display": "ผลต่าง"
+        },
+        {
+          "text": " ระหว่างสองเวลาช่วยคิด"
+        }
+      ],
+      "rawTTS_EN": "The lesson starts at 3 o'clock. It takes half an hour. At what time does it end?",
+      "rawTTS_TH": "เริ่มเรียนเวลา 3 โมง ใช้เวลาอีกครึ่งชั่วโมง แล้วจะเลิกเวลาไหน",
+      "choices": [
+        "3:15",
+        "3:30",
+        "4:00",
+        "3:45"
+      ],
+      "correctAnswer": "3:30",
+      "clockConfig": {
+        "hour": 3,
+        "minute": 0,
+        "targetHour": 3,
+        "targetMinute": 30
+      },
+      "hint1TH": "ครึ่งชั่วโมงเท่ากับกี่นาที? นับเข็มนาทีไป 30 นาทีบนหน้าปัด",
+      "hint1EN": "How many minutes is half an hour? Move the minute hand 30 steps.",
+      "hint2TH": "ครึ่งชั่วโมง = 30 นาที เริ่มที่ 3:00 จึงเลิกเวลา 3:30",
+      "hint2EN": "Half an hour is 30 minutes, so 3:00 becomes 3:30.",
+      "nudgeTH": "ใกล้แล้ว! ลองหมุนเข็มนาทีไป 30 นาทีจาก 3:00 แล้วดูว่าเวลาเป็นอะไร",
+      "nudgeEN": "Almost there! Move the minute hand 30 minutes from 3:00.",
+      "steps": [
+        {
+          "titleTH": "ขั้นที่ 1: หาเวลาที่ใช้",
+          "titleEN": "Step 1: Find the time that passes",
+          "descTH": "ครึ่งชั่วโมงเท่ากับ 30 นาที",
+          "descEN": "Half an hour is 30 minutes",
+          "visual": "30 minutes"
+        },
+        {
+          "titleTH": "ขั้นที่ 2: เดินเข็มนาที",
+          "titleEN": "Step 2: Move the minute hand",
+          "descTH": "จาก 3:00 เดินเข็มนาทีไป 30 นาที เข็มจะชี้ 6",
+          "descEN": "From 3:00 move the minute hand 30 steps, it points at 6",
+          "visual": "3:00 -> 3:30"
+        },
+        {
+          "titleTH": "ขั้นที่ 3: ตอบเวลา",
+          "titleEN": "Step 3: Say the time",
+          "descTH": "เข็มชั่วโมงยังชี้ที่ 3 และเข็มนาทีชี้ที่ 6 → 3:30",
+          "descEN": "The hour hand is still on 3 and the minute hand is on 6, so 3:30",
+          "visual": "3:30"
+        }
+      ],
+      "conceptMicroSteps": [
+        {
+          "titleTH": "สเต็ป 1/3: อ่านหน้าปัด",
+          "titleEN": "Micro-Step 1/3: Read the clock face",
+          "bodyTH": "เข็มสั้นบอกชั่วโมง เข็มยาวบอกนาที เข็มยาวชี้ที่เลข 6 แปลว่า 30 นาที",
+          "bodyEN": "The short hand shows the hour, the long hand shows the minutes. Pointing at 6 means 30 minutes.",
+          "actionLabelTH": "กดเพื่อดูหน้าปัดนาฬิกา ✨",
+          "actionLabelEN": "Tap to see the clock face",
+          "emoji": "🧩"
+        },
+        {
+          "titleTH": "สเต็ป 2/3: รู้ว่าครึ่งชั่วโมงเท่ากับกี่นาที",
+          "titleEN": "Micro-Step 2/3: Know that half an hour is 30 minutes",
+          "bodyTH": "ครึ่งชั่วโมง = 30 นาที เพราะเต็มชั่วโมงมี 60 นาที",
+          "bodyEN": "Half an hour is 30 minutes because a full hour has 60.",
+          "actionLabelTH": "กดเพื่อนับนาทีบนหน้าปัด ⚡",
+          "actionLabelEN": "Tap to count the minutes",
+          "emoji": "⚡"
+        },
+        {
+          "titleTH": "สเต็ป 3/3: บอกเวลาที่เลิก",
+          "titleEN": "Micro-Step 3/3: Say the end time",
+          "bodyTH": "เริ่ม 3:00 ใช้ 30 นาที จึงเลิกเวลา 3:30",
+          "bodyEN": "Start at 3:00, add 30 minutes, so it ends at 3:30.",
+          "actionLabelTH": "กดเพื่อดูคำตอบ 🏆",
+          "actionLabelEN": "Tap to see the answer",
+          "emoji": "🏆"
+        }
+      ]
+    }
+  
 ]
 
 export function getDemoProblem(id: string): LessonProblem | undefined {
