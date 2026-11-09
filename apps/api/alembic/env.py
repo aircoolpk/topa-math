@@ -9,6 +9,7 @@ from app.models import entities  # noqa: F401
 from app.models import payment_integration  # noqa: F401
 from app.models import mpp_purchase  # noqa: F401
 from app.models import checkout_reservation  # noqa: F401
+from app.models import site_announcement  # noqa: F401
 
 config = context.config
 config.set_main_option("sqlalchemy.url", get_settings().database_url)

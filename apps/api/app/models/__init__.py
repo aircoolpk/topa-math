@@ -37,6 +37,7 @@ from app.models.entities import (
     User,
     XPEvent,
 )
+from app.models.site_announcement import SiteAnnouncement
 
 __all__ = [
     "AIGenerationJob",
@@ -70,6 +71,7 @@ __all__ = [
     "ReferralEvent",
     "Skill",
     "SkillMastery",
+    "SiteAnnouncement",
     "StudentStats",
     "Subject",
     "TestResult",

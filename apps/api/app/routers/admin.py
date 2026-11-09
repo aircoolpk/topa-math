@@ -43,6 +43,14 @@ from app.services.lesson_content import (
     update_question_payload,
 )
 from app.routers.billing import PLAN_CATALOG
+from app.services.announcements import (
+    admin_announcement_payload,
+    create_announcement,
+    delete_announcement,
+    list_all_announcements,
+    require_announcements_storage,
+    update_announcement,
+)
 from app.services.homepage_content import (
     backup_homepage_config,
     list_homepage_backups,
@@ -134,6 +142,22 @@ class HomepagePatch(BaseModel):
 
 class HomepageRestoreIn(BaseModel):
     backup_name: str
+
+
+class AdminAnnouncementCreate(BaseModel):
+    title: str
+    body: str = ""
+    link_url: str | None = None
+    published: bool = False
+    sort_order: int = 0
+
+
+class AdminAnnouncementPatch(BaseModel):
+    title: str | None = None
+    body: str | None = None
+    link_url: str | None = None
+    published: bool | None = None
+    sort_order: int | None = None
 
 
 def _plan_amount_monthly_thb(active_price_code: str | None) -> float:
@@ -466,6 +490,48 @@ def admin_backup_homepage(_admin: User = Depends(require_admin)):
 @router.post("/homepage/restore")
 def admin_restore_homepage(payload: HomepageRestoreIn, _admin: User = Depends(require_admin)):
     return restore_homepage_backup(payload.backup_name)
+
+
+@router.get("/site/announcements")
+def admin_site_announcements(db: Session = Depends(get_db), _admin: User = Depends(require_admin)):
+    """All announcements, published or not."""
+    with require_announcements_storage():
+        rows = list_all_announcements(db)
+    return {"items": [admin_announcement_payload(row) for row in rows]}
+
+
+@router.post("/site/announcements", status_code=201)
+def admin_create_site_announcement(
+    payload: AdminAnnouncementCreate,
+    db: Session = Depends(get_db),
+    _admin: User = Depends(require_admin),
+):
+    with require_announcements_storage():
+        row = create_announcement(db, payload.model_dump())
+    return {"item": admin_announcement_payload(row)}
+
+
+@router.patch("/site/announcements/{announcement_id}")
+def admin_patch_site_announcement(
+    announcement_id: str,
+    payload: AdminAnnouncementPatch,
+    db: Session = Depends(get_db),
+    _admin: User = Depends(require_admin),
+):
+    with require_announcements_storage():
+        row = update_announcement(db, announcement_id, payload.model_dump(exclude_unset=True))
+    return {"item": admin_announcement_payload(row)}
+
+
+@router.delete("/site/announcements/{announcement_id}")
+def admin_delete_site_announcement(
+    announcement_id: str,
+    db: Session = Depends(get_db),
+    _admin: User = Depends(require_admin),
+):
+    with require_announcements_storage():
+        delete_announcement(db, announcement_id)
+    return {"deleted": True}
 
 
 def _active_paid_children(db: Session) -> list[ChildProfile]:

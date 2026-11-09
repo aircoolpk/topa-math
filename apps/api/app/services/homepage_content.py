@@ -24,6 +24,13 @@ REQUIRED_TOP_LEVEL_KEYS = {
     "footer",
 }
 
+# The "announcements" section is optional: the homepage JSON may carry the
+# card title/subtitle, but the announcement items themselves live in Postgres
+# (see app/services/announcements.py) because this file is baked into the
+# Docker image and admin edits to it are lost on the next image rebuild.
+DEFAULT_ANNOUNCEMENTS_TITLE = "สาวสาร & ฝากประกาศ"
+DEFAULT_ANNOUNCEMENTS_SUBTITLE = "ข่าวสารและประกาศล่าสุดจากทีมงาน TOPA Math"
+
 
 def _timestamp() -> str:
     return datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
@@ -78,7 +85,27 @@ def validate_homepage_config(payload: Any) -> dict[str, Any]:
     cta = payload.get("cta_banner") or {}
     if isinstance(cta, dict):
         _validate_image_ref(cta.get("mascot_image"), "cta_banner.mascot_image")
+    _validate_optional_announcements_section(payload.get("announcements"))
     return payload
+
+
+def _validate_optional_announcements_section(section: Any) -> None:
+    """Validate the optional ``announcements`` block without requiring it."""
+    if section is None:
+        return
+    if not isinstance(section, dict):
+        raise HTTPException(status_code=422, detail="announcements must be an object")
+    for field in ("title", "subtitle"):
+        value = section.get(field)
+        if value is not None and not isinstance(value, str):
+            raise HTTPException(status_code=422, detail=f"announcements.{field} must be a string")
+    items = section.get("items")
+    if items is not None:
+        if not isinstance(items, list):
+            raise HTTPException(status_code=422, detail="announcements.items must be an array")
+        for index, item in enumerate(items):
+            if not isinstance(item, dict):
+                raise HTTPException(status_code=422, detail=f"announcements.items[{index}] must be an object")
 
 
 def load_homepage_config() -> dict[str, Any]:
@@ -92,10 +119,38 @@ def load_homepage_config() -> dict[str, Any]:
     return validate_homepage_config(payload)
 
 
-def public_homepage_config() -> dict[str, Any]:
+def announcements_section_chrome(payload: dict[str, Any]) -> dict[str, str]:
+    """Title/subtitle of the news card.
+
+    Taken from the homepage JSON config when it carries an "announcements"
+    section, otherwise the built-in defaults are used.
+    """
+    section = payload.get("announcements")
+    if not isinstance(section, dict):
+        section = {}
+    title = section.get("title")
+    subtitle = section.get("subtitle")
+    return {
+        "title": title if isinstance(title, str) and title.strip() else DEFAULT_ANNOUNCEMENTS_TITLE,
+        "subtitle": subtitle if isinstance(subtitle, str) and subtitle.strip() else DEFAULT_ANNOUNCEMENTS_SUBTITLE,
+    }
+
+
+def public_homepage_config(announcements: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Public homepage payload.
+
+    ``announcements`` carries the database-backed news items; it is merged
+    under a top-level "announcements" key together with the card title and
+    subtitle taken from the homepage config.
+    """
     payload = load_homepage_config()
     public_payload = dict(payload)
     public_payload["published_at"] = datetime.now(UTC).isoformat()
+    if announcements is not None:
+        public_payload["announcements"] = {
+            **announcements_section_chrome(payload),
+            "items": announcements.get("items") or [],
+        }
     return public_payload
 
 
@@ -108,15 +163,31 @@ def backup_homepage_config() -> dict[str, str]:
     return {"backup_path": str(backup_path)}
 
 
+def _without_announcement_items(payload: dict[str, Any]) -> dict[str, Any]:
+    """Drop announcement items before writing the homepage JSON.
+
+    Announcement items are stored in Postgres (they are merged into the
+    homepage payload at request time). Persisting them here would only bake
+    a stale copy into the Docker image.
+    """
+    section = payload.get("announcements")
+    if not isinstance(section, dict) or "items" not in section:
+        return payload
+    cleaned = {key: value for key, value in payload.items() if key != "announcements"}
+    cleaned["announcements"] = {key: value for key, value in section.items() if key != "items"}
+    return cleaned
+
+
 def save_homepage_config(payload: dict[str, Any], *, create_backup: bool = True) -> dict[str, Any]:
     _ensure_dirs()
     validated = validate_homepage_config(payload)
+    persisted = _without_announcement_items(validated)
     backup = backup_homepage_config() if create_backup and HOMEPAGE_PATH.exists() else None
     HOMEPAGE_PATH.write_text(
-        json.dumps(validated, ensure_ascii=False, indent=2) + "\n",
+        json.dumps(persisted, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    return {"saved": True, "backup": backup, "config": validated}
+    return {"saved": True, "backup": backup, "config": persisted}
 
 
 def list_homepage_backups() -> list[dict[str, Any]]:
