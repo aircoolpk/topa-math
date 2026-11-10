@@ -138,8 +138,18 @@ if (existing.rowCount === 0) {
 await admin.end()
 
 // Now connect as the test role and build the schema.
+//
+// The connection is derived from the admin URL instead of a hard coded host,
+// so the same script provisions a local Postgres, a CI service container or a
+// Neon branch.
+const clientUrl = new URL(ADMIN_URL)
+const adminPassword = decodeURIComponent(clientUrl.password)
+const clientPassword = currentUser.rows[0].u === ROLE ? adminPassword : ROLE_PASSWORD
+clientUrl.username = encodeURIComponent(ROLE)
+clientUrl.password = encodeURIComponent(clientPassword)
+clientUrl.pathname = `/${DB_NAME}`
 const client = new Client({
-  connectionString: `postgresql://${ROLE}:${encodeURIComponent(ROLE_PASSWORD)}@127.0.0.1:5432/${DB_NAME}`,
+  connectionString: clientUrl.toString(),
 })
 await client.connect()
 

@@ -18,14 +18,27 @@ const HERE = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_ROOT = join(HERE, '..')
 
 /**
- * Connection string for the local Docker Postgres.
+ * Connection string for the test database.
  *
  * `scripts/setup-test-db.mjs` provisions this role, the database and the
- * password helpers, so run it once before `npm test`.
+ * password helpers, so run it once before `npm test`. The default comes from
+ * `.env.test`, which points at the Neon test branch; the local Postgres URL
+ * is the last resort for a machine that still runs one.
  */
+function readTestEnv(key: string): string | undefined {
+  try {
+    const match = readFileSync(new URL('../.env.test', import.meta.url), 'utf-8')
+      .match(new RegExp(`^${key}=(.*)$`, 'm'))
+    return match ? match[1].trim() : undefined
+  } catch {
+    return undefined
+  }
+}
+
 const DATABASE_URL =
   process.env.TEST_DATABASE_URL ??
-  'postgresql://topa_test:topa_test_password@127.0.0.1:5432/topa_test'
+  readTestEnv('TEST_DATABASE_URL') ??
+  'postgresql://topa_test:***@127.0.0.1:5432/topa_test'
 
 /** The shared HS256 secret used by the tests. */
 const JWT_SECRET = 'test-secret-value-for-integration-tests'
