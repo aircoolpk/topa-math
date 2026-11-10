@@ -1,0 +1,91 @@
+name: Point the Tunnel at the Native API
+
+# Topa Math — retarget the Cloudflare Tunnel origin.
+#
+# The tunnel "topamath-beta" (1799d3bf-feea-4e29-b181-d2ec36fca46e) used to
+# forward every hostname to the Docker container 4craft-web:3000, which
+# proxied /api/* to the FastAPI container. Both containers only exist while
+# Docker Desktop is running, so api.topamath.com answered 530 whenever
+# Docker was stopped.
+#
+# The FastAPI now runs on the host (scripts/run_api_native.py) and talks to
+# Neon, so the tunnel has to point at http://127.0.0.1:8001 instead. The
+# cloudflared connector picks the new configuration up automatically.
+#
+# topamath.com is unaffected: it is served by the OpenNext Worker through a
+# custom domain, which the edge routes before the tunnel.
+#
+# Manual dispatch only: this rewrites a production configuration.
+
+on:
+  workflow_dispatch:
+    inputs:
+      service:
+        description: 'Origin service for the tunnel (http://127.0.0.1:8001)'
+        required: false
+        default: 'http://127.0.0.1:8001'
+
+jobs:
+  retarget:
+    name: Set the tunnel origin
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Read the current configuration
+        id: current
+        run: |
+          curl -s --max-time 30 \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/cfd_tunnel/1799d3bf-feea-4e29-b181-d2ec36fca46e/configurations" \
+            | tee current.json
+          echo "--- current configuration above ---"
+
+      - name: Write the new configuration
+        env:
+          SERVICE: ${{ inputs.service }}
+        run: |
+          cat > body.json <<EOF
+          {
+            "config": {
+              "ingress": [
+                {
+                  "hostname": "api.topamath.com",
+                  "service": "${SERVICE}"
+                },
+                {
+                  "service": "http_status:404"
+                }
+              ],
+              "warp-routing": { "enabled": false }
+            }
+          }
+          EOF
+          echo "--- new configuration ---"
+          cat body.json
+          echo ""
+          curl -s --max-time 30 -X PUT \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data @body.json \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/cfd_tunnel/1799d3bf-feea-4e29-b181-d2ec36fca46e/configurations" \
+            | tee result.json
+          echo ""
+          if ! grep -q '"success":true' result.json; then
+            echo "::error::the Cloudflare API rejected the configuration"
+            exit 1
+          fi
+
+      - name: Verify the public API
+        run: |
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            code=$(curl -s -o /tmp/health.json -w '%{http_code}' --max-time 20 \
+              https://api.topamath.com/health || true)
+            if [ "$code" = "200" ]; then
+              echo "api.topamath.com/health -> 200 $(cat /tmp/health.json)"
+              exit 0
+            fi
+            echo "attempt $attempt: http $code, retrying in 10s"
+            sleep 10
+          done
+          echo "::error::the public API did not recover (last http code: ${code:-none})"
+          exit 1
