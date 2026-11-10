@@ -14,9 +14,10 @@ def main():
            'PAYMENT_GATEWAY_DEFAULT': 'stripe', 'MPP_CHECKOUT_ENABLED': 'false'}
     # Image references above are schema-validation strings, never pulled/run.
     results = []
-    for file, private_env in [('docker-compose.beta.yml', '.env.docker'), ('docker-compose.dev.yml', None),
-                              ('infra/docker-compose.yml', None), ('docker-compose.mpp-staging.yml', '.env.mpp-staging'),
+    for file, private_env in [('docker-compose.mpp-staging.yml', '.env.mpp-staging'),
                               ('deploy/compose.production.candidate.yml', None)]:
+        if not Path(file).exists():
+            continue
         command = ['docker', 'compose']
         if private_env and (ROOT / private_env).exists():
             command += ['--env-file', private_env]

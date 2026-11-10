@@ -18,10 +18,11 @@ during the cut-over.
 - **A PostgreSQL database.** The integration tests exercise the real
   handlers against a real database, so they need one.
 
-  Locally, the repository already runs Postgres in Docker:
+  The test database is a Neon branch. Point `TEST_ADMIN_DATABASE_URL` at
+  the direct (unpooled) connection string of that branch and run:
 
   ```bash
-  docker compose --env-file .env.docker -f docker-compose.beta.yml up -d 4craft-postgres
+  node scripts/setup-test-db.mjs
   ```
 
   The container's superuser credentials come from `.env.docker`
