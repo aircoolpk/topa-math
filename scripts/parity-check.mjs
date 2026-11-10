@@ -68,6 +68,7 @@ const IGNORE_KEYS = new Set([
   'timestamp',
   'expires_at',
   'session_url',
+  'published_at',
 ])
 
 function normalise(value, key) {
