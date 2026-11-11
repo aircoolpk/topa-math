@@ -23,13 +23,16 @@ import { checkDatabase, getDbFromEnv } from './lib/db'
 import { getEnv } from './lib/env'
 import { cors, toErrorResponse, type AppEnv } from './lib/http'
 import { authRoutes } from './routes/auth'
+import { avatarRoutes, childrenAvatarRoutes } from './routes/avatar'
 import { billingRoutes } from './routes/billing'
 import { childrenRoutes } from './routes/children'
 import { learningRoutes } from './routes/learning'
 import { meRoutes } from './routes/me'
+import { questRoutes } from './routes/quests'
 import { rankingsRoutes } from './routes/rankings'
 import { shareRoutes } from './routes/share'
 import { siteRoutes } from './routes/site'
+import { storageRoutes } from './routes/storage'
 
 /**
  * Build the Hono application.
@@ -105,7 +108,13 @@ export function createApp(overrides?: Partial<AppEnv['Variables']>) {
   app.route('/site', siteRoutes)
   app.route('/rankings', rankingsRoutes)
   app.route('/children', childrenRoutes)
+  // The inventory and avatar routes live under /children in the legacy
+  // service, so they are mounted with the child router.
+  app.route('/children', childrenAvatarRoutes)
+  app.route('/avatar', avatarRoutes)
+  app.route('/storage', storageRoutes)
   app.route('/me', meRoutes)
+  app.route('/me', questRoutes)
   app.route('/billing', billingRoutes)
   app.route('/share', shareRoutes)
   app.route('/', learningRoutes)
