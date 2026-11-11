@@ -16,9 +16,6 @@ CREATE TABLE "billing_checkout_reservations" (
   UNIQUE ("user_id"),
   FOREIGN KEY ("user_id") REFERENCES "users" ("id")
 );
-CREATE UNIQUE INDEX IF NOT EXISTS billing_checkout_reservations_external_id_key ON public.billing_checkout_reservations USING btree (external_id);
-CREATE INDEX IF NOT EXISTS ix_billing_checkout_reservations_user_id ON public.billing_checkout_reservations USING btree (user_id);
-CREATE UNIQUE INDEX IF NOT EXISTS uq_checkout_pending_user ON public.billing_checkout_reservations USING btree (user_id) WHERE ((status)::text = 'PENDING'::text);
 
 DROP TABLE IF EXISTS "mpp_package_prices" CASCADE;
 CREATE TABLE "mpp_package_prices" (
@@ -31,18 +28,6 @@ CREATE TABLE "mpp_package_prices" (
   "active" boolean NOT NULL,
   PRIMARY KEY ("plan_code")
 );
-
-DROP TABLE IF EXISTS "mpp_purchase_events" CASCADE;
-CREATE TABLE "mpp_purchase_events" (
-  "event_id" varchar(160) NOT NULL,
-  "order_id" varchar(36) NOT NULL,
-  "body_digest" varchar(64) NOT NULL,
-  "outcome" varchar(30) NOT NULL,
-  "created_at" timestamptz NOT NULL DEFAULT now(),
-  PRIMARY KEY ("event_id"),
-  FOREIGN KEY ("order_id") REFERENCES "mpp_purchase_orders" ("id")
-);
-CREATE INDEX IF NOT EXISTS ix_mpp_purchase_events_order_id ON public.mpp_purchase_events USING btree (order_id);
 
 DROP TABLE IF EXISTS "mpp_purchase_orders" CASCADE;
 CREATE TABLE "mpp_purchase_orders" (
@@ -79,12 +64,16 @@ CREATE TABLE "mpp_purchase_orders" (
   FOREIGN KEY ("plan_code") REFERENCES "mpp_package_prices" ("plan_code"),
   FOREIGN KEY ("user_id") REFERENCES "users" ("id")
 );
-CREATE UNIQUE INDEX IF NOT EXISTS mpp_purchase_orders_merchant_order_id_key ON public.mpp_purchase_orders USING btree (merchant_order_id);
-CREATE UNIQUE INDEX IF NOT EXISTS mpp_purchase_orders_idempotency_key_key ON public.mpp_purchase_orders USING btree (idempotency_key);
-CREATE UNIQUE INDEX IF NOT EXISTS mpp_purchase_orders_payment_id_key ON public.mpp_purchase_orders USING btree (payment_id);
-CREATE INDEX IF NOT EXISTS ix_mpp_purchase_orders_user_id ON public.mpp_purchase_orders USING btree (user_id);
-CREATE UNIQUE INDEX IF NOT EXISTS uq_mpp_pending_child ON public.mpp_purchase_orders USING btree (child_id) WHERE ((status)::text = 'PENDING'::text);
-CREATE INDEX IF NOT EXISTS ix_mpp_purchase_orders_child_id ON public.mpp_purchase_orders USING btree (child_id);
+
+DROP TABLE IF EXISTS "mpp_purchase_events" CASCADE;
+CREATE TABLE "mpp_purchase_events" (
+  "event_id" varchar(160) NOT NULL,
+  "order_id" varchar(36) NOT NULL,
+  "body_digest" varchar(64) NOT NULL,
+  "outcome" varchar(30) NOT NULL,
+  "created_at" timestamptz NOT NULL DEFAULT now(),
+  PRIMARY KEY ("event_id")
+);
 
 DROP TABLE IF EXISTS "mpp_test_transactions" CASCADE;
 CREATE TABLE "mpp_test_transactions" (
@@ -110,10 +99,6 @@ CREATE TABLE "mpp_test_transactions" (
   UNIQUE ("withdrawal_id"),
   FOREIGN KEY ("created_by") REFERENCES "users" ("id")
 );
-CREATE UNIQUE INDEX IF NOT EXISTS mpp_test_transactions_merchant_order_id_key ON public.mpp_test_transactions USING btree (merchant_order_id);
-CREATE UNIQUE INDEX IF NOT EXISTS mpp_test_transactions_idempotency_key_key ON public.mpp_test_transactions USING btree (idempotency_key);
-CREATE UNIQUE INDEX IF NOT EXISTS mpp_test_transactions_payment_id_key ON public.mpp_test_transactions USING btree (payment_id);
-CREATE UNIQUE INDEX IF NOT EXISTS mpp_test_transactions_withdrawal_id_key ON public.mpp_test_transactions USING btree (withdrawal_id);
 
 DROP TABLE IF EXISTS "mpp_test_webhook_events" CASCADE;
 CREATE TABLE "mpp_test_webhook_events" (
@@ -140,4 +125,21 @@ CREATE TABLE "site_announcements" (
   "updated_at" timestamptz NOT NULL DEFAULT now(),
   PRIMARY KEY ("id")
 );
+
+CREATE UNIQUE INDEX IF NOT EXISTS billing_checkout_reservations_external_id_key ON public.billing_checkout_reservations USING btree (external_id);
+CREATE UNIQUE INDEX IF NOT EXISTS billing_checkout_reservations_user_id_key ON public.billing_checkout_reservations USING btree (user_id);
+CREATE INDEX IF NOT EXISTS ix_billing_checkout_reservations_user_id ON public.billing_checkout_reservations USING btree (user_id);
+CREATE UNIQUE INDEX IF NOT EXISTS uq_checkout_pending_user ON public.billing_checkout_reservations USING btree (user_id) WHERE ((status)::text = 'PENDING'::text);
+CREATE UNIQUE INDEX IF NOT EXISTS mpp_purchase_orders_child_id_key ON public.mpp_purchase_orders USING btree (child_id);
+CREATE UNIQUE INDEX IF NOT EXISTS mpp_purchase_orders_idempotency_key_key ON public.mpp_purchase_orders USING btree (idempotency_key);
+CREATE UNIQUE INDEX IF NOT EXISTS mpp_purchase_orders_merchant_order_id_key ON public.mpp_purchase_orders USING btree (merchant_order_id);
+CREATE UNIQUE INDEX IF NOT EXISTS mpp_purchase_orders_payment_id_key ON public.mpp_purchase_orders USING btree (payment_id);
+CREATE INDEX IF NOT EXISTS ix_mpp_purchase_orders_user_id ON public.mpp_purchase_orders USING btree (user_id);
+CREATE UNIQUE INDEX IF NOT EXISTS uq_mpp_pending_child ON public.mpp_purchase_orders USING btree (child_id) WHERE ((status)::text = 'PENDING'::text);
+CREATE INDEX IF NOT EXISTS ix_mpp_purchase_orders_child_id ON public.mpp_purchase_orders USING btree (child_id);
+CREATE INDEX IF NOT EXISTS ix_mpp_purchase_events_order_id ON public.mpp_purchase_events USING btree (order_id);
+CREATE UNIQUE INDEX IF NOT EXISTS mpp_test_transactions_idempotency_key_key ON public.mpp_test_transactions USING btree (idempotency_key);
+CREATE UNIQUE INDEX IF NOT EXISTS mpp_test_transactions_merchant_order_id_key ON public.mpp_test_transactions USING btree (merchant_order_id);
+CREATE UNIQUE INDEX IF NOT EXISTS mpp_test_transactions_payment_id_key ON public.mpp_test_transactions USING btree (payment_id);
+CREATE UNIQUE INDEX IF NOT EXISTS mpp_test_transactions_withdrawal_id_key ON public.mpp_test_transactions USING btree (withdrawal_id);
 CREATE INDEX IF NOT EXISTS ix_site_announcements_published_sort ON public.site_announcements USING btree (published, sort_order);
