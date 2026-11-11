@@ -173,6 +173,25 @@ await client.query('CREATE EXTENSION IF NOT EXISTS pgcrypto')
 await client.query(readFileSync(join(PACKAGE_ROOT, 'scripts', 'pbkdf2.sql'), 'utf-8'))
 console.log('installed pgcrypto + password helpers')
 
+// The billing and the MPP integration talk to their tables with raw SQL, so
+// those tables are not part of the Drizzle schema. The DDL is read from the
+// test branch, whose schema has the same shape as the production schema.
+const billingDdl = readFileSync(join(PACKAGE_ROOT, 'scripts', 'billing-ddl.sql'), 'utf-8')
+let billingTables = 0
+for (const chunk of billingDdl.split(';')) {
+  // A chunk can start with the comment header, so the comments are removed
+  // before the statement is sent to the server.
+  const trimmed = chunk
+    .split('\n')
+    .filter((line) => !line.trim().startsWith('--'))
+    .join('\n')
+    .trim()
+  if (!trimmed) continue
+  await client.query(trimmed)
+  if (/^CREATE TABLE/i.test(trimmed)) billingTables += 1
+}
+console.log(`created ${billingTables} billing tables from the raw SQL schema`)
+
 // Verify the helpers agree with each other. Registration hashes with
 // `topa_hash_password` and login verifies with `topa_verify_password`, so a
 // mismatch between the two only shows up as a 500 from /auth/register — very
