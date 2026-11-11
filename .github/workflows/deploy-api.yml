@@ -57,12 +57,34 @@ jobs:
         # The Worker reads its configuration from its own secrets, not from
         # the repository environment. Setting them here keeps the values out
         # of wrangler.toml and out of every developer's machine.
+        # An empty value would wipe the secret that is already set on the
+        # Worker, so every secret is only written when the repository has it.
         run: |
-          printf '%s' "$DATABASE_URL" | npx wrangler secret put DATABASE_URL
-          printf '%s' "$JWT_SECRET" | npx wrangler secret put JWT_SECRET
+          set -e
+          for name in DATABASE_URL JWT_SECRET STRIPE_SECRET_KEY STRIPE_WEBHOOK_SECRET \
+            STRIPE_PRICE_TH_FOUNDER_MONTHLY STRIPE_PRICE_EP_FOUNDER_MONTHLY \
+            STRIPE_PRICE_TH_PLUS_MONTHLY STRIPE_PRICE_EP_PLUS_MONTHLY \
+            STRIPE_PRICE_TH_PLUS_YEARLY STRIPE_PRICE_EP_PLUS_YEARLY \
+            STRIPE_CUSTOMER_PORTAL_RETURN_URL; do
+            value="$(printenv "$name" || true)"
+            if [ -n "$value" ]; then
+              printf '%s' "$value" | npx wrangler secret put "$name"
+            else
+              echo "::notice::$name is not set in the repository, keeping the value on the Worker"
+            fi
+          done
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          STRIPE_WEBHOOK_SECRET: ${{ secrets.STRIPE_WEBHOOK_SECRET }}
+          STRIPE_PRICE_TH_FOUNDER_MONTHLY: ${{ secrets.STRIPE_PRICE_TH_FOUNDER_MONTHLY }}
+          STRIPE_PRICE_EP_FOUNDER_MONTHLY: ${{ secrets.STRIPE_PRICE_EP_FOUNDER_MONTHLY }}
+          STRIPE_PRICE_TH_PLUS_MONTHLY: ${{ secrets.STRIPE_PRICE_TH_PLUS_MONTHLY }}
+          STRIPE_PRICE_EP_PLUS_MONTHLY: ${{ secrets.STRIPE_PRICE_EP_PLUS_MONTHLY }}
+          STRIPE_PRICE_TH_PLUS_YEARLY: ${{ secrets.STRIPE_PRICE_TH_PLUS_YEARLY }}
+          STRIPE_PRICE_EP_PLUS_YEARLY: ${{ secrets.STRIPE_PRICE_EP_PLUS_YEARLY }}
+          STRIPE_CUSTOMER_PORTAL_RETURN_URL: ${{ secrets.STRIPE_CUSTOMER_PORTAL_RETURN_URL }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
