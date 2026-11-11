@@ -394,9 +394,11 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
       }
     })
 
-  const dailyQuests = quests.filter((quest) => quest.quest_type === 'daily')
-  const weeklyQuests = quests.filter((quest) => quest.quest_type === 'weekly')
-  const monthlyQuests = quests.filter((quest) => quest.quest_type === 'monthly')
+  // The period of a quest is its recurrence, not its action: a quest can
+  // be a check in or a test and still repeat every day.
+  const dailyQuests = quests.filter((quest) => quest.recurrence_type === 'daily')
+  const weeklyQuests = quests.filter((quest) => quest.recurrence_type === 'weekly')
+  const monthlyQuests = quests.filter((quest) => quest.recurrence_type === 'monthly')
 
   const statsRow = statsRows.find((row) => row.kind === 'stats')
   const lessonsCompleted = statsRow ? Math.floor(Number(statsRow.status_order ?? 0) / 65536) : 0

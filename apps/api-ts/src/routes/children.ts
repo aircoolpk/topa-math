@@ -139,7 +139,9 @@ const CHILD_COLUMNS = `
   program_type, membership_status, total_score, total_xp, coins,
   current_level, days_active, test_attempts_used, free_test_limit,
   total_tests_completed, average_test_accuracy, average_test_speed,
-  current_rank_title, streak_count, created_at, updated_at
+  current_rank_title, streak_count,
+  to_char(created_at AT TIME ZONE 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS.US"Z"') AS created_at,
+  to_char(updated_at AT TIME ZONE 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS.US"Z"') AS updated_at
 `
 
 /** Convert a child row into the `ChildOut` payload the frontend expects. */

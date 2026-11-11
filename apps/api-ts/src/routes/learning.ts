@@ -1097,12 +1097,15 @@ learningRoutes.get('/skills', async (c) => {
   const gradeLevel = Number(c.req.query('grade_level') ?? 1)
 
   const rows = (await sql.query(
+    // The legacy service returns the skills in the order the database holds
+    // them, and stamps the creation time as an ISO-8601 offset.
     `SELECT s.id, s.subject_id, s.grade_level, s.code, s.name, s.description,
-            s.prerequisite_skill_ids, s.difficulty_order, s.created_at
+            s.prerequisite_skill_ids, s.difficulty_order,
+            to_char(s.created_at AT TIME ZONE 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS.US')
+              || '+00:00' AS created_at
      FROM skills s
      JOIN subjects sub ON sub.id = s.subject_id
-     WHERE sub.code = $1 AND s.grade_level = $2
-     ORDER BY s.difficulty_order ASC, s.name ASC`,
+     WHERE sub.code = $1 AND s.grade_level = $2`,
     [subject, Number.isFinite(gradeLevel) ? gradeLevel : 1],
   )) as Array<Record<string, unknown>>
 
