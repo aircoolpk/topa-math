@@ -29,19 +29,28 @@ Neon, so the cutover replaces the origin, not the data.
 route coverage        44/44   (apps/api-ts/scripts/route-gap.ts)
 typecheck             0 errors (tsc --noEmit, src + tests)
 tests                 136/136 (vitest, Neon test branch)
-parity harness        12/15 identical, 0 missing, 0 status-only mismatches
+parity harness        15/15 identical, 0 missing
+Stripe parity         14/14 identical (after the secrets were copied)
 ```
 
-The three remaining differences all come from the same cause: the Worker has
-no Stripe configuration yet, so `stripe_price_id` is null and
-`POST /webhooks/stripe` answers `500 Stripe configuration missing:
-STRIPE_SECRET_KEY` where the legacy service answers `400 Invalid Stripe
-signature`. Copying the Stripe settings from `.env.native` into the GitHub
-secrets (the deploy workflow writes them to the Worker) closes all three.
+The api hostname now routes to the Worker. A Worker route for
+`api.topamath.com/*` takes precedence over the origin, so the request stops
+at the edge and never reaches the tunnel; the DNS was not touched, which
+makes the rollback instant:
 
-The harness lives in `apps/api-ts/scripts/capture-live-oracle.mjs`; it writes
-one capture per service and `apps/api-ts/scripts/compare-parity.mjs` diffs
-them field by field.
+```
+gh workflow run route-api-domain.yml -f action=restore
+```
+
+The request log of the native FastAPI stays empty while the domain is on
+the Worker, which is how the cutover was confirmed.
+
+The Worker holds the Stripe configuration now, so the billing catalogue
+returns the real price identifiers and `POST /webhooks/stripe` answers
+`400 Invalid Stripe signature` exactly like the legacy service.
+
+The native FastAPI keeps running on the host as the fallback and answers
+the same Neon database, so nothing is lost if the route is removed.
 
 ## Rollback
 
