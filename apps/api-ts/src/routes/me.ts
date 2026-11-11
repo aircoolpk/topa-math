@@ -87,28 +87,69 @@ interface ChildRow {
 
 /** Remaining free test attempts for a child. */
 function remainingFreeTests(child: ChildRow): number {
-  const isPaid = (child.membership_status ?? 'free') !== 'free'
-  if (isPaid) {
-    return 999_999
-  }
   return Math.max(0, (child.free_test_limit || 5) - (child.test_attempts_used || 0))
 }
 
+/** Whether the child has a paid membership. */
+function isPaid(child: ChildRow): boolean {
+  return (child.membership_status ?? 'free') !== 'free'
+}
+
 /** The test-level ladder (grade 1-6) shown on the dashboard. */
+/**
+ * The grade ladder of the placement test.
+ *
+ * A free member may only take the test the system recommends, so every
+ * other grade is locked with the reason the legacy service gives.
+ */
 function buildTestLevels(child: ChildRow): Array<Record<string, unknown>> {
+  const recommended = recommendedFoundationGrade(child.grade_level)
+  const paid = isPaid(child)
+  const noFreeTests = !paid && remainingFreeTests(child) <= 0
   const levels: Array<Record<string, unknown>> = []
   for (let grade = 1; grade <= 6; grade++) {
-    const unlocked = grade <= child.grade_level
+    const locked = !paid && (grade !== recommended || noFreeTests)
+    const lockReason = locked
+      ? noFreeTests
+        ? 'ใช้สิทธิ์เทสฟรีครบแล้ว กรุณาอัปเกรดเพื่อทำเทสเพิ่มเติม'
+        : 'สมาชิกฟรีทำได้เฉพาะเทสที่ระบบแนะนำ'
+      : null
     levels.push({
       grade,
-      title: `ป.${grade}`,
-      status: unlocked ? 'unlocked' : 'locked',
-      lock_reason: unlocked ? undefined : 'ทดลองระดับชั้นก่อนหน้าให้ผ่านก่อน',
+      grade_level: grade,
+      title: `คณิตศาสตร์ ป.${grade}`,
+      title_th: `แบบทดสอบ ป.${grade}`,
+      status: locked ? 'locked' : 'unlocked',
+      is_locked: locked,
+      lock_reason: lockReason,
       questions_count: 10,
-      estimated_minutes: 5,
+      estimated_minutes: 15,
     })
   }
   return levels
+}
+
+/** The grade the placement test recommends for a child. */
+function recommendedFoundationGrade(gradeLevel: number | null): number {
+  if (!gradeLevel || gradeLevel <= 1) return 1
+  return Math.max(1, Math.min(6, gradeLevel - 1))
+}
+
+/** The placement test the dashboard recommends. */
+function buildFoundationTest(child: ChildRow): Record<string, unknown> {
+  const grade = recommendedFoundationGrade(child.grade_level)
+  const locked = !isPaid(child) && remainingFreeTests(child) <= 0
+  return {
+    recommended_grade: grade,
+    recommended_grade_level: grade,
+    title_th: `เทสพื้นฐาน ป.${grade}`,
+    description_th: `แนะนำให้ทำเทสพื้นฐาน ป.${grade} เพื่อดูว่ามีจุดไหนที่ควรทบทวน`,
+    is_required: true,
+    is_locked: locked,
+    reason_th: locked
+      ? 'ใช้สิทธิ์เทสฟรีครบแล้ว กรุณาอัปเกรดเพื่อทำเทสเพิ่มเติม'
+      : 'ใช้ฟรีได้ 5 ครั้งสำหรับเทสที่ระบบแนะนำ',
+  }
 }
 
 meRoutes.get('/rank-summary', requireAuth(), async (c) => {
@@ -142,12 +183,17 @@ meRoutes.get('/rank-summary', requireAuth(), async (c) => {
   )) as Array<{ total: number; higher: number }>
 
   const rank = rankRows[0]
+  // A child only counts in the leaderboard once it has a grade, a province
+  // and at least one completed test, exactly like the legacy service.
+  const rankable = Boolean(
+    child.grade_level && (child.total_tests_completed || 0) > 0 && child.province,
+  )
   return c.json({
     total_score: child.total_score || 0,
     rank_title: rankTitle,
     grade_level: child.grade_level,
     leaderboard_scope: 'grade',
-    rank_position: rank ? rank.higher + 1 : null,
+    rank_position: rank && rankable ? rank.higher + 1 : null,
     total_in_grade: rank?.total ?? 0,
   })
 })
