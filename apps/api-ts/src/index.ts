@@ -33,6 +33,7 @@ import { rankingsRoutes } from './routes/rankings'
 import { referralRoutes, shareRoutes } from './routes/share'
 import { siteRoutes } from './routes/site'
 import { storageRoutes } from './routes/storage'
+import { webhookRoutes } from './routes/webhooks'
 
 /**
  * Build the Hono application.
@@ -116,6 +117,7 @@ export function createApp(overrides?: Partial<AppEnv['Variables']>) {
   app.route('/me', meRoutes)
   app.route('/me', questRoutes)
   app.route('/billing', billingRoutes)
+  app.route('/webhooks', webhookRoutes)
   app.route('/share', shareRoutes)
   app.route('/', referralRoutes)
   app.route('/', learningRoutes)

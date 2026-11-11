@@ -133,7 +133,7 @@ export function getBillingSettings(env: Bindings): BillingSettings {
     mppExpectedMerchantName: str(env, 'MPP_EXPECTED_MERCHANT_NAME'),
     mppExpectedProjectName: str(env, 'MPP_EXPECTED_PROJECT_NAME'),
     mppAmountUnit: str(env, 'MPP_AMOUNT_UNIT'),
-    founderPricingEnabled: bool(env, 'FOUNDER_PRICING_ENABLED', false),
+    founderPricingEnabled: bool(env, 'FOUNDER_PRICING_ENABLED', true),
     founderUserLimit,
     founderPriceLimit: int(env, 'FOUNDER_PRICE_LIMIT', 100),
     referralEnabled: bool(env, 'REFERRAL_ENABLED', true),

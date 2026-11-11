@@ -552,10 +552,14 @@ describe('billing', () => {
   it('returns the price catalogue', async () => {
     const response = await request('/billing/prices')
     expect(response.status).toBe(200)
-    const body = (await response.json()) as { plans: Array<{ plan_code: string }>; source: string }
-    expect(body.source).toBe('backend')
+    // The legacy service returns the plans and the checkout provider here;
+    // the `source` field belongs to /billing/plans.
+    const body = (await response.json()) as {
+      plans: Array<{ plan_code: string }>
+      checkout_provider?: string
+    }
     expect(body.plans.some((plan) => plan.plan_code === 'free')).toBe(true)
-    expect(body.plans.some((plan) => plan.plan_code === 'th_plus_monthly')).toBe(true)
+    expect(body.plans.some((plan) => plan.plan_code === 'th_founder_monthly')).toBe(true)
   })
 
   it('returns the plan catalogue', async () => {

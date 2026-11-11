@@ -45,7 +45,7 @@ export const TH_PLAN_FEATURES = [
   'แบบทดสอบทุกระดับชั้น ไม่จำกัด',
   'ระบบ AI วิเคราะห์จุดอ่อน',
   'แบบฝึกเฉพาะบุคคล',
-  'Quest รายวัน / รายสัปดาห์ / รายเดือน',
+  'Quest รายวัน / สัปดาห์ / เดือน',
   'XP / Level / Rank ทั่วประเทศ',
   'Avatar และของตกแต่งพื้นฐาน',
 ]
@@ -103,7 +103,7 @@ export const PLAN_CATALOG: BillingPlan[] = [
   {
     plan_code: 'ep_plus_monthly',
     price_env: 'stripePriceEpPlusMonthly',
-    product_id: 'prod_USgHn9EzVjHbsW',
+    product_id: 'prod_USgHn9EzVjHbsR',
     display_name: 'Plus EP',
     program_type: 'EP',
     billing_interval: 'month',
