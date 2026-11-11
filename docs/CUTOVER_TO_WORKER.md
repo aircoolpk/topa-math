@@ -23,6 +23,33 @@ Neon, so the cutover replaces the origin, not the data.
 2. The Worker tests pass (`cd apps/api-ts && npx vitest run`).
 3. The Worker is deployed with the Neon secrets.
 
+## Verified state (2026-11-11)
+
+```
+route coverage        44/44   (apps/api-ts/scripts/route-gap.ts)
+typecheck             0 errors (tsc --noEmit, src + tests)
+tests                 136/136 (vitest, Neon test branch)
+parity harness        12/15 identical, 0 missing, 0 status-only mismatches
+```
+
+The three remaining differences all come from the same cause: the Worker has
+no Stripe configuration yet, so `stripe_price_id` is null and
+`POST /webhooks/stripe` answers `500 Stripe configuration missing:
+STRIPE_SECRET_KEY` where the legacy service answers `400 Invalid Stripe
+signature`. Copying the Stripe settings from `.env.native` into the GitHub
+secrets (the deploy workflow writes them to the Worker) closes all three.
+
+The harness lives in `apps/api-ts/scripts/capture-live-oracle.mjs`; it writes
+one capture per service and `apps/api-ts/scripts/compare-parity.mjs` diffs
+them field by field.
+
+## Rollback
+
+The tunnel ingress is the only thing that decides where `api.topamath.com`
+goes. Pointing it back at `http://127.0.0.1:8001` restores the native
+FastAPI, which is still running against the same Neon branch, so the
+rollback takes effect within a minute and loses nothing.
+
 ## Steps
 
 1. **Add the route** to `apps/api-ts/wrangler.toml`:
