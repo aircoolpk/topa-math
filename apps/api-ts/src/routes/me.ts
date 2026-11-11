@@ -297,6 +297,7 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
      UNION ALL
      SELECT 'quest' AS kind, q.id, q.title,
             jsonb_build_object(
+              'quest_id', q.quest_id,
               'description', q.description,
               'quest_type', q.quest_type,
               'recurrence_type', q.recurrence_type,
@@ -369,8 +370,8 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
       const content = (row.content ?? {}) as Record<string, unknown>
       const questType = String(content.quest_type ?? (row.skill_code ? 'lesson' : 'lesson'))
       return {
-        quest_id: row.id as string,
-        id: row.id as string,
+        quest_id: (content.quest_id as string) ?? (row.id as string),
+        id: (content.quest_id as string) ?? (row.id as string),
         title: row.title as string,
         title_th: row.title as string,
         description: (content.description as string) ?? null,
@@ -493,7 +494,7 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
       free_test_limit: child.free_test_limit || 5,
       remaining_free_tests: remaining,
     },
-    foundation_test: null,
+    foundation_test: buildFoundationTest(child),
     test_levels: buildTestLevels(child),
     available_test_levels: buildTestLevels(child),
     daily_quests: dailyQuests,
