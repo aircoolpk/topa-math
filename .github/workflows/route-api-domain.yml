@@ -1,0 +1,97 @@
+name: Move the api domain to the Worker
+
+# Topa Math — send api.topamath.com to the API Worker.
+#
+# The domain is a proxied CNAME to the Cloudflare Tunnel, and the tunnel
+# still points at the native FastAPI. A Worker route for the same hostname
+# takes precedence over the origin, so the request never reaches the
+# tunnel: the Worker answers it.
+#
+# The DNS is not touched, which makes the rollback instant: deleting the
+# route hands the hostname back to the tunnel and the FastAPI answers
+# again, with no propagation delay.
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'move = route the domain to the Worker, restore = delete the route'
+        required: false
+        default: 'move'
+
+jobs:
+  move:
+    name: Move the api domain
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Read the zone and the current route
+        id: context
+        run: |
+          set -euo pipefail
+          CF=https://api.cloudflare.com/client/v4
+          auth="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+          zone=$(curl -s --max-time 30 -H "$auth" "$CF/zones?name=topamath.com" \
+            | python -c 'import json,sys; r=json.load(sys.stdin).get("result") or []; print(r[0]["id"] if r else "")')
+          echo "ZONE_ID=$zone" >> "$GITHUB_ENV"
+          echo "the zone is ${zone:-none}"
+          curl -s --max-time 30 -H "$auth" "$CF/zones/$zone/workers/routes" \
+            | python -c 'import json,sys; d=json.load(sys.stdin); [print("  existing route:", r.get("id"), r.get("pattern"), "->", r.get("script")) for r in (d.get("result") or [])]'
+        env:
+          CF: https://api.cloudflare.com/client/v4
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Create the route to the Worker
+        if: inputs.action != 'restore'
+        run: |
+          set -euo pipefail
+          CF=https://api.cloudflare.com/client/v4
+          auth="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+          echo "--- creating the route ---"
+          curl -s --max-time 30 -X POST \
+            -H "$auth" -H "Content-Type: application/json" \
+            -d '{"pattern":"api.topamath.com/*","script":"topa-math-api"}' \
+            "$CF/zones/$ZONE_ID/workers/routes" | tee route.json
+          python - <<'PY'
+          import json
+          with open('route.json') as handle:
+              body = json.load(handle)
+          if not body.get('success'):
+              raise SystemExit(f"the route was refused: {body.get('errors')}")
+          print("the api hostname now routes to the Worker")
+          PY
+        env:
+          CF: https://api.cloudflare.com/client/v4
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Delete the route
+        if: inputs.action == 'restore'
+        run: |
+          set -euo pipefail
+          CF=https://api.cloudflare.com/client/v4
+          auth="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+          ids=$(curl -s --max-time 30 -H "$auth" "$CF/zones/$ZONE_ID/workers/routes" \
+            | python -c 'import json,sys; [print(r["id"]) for r in (json.load(sys.stdin).get("result") or []) if r.get("pattern","").startswith("api.topamath.com")]')
+          for id in $ids; do
+            curl -s --max-time 30 -X DELETE -H "$auth" \
+              "$CF/zones/$ZONE_ID/workers/routes/$id" \
+              | python -c 'import json,sys; d=json.load(sys.stdin); print("removed route" if d.get("success") else d.get("errors"))'
+          done
+          echo "the api hostname is back on the tunnel"
+        env:
+          CF: https://api.cloudflare.com/client/v4
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Check the domain
+        run: |
+          for attempt in 1 2 3 4 5 6; do
+            code=$(curl -s -o body.json -w '%{http_code}' --max-time 20 https://api.topamath.com/health || true)
+            server=$(curl -s -D - -o /dev/null --max-time 20 https://api.topamath.com/health | grep -i '^server:' | tr -d '\r' || true)
+            echo "attempt $attempt: api.topamath.com/health -> $code $server"
+            if [ "$code" = "200" ]; then
+              head -c 200 body.json; echo
+              exit 0
+            fi
+            sleep 12
+          done
+          echo "::warning::the api domain did not answer yet"
