@@ -47,6 +47,23 @@ const CASES = [
   ['POST', '/webhooks/stripe', undefined],
   ['POST', '/webhooks/mpp/payments', undefined],
   ['POST', '/webhooks/mpp/staging', undefined],
+  // The daily surfaces a student actually touches.
+  ['GET', '/site/homepage', null],
+  ['GET', '/me/profile', null],
+  ['GET', '/me/dashboard?program_type=TH', null],
+  ['GET', '/me/lessons?program_type=TH', null],
+  ['GET', '/me/lessons?grade=3&program_type=TH', null],
+  ['GET', '/me/stats', null],
+  ['GET', '/me/rank-summary', null],
+  ['GET', '/me/quests/daily', null],
+  ['GET', '/rankings?grade_level=3&scope=country', null],
+  ['GET', '/subjects', null],
+  ['GET', '/skills', null],
+  ['GET', '/children', null],
+  ['GET', '/me/avatar/items', null],
+  ['GET', '/avatar/items', null],
+  ['GET', '/me/lessons/g3_division?program_type=TH', null],
+  ['GET', '/me/lessons/g3_numbers?program_type=TH', null],
 ]
 
 const results = []

@@ -236,16 +236,36 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
   // stats and the leaderboard position.
   const batch = (await sql.query(
     `
-    SELECT 'lesson' AS kind, l.id, l.title, l.content, NULL::int AS estimated_minutes,
+    SELECT 'lesson' AS kind, l.id, l.title,
+           jsonb_build_object(
+             'title_th', l.content->'title_th',
+             'program_type', l.content->'program_type',
+             'topic_code', l.content->'topic_code',
+             'topic_folder', l.content->'topic_folder'
+           ) AS content,
+           NULL::int AS estimated_minutes,
            s.grade_level, s.code AS skill_code, s.name AS skill_name, NULL::int AS status_order
       FROM lessons l
       JOIN skills s ON s.id = l.skill_id
      WHERE l.status = 'approved' AND s.grade_level IN ($2, $3)
      UNION ALL
-    SELECT 'quest' AS kind, q.id, q.title, NULL::jsonb, q.estimated_minutes,
-           q.grade_level, q.skill_code, q.title, NULL::int
-      FROM learning_quests q
-     WHERE q.status = 'active' AND q.grade_level = $2
+     SELECT 'quest' AS kind, q.id, q.title,
+            jsonb_build_object(
+              'description', q.description,
+              'quest_type', q.quest_type,
+              'recurrence_type', q.recurrence_type,
+              'xp_reward', q.xp_reward,
+              'coin_reward', q.coin_reward,
+              'lesson_id', q.lesson_id,
+              'quiz_id', q.quiz_id,
+              'metadata', q.metadata,
+              'target_count', COALESCE((q.metadata->>'target_count')::int, 1),
+              'score_reward', COALESCE((q.metadata->>'score_reward')::int, q.xp_reward)
+            ) AS content,
+            q.estimated_minutes,
+            q.grade_level, q.skill_code, q.title, NULL::int
+       FROM learning_quests q
+      WHERE q.status = 'active' AND q.grade_level = $2
      UNION ALL
     SELECT 'stats' AS kind, st.id, NULL, NULL::jsonb, NULL, NULL, NULL, NULL,
            (st.lessons_completed::int << 16) | st.quests_completed::int
@@ -306,13 +326,23 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
         quest_id: row.id as string,
         id: row.id as string,
         title: row.title as string,
+        title_th: row.title as string,
         description: (content.description as string) ?? null,
+        description_th: (content.description as string) ?? null,
         quest_type: questType,
+        recurrence_type: (content.recurrence_type as string) ?? null,
         xp_reward: Number(content.xp_reward ?? 0),
+        exp_reward: Number(content.xp_reward ?? 0),
+        score_reward: Number(content.score_reward ?? content.xp_reward ?? 0),
         coin_reward: Number(content.coin_reward ?? 0),
+        estimated_minutes: Number(row.estimated_minutes ?? 3),
         status: 'available',
+        child_status: 'not_started',
         progress_current: 0,
-        progress_total: 1,
+        progress_target: Math.max(1, Number(content.target_count ?? 1)),
+        progress_total: Math.max(1, Number(content.target_count ?? 1)),
+        progress_percent: 0,
+        can_claim_reward: false,
         lesson_id: (content.lesson_id as string) ?? null,
         quiz_id: (content.quiz_id as string) ?? null,
       }
