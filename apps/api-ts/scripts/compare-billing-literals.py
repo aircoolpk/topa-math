@@ -84,7 +84,7 @@ for node in ast.walk(tree):
             found = const_of(keyword.value)
             if not found:
                 continue
-            if found.startswith("\u0e2a\u0e49\u0e07\u0e04\u0e33"):
+            if found.startswith("\u0e2a\u0e48\u0e07\u0e04\u0e33"):
                 fastapi["manual_pending"] = found
             elif found.startswith("\u0e22\u0e31\u0e07\u0e44\u0e21\u0e48\u0e1e\u0e1a"):
                 fastapi["missing_stripe_customer"] = found
