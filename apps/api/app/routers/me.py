@@ -13,6 +13,7 @@ from sqlalchemy import func, or_, select
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
+from app.core.avatar_storage import AVATAR_STORAGE_ROOT as avatar_storage_root
 from app.core.database import get_db
 from app.models import (
     ChildProfile,
@@ -3737,7 +3738,7 @@ def dashboard(
 
 # ─── Student Photo Upload ───────────────────────────────────────────────────────
 
-AVATAR_STORAGE_ROOT = Path(__file__).resolve().parents[2] / "storage" / "uploads" / "avatars"
+AVATAR_STORAGE_ROOT = avatar_storage_root
 AVATAR_ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp"}
 AVATAR_MAX_BYTES = 5 * 1024 * 1024  # 5 MB
 

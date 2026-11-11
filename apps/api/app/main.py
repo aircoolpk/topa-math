@@ -7,6 +7,7 @@ from fastapi.staticfiles import StaticFiles
 
 from app.core.database import Base, engine
 from app.core.config import get_settings
+from app.core.avatar_storage import ensure_avatar_dir
 from app.core.schema_maintenance import ensure_local_schema
 from app.routers import admin, auth, avatar, billing, children, learning, me, quests, rankings, share, site
 from app.seeds.seed import ensure_dev_owner
@@ -20,10 +21,11 @@ def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(title="4-craft Adaptive Learning API", version="0.1.0")
 
-    # Serve uploaded avatars at /storage/avatars/
+    # Serve uploaded avatars at /storage/avatars. The directory has to be
+    # the same one the upload endpoint writes to, otherwise every photo
+    # 404s and the frontend falls back to the mascot.
     mimetypes.add_type("image/webp", ".webp")
-    _avatar_dir = Path(__file__).resolve().parents[1] / "storage" / "uploads" / "avatars"
-    _avatar_dir.mkdir(parents=True, exist_ok=True)
+    _avatar_dir = ensure_avatar_dir()
     app.mount("/storage/avatars", StaticFiles(directory=str(_avatar_dir)), name="avatars")
 
     app.add_middleware(
