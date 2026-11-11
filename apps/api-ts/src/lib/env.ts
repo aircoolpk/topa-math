@@ -26,6 +26,66 @@ export interface Bindings {
   ACCESS_TOKEN_EXPIRE_MINUTES?: string
   /** Optional R2 bucket holding the site CMS content (see src/lib/content.ts). */
   CONTENT_BUCKET?: unknown
+  /* ── Stripe (billing) ───────────────────────────────────────────────── */
+  /** Stripe secret key. */
+  STRIPE_SECRET_KEY?: string
+  /** Stripe webhook signing secret (`whsec_…`). */
+  STRIPE_WEBHOOK_SECRET?: string
+  /** Stripe price id for the TH founder plan. */
+  STRIPE_PRICE_TH_FOUNDER_MONTHLY?: string
+  /** Stripe price id for the EP founder plan. */
+  STRIPE_PRICE_EP_FOUNDER_MONTHLY?: string
+  /** Stripe price id for the TH plus plan. */
+  STRIPE_PRICE_TH_PLUS_MONTHLY?: string
+  /** Stripe price id for the EP plus plan. */
+  STRIPE_PRICE_EP_PLUS_MONTHLY?: string
+  /** Stripe price id for the TH yearly plan. */
+  STRIPE_PRICE_TH_PLUS_YEARLY?: string
+  /** Stripe price id for the EP yearly plan. */
+  STRIPE_PRICE_EP_PLUS_YEARLY?: string
+  /** Where the Stripe customer portal returns the user. */
+  STRIPE_CUSTOMER_PORTAL_RETURN_URL?: string
+  /** Public URL of the Next.js frontend (used for the Stripe redirect URLs). */
+  FRONTEND_BASE_URL?: string
+  /** Which payment gateway is used for checkouts (`stripe` or `mpp`). */
+  PAYMENT_GATEWAY_DEFAULT?: string
+  /* ── MPP (one-off payments) ─────────────────────────────────────────── */
+  /** Whether MPP checkout is enabled at all. */
+  MPP_CHECKOUT_ENABLED?: string
+  /** Comma-separated user ids allowed to use MPP checkout. */
+  MPP_CHECKOUT_TEST_USER_IDS?: string
+  /** MPP API base URL. */
+  MPP_API_BASE_URL?: string
+  /** MPP hosted payment page base URL. */
+  MPP_PAYMENT_BASE_URL?: string
+  /** MPP project API key (`X-API-Key`). */
+  MPP_PROJECT_API_KEY?: string
+  /** MPP webhook signing secret. */
+  MPP_WEBHOOK_SIGNING_SECRET?: string
+  /** Expected merchant display name in the MPP response. */
+  MPP_EXPECTED_MERCHANT_NAME?: string
+  /** Expected project name in the MPP response. */
+  MPP_EXPECTED_PROJECT_NAME?: string
+  /** Amount unit the MPP contract uses (`minor`). */
+  MPP_AMOUNT_UNIT?: string
+  /* ── Pricing / founder pool ─────────────────────────────────────────── */
+  /** Whether the founder-price window is open. */
+  FOUNDER_PRICING_ENABLED?: string
+  /** Maximum number of founder slots. */
+  FOUNDER_USER_LIMIT?: string
+  /** Fallback maximum number of founder slots. */
+  FOUNDER_PRICE_LIMIT?: string
+  /* ── Referral / affiliate rewards ──────────────────────────────────── */
+  /** Whether referral rewards are paid out. */
+  REFERRAL_ENABLED?: string
+  /** Coins awarded to the referrer on a paid subscription. */
+  REFERRAL_PAID_COINS?: string
+  /** Days a referral reward stays pending. */
+  REFERRAL_REWARD_HOLD_DAYS?: string
+  /** Affiliate commission in basis points. */
+  AFFILIATE_COMMISSION_RATE_BPS?: string
+  /** Days an affiliate commission stays pending. */
+  AFFILIATE_COMMISSION_HOLD_DAYS?: string
   [key: string]: unknown
 }
 

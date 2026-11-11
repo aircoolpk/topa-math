@@ -97,3 +97,7 @@ skills-lock.json
 
 # Neon branch context (org/project/branch ids) - the policy neon.ts is committed
 .neon
+
+# scratch artifacts from the API port
+apps/api-ts/tmp/
+apps/api-ts/.parity-fastapi/

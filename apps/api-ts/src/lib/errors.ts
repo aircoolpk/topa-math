@@ -41,7 +41,7 @@ export function unauthorized(detail = 'Not authenticated'): HttpError {
 }
 
 /** 403 — authenticated but not allowed. */
-export function forbidden(detail = 'Forbidden'): HttpError {
+export function forbidden(detail: string | Record<string, unknown> = 'Forbidden'): HttpError {
   return new HttpError(403, detail)
 }
 

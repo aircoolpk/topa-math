@@ -29,7 +29,7 @@ function readTestEnv(key: string): string | undefined {
   try {
     const match = readFileSync(new URL('../.env.test', import.meta.url), 'utf-8')
       .match(new RegExp(`^${key}=(.*)$`, 'm'))
-    return match ? match[1].trim() : undefined
+    return match?.[1]?.trim()
   } catch {
     return undefined
   }
