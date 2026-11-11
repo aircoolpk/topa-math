@@ -18,7 +18,7 @@ export type FeedbackState = 'idle' | 'nudge' | 'correct' | 'solution_modal'
 export type LessonMode = 'practice' | 'concept'
 
 /** Which interactive manipulative a problem is played with. */
-export type WorkspaceType = 'base10' | 'barModel' | 'fraction' | 'clock' | 'none'
+export type WorkspaceType = 'base10' | 'barModel' | 'fraction' | 'clock' | 'placeValue' | 'none'
 
 export type GlossaryDiagramKind =
   | 'addition'
@@ -99,6 +99,27 @@ export interface ClockConfig {
   targetMinute?: number
 }
 
+/**
+ * The place-value chart of the Lesson Master.
+ *
+ * `digits` holds one digit per column, from the biggest place to the
+ * smallest one (e.g. 45,830 -> [4, 5, 8, 3, 0]) and `places` the Thai
+ * name of each column (e.g. ['หมื่น', 'พัน', 'ร้อย', 'สิบ', 'หน่วย']).
+ * `values` is the worth of each column (e.g. [40000, 5000, 800, 30, 0]).
+ */
+export interface PlaceValueConfig {
+  digits: number[]
+  places: string[]
+  values: number[]
+  number: number
+  /** What the learner does with the number on the chart. */
+  operation?: 'subtract' | 'add' | 'compare'
+  /** The number that is taken away (subtract) or added (add). */
+  subtrahend?: number
+  /** The unit of the lesson, e.g. 'เมตร' or 'กรัม'. */
+  unit?: string
+}
+
 export interface LessonProblem {
   id: string
   tier: LessonTier
@@ -126,6 +147,7 @@ export interface LessonProblem {
   barModelConfig?: BarModelConfig
   fractionConfig?: FractionConfig
   clockConfig?: ClockConfig
+  placeValueConfig?: PlaceValueConfig
 }
 
 export interface GlossaryEntry {

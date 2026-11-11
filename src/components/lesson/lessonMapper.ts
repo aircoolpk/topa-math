@@ -7,6 +7,7 @@ import type {
   LessonProblem,
   LessonStep,
   MicroStep,
+  PlaceValueConfig,
   QuestionSegment,
   WorkspaceType,
 } from './types'
@@ -331,6 +332,7 @@ export interface WorkspaceSelection {
   barModelConfig?: BarModelConfig
   fractionConfig?: FractionConfig
   clockConfig?: ClockConfig
+  placeValueConfig?: PlaceValueConfig
 }
 
 const DEFAULT_UNIT_EMOJI = '🔢'
@@ -391,6 +393,162 @@ function makeBase10(initial: number, target: number, emoji?: string): Base10Conf
 
 /** The largest amount of bars one bar model can hold. */
 const MAX_BAR_PARTS = 6
+
+/**
+ * The place-value chart carries numbers that the base-10 board cannot show.
+ *
+ * The base-10 board stops at 99 and the bar model needs two amounts that
+ * split into the same small unit, so a five digit amount (52,400) or a
+ * three digit amount (200) has no manipulative at all. The place-value
+ * chart is the board that carries those numbers.
+ */
+const MIN_PLACE_VALUE_NUMBER = 100
+
+/** Thai names of the places, from the ones upwards. */
+const PLACE_NAMES_TH = ['หน่วย', 'สิบ', 'ร้อย', 'พัน', 'หมื่น', 'แสน']
+
+/** Splits a number into its digits and the worth of every digit. */
+function placeValueParts(number: number): {
+  digits: number[]
+  places: string[]
+  values: number[]
+} {
+  const safe = Math.max(0, Math.round(Math.abs(number)))
+  const digits = String(safe).split('').map((char) => Number(char))
+  const places = digits.map((_, index) => {
+    const exponent = digits.length - 1 - index
+    return PLACE_NAMES_TH[exponent] ?? `หลัก ${10 ** exponent}`
+  })
+  const values = digits.map((digit, index) => digit * 10 ** (digits.length - 1 - index))
+  return { digits, places, values }
+}
+
+/** Builds the place-value chart of one number. */
+function makePlaceValue(
+  number: number,
+  extra: { operation?: PlaceValueConfig['operation']; subtrahend?: number; unit?: string } = {},
+): PlaceValueConfig {
+  const { digits, places, values } = placeValueParts(number)
+  return {
+    digits,
+    places,
+    values,
+    number: Math.max(0, Math.round(Math.abs(number))),
+    ...extra,
+  }
+}
+
+/**
+ * Reads the place-value table a lesson carries as its own model.
+ *
+ * The content files hold the digits of the number, the name of every place
+ * and the worth of every digit, so the board shows exactly the table the
+ * lesson taught (45,830 -> หมื่น 4 / พัน 5 / ร้อย 8 / สิบ 3 / หน่วย 0).
+ *
+ * When the question asks about another number of the same size (the quiz
+ * asks about 62,407 while the story counts 45,830 flags), the board shows
+ * the number of the question: the learner then reads the place and its
+ * worth straight off the chart.
+ */
+function placeValueFromModel(data: RawRecord, questionText: string): PlaceValueConfig | null {
+  const number = asNumber(data.number) ?? asNumber(data.total)
+  if (number === undefined) return null
+
+  const places = asArray(data.places ?? data.places_th ?? data.places_en)
+    .map((value) => asText(value))
+    .filter(Boolean)
+
+  const modelDigits = asArray(data.digits)
+    .map((value) => asNumber(value))
+    .filter((value): value is number => value !== undefined)
+  const modelValues = asArray(data.values)
+    .map((value) => asNumber(value))
+    .filter((value): value is number => value !== undefined)
+
+  // The number of the question, when it has as many digits as the model's.
+  const columnCount = modelDigits.length || String(Math.round(Math.abs(number))).length
+  const questionNumber = numbersIn(questionText)
+    .filter((value) => Number.isInteger(value) && value > 0)
+    .filter((value) => String(Math.abs(value)).length === columnCount)
+    .sort((a, b) => b - a)[0]
+
+  const shown = questionNumber ?? number
+  const fallback = placeValueParts(shown)
+  const unit = asText(data.unit)
+
+  return {
+    digits: fallback.digits,
+    places: places.length === columnCount ? places : fallback.places,
+    values: fallback.values,
+    number: Math.max(0, Math.round(Math.abs(shown))),
+    ...(unit ? { unit } : {}),
+    ...(modelValues.length === columnCount && shown === number
+      ? { values: modelValues }
+      : {}),
+  }
+}
+
+/**
+ * The unit that follows the number in an answer, e.g. "125 ซม." -> "ซม.".
+ *
+ * The board shows the numbers of the question, so it also shows their unit.
+ */
+function unitFromAnswer(answerText: string): string | undefined {
+  const match = normaliseThaiDigits(answerText).match(/^\s*[\d,.]+\s*([^\d\s][^\d]{0,9})/)
+  if (!match) return undefined
+  const unit = match[1].trim()
+  return unit || undefined
+}
+
+/**
+ * The subtraction a lesson asks for, read from the question's own numbers.
+ *
+ * The two amounts of the question are tried against the expected answer, so
+ * only a real subtraction of the lesson is picked up: 52,400 - 28,600 with
+ * the answer 23,800 gives the minuend and the subtrahend.
+ */
+function subtractionInQuestion(
+  questionText: string,
+  answerNumber: number | undefined,
+): { minuend: number; subtrahend: number } | null {
+  if (answerNumber === undefined) return null
+  const numbers = numbersIn(questionText).filter((value) => Number.isInteger(value))
+  for (const minuend of numbers) {
+    for (const subtrahend of numbers) {
+      if (minuend === subtrahend) continue
+      if (minuend - subtrahend !== answerNumber) continue
+      return { minuend, subtrahend }
+    }
+  }
+  return null
+}
+
+/** The two amounts a lesson compares: "45,830 มากกว่า 12,300". */
+function comparisonInQuestion(
+  questionText: string,
+): { bigger: number; smaller: number } | null {
+  const normalised = normaliseThaiDigits(questionText)
+  if (!/มากกว่า|น้อยกว่า|มากกว่ากัน|มากที่สุด|น้อยที่สุด/.test(normalised)) return null
+  const numbers = numbersIn(normalised)
+    .filter((value) => Number.isInteger(value) && value >= MIN_PLACE_VALUE_NUMBER)
+    .sort((a, b) => b - a)
+  if (numbers.length < 2) return null
+  return { bigger: numbers[0], smaller: numbers[1] }
+}
+
+/**
+ * Whether the lesson's own model is about taking something away.
+ *
+ * The model's operation is the lesson's own statement of what the learner
+ * does with the numbers, so it decides which manipulative fits: a lesson
+ * that subtracts gets the place-value chart, a lesson that compares two
+ * amounts keeps its bar model.
+ */
+function modelSubtracts(data: RawRecord): boolean {
+  const operation = asText(data.operation)
+  const modelType = asText(data.model_type)
+  return operation.includes('subtract') || modelType.includes('subtract')
+}
 
 interface QuantityCandidate {
   labelTH: string
@@ -734,8 +892,14 @@ export function deriveWorkspace(
     return { workspaceType: 'none' }
   }
 
+  /* --- Place value table: the columns of one number -------------- */
+  if (modelType.includes('place_value')) {
+    const config = placeValueFromModel(data, questionText)
+    if (config) return { workspaceType: 'placeValue', placeValueConfig: config }
+  }
+
   /* --- Everything else with bars: part-whole, comparison, money, -- */
-  /* --- weight, length, decimals, place value ---------------------- */
+  /* --- weight, length, decimals ----------------------------------- */
   /*
    * These lessons ask about one amount against another (e.g. 1,200 g in
    * total, 450 g of it is one kind of fruit). The two numbers that matter
@@ -751,6 +915,35 @@ export function deriveWorkspace(
     asNumber(data.goal) ??
     undefined
 
+  /*
+   * A column subtraction of a number of a hundred and above.
+   *
+   * Neither the base-10 board (it stops at 99) nor the bar model (it needs
+   * two amounts that split into the same small unit) can carry
+   * 52,400 - 28,600, so the place-value chart is the board for it: the
+   * learner sees every place of the minuend, takes the subtrahend off
+   * column by column and borrows from the column on the left when a
+   * column runs out.
+   *
+   * The lesson's own model decides that this is a subtraction, so a lesson
+   * that compares two amounts (the money lesson) keeps its bar model.
+   */
+  const subtraction = subtractionInQuestion(questionText, answerNumber)
+  if (
+    subtraction &&
+    subtraction.minuend >= MIN_PLACE_VALUE_NUMBER &&
+    modelSubtracts(data)
+  ) {
+    const unit = unitFromAnswer(answerText)
+    return {
+      workspaceType: 'placeValue',
+      placeValueConfig: makePlaceValue(subtraction.minuend, {
+        operation: 'subtract',
+        subtrahend: subtraction.subtrahend,
+        ...(unit ? { unit } : {}),
+      }),
+    }
+  }
   const pool: QuantityCandidate[] = []
   const labels = barLabels(data)
 
@@ -800,6 +993,23 @@ export function deriveWorkspace(
     const initial = questionNumbers[0] ?? answer
     const config = makeBase10(initial, answer)
     if (config) return { workspaceType: 'base10', base10Config: config }
+  }
+
+  /* --- Last resort: a comparison of two big amounts ---------------- */
+  /*
+   * "จำนวน 45,830 มากกว่า 12,300 หรือไม่" is a question about the places
+   * of two numbers, so the chart of the bigger number is the board: the
+   * learner reads the worth of every place and compares.
+   */
+  const comparison = comparisonInQuestion(questionText)
+  if (comparison) {
+    return {
+      workspaceType: 'placeValue',
+      placeValueConfig: makePlaceValue(comparison.bigger, {
+        operation: 'compare',
+        subtrahend: comparison.smaller,
+      }),
+    }
   }
 
   return { workspaceType: 'none' }
@@ -1016,6 +1226,7 @@ export function mapLessonToProblems(content: LessonContentBundle): LessonProblem
       barModelConfig: workspace.barModelConfig,
       fractionConfig: workspace.fractionConfig,
       clockConfig: workspace.clockConfig,
+      placeValueConfig: workspace.placeValueConfig,
     }
   })
 }

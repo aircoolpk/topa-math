@@ -7,6 +7,7 @@ import { Base10Workspace } from './Base10Workspace'
 import { BarModelWorkspace } from './BarModelWorkspace'
 import { FractionWorkspace } from './FractionWorkspace'
 import { ClockWorkspace } from './ClockWorkspace'
+import { PlaceValueWorkspace } from './PlaceValueWorkspace'
 
 /**
  * The workspace registry.
@@ -73,6 +74,12 @@ export const WORKSPACE_REGISTRY: Record<WorkspaceType, WorkspaceDefinition> = {
     label: 'Analogue Clock',
     labelTH: 'เครื่องมืออ่านเวลา',
     Component: ClockWorkspace,
+  },
+  placeValue: {
+    type: 'placeValue',
+    label: 'Place Value Chart',
+    labelTH: 'กระดานค่าตำแหน่ง',
+    Component: PlaceValueWorkspace,
   },
   none: {
     type: 'none',
