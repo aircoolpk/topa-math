@@ -30,7 +30,7 @@ import { learningRoutes } from './routes/learning'
 import { meRoutes } from './routes/me'
 import { questRoutes } from './routes/quests'
 import { rankingsRoutes } from './routes/rankings'
-import { shareRoutes } from './routes/share'
+import { referralRoutes, shareRoutes } from './routes/share'
 import { siteRoutes } from './routes/site'
 import { storageRoutes } from './routes/storage'
 
@@ -117,6 +117,7 @@ export function createApp(overrides?: Partial<AppEnv['Variables']>) {
   app.route('/me', questRoutes)
   app.route('/billing', billingRoutes)
   app.route('/share', shareRoutes)
+  app.route('/', referralRoutes)
   app.route('/', learningRoutes)
 
   return app
