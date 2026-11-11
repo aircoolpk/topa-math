@@ -1,0 +1,54 @@
+name: Inspect the Cloudflare account
+
+# Reports what the deploy token may do: which account and zone it sees,
+# which Workers exist, how the api hostname is routed today and what the
+# token itself is allowed to do.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    name: Inspect the Cloudflare account
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Report the token, the workers, the routes and the DNS
+        run: |
+          set -euo pipefail
+          CF=https://api.cloudflare.com/client/v4
+          auth="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+
+          echo "=== token ==="
+          curl -s --max-time 30 -H "$auth" "$CF/user/tokens/verify" \
+            | python -c 'import json,sys; d=json.load(sys.stdin); r=d.get("result") or {}; print("  success:", d.get("success"), "| status:", r.get("status"), "| id:", r.get("id"))'
+
+          echo "=== accounts ==="
+          curl -s --max-time 30 -H "$auth" "$CF/accounts" \
+            | python -c 'import json,sys; d=json.load(sys.stdin); [print("  ", a["name"], a["id"]) for a in d.get("result") or []]'
+
+          echo "=== workers in the configured account ==="
+          curl -s --max-time 30 -H "$auth" "$CF/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts" \
+            | python -c 'import json,sys; d=json.load(sys.stdin); print("  ", ", ".join(s["id"] for s in (d.get("result") or [])) or "(none)")'
+
+          echo "=== custom domains on the account ==="
+          curl -s --max-time 30 -H "$auth" "$CF/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/domains" \
+            | python -c 'import json,sys; d=json.load(sys.stdin); print("  success:", d.get("success")); [print("  ", x.get("hostname"), "->", x.get("service")) for x in (d.get("result") or [])]'
+
+          zone=$(curl -s --max-time 30 -H "$auth" "$CF/zones?name=topamath.com" \
+            | python -c 'import json,sys; r=json.load(sys.stdin).get("result") or []; print(r[0]["id"] if r else "")')
+          echo "=== zone ==="
+          echo "  id: ${zone:-none}"
+
+          if [ -n "$zone" ]; then
+            echo "=== worker routes in the zone ==="
+            curl -s --max-time 30 -H "$auth" "$CF/zones/$zone/workers/routes" \
+              | python -c 'import json,sys; d=json.load(sys.stdin); [print("  ", r.get("pattern"), "->", r.get("script")) for r in (d.get("result") or [])]'
+
+            echo "=== dns records ==="
+            curl -s --max-time 30 -H "$auth" "$CF/zones/$zone/dns_records?per_page=100" \
+              | python -c 'import json,sys; d=json.load(sys.stdin); [print("  ", r.get("type"), r.get("name"), "->", (r.get("content") or "")[:60], "| proxied:", r.get("proxied")) for r in (d.get("result") or [])]'
+          fi
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
