@@ -74,13 +74,21 @@ const nextConfig = {
     return {
       beforeFiles: [
         { source: '/:path*', has: [{ type: 'host', value: 'api.topamath.com' }], destination: `${parsed.origin}/:path*` },
-        // Every API prefix the Next.js app calls must be proxied to the
-        // FastAPI backend. Without this the Worker answers those paths with
-        // the Next.js 404 page instead of JSON, and the client silently falls
-        // back to its built-in placeholder data.
-        //
-        // Keep this list in sync with the paths under src/lib/api/*.ts and the
-        // apiClient calls in src/app/**.
+      ],
+      // Every API prefix the Next.js app calls must be proxied to the
+      // FastAPI backend. Without this the Worker answers those paths with
+      // the Next.js 404 page instead of JSON, and the client silently falls
+      // back to its built-in placeholder data.
+      //
+      // The rewrites run after the filesystem, because several prefixes are
+      // also the names of pages of this app: the admin section has both an
+      // /admin page and an /admin/announcements page, and the backend serves
+      // the same paths. Running the rewrite before the filesystem sent the
+      // page request to the backend, which answered with a JSON 404.
+      //
+      // Keep this list in sync with the paths under src/lib/api/*.ts and the
+      // apiClient calls in src/app/**.
+      afterFiles: [
         ...[
           '/admin/:path*',
           '/auth/:path*',
@@ -98,7 +106,6 @@ const nextConfig = {
           '/webhooks/:path*',
         ].map(source => ({ source, destination: `${parsed.origin}${source}` })),
       ],
-      afterFiles: [],
       fallback: [],
     }
   },
