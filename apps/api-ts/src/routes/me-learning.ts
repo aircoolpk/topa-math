@@ -240,8 +240,27 @@ async function loadLearningChild(sql: Sql, userId: string): Promise<LearningChil
   }
 }
 
+/**
+ * The membership and plan fields the programme-access checks read.
+ *
+ * The dashboard and the learning endpoints both need them, so the checks
+ * take this narrow shape rather than a whole child profile.
+ */
+export interface PlanAccessChild {
+  program_type: string
+  membership_status: string
+  membership_provider: string | null
+  mpp_access_ends_at: string | null
+  plan_code: string | null
+  plan_type: string | null
+  billing_program_type: string | null
+  active_price_code: string | null
+  price_type: string | null
+  manual_grant_reason: string | null
+}
+
 /** Whether the child has a paid membership. */
-function isPaid(child: LearningChild, now: Date): boolean {
+function isPaid(child: PlanAccessChild, now: Date): boolean {
   const status = (child.membership_status ?? 'free').toLowerCase()
   if (!PAID_MEMBERSHIP_STATUSES.has(status)) {
     return false
@@ -256,7 +275,7 @@ function isPaid(child: LearningChild, now: Date): boolean {
 }
 
 /** Whether the child may use the EP programme. */
-function isEpPlus(child: LearningChild, now: Date): boolean {
+function isEpPlus(child: PlanAccessChild, now: Date): boolean {
   if (!isPaid(child, now)) {
     return false
   }
@@ -384,12 +403,12 @@ function catalogPayload(row: SnapshotLessonRow, program: 'TH' | 'EP'): Json {
  * compared field by field.
  *
  * @param payload the lesson payload.
- * @param child the child profile.
+ * @param childGradeLevel the grade level of the child profile.
  * @param currentIndex the position of the lesson inside the current grade.
  */
-function renderLessonItem(payload: Json, child: LearningChild, currentIndex: number | null): Json {
+function renderLessonItem(payload: Json, childGradeLevel: number, currentIndex: number | null): Json {
   const gradeLevel = Number(payload.grade_level ?? 1)
-  const isReview = gradeLevel < child.grade_level
+  const isReview = gradeLevel < childGradeLevel
   const isBetaVisible = BETA_READY_GRADES.has(gradeLevel)
   const isFree = isBetaVisible || isReview || currentIndex === 0
   const isLocked = !isBetaVisible && !isFree
@@ -441,7 +460,7 @@ function renderLessonItem(payload: Json, child: LearningChild, currentIndex: num
 }
 
 /** The lesson sections of a child, split by grade. */
-interface LessonSections {
+export interface LessonSections {
   all_lessons: Json[]
   free_lessons: Json[]
   locked_lessons: Json[]
@@ -453,13 +472,17 @@ interface LessonSections {
 /**
  * Build the lesson sections of a child from the snapshot catalogue.
  *
+ * The catalogue is the source of truth: the lesson ids it produces are the
+ * ones `/me/lessons/:lessonId` resolves, so a dashboard that links to a
+ * lesson must use the same ids.
+ *
  * @param program the programme of the catalogue.
- * @param child the child profile.
+ * @param childGradeLevel the grade level of the child profile.
  * @param sectionGrades the grades the sections cover.
  */
-function buildLessonSections(
+export function buildLessonSections(
   program: 'TH' | 'EP',
-  child: LearningChild,
+  childGradeLevel: number,
   sectionGrades: Set<number>,
 ): LessonSections {
   const rows: SnapshotLessonRow[] = []
@@ -479,20 +502,20 @@ function buildLessonSections(
   const items: Json[] = []
   let currentCount = 0
   for (const row of rows) {
-    const currentIndex = Number(row.grade_level) === child.grade_level ? currentCount : null
+    const currentIndex = Number(row.grade_level) === childGradeLevel ? currentCount : null
     if (currentIndex !== null) {
       currentCount += 1
     }
-    items.push(renderLessonItem(catalogPayload(row, program), child, currentIndex))
+    items.push(renderLessonItem(catalogPayload(row, program), childGradeLevel, currentIndex))
   }
 
   return {
     all_lessons: items,
     free_lessons: items.filter((item) => item.is_free === true),
     locked_lessons: items.filter((item) => item.is_locked === true),
-    current_grade_lessons: items.filter((item) => item.grade_level === child.grade_level),
-    review_lessons: items.filter((item) => Number(item.grade_level) < child.grade_level),
-    future_lessons: items.filter((item) => Number(item.grade_level) > child.grade_level),
+    current_grade_lessons: items.filter((item) => item.grade_level === childGradeLevel),
+    review_lessons: items.filter((item) => Number(item.grade_level) < childGradeLevel),
+    future_lessons: items.filter((item) => Number(item.grade_level) > childGradeLevel),
   }
 }
 
@@ -523,7 +546,7 @@ function filterSectionsByGrade(sections: LessonSections, grade: number | null): 
  * @param program the programme.
  * @param grade the grade.
  */
-function buildContentDiagnostics(program: 'TH' | 'EP', grade: number): Json {
+export function buildContentDiagnostics(program: 'TH' | 'EP', grade: number): Json {
   const topics = snapshotDiagnostics(program, grade)
   const sum = (pick: (row: SnapshotDiagnostic) => number) =>
     topics.reduce((total, row) => total + pick(row), 0)
@@ -1816,9 +1839,14 @@ async function awardProgress(
 /* ──────────────────────────── programme access ───────────────────────── */
 
 /** The programme payload of a request. */
-function programPayload(
+/**
+ * The programme metadata of a request.
+ *
+ * Exported for the dashboard, which reports the same fields.
+ */
+export function programPayload(
   role: string,
-  child: LearningChild,
+  child: PlanAccessChild,
   program: 'TH' | 'EP',
   now: Date,
 ): Json {
@@ -1831,9 +1859,9 @@ function programPayload(
 }
 
 /** Reject a request for the EP programme the child may not use. */
-function requireProgramAccess(
+export function requireProgramAccess(
   role: string,
-  child: LearningChild,
+  child: PlanAccessChild,
   program: 'TH' | 'EP',
   now: Date,
 ): void {
@@ -2071,7 +2099,7 @@ meLearningRoutes.get('/lessons', requireAuth(), async (c) => {
   sectionGrades.add(Math.max(1, child.grade_level - 1))
 
   const sections = filterSectionsByGrade(
-    buildLessonSections(program, child, sectionGrades),
+    buildLessonSections(program, child.grade_level, sectionGrades),
     requestedGrade,
   )
   const previousGrade = Math.max(1, child.grade_level - 1)
@@ -2142,7 +2170,7 @@ meLearningRoutes.get('/lessons/:lessonId', requireAuth(), async (c) => {
   }
   const payload: Json = { ...variant.payload, selected_variant_id: selected.variantId }
 
-  const item = renderLessonItem(payload, child, found.grade === child.grade_level ? 0 : null)
+  const item = renderLessonItem(payload, child.grade_level, found.grade === child.grade_level ? 0 : null)
   const detailItem: Json = { ...item, is_locked: false, lock_reason: null, status: 'available' }
   const response = buildLessonContentPayload(payload, detailItem, null)
   response.program_type = program
@@ -2327,7 +2355,7 @@ meLearningRoutes.post('/lessons/:lessonId/start', requireAuth(), async (c) => {
   }
   const payload: Json = { ...variant.payload, selected_variant_id: selected.variantId }
 
-  const item = renderLessonItem(payload, child, found.grade === child.grade_level ? 0 : null)
+  const item = renderLessonItem(payload, child.grade_level, found.grade === child.grade_level ? 0 : null)
   if (item.is_locked) {
     throw forbidden('Lesson is locked')
   }

@@ -377,14 +377,16 @@ interface RenderedQuests {
 }
 
 /**
- * Render the payloads of a list of fixed quests.
+ * Render the fixed quest catalogue of one period.
+ *
+ * Exported for the dashboard, which serves the same three catalogues.
  *
  * @param sql the database handle.
  * @param child the child profile.
  * @param period the recurrence bucket.
  * @param specs the fixed quest specifications to render.
  */
-async function renderFixedQuests(
+export async function renderFixedQuests(
   sql: Sql,
   child: ChildRow,
   period: RecurrenceType,
