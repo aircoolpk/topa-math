@@ -46,10 +46,11 @@ function QuestCard({ quest }: { quest: Quest }) {
   )
 }
 
-function LessonCard({ lesson, onStart, onTest }: { lesson: Lesson; onStart: (lesson: Lesson) => void; onTest: (lesson: Lesson) => void }) {
+function LessonCard({ lesson, onStart, onTest, programType }: { lesson: Lesson; onStart: (lesson: Lesson) => void; onTest: (lesson: Lesson) => void; programType: LessonProgram }) {
   const locked = lesson.status === 'locked' || lesson.is_locked
   const hasTest = lesson.test_available === true
   const unavailableReason = lesson.test_disabled_reason || lesson.test_unavailable_reason || 'ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้'
+  const lessonGroupId = lesson.lesson_group_id || lesson.lesson_id
   return (
     <TopaCard className={`p-5 ${locked ? 'opacity-70' : ''}`}>
       <div className="flex items-start justify-between gap-3">
@@ -77,6 +78,15 @@ function LessonCard({ lesson, onStart, onTest }: { lesson: Lesson; onStart: (les
           </>
         )}
       </div>
+      {!locked && (
+        <Link
+          href={`/dashboard/lessons/${lessonGroupId}/master?program_type=${programType}`}
+          className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-3 py-2 text-sm font-black text-slate-950 transition hover:from-amber-500 hover:to-amber-600"
+        >
+          <Sparkles className="h-4 w-4" />
+          เรียนแบบโต้ตอบ
+        </Link>
+      )}
     </TopaCard>
   )
 }
@@ -516,13 +526,22 @@ export default function DashboardPage() {
         </section>
 
         <section className="mb-10">
-          <SectionHeader align="left" title={child?.grade_level ? `บทเรียนหลัก ป.${child.grade_level}` : 'บทเรียนหลัก · ยังไม่ระบุระดับชั้น'} subtitle="แสดงบทเรียนระดับชั้นปัจจุบันเป็นเส้นทางหลัก และยังเคารพ approved-content gating จาก backend" />
-          {lessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{lessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} onStart={startLesson} onTest={testLoading ? () => null : startTest} />)}</div> : <EmptyState text="ยังไม่มีบทเรียนที่เปิดให้เรียนตอนนี้" />}
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <SectionHeader align="left" title={child?.grade_level ? `บทเรียนหลัก ป.${child.grade_level}` : 'บทเรียนหลัก · ยังไม่ระบุระดับชั้น'} subtitle="แสดงบทเรียนระดับชั้นปัจจุบันเป็นเส้นทางหลัก และยังเคารพ approved-content gating จาก backend" />
+            <Link
+              href={`/dashboard/lessons?program_type=${activeProgram}`}
+              className="mb-10 inline-flex items-center gap-2 rounded-2xl border-2 border-sky-200 bg-white px-4 py-2.5 text-sm font-black text-slate-800 shadow-sm transition hover:border-sky-300 hover:bg-sky-50"
+            >
+              <GraduationCap className="h-4 w-4 text-sky-500" />
+              เลือกบทเรียน ป.1–ป.6
+            </Link>
+          </div>
+          {lessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{lessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} onStart={startLesson} onTest={testLoading ? () => null : startTest} programType={activeProgram} />)}</div> : <EmptyState text="ยังไม่มีบทเรียนที่เปิดให้เรียนตอนนี้" />}
         </section>
 
         <section className="mb-10">
           <SectionHeader align="left" title={child?.grade_level ? `ทบทวนพื้นฐาน ป.${Math.max(1, child.grade_level - 1)}` : 'ทบทวนพื้นฐาน · ยังไม่ระบุระดับชั้น'} subtitle="บททบทวนจากระดับก่อนหน้า ช่วยปิดช่องว่างก่อนเรียนเรื่องใหม่" />
-          {reviewLessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">{reviewLessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} onStart={startLesson} onTest={testLoading ? () => null : startTest} />)}</div> : <EmptyState text="ยังไม่มีบททบทวนจากระดับก่อนหน้าที่เปิดให้เรียนตอนนี้" />}
+          {reviewLessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">{reviewLessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} onStart={startLesson} onTest={testLoading ? () => null : startTest} programType={activeProgram} />)}</div> : <EmptyState text="ยังไม่มีบททบทวนจากระดับก่อนหน้าที่เปิดให้เรียนตอนนี้" />}
         </section>
 
         <section className="mb-10">

@@ -415,6 +415,11 @@ export interface AffiliateSummary {
   }>
 }
 
+export interface LessonStartResult {
+  lesson: Lesson
+  content: Record<string, unknown>
+}
+
 export const meApi = {
   /** Primary dashboard endpoint */
   async getDashboard(programType: LessonProgram = 'TH', config?: AxiosRequestConfig): Promise<DashboardData> {
@@ -578,6 +583,22 @@ export const meApi = {
     const params = programType ? { program_type: programType } : undefined
     const res = await apiClient.post(`/me/lessons/${lessonId}/start`, undefined, { params })
     return res.data as { lesson_id: string }
+  },
+
+  /**
+   * Start a lesson and get the full normalised content back.
+   *
+   * This is the endpoint the interactive lesson view uses: it returns the
+   * selected variant with its questions, hints, explanation steps, key
+   * vocabulary and visual blocks (the manipulative model diagram).
+   */
+  async startLessonWithContent(
+    lessonId: string,
+    programType?: LessonProgram,
+  ): Promise<LessonStartResult> {
+    const params = programType ? { program_type: programType } : undefined
+    const res = await apiClient.post(`/me/lessons/${lessonId}/start`, undefined, { params })
+    return res.data as LessonStartResult
   },
 
   /** Start a lesson test */
