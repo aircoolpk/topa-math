@@ -59,7 +59,8 @@ const CHILD_COLUMNS = `
   program_type, membership_status, total_score, total_xp, coins,
   current_level, days_active, test_attempts_used, free_test_limit,
   total_tests_completed, average_test_accuracy, average_test_speed,
-  current_rank_title, streak_count
+  current_rank_title, streak_count,
+  created_at, updated_at
 `
 
 interface ChildRow {
@@ -92,6 +93,8 @@ interface ChildRow {
   average_test_speed: string | number
   current_rank_title: string
   streak_count: number
+  created_at: string | null
+  updated_at: string | null
 }
 
 /** Remaining free test attempts for a child. */
@@ -426,6 +429,11 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
     first_name: child.first_name,
     last_name: child.last_name,
     nickname: child.nickname,
+    province: child.province,
+    district: child.district,
+    school_name: child.school_name,
+    school_province: child.school_province,
+    school_district: child.school_district,
     grade_level: child.grade_level,
     program_type: child.program_type || 'THP',
     membership_status: child.membership_status || 'free',
@@ -444,6 +452,10 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
     average_test_speed: Number(child.average_test_speed || 0),
     total_tests_completed: child.total_tests_completed || 0,
     current_rank_title: rankTitle,
+    test_attempts_used: child.test_attempts_used || 0,
+    free_test_limit: child.free_test_limit || 5,
+    created_at: pydanticTimestamp(child.created_at),
+    updated_at: pydanticTimestamp(child.updated_at),
     rank_title: rankTitle,
   }
 

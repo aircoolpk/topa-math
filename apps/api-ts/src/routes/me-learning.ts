@@ -1186,7 +1186,10 @@ function buildLessonContentPayload(payload: Json, item: Json, variant: Json | nu
   if (!('helper_tip' in merged)) {
     merged.helper_tip = variantPayload.helper_tip ?? sections.helper_tip ?? ''
   }
-  merged.visual_blocks = normalizedBlocks
+  // The sections are built from the blocks as they were normalised the
+  // first time, and the response carries the blocks normalised a second
+  // time, the same way the legacy service does it.
+  merged.visual_blocks = normalizeLessonBlocks(normalizedBlocks)
   return merged
 }
 
@@ -2184,7 +2187,6 @@ meLearningRoutes.get('/lessons/:lessonId', requireAuth(), async (c) => {
   const detailItem: Json = { ...item, is_locked: false, lock_reason: null, status: 'available' }
   const response = buildLessonContentPayload(payload, detailItem, null)
   response.program_type = program
-  response.visual_blocks = normalizeLessonBlocks(response.visual_blocks)
 
   await sql.query(
     `INSERT INTO lesson_variant_views (id, child_id, lesson_id, variant_id, cycle_number, viewed_at)
