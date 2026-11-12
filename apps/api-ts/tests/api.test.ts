@@ -13,6 +13,7 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
 import { createApp } from '../src/index'
 import { createTestSql, type TestSql } from './helpers/testSql'
+import { withVerifiedSsl } from './helpers/connection'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_ROOT = join(HERE, '..')
@@ -35,10 +36,11 @@ function readTestEnv(key: string): string | undefined {
   }
 }
 
-const DATABASE_URL =
+const DATABASE_URL = withVerifiedSsl(
   process.env.TEST_DATABASE_URL ??
-  readTestEnv('TEST_DATABASE_URL') ??
-  'postgresql://topa_test:***@127.0.0.1:5432/topa_test'
+    readTestEnv('TEST_DATABASE_URL') ??
+    'postgresql://topa_test:***@127.0.0.1:5432/topa_test',
+)
 
 /** The shared HS256 secret used by the tests. */
 const JWT_SECRET = 'test-secret-value-for-integration-tests'

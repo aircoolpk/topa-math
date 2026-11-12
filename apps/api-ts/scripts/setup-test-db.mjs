@@ -66,6 +66,21 @@ function localAdminUrl() {
 const ADMIN_URL = process.env.TEST_ADMIN_DATABASE_URL ?? localAdminUrl()
 
 /**
+ * The Neon URL asks for `sslmode=require`, which the `pg` driver treats as
+ * an alias for `verify-full` today but will read with the weaker libpq
+ * meaning in `pg` v9. The strict mode is spelled out so the certificate
+ * keeps being verified.
+ */
+function withVerifiedSsl(connectionString) {
+  if (!connectionString) return connectionString
+  if (connectionString.includes('sslmode=verify-full')) return connectionString
+  if (connectionString.includes('sslmode=')) {
+    return connectionString.replace(/sslmode=[^&]+/, 'sslmode=verify-full')
+  }
+  return `${connectionString}${connectionString.includes('?') ? '&' : '?'}sslmode=verify-full`
+}
+
+/**
  * Role that owns the test schema. CI provisions Postgres with the `postgres`
  * superuser instead of a dedicated `topa_test` role, so this is configurable.
  */
@@ -102,7 +117,7 @@ function findMigration() {
   return join(PACKAGE_ROOT, 'drizzle', `${last.tag}.sql`)
 }
 
-const admin = new Client({ connectionString: ADMIN_URL })
+const admin = new Client({ connectionString: withVerifiedSsl(ADMIN_URL) })
 await admin.connect()
 
 // Provision the role. ALTER ROLE keeps the password in sync with the
@@ -149,7 +164,7 @@ clientUrl.username = encodeURIComponent(ROLE)
 clientUrl.password = encodeURIComponent(clientPassword)
 clientUrl.pathname = `/${DB_NAME}`
 const client = new Client({
-  connectionString: clientUrl.toString(),
+  connectionString: withVerifiedSsl(clientUrl.toString()),
 })
 await client.connect()
 

@@ -44,7 +44,7 @@ if (!SOURCE_URL || !TARGET_URL) {
   console.error(
     'Example:\n' +
       '  SOURCE_DATABASE_URL=postgresql://postgres:pw@127.0.0.1:5432/adaptive_learning \\\n' +
-      '  TARGET_DATABASE_URL=postgresql://user:pw@ep-xxx.region.aws.neon.tech/neondb?sslmode=require \\\n' +
+      '  TARGET_DATABASE_URL=postgresql://user:***@ep-xxx.region.aws.neon.tech/neondb?sslmode=verify-full \\\n' +
       '  npx tsx scripts/migrate-from-postgres.ts',
   )
   process.exit(1)
