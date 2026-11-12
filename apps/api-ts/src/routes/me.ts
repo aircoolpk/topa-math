@@ -30,8 +30,16 @@ import {
   referralUrl,
   shareUrls,
 } from './me-avatar-shared'
-import { buildContentDiagnostics, buildLessonSections, meLearningRoutes } from './me-learning'
+import {
+  buildContentDiagnostics,
+  buildLessonSections,
+  loadRecommendations,
+  meLearningRoutes,
+} from './me-learning'
 import { renderFixedQuests, type ChildRow as QuestChildRow } from './quests'
+
+/** A JSON value the dashboard hands to the response. */
+type Json = Record<string, unknown>
 
 export const meRoutes = new Hono<AppEnv>()
 
@@ -89,6 +97,62 @@ interface ChildRow {
 /** Remaining free test attempts for a child. */
 function remainingFreeTests(child: ChildRow): number {
   return Math.max(0, (child.free_test_limit || 5) - (child.test_attempts_used || 0))
+}
+
+/**
+ * The skills the child should practise next.
+ *
+ * A skill that the child has a low mastery in points at the lesson that
+ * teaches it. A child without any test result yet gets a diagnostic hint
+ * instead, so the dashboard never suggests nothing.
+ *
+ * @param recommendations the low mastery skills.
+ * @param reviewLessons the lessons of the previous grade.
+ * @param currentLessons the lessons of the current grade.
+ */
+function buildWeakSkills(
+  recommendations: Json[],
+  reviewLessons: Json[],
+  currentLessons: Json[],
+): Json[] {
+  if (recommendations.length) {
+    return recommendations.slice(0, 3).map((row) => {
+      const skillCode = (row.skill_code as string) ?? (row.skill_id as string) ?? 'foundation'
+      const lesson =
+        [...reviewLessons, ...currentLessons].find(
+          (item) =>
+            item.skill_code === skillCode || item.topic_code === skillCode,
+        ) ?? null
+      return {
+        skill_code: skillCode,
+        skill_name: (row.title_th as string) ?? 'ทบทวนพื้นฐาน',
+        reason:
+          (row.reason_th as string) ?? 'พบจุดที่ควรฝึกเพิ่มจากผลการทำแบบทดสอบ',
+        recommended_lesson_id: lesson ? lesson.lesson_id : null,
+        recommended_lesson_title: lesson ? (lesson.title_th ?? lesson.title) : null,
+        recommended_practice_quiz_id: null,
+        source: 'performance',
+      }
+    })
+  }
+
+  const foundation = (reviewLessons.length ? reviewLessons : currentLessons).slice(0, 3)
+  const labels = [
+    'พื้นฐานก่อนเริ่มบทใหม่',
+    'ความคล่องในการคำนวณ',
+    'การอ่านโจทย์เป็นขั้นตอน',
+  ]
+  return foundation.map((lesson, index) => ({
+    skill_code:
+      (lesson.skill_code as string) ?? (lesson.topic_code as string) ?? `foundation_${index + 1}`,
+    skill_name: index < labels.length ? labels[index] : 'ทบทวนพื้นฐาน',
+    reason: 'ยังมีข้อมูลผลทดสอบไม่มากพอ ระบบจึงแนะนำจุดตรวจพื้นฐานก่อน',
+    recommended_lesson_id: lesson.lesson_id ?? null,
+    recommended_lesson_title:
+      (lesson.title_th as string) ?? (lesson.title as string) ?? (lesson.lesson_id as string),
+    recommended_practice_quiz_id: null,
+    source: 'diagnostic_heuristic',
+  }))
 }
 
 /** Whether the child has a paid membership. */
@@ -345,6 +409,13 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
   const lessonsCompleted = statsRow ? Math.floor(Number(statsRow.status_order ?? 0) / 65536) : 0
   const questsCompleted = statsRow ? Number(statsRow.status_order ?? 0) % 65536 : 0
 
+  // The skills the child should practise next, and the lessons that teach
+  // them. The legacy service derives the weak skills from the mastery table
+  // and falls back to a diagnostic hint when the child has no test result
+  // yet.
+  const recommendations = await loadRecommendations(sql, child.id)
+  const weakSkills = buildWeakSkills(recommendations, reviewLessons, currentGradeLessons)
+
   const rankTitle = rankTitleForScore(child.total_score || 0)
   const remaining = remainingFreeTests(child)
   const rank = rankData[0]
@@ -452,9 +523,9 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
       Math.max(1, child.grade_level - 1),
     ),
     quests: { daily: dailyQuests, weekly: weeklyQuests, monthly: monthlyQuests },
-    recommendations: [],
-    recommended_skills: [],
-    weak_skills: [],
+    recommendations,
+    recommended_skills: weakSkills,
+    weak_skills: weakSkills,
     profile,
     level: levelFromTotalXp(child.total_xp || 0),
     days_active: child.days_active || 0,

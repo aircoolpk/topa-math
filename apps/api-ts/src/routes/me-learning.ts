@@ -2660,7 +2660,7 @@ meLearningRoutes.get('/tests/:testId/questions', requireAuth(), async (c) => {
 })
 
 /** The skills the child should practise next. */
-async function loadRecommendations(sql: Sql, childId: string): Promise<Json[]> {
+export async function loadRecommendations(sql: Sql, childId: string): Promise<Json[]> {
   const rows = (await sql.query(
     `SELECT m.skill_id, s.code, s.name, m.mastery_score
        FROM skill_mastery m JOIN skills s ON s.id = m.skill_id
