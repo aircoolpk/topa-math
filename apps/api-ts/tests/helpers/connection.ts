@@ -9,16 +9,16 @@
  */
 
 /**
- * Rewrite the SSL mode of a Postgres URL to `verify-full`.
+ * Make the SSL mode of a Postgres URL explicit.
  *
- * The mode is replaced in place, so a URL that already asks for
- * `verify-full` stays untouched and a URL without any mode gains one.
+ * Only a URL that already asks for an SSL mode is rewritten, because a
+ * URL without one may point at a server that does not speak SSL at all —
+ * the CI Postgres container does not. Such a URL keeps its default
+ * behaviour, which is what it was written for.
  */
 export function withVerifiedSsl(connectionString: string): string {
   if (!connectionString) return connectionString
+  if (!connectionString.includes('sslmode=')) return connectionString
   if (connectionString.includes('sslmode=verify-full')) return connectionString
-  if (connectionString.includes('sslmode=')) {
-    return connectionString.replace(/sslmode=[^&]+/, 'sslmode=verify-full')
-  }
-  return `${connectionString}${connectionString.includes('?') ? '&' : '?'}sslmode=verify-full`
+  return connectionString.replace(/sslmode=[^&]+/, 'sslmode=verify-full')
 }

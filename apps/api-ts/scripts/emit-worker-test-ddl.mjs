@@ -37,15 +37,14 @@ const TABLES = [
  * The Neon URL asks for `sslmode=require`, which the `pg` driver treats as
  * an alias for `verify-full` today but will read with the weaker libpq
  * meaning in `pg` v9. The strict mode is spelled out so the certificate
- * keeps being verified.
+ * keeps being verified. A URL without an SSL mode is left alone: it may
+ * point at a server that does not speak SSL at all.
  */
 function withVerifiedSsl(connectionString) {
   if (!connectionString) return connectionString
+  if (!connectionString.includes('sslmode=')) return connectionString
   if (connectionString.includes('sslmode=verify-full')) return connectionString
-  if (connectionString.includes('sslmode=')) {
-    return connectionString.replace(/sslmode=[^&]+/, 'sslmode=verify-full')
-  }
-  return `${connectionString}${connectionString.includes('?') ? '&' : '?'}sslmode=verify-full`
+  return connectionString.replace(/sslmode=[^&]+/, 'sslmode=verify-full')
 }
 
 /** Reads the test branch URL from apps/api-ts/.env.test. */
