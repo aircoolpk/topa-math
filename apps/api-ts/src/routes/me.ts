@@ -301,7 +301,7 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
              'score_reward', COALESCE((q.metadata->>'score_reward')::int, q.xp_reward)
            ) AS content,
            q.estimated_minutes,
-           q.grade_level, q.skill_code, q.title, NULL::int
+           q.grade_level, q.skill_code, q.title AS skill_name, NULL::int AS status_order
       FROM learning_quests q
      WHERE q.status = 'active' AND q.grade_level = $2
      UNION ALL
