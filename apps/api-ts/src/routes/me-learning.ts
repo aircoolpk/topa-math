@@ -582,9 +582,7 @@ function parseJsonLike(value: unknown): unknown {
   }
   const text = value.trim()
   if (!text) {
-    // The legacy service turns an empty string into `None`, so a field
-    // that was left empty in the content file arrives as `null`.
-    return null
+    return value
   }
   if (
     !(
@@ -599,6 +597,43 @@ function parseJsonLike(value: unknown): unknown {
   } catch {
     return value
   }
+}
+
+/**
+ * Normalise nested values the way the lesson content service does.
+ *
+ * The service turns an empty string into `None`, so a field that was left
+ * empty in the content file arrives as `null`. The route helper of the
+ * legacy service keeps the empty string, and the two normalisers have to
+ * stay apart for the lesson payload to match field for field.
+ */
+function normalizeNestedAsService(value: unknown): unknown {
+  const parsed = parseJsonLike(value)
+  if (typeof parsed === 'string') {
+    const text = parsed.trim()
+    if (!text) {
+      return null
+    }
+    if (text.startsWith('{') || text.startsWith('[')) {
+      try {
+        return normalizeNestedAsService(JSON.parse(text))
+      } catch {
+        return parsed
+      }
+    }
+    return parsed
+  }
+  if (Array.isArray(parsed)) {
+    return parsed.map((entry) => normalizeNestedAsService(entry))
+  }
+  if (parsed && typeof parsed === 'object') {
+    const result: Json = {}
+    for (const [key, entry] of Object.entries(parsed as Json)) {
+      result[key] = normalizeNestedAsService(entry)
+    }
+    return result
+  }
+  return parsed
 }
 
 /** Normalise nested values, like `_normalize_nested_visual_value` does. */
@@ -877,7 +912,7 @@ function normalizeLessonBlock(block: unknown): Json | null {
   }
 
   const title = source.title_th ?? source.title ?? source.title_en ?? ''
-  return { type: blockType, title_th: String(title), data }
+  return { type: blockType, title_th: String(title), data: normalizeNestedAsService(data) as Json }
 }
 
 /**
