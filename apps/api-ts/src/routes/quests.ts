@@ -45,7 +45,7 @@ const PERIODS: readonly RecurrenceType[] = ['daily', 'weekly', 'monthly']
 type FixedQuestSpec = readonly [string, string, string, string, number, number]
 
 /** The child profile fields the quest endpoints read and write. */
-interface ChildRow {
+export interface ChildRow {
   id: string
   grade_level: number
   total_xp: number

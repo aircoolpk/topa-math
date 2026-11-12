@@ -666,7 +666,13 @@ function normalizeVisualBlock(block: unknown): Json | null {
       }
     }
   }
-  return { type: blockType, data: normalizeNested(data) as Json }
+  // A block that carries its text in `content` also exposes it as
+  // `text_th`, so the renderer reads one field for every block type.
+  if ('content' in source && !('text_th' in data) && !('text' in data)) {
+    data.text_th = source.content
+  }
+  const title = source.title_th ?? source.title ?? source.title_en ?? ''
+  return { type: blockType, title_th: String(title), data: normalizeNested(data) as Json }
 }
 
 /**
@@ -815,6 +821,8 @@ function normalizeLessonBlock(block: unknown): Json | null {
     rawData && typeof rawData === 'object' && !Array.isArray(rawData)
       ? { ...(rawData as Json) }
       : {}
+  // The remaining block keys are folded into the data, except the ones that
+  // only describe the block itself.
   for (const [key, value] of Object.entries(source)) {
     if (
       key === 'type' ||
@@ -830,6 +838,8 @@ function normalizeLessonBlock(block: unknown): Json | null {
       data[key] = value
     }
   }
+  // A block that carries its text in `content` also exposes it as
+  // `text_th`, so the renderer can read one field for every block type.
   if ('content' in source && !('text_th' in data) && !('text' in data)) {
     data.text_th = source.content
   }

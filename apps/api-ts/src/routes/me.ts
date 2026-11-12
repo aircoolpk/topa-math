@@ -31,6 +31,7 @@ import {
   shareUrls,
 } from './me-avatar-shared'
 import { buildContentDiagnostics, buildLessonSections, meLearningRoutes } from './me-learning'
+import { renderFixedQuests, type ChildRow as QuestChildRow } from './quests'
 
 export const meRoutes = new Hono<AppEnv>()
 
@@ -278,42 +279,19 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
     })
   }
 
-  // Everything below is fetched in one batched round trip: quests, stats
-  // and the leaderboard position. The lesson catalogue is not part of that
-  // query: it comes from the content snapshot, so the public lesson id is
-  // the topic slug (`g3_division`) and not the row id of the database
-  // (`770b66e1-…`). The lesson endpoints resolve that slug, so a dashboard
-  // built from the snapshot links to lessons that actually exist.
+  // The lesson catalogue and the quests do not come from a database read
+  // here: the lessons come from the content snapshot and the quests from
+  // the fixed catalogue, so this round trip only fetches the student stats.
   const batch = (await sql.query(
     `
-    SELECT 'quest' AS kind, q.id, q.title,
-           jsonb_build_object(
-             'quest_id', q.quest_id,
-             'description', q.description,
-             'quest_type', q.quest_type,
-             'recurrence_type', q.recurrence_type,
-             'xp_reward', q.xp_reward,
-             'coin_reward', q.coin_reward,
-             'lesson_id', q.lesson_id,
-             'quiz_id', q.quiz_id,
-             'metadata', q.metadata,
-             'target_count', COALESCE((q.metadata->>'target_count')::int, 1),
-             'score_reward', COALESCE((q.metadata->>'score_reward')::int, q.xp_reward)
-           ) AS content,
-           q.estimated_minutes,
-           q.grade_level, q.skill_code, q.title AS skill_name, NULL::int AS status_order
-      FROM learning_quests q
-     WHERE q.status = 'active' AND q.grade_level = $2
-     UNION ALL
     SELECT 'stats' AS kind, st.id, NULL, NULL::jsonb, NULL, NULL, NULL, NULL,
-           (st.lessons_completed::int << 16) | st.quests_completed
+           (st.lessons_completed::int << 16) | st.quests_completed AS status_order
       FROM student_stats st
      WHERE st.child_profile_id = $1
     `,
-    [child.id, child.grade_level],
+    [child.id],
   )) as Array<Record<string, unknown>>
 
-  const questRows = batch.filter((row) => row.kind === 'quest')
   const statsRows = batch.filter((row) => row.kind === 'stats')
 
   const rankData = (await sql.query(
@@ -339,42 +317,29 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
   const currentGradeLessons = sections.current_grade_lessons
   const reviewLessons = sections.review_lessons
 
-  const quests = questRows
-    .filter((row) => row.kind === 'quest')
-    .map((row) => {
-      const content = (row.content ?? {}) as Record<string, unknown>
-      const questType = String(content.quest_type ?? (row.skill_code ? 'lesson' : 'lesson'))
-      return {
-        quest_id: (content.quest_id as string) ?? (row.id as string),
-        id: (content.quest_id as string) ?? (row.id as string),
-        title: row.title as string,
-        title_th: row.title as string,
-        description: (content.description as string) ?? null,
-        description_th: (content.description as string) ?? null,
-        quest_type: questType,
-        recurrence_type: (content.recurrence_type as string) ?? null,
-        xp_reward: Number(content.xp_reward ?? 0),
-        exp_reward: Number(content.xp_reward ?? 0),
-        score_reward: Number(content.score_reward ?? content.xp_reward ?? 0),
-        coin_reward: Number(content.coin_reward ?? 0),
-        estimated_minutes: Number(row.estimated_minutes ?? 3),
-        status: 'available',
-        child_status: 'not_started',
-        progress_current: 0,
-        progress_target: Math.max(1, Number(content.target_count ?? 1)),
-        progress_total: Math.max(1, Number(content.target_count ?? 1)),
-        progress_percent: 0,
-        can_claim_reward: false,
-        lesson_id: (content.lesson_id as string) ?? null,
-        quiz_id: (content.quiz_id as string) ?? null,
-      }
-    })
-
-  // The period of a quest is its recurrence, not its action: a quest can
-  // be a check in or a test and still repeat every day.
-  const dailyQuests = quests.filter((quest) => quest.recurrence_type === 'daily')
-  const weeklyQuests = quests.filter((quest) => quest.recurrence_type === 'weekly')
-  const monthlyQuests = quests.filter((quest) => quest.recurrence_type === 'monthly')
+  // The daily, weekly and monthly quests come from the fixed catalogue,
+  // the same source `/me/quests/daily` uses. Reading them from the
+  // `learning_quests` table instead would return the grade-scoped rows
+  // (`daily-g3-check-in`) next to the global ones (`daily-check-in`) and
+  // would report a progress of zero for every quest.
+  const questChild: QuestChildRow = {
+    id: child.id,
+    grade_level: child.grade_level,
+    total_xp: child.total_xp || 0,
+    total_score: child.total_score || 0,
+    coins: child.coins || 0,
+    current_level: child.current_level || 0,
+    current_rank_title: child.current_rank_title || '',
+  }
+  // The three quest buckets are rendered one after the other: they share
+  // the single Postgres connection of the test harness, and `pg` refuses a
+  // second query while the first one is still running.
+  const dailyRendered = await renderFixedQuests(sql, questChild, 'daily', FIXED_QUESTS.daily)
+  const weeklyRendered = await renderFixedQuests(sql, questChild, 'weekly', FIXED_QUESTS.weekly)
+  const monthlyRendered = await renderFixedQuests(sql, questChild, 'monthly', FIXED_QUESTS.monthly)
+  const dailyQuests = dailyRendered.payloads
+  const weeklyQuests = weeklyRendered.payloads
+  const monthlyQuests = monthlyRendered.payloads
 
   const statsRow = statsRows.find((row) => row.kind === 'stats')
   const lessonsCompleted = statsRow ? Math.floor(Number(statsRow.status_order ?? 0) / 65536) : 0
