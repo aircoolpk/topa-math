@@ -415,7 +415,9 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
     all_lessons: lessons,
   }
 
-  return c.json({
+  // The quests carry a Python float for their progress, which only
+  // serialises correctly through the FastAPI-compatible JSON writer.
+  return jsonBody(c, {
     active_program: requestedProgram,
     can_access_ep: false,
     available_programs: ['TH'],
