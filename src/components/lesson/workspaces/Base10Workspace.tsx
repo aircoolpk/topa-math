@@ -97,7 +97,7 @@ export function Base10Workspace(props: WorkspaceProps) {
 
   return (
     <div
-      className={`flex-1 min-h-[210px] border-2 p-3 sm:p-5 flex flex-col justify-between relative overflow-hidden ${theme.surface} ${theme.surfaceBorder} ${theme.radius}`}
+      className={`flex-none min-h-[210px] sm:flex-1 border-2 p-3 sm:p-5 flex flex-col justify-between relative overflow-hidden ${theme.surface} ${theme.surfaceBorder} ${theme.radius}`}
     >
       <div className="h-full flex flex-col justify-between">
         <div className="flex flex-wrap items-center justify-between gap-2">
@@ -228,7 +228,7 @@ export function Base10Workspace(props: WorkspaceProps) {
         </div>
 
         {/* Quick Preset Button to match target problem */}
-        <div className={`flex items-center justify-between gap-2 text-xs ${theme.textMuted}`}>
+        <div className={`flex flex-wrap items-center justify-between gap-2 text-xs ${theme.textMuted}`}>
           <span>💡 เคล็ดลับ: ถ้านับหน่วยได้ครบ 10 ชิ้น สามารถกดปุ่ม "มัดรวมเป็นแท่งสิบ" ได้เลย!</span>
           <button
             type="button"

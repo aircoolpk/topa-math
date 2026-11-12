@@ -200,7 +200,7 @@ export function LessonMasterView({
               onFinish={() => setLessonMode('practice')}
             />
           ) : (
-            <div className="flex h-full flex-col justify-between gap-3">
+            <div className="flex min-h-full flex-col justify-between gap-3 sm:h-full">
               <ProblemZone
                 problem={currentProblem}
                 theme={theme}

@@ -98,7 +98,7 @@ export function ConceptMode({
         >
           <div className="text-lg font-extrabold tracking-wide sm:text-xl">{stepVisual?.visual}</div>
           <div className="text-xs opacity-80 sm:text-sm">
-            {stepVisual ? (isEnglish ? stepVisual.descEN : stepVisual.descTH) : null}
+            {stepVisual ? (isEnglish ? stepVisual.descEN || stepVisual.descTH : stepVisual.descTH) : null}
           </div>
         </div>
 

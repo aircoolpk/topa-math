@@ -1032,9 +1032,11 @@ export function buildSteps(steps: string[]): LessonStep[] {
     const body = separator > 0 && separator < 40 ? text.slice(separator + 1).trim() : text
     return {
       titleTH: head ? `${head}` : `ขั้นที่ ${index + 1}`,
-      titleEN: head ? `${head}` : `Step ${index + 1}`,
+      // The content files only carry the Thai text, so the English side
+      // keeps a plain label instead of repeating the Thai sentence.
+      titleEN: `Step ${index + 1}`,
       descTH: body,
-      descEN: body,
+      descEN: '',
     }
   })
 }
@@ -1200,6 +1202,35 @@ export function mapLessonToProblems(content: LessonContentBundle): LessonProblem
     const hint2 = hints[1] ?? 'ลองใช้เครื่องมือบนกระดานช่วยแสดงขั้นตอนทีละส่วน'
     const nudge = commonMistakes[0] ?? hints[2] ?? 'ยังไม่ใช่ค่ะ ลองตรวจสอบตัวเลขที่โจทย์ให้มาอีกครั้ง'
 
+    // The lesson explains its own story while the question may be a
+    // different problem, so the explanation of the question comes first
+    // and the steps of the lesson follow it as the general method.
+    const questionExplanation = asText(question.explanation_th)
+    const questionSteps: LessonStep[] = questionExplanation
+      ? [
+          {
+            titleTH: 'คำตอบของโจทย์นี้',
+            titleEN: 'The answer to this question',
+            descTH: questionExplanation,
+            descEN: asText(question.explanation_en) || questionExplanation,
+          },
+        ]
+      : []
+
+    // The steps of the lesson walk through the story of the lesson, so they
+    // are labelled as the method when they follow the answer of a question.
+    const lessonSteps: LessonStep[] =
+      questionSteps.length > 0 && steps.length > 0
+        ? [
+            {
+              ...steps[0],
+              titleTH: 'วิธีคิดตามบทเรียนนี้',
+              titleEN: 'How this lesson works',
+            },
+            ...steps.slice(1),
+          ]
+        : steps
+
     return {
       id: asText(question.question_id) || `${content.lessonId}-q${index + 1}`,
       tier,
@@ -1220,7 +1251,7 @@ export function mapLessonToProblems(content: LessonContentBundle): LessonProblem
       hint2EN: hint2,
       nudgeTH: nudge,
       nudgeEN: nudge,
-      steps,
+      steps: [...questionSteps, ...lessonSteps],
       conceptMicroSteps: microSteps,
       base10Config: workspace.base10Config,
       barModelConfig: workspace.barModelConfig,

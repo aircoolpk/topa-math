@@ -25,7 +25,9 @@ export default function PublicRankingPage() {
 function RankingPageInner() {
   const router = useRouter()
   const search = useSearchParams()
-  const { user } = useAuthStore()
+  // `user` is only in memory, but the store persists the access token,
+  // so a signed-in student who reloads the page still gets the link.
+  const { user, token } = useAuthStore()
 
   const initialScope = (search?.get('scope') as 'country' | 'province') || 'country'
   const initialProvince = search?.get('province') || ''
@@ -84,7 +86,7 @@ function RankingPageInner() {
             <h1 className="font-bold text-gray-900">อันดับนักเรียน</h1>
           </div>
           <div className="ml-auto">
-            {user ? (
+            {user || token ? (
               <Link href="/dashboard" className="text-sm font-semibold text-primary-600 hover:underline">
                 ไปแดชบอร์ด
               </Link>
@@ -128,7 +130,7 @@ function RankingPageInner() {
                 ? 'ทั้งประเทศ'
                 : province
                 ? `จังหวัด${province}`
-                : 'เ�ือกจังหวัดด้านล่าง'}
+                : 'เลือกจังหวัดด้านล่าง'}
             </span>
           </div>
           <div className="flex gap-2 flex-wrap">
@@ -153,7 +155,7 @@ function RankingPageInner() {
           <div className="card mb-4">
             <label className="text-sm font-semibold text-gray-700 mb-2 block">เลือกจังหวัด</label>
             {provinces.length === 0 ? (
-              <p className="text-sm text-gray-500">ยังไม่มีข้อมูลจังหวัดสำหรับชั้น �.{gradeLevel}</p>
+              <p className="text-sm text-gray-500">ยังไม่มีข้อมูลจังหวัดสำหรับชั้น ป.{gradeLevel}</p>
             ) : (
               <select
                 value={province}
@@ -163,7 +165,7 @@ function RankingPageInner() {
                 <option value="">— เลือกจังหวัด —</option>
                 {provinces.map((p) => (
                   <option key={p.province} value={p.province}>
-                    {p.province} ({p.child_count} �น)
+                    {p.province} ({p.child_count} คน)
                   </option>
                 ))}
               </select>
@@ -174,7 +176,7 @@ function RankingPageInner() {
         {/* Loading state */}
         {loading && (
           <div className="card py-16 text-center">
-            <div className="text-5xl mb-3 animate-bounce">�</div>
+            <div className="text-5xl mb-3 animate-bounce">🏆</div>
             <p className="text-gray-500 font-medium">กำลังโหลดอันดับ...</p>
           </div>
         )}
@@ -191,7 +193,7 @@ function RankingPageInner() {
         {!loading && !error && data && data.entries.length === 0 && (
           <div className="card py-16 text-center">
             <div className="text-5xl mb-3">📭</div>
-            <p className="text-gray-600 font-semibold mb-1">ยังไม่มีอันดับในข�ะนี้</p>
+            <p className="text-gray-600 font-semibold mb-1">ยังไม่มีอันดับในขอบเขตนี้</p>
             <p className="text-sm text-gray-500">
               {scope === 'province' && !province
                 ? 'กรุณาเลือกจังหวัดเพื่อดูอันดับ'
@@ -218,7 +220,7 @@ function RankingPageInner() {
             {/* Province roll-up (only when country scope) */}
             {scope === 'country' && provinces.length > 0 && (
               <div className="card mb-6">
-                <h3 className="section-title mb-3">🗺️ �รุปตามจังหวัด (ชั้น ป.{gradeLevel})</h3>
+                <h3 className="section-title mb-3">🗺️ สรุปตามจังหวัด (ชั้น ป.{gradeLevel})</h3>
                 <div className="grid grid-cols-2 gap-2">
                   {provinces.slice(0, 8).map((p) => (
                     <button
@@ -254,7 +256,7 @@ function RankingPageInner() {
             )}
 
             <p className="text-center text-xs text-gray-400 mt-6">
-              �้อมูลอัปเดตแบบเรียลไทม์ · แสดงเฉพาะนักเรียนที่มีการทำแบบทดสอบ
+              ข้อมูลอัปเดตแบบเรียลไทม์ · แสดงเฉพาะนักเรียนที่มีการทำแบบทดสอบ
             </p>
           </>
         )}
@@ -340,7 +342,7 @@ function RankingRow({ entry, isTop3, highlight }: { entry: RankingEntry; isTop3:
           {entry.mastery_points.toLocaleString()} คะแนน
         </p>
         <p className="text-xs text-gray-400">
-          เลเ�ล {entry.current_level} · {entry.total_tests_completed} tests
+          เลเวล {entry.current_level} · {entry.total_tests_completed} tests
         </p>
       </div>
     </div>

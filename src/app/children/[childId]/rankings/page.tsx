@@ -70,7 +70,7 @@ export default function RankingsPage() {
         {/* Scope Tabs */}
         <div className="flex gap-2 mb-4">
           {[
-            { key: 'country', label: '🇹� ทั้งประเทศ', sub: 'ประเ�ศ' },
+            { key: 'country', label: '🇹🇭 ทั้งประเทศ', sub: 'ประเทศ' },
             { key: 'province', label: '📍 จังหวัด', sub: child?.province || '' },
           ].map((tab) => (
             <button
@@ -223,7 +223,7 @@ export default function RankingsPage() {
           <div className="card py-16 text-center">
             <div className="text-6xl mb-3">🏆</div>
             <h3 className="section-title mb-2">ยังไม่มีอันดับ</h3>
-            <p className="text-gray-500 mb-4">เป็นคนแรกที่ทำควิ�ในระดับนี้!</p>
+            <p className="text-gray-500 mb-4">เป็นคนแรกที่ทำควิซในระดับนี้!</p>
             <Link href={`/children/${childId}/quiz/new`} className="btn-primary inline-block">
               เริ่มทำควิซแรก →
             </Link>
@@ -233,7 +233,7 @@ export default function RankingsPage() {
         {/* Motivation note */}
         <div className="mt-6 text-center">
           <p className="text-xs text-gray-400">
-            💪 ทำควิซสม่ำเสมอ อันดับจะดีขึ้นเรื่อยๆ! อย่า�อมแพ้นะ
+            💪 ทำควิซสม่ำเสมอ อันดับจะดีขึ้นเรื่อยๆ! อย่ายอมแพ้นะ
           </p>
         </div>
       </main>

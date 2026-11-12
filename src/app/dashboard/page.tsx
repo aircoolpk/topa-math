@@ -172,7 +172,10 @@ export default function DashboardPage() {
       if (own) {
         setOwnRank({
           rank_position: own.rank_position,
-          total_in_grade: data.entries?.length || 0,
+          // `entries` excludes students without a province, so the own rank
+          // can be higher than the list length. Never show a total below
+          // the rank itself.
+          total_in_grade: Math.max(data.entries?.length || 0, own.rank_position),
         })
       } else {
         setOwnRank(null)

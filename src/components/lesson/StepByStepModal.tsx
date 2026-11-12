@@ -21,26 +21,36 @@ export function StepByStepModal(props: StepByStepModalProps) {
 
   const renderStepTitle = (step: LessonStep) => {
     if (isBilingual) {
+      // The English side is only shown when it carries a different text,
+      // so a step never shows the same sentence twice.
+      const hasEnglish = Boolean(step.titleEN) && step.titleEN !== step.titleTH
       return (
         <>
-          <div className="text-sm font-extrabold text-amber-500">{step.titleEN}</div>
+          {hasEnglish ? (
+            <div className="text-sm font-extrabold text-amber-500">{step.titleEN}</div>
+          ) : null}
           <div className="text-xs font-extrabold opacity-70">{step.titleTH}</div>
         </>
       )
     }
-    return <div className="text-sm font-extrabold text-amber-500">{isEnglish ? step.titleEN : step.titleTH}</div>
+    const text = isEnglish ? step.titleEN || step.titleTH : step.titleTH
+    return <div className="text-sm font-extrabold text-amber-500">{text}</div>
   }
 
   const renderStepDescription = (step: LessonStep) => {
     if (isBilingual) {
+      const hasEnglish = Boolean(step.descEN) && step.descEN !== step.descTH
       return (
         <>
-          <div className="mt-0.5 text-xs sm:text-sm">{step.descEN}</div>
+          {hasEnglish ? (
+            <div className="mt-0.5 text-xs sm:text-sm">{step.descEN}</div>
+          ) : null}
           <div className="mt-0.5 text-xs opacity-80 sm:text-sm">{step.descTH}</div>
         </>
       )
     }
-    return <div className="mt-0.5 text-xs sm:text-sm">{isEnglish ? step.descEN : step.descTH}</div>
+    const text = isEnglish ? step.descEN || step.descTH : step.descTH
+    return <div className="mt-0.5 text-xs sm:text-sm">{text}</div>
   }
 
   return (

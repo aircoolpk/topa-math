@@ -73,7 +73,7 @@ export function LessonTopBar(props: LessonTopBarProps) {
         className={`h-16 px-3 sm:px-6 flex items-center justify-between gap-2 shrink-0 border-b z-30 transition-colors ${theme.header}`}
       >
         {/* Left: Exit Button + Age Tier Badge */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex min-w-0 items-center gap-2 sm:gap-3">
           <button
             onClick={() => {
               playSound('pop')
@@ -87,9 +87,9 @@ export function LessonTopBar(props: LessonTopBarProps) {
           </button>
 
           {/* Current age tier (ป.1-ป.3 Adventure / ป.4-ป.6 Sci-Fi Quest) */}
-          <div className={`flex items-center p-1 rounded-xl border ${theme.surface} ${theme.surfaceBorder}`}>
+          <div className={`flex min-w-0 items-center p-1 rounded-xl border ${theme.surface} ${theme.surfaceBorder}`}>
             <span
-              className={`px-2.5 py-1 rounded-lg text-xs font-extrabold transition-all shadow-sm ${theme.accent} text-white`}
+              className={`min-w-0 truncate px-2.5 py-1 rounded-lg text-xs font-extrabold transition-all shadow-sm ${theme.accent} text-white`}
               title={tier === 'lower' ? 'Adventure tier (ป.1-ป.3)' : 'Sci-Fi Quest tier (ป.4-ป.6)'}
             >
               {tierEmoji} {tierText}
@@ -148,7 +148,7 @@ export function LessonTopBar(props: LessonTopBarProps) {
         </div>
 
         {/* Right: Language Toggle (TH / EP / Bilingual) & Real-time Reward Counter */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           {/* Bilingual Engine Switcher */}
           <div
             className={`flex items-center p-1 rounded-xl border ${theme.surface} ${theme.surfaceBorder}`}
@@ -160,7 +160,7 @@ export function LessonTopBar(props: LessonTopBarProps) {
                   playSound('pop')
                   onLangModeChange(item.id)
                 }}
-                className={`px-2 py-1 rounded-lg text-xs font-extrabold transition-all ${
+                className={`px-1.5 py-1 rounded-lg text-xs font-extrabold transition-all sm:px-2 ${
                   langMode === item.id
                     ? `${theme.accent} text-white shadow-sm`
                     : `${theme.textMuted} hover:opacity-80`
@@ -174,7 +174,7 @@ export function LessonTopBar(props: LessonTopBarProps) {
 
           {/* Reward Counter (Stars & Gems) */}
           <div
-            className={`relative flex items-center gap-2.5 px-3 py-1.5 rounded-2xl font-extrabold border ${theme.surface} ${theme.surfaceBorder} ${theme.text}`}
+            className={`relative flex items-center gap-1.5 px-2 py-1.5 rounded-2xl font-extrabold border sm:gap-2.5 sm:px-3 ${theme.surface} ${theme.surfaceBorder} ${theme.text}`}
           >
             <div className="flex items-center gap-1">
               <Star className="w-4 h-4 fill-amber-400 text-amber-500" />
