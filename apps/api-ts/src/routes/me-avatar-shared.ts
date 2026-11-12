@@ -65,10 +65,14 @@ export function jsonBody(c: Context<AppEnv>, payload: unknown, status: JsonStatu
  * @param raw the timestamp as read from the database.
  */
 function isoBase(raw: string | null | undefined): string {
-  const text = String(raw ?? '').trim()
+  let text = String(raw ?? '').trim()
   if (!text) {
     return ''
   }
+  // The driver may hand back a timestamp that already carries an offset
+  // (`…+00:00`). The helpers below append the suffix themselves, so the
+  // offset has to go before the clock is split.
+  text = text.replace(/([+-]\d{2}:?\d{2})$/, '')
   const separator = text.indexOf(' ')
   const date = separator === -1 ? text : text.slice(0, separator)
   const time = separator === -1 ? '' : text.slice(separator + 1)

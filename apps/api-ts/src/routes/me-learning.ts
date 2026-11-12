@@ -582,7 +582,9 @@ function parseJsonLike(value: unknown): unknown {
   }
   const text = value.trim()
   if (!text) {
-    return value
+    // The legacy service turns an empty string into `None`, so a field
+    // that was left empty in the content file arrives as `null`.
+    return null
   }
   if (
     !(
