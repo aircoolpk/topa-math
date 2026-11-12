@@ -70,10 +70,12 @@ function isoBase(raw: string | null | undefined): string {
     return ''
   }
   // The driver may hand back a timestamp that already carries an offset
-  // (`…+00:00`). The helpers below append the suffix themselves, so the
-  // offset has to go before the clock is split.
-  text = text.replace(/([+-]\d{2}:?\d{2})$/, '')
-  const separator = text.indexOf(' ')
+  // (`…+00:00` or `…+00`). The helpers below append the suffix themselves,
+  // so the offset has to go before the clock is split.
+  text = text.replace(/([+-]\d{2}(?::?\d{2})?)$/, '')
+  // A timestamp may separate the date and the clock with a space or with a
+  // `T`; the helpers below always render a `T`.
+  const separator = text.search(/[ T]/)
   const date = separator === -1 ? text : text.slice(0, separator)
   const time = separator === -1 ? '' : text.slice(separator + 1)
   const dot = time.indexOf('.')
