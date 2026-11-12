@@ -454,8 +454,8 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
     current_rank_title: rankTitle,
     test_attempts_used: child.test_attempts_used || 0,
     free_test_limit: child.free_test_limit || 5,
-    created_at: pydanticTimestamp(child.created_at),
-    updated_at: pydanticTimestamp(child.updated_at),
+    created_at: isoTimestamp(child.created_at),
+    updated_at: isoTimestamp(child.updated_at),
     rank_title: rankTitle,
   }
 
