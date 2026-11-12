@@ -82,7 +82,12 @@ function isoBase(raw: string | null | undefined): string {
   const clock = dot === -1 ? time : time.slice(0, dot)
   const fraction = dot === -1 ? '' : time.slice(dot + 1)
   const base = `${date}T${clock}`
-  return fraction && /[1-9]/.test(fraction) ? `${base}.${fraction}` : base
+  if (!fraction || !/[1-9]/.test(fraction)) {
+    return base
+  }
+  // Python renders six fractional digits, so a timestamp that carries fewer
+  // of them is padded to the same width.
+  return `${base}.${fraction.padEnd(6, '0')}`
 }
 
 /**
