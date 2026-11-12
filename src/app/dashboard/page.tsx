@@ -46,10 +46,8 @@ function QuestCard({ quest }: { quest: Quest }) {
   )
 }
 
-function LessonCard({ lesson, onStart, onTest, programType }: { lesson: Lesson; onStart: (lesson: Lesson) => void; onTest: (lesson: Lesson) => void; programType: LessonProgram }) {
+function LessonCard({ lesson, programType }: { lesson: Lesson; programType: LessonProgram }) {
   const locked = lesson.status === 'locked' || lesson.is_locked
-  const hasTest = lesson.test_available === true
-  const unavailableReason = lesson.test_disabled_reason || lesson.test_unavailable_reason || 'ยังไม่มีแบบทดสอบที่อนุมัติสำหรับบทนี้'
   const lessonGroupId = lesson.lesson_group_id || lesson.lesson_id
   return (
     <TopaCard className={`p-5 ${locked ? 'opacity-70' : ''}`}>
@@ -61,32 +59,22 @@ function LessonCard({ lesson, onStart, onTest, programType }: { lesson: Lesson; 
         </div>
         <BookOpen className="h-5 w-5 text-amber-500" />
       </div>
-      <div className="mt-5 flex gap-2">
+      <div className="mt-5">
         {locked ? (
-          <Link href="/pricing" className="flex-1 rounded-xl bg-amber-50 px-3 py-2 text-center text-sm font-black text-amber-700">อัปเกรดเพื่อเรียน</Link>
+          <Link href="/pricing" className="block rounded-xl bg-amber-50 px-3 py-2 text-center text-sm font-black text-amber-700">อัปเกรดเพื่อเรียน</Link>
         ) : (
-          <>
-            <button onClick={() => onStart(lesson)} className="flex-1 rounded-xl bg-sky-500 px-3 py-2 text-sm font-black text-white">เรียนต่อ</button>
-            <button
-              onClick={() => hasTest && onTest(lesson)}
-              disabled={!hasTest}
-              title={hasTest ? 'ทำเทสจากบทนี้' : unavailableReason}
-              className={`flex-1 rounded-xl px-3 py-2 text-sm font-black ${hasTest ? 'bg-orange-500 text-white hover:bg-orange-600' : 'cursor-not-allowed bg-slate-100 text-slate-400'}`}
-            >
-              {hasTest ? 'ทำเทสจากบทนี้' : 'ยังไม่มีเทส'}
-            </button>
-          </>
+          // The interactive master teaches the topic and then lets the
+          // student practise it, so it replaces the separate lesson and
+          // test buttons.
+          <Link
+            href={`/dashboard/lessons/${lessonGroupId}/master?program_type=${programType}`}
+            className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-3 py-2.5 text-sm font-black text-slate-950 transition hover:from-amber-500 hover:to-amber-600"
+          >
+            <Sparkles className="h-4 w-4" />
+            เรียนแบบโต้ตอบ
+          </Link>
         )}
       </div>
-      {!locked && (
-        <Link
-          href={`/dashboard/lessons/${lessonGroupId}/master?program_type=${programType}`}
-          className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-3 py-2 text-sm font-black text-slate-950 transition hover:from-amber-500 hover:to-amber-600"
-        >
-          <Sparkles className="h-4 w-4" />
-          เรียนแบบโต้ตอบ
-        </Link>
-      )}
     </TopaCard>
   )
 }
@@ -143,7 +131,6 @@ export default function DashboardPage() {
   const [retryHint, setRetryHint] = useState('')
   const [programMessage, setProgramMessage] = useState('')
   const [loading, setLoading] = useState(true)
-  const [testLoading, setTestLoading] = useState('')
   const [activeProgram, setActiveProgram] = useState<LessonProgram>('TH')
   const [affiliateRegisteredCount, setAffiliateRegisteredCount] = useState(0)
   const [rankSummary, setRankSummary] = useState<{ total_score: number; rank_title: string; rank_position?: number | null; total_in_grade?: number | null } | null>(null)
@@ -302,26 +289,10 @@ export default function DashboardPage() {
   const currentRankPosition = ownRank?.rank_position ?? rankSummary?.rank_position ?? null
   const totalInGrade = ownRank?.total_in_grade || rankSummary?.total_in_grade || null
 
-  const startLesson = async (lesson: Lesson) => {
-    const lessonGroupId = lesson.lesson_group_id || lesson.lesson_id
-    await meApi.startLesson(lessonGroupId, activeProgram).catch(() => null)
-    router.push(`/dashboard/lessons/${lessonGroupId}?program_type=${activeProgram}`)
-  }
-
-  const startTest = async (lesson: Lesson) => {
-    const lessonId = lesson.lesson_group_id || lesson.lesson_id
-    setTestLoading(lessonId)
-    try {
-      const result = await meApi.startLessonTest(lessonId, activeProgram)
-      router.push(`/dashboard/tests/${result.session_id}`)
-    } finally {
-      setTestLoading('')
-    }
-  }
-
   const startRecommendedPractice = () => {
     const first = weakSkills[0]
-    if (first?.recommended_lesson_id) router.push(`/dashboard/lessons/${first.recommended_lesson_id}?program_type=${activeProgram}`)
+    if (first?.recommended_lesson_id)
+      router.push(`/dashboard/lessons/${first.recommended_lesson_id}/master?program_type=${activeProgram}`)
     else if (testLevel) meApi.startTest({ grade_level: testLevel.grade, session_type: 'placement' }).then((result) => router.push(`/dashboard/tests/${result.session_id}`))
   }
 
@@ -536,12 +507,12 @@ export default function DashboardPage() {
               เลือกบทเรียน ป.1–ป.6
             </Link>
           </div>
-          {lessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{lessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} onStart={startLesson} onTest={testLoading ? () => null : startTest} programType={activeProgram} />)}</div> : <EmptyState text="ยังไม่มีบทเรียนที่เปิดให้เรียนตอนนี้" />}
+          {lessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{lessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} programType={activeProgram} />)}</div> : <EmptyState text="ยังไม่มีบทเรียนที่เปิดให้เรียนตอนนี้" />}
         </section>
 
         <section className="mb-10">
           <SectionHeader align="left" title={child?.grade_level ? `ทบทวนพื้นฐาน ป.${Math.max(1, child.grade_level - 1)}` : 'ทบทวนพื้นฐาน · ยังไม่ระบุระดับชั้น'} subtitle="บททบทวนจากระดับก่อนหน้า ช่วยปิดช่องว่างก่อนเรียนเรื่องใหม่" />
-          {reviewLessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">{reviewLessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} onStart={startLesson} onTest={testLoading ? () => null : startTest} programType={activeProgram} />)}</div> : <EmptyState text="ยังไม่มีบททบทวนจากระดับก่อนหน้าที่เปิดให้เรียนตอนนี้" />}
+          {reviewLessons.length ? <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">{reviewLessons.map((lesson) => <LessonCard key={lesson.lesson_id} lesson={lesson} programType={activeProgram} />)}</div> : <EmptyState text="ยังไม่มีบททบทวนจากระดับก่อนหน้าที่เปิดให้เรียนตอนนี้" />}
         </section>
 
         <section className="mb-10">

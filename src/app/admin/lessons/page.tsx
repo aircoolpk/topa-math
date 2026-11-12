@@ -114,7 +114,7 @@ export default function AdminLessonsPage() {
                       {lesson.variant_files?.length ? <p className="mt-1 text-[11px] text-gray-500">files: {lesson.variant_files.join(', ')}</p> : null}
                     </div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <Link className={buttonClass} href={`/dashboard/lessons/${lesson.lesson_id}`}>preview</Link>
+                      <Link className={buttonClass} href={`/dashboard/lessons/${lesson.lesson_id}/master`}>preview</Link>
                       <Link className={buttonClass} href={`/admin/lessons/${lesson.lesson_id}?lang=${lang.toLowerCase()}`}>แก้ไข</Link>
                       <button className={buttonClass} onClick={() => runValidate(lesson.lesson_id)}>ตรวจสอบ</button>
                       <button className={buttonClass} onClick={() => runApprove(lesson.lesson_id, lang)}>อนุมัติ</button>

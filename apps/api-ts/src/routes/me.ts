@@ -30,7 +30,7 @@ import {
   referralUrl,
   shareUrls,
 } from './me-avatar-shared'
-import { meLearningRoutes } from './me-learning'
+import { buildContentDiagnostics, buildLessonSections, meLearningRoutes } from './me-learning'
 
 export const meRoutes = new Hono<AppEnv>()
 
@@ -278,51 +278,41 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
     })
   }
 
-  // Everything below is fetched in one batched round trip: lessons, quests,
-  // stats and the leaderboard position.
+  // Everything below is fetched in one batched round trip: quests, stats
+  // and the leaderboard position. The lesson catalogue is not part of that
+  // query: it comes from the content snapshot, so the public lesson id is
+  // the topic slug (`g3_division`) and not the row id of the database
+  // (`770b66e1-…`). The lesson endpoints resolve that slug, so a dashboard
+  // built from the snapshot links to lessons that actually exist.
   const batch = (await sql.query(
     `
-    SELECT 'lesson' AS kind, l.id, l.title,
+    SELECT 'quest' AS kind, q.id, q.title,
            jsonb_build_object(
-             'title_th', l.content->'title_th',
-             'program_type', l.content->'program_type',
-             'topic_code', l.content->'topic_code',
-             'topic_folder', l.content->'topic_folder'
+             'quest_id', q.quest_id,
+             'description', q.description,
+             'quest_type', q.quest_type,
+             'recurrence_type', q.recurrence_type,
+             'xp_reward', q.xp_reward,
+             'coin_reward', q.coin_reward,
+             'lesson_id', q.lesson_id,
+             'quiz_id', q.quiz_id,
+             'metadata', q.metadata,
+             'target_count', COALESCE((q.metadata->>'target_count')::int, 1),
+             'score_reward', COALESCE((q.metadata->>'score_reward')::int, q.xp_reward)
            ) AS content,
-           NULL::int AS estimated_minutes,
-           s.grade_level, s.code AS skill_code, s.name AS skill_name, NULL::int AS status_order
-      FROM lessons l
-      JOIN skills s ON s.id = l.skill_id
-     WHERE l.status = 'approved' AND s.grade_level IN ($2, $3)
-     UNION ALL
-     SELECT 'quest' AS kind, q.id, q.title,
-            jsonb_build_object(
-              'quest_id', q.quest_id,
-              'description', q.description,
-              'quest_type', q.quest_type,
-              'recurrence_type', q.recurrence_type,
-              'xp_reward', q.xp_reward,
-              'coin_reward', q.coin_reward,
-              'lesson_id', q.lesson_id,
-              'quiz_id', q.quiz_id,
-              'metadata', q.metadata,
-              'target_count', COALESCE((q.metadata->>'target_count')::int, 1),
-              'score_reward', COALESCE((q.metadata->>'score_reward')::int, q.xp_reward)
-            ) AS content,
-            q.estimated_minutes,
-            q.grade_level, q.skill_code, q.title, NULL::int
-       FROM learning_quests q
-      WHERE q.status = 'active' AND q.grade_level = $2
+           q.estimated_minutes,
+           q.grade_level, q.skill_code, q.title, NULL::int
+      FROM learning_quests q
+     WHERE q.status = 'active' AND q.grade_level = $2
      UNION ALL
     SELECT 'stats' AS kind, st.id, NULL, NULL::jsonb, NULL, NULL, NULL, NULL,
-           (st.lessons_completed::int << 16) | st.quests_completed::int
+           (st.lessons_completed::int << 16) | st.quests_completed
       FROM student_stats st
      WHERE st.child_profile_id = $1
     `,
-    [child.id, child.grade_level, Math.max(1, child.grade_level - 1)],
+    [child.id, child.grade_level],
   )) as Array<Record<string, unknown>>
 
-  const lessonRows = batch.filter((row) => row.kind === 'lesson')
   const questRows = batch.filter((row) => row.kind === 'quest')
   const statsRows = batch.filter((row) => row.kind === 'stats')
 
@@ -336,33 +326,18 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
     [child.grade_level, child.total_score || 0, child.total_xp || 0],
   )) as Array<{ total: number; higher: number }>
 
-  const lessons = lessonRows
-    .filter((row) => row.kind === 'lesson')
-    .map((row) => {
-      const content = (row.content ?? {}) as Record<string, unknown>
-      const grade = Number(row.grade_level)
-      const isReview = grade < child.grade_level
-      return {
-        lesson_id: row.id as string,
-        id: row.id as string,
-        title: row.title as string,
-        title_th: (content.title_th as string) ?? (row.title as string),
-        grade_level: grade,
-        skill_code: row.skill_code as string,
-        topic_code: content.topic_code ?? content.topic_folder ?? null,
-        program_type: (content.program_type as string) ?? 'TH',
-        estimated_minutes: (row.estimated_minutes as number) ?? 5,
-        visual_blocks: Array.isArray(content.visual_blocks) ? content.visual_blocks : [],
-        status: isReview ? 'unlocked' : 'unlocked',
-        is_locked: false,
-        lock_reason: null,
-        test_available: false,
-        has_test: false,
-      }
-    })
-
-  const currentGradeLessons = lessons.filter((lesson) => lesson.grade_level === child.grade_level)
-  const reviewLessons = lessons.filter((lesson) => lesson.grade_level === child.grade_level - 1)
+  // The lesson catalogue comes from the content snapshot so the public
+  // lesson id is the topic slug (`g3_division`) and not the row id of the
+  // database (`770b66e1-…`). The lesson endpoints resolve that slug, so a
+  // dashboard built from the snapshot links to lessons that exist.
+  const sectionGrades = new Set<number>([
+    child.grade_level,
+    Math.max(1, child.grade_level - 1),
+  ])
+  const sections = buildLessonSections(requestedProgram, child.grade_level, sectionGrades)
+  const lessons = sections.all_lessons
+  const currentGradeLessons = sections.current_grade_lessons
+  const reviewLessons = sections.review_lessons
 
   const quests = questRows
     .filter((row) => row.kind === 'quest')
@@ -467,11 +442,11 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
   }
 
   const lessonSections = {
-    free_lessons: [] as unknown[],
-    locked_lessons: [] as unknown[],
+    free_lessons: sections.free_lessons,
+    locked_lessons: sections.locked_lessons,
     current_grade_lessons: currentGradeLessons,
     review_lessons: reviewLessons,
-    future_lessons: [] as unknown[],
+    future_lessons: sections.future_lessons,
     all_lessons: lessons,
   }
 
@@ -504,7 +479,11 @@ meRoutes.get('/dashboard', requireAuth(), async (c) => {
     current_grade_lessons: currentGradeLessons,
     review_lessons: reviewLessons,
     lesson_sections: lessonSections,
-    content_diagnostics: null,
+    content_diagnostics: buildContentDiagnostics(requestedProgram, child.grade_level),
+    review_content_diagnostics: buildContentDiagnostics(
+      requestedProgram,
+      Math.max(1, child.grade_level - 1),
+    ),
     quests: { daily: dailyQuests, weekly: weeklyQuests, monthly: monthlyQuests },
     recommendations: [],
     recommended_skills: [],

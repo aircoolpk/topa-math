@@ -279,7 +279,7 @@ export default function LessonsPage() {
                     <div className="mt-auto flex gap-2">
                       <button
                         type="button"
-                        onClick={() => router.push(`/dashboard/lessons/${canonicalId}?program_type=${programType}`)}
+                        onClick={() => router.push(`/dashboard/lessons/${canonicalId}/master?program_type=${programType}`)}
                         className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-primary-600 px-3 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-primary-700"
                       >
                         <PlayCircle className="h-4 w-4" aria-hidden="true" />
